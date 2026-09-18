@@ -44,6 +44,27 @@ func main() {
 			panic(err)
 		}
 	}
+	if os.Args[1] == "probe-parse" || os.Args[1] == "probe-render" {
+		label, err := zpl.Parse(source)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, err)
+			fmt.Println("rejected")
+			return
+		}
+		if os.Args[1] == "probe-render" {
+			var out bytes.Buffer
+			if err := render.New(zpl.DPI203).WithSize(width, height).RenderPNG(label, &out); err != nil {
+				fmt.Fprintln(os.Stderr, err)
+				fmt.Println("rejected")
+				return
+			}
+			if err := os.WriteFile(os.Args[4], out.Bytes(), 0644); err != nil {
+				panic(err)
+			}
+		}
+		fmt.Println("accepted")
+		return
+	}
 	if os.Args[1] == "accuracy" {
 		if err := os.WriteFile(os.Args[4], operation(os.Args[1], source, width, height), 0644); err != nil {
 			panic(err)
