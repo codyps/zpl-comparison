@@ -9,7 +9,7 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / "_work"
-RUST = ["local", "toolchain", "labelize", "forge", "builder", "ffi"]
+RUST = ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi"]
 
 
 def run(args, **kw):

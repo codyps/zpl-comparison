@@ -46,9 +46,9 @@ python3 test-data/render-conformance/generate.py --check
 After [building the pinned benchmark adapters](../../benchmarks/README.md), run locally without contacting a printer:
 
 ```sh
-benchmarks/_work/venv/bin/python benchmarks/conformance.py --only local --include-invalid
+benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl --include-invalid
 benchmarks/_work/venv/bin/python benchmarks/conformance.py --only all --group torture
-benchmarks/_work/venv/bin/python benchmarks/conformance.py --only local,zplr --group graphics
+benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl,zplr --group graphics
 ```
 
 Use repeated `--group` options to select families, `--timeout` to set a per-case process timeout, and `--output` to retain another report. Default output is the ignored `benchmarks/_work/conformance/` directory: Markdown, JSON and PNGs. Every case gets a fresh process. Errors remain visible; crashes/timeouts fail the run after saving the report. Unsupported features and visual differences are observations, not an assertion that all current libraries must implement the entire corpus. Negative cases are opt-in and kept in a separate table.
@@ -93,4 +93,4 @@ Font-ID availability, Unicode repertoires, shaping and fallback vary by model/fi
 
 `^GFC` proprietary compressed-binary encoding does not yet have an independently verified encoding vector here; A/B plus ASCII RLE/B64/Z64 are covered. QR manual/structured-append payload grammar and every composite-barcode option need more vectors. The 60 inherited barcode cases were used in development and are not independent holdout data. Large off-canvas coordinates are bounded clipping probes, not allocation or denial-of-service stress tests.
 
-Authority: [Zebra Programming Guide P1134473-11EN Rev A](../../docs/zpl-zbi2-pg-en.pdf), notably text pp. 186–217, typography pp. 60–62/154–159/315/356, barcodes pp. 64–150 and layout pp. 293–297/319/322/329. Per-case command sections are recorded in the manifest. The suite generator, not local renderer acceptance, determines the fixture set.
+Authority: [Zebra Programming Guide P1134473-11EN Rev A](../../docs/zpl-zbi2-pg-en.pdf), notably text pp. 186–217, typography pp. 60–62/154–159/315/356, barcodes pp. 64–150 and layout pp. 293–297/319/322/329. Per-case command sections are recorded in the manifest. The suite generator, not codyps/zpl renderer acceptance, determines the fixture set.

@@ -110,7 +110,7 @@ def relations(cases, outcomes, images, libraries):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
-        "--only", default="local", help="Comma-separated renderer adapters, or all"
+        "--only", default="codyps-zpl", help="Comma-separated renderer adapters, or all"
     )
     ap.add_argument("--group", action="append", help="Repeat to select fixture groups")
     ap.add_argument("--include-invalid", action="store_true")
@@ -282,7 +282,7 @@ def main():
                 values.append(status)
             tab.append([case["name"], *values])
         if tab:
-            text.extend([f"### {validity}\n", table(["Case", *libraries], tab)])
+            text.extend([f"### {validity}\n", table(["Case", *[NAMES[n] for n in libraries]], tab)])
     (dest / "README.md").write_text("\n".join(text))
     if any(r["status"] in ["crashed", "timeout"] for r in outcomes.values()):
         raise SystemExit("Renderer crash/timeout; report preserved")

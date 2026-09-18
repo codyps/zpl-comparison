@@ -2166,7 +2166,7 @@
   ],
   "results": [
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-height-16",
       "group": "text",
       "reference_ink": 304,
@@ -2334,7 +2334,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-height-32",
       "group": "text",
       "reference_ink": 1254,
@@ -2502,7 +2502,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-height-64",
       "group": "text",
       "reference_ink": 4948,
@@ -2670,7 +2670,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-width-16",
       "group": "text",
       "reference_ink": 602,
@@ -2838,7 +2838,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-width-32",
       "group": "text",
       "reference_ink": 1254,
@@ -3006,7 +3006,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-width-64",
       "group": "text",
       "reference_ink": 2473,
@@ -3174,7 +3174,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-rotation-N",
       "group": "text",
       "reference_ink": 709,
@@ -3342,7 +3342,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-rotation-R",
       "group": "text",
       "reference_ink": 709,
@@ -3510,7 +3510,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-rotation-I",
       "group": "text",
       "reference_ink": 709,
@@ -3678,7 +3678,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font0-rotation-B",
       "group": "text",
       "reference_ink": 709,
@@ -3846,7 +3846,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font-A",
       "group": "text",
       "reference_ink": 1920,
@@ -3999,7 +3999,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-font-D",
       "group": "text",
       "reference_ink": 1808,
@@ -4152,7 +4152,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-fo-justify-0",
       "group": "layout",
       "reference_ink": 1254,
@@ -4305,7 +4305,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-fo-justify-1",
       "group": "layout",
       "reference_ink": 1254,
@@ -4443,7 +4443,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-fo-justify-2",
       "group": "layout",
       "reference_ink": 1254,
@@ -4581,7 +4581,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-ft-baseline",
       "group": "layout",
       "reference_ink": 1254,
@@ -4749,7 +4749,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-layout-LH",
       "group": "layout",
       "reference_ink": 709,
@@ -4917,7 +4917,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-layout-LS",
       "group": "layout",
       "reference_ink": 709,
@@ -5085,7 +5085,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-layout-LT",
       "group": "layout",
       "reference_ink": 709,
@@ -5253,7 +5253,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-layout-PO",
       "group": "layout",
       "reference_ink": 709,
@@ -5421,7 +5421,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-layout-LR",
       "group": "layout",
       "reference_ink": 709,
@@ -5589,7 +5589,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-layout-FW",
       "group": "layout",
       "reference_ink": 709,
@@ -5757,7 +5757,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-field-reverse",
       "group": "layout",
       "reference_ink": 22746,
@@ -5925,7 +5925,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-block-L",
       "group": "text",
       "reference_ink": 2692,
@@ -6093,7 +6093,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-block-C",
       "group": "text",
       "reference_ink": 2692,
@@ -6261,7 +6261,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-block-R",
       "group": "text",
       "reference_ink": 2692,
@@ -6429,7 +6429,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-block-J",
       "group": "text",
       "reference_ink": 2692,
@@ -6582,7 +6582,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-block-indent",
       "group": "text",
       "reference_ink": 2692,
@@ -6735,7 +6735,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-block-explicit-break",
       "group": "text",
       "reference_ink": 1039,
@@ -6903,7 +6903,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-field-hex",
       "group": "text",
       "reference_ink": 709,
@@ -7071,7 +7071,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-variable-data",
       "group": "text",
       "reference_ink": 709,
@@ -7239,7 +7239,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-encoding-0",
       "group": "text",
       "reference_ink": 1405,
@@ -7407,7 +7407,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-encoding-27",
       "group": "text",
       "reference_ink": 1405,
@@ -7575,7 +7575,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-encoding-28",
       "group": "text",
       "reference_ink": 1405,
@@ -7743,7 +7743,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-utf8-accent",
       "group": "text",
       "reference_ink": 655,
@@ -7896,7 +7896,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-box-thickness-1",
       "group": "shapes",
       "reference_ink": 316,
@@ -8064,7 +8064,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-box-thickness-4",
       "group": "shapes",
       "reference_ink": 1216,
@@ -8232,7 +8232,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-box-thickness-60",
       "group": "shapes",
       "reference_ink": 6000,
@@ -8400,7 +8400,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-box-round",
       "group": "shapes",
       "reference_ink": 1164,
@@ -8568,7 +8568,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-box-white",
       "group": "shapes",
       "reference_ink": 14784,
@@ -8721,7 +8721,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-shape-GC-B",
       "group": "shapes",
       "reference_ink": 1034,
@@ -8889,7 +8889,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-shape-GE-B",
       "group": "shapes",
       "reference_ink": 1154,
@@ -9057,7 +9057,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-shape-GD-R",
       "group": "shapes",
       "reference_ink": 180,
@@ -9210,7 +9210,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-shape-GD-L",
       "group": "shapes",
       "reference_ink": 180,
@@ -9363,7 +9363,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-graphic-hex",
       "group": "graphics",
       "reference_ink": 28,
@@ -9531,7 +9531,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-graphic-binary",
       "group": "graphics",
       "reference_ink": 16,
@@ -9699,7 +9699,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-graphic-B64",
       "group": "graphics",
       "reference_ink": 28,
@@ -9852,7 +9852,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-graphic-Z64",
       "group": "graphics",
       "reference_ink": 28,
@@ -10020,7 +10020,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code39-ratio-2",
       "group": "barcode-arguments",
       "reference_ink": 6720,
@@ -10188,7 +10188,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code39-ratio-3",
       "group": "barcode-arguments",
       "reference_ink": 8640,
@@ -10356,7 +10356,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code39-check-N",
       "group": "barcode-arguments",
       "reference_ink": 8640,
@@ -10524,7 +10524,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code39-check-Y",
       "group": "barcode-arguments",
       "reference_ink": 9240,
@@ -10677,7 +10677,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-text-NN",
       "group": "barcode-arguments",
       "reference_ink": 5520,
@@ -10845,7 +10845,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-text-YN",
       "group": "barcode-arguments",
       "reference_ink": 5868,
@@ -11013,7 +11013,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-text-YY",
       "group": "barcode-arguments",
       "reference_ink": 5868,
@@ -11166,7 +11166,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-rotation-R",
       "group": "barcode-arguments",
       "reference_ink": 3600,
@@ -11334,7 +11334,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-rotation-I",
       "group": "barcode-arguments",
       "reference_ink": 3600,
@@ -11502,7 +11502,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-rotation-B",
       "group": "barcode-arguments",
       "reference_ink": 3600,
@@ -11670,7 +11670,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-mode-N",
       "group": "barcode-arguments",
       "reference_ink": 8400,
@@ -11838,7 +11838,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-code128-mode-A",
       "group": "barcode-arguments",
       "reference_ink": 4800,
@@ -11991,7 +11991,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-model-1",
       "group": "barcode-arguments",
       "reference_ink": 1989,
@@ -12144,7 +12144,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-model-2",
       "group": "barcode-arguments",
       "reference_ink": 2160,
@@ -12312,7 +12312,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-ec-L",
       "group": "barcode-arguments",
       "reference_ink": 2160,
@@ -12480,7 +12480,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-ec-M",
       "group": "barcode-arguments",
       "reference_ink": 2052,
@@ -12648,7 +12648,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-ec-Q",
       "group": "barcode-arguments",
       "reference_ink": 2070,
@@ -12816,7 +12816,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-ec-H",
       "group": "barcode-arguments",
       "reference_ink": 2016,
@@ -12984,7 +12984,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-module-2",
       "group": "barcode-arguments",
       "reference_ink": 960,
@@ -13152,7 +13152,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-module-5",
       "group": "barcode-arguments",
       "reference_ink": 6000,
@@ -13320,7 +13320,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-mask-0",
       "group": "barcode-arguments",
       "reference_ink": 2160,
@@ -13488,7 +13488,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-mask-3",
       "group": "barcode-arguments",
       "reference_ink": 2160,
@@ -13656,7 +13656,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-qr-mask-7",
       "group": "barcode-arguments",
       "reference_ink": 2160,
@@ -13824,7 +13824,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-datamatrix-module-2",
       "group": "barcode-arguments",
       "reference_ink": 404,
@@ -13992,7 +13992,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "argument-datamatrix-module-4",
       "group": "barcode-arguments",
       "reference_ink": 1616,
@@ -14160,7 +14160,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-aztec",
       "group": "barcode-formats",
       "reference_ink": 1920,
@@ -14328,7 +14328,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-aztec_alias",
       "group": "barcode-formats",
       "reference_ink": 1920,
@@ -14496,7 +14496,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-aztec_rune",
       "group": "barcode-formats",
       "reference_ink": 1072,
@@ -14664,7 +14664,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-codabar",
       "group": "barcode-formats",
       "reference_ink": 6400,
@@ -14832,7 +14832,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-codablock_a",
       "group": "barcode-formats",
       "reference_ink": 5260,
@@ -14970,7 +14970,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-codablock_e",
       "group": "barcode-formats",
       "reference_ink": 4092,
@@ -15123,7 +15123,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-codablock_f",
       "group": "barcode-formats",
       "reference_ink": 4124,
@@ -15276,7 +15276,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-code11",
       "group": "barcode-formats",
       "reference_ink": 8480,
@@ -15444,7 +15444,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-code128",
       "group": "barcode-formats",
       "reference_ink": 8320,
@@ -15612,7 +15612,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-code39",
       "group": "barcode-formats",
       "reference_ink": 8960,
@@ -15780,7 +15780,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-code49",
       "group": "barcode-formats",
       "reference_ink": 5728,
@@ -15948,7 +15948,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-code93",
       "group": "barcode-formats",
       "reference_ink": 7840,
@@ -16116,7 +16116,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-composite_a",
       "group": "barcode-formats",
       "reference_ink": 28388,
@@ -16284,7 +16284,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-composite_b",
       "group": "barcode-formats",
       "reference_ink": 33116,
@@ -16452,7 +16452,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-composite_c",
       "group": "barcode-formats",
       "reference_ink": 28752,
@@ -16620,7 +16620,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-data_matrix",
       "group": "barcode-formats",
       "reference_ink": 2832,
@@ -16788,7 +16788,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-data_matrix_rectangular",
       "group": "barcode-formats",
       "reference_ink": 2304,
@@ -16956,7 +16956,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_ean13",
       "group": "barcode-formats",
       "reference_ink": 14504,
@@ -17124,7 +17124,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_ean8",
       "group": "barcode-formats",
       "reference_ink": 7680,
@@ -17292,7 +17292,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_expanded",
       "group": "barcode-formats",
       "reference_ink": 9656,
@@ -17460,7 +17460,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_expanded_stacked",
       "group": "barcode-formats",
       "reference_ink": 10780,
@@ -17628,7 +17628,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_limited",
       "group": "barcode-formats",
       "reference_ink": 1480,
@@ -17796,7 +17796,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_omni",
       "group": "barcode-formats",
       "reference_ink": 5940,
@@ -17964,7 +17964,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_stacked",
       "group": "barcode-formats",
       "reference_ink": 1196,
@@ -18132,7 +18132,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_stacked_omni",
       "group": "barcode-formats",
       "reference_ink": 6448,
@@ -18300,7 +18300,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_truncated",
       "group": "barcode-formats",
       "reference_ink": 2340,
@@ -18468,7 +18468,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_upca",
       "group": "barcode-formats",
       "reference_ink": 15392,
@@ -18636,7 +18636,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
       "reference_ink": 0,
@@ -18804,7 +18804,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-ean13",
       "group": "barcode-formats",
       "reference_ink": 7996,
@@ -18972,7 +18972,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-ean8",
       "group": "barcode-formats",
       "reference_ink": 5276,
@@ -19140,7 +19140,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-extension2",
       "group": "barcode-formats",
       "reference_ink": 1600,
@@ -19308,7 +19308,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-extension5",
       "group": "barcode-formats",
       "reference_ink": 4160,
@@ -19476,7 +19476,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-industrial2of5",
       "group": "barcode-formats",
       "reference_ink": 10560,
@@ -19644,7 +19644,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-intelligent_mail",
       "group": "barcode-formats",
       "reference_ink": 7176,
@@ -19812,7 +19812,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-interleaved2of5",
       "group": "barcode-formats",
       "reference_ink": 5280,
@@ -19980,7 +19980,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-logmars",
       "group": "barcode-formats",
       "reference_ink": 11680,
@@ -20148,7 +20148,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-maxicode2",
       "group": "barcode-formats",
       "reference_ink": 12540,
@@ -20301,7 +20301,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-maxicode3",
       "group": "barcode-formats",
       "reference_ink": 12840,
@@ -20454,7 +20454,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-maxicode4",
       "group": "barcode-formats",
       "reference_ink": 13140,
@@ -20622,7 +20622,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-maxicode5",
       "group": "barcode-formats",
       "reference_ink": 2010,
@@ -20775,7 +20775,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-maxicode6",
       "group": "barcode-formats",
       "reference_ink": 13200,
@@ -20928,7 +20928,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-micropdf417_1",
       "group": "barcode-formats",
       "reference_ink": 1848,
@@ -21096,7 +21096,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-micropdf417_3",
       "group": "barcode-formats",
       "reference_ink": 2112,
@@ -21264,7 +21264,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-micropdf417_4",
       "group": "barcode-formats",
       "reference_ink": 2552,
@@ -21432,7 +21432,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-msi_a",
       "group": "barcode-formats",
       "reference_ink": 7040,
@@ -21600,7 +21600,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-msi_b",
       "group": "barcode-formats",
       "reference_ink": 7840,
@@ -21768,7 +21768,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-msi_c",
       "group": "barcode-formats",
       "reference_ink": 8640,
@@ -21936,7 +21936,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-msi_d",
       "group": "barcode-formats",
       "reference_ink": 8640,
@@ -22104,7 +22104,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-pdf417",
       "group": "barcode-formats",
       "reference_ink": 4488,
@@ -22272,7 +22272,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-pdf417_truncated",
       "group": "barcode-formats",
       "reference_ink": 3276,
@@ -22440,7 +22440,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-planet",
       "group": "barcode-formats",
       "reference_ink": 7616,
@@ -22608,7 +22608,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-plessey",
       "group": "barcode-formats",
       "reference_ink": 9920,
@@ -22776,7 +22776,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-postal_planet",
       "group": "barcode-formats",
       "reference_ink": 7616,
@@ -22944,7 +22944,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-postnet",
       "group": "barcode-formats",
       "reference_ink": 5440,
@@ -23112,7 +23112,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-qr",
       "group": "barcode-formats",
       "reference_ink": 3680,
@@ -23280,7 +23280,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-standard2of5",
       "group": "barcode-formats",
       "reference_ink": 9760,
@@ -23448,7 +23448,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-tlc39_linear",
       "group": "barcode-formats",
       "reference_ink": 8960,
@@ -23616,7 +23616,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-tlc39_linked",
       "group": "barcode-formats",
       "reference_ink": 13052,
@@ -23784,7 +23784,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-upca",
       "group": "barcode-formats",
       "reference_ink": 8658,
@@ -23952,7 +23952,7 @@
       "stderr": ""
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "barcode-upce",
       "group": "barcode-formats",
       "reference_ink": 4610,
@@ -24106,7 +24106,7 @@
     }
   ],
   "adapters": {
-    "local": [
+    "codyps-zpl": [
       {
         "name": "local",
         "sha256": "172716f8312a594703bb3ea4a6f454c38c128f5c9dc5eb0bf89941c34252bf25"

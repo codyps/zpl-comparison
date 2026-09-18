@@ -18,7 +18,7 @@
   "target_seconds": 0.2,
   "seed": 20260918,
   "sizes": {
-    "local": {
+    "codyps-zpl": {
       "bytes": 361266,
       "lines": 9049,
       "files": 66,
@@ -7708,7 +7708,7 @@
       "peak_rss_bytes": 1163264
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "png",
       "fixture": "code128",
       "input_sha256": "eb7ae71640e3def1d5115ff1b01d79018403bedce1731ab511c0ea1c3b23235f",
@@ -7947,7 +7947,7 @@
       "peak_rss_bytes": 9928704
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "parse",
       "fixture": "qr",
       "input_sha256": "71c73fa5331f5453b7e4c7531d321c5918299870753bfeabb4cf514a49ed1e23",
@@ -8425,7 +8425,7 @@
       "peak_rss_bytes": 220917760
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "parse",
       "fixture": "boxes",
       "input_sha256": "3d3e8b7cef87c7d2860cc511441ef9fa06d316d24e7bca6ca21284babf485809",
@@ -8956,7 +8956,7 @@
       "peak_rss_bytes": 1339392
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "png",
       "fixture": "dense",
       "input_sha256": "3ef441e710c284fc63e05837c4c176d74e794adea2829ea9979abcf0ab145b36",
@@ -9323,7 +9323,7 @@
       "peak_rss_bytes": 252637184
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "png",
       "fixture": "qr",
       "input_sha256": "71c73fa5331f5453b7e4c7531d321c5918299870753bfeabb4cf514a49ed1e23",
@@ -9561,7 +9561,7 @@
       "peak_rss_bytes": 13258752
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "parse",
       "fixture": "code128",
       "input_sha256": "eb7ae71640e3def1d5115ff1b01d79018403bedce1731ab511c0ea1c3b23235f",
@@ -9914,7 +9914,7 @@
       "peak_rss_bytes": 2875392
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "parse",
       "fixture": "dense",
       "input_sha256": "3ef441e710c284fc63e05837c4c176d74e794adea2829ea9979abcf0ab145b36",
@@ -9972,7 +9972,7 @@
       "peak_rss_bytes": 983040
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "png",
       "fixture": "boxes",
       "input_sha256": "3d3e8b7cef87c7d2860cc511441ef9fa06d316d24e7bca6ca21284babf485809",
@@ -10096,7 +10096,7 @@
       "peak_rss_bytes": 13733888
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "parse",
       "fixture": "text",
       "input_sha256": "0bbdddfc0b3395e25e29c641f45d4e5a2cc1262917e8bdda3767a0894be2dff9",
@@ -10514,7 +10514,7 @@
       "peak_rss_bytes": 12787712
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "mode": "png",
       "fixture": "text",
       "input_sha256": "0bbdddfc0b3395e25e29c641f45d4e5a2cc1262917e8bdda3767a0894be2dff9",

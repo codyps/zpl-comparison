@@ -10,17 +10,17 @@ Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#local) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
 
-## local
+## codyps-zpl
 
-**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/local.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
 
 Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-rotation-R.png) | ![local render](../../images/argument-code128-rotation-R-local.png) | ![local difference](../../images/argument-code128-rotation-R-local-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-rotation-R.png) | ![codyps-zpl render](../../images/argument-code128-rotation-R-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-code128-rotation-R-codyps-zpl-diff.png) |
 
 
 ## labelize

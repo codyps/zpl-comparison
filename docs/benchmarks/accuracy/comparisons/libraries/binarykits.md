@@ -173,4 +173,3 @@ All 133 cases were attempted. Select a case to compare images and inspect any er
 | [encoding-27](../cases/argument-encoding-27.md#binarykits) | 21.9% IoU | encoding=27 |
 | [encoding-28](../cases/argument-encoding-28.md#binarykits) | 21.9% IoU | encoding=28 |
 | [utf8-accent](../cases/argument-utf8-accent.md#binarykits) | 31.5% IoU | encoding=28; UTF-8 é |
-

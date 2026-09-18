@@ -27,7 +27,7 @@ Equality requires at least two nonblank successful outputs. Both blanks/errors a
 
 ### valid
 
-| Case | local | labelize | forge | go | ffi | binarykits | zplr |
+| Case | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | torture-typography | error | [rendered](images/torture-typography-labelize.png) | [rendered](images/torture-typography-forge.png) | [rendered](images/torture-typography-go.png) | [rendered](images/torture-typography-ffi.png) | [rendered](images/torture-typography-binarykits.png) | [rendered](images/torture-typography-zplr.png) |
 | torture-geometry | error | [rendered](images/torture-geometry-labelize.png) | [rendered](images/torture-geometry-forge.png) | [rendered](images/torture-geometry-go.png) | [rendered](images/torture-geometry-ffi.png) | [rendered](images/torture-geometry-binarykits.png) | [rendered](images/torture-geometry-zplr.png) |

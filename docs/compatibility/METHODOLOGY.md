@@ -9,7 +9,7 @@
 | --- | --- |
 | 🧩 Handler found | Explicit parser/render-path handler. Parameters may be ignored, rejected or approximate. |
 | ⏭️ Ignored / stored only | Recognized but skipped or stored without the relevant raster effect. |
-| 📦 Framing only | Local framer preserves bytes; no local rendering handler found. |
+| 📦 Framing only | codyps/zpl framer preserves bytes; no codyps/zpl rendering handler found. |
 | 📐 Specification table | Schema/table-driven parsing or validation; not a pixel renderer. |
 | 🛠️ Typed emission | Typed generation path; not incoming-ZPL interpretation. |
 | 🟢 Upstream: supported | Upstream catalog claims support; not independent certification. |

@@ -8,7 +8,7 @@ This is a **source-evidence inventory**, with a separate executed argument/accur
 | --- | --- |
 | D | Explicit parser/render-path handler found. It may honor only some parameters; neither full rendering nor fidelity is implied. |
 | I | Explicitly recognized but skipped or stored without the relevant raster effect. |
-| F | Local byte framer preserves command bytes only; no local renderer handler identified. Not semantic command support. |
+| F | codyps/zpl byte framer preserves command bytes only; no codyps/zpl renderer handler identified. Not semantic command support. |
 | T | zpl-toolchain has a command specification/argument table. Requires the table-driven API and validation to use it; the performance suite's heuristic parse does not load it. No pixel renderer. |
 | E | Typed builder emission path found. Generation is not parsing/rendering; emitted arguments may be fixed or incomplete. |
 | S / P / U / N | ZPLr's own catalog says supported / partial / unsupported / non-rendering. These are **upstream claims**, independently tested only for the accuracy cases. |
@@ -24,21 +24,21 @@ Counts below are not interchangeable support percentages: a parser table, emitte
 
 | Adapter | D | I | T | E | S | P | U | N |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| local | 64 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| toolchain | 0 | 0 | 223 | 0 | 0 | 0 | 0 | 0 |
-| labelize | 55 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| forge | 41 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| go | 32 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
-| ffi | 32 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
-| binarykits | 43 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| zplr | 0 | 0 | 0 | 0 | 94 | 11 | 2 | 116 |
-| builder | 0 | 0 | 0 | 40 | 0 | 0 | 0 | 0 |
-| python | 0 | 0 | 0 | 33 | 0 | 0 | 0 | 0 |
-| jszpl | 0 | 0 | 0 | 35 | 0 | 0 | 0 | 0 |
+| codyps/zpl (Rust) | 64 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| zpl-toolchain (Rust) | 0 | 0 | 223 | 0 | 0 | 0 | 0 | 0 |
+| labelize (Rust) | 55 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| zpl-forge (Rust) | 41 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| go-zpl (Go) | 32 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| zpl-rs (Rust → Go) | 32 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| BinaryKits.Zpl (.NET) | 43 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| ZPLr (TypeScript) | 0 | 0 | 0 | 0 | 94 | 11 | 2 | 116 |
+| zpl-builder (Rust) | 0 | 0 | 0 | 40 | 0 | 0 | 0 | 0 |
+| Python ZPL | 0 | 0 | 0 | 33 | 0 | 0 | 0 | 0 |
+| JSZPL (TypeScript) | 0 | 0 | 0 | 35 | 0 | 0 | 0 | 0 |
 
 ## Complete command inventory
 
-| Command | Guide page | Reference parameters | local | toolchain | labelize | forge | go | ffi | binarykits | zplr | builder | python | jszpl |
+| Command | Guide page | Reference parameters | codyps/zpl (Rust) | zpl-toolchain (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | zpl-builder (Rust) | Python ZPL | JSZPL (TypeScript) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `^A` | 60 | f, o, h, w | [D](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L359) | [T](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^A.jsonc#L1) | [D](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#228) | [D](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#83) | [D](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L144) | [D](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L144) | [D](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/ScalableBitmappedFontZplCommandAnalyzer.cs#L8) | [S](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L17) | [E](https://docs.rs/crate/zpl-builder/0.1.0/source/src/elements.rs#1) | [E](https://github.com/cod3monk/zpl/blob/9bbeca05aa42e41576bf43ee3ae7ec268a3df032/zpl/label.py#L1) | [E](https://github.com/DanieLeeuwner/JSZPL/blob/53c916717c0dfdb1e6bca266eb6280c8f156c6ca/src/components/text.ts#L1) |
 | `^A@` | 62 | o, h, w, n | F | [T](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^A@.jsonc#L1) | [D](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#228) | – | – | – | – | [S](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L18) | – | [E](https://github.com/cod3monk/zpl/blob/9bbeca05aa42e41576bf43ee3ae7ec268a3df032/zpl/label.py#L106) | – |

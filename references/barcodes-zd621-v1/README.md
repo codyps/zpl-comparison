@@ -1,13 +1,13 @@
 # Real-printer barcode previews
 
 Captured on 2026-09-15 from a ZTC ZD621-203dpi ZPL running V93.21.33Z.
-`manifest.json` records the host, timestamp, exact request/image hashes, local
+`manifest.json` records the host, timestamp, exact request/image hashes, codyps/zpl
 raster hashes and directional pixel differences. The `.png` files are the
 printer's original HTTP preview responses, not locally generated references.
 Each `.zpl` is the exact request that produced its accompanying PNG.
 
 The fixed corpus covers all 29 barcode commands in 60 cases, including aliases,
-DataBar variants, composites, MaxiCode modes, and locally unsupported CODABLOCK A.
+DataBar variants, composites, MaxiCode modes, and CODABLOCK A (unsupported by codyps/zpl).
 It is representative coverage, not every possible parameter or payload.
 
 ## Test contract
@@ -21,8 +21,8 @@ cargo run -p zebra-http-api --example barcode-compare -- \
   --artifacts /tmp/barcode-review
 ```
 
-The artifact directory must not exist. It receives local renders and directional
-diff PNGs (magenta = printer only, cyan = local only). The command prints a
+The artifact directory must not exist. It receives codyps/zpl renders and directional
+diff PNGs (magenta = printer only, cyan = codyps/zpl only). The command prints a
 per-format Markdown report. No network access occurs without `--capture`.
 
 The ordinary tests lock the **observed differences**, not a claim of parity.
@@ -33,8 +33,8 @@ is applied. Unequal canvases are padded with white for the directional diff;
 their dimension mismatch still prevents an exact match.
 
 Initial results: **0 exact matches, 58 different renders, 1 blank printer preview
-(`databar_upce`), 1 locally unsupported format (`codablock_a`)**. Printer canvases
-are 832×1218, while local canvases are 812×1218 for the same `^PW812` request.
+(`databar_upce`), 1 format unsupported by codyps/zpl (`codablock_a`)**. Printer canvases
+are 832×1218, while codyps/zpl canvases are 812×1218 for the same `^PW812` request.
 There are also nonzero ink differences, not just canvas-size differences.
 The MaxiCode mode 5 preview appears to contain only the finder/orientation
 features; nonblank output alone does not establish a valid encoded symbol.

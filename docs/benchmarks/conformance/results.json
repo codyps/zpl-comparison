@@ -7,7 +7,7 @@
   "references": null,
   "results": [
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "torture-typography",
       "group": "torture",
       "validity": "valid",
@@ -95,7 +95,7 @@
       "height": 1218
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "torture-geometry",
       "group": "torture",
       "validity": "valid",
@@ -183,7 +183,7 @@
       "height": 1218
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "torture-shipping-label",
       "group": "torture",
       "validity": "valid",
@@ -271,7 +271,7 @@
       "height": 1218
     },
     {
-      "library": "local",
+      "library": "codyps-zpl",
       "case": "torture-overlap",
       "group": "torture",
       "validity": "valid",

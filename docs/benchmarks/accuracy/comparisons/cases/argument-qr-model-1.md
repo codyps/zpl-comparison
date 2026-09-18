@@ -10,11 +10,11 @@ Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#local) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
 
-## local
+## codyps-zpl
 
-**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/local.md)
+**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |

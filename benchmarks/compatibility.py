@@ -25,7 +25,7 @@ CORPUS = REPO / "test-data/render-conformance/manifest.json"
 CONFORMANCE = REPO / "docs/benchmarks/conformance/results.json"
 NOTES = REPO / "docs/benchmarks/argument-support.md"
 LIBRARIES = {
-    "local": ("codyps/zpl", "Rust", "Parser and renderer"),
+    "codyps-zpl": ("codyps/zpl", "Rust", "Parser and renderer"),
     "toolchain": ("zpl-toolchain", "Rust", "Parser and validator"),
     "labelize": ("labelize", "Rust", "Parser and renderer"),
     "forge": ("zpl-forge", "Rust", "Parser and renderer"),
@@ -37,7 +37,7 @@ LIBRARIES = {
     "python": ("Python ZPL", "Python", "Typed generator"),
     "jszpl": ("JSZPL", "TypeScript", "Typed generator"),
 }
-RENDERERS = {"local", "labelize", "forge", "go", "ffi", "binarykits", "zplr"}
+RENDERERS = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"}
 LABELS = {
     "D": "🧩 Handler found",
     "I": "⏭️ Ignored / stored only",
@@ -99,7 +99,7 @@ def state(support, library, command):
     return (
         support["commands"][library]
         .get(command, {})
-        .get("status", "F" if library == "local" else "?")
+        .get("status", "F" if library == "codyps-zpl" else "?")
     )
 
 
@@ -151,7 +151,7 @@ def library_versions(support):
         key: rust[key]["version"].lstrip("=")
         for key in ["toolchain", "labelize", "forge", "ffi", "builder"]
     }
-    versions["local"] = support["sources"]["zpl"]["version"] + " @ " + support["sources"]["zpl"]["rev"][:12]
+    versions["codyps-zpl"] = support["sources"]["zpl"]["version"] + " @ " + support["sources"]["zpl"]["rev"][:12]
 
     versions.update({n: node[n] for n in ["zplr", "jszpl"]})
     for key, source in [("go", "go-zpl"), ("python", "python-zpl")]:
@@ -426,7 +426,7 @@ def artifacts(dest=DEST):
                     for k, v in {
                         "D": "Explicit parser/render-path handler. Parameters may be ignored, rejected or approximate.",
                         "I": "Recognized but skipped or stored without the relevant raster effect.",
-                        "F": "Local framer preserves bytes; no local rendering handler found.",
+                        "F": "codyps/zpl framer preserves bytes; no codyps/zpl rendering handler found.",
                         "T": "Schema/table-driven parsing or validation; not a pixel renderer.",
                         "E": "Typed generation path; not incoming-ZPL interpretation.",
                         "S": "Upstream catalog claims support; not independent certification.",

@@ -14,7 +14,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 | Library | Attempts | Render errors |
 | --- | --- | --- |
-| [codyps/zpl (Rust)](libraries/local.md) | 133 | 15 |
+| [codyps/zpl (Rust)](libraries/codyps-zpl.md) | 133 | 15 |
 | [labelize (Rust)](libraries/labelize.md) | 133 | 5 |
 | [zpl-forge (Rust)](libraries/forge.md) | 133 | 7 |
 | [go-zpl (Go)](libraries/go.md) | 133 | 0 |
