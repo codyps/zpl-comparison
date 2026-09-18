@@ -1,6 +1,7 @@
 //! Adapter API sources and workload contracts: ../../../../README.md.
 //! Build exactly one feature at a time to measure each dependency separately.
 use std::{env, fs, hint::black_box, time::Instant};
+mod probe;
 
 fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
     #[cfg(feature = "codyps-zpl")]
@@ -111,6 +112,10 @@ fn main() {
     let input = fs::read(&args[2]).unwrap();
     let width = args.get(5).map(|s| s.parse().unwrap()).unwrap_or(400);
     let height = args.get(6).map(|s| s.parse().unwrap()).unwrap_or(300);
+    if args[1].starts_with("probe-") {
+        probe::run(&args[1], &input, &args[4], width, height);
+        return;
+    }
     if args[1] == "accuracy" {
         fs::write(&args[4], operation(&args[1], &input, width, height)).unwrap();
         return;

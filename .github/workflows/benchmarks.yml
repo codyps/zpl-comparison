@@ -63,6 +63,7 @@ jobs:
       - name: Verify generated rendering corpus
         run: |
           python test-data/render-conformance/generate.py --check
+          python test-data/invalid-zpl/generate.py --check
           python benchmarks/compatibility.py --check
       - name: Build locked adapters
         run: benchmarks/_work/venv/bin/python benchmarks/prepare.py
@@ -78,6 +79,12 @@ jobs:
         run: benchmarks/_work/venv/bin/python benchmarks/accuracy/run.py
       - name: Verify comparison pages and images
         run: benchmarks/_work/venv/bin/python benchmarks/accuracy/gallery.py docs/benchmarks/accuracy --check
+      - name: Compare invalid-ZPL rejection
+        id: invalid
+        continue-on-error: true
+        run: benchmarks/_work/venv/bin/python benchmarks/invalid.py
+      - name: Verify invalid-ZPL report
+        run: benchmarks/_work/venv/bin/python benchmarks/invalid.py --check
       - name: Exercise rendering conformance corpus
         id: conformance
         run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl --include-invalid --output docs/benchmarks/conformance
@@ -109,6 +116,11 @@ jobs:
             docs/compatibility/
             benchmarks/accuracy/reference/
             references/barcodes-zd621-v1/
+            test-data/invalid-zpl/
+            benchmarks/invalid/README.md
+      - name: Fail on invalid-ZPL probe execution failures
+        if: always() && steps.invalid.outcome == 'failure'
+        run: exit 1
       - name: Fail on adapter errors after preserving the report
         run: |
           python - <<'PY'

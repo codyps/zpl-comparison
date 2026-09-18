@@ -5,6 +5,8 @@ The root README links to these detailed reports. [Library capabilities and selec
 
 [Command/argument inventory](../docs/benchmarks/command-support.md) and [printer accuracy reproduction](accuracy/README.md) extend the comparison with offline captured references.
 
+[Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
+
 The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 507 focused and combined test files. Run `conformance.py` after building adapters; printer captures are optional and separate.
 
 ## Run

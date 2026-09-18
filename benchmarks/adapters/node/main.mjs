@@ -27,6 +27,27 @@ async function operation() {
   if (pngs.length !== 1) throw new Error('expected one label');
   return pngs[0];
 }
+if (mode === 'probe-parse' || mode === 'probe-render') {
+  let result;
+  let verdict = 'accepted';
+  try {
+    if (mode === 'probe-parse') {
+      const parsed = api.parseDocument(source);
+      for (const diagnostic of parsed.diagnostics) console.error(JSON.stringify(diagnostic));
+      if (parsed.diagnostics.some(d => d.severity === 'error')) verdict = 'rejected';
+    } else {
+      const images = await api.renderZplPNG(source, { printDensity: 8 });
+      result = images[0];
+      if (!result) verdict = 'accepted-empty';
+    }
+  } catch (error) {
+    console.error(error.stack ?? String(error));
+    verdict = 'rejected';
+  }
+  if (result) fs.writeFileSync(output, result);
+  console.log(verdict);
+  process.exit(0);
+}
 if (mode === "accuracy") {
   fs.writeFileSync(output, await operation());
   process.exit(0);
