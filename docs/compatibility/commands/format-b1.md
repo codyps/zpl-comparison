@@ -13,7 +13,7 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 
 | Library | Version / pin | Source evidence | Focused printer evidence | Caveats |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/local.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 32.5%; 0 errors | [Argument limits](../libraries/local.md#argument-limits) |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 32.5%; 0 errors | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
 | [zpl-toolchain](../libraries/toolchain.md) | 0.4.1 | [📐 Specification table](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^B1.jsonc#L1) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/toolchain.md#argument-limits) |
 | [labelize](../libraries/labelize.md) | 1.5.0 | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors | [Argument limits](../libraries/labelize.md#argument-limits) |
 | [zpl-forge](../libraries/forge.md) | 0.3.2 | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors | [Argument limits](../libraries/forge.md#argument-limits) |
@@ -30,7 +30,7 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [code11](../../../references/barcodes-zd621-v1/code11.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code11.png) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#local) | N/A | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#labelize) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#forge) | [4.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#go) | [4.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#ffi) | [3.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#binarykits) | [36.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#zplr) | N/A | N/A | N/A |
+| [code11](../../../references/barcodes-zd621-v1/code11.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code11.png) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#codyps-zpl) | N/A | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#labelize) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#forge) | [4.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#go) | [4.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#ffi) | [3.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#binarykits) | [36.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

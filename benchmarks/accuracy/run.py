@@ -15,7 +15,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
-LIBRARIES = ["local", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
 
 
 def sha(path):

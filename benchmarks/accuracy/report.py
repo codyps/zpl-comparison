@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT))
 from report import NAMES, table  # noqa: E402
 from accuracy.gallery import generate  # noqa: E402
 
-LIBRARIES = ["local", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
 
 
 def main():
@@ -157,7 +157,7 @@ def main():
             tab.append(
                 [label, case["command"], case["arguments"].replace("|", "/"), *values]
             )
-        text.append(table(["Case", "Command", "Argument values", *LIBRARIES], tab))
+        text.append(table(["Case", "Command", "Argument values", *[NAMES[n] for n in LIBRARIES]], tab))
     text.append(
         "\nErrors and diagnostics are retained in [results.json](results.json); no failed case is dropped from its eligible denominator.\n"
     )

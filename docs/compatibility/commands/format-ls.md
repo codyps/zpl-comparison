@@ -13,7 +13,7 @@ Reference parameters: **a**. These describe the reference grammar, not a promise
 
 | Library | Version / pin | Source evidence | Focused printer evidence | Caveats |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/local.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L292) | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/local.md#argument-limits) |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L292) | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
 | [zpl-toolchain](../libraries/toolchain.md) | 0.4.1 | [📐 Specification table](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^LS.jsonc#L1) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/toolchain.md#argument-limits) |
 | [labelize](../libraries/labelize.md) | 1.5.0 | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#163) | 0/1 exact; mean IoU 85.1%; 0 errors | [Argument limits](../libraries/labelize.md#argument-limits) |
 | [zpl-forge](../libraries/forge.md) | 0.3.2 | ❔ No evidence found | 0/1 exact; mean IoU 18.1%; 0 errors | [Argument limits](../libraries/forge.md#argument-limits) |
@@ -30,7 +30,7 @@ Reference parameters: **a**. These describe the reference grammar, not a promise
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-LS](../../../benchmarks/accuracy/reference/layout-LS.zpl) | 20 | [Printer](../../../benchmarks/accuracy/reference/layout-LS.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#local) | N/A | [85.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#labelize) | [18.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#forge) | [24.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#go) | [24.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#ffi) | [14.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#binarykits) | [37.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#zplr) | N/A | N/A | N/A |
+| [layout-LS](../../../benchmarks/accuracy/reference/layout-LS.zpl) | 20 | [Printer](../../../benchmarks/accuracy/reference/layout-LS.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#codyps-zpl) | N/A | [85.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#labelize) | [18.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#forge) | [24.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#go) | [24.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#ffi) | [14.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#binarykits) | [37.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

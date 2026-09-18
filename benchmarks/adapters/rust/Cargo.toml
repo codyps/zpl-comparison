@@ -7,7 +7,7 @@ publish = false
 [workspace]
 
 [dependencies]
-local = { package = "zpl", path = "../../_work/zpl/zpl", optional = true }
+codyps-zpl = { package = "zpl", path = "../../_work/zpl/zpl", optional = true }
 toolchain = { package = "zpl_toolchain_core", version = "=0.4.1", optional = true }
 labelize = { version = "=1.5.0", optional = true }
 forge = { package = "zpl-forge", version = "=0.3.2", default-features = false, features = [
@@ -17,9 +17,9 @@ builder = { package = "zpl-builder", version = "=0.1.0", optional = true }
 ffi = { package = "zpl-rs", version = "=0.1.8", optional = true }
 
 [[bin]]
-name = "local"
+name = "codyps-zpl"
 path = "src/main.rs"
-required-features = ["local"]
+required-features = ["codyps-zpl"]
 
 [[bin]]
 name = "toolchain"

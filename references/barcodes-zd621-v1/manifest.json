@@ -7,10 +7,10 @@
         "diff_rgb_sha256": "f25f26d678e59865d88d53071a23dcbe0e54292b4b5a6c8d05b58f97445ca64a",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 928,
+        "codyps_zpl_only": 928,
         "printer_only": 1040
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 1808,
         "pixels_sha256": "4c0eb84596665b3e5821493151a3993c3e04a21afbd1f5d94703ba27bd55fa10",
@@ -31,10 +31,10 @@
         "diff_rgb_sha256": "f25f26d678e59865d88d53071a23dcbe0e54292b4b5a6c8d05b58f97445ca64a",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 928,
+        "codyps_zpl_only": 928,
         "printer_only": 1040
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 1808,
         "pixels_sha256": "4c0eb84596665b3e5821493151a3993c3e04a21afbd1f5d94703ba27bd55fa10",
@@ -55,10 +55,10 @@
         "diff_rgb_sha256": "3bd77048b46d9a125e260c5f37c9147976e292ef5929c487f42acc1fa5cdb017",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 544,
+        "codyps_zpl_only": 544,
         "printer_only": 544
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 1072,
         "pixels_sha256": "5e9dd3923aa12f022dbb6a8600fd3741fea3f386cb2d2fa69ecda87b3dd21e1d",
@@ -79,10 +79,10 @@
         "diff_rgb_sha256": "4eded2a0751b35e57889964bf2ab1aadf12545ec7c81d6a2c42feb320d1a0b08",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3040,
+        "codyps_zpl_only": 3040,
         "printer_only": 3040
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 6400,
         "pixels_sha256": "efe9560fd88f4963b23e78caaf27dc637f9565f3ab0b4f8c1296f0ab46dabd45",
@@ -114,10 +114,10 @@
         "diff_rgb_sha256": "1e4b524985f2c2fc4c6d55be7567a89758b99e51380b6a71fee8d8f4c1d503fc",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 5232,
+        "codyps_zpl_only": 5232,
         "printer_only": 2164
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7160,
         "pixels_sha256": "50f7f285a3d21051417c4f4a0268c3a2cf3a568af00fd09807b9375e17a48dcf",
@@ -138,10 +138,10 @@
         "diff_rgb_sha256": "67033129c8887fa58c00c11431ecc52fb91eebd4720bfc088cfb1cd06cd76c4d",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 5344,
+        "codyps_zpl_only": 5344,
         "printer_only": 2228
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7240,
         "pixels_sha256": "7cacfe0b6eb721f6c0965ed0d399bd82976f5b0eb552089b16adba0e1592b904",
@@ -162,10 +162,10 @@
         "diff_rgb_sha256": "c7167c1e3e76ad841b81970c5b5a12ed97f4aadf7a01c830de964f5d873594fa",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4320,
+        "codyps_zpl_only": 4320,
         "printer_only": 4320
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8480,
         "pixels_sha256": "55336a0e5a5e1956b31546792ddd321ada8c848b5b06ee743daf246e3d5c7b41",
@@ -186,10 +186,10 @@
         "diff_rgb_sha256": "27eb7a4f42114fdefd5f4601b38bd9f7875dabfad1e8d103bbfd1dd31495d9e3",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4640,
+        "codyps_zpl_only": 4640,
         "printer_only": 4640
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8320,
         "pixels_sha256": "5141049897dd0f21f1122365c03e1b8281ce112fc1249feb8de91c350c9a1d2f",
@@ -210,10 +210,10 @@
         "diff_rgb_sha256": "d534abf93b56e4c673bfbb3e989852cf3b569b71ad3ae38da919ec98ffc3197e",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3520,
+        "codyps_zpl_only": 3520,
         "printer_only": 3520
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8960,
         "pixels_sha256": "7b4e4bea554c2f56815ac4bf4c22c76ea750a4fcc5f4c9ceb788cca8e0052ae2",
@@ -234,10 +234,10 @@
         "diff_rgb_sha256": "f4d6c1bd6f93ae62e779d5b0c6d0d5f691761f109200794933ae81aec31c2e13",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 2560,
+        "codyps_zpl_only": 2560,
         "printer_only": 2560
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 5728,
         "pixels_sha256": "f4709df7af0a168d5aacf21d264fcc7e46a62c607ea8e6ebc8aaf7b754d2cdec",
@@ -258,10 +258,10 @@
         "diff_rgb_sha256": "3e5ec25493190b622a1c4c3ae424481733b9e1a539b7e585ba66f4ea84b9a16e",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4320,
+        "codyps_zpl_only": 4320,
         "printer_only": 4320
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7840,
         "pixels_sha256": "ffadbd502ea6433a8406c737e7ebd8cd5c4d0c0de3eeabc16f062928a3b4714a",
@@ -282,10 +282,10 @@
         "diff_rgb_sha256": "5ea07cc96d4a168098bb44aacd317c0b3bacd45715504e8968f680cd73ffc8ae",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 7084,
+        "codyps_zpl_only": 7084,
         "printer_only": 20524
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 14948,
         "pixels_sha256": "4dcd5216be88feac8fd80af96fbae7f1211d8ed9fda196323d952ea719c7bf16",
@@ -306,10 +306,10 @@
         "diff_rgb_sha256": "0c89bb7204db9e8ae20139679bf1b8c5d52a668bd4367d27aeb4f3d7aa21921f",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 9972,
+        "codyps_zpl_only": 9972,
         "printer_only": 23412
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 19676,
         "pixels_sha256": "2287522e10554925a9e6d0ffaf78d72f920a29943f07aa364fe648cc26e248e2",
@@ -330,10 +330,10 @@
         "diff_rgb_sha256": "48dbc5866b21eecef644ebd6426bb89f704e5d8cc2320400d37b8a2dd50bc945",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 8048,
+        "codyps_zpl_only": 8048,
         "printer_only": 20848
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 15952,
         "pixels_sha256": "4bce736159e1d25577153a306138af760ef38b727afddc07a4e78decf98aa6c5",
@@ -354,10 +354,10 @@
         "diff_rgb_sha256": "55b5b7c2d2cb0510aec247c2422f01f4d42c55b19daca455b1d1f620b740c7d5",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 1528,
+        "codyps_zpl_only": 1528,
         "printer_only": 1640
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 2720,
         "pixels_sha256": "18d635e934344f06557004996e92d5cf4232348652e426ede180e07d82a6b9a0",
@@ -378,10 +378,10 @@
         "diff_rgb_sha256": "1684dfd13b5931d0342723db74abbc89232180282370498c2024aecf5295cf77",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 1040,
+        "codyps_zpl_only": 1040,
         "printer_only": 1040
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 2304,
         "pixels_sha256": "dd25077773173ffab13fb18082bfae266e532cd6d33bc44c008179bafd23fd80",
@@ -402,10 +402,10 @@
         "diff_rgb_sha256": "1d63287fc02e728c6a59394d4e9d7892c904daf5592c70577925c206610f8153",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4640,
+        "codyps_zpl_only": 4640,
         "printer_only": 11304
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7840,
         "pixels_sha256": "9f9d2c1e16de10ef50de7c8c426d6e66ca32ee7a60ab38cc0ac9dbb67d2b08b9",
@@ -426,10 +426,10 @@
         "diff_rgb_sha256": "bcc07ef780aeabf5d3d1648d2bd0daf9844f63be5bf86ca41d6f4096439c10a7",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3680,
+        "codyps_zpl_only": 3680,
         "printer_only": 6240
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 5120,
         "pixels_sha256": "012b272131f97328093f4c24e78f8de54dfb7642780fd32f22739acd6fcd0ee7",
@@ -450,10 +450,10 @@
         "diff_rgb_sha256": "6c2e071ae4e97abc9ce6e84e4dbba34cb715a95d090c28c644cdca362531c506",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 8160,
+        "codyps_zpl_only": 8160,
         "printer_only": 4216
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 13600,
         "pixels_sha256": "7225df4868dda42ff6548824b321cf425e568c56b1ef48c34aa84438bc21f605",
@@ -474,10 +474,10 @@
         "diff_rgb_sha256": "7319761525cbf9203f184dd4caecd7b2a1e3571e10c8b42116a8309380b47d67",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 12260,
+        "codyps_zpl_only": 12260,
         "printer_only": 5620
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 17420,
         "pixels_sha256": "41f10e5d241ad8da6da0d77a0dd53e768a00c05f197bf9718f450f0af155a2e9",
@@ -498,10 +498,10 @@
         "diff_rgb_sha256": "a492f5ed27b3d4f49a895499770065a8008bcb738b2b52b610ffa859a19f089e",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 880,
+        "codyps_zpl_only": 880,
         "printer_only": 880
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 1480,
         "pixels_sha256": "745ed6ada4f0b3ace49a009a27e490e2e12f17eb54249f8df88434c8799f6128",
@@ -522,10 +522,10 @@
         "diff_rgb_sha256": "eba9519646314e3cfe2e6d5fc0e17b24024fe64140fc51e43c45cb62569b251f",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3432,
+        "codyps_zpl_only": 3432,
         "printer_only": 3432
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 5940,
         "pixels_sha256": "81603e69cf3ab33d59117fe95e8fc4741615d139d5558e3ea29aa73f9a23731c",
@@ -546,10 +546,10 @@
         "diff_rgb_sha256": "53f2055a80648efe16a5989491f7dd393811ccca5a6c42c2e83793cdc57845ce",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 728,
+        "codyps_zpl_only": 728,
         "printer_only": 728
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 1196,
         "pixels_sha256": "800597e233330c9427f782890c6be2ad1f23621bd45657ccae56e57d966b54b0",
@@ -570,10 +570,10 @@
         "diff_rgb_sha256": "884f8f37e9cd988cf1b46ef2034ef0ac890ab0647d64b5fa61700625b92fffc1",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4008,
+        "codyps_zpl_only": 4008,
         "printer_only": 4008
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 6448,
         "pixels_sha256": "1ea679eaf967898c317edf551dd58b7eb04d48e808d31140440e817a584d7aef",
@@ -594,10 +594,10 @@
         "diff_rgb_sha256": "51180590e64d875cfefd7c4241048d3429040073b9e403ec0ef4e61cdba8e324",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 1352,
+        "codyps_zpl_only": 1352,
         "printer_only": 1352
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 2340,
         "pixels_sha256": "a014ebf0f46640ddbdce7e2668d5f3f8490cb5f862043ff56a88a0bcfa1be181",
@@ -618,10 +618,10 @@
         "diff_rgb_sha256": "cb837dcd2e2da952b0a35dd5ba510702df0c9fd8cb2125721695ae23cb181bae",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4640,
+        "codyps_zpl_only": 4640,
         "printer_only": 11712
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8320,
         "pixels_sha256": "b7186344ae80c53b09182ca8d719af656d9d0633069b367fd0b5dec8f5982732",
@@ -642,10 +642,10 @@
         "diff_rgb_sha256": "4163962f3d6c87aaabdc1a5967893d71b9afc275286108ff8481481e76b30d9b",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4480,
+        "codyps_zpl_only": 4480,
         "printer_only": 0
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 4480,
         "pixels_sha256": "af4d16d76fee3692742daa499dd3dd9ae6a7155af78f387ed240904bc3ec7bc8",
@@ -666,10 +666,10 @@
         "diff_rgb_sha256": "35bb127eb9049206a0615a538fee0871afaf5d64af9aa2f5630713596a13a217",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4800,
+        "codyps_zpl_only": 4800,
         "printer_only": 4956
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7840,
         "pixels_sha256": "9f9d2c1e16de10ef50de7c8c426d6e66ca32ee7a60ab38cc0ac9dbb67d2b08b9",
@@ -690,10 +690,10 @@
         "diff_rgb_sha256": "4cb2b82fdfc6079dc7cc455df6c3ad885a23d6c66fae038b36a780d2bba3b7e8",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 2880,
+        "codyps_zpl_only": 2880,
         "printer_only": 3036
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 5120,
         "pixels_sha256": "012b272131f97328093f4c24e78f8de54dfb7642780fd32f22739acd6fcd0ee7",
@@ -714,10 +714,10 @@
         "diff_rgb_sha256": "13dc62f730d51d4a23f677f7e93b7dd173bf86845bb72d4286234e33bcacb1a8",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 1120,
+        "codyps_zpl_only": 1120,
         "printer_only": 1120
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 1600,
         "pixels_sha256": "4322d272f8f99f6c26c4d184e56d4e99285a670ed24f582591cc36027140fcfc",
@@ -738,10 +738,10 @@
         "diff_rgb_sha256": "cb54ee8db5985c0de9a6afb7fa3f3f3efb4ae106bf8b162ce67ebfd045be3303",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 2080,
+        "codyps_zpl_only": 2080,
         "printer_only": 2080
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 4160,
         "pixels_sha256": "2e4827a2245c08048c7aeec507f953f0e0a6aedc9ec37c966ad1df9bf256635a",
@@ -762,10 +762,10 @@
         "diff_rgb_sha256": "257f6c768d08dfeacc843c6a2bea691fe930486c7b053e175b0799a0dcfe1d76",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3840,
+        "codyps_zpl_only": 3840,
         "printer_only": 3840
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 10560,
         "pixels_sha256": "1ff4c063d5c965215df3326862e6f091e6bb525db24c60b5149776ad0347a197",
@@ -786,10 +786,10 @@
         "diff_rgb_sha256": "73c6deed2d136338b0f34ad5fb1b25b9f87c1fbc7578aadfd49a9fcb6f22f0bd",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 5000,
+        "codyps_zpl_only": 5000,
         "printer_only": 5124
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7052,
         "pixels_sha256": "34f59f28ae51a669df5d586ddc8a9efb606712f1fd834c9264f0bf747b0f5bc1",
@@ -810,10 +810,10 @@
         "diff_rgb_sha256": "3074acd1634a54be143226366af4a7b00690e295115bc88f678e9c7bf66de20b",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 2560,
+        "codyps_zpl_only": 2560,
         "printer_only": 2560
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 5280,
         "pixels_sha256": "f9a75eab866d4418c2fffd3345aa5a9abff3be10f8f7140b2ca39d322e2be688",
@@ -834,10 +834,10 @@
         "diff_rgb_sha256": "62372b8d6ca14f4dee5358320163d4c37fa6a6a6c3b357e7141b127779962c9b",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 5168,
+        "codyps_zpl_only": 5168,
         "printer_only": 4960
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 11888,
         "pixels_sha256": "6a70fd2254fc0684f4214275d5caf9383cfd0590b0854f96ec95ad1485100b28",
@@ -858,10 +858,10 @@
         "diff_rgb_sha256": "8cb6e9afdfdea851143314d627b3e9c97c2029d29a5bb45b95b87663b118bfc0",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 9780,
+        "codyps_zpl_only": 9780,
         "printer_only": 8382
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 13938,
         "pixels_sha256": "905119cb74ee2126fcf42de9a52fb0b499878b0b94dc0cf782c08dc04ded4732",
@@ -882,10 +882,10 @@
         "diff_rgb_sha256": "871df7045194db5ce9d14e17ddec4ff9c05764f47c94917e36344a0ce63e918a",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 9982,
+        "codyps_zpl_only": 9982,
         "printer_only": 8556
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 14266,
         "pixels_sha256": "b705084803e7ede5c284b415c0ecc85b3866915b39b6c06e3b66a5b3aa2551ff",
@@ -906,10 +906,10 @@
         "diff_rgb_sha256": "4e5b89ff2e48042603286f68fabdb7b4ca3313ebdba9c09dfb26549857435c32",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 9952,
+        "codyps_zpl_only": 9952,
         "printer_only": 8854
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 14238,
         "pixels_sha256": "47e62ea9b4e77fb697035fa4b5a608b6004d2488415a650e39684ff12340a698",
@@ -930,10 +930,10 @@
         "diff_rgb_sha256": "c0459f3d0b26e75b2b1d7ba818cfebf96d180384e6fb718ed0a263e0a7fbaedd",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 14355,
+        "codyps_zpl_only": 14355,
         "printer_only": 1109
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 15256,
         "pixels_sha256": "d3a2b2f860e2c230c87211a4981a95048e29e809d499e74ffe82b2cedade32a2",
@@ -954,10 +954,10 @@
         "diff_rgb_sha256": "a2f313dc1d17d5767cbdaf08922972f006f1a9e6931fbdf8363b7794f7ccde7a",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 10013,
+        "codyps_zpl_only": 10013,
         "printer_only": 8968
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 14245,
         "pixels_sha256": "7b9030d9b91acb5504a00b5bb0b70667ddf42f5483bbfe8e5c4484964a177822",
@@ -978,10 +978,10 @@
         "diff_rgb_sha256": "19f2ed234736144455f68a3ae4ed50861eb2efd7699a6da987349990d60e6a60",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 936,
+        "codyps_zpl_only": 936,
         "printer_only": 936
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 1848,
         "pixels_sha256": "debbe9acd99476bdd350dc6686a5a4d4ee7e63502b9d7f9d1f20975525d414e3",
@@ -1002,10 +1002,10 @@
         "diff_rgb_sha256": "a4b45182fbadd8159e6f3e7cc35026a2a1fafd4270cf5ca8f109f4b791f58e7e",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 1072,
+        "codyps_zpl_only": 1072,
         "printer_only": 1072
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 2112,
         "pixels_sha256": "15a56d887211542503e0151bb87ad1f3ba0b9ca16b7f5dacb1c6e2458fbb6118",
@@ -1026,10 +1026,10 @@
         "diff_rgb_sha256": "cfa29701efd34128e32a4b32cd2cd8c7418c965c55f7b90b73db16ef3e1eaf0c",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 1328,
+        "codyps_zpl_only": 1328,
         "printer_only": 1328
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 2552,
         "pixels_sha256": "19c987364c0cc8353b7f8cbc183af813e7e919d94fec7b5a7e579a90a3dcc947",
@@ -1050,10 +1050,10 @@
         "diff_rgb_sha256": "aafee192684d1e8b4004d74f135e12b731118d3ab9ff125a2096d9778a7d57ed",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4960,
+        "codyps_zpl_only": 4960,
         "printer_only": 4960
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7040,
         "pixels_sha256": "a6f0435e7b9804efa6afd77fe66f432b90d245e7fda6fbc8ec0dbc68dc60c1b1",
@@ -1074,10 +1074,10 @@
         "diff_rgb_sha256": "9cc395668e8747eee37834d80147de216533c4776746cbb3869ca86a3b648644",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 5600,
+        "codyps_zpl_only": 5600,
         "printer_only": 5600
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7840,
         "pixels_sha256": "6bbe1ba6e27502aa1f4a723f1800d6dcf655f31f6dc4f5e5a7ae0d6656664f17",
@@ -1098,10 +1098,10 @@
         "diff_rgb_sha256": "ee19deacb921f6ec9e4c5da944a1df73007333ef864d94358633e66c0712357b",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 6240,
+        "codyps_zpl_only": 6240,
         "printer_only": 6240
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8640,
         "pixels_sha256": "477b34537563796726bfa5d538fe418777f9c1db8553879f1b571ecff82cca21",
@@ -1122,10 +1122,10 @@
         "diff_rgb_sha256": "ee19deacb921f6ec9e4c5da944a1df73007333ef864d94358633e66c0712357b",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 6240,
+        "codyps_zpl_only": 6240,
         "printer_only": 6240
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8640,
         "pixels_sha256": "477b34537563796726bfa5d538fe418777f9c1db8553879f1b571ecff82cca21",
@@ -1146,10 +1146,10 @@
         "diff_rgb_sha256": "7a381d7d904749d76177b016bf0be0e9a1e1b3b44297de57d7a891fae6c22914",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 2340,
+        "codyps_zpl_only": 2340,
         "printer_only": 2340
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 4488,
         "pixels_sha256": "62e9ec5a8d4962779d481b6b1c5442f0c5c4fbd0eaffb6faaa3c8830cc2628f3",
@@ -1170,10 +1170,10 @@
         "diff_rgb_sha256": "efdf94d50c322f5fe4ccc753fdbacff129bdbcb2ab488c16ef63f70755a55210",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 1788,
+        "codyps_zpl_only": 1788,
         "printer_only": 1788
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 3276,
         "pixels_sha256": "a1f94fa637c64970fa76577991bd4c8a6b2f65523308ec926fabbd00af5e9626",
@@ -1194,10 +1194,10 @@
         "diff_rgb_sha256": "d5251985dc6b0bb0e60e5906e184fce0d6da1f061830c6e90e9cc1479669aad9",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 5568,
+        "codyps_zpl_only": 5568,
         "printer_only": 5568
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7616,
         "pixels_sha256": "bf7e10c88d794e374ba871341c4f9816e27c304fa153b2c27ea9b5ebd01bb0da",
@@ -1218,10 +1218,10 @@
         "diff_rgb_sha256": "a077dbd0f4cd39b93ce81c82d30dc265f472188ff6b8b8339099e4733bffe952",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 6720,
+        "codyps_zpl_only": 6720,
         "printer_only": 6720
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 9920,
         "pixels_sha256": "8caf9ccef124188c9de6b3aa98002b611139d9ed5ceb6794275c44239799081f",
@@ -1242,10 +1242,10 @@
         "diff_rgb_sha256": "d5251985dc6b0bb0e60e5906e184fce0d6da1f061830c6e90e9cc1479669aad9",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 5568,
+        "codyps_zpl_only": 5568,
         "printer_only": 5568
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 7616,
         "pixels_sha256": "bf7e10c88d794e374ba871341c4f9816e27c304fa153b2c27ea9b5ebd01bb0da",
@@ -1266,10 +1266,10 @@
         "diff_rgb_sha256": "e35fcaee5fed40128599ce9c1316ee4b7901a1a40f504c0b57bbc9fa2c522e90",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3904,
+        "codyps_zpl_only": 3904,
         "printer_only": 3904
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 5440,
         "pixels_sha256": "8bfc3b1e5e34099a15674cf45891a1071c17c20b5d9bd88e820c0415bd389346",
@@ -1290,10 +1290,10 @@
         "diff_rgb_sha256": "f7b1fb633dd67a41a7f7156c369ca63b18de5be16c07799815ecf04492ee37c3",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3502,
+        "codyps_zpl_only": 3502,
         "printer_only": 3534
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 3648,
         "pixels_sha256": "8c86a6b6330a128e4702aa3d05286d4765ecde37ea4dfb427433ec955c95e64f",
@@ -1314,10 +1314,10 @@
         "diff_rgb_sha256": "aec72ed16d1abdcfcfae3fd46e080694945a5f73b95405217b9ba9e69405b783",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 3680,
+        "codyps_zpl_only": 3680,
         "printer_only": 3680
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 9760,
         "pixels_sha256": "3a657f1c7b5e0d3100e4d541b2124cb85709a62740f2e058a0cc389859b579c4",
@@ -1338,10 +1338,10 @@
         "diff_rgb_sha256": "148cf5b5f886f40b22e5aa1b790090ab851acc91e58d166425d9fbe32eaa5612",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4000,
+        "codyps_zpl_only": 4000,
         "printer_only": 4000
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8960,
         "pixels_sha256": "46623ee418ca0e0fa9638ec718f4c4f650c85cd40cd61a56eea094b4a6478aa7",
@@ -1362,10 +1362,10 @@
         "diff_rgb_sha256": "03f31bb77409f838a66e7531e311c00c2b5498aa4378d73cd37868721dc0801d",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 7272,
+        "codyps_zpl_only": 7272,
         "printer_only": 7068
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 13256,
         "pixels_sha256": "087bdd2ec2eb26af92ff736aa15cbe4157ab5b3bdb666e77215bfe69385c9f82",
@@ -1386,10 +1386,10 @@
         "diff_rgb_sha256": "4c998f62a7350d64c308343f7be782e660072480d4b3042616bdef336fb687a2",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 4160,
+        "codyps_zpl_only": 4160,
         "printer_only": 4498
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 8320,
         "pixels_sha256": "b7186344ae80c53b09182ca8d719af656d9d0633069b367fd0b5dec8f5982732",
@@ -1410,10 +1410,10 @@
         "diff_rgb_sha256": "c538666f9694b0dc9aec787eb5b1159249b1068a2d9c94c3a1d2fb5b608bbc13",
         "dimensions_match": false,
         "exact": false,
-        "local_only": 2400,
+        "codyps_zpl_only": 2400,
         "printer_only": 2530
       },
-      "local": {
+      "codyps-zpl": {
         "height": 1218,
         "ink": 4480,
         "pixels_sha256": "af4d16d76fee3692742daa499dd3dd9ae6a7155af78f387ed240904bc3ec7bc8",

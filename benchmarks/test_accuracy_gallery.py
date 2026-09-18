@@ -55,7 +55,7 @@ class GalleryTests(unittest.TestCase):
             )
         rows[0] = dict(
             case="case",
-            library="local",
+            library="codyps-zpl",
             status="error",
             score=0,
             reference_ink=1,
@@ -71,7 +71,7 @@ class GalleryTests(unittest.TestCase):
         self.assertIn("Unsupported command", page)
         self.assertIn("blank output", page)
         self.assertIn("![forge render](../../images/case-forge.png)", page)
-        self.assertNotIn("![local render]", page)
+        self.assertNotIn("![codyps-zpl render]", page)
         self.assertEqual(len(pages), 9)
 
     def test_missing_and_duplicate_attempts_are_rejected(self):

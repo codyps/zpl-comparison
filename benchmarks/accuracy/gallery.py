@@ -138,7 +138,7 @@ def pages(data, dest):
                 ),
             ]
         result[Path(f"comparisons/libraries/{lib}.md")] = (
-            banner + "\n\n".join(content) + "\n"
+            banner + "\n\n".join(content).rstrip() + "\n"
         )
     for case in cases:
         cid = case["id"]

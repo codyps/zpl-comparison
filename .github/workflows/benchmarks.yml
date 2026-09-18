@@ -80,7 +80,7 @@ jobs:
         run: benchmarks/_work/venv/bin/python benchmarks/accuracy/gallery.py docs/benchmarks/accuracy --check
       - name: Exercise rendering conformance corpus
         id: conformance
-        run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only local --include-invalid --output docs/benchmarks/conformance
+        run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl --include-invalid --output docs/benchmarks/conformance
       - name: Generate library and feature compatibility pages
         if: always() && steps.accuracy.outcome == 'success' && steps.conformance.outcome != 'skipped'
         run: python benchmarks/compatibility.py

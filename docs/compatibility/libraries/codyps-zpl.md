@@ -15,7 +15,7 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 
 ## Measured rendering
 
-[Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/local.md)
+[Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/codyps-zpl.md)
 
 38/132 exact; mean IoU 44.1%; 15 errors. Snapshot: 2026-09-18T23:14:28Z.
 

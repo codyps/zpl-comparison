@@ -41,7 +41,7 @@
     }
   },
   "commands": {
-    "local": {
+    "codyps-zpl": {
       "^CC": {
         "status": "D",
         "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240"

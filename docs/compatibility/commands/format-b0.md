@@ -13,7 +13,7 @@ Reference parameters: **a, b, c, d, e, f, g**. These describe the reference gram
 
 | Library | Version / pin | Source evidence | Focused printer evidence | Caveats |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/local.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 30.9%; 0 errors | [Argument limits](../libraries/local.md#argument-limits) |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 30.9%; 0 errors | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
 | [zpl-toolchain](../libraries/toolchain.md) | 0.4.1 | [📐 Specification table](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^B0.jsonc#L1) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/toolchain.md#argument-limits) |
 | [labelize](../libraries/labelize.md) | 1.5.0 | ❔ No evidence found | 0/1 exact; mean IoU 8.8%; 0 errors | [Argument limits](../libraries/labelize.md#argument-limits) |
 | [zpl-forge](../libraries/forge.md) | 0.3.2 | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#678) | 0/1 exact; mean IoU 31.5%; 0 errors | [Argument limits](../libraries/forge.md#argument-limits) |
@@ -30,7 +30,7 @@ Reference parameters: **a, b, c, d, e, f, g**. These describe the reference gram
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [aztec_alias](../../../references/barcodes-zd621-v1/aztec_alias.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_alias.png) | [30.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#local) | N/A | [8.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#labelize) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#forge) | [10.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#go) | [10.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#ffi) | [11.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#binarykits) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#zplr) | N/A | N/A | N/A |
+| [aztec_alias](../../../references/barcodes-zd621-v1/aztec_alias.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_alias.png) | [30.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#codyps-zpl) | N/A | [8.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#labelize) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#forge) | [10.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#go) | [10.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#ffi) | [11.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#binarykits) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

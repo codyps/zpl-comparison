@@ -3,20 +3,20 @@
 use std::{env, fs, hint::black_box, time::Instant};
 
 fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
-    #[cfg(feature = "local")]
+    #[cfg(feature = "codyps-zpl")]
     {
         if mode == "parse" {
             let mut count = 0u64;
-            for item in local::parse::ParseContext::from_bytes(black_box(input)) {
+            for item in codyps_zpl::parse::ParseContext::from_bytes(black_box(input)) {
                 black_box(item.expect("parse"));
                 count += 1;
             }
             return count.to_le_bytes().to_vec();
         }
-        use local::output::Adapter;
-        let doc = local::render(
+        use codyps_zpl::output::Adapter;
+        let doc = codyps_zpl::render(
             black_box(input),
-            local::Options {
+            codyps_zpl::Options {
                 width,
                 height,
                 dpi: 203,
@@ -24,7 +24,7 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
         )
         .expect("render");
         assert_eq!(doc.labels.len(), 1);
-        return local::output::Png.encode(&doc.labels[0]).expect("PNG");
+        return codyps_zpl::output::Png.encode(&doc.labels[0]).expect("PNG");
     }
     #[cfg(feature = "toolchain")]
     {

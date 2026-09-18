@@ -99,24 +99,24 @@ class ConformanceTests(unittest.TestCase):
 
     def test_relation_does_not_pass_blank_or_failed_images(self):
         cases = [{"name": n, "relation": {"set": "test"}} for n in ["a", "b"]]
-        results = {("local", n): {"status": "blank"} for n in ["a", "b"]}
+        results = {("codyps-zpl", n): {"status": "blank"} for n in ["a", "b"]}
         self.assertEqual(
-            conformance.relations(cases, results, {}, ["local"])[0]["status"],
+            conformance.relations(cases, results, {}, ["codyps-zpl"])[0]["status"],
             "inconclusive",
         )
         for r in results.values():
             r["status"] = "rendered"
         images = {
-            ("local", "a"): np.array([[0, 255]]),
-            ("local", "b"): np.array([[0, 255]]),
+            ("codyps-zpl", "a"): np.array([[0, 255]]),
+            ("codyps-zpl", "b"): np.array([[0, 255]]),
         }
         self.assertEqual(
-            conformance.relations(cases, results, images, ["local"])[0]["status"],
+            conformance.relations(cases, results, images, ["codyps-zpl"])[0]["status"],
             "equal",
         )
-        images[("local", "b")] = np.array([[255, 0]])
+        images[("codyps-zpl", "b")] = np.array([[255, 0]])
         self.assertEqual(
-            conformance.relations(cases, results, images, ["local"])[0]["status"],
+            conformance.relations(cases, results, images, ["codyps-zpl"])[0]["status"],
             "different",
         )
 

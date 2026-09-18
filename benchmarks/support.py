@@ -11,7 +11,7 @@ import sys
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
 sys.path.insert(0, str(ROOT))
-from report import table  # noqa: E402
+from report import NAMES, table  # noqa: E402
 
 
 def main():
@@ -28,7 +28,7 @@ def main():
     evidence = {
         n: {}
         for n in [
-            "local",
+            "codyps-zpl",
             "toolchain",
             "labelize",
             "forge",
@@ -71,16 +71,16 @@ def main():
                 ):
                     add(name, command, status, path, i, **kw)
 
-    local = ROOT / "_work/zpl/zpl/src/render/mod.rs"
-    for i, line in enumerate(local.read_text().splitlines(), 1):
+    zpl_source = ROOT / "_work/zpl/zpl/src/render/mod.rs"
+    for i, line in enumerate(zpl_source.read_text().splitlines(), 1):
         if i < 239 or i > 651:
             continue
         if re.match(r'\s*"[A-Z0-9]{2}"', line) and "=>" in line:
             for command in re.findall(r'"([A-Z][A-Z0-9])"', line.split("=>")[0]):
-                add("local", "~DG" if command == "DG" else "^" + command, "D", local, i)
-    add("local", "^A", "D", local, 359)
+                add("codyps-zpl", "~DG" if command == "DG" else "^" + command, "D", zpl_source, i)
+    add("codyps-zpl", "^A", "D", zpl_source, 359)
     for cmd in ["CC", "CD", "CT"]:
-        add("local", "~" + cmd, "D", local, 161)
+        add("codyps-zpl", "~" + cmd, "D", zpl_source, 161)
     barcode = ROOT / "_work/zpl/zpl/src/render/barcode.rs"
     body = (
         barcode.read_text()
@@ -89,7 +89,7 @@ def main():
         .split("impl Barcode")[0]
     )
     for command in sorted(set(re.findall(r'"(B[A-Z0-9])"', body))):
-        add("local", "^" + command, "D", barcode, 64)
+        add("codyps-zpl", "^" + command, "D", barcode, 64)
     # The toolchain's command specification is distinct from heuristic parse_str.
     params = {}
     descriptions = {}
@@ -209,7 +209,7 @@ def main():
             value = evidence[name].get(cmd)
             if value:
                 cells.append(f"[{value['status']}]({value['source']})")
-            elif name == "local":
+            elif name == "codyps-zpl":
                 cells.append("F")
             else:
                 cells.append("–")
@@ -224,7 +224,7 @@ This is a **source-evidence inventory**, with a separate executed argument/accur
 | --- | --- |
 | D | Explicit parser/render-path handler found. It may honor only some parameters; neither full rendering nor fidelity is implied. |
 | I | Explicitly recognized but skipped or stored without the relevant raster effect. |
-| F | Local byte framer preserves command bytes only; no local renderer handler identified. Not semantic command support. |
+| F | codyps/zpl byte framer preserves command bytes only; no codyps/zpl renderer handler identified. Not semantic command support. |
 | T | zpl-toolchain has a command specification/argument table. Requires the table-driven API and validation to use it; the performance suite's heuristic parse does not load it. No pixel renderer. |
 | E | Typed builder emission path found. Generation is not parsing/rendering; emitted arguments may be fixed or incomplete. |
 | S / P / U / N | ZPLr's own catalog says supported / partial / unsupported / non-rendering. These are **upstream claims**, independently tested only for the accuracy cases. |
@@ -243,13 +243,13 @@ Counts below are not interchangeable support percentages: a parser table, emitte
     for n, values in evidence.items():
         inventory = [values[c]["status"] for c, _ in index if c in values]
         counts.append(
-            [n, *[inventory.count(k) for k in ["D", "I", "T", "E", "S", "P", "U", "N"]]]
+            [NAMES[n], *[inventory.count(k) for k in ["D", "I", "T", "E", "S", "P", "U", "N"]]]
         )
     output = (
         intro
         + table(["Adapter", "D", "I", "T", "E", "S", "P", "U", "N"], counts)
         + "\n## Complete command inventory\n\n"
-        + table(["Command", "Guide page", "Reference parameters", *evidence], rows)
+        + table(["Command", "Guide page", "Reference parameters", *[NAMES[n] for n in evidence]], rows)
     )
     (REPO / "docs/benchmarks/command-support.md").write_text(output)
     (REPO / "docs/benchmarks/command-support.json").write_text(

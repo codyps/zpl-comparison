@@ -78,18 +78,18 @@ class CompatibilityTests(unittest.TestCase):
 
     def test_measurement_is_not_support_and_absence_is_not_failure(self):
         self.assertIn("N/A", catalog.accuracy_summary("builder", []))
-        self.assertEqual(catalog.accuracy_summary("local", []), "Not measured")
+        self.assertEqual(catalog.accuracy_summary("codyps-zpl", []), "Not measured")
         rows = [
-            dict(library="local", score=0, status="error"),
-            dict(library="local", score=1, status="rendered", exact=True),
+            dict(library="codyps-zpl", score=0, status="error"),
+            dict(library="codyps-zpl", score=1, status="rendered", exact=True),
         ]
-        result = catalog.accuracy_summary("local", rows)
+        result = catalog.accuracy_summary("codyps-zpl", rows)
         self.assertIn("1/2 exact", result)
         self.assertIn("50.0%", result)
         self.assertIn(
             "Negative-input observations",
             catalog.execution_summary(
-                "local", [dict(library="local", validity="invalid", status="error")]
+                "codyps-zpl", [dict(library="codyps-zpl", validity="invalid", status="error")]
             ),
         )
 
