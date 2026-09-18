@@ -4,7 +4,7 @@
     "docs/benchmarks/command-support.json": "80d42c25891af4d2d2073bf0179c81a136d4f604407e72502e983647feb881fd",
     "docs/benchmarks/accuracy/results.json": "314c707e4b8926dcfd298f82f6b8c25af4780c29d3ad4ce73dbec3f7fc8ddf99",
     "test-data/render-conformance/manifest.json": "ef43f04da37e790b3778eae1f8c07b04c8d76b0bceec739d85f6202082600168",
-    "docs/benchmarks/argument-support.md": "05c64a0ba724e5ddb5043fa7398176f5b41290d43885dece5a58b4e6f4b73b6a",
+    "docs/benchmarks/argument-support.md": "6bb9f5005cb521d53a3ff3053b1324fa143fb5b5cc8d324e2aac4a5f4c5efcd6",
     "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
     "benchmarks/adapters/rust/Cargo.toml": "1cc90bff8abde341950c8ac30c064fec9cf15798af56072a812dea2ea1b79966",
     "benchmarks/adapters/node/package.json": "863935d7c446fe4a34d5ab329cdf3d44203ccd9765f58a23233f9c9349970647",

@@ -9,7 +9,7 @@
 
 ## Argument limits
 
-Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbitrary character sets. `^FO`/`^FT` reject nonzero justification. `^FB` accepts L/C/R and zero hanging indent, not J or nonzero indent. Black shapes, rounded boxes; no diagonal-line renderer. `^GF` supports A/B and raw/RLE/B64/Z64 data, not C. Broad symbol inventory, restricted options. Code 128 rejects above-text/UCC/automatic modes; Code 39 check digit Y is rejected in this adapter. QR model 1 is rejected. See [barcode restrictions](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/docs/barcodes.md) and the actual errors/rasters in the accuracy matrix.
+Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbitrary character sets. `^FO`/`^FT` reject nonzero justification. `^FB` accepts L/C/R and zero hanging indent, not J or nonzero indent. Black shapes, rounded boxes; no diagonal-line renderer. `^GF` supports A/B and raw/RLE/B64/Z64 data, not C. Broad symbol inventory, restricted options. Code 128 rejects above-text/UCC/automatic modes; Code 39 check digit Y is rejected in this adapter. QR model 1 is rejected. See the actual errors/rasters in the accuracy matrix.
 
 [Maintained argument review and sources](../../benchmarks/argument-support.md)
 
