@@ -2,7 +2,7 @@
 
 # `^FR` – Field Reverse Print
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Allows a field to appear as white over black or black over white. The color of the output is the reverse of its background. Applies to only one field and must be specified each time. For label-wide reverse, use ^LR.
@@ -30,7 +30,7 @@ Reference parameters: **not cataloged**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [field-reverse](../../../benchmarks/accuracy/reference/field-reverse.zpl) | reverse current field | [Printer](../../../benchmarks/accuracy/reference/field-reverse.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-field-reverse-local-diff.png) | N/A | [97.3% IoU](../../benchmarks/accuracy/images/argument-field-reverse-labelize-diff.png) | [94.8% IoU](../../benchmarks/accuracy/images/argument-field-reverse-forge-diff.png) | [99.1% IoU](../../benchmarks/accuracy/images/argument-field-reverse-go-diff.png) | [99.1% IoU](../../benchmarks/accuracy/images/argument-field-reverse-ffi-diff.png) | [93.4% IoU](../../benchmarks/accuracy/images/argument-field-reverse-binarykits-diff.png) | [93.8% IoU](../../benchmarks/accuracy/images/argument-field-reverse-zplr-diff.png) | N/A | N/A | N/A |
+| [field-reverse](../../../benchmarks/accuracy/reference/field-reverse.zpl) | reverse current field | [Printer](../../../benchmarks/accuracy/reference/field-reverse.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#local) | N/A | [97.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#labelize) | [94.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#forge) | [99.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#go) | [99.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#ffi) | [93.4% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#binarykits) | [93.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

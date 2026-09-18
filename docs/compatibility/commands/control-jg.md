@@ -2,7 +2,7 @@
 
 # `~JG` – Graphing Sensor Calibration
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Prints a graph (media sensor profile) of the sensor values. On HC100 printers, prints a sensor profile label without performing calibration.

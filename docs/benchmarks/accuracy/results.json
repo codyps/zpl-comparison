@@ -1,6 +1,12 @@
 {
   "schema": 1,
-  "measured_utc": "2026-09-18T07:18:54Z",
+  "host": {
+    "platform": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
+    "machine": "x86_64",
+    "python": "3.14.4",
+    "numpy": "2.5.3"
+  },
+  "measured_utc": "2026-09-18T23:14:28Z",
   "threshold": 128,
   "cases": [
     {
@@ -3846,7 +3852,7 @@
       "reference_ink": 1920,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39941858) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"only resident font 0 is embedded; other font selections are unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41228780) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"only resident font 0 is embedded; other font selections are unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -3999,7 +4005,7 @@
       "reference_ink": 1808,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39941970) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"only resident font 0 is embedded; other font selections are unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41228867) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"only resident font 0 is embedded; other font selections are unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -4200,7 +4206,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39942112) panicked at src/main.rs:72:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41229001) panicked at src/main.rs:72:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4305,7 +4311,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39942236) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 55, message: \"field justification unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41229090) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 55, message: \"field justification unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -4338,7 +4344,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39942256) panicked at src/main.rs:72:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41229096) panicked at src/main.rs:72:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4443,7 +4449,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39942363) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 55, message: \"field justification unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41229212) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 55, message: \"field justification unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -4476,7 +4482,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39942369) panicked at src/main.rs:72:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41229216) panicked at src/main.rs:72:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -6429,7 +6435,7 @@
       "reference_ink": 2692,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39955167) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 72, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41230738) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 72, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -6582,7 +6588,7 @@
       "reference_ink": 2692,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39955318) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 72, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41230825) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 72, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -7743,7 +7749,7 @@
       "reference_ink": 655,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39956295) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 77, message: \"unsupported embedded font glyph '\u00e9'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41231805) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 77, message: \"unsupported embedded font glyph '\u00e9'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -8568,7 +8574,7 @@
       "reference_ink": 14784,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39956915) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 88, message: \"white shapes unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41232563) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 88, message: \"white shapes unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -9057,7 +9063,7 @@
       "reference_ink": 180,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39957359) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"unsupported command GD\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41232911) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"unsupported command GD\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -9210,7 +9216,7 @@
       "reference_ink": 180,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39957489) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"unsupported command GD\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41233010) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 63, message: \"unsupported command GD\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -9723,7 +9729,7 @@
       "reference_ink": 28,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39957973) panicked at src/main.rs:42:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41233673) panicked at src/main.rs:42:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -10524,7 +10530,7 @@
       "reference_ink": 9240,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39958597) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 67, message: \"Code 39 checksum unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41234350) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 67, message: \"Code 39 checksum unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -11013,7 +11019,7 @@
       "reference_ink": 5868,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39959016) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 67, message: \"Code 128 above-text, UCC and automatic modes unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41234852) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 67, message: \"Code 128 above-text, UCC and automatic modes unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -11838,7 +11844,7 @@
       "reference_ink": 4800,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39959746) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 67, message: \"Code 128 above-text, UCC and automatic modes unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41235472) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 67, message: \"Code 128 above-text, UCC and automatic modes unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -11991,7 +11997,7 @@
       "reference_ink": 1989,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39959906) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 75, message: \"BQ: parameter 2 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41235581) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 75, message: \"BQ: parameter 2 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -14832,7 +14838,7 @@
       "reference_ink": 5260,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39963510) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 89, message: \"BB: parameter 6 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41237513) panicked at src/main.rs:25:10:\nrender: RenderError { offset: 89, message: \"BB: parameter 6 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "labelize",
@@ -14865,7 +14871,7 @@
       "reference_ink": 5260,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39963527) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41237520) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -15018,7 +15024,7 @@
       "reference_ink": 4092,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39963822) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41237615) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -15171,7 +15177,7 @@
       "reference_ink": 4124,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39964144) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41237722) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -20172,7 +20178,7 @@
       "reference_ink": 12540,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39970789) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41241401) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20325,7 +20331,7 @@
       "reference_ink": 12840,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39970948) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41241507) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20646,7 +20652,7 @@
       "reference_ink": 2010,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39971317) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41241865) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20799,7 +20805,7 @@
       "reference_ink": 13200,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39971483) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41241967) panicked at src/main.rs:61:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -24000,7 +24006,7 @@
       "reference_ink": 4610,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (39974542) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41244377) panicked at src/main.rs:77:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -24103,7 +24109,7 @@
     "local": [
       {
         "name": "local",
-        "sha256": "4bcbc6dac43be0b5a68262fb44cca2f18ba4855fcd9bb03ea28d41072af54639"
+        "sha256": "172716f8312a594703bb3ea4a6f454c38c128f5c9dc5eb0bf89941c34252bf25"
       }
     ],
     "labelize": [
@@ -24121,7 +24127,7 @@
     "go": [
       {
         "name": "go-adapter",
-        "sha256": "2f95a4483543a222751df0183f7338e3362fc23544a170e44f737a53fc4785d3"
+        "sha256": "27a6e56e1bedf9bcc70a2ab4e0147f8b54780dc04acf18dc2fd0146d165eea98"
       }
     ],
     "ffi": [
@@ -24131,21 +24137,21 @@
       },
       {
         "name": "libzpl.dylib",
-        "sha256": "ae71fc04da121b93533931cf4f3a56fee89d0611f7c3eecd73a86478b156ebed"
+        "sha256": "3e77b3425845feb29d38c3f028972183f043084159e2ee69aa85af1d14f48e6e"
       }
     ],
     "binarykits": [
       {
         "name": "dotnet",
-        "sha256": "e307c181562634fd59416032f56d506f85de5b405604dae4a20e2117e8709686"
+        "sha256": "a57fd55c95b43d93a7b50683acd647b3537e84856d3443a23e265409fe6a0466"
       },
       {
         "name": "Comparison.dll",
-        "sha256": "88382b5de8ed92ef07af7917e493487cd710c992519bcde8bb436b86d62625c8"
+        "sha256": "9652b32fcec696c47ed2363123ba9f302260d2f138f07543c798327d85327399"
       },
       {
         "name": "Comparison.dll",
-        "sha256": "88382b5de8ed92ef07af7917e493487cd710c992519bcde8bb436b86d62625c8"
+        "sha256": "9652b32fcec696c47ed2363123ba9f302260d2f138f07543c798327d85327399"
       },
       {
         "name": "BinaryKits.Zpl.Viewer.dll",
@@ -24187,7 +24193,7 @@
       },
       {
         "name": "sources.lock.json",
-        "sha256": "04fe23630d9ef73c34eb0c70bb9627e817a31d0986cff397a699d0e3bc191db0"
+        "sha256": "ab11361edbc2f805c2bd33f2a37c785ccf1e43019cb0c181d0ba09a8cc2ed377"
       }
     ]
   },
@@ -24209,11 +24215,5 @@
     "host": "http://d7j211001302.bed.einic.org/",
     "preview_requests": 60,
     "schema": "zpl-printer-barcode-comparison-v1"
-  },
-  "host": {
-    "platform": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
-    "machine": "x86_64",
-    "python": "3.14.4",
-    "numpy": "2.5.3"
   }
 }

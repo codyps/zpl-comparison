@@ -2,7 +2,7 @@
 
 # `^ND` – Change Network Settings
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Changes the network settings on supported printers. For external wired settings, same as ^NS. For wireless settings, same as ^WI.

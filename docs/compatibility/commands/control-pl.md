@@ -2,7 +2,7 @@
 
 # `~PL` – Present Length Addition
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Sets additional media eject length added to the standard 50 mm clearance during a presenter cycle.

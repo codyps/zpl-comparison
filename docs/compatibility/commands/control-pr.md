@@ -2,7 +2,7 @@
 
 # `~PR` – Applicator Reprint
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Reprints the last label printed, similar to the applicator asserting the Reprint signal on the applicator port.

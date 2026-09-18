@@ -2,7 +2,7 @@
 
 # `^GE` – Graphic Ellipse
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Produces an ellipse in the label format with specified width, height, border thickness, and color.
@@ -30,7 +30,7 @@ Reference parameters: **w, h, t, c**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [shape-GE-B](../../../benchmarks/accuracy/reference/shape-GE-B.zpl) | 120,60,3,B | [Printer](../../../benchmarks/accuracy/reference/shape-GE-B.png) | [50.3% IoU](../../benchmarks/accuracy/images/argument-shape-GE-B-local-diff.png) | N/A | [53.3% IoU](../../benchmarks/accuracy/images/argument-shape-GE-B-labelize-diff.png) | [37.5% IoU](../../benchmarks/accuracy/images/argument-shape-GE-B-forge-diff.png) | [53.3% IoU](../../benchmarks/accuracy/images/argument-shape-GE-B-go-diff.png) | [53.3% IoU](../../benchmarks/accuracy/images/argument-shape-GE-B-ffi-diff.png) | [50.2% IoU](../../benchmarks/accuracy/images/argument-shape-GE-B-binarykits-diff.png) | [76.6% IoU](../../benchmarks/accuracy/images/argument-shape-GE-B-zplr-diff.png) | N/A | N/A | N/A |
+| [shape-GE-B](../../../benchmarks/accuracy/reference/shape-GE-B.zpl) | 120,60,3,B | [Printer](../../../benchmarks/accuracy/reference/shape-GE-B.png) | [50.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#local) | N/A | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#labelize) | [37.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#forge) | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#go) | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#ffi) | [50.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#binarykits) | [76.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

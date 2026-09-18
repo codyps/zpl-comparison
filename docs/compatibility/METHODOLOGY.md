@@ -2,7 +2,7 @@
 
 # Interpreting compatibility evidence
 
-[Overview](README.md) · [Libraries](libraries/README.md) · [Commands](commands/README.md) · [Features](features/README.md) · [Evidence legend](METHODOLOGY.md)
+[Overview](README.md) · [Libraries](libraries/README.md) · [Commands](commands/README.md) · [Features](features/README.md) · [Evidence legend](METHODOLOGY.md) · [Compare images](../benchmarks/accuracy/comparisons/README.md)
 
 
 | Label | Meaning |

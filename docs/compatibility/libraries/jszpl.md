@@ -2,7 +2,7 @@
 
 # JSZPL
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **TypeScript · Typed generator · 2.0.1**
@@ -15,7 +15,9 @@ Layout components emit ZPL; preview helpers are not an incoming-ZPL interpreter.
 
 ## Measured rendering
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-18T07:18:54Z.
+This library does not render incoming ZPL.
+
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

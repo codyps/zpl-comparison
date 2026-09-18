@@ -2,7 +2,7 @@
 
 # `~HU` – Return ZebraNet Alert Configuration
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Returns the table of configured ZebraNet Alert settings to the host, showing condition type, destination, set/clear flags, email address, and port number for each alert.

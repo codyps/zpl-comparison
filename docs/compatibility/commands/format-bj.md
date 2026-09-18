@@ -2,7 +2,7 @@
 
 # `^BJ` – Standard 2 of 5 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a Standard 2 of 5 barcode, a discrete self-checking numeric symbology.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [standard2of5](../../../references/barcodes-zd621-v1/standard2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/standard2of5.png) | [45.2% IoU](../../benchmarks/accuracy/images/barcode-standard2of5-local-diff.png) | N/A | [2.7% IoU](../../benchmarks/accuracy/images/barcode-standard2of5-labelize-diff.png) | [2.9% IoU](../../benchmarks/accuracy/images/barcode-standard2of5-forge-diff.png) | [3.3% IoU](../../benchmarks/accuracy/images/barcode-standard2of5-go-diff.png) | [3.3% IoU](../../benchmarks/accuracy/images/barcode-standard2of5-ffi-diff.png) | [3.2% IoU](../../benchmarks/accuracy/images/barcode-standard2of5-binarykits-diff.png) | [15.5% IoU](../../benchmarks/accuracy/images/barcode-standard2of5-zplr-diff.png) | N/A | N/A | N/A |
+| [standard2of5](../../../references/barcodes-zd621-v1/standard2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/standard2of5.png) | [45.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-standard2of5.md#local) | N/A | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-standard2of5.md#labelize) | [2.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-standard2of5.md#forge) | [3.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-standard2of5.md#go) | [3.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-standard2of5.md#ffi) | [3.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-standard2of5.md#binarykits) | [15.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-standard2of5.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

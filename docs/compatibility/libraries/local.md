@@ -2,7 +2,7 @@
 
 # codyps/zpl
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **Rust · Parser and renderer · 0.1.0 @ 280fc0cf4d0a**
@@ -15,7 +15,9 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 
 ## Measured rendering
 
-38/132 exact; mean IoU 44.1%; 15 errors. Snapshot: 2026-09-18T07:18:54Z.
+[Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/local.md)
+
+38/132 exact; mean IoU 44.1%; 15 errors. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

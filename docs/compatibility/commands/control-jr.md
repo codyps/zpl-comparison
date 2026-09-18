@@ -2,7 +2,7 @@
 
 # `~JR` – Power On Reset
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Resets all internal software, performs a power-on self-test (POST), clears the buffer and DRAM, and resets communication parameters and default values. Same as a manual power-on reset.

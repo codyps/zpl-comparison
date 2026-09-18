@@ -2,7 +2,7 @@
 
 # labelize
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **Rust · Parser and renderer · 1.5.0**
@@ -15,7 +15,9 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 
 ## Measured rendering
 
-18/132 exact; mean IoU 38.6%; 5 errors. Snapshot: 2026-09-18T07:18:54Z.
+[Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/labelize.md)
+
+18/132 exact; mean IoU 38.6%; 5 errors. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

@@ -2,7 +2,7 @@
 
 # `~DY` – Download Objects
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Downloads graphic objects or fonts in any supported format. Preferred command to download TrueType fonts (faster than ~DU). Also supports downloading wireless certificate files.

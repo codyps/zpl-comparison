@@ -2,7 +2,7 @@
 
 # go-zpl
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **Go · Parser and renderer · source 78b181940c76**
@@ -15,7 +15,9 @@
 
 ## Measured rendering
 
-13/132 exact; mean IoU 35.1%; 0 errors. Snapshot: 2026-09-18T07:18:54Z.
+[Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/go.md)
+
+13/132 exact; mean IoU 35.1%; 0 errors. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

@@ -2,7 +2,7 @@
 
 # `^B2` – Interleaved 2 of 5 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print an Interleaved 2 of 5 barcode, a high-density self-checking continuous numeric symbology.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g, e, j**. These describe the reference grammar
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [interleaved2of5](../../../references/barcodes-zd621-v1/interleaved2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/interleaved2of5.png) | [34.7% IoU](../../benchmarks/accuracy/images/barcode-interleaved2of5-local-diff.png) | N/A | [34.7% IoU](../../benchmarks/accuracy/images/barcode-interleaved2of5-labelize-diff.png) | [34.7% IoU](../../benchmarks/accuracy/images/barcode-interleaved2of5-forge-diff.png) | [4.9% IoU](../../benchmarks/accuracy/images/barcode-interleaved2of5-go-diff.png) | [4.9% IoU](../../benchmarks/accuracy/images/barcode-interleaved2of5-ffi-diff.png) | [34.7% IoU](../../benchmarks/accuracy/images/barcode-interleaved2of5-binarykits-diff.png) | [34.7% IoU](../../benchmarks/accuracy/images/barcode-interleaved2of5-zplr-diff.png) | N/A | N/A | N/A |
+| [interleaved2of5](../../../references/barcodes-zd621-v1/interleaved2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/interleaved2of5.png) | [34.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-interleaved2of5.md#local) | N/A | [34.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-interleaved2of5.md#labelize) | [34.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-interleaved2of5.md#forge) | [4.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-interleaved2of5.md#go) | [4.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-interleaved2of5.md#ffi) | [34.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-interleaved2of5.md#binarykits) | [34.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-interleaved2of5.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

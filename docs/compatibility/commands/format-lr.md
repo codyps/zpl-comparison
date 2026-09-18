@@ -2,7 +2,7 @@
 
 # `^LR` – Label Reverse Print
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Reverse print (invert) the label when enabled.
@@ -30,7 +30,7 @@ Reference parameters: **m**. These describe the reference grammar, not a promise
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-LR](../../../benchmarks/accuracy/reference/layout-LR.zpl) | Y | [Printer](../../../benchmarks/accuracy/reference/layout-LR.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-layout-LR-local-diff.png) | N/A | [78.8% IoU](../../benchmarks/accuracy/images/argument-layout-LR-labelize-diff.png) | [52.8% IoU](../../benchmarks/accuracy/images/argument-layout-LR-forge-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-LR-go-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-LR-ffi-diff.png) | [27.2% IoU](../../benchmarks/accuracy/images/argument-layout-LR-binarykits-diff.png) | [37.1% IoU](../../benchmarks/accuracy/images/argument-layout-LR-zplr-diff.png) | N/A | N/A | N/A |
+| [layout-LR](../../../benchmarks/accuracy/reference/layout-LR.zpl) | Y | [Printer](../../../benchmarks/accuracy/reference/layout-LR.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-LR.md#local) | N/A | [78.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LR.md#labelize) | [52.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LR.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LR.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LR.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LR.md#binarykits) | [37.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LR.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

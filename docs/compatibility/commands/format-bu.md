@@ -2,7 +2,7 @@
 
 # `^BU` – UPC-A Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a UPC-A barcode, a fixed-length numeric symbology for retail packaging.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [upca](../../../references/barcodes-zd621-v1/upca.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/upca.png) | [32.5% IoU](../../benchmarks/accuracy/images/barcode-upca-local-diff.png) | N/A | [32.3% IoU](../../benchmarks/accuracy/images/barcode-upca-labelize-diff.png) | [32.5% IoU](../../benchmarks/accuracy/images/barcode-upca-forge-diff.png) | [5.5% IoU](../../benchmarks/accuracy/images/barcode-upca-go-diff.png) | [5.5% IoU](../../benchmarks/accuracy/images/barcode-upca-ffi-diff.png) | [32.5% IoU](../../benchmarks/accuracy/images/barcode-upca-binarykits-diff.png) | [32.5% IoU](../../benchmarks/accuracy/images/barcode-upca-zplr-diff.png) | N/A | N/A | N/A |
+| [upca](../../../references/barcodes-zd621-v1/upca.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/upca.png) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#local) | N/A | [32.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#labelize) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#forge) | [5.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#go) | [5.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#ffi) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#binarykits) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

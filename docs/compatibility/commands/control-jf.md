@@ -2,7 +2,7 @@
 
 # `~JF` – Set Battery Condition
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Controls printer behavior when battery voltage drops below critical levels on PA/PT400 printers. When enabled, printing pauses at low voltage; when disabled, printing continues with risk of data loss.

@@ -2,7 +2,7 @@
 
 # `^JI` – Start ZBI (Zebra BASIC Interpreter)
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Initializes the Zebra BASIC Interpreter (ZBI). Only one ZBI interpreter can be active at a time. Deactivate with ZPL at the ZBI prompt or ~JQ.

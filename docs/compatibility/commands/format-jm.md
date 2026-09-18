@@ -2,7 +2,7 @@
 
 # `^JM` – Set Dots per Millimeter
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Lowers print density: 24→12, 12→6, 8→4, 6→3 dots/mm. Also affects field origin (^FO) placement. Must be entered before the first ^FS in a format.

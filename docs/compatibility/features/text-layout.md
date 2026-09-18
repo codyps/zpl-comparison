@@ -2,7 +2,7 @@
 
 # Text layout
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](../commands/README.md) · [Features](README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](../commands/README.md) · [Features](README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 45 fixtures. Command occurrence counts include setup commands and are not a feature pass rate. Source and execution evidence must be read separately.

@@ -2,7 +2,7 @@
 
 # `~JN` – Head Test Fatal
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Turns on the head test option in fatal mode. Printer halts when a head test failure is encountered and remains in error mode until ~JO is sent or power is cycled.

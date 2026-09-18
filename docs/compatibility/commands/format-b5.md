@@ -2,7 +2,7 @@
 
 # `^B5` – Planet Code Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a Planet Code barcode used by USPS for mail tracking.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [planet](../../../references/barcodes-zd621-v1/planet.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/planet.png) | [15.5% IoU](../../benchmarks/accuracy/images/barcode-planet-local-diff.png) | N/A | [2.7% IoU](../../benchmarks/accuracy/images/barcode-planet-labelize-diff.png) | [2.2% IoU](../../benchmarks/accuracy/images/barcode-planet-forge-diff.png) | [2.9% IoU](../../benchmarks/accuracy/images/barcode-planet-go-diff.png) | [2.9% IoU](../../benchmarks/accuracy/images/barcode-planet-ffi-diff.png) | [2.2% IoU](../../benchmarks/accuracy/images/barcode-planet-binarykits-diff.png) | [59.2% IoU](../../benchmarks/accuracy/images/barcode-planet-zplr-diff.png) | N/A | N/A | N/A |
+| [planet](../../../references/barcodes-zd621-v1/planet.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/planet.png) | [15.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-planet.md#local) | N/A | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-planet.md#labelize) | [2.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-planet.md#forge) | [2.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-planet.md#go) | [2.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-planet.md#ffi) | [2.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-planet.md#binarykits) | [59.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-planet.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

@@ -2,7 +2,7 @@
 
 # zpl-toolchain
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **Rust · Parser and validator · 0.4.1**
@@ -15,7 +15,9 @@ Table-driven command definitions contain argument positions, defaults, ranges an
 
 ## Measured rendering
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-18T07:18:54Z.
+This library does not render incoming ZPL.
+
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

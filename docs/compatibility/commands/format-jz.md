@@ -2,7 +2,7 @@
 
 # `^JZ` – Reprint After Error
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Controls whether a partially printed label caused by a Ribbon Out, Media Out, or Head Open error is reprinted when the error condition is corrected. Remains active until another ^JZ command is sent or the printer is turned off.

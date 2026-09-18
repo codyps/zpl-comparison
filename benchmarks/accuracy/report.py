@@ -17,6 +17,7 @@ import numpy as np  # noqa: E402
 
 sys.path.insert(0, str(ROOT))
 from report import NAMES, table  # noqa: E402
+from accuracy.gallery import generate  # noqa: E402
 
 LIBRARIES = ["local", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
 
@@ -24,6 +25,7 @@ LIBRARIES = ["local", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
 def main():
     dest = Path(sys.argv[1])
     data = json.loads((dest / "results.json").read_text())
+    generate(dest)
     rows = data["results"]
     cases = data["cases"]
     scored = [r for r in rows if r["score"] is not None]
@@ -90,6 +92,7 @@ def main():
     ref = data["fresh_reference"]
     text = [
         "# Accuracy against a real Zebra printer\n",
+        "**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together.\n",
         f"Reference: **{ref['device']}, firmware {ref['firmware']}**, {ref['dpi']} dpi. Fresh captures: {ref['captured_utc']}. Library comparisons: {data['measured_utc']}.\n",
         "[Command/argument support](../command-support.md) · [Run/reproduce](../../../benchmarks/accuracy/README.md) · [Raw measurements](results.json).\n",
         "**This measures fidelity to the printer’s HTTP preview raster, not physical printed/scanned labels.** "
@@ -129,8 +132,8 @@ def main():
         "ZPLr and BinaryKits may use host font fallback; installed font availability can affect other hosts. The Go and Rust-FFI rows share the same renderer, so they are not independent implementations. "
         "A successful process or a recognized command is not evidence that its arguments were honored. Inspect the exact inputs and difference images.\n",
         "## Per-case accuracy and argument comparison\n",
-        "Cells show IoU, or **error**/**blank**. Click a numeric cell for its difference image: black=agreement, magenta=printer only, cyan=library only. "
-        "Neighboring files contain losslessly re-encoded library rasters. Input links show the exact argument values; reference links show the printer raster.\n",
+        "Click any result to compare the printer preview, library render and difference together, or inspect a render error. "
+        "Difference colors: black=agreement, magenta=printer only, cyan=library only. Input links show the exact argument values.\n",
     ]
     for group in groups:
         text.append(f"### {group}\n")
@@ -145,13 +148,12 @@ def main():
                     r for r in rows if r["case"] == case["id"] and r["library"] == n
                 )
                 if r["score"] is None:
-                    values.append("reference blank")
+                    label_text = "reference blank"
                 elif r["status"] != "rendered":
-                    values.append(r["status"])
+                    label_text = r["status"]
                 else:
-                    values.append(
-                        f"[{r['score'] * 100:.1f}%](images/{case['id']}-{n}-diff.png)"
-                    )
+                    label_text = f"{r['score'] * 100:.1f}%"
+                values.append(f"[{label_text}](comparisons/cases/{case['id']}.md#{n})")
             tab.append(
                 [label, case["command"], case["arguments"].replace("|", "/"), *values]
             )

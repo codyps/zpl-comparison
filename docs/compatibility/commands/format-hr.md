@@ -2,7 +2,7 @@
 
 # `^HR` – Calibrate RFID Tag Position
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Initiates RFID tag calibration to determine optimal programming position, antenna element, and read/write power levels for the RFID media being used.

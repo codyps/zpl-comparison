@@ -2,7 +2,7 @@
 
 # `^FE` – Field Concatenation
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Allows field data concatenation and substring extraction by referencing ^FN fields. Use #n# to insert an entire ^FN field, or #n,a,x,y# to insert a substring.

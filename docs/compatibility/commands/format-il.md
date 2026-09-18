@@ -2,7 +2,7 @@
 
 # `^IL` – Image Load
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Loads a stored image at the beginning of a label format and merges it with additional data. The image is always positioned at 0,0. Used with ^IS to overlay constant information with variable data for increased throughput.

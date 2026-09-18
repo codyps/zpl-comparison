@@ -74,8 +74,9 @@ def href(page, target):
     return os.path.relpath(target, page.parent).replace(os.sep, "/")
 
 
-def link(page, target, label):
-    return f"[{label}]({href(page, target)})"
+def link(page, target, label, anchor=None):
+    suffix = f"#{anchor}" if anchor else ""
+    return f"[{label}]({href(page, target)}{suffix})"
 
 
 def table(headers, rows):
@@ -273,6 +274,8 @@ def artifacts(dest=DEST):
                     ("METHODOLOGY.md", "Evidence legend"),
                 ]
             )
+            + " · "
+            + link(page, ACCURACY.parent / "comparisons/README.md", "Compare images")
             + "\n"
         )
 
@@ -309,18 +312,21 @@ def artifacts(dest=DEST):
                     continue
                 r = matches[0]
                 if r["score"] is None:
-                    values.append("Blank reference; unscored")
+                    label_text = "Blank reference; unscored"
                 elif r["status"] == "error":
-                    values.append("Error")
+                    label_text = "Error"
                 else:
-                    values.append(
-                        link(
-                            page,
-                            ACCURACY.parent / "images" / f"{cid}-{lib}-diff.png",
-                            f"{r['score'] * 100:.1f}% IoU"
-                            + (" · exact" if r.get("exact") else ""),
-                        )
+                    label_text = f"{r['score'] * 100:.1f}% IoU" + (
+                        " · exact" if r.get("exact") else ""
                     )
+                values.append(
+                    link(
+                        page,
+                        ACCURACY.parent / "comparisons/cases" / f"{cid}.md",
+                        label_text,
+                        anchor=lib,
+                    )
+                )
             rows.append(
                 [
                     link(page, REPO / c["zpl"], c["name"]),
@@ -542,6 +548,13 @@ def artifacts(dest=DEST):
                 notes(page)[lib],
                 link(page, NOTES, "Maintained argument review and sources"),
                 "## Measured rendering",
+                link(
+                    page,
+                    ACCURACY.parent / "comparisons/libraries" / f"{lib}.md",
+                    "Compare this library's renders with printer previews",
+                )
+                if lib in RENDERERS
+                else "This library does not render incoming ZPL.",
                 accuracy_summary(lib, accuracy["results"])
                 + f". Snapshot: {accuracy['measured_utc']}.",
                 "## Feature groups",

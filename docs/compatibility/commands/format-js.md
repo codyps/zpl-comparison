@@ -2,7 +2,7 @@
 
 # `^JS` – Sensor Select
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Specifies which sensor to use for media detection. Only for use with S4M and some Z Series printers; ignored on ZM400/ZM600 and RZ400/RZ600.

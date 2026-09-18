@@ -2,7 +2,7 @@
 
 # `^LS` – Label Shift
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Shifts all field positions to the left for compatibility with Z-130/Z-220 printer formats. Retained until power-off or new ^LS command.
@@ -30,7 +30,7 @@ Reference parameters: **a**. These describe the reference grammar, not a promise
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-LS](../../../benchmarks/accuracy/reference/layout-LS.zpl) | 20 | [Printer](../../../benchmarks/accuracy/reference/layout-LS.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-layout-LS-local-diff.png) | N/A | [85.1% IoU](../../benchmarks/accuracy/images/argument-layout-LS-labelize-diff.png) | [18.1% IoU](../../benchmarks/accuracy/images/argument-layout-LS-forge-diff.png) | [24.5% IoU](../../benchmarks/accuracy/images/argument-layout-LS-go-diff.png) | [24.5% IoU](../../benchmarks/accuracy/images/argument-layout-LS-ffi-diff.png) | [14.6% IoU](../../benchmarks/accuracy/images/argument-layout-LS-binarykits-diff.png) | [37.1% IoU](../../benchmarks/accuracy/images/argument-layout-LS-zplr-diff.png) | N/A | N/A | N/A |
+| [layout-LS](../../../benchmarks/accuracy/reference/layout-LS.zpl) | 20 | [Printer](../../../benchmarks/accuracy/reference/layout-LS.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#local) | N/A | [85.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#labelize) | [18.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#forge) | [24.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#go) | [24.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#ffi) | [14.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#binarykits) | [37.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LS.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

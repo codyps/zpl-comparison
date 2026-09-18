@@ -2,7 +2,7 @@
 
 # `^PO` – Print Orientation
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Set overall print orientation. Inverts the label format 180 degrees when set to I.
@@ -30,7 +30,7 @@ Reference parameters: **o**. These describe the reference grammar, not a promise
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-PO](../../../benchmarks/accuracy/reference/layout-PO.zpl) | I | [Printer](../../../benchmarks/accuracy/reference/layout-PO.png) | [0.0% IoU](../../benchmarks/accuracy/images/argument-layout-PO-local-diff.png) | N/A | [0.0% IoU](../../benchmarks/accuracy/images/argument-layout-PO-labelize-diff.png) | [52.8% IoU](../../benchmarks/accuracy/images/argument-layout-PO-forge-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-PO-go-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-PO-ffi-diff.png) | [27.2% IoU](../../benchmarks/accuracy/images/argument-layout-PO-binarykits-diff.png) | [0.0% IoU](../../benchmarks/accuracy/images/argument-layout-PO-zplr-diff.png) | N/A | N/A | N/A |
+| [layout-PO](../../../benchmarks/accuracy/reference/layout-PO.zpl) | I | [Printer](../../../benchmarks/accuracy/reference/layout-PO.png) | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#local) | N/A | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#labelize) | [52.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#binarykits) | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

@@ -2,7 +2,7 @@
 
 # `^FT` – Field Typeset
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Set field typeset origin (x,y) using baseline positioning. If x or y is omitted, the position after the last formatted text field is used. Optional z parameter sets justification (0=left, 1=right, 2=auto).
@@ -30,7 +30,7 @@ Reference parameters: **x, y, z**. These describe the reference grammar, not a p
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [ft-baseline](../../../benchmarks/accuracy/reference/ft-baseline.zpl) | x=80,y=100 | [Printer](../../../benchmarks/accuracy/reference/ft-baseline.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-ft-baseline-local-diff.png) | N/A | [59.9% IoU](../../benchmarks/accuracy/images/argument-ft-baseline-labelize-diff.png) | [21.0% IoU](../../benchmarks/accuracy/images/argument-ft-baseline-forge-diff.png) | [85.0% IoU](../../benchmarks/accuracy/images/argument-ft-baseline-go-diff.png) | [85.0% IoU](../../benchmarks/accuracy/images/argument-ft-baseline-ffi-diff.png) | [32.5% IoU](../../benchmarks/accuracy/images/argument-ft-baseline-binarykits-diff.png) | [12.4% IoU](../../benchmarks/accuracy/images/argument-ft-baseline-zplr-diff.png) | N/A | N/A | N/A |
+| [ft-baseline](../../../benchmarks/accuracy/reference/ft-baseline.zpl) | x=80,y=100 | [Printer](../../../benchmarks/accuracy/reference/ft-baseline.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#local) | N/A | [59.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#labelize) | [21.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#forge) | [85.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#go) | [85.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#ffi) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#binarykits) | [12.4% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

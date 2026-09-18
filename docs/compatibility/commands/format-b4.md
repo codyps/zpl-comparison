@@ -2,7 +2,7 @@
 
 # `^B4` – Code 49 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a Code 49 multi-row barcode capable of encoding the full 128-character ASCII set.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, m**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [code49](../../../references/barcodes-zd621-v1/code49.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code49.png) | [38.2% IoU](../../benchmarks/accuracy/images/barcode-code49-local-diff.png) | N/A | [4.9% IoU](../../benchmarks/accuracy/images/barcode-code49-labelize-diff.png) | [5.8% IoU](../../benchmarks/accuracy/images/barcode-code49-forge-diff.png) | [6.0% IoU](../../benchmarks/accuracy/images/barcode-code49-go-diff.png) | [6.0% IoU](../../benchmarks/accuracy/images/barcode-code49-ffi-diff.png) | [5.3% IoU](../../benchmarks/accuracy/images/barcode-code49-binarykits-diff.png) | [38.2% IoU](../../benchmarks/accuracy/images/barcode-code49-zplr-diff.png) | N/A | N/A | N/A |
+| [code49](../../../references/barcodes-zd621-v1/code49.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code49.png) | [38.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#local) | N/A | [4.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#labelize) | [5.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#forge) | [6.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#go) | [6.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#ffi) | [5.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#binarykits) | [38.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

@@ -2,7 +2,7 @@
 
 # `~JO` – Head Test Non-Fatal
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Configures the printer to run the head test with non-fatal error reporting. An error is displayed and printing stops on failure, but user can press PAUSE to bypass. This is the default head test condition.

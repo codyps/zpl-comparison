@@ -2,7 +2,7 @@
 
 # `~WC` – Print Configuration Label
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Generates a printer configuration label containing sensor type, network ID, ZPL mode, firmware version, and descriptive data on R:, E:, B:, and A: devices. Works only when the printer is idle.

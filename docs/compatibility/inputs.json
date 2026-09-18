@@ -2,7 +2,7 @@
   "schema": 1,
   "inputs": {
     "docs/benchmarks/command-support.json": "80d42c25891af4d2d2073bf0179c81a136d4f604407e72502e983647feb881fd",
-    "docs/benchmarks/accuracy/results.json": "314c707e4b8926dcfd298f82f6b8c25af4780c29d3ad4ce73dbec3f7fc8ddf99",
+    "docs/benchmarks/accuracy/results.json": "f14a2499d6ea06667dfca4c8097be466e6c0e00dc25bbb6cbb9ab07cce40b95f",
     "test-data/render-conformance/manifest.json": "ef43f04da37e790b3778eae1f8c07b04c8d76b0bceec739d85f6202082600168",
     "docs/benchmarks/argument-support.md": "6bb9f5005cb521d53a3ff3053b1324fa143fb5b5cc8d324e2aac4a5f4c5efcd6",
     "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
@@ -10,10 +10,10 @@
     "benchmarks/adapters/node/package.json": "863935d7c446fe4a34d5ab329cdf3d44203ccd9765f58a23233f9c9349970647",
     "benchmarks/adapters/dotnet/Comparison.csproj": "dedf04ed99b98e453e2fd9892210bc1becab3e56aad46c315ec8a2264df28a9d",
     "benchmarks/sources.lock.json": "ab11361edbc2f805c2bd33f2a37c785ccf1e43019cb0c181d0ba09a8cc2ed377",
-    "benchmarks/compatibility.py": "97e5a57ba9f9288d3ef7c9c6ba986e38c7a39a01912c6a7295b664db71523315",
+    "benchmarks/compatibility.py": "5809d92141c7985cd64767e9c350e7f973491416fe1f667f330a64ba9ad74a6f",
     "docs/benchmarks/conformance/results.json": "f68147772db8bc88052a37c8cded00b8142a7dae3b2e7d424bd1b99174af962c"
   },
-  "accuracy_measured_utc": "2026-09-18T07:18:54Z",
+  "accuracy_measured_utc": "2026-09-18T23:14:28Z",
   "conformance_measured_utc": "2026-09-18T07:42:26Z",
   "libraries": {
     "toolchain": "0.4.1",

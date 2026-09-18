@@ -2,7 +2,7 @@
 
 # `^TB` – Text Block
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Prints a text block with defined width and height. Features automatic word-wrap. If text exceeds block height, it is truncated. Supports complex text layout features. Preferred over ^FB.

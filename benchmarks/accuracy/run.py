@@ -132,6 +132,9 @@ def main():
     ap.add_argument("--output", type=Path, default=REPO / "docs/benchmarks/accuracy")
     args = ap.parse_args()
     cfg = json.loads((ROOT / "_work/config.json").read_text())
+    missing = set(LIBRARIES) - cfg["commands"].keys()
+    if missing:
+        ap.error(f"Build all rendering adapters first; missing: {sorted(missing)}")
     env = {**os.environ, **cfg["environment"]}
     cases, fresh, old = corpus(args.reference.resolve())
     dest = args.output
@@ -148,6 +151,8 @@ def main():
             key = case["id"] + "-" + name
             output = work / (key + ".png")
             output.unlink(missing_ok=True)
+            for suffix in (".png", "-diff.png"):
+                (dest / "images" / (key + suffix)).unlink(missing_ok=True)
             command = cfg["commands"][name] + [
                 "accuracy",
                 str(case["zpl"]),
