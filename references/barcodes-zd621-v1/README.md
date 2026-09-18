@@ -41,21 +41,6 @@ features; nonblank output alone does not establish a valid encoded symbol.
 These fixtures do not certify scanner readability or identify which side is
 responsible for each mismatch. Independent decoder tests remain necessary.
 
-Following the PDF417 fix, only the `pdf417` and `pdf417_truncated` local/diff
-manifest entries were updated after review; original ZPL and printer PNGs are
-unchanged. Their barcode contents now match the printer, with only the known
-preview canvas/10-dot centering offset remaining. See the separate
-[PDF417 probes](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zebra-http-api/tests/fixtures/pdf417-zd621-v1/README.md) for exact full-image checks at PW832.
-
-The MicroPDF417 fix similarly updates only the three `micropdf417_*` local/diff
-records. Original captures remain unchanged and now match after the same fixed
-preview padding. See [MicroPDF417 probes](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zebra-http-api/tests/fixtures/micropdf417-zd621-v1/README.md).
-
-Code 11, Code 49, Code 93 and Plessey now also match with that padding. Their
-four local/diff records were updated only after exact content comparisons;
-the captured requests and PNG responses are unchanged. See the
-[focused regressions](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zebra-http-api/tests/fixtures/linear-fixes-zd621-v1/README.md).
-
 The explicit strict gate currently fails, intentionally:
 
 ```sh
@@ -79,5 +64,4 @@ This performs 60 sequential preview submissions plus their image fetches, with
 timeouts and same-origin redirects. It does not submit a physical print job.
 A failed capture leaves its partial evidence in place and no final manifest.
 Review new captures and renderer changes before updating the baseline; do not
-automatically bless differences. Specifications and decoder-test limitations
-are documented in [barcodes.md](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/docs/barcodes.md).
+automatically bless differences.
