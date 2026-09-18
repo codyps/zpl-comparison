@@ -1,0 +1,1049 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "device": "ZTC ZD621-203dpi ZPL",
+  "firmware": "V93.21.33Z",
+  "dpi": 203,
+  "host": "http://d7j211001302.bed.einic.org/",
+  "captured_utc": "2026-09-18T07:12:35Z",
+  "method": "printer HTTP Preview Label; not physical print/scan",
+  "cases": [
+    {
+      "name": "font0-height-16",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=16,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "eb469922c4a80a6a2b1212ebf11de8c367e5ec35c03c3155b83c5c5e55974d4c",
+      "png_sha256": "5ccd22463bacce75f04e60334e04356f30fce1d44c05333a3761e1f8f743af4c",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-height-32",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=32,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "bca200c6385de8c066441482f4692bc2695f935b56ab52e74cf9352ccfe70c62",
+      "png_sha256": "9ece2775fb2fc596adbe0f1dc3876a404933c5d109899f9ebcb23f35ac48f6e4",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-height-64",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=64,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "735ed0004cce6b5e009a86c14fae97a70200ba800566046a2b3b7e24c52291b6",
+      "png_sha256": "22f643c147fc9d0a558ae4b3279ebf6a9824f029175c4fe9f6d9c6aa992ab712",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-width-16",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=32,w=16",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "fa4f4302e048fd16dd156a4fcdff380286444accccb509a9c087b8c57e74c2a8",
+      "png_sha256": "d02e66ca1df071e0018fde540d334ac130fbc261c5e97ef00a9dc25efb5e923d",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-width-32",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=32,w=32",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "ed60a593e2ae2f1aa5e77e8818dc9ecb5e74551bafd3c60f54ebba968f0eaaf1",
+      "png_sha256": "9ece2775fb2fc596adbe0f1dc3876a404933c5d109899f9ebcb23f35ac48f6e4",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-width-64",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=32,w=64",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "510d019d7a2be5091a2d4425bdd3c9b2882951aa5d7c9ce8adc3c1b7a831d53c",
+      "png_sha256": "33321a88e6e235ddc518ae56daab35c258a5d66b22f61ffdc9c5558f7a0a9dd9",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-rotation-N",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=32,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "2bf0451a465a284a9d451f65e79ebe8f5874e7b0b87f7e0834145318ee84a883",
+      "png_sha256": "95519f12ab88f4762b8181eec460670e4b3a760ad1e4a0b42182867091099a9a",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-rotation-R",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=R,h=32,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "0cec301e8f46fda0c23793d154562efb1acea87e887c91d0c2ea047edec00e3b",
+      "png_sha256": "581f3010ad190ac650b8bfa6a252e6c6b84f2245ddfdb4c9aa5043c7449c12e5",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-rotation-I",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=I,h=32,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "c493d1fb57c456b5168d0f4f0406c0a64abfe5f88d1dacc3a3575fa8e9f1e080",
+      "png_sha256": "9d5796e767f49384254d2388b812bdcbd0bb862507c1cf0f1bbddf0dd40cb504",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font0-rotation-B",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=0,o=B,h=32,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "7f03cbda541f3fdc729ab816f2234d4a668f5e20e160f959c91921894f81cce0",
+      "png_sha256": "cf280cfa3f5fa4ba8bda5d511b9868e99f0c26bb52903524fd52d0c614cabd4c",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font-A",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=A,o=N,h=32,w=24",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "256b3ea1c76fe4154510647e14ecad9781a48648a2013036a60412dea1a52979",
+      "png_sha256": "262a2f55378072e5580ea9db6fcd50c7ba065385a3b2cfb2f3c1885bda5d4ac7",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "font-D",
+      "group": "text",
+      "command": "^A",
+      "arguments": "font=D,o=N,h=32,w=24",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "5e88df45ef5b831a370c9bc8b98f929f7989cc8bbc501c52c8218af78dd780b3",
+      "png_sha256": "32c659a2c5d2a06fd60e45e0f2a5b1e60553c04a34282886655950cb05503563",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "fo-justify-0",
+      "group": "layout",
+      "command": "^FO",
+      "arguments": "x=220,y=80,z=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "2cda2264fe44ccffc2c869690a6dc8d6cdba34f884ba114ec5e3985f558fafde",
+      "png_sha256": "2d543e357e86af06e6354154b3321905a059efb99b4eed6836dfb59d8bfab2e6",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "fo-justify-1",
+      "group": "layout",
+      "command": "^FO",
+      "arguments": "x=220,y=80,z=1",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "24bf07e68bd2b617ef38a6555246f93b6d091fdeb3ea4b1a30bdf6fde55d44f9",
+      "png_sha256": "aa426cae475678a5b166672066f5b83efb40d48fe0b3469ba80c3c202d721ba8",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "fo-justify-2",
+      "group": "layout",
+      "command": "^FO",
+      "arguments": "x=220,y=80,z=2",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "59fec4843cab4b4f413da1dbf7bdac37edc7a8997c834cd9bc368b2dfa7db45d",
+      "png_sha256": "2d543e357e86af06e6354154b3321905a059efb99b4eed6836dfb59d8bfab2e6",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "ft-baseline",
+      "group": "layout",
+      "command": "^FT",
+      "arguments": "x=80,y=100",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "f0126f630351244f4d16f55f987f5759424ed0e7c9efa26fffb7cbd378fc9211",
+      "png_sha256": "2762774389a89b7eaf70c9343b0622e866a1813d097a366b90f0edcbc42a2e4d",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LH",
+      "group": "layout",
+      "command": "^LH",
+      "arguments": "30,20",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "0d3e5edf1b282d354a5c0b9d206f59488dcbc50bc4c86d4472c82f15e0f1a821",
+      "png_sha256": "bba0c820317ebb5d7cec7a57343a2bac637ccab5d4cf51efc2b423adcb7c1051",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LS",
+      "group": "layout",
+      "command": "^LS",
+      "arguments": "20",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "831d99428ca1cb8f0c2b6b84bd0924896bbd2b84a5727679676b474a57f3fccb",
+      "png_sha256": "10e8b1fda5c9c8b94e978f6185d5f18203b3f6d3431089005cfc66af48e9997e",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LT",
+      "group": "layout",
+      "command": "^LT",
+      "arguments": "20",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "be5788848118b165f15cba7c8f4a973579c52e95ef8b7b08392d99757ca41505",
+      "png_sha256": "cbdd7bb99d9e25c24957dd60625acf3e6647574fbf445e8d1da028867afaafed",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-PO",
+      "group": "layout",
+      "command": "^PO",
+      "arguments": "I",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "8c88d3e1fb8f2d8a72e85a43dc4fc9fc6a052cba6c57b8b9f146c0df952011d9",
+      "png_sha256": "cbdd7bb99d9e25c24957dd60625acf3e6647574fbf445e8d1da028867afaafed",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LR",
+      "group": "layout",
+      "command": "^LR",
+      "arguments": "Y",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "9498266dd3e5a5fd8be86da4a8c84bd6b06947fa3afbd5e0d69e505b8416e1f5",
+      "png_sha256": "cbdd7bb99d9e25c24957dd60625acf3e6647574fbf445e8d1da028867afaafed",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-FW",
+      "group": "layout",
+      "command": "^FW",
+      "arguments": "R",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "a369470aa6ac45cc11c630cc7e6f4e173819ec16b029fbbc7a57bee7bca836b3",
+      "png_sha256": "6a557dafb3000acdc2b46b63f6c6b1f0dbc80281e54c72e8b52dfbcea99fdb2d",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "field-reverse",
+      "group": "layout",
+      "command": "^FR",
+      "arguments": "reverse current field",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "c26f213c221105b79615cccdf37ee7165aa488fd8caede9540eac4d20c600a57",
+      "png_sha256": "a5ee3945b53c9e15fc831e7deaa97085ecef36f32d5f2675c39989f16a5ad28c",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "block-L",
+      "group": "text",
+      "command": "^FB",
+      "arguments": "w=220,lines=3,space=2,align=L,indent=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "96d552f387c3395e5f6a37ed48226277172c7b6f4bd7f9a292ae48f7006c9a81",
+      "png_sha256": "967e4e9d561c07de5f4622be5dbf4e9e9c2e8e947819045ee4fa5eaf7624cf0a",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "block-C",
+      "group": "text",
+      "command": "^FB",
+      "arguments": "w=220,lines=3,space=2,align=C,indent=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "0da57d2b419a233f5a88a6cabcdca33dbe3822170aac0d1fbbe1e8903187ce9b",
+      "png_sha256": "3ff5f611cbe10a11cb1d1509f8c2d4d03908b67d17fac97a3191afb4926bef4e",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "block-R",
+      "group": "text",
+      "command": "^FB",
+      "arguments": "w=220,lines=3,space=2,align=R,indent=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "f521605d5ffe88abcf4b8e0c9ae27baef9b757ab580ff59d24fa8a29f1e93f06",
+      "png_sha256": "69eee3eed23f132bbf4f3cce185b7d507d3dc47617d5f8f5808942e4a9c35665",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "block-J",
+      "group": "text",
+      "command": "^FB",
+      "arguments": "w=220,lines=3,space=2,align=J,indent=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "d98f285e38f3570885e143df8db4f5d6e846f7d98eab04cbb806adf6abd03a5d",
+      "png_sha256": "a9234e67718b304260287bd26263aae9fd8c47d4b442fb0e0d618f49160805d6",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "block-indent",
+      "group": "text",
+      "command": "^FB",
+      "arguments": "indent=20",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "8f26bd08a3ff4cdefc05d7bee63a696d96634f21ec2518e78fb5f31e196691f3",
+      "png_sha256": "a820799d6da49261d20817b8a60bc835511439491c24f3c63703adf2e95e2252",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "block-explicit-break",
+      "group": "text",
+      "command": "^FB",
+      "arguments": "explicit \\& break",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "e415cd10fe933ab7bc581255a818992d48852c99f0f5863f22430b698a633b21",
+      "png_sha256": "13ed0ce989f798e3eef5ef6d41c3390ed536ee6327b24f9316dd6fc2fce4ae25",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "field-hex",
+      "group": "text",
+      "command": "^FH",
+      "arguments": "indicator=_, bytes _41_42_43",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "e81cf882f02f23df820b1e28548a97437aa9249a68646506def6ec814687a537",
+      "png_sha256": "cbdd7bb99d9e25c24957dd60625acf3e6647574fbf445e8d1da028867afaafed",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "variable-data",
+      "group": "text",
+      "command": "^FV",
+      "arguments": "literal field value",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "1da67e50348133c34e2209172e64bd0b3aad249fc6c9197442442baff60ee2e5",
+      "png_sha256": "cbdd7bb99d9e25c24957dd60625acf3e6647574fbf445e8d1da028867afaafed",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "encoding-0",
+      "group": "text",
+      "command": "^CI",
+      "arguments": "encoding=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "1029bc70577d9268d2bdf1d3c78c039acdf37c5794cff79589b6b0df1d47c1b5",
+      "png_sha256": "d7b9fb66bfdad894352e922a8a45f616f83458ac3b252a91e05aed04aac0ce30",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "encoding-27",
+      "group": "text",
+      "command": "^CI",
+      "arguments": "encoding=27",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "2ab44154e5e64092e1b3e1ee371c6005ad8e4aaf314dc238bbbcf4d12ae2dff7",
+      "png_sha256": "d7b9fb66bfdad894352e922a8a45f616f83458ac3b252a91e05aed04aac0ce30",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "encoding-28",
+      "group": "text",
+      "command": "^CI",
+      "arguments": "encoding=28",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "7b3ece757d58892d3222b22510192edc1900787cc7da4f9b36a882bf5ddcf3d3",
+      "png_sha256": "d7b9fb66bfdad894352e922a8a45f616f83458ac3b252a91e05aed04aac0ce30",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "utf8-accent",
+      "group": "text",
+      "command": "^CI",
+      "arguments": "encoding=28; UTF-8 \u00e9",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "f4a412da503cfe81c766787ce0d4c509eaf964bdb936847b7e6055b04445e28b",
+      "png_sha256": "c45301d965a56c8ee10d3e8e273096cfed6d19e428608da01c2b49f2c22830c6",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "box-thickness-1",
+      "group": "shapes",
+      "command": "^GB",
+      "arguments": "w=100,h=60,t=1,color=B,round=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "070a55a991c396a5c231dee84a3448c31c3f748c8a92e2db8b7d26c800572690",
+      "png_sha256": "afeb435202fc3c0231fa94cd7b0d2d3b145df965dfcff03f10f2ff1297d99089",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "box-thickness-4",
+      "group": "shapes",
+      "command": "^GB",
+      "arguments": "w=100,h=60,t=4,color=B,round=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "55b61fbc73a4a60a5302af38235e8a81404412de8bb666b337b0f10966c245b9",
+      "png_sha256": "51ed2e1366e7e3818b9f4ebbbf3516a1b1294fa39271b453bc8a11123113378b",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "box-thickness-60",
+      "group": "shapes",
+      "command": "^GB",
+      "arguments": "w=100,h=60,t=60,color=B,round=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "64251e66b20c99d9612c3aca2b44ed02fcc3a5252822e81ac6b7d82b38b1d373",
+      "png_sha256": "3e600229024f0524ee4c87f58a427f3074d8ff62f6ecdd922fd4e540a2910a39",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "box-round",
+      "group": "shapes",
+      "command": "^GB",
+      "arguments": "round=4",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "456f9fb9a7547af337f2ec4ff75cf8bf2cbe4968422dbd4912baeb9dad30a2fa",
+      "png_sha256": "5cfec07b4b030bf23f854fa33c4ae70c9c73f20c5219f39fec1e6fae1fc39ebe",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "box-white",
+      "group": "shapes",
+      "command": "^GB",
+      "arguments": "color=W",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "30add8f993851fe786f4892d3b115bb50daf76bbe0df213ba57ae11182e928ea",
+      "png_sha256": "226ba0be1691502b8c3985447be8a2c0b831cd48f5c3f95d7fd46330665886d1",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "shape-GC-B",
+      "group": "shapes",
+      "command": "^GC",
+      "arguments": "80,3,B",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "2eb48c206234c4db6d085266c07f4f0628521f6379c726b812809ca812a658b2",
+      "png_sha256": "36640c9532bcfb4e53477efea92268c01b5b421f13f8e1257bd98cc561682010",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "shape-GE-B",
+      "group": "shapes",
+      "command": "^GE",
+      "arguments": "120,60,3,B",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "8d337bd1ec5dc7429b14fa32baebf3ab6dd67da41ab646f4cd19c72e193a92ce",
+      "png_sha256": "e0c24aacfdbfd45695295bc00e54b8b8bdf5d20c06c65a98b34352e2f9177cb8",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "shape-GD-R",
+      "group": "shapes",
+      "command": "^GD",
+      "arguments": "120,60,3,B,R",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "14177feedeaed52719630dceebdc02e1cdd04ef978f126253cea950a808e5e78",
+      "png_sha256": "06fbf127a59d5afc67e93b40627e8f57486e005b2cca9cccd98903ecae5da56c",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "shape-GD-L",
+      "group": "shapes",
+      "command": "^GD",
+      "arguments": "120,60,3,B,L",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "10945b52c687b4547816e4d8f8fc55f623a270dd46ce8dcac4ee4e07aa57f0a3",
+      "png_sha256": "827ae46ba5c8640ad4493feb6303c29a0dab4272ea283d52f51392ed70888098",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "graphic-hex",
+      "group": "graphics",
+      "command": "^GF",
+      "arguments": "A,8,8,1; raw hex",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "e228c0eebc8073ce05f102712173d15568b351410ac696fc17f38bed63bafeed",
+      "png_sha256": "581d40033b5e51bb3838fceb81213300d043c6b19db7a39190b3e406bbb0dfef",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "graphic-binary",
+      "group": "graphics",
+      "command": "^GF",
+      "arguments": "B,8,8,1; ASCII binary bytes",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "c47605fc0b258bea2e8025d7e1ba64500d5818e2368b17c5868da643dcf46ed2",
+      "png_sha256": "38f7a6982081af347a7d2ab4ad21641fb685f5570ba4d42e67e0bcaf5bd74c3c",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "graphic-B64",
+      "group": "graphics",
+      "command": "^GF",
+      "arguments": "A,8,8,1; B64, CRC16",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "5fdcc96060f5e956caed82c039e7b6faf9f93b2a6bf0cf91fc1933731ea9b111",
+      "png_sha256": "581d40033b5e51bb3838fceb81213300d043c6b19db7a39190b3e406bbb0dfef",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "graphic-Z64",
+      "group": "graphics",
+      "command": "^GF",
+      "arguments": "A,8,8,1; Z64, CRC16",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "f69a41903d9f1df15017eb734821eaaff0a0fe0cc1ebbb1c21f70f75ddb71d46",
+      "png_sha256": "581d40033b5e51bb3838fceb81213300d043c6b19db7a39190b3e406bbb0dfef",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code39-ratio-2",
+      "group": "barcode-arguments",
+      "command": "^BY",
+      "arguments": "w=2,ratio=2,height=60",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "1bc7236f6236e875a74d530873ee6c0d7dcd0b64cd524c6c7facfa7bf48d3903",
+      "png_sha256": "e0f5516fea3f11bace4082bb798bfd5edc04d354159e6dd569cb665d523ff68d",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code39-ratio-3",
+      "group": "barcode-arguments",
+      "command": "^BY",
+      "arguments": "w=2,ratio=3,height=60",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "028a4e98e7218ade59bf2f0614e38c8a4718e09021e9864397f2a09635ec148a",
+      "png_sha256": "6038dab27d423f12b2d641e83ba299cddfbc8338c65ba14b132b50ce5c90e4e9",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code39-check-N",
+      "group": "barcode-arguments",
+      "command": "^B3",
+      "arguments": "o=N,check=N,h=60,readable=N",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "bf4cc83be021fb3737034ebef71328acd6264818388a91ef7a91af167aedcbce",
+      "png_sha256": "6038dab27d423f12b2d641e83ba299cddfbc8338c65ba14b132b50ce5c90e4e9",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code39-check-Y",
+      "group": "barcode-arguments",
+      "command": "^B3",
+      "arguments": "o=N,check=Y,h=60,readable=N",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "f54ec1af114172a18ddb9e3a5cc518d71e7dbf7d642d34bfb329ab6f874926bc",
+      "png_sha256": "1368db60483da997ebc623e0e09bbd29e0b272dc1f8e0ed0164efaea5196847f",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-text-NN",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "h=60,interpretation=N,above=N",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "9e906dfcf5462878dd46eb138f238e92a85f43ab4b3cd52c018ea08640b35ec8",
+      "png_sha256": "b99ee78c67ab55fb2f21f47aff965dcd7123034323528963d1011f4f949f4be4",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-text-YN",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "h=60,interpretation=Y,above=N",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "7e4cc1552c37ed1467fc9ad3ef4c7bcfb51345a793d3c535c035ba104ed3bb01",
+      "png_sha256": "c4fb67c68eee8908854fe0ea519e3fc7673fcbd345a8921a4c637b448207bf06",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-text-YY",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "h=60,interpretation=Y,above=Y",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "5fd32597c24df42dc1fe26627cf36dc852b42b8fc4c7d954c208ff8c6448dd8d",
+      "png_sha256": "e8a91f2259065669d2afd93bcf3057d297ca87807d5e5a2adc426e5f554e22bc",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-rotation-R",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "o=R,h=60",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "540fef005601c85fd6f38985a2eb065217afc65fe3c9140a17035e4c6cd57550",
+      "png_sha256": "b4edb8dedf49d2bf34a2970b112028a7cddb3a7a182763d8b6363677e2b2c791",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-rotation-I",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "o=I,h=60",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "369055e443cb3f002be460dd6c88807582c7184b7b0dae5430cb5d37a2dd58dd",
+      "png_sha256": "2f292eb63fbad898b0fd4ae1f8449bbd7255189f49b0d3a7d99a00a6d5dfb88b",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-rotation-B",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "o=B,h=60",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "c9ae4272ef79567791f0e72d31635f444638fa20b87723a53015db3dbb57b467",
+      "png_sha256": "58204533ae25dc56a7986e12bda4f2e61bdeb47f1d57657515bf7980257f8f3d",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-mode-N",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "mode=N",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "b17bd9550d6bd0351331620672c90e54c9910765be4eb4da14063c4ed19bfeb9",
+      "png_sha256": "63745e9b2850dd9566b957faa1d8613b04544b1e5c7ab54c613bf836e89c6527",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "code128-mode-A",
+      "group": "barcode-arguments",
+      "command": "^BC",
+      "arguments": "mode=A",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "812e6da0e18c54ad3cb61150852987d649d6c699306299dc817ec8c6767a4b48",
+      "png_sha256": "cb212ee7ec9bf25314050820ee2944b0fd1e96852b2188221bb73f10b6fa1c7c",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-model-1",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "o=N,model=1,magnification=3,EC=L,mask=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "d150de931c74fb6f068869500db178f2a2cc46b2835262db6128ae29d33b5799",
+      "png_sha256": "7b15b7b9dca570f7178005d88d62273b57e5f1df60f3fd620cb2e77e4c0ebad6",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-model-2",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "o=N,model=2,magnification=3,EC=L,mask=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "20a33598bb1976b6792b399df77ea5eeafefe991e51d0cc7cfdec6a2a62d8740",
+      "png_sha256": "aec9b1705bba044ca8bdc2c30f708c9d61c7fd9c1e45d080bfbb0f02aa60ca4e",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-ec-L",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "model=2,magnification=3,EC=L,mask=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "20a33598bb1976b6792b399df77ea5eeafefe991e51d0cc7cfdec6a2a62d8740",
+      "png_sha256": "aec9b1705bba044ca8bdc2c30f708c9d61c7fd9c1e45d080bfbb0f02aa60ca4e",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-ec-M",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "model=2,magnification=3,EC=M,mask=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "6f9aa2cd1a38c00410e501a117a8b1b75da6543680b10b56479b75d1d5b10a2e",
+      "png_sha256": "8a86e40047c52ae5e6ef688642087ce60026702f7663ddf654d1a47e5118ea23",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-ec-Q",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "model=2,magnification=3,EC=Q,mask=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "0664b71de65470bcb4010a4fe6badc44613163072e894433533dff9f9ac6ad63",
+      "png_sha256": "9fd6cde62ab79651c6e13c0eb02e58a65cedaf26eb0401e042bd039a3207bed8",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-ec-H",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "model=2,magnification=3,EC=H,mask=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "a2337e72420fee2a4e196ad39e5e7fe22f1decc24b4134f1175857f0046bbbc5",
+      "png_sha256": "9d5d635902aee9aa9c2e27104043dd6fb7b438821c77a250e291661c3699b671",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-module-2",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "magnification=2",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "3b567f6659d35eca3331652be0edb9637f4a66c85133e3d10e8e4426ef755f7a",
+      "png_sha256": "14299503ba96aa5f3d06f275d629244358a9a195cb7cb0f357b80350cea0d64f",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-module-5",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "magnification=5",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "6e2816b158dcae7a42c4f8b86cc5122405b26be17d4def261f9cbee9fdecb714",
+      "png_sha256": "6b3525d14983006502460d4c94874f391ffb8a39bf0b731402745ff15c934873",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-mask-0",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "mask=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "20a33598bb1976b6792b399df77ea5eeafefe991e51d0cc7cfdec6a2a62d8740",
+      "png_sha256": "aec9b1705bba044ca8bdc2c30f708c9d61c7fd9c1e45d080bfbb0f02aa60ca4e",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-mask-3",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "mask=3",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "4fabd53392d630e7d457feda26fcb32a35ab0abd30535619084304caef11e29e",
+      "png_sha256": "aec9b1705bba044ca8bdc2c30f708c9d61c7fd9c1e45d080bfbb0f02aa60ca4e",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "qr-mask-7",
+      "group": "barcode-arguments",
+      "command": "^BQ",
+      "arguments": "mask=7",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "6f413e4b613b90233119e4a2277e40ba41fab7f13a2dbb7f4ee03ab9251290f0",
+      "png_sha256": "aec9b1705bba044ca8bdc2c30f708c9d61c7fd9c1e45d080bfbb0f02aa60ca4e",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "datamatrix-module-2",
+      "group": "barcode-arguments",
+      "command": "^BX",
+      "arguments": "o=N,module=2,quality=200",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "02b99d8e64712d6037bae94ccdda81f2f0d3fdd2d68195fc38e6c9af20b230e1",
+      "png_sha256": "de5c453485cd55c362e92685b0df48246692c9412615512f7695ba25b8de5167",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "datamatrix-module-4",
+      "group": "barcode-arguments",
+      "command": "^BX",
+      "arguments": "o=N,module=4,quality=200",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "efd0a085d86210fcbc1d5d0cd5a47a413f8a0d96fdd826084e915672f92de49f",
+      "png_sha256": "c52813968fcae69dabd201785088ea1a688fb4312aa246bc8a2fee766b1a521a",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "repeat-end",
+      "group": "repeatability",
+      "command": "^A",
+      "arguments": "font=0,o=N,h=16,w=0",
+      "width": 832,
+      "height": 300,
+      "zpl_sha256": "eb469922c4a80a6a2b1212ebf11de8c367e5ec35c03c3155b83c5c5e55974d4c",
+      "png_sha256": "5ccd22463bacce75f04e60334e04356f30fce1d44c05333a3761e1f8f743af4c",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    }
+  ],
+  "repeat_pixels_equal": true
+}
