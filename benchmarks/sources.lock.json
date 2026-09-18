@@ -1,0 +1,40 @@
+{
+  "go-zpl": {
+    "url": "https://github.com/StirlingMarketingGroup/go-zpl",
+    "rev": "78b181940c76efa25571c48a2257a130e48a6191"
+  },
+  "BinaryKits.Zpl": {
+    "url": "https://github.com/BinaryKits/BinaryKits.Zpl",
+    "rev": "9d316458c33c90608859cc935d3ba1e0c7587be7"
+  },
+  "python-zpl": {
+    "url": "https://github.com/cod3monk/zpl",
+    "rev": "9bbeca05aa42e41576bf43ee3ae7ec268a3df032"
+  },
+  "zplr": {
+    "url": "https://github.com/le2ni/zplr",
+    "rev": "1c94eadfc5afb494b4c92dd10ad4808bd3d19529"
+  },
+  "jszpl": {
+    "url": "https://github.com/DanieLeeuwner/JSZPL",
+    "rev": "53c916717c0dfdb1e6bca266eb6280c8f156c6ca"
+  },
+  "zpl-toolchain": {
+    "url": "https://github.com/trevordcampbell/zpl-toolchain",
+    "rev": "3da58518c1013fffd46d2147b0927a1d5b4aeab5"
+  },
+  "labelize": {
+    "url": "https://github.com/GOODBOY008/labelize",
+    "rev": "75cc2b3619ff9155269703372cb3c895f6ad6057"
+  },
+  "zpl-forge": {
+    "url": "https://github.com/rafael-arreola/zpl-forge",
+    "rev": "1bed1721cf8dde70e4f304710b923b0efc7f600a"
+  },
+  "zpl": {
+    "url": "https://github.com/codyps/zpl",
+    "fetch_url": "git@github.com:codyps/zpl.git",
+    "rev": "280fc0cf4d0a49c916463d936e4307a2a226928e",
+    "version": "0.1.0"
+  }
+}

@@ -1,0 +1,2 @@
+# Fixtures include counted binary fields, CR/LF probes and hash-verified bytes.
+cases/**/*.zpl -text

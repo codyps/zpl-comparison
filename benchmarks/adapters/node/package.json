@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "jszpl": "2.0.1",
+    "zplr": "0.3.0",
+    "skia-canvas": "3.0.8"
+  }
+}
