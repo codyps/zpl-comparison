@@ -1,0 +1,5 @@
+_*
+**/__pycache__/
+**/.ruff_cache/
+**/target/
+.DS_Store

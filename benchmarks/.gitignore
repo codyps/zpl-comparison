@@ -1,0 +1,5 @@
+_work/
+adapters/node/node_modules/
+adapters/dotnet/bin/
+adapters/dotnet/obj/
+__pycache__/
