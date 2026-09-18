@@ -2,7 +2,7 @@
 
 # Python ZPL
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **Python · Typed generator · source 9bbeca05aa42**
@@ -15,7 +15,9 @@ Text supports orientation/font dimensions, block L/C/R/J and hanging indent. Fon
 
 ## Measured rendering
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-18T07:18:54Z.
+This library does not render incoming ZPL.
+
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

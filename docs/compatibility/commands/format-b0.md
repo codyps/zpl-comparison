@@ -2,7 +2,7 @@
 
 # `^B0` – Aztec Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print an Aztec two-dimensional matrix barcode with configurable magnification, error correction, and structured append.
@@ -30,7 +30,7 @@ Reference parameters: **a, b, c, d, e, f, g**. These describe the reference gram
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [aztec_alias](../../../references/barcodes-zd621-v1/aztec_alias.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_alias.png) | [30.9% IoU](../../benchmarks/accuracy/images/barcode-aztec_alias-local-diff.png) | N/A | [8.8% IoU](../../benchmarks/accuracy/images/barcode-aztec_alias-labelize-diff.png) | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec_alias-forge-diff.png) | [10.6% IoU](../../benchmarks/accuracy/images/barcode-aztec_alias-go-diff.png) | [10.6% IoU](../../benchmarks/accuracy/images/barcode-aztec_alias-ffi-diff.png) | [11.1% IoU](../../benchmarks/accuracy/images/barcode-aztec_alias-binarykits-diff.png) | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec_alias-zplr-diff.png) | N/A | N/A | N/A |
+| [aztec_alias](../../../references/barcodes-zd621-v1/aztec_alias.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_alias.png) | [30.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#local) | N/A | [8.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#labelize) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#forge) | [10.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#go) | [10.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#ffi) | [11.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#binarykits) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

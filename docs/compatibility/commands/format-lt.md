@@ -2,7 +2,7 @@
 
 # `^LT` – Label Top
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Moves the entire label format up or down relative to the top edge of the label for fine-tuning position without changing other parameters.
@@ -30,7 +30,7 @@ Reference parameters: **x**. These describe the reference grammar, not a promise
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-LT](../../../benchmarks/accuracy/reference/layout-LT.zpl) | 20 | [Printer](../../../benchmarks/accuracy/reference/layout-LT.png) | [6.6% IoU](../../benchmarks/accuracy/images/argument-layout-LT-local-diff.png) | N/A | [6.7% IoU](../../benchmarks/accuracy/images/argument-layout-LT-labelize-diff.png) | [52.8% IoU](../../benchmarks/accuracy/images/argument-layout-LT-forge-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-LT-go-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-LT-ffi-diff.png) | [27.2% IoU](../../benchmarks/accuracy/images/argument-layout-LT-binarykits-diff.png) | [5.1% IoU](../../benchmarks/accuracy/images/argument-layout-LT-zplr-diff.png) | N/A | N/A | N/A |
+| [layout-LT](../../../benchmarks/accuracy/reference/layout-LT.zpl) | 20 | [Printer](../../../benchmarks/accuracy/reference/layout-LT.png) | [6.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LT.md#local) | N/A | [6.7% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LT.md#labelize) | [52.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LT.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LT.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LT.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LT.md#binarykits) | [5.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LT.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

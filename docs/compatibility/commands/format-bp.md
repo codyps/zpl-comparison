@@ -2,7 +2,7 @@
 
 # `^BP` – Plessey Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a Plessey barcode, a pulse-width modulated continuous non-self-checking symbology.
@@ -30,7 +30,7 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [plessey](../../../references/barcodes-zd621-v1/plessey.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/plessey.png) | [19.2% IoU](../../benchmarks/accuracy/images/barcode-plessey-local-diff.png) | N/A | [2.1% IoU](../../benchmarks/accuracy/images/barcode-plessey-labelize-diff.png) | [1.7% IoU](../../benchmarks/accuracy/images/barcode-plessey-forge-diff.png) | [1.9% IoU](../../benchmarks/accuracy/images/barcode-plessey-go-diff.png) | [1.9% IoU](../../benchmarks/accuracy/images/barcode-plessey-ffi-diff.png) | [2.5% IoU](../../benchmarks/accuracy/images/barcode-plessey-binarykits-diff.png) | [35.2% IoU](../../benchmarks/accuracy/images/barcode-plessey-zplr-diff.png) | N/A | N/A | N/A |
+| [plessey](../../../references/barcodes-zd621-v1/plessey.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/plessey.png) | [19.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#local) | N/A | [2.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#labelize) | [1.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#forge) | [1.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#go) | [1.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#ffi) | [2.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#binarykits) | [35.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

@@ -2,7 +2,7 @@
 
 # `~DB` – Download Bitmap Font
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Downloads a bitmap font to the printer defining native cell size, baseline, space size, and character data. Consists of a ZPL II command defining the font followed by structured data for each character.

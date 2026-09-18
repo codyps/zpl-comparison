@@ -2,7 +2,7 @@
 
 # `^FX` – Comment
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Non-printing comment. Any data after ^FX is treated as a comment and not processed until the next caret (^) or tilde (~) command prefix is encountered. Avoid using ^ or ~ within the comment text.

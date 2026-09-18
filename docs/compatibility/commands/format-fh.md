@@ -2,7 +2,7 @@
 
 # `^FH` – Field Hexadecimal Indicator
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Enable hexadecimal escape indicator for field data (default '_').
@@ -30,7 +30,7 @@ Reference parameters: **i**. These describe the reference grammar, not a promise
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [field-hex](../../../benchmarks/accuracy/reference/field-hex.zpl) | indicator=_, bytes _41_42_43 | [Printer](../../../benchmarks/accuracy/reference/field-hex.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-field-hex-local-diff.png) | N/A | [85.1% IoU](../../benchmarks/accuracy/images/argument-field-hex-labelize-diff.png) | [52.8% IoU](../../benchmarks/accuracy/images/argument-field-hex-forge-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-field-hex-go-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-field-hex-ffi-diff.png) | [27.2% IoU](../../benchmarks/accuracy/images/argument-field-hex-binarykits-diff.png) | [37.1% IoU](../../benchmarks/accuracy/images/argument-field-hex-zplr-diff.png) | N/A | N/A | N/A |
+| [field-hex](../../../benchmarks/accuracy/reference/field-hex.zpl) | indicator=_, bytes _41_42_43 | [Printer](../../../benchmarks/accuracy/reference/field-hex.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-field-hex.md#local) | N/A | [85.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-hex.md#labelize) | [52.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-hex.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-hex.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-hex.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-hex.md#binarykits) | [37.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-hex.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

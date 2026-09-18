@@ -2,7 +2,7 @@
 
 # `^SO` – Set Offset (for Real-Time Clock)
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Sets the secondary or tertiary offset from the primary Real-Time Clock, allowing different date/time values to appear on the same label.

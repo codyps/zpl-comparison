@@ -2,7 +2,7 @@
 
 # `^BI` – Industrial 2 of 5 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print an Industrial 2 of 5 barcode, a discrete self-checking numeric symbology.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [industrial2of5](../../../references/barcodes-zd621-v1/industrial2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/industrial2of5.png) | [46.7% IoU](../../benchmarks/accuracy/images/barcode-industrial2of5-local-diff.png) | N/A | [3.1% IoU](../../benchmarks/accuracy/images/barcode-industrial2of5-labelize-diff.png) | [2.1% IoU](../../benchmarks/accuracy/images/barcode-industrial2of5-forge-diff.png) | [3.4% IoU](../../benchmarks/accuracy/images/barcode-industrial2of5-go-diff.png) | [3.4% IoU](../../benchmarks/accuracy/images/barcode-industrial2of5-ffi-diff.png) | [3.1% IoU](../../benchmarks/accuracy/images/barcode-industrial2of5-binarykits-diff.png) | [46.7% IoU](../../benchmarks/accuracy/images/barcode-industrial2of5-zplr-diff.png) | N/A | N/A | N/A |
+| [industrial2of5](../../../references/barcodes-zd621-v1/industrial2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/industrial2of5.png) | [46.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#local) | N/A | [3.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#labelize) | [2.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#forge) | [3.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#go) | [3.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#ffi) | [3.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#binarykits) | [46.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

@@ -2,7 +2,7 @@
 
 # `~JD` – Enable Communications Diagnostics
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Initiates Diagnostic Mode, producing an ASCII printout of all characters received by the printer including ASCII characters, hexadecimal values, and any communication errors.

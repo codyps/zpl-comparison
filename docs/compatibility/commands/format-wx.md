@@ -2,7 +2,7 @@
 
 # `^WX` – Configure Wireless Securities
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Configures wireless security settings. The required parameters depend on the selected security type. Replaces ^WE, ^WL, and other individual security commands.

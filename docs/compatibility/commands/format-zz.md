@@ -2,7 +2,7 @@
 
 # `^ZZ` – Printer Sleep
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Sets the printer to sleep mode or wakes it from sleep mode. Sleep mode reduces power consumption when the printer is idle. The printer can be awakened by sending print data or other commands.

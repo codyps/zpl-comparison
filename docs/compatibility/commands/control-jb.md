@@ -2,7 +2,7 @@
 
 # `~JB` – Reset Optional Memory
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Resets battery-powered optional memory (B: card). Must be sent if the battery supplying power to the memory card is replaced. Can also be used to reinitialize the B: memory card (card must not be write protected).

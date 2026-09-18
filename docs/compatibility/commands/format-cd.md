@@ -2,7 +2,7 @@
 
 # `^CD` – Change Delimiter Character
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Changes the parameter delimiter character from the default comma (,) to any other ASCII character. Affects all subsequent commands that use parameter separation.

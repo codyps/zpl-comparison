@@ -76,6 +76,8 @@ jobs:
       - name: Compare printer accuracy offline
         id: accuracy
         run: benchmarks/_work/venv/bin/python benchmarks/accuracy/run.py
+      - name: Verify comparison pages and images
+        run: benchmarks/_work/venv/bin/python benchmarks/accuracy/gallery.py docs/benchmarks/accuracy --check
       - name: Exercise rendering conformance corpus
         id: conformance
         run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only local --include-invalid --output docs/benchmarks/conformance
@@ -105,6 +107,8 @@ jobs:
           path: |
             docs/benchmarks/
             docs/compatibility/
+            benchmarks/accuracy/reference/
+            references/barcodes-zd621-v1/
       - name: Fail on adapter errors after preserving the report
         run: |
           python - <<'PY'

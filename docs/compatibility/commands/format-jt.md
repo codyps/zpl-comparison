@@ -2,7 +2,7 @@
 
 # `^JT` – Head Test Interval
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Changes the printhead test interval. Supports testing a range of print elements. The printer automatically selects the test range by tracking which elements have been used since the previous test.

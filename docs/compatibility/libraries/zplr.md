@@ -2,7 +2,7 @@
 
 # ZPLr
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **TypeScript · Parser and renderer · 0.3.0**
@@ -15,7 +15,9 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 
 ## Measured rendering
 
-22/132 exact; mean IoU 42.7%; 0 errors. Snapshot: 2026-09-18T07:18:54Z.
+[Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/zplr.md)
+
+22/132 exact; mean IoU 42.7%; 0 errors. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

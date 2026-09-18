@@ -2,7 +2,7 @@
 
 # `^BE` – EAN-13 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print an EAN-13 barcode widely used in Europe and Japan for retail packaging.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [ean13](../../../references/barcodes-zd621-v1/ean13.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/ean13.png) | [23.8% IoU](../../benchmarks/accuracy/images/barcode-ean13-local-diff.png) | N/A | [23.5% IoU](../../benchmarks/accuracy/images/barcode-ean13-labelize-diff.png) | [23.8% IoU](../../benchmarks/accuracy/images/barcode-ean13-forge-diff.png) | [5.6% IoU](../../benchmarks/accuracy/images/barcode-ean13-go-diff.png) | [5.6% IoU](../../benchmarks/accuracy/images/barcode-ean13-ffi-diff.png) | [23.8% IoU](../../benchmarks/accuracy/images/barcode-ean13-binarykits-diff.png) | [23.8% IoU](../../benchmarks/accuracy/images/barcode-ean13-zplr-diff.png) | N/A | N/A | N/A |
+| [ean13](../../../references/barcodes-zd621-v1/ean13.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/ean13.png) | [23.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean13.md#local) | N/A | [23.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean13.md#labelize) | [23.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean13.md#forge) | [5.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean13.md#go) | [5.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean13.md#ffi) | [23.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean13.md#binarykits) | [23.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean13.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

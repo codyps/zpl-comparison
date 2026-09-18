@@ -2,7 +2,7 @@
 
 # `~WR` – Reset Wireless Radio Card
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Reinitializes the wireless radio card and the print server (wired or wireless), causing any wireless radio card to reassociate to the wireless network.

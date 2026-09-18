@@ -2,7 +2,7 @@
 
 # `^PF` – Slew Given Number of Dot Rows
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Causes the printer to slew (move at high speed without printing) a specified number of dot rows from the bottom of the label, allowing faster printing when the bottom portion is blank.

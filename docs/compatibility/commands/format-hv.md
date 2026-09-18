@@ -2,7 +2,7 @@
 
 # `^HV` – Host Verification
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Returns data from specified fields, along with an optional ASCII header, to the host computer. Used with fields assigned a number via ^FN or ^RF commands.

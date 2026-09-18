@@ -2,7 +2,7 @@
 
 # `~NT` – Set Currently Connected Printer Transparent
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Sets the currently connected network printer to be transparent. With Z Series printers, functions the same as ~NR. Used only with RS-485 printer communications.

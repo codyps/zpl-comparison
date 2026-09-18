@@ -2,7 +2,7 @@
 
 # `^FV` – Field Data
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Begin field data; content continues until ^FS. ^FD supplies fixed data, ^FV supplies variable data that can be overridden at print time.
@@ -30,7 +30,7 @@ Reference parameters: **data**. These describe the reference grammar, not a prom
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [variable-data](../../../benchmarks/accuracy/reference/variable-data.zpl) | literal field value | [Printer](../../../benchmarks/accuracy/reference/variable-data.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-variable-data-local-diff.png) | N/A | [85.1% IoU](../../benchmarks/accuracy/images/argument-variable-data-labelize-diff.png) | [0.0% IoU](../../benchmarks/accuracy/images/argument-variable-data-forge-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-variable-data-go-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-variable-data-ffi-diff.png) | [27.2% IoU](../../benchmarks/accuracy/images/argument-variable-data-binarykits-diff.png) | [37.1% IoU](../../benchmarks/accuracy/images/argument-variable-data-zplr-diff.png) | N/A | N/A | N/A |
+| [variable-data](../../../benchmarks/accuracy/reference/variable-data.zpl) | literal field value | [Printer](../../../benchmarks/accuracy/reference/variable-data.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-variable-data.md#local) | N/A | [85.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-variable-data.md#labelize) | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-variable-data.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-variable-data.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-variable-data.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-variable-data.md#binarykits) | [37.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-variable-data.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

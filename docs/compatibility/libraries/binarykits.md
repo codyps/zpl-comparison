@@ -2,7 +2,7 @@
 
 # BinaryKits.Zpl Viewer
 
-[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 **.NET · Parser and renderer · 1.3.1**
@@ -15,7 +15,9 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 
 ## Measured rendering
 
-18/132 exact; mean IoU 31.8%; 0 errors. Snapshot: 2026-09-18T07:18:54Z.
+[Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/binarykits.md)
+
+18/132 exact; mean IoU 31.8%; 0 errors. Snapshot: 2026-09-18T23:14:28Z.
 
 ## Feature groups
 

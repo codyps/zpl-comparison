@@ -2,7 +2,7 @@
 
 # `^CN` – Cut Now
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Causes the printer to cycle the media cutter. Only effective in Kiosk print mode (^MMK). The command is ignored if parameters are missing or invalid.

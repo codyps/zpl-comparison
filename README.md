@@ -2,6 +2,7 @@
 
 Repeatable comparisons of ZPL parsers, generators and renderers, with performance, memory, deployment size and printer-reference accuracy measurements.
 
+- **[Compare library renders with printer previews](docs/benchmarks/accuracy/comparisons/README.md)**: browse by library or case; see the printer, render and difference together.
 - [Results, plots and tables](docs/benchmarks/README.md)
 - [Browse support by library, command or feature](docs/compatibility/README.md)
 - [Rendering conformance corpus](test-data/render-conformance/README.md)

@@ -2,7 +2,7 @@
 
 # `~JQ` – Terminate Zebra BASIC Interpreter
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Terminates an active ZBI (Zebra BASIC Interpreter) session. Entering ZPL at the command prompt also terminates a ZBI session.

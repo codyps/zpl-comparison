@@ -2,7 +2,7 @@
 
 # `^BA` – Code 93 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a Code 93 barcode, a variable-length continuous symbology using the full 128-character ASCII set.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [code93](../../../references/barcodes-zd621-v1/code93.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code93.png) | [28.9% IoU](../../benchmarks/accuracy/images/barcode-code93-local-diff.png) | N/A | [3.1% IoU](../../benchmarks/accuracy/images/barcode-code93-labelize-diff.png) | [21.0% IoU](../../benchmarks/accuracy/images/barcode-code93-forge-diff.png) | [3.5% IoU](../../benchmarks/accuracy/images/barcode-code93-go-diff.png) | [3.5% IoU](../../benchmarks/accuracy/images/barcode-code93-ffi-diff.png) | [21.0% IoU](../../benchmarks/accuracy/images/barcode-code93-binarykits-diff.png) | [21.0% IoU](../../benchmarks/accuracy/images/barcode-code93-zplr-diff.png) | N/A | N/A | N/A |
+| [code93](../../../references/barcodes-zd621-v1/code93.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code93.png) | [28.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code93.md#local) | N/A | [3.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code93.md#labelize) | [21.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code93.md#forge) | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code93.md#go) | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code93.md#ffi) | [21.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code93.md#binarykits) | [21.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code93.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

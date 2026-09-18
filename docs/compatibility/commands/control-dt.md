@@ -2,7 +2,7 @@
 
 # `~DT` – Download Bounded TrueType Font
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Downloads a bounded TrueType font (fewer than 256 characters) converted via ZTools. Data is a string of ASCII hexadecimal values where the total count must match the size parameter.

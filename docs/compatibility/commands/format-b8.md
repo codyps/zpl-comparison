@@ -2,7 +2,7 @@
 
 # `^B8` – EAN-8 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print an EAN-8 barcode, the shortened version of EAN-13.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [ean8](../../../references/barcodes-zd621-v1/ean8.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/ean8.png) | [27.5% IoU](../../benchmarks/accuracy/images/barcode-ean8-local-diff.png) | N/A | [27.0% IoU](../../benchmarks/accuracy/images/barcode-ean8-labelize-diff.png) | [27.5% IoU](../../benchmarks/accuracy/images/barcode-ean8-forge-diff.png) | [4.4% IoU](../../benchmarks/accuracy/images/barcode-ean8-go-diff.png) | [4.4% IoU](../../benchmarks/accuracy/images/barcode-ean8-ffi-diff.png) | [4.1% IoU](../../benchmarks/accuracy/images/barcode-ean8-binarykits-diff.png) | [27.5% IoU](../../benchmarks/accuracy/images/barcode-ean8-zplr-diff.png) | N/A | N/A | N/A |
+| [ean8](../../../references/barcodes-zd621-v1/ean8.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/ean8.png) | [27.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean8.md#local) | N/A | [27.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean8.md#labelize) | [27.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean8.md#forge) | [4.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean8.md#go) | [4.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean8.md#ffi) | [4.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean8.md#binarykits) | [27.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-ean8.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

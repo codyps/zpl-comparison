@@ -2,7 +2,7 @@
 
 # `^GS` – Graphic Symbol
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Enables generation of registered trademark, copyright symbol, and other symbols. Use with ^FD and character A-E to select the desired symbol.

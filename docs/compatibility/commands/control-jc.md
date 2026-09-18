@@ -2,7 +2,7 @@
 
 # `~JC` – Set Media Sensor Calibration
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Forces a label length measurement and adjusts media and ribbon sensor values. In Continuous Mode, only the media and ribbon sensors are calibrated. Ignored on HC100 printers.

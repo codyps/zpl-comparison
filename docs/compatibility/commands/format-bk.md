@@ -2,7 +2,7 @@
 
 # `^BK` – ANSI Codabar Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print an ANSI Codabar barcode used in libraries, medical, and shipping applications.
@@ -30,7 +30,7 @@ Reference parameters: **o, e, h, f, g, k, l**. These describe the reference gram
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [codabar](../../../references/barcodes-zd621-v1/codabar.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/codabar.png) | [35.6% IoU](../../benchmarks/accuracy/images/barcode-codabar-local-diff.png) | N/A | [2.4% IoU](../../benchmarks/accuracy/images/barcode-codabar-labelize-diff.png) | [2.7% IoU](../../benchmarks/accuracy/images/barcode-codabar-forge-diff.png) | [3.5% IoU](../../benchmarks/accuracy/images/barcode-codabar-go-diff.png) | [3.5% IoU](../../benchmarks/accuracy/images/barcode-codabar-ffi-diff.png) | [35.6% IoU](../../benchmarks/accuracy/images/barcode-codabar-binarykits-diff.png) | [35.6% IoU](../../benchmarks/accuracy/images/barcode-codabar-zplr-diff.png) | N/A | N/A | N/A |
+| [codabar](../../../references/barcodes-zd621-v1/codabar.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/codabar.png) | [35.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-codabar.md#local) | N/A | [2.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-codabar.md#labelize) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-codabar.md#forge) | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-codabar.md#go) | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-codabar.md#ffi) | [35.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-codabar.md#binarykits) | [35.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-codabar.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

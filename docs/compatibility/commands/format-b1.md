@@ -2,7 +2,7 @@
 
 # `^B1` – Code 11 Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a Code 11 (USD-8) barcode with options for check digit, height, and interpretation line.
@@ -30,7 +30,7 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [code11](../../../references/barcodes-zd621-v1/code11.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code11.png) | [32.5% IoU](../../benchmarks/accuracy/images/barcode-code11-local-diff.png) | N/A | [3.5% IoU](../../benchmarks/accuracy/images/barcode-code11-labelize-diff.png) | [2.7% IoU](../../benchmarks/accuracy/images/barcode-code11-forge-diff.png) | [4.5% IoU](../../benchmarks/accuracy/images/barcode-code11-go-diff.png) | [4.5% IoU](../../benchmarks/accuracy/images/barcode-code11-ffi-diff.png) | [3.9% IoU](../../benchmarks/accuracy/images/barcode-code11-binarykits-diff.png) | [36.8% IoU](../../benchmarks/accuracy/images/barcode-code11-zplr-diff.png) | N/A | N/A | N/A |
+| [code11](../../../references/barcodes-zd621-v1/code11.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code11.png) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#local) | N/A | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#labelize) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#forge) | [4.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#go) | [4.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#ffi) | [3.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#binarykits) | [36.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code11.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

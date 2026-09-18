@@ -2,7 +2,7 @@
 
 # `~DE` – Download Encoding
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Downloads character encoding translation tables to the printer, essential for printing non-standard or foreign language characters with TrueType fonts. Data is a string of ASCII hexadecimal values.

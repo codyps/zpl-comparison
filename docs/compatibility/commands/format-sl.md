@@ -2,7 +2,7 @@
 
 # `^SL` – Set Mode and Language
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Specifies the Real-Time Clock mode of operation and language for printing information. Controls whether the time is captured at format start (S) or at print time (T).

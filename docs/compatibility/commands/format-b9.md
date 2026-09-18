@@ -2,7 +2,7 @@
 
 # `^B9` – UPC-E Bar Code
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print a UPC-E barcode, a zero-suppressed variation of UPC-A.
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [upce](../../../references/barcodes-zd621-v1/upce.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/upce.png) | [29.7% IoU](../../benchmarks/accuracy/images/barcode-upce-local-diff.png) | N/A | [29.2% IoU](../../benchmarks/accuracy/images/barcode-upce-labelize-diff.png) | Error | [4.3% IoU](../../benchmarks/accuracy/images/barcode-upce-go-diff.png) | [4.3% IoU](../../benchmarks/accuracy/images/barcode-upce-ffi-diff.png) | [29.7% IoU](../../benchmarks/accuracy/images/barcode-upce-binarykits-diff.png) | [29.7% IoU](../../benchmarks/accuracy/images/barcode-upce-zplr-diff.png) | N/A | N/A | N/A |
+| [upce](../../../references/barcodes-zd621-v1/upce.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/upce.png) | [29.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upce.md#local) | N/A | [29.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upce.md#labelize) | [Error](../../benchmarks/accuracy/comparisons/cases/barcode-upce.md#forge) | [4.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upce.md#go) | [4.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upce.md#ffi) | [29.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upce.md#binarykits) | [29.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upce.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

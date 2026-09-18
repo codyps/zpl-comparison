@@ -2,7 +2,7 @@
 
 # Features
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](../commands/README.md) · [Features](README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](../commands/README.md) · [Features](README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Feature groups are rendering behaviors tested by the corpus, including combined pages and negative inputs.

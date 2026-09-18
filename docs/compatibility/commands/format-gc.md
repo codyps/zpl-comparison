@@ -2,7 +2,7 @@
 
 # `^GC` – Graphic Circle
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Produces a circle on the printed label. Parameters specify diameter, border thickness (extends inward), and line color.
@@ -30,7 +30,7 @@ Reference parameters: **d, t, c**. These describe the reference grammar, not a p
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [shape-GC-B](../../../benchmarks/accuracy/reference/shape-GC-B.zpl) | 80,3,B | [Printer](../../../benchmarks/accuracy/reference/shape-GC-B.png) | [63.3% IoU](../../benchmarks/accuracy/images/argument-shape-GC-B-local-diff.png) | N/A | [68.7% IoU](../../benchmarks/accuracy/images/argument-shape-GC-B-labelize-diff.png) | [59.8% IoU](../../benchmarks/accuracy/images/argument-shape-GC-B-forge-diff.png) | [68.7% IoU](../../benchmarks/accuracy/images/argument-shape-GC-B-go-diff.png) | [68.7% IoU](../../benchmarks/accuracy/images/argument-shape-GC-B-ffi-diff.png) | [65.0% IoU](../../benchmarks/accuracy/images/argument-shape-GC-B-binarykits-diff.png) | [91.7% IoU](../../benchmarks/accuracy/images/argument-shape-GC-B-zplr-diff.png) | N/A | N/A | N/A |
+| [shape-GC-B](../../../benchmarks/accuracy/reference/shape-GC-B.zpl) | 80,3,B | [Printer](../../../benchmarks/accuracy/reference/shape-GC-B.png) | [63.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GC-B.md#local) | N/A | [68.7% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GC-B.md#labelize) | [59.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GC-B.md#forge) | [68.7% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GC-B.md#go) | [68.7% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GC-B.md#ffi) | [65.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GC-B.md#binarykits) | [91.7% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GC-B.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

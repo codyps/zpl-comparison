@@ -2,7 +2,7 @@
 
 # `~DN` – Abort Download Graphic
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Aborts Graphics Mode and resumes normal printer operation. Use to clear an active ~DG command after aborting transmission from the host device.

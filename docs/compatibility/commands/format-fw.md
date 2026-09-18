@@ -2,7 +2,7 @@
 
 # `^FW` – Field Orientation
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Set default field orientation and justification for subsequent fields.
@@ -30,7 +30,7 @@ Reference parameters: **r, z**. These describe the reference grammar, not a prom
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-FW](../../../benchmarks/accuracy/reference/layout-FW.zpl) | R | [Printer](../../../benchmarks/accuracy/reference/layout-FW.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-layout-FW-local-diff.png) | N/A | [53.6% IoU](../../benchmarks/accuracy/images/argument-layout-FW-labelize-diff.png) | [13.9% IoU](../../benchmarks/accuracy/images/argument-layout-FW-forge-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-FW-go-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-FW-ffi-diff.png) | [29.9% IoU](../../benchmarks/accuracy/images/argument-layout-FW-binarykits-diff.png) | [35.3% IoU](../../benchmarks/accuracy/images/argument-layout-FW-zplr-diff.png) | N/A | N/A | N/A |
+| [layout-FW](../../../benchmarks/accuracy/reference/layout-FW.zpl) | R | [Printer](../../../benchmarks/accuracy/reference/layout-FW.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#local) | N/A | [53.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#labelize) | [13.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#ffi) | [29.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#binarykits) | [35.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

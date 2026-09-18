@@ -2,7 +2,7 @@
 
 # `^GD` – Graphic Diagonal Line
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Produces a straight diagonal line on a label within a bounding box defined by width and height. Can be used with other graphic commands to create complex figures.
@@ -30,8 +30,8 @@ Reference parameters: **w, h, t, c, o**. These describe the reference grammar, n
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [shape-GD-L](../../../benchmarks/accuracy/reference/shape-GD-L.zpl) | 120,60,3,B,L | [Printer](../../../benchmarks/accuracy/reference/shape-GD-L.png) | Error | N/A | [39.6% IoU](../../benchmarks/accuracy/images/argument-shape-GD-L-labelize-diff.png) | [14.3% IoU](../../benchmarks/accuracy/images/argument-shape-GD-L-forge-diff.png) | [0.8% IoU](../../benchmarks/accuracy/images/argument-shape-GD-L-go-diff.png) | [0.8% IoU](../../benchmarks/accuracy/images/argument-shape-GD-L-ffi-diff.png) | [50.0% IoU](../../benchmarks/accuracy/images/argument-shape-GD-L-binarykits-diff.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-shape-GD-L-zplr-diff.png) | N/A | N/A | N/A |
-| [shape-GD-R](../../../benchmarks/accuracy/reference/shape-GD-R.zpl) | 120,60,3,B,R | [Printer](../../../benchmarks/accuracy/reference/shape-GD-R.png) | Error | N/A | [16.5% IoU](../../benchmarks/accuracy/images/argument-shape-GD-R-labelize-diff.png) | [49.8% IoU](../../benchmarks/accuracy/images/argument-shape-GD-R-forge-diff.png) | [0.6% IoU](../../benchmarks/accuracy/images/argument-shape-GD-R-go-diff.png) | [0.6% IoU](../../benchmarks/accuracy/images/argument-shape-GD-R-ffi-diff.png) | [50.0% IoU](../../benchmarks/accuracy/images/argument-shape-GD-R-binarykits-diff.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-shape-GD-R-zplr-diff.png) | N/A | N/A | N/A |
+| [shape-GD-L](../../../benchmarks/accuracy/reference/shape-GD-L.zpl) | 120,60,3,B,L | [Printer](../../../benchmarks/accuracy/reference/shape-GD-L.png) | [Error](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-L.md#local) | N/A | [39.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-L.md#labelize) | [14.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-L.md#forge) | [0.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-L.md#go) | [0.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-L.md#ffi) | [50.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-L.md#binarykits) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-L.md#zplr) | N/A | N/A | N/A |
+| [shape-GD-R](../../../benchmarks/accuracy/reference/shape-GD-R.zpl) | 120,60,3,B,R | [Printer](../../../benchmarks/accuracy/reference/shape-GD-R.png) | [Error](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-R.md#local) | N/A | [16.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-R.md#labelize) | [49.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-R.md#forge) | [0.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-R.md#go) | [0.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-R.md#ffi) | [50.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-R.md#binarykits) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-shape-GD-R.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

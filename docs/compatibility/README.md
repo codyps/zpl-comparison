@@ -2,7 +2,7 @@
 
 # ZPL compatibility
 
-[Overview](README.md) · [Libraries](libraries/README.md) · [Commands](commands/README.md) · [Features](features/README.md) · [Evidence legend](METHODOLOGY.md)
+[Overview](README.md) · [Libraries](libraries/README.md) · [Commands](commands/README.md) · [Features](features/README.md) · [Evidence legend](METHODOLOGY.md) · [Compare images](../benchmarks/accuracy/comparisons/README.md)
 
 
 Browse ZPL support by library or by command/feature. These are GitHub-native Markdown pages generated from the same evidence, not separate hand-maintained lists.
@@ -18,7 +18,7 @@ Browse ZPL support by library or by command/feature. These are GitHub-native Mar
 
 **Read the evidence labels.** A handler, typed emitter or upstream support claim does not establish complete argument support or printer fidelity. “Not measured” is not “unsupported”. Rendering accuracy is N/A for generators and parser-only APIs.
 
-Printer measurements: **2026-09-18T07:18:54Z**, ZTC ZD621-203dpi ZPL, firmware V93.21.33Z. Historical measurements are not rerun by document generation.
+Printer measurements: **2026-09-18T23:14:28Z**, ZTC ZD621-203dpi ZPL, firmware V93.21.33Z. Historical measurements are not rerun by document generation.
 
 Conformance execution: **2026-09-18T07:42:26Z**. [Raw execution results](../benchmarks/conformance/results.json); execution is not a printer-fidelity score.
 

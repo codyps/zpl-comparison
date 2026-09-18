@@ -2,7 +2,7 @@
 
 # `^CT` – Change Tilde Control Prefix
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Changes the control command prefix character from the default tilde (~) to any other ASCII character. Takes immediate effect for all subsequent control commands.

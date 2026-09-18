@@ -2,7 +2,7 @@
 
 # `~DG` – Download Graphic
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Downloads an ASCII hex representation of a graphic image to the printer. The data string defines the image using hex nibbles (each character = 4 dots). Use ~DY for more saving and loading options.

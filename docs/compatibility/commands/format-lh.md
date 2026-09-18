@@ -2,7 +2,7 @@
 
 # `^LH` – Label Home
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Set label home (origin) offset in dots.
@@ -30,7 +30,7 @@ Reference parameters: **x, y**. These describe the reference grammar, not a prom
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-LH](../../../benchmarks/accuracy/reference/layout-LH.zpl) | 30,20 | [Printer](../../../benchmarks/accuracy/reference/layout-LH.png) | [100.0% IoU · exact](../../benchmarks/accuracy/images/argument-layout-LH-local-diff.png) | N/A | [85.1% IoU](../../benchmarks/accuracy/images/argument-layout-LH-labelize-diff.png) | [0.9% IoU](../../benchmarks/accuracy/images/argument-layout-LH-forge-diff.png) | [77.2% IoU](../../benchmarks/accuracy/images/argument-layout-LH-go-diff.png) | [1.7% IoU](../../benchmarks/accuracy/images/argument-layout-LH-ffi-diff.png) | [27.2% IoU](../../benchmarks/accuracy/images/argument-layout-LH-binarykits-diff.png) | [37.1% IoU](../../benchmarks/accuracy/images/argument-layout-LH-zplr-diff.png) | N/A | N/A | N/A |
+| [layout-LH](../../../benchmarks/accuracy/reference/layout-LH.zpl) | 30,20 | [Printer](../../../benchmarks/accuracy/reference/layout-LH.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-LH.md#local) | N/A | [85.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LH.md#labelize) | [0.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LH.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LH.md#go) | [1.7% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LH.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LH.md#binarykits) | [37.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-LH.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

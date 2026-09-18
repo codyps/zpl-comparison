@@ -2,7 +2,7 @@
 
 # `^BO` – Aztec Bar Code Parameters
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
 
 
 Print an Aztec barcode (alternate command) with configurable magnification, error correction, and structured append.
@@ -30,8 +30,8 @@ Reference parameters: **a, b, c, d, e, f, g**. These describe the reference gram
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [aztec](../../../references/barcodes-zd621-v1/aztec.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec.png) | [30.9% IoU](../../benchmarks/accuracy/images/barcode-aztec-local-diff.png) | N/A | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec-labelize-diff.png) | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec-forge-diff.png) | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec-go-diff.png) | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec-ffi-diff.png) | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec-binarykits-diff.png) | [31.5% IoU](../../benchmarks/accuracy/images/barcode-aztec-zplr-diff.png) | N/A | N/A | N/A |
-| [aztec_rune](../../../references/barcodes-zd621-v1/aztec_rune.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_rune.png) | [32.7% IoU](../../benchmarks/accuracy/images/barcode-aztec_rune-local-diff.png) | N/A | [29.3% IoU](../../benchmarks/accuracy/images/barcode-aztec_rune-labelize-diff.png) | [29.3% IoU](../../benchmarks/accuracy/images/barcode-aztec_rune-forge-diff.png) | [29.3% IoU](../../benchmarks/accuracy/images/barcode-aztec_rune-go-diff.png) | [29.3% IoU](../../benchmarks/accuracy/images/barcode-aztec_rune-ffi-diff.png) | [29.3% IoU](../../benchmarks/accuracy/images/barcode-aztec_rune-binarykits-diff.png) | [32.7% IoU](../../benchmarks/accuracy/images/barcode-aztec_rune-zplr-diff.png) | N/A | N/A | N/A |
+| [aztec](../../../references/barcodes-zd621-v1/aztec.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec.png) | [30.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec.md#local) | N/A | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec.md#labelize) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec.md#forge) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec.md#go) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec.md#ffi) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec.md#binarykits) | [31.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec.md#zplr) | N/A | N/A | N/A |
+| [aztec_rune](../../../references/barcodes-zd621-v1/aztec_rune.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_rune.png) | [32.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_rune.md#local) | N/A | [29.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_rune.md#labelize) | [29.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_rune.md#forge) | [29.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_rune.md#go) | [29.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_rune.md#ffi) | [29.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_rune.md#binarykits) | [32.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_rune.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features
