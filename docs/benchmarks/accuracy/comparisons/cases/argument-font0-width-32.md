@@ -6,7 +6,7 @@
 
 **^A** · font=0,o=N,h=32,w=32 · [ZPL input](../../../../../benchmarks/accuracy/reference/font0-width-32.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-32.png)
 
-Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 

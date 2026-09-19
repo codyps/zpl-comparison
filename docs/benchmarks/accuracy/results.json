@@ -6,7 +6,7 @@
     "python": "3.14.4",
     "numpy": "2.5.3"
   },
-  "measured_utc": "2026-09-19T02:26:50Z",
+  "measured_utc": "2026-09-19T03:05:14Z",
   "threshold": 128,
   "cases": [
     {
@@ -2170,23 +2170,23 @@
       "case": "argument-font0-height-16",
       "group": "text",
       "reference_ink": 304,
-      "score": 0.36026200873362446,
-      "output_ink": 319,
-      "missing": 139,
-      "extra": 154,
-      "iou": 0.36026200873362446,
-      "precision": 0.5172413793103449,
-      "recall": 0.5427631578947368,
-      "canvas_disagreement": 0.0011738782051282052,
+      "score": 1.0,
+      "output_ink": 304,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "fa87393f79d399d52a619dfc0054f418f35b6c6c67145f343b9ccfd03c90596a",
+      "raw_png_sha256": "27ba31518433d8eac43b3676cc626f6bd46b896f8fb972b4eace60267c475f9d",
       "stderr": ""
     },
     {
@@ -2506,23 +2506,23 @@
       "case": "argument-font0-height-64",
       "group": "text",
       "reference_ink": 4948,
-      "score": 0.5728492501973165,
-      "output_ink": 5016,
-      "missing": 1319,
-      "extra": 1387,
-      "iou": 0.5728492501973165,
-      "precision": 0.7234848484848485,
-      "recall": 0.7334276475343573,
-      "canvas_disagreement": 0.010841346153846155,
+      "score": 1.0,
+      "output_ink": 4948,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "384f2ec00db7f916a9888e4a1e4d8a9814ccacc3a944390f3c227beaef1d7b17",
+      "raw_png_sha256": "e04e2583218c1dbdbdce890800460cc2f948e5dce834cea696b11e5880717251",
       "stderr": ""
     },
     {
@@ -2674,23 +2674,23 @@
       "case": "argument-font0-width-16",
       "group": "text",
       "reference_ink": 602,
-      "score": 0.3914027149321267,
-      "output_ink": 628,
-      "missing": 256,
-      "extra": 282,
-      "iou": 0.3914027149321267,
-      "precision": 0.5509554140127388,
-      "recall": 0.574750830564784,
-      "canvas_disagreement": 0.0021554487179487178,
+      "score": 1.0,
+      "output_ink": 602,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "c89384e4a16f811a7ff4b5907a0f5db42206bdef4d26905b3202f47f096c8327",
+      "raw_png_sha256": "7a93f901295095078e55a55da0b50db02cac77031ad022a7a20110c9395657f9",
       "stderr": ""
     },
     {
@@ -3010,23 +3010,23 @@
       "case": "argument-font0-width-64",
       "group": "text",
       "reference_ink": 2473,
-      "score": 0.5934101087651952,
-      "output_ink": 2508,
-      "missing": 618,
-      "extra": 653,
-      "iou": 0.5934101087651952,
-      "precision": 0.7396331738437002,
-      "recall": 0.7501010917913465,
-      "canvas_disagreement": 0.005092147435897436,
+      "score": 1.0,
+      "output_ink": 2473,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "2b1988ac7ddf8de3e16fa3ceced244bae3101f607d527f9476e72cf0f2cbb5cf",
+      "raw_png_sha256": "6b567f86b9f07135a8449800ea219133801bb7d95e64b3335281d49a6bff2738",
       "stderr": ""
     },
     {
@@ -3850,9 +3850,24 @@
       "case": "argument-font-A",
       "group": "text",
       "reference_ink": 1920,
-      "score": 0.0,
-      "status": "error",
-      "error": "\nthread 'main' (41679241) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"only resident font 0 is embedded; other font selections are unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "score": 1.0,
+      "output_ink": 1920,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "598e9f3d8bda912e76c4b6d0c8f89e649036d988e6e60adc87763af2500d95e7",
+      "stderr": ""
     },
     {
       "library": "labelize",
@@ -4003,9 +4018,24 @@
       "case": "argument-font-D",
       "group": "text",
       "reference_ink": 1808,
-      "score": 0.0,
-      "status": "error",
-      "error": "\nthread 'main' (41679483) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"only resident font 0 is embedded; other font selections are unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "score": 1.0,
+      "output_ink": 1808,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "40a9ab1f3558abe6f1d1f1e8532772906937b3b272fc83ac3ea832369f0b7d71",
+      "stderr": ""
     },
     {
       "library": "labelize",
@@ -4206,7 +4236,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41679676) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41792522) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4309,9 +4339,24 @@
       "case": "argument-fo-justify-1",
       "group": "layout",
       "reference_ink": 1254,
-      "score": 0.0,
-      "status": "error",
-      "error": "\nthread 'main' (41679785) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"field justification unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "score": 1.0,
+      "output_ink": 1254,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "842ef48c19b1870fd089a8be8905bebfce2b35d0a47171f35ffece72c4cc9a5c",
+      "stderr": ""
     },
     {
       "library": "labelize",
@@ -4344,7 +4389,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41679813) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41792682) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4447,9 +4492,24 @@
       "case": "argument-fo-justify-2",
       "group": "layout",
       "reference_ink": 1254,
-      "score": 0.0,
-      "status": "error",
-      "error": "\nthread 'main' (41679912) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"field justification unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "score": 1.0,
+      "output_ink": 1254,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "8289bc48900f2e24d11fe118eb276d34aafa1506e6f46d70d1964cf715e9f923",
+      "stderr": ""
     },
     {
       "library": "labelize",
@@ -4482,7 +4542,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41679930) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41792851) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -5089,23 +5149,23 @@
       "case": "argument-layout-LT",
       "group": "layout",
       "reference_ink": 709,
-      "score": 0.06616541353383458,
+      "score": 1.0,
       "output_ink": 709,
-      "missing": 621,
-      "extra": 621,
-      "iou": 0.06616541353383458,
-      "precision": 0.12411847672778561,
-      "recall": 0.12411847672778561,
-      "canvas_disagreement": 0.0049759615384615385,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "79e25c6a9e6d94a186538e1a42eca4cc7c41534dd7f57197a495c73a036c21d3",
+      "raw_png_sha256": "a634b4e52a11ada9860963b6f428c3fca97c4d2073e03a51202532583bcb2098",
       "stderr": ""
     },
     {
@@ -5257,23 +5317,23 @@
       "case": "argument-layout-PO",
       "group": "layout",
       "reference_ink": 709,
-      "score": 0.0,
+      "score": 1.0,
       "output_ink": 709,
-      "missing": 709,
-      "extra": 709,
-      "iou": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "canvas_disagreement": 0.005681089743589744,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "7018680c310f95d9b20311b2fbee3a0fc32c119e8b6624601791abe634b5d347",
+      "raw_png_sha256": "a634b4e52a11ada9860963b6f428c3fca97c4d2073e03a51202532583bcb2098",
       "stderr": ""
     },
     {
@@ -6097,23 +6157,23 @@
       "case": "argument-block-C",
       "group": "text",
       "reference_ink": 2692,
-      "score": 0.18616435338180215,
+      "score": 1.0,
       "output_ink": 2692,
-      "missing": 1847,
-      "extra": 1847,
-      "iou": 0.18616435338180215,
-      "precision": 0.3138930163447251,
-      "recall": 0.3138930163447251,
-      "canvas_disagreement": 0.014799679487179487,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "86bb5593210bb4ee3681a58374d204f73d8370b0572393c2e6536549c719a5ed",
+      "raw_png_sha256": "70b991af9fd2b3be84d317cb2b7e7529676ae7bbe0b5a02c0903a40b7e3d53e7",
       "stderr": ""
     },
     {
@@ -6433,9 +6493,24 @@
       "case": "argument-block-J",
       "group": "text",
       "reference_ink": 2692,
-      "score": 0.0,
-      "status": "error",
-      "error": "\nthread 'main' (41681969) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 82, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "score": 1.0,
+      "output_ink": 2692,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "4400dd959f765c972154dc486bc9f8418342071f66d3d1c7b81194a5c1fd996c",
+      "stderr": ""
     },
     {
       "library": "labelize",
@@ -6586,9 +6661,24 @@
       "case": "argument-block-indent",
       "group": "text",
       "reference_ink": 2692,
-      "score": 0.0,
-      "status": "error",
-      "error": "\nthread 'main' (41682110) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 82, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "score": 1.0,
+      "output_ink": 2692,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "4f0e8733650e55f9a04351d3a384bc717045c11fb196e27f13e67285f1b32331",
+      "stderr": ""
     },
     {
       "library": "labelize",
@@ -7747,9 +7837,24 @@
       "case": "argument-utf8-accent",
       "group": "text",
       "reference_ink": 655,
-      "score": 0.0,
-      "status": "error",
-      "error": "\nthread 'main' (41683312) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 87, message: \"unsupported embedded font glyph '\u00e9'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "score": 1.0,
+      "output_ink": 655,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "8a7c4b6db67aa39516bed58f8459bc0edb5ff123cb336ef9150ade8d90e14f3d",
+      "stderr": ""
     },
     {
       "library": "labelize",
@@ -9774,7 +9879,7 @@
       "reference_ink": 28,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41685254) panicked at src/main.rs:43:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41798902) panicked at src/main.rs:43:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -10909,23 +11014,23 @@
       "case": "argument-code128-text-YN",
       "group": "barcode-arguments",
       "reference_ink": 5868,
-      "score": 0.797602055381102,
-      "output_ink": 6726,
-      "missing": 280,
-      "extra": 1138,
-      "iou": 0.797602055381102,
-      "precision": 0.8308058281296461,
-      "recall": 0.9522835719154737,
-      "canvas_disagreement": 0.005681089743589744,
+      "score": 1.0,
+      "output_ink": 5868,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "951bbe30e15a94194903728a20b9397809ad12333703560316c83957a642c496",
+      "raw_png_sha256": "42eccd74bb93307008da1a4e5beb121ed5013ffc4b414a05344c4ad01194ca10",
       "stderr": ""
     },
     {
@@ -11077,23 +11182,23 @@
       "case": "argument-code128-text-YY",
       "group": "barcode-arguments",
       "reference_ink": 5868,
-      "score": 0.8004288777698356,
-      "output_ink": 6726,
-      "missing": 269,
-      "extra": 1127,
-      "iou": 0.8004288777698356,
-      "precision": 0.8324412726732084,
-      "recall": 0.9541581458759373,
-      "canvas_disagreement": 0.005592948717948718,
+      "score": 1.0,
+      "output_ink": 5868,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         300
       ],
       "status": "rendered",
-      "raw_png_sha256": "21e0667ac20c9b7cf5e455c932581fa44bb989420771ba3021c5e76bef5e2223",
+      "raw_png_sha256": "a9a31311bf0f4b24d8e4d2c5cbd14c854c4377648514c18e48a80707c172f7c2",
       "stderr": ""
     },
     {
@@ -14991,7 +15096,7 @@
       "reference_ink": 5260,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41690173) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41804967) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -15094,23 +15199,23 @@
       "case": "barcode-codablock_e",
       "group": "barcode-formats",
       "reference_ink": 4092,
-      "score": 0.3569705740472745,
-      "output_ink": 7160,
-      "missing": 1132,
-      "extra": 4200,
-      "iou": 0.3569705740472745,
-      "precision": 0.4134078212290503,
-      "recall": 0.7233626588465298,
-      "canvas_disagreement": 0.0052616205633447015,
+      "score": 1.0,
+      "output_ink": 4092,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "828813914cde73886c448681556304fa70e7a16ccf75216daf5739f20ffb8ceb",
+      "raw_png_sha256": "aed7eccde86c9e8c8f0e43cbeb7b6005b2b895ab245d439b720faae97b8669cf",
       "stderr": ""
     },
     {
@@ -15144,7 +15249,7 @@
       "reference_ink": 4092,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41690293) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41805218) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -15247,23 +15352,23 @@
       "case": "barcode-codablock_f",
       "group": "barcode-formats",
       "reference_ink": 4124,
-      "score": 0.3496437054631829,
-      "output_ink": 7240,
-      "missing": 1180,
-      "extra": 4296,
-      "iou": 0.3496437054631829,
-      "precision": 0.4066298342541437,
-      "recall": 0.7138700290979632,
-      "canvas_disagreement": 0.005403719843375016,
+      "score": 1.0,
+      "output_ink": 4124,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "3942f690ae42e57c3d2ccace7ebc1cce387c4bfe75e9b55b0e25cbf83e0e8147",
+      "raw_png_sha256": "64317665130d7065d491e95b019b50d02889aa9b4f49c27d45239408412ec67d",
       "stderr": ""
     },
     {
@@ -15297,7 +15402,7 @@
       "reference_ink": 4124,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41690543) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41805353) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -20104,23 +20209,23 @@
       "case": "barcode-logmars",
       "group": "barcode-formats",
       "reference_ink": 11680,
-      "score": 0.9055627425614489,
-      "output_ink": 11888,
-      "missing": 480,
-      "extra": 688,
-      "iou": 0.9055627425614489,
-      "precision": 0.9421265141318977,
-      "recall": 0.958904109589041,
-      "canvas_disagreement": 0.0011525830491347733,
+      "score": 1.0,
+      "output_ink": 11680,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
       "dimensions_match": true,
-      "ink_exact": false,
-      "exact": false,
+      "ink_exact": true,
+      "exact": true,
       "output_dimensions": [
         832,
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "1be5752b5e2431d9545f044cfe85a35b380c03ae4e1def5f1d9430d0a17dce3d",
+      "raw_png_sha256": "428a5c586bd73af58b180b1c69b1b870340e9b1a1103853db91ec005589a012b",
       "stderr": ""
     },
     {
@@ -20298,7 +20403,7 @@
       "reference_ink": 12540,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41695606) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41810651) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20451,7 +20556,7 @@
       "reference_ink": 12840,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41695934) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41810800) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20772,7 +20877,7 @@
       "reference_ink": 2010,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41696424) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41812321) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20925,7 +21030,7 @@
       "reference_ink": 13200,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41696564) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41814599) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -24126,7 +24231,7 @@
       "reference_ink": 4610,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41700417) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41850678) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -24229,7 +24334,7 @@
     "codyps-zpl": [
       {
         "name": "codyps-zpl",
-        "sha256": "5a4132a8923b1a3856c384e4d632a5d950b49dff677a364cb05f381a5ff6e904"
+        "sha256": "b75f85341ca797262b40400a3efe7b88932227e7f28a0e08633ed9f7087d609a"
       }
     ],
     "labelize": [
@@ -24313,7 +24418,7 @@
       },
       {
         "name": "sources.lock.json",
-        "sha256": "6ded180299575dbdf8decf4df2ba5ea457a6b2af8c8f25b28099967709c89706"
+        "sha256": "605dd78411a73175f731eafd02eb27b1f01f38afaacef4b16584af2433a8038e"
       }
     ]
   },

@@ -17,7 +17,7 @@ Shares the pinned Go parser and its argument limits. Wrapper/render defaults are
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/ffi.md)
 
-16/132 exact; mean IoU 36.6%; 0 errors. Snapshot: 2026-09-19T02:26:50Z.
+16/132 exact; mean IoU 36.6%; 0 errors. Snapshot: 2026-09-19T03:05:14Z.
 
 ## Feature groups
 
@@ -45,7 +45,7 @@ Shares the pinned Go parser and its argument limits. Wrapper/render defaults are
 | [Stress](../features/stress.md) | 4 | Not measured | Not measured |
 | [Text data](../features/text-data.md) | 10 | Not measured | Not measured |
 | [Text layout](../features/text-layout.md) | 45 | Not measured | Not measured |
-| [Torture](../features/torture.md) | 4 | Not measured | 4 rendered |
+| [Torture](../features/torture.md) | 4 | Not measured | Not measured |
 | [Transforms](../features/transforms.md) | 4 | Not measured | Not measured |
 
 

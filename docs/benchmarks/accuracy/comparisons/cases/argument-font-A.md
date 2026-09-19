@@ -6,7 +6,7 @@
 
 **^A** · font=A,o=N,h=32,w=24 · [ZPL input](../../../../../benchmarks/accuracy/reference/font-A.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png)
 
-Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,22 +14,14 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | ![codyps-zpl render](../../images/argument-font-A-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-font-A-codyps-zpl-diff.png) |
 
-
-Error diagnostic:
-
-~~~text
-
-thread 'main' (41679241) panicked at src/main.rs:27:10:
-render: RenderError { offset: 73, message: "only resident font 0 is embedded; other font selections are unsupported" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

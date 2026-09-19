@@ -11,14 +11,14 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 27 🧩 Handler found | Not measured | 4 error |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 27 🧩 Handler found | Not measured | 1 error, 3 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 27 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 27 🧩 Handler found | Not measured | 4 rendered |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 22 🧩 Handler found | Not measured | 4 rendered |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | 4 rendered |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | 4 rendered |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 21 🧩 Handler found | Not measured | 4 rendered |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 26 🟢 Upstream: supported | Not measured | 4 rendered |
+| [labelize](../libraries/labelize.md) | 27 🧩 Handler found | Not measured | Not measured |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 22 🧩 Handler found | Not measured | Not measured |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 21 🧩 Handler found | Not measured | Not measured |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 26 🟢 Upstream: supported | Not measured | Not measured |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 17 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 7 ❔ No evidence found; 20 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 9 ❔ No evidence found; 18 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
