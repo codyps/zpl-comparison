@@ -36,8 +36,14 @@ def main():
         if all(r["status"] == "rendered" for r in rows if r["case"] == c)
     }
     groups = sorted({c["group"] for c in cases})
+    overall = {
+        name: statistics.mean(r["score"] for r in scored if r["library"] == name)
+        for name in LIBRARIES
+    }
+    ranked = sorted(LIBRARIES, key=lambda name: (-overall[name], name))
+    columns = ["Overall", *groups]
     summary = []
-    for name in LIBRARIES:
+    for name in ranked:
         samples = [r for r in scored if r["library"] == name]
         shared = [r["score"] for r in samples if r["case"] in common]
         summary.append(
@@ -57,7 +63,7 @@ def main():
     plot = (
         np.array(
             [
-                [
+                [overall[n]] + [
                     statistics.mean(
                         r["score"]
                         for r in scored
@@ -65,17 +71,19 @@ def main():
                     )
                     for g in groups
                 ]
-                for n in LIBRARIES
+                for n in ranked
             ]
         )
         * 100
     )
-    fig, ax = plt.subplots(figsize=(11, 5), layout="constrained")
+    fig, ax = plt.subplots(figsize=(12, 5), layout="constrained")
     image = ax.imshow(plot, vmin=0, vmax=100, cmap="viridis", aspect="auto")
-    ax.set_xticks(range(len(groups)), groups, rotation=25, ha="right")
-    ax.set_yticks(range(len(LIBRARIES)), [NAMES[n] for n in LIBRARIES])
-    for y in range(len(LIBRARIES)):
-        for x in range(len(groups)):
+    ax.set_xticks(range(len(columns)), columns, rotation=25, ha="right")
+    ax.get_xticklabels()[0].set_fontweight("bold")
+    ax.axvline(0.5, color="white", linewidth=2)
+    ax.set_yticks(range(len(ranked)), [NAMES[n] for n in ranked])
+    for y in range(len(ranked)):
+        for x in range(len(columns)):
             ax.text(
                 x,
                 y,
@@ -84,7 +92,8 @@ def main():
                 va="center",
                 color="white" if plot[y, x] < 55 else "black",
             )
-    ax.set_title("Mean foreground IoU (%) – failed/blank renders count as zero")
+    ax.set_title("Mean foreground IoU (%) – sorted by overall accuracy")
+    fig.supxlabel("Overall weights each nonblank printer case equally; failed/blank renders score zero", fontsize=9)
     fig.colorbar(image, ax=ax, label="%")
     fig.savefig(dest / "accuracy.svg", metadata={"Date": None})
     fig.savefig(dest / "accuracy.png", dpi=120)
@@ -107,7 +116,8 @@ def main():
         "Errors and blank library output score zero for a nonblank printer reference; blank printer references are quarantined from scores. "
         "“Ink exact” permits only all-white canvas margins to differ; “strict exact” additionally requires identical dimensions.\n",
         f"The all-case mean weights each nonblank case equally, including unsupported cases. Shared-case mean uses the **{len(common)} cases** for which all {len(LIBRARIES)} adapters returned nonblank rasters; it isolates a smaller common subset and is subject to selection bias. The corpus is broad but not representative of every deployment.\n",
-        "![Mean foreground IoU](accuracy.svg)\n",
+        "The chart’s Overall column is the mean over all nonblank printer cases, not an equal-weight mean of the group columns. Rows are sorted highest to lowest by Overall.\n",
+        "![Mean foreground IoU, sorted by overall accuracy](accuracy.svg)\n",
         table(
             [
                 "Library",

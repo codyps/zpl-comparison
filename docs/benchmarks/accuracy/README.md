@@ -16,18 +16,20 @@ Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh capture
 
 The all-case mean weights each nonblank case equally, including unsupported cases. Shared-case mean uses the **117 cases** for which all 8 adapters returned nonblank rasters; it isolates a smaller common subset and is subject to selection bias. The corpus is broad but not representative of every deployment.
 
-![Mean foreground IoU](accuracy.svg)
+The chart’s Overall column is the mean over all nonblank printer cases, not an equal-weight mean of the group columns. Rows are sorted highest to lowest by Overall.
+
+![Mean foreground IoU, sorted by overall accuracy](accuracy.svg)
 
 | Library | Nonblank / 132 | Ink exact | Strict exact | Errors | Blank | All-case mean IoU | Fresh argument IoU | Archived barcode IoU | Shared-case mean IoU |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | codyps/zpl (Rust) | 132 | 106 | 106 | 0 | 0 | 89.86% | 96.38% | 81.80% | 91.00% |
+| Labelary (captured service) | 131 | 56 | 56 | 0 | 1 | 76.64% | 75.37% | 78.21% | 80.83% |
+| ZPLr (TypeScript) | 132 | 60 | 60 | 0 | 0 | 73.01% | 64.48% | 83.56% | 73.83% |
 | labelize (Rust) | 127 | 24 | 24 | 5 | 0 | 48.37% | 68.24% | 23.78% | 49.98% |
 | zpl-forge (Rust) | 123 | 22 | 22 | 7 | 2 | 39.86% | 46.45% | 31.71% | 44.68% |
+| BinaryKits.Zpl (.NET) | 132 | 26 | 26 | 0 | 0 | 38.99% | 46.29% | 29.96% | 39.64% |
 | go-zpl (Go) | 132 | 16 | 16 | 0 | 0 | 37.13% | 55.41% | 14.51% | 37.07% |
 | zpl-rs (Rust → Go) | 132 | 16 | 16 | 0 | 0 | 36.55% | 54.37% | 14.51% | 36.42% |
-| BinaryKits.Zpl (.NET) | 132 | 26 | 26 | 0 | 0 | 38.99% | 46.29% | 29.96% | 39.64% |
-| ZPLr (TypeScript) | 132 | 60 | 60 | 0 | 0 | 73.01% | 64.48% | 83.56% | 73.83% |
-| Labelary (captured service) | 131 | 56 | 56 | 0 | 1 | 76.64% | 75.37% | 78.21% | 80.83% |
 
 The model-2 QR probe illustrates a placement error: the printer starts the symbol near y=119, while codyps/zpl starts it at y=60. IoU retains that difference rather than aligning it away. Inspect the images to distinguish placement, font metrics, omitted fields and symbol-pattern differences.
 
