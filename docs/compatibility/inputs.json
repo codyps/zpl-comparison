@@ -2,7 +2,7 @@
   "schema": 1,
   "inputs": {
     "docs/benchmarks/command-support.json": "5e5f7b1ff44fa81745b8a5f3d34eeb390e11e48d9211853d28d261fa58129cff",
-    "docs/benchmarks/accuracy/results.json": "8576d21cc1c3ad0034b90134770c377add1708ce9177b752ef949596804e7168",
+    "docs/benchmarks/accuracy/results.json": "ca73003f67fd880f3938d0b7f5be938afc72f18e1ebbc006e3eb9c3836f748a4",
     "test-data/render-conformance/manifest.json": "ef43f04da37e790b3778eae1f8c07b04c8d76b0bceec739d85f6202082600168",
     "docs/benchmarks/argument-support.md": "6bb9f5005cb521d53a3ff3053b1324fa143fb5b5cc8d324e2aac4a5f4c5efcd6",
     "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
@@ -13,7 +13,7 @@
     "benchmarks/compatibility.py": "ec548af7c10be745cd718b72736f6df659ac34c78fa9c8b51fe5bfbafc98a0a3",
     "docs/benchmarks/conformance/results.json": "cd0786be6d8ddee7a9f98fdc899fe19bac5c94b696dc910c3ed23e36e6383fe4"
   },
-  "accuracy_measured_utc": "2026-09-18T23:52:17Z",
+  "accuracy_measured_utc": "2026-09-19T02:14:59Z",
   "conformance_measured_utc": "2026-09-18T07:42:26Z",
   "libraries": {
     "toolchain": "0.4.1",

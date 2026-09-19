@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BQ** · model=2,magnification=3,EC=H,mask=0 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png)
+**^BQ** · model=2,magnification=3,EC=H,mask=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/qr-ec-H.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,13 +14,13 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 76.0% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 0.0% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 306 pixels; extra ink: 234 pixels.
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 2016 pixels; extra ink: 1944 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png) | ![codyps-zpl render](../../images/argument-qr-ec-H-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-qr-ec-H-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png) | ![codyps-zpl render](../../images/argument-qr-ec-H-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-qr-ec-H-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 348 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png) | ![labelize render](../../images/argument-qr-ec-H-labelize.png) | ![labelize difference](../../images/argument-qr-ec-H-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png) | ![labelize render](../../images/argument-qr-ec-H-labelize.png) | ![labelize difference](../../images/argument-qr-ec-H-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 2016 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png) | ![forge render](../../images/argument-qr-ec-H-forge.png) | ![forge difference](../../images/argument-qr-ec-H-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png) | ![forge render](../../images/argument-qr-ec-H-forge.png) | ![forge difference](../../images/argument-qr-ec-H-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 2016 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png) | ![go render](../../images/argument-qr-ec-H-go.png) | ![go difference](../../images/argument-qr-ec-H-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png) | ![go render](../../images/argument-qr-ec-H-go.png) | ![go difference](../../images/argument-qr-ec-H-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 2016 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png) | ![ffi render](../../images/argument-qr-ec-H-ffi.png) | ![ffi difference](../../images/argument-qr-ec-H-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png) | ![ffi render](../../images/argument-qr-ec-H-ffi.png) | ![ffi difference](../../images/argument-qr-ec-H-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 2016 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png) | ![binarykits render](../../images/argument-qr-ec-H-binarykits.png) | ![binarykits difference](../../images/argument-qr-ec-H-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png) | ![binarykits render](../../images/argument-qr-ec-H-binarykits.png) | ![binarykits difference](../../images/argument-qr-ec-H-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 306 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-ec-H.png) | ![zplr render](../../images/argument-qr-ec-H-zplr.png) | ![zplr difference](../../images/argument-qr-ec-H-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-H.png) | ![zplr render](../../images/argument-qr-ec-H-zplr.png) | ![zplr difference](../../images/argument-qr-ec-H-zplr-diff.png) |
 

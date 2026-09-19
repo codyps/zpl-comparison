@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BZ** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png)
+**^BZ** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/postal_planet.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,13 +14,13 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 16.8% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5424 pixels; extra ink: 5424 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png) | ![codyps-zpl render](../../images/barcode-postal_planet-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-postal_planet-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png) | ![codyps-zpl render](../../images/barcode-postal_planet-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-postal_planet-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 7415 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png) | ![labelize render](../../images/barcode-postal_planet-labelize.png) | ![labelize difference](../../images/barcode-postal_planet-labelize-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png) | ![labelize render](../../images/barcode-postal_planet-labelize.png) | ![labelize difference](../../images/barcode-postal_planet-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 3456 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png) | ![forge render](../../images/barcode-postal_planet-forge.png) | ![forge difference](../../images/barcode-postal_planet-forge-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png) | ![forge render](../../images/barcode-postal_planet-forge.png) | ![forge difference](../../images/barcode-postal_planet-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 7354 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png) | ![go render](../../images/barcode-postal_planet-go.png) | ![go difference](../../images/barcode-postal_planet-go-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png) | ![go render](../../images/barcode-postal_planet-go.png) | ![go difference](../../images/barcode-postal_planet-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 7354 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png) | ![ffi render](../../images/barcode-postal_planet-ffi.png) | ![ffi difference](../../images/barcode-postal_planet-ffi-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png) | ![ffi render](../../images/barcode-postal_planet-ffi.png) | ![ffi difference](../../images/barcode-postal_planet-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 7407 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png) | ![binarykits render](../../images/barcode-postal_planet-binarykits.png) | ![binarykits difference](../../images/barcode-postal_planet-binarykits-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png) | ![binarykits render](../../images/barcode-postal_planet-binarykits.png) | ![binarykits difference](../../images/barcode-postal_planet-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postal_planet.png) | ![zplr render](../../images/barcode-postal_planet-zplr.png) | ![zplr difference](../../images/barcode-postal_planet-zplr-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postal_planet.png) | ![zplr render](../../images/barcode-postal_planet-zplr.png) | ![zplr difference](../../images/barcode-postal_planet-zplr-diff.png) |
 

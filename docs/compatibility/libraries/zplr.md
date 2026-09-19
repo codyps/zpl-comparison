@@ -17,7 +17,7 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/zplr.md)
 
-60/132 exact; mean IoU 73.0%; 0 errors. Snapshot: 2026-09-18T23:52:17Z.
+60/132 exact; mean IoU 73.0%; 0 errors. Snapshot: 2026-09-19T02:14:59Z.
 
 ## Feature groups
 
