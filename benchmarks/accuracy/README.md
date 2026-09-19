@@ -2,7 +2,7 @@
 
 **[Compare printer previews, library renders and differences](../../docs/benchmarks/accuracy/comparisons/README.md)** by library or case. Every case includes all seven renderers, including error diagnostics and blank output.
 
-The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares seven rendering adapters with a real ZD621's HTTP preview. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
+The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares seven rendering adapters with a real ZD621's HTTP preview. The current codyps-zpl row uses the working source tree in the sibling zpl checkout (source hash and base commit in results.json), including uncommitted accuracy fixes. The pinned adapter rebuild reproduces the older library until its pin is advanced. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
 
 ## Reproduce offline
 
@@ -40,7 +40,7 @@ benchmarks/_work/venv/bin/python benchmarks/accuracy/run.py \
 
 Use a new directory within this repository; capture refuses to overwrite an existing one. Review the identified model/firmware, images and manifest before adopting a new baseline. This implementation accepts identified 203-dpi printers only. It submits the fixed raster-only probes using **Preview Label**, never Print. The printer's preview mechanism uses its RAM object `R:TEST1.ZPL`; reserve that name during capture. No persistent downloads or physical label jobs are requested. The capture protocol follows [the existing printer client](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zebra-http-api/src/lib.rs).
 
-There are 73 fresh argument cases plus one repeated control and 60 archived barcode cases. The archived captures remain tied to their original device/firmware and are not refreshed by this command. A new device reference therefore creates a mixed-device corpus unless the archived set is recaptured separately. Existing barcode captures were used in development and are not a holdout.
+There are 73 fresh argument cases plus one repeated control and 60 recaptured barcode cases. The barcode captures were refreshed at ^PW832 with a separate reset before every case; this command refreshes only the argument set. A new device reference creates a mixed-device corpus unless the barcode set is recaptured separately. Existing barcode captures were used in development and are not a holdout.
 
 Foreground intersection-over-union is measured at the original origin, with transparency composited on white and a fixed gray threshold of 128. Canvas differences are padded white and separately reported, never cropped, resized or aligned away. Blank printer references are excluded from aggregate accuracy. Whole-canvas disagreement, missing/extra pixels, precision, recall, dimensions and exact-match flags remain in JSON. A valid alternative barcode encoding can differ visually; this does not measure scanner acceptance. Preview fidelity does not measure physical print quality.
 

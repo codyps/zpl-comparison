@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BR** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png)
+**^BR** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,77 +14,77 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 22.4% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 35.7% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5620 pixels; extra ink: 12260 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 3356 pixels; extra ink: 9996 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![codyps-zpl render](../../images/barcode-databar_expanded_stacked-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-databar_expanded_stacked-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![codyps-zpl render](../../images/barcode-databar_expanded_stacked-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-databar_expanded_stacked-codyps-zpl-diff.png) |
 
 
 ## labelize
 
-**labelize (Rust): 6.7% IoU** · [All cases for this library](../libraries/labelize.md)
+**labelize (Rust): 7.3% IoU** · [All cases for this library](../libraries/labelize.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 9969 pixels; extra ink: 1270 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 9910 pixels; extra ink: 1211 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![labelize render](../../images/barcode-databar_expanded_stacked-labelize.png) | ![labelize difference](../../images/barcode-databar_expanded_stacked-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![labelize render](../../images/barcode-databar_expanded_stacked-labelize.png) | ![labelize difference](../../images/barcode-databar_expanded_stacked-labelize-diff.png) |
 
 
 ## forge
 
-**zpl-forge (Rust): 18.2% IoU** · [All cases for this library](../libraries/forge.md)
+**zpl-forge (Rust): 22.2% IoU** · [All cases for this library](../libraries/forge.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 6491 pixels; extra ink: 12773 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5716 pixels; extra ink: 11998 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![forge render](../../images/barcode-databar_expanded_stacked-forge.png) | ![forge difference](../../images/barcode-databar_expanded_stacked-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![forge render](../../images/barcode-databar_expanded_stacked-forge.png) | ![forge difference](../../images/barcode-databar_expanded_stacked-forge-diff.png) |
 
 
 ## go
 
-**go-zpl (Go): 7.7% IoU** · [All cases for this library](../libraries/go.md)
+**go-zpl (Go): 8.2% IoU** · [All cases for this library](../libraries/go.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 9843 pixels; extra ink: 1369 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 9783 pixels; extra ink: 1309 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![go render](../../images/barcode-databar_expanded_stacked-go.png) | ![go difference](../../images/barcode-databar_expanded_stacked-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![go render](../../images/barcode-databar_expanded_stacked-go.png) | ![go difference](../../images/barcode-databar_expanded_stacked-go-diff.png) |
 
 
 ## ffi
 
-**zpl-rs (Rust → Go): 7.7% IoU** · [All cases for this library](../libraries/ffi.md)
+**zpl-rs (Rust → Go): 8.2% IoU** · [All cases for this library](../libraries/ffi.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 9843 pixels; extra ink: 1369 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 9783 pixels; extra ink: 1309 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![ffi render](../../images/barcode-databar_expanded_stacked-ffi.png) | ![ffi difference](../../images/barcode-databar_expanded_stacked-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![ffi render](../../images/barcode-databar_expanded_stacked-ffi.png) | ![ffi difference](../../images/barcode-databar_expanded_stacked-ffi-diff.png) |
 
 
 ## binarykits
 
-**BinaryKits.Zpl (.NET): 6.4% IoU** · [All cases for this library](../libraries/binarykits.md)
+**BinaryKits.Zpl (.NET): 6.1% IoU** · [All cases for this library](../libraries/binarykits.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 10010 pixels; extra ink: 1294 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 10036 pixels; extra ink: 1320 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![binarykits render](../../images/barcode-databar_expanded_stacked-binarykits.png) | ![binarykits difference](../../images/barcode-databar_expanded_stacked-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![binarykits render](../../images/barcode-databar_expanded_stacked-binarykits.png) | ![binarykits difference](../../images/barcode-databar_expanded_stacked-binarykits-diff.png) |
 
 
 ## zplr
 
-**ZPLr (TypeScript): 22.5% IoU** · [All cases for this library](../libraries/zplr.md)
+**ZPLr (TypeScript): 21.7% IoU** · [All cases for this library](../libraries/zplr.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5600 pixels; extra ink: 12248 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5752 pixels; extra ink: 12400 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![zplr render](../../images/barcode-databar_expanded_stacked-zplr.png) | ![zplr difference](../../images/barcode-databar_expanded_stacked-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_expanded_stacked.png) | ![zplr render](../../images/barcode-databar_expanded_stacked-zplr.png) | ![zplr difference](../../images/barcode-databar_expanded_stacked-zplr-diff.png) |
 

@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^GF** · A,8,8,1; Z64, CRC16 · [ZPL input](../../../../../benchmarks/accuracy/reference/graphic-Z64.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png)
+**^GF** · A,8,8,1; Z64, CRC16 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png) | ![codyps-zpl render](../../images/argument-graphic-Z64-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-graphic-Z64-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png) | ![codyps-zpl render](../../images/argument-graphic-Z64-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-graphic-Z64-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png) | ![labelize render](../../images/argument-graphic-Z64-labelize.png) | ![labelize difference](../../images/argument-graphic-Z64-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png) | ![labelize render](../../images/argument-graphic-Z64-labelize.png) | ![labelize difference](../../images/argument-graphic-Z64-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 17 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png) | ![forge render](../../images/argument-graphic-Z64-forge.png) | ![forge difference](../../images/argument-graphic-Z64-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png) | ![forge render](../../images/argument-graphic-Z64-forge.png) | ![forge difference](../../images/argument-graphic-Z64-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png) | ![go render](../../images/argument-graphic-Z64-go.png) | ![go difference](../../images/argument-graphic-Z64-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png) | ![go render](../../images/argument-graphic-Z64-go.png) | ![go difference](../../images/argument-graphic-Z64-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png) | ![ffi render](../../images/argument-graphic-Z64-ffi.png) | ![ffi difference](../../images/argument-graphic-Z64-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png) | ![ffi render](../../images/argument-graphic-Z64-ffi.png) | ![ffi difference](../../images/argument-graphic-Z64-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png) | ![binarykits render](../../images/argument-graphic-Z64-binarykits.png) | ![binarykits difference](../../images/argument-graphic-Z64-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png) | ![binarykits render](../../images/argument-graphic-Z64-binarykits.png) | ![binarykits difference](../../images/argument-graphic-Z64-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-Z64.png) | ![zplr render](../../images/argument-graphic-Z64-zplr.png) | ![zplr difference](../../images/argument-graphic-Z64-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-Z64.png) | ![zplr render](../../images/argument-graphic-Z64-zplr.png) | ![zplr difference](../../images/argument-graphic-Z64-zplr-diff.png) |
 

@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BZ** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/intelligent_mail.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png)
+**^BZ** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,77 +14,77 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 16.9% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5124 pixels; extra ink: 5000 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![codyps-zpl render](../../images/barcode-intelligent_mail-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-intelligent_mail-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png) | ![codyps-zpl render](../../images/barcode-intelligent_mail-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-intelligent_mail-codyps-zpl-diff.png) |
 
 
 ## labelize
 
-**labelize (Rust): 4.9% IoU** · [All cases for this library](../libraries/labelize.md)
+**labelize (Rust): 5.0% IoU** · [All cases for this library](../libraries/labelize.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 6721 pixels; extra ink: 2040 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6718 pixels; extra ink: 2037 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![labelize render](../../images/barcode-intelligent_mail-labelize.png) | ![labelize difference](../../images/barcode-intelligent_mail-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png) | ![labelize render](../../images/barcode-intelligent_mail-labelize.png) | ![labelize difference](../../images/barcode-intelligent_mail-labelize-diff.png) |
 
 
 ## forge
 
-**zpl-forge (Rust): 23.8% IoU** · [All cases for this library](../libraries/forge.md)
+**zpl-forge (Rust): 23.7% IoU** · [All cases for this library](../libraries/forge.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 2808 pixels; extra ink: 11152 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 2764 pixels; extra ink: 11460 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![forge render](../../images/barcode-intelligent_mail-forge.png) | ![forge difference](../../images/barcode-intelligent_mail-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png) | ![forge render](../../images/barcode-intelligent_mail-forge.png) | ![forge difference](../../images/barcode-intelligent_mail-forge-diff.png) |
 
 
 ## go
 
-**go-zpl (Go): 5.1% IoU** · [All cases for this library](../libraries/go.md)
+**go-zpl (Go): 5.0% IoU** · [All cases for this library](../libraries/go.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 6696 pixels; extra ink: 2290 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6700 pixels; extra ink: 2294 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![go render](../../images/barcode-intelligent_mail-go.png) | ![go difference](../../images/barcode-intelligent_mail-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png) | ![go render](../../images/barcode-intelligent_mail-go.png) | ![go difference](../../images/barcode-intelligent_mail-go-diff.png) |
 
 
 ## ffi
 
-**zpl-rs (Rust → Go): 5.1% IoU** · [All cases for this library](../libraries/ffi.md)
+**zpl-rs (Rust → Go): 5.0% IoU** · [All cases for this library](../libraries/ffi.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 6696 pixels; extra ink: 2290 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6700 pixels; extra ink: 2294 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![ffi render](../../images/barcode-intelligent_mail-ffi.png) | ![ffi difference](../../images/barcode-intelligent_mail-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png) | ![ffi render](../../images/barcode-intelligent_mail-ffi.png) | ![ffi difference](../../images/barcode-intelligent_mail-ffi-diff.png) |
 
 
 ## binarykits
 
-**BinaryKits.Zpl (.NET): 4.5% IoU** · [All cases for this library](../libraries/binarykits.md)
+**BinaryKits.Zpl (.NET): 4.2% IoU** · [All cases for this library](../libraries/binarykits.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 6764 pixels; extra ink: 2078 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6784 pixels; extra ink: 2098 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![binarykits render](../../images/barcode-intelligent_mail-binarykits.png) | ![binarykits difference](../../images/barcode-intelligent_mail-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png) | ![binarykits render](../../images/barcode-intelligent_mail-binarykits.png) | ![binarykits difference](../../images/barcode-intelligent_mail-binarykits-diff.png) |
 
 
 ## zplr
 
-**ZPLr (TypeScript): 3.2% IoU** · [All cases for this library](../libraries/zplr.md)
+**ZPLr (TypeScript): 4.0% IoU** · [All cases for this library](../libraries/zplr.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 6892 pixels; extra ink: 1704 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6821 pixels; extra ink: 1633 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![zplr render](../../images/barcode-intelligent_mail-zplr.png) | ![zplr difference](../../images/barcode-intelligent_mail-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/intelligent_mail.png) | ![zplr render](../../images/barcode-intelligent_mail-zplr.png) | ![zplr difference](../../images/barcode-intelligent_mail-zplr-diff.png) |
 

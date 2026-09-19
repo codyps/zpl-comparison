@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^A** · font=0,o=B,h=32,w=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/font0-rotation-B.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png)
+**^A** · font=0,o=B,h=32,w=0 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png) | ![codyps-zpl render](../../images/argument-font0-rotation-B-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-font0-rotation-B-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png) | ![codyps-zpl render](../../images/argument-font0-rotation-B-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-font0-rotation-B-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 267 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png) | ![labelize render](../../images/argument-font0-rotation-B-labelize.png) | ![labelize difference](../../images/argument-font0-rotation-B-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png) | ![labelize render](../../images/argument-font0-rotation-B-labelize.png) | ![labelize difference](../../images/argument-font0-rotation-B-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 309 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png) | ![forge render](../../images/argument-font0-rotation-B-forge.png) | ![forge difference](../../images/argument-font0-rotation-B-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png) | ![forge render](../../images/argument-font0-rotation-B-forge.png) | ![forge difference](../../images/argument-font0-rotation-B-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 138 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png) | ![go render](../../images/argument-font0-rotation-B-go.png) | ![go difference](../../images/argument-font0-rotation-B-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png) | ![go render](../../images/argument-font0-rotation-B-go.png) | ![go difference](../../images/argument-font0-rotation-B-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 138 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png) | ![ffi render](../../images/argument-font0-rotation-B-ffi.png) | ![ffi difference](../../images/argument-font0-rotation-B-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png) | ![ffi render](../../images/argument-font0-rotation-B-ffi.png) | ![ffi difference](../../images/argument-font0-rotation-B-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 398 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png) | ![binarykits render](../../images/argument-font0-rotation-B-binarykits.png) | ![binarykits difference](../../images/argument-font0-rotation-B-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png) | ![binarykits render](../../images/argument-font0-rotation-B-binarykits.png) | ![binarykits difference](../../images/argument-font0-rotation-B-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 264 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-rotation-B.png) | ![zplr render](../../images/argument-font0-rotation-B-zplr.png) | ![zplr difference](../../images/argument-font0-rotation-B-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-rotation-B.png) | ![zplr render](../../images/argument-font0-rotation-B-zplr.png) | ![zplr difference](../../images/argument-font0-rotation-B-zplr-diff.png) |
 

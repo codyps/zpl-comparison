@@ -13,7 +13,7 @@ All 133 cases were attempted. Select a case to compare images and inspect any er
 | [code39-ratio-2](../cases/argument-code39-ratio-2.md#codyps-zpl) | 100.0% IoU · exact | w=2,ratio=2,height=60 |
 | [code39-ratio-3](../cases/argument-code39-ratio-3.md#codyps-zpl) | 100.0% IoU · exact | w=2,ratio=3,height=60 |
 | [code39-check-N](../cases/argument-code39-check-N.md#codyps-zpl) | 100.0% IoU · exact | o=N,check=N,h=60,readable=N |
-| [code39-check-Y](../cases/argument-code39-check-Y.md#codyps-zpl) | Render error | o=N,check=Y,h=60,readable=N |
+| [code39-check-Y](../cases/argument-code39-check-Y.md#codyps-zpl) | 100.0% IoU · exact | o=N,check=Y,h=60,readable=N |
 | [code128-text-NN](../cases/argument-code128-text-NN.md#codyps-zpl) | 100.0% IoU · exact | h=60,interpretation=N,above=N |
 | [code128-text-YN](../cases/argument-code128-text-YN.md#codyps-zpl) | 79.8% IoU | h=60,interpretation=Y,above=N |
 | [code128-text-YY](../cases/argument-code128-text-YY.md#codyps-zpl) | Render error | h=60,interpretation=Y,above=Y |
@@ -23,16 +23,16 @@ All 133 cases were attempted. Select a case to compare images and inspect any er
 | [code128-mode-N](../cases/argument-code128-mode-N.md#codyps-zpl) | 100.0% IoU · exact | mode=N |
 | [code128-mode-A](../cases/argument-code128-mode-A.md#codyps-zpl) | Render error | mode=A |
 | [qr-model-1](../cases/argument-qr-model-1.md#codyps-zpl) | Render error | o=N,model=1,magnification=3,EC=L,mask=0 |
-| [qr-model-2](../cases/argument-qr-model-2.md#codyps-zpl) | 2.5% IoU | o=N,model=2,magnification=3,EC=L,mask=0 |
-| [qr-ec-L](../cases/argument-qr-ec-L.md#codyps-zpl) | 2.5% IoU | model=2,magnification=3,EC=L,mask=0 |
-| [qr-ec-M](../cases/argument-qr-ec-M.md#codyps-zpl) | 3.2% IoU | model=2,magnification=3,EC=M,mask=0 |
-| [qr-ec-Q](../cases/argument-qr-ec-Q.md#codyps-zpl) | 3.0% IoU | model=2,magnification=3,EC=Q,mask=0 |
-| [qr-ec-H](../cases/argument-qr-ec-H.md#codyps-zpl) | 2.4% IoU | model=2,magnification=3,EC=H,mask=0 |
-| [qr-module-2](../cases/argument-qr-module-2.md#codyps-zpl) | 0.0% IoU | magnification=2 |
-| [qr-module-5](../cases/argument-qr-module-5.md#codyps-zpl) | 15.1% IoU | magnification=5 |
-| [qr-mask-0](../cases/argument-qr-mask-0.md#codyps-zpl) | 2.5% IoU | mask=0 |
-| [qr-mask-3](../cases/argument-qr-mask-3.md#codyps-zpl) | 2.2% IoU | mask=3 |
-| [qr-mask-7](../cases/argument-qr-mask-7.md#codyps-zpl) | 2.1% IoU | mask=7 |
+| [qr-model-2](../cases/argument-qr-model-2.md#codyps-zpl) | 100.0% IoU · exact | o=N,model=2,magnification=3,EC=L,mask=0 |
+| [qr-ec-L](../cases/argument-qr-ec-L.md#codyps-zpl) | 100.0% IoU · exact | model=2,magnification=3,EC=L,mask=0 |
+| [qr-ec-M](../cases/argument-qr-ec-M.md#codyps-zpl) | 59.0% IoU | model=2,magnification=3,EC=M,mask=0 |
+| [qr-ec-Q](../cases/argument-qr-ec-Q.md#codyps-zpl) | 100.0% IoU · exact | model=2,magnification=3,EC=Q,mask=0 |
+| [qr-ec-H](../cases/argument-qr-ec-H.md#codyps-zpl) | 76.0% IoU | model=2,magnification=3,EC=H,mask=0 |
+| [qr-module-2](../cases/argument-qr-module-2.md#codyps-zpl) | 100.0% IoU · exact | magnification=2 |
+| [qr-module-5](../cases/argument-qr-module-5.md#codyps-zpl) | 100.0% IoU · exact | magnification=5 |
+| [qr-mask-0](../cases/argument-qr-mask-0.md#codyps-zpl) | 100.0% IoU · exact | mask=0 |
+| [qr-mask-3](../cases/argument-qr-mask-3.md#codyps-zpl) | 59.9% IoU | mask=3 |
+| [qr-mask-7](../cases/argument-qr-mask-7.md#codyps-zpl) | 77.9% IoU | mask=7 |
 | [datamatrix-module-2](../cases/argument-datamatrix-module-2.md#codyps-zpl) | 100.0% IoU · exact | o=N,module=2,quality=200 |
 | [datamatrix-module-4](../cases/argument-datamatrix-module-4.md#codyps-zpl) | 100.0% IoU · exact | o=N,module=4,quality=200 |
 
@@ -41,66 +41,66 @@ All 133 cases were attempted. Select a case to compare images and inspect any er
 
 | Compare images | Result | Arguments |
 | --- | --- | --- |
-| [aztec](../cases/barcode-aztec.md#codyps-zpl) | 30.9% IoU | See exact archived ZPL |
-| [aztec_alias](../cases/barcode-aztec_alias.md#codyps-zpl) | 30.9% IoU | See exact archived ZPL |
-| [aztec_rune](../cases/barcode-aztec_rune.md#codyps-zpl) | 32.7% IoU | See exact archived ZPL |
-| [codabar](../cases/barcode-codabar.md#codyps-zpl) | 35.6% IoU | See exact archived ZPL |
+| [aztec](../cases/barcode-aztec.md#codyps-zpl) | 59.6% IoU | See exact archived ZPL |
+| [aztec_alias](../cases/barcode-aztec_alias.md#codyps-zpl) | 59.6% IoU | See exact archived ZPL |
+| [aztec_rune](../cases/barcode-aztec_rune.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [codabar](../cases/barcode-codabar.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
 | [codablock_a](../cases/barcode-codablock_a.md#codyps-zpl) | Render error | See exact archived ZPL |
-| [codablock_e](../cases/barcode-codablock_e.md#codyps-zpl) | 20.7% IoU | See exact archived ZPL |
-| [codablock_f](../cases/barcode-codablock_f.md#codyps-zpl) | 20.0% IoU | See exact archived ZPL |
-| [code11](../cases/barcode-code11.md#codyps-zpl) | 32.5% IoU | See exact archived ZPL |
-| [code128](../cases/barcode-code128.md#codyps-zpl) | 28.4% IoU | See exact archived ZPL |
-| [code39](../cases/barcode-code39.md#codyps-zpl) | 43.6% IoU | See exact archived ZPL |
-| [code49](../cases/barcode-code49.md#codyps-zpl) | 38.2% IoU | See exact archived ZPL |
-| [code93](../cases/barcode-code93.md#codyps-zpl) | 28.9% IoU | See exact archived ZPL |
-| [composite_a](../cases/barcode-composite_a.md#codyps-zpl) | 22.2% IoU | See exact archived ZPL |
-| [composite_b](../cases/barcode-composite_b.md#codyps-zpl) | 22.5% IoU | See exact archived ZPL |
-| [composite_c](../cases/barcode-composite_c.md#codyps-zpl) | 21.5% IoU | See exact archived ZPL |
-| [data_matrix](../cases/barcode-data_matrix.md#codyps-zpl) | 27.3% IoU | See exact archived ZPL |
-| [data_matrix_rectangular](../cases/barcode-data_matrix_rectangular.md#codyps-zpl) | 37.8% IoU | See exact archived ZPL |
-| [databar_ean13](../cases/barcode-databar_ean13.md#codyps-zpl) | 16.7% IoU | See exact archived ZPL |
-| [databar_ean8](../cases/barcode-databar_ean8.md#codyps-zpl) | 12.7% IoU | See exact archived ZPL |
-| [databar_expanded](../cases/barcode-databar_expanded.md#codyps-zpl) | 30.5% IoU | See exact archived ZPL |
-| [databar_expanded_stacked](../cases/barcode-databar_expanded_stacked.md#codyps-zpl) | 22.4% IoU | See exact archived ZPL |
-| [databar_limited](../cases/barcode-databar_limited.md#codyps-zpl) | 25.4% IoU | See exact archived ZPL |
-| [databar_omni](../cases/barcode-databar_omni.md#codyps-zpl) | 26.8% IoU | See exact archived ZPL |
-| [databar_stacked](../cases/barcode-databar_stacked.md#codyps-zpl) | 24.3% IoU | See exact archived ZPL |
-| [databar_stacked_omni](../cases/barcode-databar_stacked_omni.md#codyps-zpl) | 23.3% IoU | See exact archived ZPL |
-| [databar_truncated](../cases/barcode-databar_truncated.md#codyps-zpl) | 26.8% IoU | See exact archived ZPL |
-| [databar_upca](../cases/barcode-databar_upca.md#codyps-zpl) | 18.4% IoU | See exact archived ZPL |
+| [codablock_e](../cases/barcode-codablock_e.md#codyps-zpl) | 35.7% IoU | See exact archived ZPL |
+| [codablock_f](../cases/barcode-codablock_f.md#codyps-zpl) | 35.0% IoU | See exact archived ZPL |
+| [code11](../cases/barcode-code11.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [code128](../cases/barcode-code128.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [code39](../cases/barcode-code39.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [code49](../cases/barcode-code49.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [code93](../cases/barcode-code93.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [composite_a](../cases/barcode-composite_a.md#codyps-zpl) | 20.8% IoU | See exact archived ZPL |
+| [composite_b](../cases/barcode-composite_b.md#codyps-zpl) | 22.3% IoU | See exact archived ZPL |
+| [composite_c](../cases/barcode-composite_c.md#codyps-zpl) | 23.3% IoU | See exact archived ZPL |
+| [data_matrix](../cases/barcode-data_matrix.md#codyps-zpl) | 47.0% IoU | See exact archived ZPL |
+| [data_matrix_rectangular](../cases/barcode-data_matrix_rectangular.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [databar_ean13](../cases/barcode-databar_ean13.md#codyps-zpl) | 26.2% IoU | See exact archived ZPL |
+| [databar_ean8](../cases/barcode-databar_ean8.md#codyps-zpl) | 25.0% IoU | See exact archived ZPL |
+| [databar_expanded](../cases/barcode-databar_expanded.md#codyps-zpl) | 41.3% IoU | See exact archived ZPL |
+| [databar_expanded_stacked](../cases/barcode-databar_expanded_stacked.md#codyps-zpl) | 35.7% IoU | See exact archived ZPL |
+| [databar_limited](../cases/barcode-databar_limited.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [databar_omni](../cases/barcode-databar_omni.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [databar_stacked](../cases/barcode-databar_stacked.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [databar_stacked_omni](../cases/barcode-databar_stacked_omni.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [databar_truncated](../cases/barcode-databar_truncated.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [databar_upca](../cases/barcode-databar_upca.md#codyps-zpl) | 32.1% IoU | See exact archived ZPL |
 | [databar_upce](../cases/barcode-databar_upce.md#codyps-zpl) | Blank printer reference; unscored | See exact archived ZPL |
-| [ean13](../cases/barcode-ean13.md#codyps-zpl) | 23.8% IoU | See exact archived ZPL |
-| [ean8](../cases/barcode-ean8.md#codyps-zpl) | 27.5% IoU | See exact archived ZPL |
-| [extension2](../cases/barcode-extension2.md#codyps-zpl) | 17.6% IoU | See exact archived ZPL |
-| [extension5](../cases/barcode-extension5.md#codyps-zpl) | 33.3% IoU | See exact archived ZPL |
-| [industrial2of5](../cases/barcode-industrial2of5.md#codyps-zpl) | 46.7% IoU | See exact archived ZPL |
-| [intelligent_mail](../cases/barcode-intelligent_mail.md#codyps-zpl) | 16.9% IoU | See exact archived ZPL |
-| [interleaved2of5](../cases/barcode-interleaved2of5.md#codyps-zpl) | 34.7% IoU | See exact archived ZPL |
-| [logmars](../cases/barcode-logmars.md#codyps-zpl) | 39.9% IoU | See exact archived ZPL |
-| [maxicode2](../cases/barcode-maxicode2.md#codyps-zpl) | 18.6% IoU | See exact archived ZPL |
-| [maxicode3](../cases/barcode-maxicode3.md#codyps-zpl) | 18.8% IoU | See exact archived ZPL |
-| [maxicode4](../cases/barcode-maxicode4.md#codyps-zpl) | 18.6% IoU | See exact archived ZPL |
-| [maxicode5](../cases/barcode-maxicode5.md#codyps-zpl) | 5.5% IoU | See exact archived ZPL |
-| [maxicode6](../cases/barcode-maxicode6.md#codyps-zpl) | 18.2% IoU | See exact archived ZPL |
-| [micropdf417_1](../cases/barcode-micropdf417_1.md#codyps-zpl) | 32.8% IoU | See exact archived ZPL |
-| [micropdf417_3](../cases/barcode-micropdf417_3.md#codyps-zpl) | 32.7% IoU | See exact archived ZPL |
-| [micropdf417_4](../cases/barcode-micropdf417_4.md#codyps-zpl) | 31.5% IoU | See exact archived ZPL |
-| [msi_a](../cases/barcode-msi_a.md#codyps-zpl) | 17.3% IoU | See exact archived ZPL |
-| [msi_b](../cases/barcode-msi_b.md#codyps-zpl) | 16.7% IoU | See exact archived ZPL |
-| [msi_c](../cases/barcode-msi_c.md#codyps-zpl) | 16.1% IoU | See exact archived ZPL |
-| [msi_d](../cases/barcode-msi_d.md#codyps-zpl) | 16.1% IoU | See exact archived ZPL |
-| [pdf417](../cases/barcode-pdf417.md#codyps-zpl) | 31.5% IoU | See exact archived ZPL |
-| [pdf417_truncated](../cases/barcode-pdf417_truncated.md#codyps-zpl) | 29.4% IoU | See exact archived ZPL |
-| [planet](../cases/barcode-planet.md#codyps-zpl) | 15.5% IoU | See exact archived ZPL |
-| [plessey](../cases/barcode-plessey.md#codyps-zpl) | 19.2% IoU | See exact archived ZPL |
-| [postal_planet](../cases/barcode-postal_planet.md#codyps-zpl) | 15.5% IoU | See exact archived ZPL |
-| [postnet](../cases/barcode-postnet.md#codyps-zpl) | 16.4% IoU | See exact archived ZPL |
-| [qr](../cases/barcode-qr.md#codyps-zpl) | 2.0% IoU | See exact archived ZPL |
-| [standard2of5](../cases/barcode-standard2of5.md#codyps-zpl) | 45.2% IoU | See exact archived ZPL |
-| [tlc39_linear](../cases/barcode-tlc39_linear.md#codyps-zpl) | 38.3% IoU | See exact archived ZPL |
-| [tlc39_linked](../cases/barcode-tlc39_linked.md#codyps-zpl) | 29.4% IoU | See exact archived ZPL |
-| [upca](../cases/barcode-upca.md#codyps-zpl) | 32.5% IoU | See exact archived ZPL |
-| [upce](../cases/barcode-upce.md#codyps-zpl) | 29.7% IoU | See exact archived ZPL |
+| [ean13](../cases/barcode-ean13.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [ean8](../cases/barcode-ean8.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [extension2](../cases/barcode-extension2.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [extension5](../cases/barcode-extension5.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [industrial2of5](../cases/barcode-industrial2of5.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [intelligent_mail](../cases/barcode-intelligent_mail.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [interleaved2of5](../cases/barcode-interleaved2of5.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [logmars](../cases/barcode-logmars.md#codyps-zpl) | 90.6% IoU | See exact archived ZPL |
+| [maxicode2](../cases/barcode-maxicode2.md#codyps-zpl) | 48.9% IoU | See exact archived ZPL |
+| [maxicode3](../cases/barcode-maxicode3.md#codyps-zpl) | 49.4% IoU | See exact archived ZPL |
+| [maxicode4](../cases/barcode-maxicode4.md#codyps-zpl) | 45.6% IoU | See exact archived ZPL |
+| [maxicode5](../cases/barcode-maxicode5.md#codyps-zpl) | 12.3% IoU | See exact archived ZPL |
+| [maxicode6](../cases/barcode-maxicode6.md#codyps-zpl) | 45.5% IoU | See exact archived ZPL |
+| [micropdf417_1](../cases/barcode-micropdf417_1.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [micropdf417_3](../cases/barcode-micropdf417_3.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [micropdf417_4](../cases/barcode-micropdf417_4.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [msi_a](../cases/barcode-msi_a.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [msi_b](../cases/barcode-msi_b.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [msi_c](../cases/barcode-msi_c.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [msi_d](../cases/barcode-msi_d.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [pdf417](../cases/barcode-pdf417.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [pdf417_truncated](../cases/barcode-pdf417_truncated.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [planet](../cases/barcode-planet.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [plessey](../cases/barcode-plessey.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [postal_planet](../cases/barcode-postal_planet.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [postnet](../cases/barcode-postnet.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [qr](../cases/barcode-qr.md#codyps-zpl) | 65.9% IoU | See exact archived ZPL |
+| [standard2of5](../cases/barcode-standard2of5.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [tlc39_linear](../cases/barcode-tlc39_linear.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [tlc39_linked](../cases/barcode-tlc39_linked.md#codyps-zpl) | 65.8% IoU | See exact archived ZPL |
+| [upca](../cases/barcode-upca.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
+| [upce](../cases/barcode-upce.md#codyps-zpl) | 100.0% IoU · exact | See exact archived ZPL |
 
 
 ## graphics
@@ -138,11 +138,11 @@ All 133 cases were attempted. Select a case to compare images and inspect any er
 | [box-thickness-4](../cases/argument-box-thickness-4.md#codyps-zpl) | 100.0% IoU · exact | w=100,h=60,t=4,color=B,round=0 |
 | [box-thickness-60](../cases/argument-box-thickness-60.md#codyps-zpl) | 100.0% IoU · exact | w=100,h=60,t=60,color=B,round=0 |
 | [box-round](../cases/argument-box-round.md#codyps-zpl) | 90.7% IoU | round=4 |
-| [box-white](../cases/argument-box-white.md#codyps-zpl) | Render error | color=W |
+| [box-white](../cases/argument-box-white.md#codyps-zpl) | 100.0% IoU · exact | color=W |
 | [shape-GC-B](../cases/argument-shape-GC-B.md#codyps-zpl) | 63.3% IoU | 80,3,B |
 | [shape-GE-B](../cases/argument-shape-GE-B.md#codyps-zpl) | 50.3% IoU | 120,60,3,B |
-| [shape-GD-R](../cases/argument-shape-GD-R.md#codyps-zpl) | Render error | 120,60,3,B,R |
-| [shape-GD-L](../cases/argument-shape-GD-L.md#codyps-zpl) | Render error | 120,60,3,B,L |
+| [shape-GD-R](../cases/argument-shape-GD-R.md#codyps-zpl) | 100.0% IoU · exact | 120,60,3,B,R |
+| [shape-GD-L](../cases/argument-shape-GD-L.md#codyps-zpl) | 100.0% IoU · exact | 120,60,3,B,L |
 
 
 ## text

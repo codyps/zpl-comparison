@@ -17,19 +17,19 @@
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/go.md)
 
-13/132 exact; mean IoU 35.1%; 0 errors. Snapshot: 2026-09-18T23:14:28Z.
+16/132 exact; mean IoU 37.1%; 0 errors. Snapshot: 2026-09-18T23:52:17Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | Not measured | Not measured |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 8.7%; 0 errors | Not measured |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 5/25 exact; mean IoU 34.0%; 0 errors | Not measured |
-| [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | Not measured |
-| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 69.5%; 0 errors | Not measured |
-| [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 66.1%; 0 errors | Not measured |
-| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 62.8%; 0 errors | Not measured |
+| [Barcode families](../features/barcode-families.md) | 60 | Not measured | Not measured |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | Not measured | Not measured |
+| [Baseline graphics](../features/baseline-graphics.md) | 4 | Not measured | Not measured |
+| [Baseline layout](../features/baseline-layout.md) | 11 | Not measured | Not measured |
+| [Baseline shapes](../features/baseline-shapes.md) | 9 | Not measured | Not measured |
+| [Baseline text](../features/baseline-text.md) | 24 | Not measured | Not measured |
 | [Clipping](../features/clipping.md) | 5 | Not measured | Not measured |
 | [Compositing](../features/compositing.md) | 5 | Not measured | Not measured |
 | [Encoding](../features/encoding.md) | 28 | Not measured | Not measured |
@@ -55,36 +55,36 @@
 | --- | --- | --- | --- |
 | [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L144) | 0/12 exact; mean IoU 62.6%; 0 errors |
 | [`^A@`](../commands/format-a-named.md) | Use Font Name to Call Font | ❔ No evidence found | Not measured |
-| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 10.6%; 0 errors |
-| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.5%; 0 errors |
-| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.9%; 0 errors |
-| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [⏭️ Ignored / stored only](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L192) | 0/3 exact; mean IoU 5.8%; 0 errors |
-| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.0%; 0 errors |
-| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.9%; 0 errors |
-| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L185) | 0/2 exact; mean IoU 28.4%; 0 errors |
-| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.4%; 0 errors |
-| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.3%; 0 errors |
-| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors |
-| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 9.1%; 0 errors |
-| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L155) | 3/9 exact; mean IoU 63.2%; 0 errors |
-| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L179) | 0/5 exact; mean IoU 16.4%; 0 errors |
-| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 5.6%; 0 errors |
-| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 0.1%; 0 errors |
-| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.4%; 0 errors |
-| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.3%; 0 errors |
-| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors |
-| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.8%; 0 errors |
-| [`^BM`](../commands/format-bm.md) | MSI Bar Code | ❔ No evidence found | 0/4 exact; mean IoU 3.1%; 0 errors |
-| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L187) | 0/2 exact; mean IoU 30.4%; 0 errors |
-| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 1.9%; 0 errors |
-| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L181) | 0/12 exact; mean IoU 7.1%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 8.5%; 0 errors |
-| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | ❔ No evidence found | 0/2 exact; mean IoU 3.2%; 0 errors |
-| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 4.2%; 0 errors |
-| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 5.5%; 0 errors |
-| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L183) | 2/4 exact; mean IoU 59.0%; 0 errors |
+| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 13.0%; 0 errors |
+| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.6%; 0 errors |
+| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 5.5%; 0 errors |
+| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [⏭️ Ignored / stored only](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L192) | 0/3 exact; mean IoU 6.0%; 0 errors |
+| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 7.1%; 0 errors |
+| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.2%; 0 errors |
+| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L185) | 1/2 exact; mean IoU 86.5%; 0 errors |
+| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.8%; 0 errors |
+| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.0%; 0 errors |
+| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.2%; 0 errors |
+| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 10.9%; 0 errors |
+| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L155) | 4/9 exact; mean IoU 71.1%; 0 errors |
+| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L179) | 0/5 exact; mean IoU 20.3%; 0 errors |
+| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.3%; 0 errors |
+| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 2.9%; 0 errors |
+| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.8%; 0 errors |
+| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.1%; 0 errors |
+| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.3%; 0 errors |
+| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.2%; 0 errors |
+| [`^BM`](../commands/format-bm.md) | MSI Bar Code | ❔ No evidence found | 0/4 exact; mean IoU 3.0%; 0 errors |
+| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L187) | 1/2 exact; mean IoU 64.2%; 0 errors |
+| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors |
+| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L181) | 0/12 exact; mean IoU 1.3%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 9.0%; 0 errors |
+| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | ❔ No evidence found | 0/2 exact; mean IoU 4.9%; 0 errors |
+| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 4.5%; 0 errors |
+| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.1%; 0 errors |
+| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L183) | 2/4 exact; mean IoU 66.1%; 0 errors |
 | [`^BY`](../commands/format-by.md) | Bar Code Field Default | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L153) | 0/2 exact; mean IoU 8.4%; 0 errors |
-| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 3.2%; 0 errors |
+| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 3.4%; 0 errors |
 | [`^CC`](../commands/format-cc.md) | Change Caret Command Prefix | ❔ No evidence found | Not measured |
 | [`~CC`](../commands/control-cc.md) | Change Caret Command Prefix | ❔ No evidence found | Not measured |
 | [`^CD`](../commands/format-cd.md) | Change Delimiter Character | ❔ No evidence found | Not measured |

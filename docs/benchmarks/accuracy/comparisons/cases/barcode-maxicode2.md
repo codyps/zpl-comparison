@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BD** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/maxicode2.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png)
+**^BD** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,13 +14,13 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 18.6% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 48.9% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 8382 pixels; extra ink: 9780 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 3847 pixels; extra ink: 5245 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png) | ![codyps-zpl render](../../images/barcode-maxicode2-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-maxicode2-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png) | ![codyps-zpl render](../../images/barcode-maxicode2-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-maxicode2-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -29,14 +29,14 @@ Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 8382 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41241401) panicked at src/main.rs:61:14:
+thread 'main' (41349522) panicked at src/main.rs:62:14:
 PNG: "MaxiCode mode 2 postal code must contain 1 to 9 digits"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -44,55 +44,55 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ## forge
 
-**zpl-forge (Rust): 3.2% IoU** · [All cases for this library](../libraries/forge.md)
+**zpl-forge (Rust): 3.0% IoU** · [All cases for this library](../libraries/forge.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 12099 pixels; extra ink: 1341 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 12120 pixels; extra ink: 1362 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png) | ![forge render](../../images/barcode-maxicode2-forge.png) | ![forge difference](../../images/barcode-maxicode2-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png) | ![forge render](../../images/barcode-maxicode2-forge.png) | ![forge difference](../../images/barcode-maxicode2-forge-diff.png) |
 
 
 ## go
 
-**go-zpl (Go): 19.3% IoU** · [All cases for this library](../libraries/go.md)
+**go-zpl (Go): 22.1% IoU** · [All cases for this library](../libraries/go.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 8528 pixels; extra ink: 8283 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 8041 pixels; extra ink: 7796 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png) | ![go render](../../images/barcode-maxicode2-go.png) | ![go difference](../../images/barcode-maxicode2-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png) | ![go render](../../images/barcode-maxicode2-go.png) | ![go difference](../../images/barcode-maxicode2-go-diff.png) |
 
 
 ## ffi
 
-**zpl-rs (Rust → Go): 19.3% IoU** · [All cases for this library](../libraries/ffi.md)
+**zpl-rs (Rust → Go): 22.1% IoU** · [All cases for this library](../libraries/ffi.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 8528 pixels; extra ink: 8283 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 8041 pixels; extra ink: 7796 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png) | ![ffi render](../../images/barcode-maxicode2-ffi.png) | ![ffi difference](../../images/barcode-maxicode2-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png) | ![ffi render](../../images/barcode-maxicode2-ffi.png) | ![ffi difference](../../images/barcode-maxicode2-ffi-diff.png) |
 
 
 ## binarykits
 
-**BinaryKits.Zpl (.NET): 19.4% IoU** · [All cases for this library](../libraries/binarykits.md)
+**BinaryKits.Zpl (.NET): 54.7% IoU** · [All cases for this library](../libraries/binarykits.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 8454 pixels; extra ink: 8490 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 3661 pixels; extra ink: 3697 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png) | ![binarykits render](../../images/barcode-maxicode2-binarykits.png) | ![binarykits difference](../../images/barcode-maxicode2-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png) | ![binarykits render](../../images/barcode-maxicode2-binarykits.png) | ![binarykits difference](../../images/barcode-maxicode2-binarykits-diff.png) |
 
 
 ## zplr
 
-**ZPLr (TypeScript): 16.7% IoU** · [All cases for this library](../libraries/zplr.md)
+**ZPLr (TypeScript): 69.3% IoU** · [All cases for this library](../libraries/zplr.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 8961 pixels; extra ink: 8955 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 2280 pixels; extra ink: 2274 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png) | ![zplr render](../../images/barcode-maxicode2-zplr.png) | ![zplr difference](../../images/barcode-maxicode2-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/maxicode2.png) | ![zplr render](../../images/barcode-maxicode2-zplr.png) | ![zplr difference](../../images/barcode-maxicode2-zplr-diff.png) |
 

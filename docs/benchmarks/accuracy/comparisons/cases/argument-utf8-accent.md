@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^CI** · encoding=28; UTF-8 é · [ZPL input](../../../../../benchmarks/accuracy/reference/utf8-accent.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png)
+**^CI** · encoding=28; UTF-8 é · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -18,15 +18,15 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41231805) panicked at src/main.rs:25:10:
-render: RenderError { offset: 77, message: "unsupported embedded font glyph 'é'" }
+thread 'main' (41355707) panicked at src/main.rs:26:10:
+render: RenderError { offset: 87, message: "unsupported embedded font glyph 'é'" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~
@@ -39,7 +39,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 96 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![labelize render](../../images/argument-utf8-accent-labelize.png) | ![labelize difference](../../images/argument-utf8-accent-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png) | ![labelize render](../../images/argument-utf8-accent-labelize.png) | ![labelize difference](../../images/argument-utf8-accent-labelize-diff.png) |
 
 
 ## forge
@@ -50,7 +50,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 251 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![forge render](../../images/argument-utf8-accent-forge.png) | ![forge difference](../../images/argument-utf8-accent-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png) | ![forge render](../../images/argument-utf8-accent-forge.png) | ![forge difference](../../images/argument-utf8-accent-forge-diff.png) |
 
 
 ## go
@@ -61,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 65 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![go render](../../images/argument-utf8-accent-go.png) | ![go difference](../../images/argument-utf8-accent-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png) | ![go render](../../images/argument-utf8-accent-go.png) | ![go difference](../../images/argument-utf8-accent-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 65 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![ffi render](../../images/argument-utf8-accent-ffi.png) | ![ffi difference](../../images/argument-utf8-accent-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png) | ![ffi render](../../images/argument-utf8-accent-ffi.png) | ![ffi difference](../../images/argument-utf8-accent-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 305 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![binarykits render](../../images/argument-utf8-accent-binarykits.png) | ![binarykits difference](../../images/argument-utf8-accent-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png) | ![binarykits render](../../images/argument-utf8-accent-binarykits.png) | ![binarykits difference](../../images/argument-utf8-accent-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,5 +94,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 330 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![zplr render](../../images/argument-utf8-accent-zplr.png) | ![zplr difference](../../images/argument-utf8-accent-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/utf8-accent.png) | ![zplr render](../../images/argument-utf8-accent-zplr.png) | ![zplr difference](../../images/argument-utf8-accent-zplr-diff.png) |
 

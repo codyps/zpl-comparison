@@ -96,7 +96,7 @@ def rows():
     )
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    for probe in module.probes():
+    for probe in module.probes(explicit_defaults=False):
         if probe["group"] == "repeatability":
             continue
         add(
@@ -115,7 +115,9 @@ def rows():
             "symbol-" + path.stem,
             "barcode-families",
             "Reference symbol variant: " + path.stem,
-            path.read_bytes(),
+            # Preserve the separately versioned conformance corpus inputs.
+            # The accuracy suite now recaptures these symbols at PW832.
+            path.read_bytes().replace(b"^PW832", b"^PW812"),
             document=True,
             source=str(path.relative_to(REPO)),
         )

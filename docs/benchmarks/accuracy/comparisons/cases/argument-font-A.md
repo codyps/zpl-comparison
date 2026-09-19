@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^A** · font=A,o=N,h=32,w=24 · [ZPL input](../../../../../benchmarks/accuracy/reference/font-A.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png)
+**^A** · font=A,o=N,h=32,w=24 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -18,15 +18,15 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41228780) panicked at src/main.rs:25:10:
-render: RenderError { offset: 63, message: "only resident font 0 is embedded; other font selections are unsupported" }
+thread 'main' (41355608) panicked at src/main.rs:26:10:
+render: RenderError { offset: 73, message: "only resident font 0 is embedded; other font selections are unsupported" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~
@@ -39,7 +39,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1618 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | ![labelize render](../../images/argument-font-A-labelize.png) | ![labelize difference](../../images/argument-font-A-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png) | ![labelize render](../../images/argument-font-A-labelize.png) | ![labelize difference](../../images/argument-font-A-labelize-diff.png) |
 
 
 ## forge
@@ -50,7 +50,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 844 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | ![forge render](../../images/argument-font-A-forge.png) | ![forge difference](../../images/argument-font-A-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png) | ![forge render](../../images/argument-font-A-forge.png) | ![forge difference](../../images/argument-font-A-forge-diff.png) |
 
 
 ## go
@@ -61,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1707 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | ![go render](../../images/argument-font-A-go.png) | ![go difference](../../images/argument-font-A-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png) | ![go render](../../images/argument-font-A-go.png) | ![go difference](../../images/argument-font-A-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1707 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | ![ffi render](../../images/argument-font-A-ffi.png) | ![ffi difference](../../images/argument-font-A-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png) | ![ffi render](../../images/argument-font-A-ffi.png) | ![ffi difference](../../images/argument-font-A-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 939 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | ![binarykits render](../../images/argument-font-A-binarykits.png) | ![binarykits difference](../../images/argument-font-A-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png) | ![binarykits render](../../images/argument-font-A-binarykits.png) | ![binarykits difference](../../images/argument-font-A-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,5 +94,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1260 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-A.png) | ![zplr render](../../images/argument-font-A-zplr.png) | ![zplr difference](../../images/argument-font-A-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font-A.png) | ![zplr render](../../images/argument-font-A-zplr.png) | ![zplr difference](../../images/argument-font-A-zplr-diff.png) |
 

@@ -10,12 +10,12 @@ Feature groups are rendering behaviors tested by the corpus, including combined 
 | Feature | Fixtures | Libraries with matched printer measurements |
 | --- | --- | --- |
 | [Barcode arguments](barcode-arguments.md) | 70 | 0 |
-| [Barcode families](barcode-families.md) | 60 | 7 |
-| [Baseline barcode arguments](baseline-barcode-arguments.md) | 25 | 7 |
-| [Baseline graphics](baseline-graphics.md) | 4 | 7 |
-| [Baseline layout](baseline-layout.md) | 11 | 7 |
-| [Baseline shapes](baseline-shapes.md) | 9 | 7 |
-| [Baseline text](baseline-text.md) | 24 | 7 |
+| [Barcode families](barcode-families.md) | 60 | 0 |
+| [Baseline barcode arguments](baseline-barcode-arguments.md) | 25 | 0 |
+| [Baseline graphics](baseline-graphics.md) | 4 | 0 |
+| [Baseline layout](baseline-layout.md) | 11 | 0 |
+| [Baseline shapes](baseline-shapes.md) | 9 | 0 |
+| [Baseline text](baseline-text.md) | 24 | 0 |
 | [Clipping](clipping.md) | 5 | 0 |
 | [Compositing](compositing.md) | 5 | 0 |
 | [Encoding](encoding.md) | 28 | 0 |

@@ -7,14 +7,14 @@
 
 | Library | Language | API category | Version / pin | Printer measurements |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](codyps-zpl.md) | Rust | Parser and renderer | 0.1.0 @ 280fc0cf4d0a | 38/132 exact; mean IoU 44.1%; 15 errors |
+| [codyps/zpl](codyps-zpl.md) | Rust | Parser and renderer | 0.1.0 @ 280fc0cf4d0a | 85/132 exact; mean IoU 77.0%; 11 errors |
 | [zpl-toolchain](toolchain.md) | Rust | Parser and validator | 0.4.1 | N/A – no incoming-ZPL renderer |
-| [labelize](labelize.md) | Rust | Parser and renderer | 1.5.0 | 18/132 exact; mean IoU 38.6%; 5 errors |
-| [zpl-forge](forge.md) | Rust | Parser and renderer | 0.3.2 | 15/132 exact; mean IoU 33.4%; 7 errors |
-| [go-zpl](go.md) | Go | Parser and renderer | source 78b181940c76 | 13/132 exact; mean IoU 35.1%; 0 errors |
-| [zpl-rs](ffi.md) | Rust → Go | Renderer wrapper | 0.1.8 | 13/132 exact; mean IoU 34.5%; 0 errors |
-| [BinaryKits.Zpl Viewer](binarykits.md) | .NET | Parser and renderer | 1.3.1 | 18/132 exact; mean IoU 31.8%; 0 errors |
-| [ZPLr](zplr.md) | TypeScript | Parser and renderer | 0.3.0 | 22/132 exact; mean IoU 42.7%; 0 errors |
+| [labelize](labelize.md) | Rust | Parser and renderer | 1.5.0 | 24/132 exact; mean IoU 48.4%; 5 errors |
+| [zpl-forge](forge.md) | Rust | Parser and renderer | 0.3.2 | 22/132 exact; mean IoU 39.9%; 7 errors |
+| [go-zpl](go.md) | Go | Parser and renderer | source 78b181940c76 | 16/132 exact; mean IoU 37.1%; 0 errors |
+| [zpl-rs](ffi.md) | Rust → Go | Renderer wrapper | 0.1.8 | 16/132 exact; mean IoU 36.6%; 0 errors |
+| [BinaryKits.Zpl Viewer](binarykits.md) | .NET | Parser and renderer | 1.3.1 | 26/132 exact; mean IoU 39.0%; 0 errors |
+| [ZPLr](zplr.md) | TypeScript | Parser and renderer | 0.3.0 | 60/132 exact; mean IoU 73.0%; 0 errors |
 | [zpl-builder](builder.md) | Rust | Typed generator | 0.1.0 | N/A – no incoming-ZPL renderer |
 | [Python ZPL](python.md) | Python | Typed generator | source 9bbeca05aa42 | N/A – no incoming-ZPL renderer |
 | [JSZPL](jszpl.md) | TypeScript | Typed generator | 2.0.1 | N/A – no incoming-ZPL renderer |

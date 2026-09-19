@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BO** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/aztec_rune.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png)
+**^BO** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,77 +14,77 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 32.7% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 544 pixels; extra ink: 544 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png) | ![codyps-zpl render](../../images/barcode-aztec_rune-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-aztec_rune-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png) | ![codyps-zpl render](../../images/barcode-aztec_rune-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-aztec_rune-codyps-zpl-diff.png) |
 
 
 ## labelize
 
-**labelize (Rust): 29.3% IoU** · [All cases for this library](../libraries/labelize.md)
+**labelize (Rust): 28.4% IoU** · [All cases for this library](../libraries/labelize.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 416 pixels; extra ink: 1168 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 432 pixels; extra ink: 1184 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png) | ![labelize render](../../images/barcode-aztec_rune-labelize.png) | ![labelize difference](../../images/barcode-aztec_rune-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png) | ![labelize render](../../images/barcode-aztec_rune-labelize.png) | ![labelize difference](../../images/barcode-aztec_rune-labelize-diff.png) |
 
 
 ## forge
 
-**zpl-forge (Rust): 29.3% IoU** · [All cases for this library](../libraries/forge.md)
+**zpl-forge (Rust): 28.4% IoU** · [All cases for this library](../libraries/forge.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 416 pixels; extra ink: 1168 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 432 pixels; extra ink: 1184 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png) | ![forge render](../../images/barcode-aztec_rune-forge.png) | ![forge difference](../../images/barcode-aztec_rune-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png) | ![forge render](../../images/barcode-aztec_rune-forge.png) | ![forge difference](../../images/barcode-aztec_rune-forge-diff.png) |
 
 
 ## go
 
-**go-zpl (Go): 29.3% IoU** · [All cases for this library](../libraries/go.md)
+**go-zpl (Go): 28.4% IoU** · [All cases for this library](../libraries/go.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 416 pixels; extra ink: 1168 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 432 pixels; extra ink: 1184 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png) | ![go render](../../images/barcode-aztec_rune-go.png) | ![go difference](../../images/barcode-aztec_rune-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png) | ![go render](../../images/barcode-aztec_rune-go.png) | ![go difference](../../images/barcode-aztec_rune-go-diff.png) |
 
 
 ## ffi
 
-**zpl-rs (Rust → Go): 29.3% IoU** · [All cases for this library](../libraries/ffi.md)
+**zpl-rs (Rust → Go): 28.4% IoU** · [All cases for this library](../libraries/ffi.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 416 pixels; extra ink: 1168 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 432 pixels; extra ink: 1184 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png) | ![ffi render](../../images/barcode-aztec_rune-ffi.png) | ![ffi difference](../../images/barcode-aztec_rune-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png) | ![ffi render](../../images/barcode-aztec_rune-ffi.png) | ![ffi difference](../../images/barcode-aztec_rune-ffi-diff.png) |
 
 
 ## binarykits
 
-**BinaryKits.Zpl (.NET): 29.3% IoU** · [All cases for this library](../libraries/binarykits.md)
+**BinaryKits.Zpl (.NET): 28.4% IoU** · [All cases for this library](../libraries/binarykits.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 416 pixels; extra ink: 1168 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 432 pixels; extra ink: 1184 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png) | ![binarykits render](../../images/barcode-aztec_rune-binarykits.png) | ![binarykits difference](../../images/barcode-aztec_rune-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png) | ![binarykits render](../../images/barcode-aztec_rune-binarykits.png) | ![binarykits difference](../../images/barcode-aztec_rune-binarykits-diff.png) |
 
 
 ## zplr
 
-**ZPLr (TypeScript): 32.7% IoU** · [All cases for this library](../libraries/zplr.md)
+**ZPLr (TypeScript): 100.0% IoU · exact** · [All cases for this library](../libraries/zplr.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 544 pixels; extra ink: 544 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/aztec_rune.png) | ![zplr render](../../images/barcode-aztec_rune-zplr.png) | ![zplr difference](../../images/barcode-aztec_rune-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/aztec_rune.png) | ![zplr render](../../images/barcode-aztec_rune-zplr.png) | ![zplr difference](../../images/barcode-aztec_rune-zplr-diff.png) |
 

@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^CI** · encoding=27 · [ZPL input](../../../../../benchmarks/accuracy/reference/encoding-27.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png)
+**^CI** · encoding=27 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png) | ![codyps-zpl render](../../images/argument-encoding-27-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-encoding-27-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png) | ![codyps-zpl render](../../images/argument-encoding-27-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-encoding-27-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 130 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png) | ![labelize render](../../images/argument-encoding-27-labelize.png) | ![labelize difference](../../images/argument-encoding-27-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png) | ![labelize render](../../images/argument-encoding-27-labelize.png) | ![labelize difference](../../images/argument-encoding-27-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 523 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png) | ![forge render](../../images/argument-encoding-27-forge.png) | ![forge difference](../../images/argument-encoding-27-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png) | ![forge render](../../images/argument-encoding-27-forge.png) | ![forge difference](../../images/argument-encoding-27-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 172 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png) | ![go render](../../images/argument-encoding-27-go.png) | ![go difference](../../images/argument-encoding-27-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png) | ![go render](../../images/argument-encoding-27-go.png) | ![go difference](../../images/argument-encoding-27-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 172 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png) | ![ffi render](../../images/argument-encoding-27-ffi.png) | ![ffi difference](../../images/argument-encoding-27-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png) | ![ffi render](../../images/argument-encoding-27-ffi.png) | ![ffi difference](../../images/argument-encoding-27-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 872 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png) | ![binarykits render](../../images/argument-encoding-27-binarykits.png) | ![binarykits difference](../../images/argument-encoding-27-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png) | ![binarykits render](../../images/argument-encoding-27-binarykits.png) | ![binarykits difference](../../images/argument-encoding-27-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 884 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/encoding-27.png) | ![zplr render](../../images/argument-encoding-27-zplr.png) | ![zplr difference](../../images/argument-encoding-27-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/encoding-27.png) | ![zplr render](../../images/argument-encoding-27-zplr.png) | ![zplr difference](../../images/argument-encoding-27-zplr-diff.png) |
 

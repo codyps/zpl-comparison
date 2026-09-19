@@ -17,19 +17,19 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/codyps-zpl.md)
 
-38/132 exact; mean IoU 44.1%; 15 errors. Snapshot: 2026-09-18T23:14:28Z.
+85/132 exact; mean IoU 77.0%; 11 errors. Snapshot: 2026-09-18T23:52:17Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | Not measured | Not measured |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 25.2%; 1 errors | Not measured |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 10/25 exact; mean IoU 44.6%; 4 errors | Not measured |
-| [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | Not measured |
-| [Baseline layout](../features/baseline-layout.md) | 11 | 7/11 exact; mean IoU 64.2%; 2 errors | Not measured |
-| [Baseline shapes](../features/baseline-shapes.md) | 9 | 3/9 exact; mean IoU 56.0%; 3 errors | Not measured |
-| [Baseline text](../features/baseline-text.md) | 24 | 14/24 exact; mean IoU 67.1%; 5 errors | Not measured |
+| [Barcode families](../features/barcode-families.md) | 60 | Not measured | Not measured |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | Not measured | Not measured |
+| [Baseline graphics](../features/baseline-graphics.md) | 4 | Not measured | Not measured |
+| [Baseline layout](../features/baseline-layout.md) | 11 | Not measured | Not measured |
+| [Baseline shapes](../features/baseline-shapes.md) | 9 | Not measured | Not measured |
+| [Baseline text](../features/baseline-text.md) | 24 | Not measured | Not measured |
 | [Clipping](../features/clipping.md) | 5 | Not measured | Not measured |
 | [Compositing](../features/compositing.md) | 5 | Not measured | Not measured |
 | [Encoding](../features/encoding.md) | 28 | Not measured | Not measured |
@@ -55,36 +55,36 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | --- | --- | --- | --- |
 | [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L359) | 6/12 exact; mean IoU 66.0%; 2 errors |
 | [`^A@`](../commands/format-a-named.md) | Use Font Name to Call Font | 📦 Framing only | Not measured |
-| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 30.9%; 0 errors |
-| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 32.5%; 0 errors |
-| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 34.7%; 0 errors |
-| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L404) | 1/3 exact; mean IoU 47.9%; 1 errors |
-| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 38.2%; 0 errors |
-| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 15.5%; 0 errors |
-| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/2 exact; mean IoU 30.4%; 0 errors |
-| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 27.5%; 0 errors |
-| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 29.7%; 0 errors |
-| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 28.9%; 0 errors |
-| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/3 exact; mean IoU 13.6%; 1 errors |
-| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L386) | 5/9 exact; mean IoU 67.6%; 2 errors |
-| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/5 exact; mean IoU 15.9%; 0 errors |
-| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 23.8%; 0 errors |
-| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/3 exact; mean IoU 32.3%; 0 errors |
-| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 46.7%; 0 errors |
-| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 45.2%; 0 errors |
-| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 35.6%; 0 errors |
-| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 39.9%; 0 errors |
-| [`^BM`](../commands/format-bm.md) | MSI Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/4 exact; mean IoU 16.6%; 0 errors |
-| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/2 exact; mean IoU 31.8%; 0 errors |
-| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 19.2%; 0 errors |
-| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/12 exact; mean IoU 3.1%; 1 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/13 exact; mean IoU 22.6%; 0 errors |
-| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/2 exact; mean IoU 25.5%; 0 errors |
-| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/2 exact; mean IoU 33.9%; 0 errors |
-| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 32.5%; 0 errors |
-| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 2/4 exact; mean IoU 66.3%; 0 errors |
+| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 59.6%; 0 errors |
+| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L404) | 3/3 exact; mean IoU 100.0%; 0 errors |
+| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 2/2 exact; mean IoU 100.0%; 0 errors |
+| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/3 exact; mean IoU 23.6%; 1 errors |
+| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L386) | 6/9 exact; mean IoU 75.5%; 2 errors |
+| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/5 exact; mean IoU 40.3%; 0 errors |
+| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 3/3 exact; mean IoU 100.0%; 0 errors |
+| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 90.6%; 0 errors |
+| [`^BM`](../commands/format-bm.md) | MSI Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 4/4 exact; mean IoU 100.0%; 0 errors |
+| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/2 exact; mean IoU 79.8%; 0 errors |
+| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 6/12 exact; mean IoU 78.2%; 1 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 5/13 exact; mean IoU 55.9%; 0 errors |
+| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 2/2 exact; mean IoU 100.0%; 0 errors |
+| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/2 exact; mean IoU 82.9%; 0 errors |
+| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 3/4 exact; mean IoU 86.8%; 0 errors |
 | [`^BY`](../commands/format-by.md) | Bar Code Field Default | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L377) | 2/2 exact; mean IoU 100.0%; 0 errors |
-| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/3 exact; mean IoU 16.3%; 0 errors |
+| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 3/3 exact; mean IoU 100.0%; 0 errors |
 | [`^CC`](../commands/format-cc.md) | Change Caret Command Prefix | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240) | Not measured |
 | [`~CC`](../commands/control-cc.md) | Change Caret Command Prefix | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L161) | Not measured |
 | [`^CD`](../commands/format-cd.md) | Change Delimiter Character | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240) | Not measured |
@@ -125,9 +125,9 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | [`^FV`](../commands/format-fv.md) | Field Data | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L444) | 1/1 exact; mean IoU 100.0%; 0 errors |
 | [`^FW`](../commands/format-fw.md) | Field Orientation | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L308) | 1/1 exact; mean IoU 100.0%; 0 errors |
 | [`^FX`](../commands/format-fx.md) | Comment | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240) | Not measured |
-| [`^GB`](../commands/format-gb.md) | Graphic Box | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L522) | 3/5 exact; mean IoU 78.1%; 1 errors |
+| [`^GB`](../commands/format-gb.md) | Graphic Box | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L522) | 4/5 exact; mean IoU 98.1%; 0 errors |
 | [`^GC`](../commands/format-gc.md) | Graphic Circle | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L522) | 0/1 exact; mean IoU 63.3%; 0 errors |
-| [`^GD`](../commands/format-gd.md) | Graphic Diagonal Line | 📦 Framing only | 0/2 exact; mean IoU 0.0%; 2 errors |
+| [`^GD`](../commands/format-gd.md) | Graphic Diagonal Line | 📦 Framing only | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^GE`](../commands/format-ge.md) | Graphic Ellipse | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L522) | 0/1 exact; mean IoU 50.3%; 0 errors |
 | [`^GF`](../commands/format-gf.md) | Graphic Field | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L566) | 4/4 exact; mean IoU 100.0%; 0 errors |
 | [`^GS`](../commands/format-gs.md) | Graphic Symbol | 📦 Framing only | Not measured |
