@@ -18,4 +18,5 @@
 | [zpl-builder](builder.md) | Rust | Typed generator | 0.1.0 | N/A – no incoming-ZPL renderer |
 | [Python ZPL](python.md) | Python | Typed generator | source 9bbeca05aa42 | N/A – no incoming-ZPL renderer |
 | [JSZPL](jszpl.md) | TypeScript | Typed generator | 2.0.1 | N/A – no incoming-ZPL renderer |
+| [Labelary](labelary.md) | Hosted service | Captured renderer | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | 56/132 exact; mean IoU 76.6%; 0 errors |
 

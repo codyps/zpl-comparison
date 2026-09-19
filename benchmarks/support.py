@@ -39,6 +39,7 @@ def main():
             "builder",
             "python",
             "jszpl",
+            "labelary",
         ]
     }
 

@@ -123,6 +123,9 @@ def main():
         ap.error("Timeout must be positive")
     manifest, cases = load_cases(args.corpus, groups=args.group, invalid=args.include_invalid)
     cfg = json.loads((ROOT / "_work/config.json").read_text())
+    from labelary import DEFAULT, register, validate
+
+    register(cfg)
     libraries = metrics.LIBRARIES if args.only == "all" else args.only.split(",")
     if (
         not libraries
@@ -132,6 +135,8 @@ def main():
         )
     ):
         ap.error("Select built rendering adapters")
+    if "labelary" in libraries:
+        validate(DEFAULT)
     refs = {}
     reference = None
     if args.reference:

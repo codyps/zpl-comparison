@@ -6,11 +6,11 @@
 
 **^BD** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/maxicode6.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -36,7 +36,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41814599) panicked at src/main.rs:62:14:
+thread 'main' (41965915) panicked at src/main.rs:62:14:
 PNG: "MaxiCode mode 6 is not supported; expected 2, 3, or 4"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -95,4 +95,17 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 2652 pixels; 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![zplr render](../../images/barcode-maxicode6-zplr.png) | ![zplr difference](../../images/barcode-maxicode6-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 18.1% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 9329 pixels; extra ink: 8228 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![labelary render](../../images/barcode-maxicode6-labelary.png) | ![labelary difference](../../images/barcode-maxicode6-labelary-diff.png) |
 

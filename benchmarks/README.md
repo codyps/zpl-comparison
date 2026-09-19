@@ -100,6 +100,14 @@ cargo fmt --manifest-path benchmarks/adapters/rust/Cargo.toml -- --check
 
 Report regeneration uses saved JSON only and does not rerun libraries. Static SVG plots and ordinary relative image links render directly in GitHub Markdown; no Pages service or JavaScript is required.
 
+## Labelary renderer captures
+
+Labelary is included in the printer-accuracy matrix as an additional renderer.
+[Capture provenance and original PNGs](../docs/benchmarks/labelary/README.md)
+record UTC timestamps when the service exposes no build version. Tests replay
+these responses offline; the ZD621 captures remain the correctness baseline.
+See [capture and refresh commands](accuracy/README.md#labelary-renderer).
+
 ## Generate the compatibility reference
 
 [Browse by library, command or feature](../docs/compatibility/README.md). These

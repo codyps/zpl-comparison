@@ -53,7 +53,7 @@ benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl,zpl
 
 Use repeated `--group` options to select families, `--timeout` to set a per-case process timeout, and `--output` to retain another report. Default output is the ignored `benchmarks/_work/conformance/` directory: Markdown, JSON and PNGs. Every case gets a fresh process. Errors remain visible; crashes/timeouts fail the run after saving the report. Unsupported features and visual differences are observations, not an assertion that all current libraries must implement the entire corpus. Negative cases are opt-in and kept in a separate table.
 
-GitHub Actions verifies regeneration and runs codyps/zpl against the corpus, including negative cases. The run's conformance report is uploaded with the benchmark artifact. It does not use a live printer or pretend generated images are printer references.
+GitHub Actions verifies regeneration and runs codyps/zpl and the captured Labelary renderer against the corpus, including negative cases. The run's conformance report is uploaded with the benchmark artifact. It does not use a live printer or pretend generated images are printer references.
 
 ## Actual printer references
 

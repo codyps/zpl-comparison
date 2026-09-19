@@ -24,13 +24,14 @@ Reference parameters: **o**. These describe the reference grammar, not a promise
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 0/1 exact; mean IoU 0.0%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-PO](../../../benchmarks/accuracy/reference/layout-PO.zpl) | I | [Printer](../../../benchmarks/accuracy/reference/layout-PO.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#codyps-zpl) | N/A | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#labelize) | [52.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#binarykits) | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [layout-PO](../../../benchmarks/accuracy/reference/layout-PO.zpl) | I | [Printer](../../../benchmarks/accuracy/reference/layout-PO.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#codyps-zpl) | N/A | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#labelize) | [52.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#ffi) | [27.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#binarykits) | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#zplr) | N/A | N/A | N/A | [0.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-PO.md#labelary) |
 
 
 ## Related features

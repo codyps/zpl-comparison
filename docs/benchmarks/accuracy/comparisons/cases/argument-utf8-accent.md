@@ -6,11 +6,11 @@
 
 **^CI** · encoding=28; UTF-8 é · [ZPL input](../../../../../benchmarks/accuracy/reference/utf8-accent.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -87,4 +87,17 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 330 pixels; ext
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![zplr render](../../images/argument-utf8-accent-zplr.png) | ![zplr difference](../../images/argument-utf8-accent-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 82.3% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 58 pixels; extra ink: 70 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![labelary render](../../images/argument-utf8-accent-labelary.png) | ![labelary difference](../../images/argument-utf8-accent-labelary-diff.png) |
 

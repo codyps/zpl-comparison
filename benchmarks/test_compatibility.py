@@ -24,7 +24,7 @@ class CompatibilityTests(unittest.TestCase):
                     if n.startswith("libraries/") and not n.endswith("README.md")
                 ]
             ),
-            11,
+            12,
         )
         self.assertEqual(
             len(

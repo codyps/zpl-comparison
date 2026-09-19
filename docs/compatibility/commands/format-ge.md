@@ -24,13 +24,14 @@ Reference parameters: **w, h, t, c**. These describe the reference grammar, not 
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | [🛠️ Typed emission](https://docs.rs/crate/zpl-builder/0.1.0/source/src/elements.rs#242) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | [🛠️ Typed emission](https://github.com/cod3monk/zpl/blob/9bbeca05aa42e41576bf43ee3ae7ec268a3df032/zpl/label.py#L241) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | [🛠️ Typed emission](https://github.com/DanieLeeuwner/JSZPL/blob/53c916717c0dfdb1e6bca266eb6280c8f156c6ca/src/components/circle.ts#L28) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 0/1 exact; mean IoU 50.5%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [shape-GE-B](../../../benchmarks/accuracy/reference/shape-GE-B.zpl) | 120,60,3,B | [Printer](../../../benchmarks/accuracy/reference/shape-GE-B.png) | [50.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#codyps-zpl) | N/A | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#labelize) | [37.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#forge) | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#go) | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#ffi) | [50.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#binarykits) | [76.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [shape-GE-B](../../../benchmarks/accuracy/reference/shape-GE-B.zpl) | 120,60,3,B | [Printer](../../../benchmarks/accuracy/reference/shape-GE-B.png) | [50.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#codyps-zpl) | N/A | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#labelize) | [37.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#forge) | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#go) | [53.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#ffi) | [50.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#binarykits) | [76.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#zplr) | N/A | N/A | N/A | [50.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-shape-GE-B.md#labelary) |
 
 
 ## Related features

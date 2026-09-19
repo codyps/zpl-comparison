@@ -1,8 +1,8 @@
 # Printer accuracy benchmark
 
-**[Compare printer previews, library renders and differences](../../docs/benchmarks/accuracy/comparisons/README.md)** by library or case. Every case includes all seven renderers, including error diagnostics and blank output.
+**[Compare printer previews, library renders and differences](../../docs/benchmarks/accuracy/comparisons/README.md)** by library or case. Every case includes all eight renderers, including error diagnostics and blank output.
 
-The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares seven rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. The codyps-zpl adapter uses the library’s default ZD621 compatibility profile with the case dimensions and 203 DPI. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
+The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares eight rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. The codyps-zpl adapter uses the library’s default ZD621 compatibility profile with the case dimensions and 203 DPI. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
 
 ## Reproduce offline
 
@@ -14,7 +14,7 @@ benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.p
 benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py
 ```
 
-This single regeneration command reruns all 133 cases across all seven prepared
+This single regeneration command reruns all 133 cases across all eight prepared
 renderers, writes results, rendered PNGs, difference images, plots and comparison
 Markdown, then refreshes the dependent compatibility pages. It verifies the gallery
 and generated compatibility pages before succeeding. It uses the existing adapter
@@ -61,3 +61,29 @@ the combined rendering pages, then `benchmarks/conformance.py --reference DIR`
 to compare matching source cases. See [the corpus guide](../../test-data/render-conformance/README.md).
 Do not use the small-suite `accuracy/run.py` to report this larger corpus: its
 historical barcode supplement and aggregate grouping belong to the original suite.
+
+## Labelary renderer
+
+Labelary participates as an eighth renderer against the same ZD621 printer
+references, with the same foreground IoU, dimensions, exact-match and error rules.
+The runner replays checked-in, hash-verified responses; it does not contact Labelary.
+[Service capture provenance](../../docs/benchmarks/labelary/README.md) records UTC
+request/response timestamps and any exposed renderer version. The initial capture
+exposed no renderer version. HTTP nginx and API v1 versions are not used as one.
+
+Explicitly capture current service responses into a new directory:
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/labelary.py --capture --output benchmarks/_work/new-labelary
+```
+
+This sends the public corpus inputs to https://api.labelary.com at less than three
+requests per second, preserving original PNG responses and failed HTTP responses.
+Review and replace `docs/benchmarks/labelary` with the new snapshot to adopt it, then
+run `accuracy/regenerate.py`. Existing snapshots are never overwritten by capture.
+The capture covers the accuracy, conformance and external-label corpora. Offline
+conformance runs can select `--only labelary`; `--only all` includes it too.
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/labelary.py --check
+```

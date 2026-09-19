@@ -1,12 +1,13 @@
 # Rendering conformance run
 
-Suite: `render-conformance-v1`. 507 cases; 1 adapters.
+Suite: `render-conformance-v1`. 507 cases; 2 adapters.
 
 This reports execution and equal-image relationships, not printer accuracy unless hash-matched printer references were supplied. A rendered image can still be wrong. Font coverage is device-dependent. Invalid inputs are kept separate.
 
 | Library | Valid/boundary cases | Nonblank | Blank | Errors | Crashes | Timeouts | Printer IoU |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | codyps/zpl (Rust) | 493 | 333 | 8 | 152 | 0 | 0 | N/A |
+| Labelary (captured service) | 493 | 476 | 17 | 0 | 0 | 0 | N/A |
 
 
 ## Equal-raster relationships
@@ -20,528 +21,533 @@ Equality requires at least two nonblank successful outputs. Both blanks/errors a
 | codyps-zpl | rle-repeat | equal |
 | codyps-zpl | text-escape | equal |
 | codyps-zpl | origin-home | equal |
+| labelary | inline-16x8 | equal |
+| labelary | rle-fill | equal |
+| labelary | rle-repeat | equal |
+| labelary | text-escape | equal |
+| labelary | origin-home | equal |
 
 
 ## Individual cases
 
 ### valid
 
-| Case | codyps/zpl (Rust) |
-| --- | --- |
-| probe-font0-height-16 | [rendered](images/probe-font0-height-16-codyps-zpl.png) |
-| probe-font0-height-32 | [rendered](images/probe-font0-height-32-codyps-zpl.png) |
-| probe-font0-height-64 | [rendered](images/probe-font0-height-64-codyps-zpl.png) |
-| probe-font0-width-16 | [rendered](images/probe-font0-width-16-codyps-zpl.png) |
-| probe-font0-width-32 | [rendered](images/probe-font0-width-32-codyps-zpl.png) |
-| probe-font0-width-64 | [rendered](images/probe-font0-width-64-codyps-zpl.png) |
-| probe-font0-rotation-N | [rendered](images/probe-font0-rotation-N-codyps-zpl.png) |
-| probe-font0-rotation-R | [rendered](images/probe-font0-rotation-R-codyps-zpl.png) |
-| probe-font0-rotation-I | [rendered](images/probe-font0-rotation-I-codyps-zpl.png) |
-| probe-font0-rotation-B | [rendered](images/probe-font0-rotation-B-codyps-zpl.png) |
-| probe-font-A | [rendered](images/probe-font-A-codyps-zpl.png) |
-| probe-font-D | [rendered](images/probe-font-D-codyps-zpl.png) |
-| probe-fo-justify-0 | [rendered](images/probe-fo-justify-0-codyps-zpl.png) |
-| probe-fo-justify-1 | [rendered](images/probe-fo-justify-1-codyps-zpl.png) |
-| probe-fo-justify-2 | [rendered](images/probe-fo-justify-2-codyps-zpl.png) |
-| probe-ft-baseline | [rendered](images/probe-ft-baseline-codyps-zpl.png) |
-| probe-layout-LH | [rendered](images/probe-layout-LH-codyps-zpl.png) |
-| probe-layout-LS | [rendered](images/probe-layout-LS-codyps-zpl.png) |
-| probe-layout-LT | [rendered](images/probe-layout-LT-codyps-zpl.png) |
-| probe-layout-PO | [rendered](images/probe-layout-PO-codyps-zpl.png) |
-| probe-layout-LR | [rendered](images/probe-layout-LR-codyps-zpl.png) |
-| probe-layout-FW | [rendered](images/probe-layout-FW-codyps-zpl.png) |
-| probe-field-reverse | [rendered](images/probe-field-reverse-codyps-zpl.png) |
-| probe-block-L | [rendered](images/probe-block-L-codyps-zpl.png) |
-| probe-block-C | [rendered](images/probe-block-C-codyps-zpl.png) |
-| probe-block-R | [rendered](images/probe-block-R-codyps-zpl.png) |
-| probe-block-J | [rendered](images/probe-block-J-codyps-zpl.png) |
-| probe-block-indent | [rendered](images/probe-block-indent-codyps-zpl.png) |
-| probe-block-explicit-break | [rendered](images/probe-block-explicit-break-codyps-zpl.png) |
-| probe-field-hex | [rendered](images/probe-field-hex-codyps-zpl.png) |
-| probe-variable-data | [rendered](images/probe-variable-data-codyps-zpl.png) |
-| probe-encoding-0 | [rendered](images/probe-encoding-0-codyps-zpl.png) |
-| probe-encoding-27 | [rendered](images/probe-encoding-27-codyps-zpl.png) |
-| probe-encoding-28 | [rendered](images/probe-encoding-28-codyps-zpl.png) |
-| probe-utf8-accent | [rendered](images/probe-utf8-accent-codyps-zpl.png) |
-| probe-box-thickness-1 | [rendered](images/probe-box-thickness-1-codyps-zpl.png) |
-| probe-box-thickness-4 | [rendered](images/probe-box-thickness-4-codyps-zpl.png) |
-| probe-box-thickness-60 | [rendered](images/probe-box-thickness-60-codyps-zpl.png) |
-| probe-box-round | [rendered](images/probe-box-round-codyps-zpl.png) |
-| probe-box-white | [rendered](images/probe-box-white-codyps-zpl.png) |
-| probe-shape-GC-B | [rendered](images/probe-shape-GC-B-codyps-zpl.png) |
-| probe-shape-GE-B | [rendered](images/probe-shape-GE-B-codyps-zpl.png) |
-| probe-shape-GD-R | [rendered](images/probe-shape-GD-R-codyps-zpl.png) |
-| probe-shape-GD-L | [rendered](images/probe-shape-GD-L-codyps-zpl.png) |
-| probe-graphic-hex | [rendered](images/probe-graphic-hex-codyps-zpl.png) |
-| probe-graphic-binary | [rendered](images/probe-graphic-binary-codyps-zpl.png) |
-| probe-graphic-B64 | [rendered](images/probe-graphic-B64-codyps-zpl.png) |
-| probe-graphic-Z64 | [rendered](images/probe-graphic-Z64-codyps-zpl.png) |
-| probe-code39-ratio-2 | [rendered](images/probe-code39-ratio-2-codyps-zpl.png) |
-| probe-code39-ratio-3 | [rendered](images/probe-code39-ratio-3-codyps-zpl.png) |
-| probe-code39-check-N | [rendered](images/probe-code39-check-N-codyps-zpl.png) |
-| probe-code39-check-Y | [rendered](images/probe-code39-check-Y-codyps-zpl.png) |
-| probe-code128-text-NN | [rendered](images/probe-code128-text-NN-codyps-zpl.png) |
-| probe-code128-text-YN | [rendered](images/probe-code128-text-YN-codyps-zpl.png) |
-| probe-code128-text-YY | [rendered](images/probe-code128-text-YY-codyps-zpl.png) |
-| probe-code128-rotation-R | [rendered](images/probe-code128-rotation-R-codyps-zpl.png) |
-| probe-code128-rotation-I | [rendered](images/probe-code128-rotation-I-codyps-zpl.png) |
-| probe-code128-rotation-B | [rendered](images/probe-code128-rotation-B-codyps-zpl.png) |
-| probe-code128-mode-N | [rendered](images/probe-code128-mode-N-codyps-zpl.png) |
-| probe-code128-mode-A | [rendered](images/probe-code128-mode-A-codyps-zpl.png) |
-| probe-qr-model-1 | [rendered](images/probe-qr-model-1-codyps-zpl.png) |
-| probe-qr-model-2 | [rendered](images/probe-qr-model-2-codyps-zpl.png) |
-| probe-qr-ec-L | [rendered](images/probe-qr-ec-L-codyps-zpl.png) |
-| probe-qr-ec-M | [rendered](images/probe-qr-ec-M-codyps-zpl.png) |
-| probe-qr-ec-Q | [rendered](images/probe-qr-ec-Q-codyps-zpl.png) |
-| probe-qr-ec-H | [rendered](images/probe-qr-ec-H-codyps-zpl.png) |
-| probe-qr-module-2 | [rendered](images/probe-qr-module-2-codyps-zpl.png) |
-| probe-qr-module-5 | [rendered](images/probe-qr-module-5-codyps-zpl.png) |
-| probe-qr-mask-0 | [rendered](images/probe-qr-mask-0-codyps-zpl.png) |
-| probe-qr-mask-3 | [rendered](images/probe-qr-mask-3-codyps-zpl.png) |
-| probe-qr-mask-7 | [rendered](images/probe-qr-mask-7-codyps-zpl.png) |
-| probe-datamatrix-module-2 | [rendered](images/probe-datamatrix-module-2-codyps-zpl.png) |
-| probe-datamatrix-module-4 | [rendered](images/probe-datamatrix-module-4-codyps-zpl.png) |
-| symbol-aztec | [rendered](images/symbol-aztec-codyps-zpl.png) |
-| symbol-aztec_alias | [rendered](images/symbol-aztec_alias-codyps-zpl.png) |
-| symbol-aztec_rune | [rendered](images/symbol-aztec_rune-codyps-zpl.png) |
-| symbol-codabar | [rendered](images/symbol-codabar-codyps-zpl.png) |
-| symbol-codablock_a | [rendered](images/symbol-codablock_a-codyps-zpl.png) |
-| symbol-codablock_e | [rendered](images/symbol-codablock_e-codyps-zpl.png) |
-| symbol-codablock_f | [rendered](images/symbol-codablock_f-codyps-zpl.png) |
-| symbol-code11 | [rendered](images/symbol-code11-codyps-zpl.png) |
-| symbol-code128 | [rendered](images/symbol-code128-codyps-zpl.png) |
-| symbol-code39 | [rendered](images/symbol-code39-codyps-zpl.png) |
-| symbol-code49 | [rendered](images/symbol-code49-codyps-zpl.png) |
-| symbol-code93 | [rendered](images/symbol-code93-codyps-zpl.png) |
-| symbol-composite_a | [rendered](images/symbol-composite_a-codyps-zpl.png) |
-| symbol-composite_b | [rendered](images/symbol-composite_b-codyps-zpl.png) |
-| symbol-composite_c | [rendered](images/symbol-composite_c-codyps-zpl.png) |
-| symbol-data_matrix | [rendered](images/symbol-data_matrix-codyps-zpl.png) |
-| symbol-data_matrix_rectangular | [rendered](images/symbol-data_matrix_rectangular-codyps-zpl.png) |
-| symbol-databar_ean13 | [rendered](images/symbol-databar_ean13-codyps-zpl.png) |
-| symbol-databar_ean8 | [rendered](images/symbol-databar_ean8-codyps-zpl.png) |
-| symbol-databar_expanded | [rendered](images/symbol-databar_expanded-codyps-zpl.png) |
-| symbol-databar_expanded_stacked | [rendered](images/symbol-databar_expanded_stacked-codyps-zpl.png) |
-| symbol-databar_limited | [rendered](images/symbol-databar_limited-codyps-zpl.png) |
-| symbol-databar_omni | [rendered](images/symbol-databar_omni-codyps-zpl.png) |
-| symbol-databar_stacked | [rendered](images/symbol-databar_stacked-codyps-zpl.png) |
-| symbol-databar_stacked_omni | [rendered](images/symbol-databar_stacked_omni-codyps-zpl.png) |
-| symbol-databar_truncated | [rendered](images/symbol-databar_truncated-codyps-zpl.png) |
-| symbol-databar_upca | [rendered](images/symbol-databar_upca-codyps-zpl.png) |
-| symbol-databar_upce | [rendered](images/symbol-databar_upce-codyps-zpl.png) |
-| symbol-ean13 | [rendered](images/symbol-ean13-codyps-zpl.png) |
-| symbol-ean8 | [rendered](images/symbol-ean8-codyps-zpl.png) |
-| symbol-extension2 | [rendered](images/symbol-extension2-codyps-zpl.png) |
-| symbol-extension5 | [rendered](images/symbol-extension5-codyps-zpl.png) |
-| symbol-industrial2of5 | [rendered](images/symbol-industrial2of5-codyps-zpl.png) |
-| symbol-intelligent_mail | [rendered](images/symbol-intelligent_mail-codyps-zpl.png) |
-| symbol-interleaved2of5 | [rendered](images/symbol-interleaved2of5-codyps-zpl.png) |
-| symbol-logmars | [rendered](images/symbol-logmars-codyps-zpl.png) |
-| symbol-maxicode2 | [rendered](images/symbol-maxicode2-codyps-zpl.png) |
-| symbol-maxicode3 | [rendered](images/symbol-maxicode3-codyps-zpl.png) |
-| symbol-maxicode4 | [rendered](images/symbol-maxicode4-codyps-zpl.png) |
-| symbol-maxicode5 | [rendered](images/symbol-maxicode5-codyps-zpl.png) |
-| symbol-maxicode6 | [rendered](images/symbol-maxicode6-codyps-zpl.png) |
-| symbol-micropdf417_1 | [rendered](images/symbol-micropdf417_1-codyps-zpl.png) |
-| symbol-micropdf417_3 | [rendered](images/symbol-micropdf417_3-codyps-zpl.png) |
-| symbol-micropdf417_4 | [rendered](images/symbol-micropdf417_4-codyps-zpl.png) |
-| symbol-msi_a | [rendered](images/symbol-msi_a-codyps-zpl.png) |
-| symbol-msi_b | [rendered](images/symbol-msi_b-codyps-zpl.png) |
-| symbol-msi_c | [rendered](images/symbol-msi_c-codyps-zpl.png) |
-| symbol-msi_d | [rendered](images/symbol-msi_d-codyps-zpl.png) |
-| symbol-pdf417 | [rendered](images/symbol-pdf417-codyps-zpl.png) |
-| symbol-pdf417_truncated | [rendered](images/symbol-pdf417_truncated-codyps-zpl.png) |
-| symbol-planet | [rendered](images/symbol-planet-codyps-zpl.png) |
-| symbol-plessey | [rendered](images/symbol-plessey-codyps-zpl.png) |
-| symbol-postal_planet | [rendered](images/symbol-postal_planet-codyps-zpl.png) |
-| symbol-postnet | [rendered](images/symbol-postnet-codyps-zpl.png) |
-| symbol-qr | [rendered](images/symbol-qr-codyps-zpl.png) |
-| symbol-standard2of5 | [rendered](images/symbol-standard2of5-codyps-zpl.png) |
-| symbol-tlc39_linear | [rendered](images/symbol-tlc39_linear-codyps-zpl.png) |
-| symbol-tlc39_linked | [rendered](images/symbol-tlc39_linked-codyps-zpl.png) |
-| symbol-upca | [rendered](images/symbol-upca-codyps-zpl.png) |
-| symbol-upce | [rendered](images/symbol-upce-codyps-zpl.png) |
-| font-0-N | [rendered](images/font-0-N-codyps-zpl.png) |
-| font-0-R | [rendered](images/font-0-R-codyps-zpl.png) |
-| font-0-I | [rendered](images/font-0-I-codyps-zpl.png) |
-| font-0-B | [rendered](images/font-0-B-codyps-zpl.png) |
-| font-A-N | [rendered](images/font-A-N-codyps-zpl.png) |
-| font-A-R | [rendered](images/font-A-R-codyps-zpl.png) |
-| font-A-I | [rendered](images/font-A-I-codyps-zpl.png) |
-| font-A-B | [rendered](images/font-A-B-codyps-zpl.png) |
-| font-B-N | error |
-| font-B-R | error |
-| font-B-I | error |
-| font-B-B | error |
-| font-C-N | error |
-| font-C-R | error |
-| font-C-I | error |
-| font-C-B | error |
-| font-D-N | [rendered](images/font-D-N-codyps-zpl.png) |
-| font-D-R | [rendered](images/font-D-R-codyps-zpl.png) |
-| font-D-I | [rendered](images/font-D-I-codyps-zpl.png) |
-| font-D-B | [rendered](images/font-D-B-codyps-zpl.png) |
-| font-E-N | error |
-| font-E-R | error |
-| font-E-I | error |
-| font-E-B | error |
-| font-F-N | error |
-| font-F-R | error |
-| font-F-I | error |
-| font-F-B | error |
-| font-G-N | error |
-| font-G-R | error |
-| font-G-I | error |
-| font-G-B | error |
-| font-H-N | error |
-| font-H-R | error |
-| font-H-I | error |
-| font-H-B | error |
-| font-id-1 | error |
-| font-id-2 | error |
-| font-id-3 | error |
-| font-id-4 | error |
-| font-id-5 | error |
-| font-id-6 | error |
-| font-id-7 | error |
-| font-id-8 | error |
-| font-id-9 | error |
-| font-id-I | error |
-| font-id-J | error |
-| font-id-K | error |
-| font-id-L | error |
-| font-id-M | error |
-| font-id-N | error |
-| font-id-O | error |
-| font-id-P | error |
-| font-id-Q | error |
-| font-id-R | error |
-| font-id-S | error |
-| font-id-T | error |
-| font-id-U | error |
-| font-id-V | error |
-| font-id-W | error |
-| font-id-X | error |
-| font-id-Y | error |
-| font-id-Z | error |
-| font-dim-0-0 | [rendered](images/font-dim-0-0-codyps-zpl.png) |
-| font-dim-1-1 | [rendered](images/font-dim-1-1-codyps-zpl.png) |
-| font-dim-2-2 | [rendered](images/font-dim-2-2-codyps-zpl.png) |
-| font-dim-7-0 | [rendered](images/font-dim-7-0-codyps-zpl.png) |
-| font-dim-15-0 | [rendered](images/font-dim-15-0-codyps-zpl.png) |
-| font-dim-17-0 | [rendered](images/font-dim-17-0-codyps-zpl.png) |
-| font-dim-31-0 | [rendered](images/font-dim-31-0-codyps-zpl.png) |
-| font-dim-33-0 | [rendered](images/font-dim-33-0-codyps-zpl.png) |
-| font-dim-63-0 | [rendered](images/font-dim-63-0-codyps-zpl.png) |
-| font-dim-65-0 | [rendered](images/font-dim-65-0-codyps-zpl.png) |
-| font-dim-32-1 | [rendered](images/font-dim-32-1-codyps-zpl.png) |
-| font-dim-1-32 | [rendered](images/font-dim-1-32-codyps-zpl.png) |
-| font-dim-64-16 | [rendered](images/font-dim-64-16-codyps-zpl.png) |
-| font-dim-16-64 | [rendered](images/font-dim-16-64-codyps-zpl.png) |
-| font-dim-96-96 | [rendered](images/font-dim-96-96-codyps-zpl.png) |
-| text-digits | [rendered](images/text-digits-codyps-zpl.png) |
-| text-case | [rendered](images/text-case-codyps-zpl.png) |
-| text-punctuation | [rendered](images/text-punctuation-codyps-zpl.png) |
-| text-spacing | [rendered](images/text-spacing-codyps-zpl.png) |
-| text-empty | [blank](images/text-empty-codyps-zpl.png) |
-| fields-1 | [rendered](images/fields-1-codyps-zpl.png) |
-| fields-48 | [rendered](images/fields-48-codyps-zpl.png) |
-| fields-400 | [rendered](images/fields-400-codyps-zpl.png) |
-| field-defaults | [rendered](images/field-defaults-codyps-zpl.png) |
-| anchor-FO-N-0 | [rendered](images/anchor-FO-N-0-codyps-zpl.png) |
-| anchor-FO-N-1 | [rendered](images/anchor-FO-N-1-codyps-zpl.png) |
-| anchor-FO-N-2 | [rendered](images/anchor-FO-N-2-codyps-zpl.png) |
-| anchor-FT-N-0 | [rendered](images/anchor-FT-N-0-codyps-zpl.png) |
-| anchor-FT-N-1 | [rendered](images/anchor-FT-N-1-codyps-zpl.png) |
-| anchor-FT-N-2 | [rendered](images/anchor-FT-N-2-codyps-zpl.png) |
-| anchor-FO-R-0 | [rendered](images/anchor-FO-R-0-codyps-zpl.png) |
-| anchor-FO-R-1 | [rendered](images/anchor-FO-R-1-codyps-zpl.png) |
-| anchor-FO-R-2 | [rendered](images/anchor-FO-R-2-codyps-zpl.png) |
-| anchor-FT-R-0 | [rendered](images/anchor-FT-R-0-codyps-zpl.png) |
-| anchor-FT-R-1 | [rendered](images/anchor-FT-R-1-codyps-zpl.png) |
-| anchor-FT-R-2 | [rendered](images/anchor-FT-R-2-codyps-zpl.png) |
-| anchor-FO-I-0 | [rendered](images/anchor-FO-I-0-codyps-zpl.png) |
-| anchor-FO-I-1 | [rendered](images/anchor-FO-I-1-codyps-zpl.png) |
-| anchor-FO-I-2 | [rendered](images/anchor-FO-I-2-codyps-zpl.png) |
-| anchor-FT-I-0 | [rendered](images/anchor-FT-I-0-codyps-zpl.png) |
-| anchor-FT-I-1 | [rendered](images/anchor-FT-I-1-codyps-zpl.png) |
-| anchor-FT-I-2 | [rendered](images/anchor-FT-I-2-codyps-zpl.png) |
-| anchor-FO-B-0 | [rendered](images/anchor-FO-B-0-codyps-zpl.png) |
-| anchor-FO-B-1 | [rendered](images/anchor-FO-B-1-codyps-zpl.png) |
-| anchor-FO-B-2 | [rendered](images/anchor-FO-B-2-codyps-zpl.png) |
-| anchor-FT-B-0 | [rendered](images/anchor-FT-B-0-codyps-zpl.png) |
-| anchor-FT-B-1 | [rendered](images/anchor-FT-B-1-codyps-zpl.png) |
-| anchor-FT-B-2 | [rendered](images/anchor-FT-B-2-codyps-zpl.png) |
-| page-transform-N-N | error |
-| page-transform-Y-N | error |
-| page-transform-N-I | error |
-| page-transform-Y-I | error |
-| label-reverse | [rendered](images/label-reverse-codyps-zpl.png) |
-| field-direction-H-0 | error |
-| field-direction-H-1 | error |
-| field-direction-H-8 | error |
-| field-direction-V-0 | error |
-| field-direction-V-1 | error |
-| field-direction-V-8 | error |
-| field-direction-R-0 | error |
-| field-direction-R-1 | error |
-| field-direction-R-8 | error |
-| block-120-L | error |
-| block-120-C | error |
-| block-120-R | error |
-| block-120-J | error |
-| block-300-L | [rendered](images/block-300-L-codyps-zpl.png) |
-| block-300-C | [rendered](images/block-300-C-codyps-zpl.png) |
-| block-300-R | [rendered](images/block-300-R-codyps-zpl.png) |
-| block-300-J | [rendered](images/block-300-J-codyps-zpl.png) |
-| block-spacing--12-indent-0 | error |
-| block-spacing-12-indent-0 | [rendered](images/block-spacing-12-indent-0-codyps-zpl.png) |
-| block-spacing-0-indent-40 | [rendered](images/block-spacing-0-indent-40-codyps-zpl.png) |
-| block-spacing-8-indent-80 | [rendered](images/block-spacing-8-indent-80-codyps-zpl.png) |
-| block-content-breaks | error |
-| block-content-long-word | error |
-| block-content-spaces | [rendered](images/block-content-spaces-codyps-zpl.png) |
-| block-content-empty | [blank](images/block-content-empty-codyps-zpl.png) |
-| text-block-N-40 | error |
-| text-block-N-120 | error |
-| text-block-R-40 | error |
-| text-block-R-120 | error |
-| text-block-I-40 | error |
-| text-block-I-120 | error |
-| text-block-B-40 | error |
-| text-block-B-120 | error |
-| unicode-latin | error |
-| unicode-combining | error |
-| unicode-greek | error |
-| unicode-cyrillic | error |
-| unicode-hebrew | error |
-| unicode-arabic | error |
-| unicode-cjk | error |
-| unicode-supplementary | error |
-| unicode-controls | error |
-| unicode-missing | error |
-| encoding-0 | [rendered](images/encoding-0-codyps-zpl.png) |
-| encoding-13 | error |
-| encoding-27 | [rendered](images/encoding-27-codyps-zpl.png) |
-| encoding-28 | [rendered](images/encoding-28-codyps-zpl.png) |
-| encoding-29 | error |
-| encoding-30 | error |
-| encoding-31 | error |
-| encoding-33 | error |
-| encoding-34 | error |
-| encoding-35 | error |
-| encoding-36 | error |
-| encoding-remap | error |
-| advanced-text-0000 | error |
-| advanced-text-1000 | error |
-| advanced-text-0100 | error |
-| advanced-text-0010 | error |
-| advanced-text-0001 | error |
-| advanced-text-1111 | error |
-| hex-scope | [rendered](images/hex-scope-codyps-zpl.png) |
-| variable-field | [rendered](images/variable-field-codyps-zpl.png) |
-| numbered-fields-inline | error |
-| field-concat-whole | error |
-| field-concat-forward | error |
-| field-concat-backward | error |
-| field-concat-past-end | error |
-| field-concat-scope | error |
-| serial-000009-Y | error |
-| serial-000009-N | error |
-| serial-A009Z-Y | error |
-| serial-mask | error |
-| comments-and-line-endings | [rendered](images/comments-and-line-endings-codyps-zpl.png) |
-| box-rounding-0 | [rendered](images/box-rounding-0-codyps-zpl.png) |
-| box-rounding-1 | [rendered](images/box-rounding-1-codyps-zpl.png) |
-| box-rounding-2 | [rendered](images/box-rounding-2-codyps-zpl.png) |
-| box-rounding-3 | [rendered](images/box-rounding-3-codyps-zpl.png) |
-| box-rounding-4 | [rendered](images/box-rounding-4-codyps-zpl.png) |
-| box-rounding-5 | [rendered](images/box-rounding-5-codyps-zpl.png) |
-| box-rounding-6 | [rendered](images/box-rounding-6-codyps-zpl.png) |
-| box-rounding-7 | [rendered](images/box-rounding-7-codyps-zpl.png) |
-| box-rounding-8 | [rendered](images/box-rounding-8-codyps-zpl.png) |
-| shape-GC-B-plain | [rendered](images/shape-GC-B-plain-codyps-zpl.png) |
-| shape-GC-W-plain | [rendered](images/shape-GC-W-plain-codyps-zpl.png) |
-| shape-GE-B-plain | [rendered](images/shape-GE-B-plain-codyps-zpl.png) |
-| shape-GE-W-plain | [rendered](images/shape-GE-W-plain-codyps-zpl.png) |
-| shape-GD-B-L | [rendered](images/shape-GD-B-L-codyps-zpl.png) |
-| shape-GD-B-R | [rendered](images/shape-GD-B-R-codyps-zpl.png) |
-| shape-GD-W-L | [rendered](images/shape-GD-W-L-codyps-zpl.png) |
-| shape-GD-W-R | [rendered](images/shape-GD-W-R-codyps-zpl.png) |
-| symbol-graphic-A-N | error |
-| symbol-graphic-A-R | error |
-| symbol-graphic-A-I | error |
-| symbol-graphic-A-B | error |
-| symbol-graphic-B-N | error |
-| symbol-graphic-B-R | error |
-| symbol-graphic-B-I | error |
-| symbol-graphic-B-B | error |
-| symbol-graphic-C-N | error |
-| symbol-graphic-C-R | error |
-| symbol-graphic-C-I | error |
-| symbol-graphic-C-B | error |
-| symbol-graphic-D-N | error |
-| symbol-graphic-D-R | error |
-| symbol-graphic-D-I | error |
-| symbol-graphic-D-B | error |
-| symbol-graphic-E-N | error |
-| symbol-graphic-E-R | error |
-| symbol-graphic-E-I | error |
-| symbol-graphic-E-B | error |
-| paint-black-white | [rendered](images/paint-black-white-codyps-zpl.png) |
-| paint-white-black | [rendered](images/paint-white-black-codyps-zpl.png) |
-| paint-reverse-overlap | [rendered](images/paint-reverse-overlap-codyps-zpl.png) |
-| paint-reverse-twice | [rendered](images/paint-reverse-twice-codyps-zpl.png) |
-| reverse-field-scope | [rendered](images/reverse-field-scope-codyps-zpl.png) |
-| raster-equivalent-hex | [rendered](images/raster-equivalent-hex-codyps-zpl.png) |
-| raster-equivalent-B64 | [rendered](images/raster-equivalent-B64-codyps-zpl.png) |
-| raster-equivalent-Z64 | [rendered](images/raster-equivalent-Z64-codyps-zpl.png) |
-| raster-equivalent-binary | [rendered](images/raster-equivalent-binary-codyps-zpl.png) |
-| raster-fill-hex | [rendered](images/raster-fill-hex-codyps-zpl.png) |
-| raster-fill-rle | [rendered](images/raster-fill-rle-codyps-zpl.png) |
-| raster-repeat-hex | [rendered](images/raster-repeat-hex-codyps-zpl.png) |
-| raster-repeat-rle | [rendered](images/raster-repeat-rle-codyps-zpl.png) |
-| raster-stride-1 | [rendered](images/raster-stride-1-codyps-zpl.png) |
-| raster-stride-2 | [rendered](images/raster-stride-2-codyps-zpl.png) |
-| raster-stride-3 | [rendered](images/raster-stride-3-codyps-zpl.png) |
-| raster-stride-17 | [rendered](images/raster-stride-17-codyps-zpl.png) |
-| barcode-module-1-ratio-2.0 | [rendered](images/barcode-module-1-ratio-2.0-codyps-zpl.png) |
-| barcode-module-1-ratio-2.5 | [rendered](images/barcode-module-1-ratio-2.5-codyps-zpl.png) |
-| barcode-module-1-ratio-3.0 | [rendered](images/barcode-module-1-ratio-3.0-codyps-zpl.png) |
-| barcode-module-2-ratio-2.0 | [rendered](images/barcode-module-2-ratio-2.0-codyps-zpl.png) |
-| barcode-module-2-ratio-2.5 | [rendered](images/barcode-module-2-ratio-2.5-codyps-zpl.png) |
-| barcode-module-2-ratio-3.0 | [rendered](images/barcode-module-2-ratio-3.0-codyps-zpl.png) |
-| barcode-module-3-ratio-2.0 | [rendered](images/barcode-module-3-ratio-2.0-codyps-zpl.png) |
-| barcode-module-3-ratio-2.5 | [rendered](images/barcode-module-3-ratio-2.5-codyps-zpl.png) |
-| barcode-module-3-ratio-3.0 | [rendered](images/barcode-module-3-ratio-3.0-codyps-zpl.png) |
-| code128-mode-N | [rendered](images/code128-mode-N-codyps-zpl.png) |
-| code128-mode-U | [rendered](images/code128-mode-U-codyps-zpl.png) |
-| code128-mode-A | [rendered](images/code128-mode-A-codyps-zpl.png) |
-| code128-mode-D | [rendered](images/code128-mode-D-codyps-zpl.png) |
-| code128-subset-b | [rendered](images/code128-subset-b-codyps-zpl.png) |
-| code128-subset-c | [rendered](images/code128-subset-c-codyps-zpl.png) |
-| code128-switch | [rendered](images/code128-switch-codyps-zpl.png) |
-| code128-fnc1 | [rendered](images/code128-fnc1-codyps-zpl.png) |
-| readable-B2-N | [rendered](images/readable-B2-N-codyps-zpl.png) |
-| readable-B2-R | [rendered](images/readable-B2-R-codyps-zpl.png) |
-| readable-B2-I | [rendered](images/readable-B2-I-codyps-zpl.png) |
-| readable-B2-B | [rendered](images/readable-B2-B-codyps-zpl.png) |
-| readable-B3-N | [rendered](images/readable-B3-N-codyps-zpl.png) |
-| readable-B3-R | [rendered](images/readable-B3-R-codyps-zpl.png) |
-| readable-B3-I | [rendered](images/readable-B3-I-codyps-zpl.png) |
-| readable-B3-B | [rendered](images/readable-B3-B-codyps-zpl.png) |
-| readable-BC-N | [rendered](images/readable-BC-N-codyps-zpl.png) |
-| readable-BC-R | [rendered](images/readable-BC-R-codyps-zpl.png) |
-| readable-BC-I | [rendered](images/readable-BC-I-codyps-zpl.png) |
-| readable-BC-B | [rendered](images/readable-BC-B-codyps-zpl.png) |
-| readable-BE-N | [rendered](images/readable-BE-N-codyps-zpl.png) |
-| readable-BE-R | [rendered](images/readable-BE-R-codyps-zpl.png) |
-| readable-BE-I | [rendered](images/readable-BE-I-codyps-zpl.png) |
-| readable-BE-B | [rendered](images/readable-BE-B-codyps-zpl.png) |
-| readable-BU-N | [rendered](images/readable-BU-N-codyps-zpl.png) |
-| readable-BU-R | [rendered](images/readable-BU-R-codyps-zpl.png) |
-| readable-BU-I | [rendered](images/readable-BU-I-codyps-zpl.png) |
-| readable-BU-B | [rendered](images/readable-BU-B-codyps-zpl.png) |
-| qr-mask-full-0 | [rendered](images/qr-mask-full-0-codyps-zpl.png) |
-| qr-mask-full-1 | [rendered](images/qr-mask-full-1-codyps-zpl.png) |
-| qr-mask-full-2 | [rendered](images/qr-mask-full-2-codyps-zpl.png) |
-| qr-mask-full-3 | [rendered](images/qr-mask-full-3-codyps-zpl.png) |
-| qr-mask-full-4 | [rendered](images/qr-mask-full-4-codyps-zpl.png) |
-| qr-mask-full-5 | [rendered](images/qr-mask-full-5-codyps-zpl.png) |
-| qr-mask-full-6 | [rendered](images/qr-mask-full-6-codyps-zpl.png) |
-| qr-mask-full-7 | [rendered](images/qr-mask-full-7-codyps-zpl.png) |
-| datamatrix-quality-0 | [rendered](images/datamatrix-quality-0-codyps-zpl.png) |
-| datamatrix-quality-50 | [rendered](images/datamatrix-quality-50-codyps-zpl.png) |
-| datamatrix-quality-80 | [rendered](images/datamatrix-quality-80-codyps-zpl.png) |
-| datamatrix-quality-100 | [rendered](images/datamatrix-quality-100-codyps-zpl.png) |
-| datamatrix-quality-140 | [rendered](images/datamatrix-quality-140-codyps-zpl.png) |
-| datamatrix-quality-200 | [rendered](images/datamatrix-quality-200-codyps-zpl.png) |
-| datamatrix-size-10-10 | [rendered](images/datamatrix-size-10-10-codyps-zpl.png) |
-| datamatrix-size-16-16 | [rendered](images/datamatrix-size-16-16-codyps-zpl.png) |
-| datamatrix-size-18-8 | [rendered](images/datamatrix-size-18-8-codyps-zpl.png) |
-| datamatrix-size-32-8 | [rendered](images/datamatrix-size-32-8-codyps-zpl.png) |
-| pdf417-security-0-N | [rendered](images/pdf417-security-0-N-codyps-zpl.png) |
-| pdf417-security-0-Y | [rendered](images/pdf417-security-0-Y-codyps-zpl.png) |
-| pdf417-security-2-N | [rendered](images/pdf417-security-2-N-codyps-zpl.png) |
-| pdf417-security-2-Y | [rendered](images/pdf417-security-2-Y-codyps-zpl.png) |
-| pdf417-security-8-N | [rendered](images/pdf417-security-8-N-codyps-zpl.png) |
-| pdf417-security-8-Y | [rendered](images/pdf417-security-8-Y-codyps-zpl.png) |
-| barcode-validation | [rendered](images/barcode-validation-codyps-zpl.png) |
-| barcode-default-scope | [rendered](images/barcode-default-scope-codyps-zpl.png) |
-| equivalent-text-plain | [rendered](images/equivalent-text-plain-codyps-zpl.png) |
-| equivalent-text-hex | [rendered](images/equivalent-text-hex-codyps-zpl.png) |
-| equivalent-home-direct | [rendered](images/equivalent-home-direct-codyps-zpl.png) |
-| equivalent-home-offset | [rendered](images/equivalent-home-offset-codyps-zpl.png) |
-| equivalent-comment | [rendered](images/equivalent-comment-codyps-zpl.png) |
-| torture-typography | error |
-| torture-geometry | [rendered](images/torture-geometry-codyps-zpl.png) |
-| torture-shipping-label | [rendered](images/torture-shipping-label-codyps-zpl.png) |
-| torture-overlap | [rendered](images/torture-overlap-codyps-zpl.png) |
+| Case | codyps/zpl (Rust) | Labelary (captured service) |
+| --- | --- | --- |
+| probe-font0-height-16 | [rendered](images/probe-font0-height-16-codyps-zpl.png) | [rendered](images/probe-font0-height-16-labelary.png) |
+| probe-font0-height-32 | [rendered](images/probe-font0-height-32-codyps-zpl.png) | [rendered](images/probe-font0-height-32-labelary.png) |
+| probe-font0-height-64 | [rendered](images/probe-font0-height-64-codyps-zpl.png) | [rendered](images/probe-font0-height-64-labelary.png) |
+| probe-font0-width-16 | [rendered](images/probe-font0-width-16-codyps-zpl.png) | [rendered](images/probe-font0-width-16-labelary.png) |
+| probe-font0-width-32 | [rendered](images/probe-font0-width-32-codyps-zpl.png) | [rendered](images/probe-font0-width-32-labelary.png) |
+| probe-font0-width-64 | [rendered](images/probe-font0-width-64-codyps-zpl.png) | [rendered](images/probe-font0-width-64-labelary.png) |
+| probe-font0-rotation-N | [rendered](images/probe-font0-rotation-N-codyps-zpl.png) | [rendered](images/probe-font0-rotation-N-labelary.png) |
+| probe-font0-rotation-R | [rendered](images/probe-font0-rotation-R-codyps-zpl.png) | [rendered](images/probe-font0-rotation-R-labelary.png) |
+| probe-font0-rotation-I | [rendered](images/probe-font0-rotation-I-codyps-zpl.png) | [rendered](images/probe-font0-rotation-I-labelary.png) |
+| probe-font0-rotation-B | [rendered](images/probe-font0-rotation-B-codyps-zpl.png) | [rendered](images/probe-font0-rotation-B-labelary.png) |
+| probe-font-A | [rendered](images/probe-font-A-codyps-zpl.png) | [rendered](images/probe-font-A-labelary.png) |
+| probe-font-D | [rendered](images/probe-font-D-codyps-zpl.png) | [rendered](images/probe-font-D-labelary.png) |
+| probe-fo-justify-0 | [rendered](images/probe-fo-justify-0-codyps-zpl.png) | [rendered](images/probe-fo-justify-0-labelary.png) |
+| probe-fo-justify-1 | [rendered](images/probe-fo-justify-1-codyps-zpl.png) | [rendered](images/probe-fo-justify-1-labelary.png) |
+| probe-fo-justify-2 | [rendered](images/probe-fo-justify-2-codyps-zpl.png) | [rendered](images/probe-fo-justify-2-labelary.png) |
+| probe-ft-baseline | [rendered](images/probe-ft-baseline-codyps-zpl.png) | [rendered](images/probe-ft-baseline-labelary.png) |
+| probe-layout-LH | [rendered](images/probe-layout-LH-codyps-zpl.png) | [rendered](images/probe-layout-LH-labelary.png) |
+| probe-layout-LS | [rendered](images/probe-layout-LS-codyps-zpl.png) | [rendered](images/probe-layout-LS-labelary.png) |
+| probe-layout-LT | [rendered](images/probe-layout-LT-codyps-zpl.png) | [rendered](images/probe-layout-LT-labelary.png) |
+| probe-layout-PO | [rendered](images/probe-layout-PO-codyps-zpl.png) | [rendered](images/probe-layout-PO-labelary.png) |
+| probe-layout-LR | [rendered](images/probe-layout-LR-codyps-zpl.png) | [rendered](images/probe-layout-LR-labelary.png) |
+| probe-layout-FW | [rendered](images/probe-layout-FW-codyps-zpl.png) | [rendered](images/probe-layout-FW-labelary.png) |
+| probe-field-reverse | [rendered](images/probe-field-reverse-codyps-zpl.png) | [rendered](images/probe-field-reverse-labelary.png) |
+| probe-block-L | [rendered](images/probe-block-L-codyps-zpl.png) | [rendered](images/probe-block-L-labelary.png) |
+| probe-block-C | [rendered](images/probe-block-C-codyps-zpl.png) | [rendered](images/probe-block-C-labelary.png) |
+| probe-block-R | [rendered](images/probe-block-R-codyps-zpl.png) | [rendered](images/probe-block-R-labelary.png) |
+| probe-block-J | [rendered](images/probe-block-J-codyps-zpl.png) | [rendered](images/probe-block-J-labelary.png) |
+| probe-block-indent | [rendered](images/probe-block-indent-codyps-zpl.png) | [rendered](images/probe-block-indent-labelary.png) |
+| probe-block-explicit-break | [rendered](images/probe-block-explicit-break-codyps-zpl.png) | [rendered](images/probe-block-explicit-break-labelary.png) |
+| probe-field-hex | [rendered](images/probe-field-hex-codyps-zpl.png) | [rendered](images/probe-field-hex-labelary.png) |
+| probe-variable-data | [rendered](images/probe-variable-data-codyps-zpl.png) | [rendered](images/probe-variable-data-labelary.png) |
+| probe-encoding-0 | [rendered](images/probe-encoding-0-codyps-zpl.png) | [rendered](images/probe-encoding-0-labelary.png) |
+| probe-encoding-27 | [rendered](images/probe-encoding-27-codyps-zpl.png) | [rendered](images/probe-encoding-27-labelary.png) |
+| probe-encoding-28 | [rendered](images/probe-encoding-28-codyps-zpl.png) | [rendered](images/probe-encoding-28-labelary.png) |
+| probe-utf8-accent | [rendered](images/probe-utf8-accent-codyps-zpl.png) | [rendered](images/probe-utf8-accent-labelary.png) |
+| probe-box-thickness-1 | [rendered](images/probe-box-thickness-1-codyps-zpl.png) | [rendered](images/probe-box-thickness-1-labelary.png) |
+| probe-box-thickness-4 | [rendered](images/probe-box-thickness-4-codyps-zpl.png) | [rendered](images/probe-box-thickness-4-labelary.png) |
+| probe-box-thickness-60 | [rendered](images/probe-box-thickness-60-codyps-zpl.png) | [rendered](images/probe-box-thickness-60-labelary.png) |
+| probe-box-round | [rendered](images/probe-box-round-codyps-zpl.png) | [rendered](images/probe-box-round-labelary.png) |
+| probe-box-white | [rendered](images/probe-box-white-codyps-zpl.png) | [rendered](images/probe-box-white-labelary.png) |
+| probe-shape-GC-B | [rendered](images/probe-shape-GC-B-codyps-zpl.png) | [rendered](images/probe-shape-GC-B-labelary.png) |
+| probe-shape-GE-B | [rendered](images/probe-shape-GE-B-codyps-zpl.png) | [rendered](images/probe-shape-GE-B-labelary.png) |
+| probe-shape-GD-R | [rendered](images/probe-shape-GD-R-codyps-zpl.png) | [rendered](images/probe-shape-GD-R-labelary.png) |
+| probe-shape-GD-L | [rendered](images/probe-shape-GD-L-codyps-zpl.png) | [rendered](images/probe-shape-GD-L-labelary.png) |
+| probe-graphic-hex | [rendered](images/probe-graphic-hex-codyps-zpl.png) | [rendered](images/probe-graphic-hex-labelary.png) |
+| probe-graphic-binary | [rendered](images/probe-graphic-binary-codyps-zpl.png) | [rendered](images/probe-graphic-binary-labelary.png) |
+| probe-graphic-B64 | [rendered](images/probe-graphic-B64-codyps-zpl.png) | [rendered](images/probe-graphic-B64-labelary.png) |
+| probe-graphic-Z64 | [rendered](images/probe-graphic-Z64-codyps-zpl.png) | [rendered](images/probe-graphic-Z64-labelary.png) |
+| probe-code39-ratio-2 | [rendered](images/probe-code39-ratio-2-codyps-zpl.png) | [rendered](images/probe-code39-ratio-2-labelary.png) |
+| probe-code39-ratio-3 | [rendered](images/probe-code39-ratio-3-codyps-zpl.png) | [rendered](images/probe-code39-ratio-3-labelary.png) |
+| probe-code39-check-N | [rendered](images/probe-code39-check-N-codyps-zpl.png) | [rendered](images/probe-code39-check-N-labelary.png) |
+| probe-code39-check-Y | [rendered](images/probe-code39-check-Y-codyps-zpl.png) | [rendered](images/probe-code39-check-Y-labelary.png) |
+| probe-code128-text-NN | [rendered](images/probe-code128-text-NN-codyps-zpl.png) | [rendered](images/probe-code128-text-NN-labelary.png) |
+| probe-code128-text-YN | [rendered](images/probe-code128-text-YN-codyps-zpl.png) | [rendered](images/probe-code128-text-YN-labelary.png) |
+| probe-code128-text-YY | [rendered](images/probe-code128-text-YY-codyps-zpl.png) | [rendered](images/probe-code128-text-YY-labelary.png) |
+| probe-code128-rotation-R | [rendered](images/probe-code128-rotation-R-codyps-zpl.png) | [rendered](images/probe-code128-rotation-R-labelary.png) |
+| probe-code128-rotation-I | [rendered](images/probe-code128-rotation-I-codyps-zpl.png) | [rendered](images/probe-code128-rotation-I-labelary.png) |
+| probe-code128-rotation-B | [rendered](images/probe-code128-rotation-B-codyps-zpl.png) | [rendered](images/probe-code128-rotation-B-labelary.png) |
+| probe-code128-mode-N | [rendered](images/probe-code128-mode-N-codyps-zpl.png) | [rendered](images/probe-code128-mode-N-labelary.png) |
+| probe-code128-mode-A | [rendered](images/probe-code128-mode-A-codyps-zpl.png) | [rendered](images/probe-code128-mode-A-labelary.png) |
+| probe-qr-model-1 | [rendered](images/probe-qr-model-1-codyps-zpl.png) | [blank](images/probe-qr-model-1-labelary.png) |
+| probe-qr-model-2 | [rendered](images/probe-qr-model-2-codyps-zpl.png) | [rendered](images/probe-qr-model-2-labelary.png) |
+| probe-qr-ec-L | [rendered](images/probe-qr-ec-L-codyps-zpl.png) | [rendered](images/probe-qr-ec-L-labelary.png) |
+| probe-qr-ec-M | [rendered](images/probe-qr-ec-M-codyps-zpl.png) | [rendered](images/probe-qr-ec-M-labelary.png) |
+| probe-qr-ec-Q | [rendered](images/probe-qr-ec-Q-codyps-zpl.png) | [rendered](images/probe-qr-ec-Q-labelary.png) |
+| probe-qr-ec-H | [rendered](images/probe-qr-ec-H-codyps-zpl.png) | [rendered](images/probe-qr-ec-H-labelary.png) |
+| probe-qr-module-2 | [rendered](images/probe-qr-module-2-codyps-zpl.png) | [rendered](images/probe-qr-module-2-labelary.png) |
+| probe-qr-module-5 | [rendered](images/probe-qr-module-5-codyps-zpl.png) | [rendered](images/probe-qr-module-5-labelary.png) |
+| probe-qr-mask-0 | [rendered](images/probe-qr-mask-0-codyps-zpl.png) | [rendered](images/probe-qr-mask-0-labelary.png) |
+| probe-qr-mask-3 | [rendered](images/probe-qr-mask-3-codyps-zpl.png) | [rendered](images/probe-qr-mask-3-labelary.png) |
+| probe-qr-mask-7 | [rendered](images/probe-qr-mask-7-codyps-zpl.png) | [rendered](images/probe-qr-mask-7-labelary.png) |
+| probe-datamatrix-module-2 | [rendered](images/probe-datamatrix-module-2-codyps-zpl.png) | [rendered](images/probe-datamatrix-module-2-labelary.png) |
+| probe-datamatrix-module-4 | [rendered](images/probe-datamatrix-module-4-codyps-zpl.png) | [rendered](images/probe-datamatrix-module-4-labelary.png) |
+| symbol-aztec | [rendered](images/symbol-aztec-codyps-zpl.png) | [rendered](images/symbol-aztec-labelary.png) |
+| symbol-aztec_alias | [rendered](images/symbol-aztec_alias-codyps-zpl.png) | [rendered](images/symbol-aztec_alias-labelary.png) |
+| symbol-aztec_rune | [rendered](images/symbol-aztec_rune-codyps-zpl.png) | [rendered](images/symbol-aztec_rune-labelary.png) |
+| symbol-codabar | [rendered](images/symbol-codabar-codyps-zpl.png) | [rendered](images/symbol-codabar-labelary.png) |
+| symbol-codablock_a | [rendered](images/symbol-codablock_a-codyps-zpl.png) | [rendered](images/symbol-codablock_a-labelary.png) |
+| symbol-codablock_e | [rendered](images/symbol-codablock_e-codyps-zpl.png) | [rendered](images/symbol-codablock_e-labelary.png) |
+| symbol-codablock_f | [rendered](images/symbol-codablock_f-codyps-zpl.png) | [rendered](images/symbol-codablock_f-labelary.png) |
+| symbol-code11 | [rendered](images/symbol-code11-codyps-zpl.png) | [rendered](images/symbol-code11-labelary.png) |
+| symbol-code128 | [rendered](images/symbol-code128-codyps-zpl.png) | [rendered](images/symbol-code128-labelary.png) |
+| symbol-code39 | [rendered](images/symbol-code39-codyps-zpl.png) | [rendered](images/symbol-code39-labelary.png) |
+| symbol-code49 | [rendered](images/symbol-code49-codyps-zpl.png) | [rendered](images/symbol-code49-labelary.png) |
+| symbol-code93 | [rendered](images/symbol-code93-codyps-zpl.png) | [rendered](images/symbol-code93-labelary.png) |
+| symbol-composite_a | [rendered](images/symbol-composite_a-codyps-zpl.png) | [rendered](images/symbol-composite_a-labelary.png) |
+| symbol-composite_b | [rendered](images/symbol-composite_b-codyps-zpl.png) | [rendered](images/symbol-composite_b-labelary.png) |
+| symbol-composite_c | [rendered](images/symbol-composite_c-codyps-zpl.png) | [rendered](images/symbol-composite_c-labelary.png) |
+| symbol-data_matrix | [rendered](images/symbol-data_matrix-codyps-zpl.png) | [rendered](images/symbol-data_matrix-labelary.png) |
+| symbol-data_matrix_rectangular | [rendered](images/symbol-data_matrix_rectangular-codyps-zpl.png) | [rendered](images/symbol-data_matrix_rectangular-labelary.png) |
+| symbol-databar_ean13 | [rendered](images/symbol-databar_ean13-codyps-zpl.png) | [rendered](images/symbol-databar_ean13-labelary.png) |
+| symbol-databar_ean8 | [rendered](images/symbol-databar_ean8-codyps-zpl.png) | [rendered](images/symbol-databar_ean8-labelary.png) |
+| symbol-databar_expanded | [rendered](images/symbol-databar_expanded-codyps-zpl.png) | [rendered](images/symbol-databar_expanded-labelary.png) |
+| symbol-databar_expanded_stacked | [rendered](images/symbol-databar_expanded_stacked-codyps-zpl.png) | [rendered](images/symbol-databar_expanded_stacked-labelary.png) |
+| symbol-databar_limited | [rendered](images/symbol-databar_limited-codyps-zpl.png) | [rendered](images/symbol-databar_limited-labelary.png) |
+| symbol-databar_omni | [rendered](images/symbol-databar_omni-codyps-zpl.png) | [rendered](images/symbol-databar_omni-labelary.png) |
+| symbol-databar_stacked | [rendered](images/symbol-databar_stacked-codyps-zpl.png) | [rendered](images/symbol-databar_stacked-labelary.png) |
+| symbol-databar_stacked_omni | [rendered](images/symbol-databar_stacked_omni-codyps-zpl.png) | [rendered](images/symbol-databar_stacked_omni-labelary.png) |
+| symbol-databar_truncated | [rendered](images/symbol-databar_truncated-codyps-zpl.png) | [rendered](images/symbol-databar_truncated-labelary.png) |
+| symbol-databar_upca | [rendered](images/symbol-databar_upca-codyps-zpl.png) | [rendered](images/symbol-databar_upca-labelary.png) |
+| symbol-databar_upce | [rendered](images/symbol-databar_upce-codyps-zpl.png) | [blank](images/symbol-databar_upce-labelary.png) |
+| symbol-ean13 | [rendered](images/symbol-ean13-codyps-zpl.png) | [rendered](images/symbol-ean13-labelary.png) |
+| symbol-ean8 | [rendered](images/symbol-ean8-codyps-zpl.png) | [rendered](images/symbol-ean8-labelary.png) |
+| symbol-extension2 | [rendered](images/symbol-extension2-codyps-zpl.png) | [rendered](images/symbol-extension2-labelary.png) |
+| symbol-extension5 | [rendered](images/symbol-extension5-codyps-zpl.png) | [rendered](images/symbol-extension5-labelary.png) |
+| symbol-industrial2of5 | [rendered](images/symbol-industrial2of5-codyps-zpl.png) | [rendered](images/symbol-industrial2of5-labelary.png) |
+| symbol-intelligent_mail | [rendered](images/symbol-intelligent_mail-codyps-zpl.png) | [rendered](images/symbol-intelligent_mail-labelary.png) |
+| symbol-interleaved2of5 | [rendered](images/symbol-interleaved2of5-codyps-zpl.png) | [rendered](images/symbol-interleaved2of5-labelary.png) |
+| symbol-logmars | [rendered](images/symbol-logmars-codyps-zpl.png) | [rendered](images/symbol-logmars-labelary.png) |
+| symbol-maxicode2 | [rendered](images/symbol-maxicode2-codyps-zpl.png) | [rendered](images/symbol-maxicode2-labelary.png) |
+| symbol-maxicode3 | [rendered](images/symbol-maxicode3-codyps-zpl.png) | [rendered](images/symbol-maxicode3-labelary.png) |
+| symbol-maxicode4 | [rendered](images/symbol-maxicode4-codyps-zpl.png) | [rendered](images/symbol-maxicode4-labelary.png) |
+| symbol-maxicode5 | [rendered](images/symbol-maxicode5-codyps-zpl.png) | [rendered](images/symbol-maxicode5-labelary.png) |
+| symbol-maxicode6 | [rendered](images/symbol-maxicode6-codyps-zpl.png) | [rendered](images/symbol-maxicode6-labelary.png) |
+| symbol-micropdf417_1 | [rendered](images/symbol-micropdf417_1-codyps-zpl.png) | [rendered](images/symbol-micropdf417_1-labelary.png) |
+| symbol-micropdf417_3 | [rendered](images/symbol-micropdf417_3-codyps-zpl.png) | [rendered](images/symbol-micropdf417_3-labelary.png) |
+| symbol-micropdf417_4 | [rendered](images/symbol-micropdf417_4-codyps-zpl.png) | [rendered](images/symbol-micropdf417_4-labelary.png) |
+| symbol-msi_a | [rendered](images/symbol-msi_a-codyps-zpl.png) | [rendered](images/symbol-msi_a-labelary.png) |
+| symbol-msi_b | [rendered](images/symbol-msi_b-codyps-zpl.png) | [rendered](images/symbol-msi_b-labelary.png) |
+| symbol-msi_c | [rendered](images/symbol-msi_c-codyps-zpl.png) | [rendered](images/symbol-msi_c-labelary.png) |
+| symbol-msi_d | [rendered](images/symbol-msi_d-codyps-zpl.png) | [rendered](images/symbol-msi_d-labelary.png) |
+| symbol-pdf417 | [rendered](images/symbol-pdf417-codyps-zpl.png) | [rendered](images/symbol-pdf417-labelary.png) |
+| symbol-pdf417_truncated | [rendered](images/symbol-pdf417_truncated-codyps-zpl.png) | [rendered](images/symbol-pdf417_truncated-labelary.png) |
+| symbol-planet | [rendered](images/symbol-planet-codyps-zpl.png) | [rendered](images/symbol-planet-labelary.png) |
+| symbol-plessey | [rendered](images/symbol-plessey-codyps-zpl.png) | [rendered](images/symbol-plessey-labelary.png) |
+| symbol-postal_planet | [rendered](images/symbol-postal_planet-codyps-zpl.png) | [rendered](images/symbol-postal_planet-labelary.png) |
+| symbol-postnet | [rendered](images/symbol-postnet-codyps-zpl.png) | [rendered](images/symbol-postnet-labelary.png) |
+| symbol-qr | [rendered](images/symbol-qr-codyps-zpl.png) | [rendered](images/symbol-qr-labelary.png) |
+| symbol-standard2of5 | [rendered](images/symbol-standard2of5-codyps-zpl.png) | [rendered](images/symbol-standard2of5-labelary.png) |
+| symbol-tlc39_linear | [rendered](images/symbol-tlc39_linear-codyps-zpl.png) | [rendered](images/symbol-tlc39_linear-labelary.png) |
+| symbol-tlc39_linked | [rendered](images/symbol-tlc39_linked-codyps-zpl.png) | [rendered](images/symbol-tlc39_linked-labelary.png) |
+| symbol-upca | [rendered](images/symbol-upca-codyps-zpl.png) | [rendered](images/symbol-upca-labelary.png) |
+| symbol-upce | [rendered](images/symbol-upce-codyps-zpl.png) | [rendered](images/symbol-upce-labelary.png) |
+| font-0-N | [rendered](images/font-0-N-codyps-zpl.png) | [rendered](images/font-0-N-labelary.png) |
+| font-0-R | [rendered](images/font-0-R-codyps-zpl.png) | [rendered](images/font-0-R-labelary.png) |
+| font-0-I | [rendered](images/font-0-I-codyps-zpl.png) | [rendered](images/font-0-I-labelary.png) |
+| font-0-B | [rendered](images/font-0-B-codyps-zpl.png) | [rendered](images/font-0-B-labelary.png) |
+| font-A-N | [rendered](images/font-A-N-codyps-zpl.png) | [rendered](images/font-A-N-labelary.png) |
+| font-A-R | [rendered](images/font-A-R-codyps-zpl.png) | [rendered](images/font-A-R-labelary.png) |
+| font-A-I | [rendered](images/font-A-I-codyps-zpl.png) | [rendered](images/font-A-I-labelary.png) |
+| font-A-B | [rendered](images/font-A-B-codyps-zpl.png) | [rendered](images/font-A-B-labelary.png) |
+| font-B-N | error | [rendered](images/font-B-N-labelary.png) |
+| font-B-R | error | [rendered](images/font-B-R-labelary.png) |
+| font-B-I | error | [rendered](images/font-B-I-labelary.png) |
+| font-B-B | error | [rendered](images/font-B-B-labelary.png) |
+| font-C-N | error | [rendered](images/font-C-N-labelary.png) |
+| font-C-R | error | [rendered](images/font-C-R-labelary.png) |
+| font-C-I | error | [rendered](images/font-C-I-labelary.png) |
+| font-C-B | error | [rendered](images/font-C-B-labelary.png) |
+| font-D-N | [rendered](images/font-D-N-codyps-zpl.png) | [rendered](images/font-D-N-labelary.png) |
+| font-D-R | [rendered](images/font-D-R-codyps-zpl.png) | [rendered](images/font-D-R-labelary.png) |
+| font-D-I | [rendered](images/font-D-I-codyps-zpl.png) | [rendered](images/font-D-I-labelary.png) |
+| font-D-B | [rendered](images/font-D-B-codyps-zpl.png) | [rendered](images/font-D-B-labelary.png) |
+| font-E-N | error | [rendered](images/font-E-N-labelary.png) |
+| font-E-R | error | [rendered](images/font-E-R-labelary.png) |
+| font-E-I | error | [rendered](images/font-E-I-labelary.png) |
+| font-E-B | error | [rendered](images/font-E-B-labelary.png) |
+| font-F-N | error | [rendered](images/font-F-N-labelary.png) |
+| font-F-R | error | [rendered](images/font-F-R-labelary.png) |
+| font-F-I | error | [rendered](images/font-F-I-labelary.png) |
+| font-F-B | error | [rendered](images/font-F-B-labelary.png) |
+| font-G-N | error | [rendered](images/font-G-N-labelary.png) |
+| font-G-R | error | [rendered](images/font-G-R-labelary.png) |
+| font-G-I | error | [rendered](images/font-G-I-labelary.png) |
+| font-G-B | error | [rendered](images/font-G-B-labelary.png) |
+| font-H-N | error | [rendered](images/font-H-N-labelary.png) |
+| font-H-R | error | [rendered](images/font-H-R-labelary.png) |
+| font-H-I | error | [rendered](images/font-H-I-labelary.png) |
+| font-H-B | error | [rendered](images/font-H-B-labelary.png) |
+| font-id-1 | error | [rendered](images/font-id-1-labelary.png) |
+| font-id-2 | error | [rendered](images/font-id-2-labelary.png) |
+| font-id-3 | error | [rendered](images/font-id-3-labelary.png) |
+| font-id-4 | error | [rendered](images/font-id-4-labelary.png) |
+| font-id-5 | error | [rendered](images/font-id-5-labelary.png) |
+| font-id-6 | error | [rendered](images/font-id-6-labelary.png) |
+| font-id-7 | error | [rendered](images/font-id-7-labelary.png) |
+| font-id-8 | error | [rendered](images/font-id-8-labelary.png) |
+| font-id-9 | error | [rendered](images/font-id-9-labelary.png) |
+| font-id-I | error | [rendered](images/font-id-I-labelary.png) |
+| font-id-J | error | [rendered](images/font-id-J-labelary.png) |
+| font-id-K | error | [rendered](images/font-id-K-labelary.png) |
+| font-id-L | error | [rendered](images/font-id-L-labelary.png) |
+| font-id-M | error | [rendered](images/font-id-M-labelary.png) |
+| font-id-N | error | [rendered](images/font-id-N-labelary.png) |
+| font-id-O | error | [rendered](images/font-id-O-labelary.png) |
+| font-id-P | error | [rendered](images/font-id-P-labelary.png) |
+| font-id-Q | error | [rendered](images/font-id-Q-labelary.png) |
+| font-id-R | error | [rendered](images/font-id-R-labelary.png) |
+| font-id-S | error | [rendered](images/font-id-S-labelary.png) |
+| font-id-T | error | [rendered](images/font-id-T-labelary.png) |
+| font-id-U | error | [rendered](images/font-id-U-labelary.png) |
+| font-id-V | error | [rendered](images/font-id-V-labelary.png) |
+| font-id-W | error | [rendered](images/font-id-W-labelary.png) |
+| font-id-X | error | [rendered](images/font-id-X-labelary.png) |
+| font-id-Y | error | [rendered](images/font-id-Y-labelary.png) |
+| font-id-Z | error | [rendered](images/font-id-Z-labelary.png) |
+| font-dim-0-0 | [rendered](images/font-dim-0-0-codyps-zpl.png) | [rendered](images/font-dim-0-0-labelary.png) |
+| font-dim-1-1 | [rendered](images/font-dim-1-1-codyps-zpl.png) | [rendered](images/font-dim-1-1-labelary.png) |
+| font-dim-2-2 | [rendered](images/font-dim-2-2-codyps-zpl.png) | [rendered](images/font-dim-2-2-labelary.png) |
+| font-dim-7-0 | [rendered](images/font-dim-7-0-codyps-zpl.png) | [rendered](images/font-dim-7-0-labelary.png) |
+| font-dim-15-0 | [rendered](images/font-dim-15-0-codyps-zpl.png) | [rendered](images/font-dim-15-0-labelary.png) |
+| font-dim-17-0 | [rendered](images/font-dim-17-0-codyps-zpl.png) | [rendered](images/font-dim-17-0-labelary.png) |
+| font-dim-31-0 | [rendered](images/font-dim-31-0-codyps-zpl.png) | [rendered](images/font-dim-31-0-labelary.png) |
+| font-dim-33-0 | [rendered](images/font-dim-33-0-codyps-zpl.png) | [rendered](images/font-dim-33-0-labelary.png) |
+| font-dim-63-0 | [rendered](images/font-dim-63-0-codyps-zpl.png) | [rendered](images/font-dim-63-0-labelary.png) |
+| font-dim-65-0 | [rendered](images/font-dim-65-0-codyps-zpl.png) | [rendered](images/font-dim-65-0-labelary.png) |
+| font-dim-32-1 | [rendered](images/font-dim-32-1-codyps-zpl.png) | [rendered](images/font-dim-32-1-labelary.png) |
+| font-dim-1-32 | [rendered](images/font-dim-1-32-codyps-zpl.png) | [rendered](images/font-dim-1-32-labelary.png) |
+| font-dim-64-16 | [rendered](images/font-dim-64-16-codyps-zpl.png) | [rendered](images/font-dim-64-16-labelary.png) |
+| font-dim-16-64 | [rendered](images/font-dim-16-64-codyps-zpl.png) | [rendered](images/font-dim-16-64-labelary.png) |
+| font-dim-96-96 | [rendered](images/font-dim-96-96-codyps-zpl.png) | [rendered](images/font-dim-96-96-labelary.png) |
+| text-digits | [rendered](images/text-digits-codyps-zpl.png) | [rendered](images/text-digits-labelary.png) |
+| text-case | [rendered](images/text-case-codyps-zpl.png) | [rendered](images/text-case-labelary.png) |
+| text-punctuation | [rendered](images/text-punctuation-codyps-zpl.png) | [rendered](images/text-punctuation-labelary.png) |
+| text-spacing | [rendered](images/text-spacing-codyps-zpl.png) | [rendered](images/text-spacing-labelary.png) |
+| text-empty | [blank](images/text-empty-codyps-zpl.png) | [blank](images/text-empty-labelary.png) |
+| fields-1 | [rendered](images/fields-1-codyps-zpl.png) | [rendered](images/fields-1-labelary.png) |
+| fields-48 | [rendered](images/fields-48-codyps-zpl.png) | [rendered](images/fields-48-labelary.png) |
+| fields-400 | [rendered](images/fields-400-codyps-zpl.png) | [rendered](images/fields-400-labelary.png) |
+| field-defaults | [rendered](images/field-defaults-codyps-zpl.png) | [rendered](images/field-defaults-labelary.png) |
+| anchor-FO-N-0 | [rendered](images/anchor-FO-N-0-codyps-zpl.png) | [rendered](images/anchor-FO-N-0-labelary.png) |
+| anchor-FO-N-1 | [rendered](images/anchor-FO-N-1-codyps-zpl.png) | [rendered](images/anchor-FO-N-1-labelary.png) |
+| anchor-FO-N-2 | [rendered](images/anchor-FO-N-2-codyps-zpl.png) | [rendered](images/anchor-FO-N-2-labelary.png) |
+| anchor-FT-N-0 | [rendered](images/anchor-FT-N-0-codyps-zpl.png) | [rendered](images/anchor-FT-N-0-labelary.png) |
+| anchor-FT-N-1 | [rendered](images/anchor-FT-N-1-codyps-zpl.png) | [rendered](images/anchor-FT-N-1-labelary.png) |
+| anchor-FT-N-2 | [rendered](images/anchor-FT-N-2-codyps-zpl.png) | [rendered](images/anchor-FT-N-2-labelary.png) |
+| anchor-FO-R-0 | [rendered](images/anchor-FO-R-0-codyps-zpl.png) | [rendered](images/anchor-FO-R-0-labelary.png) |
+| anchor-FO-R-1 | [rendered](images/anchor-FO-R-1-codyps-zpl.png) | [rendered](images/anchor-FO-R-1-labelary.png) |
+| anchor-FO-R-2 | [rendered](images/anchor-FO-R-2-codyps-zpl.png) | [rendered](images/anchor-FO-R-2-labelary.png) |
+| anchor-FT-R-0 | [rendered](images/anchor-FT-R-0-codyps-zpl.png) | [rendered](images/anchor-FT-R-0-labelary.png) |
+| anchor-FT-R-1 | [rendered](images/anchor-FT-R-1-codyps-zpl.png) | [rendered](images/anchor-FT-R-1-labelary.png) |
+| anchor-FT-R-2 | [rendered](images/anchor-FT-R-2-codyps-zpl.png) | [rendered](images/anchor-FT-R-2-labelary.png) |
+| anchor-FO-I-0 | [rendered](images/anchor-FO-I-0-codyps-zpl.png) | [rendered](images/anchor-FO-I-0-labelary.png) |
+| anchor-FO-I-1 | [rendered](images/anchor-FO-I-1-codyps-zpl.png) | [rendered](images/anchor-FO-I-1-labelary.png) |
+| anchor-FO-I-2 | [rendered](images/anchor-FO-I-2-codyps-zpl.png) | [rendered](images/anchor-FO-I-2-labelary.png) |
+| anchor-FT-I-0 | [rendered](images/anchor-FT-I-0-codyps-zpl.png) | [rendered](images/anchor-FT-I-0-labelary.png) |
+| anchor-FT-I-1 | [rendered](images/anchor-FT-I-1-codyps-zpl.png) | [rendered](images/anchor-FT-I-1-labelary.png) |
+| anchor-FT-I-2 | [rendered](images/anchor-FT-I-2-codyps-zpl.png) | [rendered](images/anchor-FT-I-2-labelary.png) |
+| anchor-FO-B-0 | [rendered](images/anchor-FO-B-0-codyps-zpl.png) | [rendered](images/anchor-FO-B-0-labelary.png) |
+| anchor-FO-B-1 | [rendered](images/anchor-FO-B-1-codyps-zpl.png) | [rendered](images/anchor-FO-B-1-labelary.png) |
+| anchor-FO-B-2 | [rendered](images/anchor-FO-B-2-codyps-zpl.png) | [rendered](images/anchor-FO-B-2-labelary.png) |
+| anchor-FT-B-0 | [rendered](images/anchor-FT-B-0-codyps-zpl.png) | [rendered](images/anchor-FT-B-0-labelary.png) |
+| anchor-FT-B-1 | [rendered](images/anchor-FT-B-1-codyps-zpl.png) | [rendered](images/anchor-FT-B-1-labelary.png) |
+| anchor-FT-B-2 | [rendered](images/anchor-FT-B-2-codyps-zpl.png) | [rendered](images/anchor-FT-B-2-labelary.png) |
+| page-transform-N-N | error | [rendered](images/page-transform-N-N-labelary.png) |
+| page-transform-Y-N | error | [rendered](images/page-transform-Y-N-labelary.png) |
+| page-transform-N-I | error | [rendered](images/page-transform-N-I-labelary.png) |
+| page-transform-Y-I | error | [rendered](images/page-transform-Y-I-labelary.png) |
+| label-reverse | [rendered](images/label-reverse-codyps-zpl.png) | [rendered](images/label-reverse-labelary.png) |
+| field-direction-H-0 | error | [rendered](images/field-direction-H-0-labelary.png) |
+| field-direction-H-1 | error | [rendered](images/field-direction-H-1-labelary.png) |
+| field-direction-H-8 | error | [rendered](images/field-direction-H-8-labelary.png) |
+| field-direction-V-0 | error | [rendered](images/field-direction-V-0-labelary.png) |
+| field-direction-V-1 | error | [rendered](images/field-direction-V-1-labelary.png) |
+| field-direction-V-8 | error | [rendered](images/field-direction-V-8-labelary.png) |
+| field-direction-R-0 | error | [rendered](images/field-direction-R-0-labelary.png) |
+| field-direction-R-1 | error | [rendered](images/field-direction-R-1-labelary.png) |
+| field-direction-R-8 | error | [rendered](images/field-direction-R-8-labelary.png) |
+| block-120-L | error | [rendered](images/block-120-L-labelary.png) |
+| block-120-C | error | [rendered](images/block-120-C-labelary.png) |
+| block-120-R | error | [rendered](images/block-120-R-labelary.png) |
+| block-120-J | error | [rendered](images/block-120-J-labelary.png) |
+| block-300-L | [rendered](images/block-300-L-codyps-zpl.png) | [rendered](images/block-300-L-labelary.png) |
+| block-300-C | [rendered](images/block-300-C-codyps-zpl.png) | [rendered](images/block-300-C-labelary.png) |
+| block-300-R | [rendered](images/block-300-R-codyps-zpl.png) | [rendered](images/block-300-R-labelary.png) |
+| block-300-J | [rendered](images/block-300-J-codyps-zpl.png) | [rendered](images/block-300-J-labelary.png) |
+| block-spacing--12-indent-0 | error | [rendered](images/block-spacing--12-indent-0-labelary.png) |
+| block-spacing-12-indent-0 | [rendered](images/block-spacing-12-indent-0-codyps-zpl.png) | [rendered](images/block-spacing-12-indent-0-labelary.png) |
+| block-spacing-0-indent-40 | [rendered](images/block-spacing-0-indent-40-codyps-zpl.png) | [rendered](images/block-spacing-0-indent-40-labelary.png) |
+| block-spacing-8-indent-80 | [rendered](images/block-spacing-8-indent-80-codyps-zpl.png) | [rendered](images/block-spacing-8-indent-80-labelary.png) |
+| block-content-breaks | error | [rendered](images/block-content-breaks-labelary.png) |
+| block-content-long-word | error | [rendered](images/block-content-long-word-labelary.png) |
+| block-content-spaces | [rendered](images/block-content-spaces-codyps-zpl.png) | [rendered](images/block-content-spaces-labelary.png) |
+| block-content-empty | [blank](images/block-content-empty-codyps-zpl.png) | [blank](images/block-content-empty-labelary.png) |
+| text-block-N-40 | error | [rendered](images/text-block-N-40-labelary.png) |
+| text-block-N-120 | error | [rendered](images/text-block-N-120-labelary.png) |
+| text-block-R-40 | error | [rendered](images/text-block-R-40-labelary.png) |
+| text-block-R-120 | error | [rendered](images/text-block-R-120-labelary.png) |
+| text-block-I-40 | error | [rendered](images/text-block-I-40-labelary.png) |
+| text-block-I-120 | error | [rendered](images/text-block-I-120-labelary.png) |
+| text-block-B-40 | error | [rendered](images/text-block-B-40-labelary.png) |
+| text-block-B-120 | error | [rendered](images/text-block-B-120-labelary.png) |
+| unicode-latin | error | [rendered](images/unicode-latin-labelary.png) |
+| unicode-combining | error | [rendered](images/unicode-combining-labelary.png) |
+| unicode-greek | error | [rendered](images/unicode-greek-labelary.png) |
+| unicode-cyrillic | error | [rendered](images/unicode-cyrillic-labelary.png) |
+| unicode-hebrew | error | [rendered](images/unicode-hebrew-labelary.png) |
+| unicode-arabic | error | [rendered](images/unicode-arabic-labelary.png) |
+| unicode-cjk | error | [blank](images/unicode-cjk-labelary.png) |
+| unicode-supplementary | error | [rendered](images/unicode-supplementary-labelary.png) |
+| unicode-controls | error | [rendered](images/unicode-controls-labelary.png) |
+| unicode-missing | error | [rendered](images/unicode-missing-labelary.png) |
+| encoding-0 | [rendered](images/encoding-0-codyps-zpl.png) | [rendered](images/encoding-0-labelary.png) |
+| encoding-13 | error | [rendered](images/encoding-13-labelary.png) |
+| encoding-27 | [rendered](images/encoding-27-codyps-zpl.png) | [rendered](images/encoding-27-labelary.png) |
+| encoding-28 | [rendered](images/encoding-28-codyps-zpl.png) | [rendered](images/encoding-28-labelary.png) |
+| encoding-29 | error | [blank](images/encoding-29-labelary.png) |
+| encoding-30 | error | [rendered](images/encoding-30-labelary.png) |
+| encoding-31 | error | [rendered](images/encoding-31-labelary.png) |
+| encoding-33 | error | [rendered](images/encoding-33-labelary.png) |
+| encoding-34 | error | [rendered](images/encoding-34-labelary.png) |
+| encoding-35 | error | [rendered](images/encoding-35-labelary.png) |
+| encoding-36 | error | [rendered](images/encoding-36-labelary.png) |
+| encoding-remap | error | [rendered](images/encoding-remap-labelary.png) |
+| advanced-text-0000 | error | [rendered](images/advanced-text-0000-labelary.png) |
+| advanced-text-1000 | error | [rendered](images/advanced-text-1000-labelary.png) |
+| advanced-text-0100 | error | [rendered](images/advanced-text-0100-labelary.png) |
+| advanced-text-0010 | error | [rendered](images/advanced-text-0010-labelary.png) |
+| advanced-text-0001 | error | [rendered](images/advanced-text-0001-labelary.png) |
+| advanced-text-1111 | error | [rendered](images/advanced-text-1111-labelary.png) |
+| hex-scope | [rendered](images/hex-scope-codyps-zpl.png) | [rendered](images/hex-scope-labelary.png) |
+| variable-field | [rendered](images/variable-field-codyps-zpl.png) | [rendered](images/variable-field-labelary.png) |
+| numbered-fields-inline | error | [rendered](images/numbered-fields-inline-labelary.png) |
+| field-concat-whole | error | [rendered](images/field-concat-whole-labelary.png) |
+| field-concat-forward | error | [rendered](images/field-concat-forward-labelary.png) |
+| field-concat-backward | error | [rendered](images/field-concat-backward-labelary.png) |
+| field-concat-past-end | error | [rendered](images/field-concat-past-end-labelary.png) |
+| field-concat-scope | error | [rendered](images/field-concat-scope-labelary.png) |
+| serial-000009-Y | error | [rendered](images/serial-000009-Y-labelary.png) |
+| serial-000009-N | error | [rendered](images/serial-000009-N-labelary.png) |
+| serial-A009Z-Y | error | [rendered](images/serial-A009Z-Y-labelary.png) |
+| serial-mask | error | [rendered](images/serial-mask-labelary.png) |
+| comments-and-line-endings | [rendered](images/comments-and-line-endings-codyps-zpl.png) | [rendered](images/comments-and-line-endings-labelary.png) |
+| box-rounding-0 | [rendered](images/box-rounding-0-codyps-zpl.png) | [rendered](images/box-rounding-0-labelary.png) |
+| box-rounding-1 | [rendered](images/box-rounding-1-codyps-zpl.png) | [rendered](images/box-rounding-1-labelary.png) |
+| box-rounding-2 | [rendered](images/box-rounding-2-codyps-zpl.png) | [rendered](images/box-rounding-2-labelary.png) |
+| box-rounding-3 | [rendered](images/box-rounding-3-codyps-zpl.png) | [rendered](images/box-rounding-3-labelary.png) |
+| box-rounding-4 | [rendered](images/box-rounding-4-codyps-zpl.png) | [rendered](images/box-rounding-4-labelary.png) |
+| box-rounding-5 | [rendered](images/box-rounding-5-codyps-zpl.png) | [rendered](images/box-rounding-5-labelary.png) |
+| box-rounding-6 | [rendered](images/box-rounding-6-codyps-zpl.png) | [rendered](images/box-rounding-6-labelary.png) |
+| box-rounding-7 | [rendered](images/box-rounding-7-codyps-zpl.png) | [rendered](images/box-rounding-7-labelary.png) |
+| box-rounding-8 | [rendered](images/box-rounding-8-codyps-zpl.png) | [rendered](images/box-rounding-8-labelary.png) |
+| shape-GC-B-plain | [rendered](images/shape-GC-B-plain-codyps-zpl.png) | [rendered](images/shape-GC-B-plain-labelary.png) |
+| shape-GC-W-plain | [rendered](images/shape-GC-W-plain-codyps-zpl.png) | [rendered](images/shape-GC-W-plain-labelary.png) |
+| shape-GE-B-plain | [rendered](images/shape-GE-B-plain-codyps-zpl.png) | [rendered](images/shape-GE-B-plain-labelary.png) |
+| shape-GE-W-plain | [rendered](images/shape-GE-W-plain-codyps-zpl.png) | [rendered](images/shape-GE-W-plain-labelary.png) |
+| shape-GD-B-L | [rendered](images/shape-GD-B-L-codyps-zpl.png) | [rendered](images/shape-GD-B-L-labelary.png) |
+| shape-GD-B-R | [rendered](images/shape-GD-B-R-codyps-zpl.png) | [rendered](images/shape-GD-B-R-labelary.png) |
+| shape-GD-W-L | [rendered](images/shape-GD-W-L-codyps-zpl.png) | [rendered](images/shape-GD-W-L-labelary.png) |
+| shape-GD-W-R | [rendered](images/shape-GD-W-R-codyps-zpl.png) | [rendered](images/shape-GD-W-R-labelary.png) |
+| symbol-graphic-A-N | error | [rendered](images/symbol-graphic-A-N-labelary.png) |
+| symbol-graphic-A-R | error | [rendered](images/symbol-graphic-A-R-labelary.png) |
+| symbol-graphic-A-I | error | [rendered](images/symbol-graphic-A-I-labelary.png) |
+| symbol-graphic-A-B | error | [rendered](images/symbol-graphic-A-B-labelary.png) |
+| symbol-graphic-B-N | error | [rendered](images/symbol-graphic-B-N-labelary.png) |
+| symbol-graphic-B-R | error | [rendered](images/symbol-graphic-B-R-labelary.png) |
+| symbol-graphic-B-I | error | [rendered](images/symbol-graphic-B-I-labelary.png) |
+| symbol-graphic-B-B | error | [rendered](images/symbol-graphic-B-B-labelary.png) |
+| symbol-graphic-C-N | error | [rendered](images/symbol-graphic-C-N-labelary.png) |
+| symbol-graphic-C-R | error | [rendered](images/symbol-graphic-C-R-labelary.png) |
+| symbol-graphic-C-I | error | [rendered](images/symbol-graphic-C-I-labelary.png) |
+| symbol-graphic-C-B | error | [rendered](images/symbol-graphic-C-B-labelary.png) |
+| symbol-graphic-D-N | error | [rendered](images/symbol-graphic-D-N-labelary.png) |
+| symbol-graphic-D-R | error | [rendered](images/symbol-graphic-D-R-labelary.png) |
+| symbol-graphic-D-I | error | [rendered](images/symbol-graphic-D-I-labelary.png) |
+| symbol-graphic-D-B | error | [rendered](images/symbol-graphic-D-B-labelary.png) |
+| symbol-graphic-E-N | error | [rendered](images/symbol-graphic-E-N-labelary.png) |
+| symbol-graphic-E-R | error | [rendered](images/symbol-graphic-E-R-labelary.png) |
+| symbol-graphic-E-I | error | [rendered](images/symbol-graphic-E-I-labelary.png) |
+| symbol-graphic-E-B | error | [rendered](images/symbol-graphic-E-B-labelary.png) |
+| paint-black-white | [rendered](images/paint-black-white-codyps-zpl.png) | [rendered](images/paint-black-white-labelary.png) |
+| paint-white-black | [rendered](images/paint-white-black-codyps-zpl.png) | [rendered](images/paint-white-black-labelary.png) |
+| paint-reverse-overlap | [rendered](images/paint-reverse-overlap-codyps-zpl.png) | [rendered](images/paint-reverse-overlap-labelary.png) |
+| paint-reverse-twice | [rendered](images/paint-reverse-twice-codyps-zpl.png) | [rendered](images/paint-reverse-twice-labelary.png) |
+| reverse-field-scope | [rendered](images/reverse-field-scope-codyps-zpl.png) | [rendered](images/reverse-field-scope-labelary.png) |
+| raster-equivalent-hex | [rendered](images/raster-equivalent-hex-codyps-zpl.png) | [rendered](images/raster-equivalent-hex-labelary.png) |
+| raster-equivalent-B64 | [rendered](images/raster-equivalent-B64-codyps-zpl.png) | [rendered](images/raster-equivalent-B64-labelary.png) |
+| raster-equivalent-Z64 | [rendered](images/raster-equivalent-Z64-codyps-zpl.png) | [rendered](images/raster-equivalent-Z64-labelary.png) |
+| raster-equivalent-binary | [rendered](images/raster-equivalent-binary-codyps-zpl.png) | [rendered](images/raster-equivalent-binary-labelary.png) |
+| raster-fill-hex | [rendered](images/raster-fill-hex-codyps-zpl.png) | [rendered](images/raster-fill-hex-labelary.png) |
+| raster-fill-rle | [rendered](images/raster-fill-rle-codyps-zpl.png) | [rendered](images/raster-fill-rle-labelary.png) |
+| raster-repeat-hex | [rendered](images/raster-repeat-hex-codyps-zpl.png) | [rendered](images/raster-repeat-hex-labelary.png) |
+| raster-repeat-rle | [rendered](images/raster-repeat-rle-codyps-zpl.png) | [rendered](images/raster-repeat-rle-labelary.png) |
+| raster-stride-1 | [rendered](images/raster-stride-1-codyps-zpl.png) | [rendered](images/raster-stride-1-labelary.png) |
+| raster-stride-2 | [rendered](images/raster-stride-2-codyps-zpl.png) | [rendered](images/raster-stride-2-labelary.png) |
+| raster-stride-3 | [rendered](images/raster-stride-3-codyps-zpl.png) | [rendered](images/raster-stride-3-labelary.png) |
+| raster-stride-17 | [rendered](images/raster-stride-17-codyps-zpl.png) | [rendered](images/raster-stride-17-labelary.png) |
+| barcode-module-1-ratio-2.0 | [rendered](images/barcode-module-1-ratio-2.0-codyps-zpl.png) | [rendered](images/barcode-module-1-ratio-2.0-labelary.png) |
+| barcode-module-1-ratio-2.5 | [rendered](images/barcode-module-1-ratio-2.5-codyps-zpl.png) | [rendered](images/barcode-module-1-ratio-2.5-labelary.png) |
+| barcode-module-1-ratio-3.0 | [rendered](images/barcode-module-1-ratio-3.0-codyps-zpl.png) | [rendered](images/barcode-module-1-ratio-3.0-labelary.png) |
+| barcode-module-2-ratio-2.0 | [rendered](images/barcode-module-2-ratio-2.0-codyps-zpl.png) | [rendered](images/barcode-module-2-ratio-2.0-labelary.png) |
+| barcode-module-2-ratio-2.5 | [rendered](images/barcode-module-2-ratio-2.5-codyps-zpl.png) | [rendered](images/barcode-module-2-ratio-2.5-labelary.png) |
+| barcode-module-2-ratio-3.0 | [rendered](images/barcode-module-2-ratio-3.0-codyps-zpl.png) | [rendered](images/barcode-module-2-ratio-3.0-labelary.png) |
+| barcode-module-3-ratio-2.0 | [rendered](images/barcode-module-3-ratio-2.0-codyps-zpl.png) | [rendered](images/barcode-module-3-ratio-2.0-labelary.png) |
+| barcode-module-3-ratio-2.5 | [rendered](images/barcode-module-3-ratio-2.5-codyps-zpl.png) | [rendered](images/barcode-module-3-ratio-2.5-labelary.png) |
+| barcode-module-3-ratio-3.0 | [rendered](images/barcode-module-3-ratio-3.0-codyps-zpl.png) | [rendered](images/barcode-module-3-ratio-3.0-labelary.png) |
+| code128-mode-N | [rendered](images/code128-mode-N-codyps-zpl.png) | [rendered](images/code128-mode-N-labelary.png) |
+| code128-mode-U | [rendered](images/code128-mode-U-codyps-zpl.png) | [rendered](images/code128-mode-U-labelary.png) |
+| code128-mode-A | [rendered](images/code128-mode-A-codyps-zpl.png) | [rendered](images/code128-mode-A-labelary.png) |
+| code128-mode-D | [rendered](images/code128-mode-D-codyps-zpl.png) | [rendered](images/code128-mode-D-labelary.png) |
+| code128-subset-b | [rendered](images/code128-subset-b-codyps-zpl.png) | [rendered](images/code128-subset-b-labelary.png) |
+| code128-subset-c | [rendered](images/code128-subset-c-codyps-zpl.png) | [rendered](images/code128-subset-c-labelary.png) |
+| code128-switch | [rendered](images/code128-switch-codyps-zpl.png) | [rendered](images/code128-switch-labelary.png) |
+| code128-fnc1 | [rendered](images/code128-fnc1-codyps-zpl.png) | [rendered](images/code128-fnc1-labelary.png) |
+| readable-B2-N | [rendered](images/readable-B2-N-codyps-zpl.png) | [rendered](images/readable-B2-N-labelary.png) |
+| readable-B2-R | [rendered](images/readable-B2-R-codyps-zpl.png) | [rendered](images/readable-B2-R-labelary.png) |
+| readable-B2-I | [rendered](images/readable-B2-I-codyps-zpl.png) | [rendered](images/readable-B2-I-labelary.png) |
+| readable-B2-B | [rendered](images/readable-B2-B-codyps-zpl.png) | [rendered](images/readable-B2-B-labelary.png) |
+| readable-B3-N | [rendered](images/readable-B3-N-codyps-zpl.png) | [rendered](images/readable-B3-N-labelary.png) |
+| readable-B3-R | [rendered](images/readable-B3-R-codyps-zpl.png) | [rendered](images/readable-B3-R-labelary.png) |
+| readable-B3-I | [rendered](images/readable-B3-I-codyps-zpl.png) | [rendered](images/readable-B3-I-labelary.png) |
+| readable-B3-B | [rendered](images/readable-B3-B-codyps-zpl.png) | [rendered](images/readable-B3-B-labelary.png) |
+| readable-BC-N | [rendered](images/readable-BC-N-codyps-zpl.png) | [rendered](images/readable-BC-N-labelary.png) |
+| readable-BC-R | [rendered](images/readable-BC-R-codyps-zpl.png) | [rendered](images/readable-BC-R-labelary.png) |
+| readable-BC-I | [rendered](images/readable-BC-I-codyps-zpl.png) | [rendered](images/readable-BC-I-labelary.png) |
+| readable-BC-B | [rendered](images/readable-BC-B-codyps-zpl.png) | [rendered](images/readable-BC-B-labelary.png) |
+| readable-BE-N | [rendered](images/readable-BE-N-codyps-zpl.png) | [rendered](images/readable-BE-N-labelary.png) |
+| readable-BE-R | [rendered](images/readable-BE-R-codyps-zpl.png) | [rendered](images/readable-BE-R-labelary.png) |
+| readable-BE-I | [rendered](images/readable-BE-I-codyps-zpl.png) | [rendered](images/readable-BE-I-labelary.png) |
+| readable-BE-B | [rendered](images/readable-BE-B-codyps-zpl.png) | [rendered](images/readable-BE-B-labelary.png) |
+| readable-BU-N | [rendered](images/readable-BU-N-codyps-zpl.png) | [rendered](images/readable-BU-N-labelary.png) |
+| readable-BU-R | [rendered](images/readable-BU-R-codyps-zpl.png) | [rendered](images/readable-BU-R-labelary.png) |
+| readable-BU-I | [rendered](images/readable-BU-I-codyps-zpl.png) | [rendered](images/readable-BU-I-labelary.png) |
+| readable-BU-B | [rendered](images/readable-BU-B-codyps-zpl.png) | [rendered](images/readable-BU-B-labelary.png) |
+| qr-mask-full-0 | [rendered](images/qr-mask-full-0-codyps-zpl.png) | [rendered](images/qr-mask-full-0-labelary.png) |
+| qr-mask-full-1 | [rendered](images/qr-mask-full-1-codyps-zpl.png) | [rendered](images/qr-mask-full-1-labelary.png) |
+| qr-mask-full-2 | [rendered](images/qr-mask-full-2-codyps-zpl.png) | [rendered](images/qr-mask-full-2-labelary.png) |
+| qr-mask-full-3 | [rendered](images/qr-mask-full-3-codyps-zpl.png) | [rendered](images/qr-mask-full-3-labelary.png) |
+| qr-mask-full-4 | [rendered](images/qr-mask-full-4-codyps-zpl.png) | [rendered](images/qr-mask-full-4-labelary.png) |
+| qr-mask-full-5 | [rendered](images/qr-mask-full-5-codyps-zpl.png) | [rendered](images/qr-mask-full-5-labelary.png) |
+| qr-mask-full-6 | [rendered](images/qr-mask-full-6-codyps-zpl.png) | [rendered](images/qr-mask-full-6-labelary.png) |
+| qr-mask-full-7 | [rendered](images/qr-mask-full-7-codyps-zpl.png) | [rendered](images/qr-mask-full-7-labelary.png) |
+| datamatrix-quality-0 | [rendered](images/datamatrix-quality-0-codyps-zpl.png) | [blank](images/datamatrix-quality-0-labelary.png) |
+| datamatrix-quality-50 | [rendered](images/datamatrix-quality-50-codyps-zpl.png) | [blank](images/datamatrix-quality-50-labelary.png) |
+| datamatrix-quality-80 | [rendered](images/datamatrix-quality-80-codyps-zpl.png) | [blank](images/datamatrix-quality-80-labelary.png) |
+| datamatrix-quality-100 | [rendered](images/datamatrix-quality-100-codyps-zpl.png) | [blank](images/datamatrix-quality-100-labelary.png) |
+| datamatrix-quality-140 | [rendered](images/datamatrix-quality-140-codyps-zpl.png) | [blank](images/datamatrix-quality-140-labelary.png) |
+| datamatrix-quality-200 | [rendered](images/datamatrix-quality-200-codyps-zpl.png) | [rendered](images/datamatrix-quality-200-labelary.png) |
+| datamatrix-size-10-10 | [rendered](images/datamatrix-size-10-10-codyps-zpl.png) | [rendered](images/datamatrix-size-10-10-labelary.png) |
+| datamatrix-size-16-16 | [rendered](images/datamatrix-size-16-16-codyps-zpl.png) | [rendered](images/datamatrix-size-16-16-labelary.png) |
+| datamatrix-size-18-8 | [rendered](images/datamatrix-size-18-8-codyps-zpl.png) | [rendered](images/datamatrix-size-18-8-labelary.png) |
+| datamatrix-size-32-8 | [rendered](images/datamatrix-size-32-8-codyps-zpl.png) | [rendered](images/datamatrix-size-32-8-labelary.png) |
+| pdf417-security-0-N | [rendered](images/pdf417-security-0-N-codyps-zpl.png) | [rendered](images/pdf417-security-0-N-labelary.png) |
+| pdf417-security-0-Y | [rendered](images/pdf417-security-0-Y-codyps-zpl.png) | [rendered](images/pdf417-security-0-Y-labelary.png) |
+| pdf417-security-2-N | [rendered](images/pdf417-security-2-N-codyps-zpl.png) | [rendered](images/pdf417-security-2-N-labelary.png) |
+| pdf417-security-2-Y | [rendered](images/pdf417-security-2-Y-codyps-zpl.png) | [rendered](images/pdf417-security-2-Y-labelary.png) |
+| pdf417-security-8-N | [rendered](images/pdf417-security-8-N-codyps-zpl.png) | [rendered](images/pdf417-security-8-N-labelary.png) |
+| pdf417-security-8-Y | [rendered](images/pdf417-security-8-Y-codyps-zpl.png) | [rendered](images/pdf417-security-8-Y-labelary.png) |
+| barcode-validation | [rendered](images/barcode-validation-codyps-zpl.png) | [rendered](images/barcode-validation-labelary.png) |
+| barcode-default-scope | [rendered](images/barcode-default-scope-codyps-zpl.png) | [rendered](images/barcode-default-scope-labelary.png) |
+| equivalent-text-plain | [rendered](images/equivalent-text-plain-codyps-zpl.png) | [rendered](images/equivalent-text-plain-labelary.png) |
+| equivalent-text-hex | [rendered](images/equivalent-text-hex-codyps-zpl.png) | [rendered](images/equivalent-text-hex-labelary.png) |
+| equivalent-home-direct | [rendered](images/equivalent-home-direct-codyps-zpl.png) | [rendered](images/equivalent-home-direct-labelary.png) |
+| equivalent-home-offset | [rendered](images/equivalent-home-offset-codyps-zpl.png) | [rendered](images/equivalent-home-offset-labelary.png) |
+| equivalent-comment | [rendered](images/equivalent-comment-codyps-zpl.png) | [rendered](images/equivalent-comment-labelary.png) |
+| torture-typography | error | [rendered](images/torture-typography-labelary.png) |
+| torture-geometry | [rendered](images/torture-geometry-codyps-zpl.png) | [rendered](images/torture-geometry-labelary.png) |
+| torture-shipping-label | [rendered](images/torture-shipping-label-codyps-zpl.png) | [rendered](images/torture-shipping-label-labelary.png) |
+| torture-overlap | [rendered](images/torture-overlap-codyps-zpl.png) | [rendered](images/torture-overlap-labelary.png) |
 
 ### boundary
 
-| Case | codyps/zpl (Rust) |
-| --- | --- |
-| field-data-3072-bytes | error |
-| offset-LS--80 | [rendered](images/offset-LS--80-codyps-zpl.png) |
-| offset-LS-80 | [rendered](images/offset-LS-80-codyps-zpl.png) |
-| offset-LT--50 | [rendered](images/offset-LT--50-codyps-zpl.png) |
-| offset-LT-50 | [rendered](images/offset-LT-50-codyps-zpl.png) |
-| offset-LH-100-200 | [rendered](images/offset-LH-100-200-codyps-zpl.png) |
-| clip-0-0 | [rendered](images/clip-0-0-codyps-zpl.png) |
-| clip-831-1217 | [rendered](images/clip-831-1217-codyps-zpl.png) |
-| clip-832-1218 | [blank](images/clip-832-1218-codyps-zpl.png) |
-| clip-800-1180 | [rendered](images/clip-800-1180-codyps-zpl.png) |
-| clip-32000-32000 | [blank](images/clip-32000-32000-codyps-zpl.png) |
-| block-1-L | error |
-| block-1-C | error |
-| block-1-R | error |
-| block-1-J | error |
-| block-20-L | error |
-| block-20-C | error |
-| block-20-R | error |
-| block-20-J | error |
-| text-block-N-1 | error |
-| text-block-R-1 | error |
-| text-block-I-1 | error |
-| text-block-B-1 | error |
-| hex-underscore | error |
-| hex-hash | error |
-| interleaved-odd-digits | [rendered](images/interleaved-odd-digits-codyps-zpl.png) |
-| box-0-80-1 | error |
-| box-80-0-1 | error |
-| box-1-1-1 | [rendered](images/box-1-1-1-codyps-zpl.png) |
-| box-2-2-1 | [rendered](images/box-2-2-1-codyps-zpl.png) |
-| box-31-31-1 | [rendered](images/box-31-31-1-codyps-zpl.png) |
-| box-32-32-1 | [rendered](images/box-32-32-1-codyps-zpl.png) |
-| box-33-33-1 | [rendered](images/box-33-33-1-codyps-zpl.png) |
-| box-100-60-30 | [rendered](images/box-100-60-30-codyps-zpl.png) |
-| box-100-60-100 | [rendered](images/box-100-60-100-codyps-zpl.png) |
-| raster-binary-command-bytes | [rendered](images/raster-binary-command-bytes-codyps-zpl.png) |
-| raster-clipped | [rendered](images/raster-clipped-codyps-zpl.png) |
-| barcode-module-10-ratio-2.0 | [rendered](images/barcode-module-10-ratio-2.0-codyps-zpl.png) |
-| barcode-module-10-ratio-2.5 | [rendered](images/barcode-module-10-ratio-2.5-codyps-zpl.png) |
-| barcode-module-10-ratio-3.0 | [rendered](images/barcode-module-10-ratio-3.0-codyps-zpl.png) |
-| pdf417-structured-origins-1 | [blank](images/pdf417-structured-origins-1-codyps-zpl.png) |
-| pdf417-structured-origins-3 | [blank](images/pdf417-structured-origins-3-codyps-zpl.png) |
-| structured-exclude-B7 | [blank](images/structured-exclude-B7-codyps-zpl.png) |
-| structured-exclude-BF | [blank](images/structured-exclude-BF-codyps-zpl.png) |
+| Case | codyps/zpl (Rust) | Labelary (captured service) |
+| --- | --- | --- |
+| field-data-3072-bytes | error | [rendered](images/field-data-3072-bytes-labelary.png) |
+| offset-LS--80 | [rendered](images/offset-LS--80-codyps-zpl.png) | [rendered](images/offset-LS--80-labelary.png) |
+| offset-LS-80 | [rendered](images/offset-LS-80-codyps-zpl.png) | [rendered](images/offset-LS-80-labelary.png) |
+| offset-LT--50 | [rendered](images/offset-LT--50-codyps-zpl.png) | [rendered](images/offset-LT--50-labelary.png) |
+| offset-LT-50 | [rendered](images/offset-LT-50-codyps-zpl.png) | [rendered](images/offset-LT-50-labelary.png) |
+| offset-LH-100-200 | [rendered](images/offset-LH-100-200-codyps-zpl.png) | [rendered](images/offset-LH-100-200-labelary.png) |
+| clip-0-0 | [rendered](images/clip-0-0-codyps-zpl.png) | [rendered](images/clip-0-0-labelary.png) |
+| clip-831-1217 | [rendered](images/clip-831-1217-codyps-zpl.png) | [rendered](images/clip-831-1217-labelary.png) |
+| clip-832-1218 | [blank](images/clip-832-1218-codyps-zpl.png) | [blank](images/clip-832-1218-labelary.png) |
+| clip-800-1180 | [rendered](images/clip-800-1180-codyps-zpl.png) | [rendered](images/clip-800-1180-labelary.png) |
+| clip-32000-32000 | [blank](images/clip-32000-32000-codyps-zpl.png) | [blank](images/clip-32000-32000-labelary.png) |
+| block-1-L | error | [rendered](images/block-1-L-labelary.png) |
+| block-1-C | error | [rendered](images/block-1-C-labelary.png) |
+| block-1-R | error | [rendered](images/block-1-R-labelary.png) |
+| block-1-J | error | [rendered](images/block-1-J-labelary.png) |
+| block-20-L | error | [rendered](images/block-20-L-labelary.png) |
+| block-20-C | error | [rendered](images/block-20-C-labelary.png) |
+| block-20-R | error | [rendered](images/block-20-R-labelary.png) |
+| block-20-J | error | [rendered](images/block-20-J-labelary.png) |
+| text-block-N-1 | error | [rendered](images/text-block-N-1-labelary.png) |
+| text-block-R-1 | error | [rendered](images/text-block-R-1-labelary.png) |
+| text-block-I-1 | error | [rendered](images/text-block-I-1-labelary.png) |
+| text-block-B-1 | error | [rendered](images/text-block-B-1-labelary.png) |
+| hex-underscore | error | [rendered](images/hex-underscore-labelary.png) |
+| hex-hash | error | [rendered](images/hex-hash-labelary.png) |
+| interleaved-odd-digits | [rendered](images/interleaved-odd-digits-codyps-zpl.png) | [rendered](images/interleaved-odd-digits-labelary.png) |
+| box-0-80-1 | error | [rendered](images/box-0-80-1-labelary.png) |
+| box-80-0-1 | error | [rendered](images/box-80-0-1-labelary.png) |
+| box-1-1-1 | [rendered](images/box-1-1-1-codyps-zpl.png) | [rendered](images/box-1-1-1-labelary.png) |
+| box-2-2-1 | [rendered](images/box-2-2-1-codyps-zpl.png) | [rendered](images/box-2-2-1-labelary.png) |
+| box-31-31-1 | [rendered](images/box-31-31-1-codyps-zpl.png) | [rendered](images/box-31-31-1-labelary.png) |
+| box-32-32-1 | [rendered](images/box-32-32-1-codyps-zpl.png) | [rendered](images/box-32-32-1-labelary.png) |
+| box-33-33-1 | [rendered](images/box-33-33-1-codyps-zpl.png) | [rendered](images/box-33-33-1-labelary.png) |
+| box-100-60-30 | [rendered](images/box-100-60-30-codyps-zpl.png) | [rendered](images/box-100-60-30-labelary.png) |
+| box-100-60-100 | [rendered](images/box-100-60-100-codyps-zpl.png) | [rendered](images/box-100-60-100-labelary.png) |
+| raster-binary-command-bytes | [rendered](images/raster-binary-command-bytes-codyps-zpl.png) | [rendered](images/raster-binary-command-bytes-labelary.png) |
+| raster-clipped | [rendered](images/raster-clipped-codyps-zpl.png) | [rendered](images/raster-clipped-labelary.png) |
+| barcode-module-10-ratio-2.0 | [rendered](images/barcode-module-10-ratio-2.0-codyps-zpl.png) | [rendered](images/barcode-module-10-ratio-2.0-labelary.png) |
+| barcode-module-10-ratio-2.5 | [rendered](images/barcode-module-10-ratio-2.5-codyps-zpl.png) | [rendered](images/barcode-module-10-ratio-2.5-labelary.png) |
+| barcode-module-10-ratio-3.0 | [rendered](images/barcode-module-10-ratio-3.0-codyps-zpl.png) | [rendered](images/barcode-module-10-ratio-3.0-labelary.png) |
+| pdf417-structured-origins-1 | [blank](images/pdf417-structured-origins-1-codyps-zpl.png) | [blank](images/pdf417-structured-origins-1-labelary.png) |
+| pdf417-structured-origins-3 | [blank](images/pdf417-structured-origins-3-codyps-zpl.png) | [blank](images/pdf417-structured-origins-3-labelary.png) |
+| structured-exclude-B7 | [blank](images/structured-exclude-B7-codyps-zpl.png) | [blank](images/structured-exclude-B7-labelary.png) |
+| structured-exclude-BF | [blank](images/structured-exclude-BF-codyps-zpl.png) | [blank](images/structured-exclude-BF-labelary.png) |
 
 ### invalid
 
-| Case | codyps/zpl (Rust) |
-| --- | --- |
-| invalid-bad-orientation | error |
-| invalid-negative-width | error |
-| invalid-bad-alignment | error |
-| invalid-bad-hex | error |
-| invalid-truncated-hex | error |
-| invalid-bad-raster-count | error |
-| invalid-zero-raster-stride | error |
-| invalid-bad-base64 | error |
-| invalid-bad-crc | error |
-| invalid-qr-model-invalid | error |
-| invalid-qr-mask-invalid | error |
-| invalid-ean-nonnumeric | error |
-| invalid-code39-empty | [rendered](images/invalid-code39-empty-codyps-zpl.png) |
-| invalid-unknown-encoding | error |
+| Case | codyps/zpl (Rust) | Labelary (captured service) |
+| --- | --- | --- |
+| invalid-bad-orientation | error | [rendered](images/invalid-bad-orientation-labelary.png) |
+| invalid-negative-width | error | [rendered](images/invalid-negative-width-labelary.png) |
+| invalid-bad-alignment | error | [rendered](images/invalid-bad-alignment-labelary.png) |
+| invalid-bad-hex | error | [rendered](images/invalid-bad-hex-labelary.png) |
+| invalid-truncated-hex | error | [rendered](images/invalid-truncated-hex-labelary.png) |
+| invalid-bad-raster-count | error | error |
+| invalid-zero-raster-stride | error | [rendered](images/invalid-zero-raster-stride-labelary.png) |
+| invalid-bad-base64 | error | error |
+| invalid-bad-crc | error | [rendered](images/invalid-bad-crc-labelary.png) |
+| invalid-qr-model-invalid | error | [rendered](images/invalid-qr-model-invalid-labelary.png) |
+| invalid-qr-mask-invalid | error | [rendered](images/invalid-qr-mask-invalid-labelary.png) |
+| invalid-ean-nonnumeric | error | [rendered](images/invalid-ean-nonnumeric-labelary.png) |
+| invalid-code39-empty | [rendered](images/invalid-code39-empty-codyps-zpl.png) | [rendered](images/invalid-code39-empty-labelary.png) |
+| invalid-unknown-encoding | error | [rendered](images/invalid-unknown-encoding-labelary.png) |

@@ -15,7 +15,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"]
 
 
 def sha(path):
@@ -132,6 +132,11 @@ def main():
     ap.add_argument("--output", type=Path, default=REPO / "docs/benchmarks/accuracy")
     args = ap.parse_args()
     cfg = json.loads((ROOT / "_work/config.json").read_text())
+    sys.path.insert(0, str(ROOT))
+    from labelary import DEFAULT, register, validate
+
+    register(cfg)
+    validate(DEFAULT)
     missing = set(LIBRARIES) - cfg["commands"].keys()
     if missing:
         ap.error(f"Build all rendering adapters first; missing: {sorted(missing)}")
@@ -213,6 +218,8 @@ def main():
             )
         if name == "binarykits":
             paths.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
+        if name == "labelary":
+            paths.extend([ROOT / "labelary.py", REPO / "docs/benchmarks/labelary/captures.json"])
         identities[name] = [{"name": p.name, "sha256": sha(p)} for p in paths]
     serial = []
     for case in cases:

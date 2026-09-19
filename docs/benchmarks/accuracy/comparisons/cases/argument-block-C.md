@@ -6,11 +6,11 @@
 
 **^FB** · w=220,lines=3,space=2,align=C,indent=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/block-C.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/block-C.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -87,4 +87,17 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1763 pixels; ex
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../benchmarks/accuracy/reference/block-C.png) | ![zplr render](../../images/argument-block-C-zplr.png) | ![zplr difference](../../images/argument-block-C-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 72.7% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 373 pixels; extra ink: 499 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-C.png) | ![labelary render](../../images/argument-block-C-labelary.png) | ![labelary difference](../../images/argument-block-C-labelary-diff.png) |
 

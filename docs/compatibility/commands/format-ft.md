@@ -24,13 +24,14 @@ Reference parameters: **x, y, z**. These describe the reference grammar, not a p
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 0/1 exact; mean IoU 73.9%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [ft-baseline](../../../benchmarks/accuracy/reference/ft-baseline.zpl) | x=80,y=100 | [Printer](../../../benchmarks/accuracy/reference/ft-baseline.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#codyps-zpl) | N/A | [59.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#labelize) | [21.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#forge) | [85.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#go) | [85.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#ffi) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#binarykits) | [12.4% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [ft-baseline](../../../benchmarks/accuracy/reference/ft-baseline.zpl) | x=80,y=100 | [Printer](../../../benchmarks/accuracy/reference/ft-baseline.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#codyps-zpl) | N/A | [59.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#labelize) | [21.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#forge) | [85.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#go) | [85.0% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#ffi) | [32.5% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#binarykits) | [12.4% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#zplr) | N/A | N/A | N/A | [73.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-ft-baseline.md#labelary) |
 
 
 ## Related features

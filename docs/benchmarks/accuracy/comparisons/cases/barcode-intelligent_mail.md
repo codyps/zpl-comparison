@@ -6,11 +6,11 @@
 
 **^BZ** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/intelligent_mail.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -87,4 +87,17 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6821 pixels; 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![zplr render](../../images/barcode-intelligent_mail-zplr.png) | ![zplr difference](../../images/barcode-intelligent_mail-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 98.3% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 124 pixels; extra ink: 0 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![labelary render](../../images/barcode-intelligent_mail-labelary.png) | ![labelary difference](../../images/barcode-intelligent_mail-labelary-diff.png) |
 

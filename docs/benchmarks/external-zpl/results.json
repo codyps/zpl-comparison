@@ -2,7 +2,7 @@
   "schema": 1,
   "suite": "external-zpl-v1",
   "manifest_sha256": "d67331b8da175ee7bf7e359b3a222321b41e82152ee63f32cec8f42ad1b9de3f",
-  "measured_utc": "2026-09-19T02:59:58Z",
+  "measured_utc": "2026-09-19T03:26:59Z",
   "host": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
   "cases": [
     {
@@ -350,6 +350,19 @@
       "height": 1218
     },
     {
+      "library": "labelary",
+      "case": "zpl-toolchain-shipping_label",
+      "group": "shipping",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 59572,
+      "width": 812,
+      "height": 1218
+    },
+    {
       "library": "codyps-zpl",
       "case": "zpl-toolchain-product_label",
       "group": "product",
@@ -437,6 +450,19 @@
       "diagnostic": "",
       "status": "rendered",
       "ink": 25792,
+      "width": 609,
+      "height": 406
+    },
+    {
+      "library": "labelary",
+      "case": "zpl-toolchain-product_label",
+      "group": "product",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 26519,
       "width": 609,
       "height": 406
     },
@@ -532,6 +558,19 @@
       "height": 609
     },
     {
+      "library": "labelary",
+      "case": "zpl-toolchain-warehouse_label",
+      "group": "warehouse",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 74442,
+      "width": 812,
+      "height": 609
+    },
+    {
       "library": "codyps-zpl",
       "case": "zpl-toolchain-compliance_label",
       "group": "compliance",
@@ -623,13 +662,26 @@
       "height": 1219
     },
     {
+      "library": "labelary",
+      "case": "zpl-toolchain-compliance_label",
+      "group": "compliance",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 57396,
+      "width": 812,
+      "height": 1218
+    },
+    {
       "library": "codyps-zpl",
       "case": "zpl-toolchain-usps_surepost_sample",
       "group": "printer-configuration",
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41790512) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 9, message: \"unsupported command MN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (41935219) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 9, message: \"unsupported command MN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -652,7 +704,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41790573) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (41935236) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -706,6 +758,19 @@
       "ink": 257138,
       "width": 812,
       "height": 1219
+    },
+    {
+      "library": "labelary",
+      "case": "zpl-toolchain-usps_surepost_sample",
+      "group": "printer-configuration",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 283274,
+      "width": 812,
+      "height": 1524
     },
     {
       "library": "codyps-zpl",
@@ -799,13 +864,26 @@
       "height": 500
     },
     {
+      "library": "labelary",
+      "case": "zplr-asset-matrix-pdf417",
+      "group": "asset",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 28554,
+      "width": 900,
+      "height": 500
+    },
+    {
       "library": "codyps-zpl",
       "case": "zplr-retail-upc-ean",
       "group": "retail",
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41791255) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (41936718) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -887,13 +965,26 @@
       "height": 500
     },
     {
+      "library": "labelary",
+      "case": "zplr-retail-upc-ean",
+      "group": "retail",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 38700,
+      "width": 800,
+      "height": 500
+    },
+    {
       "library": "codyps-zpl",
       "case": "zplr-stored-resources",
       "group": "stateful",
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41791551) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 56, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (41937107) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 56, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -916,7 +1007,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41791577) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (41937115) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -965,6 +1056,19 @@
       "diagnostic": "",
       "status": "rendered",
       "ink": 4358,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "library": "labelary",
+      "case": "zplr-stored-resources",
+      "group": "stateful",
+      "validity": "boundary",
+      "score": null,
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 4499,
       "width": 420,
       "height": 220
     }

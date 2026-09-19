@@ -17,6 +17,9 @@ from report import NAMES, table
 
 
 def validate(data, dest):
+    for identity in data.get("adapters", {}).get("labelary", []):
+        if identity["name"] == "captures.json" and identity["sha256"] != sha(REPO / "docs/benchmarks/labelary/captures.json"):
+            raise ValueError("Labelary snapshot changed; rerun accuracy measurements")
     cases = {c["id"]: c for c in data["cases"]}
     expected = {(cid, lib) for cid in cases for lib in LIBRARIES}
     rows = {(r["case"], r["library"]): r for r in data["results"]}
@@ -161,6 +164,8 @@ def pages(data, dest):
                 f"## {lib}",
                 f"**{NAMES[lib]}: {status(row)}** · [All cases for this library](../libraries/{lib}.md)",
             ]
+            if lib == "labelary":
+                content.append("[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.")
             printer = f"![Printer preview]({reference})"
             if row["status"] == "error":
                 content += [

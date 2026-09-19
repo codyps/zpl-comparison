@@ -15,6 +15,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 NAMES = {
+    "labelary": "Labelary (captured service)",
     "codyps-zpl": "codyps/zpl (Rust)",
     "toolchain": "zpl-toolchain (Rust)",
     "forge": "zpl-forge (Rust)",

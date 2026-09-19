@@ -24,13 +24,14 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | [🛠️ Typed emission](https://docs.rs/crate/zpl-builder/0.1.0/source/src/builder.rs#130) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | [🛠️ Typed emission](https://github.com/cod3monk/zpl/blob/9bbeca05aa42e41576bf43ee3ae7ec268a3df032/zpl/label.py#L305) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [upca](../../../references/barcodes-zd621-v1/upca.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/upca.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#codyps-zpl) | N/A | [97.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#labelize) | [96.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#forge) | [6.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#go) | [6.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#ffi) | [96.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#binarykits) | [96.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [upca](../../../references/barcodes-zd621-v1/upca.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/upca.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#codyps-zpl) | N/A | [97.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#labelize) | [96.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#forge) | [6.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#go) | [6.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#ffi) | [96.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#binarykits) | [96.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#zplr) | N/A | N/A | N/A | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-upca.md#labelary) |
 
 
 ## Related features

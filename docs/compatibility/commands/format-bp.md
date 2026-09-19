@@ -24,13 +24,14 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | [🛠️ Typed emission](https://docs.rs/crate/zpl-builder/0.1.0/source/src/builder.rs#125) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | [🛠️ Typed emission](https://github.com/DanieLeeuwner/JSZPL/blob/53c916717c0dfdb1e6bca266eb6280c8f156c6ca/src/components/barcode.ts#L94) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [plessey](../../../references/barcodes-zd621-v1/plessey.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/plessey.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#codyps-zpl) | N/A | [2.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#labelize) | [2.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#forge) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#go) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#ffi) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#binarykits) | [20.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [plessey](../../../references/barcodes-zd621-v1/plessey.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/plessey.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#codyps-zpl) | N/A | [2.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#labelize) | [2.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#forge) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#go) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#ffi) | [2.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#binarykits) | [20.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#zplr) | N/A | N/A | N/A | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-plessey.md#labelary) |
 
 
 ## Related features

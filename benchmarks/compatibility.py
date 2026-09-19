@@ -36,8 +36,9 @@ LIBRARIES = {
     "builder": ("zpl-builder", "Rust", "Typed generator"),
     "python": ("Python ZPL", "Python", "Typed generator"),
     "jszpl": ("JSZPL", "TypeScript", "Typed generator"),
+    "labelary": ("Labelary", "Hosted service", "Captured renderer"),
 }
-RENDERERS = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"}
+RENDERERS = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"}
 LABELS = {
     "D": "🧩 Handler found",
     "I": "⏭️ Ignored / stored only",
@@ -162,6 +163,9 @@ def library_versions(support):
         for e in root.iter("PackageReference")
         if e.attrib["Include"] == "BinaryKits.Zpl.Viewer"
     )
+    capture = load(REPO / "docs/benchmarks/labelary/captures.json")
+    exposed = sorted({c["renderer_version"] for c in capture["cases"] if c["renderer_version"]})
+    versions["labelary"] = "captured " + capture["started_utc"] + " (" + (", ".join(exposed) if exposed else "build version not exposed") + ")"
     return versions
 
 
