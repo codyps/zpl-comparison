@@ -6,7 +6,7 @@
 
 **^FO** · x=220,y=80,z=2 · [ZPL input](../../../../../benchmarks/accuracy/reference/fo-justify-2.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png)
 
-Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,22 +14,14 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![codyps-zpl render](../../images/argument-fo-justify-2-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-fo-justify-2-codyps-zpl-diff.png) |
 
-
-Error diagnostic:
-
-~~~text
-
-thread 'main' (41679912) panicked at src/main.rs:27:10:
-render: RenderError { offset: 65, message: "field justification unsupported" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 
@@ -55,7 +47,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41679930) panicked at src/main.rs:73:10:
+thread 'main' (41792851) panicked at src/main.rs:73:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

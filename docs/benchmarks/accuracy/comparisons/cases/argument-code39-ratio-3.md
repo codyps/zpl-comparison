@@ -6,7 +6,7 @@
 
 **^BY** · w=2,ratio=3,height=60 · [ZPL input](../../../../../benchmarks/accuracy/reference/code39-ratio-3.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-3.png)
 
-Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 

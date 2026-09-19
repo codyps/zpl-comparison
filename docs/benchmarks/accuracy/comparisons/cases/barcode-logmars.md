@@ -6,7 +6,7 @@
 
 **^BL** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/logmars.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/logmars.png)
 
-Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,9 +14,9 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 90.6% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 480 pixels; extra ink: 688 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |

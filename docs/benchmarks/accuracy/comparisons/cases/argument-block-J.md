@@ -6,7 +6,7 @@
 
 **^FB** · w=220,lines=3,space=2,align=J,indent=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/block-J.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/block-J.png)
 
-Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,22 +14,14 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-J.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-J.png) | ![codyps-zpl render](../../images/argument-block-J-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-block-J-codyps-zpl-diff.png) |
 
-
-Error diagnostic:
-
-~~~text
-
-thread 'main' (41681969) panicked at src/main.rs:27:10:
-render: RenderError { offset: 82, message: "unsupported or invalid field block parameters" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

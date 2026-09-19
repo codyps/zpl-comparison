@@ -13,7 +13,7 @@ Reference parameters: **o, h, f, m**. These describe the reference grammar, not 
 
 | Library | Version / pin | Source evidence | Focused printer evidence | Caveats |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ b63d1cf7d99f | [🧩 Handler found](https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L74) | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ 48cd4c6cd0a4 | [🧩 Handler found](https://github.com/codyps/zpl/blob/48cd4c6cd0a45732ffec8cd5fd580748975a8caa/zpl/src/render/barcode.rs#L74) | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
 | [zpl-toolchain](../libraries/toolchain.md) | 0.4.1 | [📐 Specification table](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^B4.jsonc#L1) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/toolchain.md#argument-limits) |
 | [labelize](../libraries/labelize.md) | 1.5.0 | ❔ No evidence found | 0/1 exact; mean IoU 5.9%; 0 errors | [Argument limits](../libraries/labelize.md#argument-limits) |
 | [zpl-forge](../libraries/forge.md) | 0.3.2 | ❔ No evidence found | 0/1 exact; mean IoU 6.2%; 0 errors | [Argument limits](../libraries/forge.md#argument-limits) |
