@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^A** · font=0,o=N,h=16,w=0 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png)
+**^A** · font=0,o=N,h=16,w=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/font0-height-16.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 139 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png) | ![codyps-zpl render](../../images/argument-font0-height-16-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-font0-height-16-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png) | ![codyps-zpl render](../../images/argument-font0-height-16-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-font0-height-16-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 75 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png) | ![labelize render](../../images/argument-font0-height-16-labelize.png) | ![labelize difference](../../images/argument-font0-height-16-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png) | ![labelize render](../../images/argument-font0-height-16-labelize.png) | ![labelize difference](../../images/argument-font0-height-16-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 153 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png) | ![forge render](../../images/argument-font0-height-16-forge.png) | ![forge difference](../../images/argument-font0-height-16-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png) | ![forge render](../../images/argument-font0-height-16-forge.png) | ![forge difference](../../images/argument-font0-height-16-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 8 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png) | ![go render](../../images/argument-font0-height-16-go.png) | ![go difference](../../images/argument-font0-height-16-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png) | ![go render](../../images/argument-font0-height-16-go.png) | ![go difference](../../images/argument-font0-height-16-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 8 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png) | ![ffi render](../../images/argument-font0-height-16-ffi.png) | ![ffi difference](../../images/argument-font0-height-16-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png) | ![ffi render](../../images/argument-font0-height-16-ffi.png) | ![ffi difference](../../images/argument-font0-height-16-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 209 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png) | ![binarykits render](../../images/argument-font0-height-16-binarykits.png) | ![binarykits difference](../../images/argument-font0-height-16-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png) | ![binarykits render](../../images/argument-font0-height-16-binarykits.png) | ![binarykits difference](../../images/argument-font0-height-16-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 225 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/font0-height-16.png) | ![zplr render](../../images/argument-font0-height-16-zplr.png) | ![zplr difference](../../images/argument-font0-height-16-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-16.png) | ![zplr render](../../images/argument-font0-height-16-zplr.png) | ![zplr difference](../../images/argument-font0-height-16-zplr-diff.png) |
 

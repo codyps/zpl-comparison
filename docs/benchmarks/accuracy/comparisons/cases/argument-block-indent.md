@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^FB** · indent=20 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png)
+**^FB** · indent=20 · [ZPL input](../../../../../benchmarks/accuracy/reference/block-indent.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -18,14 +18,14 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41355668) panicked at src/main.rs:26:10:
+thread 'main' (41637581) panicked at src/main.rs:26:10:
 render: RenderError { offset: 82, message: "unsupported or invalid field block parameters" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -39,7 +39,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1183 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png) | ![labelize render](../../images/argument-block-indent-labelize.png) | ![labelize difference](../../images/argument-block-indent-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png) | ![labelize render](../../images/argument-block-indent-labelize.png) | ![labelize difference](../../images/argument-block-indent-labelize-diff.png) |
 
 
 ## forge
@@ -50,7 +50,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 803 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png) | ![forge render](../../images/argument-block-indent-forge.png) | ![forge difference](../../images/argument-block-indent-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png) | ![forge render](../../images/argument-block-indent-forge.png) | ![forge difference](../../images/argument-block-indent-forge-diff.png) |
 
 
 ## go
@@ -61,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 840 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png) | ![go render](../../images/argument-block-indent-go.png) | ![go difference](../../images/argument-block-indent-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png) | ![go render](../../images/argument-block-indent-go.png) | ![go difference](../../images/argument-block-indent-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 840 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png) | ![ffi render](../../images/argument-block-indent-ffi.png) | ![ffi difference](../../images/argument-block-indent-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png) | ![ffi render](../../images/argument-block-indent-ffi.png) | ![ffi difference](../../images/argument-block-indent-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1509 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png) | ![binarykits render](../../images/argument-block-indent-binarykits.png) | ![binarykits difference](../../images/argument-block-indent-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png) | ![binarykits render](../../images/argument-block-indent-binarykits.png) | ![binarykits difference](../../images/argument-block-indent-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,5 +94,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1605 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/block-indent.png) | ![zplr render](../../images/argument-block-indent-zplr.png) | ![zplr difference](../../images/argument-block-indent-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png) | ![zplr render](../../images/argument-block-indent-zplr.png) | ![zplr difference](../../images/argument-block-indent-zplr-diff.png) |
 

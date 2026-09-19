@@ -75,6 +75,15 @@ Deployment sizes include the adapter plus linked/deployed dependencies: stripped
 
 ## Regenerate / test the harness
 
+Regenerate every printer-accuracy scan, plot, comparison Markdown page and dependent
+compatibility page using the prepared adapters:
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py
+```
+
+Add `--reports-only` to refresh those reports from saved accuracy results.
+
 ```sh
 benchmarks/_work/venv/bin/python benchmarks/report.py docs/benchmarks
 benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'

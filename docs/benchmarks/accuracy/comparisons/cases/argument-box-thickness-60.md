@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^GB** · w=100,h=60,t=60,color=B,round=0 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png)
+**^GB** · w=100,h=60,t=60,color=B,round=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/box-thickness-60.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png) | ![codyps-zpl render](../../images/argument-box-thickness-60-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-box-thickness-60-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png) | ![codyps-zpl render](../../images/argument-box-thickness-60-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-box-thickness-60-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png) | ![labelize render](../../images/argument-box-thickness-60-labelize.png) | ![labelize difference](../../images/argument-box-thickness-60-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png) | ![labelize render](../../images/argument-box-thickness-60-labelize.png) | ![labelize difference](../../images/argument-box-thickness-60-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png) | ![forge render](../../images/argument-box-thickness-60-forge.png) | ![forge difference](../../images/argument-box-thickness-60-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png) | ![forge render](../../images/argument-box-thickness-60-forge.png) | ![forge difference](../../images/argument-box-thickness-60-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png) | ![go render](../../images/argument-box-thickness-60-go.png) | ![go difference](../../images/argument-box-thickness-60-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png) | ![go render](../../images/argument-box-thickness-60-go.png) | ![go difference](../../images/argument-box-thickness-60-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png) | ![ffi render](../../images/argument-box-thickness-60-ffi.png) | ![ffi difference](../../images/argument-box-thickness-60-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png) | ![ffi render](../../images/argument-box-thickness-60-ffi.png) | ![ffi difference](../../images/argument-box-thickness-60-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png) | ![binarykits render](../../images/argument-box-thickness-60-binarykits.png) | ![binarykits difference](../../images/argument-box-thickness-60-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png) | ![binarykits render](../../images/argument-box-thickness-60-binarykits.png) | ![binarykits difference](../../images/argument-box-thickness-60-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-thickness-60.png) | ![zplr render](../../images/argument-box-thickness-60-zplr.png) | ![zplr difference](../../images/argument-box-thickness-60-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-thickness-60.png) | ![zplr render](../../images/argument-box-thickness-60-zplr.png) | ![zplr difference](../../images/argument-box-thickness-60-zplr-diff.png) |
 

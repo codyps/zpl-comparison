@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BQ** · o=N,model=1,magnification=3,EC=L,mask=0 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png)
+**^BQ** · o=N,model=1,magnification=3,EC=L,mask=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/qr-model-1.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -18,14 +18,14 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41355786) panicked at src/main.rs:26:10:
+thread 'main' (41641901) panicked at src/main.rs:26:10:
 render: RenderError { offset: 85, message: "BQ: parameter 2 mode unsupported" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -39,7 +39,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 675 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png) | ![labelize render](../../images/argument-qr-model-1-labelize.png) | ![labelize difference](../../images/argument-qr-model-1-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | ![labelize render](../../images/argument-qr-model-1-labelize.png) | ![labelize difference](../../images/argument-qr-model-1-labelize-diff.png) |
 
 
 ## forge
@@ -50,7 +50,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1989 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png) | ![forge render](../../images/argument-qr-model-1-forge.png) | ![forge difference](../../images/argument-qr-model-1-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | ![forge render](../../images/argument-qr-model-1-forge.png) | ![forge difference](../../images/argument-qr-model-1-forge-diff.png) |
 
 
 ## go
@@ -61,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1989 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png) | ![go render](../../images/argument-qr-model-1-go.png) | ![go difference](../../images/argument-qr-model-1-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | ![go render](../../images/argument-qr-model-1-go.png) | ![go difference](../../images/argument-qr-model-1-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1989 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png) | ![ffi render](../../images/argument-qr-model-1-ffi.png) | ![ffi difference](../../images/argument-qr-model-1-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | ![ffi render](../../images/argument-qr-model-1-ffi.png) | ![ffi difference](../../images/argument-qr-model-1-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1989 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png) | ![binarykits render](../../images/argument-qr-model-1-binarykits.png) | ![binarykits difference](../../images/argument-qr-model-1-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | ![binarykits render](../../images/argument-qr-model-1-binarykits.png) | ![binarykits difference](../../images/argument-qr-model-1-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,5 +94,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/qr-model-1.png) | ![zplr render](../../images/argument-qr-model-1-zplr.png) | ![zplr difference](../../images/argument-qr-model-1-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | ![zplr render](../../images/argument-qr-model-1-zplr.png) | ![zplr difference](../../images/argument-qr-model-1-zplr-diff.png) |
 

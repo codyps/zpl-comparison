@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^B9** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png)
+**^B9** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/upce.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/upce.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,13 +14,13 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 97.2% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 130 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png) | ![codyps-zpl render](../../images/barcode-upce-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-upce-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/upce.png) | ![codyps-zpl render](../../images/barcode-upce-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-upce-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 10 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png) | ![labelize render](../../images/barcode-upce-labelize.png) | ![labelize difference](../../images/barcode-upce-labelize-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/upce.png) | ![labelize render](../../images/barcode-upce-labelize.png) | ![labelize difference](../../images/barcode-upce-labelize-diff.png) |
 
 
 ## forge
@@ -40,14 +40,14 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 10 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/upce.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41353019) panicked at src/main.rs:78:32:
+thread 'main' (41651470) panicked at src/main.rs:78:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -61,7 +61,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 4320 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png) | ![go render](../../images/barcode-upce-go.png) | ![go difference](../../images/barcode-upce-go-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/upce.png) | ![go render](../../images/barcode-upce-go.png) | ![go difference](../../images/barcode-upce-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 4320 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png) | ![ffi render](../../images/barcode-upce-ffi.png) | ![ffi difference](../../images/barcode-upce-ffi-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/upce.png) | ![ffi render](../../images/barcode-upce-ffi.png) | ![ffi difference](../../images/barcode-upce-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 130 pixels; e
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png) | ![binarykits render](../../images/barcode-upce-binarykits.png) | ![binarykits difference](../../images/barcode-upce-binarykits-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/upce.png) | ![binarykits render](../../images/barcode-upce-binarykits.png) | ![binarykits difference](../../images/barcode-upce-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,5 +94,5 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 130 pixels; e
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/upce.png) | ![zplr render](../../images/barcode-upce-zplr.png) | ![zplr difference](../../images/barcode-upce-zplr-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/upce.png) | ![zplr render](../../images/barcode-upce-zplr.png) | ![zplr difference](../../images/barcode-upce-zplr-diff.png) |
 

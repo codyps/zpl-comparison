@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BY** · w=2,ratio=2,height=60 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png)
+**^BY** · w=2,ratio=2,height=60 · [ZPL input](../../../../../benchmarks/accuracy/reference/code39-ratio-2.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png) | ![codyps-zpl render](../../images/argument-code39-ratio-2-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-code39-ratio-2-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ![codyps-zpl render](../../images/argument-code39-ratio-2-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-code39-ratio-2-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png) | ![labelize render](../../images/argument-code39-ratio-2-labelize.png) | ![labelize difference](../../images/argument-code39-ratio-2-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ![labelize render](../../images/argument-code39-ratio-2-labelize.png) | ![labelize difference](../../images/argument-code39-ratio-2-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png) | ![forge render](../../images/argument-code39-ratio-2-forge.png) | ![forge difference](../../images/argument-code39-ratio-2-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ![forge render](../../images/argument-code39-ratio-2-forge.png) | ![forge difference](../../images/argument-code39-ratio-2-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 6055 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png) | ![go render](../../images/argument-code39-ratio-2-go.png) | ![go difference](../../images/argument-code39-ratio-2-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ![go render](../../images/argument-code39-ratio-2-go.png) | ![go difference](../../images/argument-code39-ratio-2-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 6055 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png) | ![ffi render](../../images/argument-code39-ratio-2-ffi.png) | ![ffi difference](../../images/argument-code39-ratio-2-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ![ffi render](../../images/argument-code39-ratio-2-ffi.png) | ![ffi difference](../../images/argument-code39-ratio-2-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png) | ![binarykits render](../../images/argument-code39-ratio-2-binarykits.png) | ![binarykits difference](../../images/argument-code39-ratio-2-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ![binarykits render](../../images/argument-code39-ratio-2-binarykits.png) | ![binarykits difference](../../images/argument-code39-ratio-2-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-ratio-2.png) | ![zplr render](../../images/argument-code39-ratio-2-zplr.png) | ![zplr difference](../../images/argument-code39-ratio-2-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ![zplr render](../../images/argument-code39-ratio-2-zplr.png) | ![zplr difference](../../images/argument-code39-ratio-2-zplr-diff.png) |
 

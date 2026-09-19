@@ -2,7 +2,7 @@
 
 **[Compare printer previews, library renders and differences](../../docs/benchmarks/accuracy/comparisons/README.md)** by library or case. Every case includes all seven renderers, including error diagnostics and blank output.
 
-The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares seven rendering adapters with a real ZD621's HTTP preview. The current codyps-zpl row uses the working source tree in the sibling zpl checkout (source hash and base commit in results.json), including uncommitted accuracy fixes. The pinned adapter rebuild reproduces the older library until its pin is advanced. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
+The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares seven rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
 
 ## Reproduce offline
 
@@ -11,15 +11,23 @@ First follow the parent benchmark setup to install the pinned dependencies and b
 ```sh
 benchmarks/_work/venv/bin/python benchmarks/support.py
 benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'
-benchmarks/_work/venv/bin/python benchmarks/accuracy/run.py
+benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py
 ```
+
+This single regeneration command reruns all 133 cases across all seven prepared
+renderers, writes results, rendered PNGs, difference images, plots and comparison
+Markdown, then refreshes the dependent compatibility pages. It verifies the gallery
+and generated compatibility pages before succeeding. It uses the existing adapter
+builds in `benchmarks/_work/config.json`; rerun `benchmarks/prepare.py` first after
+changing library sources or pins. It does not recapture printer references or rerun
+the separate performance, invalid-input or larger conformance suites.
 
 The runner checks SHA-256 hashes, capture completeness and repeated-control pixels before rendering. No printer or external rendering service is contacted. Each case runs in a fresh process with a 45-second timeout; errors remain visible and score zero for nonblank references. GitHub Actions repeats both suites and uploads Markdown, plots, rasters and raw JSON. Accuracy differences are measurements, not CI failures; broken reference integrity or harness failures fail the run.
 
 To regenerate only the plots and tables from saved measurements:
 
 ```sh
-benchmarks/_work/venv/bin/python benchmarks/accuracy/report.py docs/benchmarks/accuracy
+benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py --reports-only
 ```
 
 Report generation verifies the complete case-by-renderer matrix, input and reference hashes, image metrics, and every difference image before generating the comparison pages. To check the saved images and pages without rewriting them:

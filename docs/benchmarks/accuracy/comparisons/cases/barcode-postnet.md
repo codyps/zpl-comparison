@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BZ** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png)
+**^BZ** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/postnet.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,13 +14,13 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 16.6% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 3888 pixels; extra ink: 3888 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png) | ![codyps-zpl render](../../images/barcode-postnet-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-postnet-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png) | ![codyps-zpl render](../../images/barcode-postnet-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-postnet-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5301 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png) | ![labelize render](../../images/barcode-postnet-labelize.png) | ![labelize difference](../../images/barcode-postnet-labelize-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png) | ![labelize render](../../images/barcode-postnet-labelize.png) | ![labelize difference](../../images/barcode-postnet-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png) | ![forge render](../../images/barcode-postnet-forge.png) | ![forge difference](../../images/barcode-postnet-forge-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png) | ![forge render](../../images/barcode-postnet-forge.png) | ![forge difference](../../images/barcode-postnet-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5318 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png) | ![go render](../../images/barcode-postnet-go.png) | ![go difference](../../images/barcode-postnet-go-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png) | ![go render](../../images/barcode-postnet-go.png) | ![go difference](../../images/barcode-postnet-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5318 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png) | ![ffi render](../../images/barcode-postnet-ffi.png) | ![ffi difference](../../images/barcode-postnet-ffi-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png) | ![ffi render](../../images/barcode-postnet-ffi.png) | ![ffi difference](../../images/barcode-postnet-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5322 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png) | ![binarykits render](../../images/barcode-postnet-binarykits.png) | ![binarykits difference](../../images/barcode-postnet-binarykits-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png) | ![binarykits render](../../images/barcode-postnet-binarykits.png) | ![binarykits difference](../../images/barcode-postnet-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/postnet.png) | ![zplr render](../../images/barcode-postnet-zplr.png) | ![zplr difference](../../images/barcode-postnet-zplr-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/postnet.png) | ![zplr render](../../images/barcode-postnet-zplr.png) | ![zplr difference](../../images/barcode-postnet-zplr-diff.png) |
 

@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^B3** · o=N,check=Y,h=60,readable=N · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png)
+**^B3** · o=N,check=Y,h=60,readable=N · [ZPL input](../../../../../benchmarks/accuracy/reference/code39-check-Y.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,14 +14,22 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
-
-Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
+**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png) | ![codyps-zpl render](../../images/argument-code39-check-Y-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-code39-check-Y-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png) | Render failed; no image | Unavailable |
 
+
+Error diagnostic:
+
+~~~text
+
+thread 'main' (41640959) panicked at src/main.rs:26:10:
+render: RenderError { offset: 77, message: "Code 39 checksum unsupported" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+~~~
 
 ## labelize
 
@@ -31,7 +39,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1080 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png) | ![labelize render](../../images/argument-code39-check-Y-labelize.png) | ![labelize difference](../../images/argument-code39-check-Y-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png) | ![labelize render](../../images/argument-code39-check-Y-labelize.png) | ![labelize difference](../../images/argument-code39-check-Y-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +50,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1080 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png) | ![forge render](../../images/argument-code39-check-Y-forge.png) | ![forge difference](../../images/argument-code39-check-Y-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png) | ![forge render](../../images/argument-code39-check-Y-forge.png) | ![forge difference](../../images/argument-code39-check-Y-forge-diff.png) |
 
 
 ## go
@@ -53,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 8519 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png) | ![go render](../../images/argument-code39-check-Y-go.png) | ![go difference](../../images/argument-code39-check-Y-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png) | ![go render](../../images/argument-code39-check-Y-go.png) | ![go difference](../../images/argument-code39-check-Y-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 8519 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png) | ![ffi render](../../images/argument-code39-check-Y-ffi.png) | ![ffi difference](../../images/argument-code39-check-Y-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png) | ![ffi render](../../images/argument-code39-check-Y-ffi.png) | ![ffi difference](../../images/argument-code39-check-Y-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1080 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png) | ![binarykits render](../../images/argument-code39-check-Y-binarykits.png) | ![binarykits difference](../../images/argument-code39-check-Y-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png) | ![binarykits render](../../images/argument-code39-check-Y-binarykits.png) | ![binarykits difference](../../images/argument-code39-check-Y-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +94,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code39-check-Y.png) | ![zplr render](../../images/argument-code39-check-Y-zplr.png) | ![zplr difference](../../images/argument-code39-check-Y-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/code39-check-Y.png) | ![zplr render](../../images/argument-code39-check-Y-zplr.png) | ![zplr difference](../../images/argument-code39-check-Y-zplr-diff.png) |
 

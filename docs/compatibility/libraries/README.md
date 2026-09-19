@@ -7,7 +7,7 @@
 
 | Library | Language | API category | Version / pin | Printer measurements |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](codyps-zpl.md) | Rust | Parser and renderer | 0.1.0 @ 280fc0cf4d0a | 85/132 exact; mean IoU 77.0%; 11 errors |
+| [codyps/zpl](codyps-zpl.md) | Rust | Parser and renderer | 0.1.0 @ 280fc0cf4d0a | 67/132 exact; mean IoU 64.2%; 15 errors |
 | [zpl-toolchain](toolchain.md) | Rust | Parser and validator | 0.4.1 | N/A – no incoming-ZPL renderer |
 | [labelize](labelize.md) | Rust | Parser and renderer | 1.5.0 | 24/132 exact; mean IoU 48.4%; 5 errors |
 | [zpl-forge](forge.md) | Rust | Parser and renderer | 0.3.2 | 22/132 exact; mean IoU 39.9%; 7 errors |

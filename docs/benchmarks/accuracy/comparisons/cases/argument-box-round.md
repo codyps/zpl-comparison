@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^GB** · round=4 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png)
+**^GB** · round=4 · [ZPL input](../../../../../benchmarks/accuracy/reference/box-round.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 72 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png) | ![codyps-zpl render](../../images/argument-box-round-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-box-round-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png) | ![codyps-zpl render](../../images/argument-box-round-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-box-round-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 108 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png) | ![labelize render](../../images/argument-box-round-labelize.png) | ![labelize difference](../../images/argument-box-round-labelize-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png) | ![labelize render](../../images/argument-box-round-labelize.png) | ![labelize difference](../../images/argument-box-round-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 500 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png) | ![forge render](../../images/argument-box-round-forge.png) | ![forge difference](../../images/argument-box-round-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png) | ![forge render](../../images/argument-box-round-forge.png) | ![forge difference](../../images/argument-box-round-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 172 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png) | ![go render](../../images/argument-box-round-go.png) | ![go difference](../../images/argument-box-round-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png) | ![go render](../../images/argument-box-round-go.png) | ![go difference](../../images/argument-box-round-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 172 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png) | ![ffi render](../../images/argument-box-round-ffi.png) | ![ffi difference](../../images/argument-box-round-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png) | ![ffi render](../../images/argument-box-round-ffi.png) | ![ffi difference](../../images/argument-box-round-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 43 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png) | ![binarykits render](../../images/argument-box-round-binarykits.png) | ![binarykits difference](../../images/argument-box-round-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png) | ![binarykits render](../../images/argument-box-round-binarykits.png) | ![binarykits difference](../../images/argument-box-round-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 76 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/box-round.png) | ![zplr render](../../images/argument-box-round-zplr.png) | ![zplr difference](../../images/argument-box-round-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/box-round.png) | ![zplr render](../../images/argument-box-round-zplr.png) | ![zplr difference](../../images/argument-box-round-zplr-diff.png) |
 

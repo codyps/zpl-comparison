@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BX** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png)
+**^BX** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![codyps-zpl render](../../images/barcode-data_matrix_rectangular-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-data_matrix_rectangular-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![codyps-zpl render](../../images/barcode-data_matrix_rectangular-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-data_matrix_rectangular-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 1312 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![labelize render](../../images/barcode-data_matrix_rectangular-labelize.png) | ![labelize difference](../../images/barcode-data_matrix_rectangular-labelize-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![labelize render](../../images/barcode-data_matrix_rectangular-labelize.png) | ![labelize difference](../../images/barcode-data_matrix_rectangular-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 1840 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![forge render](../../images/barcode-data_matrix_rectangular-forge.png) | ![forge difference](../../images/barcode-data_matrix_rectangular-forge-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![forge render](../../images/barcode-data_matrix_rectangular-forge.png) | ![forge difference](../../images/barcode-data_matrix_rectangular-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 1840 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![go render](../../images/barcode-data_matrix_rectangular-go.png) | ![go difference](../../images/barcode-data_matrix_rectangular-go-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![go render](../../images/barcode-data_matrix_rectangular-go.png) | ![go difference](../../images/barcode-data_matrix_rectangular-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 1840 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![ffi render](../../images/barcode-data_matrix_rectangular-ffi.png) | ![ffi difference](../../images/barcode-data_matrix_rectangular-ffi-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![ffi render](../../images/barcode-data_matrix_rectangular-ffi.png) | ![ffi difference](../../images/barcode-data_matrix_rectangular-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 1840 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![binarykits render](../../images/barcode-data_matrix_rectangular-binarykits.png) | ![binarykits difference](../../images/barcode-data_matrix_rectangular-binarykits-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![binarykits render](../../images/barcode-data_matrix_rectangular-binarykits.png) | ![binarykits difference](../../images/barcode-data_matrix_rectangular-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![zplr render](../../images/barcode-data_matrix_rectangular-zplr.png) | ![zplr difference](../../images/barcode-data_matrix_rectangular-zplr-diff.png) |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/data_matrix_rectangular.png) | ![zplr render](../../images/barcode-data_matrix_rectangular-zplr.png) | ![zplr difference](../../images/barcode-data_matrix_rectangular-zplr-diff.png) |
 

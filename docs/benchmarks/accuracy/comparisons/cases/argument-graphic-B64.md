@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^GF** · A,8,8,1; B64, CRC16 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png)
+**^GF** · A,8,8,1; B64, CRC16 · [ZPL input](../../../../../benchmarks/accuracy/reference/graphic-B64.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png)
 
-Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png) | ![codyps-zpl render](../../images/argument-graphic-B64-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-graphic-B64-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png) | ![codyps-zpl render](../../images/argument-graphic-B64-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-graphic-B64-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -29,14 +29,14 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41335350) panicked at src/main.rs:43:14:
+thread 'main' (41640429) panicked at src/main.rs:43:14:
 parse: "failed to decode hex string: hex decode error: invalid hex char: /"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -50,7 +50,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 16 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png) | ![forge render](../../images/argument-graphic-B64-forge.png) | ![forge difference](../../images/argument-graphic-B64-forge-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png) | ![forge render](../../images/argument-graphic-B64-forge.png) | ![forge difference](../../images/argument-graphic-B64-forge-diff.png) |
 
 
 ## go
@@ -61,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png) | ![go render](../../images/argument-graphic-B64-go.png) | ![go difference](../../images/argument-graphic-B64-go-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png) | ![go render](../../images/argument-graphic-B64-go.png) | ![go difference](../../images/argument-graphic-B64-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png) | ![ffi render](../../images/argument-graphic-B64-ffi.png) | ![ffi difference](../../images/argument-graphic-B64-ffi-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png) | ![ffi render](../../images/argument-graphic-B64-ffi.png) | ![ffi difference](../../images/argument-graphic-B64-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png) | ![binarykits render](../../images/argument-graphic-B64-binarykits.png) | ![binarykits difference](../../images/argument-graphic-B64-binarykits-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png) | ![binarykits render](../../images/argument-graphic-B64-binarykits.png) | ![binarykits difference](../../images/argument-graphic-B64-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,5 +94,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/graphic-B64.png) | ![zplr render](../../images/argument-graphic-B64-zplr.png) | ![zplr difference](../../images/argument-graphic-B64-zplr-diff.png) |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png) | ![zplr render](../../images/argument-graphic-B64-zplr.png) | ![zplr difference](../../images/argument-graphic-B64-zplr-diff.png) |
 
