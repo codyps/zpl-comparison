@@ -9,6 +9,14 @@ The root README links to these detailed reports. [Library capabilities and selec
 
 The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 507 focused and combined test files. Run `conformance.py` after building adapters; printer captures are optional and separate.
 
+The [external label corpus](../test-data/external-zpl/README.md) adds eight unchanged,
+pinned upstream examples. [Execution report](../docs/benchmarks/external-zpl/README.md).
+Regenerate its images, JSON and Markdown with:
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/external-zpl --only all --output docs/benchmarks/external-zpl
+```
+
 ## Run
 
 Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥22 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.

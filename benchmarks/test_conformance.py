@@ -30,6 +30,26 @@ finally:
 
 
 class ConformanceTests(unittest.TestCase):
+    def test_external_examples_are_pinned_and_capture_scope_is_separate(self):
+        directory = ROOT.parent / "test-data/external-zpl"
+        manifest, cases = conformance.load_cases(directory)
+        self.assertEqual(len(cases), 8)
+        self.assertEqual(len({c["name"] for c in cases}), 8)
+        for source in manifest["sources"]:
+            self.assertEqual(
+                conformance.metrics.sha(directory / source["license"]),
+                source["license_sha256"],
+            )
+        for case in cases:
+            self.assertIn(case["revision"], case["source"])
+            self.assertTrue((directory / case["license"]).is_file())
+        probes = capture.corpus_probes(directory)
+        self.assertEqual(len(probes), 7)  # Six content cases plus repeated control.
+        self.assertFalse(any(p["group"] in {"stateful", "printer-configuration"} for p in probes))
+        for group in ["stateful", "printer-configuration"]:
+            with self.assertRaisesRegex(ValueError, "No capture-eligible"):
+                capture.corpus_probes(directory, [group])
+
     def test_references_require_matching_bytes_and_stable_control(self):
         _, cases = conformance.load_cases(groups=["metamorphic"])
         case = cases[0]
