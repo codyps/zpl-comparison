@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BC** · h=60,interpretation=N,above=N · [ZPL input](../../../../../benchmarks/accuracy/reference/code128-text-NN.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png)
+**^BC** · h=60,interpretation=N,above=N · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png) | ![codyps-zpl render](../../images/argument-code128-text-NN-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-code128-text-NN-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png) | ![codyps-zpl render](../../images/argument-code128-text-NN-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-code128-text-NN-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png) | ![labelize render](../../images/argument-code128-text-NN-labelize.png) | ![labelize difference](../../images/argument-code128-text-NN-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png) | ![labelize render](../../images/argument-code128-text-NN-labelize.png) | ![labelize difference](../../images/argument-code128-text-NN-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png) | ![forge render](../../images/argument-code128-text-NN-forge.png) | ![forge difference](../../images/argument-code128-text-NN-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png) | ![forge render](../../images/argument-code128-text-NN-forge.png) | ![forge difference](../../images/argument-code128-text-NN-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png) | ![go render](../../images/argument-code128-text-NN-go.png) | ![go difference](../../images/argument-code128-text-NN-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png) | ![go render](../../images/argument-code128-text-NN-go.png) | ![go difference](../../images/argument-code128-text-NN-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png) | ![ffi render](../../images/argument-code128-text-NN-ffi.png) | ![ffi difference](../../images/argument-code128-text-NN-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png) | ![ffi render](../../images/argument-code128-text-NN-ffi.png) | ![ffi difference](../../images/argument-code128-text-NN-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png) | ![binarykits render](../../images/argument-code128-text-NN-binarykits.png) | ![binarykits difference](../../images/argument-code128-text-NN-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png) | ![binarykits render](../../images/argument-code128-text-NN-binarykits.png) | ![binarykits difference](../../images/argument-code128-text-NN-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,5 +86,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-text-NN.png) | ![zplr render](../../images/argument-code128-text-NN-zplr.png) | ![zplr difference](../../images/argument-code128-text-NN-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-text-NN.png) | ![zplr render](../../images/argument-code128-text-NN-zplr.png) | ![zplr difference](../../images/argument-code128-text-NN-zplr-diff.png) |
 

@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BR** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/databar_upce.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png)
+**^BR** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -16,75 +16,75 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 **codyps/zpl (Rust): Blank printer reference; unscored** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 0 pixels; extra ink: 4480 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 4480 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png) | ![codyps-zpl render](../../images/barcode-databar_upce-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-databar_upce-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png) | ![codyps-zpl render](../../images/barcode-databar_upce-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-databar_upce-codyps-zpl-diff.png) |
 
 
 ## labelize
 
 **labelize (Rust): Blank printer reference; unscored** · [All cases for this library](../libraries/labelize.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 0 pixels; extra ink: 504 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 504 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png) | ![labelize render](../../images/barcode-databar_upce-labelize.png) | ![labelize difference](../../images/barcode-databar_upce-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png) | ![labelize render](../../images/barcode-databar_upce-labelize.png) | ![labelize difference](../../images/barcode-databar_upce-labelize-diff.png) |
 
 
 ## forge
 
 **zpl-forge (Rust): Blank printer reference; unscored** · [All cases for this library](../libraries/forge.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 0 pixels; extra ink: 6074 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 6074 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png) | ![forge render](../../images/barcode-databar_upce-forge.png) | ![forge difference](../../images/barcode-databar_upce-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png) | ![forge render](../../images/barcode-databar_upce-forge.png) | ![forge difference](../../images/barcode-databar_upce-forge-diff.png) |
 
 
 ## go
 
 **go-zpl (Go): Blank printer reference; unscored** · [All cases for this library](../libraries/go.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 0 pixels; extra ink: 538 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 538 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png) | ![go render](../../images/barcode-databar_upce-go.png) | ![go difference](../../images/barcode-databar_upce-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png) | ![go render](../../images/barcode-databar_upce-go.png) | ![go difference](../../images/barcode-databar_upce-go-diff.png) |
 
 
 ## ffi
 
 **zpl-rs (Rust → Go): Blank printer reference; unscored** · [All cases for this library](../libraries/ffi.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 0 pixels; extra ink: 538 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 538 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png) | ![ffi render](../../images/barcode-databar_upce-ffi.png) | ![ffi difference](../../images/barcode-databar_upce-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png) | ![ffi render](../../images/barcode-databar_upce-ffi.png) | ![ffi difference](../../images/barcode-databar_upce-ffi-diff.png) |
 
 
 ## binarykits
 
 **BinaryKits.Zpl (.NET): Blank printer reference; unscored** · [All cases for this library](../libraries/binarykits.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 0 pixels; extra ink: 505 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 505 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png) | ![binarykits render](../../images/barcode-databar_upce-binarykits.png) | ![binarykits difference](../../images/barcode-databar_upce-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png) | ![binarykits render](../../images/barcode-databar_upce-binarykits.png) | ![binarykits difference](../../images/barcode-databar_upce-binarykits-diff.png) |
 
 
 ## zplr
 
 **ZPLr (TypeScript): Blank printer reference; unscored** · [All cases for this library](../libraries/zplr.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png) | ![zplr render](../../images/barcode-databar_upce-zplr.png) | ![zplr difference](../../images/barcode-databar_upce-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/databar_upce.png) | ![zplr render](../../images/barcode-databar_upce-zplr.png) | ![zplr difference](../../images/barcode-databar_upce-zplr-diff.png) |
 

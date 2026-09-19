@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^BC** · mode=A · [ZPL input](../../../../../benchmarks/accuracy/reference/code128-mode-A.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png)
+**^BC** · mode=A · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -18,15 +18,15 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41235472) panicked at src/main.rs:25:10:
-render: RenderError { offset: 67, message: "Code 128 above-text, UCC and automatic modes unsupported" }
+thread 'main' (41355784) panicked at src/main.rs:26:10:
+render: RenderError { offset: 77, message: "Code 128 above-text, UCC and automatic modes unsupported" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~
@@ -39,7 +39,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![labelize render](../../images/argument-code128-mode-A-labelize.png) | ![labelize difference](../../images/argument-code128-mode-A-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png) | ![labelize render](../../images/argument-code128-mode-A-labelize.png) | ![labelize difference](../../images/argument-code128-mode-A-labelize-diff.png) |
 
 
 ## forge
@@ -50,7 +50,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1560 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![forge render](../../images/argument-code128-mode-A-forge.png) | ![forge difference](../../images/argument-code128-mode-A-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png) | ![forge render](../../images/argument-code128-mode-A-forge.png) | ![forge difference](../../images/argument-code128-mode-A-forge-diff.png) |
 
 
 ## go
@@ -61,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![go render](../../images/argument-code128-mode-A-go.png) | ![go difference](../../images/argument-code128-mode-A-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png) | ![go render](../../images/argument-code128-mode-A-go.png) | ![go difference](../../images/argument-code128-mode-A-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![ffi render](../../images/argument-code128-mode-A-ffi.png) | ![ffi difference](../../images/argument-code128-mode-A-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png) | ![ffi render](../../images/argument-code128-mode-A-ffi.png) | ![ffi difference](../../images/argument-code128-mode-A-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![binarykits render](../../images/argument-code128-mode-A-binarykits.png) | ![binarykits difference](../../images/argument-code128-mode-A-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png) | ![binarykits render](../../images/argument-code128-mode-A-binarykits.png) | ![binarykits difference](../../images/argument-code128-mode-A-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,5 +94,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![zplr render](../../images/argument-code128-mode-A-zplr.png) | ![zplr difference](../../images/argument-code128-mode-A-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/code128-mode-A.png) | ![zplr render](../../images/argument-code128-mode-A-zplr.png) | ![zplr difference](../../images/argument-code128-mode-A-zplr-diff.png) |
 

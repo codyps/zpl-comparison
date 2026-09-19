@@ -13,14 +13,14 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 | Library | Version / pin | Source evidence | Focused printer evidence | Caveats |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 0/1 exact; mean IoU 46.7%; 0 errors | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ 280fc0cf4d0a | [🧩 Handler found](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64) | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
 | [zpl-toolchain](../libraries/toolchain.md) | 0.4.1 | [📐 Specification table](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^BI.jsonc#L1) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/toolchain.md#argument-limits) |
-| [labelize](../libraries/labelize.md) | 1.5.0 | ❔ No evidence found | 0/1 exact; mean IoU 3.1%; 0 errors | [Argument limits](../libraries/labelize.md#argument-limits) |
-| [zpl-forge](../libraries/forge.md) | 0.3.2 | ❔ No evidence found | 0/1 exact; mean IoU 2.1%; 0 errors | [Argument limits](../libraries/forge.md#argument-limits) |
-| [go-zpl](../libraries/go.md) | source 78b181940c76 | ❔ No evidence found | 0/1 exact; mean IoU 3.4%; 0 errors | [Argument limits](../libraries/go.md#argument-limits) |
-| [zpl-rs](../libraries/ffi.md) | 0.1.8 | ❔ No evidence found | 0/1 exact; mean IoU 3.4%; 0 errors | [Argument limits](../libraries/ffi.md#argument-limits) |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 1.3.1 | ❔ No evidence found | 0/1 exact; mean IoU 3.1%; 0 errors | [Argument limits](../libraries/binarykits.md#argument-limits) |
-| [ZPLr](../libraries/zplr.md) | 0.3.0 | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L34) | 0/1 exact; mean IoU 46.7%; 0 errors | [Argument limits](../libraries/zplr.md#argument-limits) |
+| [labelize](../libraries/labelize.md) | 1.5.0 | ❔ No evidence found | 0/1 exact; mean IoU 3.2%; 0 errors | [Argument limits](../libraries/labelize.md#argument-limits) |
+| [zpl-forge](../libraries/forge.md) | 0.3.2 | ❔ No evidence found | 0/1 exact; mean IoU 2.4%; 0 errors | [Argument limits](../libraries/forge.md#argument-limits) |
+| [go-zpl](../libraries/go.md) | source 78b181940c76 | ❔ No evidence found | 0/1 exact; mean IoU 3.8%; 0 errors | [Argument limits](../libraries/go.md#argument-limits) |
+| [zpl-rs](../libraries/ffi.md) | 0.1.8 | ❔ No evidence found | 0/1 exact; mean IoU 3.8%; 0 errors | [Argument limits](../libraries/ffi.md#argument-limits) |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 1.3.1 | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors | [Argument limits](../libraries/binarykits.md#argument-limits) |
+| [ZPLr](../libraries/zplr.md) | 0.3.0 | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L34) | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/zplr.md#argument-limits) |
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | [🛠️ Typed emission](https://docs.rs/crate/zpl-builder/0.1.0/source/src/builder.rs#120) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | [🛠️ Typed emission](https://github.com/DanieLeeuwner/JSZPL/blob/53c916717c0dfdb1e6bca266eb6280c8f156c6ca/src/components/barcode.ts#L79) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
@@ -30,7 +30,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 | Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [industrial2of5](../../../references/barcodes-zd621-v1/industrial2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/industrial2of5.png) | [46.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#codyps-zpl) | N/A | [3.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#labelize) | [2.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#forge) | [3.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#go) | [3.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#ffi) | [3.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#binarykits) | [46.7% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#zplr) | N/A | N/A | N/A |
+| [industrial2of5](../../../references/barcodes-zd621-v1/industrial2of5.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/industrial2of5.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#codyps-zpl) | N/A | [3.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#labelize) | [2.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#forge) | [3.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#go) | [3.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#ffi) | [3.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#binarykits) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-industrial2of5.md#zplr) | N/A | N/A | N/A |
 
 
 ## Related features

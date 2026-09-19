@@ -17,19 +17,19 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/binarykits.md)
 
-18/132 exact; mean IoU 31.8%; 0 errors. Snapshot: 2026-09-18T23:14:28Z.
+26/132 exact; mean IoU 39.0%; 0 errors. Snapshot: 2026-09-18T23:52:17Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | Not measured | Not measured |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 12.6%; 0 errors | Not measured |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 58.3%; 0 errors | Not measured |
-| [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 0 errors | Not measured |
-| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 32.4%; 0 errors | Not measured |
-| [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 78.8%; 0 errors | Not measured |
-| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 26.7%; 0 errors | Not measured |
+| [Barcode families](../features/barcode-families.md) | 60 | Not measured | Not measured |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | Not measured | Not measured |
+| [Baseline graphics](../features/baseline-graphics.md) | 4 | Not measured | Not measured |
+| [Baseline layout](../features/baseline-layout.md) | 11 | Not measured | Not measured |
+| [Baseline shapes](../features/baseline-shapes.md) | 9 | Not measured | Not measured |
+| [Baseline text](../features/baseline-text.md) | 24 | Not measured | Not measured |
 | [Clipping](../features/clipping.md) | 5 | Not measured | Not measured |
 | [Compositing](../features/compositing.md) | 5 | Not measured | Not measured |
 | [Encoding](../features/encoding.md) | 28 | Not measured | Not measured |
@@ -55,34 +55,34 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 | --- | --- | --- | --- |
 | [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/ScalableBitmappedFontZplCommandAnalyzer.cs#L8) | 0/12 exact; mean IoU 27.7%; 0 errors |
 | [`^A@`](../commands/format-a-named.md) | Use Font Name to Call Font | ❔ No evidence found | Not measured |
-| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 11.1%; 0 errors |
-| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.9%; 0 errors |
-| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Interleaved2of5BarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 34.7%; 0 errors |
-| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code39BarcodeZplCommandAnalyzer.cs#L9) | 1/3 exact; mean IoU 75.8%; 0 errors |
-| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 5.3%; 0 errors |
-| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.2%; 0 errors |
-| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/PDF417BarcodeCommandAnalyzer.cs#L12) | 0/2 exact; mean IoU 30.4%; 0 errors |
-| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.1%; 0 errors |
-| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcEBarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 29.7%; 0 errors |
-| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code93BarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 21.0%; 0 errors |
-| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 8.6%; 0 errors |
-| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code128BarcodeZplCommandAnalyzer.cs#L9) | 6/9 exact; mean IoU 90.3%; 0 errors |
-| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/MaxiCodeBarcodeZplCommandAnalyzer.cs#L8) | 0/5 exact; mean IoU 16.9%; 0 errors |
-| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/CodeEAN13BarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 23.8%; 0 errors |
-| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 1.1%; 0 errors |
-| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.1%; 0 errors |
-| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.2%; 0 errors |
-| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/AnsiCodabarBarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 35.6%; 0 errors |
-| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.8%; 0 errors |
-| [`^BM`](../commands/format-bm.md) | MSI Bar Code | ❔ No evidence found | 0/4 exact; mean IoU 2.8%; 0 errors |
-| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/AztecBarcodeZplCommandAnalyzer.cs#L9) | 0/2 exact; mean IoU 30.4%; 0 errors |
-| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.5%; 0 errors |
-| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/QrCodeBarcodeZplCommandAnalyzer.cs#L9) | 0/12 exact; mean IoU 7.9%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 7.3%; 0 errors |
-| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcExtensionBarcodeZplCommandAnalyzer.cs#L9) | 0/2 exact; mean IoU 25.5%; 0 errors |
-| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.7%; 0 errors |
-| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcABarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 32.5%; 0 errors |
-| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/DataMatrixZplCommandAnalyzer.cs#L9) | 2/4 exact; mean IoU 60.0%; 0 errors |
+| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 11.3%; 0 errors |
+| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.9%; 0 errors |
+| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Interleaved2of5BarcodeZplCommandAnalyzer.cs#L9) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code39BarcodeZplCommandAnalyzer.cs#L9) | 2/3 exact; mean IoU 94.7%; 0 errors |
+| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.4%; 0 errors |
+| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.5%; 0 errors |
+| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/PDF417BarcodeCommandAnalyzer.cs#L12) | 2/2 exact; mean IoU 100.0%; 0 errors |
+| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 5.1%; 0 errors |
+| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcEBarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 97.2%; 0 errors |
+| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code93BarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 34.4%; 0 errors |
+| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 10.5%; 0 errors |
+| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code128BarcodeZplCommandAnalyzer.cs#L9) | 7/9 exact; mean IoU 98.3%; 0 errors |
+| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/MaxiCodeBarcodeZplCommandAnalyzer.cs#L8) | 0/5 exact; mean IoU 46.1%; 0 errors |
+| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/CodeEAN13BarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 98.0%; 0 errors |
+| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 3.3%; 0 errors |
+| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors |
+| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors |
+| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/AnsiCodabarBarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 95.1%; 0 errors |
+| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.4%; 0 errors |
+| [`^BM`](../commands/format-bm.md) | MSI Bar Code | ❔ No evidence found | 0/4 exact; mean IoU 2.6%; 0 errors |
+| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/AztecBarcodeZplCommandAnalyzer.cs#L9) | 1/2 exact; mean IoU 64.2%; 0 errors |
+| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors |
+| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/QrCodeBarcodeZplCommandAnalyzer.cs#L9) | 0/12 exact; mean IoU 1.0%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 8.0%; 0 errors |
+| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcExtensionBarcodeZplCommandAnalyzer.cs#L9) | 2/2 exact; mean IoU 100.0%; 0 errors |
+| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 4.1%; 0 errors |
+| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcABarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 96.1%; 0 errors |
+| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/DataMatrixZplCommandAnalyzer.cs#L9) | 2/4 exact; mean IoU 66.4%; 0 errors |
 | [`^BY`](../commands/format-by.md) | Bar Code Field Default | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/BarCodeFieldDefaultZplCommandAnalyzer.cs#L7) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 2.9%; 0 errors |
 | [`^CC`](../commands/format-cc.md) | Change Caret Command Prefix | ❔ No evidence found | Not measured |

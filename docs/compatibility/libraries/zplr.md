@@ -17,19 +17,19 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/zplr.md)
 
-22/132 exact; mean IoU 42.7%; 0 errors. Snapshot: 2026-09-18T23:14:28Z.
+60/132 exact; mean IoU 73.0%; 0 errors. Snapshot: 2026-09-18T23:52:17Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | Not measured | Not measured |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 30.8%; 0 errors | Not measured |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 12/25 exact; mean IoU 59.0%; 0 errors | Not measured |
-| [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | Not measured |
-| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 29.4%; 0 errors | Not measured |
-| [Baseline shapes](../features/baseline-shapes.md) | 9 | 6/9 exact; mean IoU 95.4%; 0 errors | Not measured |
-| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 31.7%; 0 errors | Not measured |
+| [Barcode families](../features/barcode-families.md) | 60 | Not measured | Not measured |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | Not measured | Not measured |
+| [Baseline graphics](../features/baseline-graphics.md) | 4 | Not measured | Not measured |
+| [Baseline layout](../features/baseline-layout.md) | 11 | Not measured | Not measured |
+| [Baseline shapes](../features/baseline-shapes.md) | 9 | Not measured | Not measured |
+| [Baseline text](../features/baseline-text.md) | 24 | Not measured | Not measured |
 | [Clipping](../features/clipping.md) | 5 | Not measured | Not measured |
 | [Compositing](../features/compositing.md) | 5 | Not measured | Not measured |
 | [Encoding](../features/encoding.md) | 28 | Not measured | Not measured |
@@ -55,36 +55,36 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 | --- | --- | --- | --- |
 | [`^A`](../commands/format-a.md) | Font Selection | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L17) | 0/12 exact; mean IoU 33.2%; 0 errors |
 | [`^A@`](../commands/format-a-named.md) | Use Font Name to Call Font | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L18) | Not measured |
-| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L19) | 0/1 exact; mean IoU 31.5%; 0 errors |
-| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L20) | 0/1 exact; mean IoU 36.8%; 0 errors |
-| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L21) | 0/1 exact; mean IoU 34.7%; 0 errors |
-| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L22) | 2/3 exact; mean IoU 81.2%; 0 errors |
-| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L23) | 0/1 exact; mean IoU 38.2%; 0 errors |
-| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L24) | 0/1 exact; mean IoU 59.2%; 0 errors |
-| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L25) | 0/2 exact; mean IoU 33.4%; 0 errors |
-| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L26) | 0/1 exact; mean IoU 27.5%; 0 errors |
-| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L27) | 0/1 exact; mean IoU 29.7%; 0 errors |
-| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L28) | 0/1 exact; mean IoU 21.0%; 0 errors |
-| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L29) | 0/3 exact; mean IoU 55.9%; 0 errors |
-| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L30) | 6/9 exact; mean IoU 91.2%; 0 errors |
-| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L31) | 0/5 exact; mean IoU 14.5%; 0 errors |
-| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L32) | 0/1 exact; mean IoU 23.8%; 0 errors |
-| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L33) | 0/3 exact; mean IoU 31.6%; 0 errors |
-| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L34) | 0/1 exact; mean IoU 46.7%; 0 errors |
-| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L35) | 0/1 exact; mean IoU 15.5%; 0 errors |
-| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L36) | 0/1 exact; mean IoU 35.6%; 0 errors |
-| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L37) | 0/1 exact; mean IoU 41.5%; 0 errors |
-| [`^BM`](../commands/format-bm.md) | MSI Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L38) | 0/4 exact; mean IoU 16.6%; 0 errors |
-| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L39) | 0/2 exact; mean IoU 32.1%; 0 errors |
-| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L40) | 0/1 exact; mean IoU 35.2%; 0 errors |
-| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L41) | 0/12 exact; mean IoU 9.7%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L42) | 0/13 exact; mean IoU 28.7%; 0 errors |
-| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L43) | 0/2 exact; mean IoU 20.0%; 0 errors |
-| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L44) | 0/2 exact; mean IoU 35.5%; 0 errors |
-| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L45) | 0/1 exact; mean IoU 32.5%; 0 errors |
-| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L46) | 2/4 exact; mean IoU 66.7%; 0 errors |
+| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L19) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L20) | 0/1 exact; mean IoU 42.5%; 0 errors |
+| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L21) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L22) | 3/3 exact; mean IoU 100.0%; 0 errors |
+| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L23) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L24) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L25) | 0/2 exact; mean IoU 70.8%; 0 errors |
+| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L26) | 0/1 exact; mean IoU 97.0%; 0 errors |
+| [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L27) | 0/1 exact; mean IoU 97.2%; 0 errors |
+| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L28) | 0/1 exact; mean IoU 34.4%; 0 errors |
+| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L29) | 2/3 exact; mean IoU 92.9%; 0 errors |
+| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L30) | 7/9 exact; mean IoU 99.1%; 0 errors |
+| [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L31) | 0/5 exact; mean IoU 57.9%; 0 errors |
+| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L32) | 0/1 exact; mean IoU 98.0%; 0 errors |
+| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L33) | 0/3 exact; mean IoU 65.9%; 0 errors |
+| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L34) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L35) | 0/1 exact; mean IoU 33.7%; 0 errors |
+| [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L36) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L37) | 0/1 exact; mean IoU 94.7%; 0 errors |
+| [`^BM`](../commands/format-bm.md) | MSI Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L38) | 4/4 exact; mean IoU 100.0%; 0 errors |
+| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L39) | 2/2 exact; mean IoU 100.0%; 0 errors |
+| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L40) | 0/1 exact; mean IoU 20.6%; 0 errors |
+| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L41) | 7/12 exact; mean IoU 87.5%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L42) | 10/13 exact; mean IoU 93.9%; 0 errors |
+| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L43) | 0/2 exact; mean IoU 70.0%; 0 errors |
+| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L44) | 1/2 exact; mean IoU 83.7%; 0 errors |
+| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L45) | 0/1 exact; mean IoU 96.1%; 0 errors |
+| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L46) | 4/4 exact; mean IoU 100.0%; 0 errors |
 | [`^BY`](../commands/format-by.md) | Bar Code Field Default | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L47) | 2/2 exact; mean IoU 100.0%; 0 errors |
-| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L48) | 0/3 exact; mean IoU 39.2%; 0 errors |
+| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L48) | 2/3 exact; mean IoU 68.0%; 0 errors |
 | [`^CC`](../commands/format-cc.md) | Change Caret Command Prefix | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L49) | Not measured |
 | [`~CC`](../commands/control-cc.md) | Change Caret Command Prefix | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L50) | Not measured |
 | [`^CD`](../commands/format-cd.md) | Change Delimiter Character | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L51) | Not measured |

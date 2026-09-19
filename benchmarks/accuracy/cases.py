@@ -7,11 +7,13 @@ import binascii
 import zlib
 
 
-def probes():
+def probes(*, explicit_defaults=True):
     rows = []
 
     def add(name, group, command, arguments, body):
-        prefix = "^XA^PW832^LL300^LH0,0^LS0^LT0^PON^LRN^FWN^CI27^CF0,32,0"
+        prefix = "^XA^PW832^LL300^LH0,0^LS0^LT0^PON^LRN^FWN^BY2,3,100^CI27^CF0,32,0"
+        if not explicit_defaults:
+            prefix = prefix.replace("^BY2,3,100", "")
         rows.append(
             dict(
                 name=name,

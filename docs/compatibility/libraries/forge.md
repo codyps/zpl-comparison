@@ -17,19 +17,19 @@
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/forge.md)
 
-15/132 exact; mean IoU 33.4%; 7 errors. Snapshot: 2026-09-18T23:14:28Z.
+22/132 exact; mean IoU 39.9%; 7 errors. Snapshot: 2026-09-18T23:52:17Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | Not measured | Not measured |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 16.1%; 4 errors | Not measured |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 10/25 exact; mean IoU 55.3%; 0 errors | Not measured |
-| [Baseline graphics](../features/baseline-graphics.md) | 4 | 1/4 exact; mean IoU 36.9%; 0 errors | Not measured |
-| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 27.9%; 3 errors | Not measured |
-| [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 67.2%; 0 errors | Not measured |
-| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 42.6%; 0 errors | Not measured |
+| [Barcode families](../features/barcode-families.md) | 60 | Not measured | Not measured |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | Not measured | Not measured |
+| [Baseline graphics](../features/baseline-graphics.md) | 4 | Not measured | Not measured |
+| [Baseline layout](../features/baseline-layout.md) | 11 | Not measured | Not measured |
+| [Baseline shapes](../features/baseline-shapes.md) | 9 | Not measured | Not measured |
+| [Baseline text](../features/baseline-text.md) | 24 | Not measured | Not measured |
 | [Clipping](../features/clipping.md) | 5 | Not measured | Not measured |
 | [Compositing](../features/compositing.md) | 5 | Not measured | Not measured |
 | [Encoding](../features/encoding.md) | 28 | Not measured | Not measured |
@@ -55,36 +55,36 @@
 | --- | --- | --- | --- |
 | [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#83) | 0/12 exact; mean IoU 41.1%; 0 errors |
 | [`^A@`](../commands/format-a-named.md) | Use Font Name to Call Font | ❔ No evidence found | Not measured |
-| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#678) | 0/1 exact; mean IoU 31.5%; 0 errors |
-| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors |
-| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#425) | 0/1 exact; mean IoU 34.7%; 0 errors |
-| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#301) | 1/3 exact; mean IoU 75.8%; 0 errors |
-| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 5.8%; 0 errors |
-| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.2%; 0 errors |
-| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#467) | 0/2 exact; mean IoU 10.7%; 0 errors |
-| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#501) | 0/1 exact; mean IoU 27.5%; 0 errors |
+| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#678) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.1%; 0 errors |
+| [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#425) | 1/1 exact; mean IoU 100.0%; 0 errors |
+| [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#301) | 2/3 exact; mean IoU 94.7%; 0 errors |
+| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.2%; 0 errors |
+| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.1%; 0 errors |
+| [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#467) | 0/2 exact; mean IoU 16.7%; 0 errors |
+| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#501) | 0/1 exact; mean IoU 97.0%; 0 errors |
 | [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#529) | 0/1 exact; mean IoU 0.0%; 1 errors |
-| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#431) | 0/1 exact; mean IoU 21.0%; 0 errors |
+| [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#431) | 0/1 exact; mean IoU 34.4%; 0 errors |
 | [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#560) | 0/3 exact; mean IoU 0.0%; 3 errors |
-| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#237) | 5/9 exact; mean IoU 83.2%; 0 errors |
+| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#237) | 6/9 exact; mean IoU 91.2%; 0 errors |
 | [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | ❔ No evidence found | 0/5 exact; mean IoU 1.8%; 0 errors |
-| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#413) | 0/1 exact; mean IoU 23.8%; 0 errors |
-| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#719) | 0/3 exact; mean IoU 11.1%; 0 errors |
-| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.1%; 0 errors |
-| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.9%; 0 errors |
+| [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#413) | 0/1 exact; mean IoU 98.0%; 0 errors |
+| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#719) | 0/3 exact; mean IoU 13.1%; 0 errors |
+| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.4%; 0 errors |
+| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.8%; 0 errors |
 | [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors |
-| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.3%; 0 errors |
-| [`^BM`](../commands/format-bm.md) | MSI Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#591) | 0/4 exact; mean IoU 16.1%; 0 errors |
-| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#678) | 0/2 exact; mean IoU 30.4%; 0 errors |
-| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 1.7%; 0 errors |
-| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#271) | 0/12 exact; mean IoU 7.0%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#741) | 0/13 exact; mean IoU 19.5%; 0 errors |
-| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#650) | 0/2 exact; mean IoU 21.7%; 0 errors |
-| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.2%; 0 errors |
-| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#419) | 0/1 exact; mean IoU 32.5%; 0 errors |
-| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#353) | 2/4 exact; mean IoU 60.0%; 0 errors |
+| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.8%; 0 errors |
+| [`^BM`](../commands/format-bm.md) | MSI Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#591) | 1/4 exact; mean IoU 92.8%; 0 errors |
+| [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#678) | 1/2 exact; mean IoU 64.2%; 0 errors |
+| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.1%; 0 errors |
+| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#271) | 0/12 exact; mean IoU 0.9%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#741) | 0/13 exact; mean IoU 19.4%; 0 errors |
+| [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#650) | 0/2 exact; mean IoU 22.1%; 0 errors |
+| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.4%; 0 errors |
+| [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#419) | 0/1 exact; mean IoU 96.1%; 0 errors |
+| [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#353) | 2/4 exact; mean IoU 66.4%; 0 errors |
 | [`^BY`](../commands/format-by.md) | Bar Code Field Default | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#331) | 2/2 exact; mean IoU 100.0%; 0 errors |
-| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#622) | 0/3 exact; mean IoU 48.8%; 0 errors |
+| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#622) | 1/3 exact; mean IoU 55.2%; 0 errors |
 | [`^CC`](../commands/format-cc.md) | Change Caret Command Prefix | ❔ No evidence found | Not measured |
 | [`~CC`](../commands/control-cc.md) | Change Caret Command Prefix | ❔ No evidence found | Not measured |
 | [`^CD`](../commands/format-cd.md) | Change Delimiter Character | ❔ No evidence found | Not measured |

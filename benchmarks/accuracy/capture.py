@@ -133,10 +133,10 @@ def main():
     }
     # Rendering defaults can survive format boundaries on hardware. Reset only
     # content layout properties in a separate preview before each corpus sample.
-    reset = b"^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,60^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ"
+    reset = b"^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ"
+    manifest["preview_reset_zpl"] = reset.decode()
     if args.corpus:
         manifest["corpus_sha256"] = sha((args.corpus / "manifest.json").read_bytes())
-        manifest["preview_reset_zpl"] = reset.decode()
 
     def save():
         (args.output / "manifest.json").write_text(
@@ -146,21 +146,20 @@ def main():
     save()
     for i, probe in enumerate(selected):
         source = probe.pop("zpl")
-        if args.corpus:
-            request(
-                "/zpl",
-                urllib.parse.urlencode(
-                    {
-                        "dev": "R",
-                        "oname": "TEST1",
-                        "otype": "ZPL",
-                        "username": "",
-                        "pw": "",
-                        "data": reset,
-                        "prev": "Preview Label",
-                    }
-                ).encode(),
-            )
+        request(
+            "/zpl",
+            urllib.parse.urlencode(
+                {
+                    "dev": "R",
+                    "oname": "TEST1",
+                    "otype": "ZPL",
+                    "username": "",
+                    "pw": "",
+                    "data": reset,
+                    "prev": "Preview Label",
+                }
+            ).encode(),
+        )
         form = urllib.parse.urlencode(
             {
                 "dev": "R",

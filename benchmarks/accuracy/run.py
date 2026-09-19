@@ -108,7 +108,7 @@ def corpus(fresh=ROOT / "accuracy/reference"):
                 group="barcode-formats",
                 command="^" + next((c for c in commands if c != "BY"), "?"),
                 arguments="See exact archived ZPL",
-                width=812,
+                width=historical["width"],
                 height=1218,
                 source="archived barcode development corpus",
                 zpl=zpl,

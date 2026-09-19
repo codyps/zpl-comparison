@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^FO** · x=220,y=80,z=1 · [ZPL input](../../../../../benchmarks/accuracy/reference/fo-justify-1.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png)
+**^FO** · x=220,y=80,z=1 · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -18,15 +18,15 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41229090) panicked at src/main.rs:25:10:
-render: RenderError { offset: 55, message: "field justification unsupported" }
+thread 'main' (41355615) panicked at src/main.rs:26:10:
+render: RenderError { offset: 65, message: "field justification unsupported" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~
@@ -39,7 +39,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 474 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png) | ![labelize render](../../images/argument-fo-justify-1-labelize.png) | ![labelize difference](../../images/argument-fo-justify-1-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png) | ![labelize render](../../images/argument-fo-justify-1-labelize.png) | ![labelize difference](../../images/argument-fo-justify-1-labelize-diff.png) |
 
 
 ## forge
@@ -48,14 +48,14 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 474 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41229096) panicked at src/main.rs:72:10:
+thread 'main' (41324334) panicked at src/main.rs:73:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -69,7 +69,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1254 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png) | ![go render](../../images/argument-fo-justify-1-go.png) | ![go difference](../../images/argument-fo-justify-1-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png) | ![go render](../../images/argument-fo-justify-1-go.png) | ![go difference](../../images/argument-fo-justify-1-go-diff.png) |
 
 
 ## ffi
@@ -80,7 +80,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1254 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png) | ![ffi render](../../images/argument-fo-justify-1-ffi.png) | ![ffi difference](../../images/argument-fo-justify-1-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png) | ![ffi render](../../images/argument-fo-justify-1-ffi.png) | ![ffi difference](../../images/argument-fo-justify-1-ffi-diff.png) |
 
 
 ## binarykits
@@ -91,7 +91,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 762 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png) | ![binarykits render](../../images/argument-fo-justify-1-binarykits.png) | ![binarykits difference](../../images/argument-fo-justify-1-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png) | ![binarykits render](../../images/argument-fo-justify-1-binarykits.png) | ![binarykits difference](../../images/argument-fo-justify-1-binarykits-diff.png) |
 
 
 ## zplr
@@ -102,5 +102,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 826 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-1.png) | ![zplr render](../../images/argument-fo-justify-1-zplr.png) | ![zplr difference](../../images/argument-fo-justify-1-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/benchmarks/accuracy/reference/fo-justify-1.png) | ![zplr render](../../images/argument-fo-justify-1-zplr.png) | ![zplr difference](../../images/argument-fo-justify-1-zplr-diff.png) |
 

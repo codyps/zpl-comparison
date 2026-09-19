@@ -4,9 +4,9 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
-**^B4** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/code49.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/code49.png)
+**^B4** · See exact archived ZPL · [ZPL input](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.zpl) · [Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png)
 
-Measured 2026-09-18T23:14:28Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-18T23:52:17Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,77 +14,77 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 38.2% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 2560 pixels; extra ink: 2560 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/code49.png) | ![codyps-zpl render](../../images/barcode-code49-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-code49-codyps-zpl-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png) | ![codyps-zpl render](../../images/barcode-code49-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-code49-codyps-zpl-diff.png) |
 
 
 ## labelize
 
-**labelize (Rust): 4.9% IoU** · [All cases for this library](../libraries/labelize.md)
+**labelize (Rust): 5.9% IoU** · [All cases for this library](../libraries/labelize.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5419 pixels; extra ink: 593 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5358 pixels; extra ink: 532 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/code49.png) | ![labelize render](../../images/barcode-code49-labelize.png) | ![labelize difference](../../images/barcode-code49-labelize-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png) | ![labelize render](../../images/barcode-code49-labelize.png) | ![labelize difference](../../images/barcode-code49-labelize-diff.png) |
 
 
 ## forge
 
-**zpl-forge (Rust): 5.8% IoU** · [All cases for this library](../libraries/forge.md)
+**zpl-forge (Rust): 6.2% IoU** · [All cases for this library](../libraries/forge.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5367 pixels; extra ink: 473 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5342 pixels; extra ink: 448 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/code49.png) | ![forge render](../../images/barcode-code49-forge.png) | ![forge difference](../../images/barcode-code49-forge-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png) | ![forge render](../../images/barcode-code49-forge.png) | ![forge difference](../../images/barcode-code49-forge-diff.png) |
 
 
 ## go
 
-**go-zpl (Go): 6.0% IoU** · [All cases for this library](../libraries/go.md)
+**go-zpl (Go): 7.1% IoU** · [All cases for this library](../libraries/go.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5350 pixels; extra ink: 621 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5281 pixels; extra ink: 552 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/code49.png) | ![go render](../../images/barcode-code49-go.png) | ![go difference](../../images/barcode-code49-go-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png) | ![go render](../../images/barcode-code49-go.png) | ![go difference](../../images/barcode-code49-go-diff.png) |
 
 
 ## ffi
 
-**zpl-rs (Rust → Go): 6.0% IoU** · [All cases for this library](../libraries/ffi.md)
+**zpl-rs (Rust → Go): 7.1% IoU** · [All cases for this library](../libraries/ffi.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5350 pixels; extra ink: 621 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5281 pixels; extra ink: 552 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/code49.png) | ![ffi render](../../images/barcode-code49-ffi.png) | ![ffi difference](../../images/barcode-code49-ffi-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png) | ![ffi render](../../images/barcode-code49-ffi.png) | ![ffi difference](../../images/barcode-code49-ffi-diff.png) |
 
 
 ## binarykits
 
-**BinaryKits.Zpl (.NET): 5.3% IoU** · [All cases for this library](../libraries/binarykits.md)
+**BinaryKits.Zpl (.NET): 6.4% IoU** · [All cases for this library](../libraries/binarykits.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 5385 pixels; extra ink: 737 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 5320 pixels; extra ink: 672 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/code49.png) | ![binarykits render](../../images/barcode-code49-binarykits.png) | ![binarykits difference](../../images/barcode-code49-binarykits-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png) | ![binarykits render](../../images/barcode-code49-binarykits.png) | ![binarykits difference](../../images/barcode-code49-binarykits-diff.png) |
 
 
 ## zplr
 
-**ZPLr (TypeScript): 38.2% IoU** · [All cases for this library](../libraries/zplr.md)
+**ZPLr (TypeScript): 100.0% IoU · exact** · [All cases for this library](../libraries/zplr.md)
 
-Printer: 832 × 1218 dots; library: 812 × 1218 dots. Missing ink: 2560 pixels; extra ink: 2560 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/code49.png) | ![zplr render](../../images/barcode-code49-zplr.png) | ![zplr difference](../../images/barcode-code49-zplr-diff.png) |
+| ![Printer preview](../../../../../../../../../Volumes/dev/p/zpl-comparison/references/barcodes-zd621-v1/code49.png) | ![zplr render](../../images/barcode-code49-zplr.png) | ![zplr difference](../../images/barcode-code49-zplr-diff.png) |
 
