@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run content-only conformance fixtures through the existing renderer adapters.
+"""Run conformance fixtures through the existing renderer adapters.
 
 No printer traffic. Optional references come from accuracy/capture.py --corpus.
 PNG comparison is shared with accuracy/run.py; source cases cite the Zebra guide.
@@ -113,6 +113,7 @@ def main():
         "--only", default="codyps-zpl", help="Comma-separated renderer adapters, or all"
     )
     ap.add_argument("--group", action="append", help="Repeat to select fixture groups")
+    ap.add_argument("--corpus", type=Path, default=SUITE, help="Corpus directory containing manifest.json")
     ap.add_argument("--include-invalid", action="store_true")
     ap.add_argument("--reference", type=Path)
     ap.add_argument("--output", type=Path, default=ROOT / "_work/conformance")
@@ -120,7 +121,7 @@ def main():
     args = ap.parse_args()
     if args.timeout <= 0:
         ap.error("Timeout must be positive")
-    manifest, cases = load_cases(groups=args.group, invalid=args.include_invalid)
+    manifest, cases = load_cases(args.corpus, groups=args.group, invalid=args.include_invalid)
     cfg = json.loads((ROOT / "_work/config.json").read_text())
     libraries = metrics.LIBRARIES if args.only == "all" else args.only.split(",")
     if (
@@ -211,7 +212,7 @@ def main():
     result = dict(
         schema=1,
         suite=manifest["suite"],
-        manifest_sha256=metrics.sha(SUITE / "manifest.json"),
+        manifest_sha256=metrics.sha(args.corpus / "manifest.json"),
         measured_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         host=platform.platform(),
         cases=[{k: v for k, v in case.items() if k != "path"} for case in cases],
@@ -225,6 +226,23 @@ def main():
         f"Suite: `{manifest['suite']}`. {len(cases)} cases; {len(libraries)} adapters.\n",
         "This reports execution and equal-image relationships, not printer accuracy unless hash-matched printer references were supplied. A rendered image can still be wrong. Font coverage is device-dependent. Invalid inputs are kept separate.\n",
     ]
+    if manifest.get("sources"):
+        text += [
+            "## Imported examples\n",
+            "Unmodified upstream inputs, including stateful and printer-configuration examples, run offline only. Boundary classification means unverified example semantics, not certified valid ZPL. Upstream library fixtures are not an independent holdout.\n",
+            table(
+                ["Fixture", "Group", "Canvas (dots)", "Pinned source"],
+                [
+                    [
+                        f"[{c['name']}]({os.path.relpath(c['path'], dest)})",
+                        c["group"],
+                        f"{c['width']}×{c['height']}",
+                        f"[upstream]({c['source']})",
+                    ]
+                    for c in cases
+                ],
+            ),
+        ]
     summary = []
     for library in libraries:
         row = [

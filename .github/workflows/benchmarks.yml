@@ -88,6 +88,8 @@ jobs:
       - name: Exercise rendering conformance corpus
         id: conformance
         run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl --include-invalid --output docs/benchmarks/conformance
+      - name: Exercise external label examples
+        run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/external-zpl --only all --output docs/benchmarks/external-zpl
       - name: Generate library and feature compatibility pages
         if: always() && steps.accuracy.outcome == 'success' && steps.conformance.outcome != 'skipped'
         run: python benchmarks/compatibility.py
@@ -117,6 +119,7 @@ jobs:
             benchmarks/accuracy/reference/
             references/barcodes-zd621-v1/
             test-data/invalid-zpl/
+            test-data/external-zpl/
             benchmarks/invalid/README.md
       - name: Fail on invalid-ZPL probe execution failures
         if: always() && steps.invalid.outcome == 'failure'
