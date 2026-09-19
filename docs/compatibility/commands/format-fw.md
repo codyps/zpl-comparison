@@ -24,13 +24,14 @@ Reference parameters: **r, z**. These describe the reference grammar, not a prom
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | [🛠️ Typed emission](https://docs.rs/crate/zpl-builder/0.1.0/source/src/elements.rs#53) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | [🛠️ Typed emission](https://github.com/cod3monk/zpl/blob/9bbeca05aa42e41576bf43ee3ae7ec268a3df032/zpl/label.py#L299) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 0/1 exact; mean IoU 76.6%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-FW](../../../benchmarks/accuracy/reference/layout-FW.zpl) | R | [Printer](../../../benchmarks/accuracy/reference/layout-FW.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#codyps-zpl) | N/A | [53.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#labelize) | [13.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#ffi) | [29.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#binarykits) | [35.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [layout-FW](../../../benchmarks/accuracy/reference/layout-FW.zpl) | R | [Printer](../../../benchmarks/accuracy/reference/layout-FW.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#codyps-zpl) | N/A | [53.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#labelize) | [13.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#forge) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#go) | [77.2% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#ffi) | [29.9% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#binarykits) | [35.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#zplr) | N/A | N/A | N/A | [76.6% IoU](../../benchmarks/accuracy/comparisons/cases/argument-layout-FW.md#labelary) |
 
 
 ## Related features

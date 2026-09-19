@@ -6,11 +6,11 @@
 
 **^GE** · 120,60,3,B · [ZPL input](../../../../../benchmarks/accuracy/reference/shape-GE-B.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/shape-GE-B.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -87,4 +87,17 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 80 pixels; extr
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GE-B.png) | ![zplr render](../../images/argument-shape-GE-B-zplr.png) | ![zplr difference](../../images/argument-shape-GE-B-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 50.5% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 488 pixels; extra ink: 166 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GE-B.png) | ![labelary render](../../images/argument-shape-GE-B-labelary.png) | ![labelary difference](../../images/argument-shape-GE-B-labelary-diff.png) |
 

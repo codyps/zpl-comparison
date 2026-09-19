@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "inputs": {
-    "docs/benchmarks/command-support.json": "d93604fb22ef2f2f66ee5850af671092999e0d856f4b86315fd7981a6617cea8",
-    "docs/benchmarks/accuracy/results.json": "1faaf8327765cfc2ff6ecdebba4b6712646281214fca8de1d6482fec63069c9e",
+    "docs/benchmarks/command-support.json": "735023176c3c847c72c0727ff6e6adf59117bb4dc7af3224f7f0a62c9f72fc12",
+    "docs/benchmarks/accuracy/results.json": "87bb128686446dbd0140d71adca5d3be6536eac0bd7dc41cbfbba53c6fc8920e",
     "test-data/render-conformance/manifest.json": "ef43f04da37e790b3778eae1f8c07b04c8d76b0bceec739d85f6202082600168",
-    "docs/benchmarks/argument-support.md": "6bb9f5005cb521d53a3ff3053b1324fa143fb5b5cc8d324e2aac4a5f4c5efcd6",
+    "docs/benchmarks/argument-support.md": "59ec4b17ce7328c30a87a5f83449a516b815b9fcee64c8f5668926d267dcdfd7",
     "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
     "benchmarks/adapters/rust/Cargo.toml": "5e9439a9cf48001bbba347f1c593409e5948e6222045dc40a066104e08d42a20",
     "benchmarks/adapters/node/package.json": "863935d7c446fe4a34d5ab329cdf3d44203ccd9765f58a23233f9c9349970647",
     "benchmarks/adapters/dotnet/Comparison.csproj": "dedf04ed99b98e453e2fd9892210bc1becab3e56aad46c315ec8a2264df28a9d",
     "benchmarks/sources.lock.json": "605dd78411a73175f731eafd02eb27b1f01f38afaacef4b16584af2433a8038e",
-    "benchmarks/compatibility.py": "ec548af7c10be745cd718b72736f6df659ac34c78fa9c8b51fe5bfbafc98a0a3",
-    "docs/benchmarks/conformance/results.json": "6e0da3d202f6cc03c8b217f7f6000c7bb852bf966b80d0410b859e08a806305d"
+    "benchmarks/compatibility.py": "661fe1dc7642419aef7d8f2dfed6c20a5b69a0ba0349f265498100c202a7df9f",
+    "docs/benchmarks/conformance/results.json": "0a0ab8e7536c04fa1e20eaf7a1e63534a7d5e7b17b15ffbf5610f40f32cf8efa"
   },
-  "accuracy_measured_utc": "2026-09-19T03:05:14Z",
-  "conformance_measured_utc": "2026-09-19T03:00:41Z",
+  "accuracy_measured_utc": "2026-09-19T03:33:57Z",
+  "conformance_measured_utc": "2026-09-19T03:31:36Z",
   "libraries": {
     "toolchain": "0.4.1",
     "labelize": "1.5.0",
@@ -26,7 +26,8 @@
     "jszpl": "2.0.1",
     "go": "source 78b181940c76",
     "python": "source 9bbeca05aa42",
-    "binarykits": "1.3.1"
+    "binarykits": "1.3.1",
+    "labelary": "captured 2026-09-19T03:17:15+00:00 (build version not exposed)"
   },
   "command_pages": 224,
   "feature_pages": 24

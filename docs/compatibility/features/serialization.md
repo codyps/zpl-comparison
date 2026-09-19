@@ -22,6 +22,7 @@
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 13 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 10 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | Not measured | 4 rendered |
 
 
 ## Commands involved

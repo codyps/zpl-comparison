@@ -24,13 +24,14 @@ Reference parameters: **a, b, c, d, e, f, g**. These describe the reference gram
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 1/1 exact; mean IoU 100.0%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [aztec_alias](../../../references/barcodes-zd621-v1/aztec_alias.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_alias.png) | [59.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#codyps-zpl) | N/A | [12.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#labelize) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#forge) | [13.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#go) | [13.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#ffi) | [11.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#binarykits) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [aztec_alias](../../../references/barcodes-zd621-v1/aztec_alias.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/aztec_alias.png) | [59.6% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#codyps-zpl) | N/A | [12.5% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#labelize) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#forge) | [13.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#go) | [13.0% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#ffi) | [11.3% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#binarykits) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#zplr) | N/A | N/A | N/A | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-aztec_alias.md#labelary) |
 
 
 ## Related features

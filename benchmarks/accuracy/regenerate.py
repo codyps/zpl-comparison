@@ -23,6 +23,7 @@ def main():
         if args.reports_only
         else [["benchmarks/accuracy/run.py"]]
     )
+    steps.insert(0, ["benchmarks/labelary.py"])
     steps += [
         ["benchmarks/accuracy/gallery.py", output, "--check"],
         ["benchmarks/compatibility.py"],

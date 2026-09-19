@@ -6,11 +6,11 @@
 
 **^A** · font=0,o=N,h=32,w=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/font0-height-32.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-32.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -87,4 +87,17 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 865 pixels; ext
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-32.png) | ![zplr render](../../images/argument-font0-height-32-zplr.png) | ![zplr difference](../../images/argument-font0-height-32-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 73.9% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 179 pixels; extra ink: 200 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-height-32.png) | ![labelary render](../../images/argument-font0-height-32-labelary.png) | ![labelary difference](../../images/argument-font0-height-32-labelary-diff.png) |
 

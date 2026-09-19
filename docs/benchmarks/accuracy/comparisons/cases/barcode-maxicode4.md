@@ -6,11 +6,11 @@
 
 **^BD** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/maxicode4.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/maxicode4.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -87,4 +87,17 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 2638 pixels; 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode4.png) | ![zplr render](../../images/barcode-maxicode4-zplr.png) | ![zplr difference](../../images/barcode-maxicode4-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 18.3% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 9209 pixels; extra ink: 8339 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode4.png) | ![labelary render](../../images/barcode-maxicode4-labelary.png) | ![labelary difference](../../images/barcode-maxicode4-labelary-diff.png) |
 

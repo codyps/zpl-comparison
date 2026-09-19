@@ -72,7 +72,15 @@ class GalleryTests(unittest.TestCase):
         self.assertIn("blank output", page)
         self.assertIn("![forge render](../../images/case-forge.png)", page)
         self.assertNotIn("![codyps-zpl render]", page)
-        self.assertEqual(len(pages), 9)
+        self.assertEqual(len(pages), len(gallery.LIBRARIES) + 2)
+
+    def test_changed_labelary_snapshot_requires_new_measurement(self):
+        snapshot = self.root / "docs/benchmarks/labelary/captures.json"
+        snapshot.parent.mkdir(parents=True)
+        snapshot.write_text("new service snapshot")
+        data = {**self.data, "adapters": {"labelary": [{"name": "captures.json", "sha256": "old"}]}}
+        with self.assertRaisesRegex(ValueError, "Labelary snapshot changed"):
+            gallery.validate(data, self.dest)
 
     def test_missing_and_duplicate_attempts_are_rejected(self):
         for rows in [

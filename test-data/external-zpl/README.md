@@ -27,7 +27,7 @@ benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/ex
 benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'
 ```
 
-The command verifies fixture hashes, runs all 56 case/renderer combinations,
+The command verifies fixture hashes, runs all 64 case/renderer combinations (including captured Labelary responses),
 and regenerates JSON, PNGs and GitHub-rendered Markdown. CI runs the same command.
 Use `--only codyps-zpl` for one renderer or `--group stateful` for stored resources.
 Every case runs in a fresh process; all commands within that case remain together.

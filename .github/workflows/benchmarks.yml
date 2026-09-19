@@ -65,6 +65,7 @@ jobs:
           python test-data/render-conformance/generate.py --check
           python test-data/invalid-zpl/generate.py --check
           python benchmarks/compatibility.py --check
+          benchmarks/_work/venv/bin/python benchmarks/labelary.py --check
       - name: Build locked adapters
         run: benchmarks/_work/venv/bin/python benchmarks/prepare.py
       - name: Inventory command support
@@ -87,7 +88,7 @@ jobs:
         run: benchmarks/_work/venv/bin/python benchmarks/invalid.py --check
       - name: Exercise rendering conformance corpus
         id: conformance
-        run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl --include-invalid --output docs/benchmarks/conformance
+        run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl,labelary --include-invalid --output docs/benchmarks/conformance
       - name: Exercise external label examples
         run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/external-zpl --only all --output docs/benchmarks/external-zpl
       - name: Generate library and feature compatibility pages

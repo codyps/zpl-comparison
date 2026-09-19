@@ -24,13 +24,14 @@ Reference parameters: **not cataloged**. These describe the reference grammar, n
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | [🛠️ Typed emission](https://github.com/DanieLeeuwner/JSZPL/blob/53c916717c0dfdb1e6bca266eb6280c8f156c6ca/src/components/line.ts#L28) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 0/1 exact; mean IoU 97.8%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [field-reverse](../../../benchmarks/accuracy/reference/field-reverse.zpl) | reverse current field | [Printer](../../../benchmarks/accuracy/reference/field-reverse.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#codyps-zpl) | N/A | [97.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#labelize) | [94.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#forge) | [99.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#go) | [99.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#ffi) | [93.4% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#binarykits) | [93.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [field-reverse](../../../benchmarks/accuracy/reference/field-reverse.zpl) | reverse current field | [Printer](../../../benchmarks/accuracy/reference/field-reverse.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#codyps-zpl) | N/A | [97.3% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#labelize) | [94.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#forge) | [99.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#go) | [99.1% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#ffi) | [93.4% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#binarykits) | [93.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#zplr) | N/A | N/A | N/A | [97.8% IoU](../../benchmarks/accuracy/comparisons/cases/argument-field-reverse.md#labelary) |
 
 
 ## Related features

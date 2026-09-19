@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT))
 from report import NAMES, table  # noqa: E402
 from accuracy.gallery import generate  # noqa: E402
 
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
+from accuracy.run import LIBRARIES
 
 
 def main():
@@ -106,7 +106,7 @@ def main():
         "Missing and extra pixels, precision, recall and full-canvas mismatch are retained per cell in JSON. "
         "Errors and blank library output score zero for a nonblank printer reference; blank printer references are quarantined from scores. "
         "“Ink exact” permits only all-white canvas margins to differ; “strict exact” additionally requires identical dimensions.\n",
-        f"The all-case mean weights each nonblank case equally, including unsupported cases. Shared-case mean uses the **{len(common)} cases** for which all seven adapters returned nonblank rasters; it isolates a smaller common subset and is subject to selection bias. The corpus is broad but not representative of every deployment.\n",
+        f"The all-case mean weights each nonblank case equally, including unsupported cases. Shared-case mean uses the **{len(common)} cases** for which all {len(LIBRARIES)} adapters returned nonblank rasters; it isolates a smaller common subset and is subject to selection bias. The corpus is broad but not representative of every deployment.\n",
         "![Mean foreground IoU](accuracy.svg)\n",
         table(
             [
@@ -131,6 +131,7 @@ def main():
         "Captured fonts and preview behavior are specific to this device/firmware. No persistent device configuration, flash/font downloads, RFID operations or physical print jobs are exercised.\n",
         "ZPLr and BinaryKits may use host font fallback; installed font availability can affect other hosts. The Go and Rust-FFI rows share the same renderer, so they are not independent implementations. "
         "A successful process or a recognized command is not evidence that its arguments were honored. Inspect the exact inputs and difference images.\n",
+        "Labelary is an eighth renderer replayed from hash-verified public-service PNG responses. The printer remains the baseline. [Capture timestamps and HTTP metadata](../labelary/README.md) identify the service snapshot; API v1 and nginx versions are not renderer versions.\n",
         "## Per-case accuracy and argument comparison\n",
         "Click any result to compare the printer preview, library render and difference together, or inspect a render error. "
         "Difference colors: black=agreement, magenta=printer only, cyan=library only. Input links show the exact argument values.\n",

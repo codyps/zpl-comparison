@@ -3422,7 +3422,8 @@
         "status": "E",
         "source": "https://github.com/DanieLeeuwner/JSZPL/blob/53c916717c0dfdb1e6bca266eb6280c8f156c6ca/src/components/text.ts#L115"
       }
-    }
+    },
+    "labelary": {}
   },
   "parameter_keys": {
     "^A": [

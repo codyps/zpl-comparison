@@ -6,11 +6,11 @@
 
 **^PO** · I · [ZPL input](../../../../../benchmarks/accuracy/reference/layout-PO.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/layout-PO.png)
 
-Measured 2026-09-19T03:05:14Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
 
 ## codyps-zpl
 
@@ -87,4 +87,17 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 709 pixels; ext
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
 | ![Printer preview](../../../../../benchmarks/accuracy/reference/layout-PO.png) | ![zplr render](../../images/argument-layout-PO-zplr.png) | ![zplr difference](../../images/argument-layout-PO-zplr-diff.png) |
+
+
+## labelary
+
+**Labelary (captured service): 0.0% IoU** · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 709 pixels; extra ink: 686 pixels.
+
+| Printer preview | Library render | Difference |
+| --- | --- | --- |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/layout-PO.png) | ![labelary render](../../images/argument-layout-PO-labelary.png) | ![labelary difference](../../images/argument-layout-PO-labelary-diff.png) |
 

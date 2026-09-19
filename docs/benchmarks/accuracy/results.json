@@ -6,7 +6,7 @@
     "python": "3.14.4",
     "numpy": "2.5.3"
   },
-  "measured_utc": "2026-09-19T03:05:14Z",
+  "measured_utc": "2026-09-19T03:33:57Z",
   "threshold": 128,
   "cases": [
     {
@@ -2334,6 +2334,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-font0-height-16",
+      "group": "text",
+      "reference_ink": 304,
+      "score": 0.6447368421052632,
+      "output_ink": 321,
+      "missing": 59,
+      "extra": 76,
+      "iou": 0.6447368421052632,
+      "precision": 0.7632398753894081,
+      "recall": 0.805921052631579,
+      "canvas_disagreement": 0.0005408653846153846,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "c1f08d763df7d2561f7b760cd7997abb77c4d4c556c4d284f3682fcdc900ec91",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-font0-height-32",
       "group": "text",
@@ -2499,6 +2523,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "8ae6e80af4fc557e51091c73fa1f7321e84c2ce174c53fe4c6924f2fbc95a07a",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-font0-height-32",
+      "group": "text",
+      "reference_ink": 1254,
+      "score": 0.7393397524071527,
+      "output_ink": 1275,
+      "missing": 179,
+      "extra": 200,
+      "iou": 0.7393397524071527,
+      "precision": 0.8431372549019608,
+      "recall": 0.8572567783094099,
+      "canvas_disagreement": 0.0015184294871794872,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "d4e0f36c98da01e8530b483fcef552133a590da792c70c2d0351dead690e856a",
       "stderr": ""
     },
     {
@@ -2670,6 +2718,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-font0-height-64",
+      "group": "text",
+      "reference_ink": 4948,
+      "score": 0.8040961709706145,
+      "output_ink": 5182,
+      "missing": 433,
+      "extra": 667,
+      "iou": 0.8040961709706145,
+      "precision": 0.8712852180625241,
+      "recall": 0.9124898949070331,
+      "canvas_disagreement": 0.004407051282051282,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "181cc3699c6e230ecb2cbad4c2d8d08df0a80dab64709850283415990a246b9e",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-font0-width-16",
       "group": "text",
@@ -2835,6 +2907,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "473f4bcc1e017cd38f2e6d59d77d6c05b6f58d3dc97734a669be7a38cfed540a",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-font0-width-16",
+      "group": "text",
+      "reference_ink": 602,
+      "score": 0.6546184738955824,
+      "output_ink": 634,
+      "missing": 113,
+      "extra": 145,
+      "iou": 0.6546184738955824,
+      "precision": 0.7712933753943217,
+      "recall": 0.8122923588039868,
+      "canvas_disagreement": 0.0010336538461538463,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "007f67fdadc99a1085d7ea6fa5f8d8f0ac5eac382cf184c5debb22f4685e8404",
       "stderr": ""
     },
     {
@@ -3006,6 +3102,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-font0-width-32",
+      "group": "text",
+      "reference_ink": 1254,
+      "score": 0.7393397524071527,
+      "output_ink": 1275,
+      "missing": 179,
+      "extra": 200,
+      "iou": 0.7393397524071527,
+      "precision": 0.8431372549019608,
+      "recall": 0.8572567783094099,
+      "canvas_disagreement": 0.0015184294871794872,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "4dcfc9bca03394085a6eebf2092f43f008024267243f52a7f14f2a9a0209bd09",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-font0-width-64",
       "group": "text",
@@ -3171,6 +3291,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "33e0ad772fd125c693a7222839525631cb0daf8728a051bdd59af40285ee0f6a",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-font0-width-64",
+      "group": "text",
+      "reference_ink": 2473,
+      "score": 0.7907801418439716,
+      "output_ink": 2577,
+      "missing": 243,
+      "extra": 347,
+      "iou": 0.7907801418439716,
+      "precision": 0.8653473030655802,
+      "recall": 0.9017387788111605,
+      "canvas_disagreement": 0.002363782051282051,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "cd9a43357124da316033a2c3e3263a73ceae5bb287a7ee75b446ea01bd7140b8",
       "stderr": ""
     },
     {
@@ -3342,6 +3486,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-font0-rotation-N",
+      "group": "text",
+      "reference_ink": 709,
+      "score": 0.8342105263157895,
+      "output_ink": 685,
+      "missing": 75,
+      "extra": 51,
+      "iou": 0.8342105263157895,
+      "precision": 0.9255474452554745,
+      "recall": 0.8942172073342737,
+      "canvas_disagreement": 0.0005048076923076923,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "962f7ecb92ea6c09dee1aad6d90b3470eb77444f50e500725e262148b5bec17a",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-font0-rotation-R",
       "group": "text",
@@ -3507,6 +3675,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "eb8edd45be2417e181a2102395b591245effa86a17f9688e9daa524a2e0f4f16",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-font0-rotation-R",
+      "group": "text",
+      "reference_ink": 709,
+      "score": 0.7658227848101266,
+      "output_ink": 686,
+      "missing": 104,
+      "extra": 81,
+      "iou": 0.7658227848101266,
+      "precision": 0.8819241982507289,
+      "recall": 0.8533145275035261,
+      "canvas_disagreement": 0.0007411858974358974,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b783f8b569f858a8d3e75c12737cd7969e0f5201ad76dabc7e9539820866713e",
       "stderr": ""
     },
     {
@@ -3678,6 +3870,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-font0-rotation-I",
+      "group": "text",
+      "reference_ink": 709,
+      "score": 0.7658227848101266,
+      "output_ink": 686,
+      "missing": 104,
+      "extra": 81,
+      "iou": 0.7658227848101266,
+      "precision": 0.8819241982507289,
+      "recall": 0.8533145275035261,
+      "canvas_disagreement": 0.0007411858974358974,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "8520015c72a8a375461fd71a421e0b86b7f5e4f961fff412e578c74ba026fe7e",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-font0-rotation-B",
       "group": "text",
@@ -3843,6 +4059,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "a2d11fc81b9e85a9a8ffa79c319d5227f8dade8c040785227284de3d256354d2",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-font0-rotation-B",
+      "group": "text",
+      "reference_ink": 709,
+      "score": 0.8342105263157895,
+      "output_ink": 685,
+      "missing": 75,
+      "extra": 51,
+      "iou": 0.8342105263157895,
+      "precision": 0.9255474452554745,
+      "recall": 0.8942172073342737,
+      "canvas_disagreement": 0.0005048076923076923,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "4ed593a1bf09b77a305b537fdda14a6b2b982e6ff31bd1bd3a70685b8e79ac5c",
       "stderr": ""
     },
     {
@@ -4014,6 +4254,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-font-A",
+      "group": "text",
+      "reference_ink": 1920,
+      "score": 0.53125,
+      "output_ink": 1755,
+      "missing": 645,
+      "extra": 480,
+      "iou": 0.53125,
+      "precision": 0.7264957264957265,
+      "recall": 0.6640625,
+      "canvas_disagreement": 0.004507211538461538,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "41d46359e74c3786f611d43849a5c455f4a85bd3c0e16a476ef94b17154d4663",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-font-D",
       "group": "text",
@@ -4182,6 +4446,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-font-D",
+      "group": "text",
+      "reference_ink": 1808,
+      "score": 0.559580552907531,
+      "output_ink": 1464,
+      "missing": 634,
+      "extra": 290,
+      "iou": 0.559580552907531,
+      "precision": 0.8019125683060109,
+      "recall": 0.6493362831858407,
+      "canvas_disagreement": 0.003701923076923077,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "dd36264af87c05ea3aff6c7e90048190ead25c556cb23da7d963d10193d03968",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-fo-justify-0",
       "group": "layout",
@@ -4236,7 +4524,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41792522) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41939909) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4335,6 +4623,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-fo-justify-0",
+      "group": "layout",
+      "reference_ink": 1254,
+      "score": 0.7393397524071527,
+      "output_ink": 1275,
+      "missing": 179,
+      "extra": 200,
+      "iou": 0.7393397524071527,
+      "precision": 0.8431372549019608,
+      "recall": 0.8572567783094099,
+      "canvas_disagreement": 0.0015184294871794872,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b8627f31f4b64f9e67fade3aa75cbd1b39f8502ed0e3c15793ff6a8640f3840a",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-fo-justify-1",
       "group": "layout",
@@ -4389,7 +4701,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41792682) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41940041) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4488,6 +4800,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-fo-justify-1",
+      "group": "layout",
+      "reference_ink": 1254,
+      "score": 0.37895310796074155,
+      "output_ink": 1275,
+      "missing": 559,
+      "extra": 580,
+      "iou": 0.37895310796074155,
+      "precision": 0.5450980392156862,
+      "recall": 0.5542264752791068,
+      "canvas_disagreement": 0.004563301282051282,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b22139c1642b8c339f0fceac596d4c18629522247ff72ba0d4bbe17a5d669405",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-fo-justify-2",
       "group": "layout",
@@ -4542,7 +4878,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41792851) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41940424) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4638,6 +4974,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "e2d722f972156624ba08293646b2f8efc7e7fa0993a1a2b9905645fdee389202",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-fo-justify-2",
+      "group": "layout",
+      "reference_ink": 1254,
+      "score": 0.7393397524071527,
+      "output_ink": 1275,
+      "missing": 179,
+      "extra": 200,
+      "iou": 0.7393397524071527,
+      "precision": 0.8431372549019608,
+      "recall": 0.8572567783094099,
+      "canvas_disagreement": 0.0015184294871794872,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "2ab6daffb0d208a09002a73c61423a4e25486ee71c391c0e90ec3ddd9d36479e",
       "stderr": ""
     },
     {
@@ -4809,6 +5169,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-ft-baseline",
+      "group": "layout",
+      "reference_ink": 1254,
+      "score": 0.7393397524071527,
+      "output_ink": 1275,
+      "missing": 179,
+      "extra": 200,
+      "iou": 0.7393397524071527,
+      "precision": 0.8431372549019608,
+      "recall": 0.8572567783094099,
+      "canvas_disagreement": 0.0015184294871794872,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "327db395878fea854cddb4e2b43df91230a76f5968b1fb8c728e4a6f24d5fe87",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-layout-LH",
       "group": "layout",
@@ -4974,6 +5358,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c3fbda78a453e02c92e44913d432b47236ecebf26e40fe36ea1f7a81a751c11d",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-layout-LH",
+      "group": "layout",
+      "reference_ink": 709,
+      "score": 0.8342105263157895,
+      "output_ink": 685,
+      "missing": 75,
+      "extra": 51,
+      "iou": 0.8342105263157895,
+      "precision": 0.9255474452554745,
+      "recall": 0.8942172073342737,
+      "canvas_disagreement": 0.0005048076923076923,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "dd53804267ea68c8b2fd44b02efa6f609cb100f1f0e25bf8cecef13f1c94b5e1",
       "stderr": ""
     },
     {
@@ -5145,6 +5553,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-layout-LS",
+      "group": "layout",
+      "reference_ink": 709,
+      "score": 0.8342105263157895,
+      "output_ink": 685,
+      "missing": 75,
+      "extra": 51,
+      "iou": 0.8342105263157895,
+      "precision": 0.9255474452554745,
+      "recall": 0.8942172073342737,
+      "canvas_disagreement": 0.0005048076923076923,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "5ac8aa2faabc1385f6595beaf593c60eb23026130a0f6d8cb3e0c6665b96ecf8",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-layout-LT",
       "group": "layout",
@@ -5310,6 +5742,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "ae100fd57f215644c40a79b72eee46ce361d03ee3f414998f8848e365e6a3a8f",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-layout-LT",
+      "group": "layout",
+      "reference_ink": 709,
+      "score": 0.06493506493506493,
+      "output_ink": 685,
+      "missing": 624,
+      "extra": 600,
+      "iou": 0.06493506493506493,
+      "precision": 0.12408759124087591,
+      "recall": 0.11988716502115655,
+      "canvas_disagreement": 0.004903846153846154,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "86de8fb4e89ea9b7d59012be420d1e3416362339de2724d75b09208f0702cb27",
       "stderr": ""
     },
     {
@@ -5481,6 +5937,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-layout-PO",
+      "group": "layout",
+      "reference_ink": 709,
+      "score": 0.0,
+      "output_ink": 686,
+      "missing": 709,
+      "extra": 686,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "canvas_disagreement": 0.005588942307692308,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "9e76d465451196184d15f151349ee4c4d0bd7e88eba014799c0e46a9ac4a4e8a",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-layout-LR",
       "group": "layout",
@@ -5646,6 +6126,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "8702f3364569623321b5a0cfe438b337c691df19572e11ce72c1b0c901bc62bf",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-layout-LR",
+      "group": "layout",
+      "reference_ink": 709,
+      "score": 0.8289473684210527,
+      "output_ink": 820,
+      "missing": 16,
+      "extra": 127,
+      "iou": 0.8289473684210527,
+      "precision": 0.8451219512195122,
+      "recall": 0.9774330042313117,
+      "canvas_disagreement": 0.0005729166666666667,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b0b918a4287469f0fa3c36bfc46423a08f0f9c743b27925797b3089e32327277",
       "stderr": ""
     },
     {
@@ -5817,6 +6321,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-layout-FW",
+      "group": "layout",
+      "reference_ink": 709,
+      "score": 0.7658227848101266,
+      "output_ink": 686,
+      "missing": 104,
+      "extra": 81,
+      "iou": 0.7658227848101266,
+      "precision": 0.8819241982507289,
+      "recall": 0.8533145275035261,
+      "canvas_disagreement": 0.0007411858974358974,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "ef0a65126e92ce046b5f3d227471af2921a748803e125b14cddbd83935df99af",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-field-reverse",
       "group": "layout",
@@ -5982,6 +6510,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "b7051fe1690e3285ccaee50266022fa5c319968e2f269abb16d247c2e1c7397b",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-field-reverse",
+      "group": "layout",
+      "reference_ink": 22746,
+      "score": 0.9784018224831332,
+      "output_ink": 22413,
+      "missing": 413,
+      "extra": 80,
+      "iou": 0.9784018224831332,
+      "precision": 0.9964306429304421,
+      "recall": 0.9818429613998065,
+      "canvas_disagreement": 0.0019751602564102564,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "331b7a51ee8404d65836b08bab62221ad0207ba4d6e86e75ab2576231d7c49b8",
       "stderr": ""
     },
     {
@@ -6153,6 +6705,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-block-L",
+      "group": "text",
+      "reference_ink": 2692,
+      "score": 0.6747720364741642,
+      "output_ink": 2818,
+      "missing": 472,
+      "extra": 598,
+      "iou": 0.6747720364741642,
+      "precision": 0.7877927608232789,
+      "recall": 0.8246656760772659,
+      "canvas_disagreement": 0.004286858974358975,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "980b0cec939c1f2443b38c77964ba4c28237417d42e5fb8879dace71a287657e",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-block-C",
       "group": "text",
@@ -6318,6 +6894,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "0bf9fbead492619e13de1d4161d9fcd53d063190feea8d8d5ab093181edbacb0",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-block-C",
+      "group": "text",
+      "reference_ink": 2692,
+      "score": 0.7267314321529301,
+      "output_ink": 2818,
+      "missing": 373,
+      "extra": 499,
+      "iou": 0.7267314321529301,
+      "precision": 0.8229240596167494,
+      "recall": 0.861441307578009,
+      "canvas_disagreement": 0.0034935897435897437,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "14e436a3de515fe342a2ce3352d304a31493a5ef0a04bc83074c891062059e13",
       "stderr": ""
     },
     {
@@ -6489,6 +7089,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-block-R",
+      "group": "text",
+      "reference_ink": 2692,
+      "score": 0.410289224468902,
+      "output_ink": 2818,
+      "missing": 1089,
+      "extra": 1215,
+      "iou": 0.410289224468902,
+      "precision": 0.5688431511710433,
+      "recall": 0.5954680534918276,
+      "canvas_disagreement": 0.009230769230769232,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "54a8fe56a212097ed3599ac1cce8e87eab0ecb773cc3f2b213f6568e3a1b6e7e",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-block-J",
       "group": "text",
@@ -6654,6 +7278,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "15b64cf81f0d5098a49919a453721ed2493fd3fa71aae94fdd74ce736b1fdcd9",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-block-J",
+      "group": "text",
+      "reference_ink": 2692,
+      "score": 0.8238993710691824,
+      "output_ink": 2818,
+      "missing": 203,
+      "extra": 329,
+      "iou": 0.8238993710691824,
+      "precision": 0.8832505322924059,
+      "recall": 0.924591381872214,
+      "canvas_disagreement": 0.0021314102564102566,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "ce9bcc4de9d0356b0cad2ca544e3e1ffb755009e84555b7d5edececad7205471",
       "stderr": ""
     },
     {
@@ -6825,6 +7473,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-block-indent",
+      "group": "text",
+      "reference_ink": 2692,
+      "score": 0.6747720364741642,
+      "output_ink": 2818,
+      "missing": 472,
+      "extra": 598,
+      "iou": 0.6747720364741642,
+      "precision": 0.7877927608232789,
+      "recall": 0.8246656760772659,
+      "canvas_disagreement": 0.004286858974358975,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "8a1fc59a7af27a4d0b199fc80b2452fe29abfc18d155e26f3ab6d2f45476f964",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-block-explicit-break",
       "group": "text",
@@ -6990,6 +7662,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c4a90553e81d4ac7ee9fdd03edd639b16feb2d370a3c9033e022283a2fbdc1f5",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-block-explicit-break",
+      "group": "text",
+      "reference_ink": 1039,
+      "score": 0.7790994052676296,
+      "output_ink": 1055,
+      "missing": 122,
+      "extra": 138,
+      "iou": 0.7790994052676296,
+      "precision": 0.8691943127962085,
+      "recall": 0.8825794032723773,
+      "canvas_disagreement": 0.0010416666666666667,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "df1f171e9e5dee94ca3b2939b1c417c7a2dacd6818402e3e647fa23ff15571b1",
       "stderr": ""
     },
     {
@@ -7161,6 +7857,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-field-hex",
+      "group": "text",
+      "reference_ink": 709,
+      "score": 0.8342105263157895,
+      "output_ink": 685,
+      "missing": 75,
+      "extra": 51,
+      "iou": 0.8342105263157895,
+      "precision": 0.9255474452554745,
+      "recall": 0.8942172073342737,
+      "canvas_disagreement": 0.0005048076923076923,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "ec5f237e261c7b2254a5866fe2d156455a17cd4a4615ca44c91b68e98a24c667",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-variable-data",
       "group": "text",
@@ -7329,6 +8049,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-variable-data",
+      "group": "text",
+      "reference_ink": 709,
+      "score": 0.8342105263157895,
+      "output_ink": 685,
+      "missing": 75,
+      "extra": 51,
+      "iou": 0.8342105263157895,
+      "precision": 0.9255474452554745,
+      "recall": 0.8942172073342737,
+      "canvas_disagreement": 0.0005048076923076923,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "28069c18d977e86bd57a6583d7e1bea34aa1603d49b24d8fcabea0c3ef04fd29",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-encoding-0",
       "group": "text",
@@ -7497,6 +8241,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-encoding-0",
+      "group": "text",
+      "reference_ink": 1405,
+      "score": 0.8371786420566908,
+      "output_ink": 1382,
+      "missing": 135,
+      "extra": 112,
+      "iou": 0.8371786420566908,
+      "precision": 0.918958031837916,
+      "recall": 0.9039145907473309,
+      "canvas_disagreement": 0.0009895833333333334,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "9c0be18c447ff22bb528901d30a072589cdfbb60e7b14d274a682fa1f5923bdc",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-encoding-27",
       "group": "text",
@@ -7665,6 +8433,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-encoding-27",
+      "group": "text",
+      "reference_ink": 1405,
+      "score": 0.8371786420566908,
+      "output_ink": 1382,
+      "missing": 135,
+      "extra": 112,
+      "iou": 0.8371786420566908,
+      "precision": 0.918958031837916,
+      "recall": 0.9039145907473309,
+      "canvas_disagreement": 0.0009895833333333334,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "9c0be18c447ff22bb528901d30a072589cdfbb60e7b14d274a682fa1f5923bdc",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-encoding-28",
       "group": "text",
@@ -7830,6 +8622,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "8d07491e2ae055189cf235866d71b7102a008e07c7023172ee145ca16a9f4c2f",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-encoding-28",
+      "group": "text",
+      "reference_ink": 1405,
+      "score": 0.8371786420566908,
+      "output_ink": 1382,
+      "missing": 135,
+      "extra": 112,
+      "iou": 0.8371786420566908,
+      "precision": 0.918958031837916,
+      "recall": 0.9039145907473309,
+      "canvas_disagreement": 0.0009895833333333334,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "db5289a78dc3b52457ad5fa78948fb06e8b86a0ad5ab6a10923a50bc69a1c28f",
       "stderr": ""
     },
     {
@@ -8001,6 +8817,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-utf8-accent",
+      "group": "text",
+      "reference_ink": 655,
+      "score": 0.8234482758620689,
+      "output_ink": 667,
+      "missing": 58,
+      "extra": 70,
+      "iou": 0.8234482758620689,
+      "precision": 0.8950524737631185,
+      "recall": 0.9114503816793893,
+      "canvas_disagreement": 0.0005128205128205128,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "631c58a6c4a986db29c0ce68bd528184eaf96ce942fd79101b3a3d8948a6ae85",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-box-thickness-1",
       "group": "shapes",
@@ -8166,6 +9006,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "bde8433a7222c3fccb17bb06c402b62aa801b890c1bf180926b69fa759bcda08",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-box-thickness-1",
+      "group": "shapes",
+      "reference_ink": 316,
+      "score": 1.0,
+      "output_ink": 316,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "c79dc2974cc818b9b69c1952d357102a35025f5b206a5d1f58f59f777cd4df4c",
       "stderr": ""
     },
     {
@@ -8337,6 +9201,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-box-thickness-4",
+      "group": "shapes",
+      "reference_ink": 1216,
+      "score": 1.0,
+      "output_ink": 1216,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f446304621d958c1785f4de31b3a6aec8a3d8f7099ffbd71482e92527575aef5",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-box-thickness-60",
       "group": "shapes",
@@ -8502,6 +9390,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "34c9a2116bd04f2a1205144b5921db37c6e1bb8b6bf3e2062b4750798015fd47",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-box-thickness-60",
+      "group": "shapes",
+      "reference_ink": 6000,
+      "score": 1.0,
+      "output_ink": 6000,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "2b0eeb9ee82a205b4ea379342cddb84bfc90066dfc7d00bcf5b7b76437207380",
       "stderr": ""
     },
     {
@@ -8673,6 +9585,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-box-round",
+      "group": "shapes",
+      "reference_ink": 1164,
+      "score": 0.9304635761589404,
+      "output_ink": 1168,
+      "missing": 40,
+      "extra": 44,
+      "iou": 0.9304635761589404,
+      "precision": 0.9623287671232876,
+      "recall": 0.9656357388316151,
+      "canvas_disagreement": 0.0003365384615384615,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "868770c174ac4a21c9480771dfb7519dfba1659989bda3a75475a094b7b33b00",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-box-white",
       "group": "shapes",
@@ -8838,6 +9774,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "8f1c9ab5c14710160c300dbfa3f1d8957f793976834f777a01981a91b9bcd533",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-box-white",
+      "group": "shapes",
+      "reference_ink": 14784,
+      "score": 1.0,
+      "output_ink": 14784,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "e850235c46417be19f9f9353a507e2ff801933fe4f0e01e51a9bd753fa7b563c",
       "stderr": ""
     },
     {
@@ -9009,6 +9969,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-shape-GC-B",
+      "group": "shapes",
+      "reference_ink": 1034,
+      "score": 0.633147113594041,
+      "output_ink": 720,
+      "missing": 354,
+      "extra": 40,
+      "iou": 0.633147113594041,
+      "precision": 0.9444444444444444,
+      "recall": 0.6576402321083172,
+      "canvas_disagreement": 0.001578525641025641,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "1879117c99b89666a2df5523815db97eed32494581fa8df791cc34af958f8d69",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-shape-GE-B",
       "group": "shapes",
@@ -9174,6 +10158,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "30c6521238b0e0cca2453e7cbe308155d668317072a04c1280c254c6cc100045",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-shape-GE-B",
+      "group": "shapes",
+      "reference_ink": 1154,
+      "score": 0.5045454545454545,
+      "output_ink": 832,
+      "missing": 488,
+      "extra": 166,
+      "iou": 0.5045454545454545,
+      "precision": 0.8004807692307693,
+      "recall": 0.5771230502599654,
+      "canvas_disagreement": 0.0026201923076923078,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "9d9c8cea0989ab2116677d18e48265b13e77c1597185972f3d6d72866cc5581a",
       "stderr": ""
     },
     {
@@ -9345,6 +10353,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-shape-GD-R",
+      "group": "shapes",
+      "reference_ink": 180,
+      "score": 0.5,
+      "output_ink": 180,
+      "missing": 60,
+      "extra": 60,
+      "iou": 0.5,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "canvas_disagreement": 0.0004807692307692308,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "81d613ca7613f2bded9a4604325adcce600f9f4d9878a31f04952288855a8844",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-shape-GD-L",
       "group": "shapes",
@@ -9510,6 +10542,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "31050153949e5835debe958dcfe018b359f2ab91efa368d7f04ad7c98b28631e",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-shape-GD-L",
+      "group": "shapes",
+      "reference_ink": 180,
+      "score": 0.5,
+      "output_ink": 180,
+      "missing": 60,
+      "extra": 60,
+      "iou": 0.5,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "canvas_disagreement": 0.0004807692307692308,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "7ed3b466d15200c320221f7e6e0fff574367797ebb6bd5c5cce8f5298c9543ec",
       "stderr": ""
     },
     {
@@ -9681,6 +10737,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-graphic-hex",
+      "group": "graphics",
+      "reference_ink": 28,
+      "score": 1.0,
+      "output_ink": 28,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "94403df63d546ba5d500262e533210625bf50c544c5ecf3e7ca6c5f450ce8fec",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-graphic-binary",
       "group": "graphics",
@@ -9849,6 +10929,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-graphic-binary",
+      "group": "graphics",
+      "reference_ink": 16,
+      "score": 1.0,
+      "output_ink": 16,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "dd0a8539a6ed54a8e8cb578d276e3f0509ebe0c4544d76267caac20b095b1da7",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-graphic-B64",
       "group": "graphics",
@@ -9879,7 +10983,7 @@
       "reference_ink": 28,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41798902) panicked at src/main.rs:43:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41946040) panicked at src/main.rs:43:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -9999,6 +11103,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "e59289b7ba6d621de8e0fc9323345c7e5a181b271748bfec09bf57f24d5d9e5b",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-graphic-B64",
+      "group": "graphics",
+      "reference_ink": 28,
+      "score": 1.0,
+      "output_ink": 28,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "cc23d2f0f254cb03cdd164b6bf84543c11c1fa36fe02bd9f47e5fea52673afc9",
       "stderr": ""
     },
     {
@@ -10170,6 +11298,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-graphic-Z64",
+      "group": "graphics",
+      "reference_ink": 28,
+      "score": 1.0,
+      "output_ink": 28,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "480899d25a362a768f5736f43b59acd94da81526fe05c61e612f63b4c929b205",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-code39-ratio-2",
       "group": "barcode-arguments",
@@ -10338,6 +11490,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-code39-ratio-2",
+      "group": "barcode-arguments",
+      "reference_ink": 6720,
+      "score": 1.0,
+      "output_ink": 6720,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "ecddbd5ed1863217fa8ba0647358a72c505d97cd50d5600712e0807b18e1af28",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-code39-ratio-3",
       "group": "barcode-arguments",
@@ -10506,6 +11682,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-code39-ratio-3",
+      "group": "barcode-arguments",
+      "reference_ink": 8640,
+      "score": 1.0,
+      "output_ink": 8640,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "233621c6784478db6bf76a0e6929d50d6e011d9d6f751811de0f6b79635275b0",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-code39-check-N",
       "group": "barcode-arguments",
@@ -10671,6 +11871,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "d76bb54f72d58a81c5e6133bb9c9dec706caa342ad5106448cfd2344e79cb4ca",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-code39-check-N",
+      "group": "barcode-arguments",
+      "reference_ink": 8640,
+      "score": 1.0,
+      "output_ink": 8640,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "cf0b7b156433c33debfae5e0fdd110c2c2ffb0b8e4f2ac0265dd45987f6b927d",
       "stderr": ""
     },
     {
@@ -10842,6 +12066,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-code39-check-Y",
+      "group": "barcode-arguments",
+      "reference_ink": 9240,
+      "score": 1.0,
+      "output_ink": 9240,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "73c7043d4368e9a676c5675823270b229b0b8b8b1d602e6f827be5b3510368a2",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-code128-text-NN",
       "group": "barcode-arguments",
@@ -11007,6 +12255,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "3606ed561c1f349197e0870a45b8c79f9d16229d3a6ddc9be16f10b1670ac1b4",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-code128-text-NN",
+      "group": "barcode-arguments",
+      "reference_ink": 5520,
+      "score": 1.0,
+      "output_ink": 5520,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "41bc7d7da9981021708e3484595ca9031a56afdcb677dc3d5a0e9cb102c5a1b4",
       "stderr": ""
     },
     {
@@ -11178,6 +12450,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-code128-text-YN",
+      "group": "barcode-arguments",
+      "reference_ink": 5868,
+      "score": 0.9599127809459913,
+      "output_ink": 5817,
+      "missing": 145,
+      "extra": 94,
+      "iou": 0.9599127809459913,
+      "precision": 0.9838404675949802,
+      "recall": 0.9752897068847989,
+      "canvas_disagreement": 0.0009575320512820513,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "3034d2c1ee1f66e41cabba652115b136efe0de496faa2599561abe1e7cc92914",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-code128-text-YY",
       "group": "barcode-arguments",
@@ -11343,6 +12639,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "aa61f1b3eef31f88a823ad5c24b5fd9c4fc41d46efdaea0fafe1d217800c8e55",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-code128-text-YY",
+      "group": "barcode-arguments",
+      "reference_ink": 5868,
+      "score": 0.9599127809459913,
+      "output_ink": 5817,
+      "missing": 145,
+      "extra": 94,
+      "iou": 0.9599127809459913,
+      "precision": 0.9838404675949802,
+      "recall": 0.9752897068847989,
+      "canvas_disagreement": 0.0009575320512820513,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "d5895ec018adf33bbf4a1aaf058bf9d0a757fce821ce06ac450067c7a48143c0",
       "stderr": ""
     },
     {
@@ -11514,6 +12834,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-code128-rotation-R",
+      "group": "barcode-arguments",
+      "reference_ink": 3600,
+      "score": 1.0,
+      "output_ink": 3600,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "ad265be6311be49851f15f29e11b067049d91313e6f2c346ebdbb3e6c978d5ef",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-code128-rotation-I",
       "group": "barcode-arguments",
@@ -11679,6 +13023,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "9887756154efc8f8120d3c577e77b822fa83a96ce6508ef01b06925fd0d536c2",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-code128-rotation-I",
+      "group": "barcode-arguments",
+      "reference_ink": 3600,
+      "score": 1.0,
+      "output_ink": 3600,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "05fe12995dbcb50eca9045de463eeadce1fc4fc0f585671c129cd1b35cceb95e",
       "stderr": ""
     },
     {
@@ -11850,6 +13218,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-code128-rotation-B",
+      "group": "barcode-arguments",
+      "reference_ink": 3600,
+      "score": 1.0,
+      "output_ink": 3600,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "9d417a43786fdc691a547f744f82b0185d44e88a6913fbb0506ee8becdd8f672",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-code128-mode-N",
       "group": "barcode-arguments",
@@ -12015,6 +13407,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "7e414167c802ebf46cf342e16ef8f911c20784953ad94d037a8ae21b4f141f67",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-code128-mode-N",
+      "group": "barcode-arguments",
+      "reference_ink": 8400,
+      "score": 1.0,
+      "output_ink": 8400,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "628bc6750229c0dfe683f5af184ff817f342ea3a18e3dba6306f7efd715f2020",
       "stderr": ""
     },
     {
@@ -12186,6 +13602,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-code128-mode-A",
+      "group": "barcode-arguments",
+      "reference_ink": 4800,
+      "score": 1.0,
+      "output_ink": 4800,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "6024c1751d238578916b6a07e82dda13cb0ad771bb8f263ca2666cbd4574dce0",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-qr-model-1",
       "group": "barcode-arguments",
@@ -12354,6 +13794,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-qr-model-1",
+      "group": "barcode-arguments",
+      "reference_ink": 1989,
+      "score": 0.0,
+      "output_ink": 0,
+      "missing": 1989,
+      "extra": 0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "canvas_disagreement": 0.00796875,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "blank",
+      "raw_png_sha256": "5f6bbddc7263654b484e6466fd09fafb956a496ae12a3ea2b40a77fff43ea7a3",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-qr-model-2",
       "group": "barcode-arguments",
@@ -12522,6 +13986,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-qr-model-2",
+      "group": "barcode-arguments",
+      "reference_ink": 2160,
+      "score": 0.524644030668127,
+      "output_ink": 2016,
+      "missing": 723,
+      "extra": 579,
+      "iou": 0.524644030668127,
+      "precision": 0.7127976190476191,
+      "recall": 0.6652777777777777,
+      "canvas_disagreement": 0.005216346153846154,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "d5301a1c18cf0ee80e5c40a6519ca73e4e8d9a41b8a77ca62e2c840b89aebde6",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-qr-ec-L",
       "group": "barcode-arguments",
@@ -12687,6 +14175,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c72f96544537aa84b49dfd21fd34a2b413c86b9b0904a11e8c1b395fc2cbdd7f",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-qr-ec-L",
+      "group": "barcode-arguments",
+      "reference_ink": 2160,
+      "score": 0.524644030668127,
+      "output_ink": 2016,
+      "missing": 723,
+      "extra": 579,
+      "iou": 0.524644030668127,
+      "precision": 0.7127976190476191,
+      "recall": 0.6652777777777777,
+      "canvas_disagreement": 0.005216346153846154,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "d5301a1c18cf0ee80e5c40a6519ca73e4e8d9a41b8a77ca62e2c840b89aebde6",
       "stderr": ""
     },
     {
@@ -12858,6 +14370,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-qr-ec-M",
+      "group": "barcode-arguments",
+      "reference_ink": 2052,
+      "score": 0.49174917491749176,
+      "output_ink": 2016,
+      "missing": 711,
+      "extra": 675,
+      "iou": 0.49174917491749176,
+      "precision": 0.6651785714285714,
+      "recall": 0.6535087719298246,
+      "canvas_disagreement": 0.005552884615384616,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "a1f4038898250540828e7db2640a8886eef578ea815f59c9145fa6a748f64b5b",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-qr-ec-Q",
       "group": "barcode-arguments",
@@ -13023,6 +14559,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "08d105613fc6c10ba63fc63b8b7b36f28d481dadbe12a183bc4aa77fcd8dfe05",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-qr-ec-Q",
+      "group": "barcode-arguments",
+      "reference_ink": 2070,
+      "score": 0.51165371809101,
+      "output_ink": 2016,
+      "missing": 687,
+      "extra": 633,
+      "iou": 0.51165371809101,
+      "precision": 0.6860119047619048,
+      "recall": 0.6681159420289855,
+      "canvas_disagreement": 0.005288461538461539,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "860e60c99534137d74bf3cae16793b9d3312d954a1c66b5b5a6793c78521575b",
       "stderr": ""
     },
     {
@@ -13194,6 +14754,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-qr-ec-H",
+      "group": "barcode-arguments",
+      "reference_ink": 2016,
+      "score": 0.7055837563451777,
+      "output_ink": 2016,
+      "missing": 348,
+      "extra": 348,
+      "iou": 0.7055837563451777,
+      "precision": 0.8273809523809523,
+      "recall": 0.8273809523809523,
+      "canvas_disagreement": 0.0027884615384615383,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "8900fac0f2b7964d07f8ec9824f982c236c0de028499d02af7291b9dfa27c95d",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-qr-module-2",
       "group": "barcode-arguments",
@@ -13359,6 +14943,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "a6f6bc2178dc716baf62b83e556f9db454ea25940a96b7ae8ac14e65e0df7621",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-qr-module-2",
+      "group": "barcode-arguments",
+      "reference_ink": 960,
+      "score": 0.4800637958532695,
+      "output_ink": 896,
+      "missing": 358,
+      "extra": 294,
+      "iou": 0.4800637958532695,
+      "precision": 0.671875,
+      "recall": 0.6270833333333333,
+      "canvas_disagreement": 0.0026121794871794874,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "cef66eb3e1985c343a08a7b17774cd7decab6f47b9a397f65414f03354ad961b",
       "stderr": ""
     },
     {
@@ -13530,6 +15138,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-qr-module-5",
+      "group": "barcode-arguments",
+      "reference_ink": 6000,
+      "score": 0.5622895622895623,
+      "output_ink": 5600,
+      "missing": 1825,
+      "extra": 1425,
+      "iou": 0.5622895622895623,
+      "precision": 0.7455357142857143,
+      "recall": 0.6958333333333333,
+      "canvas_disagreement": 0.013020833333333334,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "c9ddd188583eebb1741347d867762f0a73b6979127868fe440acbcb3618353d5",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-qr-mask-0",
       "group": "barcode-arguments",
@@ -13695,6 +15327,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c72f96544537aa84b49dfd21fd34a2b413c86b9b0904a11e8c1b395fc2cbdd7f",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-qr-mask-0",
+      "group": "barcode-arguments",
+      "reference_ink": 2160,
+      "score": 0.524644030668127,
+      "output_ink": 2016,
+      "missing": 723,
+      "extra": 579,
+      "iou": 0.524644030668127,
+      "precision": 0.7127976190476191,
+      "recall": 0.6652777777777777,
+      "canvas_disagreement": 0.005216346153846154,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b8e9fa185104912bb4c08f6a631f9217f9114f738f7d7c21c22d6d80886d74a5",
       "stderr": ""
     },
     {
@@ -13866,6 +15522,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-qr-mask-3",
+      "group": "barcode-arguments",
+      "reference_ink": 2160,
+      "score": 0.524644030668127,
+      "output_ink": 2016,
+      "missing": 723,
+      "extra": 579,
+      "iou": 0.524644030668127,
+      "precision": 0.7127976190476191,
+      "recall": 0.6652777777777777,
+      "canvas_disagreement": 0.005216346153846154,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b8e9fa185104912bb4c08f6a631f9217f9114f738f7d7c21c22d6d80886d74a5",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-qr-mask-7",
       "group": "barcode-arguments",
@@ -14031,6 +15711,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "d858fe45490ff70711022ae96599cf430c0485f818ce7a7fcd0d7a08ec944f3b",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-qr-mask-7",
+      "group": "barcode-arguments",
+      "reference_ink": 2160,
+      "score": 0.524644030668127,
+      "output_ink": 2016,
+      "missing": 723,
+      "extra": 579,
+      "iou": 0.524644030668127,
+      "precision": 0.7127976190476191,
+      "recall": 0.6652777777777777,
+      "canvas_disagreement": 0.005216346153846154,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "8f06a8bfbf8404a79c2b5af15c061692f822cbfa2def6575694bde12be67fde2",
       "stderr": ""
     },
     {
@@ -14202,6 +15906,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "argument-datamatrix-module-2",
+      "group": "barcode-arguments",
+      "reference_ink": 404,
+      "score": 1.0,
+      "output_ink": 404,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f2ccc523384e000a95980a328477357f04aab8634530a8110d1c2ef475854ead",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "argument-datamatrix-module-4",
       "group": "barcode-arguments",
@@ -14367,6 +16095,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "01fd0b27072f208f1b2ba7572835a9970b8a1da0806cd8039544b18d38e10c4d",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "argument-datamatrix-module-4",
+      "group": "barcode-arguments",
+      "reference_ink": 1616,
+      "score": 1.0,
+      "output_ink": 1616,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "d07b639057626d6884eef14335cbfd3f169cd6ea54ee4594d03fa21fc30aa8b9",
       "stderr": ""
     },
     {
@@ -14538,6 +16290,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-aztec",
+      "group": "barcode-formats",
+      "reference_ink": 1920,
+      "score": 1.0,
+      "output_ink": 1920,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "74cd3b8853e8dbb32ed83e3fbc99d9c22e6b928d0e40922cfaae9a73e6c99c8e",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-aztec_alias",
       "group": "barcode-formats",
@@ -14703,6 +16479,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "2ff6af3e011f032ec7f4f8b0fe165753cd6ce338c62edf6971397932fd619a9a",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-aztec_alias",
+      "group": "barcode-formats",
+      "reference_ink": 1920,
+      "score": 1.0,
+      "output_ink": 1920,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "721e3ec2809a699b9676b531db384c60dd5dbbb90b2d4653dd287dc559ef2c24",
       "stderr": ""
     },
     {
@@ -14874,6 +16674,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-aztec_rune",
+      "group": "barcode-formats",
+      "reference_ink": 1072,
+      "score": 1.0,
+      "output_ink": 1072,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "40c8ed3844aa5cd2933328078f198fdd65c0ce495e319151cb128578a2120249",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-codabar",
       "group": "barcode-formats",
@@ -15042,6 +16866,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-codabar",
+      "group": "barcode-formats",
+      "reference_ink": 6400,
+      "score": 1.0,
+      "output_ink": 6400,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f631c167c4395a4f22b5c8dd1d872b71fa08e558c9a430e6d5d2dc720d02fec3",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-codablock_a",
       "group": "barcode-formats",
@@ -15096,7 +16944,7 @@
       "reference_ink": 5260,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41804967) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41956948) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -15195,6 +17043,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-codablock_a",
+      "group": "barcode-formats",
+      "reference_ink": 5260,
+      "score": 0.05376542073283005,
+      "output_ink": 463,
+      "missing": 4968,
+      "extra": 171,
+      "iou": 0.05376542073283005,
+      "precision": 0.6306695464362851,
+      "recall": 0.05551330798479087,
+      "canvas_disagreement": 0.005071168056081849,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "5e987444f21fcb469c651b5da165e6fa16bc320e2c134941a2a8c177961038f0",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-codablock_e",
       "group": "barcode-formats",
@@ -15249,7 +17121,7 @@
       "reference_ink": 4092,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41805218) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41957237) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -15348,6 +17220,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-codablock_e",
+      "group": "barcode-formats",
+      "reference_ink": 4092,
+      "score": 0.11804460464068484,
+      "output_ink": 871,
+      "missing": 3568,
+      "extra": 347,
+      "iou": 0.11804460464068484,
+      "precision": 0.6016073478760046,
+      "recall": 0.12805474095796676,
+      "canvas_disagreement": 0.003863324175824176,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "64a9643174673c9f599b78b1becfe1d94ce2b700df422afe9129d695de03fc7c",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-codablock_f",
       "group": "barcode-formats",
@@ -15402,7 +17298,7 @@
       "reference_ink": 4124,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41805353) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41957510) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -15498,6 +17394,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "61e0e5516efebb2bfd6b673e2b5a5e4103a12ef5d818eba079e47274397855d0",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-codablock_f",
+      "group": "barcode-formats",
+      "reference_ink": 4124,
+      "score": 0.11,
+      "output_ink": 871,
+      "missing": 3629,
+      "extra": 376,
+      "iou": 0.11,
+      "precision": 0.5683122847301951,
+      "recall": 0.12002909796314258,
+      "canvas_disagreement": 0.003952136225843122,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "64a9643174673c9f599b78b1becfe1d94ce2b700df422afe9129d695de03fc7c",
       "stderr": ""
     },
     {
@@ -15669,6 +17589,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-code11",
+      "group": "barcode-formats",
+      "reference_ink": 8480,
+      "score": 0.4246575342465753,
+      "output_ink": 8160,
+      "missing": 3520,
+      "extra": 3200,
+      "iou": 0.4246575342465753,
+      "precision": 0.6078431372549019,
+      "recall": 0.5849056603773585,
+      "canvas_disagreement": 0.006631299734748011,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "ef87840b996c2eee6bdcd5dd248da29ca0b0a11921243d1e1b138b952ae6d859",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-code128",
       "group": "barcode-formats",
@@ -15834,6 +17778,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c1217d35ec597477f5bb7750f9170beffc601bb64487fddbffd50f805c2b9bde",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-code128",
+      "group": "barcode-formats",
+      "reference_ink": 8320,
+      "score": 1.0,
+      "output_ink": 8320,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "4cc65aacbc2dbfba157b5f946a7c75f4bc2234a009c3a55a675b66ad907e9928",
       "stderr": ""
     },
     {
@@ -16005,6 +17973,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-code39",
+      "group": "barcode-formats",
+      "reference_ink": 8960,
+      "score": 1.0,
+      "output_ink": 8960,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "298bfb9f953e7a7f6fa5e61109f1ac015faa0913540083e23e75ff5959e60b3c",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-code49",
       "group": "barcode-formats",
@@ -16170,6 +18162,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "44f37d24b356e1e0a7abd1119319a25d5f32800d79c37fdd5b89d19d23460a0b",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-code49",
+      "group": "barcode-formats",
+      "reference_ink": 5728,
+      "score": 0.05838011226944667,
+      "output_ink": 871,
+      "missing": 5364,
+      "extra": 507,
+      "iou": 0.05838011226944667,
+      "precision": 0.417910447761194,
+      "recall": 0.06354748603351955,
+      "canvas_disagreement": 0.005793506062902615,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "2ae68084ea6044a40ca814adad55400ceb51b7546b7f814b70eddfa82308ca6b",
       "stderr": ""
     },
     {
@@ -16341,6 +18357,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-code93",
+      "group": "barcode-formats",
+      "reference_ink": 7840,
+      "score": 1.0,
+      "output_ink": 7840,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "57f558d7325ce968dc37883e34780e2fd9ffabf079e8117997fd1fb60ee19ae0",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-composite_a",
       "group": "barcode-formats",
@@ -16506,6 +18546,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "7b009ab036ba151df699cafaddedbb46ffad932e27091fdd85865523c772a5a0",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-composite_a",
+      "group": "barcode-formats",
+      "reference_ink": 28388,
+      "score": 0.9516018149319401,
+      "output_ink": 28388,
+      "missing": 704,
+      "extra": 704,
+      "iou": 0.9516018149319401,
+      "precision": 0.9752007890658024,
+      "recall": 0.9752007890658024,
+      "canvas_disagreement": 0.0013894151825186308,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "7c5faf2e9ccf1ef144a6a971cb48f2599aefa0c69de25a079865994fa6249984",
       "stderr": ""
     },
     {
@@ -16677,6 +18741,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-composite_b",
+      "group": "barcode-formats",
+      "reference_ink": 33116,
+      "score": 0.8153711215875452,
+      "output_ink": 33116,
+      "missing": 3368,
+      "extra": 3368,
+      "iou": 0.8153711215875452,
+      "precision": 0.8982968957603575,
+      "recall": 0.8982968957603575,
+      "canvas_disagreement": 0.006647088543640268,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f7438a0995e0685f4cd297e696d99b4e00803d5f159f00d8ae89e730da6329af",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-composite_c",
       "group": "barcode-formats",
@@ -16842,6 +18930,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "f555b40d8a5f3c32ce8b5843b5739f532742dd14b6e98c725fd47a35e2a477aa",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-composite_c",
+      "group": "barcode-formats",
+      "reference_ink": 28752,
+      "score": 1.0,
+      "output_ink": 28752,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "c9ae9dcb60882f403996690b70d228eee70b111f73cd2f1638945e869b2e6c3d",
       "stderr": ""
     },
     {
@@ -17013,6 +19125,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-data_matrix",
+      "group": "barcode-formats",
+      "reference_ink": 2832,
+      "score": 0.6473429951690821,
+      "output_ink": 2624,
+      "missing": 688,
+      "extra": 480,
+      "iou": 0.6473429951690821,
+      "precision": 0.8170731707317073,
+      "recall": 0.7570621468926554,
+      "canvas_disagreement": 0.0011525830491347733,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "99ab4ab32ead6380a10f1f05f8e20fb9ef5c97b24d81f878a38d49f45f0eb96b",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-data_matrix_rectangular",
       "group": "barcode-formats",
@@ -17178,6 +19314,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "d86cdaedc0c46cb58430b51f7dcc314dc28131d620c4c9912495e5dd488cde0f",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-data_matrix_rectangular",
+      "group": "barcode-formats",
+      "reference_ink": 2304,
+      "score": 1.0,
+      "output_ink": 2304,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "34bd6f22a73136506ab1e9057dbe0b2e3f75d6ed29ca1a021e988ff4bab51df9",
       "stderr": ""
     },
     {
@@ -17349,6 +19509,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-databar_ean13",
+      "group": "barcode-formats",
+      "reference_ink": 14504,
+      "score": 1.0,
+      "output_ink": 14504,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "eabcb9b3ea1897c459798e68d4cd315ed2bdb7bdd7fe337ba6f99007e3b604d9",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-databar_ean8",
       "group": "barcode-formats",
@@ -17514,6 +19698,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "f66b88d41d446d0f57f437e07e5da4cc76c1f073311aa82d9b199fefdac9f912",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-databar_ean8",
+      "group": "barcode-formats",
+      "reference_ink": 7680,
+      "score": 1.0,
+      "output_ink": 7680,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b5702bec5155f9c70753057bc5b6ec29b3196696c4cbbefa42fcc7bfa19b287f",
       "stderr": ""
     },
     {
@@ -17685,6 +19893,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-databar_expanded",
+      "group": "barcode-formats",
+      "reference_ink": 9656,
+      "score": 1.0,
+      "output_ink": 9656,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f4bfaed5e11cf19f852419f7b8a2690083bfe57c319e3e07359db2ced33a17cd",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-databar_expanded_stacked",
       "group": "barcode-formats",
@@ -17850,6 +20082,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c11fef048bceaf8ad803276aff04e52320ccb8c5e542f809ca74834d72f86252",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-databar_expanded_stacked",
+      "group": "barcode-formats",
+      "reference_ink": 10780,
+      "score": 1.0,
+      "output_ink": 10780,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b26352fbc39e39b630a00bb79ed31271f876c83f98bec26f33275de006555f57",
       "stderr": ""
     },
     {
@@ -18021,6 +20277,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-databar_limited",
+      "group": "barcode-formats",
+      "reference_ink": 1480,
+      "score": 1.0,
+      "output_ink": 1480,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "bb858d3ee3aaa21d5f8bff7c408142860928c72ce1058012c23751e0326e2c5d",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-databar_omni",
       "group": "barcode-formats",
@@ -18186,6 +20466,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "5847ca2a33f5cefca3d334d56ee7b2f1bc291ea54ccd69623fbe4e1ec7fe99cf",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-databar_omni",
+      "group": "barcode-formats",
+      "reference_ink": 5940,
+      "score": 1.0,
+      "output_ink": 5940,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "e1eabef381a124817f82e6e0074edf68b6794be7dc162fa3341bd7ca5c30e7c8",
       "stderr": ""
     },
     {
@@ -18357,6 +20661,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-databar_stacked",
+      "group": "barcode-formats",
+      "reference_ink": 1196,
+      "score": 1.0,
+      "output_ink": 1196,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "5fa6d73f045a2c08caa9a3c2ad2f5db9c0ee44bf78ced0dd50785505080fdc84",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-databar_stacked_omni",
       "group": "barcode-formats",
@@ -18522,6 +20850,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "5588e2962e1067f065c7df9290860d54cd92249f44881f34ba34affe963aaef5",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-databar_stacked_omni",
+      "group": "barcode-formats",
+      "reference_ink": 6448,
+      "score": 1.0,
+      "output_ink": 6448,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "fd140ee98d183051a9af8e8ac3d065c17952f47764c9752b5275712afdd0ae90",
       "stderr": ""
     },
     {
@@ -18693,6 +21045,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-databar_truncated",
+      "group": "barcode-formats",
+      "reference_ink": 2340,
+      "score": 1.0,
+      "output_ink": 2340,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f1e7a2457aa396cf8a67bd7104d5e8486fde69a9d5b169a9b25ee5ff5231476f",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-databar_upca",
       "group": "barcode-formats",
@@ -18858,6 +21234,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "328ff60901cbf642d8c2d8393143f28768b85d2e637c06a60b5a7cb19732a29d",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-databar_upca",
+      "group": "barcode-formats",
+      "reference_ink": 15392,
+      "score": 1.0,
+      "output_ink": 15392,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "1e966a2c9ad260447b2c30a049eba4e4bb2c651a0da47c33a81318e7ae8902c9",
       "stderr": ""
     },
     {
@@ -19029,6 +21429,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-databar_upce",
+      "group": "barcode-formats",
+      "reference_ink": 0,
+      "score": null,
+      "output_ink": 0,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "blank",
+      "raw_png_sha256": "64c231e5d85333fbbc84a1e2f5b9b633cb710dada7869b36777064d2b84a8170",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-ean13",
       "group": "barcode-formats",
@@ -19194,6 +21618,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c0e2fadf4dd378d8f9030aec8ace9ea0e6a0d17ae1840fa43095e25621a5bec1",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-ean13",
+      "group": "barcode-formats",
+      "reference_ink": 7996,
+      "score": 1.0,
+      "output_ink": 7996,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "56fb9421dfb760868004c99599150433f1a3f98d6ddaa111babe2fd2db3b68d5",
       "stderr": ""
     },
     {
@@ -19365,6 +21813,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-ean8",
+      "group": "barcode-formats",
+      "reference_ink": 5276,
+      "score": 1.0,
+      "output_ink": 5276,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "c7f846f0cea7b079b2b156534eaccdcc17bb1c5551321424b69c8a05549e63b8",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-extension2",
       "group": "barcode-formats",
@@ -19530,6 +22002,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "2cd116a639d4b21fcc318f92878c44752ce4482ea8141210de1cd5c54da426cf",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-extension2",
+      "group": "barcode-formats",
+      "reference_ink": 1600,
+      "score": 1.0,
+      "output_ink": 1600,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "00087708a92b4593fe2066f4b9526774f23df1c46a1c47af777f66ad61046b7d",
       "stderr": ""
     },
     {
@@ -19701,6 +22197,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-extension5",
+      "group": "barcode-formats",
+      "reference_ink": 4160,
+      "score": 1.0,
+      "output_ink": 4160,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "3fd1df3829677cb0ef48f3e89eb31c7c6f0be1a07fe83730ae3439e83c70a65c",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-industrial2of5",
       "group": "barcode-formats",
@@ -19866,6 +22386,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "554a77583e01ed9c567b39d68a91ce67b83f9476d47a9fef4f0e4f200200dd5d",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-industrial2of5",
+      "group": "barcode-formats",
+      "reference_ink": 10560,
+      "score": 1.0,
+      "output_ink": 10560,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "9bc7718c4b88d767b263f073877c0a30cc4600a79f8a9cdf21a10ea53b7e2475",
       "stderr": ""
     },
     {
@@ -20037,6 +22581,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-intelligent_mail",
+      "group": "barcode-formats",
+      "reference_ink": 7176,
+      "score": 0.9827201783723523,
+      "output_ink": 7052,
+      "missing": 124,
+      "extra": 0,
+      "iou": 0.9827201783723523,
+      "precision": 1.0,
+      "recall": 0.9827201783723523,
+      "canvas_disagreement": 0.00012236326891499306,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "34879d68da19f594e2439a550f7677e9e079dca61e9bb8e9ec6b1921e28b00fe",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-interleaved2of5",
       "group": "barcode-formats",
@@ -20202,6 +22770,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "365f96e830fe461467cecf934e43b0cba35188096ca7636a69b587890a5d26e3",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-interleaved2of5",
+      "group": "barcode-formats",
+      "reference_ink": 5280,
+      "score": 1.0,
+      "output_ink": 5280,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "8f838c14509c6dfc389bd77aa3189f18d7f758bab868971a74425f2684d69d0c",
       "stderr": ""
     },
     {
@@ -20373,6 +22965,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-logmars",
+      "group": "barcode-formats",
+      "reference_ink": 11680,
+      "score": 0.9771050623251081,
+      "output_ink": 11636,
+      "missing": 157,
+      "extra": 113,
+      "iou": 0.9771050623251081,
+      "precision": 0.9902887590237195,
+      "recall": 0.9865582191780822,
+      "canvas_disagreement": 0.0002664361500568397,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "9ab71e3c862d19f588208936fc3d1352733cd0407234359e1ed312eb87925cf0",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-maxicode2",
       "group": "barcode-formats",
@@ -20403,7 +23019,7 @@
       "reference_ink": 12540,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41810651) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41965197) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20526,6 +23142,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-maxicode2",
+      "group": "barcode-formats",
+      "reference_ink": 12540,
+      "score": 0.1874150320450573,
+      "output_ink": 11916,
+      "missing": 8680,
+      "extra": 8056,
+      "iou": 0.1874150320450573,
+      "precision": 0.3239342061094327,
+      "recall": 0.3078149920255183,
+      "canvas_disagreement": 0.016515094101300996,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "02c7df9fe7ac0912358e9ef8dcfe634c9b9f75a25c7c98d306482f30109c486f",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-maxicode3",
       "group": "barcode-formats",
@@ -20556,7 +23196,7 @@
       "reference_ink": 12840,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41810800) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41965360) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -20676,6 +23316,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "9267406a93339c15101b48fb1a9dde1500a04bbe192d4877a417e8163975997a",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-maxicode3",
+      "group": "barcode-formats",
+      "reference_ink": 12840,
+      "score": 0.19495325319595497,
+      "output_ink": 12211,
+      "missing": 8753,
+      "extra": 8124,
+      "iou": 0.19495325319595497,
+      "precision": 0.3346982229137663,
+      "recall": 0.31830218068535826,
+      "canvas_disagreement": 0.016654232979664015,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "2afb268df8cc40ffc4d8ce6a0ced8a27a7d9fe30a4ea89ece751eccf5a0e71f0",
       "stderr": ""
     },
     {
@@ -20847,6 +23511,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-maxicode4",
+      "group": "barcode-formats",
+      "reference_ink": 13140,
+      "score": 0.18301596908608408,
+      "output_ink": 12270,
+      "missing": 9209,
+      "extra": 8339,
+      "iou": 0.18301596908608408,
+      "precision": 0.3203748981255094,
+      "recall": 0.29916286149162863,
+      "canvas_disagreement": 0.01731637615258305,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "1940c7fd29b0c281b38d0eb9c80de15dd28503eea40dc9201958b70d4496618b",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-maxicode5",
       "group": "barcode-formats",
@@ -20877,7 +23565,7 @@
       "reference_ink": 2010,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41812321) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41965662) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -21000,6 +23688,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-maxicode5",
+      "group": "barcode-formats",
+      "reference_ink": 2010,
+      "score": 0.05469212551805802,
+      "output_ink": 12241,
+      "missing": 1271,
+      "extra": 11502,
+      "iou": 0.05469212551805802,
+      "precision": 0.060370884731639575,
+      "recall": 0.36766169154228856,
+      "canvas_disagreement": 0.01260440349880005,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "6b686fded62dc08935f7fa545c66f1d25923f7fd41be3e26d19694fc0bea70ef",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-maxicode6",
       "group": "barcode-formats",
@@ -21030,7 +23742,7 @@
       "reference_ink": 13200,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41814599) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41965915) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -21150,6 +23862,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "c8db6f2f18b5776d3fc98e7ae85fe1a375289701b2145ab44f6bb096156f7684",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-maxicode6",
+      "group": "barcode-formats",
+      "reference_ink": 13200,
+      "score": 0.1806514840395744,
+      "output_ink": 12099,
+      "missing": 9329,
+      "extra": 8228,
+      "iou": 0.1806514840395744,
+      "precision": 0.3199437970080172,
+      "recall": 0.2932575757575758,
+      "canvas_disagreement": 0.017325257357584944,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "2a23c69c873ecf46e7557932685a4d9a32bfbe5e1dbd04b05c647450434d328b",
       "stderr": ""
     },
     {
@@ -21321,6 +24057,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-micropdf417_1",
+      "group": "barcode-formats",
+      "reference_ink": 1848,
+      "score": 0.7727272727272727,
+      "output_ink": 1896,
+      "missing": 216,
+      "extra": 264,
+      "iou": 0.7727272727272727,
+      "precision": 0.8607594936708861,
+      "recall": 0.8831168831168831,
+      "canvas_disagreement": 0.00047366426676771507,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "a755af1e3eefe6cdc0fee753e798941c753a67a46939757e4b6e232fe812a438",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-micropdf417_3",
       "group": "barcode-formats",
@@ -21486,6 +24246,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "abd5922d66178815d4076b32f7560412ffbf9d90bd51f6d12fb6bb656f88cd5a",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-micropdf417_3",
+      "group": "barcode-formats",
+      "reference_ink": 2112,
+      "score": 0.6752411575562701,
+      "output_ink": 2056,
+      "missing": 432,
+      "extra": 376,
+      "iou": 0.6752411575562701,
+      "precision": 0.8171206225680934,
+      "recall": 0.7954545454545454,
+      "canvas_disagreement": 0.000797334849058987,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "1e115bccbc2a6cce6191af1c527c7a387e36ec54dbe3becb86d7a2f310f3e1db",
       "stderr": ""
     },
     {
@@ -21657,6 +24441,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-micropdf417_4",
+      "group": "barcode-formats",
+      "reference_ink": 2552,
+      "score": 0.6509186351706037,
+      "output_ink": 2480,
+      "missing": 568,
+      "extra": 496,
+      "iou": 0.6509186351706037,
+      "precision": 0.8,
+      "recall": 0.7774294670846394,
+      "canvas_disagreement": 0.0010499557913351016,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "55634324577be8f7c45c5eb7e064bf5dc945c890140088e320b469f47373af34",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-msi_a",
       "group": "barcode-formats",
@@ -21822,6 +24630,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "2be4cee60708b1ca9777ba45a1d344d9712588b7947592280afddba91e70f385",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-msi_a",
+      "group": "barcode-formats",
+      "reference_ink": 7040,
+      "score": 1.0,
+      "output_ink": 7040,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "c3cc2af8cf75c9d82736b71e3a38992790ec18002b71e0298a6382655c9d8847",
       "stderr": ""
     },
     {
@@ -21993,6 +24825,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-msi_b",
+      "group": "barcode-formats",
+      "reference_ink": 7840,
+      "score": 1.0,
+      "output_ink": 7840,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "4f4fa3ad5defc2cf52dace8683e9430125a121d5ebb934806c2ba096105d39cb",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-msi_c",
       "group": "barcode-formats",
@@ -22161,6 +25017,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-msi_c",
+      "group": "barcode-formats",
+      "reference_ink": 8640,
+      "score": 1.0,
+      "output_ink": 8640,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "050ae316f43d320c8446328d3a27769a9271dddb525e27da125332a3d0d99f27",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-msi_d",
       "group": "barcode-formats",
@@ -22326,6 +25206,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "e1d886675327f3cc2378b08c63db66a333fefa4bf046602a2a6adb21202b9c92",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-msi_d",
+      "group": "barcode-formats",
+      "reference_ink": 8640,
+      "score": 1.0,
+      "output_ink": 8640,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "4184ea5b5b28dfbd4ab56862fc505a3628f0d72b18eaee7e5266c83eba1b069f",
       "stderr": ""
     },
     {
@@ -22497,6 +25401,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-pdf417",
+      "group": "barcode-formats",
+      "reference_ink": 4488,
+      "score": 0.7593457943925234,
+      "output_ink": 4548,
+      "missing": 588,
+      "extra": 648,
+      "iou": 0.7593457943925234,
+      "precision": 0.8575197889182058,
+      "recall": 0.8689839572192514,
+      "canvas_disagreement": 0.0012196854869268663,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "3dfa331353d7bf1ea329229d6504aee9b20b45ecf6c55aaa27b54c8bf3c46d66",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-pdf417_truncated",
       "group": "barcode-formats",
@@ -22662,6 +25590,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "3f7e3780150b7344c905a6f9cabdf88015de215af772768f111db2162d88b2cf",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-pdf417_truncated",
+      "group": "barcode-formats",
+      "reference_ink": 3276,
+      "score": 0.6850152905198776,
+      "output_ink": 3336,
+      "missing": 588,
+      "extra": 648,
+      "iou": 0.6850152905198776,
+      "precision": 0.8057553956834532,
+      "recall": 0.8205128205128205,
+      "canvas_disagreement": 0.0012196854869268663,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f2e187436a570c9096a3f287be73c4ce1f0c15f96703a5b2bee5707431b4e19c",
       "stderr": ""
     },
     {
@@ -22833,6 +25785,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-planet",
+      "group": "barcode-formats",
+      "reference_ink": 7616,
+      "score": 1.0,
+      "output_ink": 7616,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "7526ef7fba293af719be3e88886c377308e734d8ffd7a47f9522d32364d8ec90",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-plessey",
       "group": "barcode-formats",
@@ -22998,6 +25974,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "5ec8c6623f6491edda8db0df140119ded05ecd4e042ad2e95e0faefa1affd5b3",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-plessey",
+      "group": "barcode-formats",
+      "reference_ink": 9920,
+      "score": 1.0,
+      "output_ink": 9920,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "39acd76b893e3107722a921c3a9ec58f6062fa1efea31029b3a0c07a9d5452be",
       "stderr": ""
     },
     {
@@ -23169,6 +26169,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-postal_planet",
+      "group": "barcode-formats",
+      "reference_ink": 7616,
+      "score": 1.0,
+      "output_ink": 7616,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "bbaef718d992fad5d047ce6d18ffa240cf528a3b07e27b97246d53921fbefbd4",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-postnet",
       "group": "barcode-formats",
@@ -23334,6 +26358,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "9313bfb3e09f9909d157acbf52721ceecfb4534c1efc9163270a0eb4d04f06e8",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-postnet",
+      "group": "barcode-formats",
+      "reference_ink": 5440,
+      "score": 1.0,
+      "output_ink": 5440,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "d1a6ab0a455501db39725686bdbd9aaa375ba0c99b310794f37438e2521ad0c6",
       "stderr": ""
     },
     {
@@ -23505,6 +26553,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-qr",
+      "group": "barcode-formats",
+      "reference_ink": 3680,
+      "score": 0.5863247863247864,
+      "output_ink": 3744,
+      "missing": 936,
+      "extra": 1000,
+      "iou": 0.5863247863247864,
+      "precision": 0.7329059829059829,
+      "recall": 0.7456521739130435,
+      "canvas_disagreement": 0.0019104458759631173,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "fc2487d1a203a16853ad7a8b923e4a61e052961dee9e4c4e61b6fff203e28e34",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-standard2of5",
       "group": "barcode-formats",
@@ -23670,6 +26742,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "554a77583e01ed9c567b39d68a91ce67b83f9476d47a9fef4f0e4f200200dd5d",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-standard2of5",
+      "group": "barcode-formats",
+      "reference_ink": 9760,
+      "score": 1.0,
+      "output_ink": 9760,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b53b4829de1b3c887d23b4757c0dd8ce9f194a065bfe58786583fd243b88914c",
       "stderr": ""
     },
     {
@@ -23841,6 +26937,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-tlc39_linear",
+      "group": "barcode-formats",
+      "reference_ink": 8960,
+      "score": 0.02031063321385902,
+      "output_ink": 434,
+      "missing": 8773,
+      "extra": 247,
+      "iou": 0.02031063321385902,
+      "precision": 0.4308755760368664,
+      "recall": 0.020870535714285713,
+      "canvas_disagreement": 0.00890094101300998,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "b46da4b79239280fa58592937b7eced3f829447d1f1777b352c1cc707ca4d525",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-tlc39_linked",
       "group": "barcode-formats",
@@ -24006,6 +27126,30 @@
       ],
       "status": "rendered",
       "raw_png_sha256": "e83213f0e72133b0166b6712d8789084983701e6d04cd665774c0bd9273ec869",
+      "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-tlc39_linked",
+      "group": "barcode-formats",
+      "reference_ink": 13052,
+      "score": 0.05262011903033822,
+      "output_ink": 1451,
+      "missing": 12327,
+      "extra": 726,
+      "iou": 0.05262011903033822,
+      "precision": 0.4996554100620262,
+      "recall": 0.05554704259883543,
+      "canvas_disagreement": 0.01288070765441455,
+      "dimensions_match": true,
+      "ink_exact": false,
+      "exact": false,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "1cd87ab067f033718bc7c87ea9053491aff070604c6c84a40d24a37ae30f493e",
       "stderr": ""
     },
     {
@@ -24177,6 +27321,30 @@
       "stderr": ""
     },
     {
+      "library": "labelary",
+      "case": "barcode-upca",
+      "group": "barcode-formats",
+      "reference_ink": 8658,
+      "score": 1.0,
+      "output_ink": 8658,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "f50ad6bc388dd25efb109c73b35aa791f673898d9b581a35b2da8f4552c8dadd",
+      "stderr": ""
+    },
+    {
       "library": "codyps-zpl",
       "case": "barcode-upce",
       "group": "barcode-formats",
@@ -24231,7 +27399,7 @@
       "reference_ink": 4610,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41850678) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (41969286) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -24328,6 +27496,30 @@
       "status": "rendered",
       "raw_png_sha256": "64dbb091309428103efa66ef348541478a1f54ee6e7628c0bfeb252d4ee62de6",
       "stderr": ""
+    },
+    {
+      "library": "labelary",
+      "case": "barcode-upce",
+      "group": "barcode-formats",
+      "reference_ink": 4610,
+      "score": 1.0,
+      "output_ink": 4610,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "6ec52bb205d6b91db345bb0941dbb0ec5d8d3bb8a4c0d4ed757f795963d4edcd",
+      "stderr": ""
     }
   ],
   "adapters": {
@@ -24419,6 +27611,24 @@
       {
         "name": "sources.lock.json",
         "sha256": "605dd78411a73175f731eafd02eb27b1f01f38afaacef4b16584af2433a8038e"
+      }
+    ],
+    "labelary": [
+      {
+        "name": "python",
+        "sha256": "a6a412ff830271043f7730e2527455bdbf52c9e1712f753dc2d90089949e9943"
+      },
+      {
+        "name": "labelary.py",
+        "sha256": "97a6be99a1b020d709eca0c9ec99a901df2fdd1b96e45491d01baf141fa0ac1c"
+      },
+      {
+        "name": "labelary.py",
+        "sha256": "be6af1ac6e9ed26bd89c9086cd2056352a1f76f00e8825d8c757b46f241ffe16"
+      },
+      {
+        "name": "captures.json",
+        "sha256": "33c66f7cc8f496fdd68fc25cae800dfc2335adbc35241237cac1c6e605f0702d"
       }
     ]
   },

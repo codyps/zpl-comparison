@@ -24,13 +24,14 @@ Reference parameters: **o, h, f, m**. These describe the reference grammar, not 
 | [zpl-builder](../libraries/builder.md) | 0.1.0 | [🛠️ Typed emission](https://docs.rs/crate/zpl-builder/0.1.0/source/src/builder.rs#109) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/builder.md#argument-limits) |
 | [Python ZPL](../libraries/python.md) | source 9bbeca05aa42 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/python.md#argument-limits) |
 | [JSZPL](../libraries/jszpl.md) | 2.0.1 | ❔ No evidence found | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/jszpl.md#argument-limits) |
+| [Labelary](../libraries/labelary.md) | captured 2026-09-19T03:17:15+00:00 (build version not exposed) | ❔ No evidence found | 0/1 exact; mean IoU 5.8%; 0 errors | [Argument limits](../libraries/labelary.md#argument-limits) |
 
 
 ## Tested arguments and pixels
 
-| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [code49](../../../references/barcodes-zd621-v1/code49.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code49.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#codyps-zpl) | N/A | [5.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#labelize) | [6.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#forge) | [7.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#go) | [7.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#ffi) | [6.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#binarykits) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#zplr) | N/A | N/A | N/A |
+| Case | Arguments | Reference | codyps/zpl | zpl-toolchain | labelize | zpl-forge | go-zpl | zpl-rs | BinaryKits.Zpl Viewer | ZPLr | zpl-builder | Python ZPL | JSZPL | Labelary |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [code49](../../../references/barcodes-zd621-v1/code49.zpl) | See exact archived ZPL | [Printer](../../../references/barcodes-zd621-v1/code49.png) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#codyps-zpl) | N/A | [5.9% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#labelize) | [6.2% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#forge) | [7.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#go) | [7.1% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#ffi) | [6.4% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#binarykits) | [100.0% IoU · exact](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#zplr) | N/A | N/A | N/A | [5.8% IoU](../../benchmarks/accuracy/comparisons/cases/barcode-code49.md#labelary) |
 
 
 ## Related features

@@ -17,7 +17,7 @@ Layout components emit ZPL; preview helpers are not an incoming-ZPL interpreter.
 
 This library does not render incoming ZPL.
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-19T03:05:14Z.
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-19T03:33:57Z.
 
 ## Feature groups
 
