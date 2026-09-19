@@ -6,7 +6,7 @@
 
 **^BB** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/codablock_f.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/codablock_f.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -47,7 +47,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41644063) panicked at src/main.rs:78:32:
+thread 'main' (41690543) panicked at src/main.rs:78:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

@@ -6,7 +6,7 @@
 
 **^BB** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/codablock_a.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/codablock_a.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,22 +14,14 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
+
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/codablock_a.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../references/barcodes-zd621-v1/codablock_a.png) | ![codyps-zpl render](../../images/barcode-codablock_a-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-codablock_a-codyps-zpl-diff.png) |
 
-
-Error diagnostic:
-
-~~~text
-
-thread 'main' (41643780) panicked at src/main.rs:26:10:
-render: RenderError { offset: 89, message: "BB: parameter 6 mode unsupported" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 
@@ -55,7 +47,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41643791) panicked at src/main.rs:78:32:
+thread 'main' (41690173) panicked at src/main.rs:78:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

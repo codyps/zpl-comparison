@@ -6,7 +6,7 @@
 
 **^GF** · A,8,8,1; B64, CRC16 · [ZPL input](../../../../../benchmarks/accuracy/reference/graphic-B64.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/graphic-B64.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -36,7 +36,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41640429) panicked at src/main.rs:43:14:
+thread 'main' (41685254) panicked at src/main.rs:43:14:
 parse: "failed to decode hex string: hex decode error: invalid hex char: /"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

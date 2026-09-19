@@ -6,7 +6,7 @@
 
 **^FB** · w=220,lines=3,space=2,align=J,indent=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/block-J.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/block-J.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -25,7 +25,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41637479) panicked at src/main.rs:26:10:
+thread 'main' (41681969) panicked at src/main.rs:27:10:
 render: RenderError { offset: 82, message: "unsupported or invalid field block parameters" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

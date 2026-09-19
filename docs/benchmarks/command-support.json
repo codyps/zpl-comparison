@@ -36,7 +36,7 @@
     "zpl": {
       "url": "https://github.com/codyps/zpl",
       "fetch_url": "git@github.com:codyps/zpl.git",
-      "rev": "280fc0cf4d0a49c916463d936e4307a2a226928e",
+      "rev": "b63d1cf7d99f126c7fd49359b11fbba46a08ccb3",
       "version": "0.1.0"
     }
   },
@@ -44,259 +44,271 @@
     "codyps-zpl": {
       "^CC": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240"
-      },
-      "^CT": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240"
-      },
-      "^CD": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240"
-      },
-      "^FX": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L240"
-      },
-      "^CI": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L241"
-      },
-      "^XA": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L246"
-      },
-      "^XZ": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L259"
-      },
-      "^PW": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L275"
-      },
-      "^LL": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L275"
-      },
-      "^LS": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L292"
-      },
-      "^LT": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L293"
-      },
-      "^LR": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L294"
-      },
-      "^PO": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L301"
-      },
-      "^FW": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L308"
-      },
-      "^FB": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L315"
-      },
-      "^LH": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L335"
-      },
-      "^FO": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L339"
-      },
-      "^FT": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L339"
-      },
-      "^CF": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L351"
-      },
-      "^FH": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L370"
-      },
-      "^FR": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L376"
-      },
-      "^BY": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L377"
-      },
-      "^BC": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L386"
-      },
-      "^B3": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L404"
-      },
-      "^FD": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L444"
-      },
-      "^FV": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L444"
-      },
-      "^GB": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L522"
-      },
-      "^GE": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L522"
-      },
-      "^GC": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L522"
-      },
-      "~DG": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L550"
-      },
-      "^GF": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L566"
-      },
-      "^XG": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L579"
-      },
-      "^FS": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L592"
-      },
-      "^A": {
-        "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L359"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L256"
       },
       "~CC": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L161"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L256"
       },
-      "~CD": {
+      "^CT": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L161"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L256"
       },
       "~CT": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/mod.rs#L161"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L256"
+      },
+      "^CD": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L256"
+      },
+      "~CD": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L256"
+      },
+      "^FX": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L256"
+      },
+      "^CI": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L257"
+      },
+      "^XA": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L262"
+      },
+      "^XZ": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L275"
+      },
+      "^PW": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L291"
+      },
+      "^LL": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L291"
+      },
+      "^LS": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L308"
+      },
+      "^LT": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L309"
+      },
+      "^LR": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L310"
+      },
+      "^PO": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L317"
+      },
+      "^FW": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L324"
+      },
+      "^FB": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L331"
+      },
+      "^LH": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L351"
+      },
+      "^CV": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L355"
+      },
+      "^FM": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L364"
+      },
+      "^FO": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L389"
+      },
+      "^FT": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L389"
+      },
+      "^CF": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L402"
+      },
+      "^A": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L410"
+      },
+      "^FH": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L421"
+      },
+      "^FR": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L427"
+      },
+      "^BY": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L428"
+      },
+      "^B3": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L437"
+      },
+      "^FD": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L492"
+      },
+      "^FV": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L492"
+      },
+      "^GD": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L638"
+      },
+      "^GB": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L679"
+      },
+      "^GE": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L679"
+      },
+      "^GC": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L679"
+      },
+      "~DG": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L710"
+      },
+      "^GF": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L726"
+      },
+      "^XG": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L739"
+      },
+      "^FS": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/mod.rs#L752"
       },
       "^B0": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L72"
       },
       "^B1": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L72"
       },
       "^B2": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L73"
       },
       "^B4": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L74"
       },
       "^B5": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L75"
       },
       "^B7": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L76"
       },
       "^B8": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L77"
       },
       "^B9": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L78"
       },
       "^BA": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L79"
       },
       "^BB": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L80"
+      },
+      "^BC": {
+        "status": "D",
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L81"
       },
       "^BD": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L82"
       },
       "^BE": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L83"
       },
       "^BF": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L84"
       },
       "^BI": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L85"
       },
       "^BJ": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L86"
       },
       "^BK": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L87"
       },
       "^BL": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L88"
       },
       "^BM": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L89"
       },
       "^BO": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L90"
       },
       "^BP": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L91"
       },
       "^BQ": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L92"
       },
       "^BR": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L93"
       },
       "^BS": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L94"
       },
       "^BT": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L95"
       },
       "^BU": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L96"
       },
       "^BX": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L97"
       },
       "^BZ": {
         "status": "D",
-        "source": "https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/render/barcode.rs#L64"
+        "source": "https://github.com/codyps/zpl/blob/b63d1cf7d99f126c7fd49359b11fbba46a08ccb3/zpl/src/render/barcode.rs#L98"
       }
     },
     "toolchain": {

@@ -6,7 +6,7 @@
 
 **^FB** · indent=20 · [ZPL input](../../../../../benchmarks/accuracy/reference/block-indent.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/block-indent.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -25,7 +25,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41637581) panicked at src/main.rs:26:10:
+thread 'main' (41682110) panicked at src/main.rs:27:10:
 render: RenderError { offset: 82, message: "unsupported or invalid field block parameters" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

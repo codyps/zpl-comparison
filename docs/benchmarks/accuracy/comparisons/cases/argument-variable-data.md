@@ -6,7 +6,7 @@
 
 **^FV** · literal field value · [ZPL input](../../../../../benchmarks/accuracy/reference/variable-data.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/variable-data.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 

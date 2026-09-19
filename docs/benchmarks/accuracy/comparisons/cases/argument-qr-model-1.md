@@ -6,7 +6,7 @@
 
 **^BQ** · o=N,model=1,magnification=3,EC=L,mask=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/qr-model-1.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,22 +14,14 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 58.4% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 522 pixels; extra ink: 522 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | Render failed; no image | Unavailable |
+| ![Printer preview](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | ![codyps-zpl render](../../images/argument-qr-model-1-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-qr-model-1-codyps-zpl-diff.png) |
 
-
-Error diagnostic:
-
-~~~text
-
-thread 'main' (41641901) panicked at src/main.rs:26:10:
-render: RenderError { offset: 85, message: "BQ: parameter 2 mode unsupported" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 
