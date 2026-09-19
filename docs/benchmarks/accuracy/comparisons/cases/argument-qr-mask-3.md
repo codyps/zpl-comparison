@@ -6,7 +6,7 @@
 
 **^BQ** · mask=3 · [ZPL input](../../../../../benchmarks/accuracy/reference/qr-mask-3.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/qr-mask-3.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,9 +14,9 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 0.0% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 59.9% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 2160 pixels; extra ink: 1998 pixels.
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 603 pixels; extra ink: 441 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |

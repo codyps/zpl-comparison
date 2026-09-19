@@ -72,24 +72,33 @@ def main():
                     add(name, command, status, path, i, **kw)
 
     zpl_source = ROOT / "_work/zpl/zpl/src/render/mod.rs"
+    in_dispatch = False
     for i, line in enumerate(zpl_source.read_text().splitlines(), 1):
-        if i < 239 or i > 651:
+        if line == "            match name {":
+            in_dispatch = True
             continue
-        if re.match(r'\s*"[A-Z0-9]{2}"', line) and "=>" in line:
+        if not in_dispatch:
+            continue
+        if line == "            }":
+            break
+        if re.match(r' {16}"[A-Z0-9]{2}"', line) and "=>" in line:
             for command in re.findall(r'"([A-Z][A-Z0-9])"', line.split("=>")[0]):
                 add("codyps-zpl", "~DG" if command == "DG" else "^" + command, "D", zpl_source, i)
-    add("codyps-zpl", "^A", "D", zpl_source, 359)
-    for cmd in ["CC", "CD", "CT"]:
-        add("codyps-zpl", "~" + cmd, "D", zpl_source, 161)
+                if command in {"CC", "CD", "CT"}:
+                    add("codyps-zpl", "~" + command, "D", zpl_source, i)
+        if line.startswith("                n if n.starts_with('A') =>"):
+            add("codyps-zpl", "^A", "D", zpl_source, i)
     barcode = ROOT / "_work/zpl/zpl/src/render/barcode.rs"
-    body = (
-        barcode.read_text()
-        .split("pub(super) fn supported")[1]
-        .split("pub(super) fn")[0]
-        .split("impl Barcode")[0]
-    )
-    for command in sorted(set(re.findall(r'"(B[A-Z0-9])"', body))):
-        add("codyps-zpl", "^" + command, "D", barcode, 64)
+    in_supported = False
+    for i, line in enumerate(barcode.read_text().splitlines(), 1):
+        if line.startswith("pub(super) fn supported"):
+            in_supported = True
+        if not in_supported:
+            continue
+        if line == "}":
+            break
+        for command in re.findall(r'"(B[A-Z0-9])"', line):
+            add("codyps-zpl", "^" + command, "D", barcode, i)
     # The toolchain's command specification is distinct from heuristic parse_str.
     params = {}
     descriptions = {}

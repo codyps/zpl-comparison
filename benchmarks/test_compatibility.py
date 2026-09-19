@@ -54,6 +54,12 @@ class CompatibilityTests(unittest.TestCase):
         self.assertEqual(len(set(slugs)), 4)
         self.assertTrue(all("commands/" + s + ".md" in self.generated for s in slugs))
 
+    def test_codyps_inventory_retains_late_graphics_handlers(self):
+        # These handlers moved beyond the inventory's former fixed line range.
+        for command in ["^GB", "^GE", "^GC", "~DG", "^GF", "^XG", "^FS"]:
+            with self.subTest(command=command):
+                self.assertEqual(catalog.state(self.support, "codyps-zpl", command), "D")
+
     def test_both_directions_show_same_evidence(self):
         for library in catalog.LIBRARIES:
             library_text = self.generated[f"libraries/{library}.md"].decode()

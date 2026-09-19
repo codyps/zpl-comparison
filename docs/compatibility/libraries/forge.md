@@ -17,7 +17,7 @@
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/forge.md)
 
-22/132 exact; mean IoU 39.9%; 7 errors. Snapshot: 2026-09-19T02:14:59Z.
+22/132 exact; mean IoU 39.9%; 7 errors. Snapshot: 2026-09-19T02:26:50Z.
 
 ## Feature groups
 

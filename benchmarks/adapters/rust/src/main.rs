@@ -21,6 +21,7 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
                 width,
                 height,
                 dpi: 203,
+                ..Default::default()
             },
         )
         .expect("render");

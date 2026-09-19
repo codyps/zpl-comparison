@@ -2,7 +2,7 @@
 
 **[Compare printer previews, library renders and differences](../../docs/benchmarks/accuracy/comparisons/README.md)** by library or case. Every case includes all seven renderers, including error diagnostics and blank output.
 
-The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares seven rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
+The [checked-in report](../../docs/benchmarks/accuracy/README.md) compares seven rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. The codyps-zpl adapter uses the library’s default ZD621 compatibility profile with the case dimensions and 203 DPI. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
 
 ## Reproduce offline
 

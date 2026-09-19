@@ -6,7 +6,7 @@
 
 **^BQ** · model=2,magnification=3,EC=M,mask=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/qr-ec-M.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/qr-ec-M.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -14,9 +14,9 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 0.0% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 59.0% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 2052 pixels; extra ink: 2070 pixels.
+Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 522 pixels; extra ink: 540 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |

@@ -6,7 +6,7 @@
 
 **^FB** · w=220,lines=3,space=2,align=R,indent=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/block-R.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/block-R.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 

@@ -6,7 +6,7 @@
 
 **^BD** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/maxicode2.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png)
 
-Measured 2026-09-19T02:14:59Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-19T02:26:50Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
 
@@ -36,7 +36,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (41648497) panicked at src/main.rs:62:14:
+thread 'main' (41695606) panicked at src/main.rs:62:14:
 PNG: "MaxiCode mode 2 postal code must contain 1 to 9 digits"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
