@@ -3,3 +3,4 @@ _*
 **/.ruff_cache/
 **/target/
 .DS_Store
+/bazel-*

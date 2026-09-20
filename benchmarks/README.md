@@ -36,7 +36,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-The checked-in report is an actual local run, not a forecast. CPU/toolchain/OS metadata is in the report and JSON. CI runs the same suite on a pinned runner OS, uploads the entire report, and exposes the tables in its job summary. It does not automatically commit machine-specific results or assert noisy performance thresholds. Download the artifact and review/copy it into `docs/benchmarks` to publish a new baseline.
+The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI builds the offline reports with Bazel from this collected evidence. Successful builds of `main` automatically publish the complete output tree to the independent [`generated` branch](https://github.com/codyps/zpl-comparison/tree/generated). CI does not collect new measurements or contact printers or rendering services.
 
 ## Pins
 
@@ -82,6 +82,50 @@ Captured samples make differences inspectable. Text shape, barcode decoding, bin
 Deployment sizes include the adapter plus linked/deployed dependencies: stripped release executable for Rust/Go, plus source-built Go shared library for FFI; .NET publish directory; Node runtime dependency closure including Skia for ZPLr; Python package plus Pillow. System libraries and the shared Node/Python/.NET runtime installation are excluded. Assets embedded into a binary are included. These are **deployment bytes**, not machine-code text-section bytes. The .NET publish directory includes its packaged platform-native assets. The JSON records exact file manifests/hashes; source and deployment totals have intentionally different boundaries.
 
 ## Regenerate / test the harness
+
+To generate reports in Bazel's output tree without modifying the checkout:
+
+```sh
+bazelisk build //:reports
+```
+
+Open `bazel-bin/reports/README.md` or
+`bazel-bin/reports/docs/benchmarks/README.md`. The output includes collected
+evidence and maintained documentation at their original relative paths so report
+links and images remain usable. Bazel downloads the pinned Python interpreter
+and locked Python dependencies on the first build; report generation itself is
+offline and needs no prepared adapters or local virtualenv.
+
+The whole offline pipeline is currently one cached action. An unchanged build
+skips generation; changing declared evidence, generator code, or its toolchain
+rebuilds the report tree. Missing outputs are rebuilt. Generated Markdown, plots,
+differences, thumbnails and fixture outputs in the checkout are not build inputs.
+This does not yet provide per-case or per-report incremental generation.
+Measurements and printer/service captures remain explicit collection operations;
+the Bazel target consumes their saved results and never refreshes them.
+
+The Bazel version is pinned in `.bazelversion`; Python and `rules_python` are pinned
+in `MODULE.bazel`. After changing `benchmarks/requirements.txt`, update the full
+dependency lock with:
+
+```sh
+uv pip compile benchmarks/requirements.txt --python-version 3.13 --generate-hashes -o build/requirements.lock.txt
+```
+
+Keep `MODULE.bazel.lock` checked in. Bazel outputs and downloaded dependencies are
+not checked into the source branch. To inspect why an action runs, use
+`bazelisk build //:reports --explain=/tmp/zpl-reports-explain.log --verbose_explanations`.
+
+The `Generated reports` workflow builds this target on pull requests, pushes to
+`main`, and manual dispatch. Only successful `main` runs publish. The first
+publication creates an orphan root commit on `generated`; subsequent publications
+append to that branch's own history without force pushes or merging `main`.
+Identical output creates no new commit, and a build whose source revision is no
+longer the tip of `main` is skipped. Publication replaces the complete snapshot,
+including removing obsolete files, and records the source commit and CI run in
+the commit message. An intermediate artifact transfers the tree between the
+read-only build job and the publishing job; the branch is the published result.
+Bazel dependency and action caches are reused across CI runs.
 
 Regenerate **all derived resources** from the checked-in collected evidence:
 
