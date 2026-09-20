@@ -134,6 +134,10 @@ inputs. A C compiler/system SDK, Git, curl, and Python 3.11+ are bootstrap
 prerequisites. Native build actions use the host C compiler and SDK, whose
 platform/version identity participates in the cache key; native compilation is
 local execution, not a remote-execution toolchain.
+Go compilation excludes the download phase's user-home files and checksum
+database bookkeeping, including its moving `latest` checkpoint. Downloads still
+verify `go.sum`; those network-verification files are unused by the offline build
+and must not invalidate otherwise identical library actions.
 
 For the private `codyps/zpl` source, configure Git access or point Bazel at a
 checkout containing the pinned commit:

@@ -80,6 +80,15 @@ def verify(graph):
             )
         elif kind == "ZplLibraryBuild":
             library = Path(outputs[0]).name
+            if library in ["library_go", "library_go-native"]:
+                assert not any(
+                    "+go_inputs/" in p
+                    and any(
+                        part in p
+                        for part in ["/go-home/", "/home/", "/modules/cache/download/sumdb/"]
+                    )
+                    for p in files
+                ), (library, "Go build depends on mutable download bookkeeping")
             if library != "library_codyps-zpl":
                 assert not any("/benchmarks/_work/zpl/" in p for p in files), (
                     library,

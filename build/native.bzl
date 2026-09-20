@@ -8,6 +8,13 @@ def _native_impl(ctx):
     for f in ctx.files.deps:
         # External downloaded dependencies retain paths relative to their repository.
         relative = "/".join(f.short_path.split("/")[2:])
+        # Download verification has already checked go.sum. Its moving sumdb
+        # checkpoint and user-home state are not inputs to offline compilation.
+        if ctx.attr.library in ["go", "go-native"] and any([
+            relative.startswith(p)
+            for p in ["go-home/", "home/", "modules/cache/download/sumdb/"]
+        ]):
+            continue
         if ctx.attr.library == "go-native" and relative.startswith("benchmarks/adapters/"):
             continue
         dependency_files.append(f)
