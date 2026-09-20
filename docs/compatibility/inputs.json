@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "inputs": {
+    "docs/benchmarks/command-support.json": "0a535c919d7544dc9f9829f05f681e18dd730e4972a4ba43cda069e76be63a2d",
+    "docs/benchmarks/accuracy/results.json": "20815c1d9ecd07d84994be4ec38049c3a21a6bed8ae5d17b88cb504e52283d83",
+    "test-data/render-conformance/manifest.json": "c658da2be0b9d3df865fc56a1ee6a5719f595966539e81a08abc58ec5ab938aa",
+    "docs/benchmarks/argument-support.md": "59ec4b17ce7328c30a87a5f83449a516b815b9fcee64c8f5668926d267dcdfd7",
+    "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
+    "benchmarks/adapters/rust/Cargo.toml": "5e9439a9cf48001bbba347f1c593409e5948e6222045dc40a066104e08d42a20",
+    "benchmarks/adapters/node/package.json": "863935d7c446fe4a34d5ab329cdf3d44203ccd9765f58a23233f9c9349970647",
+    "benchmarks/adapters/dotnet/Comparison.csproj": "dedf04ed99b98e453e2fd9892210bc1becab3e56aad46c315ec8a2264df28a9d",
+    "benchmarks/sources.lock.json": "469e2e9ca84ebdd33d36299b77b4a518bdeeceb62a8fba972ad57b7166384f55",
+    "benchmarks/compatibility.py": "768744878470c0a07293bd2326494b8e439a3fe99ab91b8faf9d0cde1ef0ea51",
+    "docs/benchmarks/accuracy/comparisons/features/results.json": "2bb34ec828a372dcaba76bbe767df68c8c22d72e43f3453f52a4595bac097da5",
+    "docs/benchmarks/conformance/results.json": "f56a7f14e4cf0f8c793d5f04da1fcf699433c26c34d0200e8a38bf6213553243"
+  },
+  "accuracy_measured_utc": "2026-09-20T18:04:26Z",
+  "conformance_measured_utc": "2026-09-20T18:20:29Z",
+  "libraries": {
+    "toolchain": "0.4.1",
+    "labelize": "1.5.0",
+    "forge": "0.3.2",
+    "ffi": "0.1.8",
+    "builder": "0.1.0",
+    "codyps-zpl": "0.1.0 @ b6085d8e0a37",
+    "zplr": "0.3.0",
+    "jszpl": "2.0.1",
+    "go": "source 78b181940c76",
+    "python": "source 9bbeca05aa42",
+    "binarykits": "1.3.1",
+    "labelary": "captured 2026-09-19T03:17:15+00:00 (build version not exposed)"
+  },
+  "command_pages": 224,
+  "feature_pages": 29
+}

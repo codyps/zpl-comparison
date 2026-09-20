@@ -1,0 +1,4 @@
+^XA
+^LH0,0
+^AA,16^FO10,10^FDItem 00^FS
+^XZ

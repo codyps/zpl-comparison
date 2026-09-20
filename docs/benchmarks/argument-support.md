@@ -1,0 +1,34 @@
+# Argument-level comparison
+
+[Complete command matrix](command-support.md) · [Executed argument cases and printer differences](accuracy/README.md) · [Performance](README.md)
+
+A command name is not a promise that every argument works. The table below records concrete boundaries found in the pinned source; the accuracy report tests actual parameter values. “Parses” and “emits” deliberately do not claim pixel fidelity. The complete matrix links each entry to its versioned implementation, and supplies reference argument names for each command.
+
+| Library / API | Position, text and graphics arguments | Barcode arguments and limitations |
+| --- | --- | --- |
+| codyps/zpl: rasterizer | Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbitrary character sets. `^FO`/`^FT` reject nonzero justification. `^FB` accepts L/C/R and zero hanging indent, not J or nonzero indent. Black shapes, rounded boxes; no diagonal-line renderer. `^GF` supports A/B and raw/RLE/B64/Z64 data, not C. | Broad symbol inventory, restricted options. Code 128 rejects above-text/UCC/automatic modes; Code 39 check digit Y is rejected in this adapter. QR model 1 is rejected. See the actual errors/rasters in the accuracy matrix. |
+| zpl-toolchain: specification + parser | Table-driven command definitions contain argument positions, defaults, ranges and constraints. Heuristic parsing alone does not apply that complete schema. No rasterization. | Barcode command schemas are parser/validation capabilities, not symbol encoding or rendering. |
+| labelize: parser + renderer | Parses resident/named font forms and numerous layout controls. `^LL` is recorded but output height follows the supplied canvas. `^SN`/`^SF` state is retained without corresponding serial expansion. Font availability and actual metrics remain separate concerns. | Many parsed symbol types and options; acceptance does not prove use. The checksum-Y Code 39 case produces the same mismatch as forge/BinaryKits while ZPLr is exact; Code 128 automatic-mode case is exact for the tested payload. |
+| zpl-forge: parser + renderer | `^FO`/`^FT` parser reads x/y, not justification. Font command reads font/orientation/height/width; `^FB` reads all five positions. Field text is trimmed by the parser, so leading/trailing whitespace is not preserved. `^GB` reads size/thickness/color/rounding. | Individual barcode parsers exist; argument behavior varies. Tested Code 128 automatic mode is not printer-exact, although ordinary mode and rotations are exact without readable text. |
+| go-zpl: parser + renderer | `^FO`/`^FT` read x/y; `^FW` reads orientation. `^FB` reads width/lines/spacing/alignment/indent. All tilde commands are skipped. `^LR` is explicitly skipped, regardless of its argument. | `^B3` is explicitly skipped. Parsers exist for BC/BD/BQ/BX/B7/BO; a successful label can omit a requested symbol. Code 128 rotated probes differ substantially despite successful rendering. |
+| zpl-rs: Go FFI | Shares the pinned Go parser and its argument limits. Wrapper/render defaults are a separate path, so measured pixels are not assumed identical. | Same underlying symbol implementation and skip behavior as Go. |
+| BinaryKits.Zpl: Viewer | Per-command analyzers parse positional parameters; this inventory covers Viewer, not the separate Label/Protocol generators. Parsed font names/options still depend on available font implementation. | QR analyzer exposes model/magnification/error/mask; that alone is not proof the rasterizer honors every value. The actual QR cases are far from printer-exact. Code 39 checksum Y differs in this corpus. |
+| ZPLr: renderer | Upstream catalog explicitly separates supported/partial/unsupported/non-rendering commands. Some encoding/font behavior is partial or host-dependent; use the pinned catalog links rather than treating all accepted commands as complete. | Broad catalog, but pixels and parameters need verification. Code 39 checksum Y and the sampled Code 128 modes/rotations (without text) are exact. QR model/mask probes show large differences. |
+| zpl-builder: typed generator | Font validator permits A–Z/1–9 but rejects font 0. Typed generation only: no incoming-ZPL rendering. Raw strings are not counted as typed command support. | Barcode enum exposes 27 variants, but the common emitter does not expose every symbol-specific parameter. A variant name is not a complete barcode encoder. |
+| Python ZPL: typed generator | Text supports orientation/font dimensions, block L/C/R/J and hanging indent. Font selection emission requires height, width, font and orientation to be supplied. Supports named font files. No incoming-ZPL renderer. | Limited barcode set; QR fixes N orientation/model 2, accepts magnification 1–10, EC H/Q/M/L and mask 1–7 (rejects 0). Data Matrix fixes quality 200. Code 128 mode is exposed. |
+| JSZPL: typed generator | Layout components emit ZPL; preview helpers are not an incoming-ZPL interpreter. Typed options and computed layout are a subset of the command grammar. | Many barcodes fix orientation N/check N/above N. QR fixes model 2/EC Q/mask 7 with computed magnification; Data Matrix emits fixed `^BXN,10,200,,,~,1`. Its barcode preview draws a placeholder, so it is excluded from raster accuracy. |
+| Labelary: captured service | Public API responses at 8 dpmm, identified by capture timestamps when no build version is exposed. Compared with the same printer baseline; no implementation-source support claims. | Actual barcode behavior is measured by the shared accuracy matrix; errors remain in the denominator. |
+
+## Values actually exercised
+
+| Family | Fresh probes |
+| --- | --- |
+| Fonts / encoding | Font 0 heights 16/32/64, widths 16/32/64, N/R/I/B rotations, resident A/D; CI 0/27/28 plus UTF-8 accents |
+| Position / field data | FO justification 0/1/2, FT, LH/LS/LT, PO I, LR Y, FW R, FR; FH hex and FV |
+| Text blocks | L/C/R/J alignment, hanging indent 20, explicit line breaks |
+| Shapes | Box thickness 1/4/60, rounded corners 4, white color; circle, ellipse, both diagonal directions |
+| Graphics | GF A hex, GF B bytes, B64 and Z64 with CRC |
+| Linear barcode options | BY ratio 2/3, Code 39 checksum N/Y; Code 128 readable text/above text, N/R/I/B, N/A modes |
+| 2D barcode options | QR models 1/2, EC L/M/Q/H, magnification 2/5, mask 0/3/7; Data Matrix module size 2/4 |
+
+The 60 archived barcode examples add symbol families and options; exact input files are linked per row. These are finite probes, not exhaustive argument cross-products. Errors are distinguishable from silent omissions and approximate rendering. No device configuration, RFID, persistent storage or physical printing commands are evaluated for raster accuracy.

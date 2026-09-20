@@ -1,0 +1,40 @@
+# Capabilities and selection
+
+Surveyed 2026-09-18. [Measured results](README.md) and [benchmark instructions](../../benchmarks/README.md) are separate from this source/documentation assessment. Package versions follow the checked-in dependency locks; measurement dates and identities are recorded with the results. “Supports” below describes an exposed feature, not full Zebra firmware compatibility.
+
+## Rust libraries
+
+| Library / pinned version | Input and output | Capabilities and limits | Benchmark category |
+| --- | --- | --- | --- |
+| [codyps/zpl](https://github.com/codyps/zpl/blob/{{zpl_revision}}/zpl/src/lib.rs), revision in results | Borrowed byte stream → framed commands; ZPL → scene → PNG/SVG | Lossless command framing includes binary downloads, changed syntax and unknown commands. Rendering is a separate, strict subset: graphics, bitmap fonts and many barcode symbologies; approximate font sizing generates warnings. No production font-fitting changes are part of this benchmark. | Streaming parse; end-to-end PNG |
+| [zpl-toolchain core {{version:zpl_toolchain_core}}](https://docs.rs/zpl_toolchain_core/{{version:zpl_toolchain_core}}/zpl_toolchain_core/) | UTF-8 ZPL → AST/diagnostics; AST → ZPL | Command tables, printer profiles, validation and formatting. Does not offer local pixel rendering. The adapter calls `parse_str` in heuristic mode, **without** specification tables or subsequent validation; timings do not represent the full validation pipeline. | AST parse |
+| [labelize {{version:labelize}}](https://docs.rs/labelize/{{version:labelize}}/labelize/) | ZPL/EPL → label elements → PNG/PDF | Local text, shapes, downloaded graphics, barcodes; CLI/server are optional. Parser/renderer implementation and image/encoding dependencies are considerably broader than a command framer. Uses native default monochrome PNG settings in this suite. | Parse to elements; end-to-end PNG |
+| [zpl-forge {{version:zpl-forge}}](https://docs.rs/zpl-forge/{{version:zpl-forge}}/zpl_forge/) | ZPL text → engine instructions → PNG/PDF | Local graphics, text and barcodes, custom color/Base64 commands, explicit canvas limits. Its public `ZplEngine::new` performs parsing **and instruction construction**. The suite enables PNG, disables PDF, and builds a new engine on every operation. | Parse + instruction construction; end-to-end PNG |
+| [zpl-rs {{version:zpl-rs}}](https://docs.rs/crate/zpl-rs/{{version:zpl-rs}}) | ZPL bytes/text → PNG through Go FFI | A wrapper around go-zpl, not an independent renderer. The suite builds its native library from the same pinned Go source as the direct Go adapter; no mutable “latest release” download. Includes Go runtime/shared-library memory and disk footprint. Sequential calls only. | End-to-end PNG, including FFI |
+| [zpl-builder {{version:zpl-builder}}](https://docs.rs/zpl-builder/{{version:zpl-builder}}/zpl_builder/) | Typed builder → ZPL text | Validates builder fields; text, geometric shapes and multiple barcode commands. Its font validator rejects font `0`, so the benchmark uses its supported font `A`. No parser of arbitrary incoming ZPL or local renderer. Crates.io source is pinned by Cargo.lock; its advertised GitHub repository was inaccessible during the survey. | Construct + serialize text fields |
+
+An AST parser or rendering engine can be slower and larger while doing substantially more work; its result must not be compared as though it were codyps/zpl's borrowed command iterator.
+
+The Rust survey used `cargo search zpl --limit 30` and package metadata. Related [papermint-label](https://crates.io/crates/papermint-label) is an adjacent label-generation engine; [labelzoom](https://crates.io/crates/labelzoom) is a remote API client, and [zebrasend](https://github.com/fearful-symmetry/zebrasend) is a printer transport CLI. They are outside this selected comparison of incoming-ZPL libraries plus representative builders. This is a documented selection, not an exhaustive census of every printer-related crate.
+
+## Other languages
+
+| Library / pinned version | Capabilities and limits | Why included |
+| --- | --- | --- |
+| [BinaryKits.Zpl.Viewer {{version:binarykits-viewer}} / Label {{version:binarykits-label}}](https://github.com/BinaryKits/BinaryKits.Zpl) (.NET) | Separate label builder, protocol, Labelary client and local Skia-based viewer. Analyzer produces elements; local viewer renders text, shapes, graphics and barcodes. The suite times only local analyzer/viewer APIs with fresh printer storage per operation. | {{stars:BinaryKits/BinaryKits.Zpl}} GitHub stars, {{forks:BinaryKits/BinaryKits.Zpl}} forks; an established independent local renderer and builder. |
+| [Python ZPL, pinned source](https://github.com/cod3monk/zpl) | Generates labels using millimetres, text/barcodes and image conversion through Pillow. Preview helpers use an external service; this is **not** a local incoming-ZPL renderer. Only local construction/serialization is timed. | {{stars:cod3monk/zpl}} stars, {{forks:cod3monk/zpl}} forks; established Python builder. |
+| [JSZPL {{version:jszpl}}](https://github.com/DanieLeeuwner/JSZPL) (TypeScript) | Layout-oriented generator with text, grids, geometry, barcodes and image data. Generates ZPL; does not parse/render arbitrary ZPL locally. The adapter uses fixed-position text to avoid benchmarking a separate grid-layout problem. | {{stars:DanieLeeuwner/JSZPL}} stars, {{forks:DanieLeeuwner/JSZPL}} forks; established JavaScript/TypeScript builder. |
+| [ZPLr {{version:zplr}}](https://github.com/le2ni/zplr) (TypeScript) | Document parsing, diagnostics, stateful sessions and local rendering in Node/browser; native Skia peer for Node PNG output, barcode and font dependencies. The adapter uses the stateless convenience API. | {{stars:le2ni/zplr}} stars; selected for an independent parser/renderer and browser support, **not popularity**. |
+| [go-zpl](https://github.com/StirlingMarketingGroup/go-zpl) (pinned commit in results) | Builder, parser and native text/barcode/graphics renderer. Direct Go and Rust FFI adapters use the same engine revision. Built-in resources and Go runtime are part of native artifacts. | {{stars:StirlingMarketingGroup/go-zpl}} stars; included to explain the Rust wrapper's underlying costs, **not popularity**. |
+
+Star/fork counts are a dated [GitHub API snapshot](../../benchmarks/popularity.json), not quality or adoption guarantees. Rust projects in that snapshot: labelize {{stars:GOODBOY008/labelize}} stars, zpl-toolchain {{stars:trevordcampbell/zpl-toolchain}}, zpl-forge {{stars:rafael-arreola/zpl-forge}}. Package downloads are not interchangeable across ecosystems, so the report does not combine them into a popularity score.
+
+{{popularity_table}}
+
+## Interpreting the tradeoffs
+
+Choose by the required operation first. codyps/zpl's byte framer is useful when preserving the original stream matters. zpl-toolchain offers richer text-oriented tooling. Local renderers should be evaluated on actual label fidelity and command coverage before latency. Builders address authoring and layout rather than interpreting third-party labels.
+
+The measured PNG path includes parsing, rendering, allocation and compression on every call, with runtime/font caches allowed to warm naturally. Different font resources, barcode implementations, PNG compression and antialiasing affect both speed and image size. Inspect the linked sample images: nonblank QR or Code 128 output does not prove a correct or scannable barcode. The box oracle is intentionally narrow and independent of any competitor's pixels.
+
+Process RSS captures useful deployment costs, including managed runtimes and native libraries. It cannot attribute memory to the library alone, distinguish allocator capacity from live objects, or predict long-running server memory. Source size excludes third-party code and bundled fonts; deployed file size includes dependencies as documented. Neither is a measure of feature quality.

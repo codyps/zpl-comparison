@@ -1,0 +1,314 @@
+{
+  "schema": 1,
+  "suite": "invalid-zpl-v1",
+  "width": 400,
+  "height": 300,
+  "cases": [
+    {
+      "id": "missing-end",
+      "group": "framing",
+      "reason": "One complete ^XA...^XZ label is required by this suite.",
+      "reference": "^XA/^XZ",
+      "caveat": "Single-label input contract; streaming framers can intentionally accept fragments.",
+      "control": {
+        "file": "cases/missing-end-control.zpl",
+        "sha256": "ad9c94308973caf7569b17abfd5b0f46de64f15bb253e359180cdc129287cf50",
+        "bytes": 45
+      },
+      "invalid": {
+        "file": "cases/missing-end-invalid.zpl",
+        "sha256": "5020071fd4409efe7d222c34de2178806b7f1ef0b2355039c6c643456639ca7f",
+        "bytes": 42
+      }
+    },
+    {
+      "id": "truncated-command",
+      "group": "framing",
+      "reason": "A command prefix is missing its two-character command code.",
+      "reference": "ZPL command framing",
+      "caveat": "A streaming framer may wait for more bytes.",
+      "control": {
+        "file": "cases/truncated-command-control.zpl",
+        "sha256": "ad9c94308973caf7569b17abfd5b0f46de64f15bb253e359180cdc129287cf50",
+        "bytes": 45
+      },
+      "invalid": {
+        "file": "cases/truncated-command-invalid.zpl",
+        "sha256": "67886a3373066d11ede63ca5ea45e8d0aae5452f62ea27b45ca45102264c1d02",
+        "bytes": 43
+      }
+    },
+    {
+      "id": "raster-invalid-hex",
+      "group": "malformed",
+      "reason": "Question marks are not hexadecimal digits or graphic RLE tokens.",
+      "reference": "^GF, guide p. 215",
+      "caveat": "Malformed graphic data.",
+      "control": {
+        "file": "cases/raster-invalid-hex-control.zpl",
+        "sha256": "9fec6fc997c91590e8ffcd62acaff828da9275ccf7a505e9e7070d2b4f8f3b85",
+        "bytes": 56
+      },
+      "invalid": {
+        "file": "cases/raster-invalid-hex-invalid.zpl",
+        "sha256": "340977a95a86fdf077ae311cdea125878d912bb8445f44ffbbb49f8cb914789c",
+        "bytes": 56
+      }
+    },
+    {
+      "id": "raster-short-data",
+      "group": "malformed",
+      "reason": "Eight graphic bytes are declared but only two are supplied.",
+      "reference": "^GF, guide p. 215",
+      "caveat": "A command prefix may abort a download; acceptance can mean recovery, not complete decoding.",
+      "control": {
+        "file": "cases/raster-short-data-control.zpl",
+        "sha256": "9fec6fc997c91590e8ffcd62acaff828da9275ccf7a505e9e7070d2b4f8f3b85",
+        "bytes": 56
+      },
+      "invalid": {
+        "file": "cases/raster-short-data-invalid.zpl",
+        "sha256": "fce38cd843c530e64d02a50c04fdb6fc0ef2a50301e9076b0de1d6e5a8c5dfc7",
+        "bytes": 44
+      }
+    },
+    {
+      "id": "binary-truncated",
+      "group": "malformed",
+      "reason": "Eight binary bytes are declared but the stream ends after one.",
+      "reference": "^GF, guide p. 215",
+      "caveat": "EOF occurs inside counted data; no printer is contacted.",
+      "control": {
+        "file": "cases/binary-truncated-control.zpl",
+        "sha256": "ad6fc1af3df91e31d1d6c29fcf91a9eb0457578619419dbfa8d7a59bf25e68e9",
+        "bytes": 48
+      },
+      "invalid": {
+        "file": "cases/binary-truncated-invalid.zpl",
+        "sha256": "9ae515131380974adc133fe173db64fa273dea04bcd6d76954cdc7dad6b6c021",
+        "bytes": 35
+      }
+    },
+    {
+      "id": "base64-alphabet",
+      "group": "malformed",
+      "reason": "Exclamation marks are outside the Base64 alphabet.",
+      "reference": "Zebra alternate data encoding",
+      "caveat": "Tests encoded graphic decoding.",
+      "control": {
+        "file": "cases/base64-alphabet-control.zpl",
+        "sha256": "c2df15e7a3c7bfdc60fc0535a23853716d5a200f4b30949366051c7fc307997e",
+        "bytes": 62
+      },
+      "invalid": {
+        "file": "cases/base64-alphabet-invalid.zpl",
+        "sha256": "44f702319d0e7e09c12780d85d0a4bd9cbfd690f8cca00c84293c079c316b611",
+        "bytes": 54
+      }
+    },
+    {
+      "id": "base64-crc",
+      "group": "malformed",
+      "reason": "The supplied checksum differs from CRC-16 of the encoded payload.",
+      "reference": "Zebra alternate data encoding",
+      "caveat": "Control uses the correct checksum.",
+      "control": {
+        "file": "cases/base64-crc-control.zpl",
+        "sha256": "c2df15e7a3c7bfdc60fc0535a23853716d5a200f4b30949366051c7fc307997e",
+        "bytes": 62
+      },
+      "invalid": {
+        "file": "cases/base64-crc-invalid.zpl",
+        "sha256": "39716cce7e58f6aa1c76e9a9f9a4527b1f59108976ab6ffe1b456f12cb28e06e",
+        "bytes": 62
+      }
+    },
+    {
+      "id": "z64-invalid-stream",
+      "group": "malformed",
+      "reason": "Valid Base64 and CRC wrap bytes that are not a zlib stream.",
+      "reference": "Zebra alternate data encoding",
+      "caveat": "Control uses zlib-compressed graphic bytes.",
+      "control": {
+        "file": "cases/z64-invalid-stream-control.zpl",
+        "sha256": "454355f91ff0fcc87c61c884c9b851c01a30e0aa799e5d79c5cf3a972e6cd45e",
+        "bytes": 66
+      },
+      "invalid": {
+        "file": "cases/z64-invalid-stream-invalid.zpl",
+        "sha256": "c9e7831d0449b4d3dcbb4bfb889bd19c10a0411165d02125914721928d0a061f",
+        "bytes": 62
+      }
+    },
+    {
+      "id": "ean-nonnumeric",
+      "group": "malformed",
+      "reason": "EAN-13 data contains letters instead of numeric digits.",
+      "reference": "^BE, guide p. 109",
+      "caveat": "Only tests input rejection, not scanner validity.",
+      "control": {
+        "file": "cases/ean-nonnumeric-control.zpl",
+        "sha256": "c676def9c7aabfcd278ca64567a44a79908472a6831ad6488cc379a54f1a7191",
+        "bytes": 55
+      },
+      "invalid": {
+        "file": "cases/ean-nonnumeric-invalid.zpl",
+        "sha256": "1f8158cba06960c3100511bafedfd0f56f275bdc68a37a814482cc5d03d052cf",
+        "bytes": 55
+      }
+    },
+    {
+      "id": "orientation",
+      "group": "fallback",
+      "reason": "Q is outside the N/R/I/B orientation values.",
+      "reference": "^A",
+      "caveat": "Defaulting/ignoring may be intentional; no strict rejection pass/fail.",
+      "control": {
+        "file": "cases/orientation-control.zpl",
+        "sha256": "ad9c94308973caf7569b17abfd5b0f46de64f15bb253e359180cdc129287cf50",
+        "bytes": 45
+      },
+      "invalid": {
+        "file": "cases/orientation-invalid.zpl",
+        "sha256": "7031f32a4b820a1c675bca99e85a707b987f6ed914a591a8b598278dc99c52b9",
+        "bytes": 45
+      }
+    },
+    {
+      "id": "negative-width",
+      "group": "fallback",
+      "reason": "A box width is negative.",
+      "reference": "^GB",
+      "caveat": "Clamping/defaulting may be intentional.",
+      "control": {
+        "file": "cases/negative-width-control.zpl",
+        "sha256": "4e51f87ba3da981f6bb0aac37afa835c3aefbcda5300824ac6632a4736631488",
+        "bytes": 39
+      },
+      "invalid": {
+        "file": "cases/negative-width-invalid.zpl",
+        "sha256": "16cbd0eb8c65739579b1d7e1b7a0a90b8f345c821cccfecf73e370213fb87f62",
+        "bytes": 39
+      }
+    },
+    {
+      "id": "alignment",
+      "group": "fallback",
+      "reason": "Z is outside the field-block alignment values.",
+      "reference": "^FB",
+      "caveat": "Defaulting/ignoring may be intentional.",
+      "control": {
+        "file": "cases/alignment-control.zpl",
+        "sha256": "78edfac034edc4d4ce65090d8c1ac4de9aba07877ff90e250295450ce1cfc247",
+        "bytes": 59
+      },
+      "invalid": {
+        "file": "cases/alignment-invalid.zpl",
+        "sha256": "4faaaa822be1c60945eab639659bd07bc4deb9a0ccfff9690bdb39b0735667b5",
+        "bytes": 59
+      }
+    },
+    {
+      "id": "field-hex",
+      "group": "fallback",
+      "reason": "An enabled field escape contains a nonhex digit.",
+      "reference": "^FH",
+      "caveat": "Some APIs preserve malformed escapes literally.",
+      "control": {
+        "file": "cases/field-hex-control.zpl",
+        "sha256": "28dcd032ab027a1d251648767307969f58050f9e12ee16b9f4d9eb546395bebe",
+        "bytes": 49
+      },
+      "invalid": {
+        "file": "cases/field-hex-invalid.zpl",
+        "sha256": "75d267ca5a47b2f2e7027a717c689d7081ca499a247e8496170cb953b4247ac7",
+        "bytes": 49
+      }
+    },
+    {
+      "id": "field-hex-truncated",
+      "group": "fallback",
+      "reason": "An enabled field escape has only one hex digit.",
+      "reference": "^FH",
+      "caveat": "Some APIs preserve malformed escapes literally.",
+      "control": {
+        "file": "cases/field-hex-truncated-control.zpl",
+        "sha256": "28dcd032ab027a1d251648767307969f58050f9e12ee16b9f4d9eb546395bebe",
+        "bytes": 49
+      },
+      "invalid": {
+        "file": "cases/field-hex-truncated-invalid.zpl",
+        "sha256": "957037caa350ed5ef60a9f22b749c89f8b9e5bb50dcbba6cf9e3376971106db6",
+        "bytes": 48
+      }
+    },
+    {
+      "id": "zero-stride",
+      "group": "fallback",
+      "reason": "Graphic bytes per row is zero rather than at least one.",
+      "reference": "^GF, guide p. 215",
+      "caveat": "Observe rejection or recovery separately from malformed encoding.",
+      "control": {
+        "file": "cases/zero-stride-control.zpl",
+        "sha256": "9fec6fc997c91590e8ffcd62acaff828da9275ccf7a505e9e7070d2b4f8f3b85",
+        "bytes": 56
+      },
+      "invalid": {
+        "file": "cases/zero-stride-invalid.zpl",
+        "sha256": "092ddb3800d0ebf01b6b116be20c5ff7bc38f73aae28e2075fea427dfa867cb3",
+        "bytes": 56
+      }
+    },
+    {
+      "id": "qr-model",
+      "group": "fallback",
+      "reason": "QR model 3 is outside the supported model values.",
+      "reference": "^BQ",
+      "caveat": "Defaulting/ignoring may be intentional.",
+      "control": {
+        "file": "cases/qr-model-control.zpl",
+        "sha256": "35038e94a7dfd8a09a262e897011ab0ba61795b4ee29232f31a1e562513947bf",
+        "bytes": 50
+      },
+      "invalid": {
+        "file": "cases/qr-model-invalid.zpl",
+        "sha256": "89675aba5ecedf4cfd0c0dbfe5723e794e6c137bd0e4c702903b5c2e52dcd309",
+        "bytes": 50
+      }
+    },
+    {
+      "id": "qr-mask",
+      "group": "fallback",
+      "reason": "QR mask 8 is outside the 0..7 range.",
+      "reference": "^BQ",
+      "caveat": "Defaulting/ignoring may be intentional.",
+      "control": {
+        "file": "cases/qr-mask-control.zpl",
+        "sha256": "35038e94a7dfd8a09a262e897011ab0ba61795b4ee29232f31a1e562513947bf",
+        "bytes": 50
+      },
+      "invalid": {
+        "file": "cases/qr-mask-invalid.zpl",
+        "sha256": "12d969430a557f07f4ef416dc12d0104d3b01cbf199c17daecbb235d3a204486",
+        "bytes": 50
+      }
+    },
+    {
+      "id": "encoding",
+      "group": "fallback",
+      "reason": "Character encoding 999 is outside the documented selections.",
+      "reference": "^CI",
+      "caveat": "Defaulting/ignoring may be intentional.",
+      "control": {
+        "file": "cases/encoding-control.zpl",
+        "sha256": "fc640a9f010b61553b1aeab0df274939019086b5d4e38739b59b5b0759e31e41",
+        "bytes": 50
+      },
+      "invalid": {
+        "file": "cases/encoding-invalid.zpl",
+        "sha256": "b34c62b4f6b337625e31acb9e28dc35a3a6ec50f171ad5b24d36f5b510c9daec",
+        "bytes": 51
+      }
+    }
+  ]
+}
