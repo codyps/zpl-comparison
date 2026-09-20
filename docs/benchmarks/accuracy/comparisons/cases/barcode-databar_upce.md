@@ -20,85 +20,79 @@ Source: archived barcode development corpus
 
 **codyps/zpl (Rust)**
 
-error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![codyps-zpl render](../../previews/barcode-databar_upce-codyps-zpl.png)](../../images/barcode-databar_upce-codyps-zpl.png) | [![codyps-zpl difference](../../previews/barcode-databar_upce-codyps-zpl-diff.png)](../../images/barcode-databar_upce-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (14125) panicked at src/main.rs:27:10:
-render: RenderError { offset: 86, message: "^BR UPC-E requires 11 uncompressed UPC-A digits" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 
 **labelize (Rust)**
 
-rendered · unscored · [All cases for this library](../libraries/labelize.md)
+rendered · 4.89% IoU · [All cases for this library](../libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![labelize render](../../previews/barcode-databar_upce-labelize.png)](../../images/barcode-databar_upce-labelize.png) | [![labelize difference](../../previews/barcode-databar_upce-labelize-diff.png)](../../images/barcode-databar_upce-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 504 pixels.
+Library dimensions: [832, 1218]; missing ink: 7858; extra ink: 497 pixels.
 
 ## forge
 
 **zpl-forge (Rust)**
 
-rendered · unscored · [All cases for this library](../libraries/forge.md)
+rendered · 20.88% IoU · [All cases for this library](../libraries/forge.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![forge render](../../previews/barcode-databar_upce-forge.png)](../../images/barcode-databar_upce-forge.png) | [![forge difference](../../previews/barcode-databar_upce-forge-diff.png)](../../images/barcode-databar_upce-forge-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 6074 pixels.
+Library dimensions: [832, 1218]; missing ink: 5036; extra ink: 7290 pixels.
 
 ## go
 
 **go-zpl (Go)**
 
-rendered · unscored · [All cases for this library](../libraries/go.md)
+rendered · 5.45% IoU · [All cases for this library](../libraries/go.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![go render](../../previews/barcode-databar_upce-go.png)](../../images/barcode-databar_upce-go.png) | [![go difference](../../previews/barcode-databar_upce-go-diff.png)](../../images/barcode-databar_upce-go-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 538 pixels.
+Library dimensions: [832, 1218]; missing ink: 7807; extra ink: 540 pixels.
 
 ## ffi
 
 **zpl-rs (Rust → Go)**
 
-rendered · unscored · [All cases for this library](../libraries/ffi.md)
+rendered · 5.45% IoU · [All cases for this library](../libraries/ffi.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![ffi render](../../previews/barcode-databar_upce-ffi.png)](../../images/barcode-databar_upce-ffi.png) | [![ffi difference](../../previews/barcode-databar_upce-ffi-diff.png)](../../images/barcode-databar_upce-ffi-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 538 pixels.
+Library dimensions: [832, 1218]; missing ink: 7807; extra ink: 540 pixels.
 
 ## binarykits
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · unscored · [All cases for this library](../libraries/binarykits.md)
+rendered · 3.74% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![binarykits render](../../previews/barcode-databar_upce-binarykits.png)](../../images/barcode-databar_upce-binarykits.png) | [![binarykits difference](../../previews/barcode-databar_upce-binarykits-diff.png)](../../images/barcode-databar_upce-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 410 pixels.
+Library dimensions: [832, 1218]; missing ink: 7961; extra ink: 456 pixels.
 
 ## zplr
 
 **ZPLr (TypeScript)**
 
-blank · unscored · exact · [All cases for this library](../libraries/zplr.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/zplr.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
@@ -110,7 +104,7 @@ Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 **Labelary (SaaS)**
 
-blank · unscored · exact · [All cases for this library](../libraries/labelary.md)
+blank · 0.00% IoU · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata, and original responses](../../../labelary/README.md)
 
@@ -118,4 +112,4 @@ blank · unscored · exact · [All cases for this library](../libraries/labelary
 |---|---|---|
 | [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![labelary render](../../previews/barcode-databar_upce-labelary.png)](../../images/barcode-databar_upce-labelary.png) | [![labelary difference](../../previews/barcode-databar_upce-labelary-diff.png)](../../images/barcode-databar_upce-labelary-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
+Library dimensions: [832, 1218]; missing ink: 8288; extra ink: 0 pixels.

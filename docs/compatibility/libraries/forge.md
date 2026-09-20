@@ -17,14 +17,14 @@
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/forge.md)
 
-22/132 exact; mean IoU 39.9%; 7 errors. Snapshot: 2026-09-20T22:46:04Z.
+22/133 exact; mean IoU 39.7%; 7 errors. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 17/66 exact; mean IoU 61.5%; 2 errors | 5 error, 65 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 16.1%; 4 errors | 4 error, 56 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 16.2%; 4 errors | 4 error, 56 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 10/25 exact; mean IoU 52.4%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 1/4 exact; mean IoU 36.9%; 0 errors | 1 blank, 3 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 27.9%; 3 errors | 3 error, 8 rendered |
@@ -44,6 +44,15 @@
 | [Metamorphic](../features/metamorphic.md) | 5 | 1/5 exact; mean IoU 42.7%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 4 error, 10 rendered |
 | [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 8.2%; 24 errors | 24 error, 5 rendered |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 20/20 exact; mean IoU 100.0%; 0 errors | 20 rendered |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | 0/3 exact; mean IoU 0.0%; 3 errors | 3 error |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 0.0%; 3 errors | 3 error |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 48.2%; 0 errors | 3 rendered |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | 0/10 exact; mean IoU 8.4%; 0 errors | 10 rendered; Negative-input observations: 5 rendered |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 37.8%; 0 errors | 6 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 29.8%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 41.1%; 2 errors | 2 error, 3 rendered |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | 0/9 exact; mean IoU 0.0%; 9 errors | 9 error |
 | [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 9.6%; 0 errors | 3 blank, 1 rendered |
 | [Shapes](../features/shapes.md) | 46 | 11/46 exact; mean IoU 52.7%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 1/6 exact; mean IoU 60.6%; 0 errors | 6 rendered |
@@ -83,7 +92,7 @@
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#678) | 1/2 exact; mean IoU 64.2%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.1%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#271) | 0/12 exact; mean IoU 0.9%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#741) | 0/13 exact; mean IoU 19.4%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#741) | 0/14 exact; mean IoU 19.5%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#650) | 0/2 exact; mean IoU 22.1%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.4%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#419) | 0/1 exact; mean IoU 96.1%; 0 errors |

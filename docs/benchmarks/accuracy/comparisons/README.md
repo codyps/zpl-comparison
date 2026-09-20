@@ -10,21 +10,21 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 ## Libraries
 
-[codyps/zpl (Rust)](libraries/codyps-zpl.md) · 98.55% mean IoU
+[codyps/zpl (Rust)](libraries/codyps-zpl.md) · 98.56% mean IoU
 
-[labelize (Rust)](libraries/labelize.md) · 48.37% mean IoU
+[labelize (Rust)](libraries/labelize.md) · 48.04% mean IoU
 
-[zpl-forge (Rust)](libraries/forge.md) · 39.86% mean IoU
+[zpl-forge (Rust)](libraries/forge.md) · 39.72% mean IoU
 
-[go-zpl (Go)](libraries/go.md) · 37.13% mean IoU
+[go-zpl (Go)](libraries/go.md) · 36.89% mean IoU
 
-[zpl-rs (Rust → Go)](libraries/ffi.md) · 36.55% mean IoU
+[zpl-rs (Rust → Go)](libraries/ffi.md) · 36.32% mean IoU
 
-[BinaryKits.Zpl (.NET)](libraries/binarykits.md) · 38.15% mean IoU
+[BinaryKits.Zpl (.NET)](libraries/binarykits.md) · 37.89% mean IoU
 
-[ZPLr (TypeScript)](libraries/zplr.md) · 73.01% mean IoU
+[ZPLr (TypeScript)](libraries/zplr.md) · 73.21% mean IoU
 
-[Labelary (SaaS)](libraries/labelary.md) · 76.64% mean IoU
+[Labelary (SaaS)](libraries/labelary.md) · 76.06% mean IoU
 
 [Feature fixtures](features/README.md) · [External examples](external/README.md)
 

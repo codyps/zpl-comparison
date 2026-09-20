@@ -36,11 +36,12 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 ## Related features
 
-[Barcode families](../features/barcode-families.md)
+[Barcode families](../features/barcode-families.md) · [Printer retail caption edges](../features/printer-retail-caption-edges.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
 | [symbol-upce](../../../test-data/render-conformance/cases/barcode-families/symbol-upce.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-upce.md) | valid / printer | Reference symbol variant: upce |
+| [printer-retail-caption-edges-holdouts](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-holdouts.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-holdouts.md) | boundary / printer | retail caption edges: holdouts |
 

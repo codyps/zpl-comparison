@@ -10,21 +10,21 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 ## Libraries
 
-[codyps/zpl (Rust)](libraries/codyps-zpl.md) · 87.34% mean IoU
+[codyps/zpl (Rust)](libraries/codyps-zpl.md) · 87.16% mean IoU
 
-[labelize (Rust)](libraries/labelize.md) · 48.07% mean IoU
+[labelize (Rust)](libraries/labelize.md) · 48.57% mean IoU
 
-[zpl-forge (Rust)](libraries/forge.md) · 39.80% mean IoU
+[zpl-forge (Rust)](libraries/forge.md) · 40.27% mean IoU
 
-[go-zpl (Go)](libraries/go.md) · 41.95% mean IoU
+[go-zpl (Go)](libraries/go.md) · 39.71% mean IoU
 
-[zpl-rs (Rust → Go)](libraries/ffi.md) · 41.42% mean IoU
+[zpl-rs (Rust → Go)](libraries/ffi.md) · 39.23% mean IoU
 
-[BinaryKits.Zpl (.NET)](libraries/binarykits.md) · 39.75% mean IoU
+[BinaryKits.Zpl (.NET)](libraries/binarykits.md) · 39.86% mean IoU
 
-[ZPLr (TypeScript)](libraries/zplr.md) · 48.38% mean IoU
+[ZPLr (TypeScript)](libraries/zplr.md) · 51.46% mean IoU
 
-[Labelary (SaaS)](libraries/labelary.md) · 65.62% mean IoU
+[Labelary (SaaS)](libraries/labelary.md) · 67.51% mean IoU
 
 [Feature fixtures](README.md) · [External examples](../external/README.md)
 
@@ -163,6 +163,73 @@ Printer and Labelary captures retain their original capture dates. Local renders
 | [symbol-tlc39_linked](cases/symbol-tlc39_linked.md) | barcode-families | See all renderers |
 | [symbol-upca](cases/symbol-upca.md) | barcode-families | See all renderers |
 | [symbol-upce](cases/symbol-upce.md) | barcode-families | See all renderers |
+| [printer-databar-retail-retail-10-1](cases/printer-databar-retail-retail-10-1.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-retail-10-3](cases/printer-databar-retail-retail-10-3.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-retail-7-1](cases/printer-databar-retail-retail-7-1.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-retail-7-3](cases/printer-databar-retail-retail-7-3.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-retail-9-1](cases/printer-databar-retail-retail-9-1.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-retail-9-3](cases/printer-databar-retail-retail-9-3.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-00425261](cases/printer-databar-retail-upce-00425261.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-01230000045](cases/printer-databar-retail-upce-01230000045.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-01234000005](cases/printer-databar-retail-upce-01234000005.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-01234500006](cases/printer-databar-retail-upce-01234500006.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-04210000526](cases/printer-databar-retail-upce-04210000526.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-042100005264](cases/printer-databar-retail-upce-042100005264.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-042526](cases/printer-databar-retail-upce-042526.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-0425261](cases/printer-databar-retail-upce-0425261.md) | printer-databar-retail | See all renderers |
+| [printer-databar-retail-upce-original-invalid](cases/printer-databar-retail-upce-original-invalid.md) | printer-databar-retail | See all renderers |
+| [printer-barcode-defaults-code128-64-then-empty](cases/printer-barcode-defaults-code128-64-then-empty.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-64-then-module](cases/printer-barcode-defaults-code128-64-then-module.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-64-then-ratio](cases/printer-barcode-defaults-code128-64-then-ratio.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-all-retained](cases/printer-barcode-defaults-code128-all-retained.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-empty](cases/printer-barcode-defaults-code128-empty.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-explicit-10](cases/printer-barcode-defaults-code128-explicit-10.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-explicit-64](cases/printer-barcode-defaults-code128-explicit-64.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-module-only](cases/printer-barcode-defaults-code128-module-only.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-module-ratio-retained](cases/printer-barcode-defaults-code128-module-ratio-retained.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code128-none](cases/printer-barcode-defaults-code128-none.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-64-then-empty](cases/printer-barcode-defaults-code39-64-then-empty.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-64-then-module](cases/printer-barcode-defaults-code39-64-then-module.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-64-then-ratio](cases/printer-barcode-defaults-code39-64-then-ratio.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-all-retained](cases/printer-barcode-defaults-code39-all-retained.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-empty](cases/printer-barcode-defaults-code39-empty.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-explicit-10](cases/printer-barcode-defaults-code39-explicit-10.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-explicit-64](cases/printer-barcode-defaults-code39-explicit-64.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-module-only](cases/printer-barcode-defaults-code39-module-only.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-module-ratio-retained](cases/printer-barcode-defaults-code39-module-ratio-retained.md) | printer-barcode-defaults | See all renderers |
+| [printer-barcode-defaults-code39-none](cases/printer-barcode-defaults-code39-none.md) | printer-barcode-defaults | See all renderers |
+| [printer-retail-data-length-B8](cases/printer-retail-data-length-B8.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-length-BE](cases/printer-retail-data-length-BE.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-length-BU](cases/printer-retail-data-length-BU.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-sweep-B8](cases/printer-retail-data-sweep-B8.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-sweep-BE](cases/printer-retail-data-sweep-BE.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-sweep-BU](cases/printer-retail-data-sweep-BU.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-validation-B8](cases/printer-retail-data-validation-B8.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-validation-BE](cases/printer-retail-data-validation-BE.md) | printer-retail-data | See all renderers |
+| [printer-retail-data-validation-BU](cases/printer-retail-data-validation-BU.md) | printer-retail-data | See all renderers |
+| [printer-retail-caption-edges-small](cases/printer-retail-caption-edges-small.md) | printer-retail-caption-edges | See all renderers |
+| [printer-retail-caption-edges-large](cases/printer-retail-caption-edges-large.md) | printer-retail-caption-edges | See all renderers |
+| [printer-retail-caption-edges-rotations](cases/printer-retail-caption-edges-rotations.md) | printer-retail-caption-edges | See all renderers |
+| [printer-retail-caption-edges-holdouts](cases/printer-retail-caption-edges-holdouts.md) | printer-retail-caption-edges | See all renderers |
+| [printer-retail-caption-edges-discovery](cases/printer-retail-caption-edges-discovery.md) | printer-retail-caption-edges | See all renderers |
+| [printer-code93-controls-pairs](cases/printer-code93-controls-pairs.md) | printer-code93-controls | See all renderers |
+| [printer-code93-controls-holdouts](cases/printer-code93-controls-holdouts.md) | printer-code93-controls | See all renderers |
+| [printer-code93-controls-combined-checks](cases/printer-code93-controls-combined-checks.md) | printer-code93-controls | See all renderers |
+| [printer-qr-module-state-same-field](cases/printer-qr-module-state-same-field.md) | printer-qr-module-state | See all renderers |
+| [printer-qr-module-state-next-field](cases/printer-qr-module-state-next-field.md) | printer-qr-module-state | See all renderers |
+| [printer-qr-module-state-holdouts-basic](cases/printer-qr-module-state-holdouts-basic.md) | printer-qr-module-state | See all renderers |
+| [printer-character-remap-scope-clean](cases/printer-character-remap-scope-clean.md) | printer-character-remap | See all renderers |
+| [printer-character-remap-space-barcode-clean](cases/printer-character-remap-space-barcode-clean.md) | printer-character-remap | See all renderers |
+| [printer-character-remap-retail-positive](cases/printer-character-remap-retail-positive.md) | printer-character-remap | See all renderers |
+| [printer-box-minimum-round-0](cases/printer-box-minimum-round-0.md) | printer-box-minimum | See all renderers |
+| [printer-box-minimum-round-1](cases/printer-box-minimum-round-1.md) | printer-box-minimum | See all renderers |
+| [printer-box-minimum-round-8](cases/printer-box-minimum-round-8.md) | printer-box-minimum | See all renderers |
+| [printer-field-block-rounding-0-1-gaps](cases/printer-field-block-rounding-0-1-gaps.md) | printer-field-block-rounding | See all renderers |
+| [printer-field-block-rounding-0-2-gaps](cases/printer-field-block-rounding-0-2-gaps.md) | printer-field-block-rounding | See all renderers |
+| [printer-field-block-rounding-0-3-gaps](cases/printer-field-block-rounding-0-3-gaps.md) | printer-field-block-rounding | See all renderers |
+| [printer-field-block-rounding-A-1-gaps](cases/printer-field-block-rounding-A-1-gaps.md) | printer-field-block-rounding | See all renderers |
+| [printer-field-block-rounding-A-2-gaps](cases/printer-field-block-rounding-A-2-gaps.md) | printer-field-block-rounding | See all renderers |
+| [printer-field-block-rounding-A-3-gaps](cases/printer-field-block-rounding-A-3-gaps.md) | printer-field-block-rounding | See all renderers |
 | [font-0-N](cases/font-0-N.md) | fonts | See all renderers |
 | [font-0-R](cases/font-0-R.md) | fonts | See all renderers |
 | [font-0-I](cases/font-0-I.md) | fonts | See all renderers |

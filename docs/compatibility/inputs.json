@@ -2,8 +2,8 @@
   "schema": 1,
   "inputs": {
     "docs/benchmarks/command-support.json": "0a535c919d7544dc9f9829f05f681e18dd730e4972a4ba43cda069e76be63a2d",
-    "docs/benchmarks/accuracy/results.json": "1686d927186fd3b9a4da6fb3cdcb82a09617f6a9eceec92b0aa43aa3c12d3048",
-    "test-data/render-conformance/manifest.json": "c658da2be0b9d3df865fc56a1ee6a5719f595966539e81a08abc58ec5ab938aa",
+    "docs/benchmarks/accuracy/results.json": "e154e5a0a29972b898c348685adeb072e8fe6184d936dbe9b71b254d5fc930de",
+    "test-data/render-conformance/manifest.json": "204029dd80fdf1d80753e087e29369e2d03d8b786ee9fb4d0acd60464aed53bc",
     "docs/benchmarks/argument-support.md": "b5e232126255bf0f7b3b92b4557208abed9c6cd0a32009055fdd5eb219079f75",
     "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
     "benchmarks/adapters/rust/Cargo.toml": "5e9439a9cf48001bbba347f1c593409e5948e6222045dc40a066104e08d42a20",
@@ -11,11 +11,11 @@
     "benchmarks/adapters/dotnet/Comparison.csproj": "dedf04ed99b98e453e2fd9892210bc1becab3e56aad46c315ec8a2264df28a9d",
     "benchmarks/sources.lock.json": "469e2e9ca84ebdd33d36299b77b4a518bdeeceb62a8fba972ad57b7166384f55",
     "benchmarks/compatibility.py": "768744878470c0a07293bd2326494b8e439a3fe99ab91b8faf9d0cde1ef0ea51",
-    "docs/benchmarks/accuracy/comparisons/features/results.json": "6b5f575fd09b1e879363183fa2e569e7dcb27b32f8aa329531ede9725d758dcd",
-    "docs/benchmarks/conformance/results.json": "6f058b8a0269cadd977dec565b715626a6629797f1723ba9ad32b82aa7614184"
+    "docs/benchmarks/accuracy/comparisons/features/results.json": "cb38b8cf088c2fd7f157f07781394b0992354908d30cec8652fe4aff0a7acbd5",
+    "docs/benchmarks/conformance/results.json": "86e576be1f9699c3a9c2eba03ee1818a4ec5fd37687ce1b910d0c049a77a5d5b"
   },
-  "accuracy_measured_utc": "2026-09-20T22:46:04Z",
-  "conformance_measured_utc": "2026-09-20T22:46:19Z",
+  "accuracy_measured_utc": "2026-09-20T23:07:40Z",
+  "conformance_measured_utc": "2026-09-20T23:14:31Z",
   "libraries": {
     "toolchain": "0.4.1",
     "labelize": "1.5.0",
@@ -31,5 +31,5 @@
     "labelary": "captured 2026-09-19T03:17:15+00:00 (build version not exposed)"
   },
   "command_pages": 224,
-  "feature_pages": 29
+  "feature_pages": 38
 }

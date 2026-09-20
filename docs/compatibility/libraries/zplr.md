@@ -17,14 +17,14 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/zplr.md)
 
-60/132 exact; mean IoU 73.0%; 0 errors. Snapshot: 2026-09-20T22:46:04Z.
+61/133 exact; mean IoU 73.2%; 0 errors. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 30/66 exact; mean IoU 85.0%; 0 errors | 4 blank, 66 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 30.8%; 0 errors | 1 blank, 59 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 1/60 exact; mean IoU 31.9%; 0 errors | 60 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 12/25 exact; mean IoU 55.9%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 29.4%; 0 errors | 11 rendered |
@@ -44,6 +44,15 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 | [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 67.2%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 5 blank, 9 rendered |
 | [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 36.1%; 0 errors | 29 rendered |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 20/20 exact; mean IoU 100.0%; 0 errors | 20 rendered |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | 0/3 exact; mean IoU 58.4%; 0 errors | 3 rendered |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 62.0%; 0 errors | 3 rendered |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 77.5%; 0 errors | 3 rendered |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | 10/10 exact; mean IoU 100.0%; 0 errors | 10 rendered; Negative-input observations: 5 blank |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 25.3%; 0 errors | 6 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 33.8%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 70.3%; 0 errors | 5 rendered |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | 0/9 exact; mean IoU 53.8%; 0 errors | 9 rendered |
 | [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 25.8%; 0 errors | 4 rendered |
 | [Shapes](../features/shapes.md) | 46 | 13/46 exact; mean IoU 64.7%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 1/6 exact; mean IoU 54.0%; 0 errors | 6 rendered |
@@ -83,7 +92,7 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L39) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L40) | 0/1 exact; mean IoU 20.6%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L41) | 7/12 exact; mean IoU 87.5%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L42) | 10/13 exact; mean IoU 93.9%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L42) | 11/14 exact; mean IoU 94.3%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L43) | 0/2 exact; mean IoU 70.0%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L44) | 1/2 exact; mean IoU 83.7%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🟢 Upstream: supported](https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/docs/COMMAND_SUPPORT.md#L45) | 0/1 exact; mean IoU 96.1%; 0 errors |

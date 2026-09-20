@@ -9,6 +9,8 @@ MAX_SIZE = (360, 160)
 def rgb(path):
     with Image.open(path) as image:
         image.load()
+        if image.mode in {"L", "RGB", "P"} and "transparency" not in image.info:
+            return image.convert("RGB")
         rgba = image.convert("RGBA")
         white = Image.new("RGBA", rgba.size, "white")
         white.alpha_composite(rgba)

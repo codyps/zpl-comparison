@@ -118,13 +118,37 @@ def rows():
             "symbol-" + path.stem,
             "barcode-families",
             "Reference symbol variant: " + path.stem,
-            # Preserve the separately versioned conformance corpus inputs.
-            # The accuracy suite now recaptures these symbols at PW832.
-            path.read_bytes().replace(b"^PW832", b"^PW812"),
+            # Preserve historical inputs except the corrected BR8 positive case,
+            # whose verified capture uses PW832 and uncompressed UPC-A data.
+            path.read_bytes()
+            if path.stem == "databar_upce"
+            else path.read_bytes().replace(b"^PW832", b"^PW812"),
             document=True,
             source=str(path.relative_to(REPO)),
         )
-        result[-1]["width"] = 812
+        result[-1]["width"] = 832 if path.stem == "databar_upce" else 812
+
+    # Imported printer controls retain exact submitted bytes and source provenance.
+    imported = json.loads((REPO / "references/upstream-zd621/manifest.json").read_text())
+    for case in imported["cases"]:
+        path = REPO / case["source"]
+        data = path.read_bytes()
+        if hashlib.sha256(data).hexdigest() != case["sha256"]:
+            raise ValueError(f"Imported source hash mismatch: {path}")
+        printer = REPO / case["printer"]
+        if hashlib.sha256(printer.read_bytes()).hexdigest() != case["png_sha256"]:
+            raise ValueError(f"Imported printer hash mismatch: {printer}")
+        add(
+            case["name"],
+            case["group"],
+            case["purpose"],
+            data,
+            validity=case["validity"],
+            document=True,
+            source=case["source"],
+            width=case["width"],
+            height=case["height"],
+        )
 
     # Font metrics: resident bitmap/scalable families, scale quantization and anchoring.
     for font in "0ABCDEFGH":

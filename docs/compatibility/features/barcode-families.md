@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 45 🧩 Handler found | 0/59 exact; mean IoU 32.5%; 0 errors | 1 error, 59 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 45 🧩 Handler found | 1/60 exact; mean IoU 33.7%; 0 errors | 60 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 45 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 17 ❔ No evidence found; 28 🧩 Handler found | 0/59 exact; mean IoU 10.7%; 4 errors | 4 error, 56 rendered |
-| [zpl-forge](../libraries/forge.md) | 15 ❔ No evidence found; 30 🧩 Handler found | 0/59 exact; mean IoU 16.1%; 4 errors | 4 error, 56 rendered |
-| [go-zpl](../libraries/go.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | 0/59 exact; mean IoU 8.7%; 0 errors | 60 rendered |
-| [zpl-rs](../libraries/ffi.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | 0/59 exact; mean IoU 8.7%; 0 errors | 60 rendered |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 21 ❔ No evidence found; 24 🧩 Handler found | 0/59 exact; mean IoU 12.0%; 0 errors | 60 rendered |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 44 🟢 Upstream: supported | 0/59 exact; mean IoU 30.8%; 0 errors | 1 blank, 59 rendered |
+| [labelize](../libraries/labelize.md) | 17 ❔ No evidence found; 28 🧩 Handler found | 0/60 exact; mean IoU 10.6%; 4 errors | 4 error, 56 rendered |
+| [zpl-forge](../libraries/forge.md) | 15 ❔ No evidence found; 30 🧩 Handler found | 0/60 exact; mean IoU 16.2%; 4 errors | 4 error, 56 rendered |
+| [go-zpl](../libraries/go.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | 0/60 exact; mean IoU 8.7%; 0 errors | 60 rendered |
+| [zpl-rs](../libraries/ffi.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | 0/60 exact; mean IoU 8.7%; 0 errors | 60 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 21 ❔ No evidence found; 24 🧩 Handler found | 0/60 exact; mean IoU 11.9%; 0 errors | 60 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 44 🟢 Upstream: supported | 1/60 exact; mean IoU 31.9%; 0 errors | 60 rendered |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 35 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 24 ❔ No evidence found; 21 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 19 ❔ No evidence found; 26 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 45 ❔ No evidence found | 0/59 exact; mean IoU 28.5%; 0 errors | 1 blank, 59 rendered |
+| [Labelary](../libraries/labelary.md) | 45 ❔ No evidence found | 0/60 exact; mean IoU 28.1%; 0 errors | 1 blank, 59 rendered |
 
 
 ## Commands involved

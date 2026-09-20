@@ -36,13 +36,17 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Compact barcodes](../features/compact-barcodes.md) · [Negative](../features/negative.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Compact barcodes](../features/compact-barcodes.md) · [Negative](../features/negative.md) · [Printer retail caption edges](../features/printer-retail-caption-edges.md) · [Printer retail data](../features/printer-retail-data.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
 | [symbol-ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-ean13.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-ean13.md) | valid / printer | Reference symbol variant: ean13 |
+| [printer-retail-data-length-BE](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-length-BE.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-length-BE.md) | boundary / printer | retail data: length-BE |
+| [printer-retail-data-sweep-BE](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-sweep-BE.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-sweep-BE.md) | boundary / printer | retail data: sweep-BE |
+| [printer-retail-data-validation-BE](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-validation-BE.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-validation-BE.md) | boundary / printer | retail data: validation-BE |
+| [printer-retail-caption-edges-holdouts](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-holdouts.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-holdouts.md) | boundary / printer | retail caption edges: holdouts |
 | [readable-BE-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BE-N.md) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
 | [readable-BE-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BE-R.md) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
 | [readable-BE-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BE-I.md) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |

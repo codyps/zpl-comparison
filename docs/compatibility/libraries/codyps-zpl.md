@@ -17,14 +17,14 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/codyps-zpl.md)
 
-126/132 exact; mean IoU 98.5%; 0 errors. Snapshot: 2026-09-20T22:46:04Z.
+127/133 exact; mean IoU 98.6%; 0 errors. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 59/66 exact; mean IoU 95.8%; 0 errors | 4 blank, 66 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 32.5%; 0 errors | 1 error, 59 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 1/60 exact; mean IoU 33.7%; 0 errors | 60 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 14/25 exact; mean IoU 56.2%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 11/11 exact; mean IoU 100.0%; 0 errors | 11 rendered |
@@ -44,6 +44,15 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | [Metamorphic](../features/metamorphic.md) | 5 | 5/5 exact; mean IoU 100.0%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 12 error, 2 rendered |
 | [Position](../features/position.md) | 29 | 29/29 exact; mean IoU 100.0%; 0 errors | 29 rendered |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 20/20 exact; mean IoU 100.0%; 0 errors | 20 rendered |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | 3/3 exact; mean IoU 100.0%; 0 errors | 3 rendered |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 0.0%; 3 errors | 3 error |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 0.0%; 3 errors | 3 error |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | 10/10 exact; mean IoU 100.0%; 0 errors | 10 rendered; Negative-input observations: 5 error |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 6/6 exact; mean IoU 100.0%; 0 errors | 6 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 33.9%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 79.2%; 1 errors | 1 error, 4 rendered |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | 9/9 exact; mean IoU 100.0%; 0 errors | 9 rendered |
 | [Serialization](../features/serialization.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Shapes](../features/shapes.md) | 46 | 46/46 exact; mean IoU 100.0%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 6/6 exact; mean IoU 100.0%; 0 errors | 6 rendered |
@@ -83,7 +92,7 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L94) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L95) | 1/1 exact; mean IoU 100.0%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L96) | 6/12 exact; mean IoU 84.0%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L97) | 13/13 exact; mean IoU 100.0%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L97) | 14/14 exact; mean IoU 100.0%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L98) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L99) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L100) | 1/1 exact; mean IoU 100.0%; 0 errors |

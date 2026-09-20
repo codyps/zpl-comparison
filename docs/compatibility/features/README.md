@@ -10,7 +10,7 @@ Feature groups are rendering behaviors tested by the corpus, including combined 
 | Feature | Fixtures | Libraries with matched printer measurements |
 | --- | --- | --- |
 | [Barcode arguments](barcode-arguments.md) | 70 | 0 |
-| [Barcode families](barcode-families.md) | 60 | 0 |
+| [Barcode families](barcode-families.md) | 60 | 8 |
 | [Baseline barcode arguments](baseline-barcode-arguments.md) | 25 | 0 |
 | [Baseline graphics](baseline-graphics.md) | 4 | 0 |
 | [Baseline layout](baseline-layout.md) | 11 | 0 |
@@ -30,6 +30,15 @@ Feature groups are rendering behaviors tested by the corpus, including combined 
 | [Metamorphic](metamorphic.md) | 5 | 0 |
 | [Negative](negative.md) | 14 | 0 |
 | [Position](position.md) | 29 | 0 |
+| [Printer barcode defaults](printer-barcode-defaults.md) | 20 | 0 |
+| [Printer box minimum](printer-box-minimum.md) | 3 | 0 |
+| [Printer character remap](printer-character-remap.md) | 3 | 0 |
+| [Printer code93 controls](printer-code93-controls.md) | 3 | 0 |
+| [Printer databar retail](printer-databar-retail.md) | 15 | 0 |
+| [Printer field block rounding](printer-field-block-rounding.md) | 6 | 0 |
+| [Printer qr module state](printer-qr-module-state.md) | 3 | 0 |
+| [Printer retail caption edges](printer-retail-caption-edges.md) | 5 | 0 |
+| [Printer retail data](printer-retail-data.md) | 9 | 0 |
 | [Serialization](serialization.md) | 4 | 0 |
 | [Shapes](shapes.md) | 46 | 0 |
 | [State](state.md) | 6 | 0 |

@@ -36,13 +36,16 @@ Reference parameters: **i**. These describe the reference grammar, not a promise
 
 ## Related features
 
-[Baseline text](../features/baseline-text.md) · [Compact barcodes](../features/compact-barcodes.md) · [Encoding](../features/encoding.md) · [Lexical](../features/lexical.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [State](../features/state.md)
+[Baseline text](../features/baseline-text.md) · [Compact barcodes](../features/compact-barcodes.md) · [Encoding](../features/encoding.md) · [Lexical](../features/lexical.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Printer code93 controls](../features/printer-code93-controls.md) · [State](../features/state.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
 | [probe-field-hex](../../../test-data/render-conformance/cases/baseline-text/probe-field-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-field-hex.md) | valid / printer | ^FH indicator=_, bytes _41_42_43 |
+| [printer-code93-controls-pairs](../../../test-data/render-conformance/cases/printer-code93-controls/printer-code93-controls-pairs.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-code93-controls-pairs.md) | boundary / printer | code93 controls: pairs |
+| [printer-code93-controls-holdouts](../../../test-data/render-conformance/cases/printer-code93-controls/printer-code93-controls-holdouts.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-code93-controls-holdouts.md) | boundary / printer | code93 controls: holdouts |
+| [printer-code93-controls-combined-checks](../../../test-data/render-conformance/cases/printer-code93-controls/printer-code93-controls-combined-checks.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-code93-controls-combined-checks.md) | boundary / printer | code93 controls: combined-checks |
 | [unicode-latin](../../../test-data/render-conformance/cases/encoding/unicode-latin.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-latin.md) | valid / font-dependent | UTF-8 latin; resident glyph availability and shaping must be recorded |
 | [unicode-combining](../../../test-data/render-conformance/cases/encoding/unicode-combining.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-combining.md) | valid / font-dependent | UTF-8 combining; resident glyph availability and shaping must be recorded |
 | [unicode-greek](../../../test-data/render-conformance/cases/encoding/unicode-greek.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-greek.md) | valid / font-dependent | UTF-8 greek; resident glyph availability and shaping must be recorded |
@@ -59,9 +62,6 @@ Reference parameters: **i**. These describe the reference grammar, not a promise
 | [encoding-28](../../../test-data/render-conformance/cases/encoding/encoding-28.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-28.md) | valid / font-dependent | CI 28: ASCII repertoire in the requested byte encoding |
 | [encoding-29](../../../test-data/render-conformance/cases/encoding/encoding-29.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-29.md) | valid / font-dependent | CI 29: ASCII repertoire in the requested byte encoding |
 | [encoding-30](../../../test-data/render-conformance/cases/encoding/encoding-30.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-30.md) | valid / font-dependent | CI 30: ASCII repertoire in the requested byte encoding |
-| [encoding-31](../../../test-data/render-conformance/cases/encoding/encoding-31.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-31.md) | valid / font-dependent | CI 31: ASCII repertoire in the requested byte encoding |
-| [encoding-33](../../../test-data/render-conformance/cases/encoding/encoding-33.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-33.md) | valid / font-dependent | CI 33: ASCII repertoire in the requested byte encoding |
-| [encoding-34](../../../test-data/render-conformance/cases/encoding/encoding-34.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-34.md) | valid / font-dependent | CI 34: ASCII repertoire in the requested byte encoding |
 
-Showing 20 of 30 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 33 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

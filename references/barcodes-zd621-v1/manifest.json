@@ -272,13 +272,18 @@
       }
     },
     "databar_upce": {
-      "zpl_sha256": "02f2fced16c5bd7bbe5fb118479bf99ffa0a8ae2c79f9d954a35b01cb0cf0aed",
-      "printer_png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "zpl_sha256": "3b313e0cd1b56186d659f175c07a4c588b8d31cf9cd8046a5857328b79f2c562",
+      "printer_png_sha256": "eeff957f3b0070746bbb61155e01f944ba26e53a1796b2e402f95b00c5c265f4",
       "printer": {
-        "width": 832,
         "height": 1218,
-        "ink": 0,
-        "pixels_sha256": "f6e1b1c67a27d7697ff80406a1659d946e9428a39662e24679bf13d946bbcf3e"
+        "ink": 8288,
+        "pixels_sha256": "16fd3f68ea659ca20e5fd7144325193cb033a6865cbe924fc79858314d2ad4c7",
+        "width": 832
+      },
+      "provenance": {
+        "source_commit": "de0676ae4a4b8728ed0ab75a18b112bae7cbe883",
+        "source": "zebra-http-api/tests/fixtures/barcodes-zd621-v1/databar_upce.zpl",
+        "capture_note": "Recaptured 2026-09-19 UTC with valid eleven-digit UPC-A data. Original invalid six-digit input and blank response retained in zpl/tests/fixtures/databar-retail-zd621-v1."
       }
     },
     "ean13": {

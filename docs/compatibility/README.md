@@ -7,7 +7,7 @@
 
 Browse ZPL support by library or by command/feature. These are GitHub-native Markdown pages generated from the same evidence, not separate hand-maintained lists.
 
-**12 libraries · 224 command spellings · 29 feature groups · 531 fixtures.**
+**12 libraries · 224 command spellings · 38 feature groups · 598 fixtures.**
 
 | Browse | Contents |
 | --- | --- |
@@ -18,9 +18,9 @@ Browse ZPL support by library or by command/feature. These are GitHub-native Mar
 
 **Read the evidence labels.** A handler, typed emitter or upstream support claim does not establish complete argument support or printer fidelity. “Not measured” is not “unsupported”. Rendering accuracy is N/A for generators and parser-only APIs.
 
-Printer measurements: **2026-09-20T22:46:04Z**, ZTC ZD621-203dpi ZPL, firmware V93.21.33Z. Historical measurements are not rerun by document generation.
+Printer measurements: **2026-09-20T23:07:40Z**, ZTC ZD621-203dpi ZPL, firmware V93.21.33Z. Historical measurements are not rerun by document generation.
 
-Conformance execution: **2026-09-20T22:46:19Z**. [Raw execution results](../benchmarks/conformance/results.json); execution is not a printer-fidelity score.
+Conformance execution: **2026-09-20T23:14:31Z**. [Raw execution results](../benchmarks/conformance/results.json); execution is not a printer-fidelity score.
 
 Regenerate offline with `python3 benchmarks/compatibility.py`; verify with `python3 benchmarks/compatibility.py --check`. GitHub Actions refreshes these pages after rebuilding the evidence and running benchmarks. The repository README links to this reference.
 

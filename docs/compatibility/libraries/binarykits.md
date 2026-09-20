@@ -17,14 +17,14 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/binarykits.md)
 
-26/132 exact; mean IoU 38.1%; 0 errors. Snapshot: 2026-09-20T22:46:04Z.
+26/133 exact; mean IoU 37.9%; 0 errors. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 26/66 exact; mean IoU 72.0%; 1 errors | 4 crashed, 66 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 12.0%; 0 errors | 60 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 11.9%; 0 errors | 60 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 31.5%; 0 errors | 11 rendered |
@@ -44,6 +44,15 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 | [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 53.6%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 2 blank, 1 crashed, 11 rendered |
 | [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 29.0%; 0 errors | 29 rendered |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 10/20 exact; mean IoU 58.2%; 0 errors | 20 rendered |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | 1/3 exact; mean IoU 98.5%; 0 errors | 3 rendered |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 65.7%; 0 errors | 3 rendered |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 48.1%; 0 errors | 3 rendered |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | 0/10 exact; mean IoU 5.5%; 0 errors | 10 rendered; Negative-input observations: 5 rendered |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 21.4%; 0 errors | 6 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 29.7%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 70.4%; 0 errors | 5 rendered |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | 0/9 exact; mean IoU 15.3%; 4 errors | 4 crashed, 5 rendered |
 | [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 6.3%; 0 errors | 3 blank, 1 rendered |
 | [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 74.4%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 1/6 exact; mean IoU 45.4%; 0 errors | 1 blank, 5 rendered |
@@ -83,7 +92,7 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/AztecBarcodeZplCommandAnalyzer.cs#L9) | 1/2 exact; mean IoU 64.2%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 1.7%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/QrCodeBarcodeZplCommandAnalyzer.cs#L9) | 0/12 exact; mean IoU 1.0%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 6.1%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/14 exact; mean IoU 5.9%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcExtensionBarcodeZplCommandAnalyzer.cs#L9) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.0%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcABarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 96.1%; 0 errors |

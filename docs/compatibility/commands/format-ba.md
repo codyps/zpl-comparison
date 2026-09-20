@@ -36,12 +36,15 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 ## Related features
 
-[Barcode families](../features/barcode-families.md) · [Compact barcodes](../features/compact-barcodes.md)
+[Barcode families](../features/barcode-families.md) · [Compact barcodes](../features/compact-barcodes.md) · [Printer code93 controls](../features/printer-code93-controls.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
 | [symbol-code93](../../../test-data/render-conformance/cases/barcode-families/symbol-code93.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code93.md) | valid / printer | Reference symbol variant: code93 |
+| [printer-code93-controls-pairs](../../../test-data/render-conformance/cases/printer-code93-controls/printer-code93-controls-pairs.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-code93-controls-pairs.md) | boundary / printer | code93 controls: pairs |
+| [printer-code93-controls-holdouts](../../../test-data/render-conformance/cases/printer-code93-controls/printer-code93-controls-holdouts.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-code93-controls-holdouts.md) | boundary / printer | code93 controls: holdouts |
+| [printer-code93-controls-combined-checks](../../../test-data/render-conformance/cases/printer-code93-controls/printer-code93-controls-combined-checks.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-code93-controls-combined-checks.md) | boundary / printer | code93 controls: combined-checks |
 | [compact-code93-substitutes](../../../test-data/render-conformance/cases/compact-barcodes/compact-code93-substitutes.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-code93-substitutes.md) | valid / printer | Barcode state/escape/compaction regression: code93-substitutes |
 

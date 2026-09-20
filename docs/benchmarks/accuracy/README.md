@@ -2,7 +2,7 @@
 
 **[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.
 
-Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-20T22:46:04Z.
+Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-20T23:07:40Z.
 
 Local renders are cached per case and library; the comparison date is the latest execution in this snapshot. Per-result `observed_utc` values retain execution/capture dates.
 
@@ -10,7 +10,7 @@ Local renders are cached per case and library; the comparison date is the latest
 
 **This measures fidelity to the printer’s HTTP preview raster, not physical printed/scanned labels.** Every renderer receives the exact same captured ZPL. No scaling, alignment search, cropping, or replacement by another renderer’s output. Different canvas sizes are placed at the same origin on a white union canvas, with the size mismatch reported separately.
 
-133 cases, 132 with nonblank printer references, 8 renderer adapters. The repeated first/last capture matched exactly. Parser-only zpl-toolchain and the three builders (Rust zpl-builder, Python ZPL, JSZPL) cannot render incoming ZPL: **N/A**, not an accuracy score of zero.
+133 cases, 133 with nonblank printer references, 8 renderer adapters. The repeated first/last capture matched exactly. Parser-only zpl-toolchain and the three builders (Rust zpl-builder, Python ZPL, JSZPL) cannot render incoming ZPL: **N/A**, not an accuracy score of zero.
 
 ## How to read the score
 
@@ -22,16 +22,16 @@ The chart’s Overall column is the mean over all nonblank printer cases, not an
 
 ![Mean foreground IoU, sorted by overall accuracy](accuracy.svg)
 
-| Library | Nonblank / 132 | Ink exact | Strict exact | Errors | Blank | All-case mean IoU | Fresh argument IoU | Archived barcode IoU | Shared-case mean IoU |
+| Library | Nonblank / 133 | Ink exact | Strict exact | Errors | Blank | All-case mean IoU | Fresh argument IoU | Archived barcode IoU | Shared-case mean IoU |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| codyps/zpl (Rust) | 132 | 126 | 126 | 0 | 0 | 98.55% | 97.69% | 99.61% | 98.72% |
-| Labelary (SaaS) | 131 | 56 | 56 | 0 | 1 | 76.64% | 75.37% | 78.21% | 80.83% |
-| ZPLr (TypeScript) | 132 | 60 | 60 | 0 | 0 | 73.01% | 64.48% | 83.56% | 73.83% |
-| labelize (Rust) | 127 | 24 | 24 | 5 | 0 | 48.37% | 68.24% | 23.78% | 49.98% |
-| zpl-forge (Rust) | 123 | 22 | 22 | 7 | 2 | 39.86% | 46.45% | 31.71% | 44.68% |
-| BinaryKits.Zpl (.NET) | 132 | 26 | 26 | 0 | 0 | 38.15% | 45.43% | 29.13% | 38.84% |
-| go-zpl (Go) | 132 | 16 | 16 | 0 | 0 | 37.13% | 55.41% | 14.51% | 37.07% |
-| zpl-rs (Rust → Go) | 132 | 16 | 16 | 0 | 0 | 36.55% | 54.37% | 14.51% | 36.42% |
+| codyps/zpl (Rust) | 133 | 127 | 127 | 0 | 0 | 98.56% | 97.69% | 99.62% | 98.72% |
+| Labelary (SaaS) | 131 | 56 | 56 | 0 | 2 | 76.06% | 75.37% | 76.90% | 80.83% |
+| ZPLr (TypeScript) | 133 | 61 | 61 | 0 | 0 | 73.21% | 64.48% | 83.84% | 73.83% |
+| labelize (Rust) | 128 | 24 | 24 | 5 | 0 | 48.04% | 68.24% | 23.47% | 49.98% |
+| zpl-forge (Rust) | 124 | 22 | 22 | 7 | 2 | 39.72% | 46.45% | 31.53% | 44.68% |
+| BinaryKits.Zpl (.NET) | 133 | 26 | 26 | 0 | 0 | 37.89% | 45.43% | 28.71% | 38.84% |
+| go-zpl (Go) | 133 | 16 | 16 | 0 | 0 | 36.89% | 55.41% | 14.36% | 37.07% |
+| zpl-rs (Rust → Go) | 133 | 16 | 16 | 0 | 0 | 36.32% | 54.37% | 14.36% | 36.42% |
 
 Inspect the difference images to distinguish placement, font metrics, omitted fields and symbol-pattern differences. IoU compares the original coordinates without aligning away placement errors.
 
@@ -109,7 +109,7 @@ Click any result to compare the printer preview, library render and difference t
 | [databar_stacked_omni](../../../references/barcodes-zd621-v1/databar_stacked_omni.zpl) · [printer](../../../references/barcodes-zd621-v1/databar_stacked_omni.png) | ^BR | See exact archived ZPL | [100.0%](comparisons/cases/barcode-databar_stacked_omni.md#codyps-zpl) | [5.9%](comparisons/cases/barcode-databar_stacked_omni.md#labelize) | [9.8%](comparisons/cases/barcode-databar_stacked_omni.md#forge) | [6.6%](comparisons/cases/barcode-databar_stacked_omni.md#go) | [6.6%](comparisons/cases/barcode-databar_stacked_omni.md#ffi) | [3.9%](comparisons/cases/barcode-databar_stacked_omni.md#binarykits) | [100.0%](comparisons/cases/barcode-databar_stacked_omni.md#zplr) | [100.0%](comparisons/cases/barcode-databar_stacked_omni.md#labelary) |
 | [databar_truncated](../../../references/barcodes-zd621-v1/databar_truncated.zpl) · [printer](../../../references/barcodes-zd621-v1/databar_truncated.png) | ^BR | See exact archived ZPL | [100.0%](comparisons/cases/barcode-databar_truncated.md#codyps-zpl) | [17.4%](comparisons/cases/barcode-databar_truncated.md#labelize) | [29.3%](comparisons/cases/barcode-databar_truncated.md#forge) | [19.4%](comparisons/cases/barcode-databar_truncated.md#go) | [19.4%](comparisons/cases/barcode-databar_truncated.md#ffi) | [13.3%](comparisons/cases/barcode-databar_truncated.md#binarykits) | [100.0%](comparisons/cases/barcode-databar_truncated.md#zplr) | [100.0%](comparisons/cases/barcode-databar_truncated.md#labelary) |
 | [databar_upca](../../../references/barcodes-zd621-v1/databar_upca.zpl) · [printer](../../../references/barcodes-zd621-v1/databar_upca.png) | ^BR | See exact archived ZPL | [100.0%](comparisons/cases/barcode-databar_upca.md#codyps-zpl) | [2.7%](comparisons/cases/barcode-databar_upca.md#labelize) | [25.0%](comparisons/cases/barcode-databar_upca.md#forge) | [2.9%](comparisons/cases/barcode-databar_upca.md#go) | [2.9%](comparisons/cases/barcode-databar_upca.md#ffi) | [2.5%](comparisons/cases/barcode-databar_upca.md#binarykits) | [100.0%](comparisons/cases/barcode-databar_upca.md#zplr) | [100.0%](comparisons/cases/barcode-databar_upca.md#labelary) |
-| [databar_upce](../../../references/barcodes-zd621-v1/databar_upce.zpl) · [printer](../../../references/barcodes-zd621-v1/databar_upce.png) | ^BR | See exact archived ZPL | [reference blank](comparisons/cases/barcode-databar_upce.md#codyps-zpl) | [reference blank](comparisons/cases/barcode-databar_upce.md#labelize) | [reference blank](comparisons/cases/barcode-databar_upce.md#forge) | [reference blank](comparisons/cases/barcode-databar_upce.md#go) | [reference blank](comparisons/cases/barcode-databar_upce.md#ffi) | [reference blank](comparisons/cases/barcode-databar_upce.md#binarykits) | [reference blank](comparisons/cases/barcode-databar_upce.md#zplr) | [reference blank](comparisons/cases/barcode-databar_upce.md#labelary) |
+| [databar_upce](../../../references/barcodes-zd621-v1/databar_upce.zpl) · [printer](../../../references/barcodes-zd621-v1/databar_upce.png) | ^BR | See exact archived ZPL | [100.0%](comparisons/cases/barcode-databar_upce.md#codyps-zpl) | [4.9%](comparisons/cases/barcode-databar_upce.md#labelize) | [20.9%](comparisons/cases/barcode-databar_upce.md#forge) | [5.4%](comparisons/cases/barcode-databar_upce.md#go) | [5.4%](comparisons/cases/barcode-databar_upce.md#ffi) | [3.7%](comparisons/cases/barcode-databar_upce.md#binarykits) | [100.0%](comparisons/cases/barcode-databar_upce.md#zplr) | [blank](comparisons/cases/barcode-databar_upce.md#labelary) |
 | [ean13](../../../references/barcodes-zd621-v1/ean13.zpl) · [printer](../../../references/barcodes-zd621-v1/ean13.png) | ^BE | See exact archived ZPL | [100.0%](comparisons/cases/barcode-ean13.md#codyps-zpl) | [99.8%](comparisons/cases/barcode-ean13.md#labelize) | [98.0%](comparisons/cases/barcode-ean13.md#forge) | [6.3%](comparisons/cases/barcode-ean13.md#go) | [6.3%](comparisons/cases/barcode-ean13.md#ffi) | [98.0%](comparisons/cases/barcode-ean13.md#binarykits) | [98.0%](comparisons/cases/barcode-ean13.md#zplr) | [100.0%](comparisons/cases/barcode-ean13.md#labelary) |
 | [ean8](../../../references/barcodes-zd621-v1/ean8.zpl) · [printer](../../../references/barcodes-zd621-v1/ean8.png) | ^B8 | See exact archived ZPL | [100.0%](comparisons/cases/barcode-ean8.md#codyps-zpl) | [99.8%](comparisons/cases/barcode-ean8.md#labelize) | [97.0%](comparisons/cases/barcode-ean8.md#forge) | [4.8%](comparisons/cases/barcode-ean8.md#go) | [4.8%](comparisons/cases/barcode-ean8.md#ffi) | [3.3%](comparisons/cases/barcode-ean8.md#binarykits) | [97.0%](comparisons/cases/barcode-ean8.md#zplr) | [100.0%](comparisons/cases/barcode-ean8.md#labelary) |
 | [extension2](../../../references/barcodes-zd621-v1/extension2.zpl) · [printer](../../../references/barcodes-zd621-v1/extension2.png) | ^BS | See exact archived ZPL | [100.0%](comparisons/cases/barcode-extension2.md#codyps-zpl) | [5.2%](comparisons/cases/barcode-extension2.md#labelize) | [20.0%](comparisons/cases/barcode-extension2.md#forge) | [6.4%](comparisons/cases/barcode-extension2.md#go) | [6.4%](comparisons/cases/barcode-extension2.md#ffi) | [100.0%](comparisons/cases/barcode-extension2.md#binarykits) | [70.0%](comparisons/cases/barcode-extension2.md#zplr) | [100.0%](comparisons/cases/barcode-extension2.md#labelary) |

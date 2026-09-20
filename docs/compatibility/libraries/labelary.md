@@ -17,14 +17,14 @@ Public API responses at 8 dpmm, identified by capture timestamps when no build v
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/labelary.md)
 
-56/132 exact; mean IoU 76.6%; 0 errors. Snapshot: 2026-09-20T22:46:04Z.
+56/133 exact; mean IoU 76.1%; 0 errors. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 27/66 exact; mean IoU 82.0%; 0 errors | 9 blank, 61 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 28.5%; 0 errors | 1 blank, 59 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 28.1%; 0 errors | 1 blank, 59 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 12/25 exact; mean IoU 55.9%; 0 errors | 1 blank, 24 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 62.8%; 0 errors | 11 rendered |
@@ -44,6 +44,15 @@ Public API responses at 8 dpmm, identified by capture timestamps when no build v
 | [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 82.1%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 2 error, 12 rendered |
 | [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 73.1%; 0 errors | 29 rendered |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 20/20 exact; mean IoU 100.0%; 0 errors | 20 rendered |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | 1/3 exact; mean IoU 98.7%; 0 errors | 3 rendered |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 87.7%; 0 errors | 3 rendered |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 86.8%; 0 errors | 3 rendered |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | 6/10 exact; mean IoU 60.0%; 0 errors | 4 blank, 6 rendered; Negative-input observations: 5 blank |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 65.7%; 0 errors | 6 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 93.9%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 84.7%; 0 errors | 5 rendered |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | 0/9 exact; mean IoU 75.8%; 0 errors | 9 rendered |
 | [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 61.6%; 0 errors | 4 rendered |
 | [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 80.2%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 1/6 exact; mean IoU 87.5%; 0 errors | 6 rendered |
@@ -83,7 +92,7 @@ Public API responses at 8 dpmm, identified by capture timestamps when no build v
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | ❔ No evidence found | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 1/1 exact; mean IoU 100.0%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | ❔ No evidence found | 0/12 exact; mean IoU 49.7%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 11/13 exact; mean IoU 98.2%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 11/14 exact; mean IoU 91.2%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | ❔ No evidence found | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.6%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | ❔ No evidence found | 1/1 exact; mean IoU 100.0%; 0 errors |

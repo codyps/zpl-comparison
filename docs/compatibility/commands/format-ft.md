@@ -36,13 +36,14 @@ Reference parameters: **x, y, z**. These describe the reference grammar, not a p
 
 ## Related features
 
-[Baseline layout](../features/baseline-layout.md) · [Compact fonts](../features/compact-fonts.md) · [Position](../features/position.md)
+[Baseline layout](../features/baseline-layout.md) · [Compact fonts](../features/compact-fonts.md) · [Position](../features/position.md) · [Printer retail caption edges](../features/printer-retail-caption-edges.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
 | [probe-ft-baseline](../../../test-data/render-conformance/cases/baseline-layout/probe-ft-baseline.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-ft-baseline.md) | valid / printer | ^FT x=80,y=100 |
+| [printer-retail-caption-edges-holdouts](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-holdouts.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-holdouts.md) | boundary / printer | retail caption edges: holdouts |
 | [anchor-FT-N-0](../../../test-data/render-conformance/cases/position/anchor-FT-N-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-N-0.md) | valid / printer | FT origin, N rotation, justification 0; crosshair stays fixed |
 | [anchor-FT-N-1](../../../test-data/render-conformance/cases/position/anchor-FT-N-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-N-1.md) | valid / printer | FT origin, N rotation, justification 1; crosshair stays fixed |
 | [anchor-FT-N-2](../../../test-data/render-conformance/cases/position/anchor-FT-N-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-N-2.md) | valid / printer | FT origin, N rotation, justification 2; crosshair stays fixed |

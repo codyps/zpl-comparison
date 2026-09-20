@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (19527) panicked at src/main.rs:27:10:
+thread 'main' (24159) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "invalid graphic count" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · unscored · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (26772) panicked at /tmp/zpl-build-it5tqgiw/vendor/zpl-forge/src/forge/png.rs:418:45:
+thread 'main' (24171) panicked at /tmp/zpl-build-it5tqgiw/vendor/zpl-forge/src/forge/png.rs:418:45:
 chunk size must be non-zero
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

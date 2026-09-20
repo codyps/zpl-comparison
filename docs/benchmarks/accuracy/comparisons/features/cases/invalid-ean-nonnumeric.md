@@ -40,7 +40,7 @@ error · unscored · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (23763) panicked at src/main.rs:63:14:
+thread 'main' (23924) panicked at src/main.rs:63:14:
 PNG: "EAN-13: need at least 12 digits, got 0"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · unscored · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (26541) panicked at src/main.rs:79:32:
+thread 'main' (23930) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Found empty contents")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

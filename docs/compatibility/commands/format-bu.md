@@ -36,13 +36,22 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Printer character remap](../features/printer-character-remap.md) · [Printer retail caption edges](../features/printer-retail-caption-edges.md) · [Printer retail data](../features/printer-retail-data.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
 | [symbol-upca](../../../test-data/render-conformance/cases/barcode-families/symbol-upca.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-upca.md) | valid / printer | Reference symbol variant: upca |
+| [printer-retail-data-length-BU](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-length-BU.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-length-BU.md) | boundary / printer | retail data: length-BU |
+| [printer-retail-data-sweep-BU](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-sweep-BU.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-sweep-BU.md) | boundary / printer | retail data: sweep-BU |
+| [printer-retail-data-validation-BU](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-validation-BU.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-validation-BU.md) | boundary / printer | retail data: validation-BU |
+| [printer-retail-caption-edges-small](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-small.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-small.md) | boundary / printer | retail caption edges: small |
+| [printer-retail-caption-edges-large](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-large.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-large.md) | boundary / printer | retail caption edges: large |
+| [printer-retail-caption-edges-rotations](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-rotations.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-rotations.md) | boundary / printer | retail caption edges: rotations |
+| [printer-retail-caption-edges-holdouts](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-holdouts.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-holdouts.md) | boundary / printer | retail caption edges: holdouts |
+| [printer-retail-caption-edges-discovery](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-discovery.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-discovery.md) | boundary / printer | retail caption edges: discovery |
+| [printer-character-remap-retail-positive](../../../test-data/render-conformance/cases/printer-character-remap/printer-character-remap-retail-positive.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-character-remap-retail-positive.md) | boundary / printer | character remap: retail-positive |
 | [readable-BU-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BU-N.md) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
 | [readable-BU-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BU-R.md) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
 | [readable-BU-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BU-I.md) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |

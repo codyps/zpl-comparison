@@ -47,7 +47,7 @@ Reference parameters: **f, o, h, w**. These describe the reference grammar, not 
 
 ## Related features
 
-[Baseline layout](../features/baseline-layout.md) · [Baseline text](../features/baseline-text.md) · [Compact compositing](../features/compact-compositing.md) · [Compact fonts](../features/compact-fonts.md) · [Compact layout](../features/compact-layout.md) · [Encoding](../features/encoding.md) · [Fonts](../features/fonts.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [State](../features/state.md) · [Stress](../features/stress.md) · [Text data](../features/text-data.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md)
+[Baseline layout](../features/baseline-layout.md) · [Baseline text](../features/baseline-text.md) · [Compact compositing](../features/compact-compositing.md) · [Compact fonts](../features/compact-fonts.md) · [Compact layout](../features/compact-layout.md) · [Encoding](../features/encoding.md) · [Fonts](../features/fonts.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [Printer character remap](../features/printer-character-remap.md) · [Printer field block rounding](../features/printer-field-block-rounding.md) · [State](../features/state.md) · [Stress](../features/stress.md) · [Text data](../features/text-data.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
@@ -74,5 +74,5 @@ Reference parameters: **f, o, h, w**. These describe the reference grammar, not 
 | [probe-block-C](../../../test-data/render-conformance/cases/baseline-text/probe-block-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-C.md) | valid / printer | ^FB w=220,lines=3,space=2,align=C,indent=0 |
 | [probe-block-R](../../../test-data/render-conformance/cases/baseline-text/probe-block-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-R.md) | valid / printer | ^FB w=220,lines=3,space=2,align=R,indent=0 |
 
-Showing 20 of 220 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 228 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

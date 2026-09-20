@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (19558) panicked at src/main.rs:27:10:
+thread 'main' (24033) panicked at src/main.rs:27:10:
 render: RenderError { offset: 85, message: "BQ: parameter 2 mode unsupported" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

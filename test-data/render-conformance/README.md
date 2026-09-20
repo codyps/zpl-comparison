@@ -1,6 +1,6 @@
 # ZPL rendering conformance corpus
 
-**531 standalone ZPL files**, exercising **68 content-command families**: 517 valid/boundary probes and 14 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
+**598 standalone ZPL files**, exercising **68 content-command families**: 579 valid/boundary probes and 19 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
 
 [Complete command coverage and case catalog](https://github.com/codyps/zpl-comparison/blob/generated/test-data/render-conformance/COVERAGE.md) · [Manifest](manifest.json) · [Generator](generate.py) · [Existing printer accuracy report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
 
@@ -94,3 +94,9 @@ Font-ID availability, Unicode repertoires, shaping and fallback vary by model/fi
 `^GFC` proprietary compressed-binary encoding does not yet have an independently verified encoding vector here; A/B plus ASCII RLE/B64/Z64 are covered. QR manual/structured-append payload grammar and every composite-barcode option need more vectors. The 60 inherited barcode cases were used in development and are not independent holdout data. Large off-canvas coordinates are bounded clipping probes, not allocation or denial-of-service stress tests.
 
 Authority: [Zebra Programming Guide P1134473-11EN Rev A](../../docs/zpl-zbi2-pg-en.pdf), notably text pp. 186–217, typography pp. 60–62/154–159/315/356, barcodes pp. 64–150 and layout pp. 293–297/319/322/329. Per-case command sections are recorded in the manifest. The suite generator, not codyps/zpl renderer acceptance, determines the fixture set.
+
+The [imported ZD621 controls](../../references/upstream-zd621/README.md) add 67
+exact upstream inputs, including five explicitly invalid UPC-E cases. Their
+original printer responses and capture provenance are retained independently
+of the older capture batch. The positive `symbol-databar_upce` uses its corrected
+832-dot capture; other historical barcode-family cases retain their 812-dot inputs.

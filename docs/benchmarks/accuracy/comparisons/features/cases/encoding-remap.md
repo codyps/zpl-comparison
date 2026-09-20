@@ -28,7 +28,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (15848) panicked at src/main.rs:27:10:
+thread 'main' (20390) panicked at src/main.rs:27:10:
 render: RenderError { offset: 65, message: "unexpected command parameters" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (30663) panicked at src/main.rs:74:10:
+thread 'main' (20405) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

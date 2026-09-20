@@ -36,11 +36,15 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 ## Related features
 
-[Barcode families](../features/barcode-families.md)
+[Barcode families](../features/barcode-families.md) · [Printer retail caption edges](../features/printer-retail-caption-edges.md) · [Printer retail data](../features/printer-retail-data.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
 | [symbol-ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-ean8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-ean8.md) | valid / printer | Reference symbol variant: ean8 |
+| [printer-retail-data-length-B8](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-length-B8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-length-B8.md) | boundary / printer | retail data: length-B8 |
+| [printer-retail-data-sweep-B8](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-sweep-B8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-sweep-B8.md) | boundary / printer | retail data: sweep-B8 |
+| [printer-retail-data-validation-B8](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-validation-B8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-validation-B8.md) | boundary / printer | retail data: validation-B8 |
+| [printer-retail-caption-edges-holdouts](../../../test-data/render-conformance/cases/printer-retail-caption-edges/printer-retail-caption-edges-holdouts.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-caption-edges-holdouts.md) | boundary / printer | retail caption edges: holdouts |
 

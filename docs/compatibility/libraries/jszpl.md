@@ -17,7 +17,7 @@ Layout components emit ZPL; preview helpers are not an incoming-ZPL interpreter.
 
 This library does not render incoming ZPL.
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-20T22:46:04Z.
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
@@ -44,6 +44,15 @@ N/A – no incoming-ZPL renderer. Snapshot: 2026-09-20T22:46:04Z.
 | [Metamorphic](../features/metamorphic.md) | 5 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Negative](../features/negative.md) | 14 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Position](../features/position.md) | 29 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Serialization](../features/serialization.md) | 4 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Shapes](../features/shapes.md) | 46 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [State](../features/state.md) | 6 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |

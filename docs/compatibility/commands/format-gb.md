@@ -40,7 +40,7 @@ Reference parameters: **w, h, t, c, r**. These describe the reference grammar, n
 
 ## Related features
 
-[Baseline layout](../features/baseline-layout.md) · [Baseline shapes](../features/baseline-shapes.md) · [Clipping](../features/clipping.md) · [Compact compositing](../features/compact-compositing.md) · [Compact fonts](../features/compact-fonts.md) · [Compact shapes](../features/compact-shapes.md) · [Compositing](../features/compositing.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [Shapes](../features/shapes.md) · [State](../features/state.md) · [Torture](../features/torture.md) · [Transforms](../features/transforms.md)
+[Baseline layout](../features/baseline-layout.md) · [Baseline shapes](../features/baseline-shapes.md) · [Clipping](../features/clipping.md) · [Compact compositing](../features/compact-compositing.md) · [Compact fonts](../features/compact-fonts.md) · [Compact shapes](../features/compact-shapes.md) · [Compositing](../features/compositing.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [Printer box minimum](../features/printer-box-minimum.md) · [Shapes](../features/shapes.md) · [State](../features/state.md) · [Torture](../features/torture.md) · [Transforms](../features/transforms.md)
 
 ## Corpus occurrences
 
@@ -52,6 +52,9 @@ Reference parameters: **w, h, t, c, r**. These describe the reference grammar, n
 | [probe-box-thickness-60](../../../test-data/render-conformance/cases/baseline-shapes/probe-box-thickness-60.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-box-thickness-60.md) | valid / printer | ^GB w=100,h=60,t=60,color=B,round=0 |
 | [probe-box-round](../../../test-data/render-conformance/cases/baseline-shapes/probe-box-round.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-box-round.md) | valid / printer | ^GB round=4 |
 | [probe-box-white](../../../test-data/render-conformance/cases/baseline-shapes/probe-box-white.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-box-white.md) | valid / printer | ^GB color=W |
+| [printer-box-minimum-round-0](../../../test-data/render-conformance/cases/printer-box-minimum/printer-box-minimum-round-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-box-minimum-round-0.md) | boundary / printer | box minimum: round-0 |
+| [printer-box-minimum-round-1](../../../test-data/render-conformance/cases/printer-box-minimum/printer-box-minimum-round-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-box-minimum-round-1.md) | boundary / printer | box minimum: round-1 |
+| [printer-box-minimum-round-8](../../../test-data/render-conformance/cases/printer-box-minimum/printer-box-minimum-round-8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-box-minimum-round-8.md) | boundary / printer | box minimum: round-8 |
 | [anchor-FO-N-0](../../../test-data/render-conformance/cases/position/anchor-FO-N-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FO-N-0.md) | valid / printer | FO origin, N rotation, justification 0; crosshair stays fixed |
 | [anchor-FO-N-1](../../../test-data/render-conformance/cases/position/anchor-FO-N-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FO-N-1.md) | valid / printer | FO origin, N rotation, justification 1; crosshair stays fixed |
 | [anchor-FO-N-2](../../../test-data/render-conformance/cases/position/anchor-FO-N-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FO-N-2.md) | valid / printer | FO origin, N rotation, justification 2; crosshair stays fixed |
@@ -63,9 +66,6 @@ Reference parameters: **w, h, t, c, r**. These describe the reference grammar, n
 | [anchor-FO-R-2](../../../test-data/render-conformance/cases/position/anchor-FO-R-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FO-R-2.md) | valid / printer | FO origin, R rotation, justification 2; crosshair stays fixed |
 | [anchor-FT-R-0](../../../test-data/render-conformance/cases/position/anchor-FT-R-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-R-0.md) | valid / printer | FT origin, R rotation, justification 0; crosshair stays fixed |
 | [anchor-FT-R-1](../../../test-data/render-conformance/cases/position/anchor-FT-R-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-R-1.md) | valid / printer | FT origin, R rotation, justification 1; crosshair stays fixed |
-| [anchor-FT-R-2](../../../test-data/render-conformance/cases/position/anchor-FT-R-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-R-2.md) | valid / printer | FT origin, R rotation, justification 2; crosshair stays fixed |
-| [anchor-FO-I-0](../../../test-data/render-conformance/cases/position/anchor-FO-I-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FO-I-0.md) | valid / printer | FO origin, I rotation, justification 0; crosshair stays fixed |
-| [anchor-FO-I-1](../../../test-data/render-conformance/cases/position/anchor-FO-I-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FO-I-1.md) | valid / printer | FO origin, I rotation, justification 1; crosshair stays fixed |
 
-Showing 20 of 93 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 96 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

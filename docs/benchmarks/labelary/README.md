@@ -1,6 +1,6 @@
 # Labelary renderer captures
 
-[Service documentation](https://labelary.com/service.html). Captured **2026-09-19T03:17:15+00:00** through **2026-09-20T04:19:04+00:00**. Renderer version: not exposed; identified by UTC capture timestamps.
+[Service documentation](https://labelary.com/service.html). Captured **2026-09-19T03:17:15+00:00** through **2026-09-20T22:29:57+00:00**. Renderer version: not exposed; identified by UTC capture timestamps.
 
 Labelary is an additional renderer. The ZD621 printer captures remain the accuracy baseline. [Printer accuracy scores](../accuracy/README.md) · [Comparison gallery](../accuracy/comparisons/libraries/labelary.md).
 
@@ -110,7 +110,6 @@ Requests use 8 dpmm and label index 0. Dimensions are converted using 203 dots/i
 | accuracy | barcode-databar_stacked_omni | [PNG](images/accuracy--barcode-databar_stacked_omni.png) |
 | accuracy | barcode-databar_truncated | [PNG](images/accuracy--barcode-databar_truncated.png) |
 | accuracy | barcode-databar_upca | [PNG](images/accuracy--barcode-databar_upca.png) |
-| accuracy | barcode-databar_upce | [PNG](images/accuracy--barcode-databar_upce.png) |
 | accuracy | barcode-ean13 | [PNG](images/accuracy--barcode-ean13.png) |
 | accuracy | barcode-ean8 | [PNG](images/accuracy--barcode-ean8.png) |
 | accuracy | barcode-extension2 | [PNG](images/accuracy--barcode-extension2.png) |
@@ -243,7 +242,6 @@ Requests use 8 dpmm and label index 0. Dimensions are converted using 203 dots/i
 | conformance | symbol-databar_stacked_omni | [PNG](images/conformance--symbol-databar_stacked_omni.png) |
 | conformance | symbol-databar_truncated | [PNG](images/conformance--symbol-databar_truncated.png) |
 | conformance | symbol-databar_upca | [PNG](images/conformance--symbol-databar_upca.png) |
-| conformance | symbol-databar_upce | [PNG](images/conformance--symbol-databar_upce.png) |
 | conformance | symbol-ean13 | [PNG](images/conformance--symbol-ean13.png) |
 | conformance | symbol-ean8 | [PNG](images/conformance--symbol-ean8.png) |
 | conformance | symbol-extension2 | [PNG](images/conformance--symbol-extension2.png) |
@@ -682,3 +680,72 @@ Requests use 8 dpmm and label index 0. Dimensions are converted using 203 dots/i
 | conformance | compact-caption-Y | [PNG](images/conformance--compact-caption-Y.png) |
 | conformance | compact-overlap-FR | [PNG](images/conformance--compact-overlap-FR.png) |
 | conformance | compact-overlap-LR | [PNG](images/conformance--compact-overlap-LR.png) |
+| accuracy | barcode-databar_upce | [PNG](images/accuracy--barcode-databar_upce.png) |
+| conformance | symbol-databar_upce | [PNG](images/conformance--symbol-databar_upce.png) |
+| conformance | printer-databar-retail-retail-10-1 | [PNG](images/conformance--printer-databar-retail-retail-10-1.png) |
+| conformance | printer-databar-retail-retail-10-3 | [PNG](images/conformance--printer-databar-retail-retail-10-3.png) |
+| conformance | printer-databar-retail-retail-7-1 | [PNG](images/conformance--printer-databar-retail-retail-7-1.png) |
+| conformance | printer-databar-retail-retail-7-3 | [PNG](images/conformance--printer-databar-retail-retail-7-3.png) |
+| conformance | printer-databar-retail-retail-9-1 | [PNG](images/conformance--printer-databar-retail-retail-9-1.png) |
+| conformance | printer-databar-retail-retail-9-3 | [PNG](images/conformance--printer-databar-retail-retail-9-3.png) |
+| conformance | printer-databar-retail-upce-00425261 | [PNG](images/conformance--printer-databar-retail-upce-00425261.png) |
+| conformance | printer-databar-retail-upce-01230000045 | [PNG](images/conformance--printer-databar-retail-upce-01230000045.png) |
+| conformance | printer-databar-retail-upce-01234000005 | [PNG](images/conformance--printer-databar-retail-upce-01234000005.png) |
+| conformance | printer-databar-retail-upce-01234500006 | [PNG](images/conformance--printer-databar-retail-upce-01234500006.png) |
+| conformance | printer-databar-retail-upce-04210000526 | [PNG](images/conformance--printer-databar-retail-upce-04210000526.png) |
+| conformance | printer-databar-retail-upce-042100005264 | [PNG](images/conformance--printer-databar-retail-upce-042100005264.png) |
+| conformance | printer-databar-retail-upce-042526 | [PNG](images/conformance--printer-databar-retail-upce-042526.png) |
+| conformance | printer-databar-retail-upce-0425261 | [PNG](images/conformance--printer-databar-retail-upce-0425261.png) |
+| conformance | printer-databar-retail-upce-original-invalid | [PNG](images/conformance--printer-databar-retail-upce-original-invalid.png) |
+| conformance | printer-barcode-defaults-code128-64-then-empty | [PNG](images/conformance--printer-barcode-defaults-code128-64-then-empty.png) |
+| conformance | printer-barcode-defaults-code128-64-then-module | [PNG](images/conformance--printer-barcode-defaults-code128-64-then-module.png) |
+| conformance | printer-barcode-defaults-code128-64-then-ratio | [PNG](images/conformance--printer-barcode-defaults-code128-64-then-ratio.png) |
+| conformance | printer-barcode-defaults-code128-all-retained | [PNG](images/conformance--printer-barcode-defaults-code128-all-retained.png) |
+| conformance | printer-barcode-defaults-code128-empty | [PNG](images/conformance--printer-barcode-defaults-code128-empty.png) |
+| conformance | printer-barcode-defaults-code128-explicit-10 | [PNG](images/conformance--printer-barcode-defaults-code128-explicit-10.png) |
+| conformance | printer-barcode-defaults-code128-explicit-64 | [PNG](images/conformance--printer-barcode-defaults-code128-explicit-64.png) |
+| conformance | printer-barcode-defaults-code128-module-only | [PNG](images/conformance--printer-barcode-defaults-code128-module-only.png) |
+| conformance | printer-barcode-defaults-code128-module-ratio-retained | [PNG](images/conformance--printer-barcode-defaults-code128-module-ratio-retained.png) |
+| conformance | printer-barcode-defaults-code128-none | [PNG](images/conformance--printer-barcode-defaults-code128-none.png) |
+| conformance | printer-barcode-defaults-code39-64-then-empty | [PNG](images/conformance--printer-barcode-defaults-code39-64-then-empty.png) |
+| conformance | printer-barcode-defaults-code39-64-then-module | [PNG](images/conformance--printer-barcode-defaults-code39-64-then-module.png) |
+| conformance | printer-barcode-defaults-code39-64-then-ratio | [PNG](images/conformance--printer-barcode-defaults-code39-64-then-ratio.png) |
+| conformance | printer-barcode-defaults-code39-all-retained | [PNG](images/conformance--printer-barcode-defaults-code39-all-retained.png) |
+| conformance | printer-barcode-defaults-code39-empty | [PNG](images/conformance--printer-barcode-defaults-code39-empty.png) |
+| conformance | printer-barcode-defaults-code39-explicit-10 | [PNG](images/conformance--printer-barcode-defaults-code39-explicit-10.png) |
+| conformance | printer-barcode-defaults-code39-explicit-64 | [PNG](images/conformance--printer-barcode-defaults-code39-explicit-64.png) |
+| conformance | printer-barcode-defaults-code39-module-only | [PNG](images/conformance--printer-barcode-defaults-code39-module-only.png) |
+| conformance | printer-barcode-defaults-code39-module-ratio-retained | [PNG](images/conformance--printer-barcode-defaults-code39-module-ratio-retained.png) |
+| conformance | printer-barcode-defaults-code39-none | [PNG](images/conformance--printer-barcode-defaults-code39-none.png) |
+| conformance | printer-retail-data-length-B8 | [PNG](images/conformance--printer-retail-data-length-B8.png) |
+| conformance | printer-retail-data-length-BE | [PNG](images/conformance--printer-retail-data-length-BE.png) |
+| conformance | printer-retail-data-length-BU | [PNG](images/conformance--printer-retail-data-length-BU.png) |
+| conformance | printer-retail-data-sweep-B8 | [PNG](images/conformance--printer-retail-data-sweep-B8.png) |
+| conformance | printer-retail-data-sweep-BE | [PNG](images/conformance--printer-retail-data-sweep-BE.png) |
+| conformance | printer-retail-data-sweep-BU | [PNG](images/conformance--printer-retail-data-sweep-BU.png) |
+| conformance | printer-retail-data-validation-B8 | [PNG](images/conformance--printer-retail-data-validation-B8.png) |
+| conformance | printer-retail-data-validation-BE | [PNG](images/conformance--printer-retail-data-validation-BE.png) |
+| conformance | printer-retail-data-validation-BU | [PNG](images/conformance--printer-retail-data-validation-BU.png) |
+| conformance | printer-retail-caption-edges-small | [PNG](images/conformance--printer-retail-caption-edges-small.png) |
+| conformance | printer-retail-caption-edges-large | [PNG](images/conformance--printer-retail-caption-edges-large.png) |
+| conformance | printer-retail-caption-edges-rotations | [PNG](images/conformance--printer-retail-caption-edges-rotations.png) |
+| conformance | printer-retail-caption-edges-holdouts | [PNG](images/conformance--printer-retail-caption-edges-holdouts.png) |
+| conformance | printer-retail-caption-edges-discovery | [PNG](images/conformance--printer-retail-caption-edges-discovery.png) |
+| conformance | printer-code93-controls-pairs | [PNG](images/conformance--printer-code93-controls-pairs.png) |
+| conformance | printer-code93-controls-holdouts | [PNG](images/conformance--printer-code93-controls-holdouts.png) |
+| conformance | printer-code93-controls-combined-checks | [PNG](images/conformance--printer-code93-controls-combined-checks.png) |
+| conformance | printer-qr-module-state-same-field | [PNG](images/conformance--printer-qr-module-state-same-field.png) |
+| conformance | printer-qr-module-state-next-field | [PNG](images/conformance--printer-qr-module-state-next-field.png) |
+| conformance | printer-qr-module-state-holdouts-basic | [PNG](images/conformance--printer-qr-module-state-holdouts-basic.png) |
+| conformance | printer-character-remap-scope-clean | [PNG](images/conformance--printer-character-remap-scope-clean.png) |
+| conformance | printer-character-remap-space-barcode-clean | [PNG](images/conformance--printer-character-remap-space-barcode-clean.png) |
+| conformance | printer-character-remap-retail-positive | [PNG](images/conformance--printer-character-remap-retail-positive.png) |
+| conformance | printer-box-minimum-round-0 | [PNG](images/conformance--printer-box-minimum-round-0.png) |
+| conformance | printer-box-minimum-round-1 | [PNG](images/conformance--printer-box-minimum-round-1.png) |
+| conformance | printer-box-minimum-round-8 | [PNG](images/conformance--printer-box-minimum-round-8.png) |
+| conformance | printer-field-block-rounding-0-1-gaps | [PNG](images/conformance--printer-field-block-rounding-0-1-gaps.png) |
+| conformance | printer-field-block-rounding-0-2-gaps | [PNG](images/conformance--printer-field-block-rounding-0-2-gaps.png) |
+| conformance | printer-field-block-rounding-0-3-gaps | [PNG](images/conformance--printer-field-block-rounding-0-3-gaps.png) |
+| conformance | printer-field-block-rounding-A-1-gaps | [PNG](images/conformance--printer-field-block-rounding-A-1-gaps.png) |
+| conformance | printer-field-block-rounding-A-2-gaps | [PNG](images/conformance--printer-field-block-rounding-A-2-gaps.png) |
+| conformance | printer-field-block-rounding-A-3-gaps | [PNG](images/conformance--printer-field-block-rounding-A-3-gaps.png) |

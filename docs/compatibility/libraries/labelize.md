@@ -17,14 +17,14 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/labelize.md)
 
-24/132 exact; mean IoU 48.4%; 5 errors. Snapshot: 2026-09-20T22:46:04Z.
+24/133 exact; mean IoU 48.0%; 5 errors. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 24/66 exact; mean IoU 80.5%; 0 errors | 3 error, 67 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 10.7%; 4 errors | 4 error, 56 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 10.6%; 4 errors | 4 error, 56 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 1 errors | 1 error, 3 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 58.5%; 0 errors | 11 rendered |
@@ -44,6 +44,15 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 | [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 73.9%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 1 blank, 2 error, 11 rendered |
 | [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 46.1%; 0 errors | 29 rendered |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 20/20 exact; mean IoU 100.0%; 0 errors | 20 rendered |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | 1/3 exact; mean IoU 97.3%; 0 errors | 3 rendered |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 80.4%; 0 errors | 3 rendered |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 0.7%; 0 errors | 3 rendered |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | 0/10 exact; mean IoU 8.0%; 0 errors | 10 rendered; Negative-input observations: 5 rendered |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 36.1%; 0 errors | 6 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 34.5%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 73.3%; 0 errors | 5 rendered |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | 0/9 exact; mean IoU 0.0%; 9 errors | 9 error |
 | [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 15.0%; 3 errors | 3 error, 1 rendered |
 | [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 61.8%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 1/6 exact; mean IoU 62.8%; 0 errors | 1 blank, 5 rendered |
@@ -83,7 +92,7 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#331) | 1/2 exact; mean IoU 64.2%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.3%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#339) | 0/12 exact; mean IoU 54.9%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 8.2%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/14 exact; mean IoU 8.0%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | ❔ No evidence found | 0/2 exact; mean IoU 4.1%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.5%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#315) | 0/1 exact; mean IoU 97.8%; 0 errors |

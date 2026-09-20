@@ -10075,11 +10075,11 @@
         "^XA",
         "^XZ"
       ],
-      "width": 812,
+      "width": 832,
       "height": 1218,
       "file": "cases/barcode-families/symbol-databar_upce.zpl",
-      "sha256": "caa29dc86bae86a084b9096b7f2bc4d4d06512b11c33efea41cecd43e4c9a58e",
-      "bytes": 102,
+      "sha256": "3b313e0cd1b56186d659f175c07a4c588b8d31cf9cd8046a5857328b79f2c562",
+      "bytes": 107,
       "capture_eligible": true,
       "references": [
         {
@@ -13425,6 +13425,6759 @@
         {
           "command": "^CI",
           "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-10-1",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-10-1",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-10-1.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-retail-10-1.zpl",
+      "sha256": "eea859119088de6ae7bd7c32bdac359a36d3da6f04e5db0622963803ee4fdab9",
+      "bytes": 98,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-10-3",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-10-3",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-10-3.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-retail-10-3.zpl",
+      "sha256": "bc9dee4c30bc5d311d46a12cfbfa1c81e897e92bb998ea4264d70c94307b00d3",
+      "bytes": 98,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-7-1",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-7-1",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-7-1.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-retail-7-1.zpl",
+      "sha256": "1de9a1ed211e6a0db8aba6bfe8e8a03c50d450df27ce79b323f39a09c67fd9ac",
+      "bytes": 101,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-7-3",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-7-3",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-7-3.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-retail-7-3.zpl",
+      "sha256": "669a2821b92d078649e5e273541b439da982de7a92879c3445c400d5960febf8",
+      "bytes": 101,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-9-1",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-9-1",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-9-1.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-retail-9-1.zpl",
+      "sha256": "98868eadbd599cc02166d6a0321a45bcffb9836e8c30a3dcb46ce48525c252d3",
+      "bytes": 102,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-9-3",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-9-3",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-9-3.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-retail-9-3.zpl",
+      "sha256": "5f722b00197ca0eb88dd038bbeb20e3d84df2ef44757ee24e21bd82b2e7626db",
+      "bytes": 102,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-00425261",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-00425261",
+      "validity": "invalid",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-00425261.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-00425261.zpl",
+      "sha256": "dad6c15ad8921706346492a0532a9d3156f3caf780dc56387c21f2dc64ec38b8",
+      "bytes": 98,
+      "capture_eligible": false,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-01230000045",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-01230000045",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-01230000045.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-01230000045.zpl",
+      "sha256": "53e83a823a89039a89bab0cf9220abec0fc09cc6965ff7ea3dde5de2568376b9",
+      "bytes": 101,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-01234000005",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-01234000005",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-01234000005.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-01234000005.zpl",
+      "sha256": "8f5cdd5ffa15b06eb670ef6bd7e7f3200228668df5485b1a46d2c7322df74765",
+      "bytes": 101,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-01234500006",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-01234500006",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-01234500006.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-01234500006.zpl",
+      "sha256": "ef63a12349f382581210e7f852a9c16ea6a1f18ab744d9fce2921eacb9f72e06",
+      "bytes": 101,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-04210000526",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-04210000526",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-04210000526.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-04210000526.zpl",
+      "sha256": "ec0ccb6f7b007c3b8463bd8dd222fcc95b12c6818754dce347b9a1a212cb5ba5",
+      "bytes": 101,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-042100005264",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-042100005264",
+      "validity": "invalid",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-042100005264.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-042100005264.zpl",
+      "sha256": "5cdd03e20f076d0ddb09f68107ffc24bfaa83a4b45972b2f611a1979c308e297",
+      "bytes": 102,
+      "capture_eligible": false,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-042526",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-042526",
+      "validity": "invalid",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-042526.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-042526.zpl",
+      "sha256": "5d5e62bd72053d14a3f517818eeec5b5d714af6a4c2e9325acf9debdf9e2b8eb",
+      "bytes": 96,
+      "capture_eligible": false,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-0425261",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-0425261",
+      "validity": "invalid",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-0425261.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-0425261.zpl",
+      "sha256": "59815d311021397aed2d4ef514463eba91393ed36f2dadc74b4657d49b05abf6",
+      "bytes": 97,
+      "capture_eligible": false,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-original-invalid",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-original-invalid",
+      "validity": "invalid",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-original-invalid.zpl",
+      "commands": [
+        "^BR",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-databar-retail/printer-databar-retail-upce-original-invalid.zpl",
+      "sha256": "02f2fced16c5bd7bbe5fb118479bf99ffa0a8ae2c79f9d954a35b01cb0cf0aed",
+      "bytes": 102,
+      "capture_eligible": false,
+      "references": [
+        {
+          "command": "^BR",
+          "pdf_page": 135
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-64-then-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-64-then-empty",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-empty.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-64-then-empty.zpl",
+      "sha256": "9587e3b07b169e14cba7831568217f0e5f8343048d347ee25696a3f71c29726d",
+      "bytes": 81,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-64-then-module",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-64-then-module",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-module.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-64-then-module.zpl",
+      "sha256": "b933b1997681703f032860459e170c1d7f3a736075a1b8395b04165f1eebdd29",
+      "bytes": 82,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-64-then-ratio",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-64-then-ratio",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-ratio.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-64-then-ratio.zpl",
+      "sha256": "ff5b6722760b88e6cedd647d3115bdeb370c18a292d34d33e03ed3f0e4dd0c01",
+      "bytes": 84,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-all-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-all-retained",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-all-retained.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-all-retained.zpl",
+      "sha256": "e045ada35bec186c1778a11d4956ab7473c349276f05de3b4ee384a331e2583f",
+      "bytes": 81,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-empty",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-empty.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-empty.zpl",
+      "sha256": "d8b7053018461c38aeb5da97219ef05f0423a61e59382de1b9e39722bd23d43e",
+      "bytes": 72,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-explicit-10",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-explicit-10",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-explicit-10.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-explicit-10.zpl",
+      "sha256": "a82a849ca4d2edbc4996695b1bedb82c406425f581293e930b255998b822fa3d",
+      "bytes": 78,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-explicit-64",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-explicit-64",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-explicit-64.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-explicit-64.zpl",
+      "sha256": "361b7881dafbca8ca3449d39fd008ea3eaf39c58d954ea4dd9ea7e819457b4c3",
+      "bytes": 78,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-module-only",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-module-only",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-module-only.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-module-only.zpl",
+      "sha256": "2ec0f12c4fe95f676e40bb21a95ee09a3c5a50ee4770a89a0889ac65be48bf61",
+      "bytes": 73,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-module-ratio-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-module-ratio-retained",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-module-ratio-retained.zpl",
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-module-ratio-retained.zpl",
+      "sha256": "00a2a1edfd1585e21aeda93b25f79c793552b81f6e5907b512d973504559ed53",
+      "bytes": 85,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-none",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-none",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-none.zpl",
+      "commands": [
+        "^BC",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code128-none.zpl",
+      "sha256": "3a13f752c6cb798f8c80fb38138a14b44e695cff74d5c37efbb63337b80b51c5",
+      "bytes": 69,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-64-then-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-64-then-empty",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-empty.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-64-then-empty.zpl",
+      "sha256": "0380baab78944327cc01ed2637055ccf1189b459620e80a72f1a6387dfd58ed3",
+      "bytes": 83,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-64-then-module",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-64-then-module",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-module.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-64-then-module.zpl",
+      "sha256": "ee8f89528c8054e687276668aaba02b0d3befc405093392eb09662f1e1ce5fc5",
+      "bytes": 84,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-64-then-ratio",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-64-then-ratio",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-ratio.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-64-then-ratio.zpl",
+      "sha256": "199e70fe1f8d6cedd851a4361a0b5873c9b6e0ae15a4d0854c2fff2a5033b3b3",
+      "bytes": 86,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-all-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-all-retained",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-all-retained.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-all-retained.zpl",
+      "sha256": "ee367d484bd3c011269a691f5ad5e5e6e45906824d65e508f40edaea51853c87",
+      "bytes": 83,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-empty",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-empty.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-empty.zpl",
+      "sha256": "3e9d92fc7370031c9f66a5648ce9a0750f9b19003032c91f2c454424de385ada",
+      "bytes": 74,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-explicit-10",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-explicit-10",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-explicit-10.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-explicit-10.zpl",
+      "sha256": "00eff2fa19b699456585bdb8afad7deaede3b4fadb983434bfb2c1a70a3d59c2",
+      "bytes": 80,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-explicit-64",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-explicit-64",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-explicit-64.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-explicit-64.zpl",
+      "sha256": "84e0cdd89d4e05ce79a11cb0d914b0d3fb49624e36aaada41dd06f125f0642fc",
+      "bytes": 80,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-module-only",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-module-only",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-module-only.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-module-only.zpl",
+      "sha256": "23b0ba169a8697bbde0721d2d46e2b58a76b6a423beaa46d1566389aec56e6cb",
+      "bytes": 75,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-module-ratio-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-module-ratio-retained",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-module-ratio-retained.zpl",
+      "commands": [
+        "^B3",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-module-ratio-retained.zpl",
+      "sha256": "87f3bf1eabc00bb076c47ef0152cb2ffcb75916536b7120ddc0830fdcf7f01c8",
+      "bytes": 87,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-none",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-none",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-none.zpl",
+      "commands": [
+        "^B3",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 400,
+      "file": "cases/printer-barcode-defaults/printer-barcode-defaults-code39-none.zpl",
+      "sha256": "ac29e0940e2e06cac91e9453e0e8efa437ebdc7792284226fa02d2725b9ccdad",
+      "bytes": 71,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B3",
+          "pdf_page": 70
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-length-B8",
+      "group": "printer-retail-data",
+      "purpose": "retail data: length-B8",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/length-B8.zpl",
+      "commands": [
+        "^B8",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-length-B8.zpl",
+      "sha256": "9286d72fe19f3a4ae37981c92944815c97b371aa3e4435bcd170f96b8f858ea0",
+      "bytes": 397,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B8",
+          "pdf_page": 83
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-length-BE",
+      "group": "printer-retail-data",
+      "purpose": "retail data: length-BE",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/length-BE.zpl",
+      "commands": [
+        "^BE",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-length-BE.zpl",
+      "sha256": "3ab1a1e46f65aacbcc137fea2a6db6391ade1d095e77c6714c6627ba92e5442a",
+      "bytes": 412,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BE",
+          "pdf_page": 109
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-length-BU",
+      "group": "printer-retail-data",
+      "purpose": "retail data: length-BU",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/length-BU.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-length-BU.zpl",
+      "sha256": "1bb582336e63bbcef7c74688dea4d6eab7d5dbe3fca1def60db18b6ed4d07214",
+      "bytes": 409,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-sweep-B8",
+      "group": "printer-retail-data",
+      "purpose": "retail data: sweep-B8",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/sweep-B8.zpl",
+      "commands": [
+        "^B8",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-sweep-B8.zpl",
+      "sha256": "de7cb6b9f32e62c35b04cb7005531bf71eb196c0bcd2b53e9041724b5d259761",
+      "bytes": 992,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B8",
+          "pdf_page": 83
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-sweep-BE",
+      "group": "printer-retail-data",
+      "purpose": "retail data: sweep-BE",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/sweep-BE.zpl",
+      "commands": [
+        "^BE",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-sweep-BE.zpl",
+      "sha256": "82431b3561792982eac9921e27c49c1840132cc7fdcfc9f4ac850943758ef314",
+      "bytes": 992,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BE",
+          "pdf_page": 109
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-sweep-BU",
+      "group": "printer-retail-data",
+      "purpose": "retail data: sweep-BU",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/sweep-BU.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-sweep-BU.zpl",
+      "sha256": "447f20250bf959244e1d63a9d1e6f2f04c163e8280a82c052d506e0cc0810fa3",
+      "bytes": 992,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-validation-B8",
+      "group": "printer-retail-data",
+      "purpose": "retail data: validation-B8",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/validation-B8.zpl",
+      "commands": [
+        "^B8",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-validation-B8.zpl",
+      "sha256": "7c78778b47a84700ab2e846a96a6a1778fa6ab18a33955ef01ea0227ffaa14e9",
+      "bytes": 443,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B8",
+          "pdf_page": 83
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-validation-BE",
+      "group": "printer-retail-data",
+      "purpose": "retail data: validation-BE",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/validation-BE.zpl",
+      "commands": [
+        "^BE",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-validation-BE.zpl",
+      "sha256": "55c576bde2d60c5888f32bb882d2e25afdf3689f5674917f0763948fa5d24158",
+      "bytes": 443,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BE",
+          "pdf_page": 109
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-data-validation-BU",
+      "group": "printer-retail-data",
+      "purpose": "retail data: validation-BU",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/validation-BU.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^CV",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1920,
+      "file": "cases/printer-retail-data/printer-retail-data-validation-BU.zpl",
+      "sha256": "ea134164d0639cf6c0a8818ec2e8bbe21b022411fb90a8a304e615a695613cc6",
+      "bytes": 443,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^CV",
+          "pdf_page": 167
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-small",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: small",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/small.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1000,
+      "file": "cases/printer-retail-caption-edges/printer-retail-caption-edges-small.zpl",
+      "sha256": "f0f8fc91d5320087fb30299161e77f57f63ea3daa9709b534bf15d3adc0f464f",
+      "bytes": 426,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-large",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: large",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/large.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1300,
+      "file": "cases/printer-retail-caption-edges/printer-retail-caption-edges-large.zpl",
+      "sha256": "e48390271bfa4afad5e4b30b37fb977ec01a6dd77b863a74799ea977eda105b5",
+      "bytes": 428,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-rotations",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: rotations",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/rotations.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1100,
+      "file": "cases/printer-retail-caption-edges/printer-retail-caption-edges-rotations.zpl",
+      "sha256": "dd4413bef0fef32123051fb52b6d8967cc6e8de4495f5c1692a6596a5a7f24e8",
+      "bytes": 224,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-holdouts",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: holdouts",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/holdouts.zpl",
+      "commands": [
+        "^B8",
+        "^B9",
+        "^BE",
+        "^BU",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FR",
+        "^FS",
+        "^FT",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1100,
+      "file": "cases/printer-retail-caption-edges/printer-retail-caption-edges-holdouts.zpl",
+      "sha256": "2305f11093ccc46dbd52faa7bdb57c9c5ee7b618fdf987793200d9181a57501e",
+      "bytes": 329,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^B8",
+          "pdf_page": 83
+        },
+        {
+          "command": "^B9",
+          "pdf_page": 85
+        },
+        {
+          "command": "^BE",
+          "pdf_page": 109
+        },
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FR",
+          "pdf_page": 203
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FT",
+          "pdf_page": 205
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-discovery",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: discovery",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/discovery.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 500,
+      "file": "cases/printer-retail-caption-edges/printer-retail-caption-edges-discovery.zpl",
+      "sha256": "f3551b3221692b9fe294f5f1dd9b78447d5f2eb0ff568953107ff8818e12cff0",
+      "bytes": 277,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-code93-controls-pairs",
+      "group": "printer-code93-controls",
+      "purpose": "code93 controls: pairs",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/code93-controls-zd621-v1/pairs.zpl",
+      "commands": [
+        "^BA",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FH",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 900,
+      "file": "cases/printer-code93-controls/printer-code93-controls-pairs.zpl",
+      "sha256": "51a9113852680a6f8a9c0cec2b0058428955ffe0fa1fd2a83252bc7a01e1d205",
+      "bytes": 1825,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BA",
+          "pdf_page": 87
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FH",
+          "pdf_page": 193
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-code93-controls-holdouts",
+      "group": "printer-code93-controls",
+      "purpose": "code93 controls: holdouts",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/code93-controls-zd621-v1/holdouts.zpl",
+      "commands": [
+        "^BA",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FH",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1000,
+      "file": "cases/printer-code93-controls/printer-code93-controls-holdouts.zpl",
+      "sha256": "8d81745d6a31d2217d2ecca6ea5a3fdd664b9b091e3a0b52764f20c339671d9f",
+      "bytes": 491,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BA",
+          "pdf_page": 87
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FH",
+          "pdf_page": 193
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-code93-controls-combined-checks",
+      "group": "printer-code93-controls",
+      "purpose": "code93 controls: combined-checks",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/code93-controls-zd621-v1/combined-checks.zpl",
+      "commands": [
+        "^BA",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FH",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 800,
+      "file": "cases/printer-code93-controls/printer-code93-controls-combined-checks.zpl",
+      "sha256": "4ff50d9bf6cb4c9d99a72cf537a0358789251bd6f26bfb1a0f1d8c9b2902d976",
+      "bytes": 489,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BA",
+          "pdf_page": 87
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FH",
+          "pdf_page": 193
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-qr-module-state-same-field",
+      "group": "printer-qr-module-state",
+      "purpose": "qr module state: same-field",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/qr-module-state-zd621-v1/same-field.zpl",
+      "commands": [
+        "^BC",
+        "^BQ",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1000,
+      "file": "cases/printer-qr-module-state/printer-qr-module-state-same-field.zpl",
+      "sha256": "94894ae040c216e1ed0d3fc4518503306158c6952df49e9541646663cfe515a3",
+      "bytes": 281,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BQ",
+          "pdf_page": 128
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-qr-module-state-next-field",
+      "group": "printer-qr-module-state",
+      "purpose": "qr module state: next-field",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/qr-module-state-zd621-v1/next-field.zpl",
+      "commands": [
+        "^BC",
+        "^BQ",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1000,
+      "file": "cases/printer-qr-module-state/printer-qr-module-state-next-field.zpl",
+      "sha256": "bed345b784688fd1dcf3f79daa980e4e6df911abaa7b01a94a1cec36a2e6a70c",
+      "bytes": 360,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BQ",
+          "pdf_page": 128
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-qr-module-state-holdouts-basic",
+      "group": "printer-qr-module-state",
+      "purpose": "qr module state: holdouts-basic",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/qr-module-state-zd621-v1/holdouts-basic.zpl",
+      "commands": [
+        "^BC",
+        "^BQ",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 900,
+      "file": "cases/printer-qr-module-state/printer-qr-module-state-holdouts-basic.zpl",
+      "sha256": "0f1b4fef48f6205ba9d2e1f4b05f766aa0ef13536a6d586cccaf8a1c7316abbe",
+      "bytes": 313,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BQ",
+          "pdf_page": 128
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-character-remap-scope-clean",
+      "group": "printer-character-remap",
+      "purpose": "character remap: scope-clean",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/character-remap-zd621-v1/scope-clean.zpl",
+      "commands": [
+        "^A",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-character-remap/printer-character-remap-scope-clean.zpl",
+      "sha256": "d2f4d481b4065c62f8e8aa718a564658a051a959eec6ce6f710aae0e44aa5524",
+      "bytes": 647,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-character-remap-space-barcode-clean",
+      "group": "printer-character-remap",
+      "purpose": "character remap: space-barcode-clean",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/character-remap-zd621-v1/space-barcode-clean.zpl",
+      "commands": [
+        "^A",
+        "^BC",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FP",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1000,
+      "file": "cases/printer-character-remap/printer-character-remap-space-barcode-clean.zpl",
+      "sha256": "164de294a9117ce90717024ff266ab5453bc8e38bf70560dbd264260c3e5e429",
+      "bytes": 635,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FP",
+          "pdf_page": 202
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-character-remap-retail-positive",
+      "group": "printer-character-remap",
+      "purpose": "character remap: retail-positive",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/character-remap-zd621-v1/retail-positive.zpl",
+      "commands": [
+        "^BU",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PA",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 500,
+      "file": "cases/printer-character-remap/printer-character-remap-retail-positive.zpl",
+      "sha256": "f3bb50c60357e58823480bb89ebd1cb9c50fbd31a54cc6153c504c30b8c62b2c",
+      "bytes": 277,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BU",
+          "pdf_page": 142
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PA",
+          "pdf_page": 315
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-box-minimum-round-0",
+      "group": "printer-box-minimum",
+      "purpose": "box minimum: round-0",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/box-minimum-zd621-v1/round-0.zpl",
+      "commands": [
+        "^CI",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-box-minimum/printer-box-minimum-round-0.zpl",
+      "sha256": "997f7ad6fb3f25b66a88f4d266da0958b57304f040872210dbeca8dde44f07a8",
+      "bytes": 282,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-box-minimum-round-1",
+      "group": "printer-box-minimum",
+      "purpose": "box minimum: round-1",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/box-minimum-zd621-v1/round-1.zpl",
+      "commands": [
+        "^CI",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-box-minimum/printer-box-minimum-round-1.zpl",
+      "sha256": "ad6def4b05a2e1d851c89f4173e122e42cfff03b0d17ed58b393f7ec223021ce",
+      "bytes": 282,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-box-minimum-round-8",
+      "group": "printer-box-minimum",
+      "purpose": "box minimum: round-8",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/box-minimum-zd621-v1/round-8.zpl",
+      "commands": [
+        "^CI",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-box-minimum/printer-box-minimum-round-8.zpl",
+      "sha256": "4bbfd660e550e80dc9fea03e9855034c62597d872eb1881b464a8c6b54d85946",
+      "bytes": 282,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-0-1-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: 0-1-gaps",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/0-1-gaps.zpl",
+      "commands": [
+        "^A",
+        "^CI",
+        "^FB",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-field-block-rounding/printer-field-block-rounding-0-1-gaps.zpl",
+      "sha256": "9344afc8084daccdf33b3624c6cf4f545894dbeb05082ef2aed85dd594dcaed8",
+      "bytes": 582,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FB",
+          "pdf_page": 186
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-0-2-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: 0-2-gaps",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/0-2-gaps.zpl",
+      "commands": [
+        "^A",
+        "^CI",
+        "^FB",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-field-block-rounding/printer-field-block-rounding-0-2-gaps.zpl",
+      "sha256": "0ef8392d48ec57ad0b9da69134744fbad6fd9ee29178dd1c79b893c693394b6e",
+      "bytes": 621,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FB",
+          "pdf_page": 186
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-0-3-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: 0-3-gaps",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/0-3-gaps.zpl",
+      "commands": [
+        "^A",
+        "^CI",
+        "^FB",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-field-block-rounding/printer-field-block-rounding-0-3-gaps.zpl",
+      "sha256": "ec58d393c57e9fd69898d5064b70dbd6379fb852a6e6a46cd614ab8a712b8d28",
+      "bytes": 666,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FB",
+          "pdf_page": 186
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-A-1-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: A-1-gaps",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/A-1-gaps.zpl",
+      "commands": [
+        "^A",
+        "^CI",
+        "^FB",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-field-block-rounding/printer-field-block-rounding-A-1-gaps.zpl",
+      "sha256": "3e694de2e15dc6905eb2595ff3ea26225f194daa7a40fb00b180c668b1521548",
+      "bytes": 558,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FB",
+          "pdf_page": 186
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-A-2-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: A-2-gaps",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/A-2-gaps.zpl",
+      "commands": [
+        "^A",
+        "^CI",
+        "^FB",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-field-block-rounding/printer-field-block-rounding-A-2-gaps.zpl",
+      "sha256": "4183c37dd92000a2bf477b9b134ef5370dc90db203f60fd1ae68ba0d7903f100",
+      "bytes": 594,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FB",
+          "pdf_page": 186
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-A-3-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: A-3-gaps",
+      "validity": "boundary",
+      "oracle": "printer",
+      "relation": null,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/A-3-gaps.zpl",
+      "commands": [
+        "^A",
+        "^CI",
+        "^FB",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/printer-field-block-rounding/printer-field-block-rounding-A-3-gaps.zpl",
+      "sha256": "9a050d3da58ec0c18be1db42c344bb31e54832437264830c6709aeac01e71cb6",
+      "bytes": 630,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FB",
+          "pdf_page": 186
         },
         {
           "command": "^FD",

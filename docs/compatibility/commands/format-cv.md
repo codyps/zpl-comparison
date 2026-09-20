@@ -33,11 +33,20 @@ No focused printer measurements yet.
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Printer retail data](../features/printer-retail-data.md)
 
 ## Corpus occurrences
 
 | Fixture | Renders and differences | Classification | Purpose |
 | --- | --- | --- | --- |
+| [printer-retail-data-length-B8](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-length-B8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-length-B8.md) | boundary / printer | retail data: length-B8 |
+| [printer-retail-data-length-BE](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-length-BE.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-length-BE.md) | boundary / printer | retail data: length-BE |
+| [printer-retail-data-length-BU](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-length-BU.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-length-BU.md) | boundary / printer | retail data: length-BU |
+| [printer-retail-data-sweep-B8](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-sweep-B8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-sweep-B8.md) | boundary / printer | retail data: sweep-B8 |
+| [printer-retail-data-sweep-BE](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-sweep-BE.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-sweep-BE.md) | boundary / printer | retail data: sweep-BE |
+| [printer-retail-data-sweep-BU](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-sweep-BU.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-sweep-BU.md) | boundary / printer | retail data: sweep-BU |
+| [printer-retail-data-validation-B8](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-validation-B8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-validation-B8.md) | boundary / printer | retail data: validation-B8 |
+| [printer-retail-data-validation-BE](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-validation-BE.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-validation-BE.md) | boundary / printer | retail data: validation-BE |
+| [printer-retail-data-validation-BU](../../../test-data/render-conformance/cases/printer-retail-data/printer-retail-data-validation-BU.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/printer-retail-data-validation-BU.md) | boundary / printer | retail data: validation-BU |
 | [barcode-validation](../../../test-data/render-conformance/cases/barcode-arguments/barcode-validation.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-validation.md) | valid / printer | CV validation enabled with valid Code128 data |
 

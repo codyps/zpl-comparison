@@ -17,14 +17,14 @@ Shares the pinned Go parser and its argument limits. Wrapper/render defaults are
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/ffi.md)
 
-16/132 exact; mean IoU 36.6%; 0 errors. Snapshot: 2026-09-20T22:46:04Z.
+16/133 exact; mean IoU 36.3%; 0 errors. Snapshot: 2026-09-20T23:07:40Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 10/66 exact; mean IoU 31.8%; 0 errors | 3 blank, 67 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 8.7%; 0 errors | 60 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 8.7%; 0 errors | 60 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 5/25 exact; mean IoU 31.2%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 62.7%; 0 errors | 11 rendered |
@@ -44,6 +44,15 @@ Shares the pinned Go parser and its argument limits. Wrapper/render defaults are
 | [Metamorphic](../features/metamorphic.md) | 5 | 1/5 exact; mean IoU 57.9%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 2 blank, 12 rendered |
 | [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 48.2%; 0 errors | 29 rendered |
+| [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 4/20 exact; mean IoU 28.7%; 0 errors | 20 rendered |
+| [Printer box minimum](../features/printer-box-minimum.md) | 3 | 0/3 exact; mean IoU 40.8%; 0 errors | 3 rendered |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 53.5%; 0 errors | 3 rendered |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 10.0%; 0 errors | 3 rendered |
+| [Printer databar retail](../features/printer-databar-retail.md) | 15 | 0/10 exact; mean IoU 8.8%; 0 errors | 10 rendered; Negative-input observations: 5 rendered |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 27.9%; 0 errors | 6 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 29.4%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 9.2%; 0 errors | 5 rendered |
+| [Printer retail data](../features/printer-retail-data.md) | 9 | 0/9 exact; mean IoU 10.3%; 0 errors | 9 rendered |
 | [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 20.3%; 0 errors | 3 blank, 1 rendered |
 | [Shapes](../features/shapes.md) | 46 | 13/46 exact; mean IoU 52.1%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 1/6 exact; mean IoU 73.6%; 0 errors | 6 rendered |
@@ -83,7 +92,7 @@ Shares the pinned Go parser and its argument limits. Wrapper/render defaults are
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L187) | 1/2 exact; mean IoU 64.2%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/StirlingMarketingGroup/go-zpl/blob/78b181940c76efa25571c48a2257a130e48a6191/parse.go#L181) | 0/12 exact; mean IoU 1.3%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 9.0%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/14 exact; mean IoU 8.7%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | ❔ No evidence found | 0/2 exact; mean IoU 4.9%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 4.5%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.1%; 0 errors |
