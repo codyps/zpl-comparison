@@ -7,7 +7,7 @@ The root README links to these detailed reports. [Library capabilities and selec
 
 [Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
 
-The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 531 focused and combined test files. Its [shared accuracy gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
+The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 598 focused and combined test files. Its [shared accuracy gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
 The [external label corpus](../test-data/external-zpl/README.md) adds eight unchanged,
 pinned upstream examples. [Execution report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/external-zpl/README.md).

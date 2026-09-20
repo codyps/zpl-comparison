@@ -1,0 +1,1117 @@
+{
+  "schema": 1,
+  "source_repository": "https://github.com/codyps/zpl",
+  "source_commit": "de0676ae4a4b8728ed0ab75a18b112bae7cbe883",
+  "method": "Imported original ZD621 HTTP Preview Label captures; no new printer requests",
+  "collections": [
+    "databar-retail-zd621-v1",
+    "barcode-defaults-zd621-v1",
+    "retail-data-zd621-v1",
+    "retail-caption-edges-zd621-v1",
+    "code93-controls-zd621-v1",
+    "qr-module-state-zd621-v1",
+    "character-remap-zd621-v1",
+    "box-minimum-zd621-v1",
+    "field-block-rounding-zd621-v1"
+  ],
+  "excluded": [
+    {
+      "source": "zpl/tests/fixtures/retail-data-zd621-v1/length-reset-final.zpl",
+      "reason": "capture reset control"
+    },
+    {
+      "source": "zpl/tests/fixtures/retail-data-zd621-v1/sweep-reset-final.zpl",
+      "reason": "capture reset control"
+    },
+    {
+      "source": "zpl/tests/fixtures/retail-data-zd621-v1/validation-reset-final.zpl",
+      "reason": "capture reset control"
+    },
+    {
+      "source": "zpl/tests/fixtures/code93-controls-zd621-v1/compact-code93-substitutes.zpl",
+      "reason": "existing corpus input"
+    },
+    {
+      "source": "zpl/tests/fixtures/qr-module-state-zd621-v1/compact-state-qr-code128.zpl",
+      "reason": "existing corpus input"
+    },
+    {
+      "source": "zpl/tests/fixtures/character-remap-zd621-v1/encoding-remap.zpl",
+      "reason": "existing corpus input"
+    }
+  ],
+  "cases": [
+    {
+      "name": "printer-databar-retail-retail-10-1",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-10-1",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-10-1.zpl",
+      "sha256": "eea859119088de6ae7bd7c32bdac359a36d3da6f04e5db0622963803ee4fdab9",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/retail-10-1.png",
+      "png_sha256": "58e1a02955277a4a4d6e93865ed2298f5274b8627f57406331d81bb330d50942",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-10-3",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-10-3",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-10-3.zpl",
+      "sha256": "bc9dee4c30bc5d311d46a12cfbfa1c81e897e92bb998ea4264d70c94307b00d3",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/retail-10-3.png",
+      "png_sha256": "4b2948d1479270303d923cf60ad1fdc61caa7c382fc10e9c51473470c8b1f3d0",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-7-1",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-7-1",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-7-1.zpl",
+      "sha256": "1de9a1ed211e6a0db8aba6bfe8e8a03c50d450df27ce79b323f39a09c67fd9ac",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/retail-7-1.png",
+      "png_sha256": "b8c822880579c409aba77ee4deb9d0209e625e40edd6cb80e88d608fff85bf63",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-7-3",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-7-3",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-7-3.zpl",
+      "sha256": "669a2821b92d078649e5e273541b439da982de7a92879c3445c400d5960febf8",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/retail-7-3.png",
+      "png_sha256": "1606fea236906226a7956ced0a3ff15824d4528ec10a45dbf9f7602c69bf8845",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-9-1",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-9-1",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-9-1.zpl",
+      "sha256": "98868eadbd599cc02166d6a0321a45bcffb9836e8c30a3dcb46ce48525c252d3",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/retail-9-1.png",
+      "png_sha256": "e551b126bcc3dbc98f60d578b2e6b5e7aff464bcbb95b7498e1467e243e529a5",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-retail-9-3",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: retail-9-3",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/retail-9-3.zpl",
+      "sha256": "5f722b00197ca0eb88dd038bbeb20e3d84df2ef44757ee24e21bd82b2e7626db",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/retail-9-3.png",
+      "png_sha256": "c88fe0df52ad01a8d2a3266dd52d279a962972f9f2c3e53ddc6c5b79db4c5c82",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-00425261",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-00425261",
+      "validity": "invalid",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-00425261.zpl",
+      "sha256": "dad6c15ad8921706346492a0532a9d3156f3caf780dc56387c21f2dc64ec38b8",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-00425261.png",
+      "png_sha256": "c215192f1dd52fb89aeab7041712c322173ce5a509003cc73b432697498fc8d8",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-01230000045",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-01230000045",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-01230000045.zpl",
+      "sha256": "53e83a823a89039a89bab0cf9220abec0fc09cc6965ff7ea3dde5de2568376b9",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-01230000045.png",
+      "png_sha256": "8f36d85c7937665dc11c81ad34b79441a1be60ea5deda651a8cd4a249531e0fc",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-01234000005",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-01234000005",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-01234000005.zpl",
+      "sha256": "8f5cdd5ffa15b06eb670ef6bd7e7f3200228668df5485b1a46d2c7322df74765",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-01234000005.png",
+      "png_sha256": "672f005f99f20bbd89770a3676f5c62c19151a3e1178a6de21004d5b5ad272fa",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-01234500006",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-01234500006",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-01234500006.zpl",
+      "sha256": "ef63a12349f382581210e7f852a9c16ea6a1f18ab744d9fce2921eacb9f72e06",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-01234500006.png",
+      "png_sha256": "abdd1fdc1255597843d915e8b6564a1a848c1f59eea0479ec4fdc50740c6dcb2",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-04210000526",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-04210000526",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-04210000526.zpl",
+      "sha256": "ec0ccb6f7b007c3b8463bd8dd222fcc95b12c6818754dce347b9a1a212cb5ba5",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-04210000526.png",
+      "png_sha256": "b0d6a5c65af9de907379b1b8516451b1a76e52daa74a96429569998c85002c4c",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-042100005264",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-042100005264",
+      "validity": "invalid",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-042100005264.zpl",
+      "sha256": "5cdd03e20f076d0ddb09f68107ffc24bfaa83a4b45972b2f611a1979c308e297",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-042100005264.png",
+      "png_sha256": "c215192f1dd52fb89aeab7041712c322173ce5a509003cc73b432697498fc8d8",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-042526",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-042526",
+      "validity": "invalid",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-042526.zpl",
+      "sha256": "5d5e62bd72053d14a3f517818eeec5b5d714af6a4c2e9325acf9debdf9e2b8eb",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-042526.png",
+      "png_sha256": "c215192f1dd52fb89aeab7041712c322173ce5a509003cc73b432697498fc8d8",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-0425261",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-0425261",
+      "validity": "invalid",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-0425261.zpl",
+      "sha256": "59815d311021397aed2d4ef514463eba91393ed36f2dadc74b4657d49b05abf6",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-0425261.png",
+      "png_sha256": "c215192f1dd52fb89aeab7041712c322173ce5a509003cc73b432697498fc8d8",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-databar-retail-upce-original-invalid",
+      "group": "printer-databar-retail",
+      "purpose": "databar retail: upce-original-invalid",
+      "validity": "invalid",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/databar-retail-zd621-v1/upce-original-invalid.zpl",
+      "sha256": "02f2fced16c5bd7bbe5fb118479bf99ffa0a8ae2c79f9d954a35b01cb0cf0aed",
+      "printer": "references/upstream-zd621/databar-retail-zd621-v1/upce-original-invalid.png",
+      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-64-then-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-64-then-empty",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-empty.zpl",
+      "sha256": "9587e3b07b169e14cba7831568217f0e5f8343048d347ee25696a3f71c29726d",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-empty.png",
+      "png_sha256": "49a923d268fdc9f5ef3dbc5b7aeacf27f813f8a84db8b72515bb416badfdc1bd",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-64-then-module",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-64-then-module",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-module.zpl",
+      "sha256": "b933b1997681703f032860459e170c1d7f3a736075a1b8395b04165f1eebdd29",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-module.png",
+      "png_sha256": "49a923d268fdc9f5ef3dbc5b7aeacf27f813f8a84db8b72515bb416badfdc1bd",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-64-then-ratio",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-64-then-ratio",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-ratio.zpl",
+      "sha256": "ff5b6722760b88e6cedd647d3115bdeb370c18a292d34d33e03ed3f0e4dd0c01",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-64-then-ratio.png",
+      "png_sha256": "49a923d268fdc9f5ef3dbc5b7aeacf27f813f8a84db8b72515bb416badfdc1bd",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-all-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-all-retained",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-all-retained.zpl",
+      "sha256": "e045ada35bec186c1778a11d4956ab7473c349276f05de3b4ee384a331e2583f",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-all-retained.png",
+      "png_sha256": "9c8e7357f9a19b967e3fccf7fa5c8ac8936fdcb79dba9e044881dddf93f27646",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-empty",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-empty.zpl",
+      "sha256": "d8b7053018461c38aeb5da97219ef05f0423a61e59382de1b9e39722bd23d43e",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-empty.png",
+      "png_sha256": "87c21a4f9c50cf7dcfaae880ea85f40a8633f76f67606c26fe76d26da957f28a",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-explicit-10",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-explicit-10",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-explicit-10.zpl",
+      "sha256": "a82a849ca4d2edbc4996695b1bedb82c406425f581293e930b255998b822fa3d",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-explicit-10.png",
+      "png_sha256": "87c21a4f9c50cf7dcfaae880ea85f40a8633f76f67606c26fe76d26da957f28a",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-explicit-64",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-explicit-64",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-explicit-64.zpl",
+      "sha256": "361b7881dafbca8ca3449d39fd008ea3eaf39c58d954ea4dd9ea7e819457b4c3",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-explicit-64.png",
+      "png_sha256": "49a923d268fdc9f5ef3dbc5b7aeacf27f813f8a84db8b72515bb416badfdc1bd",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-module-only",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-module-only",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-module-only.zpl",
+      "sha256": "2ec0f12c4fe95f676e40bb21a95ee09a3c5a50ee4770a89a0889ac65be48bf61",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-module-only.png",
+      "png_sha256": "87c21a4f9c50cf7dcfaae880ea85f40a8633f76f67606c26fe76d26da957f28a",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-module-ratio-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-module-ratio-retained",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-module-ratio-retained.zpl",
+      "sha256": "00a2a1edfd1585e21aeda93b25f79c793552b81f6e5907b512d973504559ed53",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-module-ratio-retained.png",
+      "png_sha256": "946ce1559810d73be811bc30e03dc081dd763a6e7835c6925a92525e58627660",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-none",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code128-none",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-none.zpl",
+      "sha256": "3a13f752c6cb798f8c80fb38138a14b44e695cff74d5c37efbb63337b80b51c5",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code128-none.png",
+      "png_sha256": "87c21a4f9c50cf7dcfaae880ea85f40a8633f76f67606c26fe76d26da957f28a",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-64-then-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-64-then-empty",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-empty.zpl",
+      "sha256": "0380baab78944327cc01ed2637055ccf1189b459620e80a72f1a6387dfd58ed3",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-empty.png",
+      "png_sha256": "98d8da513408d4491d5e34e31407010fcd72a00079323c8bb9f5a63a37029b88",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-64-then-module",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-64-then-module",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-module.zpl",
+      "sha256": "ee8f89528c8054e687276668aaba02b0d3befc405093392eb09662f1e1ce5fc5",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-module.png",
+      "png_sha256": "98d8da513408d4491d5e34e31407010fcd72a00079323c8bb9f5a63a37029b88",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-64-then-ratio",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-64-then-ratio",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-ratio.zpl",
+      "sha256": "199e70fe1f8d6cedd851a4361a0b5873c9b6e0ae15a4d0854c2fff2a5033b3b3",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-64-then-ratio.png",
+      "png_sha256": "1bd2ea03746174be47990450969950121524f211570e389b559b1471ec680b32",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-all-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-all-retained",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-all-retained.zpl",
+      "sha256": "ee367d484bd3c011269a691f5ad5e5e6e45906824d65e508f40edaea51853c87",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-all-retained.png",
+      "png_sha256": "23454df373abd18f0a5fe5cc7a41d3683f33c5887e83908f72c17001c0a14860",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-empty",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-empty",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-empty.zpl",
+      "sha256": "3e9d92fc7370031c9f66a5648ce9a0750f9b19003032c91f2c454424de385ada",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-empty.png",
+      "png_sha256": "0f229fc1eccfced9bab296821e6024f4dd80f5688f9c1b0b59a6121584c640de",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-explicit-10",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-explicit-10",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-explicit-10.zpl",
+      "sha256": "00eff2fa19b699456585bdb8afad7deaede3b4fadb983434bfb2c1a70a3d59c2",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-explicit-10.png",
+      "png_sha256": "0f229fc1eccfced9bab296821e6024f4dd80f5688f9c1b0b59a6121584c640de",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-explicit-64",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-explicit-64",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-explicit-64.zpl",
+      "sha256": "84e0cdd89d4e05ce79a11cb0d914b0d3fb49624e36aaada41dd06f125f0642fc",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-explicit-64.png",
+      "png_sha256": "98d8da513408d4491d5e34e31407010fcd72a00079323c8bb9f5a63a37029b88",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-module-only",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-module-only",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-module-only.zpl",
+      "sha256": "23b0ba169a8697bbde0721d2d46e2b58a76b6a423beaa46d1566389aec56e6cb",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-module-only.png",
+      "png_sha256": "0f229fc1eccfced9bab296821e6024f4dd80f5688f9c1b0b59a6121584c640de",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-module-ratio-retained",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-module-ratio-retained",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-module-ratio-retained.zpl",
+      "sha256": "87f3bf1eabc00bb076c47ef0152cb2ffcb75916536b7120ddc0830fdcf7f01c8",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-module-ratio-retained.png",
+      "png_sha256": "c8cbae0a8efbacc5d21251bc2578adf91953ed2258bd3f435d3f4bc656ec39b8",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-none",
+      "group": "printer-barcode-defaults",
+      "purpose": "barcode defaults: code39-none",
+      "validity": "boundary",
+      "width": 832,
+      "height": 400,
+      "source": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-none.zpl",
+      "sha256": "ac29e0940e2e06cac91e9453e0e8efa437ebdc7792284226fa02d2725b9ccdad",
+      "printer": "references/upstream-zd621/barcode-defaults-zd621-v1/code39-none.png",
+      "png_sha256": "0f229fc1eccfced9bab296821e6024f4dd80f5688f9c1b0b59a6121584c640de",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-retail-data-length-B8",
+      "group": "printer-retail-data",
+      "purpose": "retail data: length-B8",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/length-B8.zpl",
+      "sha256": "9286d72fe19f3a4ae37981c92944815c97b371aa3e4435bcd170f96b8f858ea0",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/length-B8.png",
+      "png_sha256": "ec9955b4b4a59de69506557ba51989f682990283f4f74ff05ad93aba8366f476",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-length-BE",
+      "group": "printer-retail-data",
+      "purpose": "retail data: length-BE",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/length-BE.zpl",
+      "sha256": "3ab1a1e46f65aacbcc137fea2a6db6391ade1d095e77c6714c6627ba92e5442a",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/length-BE.png",
+      "png_sha256": "fcc3d1d36bb678bed0b7ec6cf908a979f27d768da8413d03ecb1ed9a9e7293c0",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-length-BU",
+      "group": "printer-retail-data",
+      "purpose": "retail data: length-BU",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/length-BU.zpl",
+      "sha256": "1bb582336e63bbcef7c74688dea4d6eab7d5dbe3fca1def60db18b6ed4d07214",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/length-BU.png",
+      "png_sha256": "427c44eda9ee10081d083f3c531993dfe015108a3d7ca687d3f91e75dff35945",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-sweep-B8",
+      "group": "printer-retail-data",
+      "purpose": "retail data: sweep-B8",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/sweep-B8.zpl",
+      "sha256": "de7cb6b9f32e62c35b04cb7005531bf71eb196c0bcd2b53e9041724b5d259761",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/sweep-B8.png",
+      "png_sha256": "78ae1435cceca73a43cece6577f89c1be261ad54cdf5d838a52b9b1ff00e77ac",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-sweep-BE",
+      "group": "printer-retail-data",
+      "purpose": "retail data: sweep-BE",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/sweep-BE.zpl",
+      "sha256": "82431b3561792982eac9921e27c49c1840132cc7fdcfc9f4ac850943758ef314",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/sweep-BE.png",
+      "png_sha256": "e75ae451208ba547566819eedc9584eecba3b87f806f57b9ed083ac600520369",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-sweep-BU",
+      "group": "printer-retail-data",
+      "purpose": "retail data: sweep-BU",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/sweep-BU.zpl",
+      "sha256": "447f20250bf959244e1d63a9d1e6f2f04c163e8280a82c052d506e0cc0810fa3",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/sweep-BU.png",
+      "png_sha256": "d675432477f9506a12c2fa497d1bf28a4bff06f44adafc661533fb38767cf26e",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-validation-B8",
+      "group": "printer-retail-data",
+      "purpose": "retail data: validation-B8",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/validation-B8.zpl",
+      "sha256": "7c78778b47a84700ab2e846a96a6a1778fa6ab18a33955ef01ea0227ffaa14e9",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/validation-B8.png",
+      "png_sha256": "5908b5435173c3e682176da9b46182fa8b793870331f2c6641ba27cacd0d82e5",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-validation-BE",
+      "group": "printer-retail-data",
+      "purpose": "retail data: validation-BE",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/validation-BE.zpl",
+      "sha256": "55c576bde2d60c5888f32bb882d2e25afdf3689f5674917f0763948fa5d24158",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/validation-BE.png",
+      "png_sha256": "8a368bd6fc72e5bf042247569a2789fb39ef5ca05c8ebf4fc8f26e849117e9df",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-data-validation-BU",
+      "group": "printer-retail-data",
+      "purpose": "retail data: validation-BU",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1920,
+      "source": "references/upstream-zd621/retail-data-zd621-v1/validation-BU.zpl",
+      "sha256": "ea134164d0639cf6c0a8818ec2e8bbe21b022411fb90a8a304e615a695613cc6",
+      "printer": "references/upstream-zd621/retail-data-zd621-v1/validation-BU.png",
+      "png_sha256": "a937a8a4b0a187e75abfee0a5a2615d4858a338b1ed0d3a34ab774089db398e6",
+      "printer_dimensions": [
+        832,
+        1920
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-small",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: small",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1000,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/small.zpl",
+      "sha256": "f0f8fc91d5320087fb30299161e77f57f63ea3daa9709b534bf15d3adc0f464f",
+      "printer": "references/upstream-zd621/retail-caption-edges-zd621-v1/small.png",
+      "png_sha256": "5ac43b528f006c2adf84e7aa537ee9313baa743a39aab974d3c697fc6928be87",
+      "printer_dimensions": [
+        832,
+        1000
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-large",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: large",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1300,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/large.zpl",
+      "sha256": "e48390271bfa4afad5e4b30b37fb977ec01a6dd77b863a74799ea977eda105b5",
+      "printer": "references/upstream-zd621/retail-caption-edges-zd621-v1/large.png",
+      "png_sha256": "372ae561f255f9c637e010855c1b2895f013aeedd78fce99911eb7a4f656fe37",
+      "printer_dimensions": [
+        832,
+        1300
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-rotations",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: rotations",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1100,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/rotations.zpl",
+      "sha256": "dd4413bef0fef32123051fb52b6d8967cc6e8de4495f5c1692a6596a5a7f24e8",
+      "printer": "references/upstream-zd621/retail-caption-edges-zd621-v1/rotations.png",
+      "png_sha256": "bc13938106bd78053444eebe7b0e19ed0a40a9465bee552a828edc43121b7c7d",
+      "printer_dimensions": [
+        832,
+        1100
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-holdouts",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: holdouts",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1100,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/holdouts.zpl",
+      "sha256": "2305f11093ccc46dbd52faa7bdb57c9c5ee7b618fdf987793200d9181a57501e",
+      "printer": "references/upstream-zd621/retail-caption-edges-zd621-v1/holdouts.png",
+      "png_sha256": "95fb3f0da2370d0e62c9580f43c3bc7413642f5643e6dcbb41de8a999afeee8e",
+      "printer_dimensions": [
+        832,
+        1100
+      ]
+    },
+    {
+      "name": "printer-retail-caption-edges-discovery",
+      "group": "printer-retail-caption-edges",
+      "purpose": "retail caption edges: discovery",
+      "validity": "boundary",
+      "width": 832,
+      "height": 500,
+      "source": "references/upstream-zd621/retail-caption-edges-zd621-v1/discovery.zpl",
+      "sha256": "f3551b3221692b9fe294f5f1dd9b78447d5f2eb0ff568953107ff8818e12cff0",
+      "printer": "references/upstream-zd621/retail-caption-edges-zd621-v1/discovery.png",
+      "png_sha256": "c28d379f8350a702cbc1973c2aa4d4dfc880df96a5124c3a10e2007a0b7f2a3d",
+      "printer_dimensions": [
+        832,
+        500
+      ]
+    },
+    {
+      "name": "printer-code93-controls-pairs",
+      "group": "printer-code93-controls",
+      "purpose": "code93 controls: pairs",
+      "validity": "boundary",
+      "width": 832,
+      "height": 900,
+      "source": "references/upstream-zd621/code93-controls-zd621-v1/pairs.zpl",
+      "sha256": "51a9113852680a6f8a9c0cec2b0058428955ffe0fa1fd2a83252bc7a01e1d205",
+      "printer": "references/upstream-zd621/code93-controls-zd621-v1/pairs.png",
+      "png_sha256": "6146e12cd004b2def4fa1f2a38b28291ebb997fb4141d4c01246f2b948a2d606",
+      "printer_dimensions": [
+        832,
+        900
+      ]
+    },
+    {
+      "name": "printer-code93-controls-holdouts",
+      "group": "printer-code93-controls",
+      "purpose": "code93 controls: holdouts",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1000,
+      "source": "references/upstream-zd621/code93-controls-zd621-v1/holdouts.zpl",
+      "sha256": "8d81745d6a31d2217d2ecca6ea5a3fdd664b9b091e3a0b52764f20c339671d9f",
+      "printer": "references/upstream-zd621/code93-controls-zd621-v1/holdouts.png",
+      "png_sha256": "21cba3e4d2f04b76810d417cdf99404adb08bce90cc5020846f8473aa8971b9e",
+      "printer_dimensions": [
+        832,
+        1000
+      ]
+    },
+    {
+      "name": "printer-code93-controls-combined-checks",
+      "group": "printer-code93-controls",
+      "purpose": "code93 controls: combined-checks",
+      "validity": "boundary",
+      "width": 832,
+      "height": 800,
+      "source": "references/upstream-zd621/code93-controls-zd621-v1/combined-checks.zpl",
+      "sha256": "4ff50d9bf6cb4c9d99a72cf537a0358789251bd6f26bfb1a0f1d8c9b2902d976",
+      "printer": "references/upstream-zd621/code93-controls-zd621-v1/combined-checks.png",
+      "png_sha256": "4f6868b4a8f7301160c0d142aa589515619d46e985e4dd561ee1eba2c6a9cab1",
+      "printer_dimensions": [
+        832,
+        800
+      ]
+    },
+    {
+      "name": "printer-qr-module-state-same-field",
+      "group": "printer-qr-module-state",
+      "purpose": "qr module state: same-field",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1000,
+      "source": "references/upstream-zd621/qr-module-state-zd621-v1/same-field.zpl",
+      "sha256": "94894ae040c216e1ed0d3fc4518503306158c6952df49e9541646663cfe515a3",
+      "printer": "references/upstream-zd621/qr-module-state-zd621-v1/same-field.png",
+      "png_sha256": "822418b93a34c518c4a41c9d35cb85c1c144878c64f228b46b6f6fa334c8c92e",
+      "printer_dimensions": [
+        832,
+        1000
+      ]
+    },
+    {
+      "name": "printer-qr-module-state-next-field",
+      "group": "printer-qr-module-state",
+      "purpose": "qr module state: next-field",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1000,
+      "source": "references/upstream-zd621/qr-module-state-zd621-v1/next-field.zpl",
+      "sha256": "bed345b784688fd1dcf3f79daa980e4e6df911abaa7b01a94a1cec36a2e6a70c",
+      "printer": "references/upstream-zd621/qr-module-state-zd621-v1/next-field.png",
+      "png_sha256": "2c103e8ce4f6a904e3279f3ba51911037de6bb040dcaa595558c0f0ebc8c9969",
+      "printer_dimensions": [
+        832,
+        1000
+      ]
+    },
+    {
+      "name": "printer-qr-module-state-holdouts-basic",
+      "group": "printer-qr-module-state",
+      "purpose": "qr module state: holdouts-basic",
+      "validity": "boundary",
+      "width": 832,
+      "height": 900,
+      "source": "references/upstream-zd621/qr-module-state-zd621-v1/holdouts-basic.zpl",
+      "sha256": "0f1b4fef48f6205ba9d2e1f4b05f766aa0ef13536a6d586cccaf8a1c7316abbe",
+      "printer": "references/upstream-zd621/qr-module-state-zd621-v1/holdouts-basic.png",
+      "png_sha256": "7c5944a7f00fafd01e3a0d88b4f522697164ba8b62f970f227d6c5e8177bb3c9",
+      "printer_dimensions": [
+        832,
+        900
+      ]
+    },
+    {
+      "name": "printer-character-remap-scope-clean",
+      "group": "printer-character-remap",
+      "purpose": "character remap: scope-clean",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/character-remap-zd621-v1/scope-clean.zpl",
+      "sha256": "d2f4d481b4065c62f8e8aa718a564658a051a959eec6ce6f710aae0e44aa5524",
+      "printer": "references/upstream-zd621/character-remap-zd621-v1/scope-clean.png",
+      "png_sha256": "1665ea2850d6a464caab628539d68b9dc2667c575210b6c21f7c45e8a5f41a5f",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-character-remap-space-barcode-clean",
+      "group": "printer-character-remap",
+      "purpose": "character remap: space-barcode-clean",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1000,
+      "source": "references/upstream-zd621/character-remap-zd621-v1/space-barcode-clean.zpl",
+      "sha256": "164de294a9117ce90717024ff266ab5453bc8e38bf70560dbd264260c3e5e429",
+      "printer": "references/upstream-zd621/character-remap-zd621-v1/space-barcode-clean.png",
+      "png_sha256": "62c90c9d3f9c0e3f6a83135badb6d96f2d45d45821bd28d5fe9828efd01177c8",
+      "printer_dimensions": [
+        832,
+        1000
+      ]
+    },
+    {
+      "name": "printer-character-remap-retail-positive",
+      "group": "printer-character-remap",
+      "purpose": "character remap: retail-positive",
+      "validity": "boundary",
+      "width": 832,
+      "height": 500,
+      "source": "references/upstream-zd621/character-remap-zd621-v1/retail-positive.zpl",
+      "sha256": "f3bb50c60357e58823480bb89ebd1cb9c50fbd31a54cc6153c504c30b8c62b2c",
+      "printer": "references/upstream-zd621/character-remap-zd621-v1/retail-positive.png",
+      "png_sha256": "088433a4824174f522e08e2be84d434c282b185841ec9af1ac6e2e38e4dc8b10",
+      "printer_dimensions": [
+        832,
+        500
+      ]
+    },
+    {
+      "name": "printer-box-minimum-round-0",
+      "group": "printer-box-minimum",
+      "purpose": "box minimum: round-0",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/box-minimum-zd621-v1/round-0.zpl",
+      "sha256": "997f7ad6fb3f25b66a88f4d266da0958b57304f040872210dbeca8dde44f07a8",
+      "printer": "references/upstream-zd621/box-minimum-zd621-v1/round-0.png",
+      "png_sha256": "f1f244e2d40dd04c36ada2b018411090c504100c84b8b0d68749147275d6edfd",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-box-minimum-round-1",
+      "group": "printer-box-minimum",
+      "purpose": "box minimum: round-1",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/box-minimum-zd621-v1/round-1.zpl",
+      "sha256": "ad6def4b05a2e1d851c89f4173e122e42cfff03b0d17ed58b393f7ec223021ce",
+      "printer": "references/upstream-zd621/box-minimum-zd621-v1/round-1.png",
+      "png_sha256": "4694ec3f2bb91265ff0c20dd406a31234ff4fe999bcc4fe548f831e8f5c57a13",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-box-minimum-round-8",
+      "group": "printer-box-minimum",
+      "purpose": "box minimum: round-8",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/box-minimum-zd621-v1/round-8.zpl",
+      "sha256": "4bbfd660e550e80dc9fea03e9855034c62597d872eb1881b464a8c6b54d85946",
+      "printer": "references/upstream-zd621/box-minimum-zd621-v1/round-8.png",
+      "png_sha256": "8c41feabe1c094978b118e7af5b7cf3bc74f180c6e70a6816b902d0d1b700010",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-0-1-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: 0-1-gaps",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/0-1-gaps.zpl",
+      "sha256": "9344afc8084daccdf33b3624c6cf4f545894dbeb05082ef2aed85dd594dcaed8",
+      "printer": "references/upstream-zd621/field-block-rounding-zd621-v1/0-1-gaps.png",
+      "png_sha256": "9614b9ba40d5807ad5c4e26321e07cd61428628db995d5c406f5fc07c44f8ddc",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-0-2-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: 0-2-gaps",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/0-2-gaps.zpl",
+      "sha256": "0ef8392d48ec57ad0b9da69134744fbad6fd9ee29178dd1c79b893c693394b6e",
+      "printer": "references/upstream-zd621/field-block-rounding-zd621-v1/0-2-gaps.png",
+      "png_sha256": "51522cf73e5ad81a95bad6e453c706cb30d5a3f6ebba27d3f7ed30e417b5465e",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-0-3-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: 0-3-gaps",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/0-3-gaps.zpl",
+      "sha256": "ec58d393c57e9fd69898d5064b70dbd6379fb852a6e6a46cd614ab8a712b8d28",
+      "printer": "references/upstream-zd621/field-block-rounding-zd621-v1/0-3-gaps.png",
+      "png_sha256": "29773cff6be036ae30befdae5c7fd38bbf0258c18c2a44a51751ad2b199e5f5a",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-A-1-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: A-1-gaps",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/A-1-gaps.zpl",
+      "sha256": "3e694de2e15dc6905eb2595ff3ea26225f194daa7a40fb00b180c668b1521548",
+      "printer": "references/upstream-zd621/field-block-rounding-zd621-v1/A-1-gaps.png",
+      "png_sha256": "f5160ed53c269909c8e9001d9b259b45baa9ae6810e02397778205d2a0a57326",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-A-2-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: A-2-gaps",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/A-2-gaps.zpl",
+      "sha256": "4183c37dd92000a2bf477b9b134ef5370dc90db203f60fd1ae68ba0d7903f100",
+      "printer": "references/upstream-zd621/field-block-rounding-zd621-v1/A-2-gaps.png",
+      "png_sha256": "f5396a31925aec06f242d17721e719016767c91afc84d98daf06e4ab5f757ea7",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "printer-field-block-rounding-A-3-gaps",
+      "group": "printer-field-block-rounding",
+      "purpose": "field block rounding: A-3-gaps",
+      "validity": "boundary",
+      "width": 832,
+      "height": 1218,
+      "source": "references/upstream-zd621/field-block-rounding-zd621-v1/A-3-gaps.zpl",
+      "sha256": "9a050d3da58ec0c18be1db42c344bb31e54832437264830c6709aeac01e71cb6",
+      "printer": "references/upstream-zd621/field-block-rounding-zd621-v1/A-3-gaps.png",
+      "png_sha256": "5458d55b1b30a3eba78b177666f8a54d40c21951693e4c670afa480fb1f6a917",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    }
+  ]
+}

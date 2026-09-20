@@ -16,7 +16,7 @@ benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.p
 benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py
 ```
 
-This single regeneration command reruns all 133 accuracy cases, 531 feature
+This single regeneration command reruns all 133 accuracy cases, 598 feature
 fixtures and eight external examples across all eight prepared renderers, writes results, rendered PNGs, difference images, plots and comparison
 Markdown, then refreshes the dependent compatibility pages. It verifies the gallery
 and generated compatibility pages before succeeding. It uses the existing adapter
@@ -60,7 +60,7 @@ The argument list and values are in [cases.py](cases.py), with the Zebra command
 
 ## Feature accuracy gallery
 
-The [531-fixture gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md)
+The [598-fixture gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md)
 shares the accuracy metric, image layout and regeneration command. Compatibility
 feature pages link to each fixture's eight renders and printer differences.
 Feature means stay separate from the argument/barcode chart to avoid changing its
@@ -100,3 +100,8 @@ conformance runs can select `--only labelary`; `--only all` includes it too.
 ```sh
 benchmarks/_work/venv/bin/python benchmarks/labelary.py --check
 ```
+
+The feature corpus also includes [67 imported ZD621 controls](../../references/upstream-zd621/README.md)
+with original upstream capture manifests. Five invalid UPC-E inputs are kept
+out of printer-accuracy scoring. The corrected positive BR8 case uses eleven
+uncompressed UPC-A digits and a nonblank original printer response.

@@ -6,7 +6,7 @@
     "python": "3.14.4",
     "numpy": "2.5.3"
   },
-  "measured_utc": "2026-09-20T18:04:26Z",
+  "measured_utc": "2026-09-20T22:39:05Z",
   "threshold": 128,
   "cases": [
     {
@@ -1712,8 +1712,8 @@
       "source": "archived barcode development corpus",
       "zpl": "references/barcodes-zd621-v1/databar_upce.zpl",
       "reference": "references/barcodes-zd621-v1/databar_upce.png",
-      "zpl_sha256": "02f2fced16c5bd7bbe5fb118479bf99ffa0a8ae2c79f9d954a35b01cb0cf0aed",
-      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3"
+      "zpl_sha256": "3b313e0cd1b56186d659f175c07a4c588b8d31cf9cd8046a5857328b79f2c562",
+      "png_sha256": "eeff957f3b0070746bbb61155e01f944ba26e53a1796b2e402f95b00c5c265f4"
     },
     {
       "id": "barcode-ean13",
@@ -4524,7 +4524,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46309661) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47093184) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4701,7 +4701,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46309833) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47093297) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4878,7 +4878,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46309939) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47093405) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -10983,7 +10983,7 @@
       "reference_ink": 28,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46315043) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47099030) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -16944,7 +16944,7 @@
       "reference_ink": 5260,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46319094) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47114783) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -17121,7 +17121,7 @@
       "reference_ink": 4092,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46319275) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47115855) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -17298,7 +17298,7 @@
       "reference_ink": 4124,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46319820) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47116597) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -21264,24 +21264,39 @@
       "library": "codyps-zpl",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
-      "status": "error",
-      "error": "\nthread 'main' (46324168) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 86, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "reference_ink": 8288,
+      "score": 1.0,
+      "output_ink": 8288,
+      "missing": 0,
+      "extra": 0,
+      "iou": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "canvas_disagreement": 0.0,
+      "dimensions_match": true,
+      "ink_exact": true,
+      "exact": true,
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "status": "rendered",
+      "raw_png_sha256": "6bc3b82f42835ca5232d0a0236706abd591e123ffa8377e4435ea480daf467f9",
+      "stderr": ""
     },
     {
       "library": "labelize",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
-      "output_ink": 504,
-      "missing": 0,
-      "extra": 504,
-      "iou": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "canvas_disagreement": 0.0004973474801061008,
+      "reference_ink": 8288,
+      "score": 0.048947068867387596,
+      "output_ink": 927,
+      "missing": 7858,
+      "extra": 497,
+      "iou": 0.048947068867387596,
+      "precision": 0.4638619201725998,
+      "recall": 0.05188223938223938,
+      "canvas_disagreement": 0.00824471864342554,
       "dimensions_match": true,
       "ink_exact": false,
       "exact": false,
@@ -21290,22 +21305,22 @@
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "f95439c34b551177dc9802712aea78565d13fc10be224c658a49826b995eaf64",
+      "raw_png_sha256": "ffeef1c9901dae636e72c2a69fbd607a99a7023ba393f14eabbd6327b5dc7019",
       "stderr": ""
     },
     {
       "library": "forge",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
-      "output_ink": 6074,
-      "missing": 0,
-      "extra": 6074,
-      "iou": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "canvas_disagreement": 0.005993826575723128,
+      "reference_ink": 8288,
+      "score": 0.20875593786108615,
+      "output_ink": 10542,
+      "missing": 5036,
+      "extra": 7290,
+      "iou": 0.20875593786108615,
+      "precision": 0.30848036425725667,
+      "recall": 0.3923745173745174,
+      "canvas_disagreement": 0.012163303650372615,
       "dimensions_match": true,
       "ink_exact": false,
       "exact": false,
@@ -21314,22 +21329,22 @@
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "0c1eb6f14f8b25752397b62d5311a1809f587defd32f17f3dec61c2a2a90f1da",
+      "raw_png_sha256": "bfa4fd1edfb5f2eb8a578e20bdb54f92f57a704bdf9a2a4a646bf3da20e0381f",
       "stderr": ""
     },
     {
       "library": "go",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
-      "output_ink": 538,
-      "missing": 0,
-      "extra": 538,
-      "iou": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "canvas_disagreement": 0.0005308986990021473,
+      "reference_ink": 8288,
+      "score": 0.054485727231536024,
+      "output_ink": 1021,
+      "missing": 7807,
+      "extra": 540,
+      "iou": 0.054485727231536024,
+      "precision": 0.47110675808031344,
+      "recall": 0.05803571428571429,
+      "canvas_disagreement": 0.008236824238979411,
       "dimensions_match": true,
       "ink_exact": false,
       "exact": false,
@@ -21338,22 +21353,22 @@
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "e5aebbfccbca5c2fd968dc3719a89367bb9284995495a5c19d9b36db148a6373",
+      "raw_png_sha256": "7b4c41c8c1a152be42508f934bcdcac4a17e7744deedb8c4709da6d8ee718fde",
       "stderr": ""
     },
     {
       "library": "ffi",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
-      "output_ink": 538,
-      "missing": 0,
-      "extra": 538,
-      "iou": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "canvas_disagreement": 0.0005308986990021473,
+      "reference_ink": 8288,
+      "score": 0.054485727231536024,
+      "output_ink": 1021,
+      "missing": 7807,
+      "extra": 540,
+      "iou": 0.054485727231536024,
+      "precision": 0.47110675808031344,
+      "recall": 0.05803571428571429,
+      "canvas_disagreement": 0.008236824238979411,
       "dimensions_match": true,
       "ink_exact": false,
       "exact": false,
@@ -21362,22 +21377,22 @@
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "e5aebbfccbca5c2fd968dc3719a89367bb9284995495a5c19d9b36db148a6373",
+      "raw_png_sha256": "7b4c41c8c1a152be42508f934bcdcac4a17e7744deedb8c4709da6d8ee718fde",
       "stderr": ""
     },
     {
       "library": "binarykits",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
-      "output_ink": 505,
-      "missing": 0,
-      "extra": 505,
-      "iou": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "canvas_disagreement": 0.0004983342806618669,
+      "reference_ink": 8288,
+      "score": 0.04844961240310078,
+      "output_ink": 909,
+      "missing": 7863,
+      "extra": 484,
+      "iou": 0.04844961240310078,
+      "precision": 0.4675467546754675,
+      "recall": 0.05127895752895753,
+      "canvas_disagreement": 0.008236824238979411,
       "dimensions_match": true,
       "ink_exact": false,
       "exact": false,
@@ -21386,21 +21401,21 @@
         1218
       ],
       "status": "rendered",
-      "raw_png_sha256": "ddccf84a3ccc3d46c3566f1161f0304fe48e7a1fa52510e9f93a05fc56ead2de",
+      "raw_png_sha256": "138cfc9845043b40ada63d664a5bd2433161afa367d7b42200a21f3d80ba843b",
       "stderr": ""
     },
     {
       "library": "zplr",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
-      "output_ink": 0,
+      "reference_ink": 8288,
+      "score": 1.0,
+      "output_ink": 8288,
       "missing": 0,
       "extra": 0,
       "iou": 1.0,
-      "precision": 0.0,
-      "recall": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
       "canvas_disagreement": 0.0,
       "dimensions_match": true,
       "ink_exact": true,
@@ -21409,32 +21424,32 @@
         832,
         1218
       ],
-      "status": "blank",
-      "raw_png_sha256": "77e6168916739899ee60de1077763a19f37aa29b3a671fdc1426b181e71914ca",
+      "status": "rendered",
+      "raw_png_sha256": "f8238bd5b6a6790debfd1cfb68110b27c3020aa639764d7c38ffe959b731c97c",
       "stderr": ""
     },
     {
       "library": "labelary",
       "case": "barcode-databar_upce",
       "group": "barcode-formats",
-      "reference_ink": 0,
-      "score": null,
+      "reference_ink": 8288,
+      "score": 0.0,
       "output_ink": 0,
-      "missing": 0,
+      "missing": 8288,
       "extra": 0,
-      "iou": 1.0,
+      "iou": 0.0,
       "precision": 0.0,
       "recall": 0.0,
-      "canvas_disagreement": 0.0,
+      "canvas_disagreement": 0.008178603006189214,
       "dimensions_match": true,
-      "ink_exact": true,
-      "exact": true,
+      "ink_exact": false,
+      "exact": false,
       "output_dimensions": [
         832,
         1218
       ],
       "status": "blank",
-      "raw_png_sha256": "64c231e5d85333fbbc84a1e2f5b9b633cb710dada7869b36777064d2b84a8170",
+      "raw_png_sha256": "f7cee9251a946e05998c5b4918018640356b7960df547c2382bdd70f68fb57af",
       "stderr": ""
     },
     {
@@ -23004,7 +23019,7 @@
       "reference_ink": 12540,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46326774) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47147641) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -23181,7 +23196,7 @@
       "reference_ink": 12840,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46326939) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47148702) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -23550,7 +23565,7 @@
       "reference_ink": 2010,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46327323) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47150091) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -23727,7 +23742,7 @@
       "reference_ink": 13200,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46327486) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47150851) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -27384,7 +27399,7 @@
       "reference_ink": 4610,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (46334605) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (47165448) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -27613,7 +27628,7 @@
       },
       {
         "name": "captures.json",
-        "sha256": "fccb725e240bc64bf13e68d9439b87918b6c8233dc5cfe1b3a370538a5367c4c"
+        "sha256": "56338ae90f8316ad1e892586d7f41109a8f416369316af5d484998152b9f24b0"
       }
     ]
   },
