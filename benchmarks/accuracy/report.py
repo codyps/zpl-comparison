@@ -22,7 +22,7 @@ from accuracy.gallery import generate  # noqa: E402
 from accuracy.run import LIBRARIES
 
 
-def render_report(data, dest):
+def render_report(data, dest, part="all"):
     plt.rcParams["svg.hashsalt"] = "zpl-comparison-accuracy"
     rows = data["results"]
     cases = data["cases"]
@@ -58,53 +58,57 @@ def render_report(data, dest):
                 f"{statistics.mean(shared) * 100:.2f}%" if shared else "N/A",
             ]
         )
-    plot = (
-        np.array(
-            [
-                [overall[n]]
-                + [
-                    statistics.mean(
-                        r["score"]
-                        for r in scored
-                        if r["library"] == n and r["group"] == g
-                    )
-                    for g in groups
+    if part != "markdown":
+        plot = (
+            np.array(
+                [
+                    [overall[n]]
+                    + [
+                        statistics.mean(
+                            r["score"]
+                            for r in scored
+                            if r["library"] == n and r["group"] == g
+                        )
+                        for g in groups
+                    ]
+                    for n in ranked
                 ]
-                for n in ranked
-            ]
-        )
-        * 100
-    )
-    fig, ax = plt.subplots(figsize=(12, 5), layout="constrained")
-    image = ax.imshow(plot, vmin=0, vmax=100, cmap="viridis", aspect="auto")
-    ax.set_xticks(range(len(columns)), columns, rotation=25, ha="right")
-    ax.get_xticklabels()[0].set_fontweight("bold")
-    ax.axvline(0.5, color="white", linewidth=2)
-    ax.set_yticks(range(len(ranked)), [NAMES[n] for n in ranked])
-    for y in range(len(ranked)):
-        for x in range(len(columns)):
-            ax.text(
-                x,
-                y,
-                f"{plot[y, x]:.1f}",
-                ha="center",
-                va="center",
-                color="white" if plot[y, x] < 55 else "black",
             )
-    ax.set_title("Mean foreground IoU (%) – sorted by overall accuracy")
-    fig.supxlabel(
-        "Overall weights each nonblank printer case equally; failed/blank renders score zero",
-        fontsize=9,
-    )
-    fig.colorbar(image, ax=ax, label="%")
-    fig.savefig(dest / "accuracy.svg", metadata={"Date": None})
-    fig.savefig(dest / "accuracy.png", dpi=120)
-    plt.close(fig)
+            * 100
+        )
+        fig, ax = plt.subplots(figsize=(12, 5), layout="constrained")
+        image = ax.imshow(plot, vmin=0, vmax=100, cmap="viridis", aspect="auto")
+        ax.set_xticks(range(len(columns)), columns, rotation=25, ha="right")
+        ax.get_xticklabels()[0].set_fontweight("bold")
+        ax.axvline(0.5, color="white", linewidth=2)
+        ax.set_yticks(range(len(ranked)), [NAMES[n] for n in ranked])
+        for y in range(len(ranked)):
+            for x in range(len(columns)):
+                ax.text(
+                    x,
+                    y,
+                    f"{plot[y, x]:.1f}",
+                    ha="center",
+                    va="center",
+                    color="white" if plot[y, x] < 55 else "black",
+                )
+        ax.set_title("Mean foreground IoU (%) – sorted by overall accuracy")
+        fig.supxlabel(
+            "Overall weights each nonblank printer case equally; failed/blank renders score zero",
+            fontsize=9,
+        )
+        fig.colorbar(image, ax=ax, label="%")
+        fig.savefig(dest / "accuracy.svg", metadata={"Date": None})
+        fig.savefig(dest / "accuracy.png", dpi=120)
+        plt.close(fig)
     ref = data["fresh_reference"]
+    if part == "chart":
+        return
     text = [
         "# Accuracy against a real Zebra printer\n",
         "**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.\n",
         f"Reference: **{ref['device']}, firmware {ref['firmware']}**, {ref['dpi']} dpi. Fresh captures: {ref['captured_utc']}. Library comparisons: {data['measured_utc']}.\n",
+        ("Local renders are cached per case and library; the comparison date is the latest execution in this snapshot. Per-result `observed_utc` values retain execution/capture dates.\n" if data.get("generation") else ""),
         "[Command/argument support](../command-support.md) · [Run/reproduce](../../../benchmarks/accuracy/README.md) · [Raw measurements](results.json).\n",
         "**This measures fidelity to the printer’s HTTP preview raster, not physical printed/scanned labels.** "
         "Every renderer receives the exact same captured ZPL. No scaling, alignment search, cropping, or replacement by another renderer’s output. "
@@ -185,8 +189,10 @@ def render_report(data, dest):
 def main():
     dest = Path(sys.argv[1])
     data = json.loads((dest / "results.json").read_text())
-    generate(dest)
-    render_report(data, dest)
+    if "--no-gallery" not in sys.argv:
+        generate(dest)
+    part = next((arg.split("=", 1)[1] for arg in sys.argv if arg.startswith("--part=")), "all")
+    render_report(data, dest, part)
 
 
 if __name__ == "__main__":

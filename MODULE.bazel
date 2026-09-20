@@ -12,3 +12,74 @@ pip.parse(
     requirements_lock = "//:build/requirements.lock.txt",
 )
 use_repo(pip, "report_deps")
+
+# Repository rules fetch dependencies; compilation is performed by cached actions.
+native_tools = use_repo_rule("//:build/repositories.bzl", "native_tools")
+
+native_tools(
+    name = "native_tools",
+    lock = "//:build/toolchains.lock.json",
+)
+
+native_inputs = use_repo_rule("//:build/repositories.bzl", "native_inputs")
+
+native_inputs(
+    name = "rust_inputs",
+    kind = "rust",
+    manifests = [
+        "//:benchmarks/sources.lock.json",
+        "//:benchmarks/adapters/rust/Cargo.toml",
+        "//:benchmarks/adapters/rust/Cargo.lock",
+    ],
+)
+
+native_inputs(
+    name = "go_inputs",
+    kind = "go",
+    manifests = [
+        "//:benchmarks/sources.lock.json",
+        "//:benchmarks/adapters/go/go.mod",
+        "//:benchmarks/adapters/go/go.sum",
+    ],
+)
+
+native_inputs(
+    name = "node_inputs",
+    kind = "node",
+    manifests = [
+        "//:benchmarks/adapters/node/package.json",
+        "//:benchmarks/adapters/node/package-lock.json",
+    ],
+)
+
+native_inputs(
+    name = "dotnet_inputs",
+    kind = "dotnet",
+    manifests = [
+        "//:benchmarks/adapters/dotnet/Comparison.csproj",
+        "//:benchmarks/adapters/dotnet/packages.lock.json",
+    ],
+)
+
+catalog = use_repo_rule("//:build/repositories.bzl", "catalog")
+
+catalog(
+    name = "report_catalog",
+    manifests = [
+        "//:docs/benchmarks/results.json",
+        "//:benchmarks/accuracy/reference/manifest.json",
+        "//:references/barcodes-zd621-v1/manifest.json",
+        "//:docs/benchmarks/labelary/captures.json",
+        "//:docs/benchmarks/accuracy/results.json",
+        "//:docs/benchmarks/conformance/results.json",
+        "//:docs/benchmarks/external-zpl/results.json",
+        "//:test-data/render-conformance/manifest.json",
+        "//:test-data/external-zpl/manifest.json",
+        "//:benchmarks/accuracy/conformance-reference/manifest.json",
+        "//:benchmarks/accuracy/external-reference/manifest.json",
+    ],
+)
+
+native_host = use_repo_rule("//:build/repositories.bzl", "native_host")
+
+native_host(name = "native_host")

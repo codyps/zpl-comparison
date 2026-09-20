@@ -1,0 +1,8 @@
+# Keep each image operation independently cached without per-action Python startup.
+build --strategy=ZplRender=worker,sandboxed
+build --strategy=ZplCompare=worker,sandboxed
+build --strategy=ZplPreview=worker,sandboxed
+build --strategy=ZplPages=worker,sandboxed
+build --strategy=ZplAggregate=worker,sandboxed
+build --strategy=ZplRelation=worker,sandboxed
+build --worker_max_instances=4

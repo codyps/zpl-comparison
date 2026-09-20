@@ -36,7 +36,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI builds the offline reports with Bazel from this collected evidence. Successful builds of `main` automatically publish the complete output tree to the independent [`generated` branch](https://github.com/codyps/zpl-comparison/tree/generated). CI does not collect new measurements or contact printers or rendering services.
+The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI uses Bazel to build the pinned renderer libraries, render the local accuracy and conformance cases, and assemble reports alongside this collected evidence. Successful builds of `main` automatically publish the complete output tree to the independent [`generated` branch](https://github.com/codyps/zpl-comparison/tree/generated). CI does not recollect performance measurements or contact printers or rendering services.
 
 ## Pins
 
@@ -92,17 +92,61 @@ bazelisk build //:reports
 Open `bazel-bin/reports/README.md` or
 `bazel-bin/reports/docs/benchmarks/README.md`. The output includes collected
 evidence and maintained documentation at their original relative paths so report
-links and images remain usable. Bazel downloads the pinned Python interpreter
-and locked Python dependencies on the first build; report generation itself is
-offline and needs no prepared adapters or local virtualenv.
+links and images remain usable. The default target compiles each local renderer
+and generates each case/library image locally. Printer previews, Labelary responses,
+performance timings, invalid-input measurements, and source-support inventories
+remain saved evidence; this build never contacts a printer or rendering service.
 
-The whole offline pipeline is currently one cached action. An unchanged build
-skips generation; changing declared evidence, generator code, or its toolchain
-rebuilds the report tree. Missing outputs are rebuilt. Generated Markdown, plots,
-differences, thumbnails and fixture outputs in the checkout are not build inputs.
-This does not yet provide per-case or per-report incremental generation.
-Measurements and printer/service captures remain explicit collection operations;
-the Bazel target consumes their saved results and never refreshes them.
+Bazel caches each library deployment (including the Go shared library used by
+FFI), each case/library render, each printer comparison and difference PNG, each
+metamorphic relation, each case viewport, each thumbnail, and each gallery page
+independently. Summary plots, report families, and final tree assembly are separate actions.
+Image actions use Bazel Python workers to reuse interpreter startup while retaining
+separate cache keys. An
+unchanged build executes none of these actions. A printer-reference change does
+not recompile a library or rerender local images. A library change rerenders its
+own cases; unrelated libraries remain cached. Shared viewport changes can refresh
+other thumbnails for that case, because their common crop must remain consistent.
+
+Dependencies are fetched during repository resolution. Rust, Go, Node, .NET, and
+Python toolchains are pinned; native toolchain archive hashes are in
+`build/toolchains.lock.json`. Cargo, Go, npm, and NuGet dependencies retain their
+lockfile integrity checks. Compilation runs offline against declared downloaded
+inputs. A C compiler/system SDK, Git, curl, and Python 3.11+ are bootstrap
+prerequisites. Native build actions use the host C compiler and SDK, whose
+platform/version identity participates in the cache key; native compilation is
+local execution, not a remote-execution toolchain.
+
+For the private `codyps/zpl` source, configure Git access or point Bazel at a
+checkout containing the pinned commit:
+
+```sh
+bazelisk build //:reports --repo_env=ZPL_SOURCE_PATH=/absolute/path/to/zpl
+```
+
+Bazel fetches exactly the locked commit from that repository into its own input
+tree; uncommitted files in the source checkout are not used. Individual native
+builds are available as `//:library_codyps-zpl`, `//:library_go`, etc., or all
+rendering libraries as `//:libraries`. To build just one comparison case and its
+images/pages, use an output group, for example:
+
+```sh
+bazelisk build //:reports --output_groups=case_accuracy_argument-font0-height-16
+```
+
+`bazelisk build //:reports_saved` reproduces the previous saved-evidence pipeline
+without native compilation, writing `bazel-bin/reports_saved`. That historical
+snapshot target remains a single action. Fork pull requests use it because they
+cannot access the private source token; trusted CI builds use `//:reports`.
+
+Fixture manifests and case bytes define the action graph. After editing a fixture
+generator, run it and include its updated manifest/cases. The build verifies that
+they agree. Reference capture hashes and repeated-control checks remain enforced.
+Renderer failures are benchmark outcomes: they remain visible as error/crash/timeout
+rows and produce no fabricated image. Broken input hashes, missing tools, or a
+successful command without a valid PNG fail the build. Each local result
+records when its cached render was executed; changing report code does not
+pretend the renderer was measured again.
 
 The Bazel version is pinned in `.bazelversion`; Python and `rules_python` are pinned
 in `MODULE.bazel`. After changing `benchmarks/requirements.txt`, update the full

@@ -18,7 +18,15 @@ are published automatically from `main` to an independent branch.
 
 Support claims and measured rendering accuracy are separate evidence. Missing printer references are unscored, not passes.
 
-Regenerate all derived resources from the collected data:
+Build pinned libraries, render locally, and assemble the reports in Bazel's output tree:
+
+```sh
+bazelisk build //:reports
+```
+
+Library builds, individual renders, comparisons, thumbnails, and report stages are cached independently. See [Bazel setup and cache behavior](benchmarks/README.md#regenerate--test-the-harness).
+
+Regenerate all derived resources from the saved collected data:
 
 ```sh
 benchmarks/_work/venv/bin/python benchmarks/regenerate.py

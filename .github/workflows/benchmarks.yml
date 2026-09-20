@@ -27,12 +27,35 @@ jobs:
           disk-cache: generated-reports
           repository-cache: true
           cache-save: ${{ github.event_name != 'pull_request' }}
+      - name: Read pinned private source revision
+        if: github.event.pull_request.head.repo.fork != true
+        id: source
+        run: echo "revision=$(python3 -c 'import json; print(json.load(open("benchmarks/sources.lock.json"))["zpl"]["rev"])')" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        if: github.event.pull_request.head.repo.fork != true
+        with:
+          repository: codyps/zpl
+          ref: ${{ steps.source.outputs.revision }}
+          token: ${{ secrets.ZPL_SOURCE_TOKEN }}
+          path: benchmarks/_work/zpl
+          persist-credentials: false
       - name: Test publication and report runner
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'
-          bazel test //:report_runner_test --test_output=errors
-      - name: Build offline reports
-        run: bazel build //:reports
+          bazel test //:report_runner_test //:pipeline_test --test_output=errors
+      - name: Build libraries, local renders, and reports
+        if: github.event.pull_request.head.repo.fork != true
+        run: bazel build //:reports --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" --jobs=4
+      - name: Verify independent cache boundaries
+        if: github.event.pull_request.head.repo.fork != true
+        run: |
+          bazel aquery 'mnemonic("Zpl(Render|Compare|LibraryBuild)", deps(//:reports))' \
+            --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" \
+            --output=jsonproto --include_commandline=false > "$RUNNER_TEMP/actions.json"
+          python3 build/check_action_graph.py "$RUNNER_TEMP/actions.json"
+      - name: Reproduce saved reports for fork pull requests
+        if: github.event.pull_request.head.repo.fork == true
+        run: bazel build //:reports_saved
       - name: Package report tree
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: tar -C bazel-bin/reports -czf "$RUNNER_TEMP/reports.tar.gz" .

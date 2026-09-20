@@ -1,25 +1,34 @@
-load("@rules_python//python:defs.bzl", "py_binary", "py_test")
 load("@report_deps//:requirements.bzl", "requirement")
+load("@rules_python//python:defs.bzl", "py_binary", "py_test")
+load("//:build/native.bzl", "native_library")
+load("//:build/pipeline.bzl", "pipeline")
 load("//:build/reports.bzl", "reports")
 
 py_binary(
     name = "report_runner",
     srcs = ["build/report_runner.py"],
     main = "build/report_runner.py",
-    deps = [requirement("matplotlib"), requirement("numpy"), requirement("pillow")],
+    deps = [
+        requirement("matplotlib"),
+        requirement("numpy"),
+        requirement("pillow"),
+    ],
 )
 
 py_test(
     name = "report_runner_test",
-    srcs = ["build/report_runner.py", "build/report_runner_test.py"],
+    srcs = [
+        "build/report_runner.py",
+        "build/report_runner_test.py",
+    ],
     main = "build/report_runner_test.py",
     deps = [requirement("pillow")],
 )
 
 # Collected evidence and maintained sources only. Generated reports, differences,
 # thumbnails, and generated fixture manifests/cases are deliberately excluded.
-reports(
-    name = "reports",
+filegroup(
+    name = "report_sources",
     srcs = glob(
         [
             "benchmarks/*.py",
@@ -33,8 +42,8 @@ reports(
             "benchmarks/accuracy/*reference/**",
             "references/**",
             "test-data/external-zpl/**",
-            "test-data/render-conformance/*.py",
-            "test-data/invalid-zpl/*.py",
+            "test-data/render-conformance/**",
+            "test-data/invalid-zpl/**",
             "docs/benchmarks/samples/**",
             "docs/benchmarks/*/images/*.png",
             "docs/benchmarks/labelary/captures.json",
@@ -49,23 +58,167 @@ reports(
             "benchmarks/test_*.py",
         ],
     ) + [
-        "README.md",
-        "PROVENANCE.md",
         "LICENSE",
+        "PROVENANCE.md",
+        "README.md",
+        "benchmarks/invalid/README.md",
+        "build/validate.py",
         "docs/README.md",
-        "docs/zpl-command-index.tsv",
-        "docs/zpl-zbi2-pg-en.pdf",
+        "docs/benchmarks/accuracy/results.json",
         "docs/benchmarks/argument-support.md",
         "docs/benchmarks/command-support.json",
-        "docs/benchmarks/results.json",
-        "docs/benchmarks/accuracy/results.json",
         "docs/benchmarks/conformance/results.json",
         "docs/benchmarks/external-zpl/results.json",
         "docs/benchmarks/invalid/results.json",
+        "docs/benchmarks/results.json",
         "docs/compatibility/METHODOLOGY.md",
-        "benchmarks/invalid/README.md",
-        "test-data/render-conformance/README.md",
-        "test-data/render-conformance/INSPIRATION.md",
-        "test-data/invalid-zpl/README.md",
+        "docs/zpl-command-index.tsv",
+        "docs/zpl-zbi2-pg-en.pdf",
+    ],
+)
+
+py_binary(
+    name = "native_builder",
+    srcs = ["build/native_build.py"],
+    main = "build/native_build.py",
+)
+
+[native_library(
+    name = "library_" + lib,
+    srcs = glob(["benchmarks/adapters/rust/src/**"]),
+    library = lib,
+    native = ":library_go-native" if lib == "ffi" else None,
+    toolchain = ["@native_tools//:rust"],
+    deps = ["@rust_inputs//:" + lib],
+) for lib in [
+    "codyps-zpl",
+    "labelize",
+    "forge",
+    "ffi",
+]]
+
+[native_library(
+    name = "library_" + lib,
+    srcs = glob(["benchmarks/adapters/go/*.go"]) if lib == "go" else [],
+    library = lib,
+    toolchain = ["@native_tools//:go"],
+    deps = ["@go_inputs//:files"],
+) for lib in [
+    "go",
+    "go-native",
+]]
+
+native_library(
+    name = "library_zplr",
+    srcs = ["benchmarks/adapters/node/main.mjs"],
+    library = "zplr",
+    toolchain = ["@native_tools//:node"],
+    deps = ["@node_inputs//:files"],
+)
+
+native_library(
+    name = "library_binarykits",
+    srcs = glob([
+        "benchmarks/adapters/dotnet/*.cs",
+        "benchmarks/adapters/dotnet/*.csproj",
+        "benchmarks/adapters/dotnet/*.json",
+    ]),
+    library = "binarykits",
+    toolchain = ["@native_tools//:dotnet"],
+    deps = ["@dotnet_inputs//:files"],
+)
+
+filegroup(
+    name = "libraries",
+    srcs = [":library_" + lib for lib in [
+        "codyps-zpl",
+        "labelize",
+        "forge",
+        "ffi",
+        "go",
+        "zplr",
+        "binarykits",
+    ]],
+)
+
+reports(
+    name = "reports_saved",
+    srcs = [":report_sources"],
+)
+
+[py_binary(
+    name = "action_" + name,
+    srcs = ["build/" + name + ".py"] + extra + (["build/worker.py"] if name != "stage" else []),
+    main = "build/worker.py" if name != "stage" else "build/stage.py",
+    deps = [
+        requirement("numpy"),
+        requirement("pillow"),
+    ] + ([requirement("matplotlib")] if name == "stage" else []),
+) for name, extra in [
+    (
+        "render",
+        ["benchmarks/accuracy/pixels.py"],
+    ),
+    (
+        "compare",
+        [
+            "benchmarks/accuracy/pixels.py",
+            "benchmarks/accuracy/metrics.py",
+        ],
+    ),
+    (
+        "preview",
+        ["benchmarks/accuracy/presentation.py"],
+    ),
+    (
+        "pages",
+        [
+            "benchmarks/accuracy/presentation.py",
+            "benchmarks/formatting.py",
+        ],
+    ),
+    (
+        "aggregate",
+        ["benchmarks/accuracy/pixels.py"],
+    ),
+    (
+        "relation",
+        ["benchmarks/accuracy/pixels.py"],
+    ),
+    ("stage", []),
+]]
+
+pipeline(
+    name = "reports",
+    srcs = [":report_sources"],
+    libraries = [":library_" + lib for lib in [
+        "codyps-zpl",
+        "labelize",
+        "forge",
+        "go",
+        "ffi",
+        "binarykits",
+        "zplr",
+    ]],
+)
+
+py_test(
+    name = "pipeline_test",
+    srcs = [
+        "benchmarks/accuracy/metrics.py",
+        "benchmarks/accuracy/pixels.py",
+        "benchmarks/accuracy/presentation.py",
+        "benchmarks/formatting.py",
+        "build/compare.py",
+        "build/pages.py",
+        "build/pipeline_test.py",
+        "build/render.py",
+        "build/stage.py",
+        "build/worker.py",
+    ],
+    main = "build/pipeline_test.py",
+    deps = [
+        requirement("numpy"),
+        requirement("pillow"),
     ],
 )
