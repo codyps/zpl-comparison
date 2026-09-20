@@ -26,7 +26,8 @@ py_test(
 )
 
 # Collected evidence and maintained sources only. Generated reports, differences,
-# thumbnails, and generated fixture manifests/cases are deliberately excluded.
+# thumbnails, and the fixture coverage catalog are deliberately excluded.
+# Fixture manifests/cases and saved renders remain inputs to the action graph.
 filegroup(
     name = "report_sources",
     srcs = glob(
@@ -56,6 +57,7 @@ filegroup(
             "**/bin/**",
             "docs/benchmarks/*/images/*-diff.png",
             "benchmarks/test_*.py",
+            "test-data/render-conformance/COVERAGE.md",
         ],
     ) + [
         "LICENSE",

@@ -2,7 +2,7 @@
 
 # Interpreting compatibility evidence
 
-[Overview](README.md) · [Libraries](libraries/README.md) · [Commands](commands/README.md) · [Features](features/README.md) · [Evidence legend](METHODOLOGY.md) · [Compare images](../benchmarks/accuracy/comparisons/README.md)
+[Overview](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/README.md) · [Libraries](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/libraries/README.md) · [Commands](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/commands/README.md) · [Features](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/features/README.md) · [Evidence legend](METHODOLOGY.md) · [Compare images](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/README.md)
 
 
 | Label | Meaning |

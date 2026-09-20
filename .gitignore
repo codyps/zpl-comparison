@@ -4,3 +4,25 @@ _*
 **/target/
 .DS_Store
 /bazel-*
+
+# Derived reports are published by Bazel CI to the generated branch.
+# Keep only maintained notes and saved measurement/capture inputs here.
+/docs/benchmarks/*
+!/docs/benchmarks/argument-support.md
+!/docs/benchmarks/command-support.json
+!/docs/benchmarks/results.json
+!/docs/benchmarks/samples/
+!/docs/benchmarks/accuracy/
+!/docs/benchmarks/conformance/
+!/docs/benchmarks/external-zpl/
+!/docs/benchmarks/invalid/
+!/docs/benchmarks/labelary/
+/docs/benchmarks/*/*
+!/docs/benchmarks/samples/*
+!/docs/benchmarks/*/results.json
+!/docs/benchmarks/labelary/captures.json
+!/docs/benchmarks/*/images/
+/docs/benchmarks/*/images/*-diff.png
+/docs/compatibility/*
+!/docs/compatibility/METHODOLOGY.md
+/test-data/render-conformance/COVERAGE.md

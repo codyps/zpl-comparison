@@ -1,16 +1,16 @@
 # Repeatable ZPL library comparison
 
-**[Read the GitHub-rendered report, plots and tables](../docs/benchmarks/README.md).**
-The root README links to these detailed reports. [Library capabilities and selection](../docs/benchmarks/capabilities.md) distinguish parsers, renderers and generators.
+**[Read the GitHub-rendered report, plots and tables](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/README.md).**
+The root README links to these detailed reports. [Library capabilities and selection](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/capabilities.md) distinguish parsers, renderers and generators.
 
-[Command/argument inventory](../docs/benchmarks/command-support.md) and [printer accuracy reproduction](accuracy/README.md) extend the comparison with offline captured references.
+[Command/argument inventory](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/command-support.md) and [printer accuracy reproduction](accuracy/README.md) extend the comparison with offline captured references.
 
 [Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
 
-The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 531 focused and combined test files. Its [shared accuracy gallery](../docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
+The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 531 focused and combined test files. Its [shared accuracy gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
 The [external label corpus](../test-data/external-zpl/README.md) adds eight unchanged,
-pinned upstream examples. [Execution report](../docs/benchmarks/external-zpl/README.md).
+pinned upstream examples. [Execution report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/external-zpl/README.md).
 Regenerate its images, JSON and Markdown with:
 
 ```sh
@@ -73,7 +73,7 @@ Each sample is a batch average. The reported median and min–max are **not per-
 
 PNG files are fully decoded with Pillow and must be 400×300 with both dark/light pixels after alpha compositing onto white. Boxes are also compared to a hand-defined inward-border mask: a 100×60 box at (20,20) with thickness 4 and an 80×80 filled box at (180,100). Pixel differences are reported, never silently corrected. Generated ZPL must contain the expected framing, field count and every `Item NN` value. Parser completion is only an API smoke check, not semantic parity. No library is used as another's correctness oracle.
 
-Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these five fixtures. Those remain selection criteria in [capabilities](../docs/benchmarks/capabilities.md) and the repository's separate conformance tests.
+Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these five fixtures. Those remain selection criteria in [capabilities](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/capabilities.md) and the repository's separate conformance tests.
 
 ## Code-size accounting
 
@@ -171,13 +171,13 @@ the commit message. An intermediate artifact transfers the tree between the
 read-only build job and the publishing job; the branch is the published result.
 Bazel dependency and action caches are reused across CI runs.
 
-Regenerate **all derived resources** from the checked-in collected evidence:
+Reproduce derived resources from saved collected evidence in Bazel's output tree:
 
 ```sh
-benchmarks/_work/venv/bin/python benchmarks/regenerate.py
+bazelisk build //:reports_saved
 ```
 
-This includes `docs/benchmarks/accuracy/accuracy.svg` (the chart embedded near the top of the repository README), its PNG, every other plot, generated Markdown, difference PNGs, thumbnails and compatibility pages. No adapters, source checkouts, Cargo metadata, printer or network service are required for this default mode; install the Python requirements first. Saved measurements and capture dates are preserved. Missing or inconsistent input evidence fails the command rather than producing invented results.
+This includes `docs/benchmarks/accuracy/accuracy.svg` (the chart embedded near the top of the repository README), its PNG, every other plot, generated Markdown, difference PNGs, thumbnails and compatibility pages. Bazel resolves the Python dependencies; this target needs no adapters, renderer source checkouts, printer, or rendering service. Saved measurements and capture dates are preserved. Missing or inconsistent input evidence fails the command rather than producing invented results.
 
 | Collected or maintained input | Regenerated resources |
 | --- | --- |
@@ -201,7 +201,7 @@ benchmarks/_work/venv/bin/python benchmarks/regenerate.py --measure
 
 This refreshes source-support evidence, performance, invalid-input behavior, original accuracy, features and external examples. Printer and SaaS captures use the explicit collection commands below. A runner failure with no fresh saved result stops regeneration; recorded crashes/timeouts are published and cause a nonzero exit after reports are rebuilt.
 
-The command writes local files. The GitHub raw URL and README change when those files are committed and pushed; it does not publish commits automatically. The narrower `benchmarks/accuracy/regenerate.py` remains available for accuracy-only work.
+Measurement commands write local evidence and may also produce ignored reports. Commit refreshed evidence inputs; use `bazelisk build //:reports` to validate the output. CI publishes derived files to `generated`; do not commit them to the source branch. The narrower `benchmarks/accuracy/regenerate.py` remains available for accuracy-only collection.
 
 ```sh
 benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'
@@ -213,29 +213,26 @@ Static SVG plots and relative image links render directly in GitHub Markdown; no
 ## Labelary renderer captures
 
 Labelary is included in the printer-accuracy matrix as an additional renderer.
-[Capture provenance and original PNGs](../docs/benchmarks/labelary/README.md)
+[Capture provenance and original PNGs](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/labelary/README.md)
 record UTC timestamps when the service exposes no build version. Tests replay
 these responses offline; the ZD621 captures remain the correctness baseline.
 See [capture and refresh commands](accuracy/README.md#labelary-renderer).
 
 ## Generate the compatibility reference
 
-[Browse by library, command or feature](../docs/compatibility/README.md). These
+[Browse by library, command or feature](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/README.md). These
 GitHub Markdown pages use checked-in source evidence, argument notes, printer
 measurements and the conformance manifest. Saved conformance execution results
 are included when `docs/benchmarks/conformance/results.json` exists.
 
 ```sh
-python3 benchmarks/compatibility.py
-python3 benchmarks/compatibility.py --check
+bazelisk build //:reports_saved
 ```
 
-Generation needs only Python 3.12+ and the checkout; it does not rebuild libraries,
-fetch dependencies or contact a printer. `--check` verifies generated bytes and
-rejects stale generated pages. To refresh evidence, build the adapters, run
+The saved-report target regenerates and checks compatibility pages inside its
+output tree without rebuilding libraries or contacting a printer. To refresh evidence, build the adapters, run
 `support.py`, the accuracy suite, and optionally `conformance.py --output
-docs/benchmarks/conformance`, then regenerate. CI checks the published snapshot
-before measurement and generates an updated snapshot afterward for its artifact.
+docs/benchmarks/conformance`, then regenerate. CI builds the Bazel report tree and publishes successful `main` builds to `generated`.
 Source and renderer measurements remain separate, dated evidence.
 
 ### Feature renders and printer differences
