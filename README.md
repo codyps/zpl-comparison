@@ -14,3 +14,11 @@ Repeatable comparisons of ZPL parsers, generators and renderers, with performanc
 - [Setup and provenance](PROVENANCE.md)
 
 Support claims and measured rendering accuracy are separate evidence. Missing printer references are unscored, not passes.
+
+Regenerate all derived resources from the collected data:
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/regenerate.py
+```
+
+This rebuilds the chart above, all other plots, reports, difference images, thumbnails and compatibility pages. See the [generation inventory and collection options](benchmarks/README.md#regenerate--test-the-harness).

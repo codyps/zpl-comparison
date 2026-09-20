@@ -4,13 +4,13 @@
 
 [All accuracy comparisons](../README.md) · [Compatibility features](../../../../compatibility/features/README.md)
 
-531 fixtures × 8 renderers. Execution: 2026-09-20T04:49:24Z. Printer: ZTC ZD621-203dpi ZPL, firmware V93.21.33Z, captured 2026-09-19T03:55:35Z through 2026-09-20T04:19:29Z.
+531 fixtures × 8 renderers. Execution: 2026-09-20T18:20:29Z. Printer: ZTC ZD621-203dpi ZPL, firmware V93.21.33Z, captured 2026-09-19T03:55:35Z through 2026-09-20T04:19:29Z.
 
 [Capture metadata](../../../../../benchmarks/accuracy/conformance-reference/manifest.json)
 
 511 hash-matched printer previews; 6 unavailable previews. Invalid inputs run offline only. Labelary (SaaS) is a renderer, scored against the printer like every other library.
 
-Image coverage: 4013 successful renders; 3880 printer differences. 14 fixtures are excluded from printer submission. Every successful render with a captured reference has a difference; errors have diagnostics instead of fabricated images.
+Image coverage: 4158 successful renders; 4024 printer differences. 14 fixtures are excluded from printer submission. Every successful render with a captured reference has a difference; errors have diagnostics instead of fabricated images.
 
 Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels. Blank printer references and invalid inputs are unscored; renderer failures score zero against nonblank printer references.
 
@@ -18,8 +18,8 @@ This feature corpus shares the accuracy pipeline and gallery. Its aggregate is s
 
 | Library | Scored cases | Mean IoU |
 | --- | --- | --- |
+| [codyps/zpl (Rust)](libraries/codyps-zpl.md) | 501 | 87.34% |
 | [Labelary (SaaS)](libraries/labelary.md) | 501 | 65.62% |
-| [codyps/zpl (Rust)](libraries/codyps-zpl.md) | 501 | 52.07% |
 | [ZPLr (TypeScript)](libraries/zplr.md) | 501 | 48.38% |
 | [labelize (Rust)](libraries/labelize.md) | 501 | 48.07% |
 | [go-zpl (Go)](libraries/go.md) | 501 | 41.95% |

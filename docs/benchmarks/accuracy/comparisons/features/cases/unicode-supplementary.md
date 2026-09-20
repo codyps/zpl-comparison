@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; 0.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/unicode-supplementary-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/unicode-supplementary.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/unicode-supplementary-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/unicode-supplementary.png) | [![codyps/zpl (Rust) render](../previews/unicode-supplementary-codyps-zpl.png)](../../../../conformance/images/unicode-supplementary-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/unicode-supplementary-codyps-zpl-diff.png)](../images/unicode-supplementary-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44644003) panicked at src/main.rs:27:10:
-render: RenderError { offset: 93, message: "unsupported embedded font glyph '😀'" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

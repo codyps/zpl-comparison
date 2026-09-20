@@ -17,7 +17,7 @@ from accuracy.presentation import LEGEND, viewport, preview
 from report import NAMES, table
 
 
-def validate(data, dest):
+def validate(data, dest, rebuild_diffs=False):
     for identity in data.get("adapters", {}).get("labelary", []):
         if identity["name"] == "captures.json" and identity["sha256"] != sha(
             REPO / "docs/benchmarks/labelary/captures.json"
@@ -59,7 +59,10 @@ def validate(data, dest):
             expected_status = "rendered" if metrics["output_ink"] else "blank"
             if row["score"] != expected_score or row["status"] != expected_status:
                 raise ValueError(f"Stale score/status: {cid}/{lib}")
-            with Image.open(dest / "images" / f"{cid}-{lib}-diff.png") as image:
+            diffpath = dest / "images" / f"{cid}-{lib}-diff.png"
+            if rebuild_diffs:
+                Image.fromarray(diff).save(diffpath, optimize=True)
+            with Image.open(diffpath) as image:
                 if not np.array_equal(np.asarray(image.convert("RGB")), diff):
                     raise ValueError(f"Stale difference image: {cid}/{lib}")
     return rows
@@ -77,8 +80,8 @@ def status(row):
     )
 
 
-def pages(data, dest, check=False):
-    rows = validate(data, dest)
+def pages(data, dest, check=False, rebuild_diffs=False):
+    rows = validate(data, dest, rebuild_diffs)
     cases = data["cases"]
     groups = sorted({c["group"] for c in cases})
     result = {}
@@ -241,7 +244,7 @@ def pages(data, dest, check=False):
 
 def generate(dest, check=False):
     data = json.loads((dest / "results.json").read_text())
-    generated = pages(data, dest, check)
+    generated = pages(data, dest, check, rebuild_diffs=not check)
     for relative, content in generated.items():
         path = dest / relative
         if check:

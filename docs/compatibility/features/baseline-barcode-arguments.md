@@ -11,7 +11,7 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found | 20/25 exact; mean IoU 93.2%; 0 errors | 25 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found | 14/25 exact; mean IoU 56.2%; 0 errors | 25 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 20 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [labelize](../libraries/labelize.md) | 20 🧩 Handler found | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
 | [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 15 🧩 Handler found | 10/25 exact; mean IoU 52.4%; 0 errors | 25 rendered |

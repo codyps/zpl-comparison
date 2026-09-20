@@ -41,7 +41,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44665458) panicked at src/main.rs:79:32:
+thread 'main' (46421482) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Found empty contents")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

@@ -14,7 +14,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): rendered; 18.63% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 17.72% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ~~~text
 
-thread 'main' (44625018) panicked at src/main.rs:63:14:
+thread 'main' (46362929) panicked at src/main.rs:63:14:
 PNG: "MaxiCode mode 2 postal code must contain 1 to 9 digits"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

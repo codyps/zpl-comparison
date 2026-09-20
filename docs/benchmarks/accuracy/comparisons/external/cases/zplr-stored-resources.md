@@ -27,7 +27,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44666778) panicked at src/main.rs:27:10:
+thread 'main' (46424860) panicked at src/main.rs:27:10:
 render: RenderError { offset: 56, message: "unsupported command DF" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -53,7 +53,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44666793) panicked at src/main.rs:74:10:
+thread 'main' (46424870) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

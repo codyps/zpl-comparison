@@ -23,7 +23,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44665068) panicked at src/main.rs:27:10:
+thread 'main' (46421021) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "graphic CRC mismatch" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -40,7 +40,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44665073) panicked at src/main.rs:44:14:
+thread 'main' (46421039) panicked at src/main.rs:44:14:
 parse: "failed to decode hex string: hex decode error: invalid hex char: /"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

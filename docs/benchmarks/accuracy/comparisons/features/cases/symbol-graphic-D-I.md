@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; 0.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/symbol-graphic-D-I-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/symbol-graphic-D-I.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/symbol-graphic-D-I-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/symbol-graphic-D-I.png) | [![codyps/zpl (Rust) render](../previews/symbol-graphic-D-I-codyps-zpl.png)](../../../../conformance/images/symbol-graphic-D-I-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-D-I-codyps-zpl-diff.png)](../images/symbol-graphic-D-I-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44651729) panicked at src/main.rs:27:10:
-render: RenderError { offset: 75, message: "unsupported command GS" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

@@ -3,6 +3,7 @@
 Sources are pinned in sources.lock.json / Cargo.lock. See generated legend.
 """
 
+import argparse
 import json
 from pathlib import Path
 import re
@@ -14,17 +15,12 @@ sys.path.insert(0, str(ROOT))
 from report import NAMES, table  # noqa: E402
 
 
-def main():
+def collect():
     metadata = json.loads((ROOT / "_work/cargo-metadata.json").read_text())
     packages = {
         p["name"]: Path(p["manifest_path"]).parent for p in metadata["packages"]
     }
     locks = json.loads((ROOT / "sources.lock.json").read_text())
-    index = [
-        line.split("\t")
-        for line in (REPO / "docs/zpl-command-index.tsv").read_text().splitlines()
-        if line.startswith(("^", "~"))
-    ]
     evidence = {
         n: {}
         for n in [
@@ -84,7 +80,13 @@ def main():
             break
         if re.match(r' {16}"[A-Z0-9]{2}"', line) and "=>" in line:
             for command in re.findall(r'"([A-Z][A-Z0-9])"', line.split("=>")[0]):
-                add("codyps-zpl", "~DG" if command == "DG" else "^" + command, "D", zpl_source, i)
+                add(
+                    "codyps-zpl",
+                    "~DG" if command == "DG" else "^" + command,
+                    "D",
+                    zpl_source,
+                    i,
+                )
                 if command in {"CC", "CD", "CT"}:
                     add("codyps-zpl", "~" + command, "D", zpl_source, i)
         if line.startswith("                n if n.starts_with('A') =>"):
@@ -212,6 +214,23 @@ def main():
     ]:
         add(key, "^A", "E", path, 1, **kwargs)
     # Generic raw-string APIs do not count as typed support for arbitrary commands.
+    return dict(
+        legend="See command-support.md",
+        sources=locks,
+        commands=evidence,
+        parameter_keys=params,
+        descriptions=descriptions,
+    )
+
+
+def render_report(data):
+    evidence = data["commands"]
+    params = data["parameter_keys"]
+    index = [
+        line.split("\t")
+        for line in (REPO / "docs/zpl-command-index.tsv").read_text().splitlines()
+        if line.startswith(("^", "~"))
+    ]
     rows = []
     for cmd, page in index:
         cells = []
@@ -224,11 +243,11 @@ def main():
             else:
                 cells.append("–")
         rows.append([f"`{cmd}`", page, ", ".join(params.get(cmd, [])) or "–", *cells])
-    intro = """# ZPL command and argument comparison
+    intro = f"""# ZPL command and argument comparison
 
 [Browse by library or feature](../compatibility/README.md) · [Printer accuracy benchmark](accuracy/README.md) · [Performance comparison](README.md) · [Detailed argument limits](argument-support.md).
 
-This is a **source-evidence inventory**, with a separate executed argument/accuracy matrix. Versions are the same pinned packages as the performance suite. The universe is the repository's 224-spelling [Zebra guide index](../zpl-command-index.tsv), including format/control aliases. `^A` represents the dynamic font-selection family; it does not mean every resident font is implemented. Non-Zebra extensions are excluded.
+This is a **source-evidence inventory**, with a separate executed argument/accuracy matrix. Versions are the same pinned packages as the performance suite. The universe is the repository's {len(index)}-spelling [Zebra guide index](../zpl-command-index.tsv), including format/control aliases. `^A` represents the dynamic font-selection family; it does not mean every resident font is implemented. Non-Zebra extensions are excluded.
 
 | Mark | Meaning |
 | --- | --- |
@@ -253,29 +272,44 @@ Counts below are not interchangeable support percentages: a parser table, emitte
     for n, values in evidence.items():
         inventory = [values[c]["status"] for c, _ in index if c in values]
         counts.append(
-            [NAMES[n], *[inventory.count(k) for k in ["D", "I", "T", "E", "S", "P", "U", "N"]]]
+            [
+                NAMES[n],
+                *[inventory.count(k) for k in ["D", "I", "T", "E", "S", "P", "U", "N"]],
+            ]
         )
     output = (
         intro
         + table(["Adapter", "D", "I", "T", "E", "S", "P", "U", "N"], counts)
         + "\n## Complete command inventory\n\n"
-        + table(["Command", "Guide page", "Reference parameters", *[NAMES[n] for n in evidence]], rows)
-    )
-    (REPO / "docs/benchmarks/command-support.md").write_text(output)
-    (REPO / "docs/benchmarks/command-support.json").write_text(
-        json.dumps(
-            {
-                "legend": "See command-support.md",
-                "sources": locks,
-                "commands": evidence,
-                "parameter_keys": params,
-                "descriptions": descriptions,
-            },
-            indent=2,
+        + table(
+            [
+                "Command",
+                "Guide page",
+                "Reference parameters",
+                *[NAMES[n] for n in evidence],
+            ],
+            rows,
         )
-        + "\n"
     )
-    print("Generated", len(index), "command rows")
+    return output
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--reports-only",
+        action="store_true",
+        help="Use saved command-support.json without source checkouts or Cargo metadata",
+    )
+    args = parser.parse_args()
+    snapshot = REPO / "docs/benchmarks/command-support.json"
+    if args.reports_only:
+        data = json.loads(snapshot.read_text())
+    else:
+        data = collect()
+        snapshot.write_text(json.dumps(data, indent=2) + "\n")
+    snapshot.with_suffix(".md").write_text(render_report(data))
+    print("Generated command support report")
 
 
 if __name__ == "__main__":

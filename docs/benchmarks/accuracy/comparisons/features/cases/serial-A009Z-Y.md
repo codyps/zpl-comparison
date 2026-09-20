@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; 0.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/serial-A009Z-Y-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/serial-A009Z-Y.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/serial-A009Z-Y-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/serial-A009Z-Y.png) | [![codyps/zpl (Rust) render](../previews/serial-A009Z-Y-codyps-zpl.png)](../../../../conformance/images/serial-A009Z-Y-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/serial-A009Z-Y-codyps-zpl-diff.png)](../images/serial-A009Z-Y-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44647461) panicked at src/main.rs:27:10:
-render: RenderError { offset: 73, message: "unsupported command SN" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 
@@ -38,7 +30,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44647463) panicked at src/main.rs:45:9:
+thread 'main' (46394823) panicked at src/main.rs:45:9:
 assertion `left == right` failed
   left: 0
  right: 1

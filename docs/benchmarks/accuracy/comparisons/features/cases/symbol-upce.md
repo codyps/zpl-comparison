@@ -41,7 +41,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ~~~text
 
-thread 'main' (44627253) panicked at src/main.rs:79:32:
+thread 'main' (46365705) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

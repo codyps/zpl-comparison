@@ -23,7 +23,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44665553) panicked at src/main.rs:27:10:
+thread 'main' (46421590) panicked at src/main.rs:27:10:
 render: RenderError { offset: 65, message: "character encoding unsupported" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

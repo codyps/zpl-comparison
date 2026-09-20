@@ -23,7 +23,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44665163) panicked at src/main.rs:27:10:
+thread 'main' (46421156) panicked at src/main.rs:27:10:
 render: RenderError { offset: 85, message: "BQ: parameter 2 mode unsupported" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

@@ -6,7 +6,7 @@
 
 **^BQ** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/qr.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/qr.png)
 
-Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T18:04:26Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
@@ -14,9 +14,9 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 65.9% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 77.0% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 768 pixels; extra ink: 736 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 464 pixels; extra ink: 496 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |

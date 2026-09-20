@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; unscored** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): blank; unscored** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/unicode-cjk-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/unicode-cjk.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/unicode-cjk-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/unicode-cjk.png) | [![codyps/zpl (Rust) render](../previews/unicode-cjk-codyps-zpl.png)](../../../../conformance/images/unicode-cjk-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/unicode-cjk-codyps-zpl-diff.png)](../images/unicode-cjk-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44643909) panicked at src/main.rs:27:10:
-render: RenderError { offset: 93, message: "unsupported embedded font glyph '日'" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

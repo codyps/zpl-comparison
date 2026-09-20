@@ -6,7 +6,7 @@
 
 **^BD** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/maxicode2.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/maxicode2.png)
 
-Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T18:04:26Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
@@ -14,9 +14,9 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): 48.9% IoU** · [All cases for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): 100.0% IoU · exact** · [All cases for this library](../libraries/codyps-zpl.md)
 
-Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 3847 pixels; extra ink: 5245 pixels.
+Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 0 pixels.
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (44605726) panicked at src/main.rs:63:14:
+thread 'main' (46326774) panicked at src/main.rs:63:14:
 PNG: "MaxiCode mode 2 postal code must contain 1 to 9 digits"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

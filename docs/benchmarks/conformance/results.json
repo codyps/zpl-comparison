@@ -2,7 +2,7 @@
   "schema": 1,
   "suite": "render-conformance-v1",
   "manifest_sha256": "c658da2be0b9d3df865fc56a1ee6a5719f595966539e81a08abc58ec5ab938aa",
-  "measured_utc": "2026-09-20T04:49:24Z",
+  "measured_utc": "2026-09-20T18:20:29Z",
   "host": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
   "cases": [
     {
@@ -56662,7 +56662,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44615097) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46350326) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -56763,7 +56763,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44615188) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46350462) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -56864,7 +56864,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44615272) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46350584) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -59333,7 +59333,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1132,
+      "ink": 1164,
       "width": 832,
       "height": 300
     },
@@ -59541,7 +59541,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 720,
+      "ink": 1034,
       "width": 832,
       "height": 300
     },
@@ -59645,7 +59645,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 836,
+      "ink": 1154,
       "width": 832,
       "height": 300
     },
@@ -60176,7 +60176,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44618785) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46354421) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -62970,7 +62970,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1808,
+      "ink": 1920,
       "width": 812,
       "height": 1218
     },
@@ -63074,7 +63074,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1808,
+      "ink": 1920,
       "width": 812,
       "height": 1218
     },
@@ -63410,7 +63410,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44621960) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46358378) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -63511,7 +63511,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44622049) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46358502) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -63612,7 +63612,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44622140) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46358629) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -64209,7 +64209,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 14948,
+      "ink": 28388,
       "width": 812,
       "height": 1218
     },
@@ -64313,7 +64313,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 19676,
+      "ink": 33116,
       "width": 812,
       "height": 1218
     },
@@ -64417,7 +64417,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 15952,
+      "ink": 28752,
       "width": 812,
       "height": 1218
     },
@@ -64521,7 +64521,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2720,
+      "ink": 2832,
       "width": 812,
       "height": 1218
     },
@@ -64729,7 +64729,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 7840,
+      "ink": 14504,
       "width": 812,
       "height": 1218
     },
@@ -64833,7 +64833,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 5120,
+      "ink": 7680,
       "width": 812,
       "height": 1218
     },
@@ -64937,7 +64937,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 13600,
+      "ink": 9656,
       "width": 812,
       "height": 1218
     },
@@ -65041,7 +65041,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 17420,
+      "ink": 10780,
       "width": 812,
       "height": 1218
     },
@@ -65665,7 +65665,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 8320,
+      "ink": 15392,
       "width": 812,
       "height": 1218
     },
@@ -65766,12 +65766,9 @@
       "group": "barcode-families",
       "validity": "valid",
       "score": null,
-      "returncode": 0,
-      "diagnostic": "",
-      "status": "rendered",
-      "ink": 4480,
-      "width": 812,
-      "height": 1218
+      "returncode": 101,
+      "diagnostic": "\nthread 'main' (46361848) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 86, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "status": "error"
     },
     {
       "library": "labelize",
@@ -66705,7 +66702,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 13938,
+      "ink": 12540,
       "width": 812,
       "height": 1218
     },
@@ -66716,7 +66713,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44625018) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46362929) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -66806,7 +66803,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 14266,
+      "ink": 12840,
       "width": 812,
       "height": 1218
     },
@@ -66817,7 +66814,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44625118) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46363029) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -66907,7 +66904,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 14238,
+      "ink": 13140,
       "width": 812,
       "height": 1218
     },
@@ -67011,7 +67008,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 15256,
+      "ink": 2010,
       "width": 812,
       "height": 1218
     },
@@ -67022,7 +67019,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44625294) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46363246) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -67112,7 +67109,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 14245,
+      "ink": 13200,
       "width": 812,
       "height": 1218
     },
@@ -67123,7 +67120,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44625396) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46363396) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -68565,7 +68562,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3648,
+      "ink": 3712,
       "width": 812,
       "height": 1218
     },
@@ -68877,7 +68874,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 13256,
+      "ink": 13052,
       "width": 812,
       "height": 1218
     },
@@ -69109,7 +69106,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44627253) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46365705) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -70015,9 +70012,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628184) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 4473,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -70116,9 +70116,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628266) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 4473,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -70217,9 +70220,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628364) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 4473,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -70318,9 +70324,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628451) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 4473,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -70419,9 +70428,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628546) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2868,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -70520,9 +70532,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628637) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2868,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -70621,9 +70636,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628727) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2868,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -70722,9 +70740,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44628810) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2868,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71239,9 +71260,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629255) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2676,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71340,9 +71364,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629350) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2842,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71441,9 +71468,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629436) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2482,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71542,9 +71572,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629521) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2842,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71643,9 +71676,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629621) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1964,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71744,9 +71780,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629715) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1964,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71845,9 +71884,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629803) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1964,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -71946,9 +71988,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629892) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1964,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72047,9 +72092,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44629983) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5950,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72148,9 +72196,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630077) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 7362,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72249,9 +72300,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630164) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5079,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72350,9 +72404,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630274) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 7362,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72451,9 +72508,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630365) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3332,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72552,9 +72612,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630457) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3468,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72653,9 +72716,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630552) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3072,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72754,9 +72820,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630639) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3468,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72855,9 +72924,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630733) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -72956,9 +73028,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630820) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73057,9 +73132,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630906) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73158,9 +73236,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44630995) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73259,9 +73340,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631081) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73360,9 +73444,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631167) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73461,9 +73548,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631257) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73562,9 +73652,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631342) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73663,9 +73756,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631438) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73764,9 +73860,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631525) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73865,9 +73964,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631622) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -73966,9 +74068,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631710) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74067,9 +74172,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631801) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74168,9 +74276,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631891) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74269,9 +74380,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44631987) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74370,9 +74484,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632081) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74471,9 +74588,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632168) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 918,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74572,9 +74692,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632256) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 929,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74673,9 +74796,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632365) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1567,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74774,9 +74900,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632457) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2022,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74875,9 +75004,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632560) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2761,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -74976,9 +75108,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632655) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 4601,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -75077,9 +75212,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632744) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 7921,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -75178,9 +75316,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632833) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -75279,9 +75420,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44632918) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -75380,9 +75524,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44633005) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -75481,9 +75628,12 @@
       "group": "fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44633128) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 74, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1327,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -75689,7 +75839,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2,
+      "ink": 117,
       "width": 832,
       "height": 1218
     },
@@ -75793,7 +75943,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 5,
+      "ink": 117,
       "width": 832,
       "height": 1218
     },
@@ -75897,7 +76047,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 78,
+      "ink": 117,
       "width": 832,
       "height": 1218
     },
@@ -76001,7 +76151,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 349,
+      "ink": 317,
       "width": 832,
       "height": 1218
     },
@@ -76105,7 +76255,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 435,
+      "ink": 400,
       "width": 832,
       "height": 1218
     },
@@ -76209,7 +76359,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1439,
+      "ink": 1383,
       "width": 832,
       "height": 1218
     },
@@ -76313,7 +76463,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1671,
+      "ink": 1647,
       "width": 832,
       "height": 1218
     },
@@ -76417,7 +76567,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 5959,
+      "ink": 5948,
       "width": 832,
       "height": 1218
     },
@@ -76521,7 +76671,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 6422,
+      "ink": 6551,
       "width": 832,
       "height": 1218
     },
@@ -76625,7 +76775,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 68,
+      "ink": 402,
       "width": 832,
       "height": 1218
     },
@@ -76729,7 +76879,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 60,
+      "ink": 464,
       "width": 832,
       "height": 1218
     },
@@ -76833,7 +76983,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1544,
+      "ink": 1469,
       "width": 832,
       "height": 1218
     },
@@ -76937,7 +77087,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1550,
+      "ink": 1539,
       "width": 832,
       "height": 1218
     },
@@ -77041,7 +77191,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 13869,
+      "ink": 14237,
       "width": 832,
       "height": 1218
     },
@@ -77145,7 +77295,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 544,
+      "ink": 568,
       "width": 832,
       "height": 1218
     },
@@ -77249,7 +77399,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2689,
+      "ink": 3100,
       "width": 832,
       "height": 1218
     },
@@ -77353,7 +77503,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 985,
+      "ink": 1135,
       "width": 832,
       "height": 1218
     },
@@ -77457,7 +77607,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 130,
+      "ink": 160,
       "width": 832,
       "height": 1218
     },
@@ -77572,7 +77722,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44635102) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46376078) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -77662,7 +77812,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 132,
+      "ink": 102,
       "width": 832,
       "height": 1218
     },
@@ -77766,7 +77916,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 5770,
+      "ink": 4492,
       "width": 832,
       "height": 1218
     },
@@ -77870,7 +78020,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 43380,
+      "ink": 35980,
       "width": 832,
       "height": 1218
     },
@@ -77971,9 +78121,12 @@
       "group": "stress",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44635452) panicked at src/main.rs:29:63:\nPNG: OutputError(\"raster scan budget exceeded\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 68210,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -78075,7 +78228,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2800,
+      "ink": 2737,
       "width": 832,
       "height": 1218
     },
@@ -78179,7 +78332,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 680,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -78203,7 +78356,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44635642) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46376800) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78280,7 +78433,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 695,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -78304,7 +78457,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44635729) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46376903) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78381,7 +78534,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 680,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -78405,7 +78558,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44635830) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377007) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78482,7 +78635,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 684,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -78506,7 +78659,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44635919) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377100) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78583,7 +78736,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 695,
+      "ink": 718,
       "width": 832,
       "height": 1218
     },
@@ -78607,7 +78760,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636040) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377212) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78684,7 +78837,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 684,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -78708,7 +78861,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636135) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377309) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78785,7 +78938,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 679,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -78809,7 +78962,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636223) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377417) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78886,7 +79039,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 686,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -78910,7 +79063,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636313) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377553) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -78987,7 +79140,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 679,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -79011,7 +79164,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636401) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377716) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79088,7 +79241,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 675,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -79112,7 +79265,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636511) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46377909) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79189,7 +79342,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 688,
+      "ink": 717,
       "width": 832,
       "height": 1218
     },
@@ -79213,7 +79366,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636599) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378017) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79290,7 +79443,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 675,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -79314,7 +79467,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636686) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378122) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79391,7 +79544,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 711,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -79415,7 +79568,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636780) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378234) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79492,7 +79645,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 711,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -79516,7 +79669,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636867) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378332) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79593,7 +79746,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 711,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -79617,7 +79770,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44636954) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378454) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79694,7 +79847,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 691,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -79718,7 +79871,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637044) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378571) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79795,7 +79948,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 709,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -79819,7 +79972,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637133) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378667) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79896,7 +80049,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 691,
+      "ink": 716,
       "width": 832,
       "height": 1218
     },
@@ -79920,7 +80073,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637226) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378770) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -79997,7 +80150,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 717,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -80021,7 +80174,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637318) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378869) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -80098,7 +80251,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 717,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -80122,7 +80275,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637409) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46378968) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -80199,7 +80352,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 717,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -80223,7 +80376,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637496) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46379088) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -80300,7 +80453,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 700,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -80324,7 +80477,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637587) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46379203) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -80425,7 +80578,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637684) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46379337) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -80502,7 +80655,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 700,
+      "ink": 719,
       "width": 832,
       "height": 1218
     },
@@ -80526,7 +80679,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44637775) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46379455) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -80707,7 +80860,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1185,
+      "ink": 2677,
       "width": 832,
       "height": 1218
     },
@@ -81640,9 +81793,12 @@
       "group": "transforms",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44638760) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"unsupported command PM\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5658,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -81741,9 +81897,12 @@
       "group": "transforms",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44638851) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"unsupported command PM\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5658,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -81842,9 +82001,12 @@
       "group": "transforms",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44638949) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"unsupported command PM\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5658,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -81943,9 +82105,12 @@
       "group": "transforms",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639035) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"unsupported command PM\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5658,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82148,9 +82313,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639217) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82249,9 +82417,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639305) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82350,9 +82521,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639399) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82451,9 +82625,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639508) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82552,9 +82729,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639599) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82653,9 +82833,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639685) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82754,9 +82937,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639784) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82855,9 +83041,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639873) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -82956,9 +83145,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44639961) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command FP\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 558,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83057,9 +83249,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640048) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 97, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 347,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83158,9 +83353,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640137) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 97, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 347,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83259,9 +83457,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640229) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 97, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 347,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83360,9 +83561,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640317) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 97, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 347,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83461,9 +83665,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640408) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 98, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 769,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83562,9 +83769,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640500) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 98, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 769,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83663,9 +83873,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640589) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 98, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 769,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83764,9 +83977,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640715) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 98, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 769,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83865,9 +84081,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640823) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 99, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3114,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -83966,9 +84185,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44640915) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 99, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3114,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -84067,9 +84289,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44641015) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 99, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3114,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -84168,9 +84393,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44641107) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 99, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3114,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -84272,7 +84500,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2984,
+      "ink": 3028,
       "width": 832,
       "height": 1218
     },
@@ -84376,7 +84604,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3009,
+      "ink": 3028,
       "width": 832,
       "height": 1218
     },
@@ -84480,7 +84708,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2939,
+      "ink": 3028,
       "width": 832,
       "height": 1218
     },
@@ -84584,7 +84812,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3023,
+      "ink": 3028,
       "width": 832,
       "height": 1218
     },
@@ -84685,9 +84913,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44641555) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 99, message: \"overlapping field block lines unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2359,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -84709,7 +84940,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44641560) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46385190) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -84786,7 +85017,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2127,
+      "ink": 2362,
       "width": 832,
       "height": 1218
     },
@@ -84890,7 +85121,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2127,
+      "ink": 2362,
       "width": 832,
       "height": 1218
     },
@@ -84994,7 +85225,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2127,
+      "ink": 2362,
       "width": 832,
       "height": 1218
     },
@@ -85095,9 +85326,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44641900) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 97, message: \"field block overflow unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 529,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -85196,9 +85430,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642006) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 97, message: \"field block word hyphenation unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 7012,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -85300,7 +85537,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1411,
+      "ink": 1588,
       "width": 832,
       "height": 1218
     },
@@ -85505,9 +85742,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642273) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 13,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -85606,9 +85846,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642360) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -85707,9 +85950,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642453) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -85808,9 +86054,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642543) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "blank",
+      "ink": 0,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -85909,9 +86158,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642635) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86010,9 +86262,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642724) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86111,9 +86366,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642835) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "blank",
+      "ink": 0,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86212,9 +86470,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44642927) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86313,9 +86574,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643021) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86414,9 +86678,12 @@
       "group": "text-layout",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643124) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 13,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86515,9 +86782,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643210) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86616,9 +86886,12 @@
       "group": "text-layout",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643301) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"unsupported command TB\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1653,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86717,9 +86990,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643389) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\u00c5'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2187,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86818,9 +87094,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643474) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\\\\u{301}'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 764,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -86919,9 +87198,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643560) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\u0395'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1171,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87020,9 +87302,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643648) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\u041f'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 964,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87121,9 +87406,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643736) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\u05e9'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1600,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87222,9 +87510,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643822) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\u0645'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1030,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87323,9 +87614,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44643909) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\u65e5'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "blank",
+      "ink": 0,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87424,9 +87718,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644003) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\ud83d\ude00'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 416,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87525,9 +87822,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644091) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\\\\u{200b}'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 805,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87626,9 +87926,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644188) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 93, message: \"unsupported embedded font glyph '\\\\u{378}'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 416,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -87831,9 +88134,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644363) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1206,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -88141,7 +88447,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644643) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46390616) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88242,7 +88548,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644745) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46390765) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88343,7 +88649,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644829) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46390891) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88444,7 +88750,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44644915) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46391050) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88545,7 +88851,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645006) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46391179) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88646,7 +88952,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645099) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46391342) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88747,7 +89053,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645195) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46391465) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88848,7 +89154,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645284) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"unexpected command parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46391587) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"unexpected command parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88871,7 +89177,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645291) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46391593) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -88945,9 +89251,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645376) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 70, message: \"unsupported command PA\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1159,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -89046,9 +89355,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645467) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 70, message: \"unsupported command PA\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2191,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -89147,9 +89459,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645558) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 70, message: \"unsupported command PA\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1159,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -89248,9 +89563,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645647) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 70, message: \"unsupported command PA\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1159,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -89349,9 +89667,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645745) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 70, message: \"unsupported command PA\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1159,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -89450,9 +89771,12 @@
       "group": "encoding",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645835) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 70, message: \"unsupported command PA\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2191,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -89552,7 +89876,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44645923) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 78, message: \"unsupported embedded font glyph '\\\\0'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46392558) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 78, message: \"unsupported embedded font glyph '\\\\0'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -89653,7 +89977,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44646019) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 78, message: \"unsupported embedded font glyph '\\\\0'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46392694) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 78, message: \"unsupported embedded font glyph '\\\\0'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -89961,9 +90285,12 @@
       "group": "state",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44646348) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command FN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1494,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90062,9 +90389,12 @@
       "group": "text-data",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44646427) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command FN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5125,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90163,9 +90493,12 @@
       "group": "text-data",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44646533) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command FN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3282,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90264,9 +90597,12 @@
       "group": "text-data",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44646623) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command FN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 2783,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90365,9 +90701,12 @@
       "group": "text-data",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44646709) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command FN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3944,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90466,9 +90805,12 @@
       "group": "state",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44646823) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command FN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1847,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90668,9 +91010,12 @@
       "group": "serialization",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44647280) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command SN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1296,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90679,7 +91024,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44647283) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46394520) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -90766,9 +91111,12 @@
       "group": "serialization",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44647371) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command SN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 216,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90777,7 +91125,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44647373) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46394642) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -90864,9 +91212,12 @@
       "group": "serialization",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44647461) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported command SN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1045,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -90875,7 +91226,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44647463) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46394823) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -90962,9 +91313,12 @@
       "group": "serialization",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44647551) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 82, message: \"drawing must end with FS before another command\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1294,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -91274,7 +91628,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2468,
+      "ink": 2484,
       "width": 832,
       "height": 1218
     },
@@ -91378,7 +91732,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2412,
+      "ink": 2476,
       "width": 832,
       "height": 1218
     },
@@ -91482,7 +91836,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2368,
+      "ink": 2440,
       "width": 832,
       "height": 1218
     },
@@ -91586,7 +91940,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2312,
+      "ink": 2364,
       "width": 832,
       "height": 1218
     },
@@ -91690,7 +92044,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2248,
+      "ink": 2344,
       "width": 832,
       "height": 1218
     },
@@ -91794,7 +92148,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2192,
+      "ink": 2244,
       "width": 832,
       "height": 1218
     },
@@ -91898,7 +92252,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2140,
+      "ink": 2224,
       "width": 832,
       "height": 1218
     },
@@ -92002,7 +92356,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2100,
+      "ink": 2084,
       "width": 832,
       "height": 1218
     },
@@ -92103,9 +92457,12 @@
       "group": "shapes",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44648928) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"invalid shape dimensions\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 80,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -92204,9 +92561,12 @@
       "group": "shapes",
       "validity": "boundary",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44649015) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"invalid shape dimensions\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 80,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -92932,7 +93292,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 6000,
+      "ink": 10000,
       "width": 832,
       "height": 1218
     },
@@ -93140,7 +93500,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 15952,
+      "ink": 15754,
       "width": 832,
       "height": 1218
     },
@@ -93348,7 +93708,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 15756,
+      "ink": 15498,
       "width": 832,
       "height": 1218
     },
@@ -93865,9 +94225,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44650466) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 440,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -93966,9 +94329,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44650551) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 440,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94067,9 +94433,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44650650) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 440,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94168,9 +94537,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44650748) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 440,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94269,9 +94641,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44650839) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 400,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94370,9 +94745,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44650926) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 400,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94471,9 +94849,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651016) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 400,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94572,9 +94953,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651099) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 400,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94673,9 +95057,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651194) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 348,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94774,9 +95161,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651288) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 348,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94875,9 +95265,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651379) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 348,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -94976,9 +95369,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651468) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 348,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95077,9 +95473,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651553) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 936,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95178,9 +95577,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651643) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 936,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95279,9 +95681,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651729) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 936,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95380,9 +95785,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651823) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 936,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95481,9 +95889,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44651919) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1004,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95582,9 +95993,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44652021) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1004,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95683,9 +96097,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44652080) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1004,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -95784,9 +96201,12 @@
       "group": "shapes",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44652207) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 75, message: \"unsupported command GS\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 1004,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -96523,7 +96943,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44652871) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46404399) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -96741,7 +97161,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44653062) panicked at src/main.rs:69:50:\ncalled `Result::unwrap()` on an `Err` value: Utf8Error { valid_up_to: 86, error_len: Some(1) }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46404751) panicked at src/main.rs:69:50:\ncalled `Result::unwrap()` on an `Err` value: Utf8Error { valid_up_to: 86, error_len: Some(1) }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -97258,7 +97678,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44653723) panicked at src/main.rs:69:50:\ncalled `Result::unwrap()` on an `Err` value: Utf8Error { valid_up_to: 91, error_len: Some(1) }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46405573) panicked at src/main.rs:69:50:\ncalled `Result::unwrap()` on an `Err` value: Utf8Error { valid_up_to: 91, error_len: Some(1) }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -97959,7 +98379,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3200,
+      "ink": 2800,
       "width": 832,
       "height": 1218
     },
@@ -98583,7 +99003,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 9600,
+      "ink": 9200,
       "width": 832,
       "height": 1218
     },
@@ -100351,7 +100771,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 11286,
+      "ink": 10556,
       "width": 832,
       "height": 1218
     },
@@ -100455,7 +100875,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 11286,
+      "ink": 10556,
       "width": 832,
       "height": 1218
     },
@@ -100559,7 +100979,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 11286,
+      "ink": 10556,
       "width": 832,
       "height": 1218
     },
@@ -100663,7 +101083,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 11286,
+      "ink": 10556,
       "width": 832,
       "height": 1218
     },
@@ -102015,7 +102435,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3424,
+      "ink": 3392,
       "width": 832,
       "height": 1218
     },
@@ -102119,7 +102539,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3584,
+      "ink": 3456,
       "width": 832,
       "height": 1218
     },
@@ -102223,7 +102643,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3552,
+      "ink": 3424,
       "width": 832,
       "height": 1218
     },
@@ -102327,7 +102747,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3520,
+      "ink": 3616,
       "width": 832,
       "height": 1218
     },
@@ -102431,7 +102851,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3808,
+      "ink": 4000,
       "width": 832,
       "height": 1218
     },
@@ -102535,7 +102955,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3488,
+      "ink": 3584,
       "width": 832,
       "height": 1218
     },
@@ -102639,7 +103059,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3872,
+      "ink": 3808,
       "width": 832,
       "height": 1218
     },
@@ -102743,7 +103163,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3392,
+      "ink": 3424,
       "width": 832,
       "height": 1218
     },
@@ -103887,7 +104307,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2178,
+      "ink": 2136,
       "width": 832,
       "height": 1218
     },
@@ -103991,7 +104411,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 1698,
+      "ink": 1656,
       "width": 832,
       "height": 1218
     },
@@ -104095,7 +104515,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2754,
+      "ink": 2748,
       "width": 832,
       "height": 1218
     },
@@ -104199,7 +104619,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2148,
+      "ink": 2142,
       "width": 832,
       "height": 1218
     },
@@ -104303,7 +104723,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 48324,
+      "ink": 48360,
       "width": 832,
       "height": 1218
     },
@@ -104327,7 +104747,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660260) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46415620) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -104404,7 +104824,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 38394,
+      "ink": 38430,
       "width": 832,
       "height": 1218
     },
@@ -104428,7 +104848,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660354) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46415725) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -104516,7 +104936,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660440) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46415835) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -104526,7 +104946,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660444) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46415837) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -104611,7 +105031,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660536) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46415929) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -104621,7 +105041,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660538) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46415931) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -104706,7 +105126,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660608) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46416032) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -104716,7 +105136,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44660610) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46416035) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -105102,7 +105522,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 784,
+      "ink": 794,
       "width": 832,
       "height": 1218
     },
@@ -105206,7 +105626,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 784,
+      "ink": 794,
       "width": 832,
       "height": 1218
     },
@@ -105518,7 +105938,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 784,
+      "ink": 794,
       "width": 832,
       "height": 1218
     },
@@ -105619,9 +106039,12 @@
       "group": "torture",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44661595) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 387, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 63122,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -105723,7 +106146,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 69017,
+      "ink": 78068,
       "width": 832,
       "height": 1218
     },
@@ -105827,7 +106250,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 146871,
+      "ink": 147345,
       "width": 832,
       "height": 1218
     },
@@ -105931,7 +106354,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 387747,
+      "ink": 389553,
       "width": 832,
       "height": 1218
     },
@@ -106035,7 +106458,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2550,
+      "ink": 2892,
       "width": 640,
       "height": 320
     },
@@ -106240,9 +106663,12 @@
       "group": "compact-fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44662191) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 72, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 7844,
+      "width": 640,
+      "height": 320
     },
     {
       "library": "labelize",
@@ -106341,9 +106767,12 @@
       "group": "compact-fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44662284) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 72, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5264,
+      "width": 640,
+      "height": 320
     },
     {
       "library": "labelize",
@@ -106442,9 +106871,12 @@
       "group": "compact-fonts",
       "validity": "valid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44662378) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 72, message: \"unsupported resident font\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 3770,
+      "width": 640,
+      "height": 320
     },
     {
       "library": "labelize",
@@ -106546,7 +106978,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2619,
+      "ink": 2670,
       "width": 640,
       "height": 320
     },
@@ -106650,7 +107082,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2615,
+      "ink": 2670,
       "width": 640,
       "height": 320
     },
@@ -106754,7 +107186,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2627,
+      "ink": 2670,
       "width": 640,
       "height": 320
     },
@@ -106858,7 +107290,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 2621,
+      "ink": 2670,
       "width": 640,
       "height": 320
     },
@@ -106962,7 +107394,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 32,
+      "ink": 36,
       "width": 640,
       "height": 320
     },
@@ -107066,7 +107498,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 684,
+      "ink": 1016,
       "width": 640,
       "height": 320
     },
@@ -107170,7 +107602,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 3436,
+      "ink": 5244,
       "width": 640,
       "height": 320
     },
@@ -107274,7 +107706,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 24304,
+      "ink": 24300,
       "width": 640,
       "height": 320
     },
@@ -107378,7 +107810,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 24080,
+      "ink": 24056,
       "width": 640,
       "height": 320
     },
@@ -107482,7 +107914,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 23420,
+      "ink": 23404,
       "width": 640,
       "height": 320
     },
@@ -107792,7 +108224,7 @@
       "validity": "valid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44663622) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 86, message: \"unsupported embedded font glyph '\\\\u{1}'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46419411) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 86, message: \"unsupported embedded font glyph '\\\\u{1}'\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -108103,7 +108535,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 8714,
+      "ink": 8736,
       "width": 640,
       "height": 320
     },
@@ -108311,7 +108743,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 54007,
+      "ink": 54053,
       "width": 640,
       "height": 320
     },
@@ -108415,7 +108847,7 @@
       "returncode": 0,
       "diagnostic": "",
       "status": "rendered",
-      "ink": 54007,
+      "ink": 54053,
       "width": 640,
       "height": 320
     },
@@ -108517,7 +108949,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664298) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported orientation\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420084) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported orientation\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -108618,7 +109050,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664389) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"invalid shape dimensions\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420169) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"invalid shape dimensions\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -108641,7 +109073,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664401) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Digit)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420185) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Digit)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -108716,7 +109148,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664484) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420277) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -108817,7 +109249,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664571) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 77, message: \"invalid hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420374) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 77, message: \"invalid hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -108918,7 +109350,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664688) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 77, message: \"truncated field hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420471) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 77, message: \"truncated field hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109019,7 +109451,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664775) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"graphic byte count mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420565) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"graphic byte count mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109117,7 +109549,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664873) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"invalid graphic count\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420688) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"invalid graphic count\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109140,7 +109572,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664878) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:\nchunk size must be non-zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420693) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:\nchunk size must be non-zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109215,7 +109647,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44664970) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"ZPL framing error at byte 73: InvalidEncodedData\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46420865) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"ZPL framing error at byte 73: InvalidEncodedData\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109313,7 +109745,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665068) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"graphic CRC mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421021) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 73, message: \"graphic CRC mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109323,7 +109755,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665073) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421039) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109411,7 +109843,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665163) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"BQ: parameter 2 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421156) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"BQ: parameter 2 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109512,7 +109944,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665250) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"BQ: parameter 5 out of range\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421250) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 85, message: \"BQ: parameter 5 out of range\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109612,9 +110044,12 @@
       "group": "negative",
       "validity": "invalid",
       "score": null,
-      "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665340) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 84, message: \"barcode requires decimal digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "status": "error"
+      "returncode": 0,
+      "diagnostic": "",
+      "status": "rendered",
+      "ink": 5916,
+      "width": 832,
+      "height": 1218
     },
     {
       "library": "labelize",
@@ -109623,7 +110058,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665347) panicked at src/main.rs:63:14:\nPNG: \"EAN-13: need at least 12 digits, got 0\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421379) panicked at src/main.rs:63:14:\nPNG: \"EAN-13: need at least 12 digits, got 0\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109633,7 +110068,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665350) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421381) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109731,7 +110166,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665458) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421482) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -109806,7 +110241,7 @@
       "validity": "invalid",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (44665553) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (46421590) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {

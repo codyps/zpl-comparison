@@ -4,7 +4,7 @@
 
 [All accuracy comparisons](../README.md) · [Compatibility features](../../../../compatibility/features/README.md)
 
-8 fixtures × 8 renderers. Execution: 2026-09-20T04:49:42Z. Printer: ZTC ZD621-203dpi ZPL, firmware V93.21.33Z, captured 2026-09-20T04:19:42Z through 2026-09-20T04:20:04Z.
+8 fixtures × 8 renderers. Execution: 2026-09-20T18:21:10Z. Printer: ZTC ZD621-203dpi ZPL, firmware V93.21.33Z, captured 2026-09-20T04:19:42Z through 2026-09-20T04:20:04Z.
 
 [Capture metadata](../../../../../benchmarks/accuracy/external-reference/manifest.json)
 
@@ -20,8 +20,8 @@ This feature corpus shares the accuracy pipeline and gallery. Its aggregate is s
 | --- | --- | --- |
 | [Labelary (SaaS)](libraries/labelary.md) | 6 | 41.06% |
 | [labelize (Rust)](libraries/labelize.md) | 6 | 39.99% |
+| [codyps/zpl (Rust)](libraries/codyps-zpl.md) | 6 | 37.08% |
 | [ZPLr (TypeScript)](libraries/zplr.md) | 6 | 37.02% |
-| [codyps/zpl (Rust)](libraries/codyps-zpl.md) | 6 | 36.92% |
 | [BinaryKits.Zpl (.NET)](libraries/binarykits.md) | 6 | 35.39% |
 | [zpl-forge (Rust)](libraries/forge.md) | 6 | 31.69% |
 | [go-zpl (Go)](libraries/go.md) | 6 | 31.50% |

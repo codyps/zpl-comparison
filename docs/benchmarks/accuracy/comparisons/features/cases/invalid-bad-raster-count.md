@@ -23,7 +23,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44664775) panicked at src/main.rs:27:10:
+thread 'main' (46420565) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "graphic byte count mismatch" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

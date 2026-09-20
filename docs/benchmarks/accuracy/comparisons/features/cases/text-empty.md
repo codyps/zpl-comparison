@@ -32,7 +32,7 @@ Printer preview unavailable: HTTP Error 404: Not Found
 
 ~~~text
 
-thread 'main' (44635102) panicked at src/main.rs:45:9:
+thread 'main' (46376078) panicked at src/main.rs:45:9:
 assertion `left == right` failed
   left: 0
  right: 1
