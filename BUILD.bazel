@@ -1,0 +1,71 @@
+load("@rules_python//python:defs.bzl", "py_binary", "py_test")
+load("@report_deps//:requirements.bzl", "requirement")
+load("//:build/reports.bzl", "reports")
+
+py_binary(
+    name = "report_runner",
+    srcs = ["build/report_runner.py"],
+    main = "build/report_runner.py",
+    deps = [requirement("matplotlib"), requirement("numpy"), requirement("pillow")],
+)
+
+py_test(
+    name = "report_runner_test",
+    srcs = ["build/report_runner.py", "build/report_runner_test.py"],
+    main = "build/report_runner_test.py",
+    deps = [requirement("pillow")],
+)
+
+# Collected evidence and maintained sources only. Generated reports, differences,
+# thumbnails, and generated fixture manifests/cases are deliberately excluded.
+reports(
+    name = "reports",
+    srcs = glob(
+        [
+            "benchmarks/*.py",
+            "benchmarks/*.json",
+            "benchmarks/*.txt",
+            "benchmarks/*.md",
+            "benchmarks/templates/**",
+            "benchmarks/adapters/**",
+            "benchmarks/accuracy/*.py",
+            "benchmarks/accuracy/*.md",
+            "benchmarks/accuracy/*reference/**",
+            "references/**",
+            "test-data/external-zpl/**",
+            "test-data/render-conformance/*.py",
+            "test-data/invalid-zpl/*.py",
+            "docs/benchmarks/samples/**",
+            "docs/benchmarks/*/images/*.png",
+            "docs/benchmarks/labelary/captures.json",
+        ],
+        exclude = [
+            "**/__pycache__/**",
+            "**/target/**",
+            "**/node_modules/**",
+            "**/obj/**",
+            "**/bin/**",
+            "docs/benchmarks/*/images/*-diff.png",
+            "benchmarks/test_*.py",
+        ],
+    ) + [
+        "README.md",
+        "PROVENANCE.md",
+        "LICENSE",
+        "docs/README.md",
+        "docs/zpl-command-index.tsv",
+        "docs/zpl-zbi2-pg-en.pdf",
+        "docs/benchmarks/argument-support.md",
+        "docs/benchmarks/command-support.json",
+        "docs/benchmarks/results.json",
+        "docs/benchmarks/accuracy/results.json",
+        "docs/benchmarks/conformance/results.json",
+        "docs/benchmarks/external-zpl/results.json",
+        "docs/benchmarks/invalid/results.json",
+        "docs/compatibility/METHODOLOGY.md",
+        "benchmarks/invalid/README.md",
+        "test-data/render-conformance/README.md",
+        "test-data/render-conformance/INSPIRATION.md",
+        "test-data/invalid-zpl/README.md",
+    ],
+)

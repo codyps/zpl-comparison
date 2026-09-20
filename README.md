@@ -2,6 +2,9 @@
 
 Repeatable comparisons of ZPL parsers, generators and renderers, with performance, memory, deployment size and printer-reference accuracy measurements.
 
+**[Latest CI-generated reports](https://github.com/codyps/zpl-comparison/tree/generated)**
+are published automatically from `main` to an independent branch.
+
 [![Rendering accuracy against printer references](docs/benchmarks/accuracy/accuracy.svg)](docs/benchmarks/accuracy/README.md)
 
 - **[Compare library renders with printer previews](docs/benchmarks/accuracy/comparisons/README.md)**: browse by library or case; see the printer, render and difference together.
