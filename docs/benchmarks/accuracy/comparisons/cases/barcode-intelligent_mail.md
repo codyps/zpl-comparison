@@ -6,11 +6,11 @@
 
 **^BZ** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/intelligent_mail.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![codyps-zpl render](../../images/barcode-intelligent_mail-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-intelligent_mail-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![codyps-zpl render](../../previews/barcode-intelligent_mail-codyps-zpl.png)](../../images/barcode-intelligent_mail-codyps-zpl.png) | [![codyps-zpl difference](../../previews/barcode-intelligent_mail-codyps-zpl-diff.png)](../../images/barcode-intelligent_mail-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6718 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![labelize render](../../images/barcode-intelligent_mail-labelize.png) | ![labelize difference](../../images/barcode-intelligent_mail-labelize-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![labelize render](../../previews/barcode-intelligent_mail-labelize.png)](../../images/barcode-intelligent_mail-labelize.png) | [![labelize difference](../../previews/barcode-intelligent_mail-labelize-diff.png)](../../images/barcode-intelligent_mail-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 2764 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![forge render](../../images/barcode-intelligent_mail-forge.png) | ![forge difference](../../images/barcode-intelligent_mail-forge-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![forge render](../../previews/barcode-intelligent_mail-forge.png)](../../images/barcode-intelligent_mail-forge.png) | [![forge difference](../../previews/barcode-intelligent_mail-forge-diff.png)](../../images/barcode-intelligent_mail-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6700 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![go render](../../images/barcode-intelligent_mail-go.png) | ![go difference](../../images/barcode-intelligent_mail-go-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![go render](../../previews/barcode-intelligent_mail-go.png)](../../images/barcode-intelligent_mail-go.png) | [![go difference](../../previews/barcode-intelligent_mail-go-diff.png)](../../images/barcode-intelligent_mail-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6700 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![ffi render](../../images/barcode-intelligent_mail-ffi.png) | ![ffi difference](../../images/barcode-intelligent_mail-ffi-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![ffi render](../../previews/barcode-intelligent_mail-ffi.png)](../../images/barcode-intelligent_mail-ffi.png) | [![ffi difference](../../previews/barcode-intelligent_mail-ffi-diff.png)](../../images/barcode-intelligent_mail-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6784 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![binarykits render](../../images/barcode-intelligent_mail-binarykits.png) | ![binarykits difference](../../images/barcode-intelligent_mail-binarykits-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![binarykits render](../../previews/barcode-intelligent_mail-binarykits.png)](../../images/barcode-intelligent_mail-binarykits.png) | [![binarykits difference](../../previews/barcode-intelligent_mail-binarykits-diff.png)](../../images/barcode-intelligent_mail-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 6821 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![zplr render](../../images/barcode-intelligent_mail-zplr.png) | ![zplr difference](../../images/barcode-intelligent_mail-zplr-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![zplr render](../../previews/barcode-intelligent_mail-zplr.png)](../../images/barcode-intelligent_mail-zplr.png) | [![zplr difference](../../previews/barcode-intelligent_mail-zplr-diff.png)](../../images/barcode-intelligent_mail-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 98.3% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 98.3% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 124 pixels; e
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | ![labelary render](../../images/barcode-intelligent_mail-labelary.png) | ![labelary difference](../../images/barcode-intelligent_mail-labelary-diff.png) |
+| [![Printer preview](../../previews/barcode-intelligent_mail-printer.png)](../../../../../references/barcodes-zd621-v1/intelligent_mail.png) | [![labelary render](../../previews/barcode-intelligent_mail-labelary.png)](../../images/barcode-intelligent_mail-labelary.png) | [![labelary difference](../../previews/barcode-intelligent_mail-labelary-diff.png)](../../images/barcode-intelligent_mail-labelary-diff.png) |
 

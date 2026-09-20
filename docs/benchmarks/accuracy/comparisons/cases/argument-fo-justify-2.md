@@ -6,11 +6,11 @@
 
 **^FO** · x=220,y=80,z=2 · [ZPL input](../../../../../benchmarks/accuracy/reference/fo-justify-2.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![codyps-zpl render](../../images/argument-fo-justify-2-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-fo-justify-2-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | [![codyps-zpl render](../../previews/argument-fo-justify-2-codyps-zpl.png)](../../images/argument-fo-justify-2-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-fo-justify-2-codyps-zpl-diff.png)](../../images/argument-fo-justify-2-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 196 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![labelize render](../../images/argument-fo-justify-2-labelize.png) | ![labelize difference](../../images/argument-fo-justify-2-labelize-diff.png) |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | [![labelize render](../../previews/argument-fo-justify-2-labelize.png)](../../images/argument-fo-justify-2-labelize.png) | [![labelize difference](../../previews/argument-fo-justify-2-labelize-diff.png)](../../images/argument-fo-justify-2-labelize-diff.png) |
 
 
 ## forge
@@ -40,14 +40,14 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 196 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41940424) panicked at src/main.rs:73:10:
+thread 'main' (44594088) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -61,7 +61,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 41 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![go render](../../images/argument-fo-justify-2-go.png) | ![go difference](../../images/argument-fo-justify-2-go-diff.png) |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | [![go render](../../previews/argument-fo-justify-2-go.png)](../../images/argument-fo-justify-2-go.png) | [![go difference](../../previews/argument-fo-justify-2-go-diff.png)](../../images/argument-fo-justify-2-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 41 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![ffi render](../../images/argument-fo-justify-2-ffi.png) | ![ffi difference](../../images/argument-fo-justify-2-ffi-diff.png) |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | [![ffi render](../../previews/argument-fo-justify-2-ffi.png)](../../images/argument-fo-justify-2-ffi.png) | [![ffi difference](../../previews/argument-fo-justify-2-ffi-diff.png)](../../images/argument-fo-justify-2-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 669 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![binarykits render](../../images/argument-fo-justify-2-binarykits.png) | ![binarykits difference](../../images/argument-fo-justify-2-binarykits-diff.png) |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | [![binarykits render](../../previews/argument-fo-justify-2-binarykits.png)](../../images/argument-fo-justify-2-binarykits.png) | [![binarykits difference](../../previews/argument-fo-justify-2-binarykits-diff.png)](../../images/argument-fo-justify-2-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,12 +94,12 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 865 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![zplr render](../../images/argument-fo-justify-2-zplr.png) | ![zplr difference](../../images/argument-fo-justify-2-zplr-diff.png) |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | [![zplr render](../../previews/argument-fo-justify-2-zplr.png)](../../images/argument-fo-justify-2-zplr.png) | [![zplr difference](../../previews/argument-fo-justify-2-zplr-diff.png)](../../images/argument-fo-justify-2-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 73.9% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 73.9% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -107,5 +107,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 179 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | ![labelary render](../../images/argument-fo-justify-2-labelary.png) | ![labelary difference](../../images/argument-fo-justify-2-labelary-diff.png) |
+| [![Printer preview](../../previews/argument-fo-justify-2-printer.png)](../../../../../benchmarks/accuracy/reference/fo-justify-2.png) | [![labelary render](../../previews/argument-fo-justify-2-labelary.png)](../../images/argument-fo-justify-2-labelary.png) | [![labelary difference](../../previews/argument-fo-justify-2-labelary-diff.png)](../../images/argument-fo-justify-2-labelary-diff.png) |
 

@@ -47,32 +47,32 @@ Reference parameters: **f, o, h, w**. These describe the reference grammar, not 
 
 ## Related features
 
-[Baseline layout](../features/baseline-layout.md) · [Baseline text](../features/baseline-text.md) · [Encoding](../features/encoding.md) · [Fonts](../features/fonts.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [State](../features/state.md) · [Stress](../features/stress.md) · [Text data](../features/text-data.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md)
+[Baseline layout](../features/baseline-layout.md) · [Baseline text](../features/baseline-text.md) · [Compact compositing](../features/compact-compositing.md) · [Compact fonts](../features/compact-fonts.md) · [Compact layout](../features/compact-layout.md) · [Encoding](../features/encoding.md) · [Fonts](../features/fonts.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [State](../features/state.md) · [Stress](../features/stress.md) · [Text data](../features/text-data.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-font0-height-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-16.zpl) | valid / printer | ^A font=0,o=N,h=16,w=0 |
-| [probe-font0-height-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-32.zpl) | valid / printer | ^A font=0,o=N,h=32,w=0 |
-| [probe-font0-height-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-64.zpl) | valid / printer | ^A font=0,o=N,h=64,w=0 |
-| [probe-font0-width-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-16.zpl) | valid / printer | ^A font=0,o=N,h=32,w=16 |
-| [probe-font0-width-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-32.zpl) | valid / printer | ^A font=0,o=N,h=32,w=32 |
-| [probe-font0-width-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-64.zpl) | valid / printer | ^A font=0,o=N,h=32,w=64 |
-| [probe-font0-rotation-N](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-N.zpl) | valid / printer | ^A font=0,o=N,h=32,w=0 |
-| [probe-font0-rotation-R](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-R.zpl) | valid / printer | ^A font=0,o=R,h=32,w=0 |
-| [probe-font0-rotation-I](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-I.zpl) | valid / printer | ^A font=0,o=I,h=32,w=0 |
-| [probe-font0-rotation-B](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-B.zpl) | valid / printer | ^A font=0,o=B,h=32,w=0 |
-| [probe-font-A](../../../test-data/render-conformance/cases/baseline-text/probe-font-A.zpl) | valid / printer | ^A font=A,o=N,h=32,w=24 |
-| [probe-font-D](../../../test-data/render-conformance/cases/baseline-text/probe-font-D.zpl) | valid / printer | ^A font=D,o=N,h=32,w=24 |
-| [probe-fo-justify-0](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-0.zpl) | valid / printer | ^FO x=220,y=80,z=0 |
-| [probe-fo-justify-1](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-1.zpl) | valid / printer | ^FO x=220,y=80,z=1 |
-| [probe-fo-justify-2](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-2.zpl) | valid / printer | ^FO x=220,y=80,z=2 |
-| [probe-ft-baseline](../../../test-data/render-conformance/cases/baseline-layout/probe-ft-baseline.zpl) | valid / printer | ^FT x=80,y=100 |
-| [probe-field-reverse](../../../test-data/render-conformance/cases/baseline-layout/probe-field-reverse.zpl) | valid / printer | ^FR reverse current field |
-| [probe-block-L](../../../test-data/render-conformance/cases/baseline-text/probe-block-L.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=L,indent=0 |
-| [probe-block-C](../../../test-data/render-conformance/cases/baseline-text/probe-block-C.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=C,indent=0 |
-| [probe-block-R](../../../test-data/render-conformance/cases/baseline-text/probe-block-R.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=R,indent=0 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-font0-height-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-16.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-height-16.md) | valid / printer | ^A font=0,o=N,h=16,w=0 |
+| [probe-font0-height-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-32.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-height-32.md) | valid / printer | ^A font=0,o=N,h=32,w=0 |
+| [probe-font0-height-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-height-64.md) | valid / printer | ^A font=0,o=N,h=64,w=0 |
+| [probe-font0-width-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-16.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-width-16.md) | valid / printer | ^A font=0,o=N,h=32,w=16 |
+| [probe-font0-width-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-32.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-width-32.md) | valid / printer | ^A font=0,o=N,h=32,w=32 |
+| [probe-font0-width-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-width-64.md) | valid / printer | ^A font=0,o=N,h=32,w=64 |
+| [probe-font0-rotation-N](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-N.md) | valid / printer | ^A font=0,o=N,h=32,w=0 |
+| [probe-font0-rotation-R](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-R.md) | valid / printer | ^A font=0,o=R,h=32,w=0 |
+| [probe-font0-rotation-I](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-I.md) | valid / printer | ^A font=0,o=I,h=32,w=0 |
+| [probe-font0-rotation-B](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-B.md) | valid / printer | ^A font=0,o=B,h=32,w=0 |
+| [probe-font-A](../../../test-data/render-conformance/cases/baseline-text/probe-font-A.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font-A.md) | valid / printer | ^A font=A,o=N,h=32,w=24 |
+| [probe-font-D](../../../test-data/render-conformance/cases/baseline-text/probe-font-D.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font-D.md) | valid / printer | ^A font=D,o=N,h=32,w=24 |
+| [probe-fo-justify-0](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-fo-justify-0.md) | valid / printer | ^FO x=220,y=80,z=0 |
+| [probe-fo-justify-1](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-fo-justify-1.md) | valid / printer | ^FO x=220,y=80,z=1 |
+| [probe-fo-justify-2](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-fo-justify-2.md) | valid / printer | ^FO x=220,y=80,z=2 |
+| [probe-ft-baseline](../../../test-data/render-conformance/cases/baseline-layout/probe-ft-baseline.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-ft-baseline.md) | valid / printer | ^FT x=80,y=100 |
+| [probe-field-reverse](../../../test-data/render-conformance/cases/baseline-layout/probe-field-reverse.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-field-reverse.md) | valid / printer | ^FR reverse current field |
+| [probe-block-L](../../../test-data/render-conformance/cases/baseline-text/probe-block-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-L.md) | valid / printer | ^FB w=220,lines=3,space=2,align=L,indent=0 |
+| [probe-block-C](../../../test-data/render-conformance/cases/baseline-text/probe-block-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-C.md) | valid / printer | ^FB w=220,lines=3,space=2,align=C,indent=0 |
+| [probe-block-R](../../../test-data/render-conformance/cases/baseline-text/probe-block-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-R.md) | valid / printer | ^FB w=220,lines=3,space=2,align=R,indent=0 |
 
-Showing 20 of 209 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 220 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

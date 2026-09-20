@@ -37,32 +37,32 @@ Reference parameters: **w, r, h**. These describe the reference grammar, not a p
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [Clipping](../features/clipping.md) · [Compositing](../features/compositing.md) · [Encoding](../features/encoding.md) · [Fonts](../features/fonts.md) · [Graphics](../features/graphics.md) · [Lexical](../features/lexical.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [Serialization](../features/serialization.md) · [Shapes](../features/shapes.md) · [State](../features/state.md) · [Stress](../features/stress.md) · [Text data](../features/text-data.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md) · [Transforms](../features/transforms.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [Clipping](../features/clipping.md) · [Compact barcodes](../features/compact-barcodes.md) · [Compact compositing](../features/compact-compositing.md) · [Compact fonts](../features/compact-fonts.md) · [Compact layout](../features/compact-layout.md) · [Compact shapes](../features/compact-shapes.md) · [Compositing](../features/compositing.md) · [Encoding](../features/encoding.md) · [Fonts](../features/fonts.md) · [Graphics](../features/graphics.md) · [Lexical](../features/lexical.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [Position](../features/position.md) · [Serialization](../features/serialization.md) · [Shapes](../features/shapes.md) · [State](../features/state.md) · [Stress](../features/stress.md) · [Text data](../features/text-data.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md) · [Transforms](../features/transforms.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-code39-ratio-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-2.zpl) | valid / printer | ^BY w=2,ratio=2,height=60 |
-| [probe-code39-ratio-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-3.zpl) | valid / printer | ^BY w=2,ratio=3,height=60 |
-| [probe-code39-check-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-N.zpl) | valid / printer | ^B3 o=N,check=N,h=60,readable=N |
-| [probe-code39-check-Y](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-Y.zpl) | valid / printer | ^B3 o=N,check=Y,h=60,readable=N |
-| [probe-code128-text-NN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-NN.zpl) | valid / printer | ^BC h=60,interpretation=N,above=N |
-| [probe-code128-text-YN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YN.zpl) | valid / printer | ^BC h=60,interpretation=Y,above=N |
-| [probe-code128-text-YY](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YY.zpl) | valid / printer | ^BC h=60,interpretation=Y,above=Y |
-| [probe-code128-rotation-R](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-R.zpl) | valid / printer | ^BC o=R,h=60 |
-| [probe-code128-rotation-I](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-I.zpl) | valid / printer | ^BC o=I,h=60 |
-| [probe-code128-rotation-B](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-B.zpl) | valid / printer | ^BC o=B,h=60 |
-| [probe-code128-mode-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-N.zpl) | valid / printer | ^BC mode=N |
-| [probe-code128-mode-A](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-A.zpl) | valid / printer | ^BC mode=A |
-| [symbol-aztec](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec.zpl) | valid / printer | Reference symbol variant: aztec |
-| [symbol-aztec_alias](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_alias.zpl) | valid / printer | Reference symbol variant: aztec_alias |
-| [symbol-aztec_rune](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_rune.zpl) | valid / printer | Reference symbol variant: aztec_rune |
-| [symbol-codabar](../../../test-data/render-conformance/cases/barcode-families/symbol-codabar.zpl) | valid / printer | Reference symbol variant: codabar |
-| [symbol-codablock_a](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_a.zpl) | valid / printer | Reference symbol variant: codablock_a |
-| [symbol-codablock_e](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_e.zpl) | valid / printer | Reference symbol variant: codablock_e |
-| [symbol-codablock_f](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_f.zpl) | valid / printer | Reference symbol variant: codablock_f |
-| [symbol-code11](../../../test-data/render-conformance/cases/barcode-families/symbol-code11.zpl) | valid / printer | Reference symbol variant: code11 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-code39-ratio-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-ratio-2.md) | valid / printer | ^BY w=2,ratio=2,height=60 |
+| [probe-code39-ratio-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-ratio-3.md) | valid / printer | ^BY w=2,ratio=3,height=60 |
+| [probe-code39-check-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-check-N.md) | valid / printer | ^B3 o=N,check=N,h=60,readable=N |
+| [probe-code39-check-Y](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-check-Y.md) | valid / printer | ^B3 o=N,check=Y,h=60,readable=N |
+| [probe-code128-text-NN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-NN.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-NN.md) | valid / printer | ^BC h=60,interpretation=N,above=N |
+| [probe-code128-text-YN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YN.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-YN.md) | valid / printer | ^BC h=60,interpretation=Y,above=N |
+| [probe-code128-text-YY](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YY.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-YY.md) | valid / printer | ^BC h=60,interpretation=Y,above=Y |
+| [probe-code128-rotation-R](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-R.md) | valid / printer | ^BC o=R,h=60 |
+| [probe-code128-rotation-I](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-I.md) | valid / printer | ^BC o=I,h=60 |
+| [probe-code128-rotation-B](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-B.md) | valid / printer | ^BC o=B,h=60 |
+| [probe-code128-mode-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-mode-N.md) | valid / printer | ^BC mode=N |
+| [probe-code128-mode-A](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-A.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-mode-A.md) | valid / printer | ^BC mode=A |
+| [symbol-aztec](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec.md) | valid / printer | Reference symbol variant: aztec |
+| [symbol-aztec_alias](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_alias.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec_alias.md) | valid / printer | Reference symbol variant: aztec_alias |
+| [symbol-aztec_rune](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_rune.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec_rune.md) | valid / printer | Reference symbol variant: aztec_rune |
+| [symbol-codabar](../../../test-data/render-conformance/cases/barcode-families/symbol-codabar.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codabar.md) | valid / printer | Reference symbol variant: codabar |
+| [symbol-codablock_a](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_a.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_a.md) | valid / printer | Reference symbol variant: codablock_a |
+| [symbol-codablock_e](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_e.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_e.md) | valid / printer | Reference symbol variant: codablock_e |
+| [symbol-codablock_f](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_f.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_f.md) | valid / printer | Reference symbol variant: codablock_f |
+| [symbol-code11](../../../test-data/render-conformance/cases/barcode-families/symbol-code11.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code11.md) | valid / printer | Reference symbol variant: code11 |
 
-Showing 20 of 446 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 470 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

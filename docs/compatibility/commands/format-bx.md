@@ -39,25 +39,26 @@ Reference parameters: **o, h, s, c, r, f, g, a**. These describe the reference g
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [Torture](../features/torture.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [Compact barcodes](../features/compact-barcodes.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-datamatrix-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-2.zpl) | valid / printer | ^BX o=N,module=2,quality=200 |
-| [probe-datamatrix-module-4](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-4.zpl) | valid / printer | ^BX o=N,module=4,quality=200 |
-| [symbol-data_matrix](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix.zpl) | valid / printer | Reference symbol variant: data_matrix |
-| [symbol-data_matrix_rectangular](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix_rectangular.zpl) | valid / printer | Reference symbol variant: data_matrix_rectangular |
-| [datamatrix-quality-0](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-0.zpl) | valid / printer | Data Matrix quality 0; legacy ECC modes versus ECC200 |
-| [datamatrix-quality-50](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-50.zpl) | valid / printer | Data Matrix quality 50; legacy ECC modes versus ECC200 |
-| [datamatrix-quality-80](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-80.zpl) | valid / printer | Data Matrix quality 80; legacy ECC modes versus ECC200 |
-| [datamatrix-quality-100](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-100.zpl) | valid / printer | Data Matrix quality 100; legacy ECC modes versus ECC200 |
-| [datamatrix-quality-140](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-140.zpl) | valid / printer | Data Matrix quality 140; legacy ECC modes versus ECC200 |
-| [datamatrix-quality-200](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-200.zpl) | valid / printer | Data Matrix quality 200; legacy ECC modes versus ECC200 |
-| [datamatrix-size-10-10](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-10-10.zpl) | valid / printer | ECC200 explicit columns=10,rows=10 |
-| [datamatrix-size-16-16](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-16-16.zpl) | valid / printer | ECC200 explicit columns=16,rows=16 |
-| [datamatrix-size-18-8](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-18-8.zpl) | valid / printer | ECC200 explicit columns=18,rows=8 |
-| [datamatrix-size-32-8](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-32-8.zpl) | valid / printer | ECC200 explicit columns=32,rows=8 |
-| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-datamatrix-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-datamatrix-module-2.md) | valid / printer | ^BX o=N,module=2,quality=200 |
+| [probe-datamatrix-module-4](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-datamatrix-module-4.md) | valid / printer | ^BX o=N,module=4,quality=200 |
+| [symbol-data_matrix](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-data_matrix.md) | valid / printer | Reference symbol variant: data_matrix |
+| [symbol-data_matrix_rectangular](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix_rectangular.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-data_matrix_rectangular.md) | valid / printer | Reference symbol variant: data_matrix_rectangular |
+| [datamatrix-quality-0](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-quality-0.md) | valid / printer | Data Matrix quality 0; legacy ECC modes versus ECC200 |
+| [datamatrix-quality-50](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-50.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-quality-50.md) | valid / printer | Data Matrix quality 50; legacy ECC modes versus ECC200 |
+| [datamatrix-quality-80](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-80.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-quality-80.md) | valid / printer | Data Matrix quality 80; legacy ECC modes versus ECC200 |
+| [datamatrix-quality-100](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-100.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-quality-100.md) | valid / printer | Data Matrix quality 100; legacy ECC modes versus ECC200 |
+| [datamatrix-quality-140](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-140.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-quality-140.md) | valid / printer | Data Matrix quality 140; legacy ECC modes versus ECC200 |
+| [datamatrix-quality-200](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-quality-200.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-quality-200.md) | valid / printer | Data Matrix quality 200; legacy ECC modes versus ECC200 |
+| [datamatrix-size-10-10](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-10-10.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-size-10-10.md) | valid / printer | ECC200 explicit columns=10,rows=10 |
+| [datamatrix-size-16-16](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-16-16.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-size-16-16.md) | valid / printer | ECC200 explicit columns=16,rows=16 |
+| [datamatrix-size-18-8](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-18-8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-size-18-8.md) | valid / printer | ECC200 explicit columns=18,rows=8 |
+| [datamatrix-size-32-8](../../../test-data/render-conformance/cases/barcode-arguments/datamatrix-size-32-8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/datamatrix-size-32-8.md) | valid / printer | ECC200 explicit columns=32,rows=8 |
+| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-shipping-label.md) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| [compact-state-code128-dm](../../../test-data/render-conformance/cases/compact-barcodes/compact-state-code128-dm.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-state-code128-dm.md) | valid / printer | Barcode state/escape/compaction regression: state-code128-dm |
 

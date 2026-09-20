@@ -6,11 +6,11 @@
 
 **^CI** · encoding=28; UTF-8 é · [ZPL input](../../../../../benchmarks/accuracy/reference/utf8-accent.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![codyps-zpl render](../../images/argument-utf8-accent-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-utf8-accent-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![codyps-zpl render](../../previews/argument-utf8-accent-codyps-zpl.png)](../../images/argument-utf8-accent-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-utf8-accent-codyps-zpl-diff.png)](../../images/argument-utf8-accent-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 96 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![labelize render](../../images/argument-utf8-accent-labelize.png) | ![labelize difference](../../images/argument-utf8-accent-labelize-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![labelize render](../../previews/argument-utf8-accent-labelize.png)](../../images/argument-utf8-accent-labelize.png) | [![labelize difference](../../previews/argument-utf8-accent-labelize-diff.png)](../../images/argument-utf8-accent-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 251 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![forge render](../../images/argument-utf8-accent-forge.png) | ![forge difference](../../images/argument-utf8-accent-forge-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![forge render](../../previews/argument-utf8-accent-forge.png)](../../images/argument-utf8-accent-forge.png) | [![forge difference](../../previews/argument-utf8-accent-forge-diff.png)](../../images/argument-utf8-accent-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 65 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![go render](../../images/argument-utf8-accent-go.png) | ![go difference](../../images/argument-utf8-accent-go-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![go render](../../previews/argument-utf8-accent-go.png)](../../images/argument-utf8-accent-go.png) | [![go difference](../../previews/argument-utf8-accent-go-diff.png)](../../images/argument-utf8-accent-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 65 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![ffi render](../../images/argument-utf8-accent-ffi.png) | ![ffi difference](../../images/argument-utf8-accent-ffi-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![ffi render](../../previews/argument-utf8-accent-ffi.png)](../../images/argument-utf8-accent-ffi.png) | [![ffi difference](../../previews/argument-utf8-accent-ffi-diff.png)](../../images/argument-utf8-accent-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 305 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![binarykits render](../../images/argument-utf8-accent-binarykits.png) | ![binarykits difference](../../images/argument-utf8-accent-binarykits-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![binarykits render](../../previews/argument-utf8-accent-binarykits.png)](../../images/argument-utf8-accent-binarykits.png) | [![binarykits difference](../../previews/argument-utf8-accent-binarykits-diff.png)](../../images/argument-utf8-accent-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 330 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![zplr render](../../images/argument-utf8-accent-zplr.png) | ![zplr difference](../../images/argument-utf8-accent-zplr-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![zplr render](../../previews/argument-utf8-accent-zplr.png)](../../images/argument-utf8-accent-zplr.png) | [![zplr difference](../../previews/argument-utf8-accent-zplr-diff.png)](../../images/argument-utf8-accent-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 82.3% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 82.3% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 58 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | ![labelary render](../../images/argument-utf8-accent-labelary.png) | ![labelary difference](../../images/argument-utf8-accent-labelary-diff.png) |
+| [![Printer preview](../../previews/argument-utf8-accent-printer.png)](../../../../../benchmarks/accuracy/reference/utf8-accent.png) | [![labelary render](../../previews/argument-utf8-accent-labelary.png)](../../images/argument-utf8-accent-labelary.png) | [![labelary difference](../../previews/argument-utf8-accent-labelary-diff.png)](../../images/argument-utf8-accent-labelary-diff.png) |
 

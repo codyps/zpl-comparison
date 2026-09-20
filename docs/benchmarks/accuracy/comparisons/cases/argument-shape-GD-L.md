@@ -6,11 +6,11 @@
 
 **^GD** · 120,60,3,B,L · [ZPL input](../../../../../benchmarks/accuracy/reference/shape-GD-L.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![codyps-zpl render](../../images/argument-shape-GD-L-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-shape-GD-L-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![codyps-zpl render](../../previews/argument-shape-GD-L-codyps-zpl.png)](../../images/argument-shape-GD-L-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-shape-GD-L-codyps-zpl-diff.png)](../../images/argument-shape-GD-L-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 60 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![labelize render](../../images/argument-shape-GD-L-labelize.png) | ![labelize difference](../../images/argument-shape-GD-L-labelize-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![labelize render](../../previews/argument-shape-GD-L-labelize.png)](../../images/argument-shape-GD-L-labelize.png) | [![labelize difference](../../previews/argument-shape-GD-L-labelize-diff.png)](../../images/argument-shape-GD-L-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 120 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![forge render](../../images/argument-shape-GD-L-forge.png) | ![forge difference](../../images/argument-shape-GD-L-forge-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![forge render](../../previews/argument-shape-GD-L-forge.png)](../../images/argument-shape-GD-L-forge.png) | [![forge difference](../../previews/argument-shape-GD-L-forge-diff.png)](../../images/argument-shape-GD-L-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 177 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![go render](../../images/argument-shape-GD-L-go.png) | ![go difference](../../images/argument-shape-GD-L-go-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![go render](../../previews/argument-shape-GD-L-go.png)](../../images/argument-shape-GD-L-go.png) | [![go difference](../../previews/argument-shape-GD-L-go-diff.png)](../../images/argument-shape-GD-L-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 177 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![ffi render](../../images/argument-shape-GD-L-ffi.png) | ![ffi difference](../../images/argument-shape-GD-L-ffi-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![ffi render](../../previews/argument-shape-GD-L-ffi.png)](../../images/argument-shape-GD-L-ffi.png) | [![ffi difference](../../previews/argument-shape-GD-L-ffi-diff.png)](../../images/argument-shape-GD-L-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 60 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![binarykits render](../../images/argument-shape-GD-L-binarykits.png) | ![binarykits difference](../../images/argument-shape-GD-L-binarykits-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![binarykits render](../../previews/argument-shape-GD-L-binarykits.png)](../../images/argument-shape-GD-L-binarykits.png) | [![binarykits difference](../../previews/argument-shape-GD-L-binarykits-diff.png)](../../images/argument-shape-GD-L-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![zplr render](../../images/argument-shape-GD-L-zplr.png) | ![zplr difference](../../images/argument-shape-GD-L-zplr-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![zplr render](../../previews/argument-shape-GD-L-zplr.png)](../../images/argument-shape-GD-L-zplr.png) | [![zplr difference](../../previews/argument-shape-GD-L-zplr-diff.png)](../../images/argument-shape-GD-L-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 50.0% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 50.0% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 60 pixels; extr
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | ![labelary render](../../images/argument-shape-GD-L-labelary.png) | ![labelary difference](../../images/argument-shape-GD-L-labelary-diff.png) |
+| [![Printer preview](../../previews/argument-shape-GD-L-printer.png)](../../../../../benchmarks/accuracy/reference/shape-GD-L.png) | [![labelary render](../../previews/argument-shape-GD-L-labelary.png)](../../images/argument-shape-GD-L-labelary.png) | [![labelary difference](../../previews/argument-shape-GD-L-labelary-diff.png)](../../images/argument-shape-GD-L-labelary-diff.png) |
 

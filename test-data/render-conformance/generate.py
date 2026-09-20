@@ -69,10 +69,15 @@ def rows():
         relation=None,
         source=None,
         document=False,
+        width=832,
+        height=1218,
     ):
         if isinstance(body, str):
             body = body.encode("utf-8")
-        data = body if document else PREFIX + body + b"^XZ\n"
+        prefix = PREFIX.replace(b"^PW832", f"^PW{width}".encode()).replace(
+            b"^LL1218", f"^LL{height}".encode()
+        )
+        data = body if document else prefix + body + b"^XZ\n"
         codes = commands(data)
         result.append(
             dict(
@@ -84,8 +89,8 @@ def rows():
                 relation=relation,
                 source=source,
                 commands=codes,
-                width=832,
-                height=1218,
+                width=width,
+                height=height,
                 zpl=data,
             )
         )
@@ -108,9 +113,7 @@ def rows():
             source="benchmarks/accuracy/cases.py",
         )
         result[-1]["width"], result[-1]["height"] = probe["width"], probe["height"]
-    for path in sorted(
-        (REPO / "references/barcodes-zd621-v1").glob("*.zpl")
-    ):
+    for path in sorted((REPO / "references/barcodes-zd621-v1").glob("*.zpl")):
         add(
             "symbol-" + path.stem,
             "barcode-families",
@@ -757,6 +760,92 @@ def rows():
         "96 overlapping black/white rounded boxes; order-sensitive raster composition",
         compositing,
     )
+
+    # Original compact probes inspired by committed printer-regression tests in
+    # codyps/zpl; guide command references remain the semantic authority.
+    inspiration = "https://github.com/codyps/zpl/blob/792de60b3e47b40a9b183d34a84f23775cabd381/zpl/tests/"
+
+    def compact(name, group, purpose, body, source):
+        add(
+            "compact-" + name,
+            "compact-" + group,
+            purpose,
+            body,
+            width=640,
+            height=320,
+            source=inspiration + source,
+        )
+
+    for font in ["0", "A", "B", "C", "F"]:
+        compact(
+            "baseline-" + font,
+            "fonts",
+            "FO top origin versus FT baseline; ascenders, descenders and punctuation",
+            f"^FO20,20^A{font}N,32,20^FDHAgyp 012!?^FS^FT20,150^A{font}N,32,20^FDHAgyp 012!?^FS^FO10,150^GB500,1,1^FS",
+            "resident_fonts_preview.rs",
+        )
+    for alignment in ["L", "C", "R", "J"]:
+        compact(
+            "wrap-" + alignment,
+            "layout",
+            "Narrow block alignment with a hanging indent and explicit line break",
+            f"^FO20,20^A0N,26,16^FB221,5,2,{alignment},24^FDAlpha beta gamma delta epsilon zeta eta theta\\&last line^FS",
+            "accuracy_refinements.rs",
+        )
+    for diameter in [4, 28, 127]:
+        compact(
+            "circle-" + str(diameter),
+            "shapes",
+            "Small and thick circle beside equal-size ellipse, with a thin circle control",
+            f"^FO20,20^GC{diameter},{min(4, diameter)},B^FS^FO190,20^GE{diameter},{diameter},{min(4, diameter)},B^FS^FO360,20^GC{diameter},1,B^FS",
+            "circle_preview.rs",
+        )
+    for rounding in [1, 4, 8]:
+        compact(
+            "rounded-" + str(rounding),
+            "shapes",
+            "Thick rounded border plus white rounded knockout over solid ink",
+            f"^FO20,20^GB180,100,25,B,{rounding}^FS^FO260,20^GB180,100,100^FS^FO270,30^GB160,80,12,W,{rounding}^FS",
+            "rounded_box_preview.rs",
+        )
+    for name, barcode_commands, data in [
+        ("state-qr-code128", "^BQN,2,3^BCN,70,Y,N,N,N", "State123"),
+        ("state-code128-dm", "^BCN,70,N,N,N,N^BXN,4,200", "Matrix123"),
+        ("code93-substitutes", "^BAN,70,Y,N^FH", "_29A_28A_26A"),
+        ("qr-field-hex", "^BQN,2,4,L,0^FH", "LA,A_5EB_7EC_5FD"),
+        (
+            "pdf417-numeric",
+            "^B7N,3,2,4",
+            "12345678901234567890123456789012345678901234567890",
+        ),
+    ]:
+        compact(
+            name,
+            "barcodes",
+            "Barcode state/escape/compaction regression: " + name,
+            "^FO30,25" + barcode_commands + "^FD" + data + "^FS",
+            "barcode_decode.rs",
+        )
+    for above in ["N", "Y"]:
+        compact(
+            "caption-" + above,
+            "barcodes",
+            "Retail barcode caption placement above/below, with guard bars",
+            f"^FO40,70^BY2^BEN,80,Y,{above}^FD590123412345^FS",
+            "retail_caption_preview.rs",
+        )
+    for reverse in ["FR", "LR"]:
+        compact(
+            "overlap-" + reverse,
+            "compositing",
+            "Reversed text overlapping black and white primitives",
+            "^FO20,20^GB500,140,140^FS^FO100,40^GB160,100,100,W^FS"
+            + ("^LR Y".replace(" ", "") if reverse == "LR" else "")
+            + "^FO40,70"
+            + ("^FR" if reverse == "FR" else "")
+            + "^A0N,40,24^FDOverlap 0123^FS",
+            "render.rs",
+        )
 
     # Negative inputs remain local-only, never printer-capture eligible.
     negatives = [

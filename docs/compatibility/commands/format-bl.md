@@ -40,7 +40,7 @@ Reference parameters: **o, h, g**. These describe the reference grammar, not a p
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-logmars](../../../test-data/render-conformance/cases/barcode-families/symbol-logmars.zpl) | valid / printer | Reference symbol variant: logmars |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-logmars](../../../test-data/render-conformance/cases/barcode-families/symbol-logmars.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-logmars.md) | valid / printer | Reference symbol variant: logmars |
 

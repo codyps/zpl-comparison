@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found | Not measured | 25 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found | 20/25 exact; mean IoU 93.2%; 0 errors | 25 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 20 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 20 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 15 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 2 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 2 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 14 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 19 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 20 🧩 Handler found | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 15 🧩 Handler found | 10/25 exact; mean IoU 52.4%; 0 errors | 25 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 2 ⏭️ Ignored / stored only | 5/25 exact; mean IoU 31.2%; 0 errors | 25 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 2 ⏭️ Ignored / stored only | 5/25 exact; mean IoU 31.2%; 0 errors | 25 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 14 🧩 Handler found | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 19 🟢 Upstream: supported | 12/25 exact; mean IoU 55.9%; 0 errors | 25 rendered |
 | [zpl-builder](../libraries/builder.md) | 8 ❔ No evidence found; 12 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 3 ❔ No evidence found; 17 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 9 ❔ No evidence found; 11 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 20 ❔ No evidence found | Not measured | 1 blank, 24 rendered |
+| [Labelary](../libraries/labelary.md) | 20 ❔ No evidence found | 12/25 exact; mean IoU 55.9%; 0 errors | 1 blank, 24 rendered |
 
 
 ## Commands involved
@@ -31,35 +31,35 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-code39-ratio-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-2.zpl) | valid / printer | ^BY w=2,ratio=2,height=60 |
-| [probe-code39-ratio-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-3.zpl) | valid / printer | ^BY w=2,ratio=3,height=60 |
-| [probe-code39-check-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-N.zpl) | valid / printer | ^B3 o=N,check=N,h=60,readable=N |
-| [probe-code39-check-Y](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-Y.zpl) | valid / printer | ^B3 o=N,check=Y,h=60,readable=N |
-| [probe-code128-text-NN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-NN.zpl) | valid / printer | ^BC h=60,interpretation=N,above=N |
-| [probe-code128-text-YN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YN.zpl) | valid / printer | ^BC h=60,interpretation=Y,above=N |
-| [probe-code128-text-YY](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YY.zpl) | valid / printer | ^BC h=60,interpretation=Y,above=Y |
-| [probe-code128-rotation-R](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-R.zpl) | valid / printer | ^BC o=R,h=60 |
-| [probe-code128-rotation-I](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-I.zpl) | valid / printer | ^BC o=I,h=60 |
-| [probe-code128-rotation-B](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-B.zpl) | valid / printer | ^BC o=B,h=60 |
-| [probe-code128-mode-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-N.zpl) | valid / printer | ^BC mode=N |
-| [probe-code128-mode-A](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-A.zpl) | valid / printer | ^BC mode=A |
-| [probe-qr-model-1](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-1.zpl) | valid / printer | ^BQ o=N,model=1,magnification=3,EC=L,mask=0 |
-| [probe-qr-model-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-2.zpl) | valid / printer | ^BQ o=N,model=2,magnification=3,EC=L,mask=0 |
-| [probe-qr-ec-L](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-L.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=L,mask=0 |
-| [probe-qr-ec-M](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-M.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=M,mask=0 |
-| [probe-qr-ec-Q](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-Q.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=Q,mask=0 |
-| [probe-qr-ec-H](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-H.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=H,mask=0 |
-| [probe-qr-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-2.zpl) | valid / printer | ^BQ magnification=2 |
-| [probe-qr-module-5](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-5.zpl) | valid / printer | ^BQ magnification=5 |
-| [probe-qr-mask-0](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-0.zpl) | valid / printer | ^BQ mask=0 |
-| [probe-qr-mask-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-3.zpl) | valid / printer | ^BQ mask=3 |
-| [probe-qr-mask-7](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-7.zpl) | valid / printer | ^BQ mask=7 |
-| [probe-datamatrix-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-2.zpl) | valid / printer | ^BX o=N,module=2,quality=200 |
-| [probe-datamatrix-module-4](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-4.zpl) | valid / printer | ^BX o=N,module=4,quality=200 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-code39-ratio-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-ratio-2.md) | valid / printer | ^BY w=2,ratio=2,height=60 |
+| [probe-code39-ratio-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-ratio-3.md) | valid / printer | ^BY w=2,ratio=3,height=60 |
+| [probe-code39-check-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-check-N.md) | valid / printer | ^B3 o=N,check=N,h=60,readable=N |
+| [probe-code39-check-Y](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-check-Y.md) | valid / printer | ^B3 o=N,check=Y,h=60,readable=N |
+| [probe-code128-text-NN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-NN.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-NN.md) | valid / printer | ^BC h=60,interpretation=N,above=N |
+| [probe-code128-text-YN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YN.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-YN.md) | valid / printer | ^BC h=60,interpretation=Y,above=N |
+| [probe-code128-text-YY](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YY.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-YY.md) | valid / printer | ^BC h=60,interpretation=Y,above=Y |
+| [probe-code128-rotation-R](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-R.md) | valid / printer | ^BC o=R,h=60 |
+| [probe-code128-rotation-I](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-I.md) | valid / printer | ^BC o=I,h=60 |
+| [probe-code128-rotation-B](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-B.md) | valid / printer | ^BC o=B,h=60 |
+| [probe-code128-mode-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-mode-N.md) | valid / printer | ^BC mode=N |
+| [probe-code128-mode-A](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-A.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-mode-A.md) | valid / printer | ^BC mode=A |
+| [probe-qr-model-1](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-model-1.md) | valid / printer | ^BQ o=N,model=1,magnification=3,EC=L,mask=0 |
+| [probe-qr-model-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-model-2.md) | valid / printer | ^BQ o=N,model=2,magnification=3,EC=L,mask=0 |
+| [probe-qr-ec-L](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-L.md) | valid / printer | ^BQ model=2,magnification=3,EC=L,mask=0 |
+| [probe-qr-ec-M](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-M.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-M.md) | valid / printer | ^BQ model=2,magnification=3,EC=M,mask=0 |
+| [probe-qr-ec-Q](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-Q.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-Q.md) | valid / printer | ^BQ model=2,magnification=3,EC=Q,mask=0 |
+| [probe-qr-ec-H](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-H.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-H.md) | valid / printer | ^BQ model=2,magnification=3,EC=H,mask=0 |
+| [probe-qr-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-module-2.md) | valid / printer | ^BQ magnification=2 |
+| [probe-qr-module-5](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-module-5.md) | valid / printer | ^BQ magnification=5 |
+| [probe-qr-mask-0](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-mask-0.md) | valid / printer | ^BQ mask=0 |
+| [probe-qr-mask-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-mask-3.md) | valid / printer | ^BQ mask=3 |
+| [probe-qr-mask-7](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-7.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-mask-7.md) | valid / printer | ^BQ mask=7 |
+| [probe-datamatrix-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-datamatrix-module-2.md) | valid / printer | ^BX o=N,module=2,quality=200 |
+| [probe-datamatrix-module-4](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-datamatrix-module-4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-datamatrix-module-4.md) | valid / printer | ^BX o=N,module=4,quality=200 |
 

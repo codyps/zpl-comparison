@@ -62,6 +62,30 @@ class LabelaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Incomplete"):
             self.replay()
 
+    def test_extension_preserves_existing_response_without_network(self):
+        self.row.update(suite="test", name="case")
+        self.write()
+        case = {
+            k: self.row[k]
+            for k in ["suite", "name", "source", "sha256", "width", "height"]
+        }
+        original = self.image.read_bytes()
+        with (
+            patch.object(labelary, "inputs", return_value=[case]),
+            patch.object(labelary.subprocess, "run") as request,
+        ):
+            labelary.capture(self.root, extend=True)
+        request.assert_not_called()
+        saved = json.loads((self.root / "captures.json").read_text())
+        self.assertEqual(saved["cases"], [self.row])
+        self.assertEqual(self.image.read_bytes(), original)
+        self.source.write_bytes(b"changed")
+        with (
+            patch.object(labelary, "inputs", return_value=[case]),
+            self.assertRaisesRegex(ValueError, "source/metadata changed"),
+        ):
+            labelary.capture(self.root, extend=True)
+
     def test_http_failure_is_not_a_successful_fallback(self):
         self.row.update(status="error", http_status=400, diagnostic="Unsupported input")
         self.write()

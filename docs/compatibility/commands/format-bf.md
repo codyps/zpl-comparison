@@ -42,10 +42,10 @@ Reference parameters: **o, h, m**. These describe the reference grammar, not a p
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-micropdf417_1](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_1.zpl) | valid / printer | Reference symbol variant: micropdf417_1 |
-| [symbol-micropdf417_3](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_3.zpl) | valid / printer | Reference symbol variant: micropdf417_3 |
-| [symbol-micropdf417_4](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_4.zpl) | valid / printer | Reference symbol variant: micropdf417_4 |
-| [structured-exclude-BF](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-BF.zpl) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-micropdf417_1](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-micropdf417_1.md) | valid / printer | Reference symbol variant: micropdf417_1 |
+| [symbol-micropdf417_3](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-micropdf417_3.md) | valid / printer | Reference symbol variant: micropdf417_3 |
+| [symbol-micropdf417_4](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-micropdf417_4.md) | valid / printer | Reference symbol variant: micropdf417_4 |
+| [structured-exclude-BF](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-BF.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/structured-exclude-BF.md) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
 

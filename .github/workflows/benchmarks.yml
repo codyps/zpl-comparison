@@ -88,9 +88,22 @@ jobs:
         run: benchmarks/_work/venv/bin/python benchmarks/invalid.py --check
       - name: Exercise rendering conformance corpus
         id: conformance
-        run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl,labelary --include-invalid --output docs/benchmarks/conformance
+        continue-on-error: true
+        run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --only all --include-invalid --output docs/benchmarks/conformance
+      - name: Generate feature accuracy comparisons
+        if: always() && steps.conformance.outcome != 'skipped'
+        run: |
+          benchmarks/_work/venv/bin/python benchmarks/accuracy/features.py
+          benchmarks/_work/venv/bin/python benchmarks/accuracy/features.py --check
       - name: Exercise external label examples
+        id: external
+        continue-on-error: true
         run: benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/external-zpl --only all --output docs/benchmarks/external-zpl
+      - name: Generate external example comparisons
+        if: always() && steps.external.outcome != 'skipped'
+        run: |
+          benchmarks/_work/venv/bin/python benchmarks/accuracy/features.py --suite external
+          benchmarks/_work/venv/bin/python benchmarks/accuracy/features.py --suite external --check
       - name: Generate library and feature compatibility pages
         if: always() && steps.accuracy.outcome == 'success' && steps.conformance.outcome != 'skipped'
         run: python benchmarks/compatibility.py
@@ -118,10 +131,16 @@ jobs:
             docs/benchmarks/
             docs/compatibility/
             benchmarks/accuracy/reference/
+            benchmarks/accuracy/conformance-reference/
+            benchmarks/accuracy/external-reference/
+            test-data/render-conformance/
             references/barcodes-zd621-v1/
             test-data/invalid-zpl/
             test-data/external-zpl/
             benchmarks/invalid/README.md
+      - name: Fail on conformance execution failures
+        if: always() && (steps.conformance.outcome == 'failure' || steps.external.outcome == 'failure')
+        run: exit 1
       - name: Fail on invalid-ZPL probe execution failures
         if: always() && steps.invalid.outcome == 'failure'
         run: exit 1

@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 19 🧩 Handler found | Not measured | 24 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 19 🧩 Handler found | 24/24 exact; mean IoU 100.0%; 0 errors | 24 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 19 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 19 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 6 ❔ No evidence found; 13 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 12 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 18 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 19 🧩 Handler found | 0/24 exact; mean IoU 58.2%; 0 errors | 24 rendered |
+| [zpl-forge](../libraries/forge.md) | 6 ❔ No evidence found; 13 🧩 Handler found | 0/24 exact; mean IoU 42.6%; 0 errors | 1 blank, 23 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/24 exact; mean IoU 62.8%; 0 errors | 24 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/24 exact; mean IoU 62.8%; 0 errors | 24 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 12 🧩 Handler found | 0/24 exact; mean IoU 26.7%; 0 errors | 24 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 18 🟢 Upstream: supported | 0/24 exact; mean IoU 31.7%; 0 errors | 24 rendered |
 | [zpl-builder](../libraries/builder.md) | 11 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 14 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 10 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 19 ❔ No evidence found | Not measured | 24 rendered |
+| [Labelary](../libraries/labelary.md) | 19 ❔ No evidence found | 0/24 exact; mean IoU 74.0%; 0 errors | 24 rendered |
 
 
 ## Commands involved
@@ -31,34 +31,34 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-font0-height-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-16.zpl) | valid / printer | ^A font=0,o=N,h=16,w=0 |
-| [probe-font0-height-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-32.zpl) | valid / printer | ^A font=0,o=N,h=32,w=0 |
-| [probe-font0-height-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-64.zpl) | valid / printer | ^A font=0,o=N,h=64,w=0 |
-| [probe-font0-width-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-16.zpl) | valid / printer | ^A font=0,o=N,h=32,w=16 |
-| [probe-font0-width-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-32.zpl) | valid / printer | ^A font=0,o=N,h=32,w=32 |
-| [probe-font0-width-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-64.zpl) | valid / printer | ^A font=0,o=N,h=32,w=64 |
-| [probe-font0-rotation-N](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-N.zpl) | valid / printer | ^A font=0,o=N,h=32,w=0 |
-| [probe-font0-rotation-R](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-R.zpl) | valid / printer | ^A font=0,o=R,h=32,w=0 |
-| [probe-font0-rotation-I](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-I.zpl) | valid / printer | ^A font=0,o=I,h=32,w=0 |
-| [probe-font0-rotation-B](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-B.zpl) | valid / printer | ^A font=0,o=B,h=32,w=0 |
-| [probe-font-A](../../../test-data/render-conformance/cases/baseline-text/probe-font-A.zpl) | valid / printer | ^A font=A,o=N,h=32,w=24 |
-| [probe-font-D](../../../test-data/render-conformance/cases/baseline-text/probe-font-D.zpl) | valid / printer | ^A font=D,o=N,h=32,w=24 |
-| [probe-block-L](../../../test-data/render-conformance/cases/baseline-text/probe-block-L.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=L,indent=0 |
-| [probe-block-C](../../../test-data/render-conformance/cases/baseline-text/probe-block-C.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=C,indent=0 |
-| [probe-block-R](../../../test-data/render-conformance/cases/baseline-text/probe-block-R.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=R,indent=0 |
-| [probe-block-J](../../../test-data/render-conformance/cases/baseline-text/probe-block-J.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=J,indent=0 |
-| [probe-block-indent](../../../test-data/render-conformance/cases/baseline-text/probe-block-indent.zpl) | valid / printer | ^FB indent=20 |
-| [probe-block-explicit-break](../../../test-data/render-conformance/cases/baseline-text/probe-block-explicit-break.zpl) | valid / printer | ^FB explicit \& break |
-| [probe-field-hex](../../../test-data/render-conformance/cases/baseline-text/probe-field-hex.zpl) | valid / printer | ^FH indicator=_, bytes _41_42_43 |
-| [probe-variable-data](../../../test-data/render-conformance/cases/baseline-text/probe-variable-data.zpl) | valid / printer | ^FV literal field value |
-| [probe-encoding-0](../../../test-data/render-conformance/cases/baseline-text/probe-encoding-0.zpl) | valid / printer | ^CI encoding=0 |
-| [probe-encoding-27](../../../test-data/render-conformance/cases/baseline-text/probe-encoding-27.zpl) | valid / printer | ^CI encoding=27 |
-| [probe-encoding-28](../../../test-data/render-conformance/cases/baseline-text/probe-encoding-28.zpl) | valid / printer | ^CI encoding=28 |
-| [probe-utf8-accent](../../../test-data/render-conformance/cases/baseline-text/probe-utf8-accent.zpl) | valid / printer | ^CI encoding=28; UTF-8 é |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-font0-height-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-16.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-height-16.md) | valid / printer | ^A font=0,o=N,h=16,w=0 |
+| [probe-font0-height-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-32.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-height-32.md) | valid / printer | ^A font=0,o=N,h=32,w=0 |
+| [probe-font0-height-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-height-64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-height-64.md) | valid / printer | ^A font=0,o=N,h=64,w=0 |
+| [probe-font0-width-16](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-16.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-width-16.md) | valid / printer | ^A font=0,o=N,h=32,w=16 |
+| [probe-font0-width-32](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-32.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-width-32.md) | valid / printer | ^A font=0,o=N,h=32,w=32 |
+| [probe-font0-width-64](../../../test-data/render-conformance/cases/baseline-text/probe-font0-width-64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-width-64.md) | valid / printer | ^A font=0,o=N,h=32,w=64 |
+| [probe-font0-rotation-N](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-N.md) | valid / printer | ^A font=0,o=N,h=32,w=0 |
+| [probe-font0-rotation-R](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-R.md) | valid / printer | ^A font=0,o=R,h=32,w=0 |
+| [probe-font0-rotation-I](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-I.md) | valid / printer | ^A font=0,o=I,h=32,w=0 |
+| [probe-font0-rotation-B](../../../test-data/render-conformance/cases/baseline-text/probe-font0-rotation-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font0-rotation-B.md) | valid / printer | ^A font=0,o=B,h=32,w=0 |
+| [probe-font-A](../../../test-data/render-conformance/cases/baseline-text/probe-font-A.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font-A.md) | valid / printer | ^A font=A,o=N,h=32,w=24 |
+| [probe-font-D](../../../test-data/render-conformance/cases/baseline-text/probe-font-D.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-font-D.md) | valid / printer | ^A font=D,o=N,h=32,w=24 |
+| [probe-block-L](../../../test-data/render-conformance/cases/baseline-text/probe-block-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-L.md) | valid / printer | ^FB w=220,lines=3,space=2,align=L,indent=0 |
+| [probe-block-C](../../../test-data/render-conformance/cases/baseline-text/probe-block-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-C.md) | valid / printer | ^FB w=220,lines=3,space=2,align=C,indent=0 |
+| [probe-block-R](../../../test-data/render-conformance/cases/baseline-text/probe-block-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-R.md) | valid / printer | ^FB w=220,lines=3,space=2,align=R,indent=0 |
+| [probe-block-J](../../../test-data/render-conformance/cases/baseline-text/probe-block-J.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-J.md) | valid / printer | ^FB w=220,lines=3,space=2,align=J,indent=0 |
+| [probe-block-indent](../../../test-data/render-conformance/cases/baseline-text/probe-block-indent.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-indent.md) | valid / printer | ^FB indent=20 |
+| [probe-block-explicit-break](../../../test-data/render-conformance/cases/baseline-text/probe-block-explicit-break.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-explicit-break.md) | valid / printer | ^FB explicit \& break |
+| [probe-field-hex](../../../test-data/render-conformance/cases/baseline-text/probe-field-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-field-hex.md) | valid / printer | ^FH indicator=_, bytes _41_42_43 |
+| [probe-variable-data](../../../test-data/render-conformance/cases/baseline-text/probe-variable-data.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-variable-data.md) | valid / printer | ^FV literal field value |
+| [probe-encoding-0](../../../test-data/render-conformance/cases/baseline-text/probe-encoding-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-encoding-0.md) | valid / printer | ^CI encoding=0 |
+| [probe-encoding-27](../../../test-data/render-conformance/cases/baseline-text/probe-encoding-27.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-encoding-27.md) | valid / printer | ^CI encoding=27 |
+| [probe-encoding-28](../../../test-data/render-conformance/cases/baseline-text/probe-encoding-28.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-encoding-28.md) | valid / printer | ^CI encoding=28 |
+| [probe-utf8-accent](../../../test-data/render-conformance/cases/baseline-text/probe-utf8-accent.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-utf8-accent.md) | valid / printer | ^CI encoding=28; UTF-8 é |
 

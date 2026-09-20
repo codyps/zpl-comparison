@@ -36,15 +36,16 @@ Reference parameters: **not cataloged**. These describe the reference grammar, n
 
 ## Related features
 
-[Baseline layout](../features/baseline-layout.md) · [Compositing](../features/compositing.md) · [State](../features/state.md) · [Torture](../features/torture.md)
+[Baseline layout](../features/baseline-layout.md) · [Compact compositing](../features/compact-compositing.md) · [Compositing](../features/compositing.md) · [State](../features/state.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-field-reverse](../../../test-data/render-conformance/cases/baseline-layout/probe-field-reverse.zpl) | valid / printer | ^FR reverse current field |
-| [paint-reverse-overlap](../../../test-data/render-conformance/cases/compositing/paint-reverse-overlap.zpl) | valid / printer | Draw order and XOR/reverse semantics: reverse-overlap |
-| [paint-reverse-twice](../../../test-data/render-conformance/cases/compositing/paint-reverse-twice.zpl) | valid / printer | Draw order and XOR/reverse semantics: reverse-twice |
-| [reverse-field-scope](../../../test-data/render-conformance/cases/state/reverse-field-scope.zpl) | valid / printer | FR on one field must not leak to following normal text |
-| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-field-reverse](../../../test-data/render-conformance/cases/baseline-layout/probe-field-reverse.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-field-reverse.md) | valid / printer | ^FR reverse current field |
+| [paint-reverse-overlap](../../../test-data/render-conformance/cases/compositing/paint-reverse-overlap.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/paint-reverse-overlap.md) | valid / printer | Draw order and XOR/reverse semantics: reverse-overlap |
+| [paint-reverse-twice](../../../test-data/render-conformance/cases/compositing/paint-reverse-twice.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/paint-reverse-twice.md) | valid / printer | Draw order and XOR/reverse semantics: reverse-twice |
+| [reverse-field-scope](../../../test-data/render-conformance/cases/state/reverse-field-scope.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/reverse-field-scope.md) | valid / printer | FR on one field must not leak to following normal text |
+| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-shipping-label.md) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| [compact-overlap-FR](../../../test-data/render-conformance/cases/compact-compositing/compact-overlap-FR.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-overlap-FR.md) | valid / printer | Reversed text overlapping black and white primitives |
 

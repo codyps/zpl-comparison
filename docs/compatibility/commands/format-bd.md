@@ -44,11 +44,11 @@ Reference parameters: **m, n, t**. These describe the reference grammar, not a p
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-maxicode2](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode2.zpl) | valid / printer | Reference symbol variant: maxicode2 |
-| [symbol-maxicode3](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode3.zpl) | valid / printer | Reference symbol variant: maxicode3 |
-| [symbol-maxicode4](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode4.zpl) | valid / printer | Reference symbol variant: maxicode4 |
-| [symbol-maxicode5](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode5.zpl) | valid / printer | Reference symbol variant: maxicode5 |
-| [symbol-maxicode6](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode6.zpl) | valid / printer | Reference symbol variant: maxicode6 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-maxicode2](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode2.md) | valid / printer | Reference symbol variant: maxicode2 |
+| [symbol-maxicode3](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode3.md) | valid / printer | Reference symbol variant: maxicode3 |
+| [symbol-maxicode4](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode4.md) | valid / printer | Reference symbol variant: maxicode4 |
+| [symbol-maxicode5](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode5.md) | valid / printer | Reference symbol variant: maxicode5 |
+| [symbol-maxicode6](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode6.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode6.md) | valid / printer | Reference symbol variant: maxicode6 |
 

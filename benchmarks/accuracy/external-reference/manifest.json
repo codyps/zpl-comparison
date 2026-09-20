@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "device": "ZTC ZD621-203dpi ZPL",
+  "firmware": "V93.21.33Z",
+  "dpi": 203,
+  "host": "http://d7j211001302.bed.einic.org/",
+  "captured_utc": "2026-09-20T04:19:42Z",
+  "method": "printer HTTP Preview Label; not physical print/scan",
+  "cases": [
+    {
+      "name": "zpl-toolchain-shipping_label",
+      "group": "shipping",
+      "command": "^A0 ^BC ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "arguments": "External shipping label; unchanged upstream bytes",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPACC",
+      "submitted_sha256": "9dcd3dbe62593666cf933521c79f1b3aa7fbe0bb07b0e548911ad18fdaf7bd75",
+      "captured_utc": "2026-09-20T04:19:45Z",
+      "zpl_sha256": "2a2530cc43c2396ec39246bf243f34662e7ca4cfb04dafe4fc76843131608b98",
+      "png_sha256": "05be09e0cccb38701a21a66063e86afab363e8a761df822db4676474cd789aa3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "zpl-toolchain-product_label",
+      "group": "product",
+      "command": "^A0 ^BE ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "arguments": "External product label; unchanged upstream bytes",
+      "width": 609,
+      "height": 406,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPACC",
+      "submitted_sha256": "c52dc66dd9a8483b5916b4504ea4284151d8e877645ed8fabbd5b42fac58742e",
+      "captured_utc": "2026-09-20T04:19:48Z",
+      "zpl_sha256": "0dc18caecbf78e151ca629a10b5e797caf22e6f32069df0fffa441b6ec380743",
+      "png_sha256": "5cc352efd8e915feb0e5d1c043e337bbcbbc7d0a6ff26a413806e79e91e97773",
+      "printer_dimensions": [
+        640,
+        406
+      ]
+    },
+    {
+      "name": "zpl-toolchain-warehouse_label",
+      "group": "warehouse",
+      "command": "^A0 ^B3 ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "arguments": "External warehouse label; unchanged upstream bytes",
+      "width": 812,
+      "height": 609,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPACC",
+      "submitted_sha256": "c0ed272512fe3a9d825b9cc238cd665f664a7f0f965e56530bee6088497ff22d",
+      "captured_utc": "2026-09-20T04:19:51Z",
+      "zpl_sha256": "731252369d960e59a6ac4948d867fcf8dadf904f5319b29d4dd90a500a3f4629",
+      "png_sha256": "7624e2296b38084ab31ab8fb1d80b656f4870ab1c63ac9d6b1b18c041fa769d1",
+      "printer_dimensions": [
+        832,
+        609
+      ]
+    },
+    {
+      "name": "zpl-toolchain-compliance_label",
+      "group": "compliance",
+      "command": "^A0 ^BC ^BE ^BQ ^BY ^FD ^FO ^FS ^GB ^XA ^XZ",
+      "arguments": "External compliance label; unchanged upstream bytes",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPACC",
+      "submitted_sha256": "e696454251b519b0eaa854418a4a0adefe90074f3f5b3df6cb17cbf3872d4aba",
+      "captured_utc": "2026-09-20T04:19:54Z",
+      "zpl_sha256": "b3dd9b20f2fd5fd3ecd42704b5ff8ff76c3bcfb0b3ff215637804d2e5a80a9f4",
+      "png_sha256": "78cd293ec0a37ea4e6454263c96ef27cb6d06e49d6f5ff43311efa91ec7957e1",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "zplr-asset-matrix-pdf417",
+      "group": "asset",
+      "command": "^A0 ^B7 ^BX ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "arguments": "External asset label; unchanged upstream bytes",
+      "width": 900,
+      "height": 500,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPACC",
+      "submitted_sha256": "f4145fd9b3cb9b0a14293af6ba59a9d87d0403a4f7d6be60d8605e57024168b9",
+      "captured_utc": "2026-09-20T04:19:57Z",
+      "zpl_sha256": "a6b10c713d934e59ccd6c246eb7358f905566693522126c8796bc86a6a62da65",
+      "png_sha256": "b8d39583270188fd799113d90780a0b767833d970d9688883c1c961dd12e5d03",
+      "printer_dimensions": [
+        832,
+        500
+      ]
+    },
+    {
+      "name": "zplr-retail-upc-ean",
+      "group": "retail",
+      "command": "^A0 ^BE ^BU ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "arguments": "External retail label; unchanged upstream bytes",
+      "width": 800,
+      "height": 500,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPACC",
+      "submitted_sha256": "6129f5cfd30e2a8efc8d27b46392a09fd6606d8f24c6ac48d1746718f5ac0383",
+      "captured_utc": "2026-09-20T04:20:01Z",
+      "zpl_sha256": "5b4ac6cde195c92ffccfe5e739e0047d4c75c1148d34bd5e9c274b634cf63726",
+      "png_sha256": "0bee9e695e731e9057e7cca8e922d479c0551cde649c9c927e59f7e26e1ceaae",
+      "printer_dimensions": [
+        832,
+        500
+      ]
+    },
+    {
+      "name": "repeat-end",
+      "group": "repeatability",
+      "command": "^A0 ^BC ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "arguments": "External shipping label; unchanged upstream bytes",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPACC",
+      "submitted_sha256": "9dcd3dbe62593666cf933521c79f1b3aa7fbe0bb07b0e548911ad18fdaf7bd75",
+      "captured_utc": "2026-09-20T04:20:04Z",
+      "zpl_sha256": "2a2530cc43c2396ec39246bf243f34662e7ca4cfb04dafe4fc76843131608b98",
+      "png_sha256": "05be09e0cccb38701a21a66063e86afab363e8a761df822db4676474cd789aa3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    }
+  ],
+  "failures": [],
+  "preview_reset_zpl": "^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+  "corpus_sha256": "d67331b8da175ee7bf7e359b3a222321b41e82152ee63f32cec8f42ad1b9de3f",
+  "repeat_pixels_equal": true
+}

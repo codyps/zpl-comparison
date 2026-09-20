@@ -36,11 +36,12 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 ## Related features
 
-[Barcode families](../features/barcode-families.md)
+[Barcode families](../features/barcode-families.md) · [Compact barcodes](../features/compact-barcodes.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-code93](../../../test-data/render-conformance/cases/barcode-families/symbol-code93.zpl) | valid / printer | Reference symbol variant: code93 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-code93](../../../test-data/render-conformance/cases/barcode-families/symbol-code93.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code93.md) | valid / printer | Reference symbol variant: code93 |
+| [compact-code93-substitutes](../../../test-data/render-conformance/cases/compact-barcodes/compact-code93-substitutes.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-code93-substitutes.md) | valid / printer | Barcode state/escape/compaction regression: code93-substitutes |
 

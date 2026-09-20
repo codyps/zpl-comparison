@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 19 🧩 Handler found | Not measured | 11 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 19 🧩 Handler found | 11/11 exact; mean IoU 100.0%; 0 errors | 11 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 19 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 19 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 14 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 13 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 2 🟡 Upstream: partial; 17 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 19 🧩 Handler found | 0/11 exact; mean IoU 58.5%; 0 errors | 11 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 14 🧩 Handler found | 0/11 exact; mean IoU 27.9%; 3 errors | 3 error, 8 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/11 exact; mean IoU 69.5%; 0 errors | 11 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/11 exact; mean IoU 62.7%; 0 errors | 11 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 13 🧩 Handler found | 0/11 exact; mean IoU 32.4%; 0 errors | 11 rendered |
+| [ZPLr](../libraries/zplr.md) | 2 🟡 Upstream: partial; 17 🟢 Upstream: supported | 0/11 exact; mean IoU 29.4%; 0 errors | 11 rendered |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 14 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 9 ❔ No evidence found; 10 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 19 ❔ No evidence found | Not measured | 11 rendered |
+| [Labelary](../libraries/labelary.md) | 19 ❔ No evidence found | 0/11 exact; mean IoU 62.8%; 0 errors | 11 rendered |
 
 
 ## Commands involved
@@ -31,21 +31,21 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-fo-justify-0](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-0.zpl) | valid / printer | ^FO x=220,y=80,z=0 |
-| [probe-fo-justify-1](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-1.zpl) | valid / printer | ^FO x=220,y=80,z=1 |
-| [probe-fo-justify-2](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-2.zpl) | valid / printer | ^FO x=220,y=80,z=2 |
-| [probe-ft-baseline](../../../test-data/render-conformance/cases/baseline-layout/probe-ft-baseline.zpl) | valid / printer | ^FT x=80,y=100 |
-| [probe-layout-LH](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LH.zpl) | valid / printer | ^LH 30,20 |
-| [probe-layout-LS](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LS.zpl) | valid / printer | ^LS 20 |
-| [probe-layout-LT](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LT.zpl) | valid / printer | ^LT 20 |
-| [probe-layout-PO](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-PO.zpl) | valid / printer | ^PO I |
-| [probe-layout-LR](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LR.zpl) | valid / printer | ^LR Y |
-| [probe-layout-FW](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-FW.zpl) | valid / printer | ^FW R |
-| [probe-field-reverse](../../../test-data/render-conformance/cases/baseline-layout/probe-field-reverse.zpl) | valid / printer | ^FR reverse current field |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-fo-justify-0](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-fo-justify-0.md) | valid / printer | ^FO x=220,y=80,z=0 |
+| [probe-fo-justify-1](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-fo-justify-1.md) | valid / printer | ^FO x=220,y=80,z=1 |
+| [probe-fo-justify-2](../../../test-data/render-conformance/cases/baseline-layout/probe-fo-justify-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-fo-justify-2.md) | valid / printer | ^FO x=220,y=80,z=2 |
+| [probe-ft-baseline](../../../test-data/render-conformance/cases/baseline-layout/probe-ft-baseline.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-ft-baseline.md) | valid / printer | ^FT x=80,y=100 |
+| [probe-layout-LH](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LH.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-layout-LH.md) | valid / printer | ^LH 30,20 |
+| [probe-layout-LS](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LS.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-layout-LS.md) | valid / printer | ^LS 20 |
+| [probe-layout-LT](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LT.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-layout-LT.md) | valid / printer | ^LT 20 |
+| [probe-layout-PO](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-PO.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-layout-PO.md) | valid / printer | ^PO I |
+| [probe-layout-LR](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-LR.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-layout-LR.md) | valid / printer | ^LR Y |
+| [probe-layout-FW](../../../test-data/render-conformance/cases/baseline-layout/probe-layout-FW.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-layout-FW.md) | valid / printer | ^FW R |
+| [probe-field-reverse](../../../test-data/render-conformance/cases/baseline-layout/probe-field-reverse.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-field-reverse.md) | valid / printer | ^FR reverse current field |
 

@@ -37,7 +37,7 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [serial-mask](../../../test-data/render-conformance/cases/serialization/serial-mask.zpl) | valid / printer | SF alphabetic/numeric mask, initial label only |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [serial-mask](../../../test-data/render-conformance/cases/serialization/serial-mask.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-mask.md) | valid / printer | SF alphabetic/numeric mask, initial label only |
 

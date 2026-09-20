@@ -37,9 +37,9 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [serial-000009-Y](../../../test-data/render-conformance/cases/serialization/serial-000009-Y.zpl) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
-| [serial-000009-N](../../../test-data/render-conformance/cases/serialization/serial-000009-N.zpl) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
-| [serial-A009Z-Y](../../../test-data/render-conformance/cases/serialization/serial-A009Z-Y.zpl) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [serial-000009-Y](../../../test-data/render-conformance/cases/serialization/serial-000009-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-000009-Y.md) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
+| [serial-000009-N](../../../test-data/render-conformance/cases/serialization/serial-000009-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-000009-N.md) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
+| [serial-A009Z-Y](../../../test-data/render-conformance/cases/serialization/serial-A009Z-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-A009Z-Y.md) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
 

@@ -17,6 +17,11 @@ Feature groups are rendering behaviors tested by the corpus, including combined 
 | [Baseline shapes](baseline-shapes.md) | 9 | 0 |
 | [Baseline text](baseline-text.md) | 24 | 0 |
 | [Clipping](clipping.md) | 5 | 0 |
+| [Compact barcodes](compact-barcodes.md) | 7 | 0 |
+| [Compact compositing](compact-compositing.md) | 2 | 0 |
+| [Compact fonts](compact-fonts.md) | 5 | 0 |
+| [Compact layout](compact-layout.md) | 4 | 0 |
+| [Compact shapes](compact-shapes.md) | 6 | 0 |
 | [Compositing](compositing.md) | 5 | 0 |
 | [Encoding](encoding.md) | 28 | 0 |
 | [Fonts](fonts.md) | 78 | 0 |

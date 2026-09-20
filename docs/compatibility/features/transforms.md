@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found; 1 📦 Framing only | Not measured | 4 error |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found; 1 📦 Framing only | 0/4 exact; mean IoU 0.0%; 4 errors | 4 error |
 | [zpl-toolchain](../libraries/toolchain.md) | 19 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 1 ❔ No evidence found; 18 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 6 ❔ No evidence found; 13 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 3 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 3 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 12 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 18 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 1 ❔ No evidence found; 18 🧩 Handler found | 0/4 exact; mean IoU 42.5%; 0 errors | 4 rendered |
+| [zpl-forge](../libraries/forge.md) | 6 ❔ No evidence found; 13 🧩 Handler found | 0/4 exact; mean IoU 82.7%; 0 errors | 4 rendered |
+| [go-zpl](../libraries/go.md) | 3 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 91.4%; 0 errors | 4 rendered |
+| [zpl-rs](../libraries/ffi.md) | 3 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 91.4%; 0 errors | 4 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 12 🧩 Handler found | 0/4 exact; mean IoU 65.6%; 0 errors | 4 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 18 🟢 Upstream: supported | 0/4 exact; mean IoU 18.9%; 0 errors | 4 rendered |
 | [zpl-builder](../libraries/builder.md) | 9 ❔ No evidence found; 10 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 14 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 10 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 19 ❔ No evidence found | Not measured | 4 rendered |
+| [Labelary](../libraries/labelary.md) | 19 ❔ No evidence found | 0/4 exact; mean IoU 21.8%; 0 errors | 4 rendered |
 
 
 ## Commands involved
@@ -31,14 +31,14 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [page-transform-N-N](../../../test-data/render-conformance/cases/transforms/page-transform-N-N.zpl) | valid / printer | Mirror=N, invert=N; asymmetric page landmarks and text |
-| [page-transform-Y-N](../../../test-data/render-conformance/cases/transforms/page-transform-Y-N.zpl) | valid / printer | Mirror=Y, invert=N; asymmetric page landmarks and text |
-| [page-transform-N-I](../../../test-data/render-conformance/cases/transforms/page-transform-N-I.zpl) | valid / printer | Mirror=N, invert=I; asymmetric page landmarks and text |
-| [page-transform-Y-I](../../../test-data/render-conformance/cases/transforms/page-transform-Y-I.zpl) | valid / printer | Mirror=Y, invert=I; asymmetric page landmarks and text |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [page-transform-N-N](../../../test-data/render-conformance/cases/transforms/page-transform-N-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-N-N.md) | valid / printer | Mirror=N, invert=N; asymmetric page landmarks and text |
+| [page-transform-Y-N](../../../test-data/render-conformance/cases/transforms/page-transform-Y-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-Y-N.md) | valid / printer | Mirror=Y, invert=N; asymmetric page landmarks and text |
+| [page-transform-N-I](../../../test-data/render-conformance/cases/transforms/page-transform-N-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-N-I.md) | valid / printer | Mirror=N, invert=I; asymmetric page landmarks and text |
+| [page-transform-Y-I](../../../test-data/render-conformance/cases/transforms/page-transform-Y-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-Y-I.md) | valid / printer | Mirror=Y, invert=I; asymmetric page landmarks and text |
 

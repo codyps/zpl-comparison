@@ -37,12 +37,12 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [advanced-text-0000](../../../test-data/render-conformance/cases/encoding/advanced-text-0000.zpl) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,0,0,0; no downloaded fonts |
-| [advanced-text-1000](../../../test-data/render-conformance/cases/encoding/advanced-text-1000.zpl) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 1,0,0,0; no downloaded fonts |
-| [advanced-text-0100](../../../test-data/render-conformance/cases/encoding/advanced-text-0100.zpl) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,1,0,0; no downloaded fonts |
-| [advanced-text-0010](../../../test-data/render-conformance/cases/encoding/advanced-text-0010.zpl) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,0,1,0; no downloaded fonts |
-| [advanced-text-0001](../../../test-data/render-conformance/cases/encoding/advanced-text-0001.zpl) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,0,0,1; no downloaded fonts |
-| [advanced-text-1111](../../../test-data/render-conformance/cases/encoding/advanced-text-1111.zpl) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 1,1,1,1; no downloaded fonts |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [advanced-text-0000](../../../test-data/render-conformance/cases/encoding/advanced-text-0000.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/advanced-text-0000.md) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,0,0,0; no downloaded fonts |
+| [advanced-text-1000](../../../test-data/render-conformance/cases/encoding/advanced-text-1000.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/advanced-text-1000.md) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 1,0,0,0; no downloaded fonts |
+| [advanced-text-0100](../../../test-data/render-conformance/cases/encoding/advanced-text-0100.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/advanced-text-0100.md) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,1,0,0; no downloaded fonts |
+| [advanced-text-0010](../../../test-data/render-conformance/cases/encoding/advanced-text-0010.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/advanced-text-0010.md) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,0,1,0; no downloaded fonts |
+| [advanced-text-0001](../../../test-data/render-conformance/cases/encoding/advanced-text-0001.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/advanced-text-0001.md) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 0,0,0,1; no downloaded fonts |
+| [advanced-text-1111](../../../test-data/render-conformance/cases/encoding/advanced-text-1111.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/advanced-text-1111.md) | valid / font-dependent | PA default glyph/bidi/shaping/OpenType flags 1,1,1,1; no downloaded fonts |
 

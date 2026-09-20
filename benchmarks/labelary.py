@@ -76,11 +76,11 @@ def inches(dots):
     )
 
 
-def capture(dest):
+def capture(dest, extend=False):
     from accuracy.run import gray
 
     manifest_path = dest / "captures.json"
-    if manifest_path.exists():
+    if manifest_path.exists() and not extend:
         raise ValueError(
             "Capture already exists; use a new --output directory to preserve its provenance"
         )
@@ -99,6 +99,38 @@ def capture(dest):
         cases=[],
     )
     cases = inputs()
+    if extend:
+        data = json.loads(manifest_path.read_text())
+        expected = {key(c): c for c in cases}
+        seen = set()
+        for row in data["cases"]:
+            if key(row) in seen or key(row) not in expected:
+                raise ValueError("Duplicate/removed existing Labelary case")
+            seen.add(key(row))
+            if (
+                any(row.get(k) != v for k, v in expected[key(row)].items())
+                or sha(REPO / row["source"]) != row["sha256"]
+            ):
+                raise ValueError("Existing Labelary source/metadata changed")
+            if (
+                row["status"] == "rendered"
+                and sha(dest / row["image"]) != row["png_sha256"]
+            ):
+                raise ValueError("Existing Labelary image changed")
+            if row["status"] not in {"rendered", "error"} or (
+                row["status"] == "error" and not row.get("diagnostic")
+            ):
+                raise ValueError("Invalid existing Labelary response")
+        data.setdefault("extensions", []).append(
+            dict(
+                started_utc=now(),
+                previous_completed_utc=data.get("completed_utc"),
+                existing_cases=len(seen),
+            )
+        )
+        data.update(status="incomplete", completed_utc=None)
+        cases = [c for c in cases if key(c) not in seen]
+        manifest_path.write_text(json.dumps(data, indent=2) + "\n")
     for i, case in enumerate(cases):
         source = REPO / case["source"]
         if sha(source) != case["sha256"]:
@@ -315,11 +347,18 @@ def main():
         action="store_true",
         help="verify saved captures and generated reports offline",
     )
+    parser.add_argument(
+        "--extend",
+        action="store_true",
+        help="Capture only added cases, preserving existing source/image bytes and timestamps",
+    )
     args = parser.parse_args()
+    if args.extend:
+        args.capture = True
     if args.capture and args.check:
         parser.error("--capture and --check are mutually exclusive")
     if args.capture:
-        capture(args.output)
+        capture(args.output, extend=args.extend)
     generated = artifacts(args.output)
     for name, content in generated.items():
         path = args.output / name

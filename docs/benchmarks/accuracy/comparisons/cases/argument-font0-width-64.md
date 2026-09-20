@@ -6,11 +6,11 @@
 
 **^A** · font=0,o=N,h=32,w=64 · [ZPL input](../../../../../benchmarks/accuracy/reference/font0-width-64.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![codyps-zpl render](../../images/argument-font0-width-64-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-font0-width-64-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![codyps-zpl render](../../previews/argument-font0-width-64-codyps-zpl.png)](../../images/argument-font0-width-64-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-font0-width-64-codyps-zpl-diff.png)](../../images/argument-font0-width-64-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 355 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![labelize render](../../images/argument-font0-width-64-labelize.png) | ![labelize difference](../../images/argument-font0-width-64-labelize-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![labelize render](../../previews/argument-font0-width-64-labelize.png)](../../images/argument-font0-width-64-labelize.png) | [![labelize difference](../../previews/argument-font0-width-64-labelize-diff.png)](../../images/argument-font0-width-64-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1242 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![forge render](../../images/argument-font0-width-64-forge.png) | ![forge difference](../../images/argument-font0-width-64-forge-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![forge render](../../previews/argument-font0-width-64-forge.png)](../../images/argument-font0-width-64-forge.png) | [![forge difference](../../previews/argument-font0-width-64-forge-diff.png)](../../images/argument-font0-width-64-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 464 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![go render](../../images/argument-font0-width-64-go.png) | ![go difference](../../images/argument-font0-width-64-go-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![go render](../../previews/argument-font0-width-64-go.png)](../../images/argument-font0-width-64-go.png) | [![go difference](../../previews/argument-font0-width-64-go-diff.png)](../../images/argument-font0-width-64-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 464 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![ffi render](../../images/argument-font0-width-64-ffi.png) | ![ffi difference](../../images/argument-font0-width-64-ffi-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![ffi render](../../previews/argument-font0-width-64-ffi.png)](../../images/argument-font0-width-64-ffi.png) | [![ffi difference](../../previews/argument-font0-width-64-ffi-diff.png)](../../images/argument-font0-width-64-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1404 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![binarykits render](../../images/argument-font0-width-64-binarykits.png) | ![binarykits difference](../../images/argument-font0-width-64-binarykits-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![binarykits render](../../previews/argument-font0-width-64-binarykits.png)](../../images/argument-font0-width-64-binarykits.png) | [![binarykits difference](../../previews/argument-font0-width-64-binarykits-diff.png)](../../images/argument-font0-width-64-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1060 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![zplr render](../../images/argument-font0-width-64-zplr.png) | ![zplr difference](../../images/argument-font0-width-64-zplr-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![zplr render](../../previews/argument-font0-width-64-zplr.png)](../../images/argument-font0-width-64-zplr.png) | [![zplr difference](../../previews/argument-font0-width-64-zplr-diff.png)](../../images/argument-font0-width-64-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 79.1% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 79.1% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 243 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | ![labelary render](../../images/argument-font0-width-64-labelary.png) | ![labelary difference](../../images/argument-font0-width-64-labelary-diff.png) |
+| [![Printer preview](../../previews/argument-font0-width-64-printer.png)](../../../../../benchmarks/accuracy/reference/font0-width-64.png) | [![labelary render](../../previews/argument-font0-width-64-labelary.png)](../../images/argument-font0-width-64-labelary.png) | [![labelary difference](../../previews/argument-font0-width-64-labelary-diff.png)](../../images/argument-font0-width-64-labelary-diff.png) |
 

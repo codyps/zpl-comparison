@@ -1,6 +1,6 @@
 # Labelary renderer captures
 
-[Service documentation](https://labelary.com/service.html). Captured **2026-09-19T03:17:15+00:00** through **2026-09-19T03:25:19+00:00**. Renderer version: not exposed; identified by UTC capture timestamps.
+[Service documentation](https://labelary.com/service.html). Captured **2026-09-19T03:17:15+00:00** through **2026-09-20T04:19:04+00:00**. Renderer version: not exposed; identified by UTC capture timestamps.
 
 Labelary is an additional renderer. The ZD621 printer captures remain the accuracy baseline. [Printer accuracy scores](../accuracy/README.md) · [Comparison gallery](../accuracy/comparisons/libraries/labelary.md).
 
@@ -658,3 +658,27 @@ Requests use 8 dpmm and label index 0. Dimensions are converted using 203 dots/i
 | external-zpl | zplr-asset-matrix-pdf417 | [PNG](images/external-zpl--zplr-asset-matrix-pdf417.png) |
 | external-zpl | zplr-retail-upc-ean | [PNG](images/external-zpl--zplr-retail-upc-ean.png) |
 | external-zpl | zplr-stored-resources | [PNG](images/external-zpl--zplr-stored-resources.png) |
+| conformance | compact-baseline-0 | [PNG](images/conformance--compact-baseline-0.png) |
+| conformance | compact-baseline-A | [PNG](images/conformance--compact-baseline-A.png) |
+| conformance | compact-baseline-B | [PNG](images/conformance--compact-baseline-B.png) |
+| conformance | compact-baseline-C | [PNG](images/conformance--compact-baseline-C.png) |
+| conformance | compact-baseline-F | [PNG](images/conformance--compact-baseline-F.png) |
+| conformance | compact-wrap-L | [PNG](images/conformance--compact-wrap-L.png) |
+| conformance | compact-wrap-C | [PNG](images/conformance--compact-wrap-C.png) |
+| conformance | compact-wrap-R | [PNG](images/conformance--compact-wrap-R.png) |
+| conformance | compact-wrap-J | [PNG](images/conformance--compact-wrap-J.png) |
+| conformance | compact-circle-4 | [PNG](images/conformance--compact-circle-4.png) |
+| conformance | compact-circle-28 | [PNG](images/conformance--compact-circle-28.png) |
+| conformance | compact-circle-127 | [PNG](images/conformance--compact-circle-127.png) |
+| conformance | compact-rounded-1 | [PNG](images/conformance--compact-rounded-1.png) |
+| conformance | compact-rounded-4 | [PNG](images/conformance--compact-rounded-4.png) |
+| conformance | compact-rounded-8 | [PNG](images/conformance--compact-rounded-8.png) |
+| conformance | compact-state-qr-code128 | [PNG](images/conformance--compact-state-qr-code128.png) |
+| conformance | compact-state-code128-dm | [PNG](images/conformance--compact-state-code128-dm.png) |
+| conformance | compact-code93-substitutes | [PNG](images/conformance--compact-code93-substitutes.png) |
+| conformance | compact-qr-field-hex | [PNG](images/conformance--compact-qr-field-hex.png) |
+| conformance | compact-pdf417-numeric | [PNG](images/conformance--compact-pdf417-numeric.png) |
+| conformance | compact-caption-N | [PNG](images/conformance--compact-caption-N.png) |
+| conformance | compact-caption-Y | [PNG](images/conformance--compact-caption-Y.png) |
+| conformance | compact-overlap-FR | [PNG](images/conformance--compact-overlap-FR.png) |
+| conformance | compact-overlap-LR | [PNG](images/conformance--compact-overlap-LR.png) |

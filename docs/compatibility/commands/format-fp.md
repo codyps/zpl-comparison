@@ -37,15 +37,15 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [field-direction-H-0](../../../test-data/render-conformance/cases/text-layout/field-direction-H-0.zpl) | valid / printer | FP H, extra gap 0; semantics independent of rotation |
-| [field-direction-H-1](../../../test-data/render-conformance/cases/text-layout/field-direction-H-1.zpl) | valid / printer | FP H, extra gap 1; semantics independent of rotation |
-| [field-direction-H-8](../../../test-data/render-conformance/cases/text-layout/field-direction-H-8.zpl) | valid / printer | FP H, extra gap 8; semantics independent of rotation |
-| [field-direction-V-0](../../../test-data/render-conformance/cases/text-layout/field-direction-V-0.zpl) | valid / printer | FP V, extra gap 0; semantics independent of rotation |
-| [field-direction-V-1](../../../test-data/render-conformance/cases/text-layout/field-direction-V-1.zpl) | valid / printer | FP V, extra gap 1; semantics independent of rotation |
-| [field-direction-V-8](../../../test-data/render-conformance/cases/text-layout/field-direction-V-8.zpl) | valid / printer | FP V, extra gap 8; semantics independent of rotation |
-| [field-direction-R-0](../../../test-data/render-conformance/cases/text-layout/field-direction-R-0.zpl) | valid / printer | FP R, extra gap 0; semantics independent of rotation |
-| [field-direction-R-1](../../../test-data/render-conformance/cases/text-layout/field-direction-R-1.zpl) | valid / printer | FP R, extra gap 1; semantics independent of rotation |
-| [field-direction-R-8](../../../test-data/render-conformance/cases/text-layout/field-direction-R-8.zpl) | valid / printer | FP R, extra gap 8; semantics independent of rotation |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [field-direction-H-0](../../../test-data/render-conformance/cases/text-layout/field-direction-H-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-H-0.md) | valid / printer | FP H, extra gap 0; semantics independent of rotation |
+| [field-direction-H-1](../../../test-data/render-conformance/cases/text-layout/field-direction-H-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-H-1.md) | valid / printer | FP H, extra gap 1; semantics independent of rotation |
+| [field-direction-H-8](../../../test-data/render-conformance/cases/text-layout/field-direction-H-8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-H-8.md) | valid / printer | FP H, extra gap 8; semantics independent of rotation |
+| [field-direction-V-0](../../../test-data/render-conformance/cases/text-layout/field-direction-V-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-V-0.md) | valid / printer | FP V, extra gap 0; semantics independent of rotation |
+| [field-direction-V-1](../../../test-data/render-conformance/cases/text-layout/field-direction-V-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-V-1.md) | valid / printer | FP V, extra gap 1; semantics independent of rotation |
+| [field-direction-V-8](../../../test-data/render-conformance/cases/text-layout/field-direction-V-8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-V-8.md) | valid / printer | FP V, extra gap 8; semantics independent of rotation |
+| [field-direction-R-0](../../../test-data/render-conformance/cases/text-layout/field-direction-R-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-R-0.md) | valid / printer | FP R, extra gap 0; semantics independent of rotation |
+| [field-direction-R-1](../../../test-data/render-conformance/cases/text-layout/field-direction-R-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-R-1.md) | valid / printer | FP R, extra gap 1; semantics independent of rotation |
+| [field-direction-R-8](../../../test-data/render-conformance/cases/text-layout/field-direction-R-8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-direction-R-8.md) | valid / printer | FP R, extra gap 8; semantics independent of rotation |
 

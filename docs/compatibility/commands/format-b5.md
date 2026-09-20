@@ -40,7 +40,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-planet](../../../test-data/render-conformance/cases/barcode-families/symbol-planet.zpl) | valid / printer | Reference symbol variant: planet |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-planet](../../../test-data/render-conformance/cases/barcode-families/symbol-planet.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-planet.md) | valid / printer | Reference symbol variant: planet |
 

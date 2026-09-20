@@ -42,28 +42,28 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-code39-ratio-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-2.zpl) | valid / printer | ^BY w=2,ratio=2,height=60 |
-| [probe-code39-ratio-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-3.zpl) | valid / printer | ^BY w=2,ratio=3,height=60 |
-| [probe-code39-check-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-N.zpl) | valid / printer | ^B3 o=N,check=N,h=60,readable=N |
-| [probe-code39-check-Y](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-Y.zpl) | valid / printer | ^B3 o=N,check=Y,h=60,readable=N |
-| [symbol-code39](../../../test-data/render-conformance/cases/barcode-families/symbol-code39.zpl) | valid / printer | Reference symbol variant: code39 |
-| [barcode-module-1-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-1-ratio-2.0.zpl) | valid / printer | BY module width 1, ratio 2.0; Code39 |
-| [barcode-module-1-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-1-ratio-2.5.zpl) | valid / printer | BY module width 1, ratio 2.5; Code39 |
-| [barcode-module-1-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-1-ratio-3.0.zpl) | valid / printer | BY module width 1, ratio 3.0; Code39 |
-| [barcode-module-2-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-2-ratio-2.0.zpl) | valid / printer | BY module width 2, ratio 2.0; Code39 |
-| [barcode-module-2-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-2-ratio-2.5.zpl) | valid / printer | BY module width 2, ratio 2.5; Code39 |
-| [barcode-module-2-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-2-ratio-3.0.zpl) | valid / printer | BY module width 2, ratio 3.0; Code39 |
-| [barcode-module-3-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-3-ratio-2.0.zpl) | valid / printer | BY module width 3, ratio 2.0; Code39 |
-| [barcode-module-3-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-3-ratio-2.5.zpl) | valid / printer | BY module width 3, ratio 2.5; Code39 |
-| [barcode-module-3-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-3-ratio-3.0.zpl) | valid / printer | BY module width 3, ratio 3.0; Code39 |
-| [barcode-module-10-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-10-ratio-2.0.zpl) | boundary / printer | BY module width 10, ratio 2.0; Code39 |
-| [barcode-module-10-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-10-ratio-2.5.zpl) | boundary / printer | BY module width 10, ratio 2.5; Code39 |
-| [barcode-module-10-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-10-ratio-3.0.zpl) | boundary / printer | BY module width 10, ratio 3.0; Code39 |
-| [readable-B3-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-B3-N.zpl) | valid / printer | Readable text above rotated B3; measure caption position as well as bars |
-| [readable-B3-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-B3-R.zpl) | valid / printer | Readable text above rotated B3; measure caption position as well as bars |
-| [readable-B3-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-B3-I.zpl) | valid / printer | Readable text above rotated B3; measure caption position as well as bars |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-code39-ratio-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-ratio-2.md) | valid / printer | ^BY w=2,ratio=2,height=60 |
+| [probe-code39-ratio-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-ratio-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-ratio-3.md) | valid / printer | ^BY w=2,ratio=3,height=60 |
+| [probe-code39-check-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-check-N.md) | valid / printer | ^B3 o=N,check=N,h=60,readable=N |
+| [probe-code39-check-Y](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code39-check-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code39-check-Y.md) | valid / printer | ^B3 o=N,check=Y,h=60,readable=N |
+| [symbol-code39](../../../test-data/render-conformance/cases/barcode-families/symbol-code39.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code39.md) | valid / printer | Reference symbol variant: code39 |
+| [barcode-module-1-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-1-ratio-2.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-1-ratio-2.0.md) | valid / printer | BY module width 1, ratio 2.0; Code39 |
+| [barcode-module-1-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-1-ratio-2.5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-1-ratio-2.5.md) | valid / printer | BY module width 1, ratio 2.5; Code39 |
+| [barcode-module-1-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-1-ratio-3.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-1-ratio-3.0.md) | valid / printer | BY module width 1, ratio 3.0; Code39 |
+| [barcode-module-2-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-2-ratio-2.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-2-ratio-2.0.md) | valid / printer | BY module width 2, ratio 2.0; Code39 |
+| [barcode-module-2-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-2-ratio-2.5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-2-ratio-2.5.md) | valid / printer | BY module width 2, ratio 2.5; Code39 |
+| [barcode-module-2-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-2-ratio-3.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-2-ratio-3.0.md) | valid / printer | BY module width 2, ratio 3.0; Code39 |
+| [barcode-module-3-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-3-ratio-2.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-3-ratio-2.0.md) | valid / printer | BY module width 3, ratio 2.0; Code39 |
+| [barcode-module-3-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-3-ratio-2.5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-3-ratio-2.5.md) | valid / printer | BY module width 3, ratio 2.5; Code39 |
+| [barcode-module-3-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-3-ratio-3.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-3-ratio-3.0.md) | valid / printer | BY module width 3, ratio 3.0; Code39 |
+| [barcode-module-10-ratio-2.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-10-ratio-2.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-10-ratio-2.0.md) | boundary / printer | BY module width 10, ratio 2.0; Code39 |
+| [barcode-module-10-ratio-2.5](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-10-ratio-2.5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-10-ratio-2.5.md) | boundary / printer | BY module width 10, ratio 2.5; Code39 |
+| [barcode-module-10-ratio-3.0](../../../test-data/render-conformance/cases/barcode-arguments/barcode-module-10-ratio-3.0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-module-10-ratio-3.0.md) | boundary / printer | BY module width 10, ratio 3.0; Code39 |
+| [readable-B3-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-B3-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-B3-N.md) | valid / printer | Readable text above rotated B3; measure caption position as well as bars |
+| [readable-B3-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-B3-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-B3-R.md) | valid / printer | Readable text above rotated B3; measure caption position as well as bars |
+| [readable-B3-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-B3-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-B3-I.md) | valid / printer | Readable text above rotated B3; measure caption position as well as bars |
 
 Showing 20 of 22 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

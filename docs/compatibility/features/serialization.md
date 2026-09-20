@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 16 🧩 Handler found; 2 📦 Framing only | Not measured | 4 error |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 16 🧩 Handler found; 2 📦 Framing only | 0/4 exact; mean IoU 0.0%; 4 errors | 4 error |
 | [zpl-toolchain](../libraries/toolchain.md) | 18 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 16 🧩 Handler found; 2 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 7 ❔ No evidence found; 11 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 4 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 4 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 8 ❔ No evidence found; 10 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 2 🟡 Upstream: partial; 16 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 16 🧩 Handler found; 2 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 15.0%; 3 errors | 3 error, 1 rendered |
+| [zpl-forge](../libraries/forge.md) | 7 ❔ No evidence found; 11 🧩 Handler found | 0/4 exact; mean IoU 9.6%; 0 errors | 3 blank, 1 rendered |
+| [go-zpl](../libraries/go.md) | 4 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 20.3%; 0 errors | 3 blank, 1 rendered |
+| [zpl-rs](../libraries/ffi.md) | 4 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 20.3%; 0 errors | 3 blank, 1 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 8 ❔ No evidence found; 10 🧩 Handler found | 0/4 exact; mean IoU 7.4%; 0 errors | 3 blank, 1 rendered |
+| [ZPLr](../libraries/zplr.md) | 2 🟡 Upstream: partial; 16 🟢 Upstream: supported | 0/4 exact; mean IoU 25.8%; 0 errors | 4 rendered |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 13 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 10 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | Not measured | 4 rendered |
+| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | 0/4 exact; mean IoU 61.6%; 0 errors | 4 rendered |
 
 
 ## Commands involved
@@ -31,14 +31,14 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [serial-000009-Y](../../../test-data/render-conformance/cases/serialization/serial-000009-Y.zpl) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
-| [serial-000009-N](../../../test-data/render-conformance/cases/serialization/serial-000009-N.zpl) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
-| [serial-A009Z-Y](../../../test-data/render-conformance/cases/serialization/serial-A009Z-Y.zpl) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
-| [serial-mask](../../../test-data/render-conformance/cases/serialization/serial-mask.zpl) | valid / printer | SF alphabetic/numeric mask, initial label only |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [serial-000009-Y](../../../test-data/render-conformance/cases/serialization/serial-000009-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-000009-Y.md) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
+| [serial-000009-N](../../../test-data/render-conformance/cases/serialization/serial-000009-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-000009-N.md) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
+| [serial-A009Z-Y](../../../test-data/render-conformance/cases/serialization/serial-A009Z-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-A009Z-Y.md) | valid / printer | SN initial visible value only; increment across physical prints is intentionally untested |
+| [serial-mask](../../../test-data/render-conformance/cases/serialization/serial-mask.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/serial-mask.md) | valid / printer | SF alphabetic/numeric mask, initial label only |
 

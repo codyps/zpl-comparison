@@ -47,32 +47,32 @@ Reference parameters: **a, b, c, d, e**. These describe the reference grammar, n
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [Negative](../features/negative.md) · [Torture](../features/torture.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [Compact barcodes](../features/compact-barcodes.md) · [Negative](../features/negative.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-qr-model-1](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-1.zpl) | valid / printer | ^BQ o=N,model=1,magnification=3,EC=L,mask=0 |
-| [probe-qr-model-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-2.zpl) | valid / printer | ^BQ o=N,model=2,magnification=3,EC=L,mask=0 |
-| [probe-qr-ec-L](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-L.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=L,mask=0 |
-| [probe-qr-ec-M](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-M.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=M,mask=0 |
-| [probe-qr-ec-Q](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-Q.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=Q,mask=0 |
-| [probe-qr-ec-H](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-H.zpl) | valid / printer | ^BQ model=2,magnification=3,EC=H,mask=0 |
-| [probe-qr-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-2.zpl) | valid / printer | ^BQ magnification=2 |
-| [probe-qr-module-5](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-5.zpl) | valid / printer | ^BQ magnification=5 |
-| [probe-qr-mask-0](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-0.zpl) | valid / printer | ^BQ mask=0 |
-| [probe-qr-mask-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-3.zpl) | valid / printer | ^BQ mask=3 |
-| [probe-qr-mask-7](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-7.zpl) | valid / printer | ^BQ mask=7 |
-| [symbol-qr](../../../test-data/render-conformance/cases/barcode-families/symbol-qr.zpl) | valid / printer | Reference symbol variant: qr |
-| [qr-mask-full-0](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-0.zpl) | valid / printer | QR mask 0, model2/ECM |
-| [qr-mask-full-1](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-1.zpl) | valid / printer | QR mask 1, model2/ECM |
-| [qr-mask-full-2](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-2.zpl) | valid / printer | QR mask 2, model2/ECM |
-| [qr-mask-full-3](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-3.zpl) | valid / printer | QR mask 3, model2/ECM |
-| [qr-mask-full-4](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-4.zpl) | valid / printer | QR mask 4, model2/ECM |
-| [qr-mask-full-5](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-5.zpl) | valid / printer | QR mask 5, model2/ECM |
-| [qr-mask-full-6](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-6.zpl) | valid / printer | QR mask 6, model2/ECM |
-| [qr-mask-full-7](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-7.zpl) | valid / printer | QR mask 7, model2/ECM |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-qr-model-1](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-model-1.md) | valid / printer | ^BQ o=N,model=1,magnification=3,EC=L,mask=0 |
+| [probe-qr-model-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-model-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-model-2.md) | valid / printer | ^BQ o=N,model=2,magnification=3,EC=L,mask=0 |
+| [probe-qr-ec-L](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-L.md) | valid / printer | ^BQ model=2,magnification=3,EC=L,mask=0 |
+| [probe-qr-ec-M](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-M.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-M.md) | valid / printer | ^BQ model=2,magnification=3,EC=M,mask=0 |
+| [probe-qr-ec-Q](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-Q.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-Q.md) | valid / printer | ^BQ model=2,magnification=3,EC=Q,mask=0 |
+| [probe-qr-ec-H](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-ec-H.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-ec-H.md) | valid / printer | ^BQ model=2,magnification=3,EC=H,mask=0 |
+| [probe-qr-module-2](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-module-2.md) | valid / printer | ^BQ magnification=2 |
+| [probe-qr-module-5](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-module-5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-module-5.md) | valid / printer | ^BQ magnification=5 |
+| [probe-qr-mask-0](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-mask-0.md) | valid / printer | ^BQ mask=0 |
+| [probe-qr-mask-3](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-mask-3.md) | valid / printer | ^BQ mask=3 |
+| [probe-qr-mask-7](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-qr-mask-7.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-qr-mask-7.md) | valid / printer | ^BQ mask=7 |
+| [symbol-qr](../../../test-data/render-conformance/cases/barcode-families/symbol-qr.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-qr.md) | valid / printer | Reference symbol variant: qr |
+| [qr-mask-full-0](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-0.md) | valid / printer | QR mask 0, model2/ECM |
+| [qr-mask-full-1](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-1.md) | valid / printer | QR mask 1, model2/ECM |
+| [qr-mask-full-2](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-2.md) | valid / printer | QR mask 2, model2/ECM |
+| [qr-mask-full-3](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-3.md) | valid / printer | QR mask 3, model2/ECM |
+| [qr-mask-full-4](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-4.md) | valid / printer | QR mask 4, model2/ECM |
+| [qr-mask-full-5](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-5.md) | valid / printer | QR mask 5, model2/ECM |
+| [qr-mask-full-6](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-6.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-6.md) | valid / printer | QR mask 6, model2/ECM |
+| [qr-mask-full-7](../../../test-data/render-conformance/cases/barcode-arguments/qr-mask-full-7.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/qr-mask-full-7.md) | valid / printer | QR mask 7, model2/ECM |
 
-Showing 20 of 23 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 25 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

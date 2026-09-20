@@ -101,7 +101,7 @@ def main():
     ref = data["fresh_reference"]
     text = [
         "# Accuracy against a real Zebra printer\n",
-        "**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together.\n",
+        "**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.\n",
         f"Reference: **{ref['device']}, firmware {ref['firmware']}**, {ref['dpi']} dpi. Fresh captures: {ref['captured_utc']}. Library comparisons: {data['measured_utc']}.\n",
         "[Command/argument support](../command-support.md) · [Run/reproduce](../../../benchmarks/accuracy/README.md) · [Raw measurements](results.json).\n",
         "**This measures fidelity to the printer’s HTTP preview raster, not physical printed/scanned labels.** "
@@ -133,7 +133,7 @@ def main():
             ],
             summary,
         ),
-        "The model-2 QR probe illustrates a placement error: the printer starts the symbol near y=119, while codyps/zpl starts it at y=60. IoU retains that difference rather than aligning it away. Inspect the images to distinguish placement, font metrics, omitted fields and symbol-pattern differences.\n",
+        "Inspect the difference images to distinguish placement, font metrics, omitted fields and symbol-pattern differences. IoU compares the original coordinates without aligning away placement errors.\n",
         "\n## Limits and provenance\n",
         "The 60 archived barcode cases were used during development of this repository, so they are **not an independent holdout**. "
         "Fresh probes cover multiple font sizes (including codyps/zpl’s native 32-dot strike), other resident fonts, rotations, positioning, block alignment/indentation, colors, graphic encodings and barcode arguments. "

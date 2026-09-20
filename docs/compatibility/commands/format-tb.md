@@ -37,18 +37,18 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [text-block-N-1](../../../test-data/render-conformance/cases/text-layout/text-block-N-1.zpl) | boundary / printer | TB N, 220x1; height truncation, word wrap and angle escape |
-| [text-block-N-40](../../../test-data/render-conformance/cases/text-layout/text-block-N-40.zpl) | valid / printer | TB N, 220x40; height truncation, word wrap and angle escape |
-| [text-block-N-120](../../../test-data/render-conformance/cases/text-layout/text-block-N-120.zpl) | valid / printer | TB N, 220x120; height truncation, word wrap and angle escape |
-| [text-block-R-1](../../../test-data/render-conformance/cases/text-layout/text-block-R-1.zpl) | boundary / printer | TB R, 220x1; height truncation, word wrap and angle escape |
-| [text-block-R-40](../../../test-data/render-conformance/cases/text-layout/text-block-R-40.zpl) | valid / printer | TB R, 220x40; height truncation, word wrap and angle escape |
-| [text-block-R-120](../../../test-data/render-conformance/cases/text-layout/text-block-R-120.zpl) | valid / printer | TB R, 220x120; height truncation, word wrap and angle escape |
-| [text-block-I-1](../../../test-data/render-conformance/cases/text-layout/text-block-I-1.zpl) | boundary / printer | TB I, 220x1; height truncation, word wrap and angle escape |
-| [text-block-I-40](../../../test-data/render-conformance/cases/text-layout/text-block-I-40.zpl) | valid / printer | TB I, 220x40; height truncation, word wrap and angle escape |
-| [text-block-I-120](../../../test-data/render-conformance/cases/text-layout/text-block-I-120.zpl) | valid / printer | TB I, 220x120; height truncation, word wrap and angle escape |
-| [text-block-B-1](../../../test-data/render-conformance/cases/text-layout/text-block-B-1.zpl) | boundary / printer | TB B, 220x1; height truncation, word wrap and angle escape |
-| [text-block-B-40](../../../test-data/render-conformance/cases/text-layout/text-block-B-40.zpl) | valid / printer | TB B, 220x40; height truncation, word wrap and angle escape |
-| [text-block-B-120](../../../test-data/render-conformance/cases/text-layout/text-block-B-120.zpl) | valid / printer | TB B, 220x120; height truncation, word wrap and angle escape |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [text-block-N-1](../../../test-data/render-conformance/cases/text-layout/text-block-N-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-N-1.md) | boundary / printer | TB N, 220x1; height truncation, word wrap and angle escape |
+| [text-block-N-40](../../../test-data/render-conformance/cases/text-layout/text-block-N-40.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-N-40.md) | valid / printer | TB N, 220x40; height truncation, word wrap and angle escape |
+| [text-block-N-120](../../../test-data/render-conformance/cases/text-layout/text-block-N-120.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-N-120.md) | valid / printer | TB N, 220x120; height truncation, word wrap and angle escape |
+| [text-block-R-1](../../../test-data/render-conformance/cases/text-layout/text-block-R-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-R-1.md) | boundary / printer | TB R, 220x1; height truncation, word wrap and angle escape |
+| [text-block-R-40](../../../test-data/render-conformance/cases/text-layout/text-block-R-40.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-R-40.md) | valid / printer | TB R, 220x40; height truncation, word wrap and angle escape |
+| [text-block-R-120](../../../test-data/render-conformance/cases/text-layout/text-block-R-120.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-R-120.md) | valid / printer | TB R, 220x120; height truncation, word wrap and angle escape |
+| [text-block-I-1](../../../test-data/render-conformance/cases/text-layout/text-block-I-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-I-1.md) | boundary / printer | TB I, 220x1; height truncation, word wrap and angle escape |
+| [text-block-I-40](../../../test-data/render-conformance/cases/text-layout/text-block-I-40.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-I-40.md) | valid / printer | TB I, 220x40; height truncation, word wrap and angle escape |
+| [text-block-I-120](../../../test-data/render-conformance/cases/text-layout/text-block-I-120.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-I-120.md) | valid / printer | TB I, 220x120; height truncation, word wrap and angle escape |
+| [text-block-B-1](../../../test-data/render-conformance/cases/text-layout/text-block-B-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-B-1.md) | boundary / printer | TB B, 220x1; height truncation, word wrap and angle escape |
+| [text-block-B-40](../../../test-data/render-conformance/cases/text-layout/text-block-B-40.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-B-40.md) | valid / printer | TB B, 220x40; height truncation, word wrap and angle escape |
+| [text-block-B-120](../../../test-data/render-conformance/cases/text-layout/text-block-B-120.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-block-B-120.md) | valid / printer | TB B, 220x120; height truncation, word wrap and angle escape |
 

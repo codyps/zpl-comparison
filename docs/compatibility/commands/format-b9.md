@@ -40,7 +40,7 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-upce](../../../test-data/render-conformance/cases/barcode-families/symbol-upce.zpl) | valid / printer | Reference symbol variant: upce |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-upce](../../../test-data/render-conformance/cases/barcode-families/symbol-upce.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-upce.md) | valid / printer | Reference symbol variant: upce |
 

@@ -37,7 +37,7 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [barcode-validation](../../../test-data/render-conformance/cases/barcode-arguments/barcode-validation.zpl) | valid / printer | CV validation enabled with valid Code128 data |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [barcode-validation](../../../test-data/render-conformance/cases/barcode-arguments/barcode-validation.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-validation.md) | valid / printer | CV validation enabled with valid Code128 data |
 

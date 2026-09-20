@@ -2,6 +2,9 @@
 
 import importlib.util
 import json
+import io
+import urllib.error
+from unittest.mock import patch
 from pathlib import Path
 import sys
 import tempfile
@@ -30,6 +33,244 @@ finally:
 
 
 class ConformanceTests(unittest.TestCase):
+    def test_missing_adapter_fails_preflight(self):
+        with self.assertRaisesRegex(ValueError, "Missing adapter executable"):
+            conformance.metrics.preflight(
+                {"commands": {"forge": ["/does-not-exist/forge"]}}, ["forge"]
+            )
+        with self.assertRaisesRegex(ValueError, "Missing FFI native library"):
+            conformance.metrics.preflight(
+                {"commands": {"ffi": [sys.executable]}}, ["ffi"]
+            )
+
+    def test_capture_records_missing_preview_and_still_checks_control(self):
+        png = io.BytesIO()
+        Image.new("L", (2, 2), 0).save(png, format="PNG")
+        probes = [
+            dict(name=name, zpl=b"^XA^FO0,0^FDtest^FS^XZ")
+            for name in ["first", "missing", "repeat-end"]
+        ]
+        replies = iter(
+            [
+                b"ZTC ZD621-203dpi ZPL<",
+                b"V93.21.33Z FIRMWARE",
+                b'<IMG SRC="/first.png">',
+                png.getvalue(),
+                b'<IMG SRC="/missing.png">',
+                urllib.error.HTTPError(
+                    "http://printer/missing.png", 404, "Not Found", {}, None
+                ),
+                b'<IMG SRC="/last.png">',
+                png.getvalue(),
+            ]
+        )
+
+        def open_response(request, timeout):
+            self.assertNotIn(b"Print+Label", request.data or b"")
+            if request.data:
+                form = capture.urllib.parse.parse_qs(request.data.decode())
+                self.assertEqual(form["oname"], ["CMPACC"])
+                self.assertEqual(form["data"][0].count("^XA"), 1)
+                self.assertEqual(form["data"][0].count("^XZ"), 1)
+                self.assertIn("^PMN", form["data"][0])
+            result = next(replies)
+            if isinstance(result, Exception):
+                raise result
+            return io.BytesIO(result)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / "capture"
+            with (
+                patch.object(
+                    sys,
+                    "argv",
+                    [
+                        "capture.py",
+                        "--host",
+                        "http://printer",
+                        "--output",
+                        str(output),
+                        "--interval",
+                        "0",
+                    ],
+                ),
+                patch.object(capture, "probes", return_value=probes),
+                patch.object(capture.urllib.request, "build_opener") as build,
+            ):
+                build.return_value.open.side_effect = open_response
+                capture.main()
+            data = json.loads((output / "manifest.json").read_text())
+            self.assertEqual(data["status"], "complete")
+            self.assertTrue(data["repeat_pixels_equal"])
+            self.assertEqual([r["name"] for r in data["failures"]], ["missing"])
+            self.assertFalse((output / "missing.png").exists())
+
+    def test_timeout_waits_for_recovery_without_replaying_post(self):
+        png = io.BytesIO()
+        Image.new("L", (2, 2), 0).save(png, format="PNG")
+        probes = [
+            dict(name=name, zpl=b"^XA^FDtest^FS^XZ")
+            for name in ["first", "slow", "repeat-end"]
+        ]
+        replies = iter(
+            [
+                b"ZTC ZD621-203dpi ZPL<",
+                b"V93.21.33Z FIRMWARE",
+                b'<IMG SRC="/first.png">',
+                png.getvalue(),
+                TimeoutError("busy"),
+                b"recovered",
+                b'<IMG SRC="/last.png">',
+                png.getvalue(),
+            ]
+        )
+        posts = []
+
+        def respond(request, timeout):
+            if request.data:
+                posts.append(request.data)
+            reply = next(replies)
+            if isinstance(reply, Exception):
+                raise reply
+            return io.BytesIO(reply)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / "capture"
+            with (
+                patch.object(
+                    sys,
+                    "argv",
+                    [
+                        "capture.py",
+                        "--host",
+                        "http://printer",
+                        "--output",
+                        str(output),
+                        "--interval",
+                        "0",
+                    ],
+                ),
+                patch.object(capture, "probes", return_value=probes),
+                patch.object(capture.urllib.request, "build_opener") as build,
+                patch.object(capture.time, "sleep") as sleep,
+            ):
+                build.return_value.open.side_effect = respond
+                capture.main()
+            sleep.assert_any_call(30)
+            self.assertEqual(len(posts), 3)
+            data = json.loads((output / "manifest.json").read_text())
+            self.assertEqual(data["status"], "complete")
+            self.assertEqual(data["failures"][0]["name"], "slow")
+            self.assertIn("not replayed", data["failures"][0]["error"])
+
+    def test_unrecovered_timeout_preserves_failure_for_resume(self):
+        png = io.BytesIO()
+        Image.new("L", (2, 2), 0).save(png, format="PNG")
+        probes = [
+            dict(name=name, zpl=b"^XA^FDtest^FS^XZ")
+            for name in ["first", "slow", "repeat-end"]
+        ]
+        replies = iter(
+            [
+                b"ZTC ZD621-203dpi ZPL<",
+                b"V93.21.33Z FIRMWARE",
+                b'<IMG SRC="/first.png">',
+                png.getvalue(),
+                TimeoutError("busy"),
+                TimeoutError("still busy"),
+            ]
+        )
+
+        def respond(request, timeout):
+            reply = next(replies)
+            if isinstance(reply, Exception):
+                raise reply
+            return io.BytesIO(reply)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / "capture"
+            with (
+                patch.object(
+                    sys,
+                    "argv",
+                    [
+                        "capture.py",
+                        "--host",
+                        "http://printer",
+                        "--output",
+                        str(output),
+                        "--interval",
+                        "0",
+                        "--recovery-attempts",
+                        "1",
+                    ],
+                ),
+                patch.object(capture, "probes", return_value=probes),
+                patch.object(capture.urllib.request, "build_opener") as build,
+                patch.object(capture.time, "sleep"),
+            ):
+                build.return_value.open.side_effect = respond
+                with self.assertRaisesRegex(TimeoutError, "remains resumable"):
+                    capture.main()
+            data = json.loads((output / "manifest.json").read_text())
+            self.assertEqual(data["status"], "incomplete")
+            self.assertEqual(data["failures"][0]["name"], "slow")
+            self.assertTrue((output / "slow.zpl").exists())
+            self.assertFalse((output / "repeat-end.png").exists())
+
+    def test_literal_nul_fixture_is_not_submitted(self):
+        png = io.BytesIO()
+        Image.new("L", (2, 2), 0).save(png, format="PNG")
+        probes = [
+            dict(name="first", zpl=b"^XA^FDtest^FS^XZ"),
+            dict(name="binary", zpl=b"^XA^GFB,1,1,1,\x00^FS^XZ"),
+            dict(name="repeat-end", zpl=b"^XA^FDtest^FS^XZ"),
+        ]
+        replies = iter(
+            [
+                b"ZTC ZD621-203dpi ZPL<",
+                b"V93.21.33Z FIRMWARE",
+                b'<IMG SRC="/first.png">',
+                png.getvalue(),
+                b'<IMG SRC="/last.png">',
+                png.getvalue(),
+            ]
+        )
+        posts = []
+
+        def respond(request, timeout):
+            if request.data:
+                posts.append(request.data)
+                self.assertNotIn(b"%00", request.data)
+            return io.BytesIO(next(replies))
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / "capture"
+            with (
+                patch.object(
+                    sys,
+                    "argv",
+                    [
+                        "capture.py",
+                        "--host",
+                        "http://printer",
+                        "--output",
+                        str(output),
+                        "--interval",
+                        "0",
+                    ],
+                ),
+                patch.object(capture, "probes", return_value=probes),
+                patch.object(capture.urllib.request, "build_opener") as build,
+            ):
+                build.return_value.open.side_effect = respond
+                capture.main()
+            data = json.loads((output / "manifest.json").read_text())
+            self.assertEqual(len(posts), 2)
+            self.assertEqual(data["status"], "complete")
+            self.assertIn("NUL", data["failures"][0]["error"])
+            self.assertIn(b"\x00", (output / "binary.zpl").read_bytes())
+
     def test_external_examples_are_pinned_and_capture_scope_is_separate(self):
         directory = ROOT.parent / "test-data/external-zpl"
         manifest, cases = conformance.load_cases(directory)
@@ -45,7 +286,9 @@ class ConformanceTests(unittest.TestCase):
             self.assertTrue((directory / case["license"]).is_file())
         probes = capture.corpus_probes(directory)
         self.assertEqual(len(probes), 7)  # Six content cases plus repeated control.
-        self.assertFalse(any(p["group"] in {"stateful", "printer-configuration"} for p in probes))
+        self.assertFalse(
+            any(p["group"] in {"stateful", "printer-configuration"} for p in probes)
+        )
         for group in ["stateful", "printer-configuration"]:
             with self.assertRaisesRegex(ValueError, "No capture-eligible"):
                 capture.corpus_probes(directory, [group])
@@ -73,6 +316,22 @@ class ConformanceTests(unittest.TestCase):
             path.write_text(json.dumps(manifest))
             _, images = conformance.reference_images(directory, cases)
             self.assertEqual(set(images), {case["name"]})
+            manifest["preview_reset_zpl"] = "^XA^PMN^XZ"
+            for row in rows:
+                source = (directory / (row["name"] + ".zpl")).read_bytes()
+                row.update(
+                    submission_mode="inline-reset",
+                    submitted_sha256=capture.sha(source[:3] + b"^PMN" + source[3:]),
+                )
+            path.write_text(json.dumps(manifest))
+            conformance.reference_images(directory, cases)
+            saved_hash = rows[0]["submitted_sha256"]
+            rows[0]["submitted_sha256"] = "wrong"
+            path.write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(ValueError, "Submitted preview hash"):
+                conformance.reference_images(directory, cases)
+            rows[0]["submitted_sha256"] = saved_hash
+            path.write_text(json.dumps(manifest))
             with self.assertRaisesRegex(ValueError, "different input"):
                 conformance.reference_images(directory, [{**case, "sha256": "wrong"}])
             (directory / "repeat-end.zpl").write_bytes(b"changed")

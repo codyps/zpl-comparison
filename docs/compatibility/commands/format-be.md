@@ -36,16 +36,18 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Negative](../features/negative.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Compact barcodes](../features/compact-barcodes.md) · [Negative](../features/negative.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-ean13.zpl) | valid / printer | Reference symbol variant: ean13 |
-| [readable-BE-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-N.zpl) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
-| [readable-BE-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-R.zpl) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
-| [readable-BE-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-I.zpl) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
-| [readable-BE-B](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-B.zpl) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
-| [invalid-ean-nonnumeric](../../../test-data/render-conformance/cases/negative/invalid-ean-nonnumeric.zpl) | invalid / behavior-only | Malformed/out-of-range input: ean-nonnumeric; observe rejection/fallback, never count as valid fidelity |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-ean13.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-ean13.md) | valid / printer | Reference symbol variant: ean13 |
+| [readable-BE-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BE-N.md) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
+| [readable-BE-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BE-R.md) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
+| [readable-BE-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BE-I.md) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
+| [readable-BE-B](../../../test-data/render-conformance/cases/barcode-arguments/readable-BE-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BE-B.md) | valid / printer | Readable text above rotated BE; measure caption position as well as bars |
+| [compact-caption-N](../../../test-data/render-conformance/cases/compact-barcodes/compact-caption-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-caption-N.md) | valid / printer | Retail barcode caption placement above/below, with guard bars |
+| [compact-caption-Y](../../../test-data/render-conformance/cases/compact-barcodes/compact-caption-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-caption-Y.md) | valid / printer | Retail barcode caption placement above/below, with guard bars |
+| [invalid-ean-nonnumeric](../../../test-data/render-conformance/cases/negative/invalid-ean-nonnumeric.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/invalid-ean-nonnumeric.md) | invalid / behavior-only | Malformed/out-of-range input: ean-nonnumeric; observe rejection/fallback, never count as valid fidelity |
 

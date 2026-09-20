@@ -16,6 +16,7 @@ import subprocess
 import time
 import statistics
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 from PIL import Image
 
@@ -63,6 +64,22 @@ def reference_images(directory, cases):
             or metrics.sha(directory / (name + ".png")) != row["png_sha256"]
         ):
             raise ValueError("Reference hash mismatch")
+        if row.get("submission_mode") in {"inline-reset", "inline-reset-canvas"}:
+            source = (directory / (name + ".zpl")).read_bytes()
+            reset = manifest["preview_reset_zpl"].encode()
+            canvas = (
+                f"^PW{row['width']}^LL{row['height']}".encode()
+                if row["submission_mode"] == "inline-reset-canvas"
+                else b""
+            )
+            submitted = source[:3] + canvas + reset[3:-3] + source[3:]
+            if (
+                not source.startswith(b"^XA")
+                or hashlib.sha256(submitted).hexdigest() != row["submitted_sha256"]
+            ):
+                raise ValueError("Submitted preview hash mismatch")
+        elif row.get("submission_mode") is not None:
+            raise ValueError("Unknown preview submission mode")
         lookup[name] = row
     first = manifest["cases"][0]["name"]
     if not np.array_equal(
@@ -113,15 +130,39 @@ def main():
         "--only", default="codyps-zpl", help="Comma-separated renderer adapters, or all"
     )
     ap.add_argument("--group", action="append", help="Repeat to select fixture groups")
-    ap.add_argument("--corpus", type=Path, default=SUITE, help="Corpus directory containing manifest.json")
+    ap.add_argument(
+        "--corpus",
+        type=Path,
+        default=SUITE,
+        help="Corpus directory containing manifest.json",
+    )
     ap.add_argument("--include-invalid", action="store_true")
+    ap.add_argument(
+        "--reports-only",
+        action="store_true",
+        help="Regenerate Markdown from saved execution results",
+    )
     ap.add_argument("--reference", type=Path)
     ap.add_argument("--output", type=Path, default=ROOT / "_work/conformance")
     ap.add_argument("--timeout", type=float, default=15)
+    ap.add_argument(
+        "--jobs",
+        type=int,
+        default=4,
+        help="Concurrent offline renders (not timing measurements)",
+    )
     args = ap.parse_args()
+    if args.jobs < 1:
+        ap.error("Jobs must be positive")
     if args.timeout <= 0:
         ap.error("Timeout must be positive")
-    manifest, cases = load_cases(args.corpus, groups=args.group, invalid=args.include_invalid)
+    manifest, cases = load_cases(
+        args.corpus, groups=args.group, invalid=args.include_invalid
+    )
+    if args.reports_only:
+        data = json.loads((args.output / "results.json").read_text())
+        report(data, args.output, args.corpus)
+        return
     cfg = json.loads((ROOT / "_work/config.json").read_text())
     from labelary import DEFAULT, register, validate
 
@@ -137,6 +178,7 @@ def main():
         ap.error("Select built rendering adapters")
     if "labelary" in libraries:
         validate(DEFAULT)
+    metrics.preflight(cfg, libraries)
     refs = {}
     reference = None
     if args.reference:
@@ -147,72 +189,80 @@ def main():
     outcomes = {}
     images = {}
     env = {**os.environ, **cfg["environment"]}
-    for i, case in enumerate(cases):
-        for library in libraries:
-            key = (library, case["name"])
-            path = dest / "images" / f"{case['name']}-{library}.png"
-            path.unlink(missing_ok=True)
-            result = dict(
-                library=library,
-                case=case["name"],
-                group=case["group"],
-                validity=case["validity"],
-                score=None,
+
+    def render(item):
+        case, library = item
+        key = (library, case["name"])
+        path = dest / "images" / f"{case['name']}-{library}.png"
+        path.unlink(missing_ok=True)
+        result = dict(
+            library=library,
+            case=case["name"],
+            group=case["group"],
+            validity=case["validity"],
+            score=None,
+        )
+        command = cfg["commands"][library] + [
+            "accuracy",
+            str(case["path"]),
+            "1",
+            str(path),
+            str(case["width"]),
+            str(case["height"]),
+        ]
+        try:
+            process = subprocess.run(
+                command,
+                env=env,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                timeout=args.timeout,
             )
-            command = cfg["commands"][library] + [
-                "accuracy",
-                str(case["path"]),
-                "1",
-                str(path),
-                str(case["width"]),
-                str(case["height"]),
-            ]
-            try:
-                process = subprocess.run(
-                    command,
-                    env=env,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.PIPE,
-                    timeout=args.timeout,
+            result["returncode"] = process.returncode
+            result["diagnostic"] = process.stderr.decode(errors="replace")[-1500:]
+            if process.returncode:
+                result["status"] = "crashed" if process.returncode < 0 else "error"
+            else:
+                raster = metrics.gray(path)
+                if case["relation"]:
+                    images[key] = raster
+                ink = int(np.count_nonzero(raster < 128))
+                result.update(
+                    status="rendered" if ink else "blank",
+                    ink=ink,
+                    width=raster.shape[1],
+                    height=raster.shape[0],
                 )
-                result["returncode"] = process.returncode
-                result["diagnostic"] = process.stderr.decode(errors="replace")[-1500:]
-                if process.returncode:
-                    result["status"] = "crashed" if process.returncode < 0 else "error"
-                else:
-                    raster = metrics.gray(path)
-                    if case["relation"]:
-                        images[key] = raster
-                    ink = int(np.count_nonzero(raster < 128))
-                    result.update(
-                        status="rendered" if ink else "blank",
-                        ink=ink,
-                        width=raster.shape[1],
-                        height=raster.shape[0],
+                Image.fromarray(raster).save(path, optimize=True)
+                if case["name"] in refs and case["validity"] != "invalid":
+                    comparison, diff = metrics.compare(refs[case["name"]], raster)
+                    result["comparison"] = comparison
+                    result["score"] = (
+                        comparison["iou"] if comparison["reference_ink"] else None
                     )
-                    Image.fromarray(raster).save(path, optimize=True)
-                    if case["name"] in refs and case["validity"] != "invalid":
-                        comparison, diff = metrics.compare(refs[case["name"]], raster)
-                        result["comparison"] = comparison
-                        result["score"] = (
-                            comparison["iou"] if comparison["reference_ink"] else None
-                        )
-                        Image.fromarray(diff).save(
-                            path.with_name(path.stem + "-diff.png"), optimize=True
-                        )
-            except subprocess.TimeoutExpired:
-                result["status"] = "timeout"
-            except Exception as error:
-                result.update(status="error", diagnostic=str(error))
-            if (
-                case["name"] in refs
-                and case["validity"] != "invalid"
-                and result["status"] in ["error", "crashed", "timeout"]
-                and np.any(refs[case["name"]] < 128)
-            ):
-                result["score"] = 0.0
+                    Image.fromarray(diff).save(
+                        path.with_name(path.stem + "-diff.png"), optimize=True
+                    )
+        except subprocess.TimeoutExpired:
+            result["status"] = "timeout"
+        except Exception as error:
+            result.update(status="error", diagnostic=str(error))
+        if (
+            case["name"] in refs
+            and case["validity"] != "invalid"
+            and result["status"] in ["error", "crashed", "timeout"]
+            and np.any(refs[case["name"]] < 128)
+        ):
+            result["score"] = 0.0
+        return key, result
+
+    with ThreadPoolExecutor(max_workers=args.jobs) as pool:
+        for i, (key, result) in enumerate(
+            pool.map(render, ((c, lib) for c in cases for lib in libraries))
+        ):
             outcomes[key] = result
-        print(f"{i + 1}/{len(cases)} {case['name']}", flush=True)
+            if (i + 1) % len(libraries) == 0:
+                print(f"{(i + 1) // len(libraries)}/{len(cases)} {key[1]}", flush=True)
     checks = relations(cases, outcomes, images, libraries)
     result = dict(
         schema=1,
@@ -226,8 +276,33 @@ def main():
         relations=checks,
     )
     (dest / "results.json").write_text(json.dumps(result, indent=2) + "\n")
+    report(result, dest, args.corpus)
+    if any(r["status"] in ["crashed", "timeout"] for r in outcomes.values()):
+        raise SystemExit("Renderer crash/timeout; report preserved")
+
+
+def report(data, dest, corpus=SUITE):
+    manifest, all_cases = load_cases(corpus, invalid=True)
+    if data["manifest_sha256"] != metrics.sha(corpus / "manifest.json"):
+        raise ValueError("Stale conformance results")
+    selected = {c["name"] for c in data["cases"]}
+    cases = [c for c in all_cases if c["name"] in selected]
+    if [{k: v for k, v in c.items() if k != "path"} for c in cases] != data["cases"]:
+        raise ValueError("Stale conformance case metadata")
+    libraries = list(dict.fromkeys(r["library"] for r in data["results"]))
+    outcomes = {(r["library"], r["case"]): r for r in data["results"]}
+    if len(outcomes) != len(data["results"]) or set(outcomes) != {
+        (lib, c["name"]) for c in cases for lib in libraries
+    }:
+        raise ValueError("Incomplete conformance result matrix")
+    checks = data["relations"]
     text = [
         "# Rendering conformance run\n",
+        "[Feature printer/render/difference gallery](../accuracy/comparisons/features/README.md)\n"
+        if corpus.resolve() == SUITE.resolve()
+        else "[External printer/render/difference gallery](../accuracy/comparisons/external/README.md)\n"
+        if corpus.name == "external-zpl"
+        else "",
         f"Suite: `{manifest['suite']}`. {len(cases)} cases; {len(libraries)} adapters.\n",
         "This reports execution and equal-image relationships, not printer accuracy unless hash-matched printer references were supplied. A rendered image can still be wrong. Font coverage is device-dependent. Invalid inputs are kept separate.\n",
     ]
@@ -303,12 +378,20 @@ def main():
                 if r["score"] is not None:
                     status += f" ({r['score'] * 100:.1f}% IoU)"
                 values.append(status)
-            tab.append([case["name"], *values])
+            case_label = (
+                f"[{case['name']}](../accuracy/comparisons/{'features' if corpus.resolve() == SUITE.resolve() else 'external'}/cases/{case['name']}.md)"
+                if corpus.resolve() == SUITE.resolve() or corpus.name == "external-zpl"
+                else case["name"]
+            )
+            tab.append([case_label, *values])
         if tab:
-            text.extend([f"### {validity}\n", table(["Case", *[NAMES[n] for n in libraries]], tab)])
+            text.extend(
+                [
+                    f"### {validity}\n",
+                    table(["Case", *[NAMES[n] for n in libraries]], tab),
+                ]
+            )
     (dest / "README.md").write_text("\n".join(text))
-    if any(r["status"] in ["crashed", "timeout"] for r in outcomes.values()):
-        raise SystemExit("Renderer crash/timeout; report preserved")
 
 
 if __name__ == "__main__":

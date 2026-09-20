@@ -17,36 +17,41 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/labelize.md)
 
-24/132 exact; mean IoU 48.4%; 5 errors. Snapshot: 2026-09-19T03:33:57Z.
+24/132 exact; mean IoU 48.4%; 5 errors. Snapshot: 2026-09-20T04:43:33Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [Barcode arguments](../features/barcode-arguments.md) | 70 | Not measured | Not measured |
-| [Barcode families](../features/barcode-families.md) | 60 | Not measured | Not measured |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | Not measured | Not measured |
-| [Baseline graphics](../features/baseline-graphics.md) | 4 | Not measured | Not measured |
-| [Baseline layout](../features/baseline-layout.md) | 11 | Not measured | Not measured |
-| [Baseline shapes](../features/baseline-shapes.md) | 9 | Not measured | Not measured |
-| [Baseline text](../features/baseline-text.md) | 24 | Not measured | Not measured |
-| [Clipping](../features/clipping.md) | 5 | Not measured | Not measured |
-| [Compositing](../features/compositing.md) | 5 | Not measured | Not measured |
-| [Encoding](../features/encoding.md) | 28 | Not measured | Not measured |
-| [Fonts](../features/fonts.md) | 78 | Not measured | Not measured |
-| [Graphics](../features/graphics.md) | 14 | Not measured | Not measured |
-| [Lexical](../features/lexical.md) | 3 | Not measured | Not measured |
-| [Metamorphic](../features/metamorphic.md) | 5 | Not measured | Not measured |
-| [Negative](../features/negative.md) | 14 | Not measured | Not measured |
-| [Position](../features/position.md) | 29 | Not measured | Not measured |
-| [Serialization](../features/serialization.md) | 4 | Not measured | Not measured |
-| [Shapes](../features/shapes.md) | 46 | Not measured | Not measured |
-| [State](../features/state.md) | 6 | Not measured | Not measured |
-| [Stress](../features/stress.md) | 4 | Not measured | Not measured |
-| [Text data](../features/text-data.md) | 10 | Not measured | Not measured |
-| [Text layout](../features/text-layout.md) | 45 | Not measured | Not measured |
-| [Torture](../features/torture.md) | 4 | Not measured | Not measured |
-| [Transforms](../features/transforms.md) | 4 | Not measured | Not measured |
+| [Barcode arguments](../features/barcode-arguments.md) | 70 | 24/66 exact; mean IoU 80.5%; 0 errors | 3 error, 67 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 10.7%; 4 errors | 4 error, 56 rendered |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
+| [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 1 errors | 1 error, 3 rendered |
+| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 58.5%; 0 errors | 11 rendered |
+| [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 73.6%; 0 errors | 9 rendered |
+| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 58.2%; 0 errors | 24 rendered |
+| [Clipping](../features/clipping.md) | 5 | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
+| [Compact barcodes](../features/compact-barcodes.md) | 7 | 2/7 exact; mean IoU 69.9%; 0 errors | 7 rendered |
+| [Compact compositing](../features/compact-compositing.md) | 2 | 0/2 exact; mean IoU 96.5%; 0 errors | 2 rendered |
+| [Compact fonts](../features/compact-fonts.md) | 5 | 0/5 exact; mean IoU 28.9%; 0 errors | 5 rendered |
+| [Compact layout](../features/compact-layout.md) | 4 | 0/4 exact; mean IoU 41.7%; 0 errors | 4 rendered |
+| [Compact shapes](../features/compact-shapes.md) | 6 | 0/6 exact; mean IoU 63.9%; 0 errors | 6 rendered |
+| [Compositing](../features/compositing.md) | 5 | 4/5 exact; mean IoU 97.8%; 0 errors | 5 rendered |
+| [Encoding](../features/encoding.md) | 28 | 0/25 exact; mean IoU 48.9%; 0 errors | 28 rendered |
+| [Fonts](../features/fonts.md) | 78 | 0/78 exact; mean IoU 32.6%; 0 errors | 78 rendered |
+| [Graphics](../features/graphics.md) | 14 | 10/12 exact; mean IoU 85.4%; 1 errors | 1 blank, 1 error, 12 rendered |
+| [Lexical](../features/lexical.md) | 3 | 0/3 exact; mean IoU 40.2%; 0 errors | 3 rendered |
+| [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 73.9%; 0 errors | 5 rendered |
+| [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 1 blank, 2 error, 11 rendered |
+| [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 46.1%; 0 errors | 29 rendered |
+| [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 15.0%; 3 errors | 3 error, 1 rendered |
+| [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 61.8%; 0 errors | 46 rendered |
+| [State](../features/state.md) | 6 | 1/6 exact; mean IoU 62.8%; 0 errors | 1 blank, 5 rendered |
+| [Stress](../features/stress.md) | 4 | 0/4 exact; mean IoU 48.3%; 0 errors | 4 rendered |
+| [Text data](../features/text-data.md) | 10 | 0/9 exact; mean IoU 26.1%; 0 errors | 1 error, 9 rendered |
+| [Text layout](../features/text-layout.md) | 45 | 0/42 exact; mean IoU 19.8%; 0 errors | 1 blank, 44 rendered |
+| [Torture](../features/torture.md) | 4 | 0/4 exact; mean IoU 67.0%; 0 errors | 4 rendered |
+| [Transforms](../features/transforms.md) | 4 | 0/4 exact; mean IoU 42.5%; 0 errors | 4 rendered |
 
 
 ## Command support

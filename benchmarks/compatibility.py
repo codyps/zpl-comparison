@@ -22,6 +22,7 @@ DEST = REPO / "docs/compatibility"
 SUPPORT = REPO / "docs/benchmarks/command-support.json"
 ACCURACY = REPO / "docs/benchmarks/accuracy/results.json"
 CORPUS = REPO / "test-data/render-conformance/manifest.json"
+FEATURES = REPO / "docs/benchmarks/accuracy/comparisons/features/results.json"
 CONFORMANCE = REPO / "docs/benchmarks/conformance/results.json"
 NOTES = REPO / "docs/benchmarks/argument-support.md"
 LIBRARIES = {
@@ -38,7 +39,16 @@ LIBRARIES = {
     "jszpl": ("JSZPL", "TypeScript", "Typed generator"),
     "labelary": ("Labelary", "Hosted service", "Captured renderer"),
 }
-RENDERERS = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"}
+RENDERERS = {
+    "codyps-zpl",
+    "labelize",
+    "forge",
+    "go",
+    "ffi",
+    "binarykits",
+    "zplr",
+    "labelary",
+}
 LABELS = {
     "D": "🧩 Handler found",
     "I": "⏭️ Ignored / stored only",
@@ -123,7 +133,7 @@ def accuracy_summary(library, rows):
     if not samples:
         return "Not measured" if not blank else f"{blank} blank references; unscored"
     exact = sum(r.get("exact", False) for r in samples)
-    failures = sum(r["status"] == "error" for r in samples)
+    failures = sum(r["status"] in {"error", "crashed", "timeout"} for r in samples)
     return f"{exact}/{len(samples)} exact; mean IoU {statistics.mean(r['score'] for r in samples) * 100:.1f}%; {failures} errors"
 
 
@@ -152,7 +162,11 @@ def library_versions(support):
         key: rust[key]["version"].lstrip("=")
         for key in ["toolchain", "labelize", "forge", "ffi", "builder"]
     }
-    versions["codyps-zpl"] = support["sources"]["zpl"]["version"] + " @ " + support["sources"]["zpl"]["rev"][:12]
+    versions["codyps-zpl"] = (
+        support["sources"]["zpl"]["version"]
+        + " @ "
+        + support["sources"]["zpl"]["rev"][:12]
+    )
 
     versions.update({n: node[n] for n in ["zplr", "jszpl"]})
     for key, source in [("go", "go-zpl"), ("python", "python-zpl")]:
@@ -164,8 +178,16 @@ def library_versions(support):
         if e.attrib["Include"] == "BinaryKits.Zpl.Viewer"
     )
     capture = load(REPO / "docs/benchmarks/labelary/captures.json")
-    exposed = sorted({c["renderer_version"] for c in capture["cases"] if c["renderer_version"]})
-    versions["labelary"] = "captured " + capture["started_utc"] + " (" + (", ".join(exposed) if exposed else "build version not exposed") + ")"
+    exposed = sorted(
+        {c["renderer_version"] for c in capture["cases"] if c["renderer_version"]}
+    )
+    versions["labelary"] = (
+        "captured "
+        + capture["started_utc"]
+        + " ("
+        + (", ".join(exposed) if exposed else "build version not exposed")
+        + ")"
+    )
     return versions
 
 
@@ -236,6 +258,14 @@ def artifacts(dest=DEST):
     conformance = load(CONFORMANCE) if CONFORMANCE.exists() else None
     if conformance and conformance["manifest_sha256"] != digest(CORPUS):
         raise ValueError("Stale conformance results: regenerate against current corpus")
+    feature_data = load(FEATURES) if FEATURES.exists() else None
+    if feature_data:
+        for filename, expected in feature_data["inputs"].items():
+            if digest(REPO / filename) != expected:
+                raise ValueError(
+                    "Stale feature accuracy: regenerate feature comparisons"
+                )
+    feature_results = feature_data["results"] if feature_data else []
     execution = conformance["results"] if conformance else []
     corpus_cases = {c["name"]: c for c in corpus["cases"]}
     seen = set()
@@ -360,10 +390,17 @@ def artifacts(dest=DEST):
     def fixture_table(page, cases, limit=None):
         selected = cases if limit is None else cases[:limit]
         text = table(
-            ["Fixture", "Classification", "Purpose"],
+            ["Fixture", "Renders and differences", "Classification", "Purpose"],
             [
                 [
                     link(page, CORPUS.parent / c["file"], c["name"]),
+                    link(
+                        page,
+                        FEATURES.parent / "cases" / (c["name"] + ".md"),
+                        "Compare images",
+                    )
+                    if feature_data
+                    else "Not measured",
                     c["validity"] + " / " + c["oracle"],
                     c["purpose"],
                 ]
@@ -538,7 +575,16 @@ def artifacts(dest=DEST):
                 [
                     link(page, feature_path(group), title(group)),
                     len(cases),
-                    accuracy_summary(lib, measured),
+                    accuracy_summary(
+                        lib,
+                        [
+                            r
+                            for r in feature_results
+                            if r["case"] in ids and r["score"] is not None
+                        ],
+                    )
+                    if feature_data
+                    else accuracy_summary(lib, measured),
                     execution_summary(lib, [r for r in execution if r["case"] in ids]),
                 ]
             )
@@ -646,7 +692,16 @@ def artifacts(dest=DEST):
                 [
                     link(page, library_path(lib), meta[0]),
                     tally,
-                    accuracy_summary(lib, measured),
+                    accuracy_summary(
+                        lib,
+                        [
+                            r
+                            for r in feature_results
+                            if r["case"] in ids and r["score"] is not None
+                        ],
+                    )
+                    if feature_data
+                    else accuracy_summary(lib, measured),
                     execution_summary(lib, [r for r in execution if r["case"] in ids]),
                 ]
             )
@@ -669,7 +724,14 @@ def artifacts(dest=DEST):
                 "## Commands involved",
                 " · ".join(link(page, command_path(cmd), f"`{cmd}`") for cmd in cmds),
                 "## Matched printer cases",
-                accuracy_details(page, {r["case"] for r in measured}),
+                link(
+                    page,
+                    FEATURES.parent / "README.md",
+                    "Feature printer/render/difference gallery",
+                )
+                + ". See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored."
+                if feature_data
+                else accuracy_details(page, {r["case"] for r in measured}),
                 "## Fixtures",
                 fixture_table(page, cases),
             ],
@@ -686,6 +748,8 @@ def artifacts(dest=DEST):
         REPO / "benchmarks/sources.lock.json",
         Path(__file__),
     ]
+    if feature_data:
+        inputs.append(FEATURES)
     if conformance:
         inputs.append(CONFORMANCE)
     provenance = {

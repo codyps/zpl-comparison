@@ -37,8 +37,8 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [comments-and-line-endings](../../../test-data/render-conformance/cases/lexical/comments-and-line-endings.zpl) | valid / printer | FX comments and CR/LF between fields should not create ink |
-| [equivalent-comment](../../../test-data/render-conformance/cases/metamorphic/equivalent-comment.zpl) | valid / printer | Comment does not affect pixels |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [comments-and-line-endings](../../../test-data/render-conformance/cases/lexical/comments-and-line-endings.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/comments-and-line-endings.md) | valid / printer | FX comments and CR/LF between fields should not create ink |
+| [equivalent-comment](../../../test-data/render-conformance/cases/metamorphic/equivalent-comment.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/equivalent-comment.md) | valid / printer | Comment does not affect pixels |
 

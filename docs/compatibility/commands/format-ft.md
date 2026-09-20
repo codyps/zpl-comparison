@@ -36,23 +36,28 @@ Reference parameters: **x, y, z**. These describe the reference grammar, not a p
 
 ## Related features
 
-[Baseline layout](../features/baseline-layout.md) · [Position](../features/position.md)
+[Baseline layout](../features/baseline-layout.md) · [Compact fonts](../features/compact-fonts.md) · [Position](../features/position.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-ft-baseline](../../../test-data/render-conformance/cases/baseline-layout/probe-ft-baseline.zpl) | valid / printer | ^FT x=80,y=100 |
-| [anchor-FT-N-0](../../../test-data/render-conformance/cases/position/anchor-FT-N-0.zpl) | valid / printer | FT origin, N rotation, justification 0; crosshair stays fixed |
-| [anchor-FT-N-1](../../../test-data/render-conformance/cases/position/anchor-FT-N-1.zpl) | valid / printer | FT origin, N rotation, justification 1; crosshair stays fixed |
-| [anchor-FT-N-2](../../../test-data/render-conformance/cases/position/anchor-FT-N-2.zpl) | valid / printer | FT origin, N rotation, justification 2; crosshair stays fixed |
-| [anchor-FT-R-0](../../../test-data/render-conformance/cases/position/anchor-FT-R-0.zpl) | valid / printer | FT origin, R rotation, justification 0; crosshair stays fixed |
-| [anchor-FT-R-1](../../../test-data/render-conformance/cases/position/anchor-FT-R-1.zpl) | valid / printer | FT origin, R rotation, justification 1; crosshair stays fixed |
-| [anchor-FT-R-2](../../../test-data/render-conformance/cases/position/anchor-FT-R-2.zpl) | valid / printer | FT origin, R rotation, justification 2; crosshair stays fixed |
-| [anchor-FT-I-0](../../../test-data/render-conformance/cases/position/anchor-FT-I-0.zpl) | valid / printer | FT origin, I rotation, justification 0; crosshair stays fixed |
-| [anchor-FT-I-1](../../../test-data/render-conformance/cases/position/anchor-FT-I-1.zpl) | valid / printer | FT origin, I rotation, justification 1; crosshair stays fixed |
-| [anchor-FT-I-2](../../../test-data/render-conformance/cases/position/anchor-FT-I-2.zpl) | valid / printer | FT origin, I rotation, justification 2; crosshair stays fixed |
-| [anchor-FT-B-0](../../../test-data/render-conformance/cases/position/anchor-FT-B-0.zpl) | valid / printer | FT origin, B rotation, justification 0; crosshair stays fixed |
-| [anchor-FT-B-1](../../../test-data/render-conformance/cases/position/anchor-FT-B-1.zpl) | valid / printer | FT origin, B rotation, justification 1; crosshair stays fixed |
-| [anchor-FT-B-2](../../../test-data/render-conformance/cases/position/anchor-FT-B-2.zpl) | valid / printer | FT origin, B rotation, justification 2; crosshair stays fixed |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-ft-baseline](../../../test-data/render-conformance/cases/baseline-layout/probe-ft-baseline.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-ft-baseline.md) | valid / printer | ^FT x=80,y=100 |
+| [anchor-FT-N-0](../../../test-data/render-conformance/cases/position/anchor-FT-N-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-N-0.md) | valid / printer | FT origin, N rotation, justification 0; crosshair stays fixed |
+| [anchor-FT-N-1](../../../test-data/render-conformance/cases/position/anchor-FT-N-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-N-1.md) | valid / printer | FT origin, N rotation, justification 1; crosshair stays fixed |
+| [anchor-FT-N-2](../../../test-data/render-conformance/cases/position/anchor-FT-N-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-N-2.md) | valid / printer | FT origin, N rotation, justification 2; crosshair stays fixed |
+| [anchor-FT-R-0](../../../test-data/render-conformance/cases/position/anchor-FT-R-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-R-0.md) | valid / printer | FT origin, R rotation, justification 0; crosshair stays fixed |
+| [anchor-FT-R-1](../../../test-data/render-conformance/cases/position/anchor-FT-R-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-R-1.md) | valid / printer | FT origin, R rotation, justification 1; crosshair stays fixed |
+| [anchor-FT-R-2](../../../test-data/render-conformance/cases/position/anchor-FT-R-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-R-2.md) | valid / printer | FT origin, R rotation, justification 2; crosshair stays fixed |
+| [anchor-FT-I-0](../../../test-data/render-conformance/cases/position/anchor-FT-I-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-I-0.md) | valid / printer | FT origin, I rotation, justification 0; crosshair stays fixed |
+| [anchor-FT-I-1](../../../test-data/render-conformance/cases/position/anchor-FT-I-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-I-1.md) | valid / printer | FT origin, I rotation, justification 1; crosshair stays fixed |
+| [anchor-FT-I-2](../../../test-data/render-conformance/cases/position/anchor-FT-I-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-I-2.md) | valid / printer | FT origin, I rotation, justification 2; crosshair stays fixed |
+| [anchor-FT-B-0](../../../test-data/render-conformance/cases/position/anchor-FT-B-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-B-0.md) | valid / printer | FT origin, B rotation, justification 0; crosshair stays fixed |
+| [anchor-FT-B-1](../../../test-data/render-conformance/cases/position/anchor-FT-B-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-B-1.md) | valid / printer | FT origin, B rotation, justification 1; crosshair stays fixed |
+| [anchor-FT-B-2](../../../test-data/render-conformance/cases/position/anchor-FT-B-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/anchor-FT-B-2.md) | valid / printer | FT origin, B rotation, justification 2; crosshair stays fixed |
+| [compact-baseline-0](../../../test-data/render-conformance/cases/compact-fonts/compact-baseline-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-baseline-0.md) | valid / printer | FO top origin versus FT baseline; ascenders, descenders and punctuation |
+| [compact-baseline-A](../../../test-data/render-conformance/cases/compact-fonts/compact-baseline-A.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-baseline-A.md) | valid / printer | FO top origin versus FT baseline; ascenders, descenders and punctuation |
+| [compact-baseline-B](../../../test-data/render-conformance/cases/compact-fonts/compact-baseline-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-baseline-B.md) | valid / printer | FO top origin versus FT baseline; ascenders, descenders and punctuation |
+| [compact-baseline-C](../../../test-data/render-conformance/cases/compact-fonts/compact-baseline-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-baseline-C.md) | valid / printer | FO top origin versus FT baseline; ascenders, descenders and punctuation |
+| [compact-baseline-F](../../../test-data/render-conformance/cases/compact-fonts/compact-baseline-F.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-baseline-F.md) | valid / printer | FO top origin versus FT baseline; ascenders, descenders and punctuation |
 

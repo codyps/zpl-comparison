@@ -42,9 +42,9 @@ Reference parameters: **o, h, f, g, t**. These describe the reference grammar, n
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-intelligent_mail](../../../test-data/render-conformance/cases/barcode-families/symbol-intelligent_mail.zpl) | valid / printer | Reference symbol variant: intelligent_mail |
-| [symbol-postal_planet](../../../test-data/render-conformance/cases/barcode-families/symbol-postal_planet.zpl) | valid / printer | Reference symbol variant: postal_planet |
-| [symbol-postnet](../../../test-data/render-conformance/cases/barcode-families/symbol-postnet.zpl) | valid / printer | Reference symbol variant: postnet |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-intelligent_mail](../../../test-data/render-conformance/cases/barcode-families/symbol-intelligent_mail.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-intelligent_mail.md) | valid / printer | Reference symbol variant: intelligent_mail |
+| [symbol-postal_planet](../../../test-data/render-conformance/cases/barcode-families/symbol-postal_planet.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-postal_planet.md) | valid / printer | Reference symbol variant: postal_planet |
+| [symbol-postnet](../../../test-data/render-conformance/cases/barcode-families/symbol-postnet.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-postnet.md) | valid / printer | Reference symbol variant: postnet |
 

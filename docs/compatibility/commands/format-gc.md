@@ -36,18 +36,21 @@ Reference parameters: **d, t, c**. These describe the reference grammar, not a p
 
 ## Related features
 
-[Baseline shapes](../features/baseline-shapes.md) · [Shapes](../features/shapes.md) · [Torture](../features/torture.md) · [Transforms](../features/transforms.md)
+[Baseline shapes](../features/baseline-shapes.md) · [Compact shapes](../features/compact-shapes.md) · [Shapes](../features/shapes.md) · [Torture](../features/torture.md) · [Transforms](../features/transforms.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-shape-GC-B](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GC-B.zpl) | valid / printer | ^GC 80,3,B |
-| [page-transform-N-N](../../../test-data/render-conformance/cases/transforms/page-transform-N-N.zpl) | valid / printer | Mirror=N, invert=N; asymmetric page landmarks and text |
-| [page-transform-Y-N](../../../test-data/render-conformance/cases/transforms/page-transform-Y-N.zpl) | valid / printer | Mirror=Y, invert=N; asymmetric page landmarks and text |
-| [page-transform-N-I](../../../test-data/render-conformance/cases/transforms/page-transform-N-I.zpl) | valid / printer | Mirror=N, invert=I; asymmetric page landmarks and text |
-| [page-transform-Y-I](../../../test-data/render-conformance/cases/transforms/page-transform-Y-I.zpl) | valid / printer | Mirror=Y, invert=I; asymmetric page landmarks and text |
-| [shape-GC-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-B-plain.zpl) | valid / printer | GC B on black backing, odd dimensions  |
-| [shape-GC-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-W-plain.zpl) | valid / printer | GC W on black backing, odd dimensions  |
-| [torture-geometry](../../../test-data/render-conformance/cases/torture/torture-geometry.zpl) | valid / printer | 36 panels combine odd/even shapes, rounding, line direction, thickness and rotated labels |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-shape-GC-B](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GC-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-shape-GC-B.md) | valid / printer | ^GC 80,3,B |
+| [page-transform-N-N](../../../test-data/render-conformance/cases/transforms/page-transform-N-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-N-N.md) | valid / printer | Mirror=N, invert=N; asymmetric page landmarks and text |
+| [page-transform-Y-N](../../../test-data/render-conformance/cases/transforms/page-transform-Y-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-Y-N.md) | valid / printer | Mirror=Y, invert=N; asymmetric page landmarks and text |
+| [page-transform-N-I](../../../test-data/render-conformance/cases/transforms/page-transform-N-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-N-I.md) | valid / printer | Mirror=N, invert=I; asymmetric page landmarks and text |
+| [page-transform-Y-I](../../../test-data/render-conformance/cases/transforms/page-transform-Y-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-Y-I.md) | valid / printer | Mirror=Y, invert=I; asymmetric page landmarks and text |
+| [shape-GC-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-B-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GC-B-plain.md) | valid / printer | GC B on black backing, odd dimensions  |
+| [shape-GC-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-W-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GC-W-plain.md) | valid / printer | GC W on black backing, odd dimensions  |
+| [torture-geometry](../../../test-data/render-conformance/cases/torture/torture-geometry.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-geometry.md) | valid / printer | 36 panels combine odd/even shapes, rounding, line direction, thickness and rotated labels |
+| [compact-circle-4](../../../test-data/render-conformance/cases/compact-shapes/compact-circle-4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-circle-4.md) | valid / printer | Small and thick circle beside equal-size ellipse, with a thin circle control |
+| [compact-circle-28](../../../test-data/render-conformance/cases/compact-shapes/compact-circle-28.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-circle-28.md) | valid / printer | Small and thick circle beside equal-size ellipse, with a thin circle control |
+| [compact-circle-127](../../../test-data/render-conformance/cases/compact-shapes/compact-circle-127.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-circle-127.md) | valid / printer | Small and thick circle beside equal-size ellipse, with a thin circle control |
 

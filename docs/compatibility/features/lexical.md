@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found | Not measured | 2 error, 1 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found | 1/3 exact; mean IoU 33.3%; 2 errors | 2 error, 1 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 18 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 18 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 13 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 12 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 17 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 18 🧩 Handler found | 0/3 exact; mean IoU 40.2%; 0 errors | 3 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 13 🧩 Handler found | 0/3 exact; mean IoU 39.8%; 0 errors | 3 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/3 exact; mean IoU 45.8%; 0 errors | 3 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/3 exact; mean IoU 45.8%; 0 errors | 3 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 12 🧩 Handler found | 0/3 exact; mean IoU 23.1%; 0 errors | 3 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 17 🟢 Upstream: supported | 0/3 exact; mean IoU 23.2%; 0 errors | 3 rendered |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 13 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 11 ❔ No evidence found; 7 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | Not measured | 3 rendered |
+| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | 0/3 exact; mean IoU 84.6%; 0 errors | 3 rendered |
 
 
 ## Commands involved
@@ -31,13 +31,13 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [hex-underscore](../../../test-data/render-conformance/cases/lexical/hex-underscore.zpl) | boundary / printer | FH escapes command prefixes, delimiters, backslash, NUL and DEL inside field data |
-| [hex-hash](../../../test-data/render-conformance/cases/lexical/hex-hash.zpl) | boundary / printer | FH escapes command prefixes, delimiters, backslash, NUL and DEL inside field data |
-| [comments-and-line-endings](../../../test-data/render-conformance/cases/lexical/comments-and-line-endings.zpl) | valid / printer | FX comments and CR/LF between fields should not create ink |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [hex-underscore](../../../test-data/render-conformance/cases/lexical/hex-underscore.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/hex-underscore.md) | boundary / printer | FH escapes command prefixes, delimiters, backslash, NUL and DEL inside field data |
+| [hex-hash](../../../test-data/render-conformance/cases/lexical/hex-hash.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/hex-hash.md) | boundary / printer | FH escapes command prefixes, delimiters, backslash, NUL and DEL inside field data |
+| [comments-and-line-endings](../../../test-data/render-conformance/cases/lexical/comments-and-line-endings.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/comments-and-line-endings.md) | valid / printer | FX comments and CR/LF between fields should not create ink |
 

@@ -6,11 +6,11 @@
 
 **^BC** · mode=A · [ZPL input](../../../../../benchmarks/accuracy/reference/code128-mode-A.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![codyps-zpl render](../../images/argument-code128-mode-A-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-code128-mode-A-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![codyps-zpl render](../../previews/argument-code128-mode-A-codyps-zpl.png)](../../images/argument-code128-mode-A-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-code128-mode-A-codyps-zpl-diff.png)](../../images/argument-code128-mode-A-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![labelize render](../../images/argument-code128-mode-A-labelize.png) | ![labelize difference](../../images/argument-code128-mode-A-labelize-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![labelize render](../../previews/argument-code128-mode-A-labelize.png)](../../images/argument-code128-mode-A-labelize.png) | [![labelize difference](../../previews/argument-code128-mode-A-labelize-diff.png)](../../images/argument-code128-mode-A-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1560 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![forge render](../../images/argument-code128-mode-A-forge.png) | ![forge difference](../../images/argument-code128-mode-A-forge-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![forge render](../../previews/argument-code128-mode-A-forge.png)](../../images/argument-code128-mode-A-forge.png) | [![forge difference](../../previews/argument-code128-mode-A-forge-diff.png)](../../images/argument-code128-mode-A-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![go render](../../images/argument-code128-mode-A-go.png) | ![go difference](../../images/argument-code128-mode-A-go-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![go render](../../previews/argument-code128-mode-A-go.png)](../../images/argument-code128-mode-A-go.png) | [![go difference](../../previews/argument-code128-mode-A-go-diff.png)](../../images/argument-code128-mode-A-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![ffi render](../../images/argument-code128-mode-A-ffi.png) | ![ffi difference](../../images/argument-code128-mode-A-ffi-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![ffi render](../../previews/argument-code128-mode-A-ffi.png)](../../images/argument-code128-mode-A-ffi.png) | [![ffi difference](../../previews/argument-code128-mode-A-ffi-diff.png)](../../images/argument-code128-mode-A-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![binarykits render](../../images/argument-code128-mode-A-binarykits.png) | ![binarykits difference](../../images/argument-code128-mode-A-binarykits-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![binarykits render](../../previews/argument-code128-mode-A-binarykits.png)](../../images/argument-code128-mode-A-binarykits.png) | [![binarykits difference](../../previews/argument-code128-mode-A-binarykits-diff.png)](../../images/argument-code128-mode-A-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![zplr render](../../images/argument-code128-mode-A-zplr.png) | ![zplr difference](../../images/argument-code128-mode-A-zplr-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![zplr render](../../previews/argument-code128-mode-A-zplr.png)](../../images/argument-code128-mode-A-zplr.png) | [![zplr difference](../../previews/argument-code128-mode-A-zplr-diff.png)](../../images/argument-code128-mode-A-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 100.0% IoU · exact** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 100.0% IoU · exact** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | ![labelary render](../../images/argument-code128-mode-A-labelary.png) | ![labelary difference](../../images/argument-code128-mode-A-labelary-diff.png) |
+| [![Printer preview](../../previews/argument-code128-mode-A-printer.png)](../../../../../benchmarks/accuracy/reference/code128-mode-A.png) | [![labelary render](../../previews/argument-code128-mode-A-labelary.png)](../../images/argument-code128-mode-A-labelary.png) | [![labelary difference](../../previews/argument-code128-mode-A-labelary-diff.png)](../../images/argument-code128-mode-A-labelary-diff.png) |
 

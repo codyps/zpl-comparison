@@ -40,11 +40,11 @@ Reference parameters: **o, h, f, g, e**. These describe the reference grammar, n
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-upca](../../../test-data/render-conformance/cases/barcode-families/symbol-upca.zpl) | valid / printer | Reference symbol variant: upca |
-| [readable-BU-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-N.zpl) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
-| [readable-BU-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-R.zpl) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
-| [readable-BU-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-I.zpl) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
-| [readable-BU-B](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-B.zpl) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-upca](../../../test-data/render-conformance/cases/barcode-families/symbol-upca.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-upca.md) | valid / printer | Reference symbol variant: upca |
+| [readable-BU-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BU-N.md) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
+| [readable-BU-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BU-R.md) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
+| [readable-BU-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BU-I.md) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
+| [readable-BU-B](../../../test-data/render-conformance/cases/barcode-arguments/readable-BU-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BU-B.md) | valid / printer | Readable text above rotated BU; measure caption position as well as bars |
 

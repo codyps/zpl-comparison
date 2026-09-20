@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 27 🧩 Handler found | Not measured | 1 error, 3 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 27 🧩 Handler found | 0/4 exact; mean IoU 67.0%; 1 errors | 1 error, 3 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 27 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 27 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 22 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 21 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 26 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 27 🧩 Handler found | 0/4 exact; mean IoU 67.0%; 0 errors | 4 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 22 🧩 Handler found | 0/4 exact; mean IoU 65.2%; 0 errors | 4 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 64.1%; 0 errors | 4 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 24 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 64.1%; 0 errors | 4 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 21 🧩 Handler found | 0/4 exact; mean IoU 71.6%; 0 errors | 4 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 26 🟢 Upstream: supported | 0/4 exact; mean IoU 77.6%; 0 errors | 4 rendered |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 17 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 7 ❔ No evidence found; 20 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 9 ❔ No evidence found; 18 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 27 ❔ No evidence found | Not measured | 4 rendered |
+| [Labelary](../libraries/labelary.md) | 27 ❔ No evidence found | 0/4 exact; mean IoU 84.3%; 0 errors | 4 rendered |
 
 
 ## Commands involved
@@ -31,14 +31,14 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [torture-typography](../../../test-data/render-conformance/cases/torture/torture-typography.zpl) | valid / font-dependent | Resident font atlas: mixed sizes, rotations, baselines and panel boundaries |
-| [torture-geometry](../../../test-data/render-conformance/cases/torture/torture-geometry.zpl) | valid / printer | 36 panels combine odd/even shapes, rounding, line direction, thickness and rotated labels |
-| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
-| [torture-overlap](../../../test-data/render-conformance/cases/torture/torture-overlap.zpl) | valid / printer | 96 overlapping black/white rounded boxes; order-sensitive raster composition |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [torture-typography](../../../test-data/render-conformance/cases/torture/torture-typography.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-typography.md) | valid / font-dependent | Resident font atlas: mixed sizes, rotations, baselines and panel boundaries |
+| [torture-geometry](../../../test-data/render-conformance/cases/torture/torture-geometry.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-geometry.md) | valid / printer | 36 panels combine odd/even shapes, rounding, line direction, thickness and rotated labels |
+| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-shipping-label.md) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| [torture-overlap](../../../test-data/render-conformance/cases/torture/torture-overlap.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-overlap.md) | valid / printer | 96 overlapping black/white rounded boxes; order-sensitive raster composition |
 

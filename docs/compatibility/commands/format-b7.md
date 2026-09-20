@@ -37,22 +37,23 @@ Reference parameters: **o, h, s, c, r, t**. These describe the reference grammar
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Torture](../features/torture.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Compact barcodes](../features/compact-barcodes.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-pdf417](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417.zpl) | valid / printer | Reference symbol variant: pdf417 |
-| [symbol-pdf417_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417_truncated.zpl) | valid / printer | Reference symbol variant: pdf417_truncated |
-| [pdf417-security-0-N](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-0-N.zpl) | valid / printer | PDF417 EC=0, truncated=N, automatic rows |
-| [pdf417-security-0-Y](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-0-Y.zpl) | valid / printer | PDF417 EC=0, truncated=Y, automatic rows |
-| [pdf417-security-2-N](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-2-N.zpl) | valid / printer | PDF417 EC=2, truncated=N, automatic rows |
-| [pdf417-security-2-Y](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-2-Y.zpl) | valid / printer | PDF417 EC=2, truncated=Y, automatic rows |
-| [pdf417-security-8-N](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-8-N.zpl) | valid / printer | PDF417 EC=8, truncated=N, automatic rows |
-| [pdf417-security-8-Y](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-8-Y.zpl) | valid / printer | PDF417 EC=8, truncated=Y, automatic rows |
-| [pdf417-structured-origins-1](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-1.zpl) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
-| [pdf417-structured-origins-3](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-3.zpl) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
-| [structured-exclude-B7](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-B7.zpl) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
-| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-pdf417](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-pdf417.md) | valid / printer | Reference symbol variant: pdf417 |
+| [symbol-pdf417_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417_truncated.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-pdf417_truncated.md) | valid / printer | Reference symbol variant: pdf417_truncated |
+| [pdf417-security-0-N](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-0-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-security-0-N.md) | valid / printer | PDF417 EC=0, truncated=N, automatic rows |
+| [pdf417-security-0-Y](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-0-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-security-0-Y.md) | valid / printer | PDF417 EC=0, truncated=Y, automatic rows |
+| [pdf417-security-2-N](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-2-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-security-2-N.md) | valid / printer | PDF417 EC=2, truncated=N, automatic rows |
+| [pdf417-security-2-Y](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-2-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-security-2-Y.md) | valid / printer | PDF417 EC=2, truncated=Y, automatic rows |
+| [pdf417-security-8-N](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-8-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-security-8-N.md) | valid / printer | PDF417 EC=8, truncated=N, automatic rows |
+| [pdf417-security-8-Y](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-security-8-Y.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-security-8-Y.md) | valid / printer | PDF417 EC=8, truncated=Y, automatic rows |
+| [pdf417-structured-origins-1](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-structured-origins-1.md) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
+| [pdf417-structured-origins-3](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-structured-origins-3.md) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
+| [structured-exclude-B7](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-B7.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/structured-exclude-B7.md) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
+| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-shipping-label.md) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| [compact-pdf417-numeric](../../../test-data/render-conformance/cases/compact-barcodes/compact-pdf417-numeric.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-pdf417-numeric.md) | valid / printer | Barcode state/escape/compaction regression: pdf417-numeric |
 

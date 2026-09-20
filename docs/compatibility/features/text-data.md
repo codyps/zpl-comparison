@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found; 2 📦 Framing only | Not measured | 1 blank, 4 error, 5 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found; 2 📦 Framing only | 1/9 exact; mean IoU 26.7%; 4 errors | 1 blank, 4 error, 5 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 20 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 1 ❔ No evidence found; 19 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 8 ❔ No evidence found; 12 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 4 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 4 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 8 ❔ No evidence found; 12 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 19 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 1 ❔ No evidence found; 19 🧩 Handler found | 0/9 exact; mean IoU 26.1%; 0 errors | 1 error, 9 rendered |
+| [zpl-forge](../libraries/forge.md) | 8 ❔ No evidence found; 12 🧩 Handler found | 0/9 exact; mean IoU 30.3%; 0 errors | 1 blank, 9 rendered |
+| [go-zpl](../libraries/go.md) | 4 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/9 exact; mean IoU 52.9%; 0 errors | 1 blank, 9 rendered |
+| [zpl-rs](../libraries/ffi.md) | 4 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/9 exact; mean IoU 52.9%; 0 errors | 1 blank, 9 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 8 ❔ No evidence found; 12 🧩 Handler found | 0/9 exact; mean IoU 17.2%; 0 errors | 1 blank, 9 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 19 🟢 Upstream: supported | 0/9 exact; mean IoU 29.6%; 0 errors | 1 blank, 9 rendered |
 | [zpl-builder](../libraries/builder.md) | 11 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 15 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 12 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 20 ❔ No evidence found | Not measured | 1 blank, 9 rendered |
+| [Labelary](../libraries/labelary.md) | 20 ❔ No evidence found | 0/9 exact; mean IoU 59.8%; 0 errors | 1 blank, 9 rendered |
 
 
 ## Commands involved
@@ -31,20 +31,20 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [text-digits](../../../test-data/render-conformance/cases/text-data/text-digits.zpl) | valid / printer | Field data digits; whitespace must not be trimmed |
-| [text-case](../../../test-data/render-conformance/cases/text-data/text-case.zpl) | valid / printer | Field data case; whitespace must not be trimmed |
-| [text-punctuation](../../../test-data/render-conformance/cases/text-data/text-punctuation.zpl) | valid / printer | Field data punctuation; whitespace must not be trimmed |
-| [text-spacing](../../../test-data/render-conformance/cases/text-data/text-spacing.zpl) | valid / printer | Field data spacing; whitespace must not be trimmed |
-| [text-empty](../../../test-data/render-conformance/cases/text-data/text-empty.zpl) | valid / printer | Field data empty; whitespace must not be trimmed |
-| [variable-field](../../../test-data/render-conformance/cases/text-data/variable-field.zpl) | valid / printer | FV literal text followed by FD literal text |
-| [field-concat-whole](../../../test-data/render-conformance/cases/text-data/field-concat-whole.zpl) | valid / printer | FE inline numbered-field concatenation / substring: whole |
-| [field-concat-forward](../../../test-data/render-conformance/cases/text-data/field-concat-forward.zpl) | valid / printer | FE inline numbered-field concatenation / substring: forward |
-| [field-concat-backward](../../../test-data/render-conformance/cases/text-data/field-concat-backward.zpl) | valid / printer | FE inline numbered-field concatenation / substring: backward |
-| [field-concat-past-end](../../../test-data/render-conformance/cases/text-data/field-concat-past-end.zpl) | valid / printer | FE inline numbered-field concatenation / substring: past-end |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [text-digits](../../../test-data/render-conformance/cases/text-data/text-digits.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-digits.md) | valid / printer | Field data digits; whitespace must not be trimmed |
+| [text-case](../../../test-data/render-conformance/cases/text-data/text-case.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-case.md) | valid / printer | Field data case; whitespace must not be trimmed |
+| [text-punctuation](../../../test-data/render-conformance/cases/text-data/text-punctuation.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-punctuation.md) | valid / printer | Field data punctuation; whitespace must not be trimmed |
+| [text-spacing](../../../test-data/render-conformance/cases/text-data/text-spacing.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-spacing.md) | valid / printer | Field data spacing; whitespace must not be trimmed |
+| [text-empty](../../../test-data/render-conformance/cases/text-data/text-empty.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/text-empty.md) | valid / printer | Field data empty; whitespace must not be trimmed |
+| [variable-field](../../../test-data/render-conformance/cases/text-data/variable-field.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/variable-field.md) | valid / printer | FV literal text followed by FD literal text |
+| [field-concat-whole](../../../test-data/render-conformance/cases/text-data/field-concat-whole.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-whole.md) | valid / printer | FE inline numbered-field concatenation / substring: whole |
+| [field-concat-forward](../../../test-data/render-conformance/cases/text-data/field-concat-forward.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-forward.md) | valid / printer | FE inline numbered-field concatenation / substring: forward |
+| [field-concat-backward](../../../test-data/render-conformance/cases/text-data/field-concat-backward.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-backward.md) | valid / printer | FE inline numbered-field concatenation / substring: backward |
+| [field-concat-past-end](../../../test-data/render-conformance/cases/text-data/field-concat-past-end.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-past-end.md) | valid / printer | FE inline numbered-field concatenation / substring: past-end |
 
