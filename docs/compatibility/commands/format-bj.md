@@ -40,7 +40,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-standard2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-standard2of5.zpl) | valid / printer | Reference symbol variant: standard2of5 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-standard2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-standard2of5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-standard2of5.md) | valid / printer | Reference symbol variant: standard2of5 |
 

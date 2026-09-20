@@ -4,172 +4,176 @@
 
 [All comparisons](../README.md) · [Accuracy scores](../../README.md)
 
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
+
+[Feature fixture differences](../features/libraries/binarykits.md) · [External example differences](../external/libraries/binarykits.md)
+
 All 133 cases were attempted. Select a case to compare images and inspect any error.
 
 ## barcode-arguments
 
-| Compare images | Result | Arguments |
-| --- | --- | --- |
-| [code39-ratio-2](../cases/argument-code39-ratio-2.md#binarykits) | 100.0% IoU · exact | w=2,ratio=2,height=60 |
-| [code39-ratio-3](../cases/argument-code39-ratio-3.md#binarykits) | 100.0% IoU · exact | w=2,ratio=3,height=60 |
-| [code39-check-N](../cases/argument-code39-check-N.md#binarykits) | 100.0% IoU · exact | o=N,check=N,h=60,readable=N |
-| [code39-check-Y](../cases/argument-code39-check-Y.md#binarykits) | 84.0% IoU | o=N,check=Y,h=60,readable=N |
-| [code128-text-NN](../cases/argument-code128-text-NN.md#binarykits) | 100.0% IoU · exact | h=60,interpretation=N,above=N |
-| [code128-text-YN](../cases/argument-code128-text-YN.md#binarykits) | 92.7% IoU | h=60,interpretation=Y,above=N |
-| [code128-text-YY](../cases/argument-code128-text-YY.md#binarykits) | 91.8% IoU | h=60,interpretation=Y,above=Y |
-| [code128-rotation-R](../cases/argument-code128-rotation-R.md#binarykits) | 100.0% IoU · exact | o=R,h=60 |
-| [code128-rotation-I](../cases/argument-code128-rotation-I.md#binarykits) | 100.0% IoU · exact | o=I,h=60 |
-| [code128-rotation-B](../cases/argument-code128-rotation-B.md#binarykits) | 100.0% IoU · exact | o=B,h=60 |
-| [code128-mode-N](../cases/argument-code128-mode-N.md#binarykits) | 100.0% IoU · exact | mode=N |
-| [code128-mode-A](../cases/argument-code128-mode-A.md#binarykits) | 100.0% IoU · exact | mode=A |
-| [qr-model-1](../cases/argument-qr-model-1.md#binarykits) | 0.0% IoU | o=N,model=1,magnification=3,EC=L,mask=0 |
-| [qr-model-2](../cases/argument-qr-model-2.md#binarykits) | 0.0% IoU | o=N,model=2,magnification=3,EC=L,mask=0 |
-| [qr-ec-L](../cases/argument-qr-ec-L.md#binarykits) | 0.0% IoU | model=2,magnification=3,EC=L,mask=0 |
-| [qr-ec-M](../cases/argument-qr-ec-M.md#binarykits) | 0.0% IoU | model=2,magnification=3,EC=M,mask=0 |
-| [qr-ec-Q](../cases/argument-qr-ec-Q.md#binarykits) | 0.0% IoU | model=2,magnification=3,EC=Q,mask=0 |
-| [qr-ec-H](../cases/argument-qr-ec-H.md#binarykits) | 0.0% IoU | model=2,magnification=3,EC=H,mask=0 |
-| [qr-module-2](../cases/argument-qr-module-2.md#binarykits) | 0.0% IoU | magnification=2 |
-| [qr-module-5](../cases/argument-qr-module-5.md#binarykits) | 5.4% IoU | magnification=5 |
-| [qr-mask-0](../cases/argument-qr-mask-0.md#binarykits) | 0.0% IoU | mask=0 |
-| [qr-mask-3](../cases/argument-qr-mask-3.md#binarykits) | 0.0% IoU | mask=3 |
-| [qr-mask-7](../cases/argument-qr-mask-7.md#binarykits) | 0.0% IoU | mask=7 |
-| [datamatrix-module-2](../cases/argument-datamatrix-module-2.md#binarykits) | 100.0% IoU · exact | o=N,module=2,quality=200 |
-| [datamatrix-module-4](../cases/argument-datamatrix-module-4.md#binarykits) | 100.0% IoU · exact | o=N,module=4,quality=200 |
+| Compare images | Result | Difference | Arguments |
+| --- | --- | --- | --- |
+| [code39-ratio-2](../cases/argument-code39-ratio-2.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code39-ratio-2-binarykits-diff.png)](../../images/argument-code39-ratio-2-binarykits-diff.png) | w=2,ratio=2,height=60 |
+| [code39-ratio-3](../cases/argument-code39-ratio-3.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code39-ratio-3-binarykits-diff.png)](../../images/argument-code39-ratio-3-binarykits-diff.png) | w=2,ratio=3,height=60 |
+| [code39-check-N](../cases/argument-code39-check-N.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code39-check-N-binarykits-diff.png)](../../images/argument-code39-check-N-binarykits-diff.png) | o=N,check=N,h=60,readable=N |
+| [code39-check-Y](../cases/argument-code39-check-Y.md#binarykits) | 84.0% IoU | [![binarykits difference](../../previews/argument-code39-check-Y-binarykits-diff.png)](../../images/argument-code39-check-Y-binarykits-diff.png) | o=N,check=Y,h=60,readable=N |
+| [code128-text-NN](../cases/argument-code128-text-NN.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code128-text-NN-binarykits-diff.png)](../../images/argument-code128-text-NN-binarykits-diff.png) | h=60,interpretation=N,above=N |
+| [code128-text-YN](../cases/argument-code128-text-YN.md#binarykits) | 92.7% IoU | [![binarykits difference](../../previews/argument-code128-text-YN-binarykits-diff.png)](../../images/argument-code128-text-YN-binarykits-diff.png) | h=60,interpretation=Y,above=N |
+| [code128-text-YY](../cases/argument-code128-text-YY.md#binarykits) | 91.8% IoU | [![binarykits difference](../../previews/argument-code128-text-YY-binarykits-diff.png)](../../images/argument-code128-text-YY-binarykits-diff.png) | h=60,interpretation=Y,above=Y |
+| [code128-rotation-R](../cases/argument-code128-rotation-R.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code128-rotation-R-binarykits-diff.png)](../../images/argument-code128-rotation-R-binarykits-diff.png) | o=R,h=60 |
+| [code128-rotation-I](../cases/argument-code128-rotation-I.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code128-rotation-I-binarykits-diff.png)](../../images/argument-code128-rotation-I-binarykits-diff.png) | o=I,h=60 |
+| [code128-rotation-B](../cases/argument-code128-rotation-B.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code128-rotation-B-binarykits-diff.png)](../../images/argument-code128-rotation-B-binarykits-diff.png) | o=B,h=60 |
+| [code128-mode-N](../cases/argument-code128-mode-N.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code128-mode-N-binarykits-diff.png)](../../images/argument-code128-mode-N-binarykits-diff.png) | mode=N |
+| [code128-mode-A](../cases/argument-code128-mode-A.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-code128-mode-A-binarykits-diff.png)](../../images/argument-code128-mode-A-binarykits-diff.png) | mode=A |
+| [qr-model-1](../cases/argument-qr-model-1.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-model-1-binarykits-diff.png)](../../images/argument-qr-model-1-binarykits-diff.png) | o=N,model=1,magnification=3,EC=L,mask=0 |
+| [qr-model-2](../cases/argument-qr-model-2.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-model-2-binarykits-diff.png)](../../images/argument-qr-model-2-binarykits-diff.png) | o=N,model=2,magnification=3,EC=L,mask=0 |
+| [qr-ec-L](../cases/argument-qr-ec-L.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-ec-L-binarykits-diff.png)](../../images/argument-qr-ec-L-binarykits-diff.png) | model=2,magnification=3,EC=L,mask=0 |
+| [qr-ec-M](../cases/argument-qr-ec-M.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-ec-M-binarykits-diff.png)](../../images/argument-qr-ec-M-binarykits-diff.png) | model=2,magnification=3,EC=M,mask=0 |
+| [qr-ec-Q](../cases/argument-qr-ec-Q.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-ec-Q-binarykits-diff.png)](../../images/argument-qr-ec-Q-binarykits-diff.png) | model=2,magnification=3,EC=Q,mask=0 |
+| [qr-ec-H](../cases/argument-qr-ec-H.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-ec-H-binarykits-diff.png)](../../images/argument-qr-ec-H-binarykits-diff.png) | model=2,magnification=3,EC=H,mask=0 |
+| [qr-module-2](../cases/argument-qr-module-2.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-module-2-binarykits-diff.png)](../../images/argument-qr-module-2-binarykits-diff.png) | magnification=2 |
+| [qr-module-5](../cases/argument-qr-module-5.md#binarykits) | 5.4% IoU | [![binarykits difference](../../previews/argument-qr-module-5-binarykits-diff.png)](../../images/argument-qr-module-5-binarykits-diff.png) | magnification=5 |
+| [qr-mask-0](../cases/argument-qr-mask-0.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-mask-0-binarykits-diff.png)](../../images/argument-qr-mask-0-binarykits-diff.png) | mask=0 |
+| [qr-mask-3](../cases/argument-qr-mask-3.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-mask-3-binarykits-diff.png)](../../images/argument-qr-mask-3-binarykits-diff.png) | mask=3 |
+| [qr-mask-7](../cases/argument-qr-mask-7.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-qr-mask-7-binarykits-diff.png)](../../images/argument-qr-mask-7-binarykits-diff.png) | mask=7 |
+| [datamatrix-module-2](../cases/argument-datamatrix-module-2.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-datamatrix-module-2-binarykits-diff.png)](../../images/argument-datamatrix-module-2-binarykits-diff.png) | o=N,module=2,quality=200 |
+| [datamatrix-module-4](../cases/argument-datamatrix-module-4.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-datamatrix-module-4-binarykits-diff.png)](../../images/argument-datamatrix-module-4-binarykits-diff.png) | o=N,module=4,quality=200 |
 
 
 ## barcode-formats
 
-| Compare images | Result | Arguments |
-| --- | --- | --- |
-| [aztec](../cases/barcode-aztec.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [aztec_alias](../cases/barcode-aztec_alias.md#binarykits) | 11.3% IoU | See exact archived ZPL |
-| [aztec_rune](../cases/barcode-aztec_rune.md#binarykits) | 28.4% IoU | See exact archived ZPL |
-| [codabar](../cases/barcode-codabar.md#binarykits) | 95.1% IoU | See exact archived ZPL |
-| [codablock_a](../cases/barcode-codablock_a.md#binarykits) | 5.6% IoU | See exact archived ZPL |
-| [codablock_e](../cases/barcode-codablock_e.md#binarykits) | 13.3% IoU | See exact archived ZPL |
-| [codablock_f](../cases/barcode-codablock_f.md#binarykits) | 12.6% IoU | See exact archived ZPL |
-| [code11](../cases/barcode-code11.md#binarykits) | 4.9% IoU | See exact archived ZPL |
-| [code128](../cases/barcode-code128.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [code39](../cases/barcode-code39.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [code49](../cases/barcode-code49.md#binarykits) | 6.4% IoU | See exact archived ZPL |
-| [code93](../cases/barcode-code93.md#binarykits) | 34.4% IoU | See exact archived ZPL |
-| [composite_a](../cases/barcode-composite_a.md#binarykits) | 2.6% IoU | See exact archived ZPL |
-| [composite_b](../cases/barcode-composite_b.md#binarykits) | 1.9% IoU | See exact archived ZPL |
-| [composite_c](../cases/barcode-composite_c.md#binarykits) | 3.0% IoU | See exact archived ZPL |
-| [data_matrix](../cases/barcode-data_matrix.md#binarykits) | 48.4% IoU | See exact archived ZPL |
-| [data_matrix_rectangular](../cases/barcode-data_matrix_rectangular.md#binarykits) | 17.3% IoU | See exact archived ZPL |
-| [databar_ean13](../cases/barcode-databar_ean13.md#binarykits) | 3.1% IoU | See exact archived ZPL |
-| [databar_ean8](../cases/barcode-databar_ean8.md#binarykits) | 2.9% IoU | See exact archived ZPL |
-| [databar_expanded](../cases/barcode-databar_expanded.md#binarykits) | 6.3% IoU | See exact archived ZPL |
-| [databar_expanded_stacked](../cases/barcode-databar_expanded_stacked.md#binarykits) | 6.1% IoU | See exact archived ZPL |
-| [databar_limited](../cases/barcode-databar_limited.md#binarykits) | 25.6% IoU | See exact archived ZPL |
-| [databar_omni](../cases/barcode-databar_omni.md#binarykits) | 7.4% IoU | See exact archived ZPL |
-| [databar_stacked](../cases/barcode-databar_stacked.md#binarykits) | 19.8% IoU | See exact archived ZPL |
-| [databar_stacked_omni](../cases/barcode-databar_stacked_omni.md#binarykits) | 5.8% IoU | See exact archived ZPL |
-| [databar_truncated](../cases/barcode-databar_truncated.md#binarykits) | 16.6% IoU | See exact archived ZPL |
-| [databar_upca](../cases/barcode-databar_upca.md#binarykits) | 2.6% IoU | See exact archived ZPL |
-| [databar_upce](../cases/barcode-databar_upce.md#binarykits) | Blank printer reference; unscored | See exact archived ZPL |
-| [ean13](../cases/barcode-ean13.md#binarykits) | 98.0% IoU | See exact archived ZPL |
-| [ean8](../cases/barcode-ean8.md#binarykits) | 5.1% IoU | See exact archived ZPL |
-| [extension2](../cases/barcode-extension2.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [extension5](../cases/barcode-extension5.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [industrial2of5](../cases/barcode-industrial2of5.md#binarykits) | 3.5% IoU | See exact archived ZPL |
-| [intelligent_mail](../cases/barcode-intelligent_mail.md#binarykits) | 4.2% IoU | See exact archived ZPL |
-| [interleaved2of5](../cases/barcode-interleaved2of5.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [logmars](../cases/barcode-logmars.md#binarykits) | 3.4% IoU | See exact archived ZPL |
-| [maxicode2](../cases/barcode-maxicode2.md#binarykits) | 54.7% IoU | See exact archived ZPL |
-| [maxicode3](../cases/barcode-maxicode3.md#binarykits) | 54.9% IoU | See exact archived ZPL |
-| [maxicode4](../cases/barcode-maxicode4.md#binarykits) | 54.4% IoU | See exact archived ZPL |
-| [maxicode5](../cases/barcode-maxicode5.md#binarykits) | 11.8% IoU | See exact archived ZPL |
-| [maxicode6](../cases/barcode-maxicode6.md#binarykits) | 54.5% IoU | See exact archived ZPL |
-| [micropdf417_1](../cases/barcode-micropdf417_1.md#binarykits) | 3.8% IoU | See exact archived ZPL |
-| [micropdf417_3](../cases/barcode-micropdf417_3.md#binarykits) | 3.3% IoU | See exact archived ZPL |
-| [micropdf417_4](../cases/barcode-micropdf417_4.md#binarykits) | 2.7% IoU | See exact archived ZPL |
-| [msi_a](../cases/barcode-msi_a.md#binarykits) | 3.0% IoU | See exact archived ZPL |
-| [msi_b](../cases/barcode-msi_b.md#binarykits) | 2.7% IoU | See exact archived ZPL |
-| [msi_c](../cases/barcode-msi_c.md#binarykits) | 2.4% IoU | See exact archived ZPL |
-| [msi_d](../cases/barcode-msi_d.md#binarykits) | 2.4% IoU | See exact archived ZPL |
-| [pdf417](../cases/barcode-pdf417.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [pdf417_truncated](../cases/barcode-pdf417_truncated.md#binarykits) | 100.0% IoU · exact | See exact archived ZPL |
-| [planet](../cases/barcode-planet.md#binarykits) | 2.5% IoU | See exact archived ZPL |
-| [plessey](../cases/barcode-plessey.md#binarykits) | 2.7% IoU | See exact archived ZPL |
-| [postal_planet](../cases/barcode-postal_planet.md#binarykits) | 2.5% IoU | See exact archived ZPL |
-| [postnet](../cases/barcode-postnet.md#binarykits) | 2.0% IoU | See exact archived ZPL |
-| [qr](../cases/barcode-qr.md#binarykits) | 6.3% IoU | See exact archived ZPL |
-| [standard2of5](../cases/barcode-standard2of5.md#binarykits) | 3.5% IoU | See exact archived ZPL |
-| [tlc39_linear](../cases/barcode-tlc39_linear.md#binarykits) | 3.0% IoU | See exact archived ZPL |
-| [tlc39_linked](../cases/barcode-tlc39_linked.md#binarykits) | 5.2% IoU | See exact archived ZPL |
-| [upca](../cases/barcode-upca.md#binarykits) | 96.1% IoU | See exact archived ZPL |
-| [upce](../cases/barcode-upce.md#binarykits) | 97.2% IoU | See exact archived ZPL |
+| Compare images | Result | Difference | Arguments |
+| --- | --- | --- | --- |
+| [aztec](../cases/barcode-aztec.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-aztec-binarykits-diff.png)](../../images/barcode-aztec-binarykits-diff.png) | See exact archived ZPL |
+| [aztec_alias](../cases/barcode-aztec_alias.md#binarykits) | 11.3% IoU | [![binarykits difference](../../previews/barcode-aztec_alias-binarykits-diff.png)](../../images/barcode-aztec_alias-binarykits-diff.png) | See exact archived ZPL |
+| [aztec_rune](../cases/barcode-aztec_rune.md#binarykits) | 28.4% IoU | [![binarykits difference](../../previews/barcode-aztec_rune-binarykits-diff.png)](../../images/barcode-aztec_rune-binarykits-diff.png) | See exact archived ZPL |
+| [codabar](../cases/barcode-codabar.md#binarykits) | 95.1% IoU | [![binarykits difference](../../previews/barcode-codabar-binarykits-diff.png)](../../images/barcode-codabar-binarykits-diff.png) | See exact archived ZPL |
+| [codablock_a](../cases/barcode-codablock_a.md#binarykits) | 5.6% IoU | [![binarykits difference](../../previews/barcode-codablock_a-binarykits-diff.png)](../../images/barcode-codablock_a-binarykits-diff.png) | See exact archived ZPL |
+| [codablock_e](../cases/barcode-codablock_e.md#binarykits) | 13.3% IoU | [![binarykits difference](../../previews/barcode-codablock_e-binarykits-diff.png)](../../images/barcode-codablock_e-binarykits-diff.png) | See exact archived ZPL |
+| [codablock_f](../cases/barcode-codablock_f.md#binarykits) | 12.6% IoU | [![binarykits difference](../../previews/barcode-codablock_f-binarykits-diff.png)](../../images/barcode-codablock_f-binarykits-diff.png) | See exact archived ZPL |
+| [code11](../cases/barcode-code11.md#binarykits) | 4.9% IoU | [![binarykits difference](../../previews/barcode-code11-binarykits-diff.png)](../../images/barcode-code11-binarykits-diff.png) | See exact archived ZPL |
+| [code128](../cases/barcode-code128.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-code128-binarykits-diff.png)](../../images/barcode-code128-binarykits-diff.png) | See exact archived ZPL |
+| [code39](../cases/barcode-code39.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-code39-binarykits-diff.png)](../../images/barcode-code39-binarykits-diff.png) | See exact archived ZPL |
+| [code49](../cases/barcode-code49.md#binarykits) | 6.4% IoU | [![binarykits difference](../../previews/barcode-code49-binarykits-diff.png)](../../images/barcode-code49-binarykits-diff.png) | See exact archived ZPL |
+| [code93](../cases/barcode-code93.md#binarykits) | 34.4% IoU | [![binarykits difference](../../previews/barcode-code93-binarykits-diff.png)](../../images/barcode-code93-binarykits-diff.png) | See exact archived ZPL |
+| [composite_a](../cases/barcode-composite_a.md#binarykits) | 2.6% IoU | [![binarykits difference](../../previews/barcode-composite_a-binarykits-diff.png)](../../images/barcode-composite_a-binarykits-diff.png) | See exact archived ZPL |
+| [composite_b](../cases/barcode-composite_b.md#binarykits) | 1.9% IoU | [![binarykits difference](../../previews/barcode-composite_b-binarykits-diff.png)](../../images/barcode-composite_b-binarykits-diff.png) | See exact archived ZPL |
+| [composite_c](../cases/barcode-composite_c.md#binarykits) | 3.0% IoU | [![binarykits difference](../../previews/barcode-composite_c-binarykits-diff.png)](../../images/barcode-composite_c-binarykits-diff.png) | See exact archived ZPL |
+| [data_matrix](../cases/barcode-data_matrix.md#binarykits) | 48.4% IoU | [![binarykits difference](../../previews/barcode-data_matrix-binarykits-diff.png)](../../images/barcode-data_matrix-binarykits-diff.png) | See exact archived ZPL |
+| [data_matrix_rectangular](../cases/barcode-data_matrix_rectangular.md#binarykits) | 17.3% IoU | [![binarykits difference](../../previews/barcode-data_matrix_rectangular-binarykits-diff.png)](../../images/barcode-data_matrix_rectangular-binarykits-diff.png) | See exact archived ZPL |
+| [databar_ean13](../cases/barcode-databar_ean13.md#binarykits) | 3.1% IoU | [![binarykits difference](../../previews/barcode-databar_ean13-binarykits-diff.png)](../../images/barcode-databar_ean13-binarykits-diff.png) | See exact archived ZPL |
+| [databar_ean8](../cases/barcode-databar_ean8.md#binarykits) | 2.9% IoU | [![binarykits difference](../../previews/barcode-databar_ean8-binarykits-diff.png)](../../images/barcode-databar_ean8-binarykits-diff.png) | See exact archived ZPL |
+| [databar_expanded](../cases/barcode-databar_expanded.md#binarykits) | 6.3% IoU | [![binarykits difference](../../previews/barcode-databar_expanded-binarykits-diff.png)](../../images/barcode-databar_expanded-binarykits-diff.png) | See exact archived ZPL |
+| [databar_expanded_stacked](../cases/barcode-databar_expanded_stacked.md#binarykits) | 6.1% IoU | [![binarykits difference](../../previews/barcode-databar_expanded_stacked-binarykits-diff.png)](../../images/barcode-databar_expanded_stacked-binarykits-diff.png) | See exact archived ZPL |
+| [databar_limited](../cases/barcode-databar_limited.md#binarykits) | 25.6% IoU | [![binarykits difference](../../previews/barcode-databar_limited-binarykits-diff.png)](../../images/barcode-databar_limited-binarykits-diff.png) | See exact archived ZPL |
+| [databar_omni](../cases/barcode-databar_omni.md#binarykits) | 7.4% IoU | [![binarykits difference](../../previews/barcode-databar_omni-binarykits-diff.png)](../../images/barcode-databar_omni-binarykits-diff.png) | See exact archived ZPL |
+| [databar_stacked](../cases/barcode-databar_stacked.md#binarykits) | 19.8% IoU | [![binarykits difference](../../previews/barcode-databar_stacked-binarykits-diff.png)](../../images/barcode-databar_stacked-binarykits-diff.png) | See exact archived ZPL |
+| [databar_stacked_omni](../cases/barcode-databar_stacked_omni.md#binarykits) | 5.8% IoU | [![binarykits difference](../../previews/barcode-databar_stacked_omni-binarykits-diff.png)](../../images/barcode-databar_stacked_omni-binarykits-diff.png) | See exact archived ZPL |
+| [databar_truncated](../cases/barcode-databar_truncated.md#binarykits) | 16.6% IoU | [![binarykits difference](../../previews/barcode-databar_truncated-binarykits-diff.png)](../../images/barcode-databar_truncated-binarykits-diff.png) | See exact archived ZPL |
+| [databar_upca](../cases/barcode-databar_upca.md#binarykits) | 2.6% IoU | [![binarykits difference](../../previews/barcode-databar_upca-binarykits-diff.png)](../../images/barcode-databar_upca-binarykits-diff.png) | See exact archived ZPL |
+| [databar_upce](../cases/barcode-databar_upce.md#binarykits) | Blank printer reference; unscored | [![binarykits difference](../../previews/barcode-databar_upce-binarykits-diff.png)](../../images/barcode-databar_upce-binarykits-diff.png) | See exact archived ZPL |
+| [ean13](../cases/barcode-ean13.md#binarykits) | 98.0% IoU | [![binarykits difference](../../previews/barcode-ean13-binarykits-diff.png)](../../images/barcode-ean13-binarykits-diff.png) | See exact archived ZPL |
+| [ean8](../cases/barcode-ean8.md#binarykits) | 5.1% IoU | [![binarykits difference](../../previews/barcode-ean8-binarykits-diff.png)](../../images/barcode-ean8-binarykits-diff.png) | See exact archived ZPL |
+| [extension2](../cases/barcode-extension2.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-extension2-binarykits-diff.png)](../../images/barcode-extension2-binarykits-diff.png) | See exact archived ZPL |
+| [extension5](../cases/barcode-extension5.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-extension5-binarykits-diff.png)](../../images/barcode-extension5-binarykits-diff.png) | See exact archived ZPL |
+| [industrial2of5](../cases/barcode-industrial2of5.md#binarykits) | 3.5% IoU | [![binarykits difference](../../previews/barcode-industrial2of5-binarykits-diff.png)](../../images/barcode-industrial2of5-binarykits-diff.png) | See exact archived ZPL |
+| [intelligent_mail](../cases/barcode-intelligent_mail.md#binarykits) | 4.2% IoU | [![binarykits difference](../../previews/barcode-intelligent_mail-binarykits-diff.png)](../../images/barcode-intelligent_mail-binarykits-diff.png) | See exact archived ZPL |
+| [interleaved2of5](../cases/barcode-interleaved2of5.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-interleaved2of5-binarykits-diff.png)](../../images/barcode-interleaved2of5-binarykits-diff.png) | See exact archived ZPL |
+| [logmars](../cases/barcode-logmars.md#binarykits) | 3.4% IoU | [![binarykits difference](../../previews/barcode-logmars-binarykits-diff.png)](../../images/barcode-logmars-binarykits-diff.png) | See exact archived ZPL |
+| [maxicode2](../cases/barcode-maxicode2.md#binarykits) | 54.7% IoU | [![binarykits difference](../../previews/barcode-maxicode2-binarykits-diff.png)](../../images/barcode-maxicode2-binarykits-diff.png) | See exact archived ZPL |
+| [maxicode3](../cases/barcode-maxicode3.md#binarykits) | 54.9% IoU | [![binarykits difference](../../previews/barcode-maxicode3-binarykits-diff.png)](../../images/barcode-maxicode3-binarykits-diff.png) | See exact archived ZPL |
+| [maxicode4](../cases/barcode-maxicode4.md#binarykits) | 54.4% IoU | [![binarykits difference](../../previews/barcode-maxicode4-binarykits-diff.png)](../../images/barcode-maxicode4-binarykits-diff.png) | See exact archived ZPL |
+| [maxicode5](../cases/barcode-maxicode5.md#binarykits) | 11.8% IoU | [![binarykits difference](../../previews/barcode-maxicode5-binarykits-diff.png)](../../images/barcode-maxicode5-binarykits-diff.png) | See exact archived ZPL |
+| [maxicode6](../cases/barcode-maxicode6.md#binarykits) | 54.5% IoU | [![binarykits difference](../../previews/barcode-maxicode6-binarykits-diff.png)](../../images/barcode-maxicode6-binarykits-diff.png) | See exact archived ZPL |
+| [micropdf417_1](../cases/barcode-micropdf417_1.md#binarykits) | 3.8% IoU | [![binarykits difference](../../previews/barcode-micropdf417_1-binarykits-diff.png)](../../images/barcode-micropdf417_1-binarykits-diff.png) | See exact archived ZPL |
+| [micropdf417_3](../cases/barcode-micropdf417_3.md#binarykits) | 3.3% IoU | [![binarykits difference](../../previews/barcode-micropdf417_3-binarykits-diff.png)](../../images/barcode-micropdf417_3-binarykits-diff.png) | See exact archived ZPL |
+| [micropdf417_4](../cases/barcode-micropdf417_4.md#binarykits) | 2.7% IoU | [![binarykits difference](../../previews/barcode-micropdf417_4-binarykits-diff.png)](../../images/barcode-micropdf417_4-binarykits-diff.png) | See exact archived ZPL |
+| [msi_a](../cases/barcode-msi_a.md#binarykits) | 3.0% IoU | [![binarykits difference](../../previews/barcode-msi_a-binarykits-diff.png)](../../images/barcode-msi_a-binarykits-diff.png) | See exact archived ZPL |
+| [msi_b](../cases/barcode-msi_b.md#binarykits) | 2.7% IoU | [![binarykits difference](../../previews/barcode-msi_b-binarykits-diff.png)](../../images/barcode-msi_b-binarykits-diff.png) | See exact archived ZPL |
+| [msi_c](../cases/barcode-msi_c.md#binarykits) | 2.4% IoU | [![binarykits difference](../../previews/barcode-msi_c-binarykits-diff.png)](../../images/barcode-msi_c-binarykits-diff.png) | See exact archived ZPL |
+| [msi_d](../cases/barcode-msi_d.md#binarykits) | 2.4% IoU | [![binarykits difference](../../previews/barcode-msi_d-binarykits-diff.png)](../../images/barcode-msi_d-binarykits-diff.png) | See exact archived ZPL |
+| [pdf417](../cases/barcode-pdf417.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-pdf417-binarykits-diff.png)](../../images/barcode-pdf417-binarykits-diff.png) | See exact archived ZPL |
+| [pdf417_truncated](../cases/barcode-pdf417_truncated.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/barcode-pdf417_truncated-binarykits-diff.png)](../../images/barcode-pdf417_truncated-binarykits-diff.png) | See exact archived ZPL |
+| [planet](../cases/barcode-planet.md#binarykits) | 2.5% IoU | [![binarykits difference](../../previews/barcode-planet-binarykits-diff.png)](../../images/barcode-planet-binarykits-diff.png) | See exact archived ZPL |
+| [plessey](../cases/barcode-plessey.md#binarykits) | 2.7% IoU | [![binarykits difference](../../previews/barcode-plessey-binarykits-diff.png)](../../images/barcode-plessey-binarykits-diff.png) | See exact archived ZPL |
+| [postal_planet](../cases/barcode-postal_planet.md#binarykits) | 2.5% IoU | [![binarykits difference](../../previews/barcode-postal_planet-binarykits-diff.png)](../../images/barcode-postal_planet-binarykits-diff.png) | See exact archived ZPL |
+| [postnet](../cases/barcode-postnet.md#binarykits) | 2.0% IoU | [![binarykits difference](../../previews/barcode-postnet-binarykits-diff.png)](../../images/barcode-postnet-binarykits-diff.png) | See exact archived ZPL |
+| [qr](../cases/barcode-qr.md#binarykits) | 6.3% IoU | [![binarykits difference](../../previews/barcode-qr-binarykits-diff.png)](../../images/barcode-qr-binarykits-diff.png) | See exact archived ZPL |
+| [standard2of5](../cases/barcode-standard2of5.md#binarykits) | 3.5% IoU | [![binarykits difference](../../previews/barcode-standard2of5-binarykits-diff.png)](../../images/barcode-standard2of5-binarykits-diff.png) | See exact archived ZPL |
+| [tlc39_linear](../cases/barcode-tlc39_linear.md#binarykits) | 3.0% IoU | [![binarykits difference](../../previews/barcode-tlc39_linear-binarykits-diff.png)](../../images/barcode-tlc39_linear-binarykits-diff.png) | See exact archived ZPL |
+| [tlc39_linked](../cases/barcode-tlc39_linked.md#binarykits) | 5.2% IoU | [![binarykits difference](../../previews/barcode-tlc39_linked-binarykits-diff.png)](../../images/barcode-tlc39_linked-binarykits-diff.png) | See exact archived ZPL |
+| [upca](../cases/barcode-upca.md#binarykits) | 96.1% IoU | [![binarykits difference](../../previews/barcode-upca-binarykits-diff.png)](../../images/barcode-upca-binarykits-diff.png) | See exact archived ZPL |
+| [upce](../cases/barcode-upce.md#binarykits) | 97.2% IoU | [![binarykits difference](../../previews/barcode-upce-binarykits-diff.png)](../../images/barcode-upce-binarykits-diff.png) | See exact archived ZPL |
 
 
 ## graphics
 
-| Compare images | Result | Arguments |
-| --- | --- | --- |
-| [graphic-hex](../cases/argument-graphic-hex.md#binarykits) | 100.0% IoU · exact | A,8,8,1; raw hex |
-| [graphic-binary](../cases/argument-graphic-binary.md#binarykits) | 0.0% IoU | B,8,8,1; ASCII binary bytes |
-| [graphic-B64](../cases/argument-graphic-B64.md#binarykits) | 100.0% IoU · exact | A,8,8,1; B64, CRC16 |
-| [graphic-Z64](../cases/argument-graphic-Z64.md#binarykits) | 100.0% IoU · exact | A,8,8,1; Z64, CRC16 |
+| Compare images | Result | Difference | Arguments |
+| --- | --- | --- | --- |
+| [graphic-hex](../cases/argument-graphic-hex.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-graphic-hex-binarykits-diff.png)](../../images/argument-graphic-hex-binarykits-diff.png) | A,8,8,1; raw hex |
+| [graphic-binary](../cases/argument-graphic-binary.md#binarykits) | 0.0% IoU | [![binarykits difference](../../previews/argument-graphic-binary-binarykits-diff.png)](../../images/argument-graphic-binary-binarykits-diff.png) | B,8,8,1; ASCII binary bytes |
+| [graphic-B64](../cases/argument-graphic-B64.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-graphic-B64-binarykits-diff.png)](../../images/argument-graphic-B64-binarykits-diff.png) | A,8,8,1; B64, CRC16 |
+| [graphic-Z64](../cases/argument-graphic-Z64.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-graphic-Z64-binarykits-diff.png)](../../images/argument-graphic-Z64-binarykits-diff.png) | A,8,8,1; Z64, CRC16 |
 
 
 ## layout
 
-| Compare images | Result | Arguments |
-| --- | --- | --- |
-| [fo-justify-0](../cases/argument-fo-justify-0.md#binarykits) | 27.4% IoU | x=220,y=80,z=0 |
-| [fo-justify-1](../cases/argument-fo-justify-1.md#binarykits) | 22.1% IoU | x=220,y=80,z=1 |
-| [fo-justify-2](../cases/argument-fo-justify-2.md#binarykits) | 27.4% IoU | x=220,y=80,z=2 |
-| [ft-baseline](../cases/argument-ft-baseline.md#binarykits) | 32.5% IoU | x=80,y=100 |
-| [layout-LH](../cases/argument-layout-LH.md#binarykits) | 27.2% IoU | 30,20 |
-| [layout-LS](../cases/argument-layout-LS.md#binarykits) | 14.6% IoU | 20 |
-| [layout-LT](../cases/argument-layout-LT.md#binarykits) | 27.2% IoU | 20 |
-| [layout-PO](../cases/argument-layout-PO.md#binarykits) | 27.2% IoU | I |
-| [layout-LR](../cases/argument-layout-LR.md#binarykits) | 27.2% IoU | Y |
-| [layout-FW](../cases/argument-layout-FW.md#binarykits) | 29.9% IoU | R |
-| [field-reverse](../cases/argument-field-reverse.md#binarykits) | 93.4% IoU | reverse current field |
+| Compare images | Result | Difference | Arguments |
+| --- | --- | --- | --- |
+| [fo-justify-0](../cases/argument-fo-justify-0.md#binarykits) | 27.4% IoU | [![binarykits difference](../../previews/argument-fo-justify-0-binarykits-diff.png)](../../images/argument-fo-justify-0-binarykits-diff.png) | x=220,y=80,z=0 |
+| [fo-justify-1](../cases/argument-fo-justify-1.md#binarykits) | 22.1% IoU | [![binarykits difference](../../previews/argument-fo-justify-1-binarykits-diff.png)](../../images/argument-fo-justify-1-binarykits-diff.png) | x=220,y=80,z=1 |
+| [fo-justify-2](../cases/argument-fo-justify-2.md#binarykits) | 27.4% IoU | [![binarykits difference](../../previews/argument-fo-justify-2-binarykits-diff.png)](../../images/argument-fo-justify-2-binarykits-diff.png) | x=220,y=80,z=2 |
+| [ft-baseline](../cases/argument-ft-baseline.md#binarykits) | 32.5% IoU | [![binarykits difference](../../previews/argument-ft-baseline-binarykits-diff.png)](../../images/argument-ft-baseline-binarykits-diff.png) | x=80,y=100 |
+| [layout-LH](../cases/argument-layout-LH.md#binarykits) | 27.2% IoU | [![binarykits difference](../../previews/argument-layout-LH-binarykits-diff.png)](../../images/argument-layout-LH-binarykits-diff.png) | 30,20 |
+| [layout-LS](../cases/argument-layout-LS.md#binarykits) | 14.6% IoU | [![binarykits difference](../../previews/argument-layout-LS-binarykits-diff.png)](../../images/argument-layout-LS-binarykits-diff.png) | 20 |
+| [layout-LT](../cases/argument-layout-LT.md#binarykits) | 27.2% IoU | [![binarykits difference](../../previews/argument-layout-LT-binarykits-diff.png)](../../images/argument-layout-LT-binarykits-diff.png) | 20 |
+| [layout-PO](../cases/argument-layout-PO.md#binarykits) | 27.2% IoU | [![binarykits difference](../../previews/argument-layout-PO-binarykits-diff.png)](../../images/argument-layout-PO-binarykits-diff.png) | I |
+| [layout-LR](../cases/argument-layout-LR.md#binarykits) | 27.2% IoU | [![binarykits difference](../../previews/argument-layout-LR-binarykits-diff.png)](../../images/argument-layout-LR-binarykits-diff.png) | Y |
+| [layout-FW](../cases/argument-layout-FW.md#binarykits) | 29.9% IoU | [![binarykits difference](../../previews/argument-layout-FW-binarykits-diff.png)](../../images/argument-layout-FW-binarykits-diff.png) | R |
+| [field-reverse](../cases/argument-field-reverse.md#binarykits) | 93.4% IoU | [![binarykits difference](../../previews/argument-field-reverse-binarykits-diff.png)](../../images/argument-field-reverse-binarykits-diff.png) | reverse current field |
 
 
 ## shapes
 
-| Compare images | Result | Arguments |
-| --- | --- | --- |
-| [box-thickness-1](../cases/argument-box-thickness-1.md#binarykits) | 100.0% IoU · exact | w=100,h=60,t=1,color=B,round=0 |
-| [box-thickness-4](../cases/argument-box-thickness-4.md#binarykits) | 100.0% IoU · exact | w=100,h=60,t=4,color=B,round=0 |
-| [box-thickness-60](../cases/argument-box-thickness-60.md#binarykits) | 100.0% IoU · exact | w=100,h=60,t=60,color=B,round=0 |
-| [box-round](../cases/argument-box-round.md#binarykits) | 93.8% IoU | round=4 |
-| [box-white](../cases/argument-box-white.md#binarykits) | 100.0% IoU · exact | color=W |
-| [shape-GC-B](../cases/argument-shape-GC-B.md#binarykits) | 65.0% IoU | 80,3,B |
-| [shape-GE-B](../cases/argument-shape-GE-B.md#binarykits) | 50.2% IoU | 120,60,3,B |
-| [shape-GD-R](../cases/argument-shape-GD-R.md#binarykits) | 50.0% IoU | 120,60,3,B,R |
-| [shape-GD-L](../cases/argument-shape-GD-L.md#binarykits) | 50.0% IoU | 120,60,3,B,L |
+| Compare images | Result | Difference | Arguments |
+| --- | --- | --- | --- |
+| [box-thickness-1](../cases/argument-box-thickness-1.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-box-thickness-1-binarykits-diff.png)](../../images/argument-box-thickness-1-binarykits-diff.png) | w=100,h=60,t=1,color=B,round=0 |
+| [box-thickness-4](../cases/argument-box-thickness-4.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-box-thickness-4-binarykits-diff.png)](../../images/argument-box-thickness-4-binarykits-diff.png) | w=100,h=60,t=4,color=B,round=0 |
+| [box-thickness-60](../cases/argument-box-thickness-60.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-box-thickness-60-binarykits-diff.png)](../../images/argument-box-thickness-60-binarykits-diff.png) | w=100,h=60,t=60,color=B,round=0 |
+| [box-round](../cases/argument-box-round.md#binarykits) | 93.8% IoU | [![binarykits difference](../../previews/argument-box-round-binarykits-diff.png)](../../images/argument-box-round-binarykits-diff.png) | round=4 |
+| [box-white](../cases/argument-box-white.md#binarykits) | 100.0% IoU · exact | [![binarykits difference](../../previews/argument-box-white-binarykits-diff.png)](../../images/argument-box-white-binarykits-diff.png) | color=W |
+| [shape-GC-B](../cases/argument-shape-GC-B.md#binarykits) | 65.0% IoU | [![binarykits difference](../../previews/argument-shape-GC-B-binarykits-diff.png)](../../images/argument-shape-GC-B-binarykits-diff.png) | 80,3,B |
+| [shape-GE-B](../cases/argument-shape-GE-B.md#binarykits) | 50.2% IoU | [![binarykits difference](../../previews/argument-shape-GE-B-binarykits-diff.png)](../../images/argument-shape-GE-B-binarykits-diff.png) | 120,60,3,B |
+| [shape-GD-R](../cases/argument-shape-GD-R.md#binarykits) | 50.0% IoU | [![binarykits difference](../../previews/argument-shape-GD-R-binarykits-diff.png)](../../images/argument-shape-GD-R-binarykits-diff.png) | 120,60,3,B,R |
+| [shape-GD-L](../cases/argument-shape-GD-L.md#binarykits) | 50.0% IoU | [![binarykits difference](../../previews/argument-shape-GD-L-binarykits-diff.png)](../../images/argument-shape-GD-L-binarykits-diff.png) | 120,60,3,B,L |
 
 
 ## text
 
-| Compare images | Result | Arguments |
-| --- | --- | --- |
-| [font0-height-16](../cases/argument-font0-height-16.md#binarykits) | 16.6% IoU | font=0,o=N,h=16,w=0 |
-| [font0-height-32](../cases/argument-font0-height-32.md#binarykits) | 27.4% IoU | font=0,o=N,h=32,w=0 |
-| [font0-height-64](../cases/argument-font0-height-64.md#binarykits) | 28.9% IoU | font=0,o=N,h=64,w=0 |
-| [font0-width-16](../cases/argument-font0-width-16.md#binarykits) | 19.7% IoU | font=0,o=N,h=32,w=16 |
-| [font0-width-32](../cases/argument-font0-width-32.md#binarykits) | 27.4% IoU | font=0,o=N,h=32,w=32 |
-| [font0-width-64](../cases/argument-font0-width-64.md#binarykits) | 24.7% IoU | font=0,o=N,h=32,w=64 |
-| [font0-rotation-N](../cases/argument-font0-rotation-N.md#binarykits) | 27.2% IoU | font=0,o=N,h=32,w=0 |
-| [font0-rotation-R](../cases/argument-font0-rotation-R.md#binarykits) | 29.9% IoU | font=0,o=R,h=32,w=0 |
-| [font0-rotation-I](../cases/argument-font0-rotation-I.md#binarykits) | 28.1% IoU | font=0,o=I,h=32,w=0 |
-| [font0-rotation-B](../cases/argument-font0-rotation-B.md#binarykits) | 25.8% IoU | font=0,o=B,h=32,w=0 |
-| [font-A](../cases/argument-font-A.md#binarykits) | 37.6% IoU | font=A,o=N,h=32,w=24 |
-| [font-D](../cases/argument-font-D.md#binarykits) | 39.5% IoU | font=D,o=N,h=32,w=24 |
-| [block-L](../cases/argument-block-L.md#binarykits) | 24.5% IoU | w=220,lines=3,space=2,align=L,indent=0 |
-| [block-C](../cases/argument-block-C.md#binarykits) | 23.4% IoU | w=220,lines=3,space=2,align=C,indent=0 |
-| [block-R](../cases/argument-block-R.md#binarykits) | 23.5% IoU | w=220,lines=3,space=2,align=R,indent=0 |
-| [block-J](../cases/argument-block-J.md#binarykits) | 26.2% IoU | w=220,lines=3,space=2,align=J,indent=0 |
-| [block-indent](../cases/argument-block-indent.md#binarykits) | 24.5% IoU | indent=20 |
-| [block-explicit-break](../cases/argument-block-explicit-break.md#binarykits) | 33.8% IoU | explicit \& break |
-| [field-hex](../cases/argument-field-hex.md#binarykits) | 27.2% IoU | indicator=_, bytes _41_42_43 |
-| [variable-data](../cases/argument-variable-data.md#binarykits) | 27.2% IoU | literal field value |
-| [encoding-0](../cases/argument-encoding-0.md#binarykits) | 21.9% IoU | encoding=0 |
-| [encoding-27](../cases/argument-encoding-27.md#binarykits) | 21.9% IoU | encoding=27 |
-| [encoding-28](../cases/argument-encoding-28.md#binarykits) | 21.9% IoU | encoding=28 |
-| [utf8-accent](../cases/argument-utf8-accent.md#binarykits) | 31.5% IoU | encoding=28; UTF-8 é |
+| Compare images | Result | Difference | Arguments |
+| --- | --- | --- | --- |
+| [font0-height-16](../cases/argument-font0-height-16.md#binarykits) | 16.6% IoU | [![binarykits difference](../../previews/argument-font0-height-16-binarykits-diff.png)](../../images/argument-font0-height-16-binarykits-diff.png) | font=0,o=N,h=16,w=0 |
+| [font0-height-32](../cases/argument-font0-height-32.md#binarykits) | 27.4% IoU | [![binarykits difference](../../previews/argument-font0-height-32-binarykits-diff.png)](../../images/argument-font0-height-32-binarykits-diff.png) | font=0,o=N,h=32,w=0 |
+| [font0-height-64](../cases/argument-font0-height-64.md#binarykits) | 28.9% IoU | [![binarykits difference](../../previews/argument-font0-height-64-binarykits-diff.png)](../../images/argument-font0-height-64-binarykits-diff.png) | font=0,o=N,h=64,w=0 |
+| [font0-width-16](../cases/argument-font0-width-16.md#binarykits) | 19.7% IoU | [![binarykits difference](../../previews/argument-font0-width-16-binarykits-diff.png)](../../images/argument-font0-width-16-binarykits-diff.png) | font=0,o=N,h=32,w=16 |
+| [font0-width-32](../cases/argument-font0-width-32.md#binarykits) | 27.4% IoU | [![binarykits difference](../../previews/argument-font0-width-32-binarykits-diff.png)](../../images/argument-font0-width-32-binarykits-diff.png) | font=0,o=N,h=32,w=32 |
+| [font0-width-64](../cases/argument-font0-width-64.md#binarykits) | 24.7% IoU | [![binarykits difference](../../previews/argument-font0-width-64-binarykits-diff.png)](../../images/argument-font0-width-64-binarykits-diff.png) | font=0,o=N,h=32,w=64 |
+| [font0-rotation-N](../cases/argument-font0-rotation-N.md#binarykits) | 27.2% IoU | [![binarykits difference](../../previews/argument-font0-rotation-N-binarykits-diff.png)](../../images/argument-font0-rotation-N-binarykits-diff.png) | font=0,o=N,h=32,w=0 |
+| [font0-rotation-R](../cases/argument-font0-rotation-R.md#binarykits) | 29.9% IoU | [![binarykits difference](../../previews/argument-font0-rotation-R-binarykits-diff.png)](../../images/argument-font0-rotation-R-binarykits-diff.png) | font=0,o=R,h=32,w=0 |
+| [font0-rotation-I](../cases/argument-font0-rotation-I.md#binarykits) | 28.1% IoU | [![binarykits difference](../../previews/argument-font0-rotation-I-binarykits-diff.png)](../../images/argument-font0-rotation-I-binarykits-diff.png) | font=0,o=I,h=32,w=0 |
+| [font0-rotation-B](../cases/argument-font0-rotation-B.md#binarykits) | 25.8% IoU | [![binarykits difference](../../previews/argument-font0-rotation-B-binarykits-diff.png)](../../images/argument-font0-rotation-B-binarykits-diff.png) | font=0,o=B,h=32,w=0 |
+| [font-A](../cases/argument-font-A.md#binarykits) | 37.6% IoU | [![binarykits difference](../../previews/argument-font-A-binarykits-diff.png)](../../images/argument-font-A-binarykits-diff.png) | font=A,o=N,h=32,w=24 |
+| [font-D](../cases/argument-font-D.md#binarykits) | 39.5% IoU | [![binarykits difference](../../previews/argument-font-D-binarykits-diff.png)](../../images/argument-font-D-binarykits-diff.png) | font=D,o=N,h=32,w=24 |
+| [block-L](../cases/argument-block-L.md#binarykits) | 24.5% IoU | [![binarykits difference](../../previews/argument-block-L-binarykits-diff.png)](../../images/argument-block-L-binarykits-diff.png) | w=220,lines=3,space=2,align=L,indent=0 |
+| [block-C](../cases/argument-block-C.md#binarykits) | 23.4% IoU | [![binarykits difference](../../previews/argument-block-C-binarykits-diff.png)](../../images/argument-block-C-binarykits-diff.png) | w=220,lines=3,space=2,align=C,indent=0 |
+| [block-R](../cases/argument-block-R.md#binarykits) | 23.5% IoU | [![binarykits difference](../../previews/argument-block-R-binarykits-diff.png)](../../images/argument-block-R-binarykits-diff.png) | w=220,lines=3,space=2,align=R,indent=0 |
+| [block-J](../cases/argument-block-J.md#binarykits) | 26.2% IoU | [![binarykits difference](../../previews/argument-block-J-binarykits-diff.png)](../../images/argument-block-J-binarykits-diff.png) | w=220,lines=3,space=2,align=J,indent=0 |
+| [block-indent](../cases/argument-block-indent.md#binarykits) | 24.5% IoU | [![binarykits difference](../../previews/argument-block-indent-binarykits-diff.png)](../../images/argument-block-indent-binarykits-diff.png) | indent=20 |
+| [block-explicit-break](../cases/argument-block-explicit-break.md#binarykits) | 33.8% IoU | [![binarykits difference](../../previews/argument-block-explicit-break-binarykits-diff.png)](../../images/argument-block-explicit-break-binarykits-diff.png) | explicit \& break |
+| [field-hex](../cases/argument-field-hex.md#binarykits) | 27.2% IoU | [![binarykits difference](../../previews/argument-field-hex-binarykits-diff.png)](../../images/argument-field-hex-binarykits-diff.png) | indicator=_, bytes _41_42_43 |
+| [variable-data](../cases/argument-variable-data.md#binarykits) | 27.2% IoU | [![binarykits difference](../../previews/argument-variable-data-binarykits-diff.png)](../../images/argument-variable-data-binarykits-diff.png) | literal field value |
+| [encoding-0](../cases/argument-encoding-0.md#binarykits) | 21.9% IoU | [![binarykits difference](../../previews/argument-encoding-0-binarykits-diff.png)](../../images/argument-encoding-0-binarykits-diff.png) | encoding=0 |
+| [encoding-27](../cases/argument-encoding-27.md#binarykits) | 21.9% IoU | [![binarykits difference](../../previews/argument-encoding-27-binarykits-diff.png)](../../images/argument-encoding-27-binarykits-diff.png) | encoding=27 |
+| [encoding-28](../cases/argument-encoding-28.md#binarykits) | 21.9% IoU | [![binarykits difference](../../previews/argument-encoding-28-binarykits-diff.png)](../../images/argument-encoding-28-binarykits-diff.png) | encoding=28 |
+| [utf8-accent](../cases/argument-utf8-accent.md#binarykits) | 31.5% IoU | [![binarykits difference](../../previews/argument-utf8-accent-binarykits-diff.png)](../../images/argument-utf8-accent-binarykits-diff.png) | encoding=28; UTF-8 é |

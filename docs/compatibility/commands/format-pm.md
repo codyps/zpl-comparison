@@ -37,10 +37,10 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [page-transform-N-N](../../../test-data/render-conformance/cases/transforms/page-transform-N-N.zpl) | valid / printer | Mirror=N, invert=N; asymmetric page landmarks and text |
-| [page-transform-Y-N](../../../test-data/render-conformance/cases/transforms/page-transform-Y-N.zpl) | valid / printer | Mirror=Y, invert=N; asymmetric page landmarks and text |
-| [page-transform-N-I](../../../test-data/render-conformance/cases/transforms/page-transform-N-I.zpl) | valid / printer | Mirror=N, invert=I; asymmetric page landmarks and text |
-| [page-transform-Y-I](../../../test-data/render-conformance/cases/transforms/page-transform-Y-I.zpl) | valid / printer | Mirror=Y, invert=I; asymmetric page landmarks and text |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [page-transform-N-N](../../../test-data/render-conformance/cases/transforms/page-transform-N-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-N-N.md) | valid / printer | Mirror=N, invert=N; asymmetric page landmarks and text |
+| [page-transform-Y-N](../../../test-data/render-conformance/cases/transforms/page-transform-Y-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-Y-N.md) | valid / printer | Mirror=Y, invert=N; asymmetric page landmarks and text |
+| [page-transform-N-I](../../../test-data/render-conformance/cases/transforms/page-transform-N-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-N-I.md) | valid / printer | Mirror=N, invert=I; asymmetric page landmarks and text |
+| [page-transform-Y-I](../../../test-data/render-conformance/cases/transforms/page-transform-Y-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/page-transform-Y-I.md) | valid / printer | Mirror=Y, invert=I; asymmetric page landmarks and text |
 

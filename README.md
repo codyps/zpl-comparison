@@ -5,6 +5,7 @@ Repeatable comparisons of ZPL parsers, generators and renderers, with performanc
 [![Rendering accuracy against printer references](docs/benchmarks/accuracy/accuracy.svg)](docs/benchmarks/accuracy/README.md)
 
 - **[Compare library renders with printer previews](docs/benchmarks/accuracy/comparisons/README.md)**: browse by library or case; see the printer, render and difference together.
+- [Compare feature fixtures](docs/benchmarks/accuracy/comparisons/features/README.md): all eight renderers, printer previews and differences.
 - [Results, plots and tables](docs/benchmarks/README.md)
 - [Which libraries reject invalid ZPL?](docs/benchmarks/invalid/README.md)
 - [Browse support by library, command or feature](docs/compatibility/README.md)

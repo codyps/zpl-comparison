@@ -6,11 +6,11 @@
 
 **^BD** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/maxicode6.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 4612 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![codyps-zpl render](../../images/barcode-maxicode6-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-maxicode6-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | [![codyps-zpl render](../../previews/barcode-maxicode6-codyps-zpl.png)](../../images/barcode-maxicode6-codyps-zpl.png) | [![codyps-zpl difference](../../previews/barcode-maxicode6-codyps-zpl-diff.png)](../../images/barcode-maxicode6-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -29,14 +29,14 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 4612 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | Render failed; no image | Unavailable |
 
 
 Error diagnostic:
 
 ~~~text
 
-thread 'main' (41965915) panicked at src/main.rs:62:14:
+thread 'main' (44606368) panicked at src/main.rs:63:14:
 PNG: "MaxiCode mode 6 is not supported; expected 2, 3, or 4"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -50,7 +50,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 13016 pixels;
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![forge render](../../images/barcode-maxicode6-forge.png) | ![forge difference](../../images/barcode-maxicode6-forge-diff.png) |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | [![forge render](../../previews/barcode-maxicode6-forge.png)](../../images/barcode-maxicode6-forge.png) | [![forge difference](../../previews/barcode-maxicode6-forge-diff.png)](../../images/barcode-maxicode6-forge-diff.png) |
 
 
 ## go
@@ -61,7 +61,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 8432 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![go render](../../images/barcode-maxicode6-go.png) | ![go difference](../../images/barcode-maxicode6-go-diff.png) |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | [![go render](../../previews/barcode-maxicode6-go.png)](../../images/barcode-maxicode6-go.png) | [![go difference](../../previews/barcode-maxicode6-go-diff.png)](../../images/barcode-maxicode6-go-diff.png) |
 
 
 ## ffi
@@ -72,7 +72,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 8432 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![ffi render](../../images/barcode-maxicode6-ffi.png) | ![ffi difference](../../images/barcode-maxicode6-ffi-diff.png) |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | [![ffi render](../../previews/barcode-maxicode6-ffi.png)](../../images/barcode-maxicode6-ffi.png) | [![ffi difference](../../previews/barcode-maxicode6-ffi-diff.png)](../../images/barcode-maxicode6-ffi-diff.png) |
 
 
 ## binarykits
@@ -83,7 +83,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 4067 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![binarykits render](../../images/barcode-maxicode6-binarykits.png) | ![binarykits difference](../../images/barcode-maxicode6-binarykits-diff.png) |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | [![binarykits render](../../previews/barcode-maxicode6-binarykits.png)](../../images/barcode-maxicode6-binarykits.png) | [![binarykits difference](../../previews/barcode-maxicode6-binarykits-diff.png)](../../images/barcode-maxicode6-binarykits-diff.png) |
 
 
 ## zplr
@@ -94,12 +94,12 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 2652 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![zplr render](../../images/barcode-maxicode6-zplr.png) | ![zplr difference](../../images/barcode-maxicode6-zplr-diff.png) |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | [![zplr render](../../previews/barcode-maxicode6-zplr.png)](../../images/barcode-maxicode6-zplr.png) | [![zplr difference](../../previews/barcode-maxicode6-zplr-diff.png)](../../images/barcode-maxicode6-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 18.1% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 18.1% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -107,5 +107,5 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 9329 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/maxicode6.png) | ![labelary render](../../images/barcode-maxicode6-labelary.png) | ![labelary difference](../../images/barcode-maxicode6-labelary-diff.png) |
+| [![Printer preview](../../previews/barcode-maxicode6-printer.png)](../../../../../references/barcodes-zd621-v1/maxicode6.png) | [![labelary render](../../previews/barcode-maxicode6-labelary.png)](../../images/barcode-maxicode6-labelary.png) | [![labelary difference](../../previews/barcode-maxicode6-labelary-diff.png)](../../images/barcode-maxicode6-labelary-diff.png) |
 

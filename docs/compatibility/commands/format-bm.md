@@ -43,10 +43,10 @@ Reference parameters: **o, e, h, f, g, e2**. These describe the reference gramma
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-msi_a](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_a.zpl) | valid / printer | Reference symbol variant: msi_a |
-| [symbol-msi_b](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_b.zpl) | valid / printer | Reference symbol variant: msi_b |
-| [symbol-msi_c](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_c.zpl) | valid / printer | Reference symbol variant: msi_c |
-| [symbol-msi_d](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_d.zpl) | valid / printer | Reference symbol variant: msi_d |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-msi_a](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_a.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_a.md) | valid / printer | Reference symbol variant: msi_a |
+| [symbol-msi_b](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_b.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_b.md) | valid / printer | Reference symbol variant: msi_b |
+| [symbol-msi_c](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_c.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_c.md) | valid / printer | Reference symbol variant: msi_c |
+| [symbol-msi_d](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_d.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_d.md) | valid / printer | Reference symbol variant: msi_d |
 

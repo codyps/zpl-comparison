@@ -53,20 +53,20 @@ Reference parameters: **a, b, c, d, e, f**. These describe the reference grammar
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-composite_a](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_a.zpl) | valid / printer | Reference symbol variant: composite_a |
-| [symbol-composite_b](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_b.zpl) | valid / printer | Reference symbol variant: composite_b |
-| [symbol-composite_c](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_c.zpl) | valid / printer | Reference symbol variant: composite_c |
-| [symbol-databar_ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean13.zpl) | valid / printer | Reference symbol variant: databar_ean13 |
-| [symbol-databar_ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean8.zpl) | valid / printer | Reference symbol variant: databar_ean8 |
-| [symbol-databar_expanded](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded.zpl) | valid / printer | Reference symbol variant: databar_expanded |
-| [symbol-databar_expanded_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded_stacked.zpl) | valid / printer | Reference symbol variant: databar_expanded_stacked |
-| [symbol-databar_limited](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_limited.zpl) | valid / printer | Reference symbol variant: databar_limited |
-| [symbol-databar_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_omni.zpl) | valid / printer | Reference symbol variant: databar_omni |
-| [symbol-databar_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked.zpl) | valid / printer | Reference symbol variant: databar_stacked |
-| [symbol-databar_stacked_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked_omni.zpl) | valid / printer | Reference symbol variant: databar_stacked_omni |
-| [symbol-databar_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_truncated.zpl) | valid / printer | Reference symbol variant: databar_truncated |
-| [symbol-databar_upca](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upca.zpl) | valid / printer | Reference symbol variant: databar_upca |
-| [symbol-databar_upce](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upce.zpl) | valid / printer | Reference symbol variant: databar_upce |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-composite_a](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_a.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-composite_a.md) | valid / printer | Reference symbol variant: composite_a |
+| [symbol-composite_b](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_b.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-composite_b.md) | valid / printer | Reference symbol variant: composite_b |
+| [symbol-composite_c](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_c.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-composite_c.md) | valid / printer | Reference symbol variant: composite_c |
+| [symbol-databar_ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean13.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_ean13.md) | valid / printer | Reference symbol variant: databar_ean13 |
+| [symbol-databar_ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_ean8.md) | valid / printer | Reference symbol variant: databar_ean8 |
+| [symbol-databar_expanded](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_expanded.md) | valid / printer | Reference symbol variant: databar_expanded |
+| [symbol-databar_expanded_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded_stacked.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_expanded_stacked.md) | valid / printer | Reference symbol variant: databar_expanded_stacked |
+| [symbol-databar_limited](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_limited.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_limited.md) | valid / printer | Reference symbol variant: databar_limited |
+| [symbol-databar_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_omni.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_omni.md) | valid / printer | Reference symbol variant: databar_omni |
+| [symbol-databar_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_stacked.md) | valid / printer | Reference symbol variant: databar_stacked |
+| [symbol-databar_stacked_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked_omni.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_stacked_omni.md) | valid / printer | Reference symbol variant: databar_stacked_omni |
+| [symbol-databar_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_truncated.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_truncated.md) | valid / printer | Reference symbol variant: databar_truncated |
+| [symbol-databar_upca](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upca.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_upca.md) | valid / printer | Reference symbol variant: databar_upca |
+| [symbol-databar_upce](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upce.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_upce.md) | valid / printer | Reference symbol variant: databar_upce |
 

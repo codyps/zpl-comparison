@@ -41,8 +41,8 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-extension2](../../../test-data/render-conformance/cases/barcode-families/symbol-extension2.zpl) | valid / printer | Reference symbol variant: extension2 |
-| [symbol-extension5](../../../test-data/render-conformance/cases/barcode-families/symbol-extension5.zpl) | valid / printer | Reference symbol variant: extension5 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-extension2](../../../test-data/render-conformance/cases/barcode-families/symbol-extension2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-extension2.md) | valid / printer | Reference symbol variant: extension2 |
+| [symbol-extension5](../../../test-data/render-conformance/cases/barcode-families/symbol-extension5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-extension5.md) | valid / printer | Reference symbol variant: extension5 |
 

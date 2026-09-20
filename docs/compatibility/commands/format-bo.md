@@ -41,8 +41,8 @@ Reference parameters: **a, b, c, d, e, f, g**. These describe the reference gram
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-aztec](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec.zpl) | valid / printer | Reference symbol variant: aztec |
-| [symbol-aztec_rune](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_rune.zpl) | valid / printer | Reference symbol variant: aztec_rune |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-aztec](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec.md) | valid / printer | Reference symbol variant: aztec |
+| [symbol-aztec_rune](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_rune.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec_rune.md) | valid / printer | Reference symbol variant: aztec_rune |
 

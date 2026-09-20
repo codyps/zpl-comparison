@@ -40,7 +40,7 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-code11](../../../test-data/render-conformance/cases/barcode-families/symbol-code11.zpl) | valid / printer | Reference symbol variant: code11 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-code11](../../../test-data/render-conformance/cases/barcode-families/symbol-code11.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code11.md) | valid / printer | Reference symbol variant: code11 |
 

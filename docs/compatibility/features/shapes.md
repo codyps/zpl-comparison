@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found; 1 📦 Framing only | Not measured | 22 error, 24 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found; 1 📦 Framing only | 13/46 exact; mean IoU 49.9%; 22 errors | 22 error, 24 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 21 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 21 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 6 ❔ No evidence found; 15 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 3 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 3 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 15 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 20 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 21 🧩 Handler found | 14/46 exact; mean IoU 61.8%; 0 errors | 46 rendered |
+| [zpl-forge](../libraries/forge.md) | 6 ❔ No evidence found; 15 🧩 Handler found | 11/46 exact; mean IoU 52.7%; 0 errors | 46 rendered |
+| [go-zpl](../libraries/go.md) | 3 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | 13/46 exact; mean IoU 52.1%; 0 errors | 46 rendered |
+| [zpl-rs](../libraries/ffi.md) | 3 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | 13/46 exact; mean IoU 52.1%; 0 errors | 46 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 15 🧩 Handler found | 14/46 exact; mean IoU 76.4%; 0 errors | 46 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 20 🟢 Upstream: supported | 13/46 exact; mean IoU 64.7%; 0 errors | 46 rendered |
 | [zpl-builder](../libraries/builder.md) | 9 ❔ No evidence found; 12 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 6 ❔ No evidence found; 15 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 10 ❔ No evidence found; 11 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 21 ❔ No evidence found | Not measured | 46 rendered |
+| [Labelary](../libraries/labelary.md) | 21 ❔ No evidence found | 14/46 exact; mean IoU 80.2%; 0 errors | 46 rendered |
 
 
 ## Commands involved
@@ -31,56 +31,56 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [box-rounding-0](../../../test-data/render-conformance/cases/shapes/box-rounding-0.zpl) | valid / printer | GB corner rounding 0 of 0..8 |
-| [box-rounding-1](../../../test-data/render-conformance/cases/shapes/box-rounding-1.zpl) | valid / printer | GB corner rounding 1 of 0..8 |
-| [box-rounding-2](../../../test-data/render-conformance/cases/shapes/box-rounding-2.zpl) | valid / printer | GB corner rounding 2 of 0..8 |
-| [box-rounding-3](../../../test-data/render-conformance/cases/shapes/box-rounding-3.zpl) | valid / printer | GB corner rounding 3 of 0..8 |
-| [box-rounding-4](../../../test-data/render-conformance/cases/shapes/box-rounding-4.zpl) | valid / printer | GB corner rounding 4 of 0..8 |
-| [box-rounding-5](../../../test-data/render-conformance/cases/shapes/box-rounding-5.zpl) | valid / printer | GB corner rounding 5 of 0..8 |
-| [box-rounding-6](../../../test-data/render-conformance/cases/shapes/box-rounding-6.zpl) | valid / printer | GB corner rounding 6 of 0..8 |
-| [box-rounding-7](../../../test-data/render-conformance/cases/shapes/box-rounding-7.zpl) | valid / printer | GB corner rounding 7 of 0..8 |
-| [box-rounding-8](../../../test-data/render-conformance/cases/shapes/box-rounding-8.zpl) | valid / printer | GB corner rounding 8 of 0..8 |
-| [box-0-80-1](../../../test-data/render-conformance/cases/shapes/box-0-80-1.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 0,80,1 |
-| [box-80-0-1](../../../test-data/render-conformance/cases/shapes/box-80-0-1.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 80,0,1 |
-| [box-1-1-1](../../../test-data/render-conformance/cases/shapes/box-1-1-1.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 1,1,1 |
-| [box-2-2-1](../../../test-data/render-conformance/cases/shapes/box-2-2-1.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 2,2,1 |
-| [box-31-31-1](../../../test-data/render-conformance/cases/shapes/box-31-31-1.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 31,31,1 |
-| [box-32-32-1](../../../test-data/render-conformance/cases/shapes/box-32-32-1.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 32,32,1 |
-| [box-33-33-1](../../../test-data/render-conformance/cases/shapes/box-33-33-1.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 33,33,1 |
-| [box-100-60-30](../../../test-data/render-conformance/cases/shapes/box-100-60-30.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 100,60,30 |
-| [box-100-60-100](../../../test-data/render-conformance/cases/shapes/box-100-60-100.zpl) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 100,60,100 |
-| [shape-GC-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-B-plain.zpl) | valid / printer | GC B on black backing, odd dimensions  |
-| [shape-GC-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-W-plain.zpl) | valid / printer | GC W on black backing, odd dimensions  |
-| [shape-GE-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-B-plain.zpl) | valid / printer | GE B on black backing, odd dimensions  |
-| [shape-GE-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-W-plain.zpl) | valid / printer | GE W on black backing, odd dimensions  |
-| [shape-GD-B-L](../../../test-data/render-conformance/cases/shapes/shape-GD-B-L.zpl) | valid / printer | GD B on black backing, odd dimensions L |
-| [shape-GD-B-R](../../../test-data/render-conformance/cases/shapes/shape-GD-B-R.zpl) | valid / printer | GD B on black backing, odd dimensions R |
-| [shape-GD-W-L](../../../test-data/render-conformance/cases/shapes/shape-GD-W-L.zpl) | valid / printer | GD W on black backing, odd dimensions L |
-| [shape-GD-W-R](../../../test-data/render-conformance/cases/shapes/shape-GD-W-R.zpl) | valid / printer | GD W on black backing, odd dimensions R |
-| [symbol-graphic-A-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-N.zpl) | valid / printer | GS symbol selector A, orientation N |
-| [symbol-graphic-A-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-R.zpl) | valid / printer | GS symbol selector A, orientation R |
-| [symbol-graphic-A-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-I.zpl) | valid / printer | GS symbol selector A, orientation I |
-| [symbol-graphic-A-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-B.zpl) | valid / printer | GS symbol selector A, orientation B |
-| [symbol-graphic-B-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-N.zpl) | valid / printer | GS symbol selector B, orientation N |
-| [symbol-graphic-B-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-R.zpl) | valid / printer | GS symbol selector B, orientation R |
-| [symbol-graphic-B-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-I.zpl) | valid / printer | GS symbol selector B, orientation I |
-| [symbol-graphic-B-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-B.zpl) | valid / printer | GS symbol selector B, orientation B |
-| [symbol-graphic-C-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-N.zpl) | valid / printer | GS symbol selector C, orientation N |
-| [symbol-graphic-C-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-R.zpl) | valid / printer | GS symbol selector C, orientation R |
-| [symbol-graphic-C-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-I.zpl) | valid / printer | GS symbol selector C, orientation I |
-| [symbol-graphic-C-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-B.zpl) | valid / printer | GS symbol selector C, orientation B |
-| [symbol-graphic-D-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-N.zpl) | valid / printer | GS symbol selector D, orientation N |
-| [symbol-graphic-D-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-R.zpl) | valid / printer | GS symbol selector D, orientation R |
-| [symbol-graphic-D-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-I.zpl) | valid / printer | GS symbol selector D, orientation I |
-| [symbol-graphic-D-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-B.zpl) | valid / printer | GS symbol selector D, orientation B |
-| [symbol-graphic-E-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-N.zpl) | valid / printer | GS symbol selector E, orientation N |
-| [symbol-graphic-E-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-R.zpl) | valid / printer | GS symbol selector E, orientation R |
-| [symbol-graphic-E-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-I.zpl) | valid / printer | GS symbol selector E, orientation I |
-| [symbol-graphic-E-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-B.zpl) | valid / printer | GS symbol selector E, orientation B |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [box-rounding-0](../../../test-data/render-conformance/cases/shapes/box-rounding-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-0.md) | valid / printer | GB corner rounding 0 of 0..8 |
+| [box-rounding-1](../../../test-data/render-conformance/cases/shapes/box-rounding-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-1.md) | valid / printer | GB corner rounding 1 of 0..8 |
+| [box-rounding-2](../../../test-data/render-conformance/cases/shapes/box-rounding-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-2.md) | valid / printer | GB corner rounding 2 of 0..8 |
+| [box-rounding-3](../../../test-data/render-conformance/cases/shapes/box-rounding-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-3.md) | valid / printer | GB corner rounding 3 of 0..8 |
+| [box-rounding-4](../../../test-data/render-conformance/cases/shapes/box-rounding-4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-4.md) | valid / printer | GB corner rounding 4 of 0..8 |
+| [box-rounding-5](../../../test-data/render-conformance/cases/shapes/box-rounding-5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-5.md) | valid / printer | GB corner rounding 5 of 0..8 |
+| [box-rounding-6](../../../test-data/render-conformance/cases/shapes/box-rounding-6.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-6.md) | valid / printer | GB corner rounding 6 of 0..8 |
+| [box-rounding-7](../../../test-data/render-conformance/cases/shapes/box-rounding-7.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-7.md) | valid / printer | GB corner rounding 7 of 0..8 |
+| [box-rounding-8](../../../test-data/render-conformance/cases/shapes/box-rounding-8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-rounding-8.md) | valid / printer | GB corner rounding 8 of 0..8 |
+| [box-0-80-1](../../../test-data/render-conformance/cases/shapes/box-0-80-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-0-80-1.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 0,80,1 |
+| [box-80-0-1](../../../test-data/render-conformance/cases/shapes/box-80-0-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-80-0-1.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 80,0,1 |
+| [box-1-1-1](../../../test-data/render-conformance/cases/shapes/box-1-1-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-1-1-1.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 1,1,1 |
+| [box-2-2-1](../../../test-data/render-conformance/cases/shapes/box-2-2-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-2-2-1.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 2,2,1 |
+| [box-31-31-1](../../../test-data/render-conformance/cases/shapes/box-31-31-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-31-31-1.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 31,31,1 |
+| [box-32-32-1](../../../test-data/render-conformance/cases/shapes/box-32-32-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-32-32-1.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 32,32,1 |
+| [box-33-33-1](../../../test-data/render-conformance/cases/shapes/box-33-33-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-33-33-1.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 33,33,1 |
+| [box-100-60-30](../../../test-data/render-conformance/cases/shapes/box-100-60-30.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-100-60-30.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 100,60,30 |
+| [box-100-60-100](../../../test-data/render-conformance/cases/shapes/box-100-60-100.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/box-100-60-100.md) | boundary / printer | GB degenerate, pixel-size, odd/even or fill boundary: 100,60,100 |
+| [shape-GC-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-B-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GC-B-plain.md) | valid / printer | GC B on black backing, odd dimensions  |
+| [shape-GC-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GC-W-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GC-W-plain.md) | valid / printer | GC W on black backing, odd dimensions  |
+| [shape-GE-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-B-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GE-B-plain.md) | valid / printer | GE B on black backing, odd dimensions  |
+| [shape-GE-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-W-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GE-W-plain.md) | valid / printer | GE W on black backing, odd dimensions  |
+| [shape-GD-B-L](../../../test-data/render-conformance/cases/shapes/shape-GD-B-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-B-L.md) | valid / printer | GD B on black backing, odd dimensions L |
+| [shape-GD-B-R](../../../test-data/render-conformance/cases/shapes/shape-GD-B-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-B-R.md) | valid / printer | GD B on black backing, odd dimensions R |
+| [shape-GD-W-L](../../../test-data/render-conformance/cases/shapes/shape-GD-W-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-W-L.md) | valid / printer | GD W on black backing, odd dimensions L |
+| [shape-GD-W-R](../../../test-data/render-conformance/cases/shapes/shape-GD-W-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-W-R.md) | valid / printer | GD W on black backing, odd dimensions R |
+| [symbol-graphic-A-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-N.md) | valid / printer | GS symbol selector A, orientation N |
+| [symbol-graphic-A-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-R.md) | valid / printer | GS symbol selector A, orientation R |
+| [symbol-graphic-A-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-I.md) | valid / printer | GS symbol selector A, orientation I |
+| [symbol-graphic-A-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-B.md) | valid / printer | GS symbol selector A, orientation B |
+| [symbol-graphic-B-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-N.md) | valid / printer | GS symbol selector B, orientation N |
+| [symbol-graphic-B-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-R.md) | valid / printer | GS symbol selector B, orientation R |
+| [symbol-graphic-B-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-I.md) | valid / printer | GS symbol selector B, orientation I |
+| [symbol-graphic-B-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-B.md) | valid / printer | GS symbol selector B, orientation B |
+| [symbol-graphic-C-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-N.md) | valid / printer | GS symbol selector C, orientation N |
+| [symbol-graphic-C-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-R.md) | valid / printer | GS symbol selector C, orientation R |
+| [symbol-graphic-C-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-I.md) | valid / printer | GS symbol selector C, orientation I |
+| [symbol-graphic-C-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-B.md) | valid / printer | GS symbol selector C, orientation B |
+| [symbol-graphic-D-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-N.md) | valid / printer | GS symbol selector D, orientation N |
+| [symbol-graphic-D-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-R.md) | valid / printer | GS symbol selector D, orientation R |
+| [symbol-graphic-D-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-I.md) | valid / printer | GS symbol selector D, orientation I |
+| [symbol-graphic-D-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-B.md) | valid / printer | GS symbol selector D, orientation B |
+| [symbol-graphic-E-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-N.md) | valid / printer | GS symbol selector E, orientation N |
+| [symbol-graphic-E-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-R.md) | valid / printer | GS symbol selector E, orientation R |
+| [symbol-graphic-E-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-I.md) | valid / printer | GS symbol selector E, orientation I |
+| [symbol-graphic-E-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-B.md) | valid / printer | GS symbol selector E, orientation B |
 

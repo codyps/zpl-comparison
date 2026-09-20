@@ -44,32 +44,32 @@ Reference parameters: **o, h, f, g, e, m**. These describe the reference grammar
 
 ## Related features
 
-[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [State](../features/state.md) · [Torture](../features/torture.md)
+[Barcode arguments](../features/barcode-arguments.md) · [Barcode families](../features/barcode-families.md) · [Baseline barcode arguments](../features/baseline-barcode-arguments.md) · [Compact barcodes](../features/compact-barcodes.md) · [State](../features/state.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-code128-text-NN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-NN.zpl) | valid / printer | ^BC h=60,interpretation=N,above=N |
-| [probe-code128-text-YN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YN.zpl) | valid / printer | ^BC h=60,interpretation=Y,above=N |
-| [probe-code128-text-YY](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YY.zpl) | valid / printer | ^BC h=60,interpretation=Y,above=Y |
-| [probe-code128-rotation-R](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-R.zpl) | valid / printer | ^BC o=R,h=60 |
-| [probe-code128-rotation-I](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-I.zpl) | valid / printer | ^BC o=I,h=60 |
-| [probe-code128-rotation-B](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-B.zpl) | valid / printer | ^BC o=B,h=60 |
-| [probe-code128-mode-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-N.zpl) | valid / printer | ^BC mode=N |
-| [probe-code128-mode-A](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-A.zpl) | valid / printer | ^BC mode=A |
-| [symbol-code128](../../../test-data/render-conformance/cases/barcode-families/symbol-code128.zpl) | valid / printer | Reference symbol variant: code128 |
-| [code128-mode-N](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-N.zpl) | valid / printer | Code128 mode N; numeric payload |
-| [code128-mode-U](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-U.zpl) | valid / printer | Code128 mode U; numeric payload |
-| [code128-mode-A](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-A.zpl) | valid / printer | Code128 mode A; numeric payload |
-| [code128-mode-D](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-D.zpl) | valid / printer | Code128 mode D; numeric payload |
-| [code128-subset-b](../../../test-data/render-conformance/cases/barcode-arguments/code128-subset-b.zpl) | valid / printer | Code128 explicit invocation: subset-b |
-| [code128-subset-c](../../../test-data/render-conformance/cases/barcode-arguments/code128-subset-c.zpl) | valid / printer | Code128 explicit invocation: subset-c |
-| [code128-switch](../../../test-data/render-conformance/cases/barcode-arguments/code128-switch.zpl) | valid / printer | Code128 explicit invocation: switch |
-| [code128-fnc1](../../../test-data/render-conformance/cases/barcode-arguments/code128-fnc1.zpl) | valid / printer | Code128 explicit invocation: fnc1 |
-| [readable-BC-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BC-N.zpl) | valid / printer | Readable text above rotated BC; measure caption position as well as bars |
-| [readable-BC-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BC-R.zpl) | valid / printer | Readable text above rotated BC; measure caption position as well as bars |
-| [readable-BC-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BC-I.zpl) | valid / printer | Readable text above rotated BC; measure caption position as well as bars |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-code128-text-NN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-NN.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-NN.md) | valid / printer | ^BC h=60,interpretation=N,above=N |
+| [probe-code128-text-YN](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YN.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-YN.md) | valid / printer | ^BC h=60,interpretation=Y,above=N |
+| [probe-code128-text-YY](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-text-YY.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-text-YY.md) | valid / printer | ^BC h=60,interpretation=Y,above=Y |
+| [probe-code128-rotation-R](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-R.md) | valid / printer | ^BC o=R,h=60 |
+| [probe-code128-rotation-I](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-I.md) | valid / printer | ^BC o=I,h=60 |
+| [probe-code128-rotation-B](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-rotation-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-rotation-B.md) | valid / printer | ^BC o=B,h=60 |
+| [probe-code128-mode-N](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-mode-N.md) | valid / printer | ^BC mode=N |
+| [probe-code128-mode-A](../../../test-data/render-conformance/cases/baseline-barcode-arguments/probe-code128-mode-A.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-code128-mode-A.md) | valid / printer | ^BC mode=A |
+| [symbol-code128](../../../test-data/render-conformance/cases/barcode-families/symbol-code128.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code128.md) | valid / printer | Reference symbol variant: code128 |
+| [code128-mode-N](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-mode-N.md) | valid / printer | Code128 mode N; numeric payload |
+| [code128-mode-U](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-U.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-mode-U.md) | valid / printer | Code128 mode U; numeric payload |
+| [code128-mode-A](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-A.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-mode-A.md) | valid / printer | Code128 mode A; numeric payload |
+| [code128-mode-D](../../../test-data/render-conformance/cases/barcode-arguments/code128-mode-D.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-mode-D.md) | valid / printer | Code128 mode D; numeric payload |
+| [code128-subset-b](../../../test-data/render-conformance/cases/barcode-arguments/code128-subset-b.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-subset-b.md) | valid / printer | Code128 explicit invocation: subset-b |
+| [code128-subset-c](../../../test-data/render-conformance/cases/barcode-arguments/code128-subset-c.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-subset-c.md) | valid / printer | Code128 explicit invocation: subset-c |
+| [code128-switch](../../../test-data/render-conformance/cases/barcode-arguments/code128-switch.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-switch.md) | valid / printer | Code128 explicit invocation: switch |
+| [code128-fnc1](../../../test-data/render-conformance/cases/barcode-arguments/code128-fnc1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/code128-fnc1.md) | valid / printer | Code128 explicit invocation: fnc1 |
+| [readable-BC-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-BC-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BC-N.md) | valid / printer | Readable text above rotated BC; measure caption position as well as bars |
+| [readable-BC-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-BC-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BC-R.md) | valid / printer | Readable text above rotated BC; measure caption position as well as bars |
+| [readable-BC-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-BC-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-BC-I.md) | valid / printer | Readable text above rotated BC; measure caption position as well as bars |
 
-Showing 20 of 24 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 26 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

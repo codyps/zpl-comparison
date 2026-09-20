@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 15 🧩 Handler found | Not measured | 4 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 15 🧩 Handler found | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 15 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 15 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 10 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 12 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 12 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 5 ❔ No evidence found; 10 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 2 🟡 Upstream: partial; 13 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 15 🧩 Handler found | 3/4 exact; mean IoU 75.0%; 1 errors | 1 error, 3 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 10 🧩 Handler found | 1/4 exact; mean IoU 36.9%; 0 errors | 1 blank, 3 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 12 🧩 Handler found; 1 ⏭️ Ignored / stored only | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 12 🧩 Handler found; 1 ⏭️ Ignored / stored only | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 5 ❔ No evidence found; 10 🧩 Handler found | 3/4 exact; mean IoU 75.0%; 0 errors | 4 rendered |
+| [ZPLr](../libraries/zplr.md) | 2 🟡 Upstream: partial; 13 🟢 Upstream: supported | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [zpl-builder](../libraries/builder.md) | 9 ❔ No evidence found; 6 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 3 ❔ No evidence found; 12 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 8 ❔ No evidence found; 7 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 15 ❔ No evidence found | Not measured | 4 rendered |
+| [Labelary](../libraries/labelary.md) | 15 ❔ No evidence found | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 
 
 ## Commands involved
@@ -31,14 +31,14 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-graphic-hex](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-hex.zpl) | valid / printer | ^GF A,8,8,1; raw hex |
-| [probe-graphic-binary](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-binary.zpl) | valid / printer | ^GF B,8,8,1; ASCII binary bytes |
-| [probe-graphic-B64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-B64.zpl) | valid / printer | ^GF A,8,8,1; B64, CRC16 |
-| [probe-graphic-Z64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-Z64.zpl) | valid / printer | ^GF A,8,8,1; Z64, CRC16 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-graphic-hex](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-hex.md) | valid / printer | ^GF A,8,8,1; raw hex |
+| [probe-graphic-binary](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-binary.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-binary.md) | valid / printer | ^GF B,8,8,1; ASCII binary bytes |
+| [probe-graphic-B64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-B64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-B64.md) | valid / printer | ^GF A,8,8,1; B64, CRC16 |
+| [probe-graphic-Z64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-Z64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-Z64.md) | valid / printer | ^GF A,8,8,1; Z64, CRC16 |
 

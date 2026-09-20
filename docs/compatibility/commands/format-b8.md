@@ -40,7 +40,7 @@ Reference parameters: **o, h, f, g**. These describe the reference grammar, not 
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-ean8.zpl) | valid / printer | Reference symbol variant: ean8 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-ean8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-ean8.md) | valid / printer | Reference symbol variant: ean8 |
 

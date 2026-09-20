@@ -36,32 +36,32 @@ Reference parameters: **i**. These describe the reference grammar, not a promise
 
 ## Related features
 
-[Baseline text](../features/baseline-text.md) · [Encoding](../features/encoding.md) · [Lexical](../features/lexical.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [State](../features/state.md)
+[Baseline text](../features/baseline-text.md) · [Compact barcodes](../features/compact-barcodes.md) · [Encoding](../features/encoding.md) · [Lexical](../features/lexical.md) · [Metamorphic](../features/metamorphic.md) · [Negative](../features/negative.md) · [State](../features/state.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-field-hex](../../../test-data/render-conformance/cases/baseline-text/probe-field-hex.zpl) | valid / printer | ^FH indicator=_, bytes _41_42_43 |
-| [unicode-latin](../../../test-data/render-conformance/cases/encoding/unicode-latin.zpl) | valid / font-dependent | UTF-8 latin; resident glyph availability and shaping must be recorded |
-| [unicode-combining](../../../test-data/render-conformance/cases/encoding/unicode-combining.zpl) | valid / font-dependent | UTF-8 combining; resident glyph availability and shaping must be recorded |
-| [unicode-greek](../../../test-data/render-conformance/cases/encoding/unicode-greek.zpl) | valid / font-dependent | UTF-8 greek; resident glyph availability and shaping must be recorded |
-| [unicode-cyrillic](../../../test-data/render-conformance/cases/encoding/unicode-cyrillic.zpl) | valid / font-dependent | UTF-8 cyrillic; resident glyph availability and shaping must be recorded |
-| [unicode-hebrew](../../../test-data/render-conformance/cases/encoding/unicode-hebrew.zpl) | valid / font-dependent | UTF-8 hebrew; resident glyph availability and shaping must be recorded |
-| [unicode-arabic](../../../test-data/render-conformance/cases/encoding/unicode-arabic.zpl) | valid / font-dependent | UTF-8 arabic; resident glyph availability and shaping must be recorded |
-| [unicode-cjk](../../../test-data/render-conformance/cases/encoding/unicode-cjk.zpl) | valid / font-dependent | UTF-8 cjk; resident glyph availability and shaping must be recorded |
-| [unicode-supplementary](../../../test-data/render-conformance/cases/encoding/unicode-supplementary.zpl) | valid / font-dependent | UTF-8 supplementary; resident glyph availability and shaping must be recorded |
-| [unicode-controls](../../../test-data/render-conformance/cases/encoding/unicode-controls.zpl) | valid / font-dependent | UTF-8 controls; resident glyph availability and shaping must be recorded |
-| [unicode-missing](../../../test-data/render-conformance/cases/encoding/unicode-missing.zpl) | valid / font-dependent | UTF-8 missing; resident glyph availability and shaping must be recorded |
-| [encoding-0](../../../test-data/render-conformance/cases/encoding/encoding-0.zpl) | valid / font-dependent | CI 0: ASCII repertoire in the requested byte encoding |
-| [encoding-13](../../../test-data/render-conformance/cases/encoding/encoding-13.zpl) | valid / font-dependent | CI 13: ASCII repertoire in the requested byte encoding |
-| [encoding-27](../../../test-data/render-conformance/cases/encoding/encoding-27.zpl) | valid / font-dependent | CI 27: ASCII repertoire in the requested byte encoding |
-| [encoding-28](../../../test-data/render-conformance/cases/encoding/encoding-28.zpl) | valid / font-dependent | CI 28: ASCII repertoire in the requested byte encoding |
-| [encoding-29](../../../test-data/render-conformance/cases/encoding/encoding-29.zpl) | valid / font-dependent | CI 29: ASCII repertoire in the requested byte encoding |
-| [encoding-30](../../../test-data/render-conformance/cases/encoding/encoding-30.zpl) | valid / font-dependent | CI 30: ASCII repertoire in the requested byte encoding |
-| [encoding-31](../../../test-data/render-conformance/cases/encoding/encoding-31.zpl) | valid / font-dependent | CI 31: ASCII repertoire in the requested byte encoding |
-| [encoding-33](../../../test-data/render-conformance/cases/encoding/encoding-33.zpl) | valid / font-dependent | CI 33: ASCII repertoire in the requested byte encoding |
-| [encoding-34](../../../test-data/render-conformance/cases/encoding/encoding-34.zpl) | valid / font-dependent | CI 34: ASCII repertoire in the requested byte encoding |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-field-hex](../../../test-data/render-conformance/cases/baseline-text/probe-field-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-field-hex.md) | valid / printer | ^FH indicator=_, bytes _41_42_43 |
+| [unicode-latin](../../../test-data/render-conformance/cases/encoding/unicode-latin.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-latin.md) | valid / font-dependent | UTF-8 latin; resident glyph availability and shaping must be recorded |
+| [unicode-combining](../../../test-data/render-conformance/cases/encoding/unicode-combining.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-combining.md) | valid / font-dependent | UTF-8 combining; resident glyph availability and shaping must be recorded |
+| [unicode-greek](../../../test-data/render-conformance/cases/encoding/unicode-greek.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-greek.md) | valid / font-dependent | UTF-8 greek; resident glyph availability and shaping must be recorded |
+| [unicode-cyrillic](../../../test-data/render-conformance/cases/encoding/unicode-cyrillic.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-cyrillic.md) | valid / font-dependent | UTF-8 cyrillic; resident glyph availability and shaping must be recorded |
+| [unicode-hebrew](../../../test-data/render-conformance/cases/encoding/unicode-hebrew.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-hebrew.md) | valid / font-dependent | UTF-8 hebrew; resident glyph availability and shaping must be recorded |
+| [unicode-arabic](../../../test-data/render-conformance/cases/encoding/unicode-arabic.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-arabic.md) | valid / font-dependent | UTF-8 arabic; resident glyph availability and shaping must be recorded |
+| [unicode-cjk](../../../test-data/render-conformance/cases/encoding/unicode-cjk.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-cjk.md) | valid / font-dependent | UTF-8 cjk; resident glyph availability and shaping must be recorded |
+| [unicode-supplementary](../../../test-data/render-conformance/cases/encoding/unicode-supplementary.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-supplementary.md) | valid / font-dependent | UTF-8 supplementary; resident glyph availability and shaping must be recorded |
+| [unicode-controls](../../../test-data/render-conformance/cases/encoding/unicode-controls.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-controls.md) | valid / font-dependent | UTF-8 controls; resident glyph availability and shaping must be recorded |
+| [unicode-missing](../../../test-data/render-conformance/cases/encoding/unicode-missing.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/unicode-missing.md) | valid / font-dependent | UTF-8 missing; resident glyph availability and shaping must be recorded |
+| [encoding-0](../../../test-data/render-conformance/cases/encoding/encoding-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-0.md) | valid / font-dependent | CI 0: ASCII repertoire in the requested byte encoding |
+| [encoding-13](../../../test-data/render-conformance/cases/encoding/encoding-13.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-13.md) | valid / font-dependent | CI 13: ASCII repertoire in the requested byte encoding |
+| [encoding-27](../../../test-data/render-conformance/cases/encoding/encoding-27.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-27.md) | valid / font-dependent | CI 27: ASCII repertoire in the requested byte encoding |
+| [encoding-28](../../../test-data/render-conformance/cases/encoding/encoding-28.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-28.md) | valid / font-dependent | CI 28: ASCII repertoire in the requested byte encoding |
+| [encoding-29](../../../test-data/render-conformance/cases/encoding/encoding-29.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-29.md) | valid / font-dependent | CI 29: ASCII repertoire in the requested byte encoding |
+| [encoding-30](../../../test-data/render-conformance/cases/encoding/encoding-30.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-30.md) | valid / font-dependent | CI 30: ASCII repertoire in the requested byte encoding |
+| [encoding-31](../../../test-data/render-conformance/cases/encoding/encoding-31.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-31.md) | valid / font-dependent | CI 31: ASCII repertoire in the requested byte encoding |
+| [encoding-33](../../../test-data/render-conformance/cases/encoding/encoding-33.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-33.md) | valid / font-dependent | CI 33: ASCII repertoire in the requested byte encoding |
+| [encoding-34](../../../test-data/render-conformance/cases/encoding/encoding-34.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/encoding-34.md) | valid / font-dependent | CI 34: ASCII repertoire in the requested byte encoding |
 
-Showing 20 of 28 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 30 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

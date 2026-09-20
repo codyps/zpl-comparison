@@ -2,13 +2,17 @@
 
 # Library renders versus printer previews
 
-133 captured cases × 8 renderers = 1064 recorded attempts. Measured 2026-09-19T03:33:57Z.
+133 captured cases × 8 renderers = 1064 recorded attempts. Measured 2026-09-20T04:43:33Z.
 
 Choose a library or case to see the **printer preview, library render, and difference image together**. Render errors include diagnostics; blank outputs remain visible.
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
 [Accuracy scores and methodology](../README.md)
+
+[Feature fixtures: printer previews, all library renders and differences](features/README.md)
+
+[External examples: printer previews, library renders and differences](external/README.md)
 
 ## By library
 
@@ -21,7 +25,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Images retain
 | [zpl-rs (Rust → Go)](libraries/ffi.md) | 133 | 0 |
 | [BinaryKits.Zpl (.NET)](libraries/binarykits.md) | 133 | 0 |
 | [ZPLr (TypeScript)](libraries/zplr.md) | 133 | 0 |
-| [Labelary (captured service)](libraries/labelary.md) | 133 | 0 |
+| [Labelary (SaaS)](libraries/labelary.md) | 133 | 0 |
 
 
 ## barcode-arguments

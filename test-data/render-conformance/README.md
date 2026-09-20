@@ -1,6 +1,6 @@
 # ZPL rendering conformance corpus
 
-**507 standalone ZPL files**, exercising **68 content-command families**: 493 valid/boundary probes and 14 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
+**531 standalone ZPL files**, exercising **68 content-command families**: 517 valid/boundary probes and 14 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
 
 [Complete command coverage and case catalog](COVERAGE.md) · [Manifest](manifest.json) · [Generator](generate.py) · [Existing printer accuracy report](../../docs/benchmarks/accuracy/README.md)
 
@@ -32,7 +32,7 @@ No page prints “PASS” as an oracle. A renderer producing an image has not ne
 | State and scale | Font/barcode defaults versus overrides, field-local FH/FR/FE, inline numbered fields, initial SN/SF values, 1/48/400 fields, combined labels |
 | Negative inputs | Bad enums, numeric ranges, encodings, hex escapes, raster count/stride, base64/CRC and symbol payloads; separate behavior observations, not valid-label fidelity scores |
 
-The manifest records exact file bytes (SHA-256), purpose, validity, font dependence, dimensions, commands and Zebra guide pages. Most new labels are 832×1218 dots; imported isolated probes retain their original 832×300 canvas and barcode samples retain 812×1218. Dimensions are per-case, not inferred from filenames. Binary fixtures really contain bytes: do not rewrite them through a text editor or normalize line endings.
+The manifest records exact file bytes (SHA-256), purpose, validity, font dependence, dimensions, commands and Zebra guide pages. The 24 compact probes are 640×320 dots, covering font baselines, wrapping, geometry, barcode state and compositing; see [their source inspiration](INSPIRATION.md). Most other labels are 832×1218 dots; imported isolated probes retain their original 832×300 canvas and barcode samples retain 812×1218. Dimensions are per-case, not inferred from filenames. Binary fixtures really contain bytes: do not rewrite them through a text editor or normalize line endings.
 
 ## Reproduce and run
 
@@ -53,23 +53,23 @@ benchmarks/_work/venv/bin/python benchmarks/conformance.py --only codyps-zpl,zpl
 
 Use repeated `--group` options to select families, `--timeout` to set a per-case process timeout, and `--output` to retain another report. Default output is the ignored `benchmarks/_work/conformance/` directory: Markdown, JSON and PNGs. Every case gets a fresh process. Errors remain visible; crashes/timeouts fail the run after saving the report. Unsupported features and visual differences are observations, not an assertion that all current libraries must implement the entire corpus. Negative cases are opt-in and kept in a separate table.
 
-GitHub Actions verifies regeneration and runs codyps/zpl and the captured Labelary renderer against the corpus, including negative cases. The run's conformance report is uploaded with the benchmark artifact. It does not use a live printer or pretend generated images are printer references.
+GitHub Actions verifies regeneration and runs all eight renderers against the corpus, including negative cases. The run's conformance report is uploaded with the benchmark artifact. It does not use a live printer or pretend generated images are printer references.
 
 ## Actual printer references
 
-The new corpus has **not** been captured and certified against a printer. Prior small-suite results are not scores for these new labels. To capture explicitly, start with the four combined pages:
+The checked-in capture provides **511 hash-matched printer previews** with a stable repeated control. Six eligible previews are unavailable; 14 invalid inputs are excluded from printer submission. [Browse every render and available difference](../../docs/benchmarks/accuracy/comparisons/features/README.md). To create a separate capture, start with the four combined pages:
 
 ```sh
 benchmarks/_work/venv/bin/python benchmarks/accuracy/capture.py \
   --host http://YOUR-203DPI-PRINTER/ \
   --corpus test-data/render-conformance --group torture \
-  --output benchmarks/accuracy/conformance-reference
+  --output benchmarks/_work/new-printer-reference
 benchmarks/_work/venv/bin/python benchmarks/conformance.py \
   --only all --group torture \
-  --reference benchmarks/accuracy/conformance-reference
+  --reference benchmarks/_work/new-printer-reference
 ```
 
-Omit `--group` to capture every eligible case. Capture skips negative inputs, verifies fixture hashes and command scope, resets rendering defaults through a separate preview before each case, and repeats the first case at the end. It uses the same temporary `R:TEST1.ZPL` preview object as the existing capture tool, never a physical print request. Reserve that object name and inspect the recorded model/firmware and images. See [capture details](../../benchmarks/accuracy/README.md).
+Omit `--group` to capture every eligible case. Capture skips negative inputs, verifies fixture hashes and command scope, resets rendering defaults within each submitted format, and repeats the first case at the end. It uses the dedicated temporary `R:CMPACC.ZPL` preview object, never a physical print request. Reserve that object name and inspect the recorded model/firmware and images. See [capture details](../../benchmarks/accuracy/README.md).
 
 Comparison uses unchanged source bytes and the existing foreground IoU metric with no registration or resizing. Missing reference cases remain N/A. Blank references are unscored; renderer errors count as zero only when a corresponding nonblank reference exists. References with mismatched hashes or unstable repeated controls are rejected.
 

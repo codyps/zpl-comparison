@@ -41,8 +41,8 @@ Reference parameters: **o, w1, r1, h1, w2, h2**. These describe the reference gr
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-tlc39_linear](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linear.zpl) | valid / printer | Reference symbol variant: tlc39_linear |
-| [symbol-tlc39_linked](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linked.zpl) | valid / printer | Reference symbol variant: tlc39_linked |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-tlc39_linear](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linear.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-tlc39_linear.md) | valid / printer | Reference symbol variant: tlc39_linear |
+| [symbol-tlc39_linked](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linked.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-tlc39_linked.md) | valid / printer | Reference symbol variant: tlc39_linked |
 

@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found | Not measured | 5 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 20 🧩 Handler found | 2/5 exact; mean IoU 82.6%; 0 errors | 5 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 20 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 20 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 15 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 14 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 19 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 20 🧩 Handler found | 2/5 exact; mean IoU 73.9%; 0 errors | 5 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 15 🧩 Handler found | 1/5 exact; mean IoU 42.7%; 0 errors | 5 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | 2/5 exact; mean IoU 77.6%; 0 errors | 5 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 17 🧩 Handler found; 1 ⏭️ Ignored / stored only | 1/5 exact; mean IoU 57.9%; 0 errors | 5 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 14 🧩 Handler found | 2/5 exact; mean IoU 56.5%; 0 errors | 5 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 19 🟢 Upstream: supported | 2/5 exact; mean IoU 67.2%; 0 errors | 5 rendered |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 10 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 15 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 11 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 20 ❔ No evidence found | Not measured | 5 rendered |
+| [Labelary](../libraries/labelary.md) | 20 ❔ No evidence found | 2/5 exact; mean IoU 82.1%; 0 errors | 5 rendered |
 
 
 ## Commands involved
@@ -31,15 +31,15 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [equivalent-text-plain](../../../test-data/render-conformance/cases/metamorphic/equivalent-text-plain.zpl) | valid / printer | Plain ASCII text |
-| [equivalent-text-hex](../../../test-data/render-conformance/cases/metamorphic/equivalent-text-hex.zpl) | valid / printer | Hex-escaped equivalent ASCII text |
-| [equivalent-home-direct](../../../test-data/render-conformance/cases/metamorphic/equivalent-home-direct.zpl) | valid / printer | Direct field origin |
-| [equivalent-home-offset](../../../test-data/render-conformance/cases/metamorphic/equivalent-home-offset.zpl) | valid / printer | LH + FO is equivalent direct translation |
-| [equivalent-comment](../../../test-data/render-conformance/cases/metamorphic/equivalent-comment.zpl) | valid / printer | Comment does not affect pixels |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [equivalent-text-plain](../../../test-data/render-conformance/cases/metamorphic/equivalent-text-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/equivalent-text-plain.md) | valid / printer | Plain ASCII text |
+| [equivalent-text-hex](../../../test-data/render-conformance/cases/metamorphic/equivalent-text-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/equivalent-text-hex.md) | valid / printer | Hex-escaped equivalent ASCII text |
+| [equivalent-home-direct](../../../test-data/render-conformance/cases/metamorphic/equivalent-home-direct.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/equivalent-home-direct.md) | valid / printer | Direct field origin |
+| [equivalent-home-offset](../../../test-data/render-conformance/cases/metamorphic/equivalent-home-offset.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/equivalent-home-offset.md) | valid / printer | LH + FO is equivalent direct translation |
+| [equivalent-comment](../../../test-data/render-conformance/cases/metamorphic/equivalent-comment.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/equivalent-comment.md) | valid / printer | Comment does not affect pixels |
 

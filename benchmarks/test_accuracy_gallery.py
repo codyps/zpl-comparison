@@ -70,15 +70,28 @@ class GalleryTests(unittest.TestCase):
         page = pages[Path("comparisons/cases/case.md")]
         self.assertIn("Unsupported command", page)
         self.assertIn("blank output", page)
-        self.assertIn("![forge render](../../images/case-forge.png)", page)
+        self.assertIn("![forge render](../../previews/case-forge.png)", page)
+        self.assertIn("](../../images/case-forge.png)", page)
         self.assertNotIn("![codyps-zpl render]", page)
+        library = pages[Path("comparisons/libraries/forge.md")]
+        self.assertIn(
+            "![forge difference](../../previews/case-forge-diff.png)", library
+        )
+        self.assertIn("](../../images/case-forge-diff.png)", library)
+        self.assertNotIn(
+            "![codyps-zpl difference]",
+            pages[Path("comparisons/libraries/codyps-zpl.md")],
+        )
         self.assertEqual(len(pages), len(gallery.LIBRARIES) + 2)
 
     def test_changed_labelary_snapshot_requires_new_measurement(self):
         snapshot = self.root / "docs/benchmarks/labelary/captures.json"
         snapshot.parent.mkdir(parents=True)
         snapshot.write_text("new service snapshot")
-        data = {**self.data, "adapters": {"labelary": [{"name": "captures.json", "sha256": "old"}]}}
+        data = {
+            **self.data,
+            "adapters": {"labelary": [{"name": "captures.json", "sha256": "old"}]},
+        }
         with self.assertRaisesRegex(ValueError, "Labelary snapshot changed"):
             gallery.validate(data, self.dest)
 

@@ -40,7 +40,7 @@ Reference parameters: **o, e, h, f, g, k, l**. These describe the reference gram
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-codabar](../../../test-data/render-conformance/cases/barcode-families/symbol-codabar.zpl) | valid / printer | Reference symbol variant: codabar |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-codabar](../../../test-data/render-conformance/cases/barcode-families/symbol-codabar.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codabar.md) | valid / printer | Reference symbol variant: codabar |
 

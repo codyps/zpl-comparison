@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 45 🧩 Handler found | Not measured | 60 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 45 🧩 Handler found | 0/59 exact; mean IoU 30.8%; 0 errors | 60 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 45 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 17 ❔ No evidence found; 28 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 15 ❔ No evidence found; 30 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 21 ❔ No evidence found; 24 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 44 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 17 ❔ No evidence found; 28 🧩 Handler found | 0/59 exact; mean IoU 10.7%; 4 errors | 4 error, 56 rendered |
+| [zpl-forge](../libraries/forge.md) | 15 ❔ No evidence found; 30 🧩 Handler found | 0/59 exact; mean IoU 16.1%; 4 errors | 4 error, 56 rendered |
+| [go-zpl](../libraries/go.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | 0/59 exact; mean IoU 8.7%; 0 errors | 60 rendered |
+| [zpl-rs](../libraries/ffi.md) | 24 ❔ No evidence found; 19 🧩 Handler found; 2 ⏭️ Ignored / stored only | 0/59 exact; mean IoU 8.7%; 0 errors | 60 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 21 ❔ No evidence found; 24 🧩 Handler found | 0/59 exact; mean IoU 12.6%; 0 errors | 60 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 44 🟢 Upstream: supported | 0/59 exact; mean IoU 30.8%; 0 errors | 1 blank, 59 rendered |
 | [zpl-builder](../libraries/builder.md) | 10 ❔ No evidence found; 35 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 24 ❔ No evidence found; 21 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 19 ❔ No evidence found; 26 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 45 ❔ No evidence found | Not measured | 1 blank, 59 rendered |
+| [Labelary](../libraries/labelary.md) | 45 ❔ No evidence found | 0/59 exact; mean IoU 28.5%; 0 errors | 1 blank, 59 rendered |
 
 
 ## Commands involved
@@ -31,70 +31,70 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-aztec](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec.zpl) | valid / printer | Reference symbol variant: aztec |
-| [symbol-aztec_alias](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_alias.zpl) | valid / printer | Reference symbol variant: aztec_alias |
-| [symbol-aztec_rune](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_rune.zpl) | valid / printer | Reference symbol variant: aztec_rune |
-| [symbol-codabar](../../../test-data/render-conformance/cases/barcode-families/symbol-codabar.zpl) | valid / printer | Reference symbol variant: codabar |
-| [symbol-codablock_a](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_a.zpl) | valid / printer | Reference symbol variant: codablock_a |
-| [symbol-codablock_e](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_e.zpl) | valid / printer | Reference symbol variant: codablock_e |
-| [symbol-codablock_f](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_f.zpl) | valid / printer | Reference symbol variant: codablock_f |
-| [symbol-code11](../../../test-data/render-conformance/cases/barcode-families/symbol-code11.zpl) | valid / printer | Reference symbol variant: code11 |
-| [symbol-code128](../../../test-data/render-conformance/cases/barcode-families/symbol-code128.zpl) | valid / printer | Reference symbol variant: code128 |
-| [symbol-code39](../../../test-data/render-conformance/cases/barcode-families/symbol-code39.zpl) | valid / printer | Reference symbol variant: code39 |
-| [symbol-code49](../../../test-data/render-conformance/cases/barcode-families/symbol-code49.zpl) | valid / printer | Reference symbol variant: code49 |
-| [symbol-code93](../../../test-data/render-conformance/cases/barcode-families/symbol-code93.zpl) | valid / printer | Reference symbol variant: code93 |
-| [symbol-composite_a](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_a.zpl) | valid / printer | Reference symbol variant: composite_a |
-| [symbol-composite_b](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_b.zpl) | valid / printer | Reference symbol variant: composite_b |
-| [symbol-composite_c](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_c.zpl) | valid / printer | Reference symbol variant: composite_c |
-| [symbol-data_matrix](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix.zpl) | valid / printer | Reference symbol variant: data_matrix |
-| [symbol-data_matrix_rectangular](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix_rectangular.zpl) | valid / printer | Reference symbol variant: data_matrix_rectangular |
-| [symbol-databar_ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean13.zpl) | valid / printer | Reference symbol variant: databar_ean13 |
-| [symbol-databar_ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean8.zpl) | valid / printer | Reference symbol variant: databar_ean8 |
-| [symbol-databar_expanded](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded.zpl) | valid / printer | Reference symbol variant: databar_expanded |
-| [symbol-databar_expanded_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded_stacked.zpl) | valid / printer | Reference symbol variant: databar_expanded_stacked |
-| [symbol-databar_limited](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_limited.zpl) | valid / printer | Reference symbol variant: databar_limited |
-| [symbol-databar_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_omni.zpl) | valid / printer | Reference symbol variant: databar_omni |
-| [symbol-databar_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked.zpl) | valid / printer | Reference symbol variant: databar_stacked |
-| [symbol-databar_stacked_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked_omni.zpl) | valid / printer | Reference symbol variant: databar_stacked_omni |
-| [symbol-databar_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_truncated.zpl) | valid / printer | Reference symbol variant: databar_truncated |
-| [symbol-databar_upca](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upca.zpl) | valid / printer | Reference symbol variant: databar_upca |
-| [symbol-databar_upce](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upce.zpl) | valid / printer | Reference symbol variant: databar_upce |
-| [symbol-ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-ean13.zpl) | valid / printer | Reference symbol variant: ean13 |
-| [symbol-ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-ean8.zpl) | valid / printer | Reference symbol variant: ean8 |
-| [symbol-extension2](../../../test-data/render-conformance/cases/barcode-families/symbol-extension2.zpl) | valid / printer | Reference symbol variant: extension2 |
-| [symbol-extension5](../../../test-data/render-conformance/cases/barcode-families/symbol-extension5.zpl) | valid / printer | Reference symbol variant: extension5 |
-| [symbol-industrial2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-industrial2of5.zpl) | valid / printer | Reference symbol variant: industrial2of5 |
-| [symbol-intelligent_mail](../../../test-data/render-conformance/cases/barcode-families/symbol-intelligent_mail.zpl) | valid / printer | Reference symbol variant: intelligent_mail |
-| [symbol-interleaved2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-interleaved2of5.zpl) | valid / printer | Reference symbol variant: interleaved2of5 |
-| [symbol-logmars](../../../test-data/render-conformance/cases/barcode-families/symbol-logmars.zpl) | valid / printer | Reference symbol variant: logmars |
-| [symbol-maxicode2](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode2.zpl) | valid / printer | Reference symbol variant: maxicode2 |
-| [symbol-maxicode3](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode3.zpl) | valid / printer | Reference symbol variant: maxicode3 |
-| [symbol-maxicode4](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode4.zpl) | valid / printer | Reference symbol variant: maxicode4 |
-| [symbol-maxicode5](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode5.zpl) | valid / printer | Reference symbol variant: maxicode5 |
-| [symbol-maxicode6](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode6.zpl) | valid / printer | Reference symbol variant: maxicode6 |
-| [symbol-micropdf417_1](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_1.zpl) | valid / printer | Reference symbol variant: micropdf417_1 |
-| [symbol-micropdf417_3](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_3.zpl) | valid / printer | Reference symbol variant: micropdf417_3 |
-| [symbol-micropdf417_4](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_4.zpl) | valid / printer | Reference symbol variant: micropdf417_4 |
-| [symbol-msi_a](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_a.zpl) | valid / printer | Reference symbol variant: msi_a |
-| [symbol-msi_b](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_b.zpl) | valid / printer | Reference symbol variant: msi_b |
-| [symbol-msi_c](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_c.zpl) | valid / printer | Reference symbol variant: msi_c |
-| [symbol-msi_d](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_d.zpl) | valid / printer | Reference symbol variant: msi_d |
-| [symbol-pdf417](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417.zpl) | valid / printer | Reference symbol variant: pdf417 |
-| [symbol-pdf417_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417_truncated.zpl) | valid / printer | Reference symbol variant: pdf417_truncated |
-| [symbol-planet](../../../test-data/render-conformance/cases/barcode-families/symbol-planet.zpl) | valid / printer | Reference symbol variant: planet |
-| [symbol-plessey](../../../test-data/render-conformance/cases/barcode-families/symbol-plessey.zpl) | valid / printer | Reference symbol variant: plessey |
-| [symbol-postal_planet](../../../test-data/render-conformance/cases/barcode-families/symbol-postal_planet.zpl) | valid / printer | Reference symbol variant: postal_planet |
-| [symbol-postnet](../../../test-data/render-conformance/cases/barcode-families/symbol-postnet.zpl) | valid / printer | Reference symbol variant: postnet |
-| [symbol-qr](../../../test-data/render-conformance/cases/barcode-families/symbol-qr.zpl) | valid / printer | Reference symbol variant: qr |
-| [symbol-standard2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-standard2of5.zpl) | valid / printer | Reference symbol variant: standard2of5 |
-| [symbol-tlc39_linear](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linear.zpl) | valid / printer | Reference symbol variant: tlc39_linear |
-| [symbol-tlc39_linked](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linked.zpl) | valid / printer | Reference symbol variant: tlc39_linked |
-| [symbol-upca](../../../test-data/render-conformance/cases/barcode-families/symbol-upca.zpl) | valid / printer | Reference symbol variant: upca |
-| [symbol-upce](../../../test-data/render-conformance/cases/barcode-families/symbol-upce.zpl) | valid / printer | Reference symbol variant: upce |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-aztec](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec.md) | valid / printer | Reference symbol variant: aztec |
+| [symbol-aztec_alias](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_alias.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec_alias.md) | valid / printer | Reference symbol variant: aztec_alias |
+| [symbol-aztec_rune](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_rune.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec_rune.md) | valid / printer | Reference symbol variant: aztec_rune |
+| [symbol-codabar](../../../test-data/render-conformance/cases/barcode-families/symbol-codabar.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codabar.md) | valid / printer | Reference symbol variant: codabar |
+| [symbol-codablock_a](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_a.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_a.md) | valid / printer | Reference symbol variant: codablock_a |
+| [symbol-codablock_e](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_e.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_e.md) | valid / printer | Reference symbol variant: codablock_e |
+| [symbol-codablock_f](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_f.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_f.md) | valid / printer | Reference symbol variant: codablock_f |
+| [symbol-code11](../../../test-data/render-conformance/cases/barcode-families/symbol-code11.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code11.md) | valid / printer | Reference symbol variant: code11 |
+| [symbol-code128](../../../test-data/render-conformance/cases/barcode-families/symbol-code128.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code128.md) | valid / printer | Reference symbol variant: code128 |
+| [symbol-code39](../../../test-data/render-conformance/cases/barcode-families/symbol-code39.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code39.md) | valid / printer | Reference symbol variant: code39 |
+| [symbol-code49](../../../test-data/render-conformance/cases/barcode-families/symbol-code49.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code49.md) | valid / printer | Reference symbol variant: code49 |
+| [symbol-code93](../../../test-data/render-conformance/cases/barcode-families/symbol-code93.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code93.md) | valid / printer | Reference symbol variant: code93 |
+| [symbol-composite_a](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_a.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-composite_a.md) | valid / printer | Reference symbol variant: composite_a |
+| [symbol-composite_b](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_b.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-composite_b.md) | valid / printer | Reference symbol variant: composite_b |
+| [symbol-composite_c](../../../test-data/render-conformance/cases/barcode-families/symbol-composite_c.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-composite_c.md) | valid / printer | Reference symbol variant: composite_c |
+| [symbol-data_matrix](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-data_matrix.md) | valid / printer | Reference symbol variant: data_matrix |
+| [symbol-data_matrix_rectangular](../../../test-data/render-conformance/cases/barcode-families/symbol-data_matrix_rectangular.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-data_matrix_rectangular.md) | valid / printer | Reference symbol variant: data_matrix_rectangular |
+| [symbol-databar_ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean13.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_ean13.md) | valid / printer | Reference symbol variant: databar_ean13 |
+| [symbol-databar_ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_ean8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_ean8.md) | valid / printer | Reference symbol variant: databar_ean8 |
+| [symbol-databar_expanded](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_expanded.md) | valid / printer | Reference symbol variant: databar_expanded |
+| [symbol-databar_expanded_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_expanded_stacked.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_expanded_stacked.md) | valid / printer | Reference symbol variant: databar_expanded_stacked |
+| [symbol-databar_limited](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_limited.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_limited.md) | valid / printer | Reference symbol variant: databar_limited |
+| [symbol-databar_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_omni.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_omni.md) | valid / printer | Reference symbol variant: databar_omni |
+| [symbol-databar_stacked](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_stacked.md) | valid / printer | Reference symbol variant: databar_stacked |
+| [symbol-databar_stacked_omni](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_stacked_omni.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_stacked_omni.md) | valid / printer | Reference symbol variant: databar_stacked_omni |
+| [symbol-databar_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_truncated.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_truncated.md) | valid / printer | Reference symbol variant: databar_truncated |
+| [symbol-databar_upca](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upca.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_upca.md) | valid / printer | Reference symbol variant: databar_upca |
+| [symbol-databar_upce](../../../test-data/render-conformance/cases/barcode-families/symbol-databar_upce.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-databar_upce.md) | valid / printer | Reference symbol variant: databar_upce |
+| [symbol-ean13](../../../test-data/render-conformance/cases/barcode-families/symbol-ean13.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-ean13.md) | valid / printer | Reference symbol variant: ean13 |
+| [symbol-ean8](../../../test-data/render-conformance/cases/barcode-families/symbol-ean8.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-ean8.md) | valid / printer | Reference symbol variant: ean8 |
+| [symbol-extension2](../../../test-data/render-conformance/cases/barcode-families/symbol-extension2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-extension2.md) | valid / printer | Reference symbol variant: extension2 |
+| [symbol-extension5](../../../test-data/render-conformance/cases/barcode-families/symbol-extension5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-extension5.md) | valid / printer | Reference symbol variant: extension5 |
+| [symbol-industrial2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-industrial2of5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-industrial2of5.md) | valid / printer | Reference symbol variant: industrial2of5 |
+| [symbol-intelligent_mail](../../../test-data/render-conformance/cases/barcode-families/symbol-intelligent_mail.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-intelligent_mail.md) | valid / printer | Reference symbol variant: intelligent_mail |
+| [symbol-interleaved2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-interleaved2of5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-interleaved2of5.md) | valid / printer | Reference symbol variant: interleaved2of5 |
+| [symbol-logmars](../../../test-data/render-conformance/cases/barcode-families/symbol-logmars.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-logmars.md) | valid / printer | Reference symbol variant: logmars |
+| [symbol-maxicode2](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode2.md) | valid / printer | Reference symbol variant: maxicode2 |
+| [symbol-maxicode3](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode3.md) | valid / printer | Reference symbol variant: maxicode3 |
+| [symbol-maxicode4](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode4.md) | valid / printer | Reference symbol variant: maxicode4 |
+| [symbol-maxicode5](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode5.md) | valid / printer | Reference symbol variant: maxicode5 |
+| [symbol-maxicode6](../../../test-data/render-conformance/cases/barcode-families/symbol-maxicode6.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-maxicode6.md) | valid / printer | Reference symbol variant: maxicode6 |
+| [symbol-micropdf417_1](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-micropdf417_1.md) | valid / printer | Reference symbol variant: micropdf417_1 |
+| [symbol-micropdf417_3](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-micropdf417_3.md) | valid / printer | Reference symbol variant: micropdf417_3 |
+| [symbol-micropdf417_4](../../../test-data/render-conformance/cases/barcode-families/symbol-micropdf417_4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-micropdf417_4.md) | valid / printer | Reference symbol variant: micropdf417_4 |
+| [symbol-msi_a](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_a.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_a.md) | valid / printer | Reference symbol variant: msi_a |
+| [symbol-msi_b](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_b.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_b.md) | valid / printer | Reference symbol variant: msi_b |
+| [symbol-msi_c](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_c.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_c.md) | valid / printer | Reference symbol variant: msi_c |
+| [symbol-msi_d](../../../test-data/render-conformance/cases/barcode-families/symbol-msi_d.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-msi_d.md) | valid / printer | Reference symbol variant: msi_d |
+| [symbol-pdf417](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-pdf417.md) | valid / printer | Reference symbol variant: pdf417 |
+| [symbol-pdf417_truncated](../../../test-data/render-conformance/cases/barcode-families/symbol-pdf417_truncated.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-pdf417_truncated.md) | valid / printer | Reference symbol variant: pdf417_truncated |
+| [symbol-planet](../../../test-data/render-conformance/cases/barcode-families/symbol-planet.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-planet.md) | valid / printer | Reference symbol variant: planet |
+| [symbol-plessey](../../../test-data/render-conformance/cases/barcode-families/symbol-plessey.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-plessey.md) | valid / printer | Reference symbol variant: plessey |
+| [symbol-postal_planet](../../../test-data/render-conformance/cases/barcode-families/symbol-postal_planet.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-postal_planet.md) | valid / printer | Reference symbol variant: postal_planet |
+| [symbol-postnet](../../../test-data/render-conformance/cases/barcode-families/symbol-postnet.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-postnet.md) | valid / printer | Reference symbol variant: postnet |
+| [symbol-qr](../../../test-data/render-conformance/cases/barcode-families/symbol-qr.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-qr.md) | valid / printer | Reference symbol variant: qr |
+| [symbol-standard2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-standard2of5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-standard2of5.md) | valid / printer | Reference symbol variant: standard2of5 |
+| [symbol-tlc39_linear](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linear.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-tlc39_linear.md) | valid / printer | Reference symbol variant: tlc39_linear |
+| [symbol-tlc39_linked](../../../test-data/render-conformance/cases/barcode-families/symbol-tlc39_linked.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-tlc39_linked.md) | valid / printer | Reference symbol variant: tlc39_linked |
+| [symbol-upca](../../../test-data/render-conformance/cases/barcode-families/symbol-upca.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-upca.md) | valid / printer | Reference symbol variant: upca |
+| [symbol-upce](../../../test-data/render-conformance/cases/barcode-families/symbol-upce.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-upce.md) | valid / printer | Reference symbol variant: upce |
 

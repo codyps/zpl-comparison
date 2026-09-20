@@ -6,11 +6,11 @@
 
 **^A** · font=D,o=N,h=32,w=24 · [ZPL input](../../../../../benchmarks/accuracy/reference/font-D.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![codyps-zpl render](../../images/argument-font-D-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-font-D-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![codyps-zpl render](../../previews/argument-font-D-codyps-zpl.png)](../../images/argument-font-D-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-font-D-codyps-zpl-diff.png)](../../images/argument-font-D-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 589 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![labelize render](../../images/argument-font-D-labelize.png) | ![labelize difference](../../images/argument-font-D-labelize-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![labelize render](../../previews/argument-font-D-labelize.png)](../../images/argument-font-D-labelize.png) | [![labelize difference](../../previews/argument-font-D-labelize-diff.png)](../../images/argument-font-D-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 762 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![forge render](../../images/argument-font-D-forge.png) | ![forge difference](../../images/argument-font-D-forge-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![forge render](../../previews/argument-font-D-forge.png)](../../images/argument-font-D-forge.png) | [![forge difference](../../previews/argument-font-D-forge-diff.png)](../../images/argument-font-D-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1461 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![go render](../../images/argument-font-D-go.png) | ![go difference](../../images/argument-font-D-go-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![go render](../../previews/argument-font-D-go.png)](../../images/argument-font-D-go.png) | [![go difference](../../previews/argument-font-D-go-diff.png)](../../images/argument-font-D-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1461 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![ffi render](../../images/argument-font-D-ffi.png) | ![ffi difference](../../images/argument-font-D-ffi-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![ffi render](../../previews/argument-font-D-ffi.png)](../../images/argument-font-D-ffi.png) | [![ffi difference](../../previews/argument-font-D-ffi-diff.png)](../../images/argument-font-D-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 929 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![binarykits render](../../images/argument-font-D-binarykits.png) | ![binarykits difference](../../images/argument-font-D-binarykits-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![binarykits render](../../previews/argument-font-D-binarykits.png)](../../images/argument-font-D-binarykits.png) | [![binarykits difference](../../previews/argument-font-D-binarykits-diff.png)](../../images/argument-font-D-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 1170 pixels; ex
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![zplr render](../../images/argument-font-D-zplr.png) | ![zplr difference](../../images/argument-font-D-zplr-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![zplr render](../../previews/argument-font-D-zplr.png)](../../images/argument-font-D-zplr.png) | [![zplr difference](../../previews/argument-font-D-zplr-diff.png)](../../images/argument-font-D-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 56.0% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 56.0% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 634 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/font-D.png) | ![labelary render](../../images/argument-font-D-labelary.png) | ![labelary difference](../../images/argument-font-D-labelary-diff.png) |
+| [![Printer preview](../../previews/argument-font-D-printer.png)](../../../../../benchmarks/accuracy/reference/font-D.png) | [![labelary render](../../previews/argument-font-D-labelary.png)](../../images/argument-font-D-labelary.png) | [![labelary difference](../../previews/argument-font-D-labelary-diff.png)](../../images/argument-font-D-labelary-diff.png) |
 

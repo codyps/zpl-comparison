@@ -7,7 +7,7 @@ The root README links to these detailed reports. [Library capabilities and selec
 
 [Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
 
-The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 507 focused and combined test files. Run `conformance.py` after building adapters; printer captures are optional and separate.
+The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 531 focused and combined test files. Its [shared accuracy gallery](../docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
 The [external label corpus](../test-data/external-zpl/README.md) adds eight unchanged,
 pinned upstream examples. [Execution report](../docs/benchmarks/external-zpl/README.md).
@@ -127,3 +127,55 @@ rejects stale generated pages. To refresh evidence, build the adapters, run
 docs/benchmarks/conformance`, then regenerate. CI checks the published snapshot
 before measurement and generates an updated snapshot afterward for its artifact.
 Source and renderer measurements remain separate, dated evidence.
+
+### Feature renders and printer differences
+
+The full regeneration command above also runs all 531 feature fixtures through all
+eight renderers and regenerates the shared accuracy gallery and compatibility links.
+`--reports-only` rebuilds those pages and differences offline from saved render results
+and checked-in printer captures. Renderer crashes/timeouts remain failures after the
+reports are preserved; they do not prevent the remaining fixtures from running.
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py --reports-only
+benchmarks/_work/venv/bin/python benchmarks/accuracy/features.py --check
+```
+
+To deliberately collect new references, use an unused output directory:
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/accuracy/capture.py \
+  --host http://d7j211001302.bed.einic.org/ \
+  --corpus test-data/render-conformance \
+  --skip encoding-29 --skip encoding-30 \
+  --skip-reason "Previous ZD621 preview timeouts; avoid disrupting shared use" \
+  --output benchmarks/_work/new-feature-references
+```
+
+This uses Preview Label, never physical printing. Captures identify printer model,
+firmware, timestamp, source/image hashes, and a repeated control. Missing previews
+are recorded as unavailable and never assigned a correctness score. Interrupted
+captures can use `--resume`; `--skip NAME --skip-reason TEXT` records a known
+problematic fixture without resubmitting it. A timeout pauses for 30 seconds before checking recovery, up to four times by default (`--recovery-attempts` changes this); a timed-out POST is never immediately replayed. If the printer recovers, that fixture is recorded as unavailable and capture continues; otherwise capture stops resumably. `--interval`, `--cooldown`, and `--object-name` control pacing and the dedicated RAM object. Only a completed capture with a matching repeated control is
+accepted for accuracy. Review a new capture before replacing
+`benchmarks/accuracy/conformance-reference`.
+
+On the ZD621 with firmware V93.21.33Z, `encoding-29` and `encoding-30` have timed out during preview. The example excludes them from printer submission and records them as unavailable; they still run through all offline renderers.
+
+Inputs containing literal NUL bytes are also recorded as unavailable without HTTP submission after `raster-equivalent-binary` timed out on the shared printer. Their unmodified inputs still run in the offline renderer suite.
+
+Gallery previews share a common origin and remove trailing blank space, then scale
+to at most 360 × 160 pixels. Each preview links to its full-size PNG; cropping and
+scaling never affect IoU. The same gallery covers the feature corpus and external
+examples, with explicit unscored reasons for inputs that cannot be sent to a printer.
+
+The 24 compact fixtures use 640 × 320-dot canvases. Their source links identify the
+codyps/zpl regression tests that inspired them; they are development cases, not an
+independent holdout. Original comparison-library version pins remain unchanged.
+
+To add fixtures without recapturing existing inputs, use `capture.py --extend`
+with the existing complete printer capture directory and expanded corpus. It
+verifies every retained source/image hash and captures a new repeated control.
+`labelary.py --extend` similarly captures only newly added service inputs, preserving
+all earlier response bytes and per-request timestamps. Changed or removed inputs
+require a new snapshot. Run the full accuracy regeneration afterward.

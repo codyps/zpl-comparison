@@ -40,12 +40,12 @@ Reference parameters: **o, h, f, g, e, j**. These describe the reference grammar
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-interleaved2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-interleaved2of5.zpl) | valid / printer | Reference symbol variant: interleaved2of5 |
-| [interleaved-odd-digits](../../../test-data/render-conformance/cases/barcode-arguments/interleaved-odd-digits.zpl) | boundary / printer | Odd-length Interleaved 2 of 5 input; documented automatic leading zero |
-| [readable-B2-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-N.zpl) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
-| [readable-B2-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-R.zpl) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
-| [readable-B2-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-I.zpl) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
-| [readable-B2-B](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-B.zpl) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-interleaved2of5](../../../test-data/render-conformance/cases/barcode-families/symbol-interleaved2of5.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-interleaved2of5.md) | valid / printer | Reference symbol variant: interleaved2of5 |
+| [interleaved-odd-digits](../../../test-data/render-conformance/cases/barcode-arguments/interleaved-odd-digits.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/interleaved-odd-digits.md) | boundary / printer | Odd-length Interleaved 2 of 5 input; documented automatic leading zero |
+| [readable-B2-N](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-B2-N.md) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
+| [readable-B2-R](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-B2-R.md) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
+| [readable-B2-I](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-B2-I.md) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
+| [readable-B2-B](../../../test-data/render-conformance/cases/barcode-arguments/readable-B2-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/readable-B2-B.md) | valid / printer | Readable text above rotated B2; measure caption position as well as bars |
 

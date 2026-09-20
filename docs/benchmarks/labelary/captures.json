@@ -2,7 +2,7 @@
   "schema": 1,
   "service": "https://labelary.com/service.html",
   "started_utc": "2026-09-19T03:17:15+00:00",
-  "completed_utc": "2026-09-19T03:25:19+00:00",
+  "completed_utc": "2026-09-20T04:19:04+00:00",
   "renderer_version": null,
   "identity": "UTC capture timestamps; no renderer version exposed",
   "dpmm": 8,
@@ -18409,6 +18409,685 @@
         420,
         220
       ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-baseline-0",
+      "source": "test-data/render-conformance/cases/compact-fonts/compact-baseline-0.zpl",
+      "sha256": "9a0ee9a788b52a8a920c8076a16084bb469de36db850a643c1a1e43e199870c4",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:44+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:45+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:45 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-baseline-0.png",
+      "png_sha256": "6c73abfb87a6667fdb17ffac12a7452b8fd84681cee30fb79073ea1cb35c4518",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-baseline-A",
+      "source": "test-data/render-conformance/cases/compact-fonts/compact-baseline-A.zpl",
+      "sha256": "861642df8dc039f8ba1d706f831e77ce5b7d9275ddad7f168f540a76e44dfed0",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:45+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:45+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:45 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-baseline-A.png",
+      "png_sha256": "5dc23072300bd06f6e177bbd2ebaf4e268f3bb8d9a6ccae3e4583a1d49833c03",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-baseline-B",
+      "source": "test-data/render-conformance/cases/compact-fonts/compact-baseline-B.zpl",
+      "sha256": "bca8b17d63dde989e4a18b8280a89253bb119d0cba576c1e96dfa9eeca4e1216",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:45+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:46+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:46 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-baseline-B.png",
+      "png_sha256": "48faa04592998183c16038b058c784a0c4695f7b4b73a56214efdc058232d071",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-baseline-C",
+      "source": "test-data/render-conformance/cases/compact-fonts/compact-baseline-C.zpl",
+      "sha256": "efbaf4f07e515088d9cfac72b5e5412a0db0b0d42ec0909134ebb74b798b4e42",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:46+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:47+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:47 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-baseline-C.png",
+      "png_sha256": "b1f1d73d6a848c285243cee98e27c40feafe6954019884734698edb5d60f1742",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-baseline-F",
+      "source": "test-data/render-conformance/cases/compact-fonts/compact-baseline-F.zpl",
+      "sha256": "300988ab7afc923a1d6cec1f0869037311eb1934d8fafd38c103a4f94287dade",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:47+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:47+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:47 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-baseline-F.png",
+      "png_sha256": "511eee999fa7975c8b2cb761e5f4666969ad12eff04d02b1e4a161ce0127b0d1",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-wrap-L",
+      "source": "test-data/render-conformance/cases/compact-layout/compact-wrap-L.zpl",
+      "sha256": "ada3d8e0e08a3e2d2f9567685c2f81233bb94126542f194d9acbdfe488dbccc3",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:47+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:48+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:48 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-wrap-L.png",
+      "png_sha256": "8c291316c1a65cf6d982c9ee39404bf7fcb4755340df3daf2e990844947d18e7",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-wrap-C",
+      "source": "test-data/render-conformance/cases/compact-layout/compact-wrap-C.zpl",
+      "sha256": "8e44958f7384286dadd5145afd9635078c7be8a94ce1046fc13318d148cc02f5",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:48+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:49+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:49 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-wrap-C.png",
+      "png_sha256": "15af86781921c52349f89cc0537a67ce39489b11fe31c9dc80a18ebb7520ad5f",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-wrap-R",
+      "source": "test-data/render-conformance/cases/compact-layout/compact-wrap-R.zpl",
+      "sha256": "f63fe4cea22c11e82612a8e061a8dac52ecb27926f8c1f39b544ced6ece69e47",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:49+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:50+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:50 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-wrap-R.png",
+      "png_sha256": "a14ba00a7adfb5f5df5388ae1272f6b2ba8c67a97a429e38b3e77cf0a26e23c0",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-wrap-J",
+      "source": "test-data/render-conformance/cases/compact-layout/compact-wrap-J.zpl",
+      "sha256": "392e455d1d4a1d02e8c53aa3d33659f74199a613df19ed658b64a73e63dae8f7",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:50+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:50+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:50 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-wrap-J.png",
+      "png_sha256": "d0d224238c572f95e888e10bd9834ebcd8096f59362c1f2f4b326012832b57aa",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-circle-4",
+      "source": "test-data/render-conformance/cases/compact-shapes/compact-circle-4.zpl",
+      "sha256": "926418db49052a24f3b43bf7e83821dc0af0165064bbbf8a2809d16c49771fad",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:50+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:51+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:51 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-circle-4.png",
+      "png_sha256": "37dc05a0a0397e3e2345a9b19ca25d9e57e5829dca73c55a99eae2d63e965aba",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-circle-28",
+      "source": "test-data/render-conformance/cases/compact-shapes/compact-circle-28.zpl",
+      "sha256": "055c4a367542da735754234029fd444393d1f93fa512cbb4b01bfec1912c8798",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:51+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:52+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:52 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-circle-28.png",
+      "png_sha256": "f6f38cdf769d18785e42afd5040b2a1dc9aa1f4b667e8caaad7c8d3cb7caa340",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-circle-127",
+      "source": "test-data/render-conformance/cases/compact-shapes/compact-circle-127.zpl",
+      "sha256": "15e72669d0f31584a21643d0653aaf644dfbd411140245c83ab1a82ff53a6bc6",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:52+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:52+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:52 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-circle-127.png",
+      "png_sha256": "c4a87182d7995719482f2d9783aff500f54ba54166128fcaea07a02add802968",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-rounded-1",
+      "source": "test-data/render-conformance/cases/compact-shapes/compact-rounded-1.zpl",
+      "sha256": "bf98ae6332ce75721ea6c9e33a2af4895392bf34787d4c55f019931e29bcc1a8",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:52+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:53+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:53 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-rounded-1.png",
+      "png_sha256": "9c0dc066bdbdd8dda4771e7d4fa4839bba64488d1f008057f9358a1a908207d4",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-rounded-4",
+      "source": "test-data/render-conformance/cases/compact-shapes/compact-rounded-4.zpl",
+      "sha256": "431daf2d7d95f831fff317a1db2cdf3e8c82dede3c2bebd467e2fb1895d70634",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:53+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:54+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:54 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-rounded-4.png",
+      "png_sha256": "e0e8c2efe336c33cc2847aa37f47f0fbcaa793f837ceef825ad06de409c17292",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-rounded-8",
+      "source": "test-data/render-conformance/cases/compact-shapes/compact-rounded-8.zpl",
+      "sha256": "96c25ad5b5df8b2e5c6797a5557742712fa1499d93ceb831f40753268b2993ca",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:54+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:55+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:55 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-rounded-8.png",
+      "png_sha256": "99cf8df97e95b7a8b8c4b477a985b18683c5b7ec4c5565b75bfafb4846d9f128",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-state-qr-code128",
+      "source": "test-data/render-conformance/cases/compact-barcodes/compact-state-qr-code128.zpl",
+      "sha256": "7879c265c406c7ef042100b41f3e51374e526a46570518356f20935ac7171b33",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:55+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:55+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:55 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-state-qr-code128.png",
+      "png_sha256": "7ca8c6e7e4e955c76256ec3524196a18a147994614237f0c69c54f9826b73b2e",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-state-code128-dm",
+      "source": "test-data/render-conformance/cases/compact-barcodes/compact-state-code128-dm.zpl",
+      "sha256": "cafc9b2edebffd1d9320351e7e3f6f2edb212e93ac03e4d5888cb23a117b47f3",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:55+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:56+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:56 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-state-code128-dm.png",
+      "png_sha256": "8dbcc0a3045f670c9643742cf5284fa22c133b7f471b51f76b88779517b59445",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-code93-substitutes",
+      "source": "test-data/render-conformance/cases/compact-barcodes/compact-code93-substitutes.zpl",
+      "sha256": "a3a0bebafa0e22a1c97fc20e02ca8dd011fb9f97c0642db98fcf82f6ccd3b117",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:56+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:57+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:57 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-code93-substitutes.png",
+      "png_sha256": "a58303d97afe062a07761f0bd6b88afddb544e4c08655696c2328b991e4303a5",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-qr-field-hex",
+      "source": "test-data/render-conformance/cases/compact-barcodes/compact-qr-field-hex.zpl",
+      "sha256": "fb85f5206d95e359c70bd7e36e4ad745a2632b3b4d56093345eb87ba59f7d53d",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:57+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:18:57+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:18:57 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-qr-field-hex.png",
+      "png_sha256": "96acfb2a3854d6bc7c5e7bd23f7560762b4d0c32c6f5d187c3de63875351a006",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-pdf417-numeric",
+      "source": "test-data/render-conformance/cases/compact-barcodes/compact-pdf417-numeric.zpl",
+      "sha256": "1bc3155adac0f773facd46becb9f258b8bdddcc88236feb854069978134d6a16",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:18:57+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:19:01+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:19:01 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-pdf417-numeric.png",
+      "png_sha256": "fc71bd390bf2faaabdf00fe18b0d8c9f6c74ec5f5a97ca308ee8f82c10c8e625",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-caption-N",
+      "source": "test-data/render-conformance/cases/compact-barcodes/compact-caption-N.zpl",
+      "sha256": "aa851135d2f819ee59486c472fb61360521031c320cc02d79da4ee09ace395fc",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:19:01+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:19:02+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:19:02 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-caption-N.png",
+      "png_sha256": "b2083ae60968ad9f14252032af4e6b11490d5e50d49a3bc62dcb213264f8df8e",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-caption-Y",
+      "source": "test-data/render-conformance/cases/compact-barcodes/compact-caption-Y.zpl",
+      "sha256": "b0801b42dce52299e77117ab80f8951bf6169b564d8a4ccee9336b32155c3544",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:19:02+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:19:03+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:19:03 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-caption-Y.png",
+      "png_sha256": "ff77883584af3913e2f207c6e94e11b90b5fac97a972055f580eaf4c9cb104cf",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-overlap-FR",
+      "source": "test-data/render-conformance/cases/compact-compositing/compact-overlap-FR.zpl",
+      "sha256": "6a7894ea2a94a1e11df98a9b9bba060ad40d71338aedfbf00e805920c7655c18",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:19:03+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:19:03+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:19:03 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-overlap-FR.png",
+      "png_sha256": "2b5435b33539cc7598ef51f1accf783dfd1b0de18ddf417f5583a9fd5598a450",
+      "dimensions": [
+        640,
+        320
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "compact-overlap-LR",
+      "source": "test-data/render-conformance/cases/compact-compositing/compact-overlap-LR.zpl",
+      "sha256": "7f4f4265391979ce908a5646e57e56b78e2b3f7ed6d53d50340bddd36b82c2c1",
+      "width": 640,
+      "height": 320,
+      "validity": "valid",
+      "requested_utc": "2026-09-20T04:19:03+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/3.152710x1.576355/0/",
+      "received_utc": "2026-09-20T04:19:04+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Sun, 20 Sep 2026 04:19:04 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--compact-overlap-LR.png",
+      "png_sha256": "2f2847bca65e98b16ef3279f32e557c6fd9fc18958cb74ab2f6d13c53b3b5fc5",
+      "dimensions": [
+        640,
+        320
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "started_utc": "2026-09-20T04:18:44+00:00",
+      "previous_completed_utc": "2026-09-19T03:25:19+00:00",
+      "existing_cases": 648
     }
   ]
 }

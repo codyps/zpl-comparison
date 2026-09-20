@@ -40,7 +40,7 @@ Reference parameters: **a, b, c, d, e, f, g**. These describe the reference gram
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-aztec_alias](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_alias.zpl) | valid / printer | Reference symbol variant: aztec_alias |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-aztec_alias](../../../test-data/render-conformance/cases/barcode-families/symbol-aztec_alias.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-aztec_alias.md) | valid / printer | Reference symbol variant: aztec_alias |
 

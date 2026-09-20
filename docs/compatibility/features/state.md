@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 21 🧩 Handler found; 2 📦 Framing only | Not measured | 2 error, 4 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 21 🧩 Handler found; 2 📦 Framing only | 3/6 exact; mean IoU 62.8%; 2 errors | 2 error, 4 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 23 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 1 ❔ No evidence found; 22 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 7 ❔ No evidence found; 16 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 4 ❔ No evidence found; 18 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 4 ❔ No evidence found; 18 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 16 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 22 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 1 ❔ No evidence found; 22 🧩 Handler found | 1/6 exact; mean IoU 62.8%; 0 errors | 1 blank, 5 rendered |
+| [zpl-forge](../libraries/forge.md) | 7 ❔ No evidence found; 16 🧩 Handler found | 1/6 exact; mean IoU 60.6%; 0 errors | 6 rendered |
+| [go-zpl](../libraries/go.md) | 4 ❔ No evidence found; 18 🧩 Handler found; 1 ⏭️ Ignored / stored only | 1/6 exact; mean IoU 73.6%; 0 errors | 6 rendered |
+| [zpl-rs](../libraries/ffi.md) | 4 ❔ No evidence found; 18 🧩 Handler found; 1 ⏭️ Ignored / stored only | 1/6 exact; mean IoU 73.6%; 0 errors | 6 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 16 🧩 Handler found | 1/6 exact; mean IoU 44.3%; 0 errors | 1 blank, 5 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 22 🟢 Upstream: supported | 1/6 exact; mean IoU 54.0%; 0 errors | 6 rendered |
 | [zpl-builder](../libraries/builder.md) | 12 ❔ No evidence found; 11 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 6 ❔ No evidence found; 17 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 12 ❔ No evidence found; 11 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 23 ❔ No evidence found | Not measured | 6 rendered |
+| [Labelary](../libraries/labelary.md) | 23 ❔ No evidence found | 1/6 exact; mean IoU 87.5%; 0 errors | 6 rendered |
 
 
 ## Commands involved
@@ -31,16 +31,16 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [field-defaults](../../../test-data/render-conformance/cases/state/field-defaults.zpl) | valid / printer | CF applies to following fields; omitted A dimensions, explicit overrides and subsequent default use |
-| [hex-scope](../../../test-data/render-conformance/cases/state/hex-scope.zpl) | valid / printer | FH applies to one field; the following literal _41 must remain literal |
-| [numbered-fields-inline](../../../test-data/render-conformance/cases/state/numbered-fields-inline.zpl) | valid / printer | FN reuse entirely inside one label; no stored-format operations |
-| [field-concat-scope](../../../test-data/render-conformance/cases/state/field-concat-scope.zpl) | valid / printer | FE affects only its following FD, subsequent #1# stays literal |
-| [reverse-field-scope](../../../test-data/render-conformance/cases/state/reverse-field-scope.zpl) | valid / printer | FR on one field must not leak to following normal text |
-| [barcode-default-scope](../../../test-data/render-conformance/cases/state/barcode-default-scope.zpl) | valid / printer | BY height/width defaults followed by per-symbol override |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [field-defaults](../../../test-data/render-conformance/cases/state/field-defaults.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-defaults.md) | valid / printer | CF applies to following fields; omitted A dimensions, explicit overrides and subsequent default use |
+| [hex-scope](../../../test-data/render-conformance/cases/state/hex-scope.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/hex-scope.md) | valid / printer | FH applies to one field; the following literal _41 must remain literal |
+| [numbered-fields-inline](../../../test-data/render-conformance/cases/state/numbered-fields-inline.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/numbered-fields-inline.md) | valid / printer | FN reuse entirely inside one label; no stored-format operations |
+| [field-concat-scope](../../../test-data/render-conformance/cases/state/field-concat-scope.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-scope.md) | valid / printer | FE affects only its following FD, subsequent #1# stays literal |
+| [reverse-field-scope](../../../test-data/render-conformance/cases/state/reverse-field-scope.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/reverse-field-scope.md) | valid / printer | FR on one field must not leak to following normal text |
+| [barcode-default-scope](../../../test-data/render-conformance/cases/state/barcode-default-scope.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/barcode-default-scope.md) | valid / printer | BY height/width defaults followed by per-symbol override |
 

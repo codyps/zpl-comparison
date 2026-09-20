@@ -6,11 +6,11 @@
 
 **^FR** · reverse current field · [ZPL input](../../../../../benchmarks/accuracy/reference/field-reverse.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![codyps-zpl render](../../images/argument-field-reverse-codyps-zpl.png) | ![codyps-zpl difference](../../images/argument-field-reverse-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![codyps-zpl render](../../previews/argument-field-reverse-codyps-zpl.png)](../../images/argument-field-reverse-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-field-reverse-codyps-zpl-diff.png)](../../images/argument-field-reverse-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 492 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![labelize render](../../images/argument-field-reverse-labelize.png) | ![labelize difference](../../images/argument-field-reverse-labelize-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![labelize render](../../previews/argument-field-reverse-labelize.png)](../../images/argument-field-reverse-labelize.png) | [![labelize difference](../../previews/argument-field-reverse-labelize-diff.png)](../../images/argument-field-reverse-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 0 pixels; extra
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![forge render](../../images/argument-field-reverse-forge.png) | ![forge difference](../../images/argument-field-reverse-forge-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![forge render](../../previews/argument-field-reverse-forge.png)](../../images/argument-field-reverse-forge.png) | [![forge difference](../../previews/argument-field-reverse-forge-diff.png)](../../images/argument-field-reverse-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 173 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![go render](../../images/argument-field-reverse-go.png) | ![go difference](../../images/argument-field-reverse-go-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![go render](../../previews/argument-field-reverse-go.png)](../../images/argument-field-reverse-go.png) | [![go difference](../../previews/argument-field-reverse-go-diff.png)](../../images/argument-field-reverse-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 173 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![ffi render](../../images/argument-field-reverse-ffi.png) | ![ffi difference](../../images/argument-field-reverse-ffi-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![ffi render](../../previews/argument-field-reverse-ffi.png)](../../images/argument-field-reverse-ffi.png) | [![ffi difference](../../previews/argument-field-reverse-ffi-diff.png)](../../images/argument-field-reverse-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 882 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![binarykits render](../../images/argument-field-reverse-binarykits.png) | ![binarykits difference](../../images/argument-field-reverse-binarykits-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![binarykits render](../../previews/argument-field-reverse-binarykits.png)](../../images/argument-field-reverse-binarykits.png) | [![binarykits difference](../../previews/argument-field-reverse-binarykits-diff.png)](../../images/argument-field-reverse-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 598 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![zplr render](../../images/argument-field-reverse-zplr.png) | ![zplr difference](../../images/argument-field-reverse-zplr-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![zplr render](../../previews/argument-field-reverse-zplr.png)](../../images/argument-field-reverse-zplr.png) | [![zplr difference](../../previews/argument-field-reverse-zplr-diff.png)](../../images/argument-field-reverse-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 97.8% IoU** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 97.8% IoU** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 300 dots; library: 832 × 300 dots. Missing ink: 413 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../benchmarks/accuracy/reference/field-reverse.png) | ![labelary render](../../images/argument-field-reverse-labelary.png) | ![labelary difference](../../images/argument-field-reverse-labelary-diff.png) |
+| [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![labelary render](../../previews/argument-field-reverse-labelary.png)](../../images/argument-field-reverse-labelary.png) | [![labelary difference](../../previews/argument-field-reverse-labelary-diff.png)](../../images/argument-field-reverse-labelary-diff.png) |
 

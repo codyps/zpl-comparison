@@ -17,7 +17,7 @@ Font validator permits A–Z/1–9 but rejects font 0. Typed generation only: no
 
 This library does not render incoming ZPL.
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-19T03:33:57Z.
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-20T04:43:33Z.
 
 ## Feature groups
 
@@ -31,6 +31,11 @@ N/A – no incoming-ZPL renderer. Snapshot: 2026-09-19T03:33:57Z.
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Baseline text](../features/baseline-text.md) | 24 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Clipping](../features/clipping.md) | 5 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Compact barcodes](../features/compact-barcodes.md) | 7 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Compact compositing](../features/compact-compositing.md) | 2 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Compact fonts](../features/compact-fonts.md) | 5 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Compact layout](../features/compact-layout.md) | 4 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
+| [Compact shapes](../features/compact-shapes.md) | 6 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Compositing](../features/compositing.md) | 5 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Encoding](../features/encoding.md) | 28 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Fonts](../features/fonts.md) | 78 | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |

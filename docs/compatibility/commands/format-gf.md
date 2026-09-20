@@ -43,28 +43,28 @@ Reference parameters: **a, b, c, d, data**. These describe the reference grammar
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-graphic-hex](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-hex.zpl) | valid / printer | ^GF A,8,8,1; raw hex |
-| [probe-graphic-binary](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-binary.zpl) | valid / printer | ^GF B,8,8,1; ASCII binary bytes |
-| [probe-graphic-B64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-B64.zpl) | valid / printer | ^GF A,8,8,1; B64, CRC16 |
-| [probe-graphic-Z64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-Z64.zpl) | valid / printer | ^GF A,8,8,1; Z64, CRC16 |
-| [raster-equivalent-hex](../../../test-data/render-conformance/cases/graphics/raster-equivalent-hex.zpl) | valid / printer | Same 16x8 inline image in hex |
-| [raster-equivalent-B64](../../../test-data/render-conformance/cases/graphics/raster-equivalent-B64.zpl) | valid / printer | Same 16x8 inline image in B64 |
-| [raster-equivalent-Z64](../../../test-data/render-conformance/cases/graphics/raster-equivalent-Z64.zpl) | valid / printer | Same 16x8 inline image in Z64 |
-| [raster-equivalent-binary](../../../test-data/render-conformance/cases/graphics/raster-equivalent-binary.zpl) | valid / printer | Same 16x8 image as counted binary data |
-| [raster-fill-hex](../../../test-data/render-conformance/cases/graphics/raster-fill-hex.zpl) | valid / printer | 16x4 alternating empty/full rows; comma/! terminate rows |
-| [raster-fill-rle](../../../test-data/render-conformance/cases/graphics/raster-fill-rle.zpl) | valid / printer | 16x4 alternating empty/full rows; comma/! terminate rows |
-| [raster-repeat-hex](../../../test-data/render-conformance/cases/graphics/raster-repeat-hex.zpl) | valid / printer | 16x4 AA55 row; repeat count and colon repeat |
-| [raster-repeat-rle](../../../test-data/render-conformance/cases/graphics/raster-repeat-rle.zpl) | valid / printer | 16x4 AA55 row; repeat count and colon repeat |
-| [raster-binary-command-bytes](../../../test-data/render-conformance/cases/graphics/raster-binary-command-bytes.zpl) | boundary / printer | Binary bytes resemble ^FS/~HS; counted payload must not be parsed as commands |
-| [raster-stride-1](../../../test-data/render-conformance/cases/graphics/raster-stride-1.zpl) | valid / printer | Packed MSB-first raster, 1 bytes/row, 7 rows |
-| [raster-stride-2](../../../test-data/render-conformance/cases/graphics/raster-stride-2.zpl) | valid / printer | Packed MSB-first raster, 2 bytes/row, 7 rows |
-| [raster-stride-3](../../../test-data/render-conformance/cases/graphics/raster-stride-3.zpl) | valid / printer | Packed MSB-first raster, 3 bytes/row, 7 rows |
-| [raster-stride-17](../../../test-data/render-conformance/cases/graphics/raster-stride-17.zpl) | valid / printer | Packed MSB-first raster, 17 bytes/row, 7 rows |
-| [raster-clipped](../../../test-data/render-conformance/cases/graphics/raster-clipped.zpl) | boundary / printer | Inline raster clipped at bottom-right edge |
-| [invalid-bad-raster-count](../../../test-data/render-conformance/cases/negative/invalid-bad-raster-count.zpl) | invalid / behavior-only | Malformed/out-of-range input: bad-raster-count; observe rejection/fallback, never count as valid fidelity |
-| [invalid-zero-raster-stride](../../../test-data/render-conformance/cases/negative/invalid-zero-raster-stride.zpl) | invalid / behavior-only | Malformed/out-of-range input: zero-raster-stride; observe rejection/fallback, never count as valid fidelity |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-graphic-hex](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-hex.md) | valid / printer | ^GF A,8,8,1; raw hex |
+| [probe-graphic-binary](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-binary.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-binary.md) | valid / printer | ^GF B,8,8,1; ASCII binary bytes |
+| [probe-graphic-B64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-B64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-B64.md) | valid / printer | ^GF A,8,8,1; B64, CRC16 |
+| [probe-graphic-Z64](../../../test-data/render-conformance/cases/baseline-graphics/probe-graphic-Z64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-graphic-Z64.md) | valid / printer | ^GF A,8,8,1; Z64, CRC16 |
+| [raster-equivalent-hex](../../../test-data/render-conformance/cases/graphics/raster-equivalent-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-equivalent-hex.md) | valid / printer | Same 16x8 inline image in hex |
+| [raster-equivalent-B64](../../../test-data/render-conformance/cases/graphics/raster-equivalent-B64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-equivalent-B64.md) | valid / printer | Same 16x8 inline image in B64 |
+| [raster-equivalent-Z64](../../../test-data/render-conformance/cases/graphics/raster-equivalent-Z64.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-equivalent-Z64.md) | valid / printer | Same 16x8 inline image in Z64 |
+| [raster-equivalent-binary](../../../test-data/render-conformance/cases/graphics/raster-equivalent-binary.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-equivalent-binary.md) | valid / printer | Same 16x8 image as counted binary data |
+| [raster-fill-hex](../../../test-data/render-conformance/cases/graphics/raster-fill-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-fill-hex.md) | valid / printer | 16x4 alternating empty/full rows; comma/! terminate rows |
+| [raster-fill-rle](../../../test-data/render-conformance/cases/graphics/raster-fill-rle.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-fill-rle.md) | valid / printer | 16x4 alternating empty/full rows; comma/! terminate rows |
+| [raster-repeat-hex](../../../test-data/render-conformance/cases/graphics/raster-repeat-hex.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-repeat-hex.md) | valid / printer | 16x4 AA55 row; repeat count and colon repeat |
+| [raster-repeat-rle](../../../test-data/render-conformance/cases/graphics/raster-repeat-rle.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-repeat-rle.md) | valid / printer | 16x4 AA55 row; repeat count and colon repeat |
+| [raster-binary-command-bytes](../../../test-data/render-conformance/cases/graphics/raster-binary-command-bytes.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-binary-command-bytes.md) | boundary / printer | Binary bytes resemble ^FS/~HS; counted payload must not be parsed as commands |
+| [raster-stride-1](../../../test-data/render-conformance/cases/graphics/raster-stride-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-stride-1.md) | valid / printer | Packed MSB-first raster, 1 bytes/row, 7 rows |
+| [raster-stride-2](../../../test-data/render-conformance/cases/graphics/raster-stride-2.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-stride-2.md) | valid / printer | Packed MSB-first raster, 2 bytes/row, 7 rows |
+| [raster-stride-3](../../../test-data/render-conformance/cases/graphics/raster-stride-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-stride-3.md) | valid / printer | Packed MSB-first raster, 3 bytes/row, 7 rows |
+| [raster-stride-17](../../../test-data/render-conformance/cases/graphics/raster-stride-17.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-stride-17.md) | valid / printer | Packed MSB-first raster, 17 bytes/row, 7 rows |
+| [raster-clipped](../../../test-data/render-conformance/cases/graphics/raster-clipped.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/raster-clipped.md) | boundary / printer | Inline raster clipped at bottom-right edge |
+| [invalid-bad-raster-count](../../../test-data/render-conformance/cases/negative/invalid-bad-raster-count.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/invalid-bad-raster-count.md) | invalid / behavior-only | Malformed/out-of-range input: bad-raster-count; observe rejection/fallback, never count as valid fidelity |
+| [invalid-zero-raster-stride](../../../test-data/render-conformance/cases/negative/invalid-zero-raster-stride.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/invalid-zero-raster-stride.md) | invalid / behavior-only | Malformed/out-of-range input: zero-raster-stride; observe rejection/fallback, never count as valid fidelity |
 
 Showing 20 of 22 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

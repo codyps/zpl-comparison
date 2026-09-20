@@ -40,7 +40,7 @@ Reference parameters: **o, e, h, f, g**. These describe the reference grammar, n
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-plessey](../../../test-data/render-conformance/cases/barcode-families/symbol-plessey.zpl) | valid / printer | Reference symbol variant: plessey |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-plessey](../../../test-data/render-conformance/cases/barcode-families/symbol-plessey.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-plessey.md) | valid / printer | Reference symbol variant: plessey |
 

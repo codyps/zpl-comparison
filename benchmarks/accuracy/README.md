@@ -14,15 +14,17 @@ benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.p
 benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py
 ```
 
-This single regeneration command reruns all 133 cases across all eight prepared
-renderers, writes results, rendered PNGs, difference images, plots and comparison
+This single regeneration command reruns all 133 accuracy cases, 531 feature
+fixtures and eight external examples across all eight prepared renderers, writes results, rendered PNGs, difference images, plots and comparison
 Markdown, then refreshes the dependent compatibility pages. It verifies the gallery
 and generated compatibility pages before succeeding. It uses the existing adapter
 builds in `benchmarks/_work/config.json`; rerun `benchmarks/prepare.py` first after
 changing library sources or pins. It does not recapture printer references or rerun
-the separate performance, invalid-input or larger conformance suites.
+the separate performance or invalid-input suites. Feature conformance is included.
 
-The runner checks SHA-256 hashes, capture completeness and repeated-control pixels before rendering. No printer or external rendering service is contacted. Each case runs in a fresh process with a 45-second timeout; errors remain visible and score zero for nonblank references. GitHub Actions repeats both suites and uploads Markdown, plots, rasters and raw JSON. Accuracy differences are measurements, not CI failures; broken reference integrity or harness failures fail the run.
+The runner checks SHA-256 hashes, capture completeness and repeated-control pixels before rendering. No printer or external rendering service is contacted. Each case runs in a fresh process with a 45-second timeout; errors remain visible and score zero for nonblank references. GitHub Actions repeats these suites and uploads Markdown, plots, rasters and raw JSON. Accuracy differences are measurements, not CI failures; broken reference integrity or harness failures fail the run. Renderer crashes or timeouts remain in the reports and make full regeneration exit nonzero after writing all reports. Missing adapter executables or native libraries fail before measurement output is overwritten.
+
+Each library comparison page shows compact difference thumbnails beside its per-test IoU values, linked to the full-resolution differences. The same images appear on individual test pages.
 
 To regenerate only the plots and tables from saved measurements:
 
@@ -46,7 +48,7 @@ benchmarks/_work/venv/bin/python benchmarks/accuracy/run.py \
   --reference benchmarks/accuracy/new-reference
 ```
 
-Use a new directory within this repository; capture refuses to overwrite an existing one. Review the identified model/firmware, images and manifest before adopting a new baseline. This implementation accepts identified 203-dpi printers only. It submits the fixed raster-only probes using **Preview Label**, never Print. The printer's preview mechanism uses its RAM object `R:TEST1.ZPL`; reserve that name during capture. No persistent downloads or physical label jobs are requested. The capture protocol follows [the existing printer client](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zebra-http-api/src/lib.rs).
+Use a new directory within this repository; capture refuses to overwrite an existing one. Review the identified model/firmware, images and manifest before adopting a new baseline. This implementation accepts identified 203-dpi printers only. It submits the fixed raster-only probes using **Preview Label**, never Print. The printer's preview mechanism uses its RAM object `R:CMPACC.ZPL` by default (`--object-name` overrides it); reserve a distinct name during capture. Rendering defaults are inserted into the fixture format in the same preview request, and requests are spaced two seconds apart. Preview PNG URLs are read from each response. This reduces collisions but does not isolate the printer’s global rendering state from other clients. No persistent downloads or physical label jobs are requested. The capture protocol follows [the existing printer client](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zebra-http-api/src/lib.rs).
 
 There are 73 fresh argument cases plus one repeated control and 60 recaptured barcode cases. The barcode captures were refreshed at ^PW832 with a separate reset before every case; this command refreshes only the argument set. A new device reference creates a mixed-device corpus unless the barcode set is recaptured separately. Existing barcode captures were used in development and are not a holdout.
 
@@ -54,7 +56,16 @@ Foreground intersection-over-union is measured at the original origin, with tran
 
 The argument list and values are in [cases.py](cases.py), with the Zebra command-reference index in [the documentation](../../docs/zpl-command-index.tsv). Expand the corpus before drawing conclusions about an untested command, value, encoding, font, firmware or workload. Host fonts may affect fallback rendering. Every library receives the same input bytes; adapters only supply canvas dimensions and call public rendering APIs. The Rust FFI wrapper and Go adapter share an engine but their wrapper defaults and API paths can differ.
 
-## Larger rendering conformance corpus
+## Feature accuracy gallery
+
+The [531-fixture gallery](../../docs/benchmarks/accuracy/comparisons/features/README.md)
+shares the accuracy metric, image layout and regeneration command. Compatibility
+feature pages link to each fixture's eight renders and printer differences.
+Feature means stay separate from the argument/barcode chart to avoid changing its
+sampling weights. Missing or incomplete printer captures leave the fixture unscored;
+invalid inputs never reach the printer. Capture and resume instructions are in the
+[parent benchmark guide](../README.md#feature-renders-and-printer-differences).
+
 
 Use `capture.py --corpus test-data/render-conformance --group torture` to capture
 the combined rendering pages, then `benchmarks/conformance.py --reference DIR`

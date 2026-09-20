@@ -37,10 +37,10 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [pdf417-structured-origins-1](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-1.zpl) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
-| [pdf417-structured-origins-3](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-3.zpl) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
-| [structured-exclude-B7](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-B7.zpl) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
-| [structured-exclude-BF](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-BF.zpl) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [pdf417-structured-origins-1](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-structured-origins-1.md) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
+| [pdf417-structured-origins-3](../../../test-data/render-conformance/cases/barcode-arguments/pdf417-structured-origins-3.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/pdf417-structured-origins-3.md) | boundary / printer | FM structured append origins; insufficient origins may intentionally suppress symbols |
+| [structured-exclude-B7](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-B7.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/structured-exclude-B7.md) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
+| [structured-exclude-BF](../../../test-data/render-conformance/cases/barcode-arguments/structured-exclude-BF.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/structured-exclude-BF.md) | boundary / printer | FM excluded second origin (e,e), bounded structured append payload |
 

@@ -42,9 +42,9 @@ Reference parameters: **o, h, s, c, r, m**. These describe the reference grammar
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-codablock_a](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_a.zpl) | valid / printer | Reference symbol variant: codablock_a |
-| [symbol-codablock_e](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_e.zpl) | valid / printer | Reference symbol variant: codablock_e |
-| [symbol-codablock_f](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_f.zpl) | valid / printer | Reference symbol variant: codablock_f |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-codablock_a](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_a.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_a.md) | valid / printer | Reference symbol variant: codablock_a |
+| [symbol-codablock_e](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_e.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_e.md) | valid / printer | Reference symbol variant: codablock_e |
+| [symbol-codablock_f](../../../test-data/render-conformance/cases/barcode-families/symbol-codablock_f.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-codablock_f.md) | valid / printer | Reference symbol variant: codablock_f |
 

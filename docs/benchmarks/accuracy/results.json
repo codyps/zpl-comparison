@@ -6,7 +6,7 @@
     "python": "3.14.4",
     "numpy": "2.5.3"
   },
-  "measured_utc": "2026-09-19T03:33:57Z",
+  "measured_utc": "2026-09-20T04:43:33Z",
   "threshold": 128,
   "cases": [
     {
@@ -4524,7 +4524,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41939909) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44593857) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4701,7 +4701,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41940041) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44593965) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -4878,7 +4878,7 @@
       "reference_ink": 1254,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41940424) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44594088) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -10983,7 +10983,7 @@
       "reference_ink": 28,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41946040) panicked at src/main.rs:43:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44597904) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -16944,7 +16944,7 @@
       "reference_ink": 5260,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41956948) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44601332) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -17121,7 +17121,7 @@
       "reference_ink": 4092,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41957237) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44601447) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -17298,7 +17298,7 @@
       "reference_ink": 4124,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41957510) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44601717) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -23019,7 +23019,7 @@
       "reference_ink": 12540,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41965197) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44605726) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -23196,7 +23196,7 @@
       "reference_ink": 12840,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41965360) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44605862) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -23565,7 +23565,7 @@
       "reference_ink": 2010,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41965662) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44606232) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -23742,7 +23742,7 @@
       "reference_ink": 13200,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41965915) panicked at src/main.rs:62:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44606368) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "forge",
@@ -27399,7 +27399,7 @@
       "reference_ink": 4610,
       "score": 0.0,
       "status": "error",
-      "error": "\nthread 'main' (41969286) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+      "error": "\nthread 'main' (44608646) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
     },
     {
       "library": "go",
@@ -27532,25 +27532,25 @@
     "labelize": [
       {
         "name": "labelize",
-        "sha256": "f347ffd8b1e51a024f9776992bc4c0e5e9f0d528a1688b84b6ed99ff78599ec6"
+        "sha256": "f85bf63f1216a511e2d8fba7f81ff867f11dcc573dc8094ffdfad3a1acf7d5d7"
       }
     ],
     "forge": [
       {
         "name": "forge",
-        "sha256": "7818d4c72420ec8189afddd580af318afb26eec6aceb8999eb3652c156ac0a88"
+        "sha256": "b985bc72c0d6def27c7810c97d28b51298a63abeeaa4a444c42cf08401d175d2"
       }
     ],
     "go": [
       {
         "name": "go-adapter",
-        "sha256": "e31d04de8631a6331ad4a4546fe7a01e03618ddc227576fbe504826d5d57c7de"
+        "sha256": "51b3b853af041fef352328dee0dae6df394c121015cdbcedf594e393d12b176d"
       }
     ],
     "ffi": [
       {
         "name": "ffi",
-        "sha256": "6d4d7871b12af14d9d07fa6d3263687f78c3013dd31bac71bc9eb93cfc941c35"
+        "sha256": "837d3c28f4cebcb9835ddd26960b5c5299f5d80e22616028974653b9ba6b51c7"
       },
       {
         "name": "libzpl.dylib",
@@ -27624,11 +27624,11 @@
       },
       {
         "name": "labelary.py",
-        "sha256": "be6af1ac6e9ed26bd89c9086cd2056352a1f76f00e8825d8c757b46f241ffe16"
+        "sha256": "c71925b887fdb91003693c82184e512a47dd4cfbac2fe722647768eff19205e5"
       },
       {
         "name": "captures.json",
-        "sha256": "33c66f7cc8f496fdd68fc25cae800dfc2335adbc35241237cac1c6e605f0702d"
+        "sha256": "fccb725e240bc64bf13e68d9439b87918b6c8233dc5cfe1b3a370538a5367c4c"
       }
     ]
   },

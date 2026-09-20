@@ -37,11 +37,11 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [field-concat-whole](../../../test-data/render-conformance/cases/text-data/field-concat-whole.zpl) | valid / printer | FE inline numbered-field concatenation / substring: whole |
-| [field-concat-forward](../../../test-data/render-conformance/cases/text-data/field-concat-forward.zpl) | valid / printer | FE inline numbered-field concatenation / substring: forward |
-| [field-concat-backward](../../../test-data/render-conformance/cases/text-data/field-concat-backward.zpl) | valid / printer | FE inline numbered-field concatenation / substring: backward |
-| [field-concat-past-end](../../../test-data/render-conformance/cases/text-data/field-concat-past-end.zpl) | valid / printer | FE inline numbered-field concatenation / substring: past-end |
-| [field-concat-scope](../../../test-data/render-conformance/cases/state/field-concat-scope.zpl) | valid / printer | FE affects only its following FD, subsequent #1# stays literal |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [field-concat-whole](../../../test-data/render-conformance/cases/text-data/field-concat-whole.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-whole.md) | valid / printer | FE inline numbered-field concatenation / substring: whole |
+| [field-concat-forward](../../../test-data/render-conformance/cases/text-data/field-concat-forward.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-forward.md) | valid / printer | FE inline numbered-field concatenation / substring: forward |
+| [field-concat-backward](../../../test-data/render-conformance/cases/text-data/field-concat-backward.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-backward.md) | valid / printer | FE inline numbered-field concatenation / substring: backward |
+| [field-concat-past-end](../../../test-data/render-conformance/cases/text-data/field-concat-past-end.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-past-end.md) | valid / printer | FE inline numbered-field concatenation / substring: past-end |
+| [field-concat-scope](../../../test-data/render-conformance/cases/state/field-concat-scope.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-concat-scope.md) | valid / printer | FE affects only its following FD, subsequent #1# stays literal |
 

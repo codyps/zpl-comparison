@@ -37,26 +37,26 @@ No focused printer measurements yet.
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-graphic-A-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-N.zpl) | valid / printer | GS symbol selector A, orientation N |
-| [symbol-graphic-A-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-R.zpl) | valid / printer | GS symbol selector A, orientation R |
-| [symbol-graphic-A-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-I.zpl) | valid / printer | GS symbol selector A, orientation I |
-| [symbol-graphic-A-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-B.zpl) | valid / printer | GS symbol selector A, orientation B |
-| [symbol-graphic-B-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-N.zpl) | valid / printer | GS symbol selector B, orientation N |
-| [symbol-graphic-B-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-R.zpl) | valid / printer | GS symbol selector B, orientation R |
-| [symbol-graphic-B-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-I.zpl) | valid / printer | GS symbol selector B, orientation I |
-| [symbol-graphic-B-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-B.zpl) | valid / printer | GS symbol selector B, orientation B |
-| [symbol-graphic-C-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-N.zpl) | valid / printer | GS symbol selector C, orientation N |
-| [symbol-graphic-C-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-R.zpl) | valid / printer | GS symbol selector C, orientation R |
-| [symbol-graphic-C-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-I.zpl) | valid / printer | GS symbol selector C, orientation I |
-| [symbol-graphic-C-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-B.zpl) | valid / printer | GS symbol selector C, orientation B |
-| [symbol-graphic-D-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-N.zpl) | valid / printer | GS symbol selector D, orientation N |
-| [symbol-graphic-D-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-R.zpl) | valid / printer | GS symbol selector D, orientation R |
-| [symbol-graphic-D-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-I.zpl) | valid / printer | GS symbol selector D, orientation I |
-| [symbol-graphic-D-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-B.zpl) | valid / printer | GS symbol selector D, orientation B |
-| [symbol-graphic-E-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-N.zpl) | valid / printer | GS symbol selector E, orientation N |
-| [symbol-graphic-E-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-R.zpl) | valid / printer | GS symbol selector E, orientation R |
-| [symbol-graphic-E-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-I.zpl) | valid / printer | GS symbol selector E, orientation I |
-| [symbol-graphic-E-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-B.zpl) | valid / printer | GS symbol selector E, orientation B |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-graphic-A-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-N.md) | valid / printer | GS symbol selector A, orientation N |
+| [symbol-graphic-A-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-R.md) | valid / printer | GS symbol selector A, orientation R |
+| [symbol-graphic-A-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-I.md) | valid / printer | GS symbol selector A, orientation I |
+| [symbol-graphic-A-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-A-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-A-B.md) | valid / printer | GS symbol selector A, orientation B |
+| [symbol-graphic-B-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-N.md) | valid / printer | GS symbol selector B, orientation N |
+| [symbol-graphic-B-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-R.md) | valid / printer | GS symbol selector B, orientation R |
+| [symbol-graphic-B-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-I.md) | valid / printer | GS symbol selector B, orientation I |
+| [symbol-graphic-B-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-B-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-B-B.md) | valid / printer | GS symbol selector B, orientation B |
+| [symbol-graphic-C-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-N.md) | valid / printer | GS symbol selector C, orientation N |
+| [symbol-graphic-C-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-R.md) | valid / printer | GS symbol selector C, orientation R |
+| [symbol-graphic-C-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-I.md) | valid / printer | GS symbol selector C, orientation I |
+| [symbol-graphic-C-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-C-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-C-B.md) | valid / printer | GS symbol selector C, orientation B |
+| [symbol-graphic-D-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-N.md) | valid / printer | GS symbol selector D, orientation N |
+| [symbol-graphic-D-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-R.md) | valid / printer | GS symbol selector D, orientation R |
+| [symbol-graphic-D-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-I.md) | valid / printer | GS symbol selector D, orientation I |
+| [symbol-graphic-D-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-D-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-D-B.md) | valid / printer | GS symbol selector D, orientation B |
+| [symbol-graphic-E-N](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-N.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-N.md) | valid / printer | GS symbol selector E, orientation N |
+| [symbol-graphic-E-R](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-R.md) | valid / printer | GS symbol selector E, orientation R |
+| [symbol-graphic-E-I](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-I.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-I.md) | valid / printer | GS symbol selector E, orientation I |
+| [symbol-graphic-E-B](../../../test-data/render-conformance/cases/shapes/symbol-graphic-E-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-graphic-E-B.md) | valid / printer | GS symbol selector E, orientation B |
 

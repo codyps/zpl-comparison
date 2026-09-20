@@ -2,7 +2,7 @@
   "schema": 1,
   "suite": "external-zpl-v1",
   "manifest_sha256": "d67331b8da175ee7bf7e359b3a222321b41e82152ee63f32cec8f42ad1b9de3f",
-  "measured_utc": "2026-09-19T03:26:59Z",
+  "measured_utc": "2026-09-20T04:49:42Z",
   "host": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
   "cases": [
     {
@@ -681,7 +681,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41935219) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 9, message: \"unsupported command MN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (44666459) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 9, message: \"unsupported command MN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -704,7 +704,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41935236) panicked at src/main.rs:78:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (44666473) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -883,7 +883,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41936718) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (44666665) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -984,7 +984,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41937107) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 56, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (44666778) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 56, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {
@@ -1007,7 +1007,7 @@
       "validity": "boundary",
       "score": null,
       "returncode": 101,
-      "diagnostic": "\nthread 'main' (41937115) panicked at src/main.rs:73:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (44666793) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "status": "error"
     },
     {

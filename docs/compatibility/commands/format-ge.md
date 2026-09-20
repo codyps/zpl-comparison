@@ -36,14 +36,17 @@ Reference parameters: **w, h, t, c**. These describe the reference grammar, not 
 
 ## Related features
 
-[Baseline shapes](../features/baseline-shapes.md) · [Shapes](../features/shapes.md) · [Torture](../features/torture.md)
+[Baseline shapes](../features/baseline-shapes.md) · [Compact shapes](../features/compact-shapes.md) · [Shapes](../features/shapes.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-shape-GE-B](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GE-B.zpl) | valid / printer | ^GE 120,60,3,B |
-| [shape-GE-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-B-plain.zpl) | valid / printer | GE B on black backing, odd dimensions  |
-| [shape-GE-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-W-plain.zpl) | valid / printer | GE W on black backing, odd dimensions  |
-| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-shape-GE-B](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GE-B.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-shape-GE-B.md) | valid / printer | ^GE 120,60,3,B |
+| [shape-GE-B-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-B-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GE-B-plain.md) | valid / printer | GE B on black backing, odd dimensions  |
+| [shape-GE-W-plain](../../../test-data/render-conformance/cases/shapes/shape-GE-W-plain.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GE-W-plain.md) | valid / printer | GE W on black backing, odd dimensions  |
+| [torture-shipping-label](../../../test-data/render-conformance/cases/torture/torture-shipping-label.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-shipping-label.md) | valid / printer | Dense mixed label: text wrapping, QR, Code128, DataMatrix, PDF417, reversal and rotation |
+| [compact-circle-4](../../../test-data/render-conformance/cases/compact-shapes/compact-circle-4.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-circle-4.md) | valid / printer | Small and thick circle beside equal-size ellipse, with a thin circle control |
+| [compact-circle-28](../../../test-data/render-conformance/cases/compact-shapes/compact-circle-28.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-circle-28.md) | valid / printer | Small and thick circle beside equal-size ellipse, with a thin circle control |
+| [compact-circle-127](../../../test-data/render-conformance/cases/compact-shapes/compact-circle-127.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/compact-circle-127.md) | valid / printer | Small and thick circle beside equal-size ellipse, with a thin circle control |
 

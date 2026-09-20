@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found | Not measured | 1 error, 3 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found | 0/4 exact; mean IoU 47.6%; 1 errors | 1 error, 3 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 18 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 18 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 13 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 12 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 17 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 18 🧩 Handler found | 0/4 exact; mean IoU 48.3%; 0 errors | 4 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 13 🧩 Handler found | 0/4 exact; mean IoU 50.7%; 0 errors | 4 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 57.2%; 0 errors | 4 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/4 exact; mean IoU 57.2%; 0 errors | 4 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 12 🧩 Handler found | 0/4 exact; mean IoU 17.2%; 0 errors | 4 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 17 🟢 Upstream: supported | 0/4 exact; mean IoU 49.0%; 0 errors | 4 rendered |
 | [zpl-builder](../libraries/builder.md) | 9 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 3 ❔ No evidence found; 15 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 9 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | Not measured | 4 rendered |
+| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | 0/4 exact; mean IoU 56.2%; 0 errors | 4 rendered |
 
 
 ## Commands involved
@@ -31,14 +31,14 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [fields-1](../../../test-data/render-conformance/cases/stress/fields-1.zpl) | valid / printer | 1 independent text fields; detect leakage, dropping and scalability |
-| [fields-48](../../../test-data/render-conformance/cases/stress/fields-48.zpl) | valid / printer | 48 independent text fields; detect leakage, dropping and scalability |
-| [fields-400](../../../test-data/render-conformance/cases/stress/fields-400.zpl) | valid / printer | 400 independent text fields; detect leakage, dropping and scalability |
-| [field-data-3072-bytes](../../../test-data/render-conformance/cases/stress/field-data-3072-bytes.zpl) | boundary / printer | 3072-byte field; clipped to canvas, no implicit truncation before layout |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [fields-1](../../../test-data/render-conformance/cases/stress/fields-1.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/fields-1.md) | valid / printer | 1 independent text fields; detect leakage, dropping and scalability |
+| [fields-48](../../../test-data/render-conformance/cases/stress/fields-48.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/fields-48.md) | valid / printer | 48 independent text fields; detect leakage, dropping and scalability |
+| [fields-400](../../../test-data/render-conformance/cases/stress/fields-400.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/fields-400.md) | valid / printer | 400 independent text fields; detect leakage, dropping and scalability |
+| [field-data-3072-bytes](../../../test-data/render-conformance/cases/stress/field-data-3072-bytes.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-data-3072-bytes.md) | boundary / printer | 3072-byte field; clipped to canvas, no implicit truncation before layout |
 

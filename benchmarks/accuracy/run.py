@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 import platform
+import shutil
 from pathlib import Path
 import subprocess
 import sys
@@ -15,7 +16,16 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"]
+LIBRARIES = [
+    "codyps-zpl",
+    "labelize",
+    "forge",
+    "go",
+    "ffi",
+    "binarykits",
+    "zplr",
+    "labelary",
+]
 
 
 def sha(path):
@@ -126,6 +136,28 @@ def corpus(fresh=ROOT / "accuracy/reference"):
     return cases, manifest, historical
 
 
+def preflight(cfg, libraries):
+    """Reject missing harness dependencies before overwriting saved evidence."""
+    env = {**os.environ, **cfg.get("environment", {})}
+    for name in libraries:
+        command = cfg["commands"][name]
+        if not shutil.which(command[0], path=env.get("PATH")):
+            raise ValueError(
+                f"Missing adapter executable for {name}: {command[0]}; run prepare.py"
+            )
+        for arg in command[1:]:
+            if Path(arg).is_absolute() and not Path(arg).is_file():
+                raise ValueError(f"Missing adapter dependency for {name}: {arg}")
+        if name == "ffi":
+            native = Path(command[0]).parent / (
+                "libzpl.dylib" if sys.platform == "darwin" else "libzpl.so"
+            )
+            if not native.is_file():
+                raise ValueError(
+                    f"Missing FFI native library: {native}; run prepare.py"
+                )
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--reference", type=Path, default=ROOT / "accuracy/reference")
@@ -141,6 +173,27 @@ def main():
     if missing:
         ap.error(f"Build all rendering adapters first; missing: {sorted(missing)}")
     env = {**os.environ, **cfg["environment"]}
+    preflight(cfg, LIBRARIES)
+    identities = {}
+    for name in LIBRARIES:
+        command = cfg["commands"][name]
+        paths = [Path(v) for v in command if Path(v).is_file()]
+        if name == "ffi":
+            paths.append(
+                Path(command[0]).parent
+                / ("libzpl.dylib" if sys.platform == "darwin" else "libzpl.so")
+            )
+        if name == "zplr":
+            paths.extend(
+                [ROOT / "adapters/node/package-lock.json", ROOT / "sources.lock.json"]
+            )
+        if name == "binarykits":
+            paths.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
+        if name == "labelary":
+            paths.extend(
+                [ROOT / "labelary.py", REPO / "docs/benchmarks/labelary/captures.json"]
+            )
+        identities[name] = [{"name": p.name, "sha256": sha(p)} for p in paths]
     cases, fresh, old = corpus(args.reference.resolve())
     dest = args.output
     dest.mkdir(parents=True, exist_ok=True)
@@ -203,24 +256,6 @@ def main():
                 row.update(status="error", error=str(error))
             rows.append(row)
         print(f"{ci + 1}/{len(cases)} {case['id']}", flush=True)
-    identities = {}
-    for name in LIBRARIES:
-        command = cfg["commands"][name]
-        paths = [Path(v) for v in command if Path(v).is_file()]
-        if name == "ffi":
-            paths.append(
-                Path(command[0]).parent
-                / ("libzpl.dylib" if sys.platform == "darwin" else "libzpl.so")
-            )
-        if name == "zplr":
-            paths.extend(
-                [ROOT / "adapters/node/package-lock.json", ROOT / "sources.lock.json"]
-            )
-        if name == "binarykits":
-            paths.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
-        if name == "labelary":
-            paths.extend([ROOT / "labelary.py", REPO / "docs/benchmarks/labelary/captures.json"])
-        identities[name] = [{"name": p.name, "sha256": sha(p)} for p in paths]
     serial = []
     for case in cases:
         serial.append(

@@ -1,8 +1,8 @@
 # Accuracy against a real Zebra printer
 
-**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together.
+**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.
 
-Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-19T03:33:57Z.
+Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-20T04:43:33Z.
 
 [Command/argument support](../command-support.md) · [Run/reproduce](../../../benchmarks/accuracy/README.md) · [Raw measurements](results.json).
 
@@ -23,7 +23,7 @@ The chart’s Overall column is the mean over all nonblank printer cases, not an
 | Library | Nonblank / 132 | Ink exact | Strict exact | Errors | Blank | All-case mean IoU | Fresh argument IoU | Archived barcode IoU | Shared-case mean IoU |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | codyps/zpl (Rust) | 132 | 106 | 106 | 0 | 0 | 89.86% | 96.38% | 81.80% | 91.00% |
-| Labelary (captured service) | 131 | 56 | 56 | 0 | 1 | 76.64% | 75.37% | 78.21% | 80.83% |
+| Labelary (SaaS) | 131 | 56 | 56 | 0 | 1 | 76.64% | 75.37% | 78.21% | 80.83% |
 | ZPLr (TypeScript) | 132 | 60 | 60 | 0 | 0 | 73.01% | 64.48% | 83.56% | 73.83% |
 | labelize (Rust) | 127 | 24 | 24 | 5 | 0 | 48.37% | 68.24% | 23.78% | 49.98% |
 | zpl-forge (Rust) | 123 | 22 | 22 | 7 | 2 | 39.86% | 46.45% | 31.71% | 44.68% |
@@ -31,7 +31,7 @@ The chart’s Overall column is the mean over all nonblank printer cases, not an
 | go-zpl (Go) | 132 | 16 | 16 | 0 | 0 | 37.13% | 55.41% | 14.51% | 37.07% |
 | zpl-rs (Rust → Go) | 132 | 16 | 16 | 0 | 0 | 36.55% | 54.37% | 14.51% | 36.42% |
 
-The model-2 QR probe illustrates a placement error: the printer starts the symbol near y=119, while codyps/zpl starts it at y=60. IoU retains that difference rather than aligning it away. Inspect the images to distinguish placement, font metrics, omitted fields and symbol-pattern differences.
+Inspect the difference images to distinguish placement, font metrics, omitted fields and symbol-pattern differences. IoU compares the original coordinates without aligning away placement errors.
 
 
 ## Limits and provenance
@@ -48,7 +48,7 @@ Click any result to compare the printer preview, library render and difference t
 
 ### barcode-arguments
 
-| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (captured service) |
+| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (SaaS) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [code39-ratio-2](../../../benchmarks/accuracy/reference/code39-ratio-2.zpl) · [printer](../../../benchmarks/accuracy/reference/code39-ratio-2.png) | ^BY | w=2,ratio=2,height=60 | [100.0%](comparisons/cases/argument-code39-ratio-2.md#codyps-zpl) | [100.0%](comparisons/cases/argument-code39-ratio-2.md#labelize) | [100.0%](comparisons/cases/argument-code39-ratio-2.md#forge) | [9.0%](comparisons/cases/argument-code39-ratio-2.md#go) | [9.0%](comparisons/cases/argument-code39-ratio-2.md#ffi) | [100.0%](comparisons/cases/argument-code39-ratio-2.md#binarykits) | [100.0%](comparisons/cases/argument-code39-ratio-2.md#zplr) | [100.0%](comparisons/cases/argument-code39-ratio-2.md#labelary) |
 | [code39-ratio-3](../../../benchmarks/accuracy/reference/code39-ratio-3.zpl) · [printer](../../../benchmarks/accuracy/reference/code39-ratio-3.png) | ^BY | w=2,ratio=3,height=60 | [100.0%](comparisons/cases/argument-code39-ratio-3.md#codyps-zpl) | [100.0%](comparisons/cases/argument-code39-ratio-3.md#labelize) | [100.0%](comparisons/cases/argument-code39-ratio-3.md#forge) | [7.8%](comparisons/cases/argument-code39-ratio-3.md#go) | [7.8%](comparisons/cases/argument-code39-ratio-3.md#ffi) | [100.0%](comparisons/cases/argument-code39-ratio-3.md#binarykits) | [100.0%](comparisons/cases/argument-code39-ratio-3.md#zplr) | [100.0%](comparisons/cases/argument-code39-ratio-3.md#labelary) |
@@ -78,7 +78,7 @@ Click any result to compare the printer preview, library render and difference t
 
 ### barcode-formats
 
-| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (captured service) |
+| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (SaaS) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [aztec](../../../references/barcodes-zd621-v1/aztec.zpl) · [printer](../../../references/barcodes-zd621-v1/aztec.png) | ^BO | See exact archived ZPL | [59.6%](comparisons/cases/barcode-aztec.md#codyps-zpl) | [100.0%](comparisons/cases/barcode-aztec.md#labelize) | [100.0%](comparisons/cases/barcode-aztec.md#forge) | [100.0%](comparisons/cases/barcode-aztec.md#go) | [100.0%](comparisons/cases/barcode-aztec.md#ffi) | [100.0%](comparisons/cases/barcode-aztec.md#binarykits) | [100.0%](comparisons/cases/barcode-aztec.md#zplr) | [100.0%](comparisons/cases/barcode-aztec.md#labelary) |
 | [aztec_alias](../../../references/barcodes-zd621-v1/aztec_alias.zpl) · [printer](../../../references/barcodes-zd621-v1/aztec_alias.png) | ^B0 | See exact archived ZPL | [59.6%](comparisons/cases/barcode-aztec_alias.md#codyps-zpl) | [12.5%](comparisons/cases/barcode-aztec_alias.md#labelize) | [100.0%](comparisons/cases/barcode-aztec_alias.md#forge) | [13.0%](comparisons/cases/barcode-aztec_alias.md#go) | [13.0%](comparisons/cases/barcode-aztec_alias.md#ffi) | [11.3%](comparisons/cases/barcode-aztec_alias.md#binarykits) | [100.0%](comparisons/cases/barcode-aztec_alias.md#zplr) | [100.0%](comparisons/cases/barcode-aztec_alias.md#labelary) |
@@ -143,7 +143,7 @@ Click any result to compare the printer preview, library render and difference t
 
 ### graphics
 
-| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (captured service) |
+| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (SaaS) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [graphic-hex](../../../benchmarks/accuracy/reference/graphic-hex.zpl) · [printer](../../../benchmarks/accuracy/reference/graphic-hex.png) | ^GF | A,8,8,1; raw hex | [100.0%](comparisons/cases/argument-graphic-hex.md#codyps-zpl) | [100.0%](comparisons/cases/argument-graphic-hex.md#labelize) | [100.0%](comparisons/cases/argument-graphic-hex.md#forge) | [100.0%](comparisons/cases/argument-graphic-hex.md#go) | [100.0%](comparisons/cases/argument-graphic-hex.md#ffi) | [100.0%](comparisons/cases/argument-graphic-hex.md#binarykits) | [100.0%](comparisons/cases/argument-graphic-hex.md#zplr) | [100.0%](comparisons/cases/argument-graphic-hex.md#labelary) |
 | [graphic-binary](../../../benchmarks/accuracy/reference/graphic-binary.zpl) · [printer](../../../benchmarks/accuracy/reference/graphic-binary.png) | ^GF | B,8,8,1; ASCII binary bytes | [100.0%](comparisons/cases/argument-graphic-binary.md#codyps-zpl) | [100.0%](comparisons/cases/argument-graphic-binary.md#labelize) | [blank](comparisons/cases/argument-graphic-binary.md#forge) | [100.0%](comparisons/cases/argument-graphic-binary.md#go) | [100.0%](comparisons/cases/argument-graphic-binary.md#ffi) | [0.0%](comparisons/cases/argument-graphic-binary.md#binarykits) | [100.0%](comparisons/cases/argument-graphic-binary.md#zplr) | [100.0%](comparisons/cases/argument-graphic-binary.md#labelary) |
@@ -152,7 +152,7 @@ Click any result to compare the printer preview, library render and difference t
 
 ### layout
 
-| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (captured service) |
+| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (SaaS) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [fo-justify-0](../../../benchmarks/accuracy/reference/fo-justify-0.zpl) · [printer](../../../benchmarks/accuracy/reference/fo-justify-0.png) | ^FO | x=220,y=80,z=0 | [100.0%](comparisons/cases/argument-fo-justify-0.md#codyps-zpl) | [67.3%](comparisons/cases/argument-fo-justify-0.md#labelize) | [error](comparisons/cases/argument-fo-justify-0.md#forge) | [85.0%](comparisons/cases/argument-fo-justify-0.md#go) | [85.0%](comparisons/cases/argument-fo-justify-0.md#ffi) | [27.4%](comparisons/cases/argument-fo-justify-0.md#binarykits) | [21.0%](comparisons/cases/argument-fo-justify-0.md#zplr) | [73.9%](comparisons/cases/argument-fo-justify-0.md#labelary) |
 | [fo-justify-1](../../../benchmarks/accuracy/reference/fo-justify-1.zpl) · [printer](../../../benchmarks/accuracy/reference/fo-justify-1.png) | ^FO | x=220,y=80,z=1 | [100.0%](comparisons/cases/argument-fo-justify-1.md#codyps-zpl) | [42.2%](comparisons/cases/argument-fo-justify-1.md#labelize) | [error](comparisons/cases/argument-fo-justify-1.md#forge) | [0.0%](comparisons/cases/argument-fo-justify-1.md#go) | [0.0%](comparisons/cases/argument-fo-justify-1.md#ffi) | [22.1%](comparisons/cases/argument-fo-justify-1.md#binarykits) | [23.6%](comparisons/cases/argument-fo-justify-1.md#zplr) | [37.9%](comparisons/cases/argument-fo-justify-1.md#labelary) |
@@ -168,7 +168,7 @@ Click any result to compare the printer preview, library render and difference t
 
 ### shapes
 
-| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (captured service) |
+| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (SaaS) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [box-thickness-1](../../../benchmarks/accuracy/reference/box-thickness-1.zpl) · [printer](../../../benchmarks/accuracy/reference/box-thickness-1.png) | ^GB | w=100,h=60,t=1,color=B,round=0 | [100.0%](comparisons/cases/argument-box-thickness-1.md#codyps-zpl) | [100.0%](comparisons/cases/argument-box-thickness-1.md#labelize) | [100.0%](comparisons/cases/argument-box-thickness-1.md#forge) | [100.0%](comparisons/cases/argument-box-thickness-1.md#go) | [100.0%](comparisons/cases/argument-box-thickness-1.md#ffi) | [100.0%](comparisons/cases/argument-box-thickness-1.md#binarykits) | [100.0%](comparisons/cases/argument-box-thickness-1.md#zplr) | [100.0%](comparisons/cases/argument-box-thickness-1.md#labelary) |
 | [box-thickness-4](../../../benchmarks/accuracy/reference/box-thickness-4.zpl) · [printer](../../../benchmarks/accuracy/reference/box-thickness-4.png) | ^GB | w=100,h=60,t=4,color=B,round=0 | [100.0%](comparisons/cases/argument-box-thickness-4.md#codyps-zpl) | [100.0%](comparisons/cases/argument-box-thickness-4.md#labelize) | [100.0%](comparisons/cases/argument-box-thickness-4.md#forge) | [100.0%](comparisons/cases/argument-box-thickness-4.md#go) | [100.0%](comparisons/cases/argument-box-thickness-4.md#ffi) | [100.0%](comparisons/cases/argument-box-thickness-4.md#binarykits) | [100.0%](comparisons/cases/argument-box-thickness-4.md#zplr) | [100.0%](comparisons/cases/argument-box-thickness-4.md#labelary) |
@@ -182,7 +182,7 @@ Click any result to compare the printer preview, library render and difference t
 
 ### text
 
-| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (captured service) |
+| Case | Command | Argument values | codyps/zpl (Rust) | labelize (Rust) | zpl-forge (Rust) | go-zpl (Go) | zpl-rs (Rust → Go) | BinaryKits.Zpl (.NET) | ZPLr (TypeScript) | Labelary (SaaS) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [font0-height-16](../../../benchmarks/accuracy/reference/font0-height-16.zpl) · [printer](../../../benchmarks/accuracy/reference/font0-height-16.png) | ^A | font=0,o=N,h=16,w=0 | [100.0%](comparisons/cases/argument-font0-height-16.md#codyps-zpl) | [56.0%](comparisons/cases/argument-font0-height-16.md#labelize) | [35.0%](comparisons/cases/argument-font0-height-16.md#forge) | [81.1%](comparisons/cases/argument-font0-height-16.md#go) | [81.1%](comparisons/cases/argument-font0-height-16.md#ffi) | [16.6%](comparisons/cases/argument-font0-height-16.md#binarykits) | [17.9%](comparisons/cases/argument-font0-height-16.md#zplr) | [64.5%](comparisons/cases/argument-font0-height-16.md#labelary) |
 | [font0-height-32](../../../benchmarks/accuracy/reference/font0-height-32.zpl) · [printer](../../../benchmarks/accuracy/reference/font0-height-32.png) | ^A | font=0,o=N,h=32,w=0 | [100.0%](comparisons/cases/argument-font0-height-32.md#codyps-zpl) | [67.3%](comparisons/cases/argument-font0-height-32.md#labelize) | [49.6%](comparisons/cases/argument-font0-height-32.md#forge) | [85.0%](comparisons/cases/argument-font0-height-32.md#go) | [85.0%](comparisons/cases/argument-font0-height-32.md#ffi) | [27.4%](comparisons/cases/argument-font0-height-32.md#binarykits) | [21.0%](comparisons/cases/argument-font0-height-32.md#zplr) | [73.9%](comparisons/cases/argument-font0-height-32.md#labelary) |

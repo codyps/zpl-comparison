@@ -41,13 +41,13 @@ Reference parameters: **w, h, t, c, o**. These describe the reference grammar, n
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-shape-GD-R](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GD-R.zpl) | valid / printer | ^GD 120,60,3,B,R |
-| [probe-shape-GD-L](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GD-L.zpl) | valid / printer | ^GD 120,60,3,B,L |
-| [shape-GD-B-L](../../../test-data/render-conformance/cases/shapes/shape-GD-B-L.zpl) | valid / printer | GD B on black backing, odd dimensions L |
-| [shape-GD-B-R](../../../test-data/render-conformance/cases/shapes/shape-GD-B-R.zpl) | valid / printer | GD B on black backing, odd dimensions R |
-| [shape-GD-W-L](../../../test-data/render-conformance/cases/shapes/shape-GD-W-L.zpl) | valid / printer | GD W on black backing, odd dimensions L |
-| [shape-GD-W-R](../../../test-data/render-conformance/cases/shapes/shape-GD-W-R.zpl) | valid / printer | GD W on black backing, odd dimensions R |
-| [torture-geometry](../../../test-data/render-conformance/cases/torture/torture-geometry.zpl) | valid / printer | 36 panels combine odd/even shapes, rounding, line direction, thickness and rotated labels |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-shape-GD-R](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GD-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-shape-GD-R.md) | valid / printer | ^GD 120,60,3,B,R |
+| [probe-shape-GD-L](../../../test-data/render-conformance/cases/baseline-shapes/probe-shape-GD-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-shape-GD-L.md) | valid / printer | ^GD 120,60,3,B,L |
+| [shape-GD-B-L](../../../test-data/render-conformance/cases/shapes/shape-GD-B-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-B-L.md) | valid / printer | GD B on black backing, odd dimensions L |
+| [shape-GD-B-R](../../../test-data/render-conformance/cases/shapes/shape-GD-B-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-B-R.md) | valid / printer | GD B on black backing, odd dimensions R |
+| [shape-GD-W-L](../../../test-data/render-conformance/cases/shapes/shape-GD-W-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-W-L.md) | valid / printer | GD W on black backing, odd dimensions L |
+| [shape-GD-W-R](../../../test-data/render-conformance/cases/shapes/shape-GD-W-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/shape-GD-W-R.md) | valid / printer | GD W on black backing, odd dimensions R |
+| [torture-geometry](../../../test-data/render-conformance/cases/torture/torture-geometry.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/torture-geometry.md) | valid / printer | 36 panels combine odd/even shapes, rounding, line direction, thickness and rotated labels |
 

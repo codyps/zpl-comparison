@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 16 🧩 Handler found | Not measured | 2 blank, 3 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 16 🧩 Handler found | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 16 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 16 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 11 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 5 ❔ No evidence found; 11 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 15 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 16 🧩 Handler found | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 11 🧩 Handler found | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 5 ❔ No evidence found; 11 🧩 Handler found | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 15 🟢 Upstream: supported | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
 | [zpl-builder](../libraries/builder.md) | 8 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 3 ❔ No evidence found; 13 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 9 ❔ No evidence found; 7 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 16 ❔ No evidence found | Not measured | 2 blank, 3 rendered |
+| [Labelary](../libraries/labelary.md) | 16 ❔ No evidence found | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
 
 
 ## Commands involved
@@ -31,15 +31,15 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [clip-0-0](../../../test-data/render-conformance/cases/clipping/clip-0-0.zpl) | boundary / printer | Field at (0, 0); exact edge/partly/fully outside page; no wraparound |
-| [clip-831-1217](../../../test-data/render-conformance/cases/clipping/clip-831-1217.zpl) | boundary / printer | Field at (831, 1217); exact edge/partly/fully outside page; no wraparound |
-| [clip-832-1218](../../../test-data/render-conformance/cases/clipping/clip-832-1218.zpl) | boundary / printer | Field at (832, 1218); exact edge/partly/fully outside page; no wraparound |
-| [clip-800-1180](../../../test-data/render-conformance/cases/clipping/clip-800-1180.zpl) | boundary / printer | Field at (800, 1180); exact edge/partly/fully outside page; no wraparound |
-| [clip-32000-32000](../../../test-data/render-conformance/cases/clipping/clip-32000-32000.zpl) | boundary / printer | Field at (32000, 32000); exact edge/partly/fully outside page; no wraparound |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [clip-0-0](../../../test-data/render-conformance/cases/clipping/clip-0-0.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/clip-0-0.md) | boundary / printer | Field at (0, 0); exact edge/partly/fully outside page; no wraparound |
+| [clip-831-1217](../../../test-data/render-conformance/cases/clipping/clip-831-1217.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/clip-831-1217.md) | boundary / printer | Field at (831, 1217); exact edge/partly/fully outside page; no wraparound |
+| [clip-832-1218](../../../test-data/render-conformance/cases/clipping/clip-832-1218.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/clip-832-1218.md) | boundary / printer | Field at (832, 1218); exact edge/partly/fully outside page; no wraparound |
+| [clip-800-1180](../../../test-data/render-conformance/cases/clipping/clip-800-1180.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/clip-800-1180.md) | boundary / printer | Field at (800, 1180); exact edge/partly/fully outside page; no wraparound |
+| [clip-32000-32000](../../../test-data/render-conformance/cases/clipping/clip-32000-32000.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/clip-32000-32000.md) | boundary / printer | Field at (32000, 32000); exact edge/partly/fully outside page; no wraparound |
 

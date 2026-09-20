@@ -41,32 +41,32 @@ Reference parameters: **a, b, c, d, e**. These describe the reference grammar, n
 
 ## Related features
 
-[Baseline text](../features/baseline-text.md) · [Negative](../features/negative.md) · [Stress](../features/stress.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md)
+[Baseline text](../features/baseline-text.md) · [Compact layout](../features/compact-layout.md) · [Negative](../features/negative.md) · [Stress](../features/stress.md) · [Text layout](../features/text-layout.md) · [Torture](../features/torture.md)
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-block-L](../../../test-data/render-conformance/cases/baseline-text/probe-block-L.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=L,indent=0 |
-| [probe-block-C](../../../test-data/render-conformance/cases/baseline-text/probe-block-C.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=C,indent=0 |
-| [probe-block-R](../../../test-data/render-conformance/cases/baseline-text/probe-block-R.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=R,indent=0 |
-| [probe-block-J](../../../test-data/render-conformance/cases/baseline-text/probe-block-J.zpl) | valid / printer | ^FB w=220,lines=3,space=2,align=J,indent=0 |
-| [probe-block-indent](../../../test-data/render-conformance/cases/baseline-text/probe-block-indent.zpl) | valid / printer | ^FB indent=20 |
-| [probe-block-explicit-break](../../../test-data/render-conformance/cases/baseline-text/probe-block-explicit-break.zpl) | valid / printer | ^FB explicit \& break |
-| [field-data-3072-bytes](../../../test-data/render-conformance/cases/stress/field-data-3072-bytes.zpl) | boundary / printer | 3072-byte field; clipped to canvas, no implicit truncation before layout |
-| [block-1-L](../../../test-data/render-conformance/cases/text-layout/block-1-L.zpl) | boundary / printer | FB width 1, alignment L, wrapping long words and spaces, three-line overflow |
-| [block-1-C](../../../test-data/render-conformance/cases/text-layout/block-1-C.zpl) | boundary / printer | FB width 1, alignment C, wrapping long words and spaces, three-line overflow |
-| [block-1-R](../../../test-data/render-conformance/cases/text-layout/block-1-R.zpl) | boundary / printer | FB width 1, alignment R, wrapping long words and spaces, three-line overflow |
-| [block-1-J](../../../test-data/render-conformance/cases/text-layout/block-1-J.zpl) | boundary / printer | FB width 1, alignment J, wrapping long words and spaces, three-line overflow |
-| [block-20-L](../../../test-data/render-conformance/cases/text-layout/block-20-L.zpl) | boundary / printer | FB width 20, alignment L, wrapping long words and spaces, three-line overflow |
-| [block-20-C](../../../test-data/render-conformance/cases/text-layout/block-20-C.zpl) | boundary / printer | FB width 20, alignment C, wrapping long words and spaces, three-line overflow |
-| [block-20-R](../../../test-data/render-conformance/cases/text-layout/block-20-R.zpl) | boundary / printer | FB width 20, alignment R, wrapping long words and spaces, three-line overflow |
-| [block-20-J](../../../test-data/render-conformance/cases/text-layout/block-20-J.zpl) | boundary / printer | FB width 20, alignment J, wrapping long words and spaces, three-line overflow |
-| [block-120-L](../../../test-data/render-conformance/cases/text-layout/block-120-L.zpl) | valid / printer | FB width 120, alignment L, wrapping long words and spaces, three-line overflow |
-| [block-120-C](../../../test-data/render-conformance/cases/text-layout/block-120-C.zpl) | valid / printer | FB width 120, alignment C, wrapping long words and spaces, three-line overflow |
-| [block-120-R](../../../test-data/render-conformance/cases/text-layout/block-120-R.zpl) | valid / printer | FB width 120, alignment R, wrapping long words and spaces, three-line overflow |
-| [block-120-J](../../../test-data/render-conformance/cases/text-layout/block-120-J.zpl) | valid / printer | FB width 120, alignment J, wrapping long words and spaces, three-line overflow |
-| [block-300-L](../../../test-data/render-conformance/cases/text-layout/block-300-L.zpl) | valid / printer | FB width 300, alignment L, wrapping long words and spaces, three-line overflow |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-block-L](../../../test-data/render-conformance/cases/baseline-text/probe-block-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-L.md) | valid / printer | ^FB w=220,lines=3,space=2,align=L,indent=0 |
+| [probe-block-C](../../../test-data/render-conformance/cases/baseline-text/probe-block-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-C.md) | valid / printer | ^FB w=220,lines=3,space=2,align=C,indent=0 |
+| [probe-block-R](../../../test-data/render-conformance/cases/baseline-text/probe-block-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-R.md) | valid / printer | ^FB w=220,lines=3,space=2,align=R,indent=0 |
+| [probe-block-J](../../../test-data/render-conformance/cases/baseline-text/probe-block-J.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-J.md) | valid / printer | ^FB w=220,lines=3,space=2,align=J,indent=0 |
+| [probe-block-indent](../../../test-data/render-conformance/cases/baseline-text/probe-block-indent.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-indent.md) | valid / printer | ^FB indent=20 |
+| [probe-block-explicit-break](../../../test-data/render-conformance/cases/baseline-text/probe-block-explicit-break.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-block-explicit-break.md) | valid / printer | ^FB explicit \& break |
+| [field-data-3072-bytes](../../../test-data/render-conformance/cases/stress/field-data-3072-bytes.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/field-data-3072-bytes.md) | boundary / printer | 3072-byte field; clipped to canvas, no implicit truncation before layout |
+| [block-1-L](../../../test-data/render-conformance/cases/text-layout/block-1-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-1-L.md) | boundary / printer | FB width 1, alignment L, wrapping long words and spaces, three-line overflow |
+| [block-1-C](../../../test-data/render-conformance/cases/text-layout/block-1-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-1-C.md) | boundary / printer | FB width 1, alignment C, wrapping long words and spaces, three-line overflow |
+| [block-1-R](../../../test-data/render-conformance/cases/text-layout/block-1-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-1-R.md) | boundary / printer | FB width 1, alignment R, wrapping long words and spaces, three-line overflow |
+| [block-1-J](../../../test-data/render-conformance/cases/text-layout/block-1-J.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-1-J.md) | boundary / printer | FB width 1, alignment J, wrapping long words and spaces, three-line overflow |
+| [block-20-L](../../../test-data/render-conformance/cases/text-layout/block-20-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-20-L.md) | boundary / printer | FB width 20, alignment L, wrapping long words and spaces, three-line overflow |
+| [block-20-C](../../../test-data/render-conformance/cases/text-layout/block-20-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-20-C.md) | boundary / printer | FB width 20, alignment C, wrapping long words and spaces, three-line overflow |
+| [block-20-R](../../../test-data/render-conformance/cases/text-layout/block-20-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-20-R.md) | boundary / printer | FB width 20, alignment R, wrapping long words and spaces, three-line overflow |
+| [block-20-J](../../../test-data/render-conformance/cases/text-layout/block-20-J.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-20-J.md) | boundary / printer | FB width 20, alignment J, wrapping long words and spaces, three-line overflow |
+| [block-120-L](../../../test-data/render-conformance/cases/text-layout/block-120-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-120-L.md) | valid / printer | FB width 120, alignment L, wrapping long words and spaces, three-line overflow |
+| [block-120-C](../../../test-data/render-conformance/cases/text-layout/block-120-C.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-120-C.md) | valid / printer | FB width 120, alignment C, wrapping long words and spaces, three-line overflow |
+| [block-120-R](../../../test-data/render-conformance/cases/text-layout/block-120-R.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-120-R.md) | valid / printer | FB width 120, alignment R, wrapping long words and spaces, three-line overflow |
+| [block-120-J](../../../test-data/render-conformance/cases/text-layout/block-120-J.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-120-J.md) | valid / printer | FB width 120, alignment J, wrapping long words and spaces, three-line overflow |
+| [block-300-L](../../../test-data/render-conformance/cases/text-layout/block-300-L.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/block-300-L.md) | valid / printer | FB width 300, alignment L, wrapping long words and spaces, three-line overflow |
 
-Showing 20 of 33 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
+Showing 20 of 37 occurrences; [complete manifest](../../../test-data/render-conformance/manifest.json). Occurrence includes setup commands and is not a focused test of every listed command.
 

@@ -6,11 +6,11 @@
 
 **^BU** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/upca.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/upca.png)
 
-Measured 2026-09-19T03:33:57Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
-Black = matching ink; magenta = printer only; cyan = library only. Images retain their original pixels; click an image to inspect it at full size.
+Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
-[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (captured service)](#labelary)
+[codyps/zpl (Rust)](#codyps-zpl) · [labelize (Rust)](#labelize) · [zpl-forge (Rust)](#forge) · [go-zpl (Go)](#go) · [zpl-rs (Rust → Go)](#ffi) · [BinaryKits.Zpl (.NET)](#binarykits) · [ZPLr (TypeScript)](#zplr) · [Labelary (SaaS)](#labelary)
 
 ## codyps-zpl
 
@@ -20,7 +20,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![codyps-zpl render](../../images/barcode-upca-codyps-zpl.png) | ![codyps-zpl difference](../../images/barcode-upca-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![codyps-zpl render](../../previews/barcode-upca-codyps-zpl.png)](../../images/barcode-upca-codyps-zpl.png) | [![codyps-zpl difference](../../previews/barcode-upca-codyps-zpl-diff.png)](../../images/barcode-upca-codyps-zpl-diff.png) |
 
 
 ## labelize
@@ -31,7 +31,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 194 pixels; e
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![labelize render](../../images/barcode-upca-labelize.png) | ![labelize difference](../../images/barcode-upca-labelize-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![labelize render](../../previews/barcode-upca-labelize.png)](../../images/barcode-upca-labelize.png) | [![labelize difference](../../previews/barcode-upca-labelize-diff.png)](../../images/barcode-upca-labelize-diff.png) |
 
 
 ## forge
@@ -42,7 +42,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 338 pixels; e
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![forge render](../../images/barcode-upca-forge.png) | ![forge difference](../../images/barcode-upca-forge-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![forge render](../../previews/barcode-upca-forge.png)](../../images/barcode-upca-forge.png) | [![forge difference](../../previews/barcode-upca-forge-diff.png)](../../images/barcode-upca-forge-diff.png) |
 
 
 ## go
@@ -53,7 +53,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 8102 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![go render](../../images/barcode-upca-go.png) | ![go difference](../../images/barcode-upca-go-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![go render](../../previews/barcode-upca-go.png)](../../images/barcode-upca-go.png) | [![go difference](../../previews/barcode-upca-go-diff.png)](../../images/barcode-upca-go-diff.png) |
 
 
 ## ffi
@@ -64,7 +64,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 8102 pixels; 
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![ffi render](../../images/barcode-upca-ffi.png) | ![ffi difference](../../images/barcode-upca-ffi-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![ffi render](../../previews/barcode-upca-ffi.png)](../../images/barcode-upca-ffi.png) | [![ffi difference](../../previews/barcode-upca-ffi-diff.png)](../../images/barcode-upca-ffi-diff.png) |
 
 
 ## binarykits
@@ -75,7 +75,7 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 338 pixels; e
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![binarykits render](../../images/barcode-upca-binarykits.png) | ![binarykits difference](../../images/barcode-upca-binarykits-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![binarykits render](../../previews/barcode-upca-binarykits.png)](../../images/barcode-upca-binarykits.png) | [![binarykits difference](../../previews/barcode-upca-binarykits-diff.png)](../../images/barcode-upca-binarykits-diff.png) |
 
 
 ## zplr
@@ -86,12 +86,12 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 338 pixels; e
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![zplr render](../../images/barcode-upca-zplr.png) | ![zplr difference](../../images/barcode-upca-zplr-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![zplr render](../../previews/barcode-upca-zplr.png)](../../images/barcode-upca-zplr.png) | [![zplr difference](../../previews/barcode-upca-zplr-diff.png)](../../images/barcode-upca-zplr-diff.png) |
 
 
 ## labelary
 
-**Labelary (captured service): 100.0% IoU · exact** · [All cases for this library](../libraries/labelary.md)
+**Labelary (SaaS): 100.0% IoU · exact** · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata and original responses](../../../labelary/README.md). This row is scored against the printer, like every other renderer.
 
@@ -99,5 +99,5 @@ Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; ext
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| ![Printer preview](../../../../../references/barcodes-zd621-v1/upca.png) | ![labelary render](../../images/barcode-upca-labelary.png) | ![labelary difference](../../images/barcode-upca-labelary-diff.png) |
+| [![Printer preview](../../previews/barcode-upca-printer.png)](../../../../../references/barcodes-zd621-v1/upca.png) | [![labelary render](../../previews/barcode-upca-labelary.png)](../../images/barcode-upca-labelary.png) | [![labelary difference](../../previews/barcode-upca-labelary-diff.png)](../../images/barcode-upca-labelary-diff.png) |
 

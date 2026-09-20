@@ -40,8 +40,8 @@ Reference parameters: **data**. These describe the reference grammar, not a prom
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [probe-variable-data](../../../test-data/render-conformance/cases/baseline-text/probe-variable-data.zpl) | valid / printer | ^FV literal field value |
-| [variable-field](../../../test-data/render-conformance/cases/text-data/variable-field.zpl) | valid / printer | FV literal text followed by FD literal text |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [probe-variable-data](../../../test-data/render-conformance/cases/baseline-text/probe-variable-data.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/probe-variable-data.md) | valid / printer | ^FV literal field value |
+| [variable-field](../../../test-data/render-conformance/cases/text-data/variable-field.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/variable-field.md) | valid / printer | FV literal text followed by FD literal text |
 

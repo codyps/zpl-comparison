@@ -40,7 +40,7 @@ Reference parameters: **o, h, f, m**. These describe the reference grammar, not 
 
 ## Corpus occurrences
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [symbol-code49](../../../test-data/render-conformance/cases/barcode-families/symbol-code49.zpl) | valid / printer | Reference symbol variant: code49 |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [symbol-code49](../../../test-data/render-conformance/cases/barcode-families/symbol-code49.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/symbol-code49.md) | valid / printer | Reference symbol variant: code49 |
 

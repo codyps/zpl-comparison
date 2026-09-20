@@ -11,18 +11,18 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found | Not measured | 5 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 18 🧩 Handler found | 5/5 exact; mean IoU 100.0%; 0 errors | 5 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 18 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 18 🧩 Handler found | Not measured | Not measured |
-| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 13 🧩 Handler found | Not measured | Not measured |
-| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | Not measured | Not measured |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 12 🧩 Handler found | Not measured | Not measured |
-| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 17 🟢 Upstream: supported | Not measured | Not measured |
+| [labelize](../libraries/labelize.md) | 18 🧩 Handler found | 4/5 exact; mean IoU 97.8%; 0 errors | 5 rendered |
+| [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 13 🧩 Handler found | 4/5 exact; mean IoU 98.1%; 0 errors | 5 rendered |
+| [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 4/5 exact; mean IoU 98.9%; 0 errors | 5 rendered |
+| [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 15 🧩 Handler found; 1 ⏭️ Ignored / stored only | 4/5 exact; mean IoU 98.9%; 0 errors | 5 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 6 ❔ No evidence found; 12 🧩 Handler found | 4/5 exact; mean IoU 94.6%; 0 errors | 5 rendered |
+| [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 17 🟢 Upstream: supported | 4/5 exact; mean IoU 95.9%; 0 errors | 5 rendered |
 | [zpl-builder](../libraries/builder.md) | 9 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 4 ❔ No evidence found; 14 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [JSZPL](../libraries/jszpl.md) | 9 ❔ No evidence found; 9 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | Not measured | 5 rendered |
+| [Labelary](../libraries/labelary.md) | 18 ❔ No evidence found | 4/5 exact; mean IoU 98.4%; 0 errors | 5 rendered |
 
 
 ## Commands involved
@@ -31,15 +31,15 @@
 
 ## Matched printer cases
 
-No focused printer measurements yet.
+[Feature printer/render/difference gallery](../../benchmarks/accuracy/comparisons/features/README.md). See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored.
 
 ## Fixtures
 
-| Fixture | Classification | Purpose |
-| --- | --- | --- |
-| [label-reverse](../../../test-data/render-conformance/cases/compositing/label-reverse.zpl) | valid / printer | LR reverse with overlapping shapes and text; compare to plain label |
-| [paint-black-white](../../../test-data/render-conformance/cases/compositing/paint-black-white.zpl) | valid / printer | Draw order and XOR/reverse semantics: black-white |
-| [paint-white-black](../../../test-data/render-conformance/cases/compositing/paint-white-black.zpl) | valid / printer | Draw order and XOR/reverse semantics: white-black |
-| [paint-reverse-overlap](../../../test-data/render-conformance/cases/compositing/paint-reverse-overlap.zpl) | valid / printer | Draw order and XOR/reverse semantics: reverse-overlap |
-| [paint-reverse-twice](../../../test-data/render-conformance/cases/compositing/paint-reverse-twice.zpl) | valid / printer | Draw order and XOR/reverse semantics: reverse-twice |
+| Fixture | Renders and differences | Classification | Purpose |
+| --- | --- | --- | --- |
+| [label-reverse](../../../test-data/render-conformance/cases/compositing/label-reverse.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/label-reverse.md) | valid / printer | LR reverse with overlapping shapes and text; compare to plain label |
+| [paint-black-white](../../../test-data/render-conformance/cases/compositing/paint-black-white.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/paint-black-white.md) | valid / printer | Draw order and XOR/reverse semantics: black-white |
+| [paint-white-black](../../../test-data/render-conformance/cases/compositing/paint-white-black.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/paint-white-black.md) | valid / printer | Draw order and XOR/reverse semantics: white-black |
+| [paint-reverse-overlap](../../../test-data/render-conformance/cases/compositing/paint-reverse-overlap.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/paint-reverse-overlap.md) | valid / printer | Draw order and XOR/reverse semantics: reverse-overlap |
+| [paint-reverse-twice](../../../test-data/render-conformance/cases/compositing/paint-reverse-twice.zpl) | [Compare images](../../benchmarks/accuracy/comparisons/features/cases/paint-reverse-twice.md) | valid / printer | Draw order and XOR/reverse semantics: reverse-twice |
 
