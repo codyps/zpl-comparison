@@ -8,12 +8,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 | Test | Result | Difference |
 | --- | --- | --- |
-| [zpl-toolchain-shipping_label](../cases/zpl-toolchain-shipping_label.md#codyps-zpl) | 32.00% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-shipping_label-codyps-zpl-diff.png)](../images/zpl-toolchain-shipping_label-codyps-zpl-diff.png) |
-| [zpl-toolchain-product_label](../cases/zpl-toolchain-product_label.md#codyps-zpl) | 29.35% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-product_label-codyps-zpl-diff.png)](../images/zpl-toolchain-product_label-codyps-zpl-diff.png) |
-| [zpl-toolchain-warehouse_label](../cases/zpl-toolchain-warehouse_label.md#codyps-zpl) | 44.70% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-warehouse_label-codyps-zpl-diff.png)](../images/zpl-toolchain-warehouse_label-codyps-zpl-diff.png) |
-| [zpl-toolchain-compliance_label](../cases/zpl-toolchain-compliance_label.md#codyps-zpl) | 33.64% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-compliance_label-codyps-zpl-diff.png)](../images/zpl-toolchain-compliance_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-shipping_label](../cases/zpl-toolchain-shipping_label.md#codyps-zpl) | 31.70% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-shipping_label-codyps-zpl-diff.png)](../images/zpl-toolchain-shipping_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-product_label](../cases/zpl-toolchain-product_label.md#codyps-zpl) | 29.34% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-product_label-codyps-zpl-diff.png)](../images/zpl-toolchain-product_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-warehouse_label](../cases/zpl-toolchain-warehouse_label.md#codyps-zpl) | 45.07% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-warehouse_label-codyps-zpl-diff.png)](../images/zpl-toolchain-warehouse_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-compliance_label](../cases/zpl-toolchain-compliance_label.md#codyps-zpl) | 34.24% IoU | [![codyps/zpl (Rust) difference](../previews/zpl-toolchain-compliance_label-codyps-zpl-diff.png)](../images/zpl-toolchain-compliance_label-codyps-zpl-diff.png) |
 | [zpl-toolchain-usps_surepost_sample](../cases/zpl-toolchain-usps_surepost_sample.md#codyps-zpl) | Unscored | Unavailable: error |
-| [zplr-asset-matrix-pdf417](../cases/zplr-asset-matrix-pdf417.md#codyps-zpl) | 81.83% IoU | [![codyps/zpl (Rust) difference](../previews/zplr-asset-matrix-pdf417-codyps-zpl-diff.png)](../images/zplr-asset-matrix-pdf417-codyps-zpl-diff.png) |
+| [zplr-asset-matrix-pdf417](../cases/zplr-asset-matrix-pdf417.md#codyps-zpl) | 82.12% IoU | [![codyps/zpl (Rust) difference](../previews/zplr-asset-matrix-pdf417-codyps-zpl-diff.png)](../images/zplr-asset-matrix-pdf417-codyps-zpl-diff.png) |
 | [zplr-retail-upc-ean](../cases/zplr-retail-upc-ean.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
 | [zplr-stored-resources](../cases/zplr-stored-resources.md#codyps-zpl) | Unscored | Unavailable: error |
 

@@ -17,7 +17,7 @@ Public API responses at 8 dpmm, identified by capture timestamps when no build v
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/labelary.md)
 
-56/132 exact; mean IoU 76.6%; 0 errors. Snapshot: 2026-09-20T04:43:33Z.
+56/132 exact; mean IoU 76.6%; 0 errors. Snapshot: 2026-09-20T18:04:26Z.
 
 ## Feature groups
 

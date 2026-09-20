@@ -21,7 +21,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ~~~text
 
-thread 'main' (44645923) panicked at src/main.rs:27:10:
+thread 'main' (46392558) panicked at src/main.rs:27:10:
 render: RenderError { offset: 78, message: "unsupported embedded font glyph '\\0'" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

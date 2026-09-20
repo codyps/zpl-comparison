@@ -46,10 +46,10 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [probe-box-thickness-1](../cases/probe-box-thickness-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-box-thickness-1-codyps-zpl-diff.png)](../images/probe-box-thickness-1-codyps-zpl-diff.png) |
 | [probe-box-thickness-4](../cases/probe-box-thickness-4.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-box-thickness-4-codyps-zpl-diff.png)](../images/probe-box-thickness-4-codyps-zpl-diff.png) |
 | [probe-box-thickness-60](../cases/probe-box-thickness-60.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-box-thickness-60-codyps-zpl-diff.png)](../images/probe-box-thickness-60-codyps-zpl-diff.png) |
-| [probe-box-round](../cases/probe-box-round.md#codyps-zpl) | 90.70% IoU | [![codyps/zpl (Rust) difference](../previews/probe-box-round-codyps-zpl-diff.png)](../images/probe-box-round-codyps-zpl-diff.png) |
+| [probe-box-round](../cases/probe-box-round.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-box-round-codyps-zpl-diff.png)](../images/probe-box-round-codyps-zpl-diff.png) |
 | [probe-box-white](../cases/probe-box-white.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-box-white-codyps-zpl-diff.png)](../images/probe-box-white-codyps-zpl-diff.png) |
-| [probe-shape-GC-B](../cases/probe-shape-GC-B.md#codyps-zpl) | 63.31% IoU | [![codyps/zpl (Rust) difference](../previews/probe-shape-GC-B-codyps-zpl-diff.png)](../images/probe-shape-GC-B-codyps-zpl-diff.png) |
-| [probe-shape-GE-B](../cases/probe-shape-GE-B.md#codyps-zpl) | 50.30% IoU | [![codyps/zpl (Rust) difference](../previews/probe-shape-GE-B-codyps-zpl-diff.png)](../images/probe-shape-GE-B-codyps-zpl-diff.png) |
+| [probe-shape-GC-B](../cases/probe-shape-GC-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-shape-GC-B-codyps-zpl-diff.png)](../images/probe-shape-GC-B-codyps-zpl-diff.png) |
+| [probe-shape-GE-B](../cases/probe-shape-GE-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-shape-GE-B-codyps-zpl-diff.png)](../images/probe-shape-GE-B-codyps-zpl-diff.png) |
 | [probe-shape-GD-R](../cases/probe-shape-GD-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-shape-GD-R-codyps-zpl-diff.png)](../images/probe-shape-GD-R-codyps-zpl-diff.png) |
 | [probe-shape-GD-L](../cases/probe-shape-GD-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-shape-GD-L-codyps-zpl-diff.png)](../images/probe-shape-GD-L-codyps-zpl-diff.png) |
 | [probe-graphic-hex](../cases/probe-graphic-hex.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-graphic-hex-codyps-zpl-diff.png)](../images/probe-graphic-hex-codyps-zpl-diff.png) |
@@ -68,21 +68,21 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [probe-code128-rotation-B](../cases/probe-code128-rotation-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-code128-rotation-B-codyps-zpl-diff.png)](../images/probe-code128-rotation-B-codyps-zpl-diff.png) |
 | [probe-code128-mode-N](../cases/probe-code128-mode-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-code128-mode-N-codyps-zpl-diff.png)](../images/probe-code128-mode-N-codyps-zpl-diff.png) |
 | [probe-code128-mode-A](../cases/probe-code128-mode-A.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-code128-mode-A-codyps-zpl-diff.png)](../images/probe-code128-mode-A-codyps-zpl-diff.png) |
-| [probe-qr-model-1](../cases/probe-qr-model-1.md#codyps-zpl) | 58.42% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-model-1-codyps-zpl-diff.png)](../images/probe-qr-model-1-codyps-zpl-diff.png) |
-| [probe-qr-model-2](../cases/probe-qr-model-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-model-2-codyps-zpl-diff.png)](../images/probe-qr-model-2-codyps-zpl-diff.png) |
-| [probe-qr-ec-L](../cases/probe-qr-ec-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-L-codyps-zpl-diff.png)](../images/probe-qr-ec-L-codyps-zpl-diff.png) |
-| [probe-qr-ec-M](../cases/probe-qr-ec-M.md#codyps-zpl) | 59.03% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-M-codyps-zpl-diff.png)](../images/probe-qr-ec-M-codyps-zpl-diff.png) |
-| [probe-qr-ec-Q](../cases/probe-qr-ec-Q.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-Q-codyps-zpl-diff.png)](../images/probe-qr-ec-Q-codyps-zpl-diff.png) |
-| [probe-qr-ec-H](../cases/probe-qr-ec-H.md#codyps-zpl) | 76.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-H-codyps-zpl-diff.png)](../images/probe-qr-ec-H-codyps-zpl-diff.png) |
-| [probe-qr-module-2](../cases/probe-qr-module-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-module-2-codyps-zpl-diff.png)](../images/probe-qr-module-2-codyps-zpl-diff.png) |
-| [probe-qr-module-5](../cases/probe-qr-module-5.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-module-5-codyps-zpl-diff.png)](../images/probe-qr-module-5-codyps-zpl-diff.png) |
-| [probe-qr-mask-0](../cases/probe-qr-mask-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-mask-0-codyps-zpl-diff.png)](../images/probe-qr-mask-0-codyps-zpl-diff.png) |
-| [probe-qr-mask-3](../cases/probe-qr-mask-3.md#codyps-zpl) | 59.86% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-mask-3-codyps-zpl-diff.png)](../images/probe-qr-mask-3-codyps-zpl-diff.png) |
-| [probe-qr-mask-7](../cases/probe-qr-mask-7.md#codyps-zpl) | 77.86% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-mask-7-codyps-zpl-diff.png)](../images/probe-qr-mask-7-codyps-zpl-diff.png) |
+| [probe-qr-model-1](../cases/probe-qr-model-1.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-model-1-codyps-zpl-diff.png)](../images/probe-qr-model-1-codyps-zpl-diff.png) |
+| [probe-qr-model-2](../cases/probe-qr-model-2.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-model-2-codyps-zpl-diff.png)](../images/probe-qr-model-2-codyps-zpl-diff.png) |
+| [probe-qr-ec-L](../cases/probe-qr-ec-L.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-L-codyps-zpl-diff.png)](../images/probe-qr-ec-L-codyps-zpl-diff.png) |
+| [probe-qr-ec-M](../cases/probe-qr-ec-M.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-M-codyps-zpl-diff.png)](../images/probe-qr-ec-M-codyps-zpl-diff.png) |
+| [probe-qr-ec-Q](../cases/probe-qr-ec-Q.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-Q-codyps-zpl-diff.png)](../images/probe-qr-ec-Q-codyps-zpl-diff.png) |
+| [probe-qr-ec-H](../cases/probe-qr-ec-H.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-ec-H-codyps-zpl-diff.png)](../images/probe-qr-ec-H-codyps-zpl-diff.png) |
+| [probe-qr-module-2](../cases/probe-qr-module-2.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-module-2-codyps-zpl-diff.png)](../images/probe-qr-module-2-codyps-zpl-diff.png) |
+| [probe-qr-module-5](../cases/probe-qr-module-5.md#codyps-zpl) | 5.26% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-module-5-codyps-zpl-diff.png)](../images/probe-qr-module-5-codyps-zpl-diff.png) |
+| [probe-qr-mask-0](../cases/probe-qr-mask-0.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-mask-0-codyps-zpl-diff.png)](../images/probe-qr-mask-0-codyps-zpl-diff.png) |
+| [probe-qr-mask-3](../cases/probe-qr-mask-3.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-mask-3-codyps-zpl-diff.png)](../images/probe-qr-mask-3-codyps-zpl-diff.png) |
+| [probe-qr-mask-7](../cases/probe-qr-mask-7.md#codyps-zpl) | 0.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-qr-mask-7-codyps-zpl-diff.png)](../images/probe-qr-mask-7-codyps-zpl-diff.png) |
 | [probe-datamatrix-module-2](../cases/probe-datamatrix-module-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-datamatrix-module-2-codyps-zpl-diff.png)](../images/probe-datamatrix-module-2-codyps-zpl-diff.png) |
 | [probe-datamatrix-module-4](../cases/probe-datamatrix-module-4.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/probe-datamatrix-module-4-codyps-zpl-diff.png)](../images/probe-datamatrix-module-4-codyps-zpl-diff.png) |
-| [symbol-aztec](../cases/symbol-aztec.md#codyps-zpl) | 30.90% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-aztec-codyps-zpl-diff.png)](../images/symbol-aztec-codyps-zpl-diff.png) |
-| [symbol-aztec_alias](../cases/symbol-aztec_alias.md#codyps-zpl) | 30.90% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-aztec_alias-codyps-zpl-diff.png)](../images/symbol-aztec_alias-codyps-zpl-diff.png) |
+| [symbol-aztec](../cases/symbol-aztec.md#codyps-zpl) | 31.51% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-aztec-codyps-zpl-diff.png)](../images/symbol-aztec-codyps-zpl-diff.png) |
+| [symbol-aztec_alias](../cases/symbol-aztec_alias.md#codyps-zpl) | 31.51% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-aztec_alias-codyps-zpl-diff.png)](../images/symbol-aztec_alias-codyps-zpl-diff.png) |
 | [symbol-aztec_rune](../cases/symbol-aztec_rune.md#codyps-zpl) | 32.67% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-aztec_rune-codyps-zpl-diff.png)](../images/symbol-aztec_rune-codyps-zpl-diff.png) |
 | [symbol-codabar](../cases/symbol-codabar.md#codyps-zpl) | 35.59% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-codabar-codyps-zpl-diff.png)](../images/symbol-codabar-codyps-zpl-diff.png) |
 | [symbol-codablock_a](../cases/symbol-codablock_a.md#codyps-zpl) | 64.68% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-codablock_a-codyps-zpl-diff.png)](../images/symbol-codablock_a-codyps-zpl-diff.png) |
@@ -93,22 +93,22 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [symbol-code39](../cases/symbol-code39.md#codyps-zpl) | 43.59% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-code39-codyps-zpl-diff.png)](../images/symbol-code39-codyps-zpl-diff.png) |
 | [symbol-code49](../cases/symbol-code49.md#codyps-zpl) | 38.22% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-code49-codyps-zpl-diff.png)](../images/symbol-code49-codyps-zpl-diff.png) |
 | [symbol-code93](../cases/symbol-code93.md#codyps-zpl) | 28.95% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-code93-codyps-zpl-diff.png)](../images/symbol-code93-codyps-zpl-diff.png) |
-| [symbol-composite_a](../cases/symbol-composite_a.md#codyps-zpl) | 22.17% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-composite_a-codyps-zpl-diff.png)](../images/symbol-composite_a-codyps-zpl-diff.png) |
-| [symbol-composite_b](../cases/symbol-composite_b.md#codyps-zpl) | 22.52% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-composite_b-codyps-zpl-diff.png)](../images/symbol-composite_b-codyps-zpl-diff.png) |
-| [symbol-composite_c](../cases/symbol-composite_c.md#codyps-zpl) | 21.48% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-composite_c-codyps-zpl-diff.png)](../images/symbol-composite_c-codyps-zpl-diff.png) |
-| [symbol-data_matrix](../cases/symbol-data_matrix.md#codyps-zpl) | 27.34% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-data_matrix-codyps-zpl-diff.png)](../images/symbol-data_matrix-codyps-zpl-diff.png) |
+| [symbol-composite_a](../cases/symbol-composite_a.md#codyps-zpl) | 34.95% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-composite_a-codyps-zpl-diff.png)](../images/symbol-composite_a-codyps-zpl-diff.png) |
+| [symbol-composite_b](../cases/symbol-composite_b.md#codyps-zpl) | 34.46% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-composite_b-codyps-zpl-diff.png)](../images/symbol-composite_b-codyps-zpl-diff.png) |
+| [symbol-composite_c](../cases/symbol-composite_c.md#codyps-zpl) | 31.95% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-composite_c-codyps-zpl-diff.png)](../images/symbol-composite_c-codyps-zpl-diff.png) |
+| [symbol-data_matrix](../cases/symbol-data_matrix.md#codyps-zpl) | 29.20% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-data_matrix-codyps-zpl-diff.png)](../images/symbol-data_matrix-codyps-zpl-diff.png) |
 | [symbol-data_matrix_rectangular](../cases/symbol-data_matrix_rectangular.md#codyps-zpl) | 37.80% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-data_matrix_rectangular-codyps-zpl-diff.png)](../images/symbol-data_matrix_rectangular-codyps-zpl-diff.png) |
-| [symbol-databar_ean13](../cases/symbol-databar_ean13.md#codyps-zpl) | 16.72% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_ean13-codyps-zpl-diff.png)](../images/symbol-databar_ean13-codyps-zpl-diff.png) |
-| [symbol-databar_ean8](../cases/symbol-databar_ean8.md#codyps-zpl) | 12.68% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_ean8-codyps-zpl-diff.png)](../images/symbol-databar_ean8-codyps-zpl-diff.png) |
-| [symbol-databar_expanded](../cases/symbol-databar_expanded.md#codyps-zpl) | 30.53% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_expanded-codyps-zpl-diff.png)](../images/symbol-databar_expanded-codyps-zpl-diff.png) |
-| [symbol-databar_expanded_stacked](../cases/symbol-databar_expanded_stacked.md#codyps-zpl) | 22.40% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_expanded_stacked-codyps-zpl-diff.png)](../images/symbol-databar_expanded_stacked-codyps-zpl-diff.png) |
+| [symbol-databar_ean13](../cases/symbol-databar_ean13.md#codyps-zpl) | 24.05% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_ean13-codyps-zpl-diff.png)](../images/symbol-databar_ean13-codyps-zpl-diff.png) |
+| [symbol-databar_ean8](../cases/symbol-databar_ean8.md#codyps-zpl) | 28.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_ean8-codyps-zpl-diff.png)](../images/symbol-databar_ean8-codyps-zpl-diff.png) |
+| [symbol-databar_expanded](../cases/symbol-databar_expanded.md#codyps-zpl) | 37.86% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_expanded-codyps-zpl-diff.png)](../images/symbol-databar_expanded-codyps-zpl-diff.png) |
+| [symbol-databar_expanded_stacked](../cases/symbol-databar_expanded_stacked.md#codyps-zpl) | 26.14% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_expanded_stacked-codyps-zpl-diff.png)](../images/symbol-databar_expanded_stacked-codyps-zpl-diff.png) |
 | [symbol-databar_limited](../cases/symbol-databar_limited.md#codyps-zpl) | 25.42% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_limited-codyps-zpl-diff.png)](../images/symbol-databar_limited-codyps-zpl-diff.png) |
 | [symbol-databar_omni](../cases/symbol-databar_omni.md#codyps-zpl) | 26.76% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_omni-codyps-zpl-diff.png)](../images/symbol-databar_omni-codyps-zpl-diff.png) |
 | [symbol-databar_stacked](../cases/symbol-databar_stacked.md#codyps-zpl) | 24.32% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_stacked-codyps-zpl-diff.png)](../images/symbol-databar_stacked-codyps-zpl-diff.png) |
 | [symbol-databar_stacked_omni](../cases/symbol-databar_stacked_omni.md#codyps-zpl) | 23.34% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_stacked_omni-codyps-zpl-diff.png)](../images/symbol-databar_stacked_omni-codyps-zpl-diff.png) |
 | [symbol-databar_truncated](../cases/symbol-databar_truncated.md#codyps-zpl) | 26.76% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_truncated-codyps-zpl-diff.png)](../images/symbol-databar_truncated-codyps-zpl-diff.png) |
-| [symbol-databar_upca](../cases/symbol-databar_upca.md#codyps-zpl) | 18.37% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_upca-codyps-zpl-diff.png)](../images/symbol-databar_upca-codyps-zpl-diff.png) |
-| [symbol-databar_upce](../cases/symbol-databar_upce.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/symbol-databar_upce-codyps-zpl-diff.png)](../images/symbol-databar_upce-codyps-zpl-diff.png) |
+| [symbol-databar_upca](../cases/symbol-databar_upca.md#codyps-zpl) | 33.33% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-databar_upca-codyps-zpl-diff.png)](../images/symbol-databar_upca-codyps-zpl-diff.png) |
+| [symbol-databar_upce](../cases/symbol-databar_upce.md#codyps-zpl) | Unscored | Unavailable: error |
 | [symbol-ean13](../cases/symbol-ean13.md#codyps-zpl) | 23.47% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-ean13-codyps-zpl-diff.png)](../images/symbol-ean13-codyps-zpl-diff.png) |
 | [symbol-ean8](../cases/symbol-ean8.md#codyps-zpl) | 26.95% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-ean8-codyps-zpl-diff.png)](../images/symbol-ean8-codyps-zpl-diff.png) |
 | [symbol-extension2](../cases/symbol-extension2.md#codyps-zpl) | 17.65% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-extension2-codyps-zpl-diff.png)](../images/symbol-extension2-codyps-zpl-diff.png) |
@@ -117,11 +117,11 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [symbol-intelligent_mail](../cases/symbol-intelligent_mail.md#codyps-zpl) | 61.26% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-intelligent_mail-codyps-zpl-diff.png)](../images/symbol-intelligent_mail-codyps-zpl-diff.png) |
 | [symbol-interleaved2of5](../cases/symbol-interleaved2of5.md#codyps-zpl) | 34.69% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-interleaved2of5-codyps-zpl-diff.png)](../images/symbol-interleaved2of5-codyps-zpl-diff.png) |
 | [symbol-logmars](../cases/symbol-logmars.md#codyps-zpl) | 41.27% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-logmars-codyps-zpl-diff.png)](../images/symbol-logmars-codyps-zpl-diff.png) |
-| [symbol-maxicode2](../cases/symbol-maxicode2.md#codyps-zpl) | 18.63% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode2-codyps-zpl-diff.png)](../images/symbol-maxicode2-codyps-zpl-diff.png) |
-| [symbol-maxicode3](../cases/symbol-maxicode3.md#codyps-zpl) | 18.77% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode3-codyps-zpl-diff.png)](../images/symbol-maxicode3-codyps-zpl-diff.png) |
-| [symbol-maxicode4](../cases/symbol-maxicode4.md#codyps-zpl) | 18.56% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode4-codyps-zpl-diff.png)](../images/symbol-maxicode4-codyps-zpl-diff.png) |
-| [symbol-maxicode5](../cases/symbol-maxicode5.md#codyps-zpl) | 5.51% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode5-codyps-zpl-diff.png)](../images/symbol-maxicode5-codyps-zpl-diff.png) |
-| [symbol-maxicode6](../cases/symbol-maxicode6.md#codyps-zpl) | 18.23% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode6-codyps-zpl-diff.png)](../images/symbol-maxicode6-codyps-zpl-diff.png) |
+| [symbol-maxicode2](../cases/symbol-maxicode2.md#codyps-zpl) | 17.72% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode2-codyps-zpl-diff.png)](../images/symbol-maxicode2-codyps-zpl-diff.png) |
+| [symbol-maxicode3](../cases/symbol-maxicode3.md#codyps-zpl) | 17.85% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode3-codyps-zpl-diff.png)](../images/symbol-maxicode3-codyps-zpl-diff.png) |
+| [symbol-maxicode4](../cases/symbol-maxicode4.md#codyps-zpl) | 17.81% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode4-codyps-zpl-diff.png)](../images/symbol-maxicode4-codyps-zpl-diff.png) |
+| [symbol-maxicode5](../cases/symbol-maxicode5.md#codyps-zpl) | 19.01% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode5-codyps-zpl-diff.png)](../images/symbol-maxicode5-codyps-zpl-diff.png) |
+| [symbol-maxicode6](../cases/symbol-maxicode6.md#codyps-zpl) | 17.84% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-maxicode6-codyps-zpl-diff.png)](../images/symbol-maxicode6-codyps-zpl-diff.png) |
 | [symbol-micropdf417_1](../cases/symbol-micropdf417_1.md#codyps-zpl) | 32.76% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-micropdf417_1-codyps-zpl-diff.png)](../images/symbol-micropdf417_1-codyps-zpl-diff.png) |
 | [symbol-micropdf417_3](../cases/symbol-micropdf417_3.md#codyps-zpl) | 32.66% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-micropdf417_3-codyps-zpl-diff.png)](../images/symbol-micropdf417_3-codyps-zpl-diff.png) |
 | [symbol-micropdf417_4](../cases/symbol-micropdf417_4.md#codyps-zpl) | 31.55% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-micropdf417_4-codyps-zpl-diff.png)](../images/symbol-micropdf417_4-codyps-zpl-diff.png) |
@@ -135,10 +135,10 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [symbol-plessey](../cases/symbol-plessey.md#codyps-zpl) | 19.23% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-plessey-codyps-zpl-diff.png)](../images/symbol-plessey-codyps-zpl-diff.png) |
 | [symbol-postal_planet](../cases/symbol-postal_planet.md#codyps-zpl) | 59.20% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-postal_planet-codyps-zpl-diff.png)](../images/symbol-postal_planet-codyps-zpl-diff.png) |
 | [symbol-postnet](../cases/symbol-postnet.md#codyps-zpl) | 55.25% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-postnet-codyps-zpl-diff.png)](../images/symbol-postnet-codyps-zpl-diff.png) |
-| [symbol-qr](../cases/symbol-qr.md#codyps-zpl) | 33.92% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-qr-codyps-zpl-diff.png)](../images/symbol-qr-codyps-zpl-diff.png) |
+| [symbol-qr](../cases/symbol-qr.md#codyps-zpl) | 34.11% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-qr-codyps-zpl-diff.png)](../images/symbol-qr-codyps-zpl-diff.png) |
 | [symbol-standard2of5](../cases/symbol-standard2of5.md#codyps-zpl) | 45.24% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-standard2of5-codyps-zpl-diff.png)](../images/symbol-standard2of5-codyps-zpl-diff.png) |
 | [symbol-tlc39_linear](../cases/symbol-tlc39_linear.md#codyps-zpl) | 38.27% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-tlc39_linear-codyps-zpl-diff.png)](../images/symbol-tlc39_linear-codyps-zpl-diff.png) |
-| [symbol-tlc39_linked](../cases/symbol-tlc39_linked.md#codyps-zpl) | 29.44% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-tlc39_linked-codyps-zpl-diff.png)](../images/symbol-tlc39_linked-codyps-zpl-diff.png) |
+| [symbol-tlc39_linked](../cases/symbol-tlc39_linked.md#codyps-zpl) | 33.46% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-tlc39_linked-codyps-zpl-diff.png)](../images/symbol-tlc39_linked-codyps-zpl-diff.png) |
 | [symbol-upca](../cases/symbol-upca.md#codyps-zpl) | 32.14% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-upca-codyps-zpl-diff.png)](../images/symbol-upca-codyps-zpl-diff.png) |
 | [symbol-upce](../cases/symbol-upce.md#codyps-zpl) | 29.13% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-upce-codyps-zpl-diff.png)](../images/symbol-upce-codyps-zpl-diff.png) |
 | [font-0-N](../cases/font-0-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-0-N-codyps-zpl-diff.png)](../images/font-0-N-codyps-zpl-diff.png) |
@@ -149,112 +149,112 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [font-A-R](../cases/font-A-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-A-R-codyps-zpl-diff.png)](../images/font-A-R-codyps-zpl-diff.png) |
 | [font-A-I](../cases/font-A-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-A-I-codyps-zpl-diff.png)](../images/font-A-I-codyps-zpl-diff.png) |
 | [font-A-B](../cases/font-A-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-A-B-codyps-zpl-diff.png)](../images/font-A-B-codyps-zpl-diff.png) |
-| [font-B-N](../cases/font-B-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-B-R](../cases/font-B-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-B-I](../cases/font-B-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-B-B](../cases/font-B-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-C-N](../cases/font-C-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-C-R](../cases/font-C-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-C-I](../cases/font-C-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-C-B](../cases/font-C-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [font-B-N](../cases/font-B-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-B-N-codyps-zpl-diff.png)](../images/font-B-N-codyps-zpl-diff.png) |
+| [font-B-R](../cases/font-B-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-B-R-codyps-zpl-diff.png)](../images/font-B-R-codyps-zpl-diff.png) |
+| [font-B-I](../cases/font-B-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-B-I-codyps-zpl-diff.png)](../images/font-B-I-codyps-zpl-diff.png) |
+| [font-B-B](../cases/font-B-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-B-B-codyps-zpl-diff.png)](../images/font-B-B-codyps-zpl-diff.png) |
+| [font-C-N](../cases/font-C-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-C-N-codyps-zpl-diff.png)](../images/font-C-N-codyps-zpl-diff.png) |
+| [font-C-R](../cases/font-C-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-C-R-codyps-zpl-diff.png)](../images/font-C-R-codyps-zpl-diff.png) |
+| [font-C-I](../cases/font-C-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-C-I-codyps-zpl-diff.png)](../images/font-C-I-codyps-zpl-diff.png) |
+| [font-C-B](../cases/font-C-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-C-B-codyps-zpl-diff.png)](../images/font-C-B-codyps-zpl-diff.png) |
 | [font-D-N](../cases/font-D-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-D-N-codyps-zpl-diff.png)](../images/font-D-N-codyps-zpl-diff.png) |
 | [font-D-R](../cases/font-D-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-D-R-codyps-zpl-diff.png)](../images/font-D-R-codyps-zpl-diff.png) |
 | [font-D-I](../cases/font-D-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-D-I-codyps-zpl-diff.png)](../images/font-D-I-codyps-zpl-diff.png) |
 | [font-D-B](../cases/font-D-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-D-B-codyps-zpl-diff.png)](../images/font-D-B-codyps-zpl-diff.png) |
-| [font-E-N](../cases/font-E-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-E-R](../cases/font-E-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-E-I](../cases/font-E-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-E-B](../cases/font-E-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-F-N](../cases/font-F-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-F-R](../cases/font-F-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-F-I](../cases/font-F-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-F-B](../cases/font-F-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-G-N](../cases/font-G-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-G-R](../cases/font-G-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-G-I](../cases/font-G-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-G-B](../cases/font-G-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-H-N](../cases/font-H-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-H-R](../cases/font-H-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-H-I](../cases/font-H-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-H-B](../cases/font-H-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-1](../cases/font-id-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-2](../cases/font-id-2.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-3](../cases/font-id-3.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-4](../cases/font-id-4.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-5](../cases/font-id-5.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-6](../cases/font-id-6.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-7](../cases/font-id-7.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-8](../cases/font-id-8.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-9](../cases/font-id-9.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-I](../cases/font-id-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-J](../cases/font-id-J.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-K](../cases/font-id-K.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-L](../cases/font-id-L.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-M](../cases/font-id-M.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-N](../cases/font-id-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-O](../cases/font-id-O.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-P](../cases/font-id-P.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-Q](../cases/font-id-Q.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-R](../cases/font-id-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-S](../cases/font-id-S.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-T](../cases/font-id-T.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-U](../cases/font-id-U.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-V](../cases/font-id-V.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-W](../cases/font-id-W.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-X](../cases/font-id-X.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-Y](../cases/font-id-Y.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [font-id-Z](../cases/font-id-Z.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [font-E-N](../cases/font-E-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-E-N-codyps-zpl-diff.png)](../images/font-E-N-codyps-zpl-diff.png) |
+| [font-E-R](../cases/font-E-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-E-R-codyps-zpl-diff.png)](../images/font-E-R-codyps-zpl-diff.png) |
+| [font-E-I](../cases/font-E-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-E-I-codyps-zpl-diff.png)](../images/font-E-I-codyps-zpl-diff.png) |
+| [font-E-B](../cases/font-E-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-E-B-codyps-zpl-diff.png)](../images/font-E-B-codyps-zpl-diff.png) |
+| [font-F-N](../cases/font-F-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-F-N-codyps-zpl-diff.png)](../images/font-F-N-codyps-zpl-diff.png) |
+| [font-F-R](../cases/font-F-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-F-R-codyps-zpl-diff.png)](../images/font-F-R-codyps-zpl-diff.png) |
+| [font-F-I](../cases/font-F-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-F-I-codyps-zpl-diff.png)](../images/font-F-I-codyps-zpl-diff.png) |
+| [font-F-B](../cases/font-F-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-F-B-codyps-zpl-diff.png)](../images/font-F-B-codyps-zpl-diff.png) |
+| [font-G-N](../cases/font-G-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-G-N-codyps-zpl-diff.png)](../images/font-G-N-codyps-zpl-diff.png) |
+| [font-G-R](../cases/font-G-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-G-R-codyps-zpl-diff.png)](../images/font-G-R-codyps-zpl-diff.png) |
+| [font-G-I](../cases/font-G-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-G-I-codyps-zpl-diff.png)](../images/font-G-I-codyps-zpl-diff.png) |
+| [font-G-B](../cases/font-G-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-G-B-codyps-zpl-diff.png)](../images/font-G-B-codyps-zpl-diff.png) |
+| [font-H-N](../cases/font-H-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-H-N-codyps-zpl-diff.png)](../images/font-H-N-codyps-zpl-diff.png) |
+| [font-H-R](../cases/font-H-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-H-R-codyps-zpl-diff.png)](../images/font-H-R-codyps-zpl-diff.png) |
+| [font-H-I](../cases/font-H-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-H-I-codyps-zpl-diff.png)](../images/font-H-I-codyps-zpl-diff.png) |
+| [font-H-B](../cases/font-H-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-H-B-codyps-zpl-diff.png)](../images/font-H-B-codyps-zpl-diff.png) |
+| [font-id-1](../cases/font-id-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-1-codyps-zpl-diff.png)](../images/font-id-1-codyps-zpl-diff.png) |
+| [font-id-2](../cases/font-id-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-2-codyps-zpl-diff.png)](../images/font-id-2-codyps-zpl-diff.png) |
+| [font-id-3](../cases/font-id-3.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-3-codyps-zpl-diff.png)](../images/font-id-3-codyps-zpl-diff.png) |
+| [font-id-4](../cases/font-id-4.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-4-codyps-zpl-diff.png)](../images/font-id-4-codyps-zpl-diff.png) |
+| [font-id-5](../cases/font-id-5.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-5-codyps-zpl-diff.png)](../images/font-id-5-codyps-zpl-diff.png) |
+| [font-id-6](../cases/font-id-6.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-6-codyps-zpl-diff.png)](../images/font-id-6-codyps-zpl-diff.png) |
+| [font-id-7](../cases/font-id-7.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-7-codyps-zpl-diff.png)](../images/font-id-7-codyps-zpl-diff.png) |
+| [font-id-8](../cases/font-id-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-8-codyps-zpl-diff.png)](../images/font-id-8-codyps-zpl-diff.png) |
+| [font-id-9](../cases/font-id-9.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-9-codyps-zpl-diff.png)](../images/font-id-9-codyps-zpl-diff.png) |
+| [font-id-I](../cases/font-id-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-I-codyps-zpl-diff.png)](../images/font-id-I-codyps-zpl-diff.png) |
+| [font-id-J](../cases/font-id-J.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-J-codyps-zpl-diff.png)](../images/font-id-J-codyps-zpl-diff.png) |
+| [font-id-K](../cases/font-id-K.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-K-codyps-zpl-diff.png)](../images/font-id-K-codyps-zpl-diff.png) |
+| [font-id-L](../cases/font-id-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-L-codyps-zpl-diff.png)](../images/font-id-L-codyps-zpl-diff.png) |
+| [font-id-M](../cases/font-id-M.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-M-codyps-zpl-diff.png)](../images/font-id-M-codyps-zpl-diff.png) |
+| [font-id-N](../cases/font-id-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-N-codyps-zpl-diff.png)](../images/font-id-N-codyps-zpl-diff.png) |
+| [font-id-O](../cases/font-id-O.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-O-codyps-zpl-diff.png)](../images/font-id-O-codyps-zpl-diff.png) |
+| [font-id-P](../cases/font-id-P.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-P-codyps-zpl-diff.png)](../images/font-id-P-codyps-zpl-diff.png) |
+| [font-id-Q](../cases/font-id-Q.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-Q-codyps-zpl-diff.png)](../images/font-id-Q-codyps-zpl-diff.png) |
+| [font-id-R](../cases/font-id-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-R-codyps-zpl-diff.png)](../images/font-id-R-codyps-zpl-diff.png) |
+| [font-id-S](../cases/font-id-S.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-S-codyps-zpl-diff.png)](../images/font-id-S-codyps-zpl-diff.png) |
+| [font-id-T](../cases/font-id-T.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-T-codyps-zpl-diff.png)](../images/font-id-T-codyps-zpl-diff.png) |
+| [font-id-U](../cases/font-id-U.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-U-codyps-zpl-diff.png)](../images/font-id-U-codyps-zpl-diff.png) |
+| [font-id-V](../cases/font-id-V.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-V-codyps-zpl-diff.png)](../images/font-id-V-codyps-zpl-diff.png) |
+| [font-id-W](../cases/font-id-W.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-W-codyps-zpl-diff.png)](../images/font-id-W-codyps-zpl-diff.png) |
+| [font-id-X](../cases/font-id-X.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-X-codyps-zpl-diff.png)](../images/font-id-X-codyps-zpl-diff.png) |
+| [font-id-Y](../cases/font-id-Y.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-Y-codyps-zpl-diff.png)](../images/font-id-Y-codyps-zpl-diff.png) |
+| [font-id-Z](../cases/font-id-Z.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-id-Z-codyps-zpl-diff.png)](../images/font-id-Z-codyps-zpl-diff.png) |
 | [font-dim-0-0](../cases/font-dim-0-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-0-0-codyps-zpl-diff.png)](../images/font-dim-0-0-codyps-zpl-diff.png) |
-| [font-dim-1-1](../cases/font-dim-1-1.md#codyps-zpl) | 0.85% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-1-1-codyps-zpl-diff.png)](../images/font-dim-1-1-codyps-zpl-diff.png) |
-| [font-dim-2-2](../cases/font-dim-2-2.md#codyps-zpl) | 0.83% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-2-2-codyps-zpl-diff.png)](../images/font-dim-2-2-codyps-zpl-diff.png) |
-| [font-dim-7-0](../cases/font-dim-7-0.md#codyps-zpl) | 16.77% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-7-0-codyps-zpl-diff.png)](../images/font-dim-7-0-codyps-zpl-diff.png) |
-| [font-dim-15-0](../cases/font-dim-15-0.md#codyps-zpl) | 64.85% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-15-0-codyps-zpl-diff.png)](../images/font-dim-15-0-codyps-zpl-diff.png) |
-| [font-dim-17-0](../cases/font-dim-17-0.md#codyps-zpl) | 45.98% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-17-0-codyps-zpl-diff.png)](../images/font-dim-17-0-codyps-zpl-diff.png) |
-| [font-dim-31-0](../cases/font-dim-31-0.md#codyps-zpl) | 70.72% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-31-0-codyps-zpl-diff.png)](../images/font-dim-31-0-codyps-zpl-diff.png) |
-| [font-dim-33-0](../cases/font-dim-33-0.md#codyps-zpl) | 57.10% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-33-0-codyps-zpl-diff.png)](../images/font-dim-33-0-codyps-zpl-diff.png) |
-| [font-dim-63-0](../cases/font-dim-63-0.md#codyps-zpl) | 71.79% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-63-0-codyps-zpl-diff.png)](../images/font-dim-63-0-codyps-zpl-diff.png) |
-| [font-dim-65-0](../cases/font-dim-65-0.md#codyps-zpl) | 64.38% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-65-0-codyps-zpl-diff.png)](../images/font-dim-65-0-codyps-zpl-diff.png) |
-| [font-dim-32-1](../cases/font-dim-32-1.md#codyps-zpl) | 7.31% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-32-1-codyps-zpl-diff.png)](../images/font-dim-32-1-codyps-zpl-diff.png) |
-| [font-dim-1-32](../cases/font-dim-1-32.md#codyps-zpl) | 4.17% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-1-32-codyps-zpl-diff.png)](../images/font-dim-1-32-codyps-zpl-diff.png) |
-| [font-dim-64-16](../cases/font-dim-64-16.md#codyps-zpl) | 54.67% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-64-16-codyps-zpl-diff.png)](../images/font-dim-64-16-codyps-zpl-diff.png) |
-| [font-dim-16-64](../cases/font-dim-16-64.md#codyps-zpl) | 62.07% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-16-64-codyps-zpl-diff.png)](../images/font-dim-16-64-codyps-zpl-diff.png) |
-| [font-dim-96-96](../cases/font-dim-96-96.md#codyps-zpl) | 68.28% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-96-96-codyps-zpl-diff.png)](../images/font-dim-96-96-codyps-zpl-diff.png) |
-| [text-digits](../cases/text-digits.md#codyps-zpl) | 41.12% IoU | [![codyps/zpl (Rust) difference](../previews/text-digits-codyps-zpl-diff.png)](../images/text-digits-codyps-zpl-diff.png) |
-| [text-case](../cases/text-case.md#codyps-zpl) | 57.48% IoU | [![codyps/zpl (Rust) difference](../previews/text-case-codyps-zpl-diff.png)](../images/text-case-codyps-zpl-diff.png) |
-| [text-punctuation](../cases/text-punctuation.md#codyps-zpl) | 23.47% IoU | [![codyps/zpl (Rust) difference](../previews/text-punctuation-codyps-zpl-diff.png)](../images/text-punctuation-codyps-zpl-diff.png) |
-| [text-spacing](../cases/text-spacing.md#codyps-zpl) | 18.37% IoU | [![codyps/zpl (Rust) difference](../previews/text-spacing-codyps-zpl-diff.png)](../images/text-spacing-codyps-zpl-diff.png) |
+| [font-dim-1-1](../cases/font-dim-1-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-1-1-codyps-zpl-diff.png)](../images/font-dim-1-1-codyps-zpl-diff.png) |
+| [font-dim-2-2](../cases/font-dim-2-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-2-2-codyps-zpl-diff.png)](../images/font-dim-2-2-codyps-zpl-diff.png) |
+| [font-dim-7-0](../cases/font-dim-7-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-7-0-codyps-zpl-diff.png)](../images/font-dim-7-0-codyps-zpl-diff.png) |
+| [font-dim-15-0](../cases/font-dim-15-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-15-0-codyps-zpl-diff.png)](../images/font-dim-15-0-codyps-zpl-diff.png) |
+| [font-dim-17-0](../cases/font-dim-17-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-17-0-codyps-zpl-diff.png)](../images/font-dim-17-0-codyps-zpl-diff.png) |
+| [font-dim-31-0](../cases/font-dim-31-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-31-0-codyps-zpl-diff.png)](../images/font-dim-31-0-codyps-zpl-diff.png) |
+| [font-dim-33-0](../cases/font-dim-33-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-33-0-codyps-zpl-diff.png)](../images/font-dim-33-0-codyps-zpl-diff.png) |
+| [font-dim-63-0](../cases/font-dim-63-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-63-0-codyps-zpl-diff.png)](../images/font-dim-63-0-codyps-zpl-diff.png) |
+| [font-dim-65-0](../cases/font-dim-65-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-65-0-codyps-zpl-diff.png)](../images/font-dim-65-0-codyps-zpl-diff.png) |
+| [font-dim-32-1](../cases/font-dim-32-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-32-1-codyps-zpl-diff.png)](../images/font-dim-32-1-codyps-zpl-diff.png) |
+| [font-dim-1-32](../cases/font-dim-1-32.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-1-32-codyps-zpl-diff.png)](../images/font-dim-1-32-codyps-zpl-diff.png) |
+| [font-dim-64-16](../cases/font-dim-64-16.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-64-16-codyps-zpl-diff.png)](../images/font-dim-64-16-codyps-zpl-diff.png) |
+| [font-dim-16-64](../cases/font-dim-16-64.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-16-64-codyps-zpl-diff.png)](../images/font-dim-16-64-codyps-zpl-diff.png) |
+| [font-dim-96-96](../cases/font-dim-96-96.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/font-dim-96-96-codyps-zpl-diff.png)](../images/font-dim-96-96-codyps-zpl-diff.png) |
+| [text-digits](../cases/text-digits.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-digits-codyps-zpl-diff.png)](../images/text-digits-codyps-zpl-diff.png) |
+| [text-case](../cases/text-case.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-case-codyps-zpl-diff.png)](../images/text-case-codyps-zpl-diff.png) |
+| [text-punctuation](../cases/text-punctuation.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-punctuation-codyps-zpl-diff.png)](../images/text-punctuation-codyps-zpl-diff.png) |
+| [text-spacing](../cases/text-spacing.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-spacing-codyps-zpl-diff.png)](../images/text-spacing-codyps-zpl-diff.png) |
 | [text-empty](../cases/text-empty.md#codyps-zpl) | Unscored | No printer reference |
-| [fields-1](../cases/fields-1.md#codyps-zpl) | 57.05% IoU | [![codyps/zpl (Rust) difference](../previews/fields-1-codyps-zpl-diff.png)](../images/fields-1-codyps-zpl-diff.png) |
-| [fields-48](../cases/fields-48.md#codyps-zpl) | 65.89% IoU | [![codyps/zpl (Rust) difference](../previews/fields-48-codyps-zpl-diff.png)](../images/fields-48-codyps-zpl-diff.png) |
-| [fields-400](../cases/fields-400.md#codyps-zpl) | 67.57% IoU | [![codyps/zpl (Rust) difference](../previews/fields-400-codyps-zpl-diff.png)](../images/fields-400-codyps-zpl-diff.png) |
-| [field-data-3072-bytes](../cases/field-data-3072-bytes.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-defaults](../cases/field-defaults.md#codyps-zpl) | 76.51% IoU | [![codyps/zpl (Rust) difference](../previews/field-defaults-codyps-zpl-diff.png)](../images/field-defaults-codyps-zpl-diff.png) |
-| [anchor-FO-N-0](../cases/anchor-FO-N-0.md#codyps-zpl) | 69.42% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-N-0-codyps-zpl-diff.png)](../images/anchor-FO-N-0-codyps-zpl-diff.png) |
-| [anchor-FO-N-1](../cases/anchor-FO-N-1.md#codyps-zpl) | 81.75% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-N-1-codyps-zpl-diff.png)](../images/anchor-FO-N-1-codyps-zpl-diff.png) |
-| [anchor-FO-N-2](../cases/anchor-FO-N-2.md#codyps-zpl) | 69.42% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-N-2-codyps-zpl-diff.png)](../images/anchor-FO-N-2-codyps-zpl-diff.png) |
-| [anchor-FT-N-0](../cases/anchor-FT-N-0.md#codyps-zpl) | 69.44% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-N-0-codyps-zpl-diff.png)](../images/anchor-FT-N-0-codyps-zpl-diff.png) |
-| [anchor-FT-N-1](../cases/anchor-FT-N-1.md#codyps-zpl) | 81.85% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-N-1-codyps-zpl-diff.png)](../images/anchor-FT-N-1-codyps-zpl-diff.png) |
-| [anchor-FT-N-2](../cases/anchor-FT-N-2.md#codyps-zpl) | 69.44% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-N-2-codyps-zpl-diff.png)](../images/anchor-FT-N-2-codyps-zpl-diff.png) |
-| [anchor-FO-R-0](../cases/anchor-FO-R-0.md#codyps-zpl) | 68.84% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-R-0-codyps-zpl-diff.png)](../images/anchor-FO-R-0-codyps-zpl-diff.png) |
-| [anchor-FO-R-1](../cases/anchor-FO-R-1.md#codyps-zpl) | 80.90% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-R-1-codyps-zpl-diff.png)](../images/anchor-FO-R-1-codyps-zpl-diff.png) |
-| [anchor-FO-R-2](../cases/anchor-FO-R-2.md#codyps-zpl) | 68.84% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-R-2-codyps-zpl-diff.png)](../images/anchor-FO-R-2-codyps-zpl-diff.png) |
-| [anchor-FT-R-0](../cases/anchor-FT-R-0.md#codyps-zpl) | 68.81% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-R-0-codyps-zpl-diff.png)](../images/anchor-FT-R-0-codyps-zpl-diff.png) |
-| [anchor-FT-R-1](../cases/anchor-FT-R-1.md#codyps-zpl) | 81.06% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-R-1-codyps-zpl-diff.png)](../images/anchor-FT-R-1-codyps-zpl-diff.png) |
-| [anchor-FT-R-2](../cases/anchor-FT-R-2.md#codyps-zpl) | 68.81% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-R-2-codyps-zpl-diff.png)](../images/anchor-FT-R-2-codyps-zpl-diff.png) |
-| [anchor-FO-I-0](../cases/anchor-FO-I-0.md#codyps-zpl) | 79.42% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-I-0-codyps-zpl-diff.png)](../images/anchor-FO-I-0-codyps-zpl-diff.png) |
-| [anchor-FO-I-1](../cases/anchor-FO-I-1.md#codyps-zpl) | 55.60% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-I-1-codyps-zpl-diff.png)](../images/anchor-FO-I-1-codyps-zpl-diff.png) |
-| [anchor-FO-I-2](../cases/anchor-FO-I-2.md#codyps-zpl) | 79.42% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-I-2-codyps-zpl-diff.png)](../images/anchor-FO-I-2-codyps-zpl-diff.png) |
-| [anchor-FT-I-0](../cases/anchor-FT-I-0.md#codyps-zpl) | 66.12% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-I-0-codyps-zpl-diff.png)](../images/anchor-FT-I-0-codyps-zpl-diff.png) |
-| [anchor-FT-I-1](../cases/anchor-FT-I-1.md#codyps-zpl) | 79.47% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-I-1-codyps-zpl-diff.png)](../images/anchor-FT-I-1-codyps-zpl-diff.png) |
-| [anchor-FT-I-2](../cases/anchor-FT-I-2.md#codyps-zpl) | 66.12% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-I-2-codyps-zpl-diff.png)](../images/anchor-FT-I-2-codyps-zpl-diff.png) |
-| [anchor-FO-B-0](../cases/anchor-FO-B-0.md#codyps-zpl) | 80.18% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-B-0-codyps-zpl-diff.png)](../images/anchor-FO-B-0-codyps-zpl-diff.png) |
-| [anchor-FO-B-1](../cases/anchor-FO-B-1.md#codyps-zpl) | 80.18% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-B-1-codyps-zpl-diff.png)](../images/anchor-FO-B-1-codyps-zpl-diff.png) |
-| [anchor-FO-B-2](../cases/anchor-FO-B-2.md#codyps-zpl) | 80.18% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-B-2-codyps-zpl-diff.png)](../images/anchor-FO-B-2-codyps-zpl-diff.png) |
-| [anchor-FT-B-0](../cases/anchor-FT-B-0.md#codyps-zpl) | 66.55% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-B-0-codyps-zpl-diff.png)](../images/anchor-FT-B-0-codyps-zpl-diff.png) |
-| [anchor-FT-B-1](../cases/anchor-FT-B-1.md#codyps-zpl) | 80.38% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-B-1-codyps-zpl-diff.png)](../images/anchor-FT-B-1-codyps-zpl-diff.png) |
-| [anchor-FT-B-2](../cases/anchor-FT-B-2.md#codyps-zpl) | 66.55% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-B-2-codyps-zpl-diff.png)](../images/anchor-FT-B-2-codyps-zpl-diff.png) |
+| [fields-1](../cases/fields-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/fields-1-codyps-zpl-diff.png)](../images/fields-1-codyps-zpl-diff.png) |
+| [fields-48](../cases/fields-48.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/fields-48-codyps-zpl-diff.png)](../images/fields-48-codyps-zpl-diff.png) |
+| [fields-400](../cases/fields-400.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/fields-400-codyps-zpl-diff.png)](../images/fields-400-codyps-zpl-diff.png) |
+| [field-data-3072-bytes](../cases/field-data-3072-bytes.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-data-3072-bytes-codyps-zpl-diff.png)](../images/field-data-3072-bytes-codyps-zpl-diff.png) |
+| [field-defaults](../cases/field-defaults.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-defaults-codyps-zpl-diff.png)](../images/field-defaults-codyps-zpl-diff.png) |
+| [anchor-FO-N-0](../cases/anchor-FO-N-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-N-0-codyps-zpl-diff.png)](../images/anchor-FO-N-0-codyps-zpl-diff.png) |
+| [anchor-FO-N-1](../cases/anchor-FO-N-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-N-1-codyps-zpl-diff.png)](../images/anchor-FO-N-1-codyps-zpl-diff.png) |
+| [anchor-FO-N-2](../cases/anchor-FO-N-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-N-2-codyps-zpl-diff.png)](../images/anchor-FO-N-2-codyps-zpl-diff.png) |
+| [anchor-FT-N-0](../cases/anchor-FT-N-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-N-0-codyps-zpl-diff.png)](../images/anchor-FT-N-0-codyps-zpl-diff.png) |
+| [anchor-FT-N-1](../cases/anchor-FT-N-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-N-1-codyps-zpl-diff.png)](../images/anchor-FT-N-1-codyps-zpl-diff.png) |
+| [anchor-FT-N-2](../cases/anchor-FT-N-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-N-2-codyps-zpl-diff.png)](../images/anchor-FT-N-2-codyps-zpl-diff.png) |
+| [anchor-FO-R-0](../cases/anchor-FO-R-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-R-0-codyps-zpl-diff.png)](../images/anchor-FO-R-0-codyps-zpl-diff.png) |
+| [anchor-FO-R-1](../cases/anchor-FO-R-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-R-1-codyps-zpl-diff.png)](../images/anchor-FO-R-1-codyps-zpl-diff.png) |
+| [anchor-FO-R-2](../cases/anchor-FO-R-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-R-2-codyps-zpl-diff.png)](../images/anchor-FO-R-2-codyps-zpl-diff.png) |
+| [anchor-FT-R-0](../cases/anchor-FT-R-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-R-0-codyps-zpl-diff.png)](../images/anchor-FT-R-0-codyps-zpl-diff.png) |
+| [anchor-FT-R-1](../cases/anchor-FT-R-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-R-1-codyps-zpl-diff.png)](../images/anchor-FT-R-1-codyps-zpl-diff.png) |
+| [anchor-FT-R-2](../cases/anchor-FT-R-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-R-2-codyps-zpl-diff.png)](../images/anchor-FT-R-2-codyps-zpl-diff.png) |
+| [anchor-FO-I-0](../cases/anchor-FO-I-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-I-0-codyps-zpl-diff.png)](../images/anchor-FO-I-0-codyps-zpl-diff.png) |
+| [anchor-FO-I-1](../cases/anchor-FO-I-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-I-1-codyps-zpl-diff.png)](../images/anchor-FO-I-1-codyps-zpl-diff.png) |
+| [anchor-FO-I-2](../cases/anchor-FO-I-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-I-2-codyps-zpl-diff.png)](../images/anchor-FO-I-2-codyps-zpl-diff.png) |
+| [anchor-FT-I-0](../cases/anchor-FT-I-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-I-0-codyps-zpl-diff.png)](../images/anchor-FT-I-0-codyps-zpl-diff.png) |
+| [anchor-FT-I-1](../cases/anchor-FT-I-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-I-1-codyps-zpl-diff.png)](../images/anchor-FT-I-1-codyps-zpl-diff.png) |
+| [anchor-FT-I-2](../cases/anchor-FT-I-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-I-2-codyps-zpl-diff.png)](../images/anchor-FT-I-2-codyps-zpl-diff.png) |
+| [anchor-FO-B-0](../cases/anchor-FO-B-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-B-0-codyps-zpl-diff.png)](../images/anchor-FO-B-0-codyps-zpl-diff.png) |
+| [anchor-FO-B-1](../cases/anchor-FO-B-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-B-1-codyps-zpl-diff.png)](../images/anchor-FO-B-1-codyps-zpl-diff.png) |
+| [anchor-FO-B-2](../cases/anchor-FO-B-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FO-B-2-codyps-zpl-diff.png)](../images/anchor-FO-B-2-codyps-zpl-diff.png) |
+| [anchor-FT-B-0](../cases/anchor-FT-B-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-B-0-codyps-zpl-diff.png)](../images/anchor-FT-B-0-codyps-zpl-diff.png) |
+| [anchor-FT-B-1](../cases/anchor-FT-B-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-B-1-codyps-zpl-diff.png)](../images/anchor-FT-B-1-codyps-zpl-diff.png) |
+| [anchor-FT-B-2](../cases/anchor-FT-B-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/anchor-FT-B-2-codyps-zpl-diff.png)](../images/anchor-FT-B-2-codyps-zpl-diff.png) |
 | [offset-LS--80](../cases/offset-LS--80.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/offset-LS--80-codyps-zpl-diff.png)](../images/offset-LS--80-codyps-zpl-diff.png) |
-| [offset-LS-80](../cases/offset-LS-80.md#codyps-zpl) | 27.21% IoU | [![codyps/zpl (Rust) difference](../previews/offset-LS-80-codyps-zpl-diff.png)](../images/offset-LS-80-codyps-zpl-diff.png) |
+| [offset-LS-80](../cases/offset-LS-80.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/offset-LS-80-codyps-zpl-diff.png)](../images/offset-LS-80-codyps-zpl-diff.png) |
 | [offset-LT--50](../cases/offset-LT--50.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/offset-LT--50-codyps-zpl-diff.png)](../images/offset-LT--50-codyps-zpl-diff.png) |
 | [offset-LT-50](../cases/offset-LT-50.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/offset-LT-50-codyps-zpl-diff.png)](../images/offset-LT-50-codyps-zpl-diff.png) |
 | [offset-LH-100-200](../cases/offset-LH-100-200.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/offset-LH-100-200-codyps-zpl-diff.png)](../images/offset-LH-100-200-codyps-zpl-diff.png) |
@@ -263,68 +263,68 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [clip-832-1218](../cases/clip-832-1218.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/clip-832-1218-codyps-zpl-diff.png)](../images/clip-832-1218-codyps-zpl-diff.png) |
 | [clip-800-1180](../cases/clip-800-1180.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/clip-800-1180-codyps-zpl-diff.png)](../images/clip-800-1180-codyps-zpl-diff.png) |
 | [clip-32000-32000](../cases/clip-32000-32000.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/clip-32000-32000-codyps-zpl-diff.png)](../images/clip-32000-32000-codyps-zpl-diff.png) |
-| [page-transform-N-N](../cases/page-transform-N-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [page-transform-Y-N](../cases/page-transform-Y-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [page-transform-N-I](../cases/page-transform-N-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [page-transform-Y-I](../cases/page-transform-Y-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [page-transform-N-N](../cases/page-transform-N-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/page-transform-N-N-codyps-zpl-diff.png)](../images/page-transform-N-N-codyps-zpl-diff.png) |
+| [page-transform-Y-N](../cases/page-transform-Y-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/page-transform-Y-N-codyps-zpl-diff.png)](../images/page-transform-Y-N-codyps-zpl-diff.png) |
+| [page-transform-N-I](../cases/page-transform-N-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/page-transform-N-I-codyps-zpl-diff.png)](../images/page-transform-N-I-codyps-zpl-diff.png) |
+| [page-transform-Y-I](../cases/page-transform-Y-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/page-transform-Y-I-codyps-zpl-diff.png)](../images/page-transform-Y-I-codyps-zpl-diff.png) |
 | [label-reverse](../cases/label-reverse.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/label-reverse-codyps-zpl-diff.png)](../images/label-reverse-codyps-zpl-diff.png) |
-| [field-direction-H-0](../cases/field-direction-H-0.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-H-1](../cases/field-direction-H-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-H-8](../cases/field-direction-H-8.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-V-0](../cases/field-direction-V-0.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-V-1](../cases/field-direction-V-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-V-8](../cases/field-direction-V-8.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-R-0](../cases/field-direction-R-0.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-R-1](../cases/field-direction-R-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-direction-R-8](../cases/field-direction-R-8.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-1-L](../cases/block-1-L.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-1-C](../cases/block-1-C.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-1-R](../cases/block-1-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-1-J](../cases/block-1-J.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-20-L](../cases/block-20-L.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-20-C](../cases/block-20-C.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-20-R](../cases/block-20-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-20-J](../cases/block-20-J.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-120-L](../cases/block-120-L.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-120-C](../cases/block-120-C.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-120-R](../cases/block-120-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-120-J](../cases/block-120-J.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-300-L](../cases/block-300-L.md#codyps-zpl) | 29.49% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-L-codyps-zpl-diff.png)](../images/block-300-L-codyps-zpl-diff.png) |
-| [block-300-C](../cases/block-300-C.md#codyps-zpl) | 46.39% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-C-codyps-zpl-diff.png)](../images/block-300-C-codyps-zpl-diff.png) |
-| [block-300-R](../cases/block-300-R.md#codyps-zpl) | 38.35% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-R-codyps-zpl-diff.png)](../images/block-300-R-codyps-zpl-diff.png) |
-| [block-300-J](../cases/block-300-J.md#codyps-zpl) | 52.19% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-J-codyps-zpl-diff.png)](../images/block-300-J-codyps-zpl-diff.png) |
-| [block-spacing--12-indent-0](../cases/block-spacing--12-indent-0.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-spacing-12-indent-0](../cases/block-spacing-12-indent-0.md#codyps-zpl) | 34.56% IoU | [![codyps/zpl (Rust) difference](../previews/block-spacing-12-indent-0-codyps-zpl-diff.png)](../images/block-spacing-12-indent-0-codyps-zpl-diff.png) |
-| [block-spacing-0-indent-40](../cases/block-spacing-0-indent-40.md#codyps-zpl) | 34.56% IoU | [![codyps/zpl (Rust) difference](../previews/block-spacing-0-indent-40-codyps-zpl-diff.png)](../images/block-spacing-0-indent-40-codyps-zpl-diff.png) |
-| [block-spacing-8-indent-80](../cases/block-spacing-8-indent-80.md#codyps-zpl) | 34.56% IoU | [![codyps/zpl (Rust) difference](../previews/block-spacing-8-indent-80-codyps-zpl-diff.png)](../images/block-spacing-8-indent-80-codyps-zpl-diff.png) |
-| [block-content-breaks](../cases/block-content-breaks.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-content-long-word](../cases/block-content-long-word.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [block-content-spaces](../cases/block-content-spaces.md#codyps-zpl) | 32.46% IoU | [![codyps/zpl (Rust) difference](../previews/block-content-spaces-codyps-zpl-diff.png)](../images/block-content-spaces-codyps-zpl-diff.png) |
+| [field-direction-H-0](../cases/field-direction-H-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-H-0-codyps-zpl-diff.png)](../images/field-direction-H-0-codyps-zpl-diff.png) |
+| [field-direction-H-1](../cases/field-direction-H-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-H-1-codyps-zpl-diff.png)](../images/field-direction-H-1-codyps-zpl-diff.png) |
+| [field-direction-H-8](../cases/field-direction-H-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-H-8-codyps-zpl-diff.png)](../images/field-direction-H-8-codyps-zpl-diff.png) |
+| [field-direction-V-0](../cases/field-direction-V-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-V-0-codyps-zpl-diff.png)](../images/field-direction-V-0-codyps-zpl-diff.png) |
+| [field-direction-V-1](../cases/field-direction-V-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-V-1-codyps-zpl-diff.png)](../images/field-direction-V-1-codyps-zpl-diff.png) |
+| [field-direction-V-8](../cases/field-direction-V-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-V-8-codyps-zpl-diff.png)](../images/field-direction-V-8-codyps-zpl-diff.png) |
+| [field-direction-R-0](../cases/field-direction-R-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-R-0-codyps-zpl-diff.png)](../images/field-direction-R-0-codyps-zpl-diff.png) |
+| [field-direction-R-1](../cases/field-direction-R-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-R-1-codyps-zpl-diff.png)](../images/field-direction-R-1-codyps-zpl-diff.png) |
+| [field-direction-R-8](../cases/field-direction-R-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-direction-R-8-codyps-zpl-diff.png)](../images/field-direction-R-8-codyps-zpl-diff.png) |
+| [block-1-L](../cases/block-1-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-1-L-codyps-zpl-diff.png)](../images/block-1-L-codyps-zpl-diff.png) |
+| [block-1-C](../cases/block-1-C.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-1-C-codyps-zpl-diff.png)](../images/block-1-C-codyps-zpl-diff.png) |
+| [block-1-R](../cases/block-1-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-1-R-codyps-zpl-diff.png)](../images/block-1-R-codyps-zpl-diff.png) |
+| [block-1-J](../cases/block-1-J.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-1-J-codyps-zpl-diff.png)](../images/block-1-J-codyps-zpl-diff.png) |
+| [block-20-L](../cases/block-20-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-20-L-codyps-zpl-diff.png)](../images/block-20-L-codyps-zpl-diff.png) |
+| [block-20-C](../cases/block-20-C.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-20-C-codyps-zpl-diff.png)](../images/block-20-C-codyps-zpl-diff.png) |
+| [block-20-R](../cases/block-20-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-20-R-codyps-zpl-diff.png)](../images/block-20-R-codyps-zpl-diff.png) |
+| [block-20-J](../cases/block-20-J.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-20-J-codyps-zpl-diff.png)](../images/block-20-J-codyps-zpl-diff.png) |
+| [block-120-L](../cases/block-120-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-120-L-codyps-zpl-diff.png)](../images/block-120-L-codyps-zpl-diff.png) |
+| [block-120-C](../cases/block-120-C.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-120-C-codyps-zpl-diff.png)](../images/block-120-C-codyps-zpl-diff.png) |
+| [block-120-R](../cases/block-120-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-120-R-codyps-zpl-diff.png)](../images/block-120-R-codyps-zpl-diff.png) |
+| [block-120-J](../cases/block-120-J.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-120-J-codyps-zpl-diff.png)](../images/block-120-J-codyps-zpl-diff.png) |
+| [block-300-L](../cases/block-300-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-L-codyps-zpl-diff.png)](../images/block-300-L-codyps-zpl-diff.png) |
+| [block-300-C](../cases/block-300-C.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-C-codyps-zpl-diff.png)](../images/block-300-C-codyps-zpl-diff.png) |
+| [block-300-R](../cases/block-300-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-R-codyps-zpl-diff.png)](../images/block-300-R-codyps-zpl-diff.png) |
+| [block-300-J](../cases/block-300-J.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-300-J-codyps-zpl-diff.png)](../images/block-300-J-codyps-zpl-diff.png) |
+| [block-spacing--12-indent-0](../cases/block-spacing--12-indent-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-spacing--12-indent-0-codyps-zpl-diff.png)](../images/block-spacing--12-indent-0-codyps-zpl-diff.png) |
+| [block-spacing-12-indent-0](../cases/block-spacing-12-indent-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-spacing-12-indent-0-codyps-zpl-diff.png)](../images/block-spacing-12-indent-0-codyps-zpl-diff.png) |
+| [block-spacing-0-indent-40](../cases/block-spacing-0-indent-40.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-spacing-0-indent-40-codyps-zpl-diff.png)](../images/block-spacing-0-indent-40-codyps-zpl-diff.png) |
+| [block-spacing-8-indent-80](../cases/block-spacing-8-indent-80.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-spacing-8-indent-80-codyps-zpl-diff.png)](../images/block-spacing-8-indent-80-codyps-zpl-diff.png) |
+| [block-content-breaks](../cases/block-content-breaks.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-content-breaks-codyps-zpl-diff.png)](../images/block-content-breaks-codyps-zpl-diff.png) |
+| [block-content-long-word](../cases/block-content-long-word.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-content-long-word-codyps-zpl-diff.png)](../images/block-content-long-word-codyps-zpl-diff.png) |
+| [block-content-spaces](../cases/block-content-spaces.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/block-content-spaces-codyps-zpl-diff.png)](../images/block-content-spaces-codyps-zpl-diff.png) |
 | [block-content-empty](../cases/block-content-empty.md#codyps-zpl) | Unscored | No printer reference |
-| [text-block-N-1](../cases/text-block-N-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-N-40](../cases/text-block-N-40.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-N-120](../cases/text-block-N-120.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-R-1](../cases/text-block-R-1.md#codyps-zpl) | Unscored | Unavailable: error |
-| [text-block-R-40](../cases/text-block-R-40.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-R-120](../cases/text-block-R-120.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-I-1](../cases/text-block-I-1.md#codyps-zpl) | Unscored | Unavailable: error |
-| [text-block-I-40](../cases/text-block-I-40.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-I-120](../cases/text-block-I-120.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-B-1](../cases/text-block-B-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-B-40](../cases/text-block-B-40.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [text-block-B-120](../cases/text-block-B-120.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-latin](../cases/unicode-latin.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-combining](../cases/unicode-combining.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-greek](../cases/unicode-greek.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-cyrillic](../cases/unicode-cyrillic.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-hebrew](../cases/unicode-hebrew.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-arabic](../cases/unicode-arabic.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-cjk](../cases/unicode-cjk.md#codyps-zpl) | Unscored | Unavailable: error |
-| [unicode-supplementary](../cases/unicode-supplementary.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-controls](../cases/unicode-controls.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [unicode-missing](../cases/unicode-missing.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [text-block-N-1](../cases/text-block-N-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-N-1-codyps-zpl-diff.png)](../images/text-block-N-1-codyps-zpl-diff.png) |
+| [text-block-N-40](../cases/text-block-N-40.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-N-40-codyps-zpl-diff.png)](../images/text-block-N-40-codyps-zpl-diff.png) |
+| [text-block-N-120](../cases/text-block-N-120.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-N-120-codyps-zpl-diff.png)](../images/text-block-N-120-codyps-zpl-diff.png) |
+| [text-block-R-1](../cases/text-block-R-1.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/text-block-R-1-codyps-zpl-diff.png)](../images/text-block-R-1-codyps-zpl-diff.png) |
+| [text-block-R-40](../cases/text-block-R-40.md#codyps-zpl) | 99.28% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-R-40-codyps-zpl-diff.png)](../images/text-block-R-40-codyps-zpl-diff.png) |
+| [text-block-R-120](../cases/text-block-R-120.md#codyps-zpl) | 99.28% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-R-120-codyps-zpl-diff.png)](../images/text-block-R-120-codyps-zpl-diff.png) |
+| [text-block-I-1](../cases/text-block-I-1.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/text-block-I-1-codyps-zpl-diff.png)](../images/text-block-I-1-codyps-zpl-diff.png) |
+| [text-block-I-40](../cases/text-block-I-40.md#codyps-zpl) | 98.45% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-I-40-codyps-zpl-diff.png)](../images/text-block-I-40-codyps-zpl-diff.png) |
+| [text-block-I-120](../cases/text-block-I-120.md#codyps-zpl) | 98.45% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-I-120-codyps-zpl-diff.png)](../images/text-block-I-120-codyps-zpl-diff.png) |
+| [text-block-B-1](../cases/text-block-B-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-B-1-codyps-zpl-diff.png)](../images/text-block-B-1-codyps-zpl-diff.png) |
+| [text-block-B-40](../cases/text-block-B-40.md#codyps-zpl) | 99.40% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-B-40-codyps-zpl-diff.png)](../images/text-block-B-40-codyps-zpl-diff.png) |
+| [text-block-B-120](../cases/text-block-B-120.md#codyps-zpl) | 99.40% IoU | [![codyps/zpl (Rust) difference](../previews/text-block-B-120-codyps-zpl-diff.png)](../images/text-block-B-120-codyps-zpl-diff.png) |
+| [unicode-latin](../cases/unicode-latin.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-latin-codyps-zpl-diff.png)](../images/unicode-latin-codyps-zpl-diff.png) |
+| [unicode-combining](../cases/unicode-combining.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-combining-codyps-zpl-diff.png)](../images/unicode-combining-codyps-zpl-diff.png) |
+| [unicode-greek](../cases/unicode-greek.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-greek-codyps-zpl-diff.png)](../images/unicode-greek-codyps-zpl-diff.png) |
+| [unicode-cyrillic](../cases/unicode-cyrillic.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-cyrillic-codyps-zpl-diff.png)](../images/unicode-cyrillic-codyps-zpl-diff.png) |
+| [unicode-hebrew](../cases/unicode-hebrew.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-hebrew-codyps-zpl-diff.png)](../images/unicode-hebrew-codyps-zpl-diff.png) |
+| [unicode-arabic](../cases/unicode-arabic.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-arabic-codyps-zpl-diff.png)](../images/unicode-arabic-codyps-zpl-diff.png) |
+| [unicode-cjk](../cases/unicode-cjk.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/unicode-cjk-codyps-zpl-diff.png)](../images/unicode-cjk-codyps-zpl-diff.png) |
+| [unicode-supplementary](../cases/unicode-supplementary.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-supplementary-codyps-zpl-diff.png)](../images/unicode-supplementary-codyps-zpl-diff.png) |
+| [unicode-controls](../cases/unicode-controls.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-controls-codyps-zpl-diff.png)](../images/unicode-controls-codyps-zpl-diff.png) |
+| [unicode-missing](../cases/unicode-missing.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/unicode-missing-codyps-zpl-diff.png)](../images/unicode-missing-codyps-zpl-diff.png) |
 | [encoding-0](../cases/encoding-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/encoding-0-codyps-zpl-diff.png)](../images/encoding-0-codyps-zpl-diff.png) |
-| [encoding-13](../cases/encoding-13.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [encoding-13](../cases/encoding-13.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/encoding-13-codyps-zpl-diff.png)](../images/encoding-13-codyps-zpl-diff.png) |
 | [encoding-27](../cases/encoding-27.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/encoding-27-codyps-zpl-diff.png)](../images/encoding-27-codyps-zpl-diff.png) |
 | [encoding-28](../cases/encoding-28.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/encoding-28-codyps-zpl-diff.png)](../images/encoding-28-codyps-zpl-diff.png) |
 | [encoding-29](../cases/encoding-29.md#codyps-zpl) | Unscored | Unavailable: error |
@@ -335,74 +335,74 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [encoding-35](../cases/encoding-35.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
 | [encoding-36](../cases/encoding-36.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
 | [encoding-remap](../cases/encoding-remap.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [advanced-text-0000](../cases/advanced-text-0000.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [advanced-text-1000](../cases/advanced-text-1000.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [advanced-text-0100](../cases/advanced-text-0100.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [advanced-text-0010](../cases/advanced-text-0010.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [advanced-text-0001](../cases/advanced-text-0001.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [advanced-text-1111](../cases/advanced-text-1111.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [advanced-text-0000](../cases/advanced-text-0000.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/advanced-text-0000-codyps-zpl-diff.png)](../images/advanced-text-0000-codyps-zpl-diff.png) |
+| [advanced-text-1000](../cases/advanced-text-1000.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/advanced-text-1000-codyps-zpl-diff.png)](../images/advanced-text-1000-codyps-zpl-diff.png) |
+| [advanced-text-0100](../cases/advanced-text-0100.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/advanced-text-0100-codyps-zpl-diff.png)](../images/advanced-text-0100-codyps-zpl-diff.png) |
+| [advanced-text-0010](../cases/advanced-text-0010.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/advanced-text-0010-codyps-zpl-diff.png)](../images/advanced-text-0010-codyps-zpl-diff.png) |
+| [advanced-text-0001](../cases/advanced-text-0001.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/advanced-text-0001-codyps-zpl-diff.png)](../images/advanced-text-0001-codyps-zpl-diff.png) |
+| [advanced-text-1111](../cases/advanced-text-1111.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/advanced-text-1111-codyps-zpl-diff.png)](../images/advanced-text-1111-codyps-zpl-diff.png) |
 | [hex-underscore](../cases/hex-underscore.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
 | [hex-hash](../cases/hex-hash.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
 | [hex-scope](../cases/hex-scope.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/hex-scope-codyps-zpl-diff.png)](../images/hex-scope-codyps-zpl-diff.png) |
 | [variable-field](../cases/variable-field.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/variable-field-codyps-zpl-diff.png)](../images/variable-field-codyps-zpl-diff.png) |
-| [numbered-fields-inline](../cases/numbered-fields-inline.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-concat-whole](../cases/field-concat-whole.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-concat-forward](../cases/field-concat-forward.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-concat-backward](../cases/field-concat-backward.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-concat-past-end](../cases/field-concat-past-end.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [field-concat-scope](../cases/field-concat-scope.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [numbered-fields-inline](../cases/numbered-fields-inline.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/numbered-fields-inline-codyps-zpl-diff.png)](../images/numbered-fields-inline-codyps-zpl-diff.png) |
+| [field-concat-whole](../cases/field-concat-whole.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-concat-whole-codyps-zpl-diff.png)](../images/field-concat-whole-codyps-zpl-diff.png) |
+| [field-concat-forward](../cases/field-concat-forward.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-concat-forward-codyps-zpl-diff.png)](../images/field-concat-forward-codyps-zpl-diff.png) |
+| [field-concat-backward](../cases/field-concat-backward.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-concat-backward-codyps-zpl-diff.png)](../images/field-concat-backward-codyps-zpl-diff.png) |
+| [field-concat-past-end](../cases/field-concat-past-end.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-concat-past-end-codyps-zpl-diff.png)](../images/field-concat-past-end-codyps-zpl-diff.png) |
+| [field-concat-scope](../cases/field-concat-scope.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/field-concat-scope-codyps-zpl-diff.png)](../images/field-concat-scope-codyps-zpl-diff.png) |
 | [interleaved-odd-digits](../cases/interleaved-odd-digits.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/interleaved-odd-digits-codyps-zpl-diff.png)](../images/interleaved-odd-digits-codyps-zpl-diff.png) |
-| [serial-000009-Y](../cases/serial-000009-Y.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [serial-000009-N](../cases/serial-000009-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [serial-A009Z-Y](../cases/serial-A009Z-Y.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [serial-mask](../cases/serial-mask.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [serial-000009-Y](../cases/serial-000009-Y.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/serial-000009-Y-codyps-zpl-diff.png)](../images/serial-000009-Y-codyps-zpl-diff.png) |
+| [serial-000009-N](../cases/serial-000009-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/serial-000009-N-codyps-zpl-diff.png)](../images/serial-000009-N-codyps-zpl-diff.png) |
+| [serial-A009Z-Y](../cases/serial-A009Z-Y.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/serial-A009Z-Y-codyps-zpl-diff.png)](../images/serial-A009Z-Y-codyps-zpl-diff.png) |
+| [serial-mask](../cases/serial-mask.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/serial-mask-codyps-zpl-diff.png)](../images/serial-mask-codyps-zpl-diff.png) |
 | [comments-and-line-endings](../cases/comments-and-line-endings.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/comments-and-line-endings-codyps-zpl-diff.png)](../images/comments-and-line-endings-codyps-zpl-diff.png) |
 | [box-rounding-0](../cases/box-rounding-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-0-codyps-zpl-diff.png)](../images/box-rounding-0-codyps-zpl-diff.png) |
-| [box-rounding-1](../cases/box-rounding-1.md#codyps-zpl) | 98.08% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-1-codyps-zpl-diff.png)](../images/box-rounding-1-codyps-zpl-diff.png) |
-| [box-rounding-2](../cases/box-rounding-2.md#codyps-zpl) | 95.83% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-2-codyps-zpl-diff.png)](../images/box-rounding-2-codyps-zpl-diff.png) |
-| [box-rounding-3](../cases/box-rounding-3.md#codyps-zpl) | 94.81% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-3-codyps-zpl-diff.png)](../images/box-rounding-3-codyps-zpl-diff.png) |
-| [box-rounding-4](../cases/box-rounding-4.md#codyps-zpl) | 91.95% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-4-codyps-zpl-diff.png)](../images/box-rounding-4-codyps-zpl-diff.png) |
-| [box-rounding-5](../cases/box-rounding-5.md#codyps-zpl) | 91.33% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-5-codyps-zpl-diff.png)](../images/box-rounding-5-codyps-zpl-diff.png) |
-| [box-rounding-6](../cases/box-rounding-6.md#codyps-zpl) | 92.53% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-6-codyps-zpl-diff.png)](../images/box-rounding-6-codyps-zpl-diff.png) |
-| [box-rounding-7](../cases/box-rounding-7.md#codyps-zpl) | 90.07% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-7-codyps-zpl-diff.png)](../images/box-rounding-7-codyps-zpl-diff.png) |
-| [box-rounding-8](../cases/box-rounding-8.md#codyps-zpl) | 88.81% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-8-codyps-zpl-diff.png)](../images/box-rounding-8-codyps-zpl-diff.png) |
-| [box-0-80-1](../cases/box-0-80-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [box-80-0-1](../cases/box-80-0-1.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [box-rounding-1](../cases/box-rounding-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-1-codyps-zpl-diff.png)](../images/box-rounding-1-codyps-zpl-diff.png) |
+| [box-rounding-2](../cases/box-rounding-2.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-2-codyps-zpl-diff.png)](../images/box-rounding-2-codyps-zpl-diff.png) |
+| [box-rounding-3](../cases/box-rounding-3.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-3-codyps-zpl-diff.png)](../images/box-rounding-3-codyps-zpl-diff.png) |
+| [box-rounding-4](../cases/box-rounding-4.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-4-codyps-zpl-diff.png)](../images/box-rounding-4-codyps-zpl-diff.png) |
+| [box-rounding-5](../cases/box-rounding-5.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-5-codyps-zpl-diff.png)](../images/box-rounding-5-codyps-zpl-diff.png) |
+| [box-rounding-6](../cases/box-rounding-6.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-6-codyps-zpl-diff.png)](../images/box-rounding-6-codyps-zpl-diff.png) |
+| [box-rounding-7](../cases/box-rounding-7.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-7-codyps-zpl-diff.png)](../images/box-rounding-7-codyps-zpl-diff.png) |
+| [box-rounding-8](../cases/box-rounding-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-rounding-8-codyps-zpl-diff.png)](../images/box-rounding-8-codyps-zpl-diff.png) |
+| [box-0-80-1](../cases/box-0-80-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-0-80-1-codyps-zpl-diff.png)](../images/box-0-80-1-codyps-zpl-diff.png) |
+| [box-80-0-1](../cases/box-80-0-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-80-0-1-codyps-zpl-diff.png)](../images/box-80-0-1-codyps-zpl-diff.png) |
 | [box-1-1-1](../cases/box-1-1-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-1-1-1-codyps-zpl-diff.png)](../images/box-1-1-1-codyps-zpl-diff.png) |
 | [box-2-2-1](../cases/box-2-2-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-2-2-1-codyps-zpl-diff.png)](../images/box-2-2-1-codyps-zpl-diff.png) |
 | [box-31-31-1](../cases/box-31-31-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-31-31-1-codyps-zpl-diff.png)](../images/box-31-31-1-codyps-zpl-diff.png) |
 | [box-32-32-1](../cases/box-32-32-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-32-32-1-codyps-zpl-diff.png)](../images/box-32-32-1-codyps-zpl-diff.png) |
 | [box-33-33-1](../cases/box-33-33-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-33-33-1-codyps-zpl-diff.png)](../images/box-33-33-1-codyps-zpl-diff.png) |
 | [box-100-60-30](../cases/box-100-60-30.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-100-60-30-codyps-zpl-diff.png)](../images/box-100-60-30-codyps-zpl-diff.png) |
-| [box-100-60-100](../cases/box-100-60-100.md#codyps-zpl) | 60.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-100-60-100-codyps-zpl-diff.png)](../images/box-100-60-100-codyps-zpl-diff.png) |
+| [box-100-60-100](../cases/box-100-60-100.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/box-100-60-100-codyps-zpl-diff.png)](../images/box-100-60-100-codyps-zpl-diff.png) |
 | [shape-GC-B-plain](../cases/shape-GC-B-plain.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GC-B-plain-codyps-zpl-diff.png)](../images/shape-GC-B-plain-codyps-zpl-diff.png) |
-| [shape-GC-W-plain](../cases/shape-GC-W-plain.md#codyps-zpl) | 97.96% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GC-W-plain-codyps-zpl-diff.png)](../images/shape-GC-W-plain-codyps-zpl-diff.png) |
+| [shape-GC-W-plain](../cases/shape-GC-W-plain.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GC-W-plain-codyps-zpl-diff.png)](../images/shape-GC-W-plain-codyps-zpl-diff.png) |
 | [shape-GE-B-plain](../cases/shape-GE-B-plain.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GE-B-plain-codyps-zpl-diff.png)](../images/shape-GE-B-plain-codyps-zpl-diff.png) |
-| [shape-GE-W-plain](../cases/shape-GE-W-plain.md#codyps-zpl) | 95.07% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GE-W-plain-codyps-zpl-diff.png)](../images/shape-GE-W-plain-codyps-zpl-diff.png) |
+| [shape-GE-W-plain](../cases/shape-GE-W-plain.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GE-W-plain-codyps-zpl-diff.png)](../images/shape-GE-W-plain-codyps-zpl-diff.png) |
 | [shape-GD-B-L](../cases/shape-GD-B-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GD-B-L-codyps-zpl-diff.png)](../images/shape-GD-B-L-codyps-zpl-diff.png) |
 | [shape-GD-B-R](../cases/shape-GD-B-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GD-B-R-codyps-zpl-diff.png)](../images/shape-GD-B-R-codyps-zpl-diff.png) |
 | [shape-GD-W-L](../cases/shape-GD-W-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GD-W-L-codyps-zpl-diff.png)](../images/shape-GD-W-L-codyps-zpl-diff.png) |
 | [shape-GD-W-R](../cases/shape-GD-W-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/shape-GD-W-R-codyps-zpl-diff.png)](../images/shape-GD-W-R-codyps-zpl-diff.png) |
-| [symbol-graphic-A-N](../cases/symbol-graphic-A-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-A-R](../cases/symbol-graphic-A-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-A-I](../cases/symbol-graphic-A-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-A-B](../cases/symbol-graphic-A-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-B-N](../cases/symbol-graphic-B-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-B-R](../cases/symbol-graphic-B-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-B-I](../cases/symbol-graphic-B-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-B-B](../cases/symbol-graphic-B-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-C-N](../cases/symbol-graphic-C-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-C-R](../cases/symbol-graphic-C-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-C-I](../cases/symbol-graphic-C-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-C-B](../cases/symbol-graphic-C-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-D-N](../cases/symbol-graphic-D-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-D-R](../cases/symbol-graphic-D-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-D-I](../cases/symbol-graphic-D-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-D-B](../cases/symbol-graphic-D-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-E-N](../cases/symbol-graphic-E-N.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-E-R](../cases/symbol-graphic-E-R.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-E-I](../cases/symbol-graphic-E-I.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [symbol-graphic-E-B](../cases/symbol-graphic-E-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
+| [symbol-graphic-A-N](../cases/symbol-graphic-A-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-A-N-codyps-zpl-diff.png)](../images/symbol-graphic-A-N-codyps-zpl-diff.png) |
+| [symbol-graphic-A-R](../cases/symbol-graphic-A-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-A-R-codyps-zpl-diff.png)](../images/symbol-graphic-A-R-codyps-zpl-diff.png) |
+| [symbol-graphic-A-I](../cases/symbol-graphic-A-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-A-I-codyps-zpl-diff.png)](../images/symbol-graphic-A-I-codyps-zpl-diff.png) |
+| [symbol-graphic-A-B](../cases/symbol-graphic-A-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-A-B-codyps-zpl-diff.png)](../images/symbol-graphic-A-B-codyps-zpl-diff.png) |
+| [symbol-graphic-B-N](../cases/symbol-graphic-B-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-B-N-codyps-zpl-diff.png)](../images/symbol-graphic-B-N-codyps-zpl-diff.png) |
+| [symbol-graphic-B-R](../cases/symbol-graphic-B-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-B-R-codyps-zpl-diff.png)](../images/symbol-graphic-B-R-codyps-zpl-diff.png) |
+| [symbol-graphic-B-I](../cases/symbol-graphic-B-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-B-I-codyps-zpl-diff.png)](../images/symbol-graphic-B-I-codyps-zpl-diff.png) |
+| [symbol-graphic-B-B](../cases/symbol-graphic-B-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-B-B-codyps-zpl-diff.png)](../images/symbol-graphic-B-B-codyps-zpl-diff.png) |
+| [symbol-graphic-C-N](../cases/symbol-graphic-C-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-C-N-codyps-zpl-diff.png)](../images/symbol-graphic-C-N-codyps-zpl-diff.png) |
+| [symbol-graphic-C-R](../cases/symbol-graphic-C-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-C-R-codyps-zpl-diff.png)](../images/symbol-graphic-C-R-codyps-zpl-diff.png) |
+| [symbol-graphic-C-I](../cases/symbol-graphic-C-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-C-I-codyps-zpl-diff.png)](../images/symbol-graphic-C-I-codyps-zpl-diff.png) |
+| [symbol-graphic-C-B](../cases/symbol-graphic-C-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-C-B-codyps-zpl-diff.png)](../images/symbol-graphic-C-B-codyps-zpl-diff.png) |
+| [symbol-graphic-D-N](../cases/symbol-graphic-D-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-D-N-codyps-zpl-diff.png)](../images/symbol-graphic-D-N-codyps-zpl-diff.png) |
+| [symbol-graphic-D-R](../cases/symbol-graphic-D-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-D-R-codyps-zpl-diff.png)](../images/symbol-graphic-D-R-codyps-zpl-diff.png) |
+| [symbol-graphic-D-I](../cases/symbol-graphic-D-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-D-I-codyps-zpl-diff.png)](../images/symbol-graphic-D-I-codyps-zpl-diff.png) |
+| [symbol-graphic-D-B](../cases/symbol-graphic-D-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-D-B-codyps-zpl-diff.png)](../images/symbol-graphic-D-B-codyps-zpl-diff.png) |
+| [symbol-graphic-E-N](../cases/symbol-graphic-E-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-E-N-codyps-zpl-diff.png)](../images/symbol-graphic-E-N-codyps-zpl-diff.png) |
+| [symbol-graphic-E-R](../cases/symbol-graphic-E-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-E-R-codyps-zpl-diff.png)](../images/symbol-graphic-E-R-codyps-zpl-diff.png) |
+| [symbol-graphic-E-I](../cases/symbol-graphic-E-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-E-I-codyps-zpl-diff.png)](../images/symbol-graphic-E-I-codyps-zpl-diff.png) |
+| [symbol-graphic-E-B](../cases/symbol-graphic-E-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/symbol-graphic-E-B-codyps-zpl-diff.png)](../images/symbol-graphic-E-B-codyps-zpl-diff.png) |
 | [paint-black-white](../cases/paint-black-white.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/paint-black-white-codyps-zpl-diff.png)](../images/paint-black-white-codyps-zpl-diff.png) |
 | [paint-white-black](../cases/paint-white-black.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/paint-white-black-codyps-zpl-diff.png)](../images/paint-white-black-codyps-zpl-diff.png) |
 | [paint-reverse-overlap](../cases/paint-reverse-overlap.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/paint-reverse-overlap-codyps-zpl-diff.png)](../images/paint-reverse-overlap-codyps-zpl-diff.png) |
@@ -423,13 +423,13 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [raster-stride-17](../cases/raster-stride-17.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/raster-stride-17-codyps-zpl-diff.png)](../images/raster-stride-17-codyps-zpl-diff.png) |
 | [raster-clipped](../cases/raster-clipped.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/raster-clipped-codyps-zpl-diff.png)](../images/raster-clipped-codyps-zpl-diff.png) |
 | [barcode-module-1-ratio-2.0](../cases/barcode-module-1-ratio-2.0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-1-ratio-2.0-codyps-zpl-diff.png)](../images/barcode-module-1-ratio-2.0-codyps-zpl-diff.png) |
-| [barcode-module-1-ratio-2.5](../cases/barcode-module-1-ratio-2.5.md#codyps-zpl) | 38.89% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-1-ratio-2.5-codyps-zpl-diff.png)](../images/barcode-module-1-ratio-2.5-codyps-zpl-diff.png) |
+| [barcode-module-1-ratio-2.5](../cases/barcode-module-1-ratio-2.5.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-1-ratio-2.5-codyps-zpl-diff.png)](../images/barcode-module-1-ratio-2.5-codyps-zpl-diff.png) |
 | [barcode-module-1-ratio-3.0](../cases/barcode-module-1-ratio-3.0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-1-ratio-3.0-codyps-zpl-diff.png)](../images/barcode-module-1-ratio-3.0-codyps-zpl-diff.png) |
 | [barcode-module-2-ratio-2.0](../cases/barcode-module-2-ratio-2.0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-2-ratio-2.0-codyps-zpl-diff.png)](../images/barcode-module-2-ratio-2.0-codyps-zpl-diff.png) |
 | [barcode-module-2-ratio-2.5](../cases/barcode-module-2-ratio-2.5.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-2-ratio-2.5-codyps-zpl-diff.png)](../images/barcode-module-2-ratio-2.5-codyps-zpl-diff.png) |
 | [barcode-module-2-ratio-3.0](../cases/barcode-module-2-ratio-3.0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-2-ratio-3.0-codyps-zpl-diff.png)](../images/barcode-module-2-ratio-3.0-codyps-zpl-diff.png) |
 | [barcode-module-3-ratio-2.0](../cases/barcode-module-3-ratio-2.0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-3-ratio-2.0-codyps-zpl-diff.png)](../images/barcode-module-3-ratio-2.0-codyps-zpl-diff.png) |
-| [barcode-module-3-ratio-2.5](../cases/barcode-module-3-ratio-2.5.md#codyps-zpl) | 42.42% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-3-ratio-2.5-codyps-zpl-diff.png)](../images/barcode-module-3-ratio-2.5-codyps-zpl-diff.png) |
+| [barcode-module-3-ratio-2.5](../cases/barcode-module-3-ratio-2.5.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-3-ratio-2.5-codyps-zpl-diff.png)](../images/barcode-module-3-ratio-2.5-codyps-zpl-diff.png) |
 | [barcode-module-3-ratio-3.0](../cases/barcode-module-3-ratio-3.0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-3-ratio-3.0-codyps-zpl-diff.png)](../images/barcode-module-3-ratio-3.0-codyps-zpl-diff.png) |
 | [barcode-module-10-ratio-2.0](../cases/barcode-module-10-ratio-2.0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-10-ratio-2.0-codyps-zpl-diff.png)](../images/barcode-module-10-ratio-2.0-codyps-zpl-diff.png) |
 | [barcode-module-10-ratio-2.5](../cases/barcode-module-10-ratio-2.5.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-module-10-ratio-2.5-codyps-zpl-diff.png)](../images/barcode-module-10-ratio-2.5-codyps-zpl-diff.png) |
@@ -442,34 +442,34 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [code128-subset-c](../cases/code128-subset-c.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/code128-subset-c-codyps-zpl-diff.png)](../images/code128-subset-c-codyps-zpl-diff.png) |
 | [code128-switch](../cases/code128-switch.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/code128-switch-codyps-zpl-diff.png)](../images/code128-switch-codyps-zpl-diff.png) |
 | [code128-fnc1](../cases/code128-fnc1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/code128-fnc1-codyps-zpl-diff.png)](../images/code128-fnc1-codyps-zpl-diff.png) |
-| [readable-B2-N](../cases/readable-B2-N.md#codyps-zpl) | 44.76% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B2-N-codyps-zpl-diff.png)](../images/readable-B2-N-codyps-zpl-diff.png) |
+| [readable-B2-N](../cases/readable-B2-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B2-N-codyps-zpl-diff.png)](../images/readable-B2-N-codyps-zpl-diff.png) |
 | [readable-B2-R](../cases/readable-B2-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B2-R-codyps-zpl-diff.png)](../images/readable-B2-R-codyps-zpl-diff.png) |
-| [readable-B2-I](../cases/readable-B2-I.md#codyps-zpl) | 95.86% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B2-I-codyps-zpl-diff.png)](../images/readable-B2-I-codyps-zpl-diff.png) |
-| [readable-B2-B](../cases/readable-B2-B.md#codyps-zpl) | 44.76% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B2-B-codyps-zpl-diff.png)](../images/readable-B2-B-codyps-zpl-diff.png) |
-| [readable-B3-N](../cases/readable-B3-N.md#codyps-zpl) | 35.29% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-N-codyps-zpl-diff.png)](../images/readable-B3-N-codyps-zpl-diff.png) |
-| [readable-B3-R](../cases/readable-B3-R.md#codyps-zpl) | 84.09% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-R-codyps-zpl-diff.png)](../images/readable-B3-R-codyps-zpl-diff.png) |
-| [readable-B3-I](../cases/readable-B3-I.md#codyps-zpl) | 84.13% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-I-codyps-zpl-diff.png)](../images/readable-B3-I-codyps-zpl-diff.png) |
-| [readable-B3-B](../cases/readable-B3-B.md#codyps-zpl) | 35.29% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-B-codyps-zpl-diff.png)](../images/readable-B3-B-codyps-zpl-diff.png) |
+| [readable-B2-I](../cases/readable-B2-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B2-I-codyps-zpl-diff.png)](../images/readable-B2-I-codyps-zpl-diff.png) |
+| [readable-B2-B](../cases/readable-B2-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B2-B-codyps-zpl-diff.png)](../images/readable-B2-B-codyps-zpl-diff.png) |
+| [readable-B3-N](../cases/readable-B3-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-N-codyps-zpl-diff.png)](../images/readable-B3-N-codyps-zpl-diff.png) |
+| [readable-B3-R](../cases/readable-B3-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-R-codyps-zpl-diff.png)](../images/readable-B3-R-codyps-zpl-diff.png) |
+| [readable-B3-I](../cases/readable-B3-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-I-codyps-zpl-diff.png)](../images/readable-B3-I-codyps-zpl-diff.png) |
+| [readable-B3-B](../cases/readable-B3-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-B3-B-codyps-zpl-diff.png)](../images/readable-B3-B-codyps-zpl-diff.png) |
 | [readable-BC-N](../cases/readable-BC-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BC-N-codyps-zpl-diff.png)](../images/readable-BC-N-codyps-zpl-diff.png) |
-| [readable-BC-R](../cases/readable-BC-R.md#codyps-zpl) | 45.23% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BC-R-codyps-zpl-diff.png)](../images/readable-BC-R-codyps-zpl-diff.png) |
-| [readable-BC-I](../cases/readable-BC-I.md#codyps-zpl) | 44.98% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BC-I-codyps-zpl-diff.png)](../images/readable-BC-I-codyps-zpl-diff.png) |
-| [readable-BC-B](../cases/readable-BC-B.md#codyps-zpl) | 96.81% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BC-B-codyps-zpl-diff.png)](../images/readable-BC-B-codyps-zpl-diff.png) |
-| [readable-BE-N](../cases/readable-BE-N.md#codyps-zpl) | 44.88% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-N-codyps-zpl-diff.png)](../images/readable-BE-N-codyps-zpl-diff.png) |
-| [readable-BE-R](../cases/readable-BE-R.md#codyps-zpl) | 59.59% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-R-codyps-zpl-diff.png)](../images/readable-BE-R-codyps-zpl-diff.png) |
-| [readable-BE-I](../cases/readable-BE-I.md#codyps-zpl) | 59.52% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-I-codyps-zpl-diff.png)](../images/readable-BE-I-codyps-zpl-diff.png) |
-| [readable-BE-B](../cases/readable-BE-B.md#codyps-zpl) | 44.88% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-B-codyps-zpl-diff.png)](../images/readable-BE-B-codyps-zpl-diff.png) |
-| [readable-BU-N](../cases/readable-BU-N.md#codyps-zpl) | 45.97% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-N-codyps-zpl-diff.png)](../images/readable-BU-N-codyps-zpl-diff.png) |
-| [readable-BU-R](../cases/readable-BU-R.md#codyps-zpl) | 60.40% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-R-codyps-zpl-diff.png)](../images/readable-BU-R-codyps-zpl-diff.png) |
-| [readable-BU-I](../cases/readable-BU-I.md#codyps-zpl) | 60.38% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-I-codyps-zpl-diff.png)](../images/readable-BU-I-codyps-zpl-diff.png) |
-| [readable-BU-B](../cases/readable-BU-B.md#codyps-zpl) | 45.97% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-B-codyps-zpl-diff.png)](../images/readable-BU-B-codyps-zpl-diff.png) |
-| [qr-mask-full-0](../cases/qr-mask-full-0.md#codyps-zpl) | 56.94% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-0-codyps-zpl-diff.png)](../images/qr-mask-full-0-codyps-zpl-diff.png) |
-| [qr-mask-full-1](../cases/qr-mask-full-1.md#codyps-zpl) | 57.68% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-1-codyps-zpl-diff.png)](../images/qr-mask-full-1-codyps-zpl-diff.png) |
-| [qr-mask-full-2](../cases/qr-mask-full-2.md#codyps-zpl) | 55.41% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-2-codyps-zpl-diff.png)](../images/qr-mask-full-2-codyps-zpl-diff.png) |
-| [qr-mask-full-3](../cases/qr-mask-full-3.md#codyps-zpl) | 60.70% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-3-codyps-zpl-diff.png)](../images/qr-mask-full-3-codyps-zpl-diff.png) |
-| [qr-mask-full-4](../cases/qr-mask-full-4.md#codyps-zpl) | 65.28% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-4-codyps-zpl-diff.png)](../images/qr-mask-full-4-codyps-zpl-diff.png) |
-| [qr-mask-full-5](../cases/qr-mask-full-5.md#codyps-zpl) | 54.05% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-5-codyps-zpl-diff.png)](../images/qr-mask-full-5-codyps-zpl-diff.png) |
-| [qr-mask-full-6](../cases/qr-mask-full-6.md#codyps-zpl) | 58.94% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-6-codyps-zpl-diff.png)](../images/qr-mask-full-6-codyps-zpl-diff.png) |
-| [qr-mask-full-7](../cases/qr-mask-full-7.md#codyps-zpl) | 60.14% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-7-codyps-zpl-diff.png)](../images/qr-mask-full-7-codyps-zpl-diff.png) |
+| [readable-BC-R](../cases/readable-BC-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BC-R-codyps-zpl-diff.png)](../images/readable-BC-R-codyps-zpl-diff.png) |
+| [readable-BC-I](../cases/readable-BC-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BC-I-codyps-zpl-diff.png)](../images/readable-BC-I-codyps-zpl-diff.png) |
+| [readable-BC-B](../cases/readable-BC-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BC-B-codyps-zpl-diff.png)](../images/readable-BC-B-codyps-zpl-diff.png) |
+| [readable-BE-N](../cases/readable-BE-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-N-codyps-zpl-diff.png)](../images/readable-BE-N-codyps-zpl-diff.png) |
+| [readable-BE-R](../cases/readable-BE-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-R-codyps-zpl-diff.png)](../images/readable-BE-R-codyps-zpl-diff.png) |
+| [readable-BE-I](../cases/readable-BE-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-I-codyps-zpl-diff.png)](../images/readable-BE-I-codyps-zpl-diff.png) |
+| [readable-BE-B](../cases/readable-BE-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BE-B-codyps-zpl-diff.png)](../images/readable-BE-B-codyps-zpl-diff.png) |
+| [readable-BU-N](../cases/readable-BU-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-N-codyps-zpl-diff.png)](../images/readable-BU-N-codyps-zpl-diff.png) |
+| [readable-BU-R](../cases/readable-BU-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-R-codyps-zpl-diff.png)](../images/readable-BU-R-codyps-zpl-diff.png) |
+| [readable-BU-I](../cases/readable-BU-I.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-I-codyps-zpl-diff.png)](../images/readable-BU-I-codyps-zpl-diff.png) |
+| [readable-BU-B](../cases/readable-BU-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/readable-BU-B-codyps-zpl-diff.png)](../images/readable-BU-B-codyps-zpl-diff.png) |
+| [qr-mask-full-0](../cases/qr-mask-full-0.md#codyps-zpl) | 51.01% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-0-codyps-zpl-diff.png)](../images/qr-mask-full-0-codyps-zpl-diff.png) |
+| [qr-mask-full-1](../cases/qr-mask-full-1.md#codyps-zpl) | 67.53% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-1-codyps-zpl-diff.png)](../images/qr-mask-full-1-codyps-zpl-diff.png) |
+| [qr-mask-full-2](../cases/qr-mask-full-2.md#codyps-zpl) | 60.28% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-2-codyps-zpl-diff.png)](../images/qr-mask-full-2-codyps-zpl-diff.png) |
+| [qr-mask-full-3](../cases/qr-mask-full-3.md#codyps-zpl) | 60.55% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-3-codyps-zpl-diff.png)](../images/qr-mask-full-3-codyps-zpl-diff.png) |
+| [qr-mask-full-4](../cases/qr-mask-full-4.md#codyps-zpl) | 61.59% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-4-codyps-zpl-diff.png)](../images/qr-mask-full-4-codyps-zpl-diff.png) |
+| [qr-mask-full-5](../cases/qr-mask-full-5.md#codyps-zpl) | 77.69% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-5-codyps-zpl-diff.png)](../images/qr-mask-full-5-codyps-zpl-diff.png) |
+| [qr-mask-full-6](../cases/qr-mask-full-6.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-6-codyps-zpl-diff.png)](../images/qr-mask-full-6-codyps-zpl-diff.png) |
+| [qr-mask-full-7](../cases/qr-mask-full-7.md#codyps-zpl) | 45.34% IoU | [![codyps/zpl (Rust) difference](../previews/qr-mask-full-7-codyps-zpl-diff.png)](../images/qr-mask-full-7-codyps-zpl-diff.png) |
 | [datamatrix-quality-0](../cases/datamatrix-quality-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/datamatrix-quality-0-codyps-zpl-diff.png)](../images/datamatrix-quality-0-codyps-zpl-diff.png) |
 | [datamatrix-quality-50](../cases/datamatrix-quality-50.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/datamatrix-quality-50-codyps-zpl-diff.png)](../images/datamatrix-quality-50-codyps-zpl-diff.png) |
 | [datamatrix-quality-80](../cases/datamatrix-quality-80.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/datamatrix-quality-80-codyps-zpl-diff.png)](../images/datamatrix-quality-80-codyps-zpl-diff.png) |
@@ -480,51 +480,51 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [datamatrix-size-16-16](../cases/datamatrix-size-16-16.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/datamatrix-size-16-16-codyps-zpl-diff.png)](../images/datamatrix-size-16-16-codyps-zpl-diff.png) |
 | [datamatrix-size-18-8](../cases/datamatrix-size-18-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/datamatrix-size-18-8-codyps-zpl-diff.png)](../images/datamatrix-size-18-8-codyps-zpl-diff.png) |
 | [datamatrix-size-32-8](../cases/datamatrix-size-32-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/datamatrix-size-32-8-codyps-zpl-diff.png)](../images/datamatrix-size-32-8-codyps-zpl-diff.png) |
-| [pdf417-security-0-N](../cases/pdf417-security-0-N.md#codyps-zpl) | 84.36% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-0-N-codyps-zpl-diff.png)](../images/pdf417-security-0-N-codyps-zpl-diff.png) |
-| [pdf417-security-0-Y](../cases/pdf417-security-0-Y.md#codyps-zpl) | 80.32% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-0-Y-codyps-zpl-diff.png)](../images/pdf417-security-0-Y-codyps-zpl-diff.png) |
-| [pdf417-security-2-N](../cases/pdf417-security-2-N.md#codyps-zpl) | 79.45% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-2-N-codyps-zpl-diff.png)](../images/pdf417-security-2-N-codyps-zpl-diff.png) |
-| [pdf417-security-2-Y](../cases/pdf417-security-2-Y.md#codyps-zpl) | 74.39% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-2-Y-codyps-zpl-diff.png)](../images/pdf417-security-2-Y-codyps-zpl-diff.png) |
-| [pdf417-security-8-N](../cases/pdf417-security-8-N.md#codyps-zpl) | 61.88% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-8-N-codyps-zpl-diff.png)](../images/pdf417-security-8-N-codyps-zpl-diff.png) |
-| [pdf417-security-8-Y](../cases/pdf417-security-8-Y.md#codyps-zpl) | 54.28% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-8-Y-codyps-zpl-diff.png)](../images/pdf417-security-8-Y-codyps-zpl-diff.png) |
+| [pdf417-security-0-N](../cases/pdf417-security-0-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-0-N-codyps-zpl-diff.png)](../images/pdf417-security-0-N-codyps-zpl-diff.png) |
+| [pdf417-security-0-Y](../cases/pdf417-security-0-Y.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-0-Y-codyps-zpl-diff.png)](../images/pdf417-security-0-Y-codyps-zpl-diff.png) |
+| [pdf417-security-2-N](../cases/pdf417-security-2-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-2-N-codyps-zpl-diff.png)](../images/pdf417-security-2-N-codyps-zpl-diff.png) |
+| [pdf417-security-2-Y](../cases/pdf417-security-2-Y.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-2-Y-codyps-zpl-diff.png)](../images/pdf417-security-2-Y-codyps-zpl-diff.png) |
+| [pdf417-security-8-N](../cases/pdf417-security-8-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-8-N-codyps-zpl-diff.png)](../images/pdf417-security-8-N-codyps-zpl-diff.png) |
+| [pdf417-security-8-Y](../cases/pdf417-security-8-Y.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/pdf417-security-8-Y-codyps-zpl-diff.png)](../images/pdf417-security-8-Y-codyps-zpl-diff.png) |
 | [pdf417-structured-origins-1](../cases/pdf417-structured-origins-1.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/pdf417-structured-origins-1-codyps-zpl-diff.png)](../images/pdf417-structured-origins-1-codyps-zpl-diff.png) |
 | [pdf417-structured-origins-3](../cases/pdf417-structured-origins-3.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/pdf417-structured-origins-3-codyps-zpl-diff.png)](../images/pdf417-structured-origins-3-codyps-zpl-diff.png) |
 | [structured-exclude-B7](../cases/structured-exclude-B7.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/structured-exclude-B7-codyps-zpl-diff.png)](../images/structured-exclude-B7-codyps-zpl-diff.png) |
 | [structured-exclude-BF](../cases/structured-exclude-BF.md#codyps-zpl) | Unscored | [![codyps/zpl (Rust) difference](../previews/structured-exclude-BF-codyps-zpl-diff.png)](../images/structured-exclude-BF-codyps-zpl-diff.png) |
 | [barcode-validation](../cases/barcode-validation.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-validation-codyps-zpl-diff.png)](../images/barcode-validation-codyps-zpl-diff.png) |
 | [barcode-default-scope](../cases/barcode-default-scope.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/barcode-default-scope-codyps-zpl-diff.png)](../images/barcode-default-scope-codyps-zpl-diff.png) |
-| [equivalent-text-plain](../cases/equivalent-text-plain.md#codyps-zpl) | 70.96% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-text-plain-codyps-zpl-diff.png)](../images/equivalent-text-plain-codyps-zpl-diff.png) |
-| [equivalent-text-hex](../cases/equivalent-text-hex.md#codyps-zpl) | 70.96% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-text-hex-codyps-zpl-diff.png)](../images/equivalent-text-hex-codyps-zpl-diff.png) |
+| [equivalent-text-plain](../cases/equivalent-text-plain.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-text-plain-codyps-zpl-diff.png)](../images/equivalent-text-plain-codyps-zpl-diff.png) |
+| [equivalent-text-hex](../cases/equivalent-text-hex.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-text-hex-codyps-zpl-diff.png)](../images/equivalent-text-hex-codyps-zpl-diff.png) |
 | [equivalent-home-direct](../cases/equivalent-home-direct.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-home-direct-codyps-zpl-diff.png)](../images/equivalent-home-direct-codyps-zpl-diff.png) |
 | [equivalent-home-offset](../cases/equivalent-home-offset.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-home-offset-codyps-zpl-diff.png)](../images/equivalent-home-offset-codyps-zpl-diff.png) |
-| [equivalent-comment](../cases/equivalent-comment.md#codyps-zpl) | 70.96% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-comment-codyps-zpl-diff.png)](../images/equivalent-comment-codyps-zpl-diff.png) |
-| [torture-typography](../cases/torture-typography.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [torture-geometry](../cases/torture-geometry.md#codyps-zpl) | 78.25% IoU | [![codyps/zpl (Rust) difference](../previews/torture-geometry-codyps-zpl-diff.png)](../images/torture-geometry-codyps-zpl-diff.png) |
-| [torture-shipping-label](../cases/torture-shipping-label.md#codyps-zpl) | 91.79% IoU | [![codyps/zpl (Rust) difference](../previews/torture-shipping-label-codyps-zpl-diff.png)](../images/torture-shipping-label-codyps-zpl-diff.png) |
-| [torture-overlap](../cases/torture-overlap.md#codyps-zpl) | 97.95% IoU | [![codyps/zpl (Rust) difference](../previews/torture-overlap-codyps-zpl-diff.png)](../images/torture-overlap-codyps-zpl-diff.png) |
-| [compact-baseline-0](../cases/compact-baseline-0.md#codyps-zpl) | 61.92% IoU | [![codyps/zpl (Rust) difference](../previews/compact-baseline-0-codyps-zpl-diff.png)](../images/compact-baseline-0-codyps-zpl-diff.png) |
-| [compact-baseline-A](../cases/compact-baseline-A.md#codyps-zpl) | 68.68% IoU | [![codyps/zpl (Rust) difference](../previews/compact-baseline-A-codyps-zpl-diff.png)](../images/compact-baseline-A-codyps-zpl-diff.png) |
-| [compact-baseline-B](../cases/compact-baseline-B.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [compact-baseline-C](../cases/compact-baseline-C.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [compact-baseline-F](../cases/compact-baseline-F.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
-| [compact-wrap-L](../cases/compact-wrap-L.md#codyps-zpl) | 57.60% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-L-codyps-zpl-diff.png)](../images/compact-wrap-L-codyps-zpl-diff.png) |
-| [compact-wrap-C](../cases/compact-wrap-C.md#codyps-zpl) | 36.63% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-C-codyps-zpl-diff.png)](../images/compact-wrap-C-codyps-zpl-diff.png) |
-| [compact-wrap-R](../cases/compact-wrap-R.md#codyps-zpl) | 60.03% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-R-codyps-zpl-diff.png)](../images/compact-wrap-R-codyps-zpl-diff.png) |
-| [compact-wrap-J](../cases/compact-wrap-J.md#codyps-zpl) | 37.18% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-J-codyps-zpl-diff.png)](../images/compact-wrap-J-codyps-zpl-diff.png) |
-| [compact-circle-4](../cases/compact-circle-4.md#codyps-zpl) | 61.90% IoU | [![codyps/zpl (Rust) difference](../previews/compact-circle-4-codyps-zpl-diff.png)](../images/compact-circle-4-codyps-zpl-diff.png) |
-| [compact-circle-28](../cases/compact-circle-28.md#codyps-zpl) | 59.92% IoU | [![codyps/zpl (Rust) difference](../previews/compact-circle-28-codyps-zpl-diff.png)](../images/compact-circle-28-codyps-zpl-diff.png) |
-| [compact-circle-127](../cases/compact-circle-127.md#codyps-zpl) | 55.17% IoU | [![codyps/zpl (Rust) difference](../previews/compact-circle-127-codyps-zpl-diff.png)](../images/compact-circle-127-codyps-zpl-diff.png) |
-| [compact-rounded-1](../cases/compact-rounded-1.md#codyps-zpl) | 99.75% IoU | [![codyps/zpl (Rust) difference](../previews/compact-rounded-1-codyps-zpl-diff.png)](../images/compact-rounded-1-codyps-zpl-diff.png) |
-| [compact-rounded-4](../cases/compact-rounded-4.md#codyps-zpl) | 98.25% IoU | [![codyps/zpl (Rust) difference](../previews/compact-rounded-4-codyps-zpl-diff.png)](../images/compact-rounded-4-codyps-zpl-diff.png) |
-| [compact-rounded-8](../cases/compact-rounded-8.md#codyps-zpl) | 98.37% IoU | [![codyps/zpl (Rust) difference](../previews/compact-rounded-8-codyps-zpl-diff.png)](../images/compact-rounded-8-codyps-zpl-diff.png) |
+| [equivalent-comment](../cases/equivalent-comment.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/equivalent-comment-codyps-zpl-diff.png)](../images/equivalent-comment-codyps-zpl-diff.png) |
+| [torture-typography](../cases/torture-typography.md#codyps-zpl) | 97.95% IoU | [![codyps/zpl (Rust) difference](../previews/torture-typography-codyps-zpl-diff.png)](../images/torture-typography-codyps-zpl-diff.png) |
+| [torture-geometry](../cases/torture-geometry.md#codyps-zpl) | 99.98% IoU | [![codyps/zpl (Rust) difference](../previews/torture-geometry-codyps-zpl-diff.png)](../images/torture-geometry-codyps-zpl-diff.png) |
+| [torture-shipping-label](../cases/torture-shipping-label.md#codyps-zpl) | 92.79% IoU | [![codyps/zpl (Rust) difference](../previews/torture-shipping-label-codyps-zpl-diff.png)](../images/torture-shipping-label-codyps-zpl-diff.png) |
+| [torture-overlap](../cases/torture-overlap.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/torture-overlap-codyps-zpl-diff.png)](../images/torture-overlap-codyps-zpl-diff.png) |
+| [compact-baseline-0](../cases/compact-baseline-0.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-baseline-0-codyps-zpl-diff.png)](../images/compact-baseline-0-codyps-zpl-diff.png) |
+| [compact-baseline-A](../cases/compact-baseline-A.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-baseline-A-codyps-zpl-diff.png)](../images/compact-baseline-A-codyps-zpl-diff.png) |
+| [compact-baseline-B](../cases/compact-baseline-B.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-baseline-B-codyps-zpl-diff.png)](../images/compact-baseline-B-codyps-zpl-diff.png) |
+| [compact-baseline-C](../cases/compact-baseline-C.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-baseline-C-codyps-zpl-diff.png)](../images/compact-baseline-C-codyps-zpl-diff.png) |
+| [compact-baseline-F](../cases/compact-baseline-F.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-baseline-F-codyps-zpl-diff.png)](../images/compact-baseline-F-codyps-zpl-diff.png) |
+| [compact-wrap-L](../cases/compact-wrap-L.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-L-codyps-zpl-diff.png)](../images/compact-wrap-L-codyps-zpl-diff.png) |
+| [compact-wrap-C](../cases/compact-wrap-C.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-C-codyps-zpl-diff.png)](../images/compact-wrap-C-codyps-zpl-diff.png) |
+| [compact-wrap-R](../cases/compact-wrap-R.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-R-codyps-zpl-diff.png)](../images/compact-wrap-R-codyps-zpl-diff.png) |
+| [compact-wrap-J](../cases/compact-wrap-J.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-wrap-J-codyps-zpl-diff.png)](../images/compact-wrap-J-codyps-zpl-diff.png) |
+| [compact-circle-4](../cases/compact-circle-4.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-circle-4-codyps-zpl-diff.png)](../images/compact-circle-4-codyps-zpl-diff.png) |
+| [compact-circle-28](../cases/compact-circle-28.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-circle-28-codyps-zpl-diff.png)](../images/compact-circle-28-codyps-zpl-diff.png) |
+| [compact-circle-127](../cases/compact-circle-127.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-circle-127-codyps-zpl-diff.png)](../images/compact-circle-127-codyps-zpl-diff.png) |
+| [compact-rounded-1](../cases/compact-rounded-1.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-rounded-1-codyps-zpl-diff.png)](../images/compact-rounded-1-codyps-zpl-diff.png) |
+| [compact-rounded-4](../cases/compact-rounded-4.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-rounded-4-codyps-zpl-diff.png)](../images/compact-rounded-4-codyps-zpl-diff.png) |
+| [compact-rounded-8](../cases/compact-rounded-8.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-rounded-8-codyps-zpl-diff.png)](../images/compact-rounded-8-codyps-zpl-diff.png) |
 | [compact-state-qr-code128](../cases/compact-state-qr-code128.md#codyps-zpl) | 25.11% IoU | [![codyps/zpl (Rust) difference](../previews/compact-state-qr-code128-codyps-zpl-diff.png)](../images/compact-state-qr-code128-codyps-zpl-diff.png) |
 | [compact-state-code128-dm](../cases/compact-state-code128-dm.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-state-code128-dm-codyps-zpl-diff.png)](../images/compact-state-code128-dm-codyps-zpl-diff.png) |
 | [compact-code93-substitutes](../cases/compact-code93-substitutes.md#codyps-zpl) | 0.00% IoU | Unavailable: error |
 | [compact-qr-field-hex](../cases/compact-qr-field-hex.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-qr-field-hex-codyps-zpl-diff.png)](../images/compact-qr-field-hex-codyps-zpl-diff.png) |
 | [compact-pdf417-numeric](../cases/compact-pdf417-numeric.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-pdf417-numeric-codyps-zpl-diff.png)](../images/compact-pdf417-numeric-codyps-zpl-diff.png) |
-| [compact-caption-N](../cases/compact-caption-N.md#codyps-zpl) | 88.10% IoU | [![codyps/zpl (Rust) difference](../previews/compact-caption-N-codyps-zpl-diff.png)](../images/compact-caption-N-codyps-zpl-diff.png) |
-| [compact-caption-Y](../cases/compact-caption-Y.md#codyps-zpl) | 50.21% IoU | [![codyps/zpl (Rust) difference](../previews/compact-caption-Y-codyps-zpl-diff.png)](../images/compact-caption-Y-codyps-zpl-diff.png) |
-| [compact-overlap-FR](../cases/compact-overlap-FR.md#codyps-zpl) | 97.07% IoU | [![codyps/zpl (Rust) difference](../previews/compact-overlap-FR-codyps-zpl-diff.png)](../images/compact-overlap-FR-codyps-zpl-diff.png) |
-| [compact-overlap-LR](../cases/compact-overlap-LR.md#codyps-zpl) | 97.07% IoU | [![codyps/zpl (Rust) difference](../previews/compact-overlap-LR-codyps-zpl-diff.png)](../images/compact-overlap-LR-codyps-zpl-diff.png) |
+| [compact-caption-N](../cases/compact-caption-N.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-caption-N-codyps-zpl-diff.png)](../images/compact-caption-N-codyps-zpl-diff.png) |
+| [compact-caption-Y](../cases/compact-caption-Y.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-caption-Y-codyps-zpl-diff.png)](../images/compact-caption-Y-codyps-zpl-diff.png) |
+| [compact-overlap-FR](../cases/compact-overlap-FR.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-overlap-FR-codyps-zpl-diff.png)](../images/compact-overlap-FR-codyps-zpl-diff.png) |
+| [compact-overlap-LR](../cases/compact-overlap-LR.md#codyps-zpl) | 100.00% IoU | [![codyps/zpl (Rust) difference](../previews/compact-overlap-LR-codyps-zpl-diff.png)](../images/compact-overlap-LR-codyps-zpl-diff.png) |
 | [invalid-bad-orientation](../cases/invalid-bad-orientation.md#codyps-zpl) | Unscored | Unavailable: error |
 | [invalid-negative-width](../cases/invalid-negative-width.md#codyps-zpl) | Unscored | Unavailable: error |
 | [invalid-bad-alignment](../cases/invalid-bad-alignment.md#codyps-zpl) | Unscored | Unavailable: error |
@@ -536,7 +536,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 | [invalid-bad-crc](../cases/invalid-bad-crc.md#codyps-zpl) | Unscored | Unavailable: error |
 | [invalid-qr-model-invalid](../cases/invalid-qr-model-invalid.md#codyps-zpl) | Unscored | Unavailable: error |
 | [invalid-qr-mask-invalid](../cases/invalid-qr-mask-invalid.md#codyps-zpl) | Unscored | Unavailable: error |
-| [invalid-ean-nonnumeric](../cases/invalid-ean-nonnumeric.md#codyps-zpl) | Unscored | Unavailable: error |
+| [invalid-ean-nonnumeric](../cases/invalid-ean-nonnumeric.md#codyps-zpl) | Unscored | No printer reference |
 | [invalid-code39-empty](../cases/invalid-code39-empty.md#codyps-zpl) | Unscored | No printer reference |
 | [invalid-unknown-encoding](../cases/invalid-unknown-encoding.md#codyps-zpl) | Unscored | Unavailable: error |
 

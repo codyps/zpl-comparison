@@ -6,7 +6,7 @@
 
 **^FO** · x=220,y=80,z=0 · [ZPL input](../../../../../benchmarks/accuracy/reference/fo-justify-0.zpl) · [Printer preview](../../../../../benchmarks/accuracy/reference/fo-justify-0.png)
 
-Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T18:04:26Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
@@ -47,7 +47,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (44593857) panicked at src/main.rs:74:10:
+thread 'main' (46309661) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

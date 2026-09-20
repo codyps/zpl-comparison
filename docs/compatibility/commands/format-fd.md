@@ -13,7 +13,7 @@ Reference parameters: **data**. These describe the reference grammar, not a prom
 
 | Library | Version / pin | Source evidence | Focused printer evidence | Caveats |
 | --- | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ 48cd4c6cd0a4 | [🧩 Handler found](https://github.com/codyps/zpl/blob/48cd4c6cd0a45732ffec8cd5fd580748975a8caa/zpl/src/render/mod.rs#L518) | Not measured | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ b6085d8e0a37 | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/mod.rs#L759) | Not measured | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
 | [zpl-toolchain](../libraries/toolchain.md) | 0.4.1 | [📐 Specification table](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^FD-^FV.jsonc#L1) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/toolchain.md#argument-limits) |
 | [labelize](../libraries/labelize.md) | 1.5.0 | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#263) | Not measured | [Argument limits](../libraries/labelize.md#argument-limits) |
 | [zpl-forge](../libraries/forge.md) | 0.3.2 | [🧩 Handler found](https://docs.rs/crate/zpl-forge/0.3.2/source/src/ast/parser/standard.rs#119) | Not measured | [Argument limits](../libraries/forge.md#argument-limits) |

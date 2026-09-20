@@ -23,7 +23,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44664873) panicked at src/main.rs:27:10:
+thread 'main' (46420688) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "invalid graphic count" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -49,7 +49,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44664878) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:
+thread 'main' (46420693) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:
 chunk size must be non-zero
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

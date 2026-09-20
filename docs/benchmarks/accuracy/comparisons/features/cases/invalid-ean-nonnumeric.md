@@ -14,20 +14,12 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; unscored** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; unscored** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| No printer preview; unscored | Unavailable | Unavailable |
+| No printer preview; unscored | [![codyps/zpl (Rust) render](../previews/invalid-ean-nonnumeric-codyps-zpl.png)](../../../../conformance/images/invalid-ean-nonnumeric-codyps-zpl.png) | Unavailable |
 
-
-~~~text
-
-thread 'main' (44665340) panicked at src/main.rs:27:10:
-render: RenderError { offset: 84, message: "barcode requires decimal digits" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 
@@ -40,7 +32,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44665347) panicked at src/main.rs:63:14:
+thread 'main' (46421379) panicked at src/main.rs:63:14:
 PNG: "EAN-13: need at least 12 digits, got 0"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -57,7 +49,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44665350) panicked at src/main.rs:79:32:
+thread 'main' (46421381) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Found empty contents")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

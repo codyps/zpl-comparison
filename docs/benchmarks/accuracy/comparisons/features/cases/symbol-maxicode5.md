@@ -14,7 +14,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): rendered; 5.51% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 19.01% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ~~~text
 
-thread 'main' (44625294) panicked at src/main.rs:63:14:
+thread 'main' (46363246) panicked at src/main.rs:63:14:
 PNG: "MaxiCode mode 5 is not supported; expected 2, 3, or 4"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

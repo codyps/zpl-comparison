@@ -2,7 +2,7 @@
 
 # Library renders versus printer previews
 
-133 captured cases × 8 renderers = 1064 recorded attempts. Measured 2026-09-20T04:43:33Z.
+133 captured cases × 8 renderers = 1064 recorded attempts. Measured 2026-09-20T18:04:26Z.
 
 Choose a library or case to see the **printer preview, library render, and difference image together**. Render errors include diagnostics; blank outputs remain visible.
 
@@ -18,7 +18,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 | Library | Attempts | Render errors |
 | --- | --- | --- |
-| [codyps/zpl (Rust)](libraries/codyps-zpl.md) | 133 | 0 |
+| [codyps/zpl (Rust)](libraries/codyps-zpl.md) | 133 | 1 |
 | [labelize (Rust)](libraries/labelize.md) | 133 | 5 |
 | [zpl-forge (Rust)](libraries/forge.md) | 133 | 7 |
 | [go-zpl (Go)](libraries/go.md) | 133 | 0 |

@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; 0.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/font-id-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/font-id-7.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/font-id-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/font-id-7.png) | [![codyps/zpl (Rust) render](../previews/font-id-7-codyps-zpl.png)](../../../../conformance/images/font-id-7-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/font-id-7-codyps-zpl-diff.png)](../images/font-id-7-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44631257) panicked at src/main.rs:27:10:
-render: RenderError { offset: 74, message: "unsupported resident font" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

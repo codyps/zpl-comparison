@@ -14,7 +14,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): rendered; 12.68% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 28.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |

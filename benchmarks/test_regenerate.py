@@ -1,0 +1,147 @@
+"""Offline regeneration and failed measurement publication boundaries."""
+
+import json
+from pathlib import Path
+import tempfile
+import unittest
+from unittest.mock import patch
+
+import regenerate
+import catalog
+import support
+
+
+class RegenerateTests(unittest.TestCase):
+    def test_accuracy_chart_is_rebuilt_deterministically_from_saved_results(self):
+        from accuracy.report import render_report
+
+        data = json.loads(
+            (regenerate.REPO / "docs/benchmarks/accuracy/results.json").read_text()
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp)
+            render_report(data, dest)
+            first = {
+                name: (dest / name).read_bytes()
+                for name in ["accuracy.svg", "accuracy.png", "README.md"]
+            }
+            for name in first:
+                (dest / name).unlink()
+            render_report(data, dest)
+            self.assertEqual(
+                first, {name: (dest / name).read_bytes() for name in first}
+            )
+
+    def test_catalog_uses_saved_numbers_and_pins(self):
+        data = {
+            "owner/repo": {
+                "stargazers_count": 7,
+                "forks_count": 3,
+                "pushed_at": "saved-date",
+            }
+        }
+        result = catalog.render(
+            "{{stars:owner/repo}}/{{forks:owner/repo}} {{zpl_revision}}\n{{popularity_table}}",
+            data,
+            {"zpl": {"rev": "pinned"}},
+        )
+        self.assertIn("7/3 pinned", result)
+        self.assertIn("saved-date", result)
+        self.assertNotIn("{{", result)
+        data["owner/repo"]["stargazers_count"] = 42
+        self.assertIn(
+            "42/3",
+            catalog.render("{{stars:owner/repo}}/{{forks:owner/repo}}", data, {}),
+        )
+
+    def test_catalog_versions_follow_dependency_locks(self):
+        import shutil
+
+        original_version = catalog.package_versions()["labelize"]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name in [
+                "adapters/rust/Cargo.lock",
+                "adapters/node/package-lock.json",
+                "adapters/dotnet/packages.lock.json",
+            ]:
+                target = root / name
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(catalog.ROOT / name, target)
+            cargo = root / "adapters/rust/Cargo.lock"
+            cargo.write_text(
+                cargo.read_text().replace(
+                    f'name = "labelize"\nversion = "{original_version}"',
+                    'name = "labelize"\nversion = "9.9.9"',
+                )
+            )
+            with patch.object(catalog, "ROOT", root):
+                versions = catalog.package_versions()
+            self.assertIn(
+                "9.9.9", catalog.render("{{version:labelize}}", {}, {}, versions)
+            )
+
+    def test_default_never_collects_measurements(self):
+        calls = []
+
+        def execute(step):
+            calls.append(step)
+            self.assertNotIn(step, [s for s, _ in regenerate.MEASUREMENTS])
+            return 0
+
+        with patch.object(regenerate, "run", side_effect=execute):
+            self.assertEqual(regenerate.regenerate(), 0)
+        self.assertTrue(calls)
+
+    def test_saved_failure_reports_are_published_but_stale_results_stop(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            snapshot = root / "results.json"
+            snapshot.write_text('{"old": true}')
+            measurement = ["benchmarks/conformance.py", "--only", "all"]
+            for fresh in [False, True]:
+                calls = []
+
+                def execute(step):
+                    calls.append(step)
+                    if step == measurement:
+                        if fresh:
+                            snapshot.write_text('{"results": [{"status": "crashed"}]}')
+                        return 1
+                    return 0
+
+                with (
+                    patch.object(regenerate, "REPO", root),
+                    patch.object(regenerate, "preflight_measurements"),
+                    patch.object(regenerate, "FIXTURES", []),
+                    patch.object(
+                        regenerate, "MEASUREMENTS", [(measurement, "results.json")]
+                    ),
+                    patch.object(regenerate, "REPORTS", [["report.py"]]),
+                    patch.object(regenerate, "run", side_effect=execute),
+                ):
+                    self.assertEqual(regenerate.regenerate(measure=True), 1)
+                self.assertEqual(["report.py"] in calls, fresh)
+
+    def test_measurement_preflight_failure_does_not_write_any_resources(self):
+        with (
+            patch.object(
+                regenerate,
+                "preflight_measurements",
+                side_effect=ValueError("Missing adapter"),
+            ),
+            patch.object(regenerate, "run") as execute,
+        ):
+            with self.assertRaisesRegex(ValueError, "Missing adapter"):
+                regenerate.regenerate(measure=True)
+            execute.assert_not_called()
+
+    def test_support_report_replays_saved_evidence_without_source_checkout(self):
+        snapshot = support.REPO / "docs/benchmarks/command-support.json"
+        data = json.loads(snapshot.read_text())
+        with patch.object(
+            support, "collect", side_effect=AssertionError("Must not collect")
+        ):
+            self.assertEqual(
+                support.render_report(data), snapshot.with_suffix(".md").read_text()
+            )

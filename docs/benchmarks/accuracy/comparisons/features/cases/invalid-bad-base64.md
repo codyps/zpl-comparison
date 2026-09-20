@@ -23,7 +23,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44664970) panicked at src/main.rs:27:10:
+thread 'main' (46420865) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "ZPL framing error at byte 73: InvalidEncodedData" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

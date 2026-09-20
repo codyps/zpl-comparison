@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; 0.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/serial-mask-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/serial-mask.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/serial-mask-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/serial-mask.png) | [![codyps/zpl (Rust) render](../previews/serial-mask-codyps-zpl.png)](../../../../conformance/images/serial-mask-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/serial-mask-codyps-zpl-diff.png)](../images/serial-mask-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44647551) panicked at src/main.rs:27:10:
-render: RenderError { offset: 82, message: "drawing must end with FS before another command" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

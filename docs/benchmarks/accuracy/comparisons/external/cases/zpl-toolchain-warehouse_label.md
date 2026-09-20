@@ -16,7 +16,7 @@ Not certified for validity or printer fidelity. Canvas supplied by harness when 
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): rendered; 44.70% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 45.07% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |

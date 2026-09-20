@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; 0.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/field-concat-scope-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/field-concat-scope.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/field-concat-scope-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/field-concat-scope.png) | [![codyps/zpl (Rust) render](../previews/field-concat-scope-codyps-zpl.png)](../../../../conformance/images/field-concat-scope-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/field-concat-scope-codyps-zpl-diff.png)](../images/field-concat-scope-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44646823) panicked at src/main.rs:27:10:
-render: RenderError { offset: 73, message: "unsupported command FN" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 

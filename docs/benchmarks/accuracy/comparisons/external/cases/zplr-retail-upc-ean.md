@@ -25,7 +25,7 @@ Not certified for validity or printer fidelity. Canvas supplied by harness when 
 
 ~~~text
 
-thread 'main' (44666665) panicked at src/main.rs:27:10:
+thread 'main' (46424639) panicked at src/main.rs:27:10:
 render: RenderError { offset: 110, message: "unsupported legacy text byte; select ^CI28 for UTF-8" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

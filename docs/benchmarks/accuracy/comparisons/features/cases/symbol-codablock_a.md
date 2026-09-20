@@ -41,7 +41,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ~~~text
 
-thread 'main' (44621960) panicked at src/main.rs:79:32:
+thread 'main' (46358378) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

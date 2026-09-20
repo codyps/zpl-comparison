@@ -12,20 +12,12 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): error; 0.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../previews/block-spacing--12-indent-0-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/block-spacing--12-indent-0.png) | Unavailable | Unavailable |
+| [![Printer preview](../previews/block-spacing--12-indent-0-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/block-spacing--12-indent-0.png) | [![codyps/zpl (Rust) render](../previews/block-spacing--12-indent-0-codyps-zpl.png)](../../../../conformance/images/block-spacing--12-indent-0-codyps-zpl.png) | [![codyps/zpl (Rust) difference](../previews/block-spacing--12-indent-0-codyps-zpl-diff.png)](../images/block-spacing--12-indent-0-codyps-zpl-diff.png) |
 
-
-~~~text
-
-thread 'main' (44641555) panicked at src/main.rs:27:10:
-render: RenderError { offset: 99, message: "overlapping field block lines unsupported" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
 
 ## labelize
 
@@ -47,7 +39,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44641560) panicked at src/main.rs:74:10:
+thread 'main' (46385190) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

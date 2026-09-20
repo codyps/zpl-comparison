@@ -23,7 +23,7 @@ Printer capture excluded: invalid input or stateful/device-dependent operations.
 
 ~~~text
 
-thread 'main' (44664389) panicked at src/main.rs:27:10:
+thread 'main' (46420169) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "invalid shape dimensions" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -49,7 +49,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44664401) panicked at src/main.rs:74:10:
+thread 'main' (46420185) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Digit)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

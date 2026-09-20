@@ -21,7 +21,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ~~~text
 
-thread 'main' (44645284) panicked at src/main.rs:27:10:
+thread 'main' (46391587) panicked at src/main.rs:27:10:
 render: RenderError { offset: 65, message: "unexpected command parameters" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -47,7 +47,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ~~~text
 
-thread 'main' (44645291) panicked at src/main.rs:74:10:
+thread 'main' (46391593) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

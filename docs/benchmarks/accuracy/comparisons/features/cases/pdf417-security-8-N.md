@@ -12,7 +12,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): rendered; 61.88% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
+**codyps/zpl (Rust): rendered; 100.00% IoU** · [All tests for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ~~~text
 
-thread 'main' (44660260) panicked at src/main.rs:79:32:
+thread 'main' (46415620) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: WriterException - Unable to fit message in columns")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

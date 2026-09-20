@@ -2,7 +2,7 @@
 
 [Reproduce this run](../../../benchmarks/invalid/README.md) · [Exact fixtures](../../../test-data/invalid-zpl/manifest.json) · [Raw results and diagnostics](results.json)
 
-Measured **2026-09-18T23:45:19Z** on `macOS-26.6.2-x86_64-i386-64bit-Mach-O`. 18 paired cases, 14 API lanes, 2 repetitions per input: **1008 executions**.
+Measured **2026-09-20T17:57:34Z** on `macOS-26.6.2-x86_64-i386-64bit-Mach-O`. 18 paired cases, 14 API lanes, 2 repetitions per input: **1008 executions**.
 
 Each modified input is paired with a valid control using the same feature. **Rejected** means a returned library error, thrown exception, or error-severity diagnostic, with a successful control in every repeat. **Accepted** means no explicit error was reported; warnings may still appear. **Control failed** is inconclusive, including blank renderer controls. Panics, signals, timeouts, process/protocol failures and unstable outcomes never count as proper rejection.
 
@@ -15,7 +15,7 @@ The malformed group tests corrupt data; framing tests impose a complete-label co
 | Library | API | Rejected | Accepted | Control failed | Execution failure | Unstable |
 | --- | --- | --- | --- | --- | --- | --- |
 | codyps/zpl (Rust) | parse | 2 | 5 | 0 | 0 | 0 |
-| codyps/zpl (Rust) | render | 7 | 0 | 0 | 0 | 0 |
+| codyps/zpl (Rust) | render | 6 | 1 | 0 | 0 | 0 |
 | zpl-toolchain (Rust) | parse | 0 | 6 | 1 | 0 | 0 |
 | labelize (Rust) | parse | 2 | 3 | 2 | 0 | 0 |
 | labelize (Rust) | render | 3 | 2 | 2 | 0 | 0 |
@@ -119,7 +119,7 @@ The malformed group tests corrupt data; framing tests impose a complete-label co
 | [z64-invalid-stream](#z64-invalid-stream) | ZPLr (TypeScript) | parse | accepted |
 | [z64-invalid-stream](#z64-invalid-stream) | ZPLr (TypeScript) | render | accepted |
 | [ean-nonnumeric](#ean-nonnumeric) | codyps/zpl (Rust) | parse | accepted |
-| [ean-nonnumeric](#ean-nonnumeric) | codyps/zpl (Rust) | render | rejected |
+| [ean-nonnumeric](#ean-nonnumeric) | codyps/zpl (Rust) | render | accepted |
 | [ean-nonnumeric](#ean-nonnumeric) | zpl-toolchain (Rust) | parse | accepted |
 | [ean-nonnumeric](#ean-nonnumeric) | labelize (Rust) | parse | accepted |
 | [ean-nonnumeric](#ean-nonnumeric) | labelize (Rust) | render | rejected |
@@ -1064,12 +1064,7 @@ Reference: ^BE, guide p. 109. [Valid control](../../../test-data/invalid-zpl/cas
 
 **codyps/zpl (Rust) / parse: accepted**
 
-**codyps/zpl (Rust) / render: rejected**
-
-~~~text
-invalid, repeat 1, rejected: RenderError { offset: 34, message: "barcode requires decimal digits" }
-invalid, repeat 2, rejected: RenderError { offset: 34, message: "barcode requires decimal digits" }
-~~~
+**codyps/zpl (Rust) / render: accepted**
 
 **zpl-toolchain (Rust) / parse: accepted**
 
@@ -1359,10 +1354,10 @@ invalid, repeat 2, rejected: RenderError { offset: 23, message: "invalid graphic
 **zpl-forge (Rust) / render: execution failure**
 
 ~~~text
-invalid, repeat 1, crash: thread 'main' (41318073) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:
+invalid, repeat 1, crash: thread 'main' (46304798) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:
 chunk size must be non-zero
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-invalid, repeat 2, crash: thread 'main' (41318075) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:
+invalid, repeat 2, crash: thread 'main' (46304800) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:
 chunk size must be non-zero
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ~~~

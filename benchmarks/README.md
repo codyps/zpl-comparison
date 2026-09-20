@@ -83,22 +83,44 @@ Deployment sizes include the adapter plus linked/deployed dependencies: stripped
 
 ## Regenerate / test the harness
 
-Regenerate every printer-accuracy scan, plot, comparison Markdown page and dependent
-compatibility page using the prepared adapters:
+Regenerate **all derived resources** from the checked-in collected evidence:
 
 ```sh
-benchmarks/_work/venv/bin/python benchmarks/accuracy/regenerate.py
+benchmarks/_work/venv/bin/python benchmarks/regenerate.py
 ```
 
-Add `--reports-only` to refresh those reports from saved accuracy results.
+This includes `docs/benchmarks/accuracy/accuracy.svg` (the chart embedded near the top of the repository README), its PNG, every other plot, generated Markdown, difference PNGs, thumbnails and compatibility pages. No adapters, source checkouts, Cargo metadata, printer or network service are required for this default mode; install the Python requirements first. Saved measurements and capture dates are preserved. Missing or inconsistent input evidence fails the command rather than producing invented results.
+
+| Collected or maintained input | Regenerated resources |
+| --- | --- |
+| Render-conformance and invalid-input fixture definitions | ZPL fixtures, manifests and generated coverage catalog |
+| `docs/benchmarks/results.json` | Performance, memory and size SVG/PNG plots and benchmark README |
+| Popularity snapshot, dependency locks, pinned revisions and maintained capability template | Capabilities survey and complete popularity table |
+| `docs/benchmarks/command-support.json` and command index | Command-support Markdown inventory |
+| `docs/benchmarks/invalid/results.json` | Invalid-input report |
+| Labelary capture manifest and original response images | Service capture report |
+| Accuracy results, original library renders and printer captures | Accuracy SVG/PNG, report, argument matrix, full-size differences, compact thumbnails and case/library pages |
+| Feature/external results, original renders and printer captures | Execution reports, computed accuracy JSON, full-size differences, compact thumbnails and case/library pages |
+| Saved support evidence, measurements, corpus and maintained argument notes | Compatibility library/command/feature pages and input hashes |
+
+Raw renderer samples, imported examples/licenses, printer captures, Labelary responses and measurement JSON are collected evidence, not synthesized reports. Argument notes, the capabilities template (`benchmarks/templates/capabilities.md`), the command index, provenance documents and source-inspiration notes are maintained inputs. The command composes the published outputs from these inputs; it does not replace them with new measurements or downloads.
+
+To collect fresh local measurements **and** rebuild everything, after preparing all adapters:
 
 ```sh
-benchmarks/_work/venv/bin/python benchmarks/report.py docs/benchmarks
+benchmarks/_work/venv/bin/python benchmarks/regenerate.py --measure
+```
+
+This refreshes source-support evidence, performance, invalid-input behavior, original accuracy, features and external examples. Printer and SaaS captures use the explicit collection commands below. A runner failure with no fresh saved result stops regeneration; recorded crashes/timeouts are published and cause a nonzero exit after reports are rebuilt.
+
+The command writes local files. The GitHub raw URL and README change when those files are committed and pushed; it does not publish commits automatically. The narrower `benchmarks/accuracy/regenerate.py` remains available for accuracy-only work.
+
+```sh
 benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'
 cargo fmt --manifest-path benchmarks/adapters/rust/Cargo.toml -- --check
 ```
 
-Report regeneration uses saved JSON only and does not rerun libraries. Static SVG plots and ordinary relative image links render directly in GitHub Markdown; no Pages service or JavaScript is required.
+Static SVG plots and relative image links render directly in GitHub Markdown; no Pages service or JavaScript is required.
 
 ## Labelary renderer captures
 
@@ -130,10 +152,10 @@ Source and renderer measurements remain separate, dated evidence.
 
 ### Feature renders and printer differences
 
-The full regeneration command above also runs all 531 feature fixtures through all
-eight renderers and regenerates the shared accuracy gallery and compatibility links.
-`--reports-only` rebuilds those pages and differences offline from saved render results
-and checked-in printer captures. Renderer crashes/timeouts remain failures after the
+The repository-wide command rebuilds feature and external galleries from saved results.
+With `--measure`, it also runs all feature fixtures through all eight renderers.
+The narrower accuracy command accepts `--reports-only` to rebuild accuracy pages and
+differences offline from saved render results and checked-in printer captures. Renderer crashes/timeouts remain failures after the
 reports are preserved; they do not prevent the remaining fixtures from running.
 
 ```sh

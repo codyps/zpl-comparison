@@ -11,7 +11,7 @@
 
 | Library | Evidence for commands present | Matched printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [codyps/zpl](../libraries/codyps-zpl.md) | 24 🧩 Handler found | Not measured | Negative-input observations: 13 error, 1 rendered |
+| [codyps/zpl](../libraries/codyps-zpl.md) | 24 🧩 Handler found | Not measured | Negative-input observations: 12 error, 2 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 24 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [labelize](../libraries/labelize.md) | 24 🧩 Handler found | Not measured | Negative-input observations: 1 blank, 2 error, 11 rendered |
 | [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 19 🧩 Handler found | Not measured | Negative-input observations: 4 error, 10 rendered |

@@ -6,7 +6,7 @@
 
 **^BR** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/databar_upce.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/databar_upce.png)
 
-Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T18:04:26Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
@@ -14,14 +14,22 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 ## codyps-zpl
 
-**codyps/zpl (Rust): Blank printer reference; unscored** · [All cases for this library](../libraries/codyps-zpl.md)
-
-Printer: 832 × 1218 dots; library: 832 × 1218 dots. Missing ink: 0 pixels; extra ink: 4480 pixels.
+**codyps/zpl (Rust): Render error** · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 | --- | --- | --- |
-| [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | [![codyps-zpl render](../../previews/barcode-databar_upce-codyps-zpl.png)](../../images/barcode-databar_upce-codyps-zpl.png) | [![codyps-zpl difference](../../previews/barcode-databar_upce-codyps-zpl-diff.png)](../../images/barcode-databar_upce-codyps-zpl-diff.png) |
+| [![Printer preview](../../previews/barcode-databar_upce-printer.png)](../../../../../references/barcodes-zd621-v1/databar_upce.png) | Render failed; no image | Unavailable |
 
+
+Error diagnostic:
+
+~~~text
+
+thread 'main' (46324168) panicked at src/main.rs:27:10:
+render: RenderError { offset: 86, message: "^BR UPC-E requires 11 uncompressed UPC-A digits" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+~~~
 
 ## labelize
 

@@ -344,44 +344,44 @@
   },
   "repeats": 2,
   "timeout_seconds": 10,
-  "measured_utc": "2026-09-18T23:45:19Z",
+  "measured_utc": "2026-09-20T17:57:34Z",
   "host": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
   "python": "3.14.4",
   "adapters": {
     "codyps-zpl": [
       {
         "name": "codyps-zpl",
-        "sha256": "214007d0de7784e0c2dbb8edf1ad0eb7a8a2db721080ba9ce7d7fb6724bb4004"
+        "sha256": "93676980a5c52341467c4477a06278bba39406c8951a3ddb720906f17256ebb5"
       }
     ],
     "toolchain": [
       {
         "name": "toolchain",
-        "sha256": "b231d31a47f0ae487944ee56d82170334ad18ab969badb000746f66e52db4064"
+        "sha256": "71f980ad00f656648609332cbbb1e1b4987e2c4dd3cb802db5060166063ab3dd"
       }
     ],
     "labelize": [
       {
         "name": "labelize",
-        "sha256": "f347ffd8b1e51a024f9776992bc4c0e5e9f0d528a1688b84b6ed99ff78599ec6"
+        "sha256": "f85bf63f1216a511e2d8fba7f81ff867f11dcc573dc8094ffdfad3a1acf7d5d7"
       }
     ],
     "forge": [
       {
         "name": "forge",
-        "sha256": "7818d4c72420ec8189afddd580af318afb26eec6aceb8999eb3652c156ac0a88"
+        "sha256": "b985bc72c0d6def27c7810c97d28b51298a63abeeaa4a444c42cf08401d175d2"
       }
     ],
     "go": [
       {
         "name": "go-adapter",
-        "sha256": "e31d04de8631a6331ad4a4546fe7a01e03618ddc227576fbe504826d5d57c7de"
+        "sha256": "51b3b853af041fef352328dee0dae6df394c121015cdbcedf594e393d12b176d"
       }
     ],
     "ffi": [
       {
         "name": "ffi",
-        "sha256": "6d4d7871b12af14d9d07fa6d3263687f78c3013dd31bac71bc9eb93cfc941c35"
+        "sha256": "837d3c28f4cebcb9835ddd26960b5c5299f5d80e22616028974653b9ba6b51c7"
       },
       {
         "name": "libzpl.dylib",
@@ -443,15 +443,15 @@
   },
   "inputs": {
     "benchmarks/invalid.py": "b0dd71b0d7dead15ebcc5826b483e3e05f3377423cc46de747dd1d8598210020",
-    "benchmarks/adapters/rust/Cargo.lock": "8d575fd53e5afb06d76e5e18685b6a408c59b6907535244030a1cbec2e18b4ec",
+    "benchmarks/adapters/rust/Cargo.lock": "fc5014540d989722aa10e9ee2bcbb4b00c735c711aefaaff5a4f1f1528aa699a",
     "benchmarks/adapters/dotnet/packages.lock.json": "e26118ede1ff4e512743f5eb534ac50394861584a8244648f4a87259a12bccae",
     "benchmarks/adapters/node/package-lock.json": "0b892bb54952b2b7358821dbaf5c8742e49b504d6d5f763007e8928bfe2ca583",
     "benchmarks/adapters/go/go.sum": "874acef6bf5372e0a36f5ce80a0cc416b4bd922ab6e35bbdaffad5e4062aba1e",
-    "benchmarks/sources.lock.json": "ab11361edbc2f805c2bd33f2a37c785ccf1e43019cb0c181d0ba09a8cc2ed377",
+    "benchmarks/sources.lock.json": "469e2e9ca84ebdd33d36299b77b4a518bdeeceb62a8fba972ad57b7166384f55",
     "benchmarks/requirements.txt": "58b64356b8ee8ec56a8d280de607c0e8e77d8cd00b667fb5b70ab75b5ed03816",
     "test-data/invalid-zpl/generate.py": "366c84aa0d159978b461a2e8fb51d2e53175153e2be578c42997577680c67ac6",
-    "benchmarks/adapters/rust/src/main.rs": "427fde08ea87bea418a0717cb2ba936daa6b6b959412392efe9094761d69b0e7",
-    "benchmarks/adapters/rust/src/probe.rs": "5ae329757e19348a2fd51ad0eea9297a139952b569b4a24451cbf56c8ac7b44c",
+    "benchmarks/adapters/rust/src/main.rs": "b912e65ebeb3d1915df870f6e087916745afe67ba325b2d34a077077154b9b15",
+    "benchmarks/adapters/rust/src/probe.rs": "362a71e85715fb063d6a214e0df7bae4b8b9dd5fb1e19eadccd42d26445d0cf8",
     "benchmarks/adapters/go/main.go": "52f98cf7d71a6a87bab0b11c354c2add1fff131cfecd76eb00371831915969bd",
     "benchmarks/adapters/node/main.mjs": "4ce33624873363cd8e5224adc9150989509f6148eeb8e43e747d6e9c2ecf360c",
     "benchmarks/adapters/dotnet/Program.cs": "fd801f86d2a18616faa6d837dcef21dc43a1264d1b1eed2e95afcaccc3889fce"
@@ -501,8 +501,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -513,8 +513,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -1109,8 +1109,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -1121,8 +1121,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -5341,8 +5341,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 5400,
-          "image_sha256": "bd5f1e48017b17bd461183c3e895fae58f69aaac812a12ab503587e6e585baef",
+          "ink": 5556,
+          "image_sha256": "5059782868959be0f0cd138d82b4dae61d9719d655f9377e0b4f78156d6c3024",
           "dimensions": [
             400,
             300
@@ -5353,8 +5353,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 5400,
-          "image_sha256": "bd5f1e48017b17bd461183c3e895fae58f69aaac812a12ab503587e6e585baef",
+          "ink": 5556,
+          "image_sha256": "5059782868959be0f0cd138d82b4dae61d9719d655f9377e0b4f78156d6c3024",
           "dimensions": [
             400,
             300
@@ -5364,18 +5364,30 @@
       "invalid": [
         {
           "returncode": 0,
-          "stdout": "rejected\n",
-          "diagnostic": "RenderError { offset: 34, message: \"barcode requires decimal digits\" }\n",
-          "status": "rejected"
+          "stdout": "accepted\n",
+          "diagnostic": "",
+          "status": "accepted",
+          "ink": 5916,
+          "image_sha256": "56e33ca900cbc4970bd41eaf6c4a387d2c27e28da3dec3bfd69678f547607737",
+          "dimensions": [
+            400,
+            300
+          ]
         },
         {
           "returncode": 0,
-          "stdout": "rejected\n",
-          "diagnostic": "RenderError { offset: 34, message: \"barcode requires decimal digits\" }\n",
-          "status": "rejected"
+          "stdout": "accepted\n",
+          "diagnostic": "",
+          "status": "accepted",
+          "ink": 5916,
+          "image_sha256": "56e33ca900cbc4970bd41eaf6c4a387d2c27e28da3dec3bfd69678f547607737",
+          "dimensions": [
+            400,
+            300
+          ]
         }
       ],
-      "outcome": "rejected"
+      "outcome": "accepted"
     },
     {
       "case": "ean-nonnumeric",
@@ -5937,8 +5949,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -5949,8 +5961,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -7189,8 +7201,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -7201,8 +7213,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -7821,8 +7833,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 133,
-          "image_sha256": "ba6e1024634643605d44680e542d0503bfcc72d37fe2a50fa996917ad612c94a",
+          "ink": 146,
+          "image_sha256": "b61e406bf3cd19da499f557a2a6d6f476cb2c84ad4f0c7beb59b19c74b92f523",
           "dimensions": [
             400,
             300
@@ -7833,8 +7845,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 133,
-          "image_sha256": "ba6e1024634643605d44680e542d0503bfcc72d37fe2a50fa996917ad612c94a",
+          "ink": 146,
+          "image_sha256": "b61e406bf3cd19da499f557a2a6d6f476cb2c84ad4f0c7beb59b19c74b92f523",
           "dimensions": [
             400,
             300
@@ -8453,8 +8465,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 133,
-          "image_sha256": "ba6e1024634643605d44680e542d0503bfcc72d37fe2a50fa996917ad612c94a",
+          "ink": 146,
+          "image_sha256": "b61e406bf3cd19da499f557a2a6d6f476cb2c84ad4f0c7beb59b19c74b92f523",
           "dimensions": [
             400,
             300
@@ -8465,8 +8477,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 133,
-          "image_sha256": "ba6e1024634643605d44680e542d0503bfcc72d37fe2a50fa996917ad612c94a",
+          "ink": 146,
+          "image_sha256": "b61e406bf3cd19da499f557a2a6d6f476cb2c84ad4f0c7beb59b19c74b92f523",
           "dimensions": [
             400,
             300
@@ -9315,13 +9327,13 @@
         {
           "returncode": 101,
           "stdout": "",
-          "diagnostic": "\nthread 'main' (41318073) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:\nchunk size must be non-zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "diagnostic": "\nthread 'main' (46304798) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:\nchunk size must be non-zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
           "status": "crash"
         },
         {
           "returncode": 101,
           "stdout": "",
-          "diagnostic": "\nthread 'main' (41318075) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:\nchunk size must be non-zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "diagnostic": "\nthread 'main' (46304800) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:\nchunk size must be non-zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
           "status": "crash"
         }
       ],
@@ -9694,7 +9706,7 @@
           "diagnostic": "",
           "status": "accepted",
           "ink": 1944,
-          "image_sha256": "53a8f640e74eb8b4ba235e9728d1730b2ca7746cf9cb4e813350fab15649f76a",
+          "image_sha256": "9cf3d7f0799361bb0bfa4c9c56bb02f58e658524bb24c3fa87ce6fc656a7e96f",
           "dimensions": [
             400,
             300
@@ -9706,7 +9718,7 @@
           "diagnostic": "",
           "status": "accepted",
           "ink": 1944,
-          "image_sha256": "53a8f640e74eb8b4ba235e9728d1730b2ca7746cf9cb4e813350fab15649f76a",
+          "image_sha256": "9cf3d7f0799361bb0bfa4c9c56bb02f58e658524bb24c3fa87ce6fc656a7e96f",
           "dimensions": [
             400,
             300
@@ -10326,7 +10338,7 @@
           "diagnostic": "",
           "status": "accepted",
           "ink": 1944,
-          "image_sha256": "53a8f640e74eb8b4ba235e9728d1730b2ca7746cf9cb4e813350fab15649f76a",
+          "image_sha256": "9cf3d7f0799361bb0bfa4c9c56bb02f58e658524bb24c3fa87ce6fc656a7e96f",
           "dimensions": [
             400,
             300
@@ -10338,7 +10350,7 @@
           "diagnostic": "",
           "status": "accepted",
           "ink": 1944,
-          "image_sha256": "53a8f640e74eb8b4ba235e9728d1730b2ca7746cf9cb4e813350fab15649f76a",
+          "image_sha256": "9cf3d7f0799361bb0bfa4c9c56bb02f58e658524bb24c3fa87ce6fc656a7e96f",
           "dimensions": [
             400,
             300
@@ -10957,8 +10969,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300
@@ -10969,8 +10981,8 @@
           "stdout": "accepted\n",
           "diagnostic": "",
           "status": "accepted",
-          "ink": 456,
-          "image_sha256": "4ada20d618c46f6f6b4f3d9c3772a1c879857b20b2f08ba171f42f6f3668de04",
+          "ink": 451,
+          "image_sha256": "a37848d00219c667a016ab1ee94e86fdb502518e112781507d6a91a25361f1c5",
           "dimensions": [
             400,
             300

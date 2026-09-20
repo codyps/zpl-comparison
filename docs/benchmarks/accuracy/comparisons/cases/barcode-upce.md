@@ -6,7 +6,7 @@
 
 **^B9** · See exact archived ZPL · [ZPL input](../../../../../references/barcodes-zd621-v1/upce.zpl) · [Printer preview](../../../../../references/barcodes-zd621-v1/upce.png)
 
-Measured 2026-09-20T04:43:33Z. Printer capture metadata is recorded in [results.json](../../results.json).
+Measured 2026-09-20T18:04:26Z. Printer capture metadata is recorded in [results.json](../../results.json).
 
 Black = matching ink; magenta = printer only; cyan = library only. Compact previews share a common origin and crop only trailing blank space; click for the full-resolution image. Scores always use uncropped original pixels.
 
@@ -47,7 +47,7 @@ Error diagnostic:
 
 ~~~text
 
-thread 'main' (44608646) panicked at src/main.rs:79:32:
+thread 'main' (46334605) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

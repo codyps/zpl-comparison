@@ -1,6 +1,7 @@
 """Comparison publication must reject incomplete or stale render evidence."""
 
 import copy
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -108,6 +109,23 @@ class GalleryTests(unittest.TestCase):
         (self.dest / "images/case-forge.png").unlink()
         with self.assertRaises(FileNotFoundError):
             gallery.validate(self.data, self.dest)
+
+    def test_regeneration_rebuilds_deleted_derived_diff_and_keeps_evidence(self):
+        snapshot = self.dest / "results.json"
+        snapshot.write_text(json.dumps(self.data))
+        original = snapshot.read_bytes()
+        target = self.dest / "images/case-forge-diff.png"
+        expected = target.read_bytes()
+        target.unlink()
+        gallery.generate(self.dest)
+        self.assertTrue(target.exists())
+        gallery.generate(self.dest, check=True)
+        self.assertEqual(snapshot.read_bytes(), original)
+        with Image.open(target) as actual:
+            import io
+
+            with Image.open(io.BytesIO(expected)) as prior:
+                self.assertEqual(actual.tobytes(), prior.tobytes())
 
     def test_wrong_diff_is_rejected(self):
         Image.new("RGB", (2, 1), "white").save(self.dest / "images/case-forge-diff.png")
