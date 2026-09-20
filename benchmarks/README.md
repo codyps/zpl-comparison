@@ -1,16 +1,16 @@
 # Repeatable ZPL library comparison
 
-**[Read the GitHub-rendered report, plots and tables](../docs/benchmarks/README.md).**
-The root README links to these detailed reports. [Library capabilities and selection](../docs/benchmarks/capabilities.md) distinguish parsers, renderers and generators.
+**[Read the GitHub-rendered report, plots and tables](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/README.md).**
+The root README links to these detailed reports. [Library capabilities and selection](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/capabilities.md) distinguish parsers, renderers and generators.
 
-[Command/argument inventory](../docs/benchmarks/command-support.md) and [printer accuracy reproduction](accuracy/README.md) extend the comparison with offline captured references.
+[Command/argument inventory](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/command-support.md) and [printer accuracy reproduction](accuracy/README.md) extend the comparison with offline captured references.
 
 [Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
 
-The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 531 focused and combined test files. Its [shared accuracy gallery](../docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
+The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 531 focused and combined test files. Its [shared accuracy gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
 The [external label corpus](../test-data/external-zpl/README.md) adds eight unchanged,
-pinned upstream examples. [Execution report](../docs/benchmarks/external-zpl/README.md).
+pinned upstream examples. [Execution report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/external-zpl/README.md).
 Regenerate its images, JSON and Markdown with:
 
 ```sh
@@ -36,7 +36,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI builds the offline reports with Bazel from this collected evidence. Successful builds of `main` automatically publish the complete output tree to the independent [`generated` branch](https://github.com/codyps/zpl-comparison/tree/generated). CI does not collect new measurements or contact printers or rendering services.
+The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI uses Bazel to build the pinned renderer libraries, render the local accuracy and conformance cases, and assemble reports alongside this collected evidence. Successful builds of `main` automatically publish the complete output tree to the independent [`generated` branch](https://github.com/codyps/zpl-comparison/tree/generated). CI does not recollect performance measurements or contact printers or rendering services.
 
 ## Pins
 
@@ -73,7 +73,7 @@ Each sample is a batch average. The reported median and min–max are **not per-
 
 PNG files are fully decoded with Pillow and must be 400×300 with both dark/light pixels after alpha compositing onto white. Boxes are also compared to a hand-defined inward-border mask: a 100×60 box at (20,20) with thickness 4 and an 80×80 filled box at (180,100). Pixel differences are reported, never silently corrected. Generated ZPL must contain the expected framing, field count and every `Item NN` value. Parser completion is only an API smoke check, not semantic parity. No library is used as another's correctness oracle.
 
-Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these five fixtures. Those remain selection criteria in [capabilities](../docs/benchmarks/capabilities.md) and the repository's separate conformance tests.
+Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these five fixtures. Those remain selection criteria in [capabilities](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/capabilities.md) and the repository's separate conformance tests.
 
 ## Code-size accounting
 
@@ -92,17 +92,61 @@ bazelisk build //:reports
 Open `bazel-bin/reports/README.md` or
 `bazel-bin/reports/docs/benchmarks/README.md`. The output includes collected
 evidence and maintained documentation at their original relative paths so report
-links and images remain usable. Bazel downloads the pinned Python interpreter
-and locked Python dependencies on the first build; report generation itself is
-offline and needs no prepared adapters or local virtualenv.
+links and images remain usable. The default target compiles each local renderer
+and generates each case/library image locally. Printer previews, Labelary responses,
+performance timings, invalid-input measurements, and source-support inventories
+remain saved evidence; this build never contacts a printer or rendering service.
 
-The whole offline pipeline is currently one cached action. An unchanged build
-skips generation; changing declared evidence, generator code, or its toolchain
-rebuilds the report tree. Missing outputs are rebuilt. Generated Markdown, plots,
-differences, thumbnails and fixture outputs in the checkout are not build inputs.
-This does not yet provide per-case or per-report incremental generation.
-Measurements and printer/service captures remain explicit collection operations;
-the Bazel target consumes their saved results and never refreshes them.
+Bazel caches each library deployment (including the Go shared library used by
+FFI), each case/library render, each printer comparison and difference PNG, each
+metamorphic relation, each case viewport, each thumbnail, and each gallery page
+independently. Summary plots, report families, and final tree assembly are separate actions.
+Image actions use Bazel Python workers to reuse interpreter startup while retaining
+separate cache keys. An
+unchanged build executes none of these actions. A printer-reference change does
+not recompile a library or rerender local images. A library change rerenders its
+own cases; unrelated libraries remain cached. Shared viewport changes can refresh
+other thumbnails for that case, because their common crop must remain consistent.
+
+Dependencies are fetched during repository resolution. Rust, Go, Node, .NET, and
+Python toolchains are pinned; native toolchain archive hashes are in
+`build/toolchains.lock.json`. Cargo, Go, npm, and NuGet dependencies retain their
+lockfile integrity checks. Compilation runs offline against declared downloaded
+inputs. A C compiler/system SDK, Git, curl, and Python 3.11+ are bootstrap
+prerequisites. Native build actions use the host C compiler and SDK, whose
+platform/version identity participates in the cache key; native compilation is
+local execution, not a remote-execution toolchain.
+
+For the private `codyps/zpl` source, configure Git access or point Bazel at a
+checkout containing the pinned commit:
+
+```sh
+bazelisk build //:reports --repo_env=ZPL_SOURCE_PATH=/absolute/path/to/zpl
+```
+
+Bazel fetches exactly the locked commit from that repository into its own input
+tree; uncommitted files in the source checkout are not used. Individual native
+builds are available as `//:library_codyps-zpl`, `//:library_go`, etc., or all
+rendering libraries as `//:libraries`. To build just one comparison case and its
+images/pages, use an output group, for example:
+
+```sh
+bazelisk build //:reports --output_groups=case_accuracy_argument-font0-height-16
+```
+
+`bazelisk build //:reports_saved` reproduces the previous saved-evidence pipeline
+without native compilation, writing `bazel-bin/reports_saved`. That historical
+snapshot target remains a single action. Fork pull requests use it because they
+cannot access the private source token; trusted CI builds use `//:reports`.
+
+Fixture manifests and case bytes define the action graph. After editing a fixture
+generator, run it and include its updated manifest/cases. The build verifies that
+they agree. Reference capture hashes and repeated-control checks remain enforced.
+Renderer failures are benchmark outcomes: they remain visible as error/crash/timeout
+rows and produce no fabricated image. Broken input hashes, missing tools, or a
+successful command without a valid PNG fail the build. Each local result
+records when its cached render was executed; changing report code does not
+pretend the renderer was measured again.
 
 The Bazel version is pinned in `.bazelversion`; Python and `rules_python` are pinned
 in `MODULE.bazel`. After changing `benchmarks/requirements.txt`, update the full
@@ -127,13 +171,13 @@ the commit message. An intermediate artifact transfers the tree between the
 read-only build job and the publishing job; the branch is the published result.
 Bazel dependency and action caches are reused across CI runs.
 
-Regenerate **all derived resources** from the checked-in collected evidence:
+Reproduce derived resources from saved collected evidence in Bazel's output tree:
 
 ```sh
-benchmarks/_work/venv/bin/python benchmarks/regenerate.py
+bazelisk build //:reports_saved
 ```
 
-This includes `docs/benchmarks/accuracy/accuracy.svg` (the chart embedded near the top of the repository README), its PNG, every other plot, generated Markdown, difference PNGs, thumbnails and compatibility pages. No adapters, source checkouts, Cargo metadata, printer or network service are required for this default mode; install the Python requirements first. Saved measurements and capture dates are preserved. Missing or inconsistent input evidence fails the command rather than producing invented results.
+This includes `docs/benchmarks/accuracy/accuracy.svg` (the chart embedded near the top of the repository README), its PNG, every other plot, generated Markdown, difference PNGs, thumbnails and compatibility pages. Bazel resolves the Python dependencies; this target needs no adapters, renderer source checkouts, printer, or rendering service. Saved measurements and capture dates are preserved. Missing or inconsistent input evidence fails the command rather than producing invented results.
 
 | Collected or maintained input | Regenerated resources |
 | --- | --- |
@@ -157,7 +201,7 @@ benchmarks/_work/venv/bin/python benchmarks/regenerate.py --measure
 
 This refreshes source-support evidence, performance, invalid-input behavior, original accuracy, features and external examples. Printer and SaaS captures use the explicit collection commands below. A runner failure with no fresh saved result stops regeneration; recorded crashes/timeouts are published and cause a nonzero exit after reports are rebuilt.
 
-The command writes local files. The GitHub raw URL and README change when those files are committed and pushed; it does not publish commits automatically. The narrower `benchmarks/accuracy/regenerate.py` remains available for accuracy-only work.
+Measurement commands write local evidence and may also produce ignored reports. Commit refreshed evidence inputs; use `bazelisk build //:reports` to validate the output. CI publishes derived files to `generated`; do not commit them to the source branch. The narrower `benchmarks/accuracy/regenerate.py` remains available for accuracy-only collection.
 
 ```sh
 benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'
@@ -169,29 +213,26 @@ Static SVG plots and relative image links render directly in GitHub Markdown; no
 ## Labelary renderer captures
 
 Labelary is included in the printer-accuracy matrix as an additional renderer.
-[Capture provenance and original PNGs](../docs/benchmarks/labelary/README.md)
+[Capture provenance and original PNGs](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/labelary/README.md)
 record UTC timestamps when the service exposes no build version. Tests replay
 these responses offline; the ZD621 captures remain the correctness baseline.
 See [capture and refresh commands](accuracy/README.md#labelary-renderer).
 
 ## Generate the compatibility reference
 
-[Browse by library, command or feature](../docs/compatibility/README.md). These
+[Browse by library, command or feature](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/README.md). These
 GitHub Markdown pages use checked-in source evidence, argument notes, printer
 measurements and the conformance manifest. Saved conformance execution results
 are included when `docs/benchmarks/conformance/results.json` exists.
 
 ```sh
-python3 benchmarks/compatibility.py
-python3 benchmarks/compatibility.py --check
+bazelisk build //:reports_saved
 ```
 
-Generation needs only Python 3.12+ and the checkout; it does not rebuild libraries,
-fetch dependencies or contact a printer. `--check` verifies generated bytes and
-rejects stale generated pages. To refresh evidence, build the adapters, run
+The saved-report target regenerates and checks compatibility pages inside its
+output tree without rebuilding libraries or contacting a printer. To refresh evidence, build the adapters, run
 `support.py`, the accuracy suite, and optionally `conformance.py --output
-docs/benchmarks/conformance`, then regenerate. CI checks the published snapshot
-before measurement and generates an updated snapshot afterward for its artifact.
+docs/benchmarks/conformance`, then regenerate. CI builds the Bazel report tree and publishes successful `main` builds to `generated`.
 Source and renderer measurements remain separate, dated evidence.
 
 ### Feature renders and printer differences

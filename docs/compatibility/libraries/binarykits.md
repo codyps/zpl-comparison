@@ -17,85 +17,85 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/binarykits.md)
 
-26/132 exact; mean IoU 39.0%; 0 errors. Snapshot: 2026-09-20T18:04:26Z.
+26/132 exact; mean IoU 38.1%; 0 errors. Snapshot: 2026-09-20T22:46:04Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [Barcode arguments](../features/barcode-arguments.md) | 70 | 26/66 exact; mean IoU 72.1%; 1 errors | 4 crashed, 66 rendered |
-| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 12.6%; 0 errors | 60 rendered |
+| [Barcode arguments](../features/barcode-arguments.md) | 70 | 26/66 exact; mean IoU 72.0%; 1 errors | 4 crashed, 66 rendered |
+| [Barcode families](../features/barcode-families.md) | 60 | 0/59 exact; mean IoU 12.0%; 0 errors | 60 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 0 errors | 4 rendered |
-| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 32.4%; 0 errors | 11 rendered |
+| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 31.5%; 0 errors | 11 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 78.8%; 0 errors | 9 rendered |
-| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 26.7%; 0 errors | 24 rendered |
+| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 24.4%; 0 errors | 24 rendered |
 | [Clipping](../features/clipping.md) | 5 | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
-| [Compact barcodes](../features/compact-barcodes.md) | 7 | 2/7 exact; mean IoU 64.2%; 0 errors | 7 rendered |
+| [Compact barcodes](../features/compact-barcodes.md) | 7 | 2/7 exact; mean IoU 64.3%; 0 errors | 7 rendered |
 | [Compact compositing](../features/compact-compositing.md) | 2 | 0/2 exact; mean IoU 97.2%; 0 errors | 2 rendered |
-| [Compact fonts](../features/compact-fonts.md) | 5 | 0/5 exact; mean IoU 30.7%; 0 errors | 5 rendered |
-| [Compact layout](../features/compact-layout.md) | 4 | 0/4 exact; mean IoU 18.6%; 0 errors | 4 rendered |
+| [Compact fonts](../features/compact-fonts.md) | 5 | 0/5 exact; mean IoU 29.8%; 0 errors | 5 rendered |
+| [Compact layout](../features/compact-layout.md) | 4 | 0/4 exact; mean IoU 19.0%; 0 errors | 4 rendered |
 | [Compact shapes](../features/compact-shapes.md) | 6 | 0/6 exact; mean IoU 79.3%; 0 errors | 6 rendered |
-| [Compositing](../features/compositing.md) | 5 | 4/5 exact; mean IoU 94.6%; 0 errors | 5 rendered |
-| [Encoding](../features/encoding.md) | 28 | 0/25 exact; mean IoU 20.2%; 0 errors | 28 rendered |
-| [Fonts](../features/fonts.md) | 78 | 0/78 exact; mean IoU 16.9%; 0 errors | 1 blank, 77 rendered |
+| [Compositing](../features/compositing.md) | 5 | 4/5 exact; mean IoU 95.0%; 0 errors | 5 rendered |
+| [Encoding](../features/encoding.md) | 28 | 0/25 exact; mean IoU 18.7%; 0 errors | 28 rendered |
+| [Fonts](../features/fonts.md) | 78 | 0/78 exact; mean IoU 16.2%; 0 errors | 2 blank, 76 rendered |
 | [Graphics](../features/graphics.md) | 14 | 11/12 exact; mean IoU 93.8%; 0 errors | 2 blank, 12 rendered |
-| [Lexical](../features/lexical.md) | 3 | 0/3 exact; mean IoU 23.1%; 0 errors | 3 rendered |
-| [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 56.5%; 0 errors | 5 rendered |
+| [Lexical](../features/lexical.md) | 3 | 0/3 exact; mean IoU 25.7%; 0 errors | 3 rendered |
+| [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 53.6%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 2 blank, 1 crashed, 11 rendered |
-| [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 31.4%; 0 errors | 29 rendered |
-| [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 7.4%; 0 errors | 3 blank, 1 rendered |
-| [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 76.4%; 0 errors | 46 rendered |
-| [State](../features/state.md) | 6 | 1/6 exact; mean IoU 44.3%; 0 errors | 1 blank, 5 rendered |
-| [Stress](../features/stress.md) | 4 | 0/4 exact; mean IoU 17.2%; 0 errors | 4 rendered |
-| [Text data](../features/text-data.md) | 10 | 0/9 exact; mean IoU 17.2%; 0 errors | 1 blank, 9 rendered |
-| [Text layout](../features/text-layout.md) | 45 | 0/42 exact; mean IoU 12.2%; 0 errors | 1 blank, 44 rendered |
-| [Torture](../features/torture.md) | 4 | 0/4 exact; mean IoU 71.6%; 0 errors | 4 rendered |
-| [Transforms](../features/transforms.md) | 4 | 0/4 exact; mean IoU 65.6%; 0 errors | 4 rendered |
+| [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 29.0%; 0 errors | 29 rendered |
+| [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 6.3%; 0 errors | 3 blank, 1 rendered |
+| [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 74.4%; 0 errors | 46 rendered |
+| [State](../features/state.md) | 6 | 1/6 exact; mean IoU 45.4%; 0 errors | 1 blank, 5 rendered |
+| [Stress](../features/stress.md) | 4 | 0/4 exact; mean IoU 12.5%; 0 errors | 4 rendered |
+| [Text data](../features/text-data.md) | 10 | 0/9 exact; mean IoU 17.1%; 0 errors | 1 blank, 9 rendered |
+| [Text layout](../features/text-layout.md) | 45 | 0/42 exact; mean IoU 11.7%; 0 errors | 1 blank, 44 rendered |
+| [Torture](../features/torture.md) | 4 | 0/4 exact; mean IoU 72.2%; 0 errors | 4 rendered |
+| [Transforms](../features/transforms.md) | 4 | 0/4 exact; mean IoU 68.5%; 0 errors | 4 rendered |
 
 
 ## Command support
 
 | Command | Name | Source evidence | Focused printer evidence |
 | --- | --- | --- | --- |
-| [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/ScalableBitmappedFontZplCommandAnalyzer.cs#L8) | 0/12 exact; mean IoU 27.7%; 0 errors |
+| [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/ScalableBitmappedFontZplCommandAnalyzer.cs#L8) | 0/12 exact; mean IoU 25.2%; 0 errors |
 | [`^A@`](../commands/format-a-named.md) | Use Font Name to Call Font | ❔ No evidence found | Not measured |
-| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 11.3%; 0 errors |
-| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.9%; 0 errors |
+| [`^B0`](../commands/format-b0.md) | Aztec Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 8.8%; 0 errors |
+| [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors |
 | [`^B2`](../commands/format-b2.md) | Interleaved 2 of 5 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Interleaved2of5BarcodeZplCommandAnalyzer.cs#L9) | 1/1 exact; mean IoU 100.0%; 0 errors |
 | [`^B3`](../commands/format-b3.md) | Code 39 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code39BarcodeZplCommandAnalyzer.cs#L9) | 2/3 exact; mean IoU 94.7%; 0 errors |
-| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.4%; 0 errors |
-| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.5%; 0 errors |
+| [`^B4`](../commands/format-b4.md) | Code 49 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 6.0%; 0 errors |
+| [`^B5`](../commands/format-b5.md) | Planet Code Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.6%; 0 errors |
 | [`^B7`](../commands/format-b7.md) | PDF417 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/PDF417BarcodeCommandAnalyzer.cs#L12) | 2/2 exact; mean IoU 100.0%; 0 errors |
-| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 5.1%; 0 errors |
+| [`^B8`](../commands/format-b8.md) | EAN-8 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.3%; 0 errors |
 | [`^B9`](../commands/format-b9.md) | UPC-E Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcEBarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 97.2%; 0 errors |
 | [`^BA`](../commands/format-ba.md) | Code 93 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code93BarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 34.4%; 0 errors |
-| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 10.5%; 0 errors |
-| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code128BarcodeZplCommandAnalyzer.cs#L9) | 7/9 exact; mean IoU 98.3%; 0 errors |
+| [`^BB`](../commands/format-bb.md) | CODABLOCK Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 8.6%; 0 errors |
+| [`^BC`](../commands/format-bc.md) | Code 128 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/Code128BarcodeZplCommandAnalyzer.cs#L9) | 7/9 exact; mean IoU 98.5%; 0 errors |
 | [`^BD`](../commands/format-bd.md) | UPS MaxiCode Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/MaxiCodeBarcodeZplCommandAnalyzer.cs#L8) | 0/5 exact; mean IoU 46.1%; 0 errors |
 | [`^BE`](../commands/format-be.md) | EAN-13 Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/CodeEAN13BarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 98.0%; 0 errors |
-| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 3.3%; 0 errors |
-| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors |
-| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.5%; 0 errors |
+| [`^BF`](../commands/format-bf.md) | MicroPDF417 Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 2.3%; 0 errors |
+| [`^BI`](../commands/format-bi.md) | Industrial 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.1%; 0 errors |
+| [`^BJ`](../commands/format-bj.md) | Standard 2 of 5 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors |
 | [`^BK`](../commands/format-bk.md) | ANSI Codabar Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/AnsiCodabarBarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 95.1%; 0 errors |
-| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 3.4%; 0 errors |
-| [`^BM`](../commands/format-bm.md) | MSI Bar Code | ❔ No evidence found | 0/4 exact; mean IoU 2.6%; 0 errors |
+| [`^BL`](../commands/format-bl.md) | LOGMARS Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.2%; 0 errors |
+| [`^BM`](../commands/format-bm.md) | MSI Bar Code | ❔ No evidence found | 0/4 exact; mean IoU 2.1%; 0 errors |
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/AztecBarcodeZplCommandAnalyzer.cs#L9) | 1/2 exact; mean IoU 64.2%; 0 errors |
-| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 2.7%; 0 errors |
+| [`^BP`](../commands/format-bp.md) | Plessey Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 1.7%; 0 errors |
 | [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/QrCodeBarcodeZplCommandAnalyzer.cs#L9) | 0/12 exact; mean IoU 1.0%; 0 errors |
-| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 8.0%; 0 errors |
+| [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | ❔ No evidence found | 0/13 exact; mean IoU 6.1%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcExtensionBarcodeZplCommandAnalyzer.cs#L9) | 2/2 exact; mean IoU 100.0%; 0 errors |
-| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 4.1%; 0 errors |
+| [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | ❔ No evidence found | 0/2 exact; mean IoU 3.0%; 0 errors |
 | [`^BU`](../commands/format-bu.md) | UPC-A Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/UpcABarcodeZplCommandAnalyzer.cs#L9) | 0/1 exact; mean IoU 96.1%; 0 errors |
 | [`^BX`](../commands/format-bx.md) | Data Matrix Bar Code | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/DataMatrixZplCommandAnalyzer.cs#L9) | 2/4 exact; mean IoU 66.4%; 0 errors |
 | [`^BY`](../commands/format-by.md) | Bar Code Field Default | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/BarCodeFieldDefaultZplCommandAnalyzer.cs#L7) | 2/2 exact; mean IoU 100.0%; 0 errors |
-| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 2.9%; 0 errors |
+| [`^BZ`](../commands/format-bz.md) | POSTAL Bar Code | ❔ No evidence found | 0/3 exact; mean IoU 2.5%; 0 errors |
 | [`^CC`](../commands/format-cc.md) | Change Caret Command Prefix | ❔ No evidence found | Not measured |
 | [`~CC`](../commands/control-cc.md) | Change Caret Command Prefix | ❔ No evidence found | Not measured |
 | [`^CD`](../commands/format-cd.md) | Change Delimiter Character | ❔ No evidence found | Not measured |
 | [`~CD`](../commands/control-cd.md) | Change Delimiter Character | ❔ No evidence found | Not measured |
 | [`^CF`](../commands/format-cf.md) | Change Alphanumeric Default Font | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/ChangeAlphanumericDefaultFontZplCommandAnalyzer.cs#L7) | Not measured |
-| [`^CI`](../commands/format-ci.md) | Change International Font/Encoding | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/ChangeInternationalFontCommandAnalyzer.cs#L11) | 0/4 exact; mean IoU 24.3%; 0 errors |
+| [`^CI`](../commands/format-ci.md) | Change International Font/Encoding | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/ChangeInternationalFontCommandAnalyzer.cs#L11) | 0/4 exact; mean IoU 24.0%; 0 errors |
 | [`^CM`](../commands/format-cm.md) | Change Memory Letter Designation | ❔ No evidence found | Not measured |
 | [`^CN`](../commands/format-cn.md) | Cut Now | ❔ No evidence found | Not measured |
 | [`^CO`](../commands/format-co.md) | Cache On | ❔ No evidence found | Not measured |
@@ -114,21 +114,21 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 | [`~DU`](../commands/control-du.md) | Download Unbounded TrueType Font | ❔ No evidence found | Not measured |
 | [`~DY`](../commands/control-dy.md) | Download Objects | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/DownloadObjectsZplCommandAnaylzer.cs#L11) | Not measured |
 | [`~EG`](../commands/control-eg.md) | Erase Download Graphics | ❔ No evidence found | Not measured |
-| [`^FB`](../commands/format-fb.md) | Field Block | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldBlockZplCommandAnalyzer.cs#L9) | 0/6 exact; mean IoU 26.0%; 0 errors |
+| [`^FB`](../commands/format-fb.md) | Field Block | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldBlockZplCommandAnalyzer.cs#L9) | 0/6 exact; mean IoU 20.6%; 0 errors |
 | [`^FC`](../commands/format-fc.md) | Field Clock | ❔ No evidence found | Not measured |
 | [`^FD`](../commands/format-fd.md) | Field Data | ❔ No evidence found | Not measured |
 | [`^FE`](../commands/format-fe.md) | Field Concatenation | ❔ No evidence found | Not measured |
-| [`^FH`](../commands/format-fh.md) | Field Hexadecimal Indicator | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldHexadecimalZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 27.2%; 0 errors |
+| [`^FH`](../commands/format-fh.md) | Field Hexadecimal Indicator | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldHexadecimalZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 31.8%; 0 errors |
 | [`^FL`](../commands/format-fl.md) | Font Linking | ❔ No evidence found | Not measured |
 | [`^FM`](../commands/format-fm.md) | Multiple Field Origin Locations | ❔ No evidence found | Not measured |
 | [`^FN`](../commands/format-fn.md) | Field Number | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldNumberCommandAnalyzer.cs#L7) | Not measured |
-| [`^FO`](../commands/format-fo.md) | Field Origin | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldOriginZplCommandAnalzer.cs#L8) | 0/3 exact; mean IoU 25.6%; 0 errors |
+| [`^FO`](../commands/format-fo.md) | Field Origin | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldOriginZplCommandAnalzer.cs#L8) | 0/3 exact; mean IoU 20.1%; 0 errors |
 | [`^FP`](../commands/format-fp.md) | Field Parameter | ❔ No evidence found | Not measured |
-| [`^FR`](../commands/format-fr.md) | Field Reverse Print | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldReversePrintZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 93.4%; 0 errors |
+| [`^FR`](../commands/format-fr.md) | Field Reverse Print | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldReversePrintZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 92.7%; 0 errors |
 | [`^FS`](../commands/format-fs.md) | Field Separator | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldSeparatorZplCommandAnalyzer.cs#L10) | Not measured |
-| [`^FT`](../commands/format-ft.md) | Field Typeset | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldTypesetZplCommandAnalyzer.cs#L8) | 0/1 exact; mean IoU 32.5%; 0 errors |
-| [`^FV`](../commands/format-fv.md) | Field Data | ❔ No evidence found | 0/1 exact; mean IoU 27.2%; 0 errors |
-| [`^FW`](../commands/format-fw.md) | Field Orientation | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldOrientationZplCommandAnalyzer.cs#L8) | 0/1 exact; mean IoU 29.9%; 0 errors |
+| [`^FT`](../commands/format-ft.md) | Field Typeset | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldTypesetZplCommandAnalyzer.cs#L8) | 0/1 exact; mean IoU 19.2%; 0 errors |
+| [`^FV`](../commands/format-fv.md) | Field Data | ❔ No evidence found | 0/1 exact; mean IoU 31.8%; 0 errors |
+| [`^FW`](../commands/format-fw.md) | Field Orientation | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/FieldOrientationZplCommandAnalyzer.cs#L8) | 0/1 exact; mean IoU 31.4%; 0 errors |
 | [`^FX`](../commands/format-fx.md) | Comment | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/CommentZplCommandAnalyzer.cs#L7) | Not measured |
 | [`^GB`](../commands/format-gb.md) | Graphic Box | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/GraphicBoxZplCommandAnalyzer.cs#L8) | 4/5 exact; mean IoU 98.8%; 0 errors |
 | [`^GC`](../commands/format-gc.md) | Graphic Circle | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/GraphicCircleZplCommandAnalyzer.cs#L8) | 0/1 exact; mean IoU 65.0%; 0 errors |
@@ -188,11 +188,11 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 | [`^KP`](../commands/format-kp.md) | Define Password | ❔ No evidence found | Not measured |
 | [`^KV`](../commands/format-kv.md) | Kiosk Values | ❔ No evidence found | Not measured |
 | [`^LF`](../commands/format-lf.md) | List Font Links | ❔ No evidence found | Not measured |
-| [`^LH`](../commands/format-lh.md) | Label Home | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/LabelHomeZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 27.2%; 0 errors |
+| [`^LH`](../commands/format-lh.md) | Label Home | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/LabelHomeZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 31.8%; 0 errors |
 | [`^LL`](../commands/format-ll.md) | Label Length | ❔ No evidence found | Not measured |
-| [`^LR`](../commands/format-lr.md) | Label Reverse Print | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/LabelReversePrintZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 27.2%; 0 errors |
-| [`^LS`](../commands/format-ls.md) | Label Shift | ❔ No evidence found | 0/1 exact; mean IoU 14.6%; 0 errors |
-| [`^LT`](../commands/format-lt.md) | Label Top | ❔ No evidence found | 0/1 exact; mean IoU 27.2%; 0 errors |
+| [`^LR`](../commands/format-lr.md) | Label Reverse Print | [🧩 Handler found](https://github.com/BinaryKits/BinaryKits.Zpl/blob/9d316458c33c90608859cc935d3ba1e0c7587be7/src/BinaryKits.Zpl.Viewer/CommandAnalyzers/LabelReversePrintZplCommandAnalyzer.cs#L7) | 0/1 exact; mean IoU 31.8%; 0 errors |
+| [`^LS`](../commands/format-ls.md) | Label Shift | ❔ No evidence found | 0/1 exact; mean IoU 15.6%; 0 errors |
+| [`^LT`](../commands/format-lt.md) | Label Top | ❔ No evidence found | 0/1 exact; mean IoU 31.8%; 0 errors |
 | [`^MA`](../commands/format-ma.md) | Set Maintenance Alerts | ❔ No evidence found | Not measured |
 | [`^MC`](../commands/format-mc.md) | Map Clear | ❔ No evidence found | Not measured |
 | [`^MD`](../commands/format-md.md) | Media Darkness | ❔ No evidence found | Not measured |
@@ -213,7 +213,7 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 | [`^PM`](../commands/format-pm.md) | Printing Mirror Image of Label | ❔ No evidence found | Not measured |
 | [`~PM`](../commands/control-pm.md) | Decommissioning Mode | ❔ No evidence found | Not measured |
 | [`^PN`](../commands/format-pn.md) | Present Now | ❔ No evidence found | Not measured |
-| [`^PO`](../commands/format-po.md) | Print Orientation | ❔ No evidence found | 0/1 exact; mean IoU 27.2%; 0 errors |
+| [`^PO`](../commands/format-po.md) | Print Orientation | ❔ No evidence found | 0/1 exact; mean IoU 31.8%; 0 errors |
 | [`^PP`](../commands/format-pp.md) | Programmable Pause | ❔ No evidence found | Not measured |
 | [`~PP`](../commands/control-pp.md) | Programmable Pause | ❔ No evidence found | Not measured |
 | [`^PQ`](../commands/format-pq.md) | Print Quantity | ❔ No evidence found | Not measured |

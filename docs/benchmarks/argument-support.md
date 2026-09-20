@@ -1,6 +1,6 @@
 # Argument-level comparison
 
-[Complete command matrix](command-support.md) · [Executed argument cases and printer differences](accuracy/README.md) · [Performance](README.md)
+[Complete command matrix](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/command-support.md) · [Executed argument cases and printer differences](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md) · [Performance](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/README.md)
 
 A command name is not a promise that every argument works. The table below records concrete boundaries found in the pinned source; the accuracy report tests actual parameter values. “Parses” and “emits” deliberately do not claim pixel fidelity. The complete matrix links each entry to its versioned implementation, and supplies reference argument names for each command.
 

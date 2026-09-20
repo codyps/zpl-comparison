@@ -2,7 +2,7 @@
 
 **531 standalone ZPL files**, exercising **68 content-command families**: 517 valid/boundary probes and 14 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
 
-[Complete command coverage and case catalog](COVERAGE.md) · [Manifest](manifest.json) · [Generator](generate.py) · [Existing printer accuracy report](../../docs/benchmarks/accuracy/README.md)
+[Complete command coverage and case catalog](https://github.com/codyps/zpl-comparison/blob/generated/test-data/render-conformance/COVERAGE.md) · [Manifest](manifest.json) · [Generator](generate.py) · [Existing printer accuracy report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
 
 These are tests of ZPL, not examples restricted to what this repository currently supports. No downloaded fonts, stored graphics/formats, disk operations, RFID, network configuration, print quantity, media calibration, darkness, speed or cutter commands are used. `^GF` graphics are inline. Canvas dimensions, orientation, mirroring, encoding and advanced text layout are included because they determine label pixels; they are not printer setup tests.
 
@@ -57,7 +57,7 @@ GitHub Actions verifies regeneration and runs all eight renderers against the co
 
 ## Actual printer references
 
-The checked-in capture provides **511 hash-matched printer previews** with a stable repeated control. Six eligible previews are unavailable; 14 invalid inputs are excluded from printer submission. [Browse every render and available difference](../../docs/benchmarks/accuracy/comparisons/features/README.md). To create a separate capture, start with the four combined pages:
+The checked-in capture provides **511 hash-matched printer previews** with a stable repeated control. Six eligible previews are unavailable; 14 invalid inputs are excluded from printer submission. [Browse every render and available difference](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md). To create a separate capture, start with the four combined pages:
 
 ```sh
 benchmarks/_work/venv/bin/python benchmarks/accuracy/capture.py \

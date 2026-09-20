@@ -4,7 +4,7 @@ Eight complete labels imported byte-for-byte from the pinned public repositories
 in [manifest.json](manifest.json). They supplement the generated command probes
 with independently authored layouts and command combinations.
 
-[Browse the execution report and images](../../docs/benchmarks/external-zpl/README.md).
+[Browse the execution report and images](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/external-zpl/README.md).
 
 | Source | Examples | License |
 | --- | --- | --- |

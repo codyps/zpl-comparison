@@ -1,6 +1,6 @@
 # Invalid-ZPL rejection tests
 
-**[Read the rejection and recovery report](../../docs/benchmarks/invalid/README.md).**
+**[Read the rejection and recovery report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/invalid/README.md).**
 
 The deterministic [fixture generator](../../test-data/invalid-zpl/generate.py) creates 18 modified inputs and 18 valid controls. Every pair runs through the supported default parser and renderer APIs of codyps/zpl, zpl-toolchain, labelize, zpl-forge, go-zpl, zpl-rs, BinaryKits.Zpl, and ZPLr. Builders that do not consume ZPL are N/A.
 

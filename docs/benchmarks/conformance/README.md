@@ -13,7 +13,7 @@ This reports execution and equal-image relationships, not printer accuracy unles
 | zpl-forge (Rust) | 517 | 466 | 11 | 40 | 0 | 0 | N/A |
 | go-zpl (Go) | 517 | 507 | 10 | 0 | 0 | 0 | N/A |
 | zpl-rs (Rust → Go) | 517 | 507 | 10 | 0 | 0 | 0 | N/A |
-| BinaryKits.Zpl (.NET) | 517 | 502 | 11 | 0 | 4 | 0 | N/A |
+| BinaryKits.Zpl (.NET) | 517 | 501 | 12 | 0 | 4 | 0 | N/A |
 | ZPLr (TypeScript) | 517 | 506 | 11 | 0 | 0 | 0 | N/A |
 | Labelary (SaaS) | 517 | 500 | 17 | 0 | 0 | 0 | N/A |
 
@@ -25,44 +25,44 @@ Equality requires at least two nonblank successful outputs. Both blanks/errors a
 | Library | Relationship | Outcome |
 | --- | --- | --- |
 | codyps-zpl | inline-16x8 | equal |
-| codyps-zpl | rle-fill | equal |
-| codyps-zpl | rle-repeat | equal |
-| codyps-zpl | text-escape | equal |
-| codyps-zpl | origin-home | equal |
 | labelize | inline-16x8 | inconclusive |
-| labelize | rle-fill | different |
-| labelize | rle-repeat | equal |
-| labelize | text-escape | equal |
-| labelize | origin-home | equal |
 | forge | inline-16x8 | inconclusive |
-| forge | rle-fill | different |
-| forge | rle-repeat | equal |
-| forge | text-escape | equal |
-| forge | origin-home | different |
 | go | inline-16x8 | equal |
-| go | rle-fill | equal |
-| go | rle-repeat | equal |
-| go | text-escape | equal |
-| go | origin-home | equal |
 | ffi | inline-16x8 | equal |
-| ffi | rle-fill | equal |
-| ffi | rle-repeat | equal |
-| ffi | text-escape | equal |
-| ffi | origin-home | different |
 | binarykits | inline-16x8 | inconclusive |
-| binarykits | rle-fill | different |
-| binarykits | rle-repeat | equal |
-| binarykits | text-escape | equal |
-| binarykits | origin-home | equal |
 | zplr | inline-16x8 | inconclusive |
-| zplr | rle-fill | equal |
-| zplr | rle-repeat | equal |
-| zplr | text-escape | equal |
-| zplr | origin-home | equal |
 | labelary | inline-16x8 | equal |
+| codyps-zpl | rle-fill | equal |
+| labelize | rle-fill | different |
+| forge | rle-fill | different |
+| go | rle-fill | equal |
+| ffi | rle-fill | equal |
+| binarykits | rle-fill | different |
+| zplr | rle-fill | equal |
 | labelary | rle-fill | equal |
+| codyps-zpl | rle-repeat | equal |
+| labelize | rle-repeat | equal |
+| forge | rle-repeat | equal |
+| go | rle-repeat | equal |
+| ffi | rle-repeat | equal |
+| binarykits | rle-repeat | equal |
+| zplr | rle-repeat | equal |
 | labelary | rle-repeat | equal |
+| codyps-zpl | text-escape | equal |
+| labelize | text-escape | equal |
+| forge | text-escape | equal |
+| go | text-escape | equal |
+| ffi | text-escape | equal |
+| binarykits | text-escape | equal |
+| zplr | text-escape | equal |
 | labelary | text-escape | equal |
+| codyps-zpl | origin-home | equal |
+| labelize | origin-home | equal |
+| forge | origin-home | different |
+| go | origin-home | equal |
+| ffi | origin-home | different |
+| binarykits | origin-home | equal |
+| zplr | origin-home | equal |
 | labelary | origin-home | equal |
 
 
@@ -270,7 +270,7 @@ Equality requires at least two nonblank successful outputs. Both blanks/errors a
 | [font-id-Z](../accuracy/comparisons/features/cases/font-id-Z.md) | [rendered](images/font-id-Z-codyps-zpl.png) | [rendered](images/font-id-Z-labelize.png) | [rendered](images/font-id-Z-forge.png) | [rendered](images/font-id-Z-go.png) | [rendered](images/font-id-Z-ffi.png) | [rendered](images/font-id-Z-binarykits.png) | [rendered](images/font-id-Z-zplr.png) | [rendered](images/font-id-Z-labelary.png) |
 | [font-dim-0-0](../accuracy/comparisons/features/cases/font-dim-0-0.md) | [rendered](images/font-dim-0-0-codyps-zpl.png) | [rendered](images/font-dim-0-0-labelize.png) | [blank](images/font-dim-0-0-forge.png) | [rendered](images/font-dim-0-0-go.png) | [rendered](images/font-dim-0-0-ffi.png) | [rendered](images/font-dim-0-0-binarykits.png) | [rendered](images/font-dim-0-0-zplr.png) | [rendered](images/font-dim-0-0-labelary.png) |
 | [font-dim-1-1](../accuracy/comparisons/features/cases/font-dim-1-1.md) | [rendered](images/font-dim-1-1-codyps-zpl.png) | [rendered](images/font-dim-1-1-labelize.png) | [blank](images/font-dim-1-1-forge.png) | [rendered](images/font-dim-1-1-go.png) | [rendered](images/font-dim-1-1-ffi.png) | [blank](images/font-dim-1-1-binarykits.png) | [rendered](images/font-dim-1-1-zplr.png) | [rendered](images/font-dim-1-1-labelary.png) |
-| [font-dim-2-2](../accuracy/comparisons/features/cases/font-dim-2-2.md) | [rendered](images/font-dim-2-2-codyps-zpl.png) | [rendered](images/font-dim-2-2-labelize.png) | [rendered](images/font-dim-2-2-forge.png) | [rendered](images/font-dim-2-2-go.png) | [rendered](images/font-dim-2-2-ffi.png) | [rendered](images/font-dim-2-2-binarykits.png) | [rendered](images/font-dim-2-2-zplr.png) | [rendered](images/font-dim-2-2-labelary.png) |
+| [font-dim-2-2](../accuracy/comparisons/features/cases/font-dim-2-2.md) | [rendered](images/font-dim-2-2-codyps-zpl.png) | [rendered](images/font-dim-2-2-labelize.png) | [rendered](images/font-dim-2-2-forge.png) | [rendered](images/font-dim-2-2-go.png) | [rendered](images/font-dim-2-2-ffi.png) | [blank](images/font-dim-2-2-binarykits.png) | [rendered](images/font-dim-2-2-zplr.png) | [rendered](images/font-dim-2-2-labelary.png) |
 | [font-dim-7-0](../accuracy/comparisons/features/cases/font-dim-7-0.md) | [rendered](images/font-dim-7-0-codyps-zpl.png) | [rendered](images/font-dim-7-0-labelize.png) | [rendered](images/font-dim-7-0-forge.png) | [rendered](images/font-dim-7-0-go.png) | [rendered](images/font-dim-7-0-ffi.png) | [rendered](images/font-dim-7-0-binarykits.png) | [rendered](images/font-dim-7-0-zplr.png) | [rendered](images/font-dim-7-0-labelary.png) |
 | [font-dim-15-0](../accuracy/comparisons/features/cases/font-dim-15-0.md) | [rendered](images/font-dim-15-0-codyps-zpl.png) | [rendered](images/font-dim-15-0-labelize.png) | [rendered](images/font-dim-15-0-forge.png) | [rendered](images/font-dim-15-0-go.png) | [rendered](images/font-dim-15-0-ffi.png) | [rendered](images/font-dim-15-0-binarykits.png) | [rendered](images/font-dim-15-0-zplr.png) | [rendered](images/font-dim-15-0-labelary.png) |
 | [font-dim-17-0](../accuracy/comparisons/features/cases/font-dim-17-0.md) | [rendered](images/font-dim-17-0-codyps-zpl.png) | [rendered](images/font-dim-17-0-labelize.png) | [rendered](images/font-dim-17-0-forge.png) | [rendered](images/font-dim-17-0-go.png) | [rendered](images/font-dim-17-0-ffi.png) | [rendered](images/font-dim-17-0-binarykits.png) | [rendered](images/font-dim-17-0-zplr.png) | [rendered](images/font-dim-17-0-labelary.png) |
