@@ -84,12 +84,11 @@ def render(spec, metadata, images):
             image.unlink(missing_ok=True)
         else:
             # A successful command without a readable PNG is a harness failure.
-            raster = gray(image)
             row["raw_png_sha256"] = sha(image)
-            Image.fromarray(raster).save(image, optimize=True)
     if image.exists():
         raster = gray(image)
-        Image.fromarray(raster).save(image, optimize=True)
+        # Encode once. Compression changes bytes, never scoring pixels.
+        Image.fromarray(raster).save(image, compress_level=1)
         ink = int(np.count_nonzero(raster < 128))
         row.update(
             status="rendered" if ink else "blank",

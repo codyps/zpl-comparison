@@ -108,6 +108,24 @@ not recompile a library or rerender local images. A library change rerenders its
 own cases; unrelated libraries remain cached. Shared viewport changes can refresh
 other thumbnails for that case, because their common crop must remain consistent.
 
+CI restores the most recent action-cache snapshot and saves a new immutable
+snapshot for every main-branch run, including fixture-only changes. A GitHub
+restore-key match is expected; Bazel's own disk-cache hit counts establish which
+actions were reused. The older BUILD/MODULE-keyed cache stopped saving on exact
+hits, so new fixture results could be rebuilt on every runner. Main builds now
+finish instead of cancelling one another before cache upload; superseded PR
+builds may still be cancelled. Publication still checks that the source revision
+is current before updating `generated`.
+
+`//:render_libraries` builds the adapters before image generation and checkpoints
+their cache separately. Both completed and partially completed report actions
+are saved on build failure, with step timeouts leaving room for that save.
+The `build-performance` Actions artifact contains separate library/report Bazel
+profiles and build-event logs for checking cache reuse and execution costs.
+Generated renders use one lossless grayscale encode; difference PNGs use the
+exact four-color palette. Compression and palette encoding do not change pixels,
+comparison scores, full-canvas dimensions, or original printer/service captures.
+
 Dependencies are fetched during repository resolution. Rust, Go, Node, .NET, and
 Python toolchains are pinned; native toolchain archive hashes are in
 `build/toolchains.lock.json`. Cargo, Go, npm, and NuGet dependencies retain their

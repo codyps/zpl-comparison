@@ -7,12 +7,15 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import numpy as np
 from PIL import Image
 
-from benchmarks.accuracy.pixels import sha
-from build.compare import comparison
+from benchmarks.accuracy.pixels import gray, sha
+from benchmarks.accuracy.presentation import rgb
+from benchmarks.accuracy.metrics import compare
+from build.compare import comparison, save_difference
 from build.pages import write
 from build.render import render
 from build.stage import stage
@@ -136,6 +139,54 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(row["returncode"], 7)
         self.assertIn("unsupported input", row["diagnostic"])
         self.assertFalse((self.root / "images/image.png").exists())
+
+    def test_successful_render_encodes_once_and_preserves_raw_identity(self):
+        library = self.root / "library"
+        library.mkdir()
+        (library / "adapter.py").write_text(
+            "import shutil, sys\n"
+            f"shutil.copyfile({str(self.reference)!r}, sys.argv[4])\n"
+        )
+        (library / "command.json").write_text(json.dumps([sys.executable, "adapter.py"]))
+        spec = self.spec()
+        del spec["saved"]
+        spec["library"] = str(library)
+        save = Image.Image.save
+        with patch.object(Image.Image, "save", autospec=True, side_effect=save) as calls:
+            render(spec, self.root / "row", self.root / "images")
+        self.assertEqual(calls.call_count, 1)
+        row = json.loads((self.root / "row").read_text())
+        self.assertEqual(row["raw_png_sha256"], sha(self.reference))
+        np.testing.assert_array_equal(gray(self.root / "images/image.png"), gray(self.reference))
+
+    def test_palette_difference_preserves_every_color_and_canvas(self):
+        ref = np.array([[0, 0, 255, 255]], dtype=np.uint8)
+        out = np.array([[0, 255, 0, 255], [0, 255, 255, 255]], dtype=np.uint8)
+        _, diff = compare(ref, out)
+        path = self.root / "diff.png"
+        save_difference(diff, path)
+        with Image.open(path) as saved:
+            self.assertEqual(saved.mode, "P")
+            self.assertEqual(saved.size, (4, 2))
+            np.testing.assert_array_equal(np.asarray(saved.convert("RGB")), diff)
+
+    def test_fast_decoding_preserves_white_compositing(self):
+        for mode in ["L", "RGB", "RGBA", "P"]:
+            for transparent in [False, True]:
+                with self.subTest(mode=mode, transparent=transparent):
+                    im = Image.new("RGBA", (3, 2), (20, 60, 120, 100)).convert(mode)
+                    path = self.root / "input.png"
+                    options = {}
+                    if transparent and mode != "RGBA":
+                        options["transparency"] = im.getpixel((0, 0))
+                    im.save(path, **options)
+                    with Image.open(path) as source:
+                        rgba = source.convert("RGBA")
+                        white = Image.new("RGBA", source.size, "white")
+                        white.alpha_composite(rgba)
+                        expected = white.convert("RGB")
+                    np.testing.assert_array_equal(np.asarray(rgb(path)), np.asarray(expected))
+                    np.testing.assert_array_equal(gray(path), np.asarray(expected.convert("L")))
 
     def test_worker_continues_after_error_without_reusing_old_outputs(self):
         good = self.root / "good.json"

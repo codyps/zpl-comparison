@@ -11,6 +11,17 @@ from benchmarks.accuracy.metrics import compare
 from benchmarks.accuracy.pixels import gray, sha
 
 
+def save_difference(diff, path):
+    """Lossless fixed-palette PNG, without expensive RGB compression searches."""
+    indices = np.zeros(diff.shape[:2], dtype=np.uint8)
+    indices[diff[:, :, 0] == 0] = 1
+    indices[diff[:, :, 0] == 220] = 2
+    indices[diff[:, :, 1] == 160] = 3
+    image = Image.fromarray(indices).convert("P")
+    image.putpalette([255, 255, 255, 0, 0, 0, 220, 0, 150, 0, 160, 220])
+    image.save(path, bits=2, compress_level=1)
+
+
 def comparison(spec, metadata, images):
     row = json.loads(Path(spec["row"]).read_text())
     output = Path(images)
@@ -27,7 +38,7 @@ def comparison(spec, metadata, images):
             row.update(
                 metrics, score=metrics["iou"] if metrics["reference_ink"] else None
             )
-            Image.fromarray(diff).save(output / "image.png", optimize=True)
+            save_difference(diff, output / "image.png")
         else:
             row["score"] = 0.0 if row["reference_ink"] else None
     if spec["suite"] == "accuracy" and row["status"] not in ["rendered", "blank"]:

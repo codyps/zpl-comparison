@@ -190,6 +190,13 @@ reports(
     ("stage", []),
 ]]
 
+filegroup(
+    name = "render_libraries",
+    srcs = [":library_" + lib for lib in [
+        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr",
+    ]],
+)
+
 pipeline(
     name = "reports",
     srcs = [":report_sources"],
