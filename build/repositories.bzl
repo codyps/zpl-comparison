@@ -40,6 +40,8 @@ def _inputs_impl(ctx):
     files = {}
     for label in ctx.attr.manifests:
         p = ctx.path(label)
+        # The subprocess reads these files; register their contents as fetch inputs.
+        ctx.read(p)
         files[label.name] = str(p)
     tools = str(ctx.path(ctx.attr.tools).dirname)
     source = ctx.getenv("ZPL_SOURCE_PATH", "")
