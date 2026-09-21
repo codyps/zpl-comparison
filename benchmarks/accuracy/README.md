@@ -56,6 +56,40 @@ benchmarks/_work/venv/bin/python benchmarks/accuracy/run.py \
 
 Use a new directory within this repository; capture refuses to overwrite an existing one. Review the identified model/firmware, images and manifest before adopting a new baseline. This implementation accepts identified 203-dpi printers only. It submits the fixed raster-only probes using **Preview Label**, never Print. The printer's preview mechanism uses its RAM object `R:CMPACC.ZPL` by default (`--object-name` overrides it); reserve a distinct name during capture. Rendering defaults are inserted into the fixture format in the same preview request, and requests are spaced two seconds apart. Preview PNG URLs are read from each response. This reduces collisions but does not isolate the printer’s global rendering state from other clients. No persistent downloads or physical label jobs are requested. The capture protocol follows [the existing printer client](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zebra-http-api/src/lib.rs).
 
+The inline reset first restores all 256 character mappings in each of the
+legacy CI0 and CI13 tables using equal source/destination pairs, then applies:
+
+```zpl
+^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,10^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN
+```
+
+Use `^BY2,3,10`: Zebra documents an initial barcode height of **10**, not 100.
+Selecting `^CI27` alone does not clear legacy remappings: a prior `^CI0,65,66`
+can turn B into A in a later barcode caption. `preview_reset()` in
+[capture.py](capture.py) generates the complete reset, which is also recorded
+verbatim in each capture manifest.
+The source follows this prefix and can override any of these settings. This is
+a controlled rendering baseline, not a factory reset of printer configuration.
+Do not use reset/calibration commands or save settings to establish a preview
+baseline. Keep source bytes and the submitted-request hash in the manifest;
+do not compensate for preview offsets by editing an external fixture.
+
+The [2026-09-21 state audit](../../references/preview-state-audit-20260921/README.md)
+explains the shipping label's reproducible 10-dot width offset and QR origin,
+and identifies the references affected by the former 100-dot harness default.
+After capturing to a new directory, compare it with the previous baseline:
+
+```sh
+benchmarks/_work/venv/bin/python benchmarks/accuracy/audit_captures.py \
+  benchmarks/accuracy/external-reference /path/to/new-external-reference \
+  --output /tmp/external-capture-audit.json
+```
+
+This offline check verifies image/source hashes, printer identity and the fresh
+repeated control. It reports every changed or missing capture without aligning,
+cropping or rescaling images, and exits nonzero if any require review. A reset
+change requires a new capture directory; resume rejects a different reset.
+
 There are 73 fresh argument cases plus one repeated control and 60 recaptured barcode cases. The barcode captures were refreshed at ^PW832 with a separate reset before every case; this command refreshes only the argument set. A new device reference creates a mixed-device corpus unless the barcode set is recaptured separately. Existing barcode captures were used in development and are not a holdout.
 
 Foreground intersection-over-union is measured at the original origin, with transparency composited on white and a fixed gray threshold of 128. Canvas differences are padded white and separately reported, never cropped, resized or aligned away. Blank printer references are excluded from aggregate accuracy. Whole-canvas disagreement, missing/extra pixels, precision, recall, dimensions and exact-match flags remain in JSON. A valid alternative barcode encoding can differ visually; this does not measure scanner acceptance. Preview fidelity does not measure physical print quality.

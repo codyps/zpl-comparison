@@ -73,7 +73,7 @@ class ConformanceTests(unittest.TestCase):
         png = io.BytesIO()
         Image.new("L", (2, 2), 0).save(png, format="PNG")
         probes = [
-            dict(name=name, zpl=b"^XA^FO0,0^FDtest^FS^XZ")
+            dict(name=name, zpl=b"^XA^BY3,2,100^FO0,0^FDtest^FS^XZ")
             for name in ["first", "missing", "repeat-end"]
         ]
         replies = iter(
@@ -99,6 +99,15 @@ class ConformanceTests(unittest.TestCase):
                 self.assertEqual(form["data"][0].count("^XA"), 1)
                 self.assertEqual(form["data"][0].count("^XZ"), 1)
                 self.assertIn("^PMN", form["data"][0])
+                self.assertIn("^BY2,3,10^", form["data"][0])
+                self.assertNotIn("^BY2,3,100^", form["data"][0])
+                identity = ",".join(f"{value},{value}" for value in range(256))
+                for encoding in (0, 13):
+                    self.assertIn(f"^CI{encoding},{identity}^", form["data"][0])
+                self.assertLess(
+                    form["data"][0].index("^BY2,3,10^"),
+                    form["data"][0].index("^BY3,2,100^"),
+                )
             result = next(replies)
             if isinstance(result, Exception):
                 raise result

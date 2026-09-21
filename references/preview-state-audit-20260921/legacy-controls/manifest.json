@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "device": "ZTC ZD621-203dpi ZPL",
+  "firmware": "V93.21.33Z",
+  "dpi": 203,
+  "host": "http://d7j211001302.bed.einic.org/",
+  "captured_utc": "2026-09-21T21:57:03Z",
+  "method": "printer HTTP Preview Label; not physical print/scan",
+  "cases": [
+    {
+      "name": "shipping-original",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "9dcd3dbe62593666cf933521c79f1b3aa7fbe0bb07b0e548911ad18fdaf7bd75",
+      "captured_utc": "2026-09-21T21:57:04Z",
+      "zpl_sha256": "2a2530cc43c2396ec39246bf243f34662e7ca4cfb04dafe4fc76843131608b98",
+      "png_sha256": "05be09e0cccb38701a21a66063e86afab363e8a761df822db4676474cd789aa3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "shipping-native-width",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "005e77bc28f913e4d9711cd4d835fe873b5ff90872e5ac8d3b64aec74786f060",
+      "captured_utc": "2026-09-21T21:57:05Z",
+      "zpl_sha256": "61de15a92b51f96677b75a732c0148bcb347c9c41393aec48c7a81fbe9f0dc51",
+      "png_sha256": "7a4a37da5b509df7746da7d15e725519b774b8c917bd841cce3011b8b93ec3fc",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "shipping-qr-height-one",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "bd1d3cadec69d04b8e7556de9300df0b8a3ea0c6420670af834efa5119afc780",
+      "captured_utc": "2026-09-21T21:57:06Z",
+      "zpl_sha256": "0e819ec763020eee2a486ec815c4d33b784d22f816a5039e80fb2a2b7bcd17c5",
+      "png_sha256": "02f4c67f13fef5c12a60dc306954627e4f659eab12f4364b640db721eb3132b7",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "shipping-units-reset",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "cfa560a32aed7d2734db968b89ee51dcdbde1e413b4492e917a68108a5c04cb4",
+      "captured_utc": "2026-09-21T21:57:07Z",
+      "zpl_sha256": "062d923ea624349ecde5d6a6b616ca40e900b11eda548902df3463f950fedf4f",
+      "png_sha256": "05be09e0cccb38701a21a66063e86afab363e8a761df822db4676474cd789aa3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "shipping-clean",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "9dcd3dbe62593666cf933521c79f1b3aa7fbe0bb07b0e548911ad18fdaf7bd75",
+      "captured_utc": "2026-09-21T21:57:08Z",
+      "zpl_sha256": "2a2530cc43c2396ec39246bf243f34662e7ca4cfb04dafe4fc76843131608b98",
+      "png_sha256": "05be09e0cccb38701a21a66063e86afab363e8a761df822db4676474cd789aa3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "dirty-layout",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "b18b56c77bbf25f627f7ce4becf3b5897ec2236efea3f2ea6f98e899af9a36ea",
+      "captured_utc": "2026-09-21T21:57:10Z",
+      "zpl_sha256": "c3577ea66d4557a0233d0f2cd2c0099c6d3cfa5eaf29812e20463358164a0231",
+      "png_sha256": "8a0a49083b4a3dfd8c261c4f512639ab3c833745dba43c3314d706c16fa57f7d",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "shipping-after-dirty",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "9dcd3dbe62593666cf933521c79f1b3aa7fbe0bb07b0e548911ad18fdaf7bd75",
+      "captured_utc": "2026-09-21T21:57:11Z",
+      "zpl_sha256": "2a2530cc43c2396ec39246bf243f34662e7ca4cfb04dafe4fc76843131608b98",
+      "png_sha256": "05be09e0cccb38701a21a66063e86afab363e8a761df822db4676474cd789aa3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "repeat-end",
+      "width": 812,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "9dcd3dbe62593666cf933521c79f1b3aa7fbe0bb07b0e548911ad18fdaf7bd75",
+      "captured_utc": "2026-09-21T21:57:12Z",
+      "zpl_sha256": "2a2530cc43c2396ec39246bf243f34662e7ca4cfb04dafe4fc76843131608b98",
+      "png_sha256": "05be09e0cccb38701a21a66063e86afab363e8a761df822db4676474cd789aa3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    }
+  ],
+  "failures": [],
+  "preview_reset_zpl": "^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+  "repeat_pixels_equal": true
+}
