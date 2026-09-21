@@ -17,7 +17,7 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/binarykits.md)
 
-26/133 exact; mean IoU 37.9%; 0 errors. Snapshot: 2026-09-20T23:07:40Z.
+26/133 exact; mean IoU 37.9%; 0 errors. Snapshot: 2026-09-21T15:39:32Z.
 
 ## Feature groups
 

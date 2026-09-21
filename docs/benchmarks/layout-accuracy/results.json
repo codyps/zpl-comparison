@@ -1,0 +1,6642 @@
+{
+  "manifest_sha256": "6e2e37b7d6a6f91d8e173a85b19927722f6dda8a98ae8f0ab61f3770057b1fda",
+  "references": {
+    "captured_utc": "2026-09-21T04:17:28Z",
+    "cases": [
+      {
+        "arguments": "Asymmetric rectangular landmarks at fixed origins",
+        "captured_utc": "2026-09-21T04:17:30Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-control",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "e37a43d78b324fd3157d27af2c17c832543166f27d6191f6803d71c0c8f8ffbc",
+        "width": 832,
+        "zpl_sha256": "e24f93cf727d4c4aff620f67f0f42a243639534b56336e9b2c47b881af1ebc99"
+      },
+      {
+        "arguments": "Label home translates all graphic fields",
+        "captured_utc": "2026-09-21T04:17:32Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-home",
+        "object_name": "CMPLAY",
+        "png_sha256": "b231806c9d868ac8d1c72df6577cd4ad06eb3b5681e6b214826f58041ea61775",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "064454e5994974657388e2d8c70be8c3de941a683a27d7e2c29f8a3ae8acd44e",
+        "width": 832,
+        "zpl_sha256": "b8eabadd6c44f13eb20d505ccc3e8f00a376124e58d948caee5d5917ec6ae36c"
+      },
+      {
+        "arguments": "Direct origins equivalent to LH30,20",
+        "captured_utc": "2026-09-21T04:17:34Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-home-direct",
+        "object_name": "CMPLAY",
+        "png_sha256": "b231806c9d868ac8d1c72df6577cd4ad06eb3b5681e6b214826f58041ea61775",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "f7fb507c63511cccc000c52850e9c96254a99bc63e394d21434ec2ddd5423a9b",
+        "width": 832,
+        "zpl_sha256": "2d08f0ccbbdd37051f07d11335d20c6ca5c5c979bed39a563186f064695a9d3a"
+      },
+      {
+        "arguments": "LS=-80: signed page offset and edge clipping",
+        "captured_utc": "2026-09-21T04:17:36Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-LS--80",
+        "object_name": "CMPLAY",
+        "png_sha256": "a511ed65e73ccd84ed52db310f43403297edf901ce6b48e696c7d732de509d25",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "6a9eea92d27b2e3ea44e3a7ab42f9da118489bc13ce67e411987ad87ffe2af3f",
+        "width": 832,
+        "zpl_sha256": "d762b1b856e7542a7774b00070b0a3fee57d716e25271ad56756f90b0f51dac8"
+      },
+      {
+        "arguments": "LS=80: signed page offset and edge clipping",
+        "captured_utc": "2026-09-21T04:17:39Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-LS-80",
+        "object_name": "CMPLAY",
+        "png_sha256": "a30a34f20ea4c7ec264c405c030a8175bc4cbc0deeeb2e0e04c6bdf5adee0d99",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "a3c56f854c74eb492a6c434ca3be899952ba79a18ba853b122f5b3bd78d33644",
+        "width": 832,
+        "zpl_sha256": "3089d08b446c5b97920bc377b172492b87abb01ddb61c9e4ccd3d425204c719a"
+      },
+      {
+        "arguments": "LT=-50: signed page offset and edge clipping",
+        "captured_utc": "2026-09-21T04:17:41Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-LT--50",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "40e6cf6d0a423d66fe19d91817596447604fe90da6dfe3d57e88853c962d48b4",
+        "width": 832,
+        "zpl_sha256": "afd24fa8056e8477259acb3ab85cca93589a42180fb6a9de35f4a2e0e2d3e612"
+      },
+      {
+        "arguments": "LT=50: signed page offset and edge clipping",
+        "captured_utc": "2026-09-21T04:17:43Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-LT-50",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "823dbd333cfdb686481110d3200837d83c83eb9b26ba63bdc177f05be11c38f1",
+        "width": 832,
+        "zpl_sha256": "878eac3ccc576051998f53b66063e8a75ca800f5d6b65ebf87d2fba4a299a4ac"
+      },
+      {
+        "arguments": "Combined home, horizontal shift and label top",
+        "captured_utc": "2026-09-21T04:17:45Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-offset-combined",
+        "object_name": "CMPLAY",
+        "png_sha256": "18866f178782df95265ccbad53dcd05f6c39c55b05225da3e5054ef466522fb3",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "46afd792aaf4911cc78d9b4b3290798062ca091d4e88b6c5041e7e3bb74c01dc",
+        "width": 832,
+        "zpl_sha256": "a3278b6cbad7ee379cb7a248040d7ab1ec01ea0ac28e2baa9c279724bee86948"
+      },
+      {
+        "arguments": "Mirror=Y, orientation=N: asymmetric graphic landmarks",
+        "captured_utc": "2026-09-21T04:17:47Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-transform-Y-N",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "e1e422a6f2a3465a973ce798ad745039dc719502284575d16fd8a35c00c286ff",
+        "width": 832,
+        "zpl_sha256": "6148ad65da6a7fc369460d8fc24c1c6bd32d8c34ae4eed9c1d504017ef7b8eac"
+      },
+      {
+        "arguments": "Mirror=N, orientation=I: asymmetric graphic landmarks",
+        "captured_utc": "2026-09-21T04:17:49Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-transform-N-I",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "c27b56fd9c2b2f20dd8b32037ca40f677688fb13a676d7229db1f6bbd965db55",
+        "width": 832,
+        "zpl_sha256": "e48404eef2ccc72f73ff7edc6a06529342b9b83718a4467370a538d67978110e"
+      },
+      {
+        "arguments": "Mirror=Y, orientation=I: asymmetric graphic landmarks",
+        "captured_utc": "2026-09-21T04:17:51Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-transform-Y-I",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "4f500a0abc010d4f09af7fa8b272a43ef50e5661b95bae30b4127932250206d8",
+        "width": 832,
+        "zpl_sha256": "9a53f2137c811f6deb2aa443bb989bdc75f5b06967308a93ab57cf5e719a3eeb"
+      },
+      {
+        "arguments": "Edge clipping with a visible in-bounds control; no wraparound",
+        "captured_utc": "2026-09-21T04:17:53Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-clip-last-pixel",
+        "object_name": "CMPLAY",
+        "png_sha256": "4e4a7d9d240e2e8c621b26250b8a58639890ebd98d8141e413c7ae36f1aea705",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "d325ff7a92290d045ecd212658ac2be838bffa0b05a5551859f1de1eb372f064",
+        "width": 832,
+        "zpl_sha256": "e4b916e661f47e619bca4916c68333067114faac6d63ee1449df33cb7a75ecd7"
+      },
+      {
+        "arguments": "Edge clipping with a visible in-bounds control; no wraparound",
+        "captured_utc": "2026-09-21T04:17:55Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-clip-partial",
+        "object_name": "CMPLAY",
+        "png_sha256": "bc8885403011f226c46e39c1334aeb5595c86b931caa410da93c487bd04ed313",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "a20c85aa57fd8a1adc6511c9d11b75fb1d561a9387568e07ae920ae1fe6eb627",
+        "width": 832,
+        "zpl_sha256": "7d76ada68f48a1afffb3f9fce04c18478ca2b498b82398c4cd844910525aba7c"
+      },
+      {
+        "arguments": "Edge clipping with a visible in-bounds control; no wraparound",
+        "captured_utc": "2026-09-21T04:17:57Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-clip-outside",
+        "object_name": "CMPLAY",
+        "png_sha256": "f825ec1436eaa20ae1cb7d631293cd8f8e583e3b27a535adef76856622c88bf5",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "f98f4576310bc0b6112437cfd61b584c4867f01c7bce77685ee6c2a0ac6c84a5",
+        "width": 832,
+        "zpl_sha256": "a09680b2c886b570e3b1a8b711e8b1f96af0c6aab543822ba953587353e78926"
+      },
+      {
+        "arguments": "Label reversal on rectangular landmarks",
+        "captured_utc": "2026-09-21T04:18:00Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-label-reverse",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "85614c01020c2578db3aa8b0fdde32c8ac637b63c663cad4b1d582eb0cff427f",
+        "width": 832,
+        "zpl_sha256": "1016e44928725aceef9bab2766e19fe120f4dfa1cb897e15927902ec06d915f1"
+      },
+      {
+        "arguments": "Field reversal inside a solid box; following field remains ordinary",
+        "captured_utc": "2026-09-21T04:18:02Z",
+        "command": "^FO ^FR ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-field-reverse",
+        "object_name": "CMPLAY",
+        "png_sha256": "e9e17e461ae85d20329e66080d199096b75ba95c8d542004f99163ed7a038df7",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "079d37177dd55b09579297a3a3f45f81538740b0618fd3e26ba84732f2cf6daf",
+        "width": 832,
+        "zpl_sha256": "b4442b02a42135ae4d0abb2f0e7c561170ee34f963fabbd573c5e3a6bd12be0e"
+      },
+      {
+        "arguments": "FW=N: Code128 with omitted orientation and both caption flags disabled",
+        "captured_utc": "2026-09-21T04:18:04Z",
+        "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-field-orientation-N",
+        "object_name": "CMPLAY",
+        "png_sha256": "d441b201896ef9a043c8d863485d7da8257785efd95b49eecb16eac254074606",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "53bd79218cd63e5121e6b0eb3e983ec60eb66d4bb324a0b5a4744f736090cf47",
+        "width": 832,
+        "zpl_sha256": "4aedb388db57f248b54310c47b7583f092c12d8df6750fe19c398e45932895cf"
+      },
+      {
+        "arguments": "FW=R: Code128 with omitted orientation and both caption flags disabled",
+        "captured_utc": "2026-09-21T04:18:06Z",
+        "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-field-orientation-R",
+        "object_name": "CMPLAY",
+        "png_sha256": "8b84623aa4e6e0f32b43ec891a004e36b09a7661ed78df328a817cf41a8e71af",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "ed6469c3b56984cbae2f5657ff4c7e2abd3310f8b8c1680112a536fac664cd9b",
+        "width": 832,
+        "zpl_sha256": "dc6b8ed1d92a50197b7da5cc2b2cd466bc9637d783e585ac8a1ccc68746da9fe"
+      },
+      {
+        "arguments": "FW=I: Code128 with omitted orientation and both caption flags disabled",
+        "captured_utc": "2026-09-21T04:18:08Z",
+        "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-field-orientation-I",
+        "object_name": "CMPLAY",
+        "png_sha256": "e546559ebab0fd60b89dd2dda2e8468119905588ca1b66a28548133ca5267fd7",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "ddfd4177e6f56809acfceed1f4c1d7b09257bcef25085e202938ed1698ad74a3",
+        "width": 832,
+        "zpl_sha256": "a841aa1687d23e31132b8ee74c0698863f804a53411962cccd5674d78c1dcb0c"
+      },
+      {
+        "arguments": "FW=B: Code128 with omitted orientation and both caption flags disabled",
+        "captured_utc": "2026-09-21T04:18:10Z",
+        "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "font-free-layout",
+        "height": 300,
+        "name": "layout-field-orientation-B",
+        "object_name": "CMPLAY",
+        "png_sha256": "8957d20cba8225b0ada6c2f9718911d713e9885321fe72b76a35952aa753e5fe",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "e073df5a2569d511ab914e15d5bfbb2595e8216bccb2acb26fecc73238c74d8d",
+        "width": 832,
+        "zpl_sha256": "7eca38b85080b5a783f8c2efed03056b40d48875e4a03c38630f4e06aae4f1a8"
+      },
+      {
+        "arguments": "Asymmetric rectangular landmarks at fixed origins",
+        "captured_utc": "2026-09-21T04:18:12Z",
+        "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+        "group": "repeatability",
+        "height": 300,
+        "name": "repeat-end",
+        "object_name": "CMPLAY",
+        "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+        "printer_dimensions": [
+          832,
+          300
+        ],
+        "submission_mode": "inline-reset-canvas",
+        "submitted_sha256": "e37a43d78b324fd3157d27af2c17c832543166f27d6191f6803d71c0c8f8ffbc",
+        "width": 832,
+        "zpl_sha256": "e24f93cf727d4c4aff620f67f0f42a243639534b56336e9b2c47b881af1ebc99"
+      }
+    ],
+    "corpus_sha256": "6e2e37b7d6a6f91d8e173a85b19927722f6dda8a98ae8f0ab61f3770057b1fda",
+    "device": "ZTC ZD621-203dpi ZPL",
+    "dpi": 203,
+    "failures": [],
+    "firmware": "V93.21.33Z",
+    "host": "http://d7j211001302.bed.einic.org/",
+    "method": "printer HTTP Preview Label; not physical print/scan",
+    "preview_reset_zpl": "^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+    "repeat_pixels_equal": true,
+    "schema": 1,
+    "status": "complete"
+  },
+  "schema": 1,
+  "suite": "font-free-layout-v1",
+  "cases": [
+    {
+      "bytes": 116,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-control.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-control",
+      "oracle": "printer",
+      "purpose": "Asymmetric rectangular landmarks at fixed origins",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "e24f93cf727d4c4aff620f67f0f42a243639534b56336e9b2c47b881af1ebc99",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 124,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-home.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-home",
+      "oracle": "printer",
+      "purpose": "Label home translates all graphic fields",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": {
+        "kind": "same-raster",
+        "set": "font-free-home"
+      },
+      "sha256": "b8eabadd6c44f13eb20d505ccc3e8f00a376124e58d948caee5d5917ec6ae36c",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 117,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-home-direct.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-home-direct",
+      "oracle": "printer",
+      "purpose": "Direct origins equivalent to LH30,20",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": {
+        "kind": "same-raster",
+        "set": "font-free-home"
+      },
+      "sha256": "2d08f0ccbbdd37051f07d11335d20c6ca5c5c979bed39a563186f064695a9d3a",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 122,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-LS--80.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-LS--80",
+      "oracle": "printer",
+      "purpose": "LS=-80: signed page offset and edge clipping",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "d762b1b856e7542a7774b00070b0a3fee57d716e25271ad56756f90b0f51dac8",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 121,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-LS-80.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-LS-80",
+      "oracle": "printer",
+      "purpose": "LS=80: signed page offset and edge clipping",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "3089d08b446c5b97920bc377b172492b87abb01ddb61c9e4ccd3d425204c719a",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 122,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-LT--50.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-LT--50",
+      "oracle": "printer",
+      "purpose": "LT=-50: signed page offset and edge clipping",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "afd24fa8056e8477259acb3ab85cca93589a42180fb6a9de35f4a2e0e2d3e612",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 121,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-LT-50.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-LT-50",
+      "oracle": "printer",
+      "purpose": "LT=50: signed page offset and edge clipping",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "878eac3ccc576051998f53b66063e8a75ca800f5d6b65ebf87d2fba4a299a4ac",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 134,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-offset-combined.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-offset-combined",
+      "oracle": "printer",
+      "purpose": "Combined home, horizontal shift and label top",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "a3278b6cbad7ee379cb7a248040d7ab1ec01ea0ac28e2baa9c279724bee86948",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 124,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-transform-Y-N.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-transform-Y-N",
+      "oracle": "printer",
+      "purpose": "Mirror=Y, orientation=N: asymmetric graphic landmarks",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "6148ad65da6a7fc369460d8fc24c1c6bd32d8c34ae4eed9c1d504017ef7b8eac",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 124,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-transform-N-I.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-transform-N-I",
+      "oracle": "printer",
+      "purpose": "Mirror=N, orientation=I: asymmetric graphic landmarks",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "e48404eef2ccc72f73ff7edc6a06529342b9b83718a4467370a538d67978110e",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 124,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-transform-Y-I.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-transform-Y-I",
+      "oracle": "printer",
+      "purpose": "Mirror=Y, orientation=I: asymmetric graphic landmarks",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "9a53f2137c811f6deb2aa443bb989bdc75f5b06967308a93ab57cf5e719a3eeb",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 95,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-clip-last-pixel.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-clip-last-pixel",
+      "oracle": "printer",
+      "purpose": "Edge clipping with a visible in-bounds control; no wraparound",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "e4b916e661f47e619bca4916c68333067114faac6d63ee1449df33cb7a75ecd7",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 95,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-clip-partial.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-clip-partial",
+      "oracle": "printer",
+      "purpose": "Edge clipping with a visible in-bounds control; no wraparound",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "7d76ada68f48a1afffb3f9fce04c18478ca2b498b82398c4cd844910525aba7c",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 95,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-clip-outside.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-clip-outside",
+      "oracle": "printer",
+      "purpose": "Edge clipping with a visible in-bounds control; no wraparound",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "a09680b2c886b570e3b1a8b711e8b1f96af0c6aab543822ba953587353e78926",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 120,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-label-reverse.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-label-reverse",
+      "oracle": "printer",
+      "purpose": "Label reversal on rectangular landmarks",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "1016e44928725aceef9bab2766e19fe120f4dfa1cb897e15927902ec06d915f1",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 122,
+      "capture_eligible": true,
+      "commands": [
+        "^FO",
+        "^FR",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-field-reverse.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-field-reverse",
+      "oracle": "printer",
+      "purpose": "Field reversal inside a solid box; following field remains ordinary",
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FR",
+          "pdf_page": 203
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "b4442b02a42135ae4d0abb2f0e7c561170ee34f963fabbd573c5e3a6bd12be0e",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 96,
+      "capture_eligible": true,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-field-orientation-N.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-field-orientation-N",
+      "oracle": "printer",
+      "purpose": "FW=N: Code128 with omitted orientation and both caption flags disabled",
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "4aedb388db57f248b54310c47b7583f092c12d8df6750fe19c398e45932895cf",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 96,
+      "capture_eligible": true,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-field-orientation-R.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-field-orientation-R",
+      "oracle": "printer",
+      "purpose": "FW=R: Code128 with omitted orientation and both caption flags disabled",
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "dc6b8ed1d92a50197b7da5cc2b2cd466bc9637d783e585ac8a1ccc68746da9fe",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 96,
+      "capture_eligible": true,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-field-orientation-I.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-field-orientation-I",
+      "oracle": "printer",
+      "purpose": "FW=I: Code128 with omitted orientation and both caption flags disabled",
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "a841aa1687d23e31132b8ee74c0698863f804a53411962cccd5674d78c1dcb0c",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "bytes": 96,
+      "capture_eligible": true,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "file": "cases/font-free-layout/layout-field-orientation-B.zpl",
+      "group": "font-free-layout",
+      "height": 300,
+      "name": "layout-field-orientation-B",
+      "oracle": "printer",
+      "purpose": "FW=B: Code128 with omitted orientation and both caption flags disabled",
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ],
+      "relation": null,
+      "sha256": "7eca38b85080b5a783f8c2efed03056b40d48875e4a03c38630f4e06aae4f1a8",
+      "source": null,
+      "validity": "valid",
+      "width": 832
+    }
+  ],
+  "results": [
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-control",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "acae48a76b6a4173382e5a82eb395881b387d37e662b4b06f0f671c9cd180d1e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-control",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "5863531680d67daea684d706792d4561099b6da774924aef53b6cd0999975986",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-control",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-control",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-control",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-control",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:21Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-control",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:22Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "124a285bc9534bca72a6428d8531b77d271585f631cf61d60772ea2dfa4e98d2",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "f4176bcfa1efca64e68ff9c958fe40bf6ea1d0af73d46c56953997f0b6b6fdad",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "f53b807f5e6f78319aa5d9a3c7bbd5dc8252c76c279b3fcbd1cb6b31181defae",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020913461538461537,
+      "case": "layout-home",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2610,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.03636699280044305,
+      "library": "forge",
+      "missing": 2610,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.07018168863555398,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 0.07018168863555398,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.03636699280044305,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "4ebc9f54adecb1e5bcbe840a5a1a33fbc91b4771e5b0cc1061a8db4092d9be07",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020913461538461537,
+      "case": "layout-home",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2610,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.03636699280044305,
+      "library": "ffi",
+      "missing": 2610,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.07018168863555398,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 0.07018168863555398,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.03636699280044305,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "97061f647334d77327f037cb786c777adc24e1d23e4973b0350691cdddb377cf",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "5a06c0e298e4d6cd08900b56cb48eb970b64bd512ff8b2241f0faed0203a742c",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home-direct",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "f4176bcfa1efca64e68ff9c958fe40bf6ea1d0af73d46c56953997f0b6b6fdad",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home-direct",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "f53b807f5e6f78319aa5d9a3c7bbd5dc8252c76c279b3fcbd1cb6b31181defae",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home-direct",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:28Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "c2a07b8c0793022ea0e725e5bb21051660333dfe9fb143331f8363fa6e9af365",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home-direct",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:28Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "4ebc9f54adecb1e5bcbe840a5a1a33fbc91b4771e5b0cc1061a8db4092d9be07",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home-direct",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:29Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "4ebc9f54adecb1e5bcbe840a5a1a33fbc91b4771e5b0cc1061a8db4092d9be07",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home-direct",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:29Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "97061f647334d77327f037cb786c777adc24e1d23e4973b0350691cdddb377cf",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-home-direct",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:30Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "5a06c0e298e4d6cd08900b56cb48eb970b64bd512ff8b2241f0faed0203a742c",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LS--80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2512,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:09Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2512,
+      "precision": 1.0,
+      "raw_png_sha256": "e1947d4669c6964ce4c992037df06f9fdf4fa61f2a3e9564c49e18653f9598f1",
+      "recall": 1.0,
+      "reference_ink": 2512,
+      "render_sha256": "227c536b1166871be96c500c3784e0753163aa4749ab125a3b1008c7f5d19f04",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LS--80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2512,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:09Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2512,
+      "precision": 1.0,
+      "raw_png_sha256": "bca15da1a8694a04097338ef94fdf843834243195bd1d1ff7b192f60e8f2f924",
+      "recall": 1.0,
+      "reference_ink": 2512,
+      "render_sha256": "227c536b1166871be96c500c3784e0753163aa4749ab125a3b1008c7f5d19f04",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020661057692307694,
+      "case": "layout-LS--80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2726,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.015463917525773196,
+      "library": "forge",
+      "missing": 2431,
+      "observed_utc": "2026-09-21T15:36:09Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.028856430352689703,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 0.032245222929936306,
+      "reference_ink": 2512,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.015463917525773196,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020661057692307694,
+      "case": "layout-LS--80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2726,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.015463917525773196,
+      "library": "go",
+      "missing": 2431,
+      "observed_utc": "2026-09-21T15:36:10Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.028856430352689703,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 0.032245222929936306,
+      "reference_ink": 2512,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.015463917525773196,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020661057692307694,
+      "case": "layout-LS--80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2726,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.015463917525773196,
+      "library": "ffi",
+      "missing": 2431,
+      "observed_utc": "2026-09-21T15:36:10Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.028856430352689703,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 0.032245222929936306,
+      "reference_ink": 2512,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.015463917525773196,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020661057692307694,
+      "case": "layout-LS--80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2726,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.015463917525773196,
+      "library": "binarykits",
+      "missing": 2431,
+      "observed_utc": "2026-09-21T15:36:10Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.028856430352689703,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 0.032245222929936306,
+      "reference_ink": 2512,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.015463917525773196,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LS--80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2512,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:11Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2512,
+      "precision": 1.0,
+      "raw_png_sha256": "b80ae3c553cbce9cec592a6dc4570bc7d6213376ca72d68224a91538fc4c0f77",
+      "recall": 1.0,
+      "reference_ink": 2512,
+      "render_sha256": "227c536b1166871be96c500c3784e0753163aa4749ab125a3b1008c7f5d19f04",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LS-80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:10Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "5131c3f0cbac44509053450b63ee55c94cabd0dff2790c47d935182890a5fce6",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "8864a139fa1b0c9057d3311da83333ff34461b430d92ec2c04c45279173db507",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LS-80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:10Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "425fdd7f56001fe13bc6dd176a4f05e39691b0123744325abae6544d9fa2e7fd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "8864a139fa1b0c9057d3311da83333ff34461b430d92ec2c04c45279173db507",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020352564102564103,
+      "case": "layout-LS-80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2540,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.0499345427342435,
+      "library": "forge",
+      "missing": 2540,
+      "observed_utc": "2026-09-21T15:36:11Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.0951193444959031,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 0.0951193444959031,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.0499345427342435,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020352564102564103,
+      "case": "layout-LS-80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2540,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.0499345427342435,
+      "library": "go",
+      "missing": 2540,
+      "observed_utc": "2026-09-21T15:36:11Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.0951193444959031,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 0.0951193444959031,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.0499345427342435,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020352564102564103,
+      "case": "layout-LS-80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2540,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.0499345427342435,
+      "library": "ffi",
+      "missing": 2540,
+      "observed_utc": "2026-09-21T15:36:11Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.0951193444959031,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 0.0951193444959031,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.0499345427342435,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020352564102564103,
+      "case": "layout-LS-80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2540,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.0499345427342435,
+      "library": "binarykits",
+      "missing": 2540,
+      "observed_utc": "2026-09-21T15:36:12Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.0951193444959031,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 0.0951193444959031,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.0499345427342435,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.002295673076923077,
+      "case": "layout-LS-80",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 111,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2456,
+      "ink_exact": false,
+      "iou": 0.8036326250856751,
+      "library": "zplr",
+      "missing": 462,
+      "observed_utc": "2026-09-21T15:36:13Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2456,
+      "precision": 0.9548045602605864,
+      "raw_png_sha256": "8df64387b8cc9bca473da32ee959ecf7259df683d39f421935ff1f1d99abf4d1",
+      "recall": 0.8354114713216958,
+      "reference_ink": 2807,
+      "render_sha256": "74e73c9bb2b332b8178a1c29ca93f774ec34a037f2fd67fc414af6808c2a7aa2",
+      "returncode": 0,
+      "score": 0.8036326250856751,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT--50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:15Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "acae48a76b6a4173382e5a82eb395881b387d37e662b4b06f0f671c9cd180d1e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020192307692307693,
+      "case": "layout-LT--50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2520,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.05387647831800263,
+      "library": "labelize",
+      "missing": 2520,
+      "observed_utc": "2026-09-21T15:36:15Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.10224438902743142,
+      "raw_png_sha256": "bc456c44579036ec6d75b81761ce5841cec32d9d3ee4d8343ab11227d38afb36",
+      "recall": 0.10224438902743142,
+      "reference_ink": 2807,
+      "render_sha256": "d43be404d4edea8c9da7ca0bcdcfe04b7fa965eff95bf514421fafb74baf2061",
+      "returncode": 0,
+      "score": 0.05387647831800263,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT--50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:15Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT--50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT--50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT--50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.01955528846153846,
+      "case": "layout-LT--50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2283,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2492,
+      "ink_exact": false,
+      "iou": 0.04106090373280943,
+      "library": "zplr",
+      "missing": 2598,
+      "observed_utc": "2026-09-21T15:36:17Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2492,
+      "precision": 0.08386837881219904,
+      "raw_png_sha256": "028815fa6607d60cfe52dc105b219715bd610c0fc1ca3ec1909190bfee2701e3",
+      "recall": 0.07445671535447096,
+      "reference_ink": 2807,
+      "render_sha256": "898e4e51a1ef049d85cdcfd3cea74a823c4aadea1af6ce389692ce80a25230a3",
+      "returncode": 0,
+      "score": 0.04106090373280943,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT-50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "acae48a76b6a4173382e5a82eb395881b387d37e662b4b06f0f671c9cd180d1e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020817307692307694,
+      "case": "layout-LT-50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2598,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.03866790009250694,
+      "library": "labelize",
+      "missing": 2598,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.07445671535447096,
+      "raw_png_sha256": "2330ff25259cddc71cd54219445e347a91a36e2737b6ca921308f077f55bf3de",
+      "recall": 0.07445671535447096,
+      "reference_ink": 2807,
+      "render_sha256": "3310a1c6fd6cce051a8e5efd65f22fb2de3c96d4ca2dec6246ccf6cbb0356476",
+      "returncode": 0,
+      "score": 0.03866790009250694,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT-50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT-50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT-50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-LT-50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:17Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.020817307692307694,
+      "case": "layout-LT-50",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2598,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.03866790009250694,
+      "library": "zplr",
+      "missing": 2598,
+      "observed_utc": "2026-09-21T15:36:18Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.07445671535447096,
+      "raw_png_sha256": "b960a46bf42d4137b87ef24166db8f0a8c314678c77c787391ac7e844c6888be",
+      "recall": 0.07445671535447096,
+      "reference_ink": 2807,
+      "render_sha256": "3310a1c6fd6cce051a8e5efd65f22fb2de3c96d4ca2dec6246ccf6cbb0356476",
+      "returncode": 0,
+      "score": 0.03866790009250694,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-offset-combined",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "75e2442fe6c9e0bdabd4708f1c276e16bff2dad4634b4ad1425883b1803d9a21",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "2143ba9252df910948c48b8e6ee9d7eac3d688f3e6186f8a93e3d5a9ad534b3d",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.011778846153846154,
+      "case": "layout-offset-combined",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1470,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.31260229132569556,
+      "library": "labelize",
+      "missing": 1470,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.4763092269326683,
+      "raw_png_sha256": "496923913a7c6684b040dad474be7ded7d346b26846ccf355ca7568075f556c3",
+      "recall": 0.4763092269326683,
+      "reference_ink": 2807,
+      "render_sha256": "a2832eccfa68f46b631865d00c6239da0c1b6f4574680daebf5dbe2a667ba8d5",
+      "returncode": 0,
+      "score": 0.31260229132569556,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.01923878205128205,
+      "case": "layout-offset-combined",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2401,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.07795698924731183,
+      "library": "forge",
+      "missing": 2401,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.14463840399002495,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 0.14463840399002495,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.07795698924731183,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.012395833333333333,
+      "case": "layout-offset-combined",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1547,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.28938906752411575,
+      "library": "go",
+      "missing": 1547,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.4488778054862843,
+      "raw_png_sha256": "4ebc9f54adecb1e5bcbe840a5a1a33fbc91b4771e5b0cc1061a8db4092d9be07",
+      "recall": 0.4488778054862843,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 0.28938906752411575,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.01923878205128205,
+      "case": "layout-offset-combined",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2401,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.07795698924731183,
+      "library": "ffi",
+      "missing": 2401,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.14463840399002495,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 0.14463840399002495,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 0.07795698924731183,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.012395833333333333,
+      "case": "layout-offset-combined",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1547,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.28938906752411575,
+      "library": "binarykits",
+      "missing": 1547,
+      "observed_utc": "2026-09-21T15:36:33Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.4488778054862843,
+      "raw_png_sha256": "97061f647334d77327f037cb786c777adc24e1d23e4973b0350691cdddb377cf",
+      "recall": 0.4488778054862843,
+      "reference_ink": 2807,
+      "render_sha256": "e5ab56dabd49797fc6dd8a82a88ad1e53fe80576f05f6e6c5300d2288667cea4",
+      "returncode": 0,
+      "score": 0.28938906752411575,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.011778846153846154,
+      "case": "layout-offset-combined",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1470,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.31260229132569556,
+      "library": "zplr",
+      "missing": 1470,
+      "observed_utc": "2026-09-21T15:36:33Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.4763092269326683,
+      "raw_png_sha256": "56f30d02c635fc787b42039f4bfe78880497990fc40c8675b5b3eebdc2239b33",
+      "recall": 0.4763092269326683,
+      "reference_ink": 2807,
+      "render_sha256": "a2832eccfa68f46b631865d00c6239da0c1b6f4574680daebf5dbe2a667ba8d5",
+      "returncode": 0,
+      "score": 0.31260229132569556,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "acae48a76b6a4173382e5a82eb395881b387d37e662b4b06f0f671c9cd180d1e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:36Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "5863531680d67daea684d706792d4561099b6da774924aef53b6cd0999975986",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:36Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:37Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:37Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:37Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.02249198717948718,
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2807,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.0,
+      "library": "zplr",
+      "missing": 2807,
+      "observed_utc": "2026-09-21T15:36:38Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.0,
+      "raw_png_sha256": "f67a87847a0b84a05f1a4fc0459ce549c30e7ef0356f58a97f183d3ec8356a1c",
+      "recall": 0.0,
+      "reference_ink": 2807,
+      "render_sha256": "e1c79681fdf449ba69dadeee80cfa8a25dad6794dbf4959cd1f2375e183aa7b6",
+      "returncode": 0,
+      "score": 0.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-N-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "acae48a76b6a4173382e5a82eb395881b387d37e662b4b06f0f671c9cd180d1e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.022011217948717948,
+      "case": "layout-transform-N-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2747,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.010803024846957148,
+      "library": "labelize",
+      "missing": 2747,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.021375133594584966,
+      "raw_png_sha256": "d719084b7d859e8fdbed0efb76eaf932620e2b699982c9cea2edeba6421ffafb",
+      "recall": 0.021375133594584966,
+      "reference_ink": 2807,
+      "render_sha256": "013ff076211b88d0ce807faef6c35dd32930d8454f7e9c44bf1eb8cf28c3e5f9",
+      "returncode": 0,
+      "score": 0.010803024846957148,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-N-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-N-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-N-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-N-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:36Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.022011217948717948,
+      "case": "layout-transform-N-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2747,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.010803024846957148,
+      "library": "zplr",
+      "missing": 2747,
+      "observed_utc": "2026-09-21T15:36:36Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.021375133594584966,
+      "raw_png_sha256": "cf42a7df2ad7d5b9b80cff7c3946c0f890d06f1da6f460c32901faad09c9cd8c",
+      "recall": 0.021375133594584966,
+      "reference_ink": 2807,
+      "render_sha256": "013ff076211b88d0ce807faef6c35dd32930d8454f7e9c44bf1eb8cf28c3e5f9",
+      "returncode": 0,
+      "score": 0.010803024846957148,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "acae48a76b6a4173382e5a82eb395881b387d37e662b4b06f0f671c9cd180d1e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.022011217948717948,
+      "case": "layout-transform-Y-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2747,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.010803024846957148,
+      "library": "labelize",
+      "missing": 2747,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.021375133594584966,
+      "raw_png_sha256": "d719084b7d859e8fdbed0efb76eaf932620e2b699982c9cea2edeba6421ffafb",
+      "recall": 0.021375133594584966,
+      "reference_ink": 2807,
+      "render_sha256": "013ff076211b88d0ce807faef6c35dd32930d8454f7e9c44bf1eb8cf28c3e5f9",
+      "returncode": 0,
+      "score": 0.010803024846957148,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:35Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-transform-Y-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:36Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0221875,
+      "case": "layout-transform-Y-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2769,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": false,
+      "iou": 0.0068149210903873745,
+      "library": "zplr",
+      "missing": 2769,
+      "observed_utc": "2026-09-21T15:36:36Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 0.013537584609903812,
+      "raw_png_sha256": "602c75a9f21a3bf434ebd2187a7b90574c96417f53a6eeb07dab1ce941fb7e51",
+      "recall": 0.013537584609903812,
+      "reference_ink": 2807,
+      "render_sha256": "27c2926799be79b93ae22ee4f900558eb3302ffaaba9d1bef2adb0f71a413f02",
+      "returncode": 0,
+      "score": 0.0068149210903873745,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-last-pixel",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 210,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 210,
+      "precision": 1.0,
+      "raw_png_sha256": "04982654297668e7dbedf00952d40abc155b25f504d0239626ba0abf60e76093",
+      "recall": 1.0,
+      "reference_ink": 210,
+      "render_sha256": "1d94c710a03fbcf4bc4baf126e247d93e2882344761c03eab214535b86eeea43",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-last-pixel",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 210,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 210,
+      "precision": 1.0,
+      "raw_png_sha256": "b3c53a8ae3b68b50b4d9d3639d3fdc0a18752799daa03d6573ca9c6db495b92b",
+      "recall": 1.0,
+      "reference_ink": 210,
+      "render_sha256": "1d94c710a03fbcf4bc4baf126e247d93e2882344761c03eab214535b86eeea43",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-last-pixel",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 210,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 210,
+      "precision": 1.0,
+      "raw_png_sha256": "67fde375f5d97d8f8c8fdedaa02ef1f9c8d50c1c9573e2db27dc7e3b53c4ab7d",
+      "recall": 1.0,
+      "reference_ink": 210,
+      "render_sha256": "1d94c710a03fbcf4bc4baf126e247d93e2882344761c03eab214535b86eeea43",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-last-pixel",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 210,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:16Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 210,
+      "precision": 1.0,
+      "raw_png_sha256": "432f3a2bb616e97501ac1e2a2aefbb54ab07eec952c5c9e6722b5fec05238ad5",
+      "recall": 1.0,
+      "reference_ink": 210,
+      "render_sha256": "1d94c710a03fbcf4bc4baf126e247d93e2882344761c03eab214535b86eeea43",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-last-pixel",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 210,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:17Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 210,
+      "precision": 1.0,
+      "raw_png_sha256": "432f3a2bb616e97501ac1e2a2aefbb54ab07eec952c5c9e6722b5fec05238ad5",
+      "recall": 1.0,
+      "reference_ink": 210,
+      "render_sha256": "1d94c710a03fbcf4bc4baf126e247d93e2882344761c03eab214535b86eeea43",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-last-pixel",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 210,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:17Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 210,
+      "precision": 1.0,
+      "raw_png_sha256": "4a262b39f0eee74fa19844eb7548c88429eb8ff596393a3f3aa63b40949074ed",
+      "recall": 1.0,
+      "reference_ink": 210,
+      "render_sha256": "1d94c710a03fbcf4bc4baf126e247d93e2882344761c03eab214535b86eeea43",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-last-pixel",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 210,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:18Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 210,
+      "precision": 1.0,
+      "raw_png_sha256": "151ceaff1642b7cee773a6a39006a77fdf2af878dcbe8df0854570ae73ca4176",
+      "recall": 1.0,
+      "reference_ink": 210,
+      "render_sha256": "1d94c710a03fbcf4bc4baf126e247d93e2882344761c03eab214535b86eeea43",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-partial",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 649,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 649,
+      "precision": 1.0,
+      "raw_png_sha256": "81092dac26b4a57ccc2966a888905f72c10f240426958dcf3646a65882edf257",
+      "recall": 1.0,
+      "reference_ink": 649,
+      "render_sha256": "0c6eeb207f60139f84368aceae7b6db5c2c665e2b540370db36b3def7421bfe0",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-partial",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 649,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 649,
+      "precision": 1.0,
+      "raw_png_sha256": "8b4031f8e4b8309cabf4188d999ee2591c3694f48c1c7d6c4c2fc0c363fac008",
+      "recall": 1.0,
+      "reference_ink": 649,
+      "render_sha256": "0c6eeb207f60139f84368aceae7b6db5c2c665e2b540370db36b3def7421bfe0",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-partial",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 649,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 649,
+      "precision": 1.0,
+      "raw_png_sha256": "4b66038efa2efb1aa53a2c2b5f34c93395fafe5a58f63543486a14cd6d8c2b3f",
+      "recall": 1.0,
+      "reference_ink": 649,
+      "render_sha256": "0c6eeb207f60139f84368aceae7b6db5c2c665e2b540370db36b3def7421bfe0",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-partial",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 649,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 649,
+      "precision": 1.0,
+      "raw_png_sha256": "de9d4cdc5e609d4725a0d491f160a79fa4909758c471dd8e51597f4a58f04d9a",
+      "recall": 1.0,
+      "reference_ink": 649,
+      "render_sha256": "0c6eeb207f60139f84368aceae7b6db5c2c665e2b540370db36b3def7421bfe0",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-partial",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 649,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 649,
+      "precision": 1.0,
+      "raw_png_sha256": "de9d4cdc5e609d4725a0d491f160a79fa4909758c471dd8e51597f4a58f04d9a",
+      "recall": 1.0,
+      "reference_ink": 649,
+      "render_sha256": "0c6eeb207f60139f84368aceae7b6db5c2c665e2b540370db36b3def7421bfe0",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-partial",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 649,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:21Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 649,
+      "precision": 1.0,
+      "raw_png_sha256": "991733d522666142c945924c69b56e0d0dfed35f8fa49f886fc7057c87a43043",
+      "recall": 1.0,
+      "reference_ink": 649,
+      "render_sha256": "0c6eeb207f60139f84368aceae7b6db5c2c665e2b540370db36b3def7421bfe0",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-partial",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 649,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:21Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 649,
+      "precision": 1.0,
+      "raw_png_sha256": "096835b1b433078aceef78851e99fcb22df28a5181685fa053d98c2a3f76242d",
+      "recall": 1.0,
+      "reference_ink": 649,
+      "render_sha256": "0c6eeb207f60139f84368aceae7b6db5c2c665e2b540370db36b3def7421bfe0",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-outside",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 209,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:19Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 209,
+      "precision": 1.0,
+      "raw_png_sha256": "5196bb7a1699114923fc2a33dcfa32162222d618d4c532ca7c8e5aa2874a5350",
+      "recall": 1.0,
+      "reference_ink": 209,
+      "render_sha256": "71b474dc24480fbb8b9c9044ddad20d5a01b324980d5a722f26f6da1c29b4874",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-outside",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 209,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:19Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 209,
+      "precision": 1.0,
+      "raw_png_sha256": "a0133e34fc74d2c4ea8bf3b76ef837757345a58bb65be26ae7ba62b0a292ffb9",
+      "recall": 1.0,
+      "reference_ink": 209,
+      "render_sha256": "71b474dc24480fbb8b9c9044ddad20d5a01b324980d5a722f26f6da1c29b4874",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-outside",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 209,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 209,
+      "precision": 1.0,
+      "raw_png_sha256": "b356ff9677880794dfb4dbfde8d429a29151e85cf17f9faa3df0da56d044103f",
+      "recall": 1.0,
+      "reference_ink": 209,
+      "render_sha256": "71b474dc24480fbb8b9c9044ddad20d5a01b324980d5a722f26f6da1c29b4874",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-outside",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 209,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 209,
+      "precision": 1.0,
+      "raw_png_sha256": "c557a76fe394bc34c645f9856bbd2229c89849f50a7e8ead129a88613e7278ff",
+      "recall": 1.0,
+      "reference_ink": 209,
+      "render_sha256": "71b474dc24480fbb8b9c9044ddad20d5a01b324980d5a722f26f6da1c29b4874",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-outside",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 209,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 209,
+      "precision": 1.0,
+      "raw_png_sha256": "c557a76fe394bc34c645f9856bbd2229c89849f50a7e8ead129a88613e7278ff",
+      "recall": 1.0,
+      "reference_ink": 209,
+      "render_sha256": "71b474dc24480fbb8b9c9044ddad20d5a01b324980d5a722f26f6da1c29b4874",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-outside",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 209,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:20Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 209,
+      "precision": 1.0,
+      "raw_png_sha256": "043f58b753fb8552e237ef02e044147027782ecdb8c3438ccfb16c5e4ba17532",
+      "recall": 1.0,
+      "reference_ink": 209,
+      "render_sha256": "71b474dc24480fbb8b9c9044ddad20d5a01b324980d5a722f26f6da1c29b4874",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-clip-outside",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 209,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:21Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 209,
+      "precision": 1.0,
+      "raw_png_sha256": "6ae6e58dcadc1a2737a3d9237397a0ac468618692660f195ae912c6032f5e2b5",
+      "recall": 1.0,
+      "reference_ink": 209,
+      "render_sha256": "71b474dc24480fbb8b9c9044ddad20d5a01b324980d5a722f26f6da1c29b4874",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-label-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "acae48a76b6a4173382e5a82eb395881b387d37e662b4b06f0f671c9cd180d1e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-label-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "5863531680d67daea684d706792d4561099b6da774924aef53b6cd0999975986",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-label-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "b6cea09661a1447129e29c0764293dad1ef2daa4047a7aee71e7311202d9f9cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-label-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:31Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-label-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "fe3eac5fea59a33ea42a70848f203204a48d8ee3c7f1f4a891b6aecf660c06cd",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-label-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2807,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2807,
+      "precision": 1.0,
+      "raw_png_sha256": "ccdd7090d4151fa2b4c5f9f73d631df664699952482b60f1eb583db01ea0467e",
+      "recall": 1.0,
+      "reference_ink": 2807,
+      "render_sha256": "cc889484485632ad552242a210c48a071be52d7f8ff2c9b00eb2465f64bed6e4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0001642628205128205,
+      "case": "layout-label-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 2766,
+      "ink_exact": false,
+      "iou": 0.985393658710367,
+      "library": "zplr",
+      "missing": 41,
+      "observed_utc": "2026-09-21T15:36:32Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 2766,
+      "precision": 1.0,
+      "raw_png_sha256": "6d6385509f2aa42ed8d7c6dd8c4089a1a307a9c8744861e9e1b3a284ad3c99c9",
+      "recall": 0.985393658710367,
+      "reference_ink": 2807,
+      "render_sha256": "ab4d5ea0a0a72442ff33e9d4575cfeaa866fb72dc8ca00ab153d06012785c557",
+      "returncode": 0,
+      "score": 0.985393658710367,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 17906,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 17906,
+      "precision": 1.0,
+      "raw_png_sha256": "cb16dc74e6a329915b2dfbb2b9964c4631acc35ea0209581251b0fac3dd7e0ab",
+      "recall": 1.0,
+      "reference_ink": 17906,
+      "render_sha256": "5f830dd8156856b60e0b4751875cff23a9190333d7ae0eeb081bf84b5b7d82f9",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 17906,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 17906,
+      "precision": 1.0,
+      "raw_png_sha256": "c773718e54d5b64f404135c0a60713dd033bcd0bf9d06c1e78b4e242d19054fa",
+      "recall": 1.0,
+      "reference_ink": 17906,
+      "render_sha256": "5f830dd8156856b60e0b4751875cff23a9190333d7ae0eeb081bf84b5b7d82f9",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 17906,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 17906,
+      "precision": 1.0,
+      "raw_png_sha256": "bada3c857d8dc5753cc9634e33bbbfca9447876f10390a66239e5e80138f371d",
+      "recall": 1.0,
+      "reference_ink": 17906,
+      "render_sha256": "5f830dd8156856b60e0b4751875cff23a9190333d7ae0eeb081bf84b5b7d82f9",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 17906,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 17906,
+      "precision": 1.0,
+      "raw_png_sha256": "059ae7a5f8c3cb4d662ef6cd6dd41794d2ed57c44221ae2698016864d36bd5b8",
+      "recall": 1.0,
+      "reference_ink": 17906,
+      "render_sha256": "5f830dd8156856b60e0b4751875cff23a9190333d7ae0eeb081bf84b5b7d82f9",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 17906,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:28Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 17906,
+      "precision": 1.0,
+      "raw_png_sha256": "059ae7a5f8c3cb4d662ef6cd6dd41794d2ed57c44221ae2698016864d36bd5b8",
+      "recall": 1.0,
+      "reference_ink": 17906,
+      "render_sha256": "5f830dd8156856b60e0b4751875cff23a9190333d7ae0eeb081bf84b5b7d82f9",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 17906,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:28Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 17906,
+      "precision": 1.0,
+      "raw_png_sha256": "8f07803e0c59d69fa8971c4886815f88ea37d0732fa5060b46b9f8c5f5c61410",
+      "recall": 1.0,
+      "reference_ink": 17906,
+      "render_sha256": "5f830dd8156856b60e0b4751875cff23a9190333d7ae0eeb081bf84b5b7d82f9",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0002844551282051282,
+      "case": "layout-field-reverse",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 71,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 17977,
+      "ink_exact": false,
+      "iou": 0.9960505089837014,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:29Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 17977,
+      "precision": 0.9960505089837014,
+      "raw_png_sha256": "ef8cccb8b9b42d0c98a24e56e9dbb5c5bccc9f056684d8c9251e27a5134360c7",
+      "recall": 1.0,
+      "reference_ink": 17906,
+      "render_sha256": "b51cd6af8c4d4f4c9700a93c5c9fe87e553b7142b73b766be13d246ab173aad5",
+      "returncode": 0,
+      "score": 0.9960505089837014,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "973343fd430b8bf4d13832466332220b6312162fefb20d7e82e52a5bda6cd437",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "03f1a1ba9094bdf515600e96964bfd8a4431c138152213017f380e9d769f4219",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "forge",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "96baf341b6c6dbb2d5fc1c276d70a4c67fb304f0cef444dff4172b6daa11f818",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "go",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "ffi",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:25Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:25Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "dc440315a8e9c688d42c7da1634cad2bb1b6e4a4d543832158779ceeb0811e11",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-N",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:25Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "060b0304d096d5201bd65b05e28b7c67765390b1d88e5a35df8d7320d6dc0242",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-R",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "b2bc2b7a2a4282b938fd9742fe57be36d5414666d115db2eb65cddbdc03e06e7",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "8b4176b9f3f589274ab52d074502002fd0cd68e77d9f0679a6257a907addcef4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-R",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "fcb5b903911f55102a3cd7712f44fe1804c61163e4758b870079b744f546b7d8",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "8b4176b9f3f589274ab52d074502002fd0cd68e77d9f0679a6257a907addcef4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.010128205128205128,
+      "case": "layout-field-orientation-R",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1264,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.09195402298850575,
+      "library": "forge",
+      "missing": 1264,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.16842105263157894,
+      "raw_png_sha256": "96baf341b6c6dbb2d5fc1c276d70a4c67fb304f0cef444dff4172b6daa11f818",
+      "recall": 0.16842105263157894,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.09195402298850575,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.010128205128205128,
+      "case": "layout-field-orientation-R",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1264,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.09195402298850575,
+      "library": "go",
+      "missing": 1264,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.16842105263157894,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 0.16842105263157894,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.09195402298850575,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.010128205128205128,
+      "case": "layout-field-orientation-R",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1264,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.09195402298850575,
+      "library": "ffi",
+      "missing": 1264,
+      "observed_utc": "2026-09-21T15:36:27Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.16842105263157894,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 0.16842105263157894,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.09195402298850575,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-R",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "binarykits",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:28Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "b377edc7f7dc0c47c74dd5e141ee8fd51e1f951413eca2e09e4140f61ea6bd86",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "8b4176b9f3f589274ab52d074502002fd0cd68e77d9f0679a6257a907addcef4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-R",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:29Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "02f5f3a3cd6ddd65ff933fab2475e79bec401836561d60537845c809990c4eb3",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "8b4176b9f3f589274ab52d074502002fd0cd68e77d9f0679a6257a907addcef4",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:23Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "570fee545097639cfd1f953a3f41425254bdc588eb46a464b3336e3f335c961d",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "e48e71478fc06138b760a3af7ea066c0f5a0c3b9c8d5538996dc78f7560491e1",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:23Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "620444fd0cf5e26a14f299f494184fbd5c96642490095d028eb2f1b00c5b176c",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "e48e71478fc06138b760a3af7ea066c0f5a0c3b9c8d5538996dc78f7560491e1",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.004487179487179487,
+      "case": "layout-field-orientation-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 560,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.46153846153846156,
+      "library": "forge",
+      "missing": 560,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.631578947368421,
+      "raw_png_sha256": "96baf341b6c6dbb2d5fc1c276d70a4c67fb304f0cef444dff4172b6daa11f818",
+      "recall": 0.631578947368421,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.46153846153846156,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.004487179487179487,
+      "case": "layout-field-orientation-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 560,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.46153846153846156,
+      "library": "go",
+      "missing": 560,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.631578947368421,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 0.631578947368421,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.46153846153846156,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.004487179487179487,
+      "case": "layout-field-orientation-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 560,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.46153846153846156,
+      "library": "ffi",
+      "missing": 560,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.631578947368421,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 0.631578947368421,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.46153846153846156,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.007051282051282051,
+      "case": "layout-field-orientation-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 880,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.26666666666666666,
+      "library": "binarykits",
+      "missing": 880,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.42105263157894735,
+      "raw_png_sha256": "162a768d0ebe62cc66e5d016c7bfa7cea8afb57758360824a06695a31243da9d",
+      "recall": 0.42105263157894735,
+      "reference_ink": 1520,
+      "render_sha256": "94290a68a8bf5b6d1e559a4c32b9893e2d07382aa9b303a8739d586a13f050f6",
+      "returncode": 0,
+      "score": 0.26666666666666666,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-I",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:25Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "735cce6acaa7897c69ff0aaf922aa5768b136a33c3c5e46150c5db794bec1aa3",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "e48e71478fc06138b760a3af7ea066c0f5a0c3b9c8d5538996dc78f7560491e1",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-B",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "codyps-zpl",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:23Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "ec7cd175cd200415b9a0f34b27258c6ea391874f1880a31b08aeb6bfb3b9d50f",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "17280839111a565d1a5e2cbbe6904205b72d8c5c6488a2556fbef002aa6e6433",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-B",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "labelize",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:23Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "b18932710cbde27d61c8a8b46277c989f049bc4b3a3c63f64655fe54a244984f",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "17280839111a565d1a5e2cbbe6904205b72d8c5c6488a2556fbef002aa6e6433",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.00935897435897436,
+      "case": "layout-field-orientation-B",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1168,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.13095238095238096,
+      "library": "forge",
+      "missing": 1168,
+      "observed_utc": "2026-09-21T15:36:23Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.23157894736842105,
+      "raw_png_sha256": "96baf341b6c6dbb2d5fc1c276d70a4c67fb304f0cef444dff4172b6daa11f818",
+      "recall": 0.23157894736842105,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.13095238095238096,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.00935897435897436,
+      "case": "layout-field-orientation-B",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1168,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.13095238095238096,
+      "library": "go",
+      "missing": 1168,
+      "observed_utc": "2026-09-21T15:36:23Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.23157894736842105,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 0.23157894736842105,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.13095238095238096,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.00935897435897436,
+      "case": "layout-field-orientation-B",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 1168,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.13095238095238096,
+      "library": "ffi",
+      "missing": 1168,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.23157894736842105,
+      "raw_png_sha256": "616856f9a86115b3d68dabbd61038a7fca3a4ec355acaf68843b0f3180cba5f6",
+      "recall": 0.23157894736842105,
+      "reference_ink": 1520,
+      "render_sha256": "f1c17d27aaf6c925b4f4cc7e6747b640d20c37a1cb70814c44534b1da858d3f5",
+      "returncode": 0,
+      "score": 0.13095238095238096,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.007051282051282051,
+      "case": "layout-field-orientation-B",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 880,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": false,
+      "iou": 0.26666666666666666,
+      "library": "binarykits",
+      "missing": 880,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 0.42105263157894735,
+      "raw_png_sha256": "bcb8593f6b3ba50511d06e926ad44a7ea7b9f0fcdaa7aca21e73648166cb767d",
+      "recall": 0.42105263157894735,
+      "reference_ink": 1520,
+      "render_sha256": "42d723e77fe3602b1cef357757405350351eabe58caefff2cfbdf7890d31b9cd",
+      "returncode": 0,
+      "score": 0.26666666666666666,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.0,
+      "case": "layout-field-orientation-B",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
+      "group": "font-free-layout",
+      "height": 300,
+      "ink": 1520,
+      "ink_exact": true,
+      "iou": 1.0,
+      "library": "zplr",
+      "missing": 0,
+      "observed_utc": "2026-09-21T15:36:24Z",
+      "output_dimensions": [
+        832,
+        300
+      ],
+      "output_ink": 1520,
+      "precision": 1.0,
+      "raw_png_sha256": "954d3966629dd7b31b5b04f97fc3c43681923bf2adfee34b3240843a0f74af3d",
+      "recall": 1.0,
+      "reference_ink": 1520,
+      "render_sha256": "17280839111a565d1a5e2cbbe6904205b72d8c5c6488a2556fbef002aa6e6433",
+      "returncode": 0,
+      "score": 1.0,
+      "status": "rendered",
+      "validity": "valid",
+      "width": 832
+    }
+  ],
+  "measured_utc": "2026-09-21T15:36:38Z",
+  "generation": "Bazel: independently cached local renders; saved printer and Labelary captures",
+  "host": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "relations": [
+    {
+      "library": "codyps-zpl",
+      "set": "font-free-home",
+      "cases": [
+        "layout-home",
+        "layout-home-direct"
+      ],
+      "status": "equal"
+    },
+    {
+      "library": "labelize",
+      "set": "font-free-home",
+      "cases": [
+        "layout-home",
+        "layout-home-direct"
+      ],
+      "status": "equal"
+    },
+    {
+      "library": "forge",
+      "set": "font-free-home",
+      "cases": [
+        "layout-home",
+        "layout-home-direct"
+      ],
+      "status": "different"
+    },
+    {
+      "library": "go",
+      "set": "font-free-home",
+      "cases": [
+        "layout-home",
+        "layout-home-direct"
+      ],
+      "status": "equal"
+    },
+    {
+      "library": "ffi",
+      "set": "font-free-home",
+      "cases": [
+        "layout-home",
+        "layout-home-direct"
+      ],
+      "status": "different"
+    },
+    {
+      "library": "binarykits",
+      "set": "font-free-home",
+      "cases": [
+        "layout-home",
+        "layout-home-direct"
+      ],
+      "status": "equal"
+    },
+    {
+      "library": "zplr",
+      "set": "font-free-home",
+      "cases": [
+        "layout-home",
+        "layout-home-direct"
+      ],
+      "status": "equal"
+    }
+  ]
+}

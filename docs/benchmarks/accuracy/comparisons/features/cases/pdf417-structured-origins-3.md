@@ -40,7 +40,7 @@ error · unscored · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (13745) panicked at src/main.rs:63:14:
+thread 'main' (10856) panicked at src/main.rs:63:14:
 PNG: "PDF417 encoding failed: WriterException - Unable to fit message in columns"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · unscored · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (13756) panicked at src/main.rs:79:32:
+thread 'main' (10855) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: WriterException - Unable to fit message in columns")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

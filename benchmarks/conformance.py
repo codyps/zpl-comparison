@@ -302,6 +302,8 @@ def report(data, dest, corpus=SUITE):
         if corpus.resolve() == SUITE.resolve()
         else "[External printer/render/difference gallery](../accuracy/comparisons/external/README.md)\n"
         if corpus.name == "external-zpl"
+        else "[Font-free layout printer/render/difference gallery](../accuracy/comparisons/layout/README.md)\n"
+        if corpus.name == "layout-accuracy"
         else "",
         f"Suite: `{manifest['suite']}`. {len(cases)} cases; {len(libraries)} adapters.\n",
         "This reports execution and equal-image relationships, not printer accuracy unless hash-matched printer references were supplied. A rendered image can still be wrong. Font coverage is device-dependent. Invalid inputs are kept separate.\n",
@@ -379,8 +381,8 @@ def report(data, dest, corpus=SUITE):
                     status += f" ({r['score'] * 100:.1f}% IoU)"
                 values.append(status)
             case_label = (
-                f"[{case['name']}](../accuracy/comparisons/{'features' if corpus.resolve() == SUITE.resolve() else 'external'}/cases/{case['name']}.md)"
-                if corpus.resolve() == SUITE.resolve() or corpus.name == "external-zpl"
+                f"[{case['name']}](../accuracy/comparisons/{'features' if corpus.resolve() == SUITE.resolve() else 'layout' if corpus.name == 'layout-accuracy' else 'external'}/cases/{case['name']}.md)"
+                if corpus.resolve() == SUITE.resolve() or corpus.name in {"external-zpl", "layout-accuracy"}
                 else case["name"]
             )
             tab.append([case_label, *values])

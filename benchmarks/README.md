@@ -101,6 +101,14 @@ Bazel caches each library deployment (including the Go shared library used by
 FFI), each case/library render, each printer comparison and difference PNG, each
 metamorphic relation, each case viewport, each thumbnail, and each gallery page
 independently. Summary plots, report families, and final tree assembly are separate actions.
+The accuracy overview includes all four corpora and every category, with per-case
+IoU/status tables, scored denominators, difference-image counts, and separate
+metamorphic equality results. All tested cases have full pages under
+`docs/benchmarks/accuracy/comparisons/cases/`; additional corpora use
+`conformance-`, `external-zpl-`, or `layout-accuracy-` filename prefixes to avoid
+collisions. Existing nested gallery URLs remain available. Assembly validates
+that every comparison has a linked case page, renderer section, and all expected
+render/difference images before CI can publish the tree.
 Image actions use Bazel Python workers to reuse interpreter startup while retaining
 separate cache keys. An
 unchanged build executes none of these actions. A printer-reference change does
@@ -120,6 +128,13 @@ is current before updating `generated`.
 `//:render_libraries` builds the adapters before image generation and checkpoints
 their cache separately. Both completed and partially completed report actions
 are saved on build failure, with step timeouts leaving room for that save.
+
+The same `//:reports` CI build includes the [font-free layout suite](../test-data/layout-accuracy/README.md):
+20 cases across seven local renderers, with saved ZD621 references, difference
+images and a separate gallery/summary. CI verifies all 140 render/comparison
+pairs and their printer-reference dependencies. Build only its images and gallery
+with `--output_groups=suite_layout-accuracy`; fork CI reproduces its saved evidence
+through `//:reports_saved`. Labelary is excluded until its captures are collected.
 The `build-performance` Actions artifact contains separate library/report Bazel
 profiles and build-event logs for checking cache reuse and execution costs.
 Generated renders use one lossless grayscale encode; difference PNGs use the
@@ -156,10 +171,28 @@ images/pages, use an output group, for example:
 bazelisk build //:reports --output_groups=case_accuracy_argument-font0-height-16
 ```
 
-`bazelisk build //:reports_saved` reproduces the previous saved-evidence pipeline
-without native compilation, writing `bazel-bin/reports_saved`. That historical
-snapshot target remains a single action. Fork pull requests use it because they
+`bazelisk build //:reports_saved` uses the same granular action graph without
+native compilation, writing `bazel-bin/reports_saved`. Each saved case/library
+observation is imported separately; comparisons, previews, pages, plots, and
+report families are independently cached. Original saved PNG bytes, measurement
+timestamps, host metadata, and adapter identities are retained. Missing successful
+render evidence fails the build. Fork pull requests use this target because they
 cannot access the private source token; trusted CI builds use `//:reports`.
+
+Both targets accept the same case and suite output groups. For example:
+
+```sh
+bazelisk build //:reports_saved --output_groups=case_layout-accuracy_layout-control
+```
+
+The broad `report_sources` filegroup makes sources available during analysis; it
+is not an input to every action. Only final tree assembly reads all published
+artifacts. Editing one saved PNG invalidates its import and comparison, the
+case viewport and affected previews, and downstream summaries and assembly;
+unrelated case image actions remain cached. Editing one result row changes only
+that observation's generated action specification, rather than making every
+image action depend on the complete results JSON. Bazel drives the stages directly;
+`benchmarks/regenerate.py` remains the manual checkout regeneration command.
 
 Fixture manifests and case bytes define the action graph. After editing a fixture
 generator, run it and include its updated manifest/cases. The build verifies that

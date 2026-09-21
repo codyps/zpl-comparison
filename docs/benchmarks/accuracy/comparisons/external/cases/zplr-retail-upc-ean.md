@@ -28,7 +28,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (8789) panicked at src/main.rs:27:10:
+thread 'main' (6898) panicked at src/main.rs:27:10:
 render: RenderError { offset: 110, message: "unsupported legacy text byte; select ^CI28 for UTF-8" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

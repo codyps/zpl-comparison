@@ -26,7 +26,7 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 [Labelary (SaaS)](libraries/labelary.md) · 76.06% mean IoU
 
-[Feature fixtures](features/README.md) · [External examples](external/README.md)
+[Feature fixtures](features/README.md) · [External examples](external/README.md) · [Font-free layout](layout/README.md)
 
 | Case | Group | Result |
 |---|---|---|

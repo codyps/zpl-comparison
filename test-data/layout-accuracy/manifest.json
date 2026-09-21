@@ -1,0 +1,1838 @@
+{
+  "schema": 1,
+  "suite": "font-free-layout-v1",
+  "reference": "Zebra Programming Guide P1134473-11EN Rev A",
+  "cases": [
+    {
+      "name": "layout-control",
+      "group": "font-free-layout",
+      "purpose": "Asymmetric rectangular landmarks at fixed origins",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-control.zpl",
+      "sha256": "e24f93cf727d4c4aff620f67f0f42a243639534b56336e9b2c47b881af1ebc99",
+      "bytes": 116,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-home",
+      "group": "font-free-layout",
+      "purpose": "Label home translates all graphic fields",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": {
+        "kind": "same-raster",
+        "set": "font-free-home"
+      },
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-home.zpl",
+      "sha256": "b8eabadd6c44f13eb20d505ccc3e8f00a376124e58d948caee5d5917ec6ae36c",
+      "bytes": 124,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-home-direct",
+      "group": "font-free-layout",
+      "purpose": "Direct origins equivalent to LH30,20",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": {
+        "kind": "same-raster",
+        "set": "font-free-home"
+      },
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-home-direct.zpl",
+      "sha256": "2d08f0ccbbdd37051f07d11335d20c6ca5c5c979bed39a563186f064695a9d3a",
+      "bytes": 117,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-LS--80",
+      "group": "font-free-layout",
+      "purpose": "LS=-80: signed page offset and edge clipping",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-LS--80.zpl",
+      "sha256": "d762b1b856e7542a7774b00070b0a3fee57d716e25271ad56756f90b0f51dac8",
+      "bytes": 122,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-LS-80",
+      "group": "font-free-layout",
+      "purpose": "LS=80: signed page offset and edge clipping",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-LS-80.zpl",
+      "sha256": "3089d08b446c5b97920bc377b172492b87abb01ddb61c9e4ccd3d425204c719a",
+      "bytes": 121,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-LT--50",
+      "group": "font-free-layout",
+      "purpose": "LT=-50: signed page offset and edge clipping",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-LT--50.zpl",
+      "sha256": "afd24fa8056e8477259acb3ab85cca93589a42180fb6a9de35f4a2e0e2d3e612",
+      "bytes": 122,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-LT-50",
+      "group": "font-free-layout",
+      "purpose": "LT=50: signed page offset and edge clipping",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-LT-50.zpl",
+      "sha256": "878eac3ccc576051998f53b66063e8a75ca800f5d6b65ebf87d2fba4a299a4ac",
+      "bytes": 121,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-offset-combined",
+      "group": "font-free-layout",
+      "purpose": "Combined home, horizontal shift and label top",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-offset-combined.zpl",
+      "sha256": "a3278b6cbad7ee379cb7a248040d7ab1ec01ea0ac28e2baa9c279724bee86948",
+      "bytes": 134,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-transform-Y-N",
+      "group": "font-free-layout",
+      "purpose": "Mirror=Y, orientation=N: asymmetric graphic landmarks",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-transform-Y-N.zpl",
+      "sha256": "6148ad65da6a7fc369460d8fc24c1c6bd32d8c34ae4eed9c1d504017ef7b8eac",
+      "bytes": 124,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-transform-N-I",
+      "group": "font-free-layout",
+      "purpose": "Mirror=N, orientation=I: asymmetric graphic landmarks",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-transform-N-I.zpl",
+      "sha256": "e48404eef2ccc72f73ff7edc6a06529342b9b83718a4467370a538d67978110e",
+      "bytes": 124,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-transform-Y-I",
+      "group": "font-free-layout",
+      "purpose": "Mirror=Y, orientation=I: asymmetric graphic landmarks",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-transform-Y-I.zpl",
+      "sha256": "9a53f2137c811f6deb2aa443bb989bdc75f5b06967308a93ab57cf5e719a3eeb",
+      "bytes": 124,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-clip-last-pixel",
+      "group": "font-free-layout",
+      "purpose": "Edge clipping with a visible in-bounds control; no wraparound",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-clip-last-pixel.zpl",
+      "sha256": "e4b916e661f47e619bca4916c68333067114faac6d63ee1449df33cb7a75ecd7",
+      "bytes": 95,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-clip-partial",
+      "group": "font-free-layout",
+      "purpose": "Edge clipping with a visible in-bounds control; no wraparound",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-clip-partial.zpl",
+      "sha256": "7d76ada68f48a1afffb3f9fce04c18478ca2b498b82398c4cd844910525aba7c",
+      "bytes": 95,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-clip-outside",
+      "group": "font-free-layout",
+      "purpose": "Edge clipping with a visible in-bounds control; no wraparound",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-clip-outside.zpl",
+      "sha256": "a09680b2c886b570e3b1a8b711e8b1f96af0c6aab543822ba953587353e78926",
+      "bytes": 95,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-label-reverse",
+      "group": "font-free-layout",
+      "purpose": "Label reversal on rectangular landmarks",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-label-reverse.zpl",
+      "sha256": "1016e44928725aceef9bab2766e19fe120f4dfa1cb897e15927902ec06d915f1",
+      "bytes": 120,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-field-reverse",
+      "group": "font-free-layout",
+      "purpose": "Field reversal inside a solid box; following field remains ordinary",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^FO",
+        "^FR",
+        "^FS",
+        "^FW",
+        "^GB",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-field-reverse.zpl",
+      "sha256": "b4442b02a42135ae4d0abb2f0e7c561170ee34f963fabbd573c5e3a6bd12be0e",
+      "bytes": 122,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FR",
+          "pdf_page": 203
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^GB",
+          "pdf_page": 210
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-field-orientation-N",
+      "group": "font-free-layout",
+      "purpose": "FW=N: Code128 with omitted orientation and both caption flags disabled",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-field-orientation-N.zpl",
+      "sha256": "4aedb388db57f248b54310c47b7583f092c12d8df6750fe19c398e45932895cf",
+      "bytes": 96,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-field-orientation-R",
+      "group": "font-free-layout",
+      "purpose": "FW=R: Code128 with omitted orientation and both caption flags disabled",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-field-orientation-R.zpl",
+      "sha256": "dc6b8ed1d92a50197b7da5cc2b2cd466bc9637d783e585ac8a1ccc68746da9fe",
+      "bytes": 96,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-field-orientation-I",
+      "group": "font-free-layout",
+      "purpose": "FW=I: Code128 with omitted orientation and both caption flags disabled",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-field-orientation-I.zpl",
+      "sha256": "a841aa1687d23e31132b8ee74c0698863f804a53411962cccd5674d78c1dcb0c",
+      "bytes": 96,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "layout-field-orientation-B",
+      "group": "font-free-layout",
+      "purpose": "FW=B: Code128 with omitted orientation and both caption flags disabled",
+      "validity": "valid",
+      "oracle": "printer",
+      "relation": null,
+      "source": null,
+      "commands": [
+        "^BC",
+        "^BY",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PM",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 300,
+      "file": "cases/font-free-layout/layout-field-orientation-B.zpl",
+      "sha256": "7eca38b85080b5a783f8c2efed03056b40d48875e4a03c38630f4e06aae4f1a8",
+      "bytes": 96,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^BC",
+          "pdf_page": 94
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PM",
+          "pdf_page": 319
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from conformance import load_cases, reference_images
 from accuracy.run import LIBRARIES, compare, gray, sha
 from accuracy.presentation import LEGEND, viewport, preview
+from accuracy.overview import case_page, rebase_links
 from report import NAMES, table
 
 REPO = Path(__file__).resolve().parents[2]
@@ -197,6 +198,9 @@ def generate(check=False):
                 )
             results.append(record)
         pages[page] = "\n\n".join(content) + "\n"
+        suite = {"external-zpl": "external-zpl", "layout-accuracy": "layout-accuracy"}.get(CORPUS.name, "conformance")
+        canonical = REPO / case_page(suite, name)
+        pages[canonical] = rebase_links(pages[page], page, canonical)
         if number % 50 == 0:
             print(
                 f"Verified artifacts for {number}/{len(cases)} feature fixtures",
@@ -260,11 +264,15 @@ def generate(check=False):
         + (
             "External example accuracy comparisons"
             if CORPUS.name == "external-zpl"
+            else "Font-free layout accuracy comparisons"
+            if CORPUS.name == "layout-accuracy"
             else "Feature accuracy comparisons"
         ),
         "[All accuracy comparisons](../README.md) · [Compatibility features](../../../../compatibility/features/README.md)",
         f"{len(cases)} fixtures × {len(LIBRARIES)} renderers. Execution: {data['measured_utc']}. Printer: {reference.get('device', 'not captured')}, firmware {reference.get('firmware', 'N/A')}, captured {reference.get('captured_utc', 'N/A')} through {capture_end}.",
-        f"{len(refs)} hash-matched printer previews; {len(failures)} unavailable previews. Invalid inputs run offline only. Labelary (SaaS) is a renderer, scored against the printer like every other library.",
+        f"{len(refs)} hash-matched printer previews; {len(failures)} unavailable previews. Invalid inputs run offline only. "
+        + ("Labelary (SaaS) is a renderer, scored against the printer like every other library."
+           if "labelary" in LIBRARIES else "Seven local renderers; Labelary captures are not available for this corpus."),
         f"Image coverage: {sum('image' in r for r in results)} successful renders; {sum('diff' in r for r in results)} printer differences. {sum(not c['capture_eligible'] for c in cases)} fixtures are excluded from printer submission. Every successful render with a captured reference has a difference; errors have diagnostics instead of fabricated images.",
         legend,
         "This feature corpus shares the accuracy pipeline and gallery. Its aggregate is separate from the argument/barcode chart because the corpora have different sampling and overlapping command coverage.",
@@ -334,11 +342,17 @@ def generate(check=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
-    parser.add_argument("--suite", choices=["features", "external"], default="features")
+    parser.add_argument("--suite", choices=["features", "external", "layout"], default="features")
     args = parser.parse_args()
     if args.suite == "external":
         CORPUS = REPO / "test-data/external-zpl"
         RENDERS = REPO / "docs/benchmarks/external-zpl"
         REFERENCES = REPO / "benchmarks/accuracy/external-reference"
         DEST = REPO / "docs/benchmarks/accuracy/comparisons/external"
+    elif args.suite == "layout":
+        CORPUS = REPO / "test-data/layout-accuracy"
+        RENDERS = REPO / "docs/benchmarks/layout-accuracy"
+        REFERENCES = REPO / "benchmarks/accuracy/layout-reference"
+        DEST = REPO / "docs/benchmarks/accuracy/comparisons/layout"
+        LIBRARIES = [lib for lib in LIBRARIES if lib != "labelary"]
     generate(args.check)

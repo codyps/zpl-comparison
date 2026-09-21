@@ -32,7 +32,7 @@ error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (26099) panicked at src/main.rs:27:10:
+thread 'main' (22288) panicked at src/main.rs:27:10:
 render: RenderError { offset: 81, message: "^BR UPC-E requires 11 uncompressed UPC-A digits" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

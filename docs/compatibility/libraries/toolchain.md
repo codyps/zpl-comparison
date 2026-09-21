@@ -17,7 +17,7 @@ Table-driven command definitions contain argument positions, defaults, ranges an
 
 This library does not render incoming ZPL.
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-20T23:07:40Z.
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-21T15:39:32Z.
 
 ## Feature groups
 

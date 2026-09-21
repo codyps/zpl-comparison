@@ -12,9 +12,16 @@ REPO = Path(__file__).resolve().parents[1]
 # Order matters: corpus manifests precede reports; feature scores precede compatibility.
 FIXTURES = [
     ["test-data/render-conformance/generate.py"],
+    ["test-data/layout-accuracy/generate.py"],
     ["test-data/invalid-zpl/generate.py"],
 ]
 REPORTS = [
+    [
+        "benchmarks/conformance.py",
+        "--corpus", "test-data/layout-accuracy",
+        "--reports-only",
+        "--output", "docs/benchmarks/layout-accuracy",
+    ],
     ["benchmarks/catalog.py"],
     ["benchmarks/support.py", "--reports-only"],
     ["benchmarks/report.py", "docs/benchmarks"],
@@ -38,10 +45,23 @@ REPORTS = [
     ["benchmarks/accuracy/report.py", "docs/benchmarks/accuracy"],
     ["benchmarks/accuracy/features.py"],
     ["benchmarks/accuracy/features.py", "--suite", "external"],
+    ["benchmarks/accuracy/features.py", "--suite", "layout"],
+    ["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy"],
+    ["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy", "--check"],
     ["benchmarks/compatibility.py"],
     ["benchmarks/compatibility.py", "--check"],
 ]
 MEASUREMENTS = [
+    (
+        [
+            "benchmarks/conformance.py",
+            "--corpus", "test-data/layout-accuracy",
+            "--only", "codyps-zpl,labelize,forge,go,ffi,binarykits,zplr",
+            "--reference", "benchmarks/accuracy/layout-reference",
+            "--output", "docs/benchmarks/layout-accuracy",
+        ],
+        "docs/benchmarks/layout-accuracy/results.json",
+    ),
     (["benchmarks/support.py"], "docs/benchmarks/command-support.json"),
     (["benchmarks/run.py"], "docs/benchmarks/results.json"),
     (

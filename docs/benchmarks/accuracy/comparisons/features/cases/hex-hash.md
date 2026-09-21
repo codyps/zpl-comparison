@@ -28,7 +28,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (23534) panicked at src/main.rs:27:10:
+thread 'main' (21416) panicked at src/main.rs:27:10:
 render: RenderError { offset: 78, message: "unsupported embedded font glyph '\\0'" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

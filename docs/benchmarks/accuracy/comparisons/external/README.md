@@ -26,15 +26,15 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 [Labelary (SaaS)](libraries/labelary.md) · 41.06% mean IoU
 
-[Feature fixtures](../features/README.md) · [External examples](README.md)
+[Feature fixtures](../features/README.md) · [External examples](README.md) · [Font-free layout](../layout/README.md)
 
 | Case | Group | Result |
 |---|---|---|
-| [zpl-toolchain-shipping_label](cases/zpl-toolchain-shipping_label.md) | shipping | See all renderers |
-| [zpl-toolchain-product_label](cases/zpl-toolchain-product_label.md) | product | See all renderers |
-| [zpl-toolchain-warehouse_label](cases/zpl-toolchain-warehouse_label.md) | warehouse | See all renderers |
-| [zpl-toolchain-compliance_label](cases/zpl-toolchain-compliance_label.md) | compliance | See all renderers |
-| [zpl-toolchain-usps_surepost_sample](cases/zpl-toolchain-usps_surepost_sample.md) | printer-configuration | See all renderers |
-| [zplr-asset-matrix-pdf417](cases/zplr-asset-matrix-pdf417.md) | asset | See all renderers |
-| [zplr-retail-upc-ean](cases/zplr-retail-upc-ean.md) | retail | See all renderers |
-| [zplr-stored-resources](cases/zplr-stored-resources.md) | stateful | See all renderers |
+| [zpl-toolchain-shipping_label](../cases/external-zpl-zpl-toolchain-shipping_label.md) | shipping | See all renderers |
+| [zpl-toolchain-product_label](../cases/external-zpl-zpl-toolchain-product_label.md) | product | See all renderers |
+| [zpl-toolchain-warehouse_label](../cases/external-zpl-zpl-toolchain-warehouse_label.md) | warehouse | See all renderers |
+| [zpl-toolchain-compliance_label](../cases/external-zpl-zpl-toolchain-compliance_label.md) | compliance | See all renderers |
+| [zpl-toolchain-usps_surepost_sample](../cases/external-zpl-zpl-toolchain-usps_surepost_sample.md) | printer-configuration | See all renderers |
+| [zplr-asset-matrix-pdf417](../cases/external-zpl-zplr-asset-matrix-pdf417.md) | asset | See all renderers |
+| [zplr-retail-upc-ean](../cases/external-zpl-zplr-retail-upc-ean.md) | retail | See all renderers |
+| [zplr-stored-resources](../cases/external-zpl-zplr-stored-resources.md) | stateful | See all renderers |

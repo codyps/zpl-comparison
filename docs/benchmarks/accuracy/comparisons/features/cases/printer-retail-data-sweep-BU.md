@@ -42,7 +42,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (26955) panicked at src/main.rs:63:14:
+thread 'main' (23690) panicked at src/main.rs:63:14:
 PNG: "UPC-A: expected 11 or 12 digits, got 1"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -60,7 +60,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (26968) panicked at src/main.rs:79:32:
+thread 'main' (23692) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 2")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

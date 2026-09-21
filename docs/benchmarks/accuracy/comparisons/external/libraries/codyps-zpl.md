@@ -10,11 +10,11 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 | Case | Group | Result | Difference |
 |---|---|---|---|
-| [zpl-toolchain-shipping_label](../cases/zpl-toolchain-shipping_label.md) | shipping | rendered · 31.70% IoU | [![Difference](../previews/zpl-toolchain-shipping_label-codyps-zpl-diff.png)](../images/zpl-toolchain-shipping_label-codyps-zpl-diff.png) |
-| [zpl-toolchain-product_label](../cases/zpl-toolchain-product_label.md) | product | rendered · 29.34% IoU | [![Difference](../previews/zpl-toolchain-product_label-codyps-zpl-diff.png)](../images/zpl-toolchain-product_label-codyps-zpl-diff.png) |
-| [zpl-toolchain-warehouse_label](../cases/zpl-toolchain-warehouse_label.md) | warehouse | rendered · 45.07% IoU | [![Difference](../previews/zpl-toolchain-warehouse_label-codyps-zpl-diff.png)](../images/zpl-toolchain-warehouse_label-codyps-zpl-diff.png) |
-| [zpl-toolchain-compliance_label](../cases/zpl-toolchain-compliance_label.md) | compliance | rendered · 34.24% IoU | [![Difference](../previews/zpl-toolchain-compliance_label-codyps-zpl-diff.png)](../images/zpl-toolchain-compliance_label-codyps-zpl-diff.png) |
-| [zpl-toolchain-usps_surepost_sample](../cases/zpl-toolchain-usps_surepost_sample.md) | printer-configuration | error · unscored | Unavailable |
-| [zplr-asset-matrix-pdf417](../cases/zplr-asset-matrix-pdf417.md) | asset | rendered · 82.12% IoU | [![Difference](../previews/zplr-asset-matrix-pdf417-codyps-zpl-diff.png)](../images/zplr-asset-matrix-pdf417-codyps-zpl-diff.png) |
-| [zplr-retail-upc-ean](../cases/zplr-retail-upc-ean.md) | retail | error · 0.00% IoU | Unavailable |
-| [zplr-stored-resources](../cases/zplr-stored-resources.md) | stateful | error · unscored | Unavailable |
+| [zpl-toolchain-shipping_label](../../cases/external-zpl-zpl-toolchain-shipping_label.md) | shipping | rendered · 31.70% IoU | [![Difference](../previews/zpl-toolchain-shipping_label-codyps-zpl-diff.png)](../images/zpl-toolchain-shipping_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-product_label](../../cases/external-zpl-zpl-toolchain-product_label.md) | product | rendered · 29.34% IoU | [![Difference](../previews/zpl-toolchain-product_label-codyps-zpl-diff.png)](../images/zpl-toolchain-product_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-warehouse_label](../../cases/external-zpl-zpl-toolchain-warehouse_label.md) | warehouse | rendered · 45.07% IoU | [![Difference](../previews/zpl-toolchain-warehouse_label-codyps-zpl-diff.png)](../images/zpl-toolchain-warehouse_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-compliance_label](../../cases/external-zpl-zpl-toolchain-compliance_label.md) | compliance | rendered · 34.24% IoU | [![Difference](../previews/zpl-toolchain-compliance_label-codyps-zpl-diff.png)](../images/zpl-toolchain-compliance_label-codyps-zpl-diff.png) |
+| [zpl-toolchain-usps_surepost_sample](../../cases/external-zpl-zpl-toolchain-usps_surepost_sample.md) | printer-configuration | error · unscored | Unavailable |
+| [zplr-asset-matrix-pdf417](../../cases/external-zpl-zplr-asset-matrix-pdf417.md) | asset | rendered · 82.12% IoU | [![Difference](../previews/zplr-asset-matrix-pdf417-codyps-zpl-diff.png)](../images/zplr-asset-matrix-pdf417-codyps-zpl-diff.png) |
+| [zplr-retail-upc-ean](../../cases/external-zpl-zplr-retail-upc-ean.md) | retail | error · 0.00% IoU | Unavailable |
+| [zplr-stored-resources](../../cases/external-zpl-zplr-stored-resources.md) | stateful | error · unscored | Unavailable |
