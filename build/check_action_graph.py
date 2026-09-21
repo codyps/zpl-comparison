@@ -11,11 +11,11 @@ import sys
 from pathlib import Path
 
 
-LOCAL_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"}
+LAYOUT_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"}
 
 
 def verify_layout_matrix(renders, comparisons, cases):
-    expected = {f"{case}-{library}" for case in cases for library in LOCAL_LIBRARIES}
+    expected = {f"{case}-{library}" for case in cases for library in LAYOUT_LIBRARIES}
     for kind, actual in [("renders", renders), ("printer comparisons", comparisons)]:
         assert set(actual) == expected and len(actual) == len(expected), (
             "Incomplete font-free layout " + kind,
@@ -64,7 +64,7 @@ def verify(graph, layout_cases=(), saved=False):
         elif layout_outputs and kind == "ZplCompare":
             name = next(Path(p).name.removesuffix(".comparison.json") for p in layout_outputs if p.endswith(".comparison.json"))
             layout_comparisons.append(name)
-            library = next(lib for lib in LOCAL_LIBRARIES if name.endswith("-" + lib))
+            library = next(lib for lib in LAYOUT_LIBRARIES if name.endswith("-" + lib))
             case = name.removesuffix("-" + library)
             assert "benchmarks/accuracy/layout-reference/" + case + ".png" in files, (name, "missing printer reference")
         if kind == "ZplSaved":

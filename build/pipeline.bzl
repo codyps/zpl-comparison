@@ -51,7 +51,7 @@ def _impl(ctx):
     static = [(f, p) for p, f in files.items() if not (p.startswith("docs/benchmarks/") and (("/images/" in p and not p.startswith("docs/benchmarks/labelary/")) or p in ["docs/benchmarks/" + s + "/results.json" for s in ["accuracy", "conformance", "external-zpl", "layout-accuracy"]]))]
     for suite in ["accuracy", "conformance", "external-zpl", "layout-accuracy"]:
         suite_start = len(publish)
-        libraries = LIBRARIES[:-1] if suite == "layout-accuracy" else LIBRARIES
+        libraries = LIBRARIES
         saved = CATALOG["docs/benchmarks/" + suite + "/results.json"]
         saved_rows = {(r["case"], r["library"]): r for r in saved["results"]} if ctx.attr.saved else {}
         renders = "docs/benchmarks/" + suite
@@ -190,7 +190,7 @@ def _impl(ctx):
         "support": ["benchmarks/support.py", "docs/benchmarks/command-support.json", "docs/zpl-command-index.tsv"] + plot_scripts,
         "performance": ["benchmarks/run.py", "docs/benchmarks/results.json", "docs/benchmarks/samples/"] + plot_scripts,
         "invalid": ["benchmarks/invalid.py", "test-data/invalid-zpl/", "docs/benchmarks/invalid/results.json"] + metric_scripts + plot_scripts,
-        "labelary": ["benchmarks/labelary.py", "benchmarks/conformance.py", "test-data/render-conformance/", "test-data/external-zpl/", "benchmarks/accuracy/reference/", "references/", "docs/benchmarks/labelary/"] + metric_scripts + plot_scripts,
+        "labelary": ["benchmarks/labelary.py", "benchmarks/conformance.py", "test-data/render-conformance/", "test-data/external-zpl/", "test-data/layout-accuracy/", "benchmarks/accuracy/reference/", "references/", "docs/benchmarks/labelary/"] + metric_scripts + plot_scripts,
         "conformance-report": ["benchmarks/conformance.py", "test-data/render-conformance/"] + metric_scripts + plot_scripts,
         "layout-report": ["benchmarks/conformance.py", "test-data/layout-accuracy/"] + metric_scripts + plot_scripts,
         "external-report": ["benchmarks/conformance.py", "test-data/external-zpl/"] + metric_scripts + plot_scripts,

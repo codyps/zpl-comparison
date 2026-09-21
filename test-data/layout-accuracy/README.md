@@ -18,12 +18,11 @@ aggregate's sampling weights. [Case inventory](COVERAGE.md) and
 [manifest](manifest.json) record exact inputs and command-reference pages.
 
 The CI job's `bazelisk build //:reports` runs all 20 cases across seven local
-renderers, compares them with the saved printer previews, and publishes the
+renderers plus saved Labelary responses, compares them with the saved printer previews, and publishes the
 [layout gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/layout/README.md)
 and [summary](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/layout-accuracy/README.md).
-CI checks that all 140 render/comparison pairs are present in the action graph
-and each comparison reads its printer reference. Labelary is excluded until
-service responses are captured for these inputs. No printer is contacted by CI.
+CI checks that all 160 render/comparison pairs are present in the action graph
+and each comparison reads its printer reference. Labelary responses are captured explicitly and replayed offline. No printer is contacted by CI.
 
 To build just this suite's images, differences and gallery pages:
 
@@ -32,13 +31,13 @@ bazelisk build //:reports --output_groups=suite_layout-accuracy
 ```
 
 Fork pull requests use `//:reports_saved`, which regenerates the layout report
-and gallery from the saved 140 renders and measurements without private source.
+and gallery from the saved 160 renders and measurements without private source.
 
 ```sh
 python3 test-data/layout-accuracy/generate.py --check
 benchmarks/_work/venv/bin/python benchmarks/conformance.py \
   --corpus test-data/layout-accuracy \
-  --only codyps-zpl,forge,labelize,ffi,go,zplr,binarykits \
+  --only all \
   --reference benchmarks/accuracy/layout-reference \
   --output benchmarks/_work/layout-accuracy
 ```
@@ -47,8 +46,7 @@ The report scores unchanged rasters against the saved ZD621 previews using the
 existing foreground IoU and exact-match metrics. It never aligns or resizes
 images to hide positioning differences. The home/direct-origin pair also checks
 exact raster equivalence within each renderer; agreement alone is not evidence
-of printer fidelity. Labelary is omitted because its saved responses do not yet
-include this corpus.
+of printer fidelity. Labelary is replayed from hash-verified [service captures](../../docs/benchmarks/labelary/captures.json); normal builds do not contact the service.
 
 To capture a fresh baseline into a new directory:
 

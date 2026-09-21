@@ -56,7 +56,7 @@ MEASUREMENTS = [
         [
             "benchmarks/conformance.py",
             "--corpus", "test-data/layout-accuracy",
-            "--only", "codyps-zpl,labelize,forge,go,ffi,binarykits,zplr",
+            "--only", "all",
             "--reference", "benchmarks/accuracy/layout-reference",
             "--output", "docs/benchmarks/layout-accuracy",
         ],
