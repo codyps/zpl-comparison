@@ -13,8 +13,8 @@
       "sha256": "fa3ff450172a16c026944030230c5069947af93c728d9179971d44e5e0cfb561"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.26.5.linux-amd64.tar.gz",
-      "sha256": "5c2c3b16caefa1d968a94c1daca04a7ca301a496d9b086e17ad77bb81393f053"
+      "url": "https://go.dev/dl/go1.27.1.linux-amd64.tar.gz",
+      "sha256": "63d339f0da5ab53635a56f2490a7984dfe12dfcff22ad749f63edaf590168445"
     },
     "node": {
       "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-linux-x64.tar.gz",
@@ -39,8 +39,8 @@
       "sha256": "48b9835058a8baa4ff5e4387f3772c572a017a2b13393c46e151615c54e322e9"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.26.5.darwin-amd64.tar.gz",
-      "sha256": "6231d8d3b8f5552ec6cbf6d685bdd5482e1e703214b120e89b3bf0d7bf1ef725"
+      "url": "https://go.dev/dl/go1.27.1.darwin-amd64.tar.gz",
+      "sha256": "8f8f52c6649542cf027bbc9b9c68d1ec042f9f34808a40413f0b8b3f66f3caa4"
     },
     "node": {
       "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-darwin-x64.tar.gz",
@@ -65,8 +65,8 @@
       "sha256": "2de831ef563ce772519a4d18ba2659f0f7428d497ef66dad24b5a35e8f8cd177"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.26.5.darwin-arm64.tar.gz",
-      "sha256": "efb87ff28af9a188d0536ef5d42e63dd52ba8263cd7344a993cc48dd11dedb6a"
+      "url": "https://go.dev/dl/go1.27.1.darwin-arm64.tar.gz",
+      "sha256": "ee215d57e0ec269c60cc9ceca68e6bda321ba9ee5afe24f4b0988703c2d87d12"
     },
     "node": {
       "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-darwin-arm64.tar.gz",
@@ -91,8 +91,8 @@
       "sha256": "9bf796a6ec5b004813ebd0b650775a7c6a4f3aae97ad362ae294798dca4f3b23"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.26.5.linux-arm64.tar.gz",
-      "sha256": "fe4789e92b1f33358680864bbe8704289e7bb5fc207d80623c308935bd696d49"
+      "url": "https://go.dev/dl/go1.27.1.linux-arm64.tar.gz",
+      "sha256": "3450b45a3f9ee8568792736a5c5e70a1f2e9b36c35a8f74958c03e51d7d92bec"
     },
     "node": {
       "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-linux-arm64.tar.gz",

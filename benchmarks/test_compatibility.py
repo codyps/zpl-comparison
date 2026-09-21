@@ -45,8 +45,28 @@ class CompatibilityTests(unittest.TestCase):
                 if n.startswith("features/") and not n.endswith("README.md")
             },
         )
-        for name, data in self.generated.items():
-            self.assertEqual((catalog.DEST / name).read_bytes(), data, name)
+
+    def test_generation_and_check_use_fresh_output(self):
+        # Published pages are ignored on main; a prior local report may be stale
+        # or absent. Exercise the writer and checker in an isolated output tree.
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp).resolve() / "compatibility"
+            expected = catalog.artifacts(dest)
+            with patch("sys.argv", ["compatibility.py", "--output", str(dest)]):
+                catalog.main()
+            self.assertEqual(
+                {str(p.relative_to(dest)) for p in dest.rglob("*") if p.is_file()},
+                set(expected),
+            )
+            for name, data in expected.items():
+                self.assertEqual((dest / name).read_bytes(), data, name)
+            with patch(
+                "sys.argv", ["compatibility.py", "--output", str(dest), "--check"]
+            ):
+                catalog.main()
+                (dest / "README.md").write_text("stale output\n")
+                with self.assertRaisesRegex(SystemExit, "Out of date:.*README.md"):
+                    catalog.main()
 
     def test_prefix_and_named_font_pages_do_not_collide(self):
         commands = ["^CC", "~CC", "^A", "^A@"]

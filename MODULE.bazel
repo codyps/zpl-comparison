@@ -1,14 +1,14 @@
 module(name = "zpl_comparison")
 
-bazel_dep(name = "rules_python", version = "1.5.4")
+bazel_dep(name = "rules_python", version = "2.3.3")
 
 python = use_extension("@rules_python//python/extensions:python.bzl", "python")
-python.toolchain(python_version = "3.13.4")
+python.toolchain(python_version = "3.13.13")
 
 pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
 pip.parse(
     hub_name = "report_deps",
-    python_version = "3.13.4",
+    python_version = "3.13.13",
     requirements_lock = "//:build/requirements.lock.txt",
 )
 use_repo(pip, "report_deps")
