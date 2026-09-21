@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "measured_utc": "2026-09-21T15:36:38Z",
+  "measured_utc": "2026-09-21T17:09:15Z",
   "inputs": {
     "test-data/layout-accuracy/manifest.json": "6e2e37b7d6a6f91d8e173a85b19927722f6dda8a98ae8f0ab61f3770057b1fda",
-    "docs/benchmarks/layout-accuracy/results.json": "31e509187641fa96a2f747f48000285d688d46996e998c9ef5849c6cc99d5a20",
+    "docs/benchmarks/layout-accuracy/results.json": "e8537469fc4050393c4ad721b7c694928c9f8e73daf7fc5c8e6bcd8082dfd090",
     "benchmarks/accuracy/layout-reference/manifest.json": "ea4e4e3f6d7053f8a4b6ce63216242cc37c33ebb77712787b017ce28dfe79bbf"
   },
   "coverage": {
@@ -30,7 +30,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:20Z",
+      "observed_utc": "2026-09-21T17:09:10Z",
       "output_dimensions": [
         832,
         300
@@ -261,7 +261,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:31Z",
+      "observed_utc": "2026-09-21T17:09:13Z",
       "output_dimensions": [
         832,
         300
@@ -492,7 +492,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:27Z",
+      "observed_utc": "2026-09-21T17:09:13Z",
       "output_dimensions": [
         832,
         300
@@ -723,7 +723,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:09Z",
+      "observed_utc": "2026-09-21T17:09:04Z",
       "output_dimensions": [
         832,
         300
@@ -954,7 +954,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:10Z",
+      "observed_utc": "2026-09-21T17:09:06Z",
       "output_dimensions": [
         832,
         300
@@ -1185,7 +1185,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:15Z",
+      "observed_utc": "2026-09-21T17:09:07Z",
       "output_dimensions": [
         832,
         300
@@ -1416,7 +1416,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:16Z",
+      "observed_utc": "2026-09-21T17:09:08Z",
       "output_dimensions": [
         832,
         300
@@ -1647,7 +1647,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:31Z",
+      "observed_utc": "2026-09-21T17:09:14Z",
       "output_dimensions": [
         832,
         300
@@ -1878,7 +1878,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:35Z",
+      "observed_utc": "2026-09-21T17:09:15Z",
       "output_dimensions": [
         832,
         300
@@ -2109,7 +2109,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:35Z",
+      "observed_utc": "2026-09-21T17:09:15Z",
       "output_dimensions": [
         832,
         300
@@ -2340,7 +2340,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:35Z",
+      "observed_utc": "2026-09-21T17:09:15Z",
       "output_dimensions": [
         832,
         300
@@ -2571,7 +2571,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:16Z",
+      "observed_utc": "2026-09-21T17:09:08Z",
       "output_dimensions": [
         832,
         300
@@ -2802,7 +2802,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:20Z",
+      "observed_utc": "2026-09-21T17:09:09Z",
       "output_dimensions": [
         832,
         300
@@ -3033,7 +3033,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:19Z",
+      "observed_utc": "2026-09-21T17:09:10Z",
       "output_dimensions": [
         832,
         300
@@ -3264,7 +3264,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:31Z",
+      "observed_utc": "2026-09-21T17:09:13Z",
       "output_dimensions": [
         832,
         300
@@ -3495,7 +3495,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:27Z",
+      "observed_utc": "2026-09-21T17:09:12Z",
       "output_dimensions": [
         832,
         300
@@ -3726,7 +3726,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:24Z",
+      "observed_utc": "2026-09-21T17:09:11Z",
       "output_dimensions": [
         832,
         300
@@ -3957,7 +3957,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:27Z",
+      "observed_utc": "2026-09-21T17:09:11Z",
       "output_dimensions": [
         832,
         300
@@ -4188,7 +4188,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:23Z",
+      "observed_utc": "2026-09-21T17:09:11Z",
       "output_dimensions": [
         832,
         300
@@ -4419,7 +4419,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:23Z",
+      "observed_utc": "2026-09-21T17:09:11Z",
       "output_dimensions": [
         832,
         300

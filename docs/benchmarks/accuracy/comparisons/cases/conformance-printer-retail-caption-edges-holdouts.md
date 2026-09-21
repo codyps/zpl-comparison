@@ -22,13 +22,13 @@ Zebra programming guide: [^B8](../../../../zpl-zbi2-pg-en.pdf#page=83) · [^B9](
 
 **codyps/zpl (Rust)**
 
-rendered · 98.84% IoU · [All cases for this library](../features/libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../features/libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/printer-retail-caption-edges-holdouts-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/printer-retail-caption-edges-holdouts.png) | [![codyps-zpl render](../features/previews/printer-retail-caption-edges-holdouts-codyps-zpl.png)](../../../conformance/images/printer-retail-caption-edges-holdouts-codyps-zpl.png) | [![codyps-zpl difference](../features/previews/printer-retail-caption-edges-holdouts-codyps-zpl-diff.png)](../features/images/printer-retail-caption-edges-holdouts-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 1100]; missing ink: 455; extra ink: 16 pixels.
+Library dimensions: [832, 1100]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

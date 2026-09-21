@@ -20,13 +20,13 @@ Source: https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd4
 
 **codyps/zpl (Rust)**
 
-rendered · 29.34% IoU · [All cases for this library](../external/libraries/codyps-zpl.md)
+rendered · 29.69% IoU · [All cases for this library](../external/libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../external/previews/zpl-toolchain-product_label-printer.png)](../../../../../benchmarks/accuracy/external-reference/zpl-toolchain-product_label.png) | [![codyps-zpl render](../external/previews/zpl-toolchain-product_label-codyps-zpl.png)](../../../external-zpl/images/zpl-toolchain-product_label-codyps-zpl.png) | [![codyps-zpl difference](../external/previews/zpl-toolchain-product_label-codyps-zpl-diff.png)](../external/images/zpl-toolchain-product_label-codyps-zpl-diff.png) |
 
-Library dimensions: [609, 406]; missing ink: 14489; extra ink: 14435 pixels.
+Library dimensions: [609, 406]; missing ink: 14343; extra ink: 14441 pixels.
 
 ## labelize
 

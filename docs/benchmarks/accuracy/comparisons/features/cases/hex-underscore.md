@@ -20,19 +20,13 @@ Zebra programming guide: [^BY](../../../../../zpl-zbi2-pg-en.pdf#page=148) · [^
 
 **codyps/zpl (Rust)**
 
-error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 99.84% IoU · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../previews/hex-underscore-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/hex-underscore.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../previews/hex-underscore-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/hex-underscore.png) | [![codyps-zpl render](../previews/hex-underscore-codyps-zpl.png)](../../../../conformance/images/hex-underscore-codyps-zpl.png) | [![codyps-zpl difference](../previews/hex-underscore-codyps-zpl-diff.png)](../images/hex-underscore-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (21531) panicked at src/main.rs:27:10:
-render: RenderError { offset: 78, message: "unsupported embedded font glyph '\\0'" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 1218]; missing ink: 1; extra ink: 1 pixels.
 
 ## labelize
 

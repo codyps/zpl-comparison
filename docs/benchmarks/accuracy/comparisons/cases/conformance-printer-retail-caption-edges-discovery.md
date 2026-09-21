@@ -22,19 +22,13 @@ Zebra programming guide: [^BU](../../../../zpl-zbi2-pg-en.pdf#page=142) · [^BY]
 
 **codyps/zpl (Rust)**
 
-error · 0.00% IoU · [All cases for this library](../features/libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../features/libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../features/previews/printer-retail-caption-edges-discovery-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/printer-retail-caption-edges-discovery.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../features/previews/printer-retail-caption-edges-discovery-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/printer-retail-caption-edges-discovery.png) | [![codyps-zpl render](../features/previews/printer-retail-caption-edges-discovery-codyps-zpl.png)](../../../conformance/images/printer-retail-caption-edges-discovery-codyps-zpl.png) | [![codyps-zpl difference](../features/previews/printer-retail-caption-edges-discovery-codyps-zpl-diff.png)](../features/images/printer-retail-caption-edges-discovery-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (24050) panicked at src/main.rs:27:10:
-render: RenderError { offset: 55, message: "unexpected command parameters" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 500]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

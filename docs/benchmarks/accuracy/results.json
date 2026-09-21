@@ -2196,7 +2196,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:34:48Z",
+      "observed_utc": "2026-09-21T17:09:03Z",
       "output_dimensions": [
         832,
         300
@@ -2435,7 +2435,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:34:51Z",
+      "observed_utc": "2026-09-21T17:09:07Z",
       "output_dimensions": [
         832,
         300
@@ -2674,7 +2674,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:34:54Z",
+      "observed_utc": "2026-09-21T17:09:08Z",
       "output_dimensions": [
         832,
         300
@@ -2913,7 +2913,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:34:56Z",
+      "observed_utc": "2026-09-21T17:09:09Z",
       "output_dimensions": [
         832,
         300
@@ -3152,7 +3152,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:34:57Z",
+      "observed_utc": "2026-09-21T17:09:10Z",
       "output_dimensions": [
         832,
         300
@@ -3391,7 +3391,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:34:58Z",
+      "observed_utc": "2026-09-21T17:09:11Z",
       "output_dimensions": [
         832,
         300
@@ -3630,7 +3630,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:34:59Z",
+      "observed_utc": "2026-09-21T17:09:11Z",
       "output_dimensions": [
         832,
         300
@@ -3869,7 +3869,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:01Z",
+      "observed_utc": "2026-09-21T17:09:12Z",
       "output_dimensions": [
         832,
         300
@@ -4108,7 +4108,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:02Z",
+      "observed_utc": "2026-09-21T17:09:14Z",
       "output_dimensions": [
         832,
         300
@@ -4347,7 +4347,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:03Z",
+      "observed_utc": "2026-09-21T17:09:15Z",
       "output_dimensions": [
         832,
         300
@@ -4586,7 +4586,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:04Z",
+      "observed_utc": "2026-09-21T17:09:15Z",
       "output_dimensions": [
         832,
         300
@@ -4825,7 +4825,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:06Z",
+      "observed_utc": "2026-09-21T17:09:16Z",
       "output_dimensions": [
         832,
         300
@@ -5064,7 +5064,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:44Z",
+      "observed_utc": "2026-09-21T17:09:21Z",
       "output_dimensions": [
         832,
         300
@@ -5286,7 +5286,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:06Z",
+      "observed_utc": "2026-09-21T17:09:22Z",
       "output_dimensions": [
         832,
         300
@@ -5508,7 +5508,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:08Z",
+      "observed_utc": "2026-09-21T17:09:24Z",
       "output_dimensions": [
         832,
         300
@@ -5730,7 +5730,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:09Z",
+      "observed_utc": "2026-09-21T17:09:25Z",
       "output_dimensions": [
         832,
         300
@@ -5969,7 +5969,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:10Z",
+      "observed_utc": "2026-09-21T17:09:26Z",
       "output_dimensions": [
         832,
         300
@@ -6208,7 +6208,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:11Z",
+      "observed_utc": "2026-09-21T17:09:27Z",
       "output_dimensions": [
         832,
         300
@@ -6447,7 +6447,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:12Z",
+      "observed_utc": "2026-09-21T17:09:28Z",
       "output_dimensions": [
         832,
         300
@@ -6686,7 +6686,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:13Z",
+      "observed_utc": "2026-09-21T17:09:29Z",
       "output_dimensions": [
         832,
         300
@@ -6925,7 +6925,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:14Z",
+      "observed_utc": "2026-09-21T17:09:29Z",
       "output_dimensions": [
         832,
         300
@@ -7164,7 +7164,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:15Z",
+      "observed_utc": "2026-09-21T17:09:30Z",
       "output_dimensions": [
         832,
         300
@@ -7403,7 +7403,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:44Z",
+      "observed_utc": "2026-09-21T17:09:30Z",
       "output_dimensions": [
         832,
         300
@@ -7642,7 +7642,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:22Z",
+      "observed_utc": "2026-09-21T17:09:30Z",
       "output_dimensions": [
         832,
         300
@@ -7881,7 +7881,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:20Z",
+      "observed_utc": "2026-09-21T17:09:30Z",
       "output_dimensions": [
         832,
         300
@@ -8120,7 +8120,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:24Z",
+      "observed_utc": "2026-09-21T17:09:31Z",
       "output_dimensions": [
         832,
         300
@@ -8359,7 +8359,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:22Z",
+      "observed_utc": "2026-09-21T17:09:31Z",
       "output_dimensions": [
         832,
         300
@@ -8598,7 +8598,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:28Z",
+      "observed_utc": "2026-09-21T17:09:32Z",
       "output_dimensions": [
         832,
         300
@@ -8837,7 +8837,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:25Z",
+      "observed_utc": "2026-09-21T17:09:32Z",
       "output_dimensions": [
         832,
         300
@@ -9076,7 +9076,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:40Z",
+      "observed_utc": "2026-09-21T17:09:32Z",
       "output_dimensions": [
         832,
         300
@@ -9315,7 +9315,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:56Z",
+      "observed_utc": "2026-09-21T17:09:33Z",
       "output_dimensions": [
         832,
         300
@@ -9554,7 +9554,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:35Z",
+      "observed_utc": "2026-09-21T17:09:33Z",
       "output_dimensions": [
         832,
         300
@@ -9793,7 +9793,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:35Z",
+      "observed_utc": "2026-09-21T17:09:33Z",
       "output_dimensions": [
         832,
         300
@@ -10032,7 +10032,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:39Z",
+      "observed_utc": "2026-09-21T17:09:33Z",
       "output_dimensions": [
         832,
         300
@@ -10271,7 +10271,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:56Z",
+      "observed_utc": "2026-09-21T17:09:34Z",
       "output_dimensions": [
         832,
         300
@@ -10510,7 +10510,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:30Z",
+      "observed_utc": "2026-09-21T17:09:35Z",
       "output_dimensions": [
         832,
         300
@@ -10749,7 +10749,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:31Z",
+      "observed_utc": "2026-09-21T17:09:35Z",
       "output_dimensions": [
         832,
         300
@@ -10988,7 +10988,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:32Z",
+      "observed_utc": "2026-09-21T17:09:35Z",
       "output_dimensions": [
         832,
         300
@@ -11227,7 +11227,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:29Z",
+      "observed_utc": "2026-09-21T17:09:36Z",
       "output_dimensions": [
         832,
         300
@@ -11466,7 +11466,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:33Z",
+      "observed_utc": "2026-09-21T17:09:36Z",
       "output_dimensions": [
         832,
         300
@@ -11705,7 +11705,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:48Z",
+      "observed_utc": "2026-09-21T17:09:36Z",
       "output_dimensions": [
         832,
         300
@@ -11944,7 +11944,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:52Z",
+      "observed_utc": "2026-09-21T17:09:36Z",
       "output_dimensions": [
         832,
         300
@@ -12183,7 +12183,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:52Z",
+      "observed_utc": "2026-09-21T17:09:37Z",
       "output_dimensions": [
         832,
         300
@@ -12422,7 +12422,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:48Z",
+      "observed_utc": "2026-09-21T17:09:37Z",
       "output_dimensions": [
         832,
         300
@@ -12661,7 +12661,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:35:18Z",
+      "observed_utc": "2026-09-21T17:09:37Z",
       "output_dimensions": [
         832,
         300
@@ -12900,7 +12900,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:45Z",
+      "observed_utc": "2026-09-21T17:09:38Z",
       "output_dimensions": [
         832,
         300
@@ -13139,7 +13139,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:49Z",
+      "observed_utc": "2026-09-21T17:09:38Z",
       "output_dimensions": [
         832,
         300
@@ -13361,7 +13361,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:50Z",
+      "observed_utc": "2026-09-21T17:09:38Z",
       "output_dimensions": [
         832,
         300
@@ -13600,7 +13600,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:52Z",
+      "observed_utc": "2026-09-21T17:09:39Z",
       "output_dimensions": [
         832,
         300
@@ -13839,7 +13839,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:54Z",
+      "observed_utc": "2026-09-21T17:09:39Z",
       "output_dimensions": [
         832,
         300
@@ -14078,7 +14078,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:56Z",
+      "observed_utc": "2026-09-21T17:09:39Z",
       "output_dimensions": [
         832,
         300
@@ -14317,7 +14317,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:57Z",
+      "observed_utc": "2026-09-21T17:09:40Z",
       "output_dimensions": [
         832,
         300
@@ -14556,7 +14556,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:36:59Z",
+      "observed_utc": "2026-09-21T17:09:40Z",
       "output_dimensions": [
         832,
         300
@@ -14795,7 +14795,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:00Z",
+      "observed_utc": "2026-09-21T17:09:40Z",
       "output_dimensions": [
         832,
         300
@@ -15034,7 +15034,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:03Z",
+      "observed_utc": "2026-09-21T17:09:41Z",
       "output_dimensions": [
         832,
         300
@@ -15273,7 +15273,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:04Z",
+      "observed_utc": "2026-09-21T17:09:41Z",
       "output_dimensions": [
         832,
         300
@@ -15512,7 +15512,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:06Z",
+      "observed_utc": "2026-09-21T17:09:41Z",
       "output_dimensions": [
         832,
         300
@@ -15751,7 +15751,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:08Z",
+      "observed_utc": "2026-09-21T17:09:42Z",
       "output_dimensions": [
         832,
         300
@@ -15990,7 +15990,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:09Z",
+      "observed_utc": "2026-09-21T17:09:42Z",
       "output_dimensions": [
         832,
         300
@@ -16229,7 +16229,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:11Z",
+      "observed_utc": "2026-09-21T17:09:43Z",
       "output_dimensions": [
         832,
         300
@@ -16455,32 +16455,32 @@
       "width": 832
     },
     {
-      "canvas_disagreement": 0.004182692307692307,
+      "canvas_disagreement": 0.0,
       "case": "argument-qr-model-1",
       "diagnostic": "",
       "dimensions_match": true,
-      "exact": false,
-      "extra": 522,
+      "exact": true,
+      "extra": 0,
       "group": "barcode-arguments",
       "height": 300,
       "ink": 1989,
-      "ink_exact": false,
-      "iou": 0.5842293906810035,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "missing": 522,
-      "observed_utc": "2026-09-21T15:37:12Z",
+      "missing": 0,
+      "observed_utc": "2026-09-21T17:09:43Z",
       "output_dimensions": [
         832,
         300
       ],
       "output_ink": 1989,
-      "precision": 0.7375565610859729,
-      "raw_png_sha256": "34930dc56a3abe9acf56c723153a49f842620d53b3fa0614102a03105a06acd8",
-      "recall": 0.7375565610859729,
+      "precision": 1.0,
+      "raw_png_sha256": "5dc82cb6c4db8cbd1e2ff40173ed43e85b96f8feb0ecf3d7d3abc1bf9da7c116",
+      "recall": 1.0,
       "reference_ink": 1989,
-      "render_sha256": "956a72fb3606447e1c72639eb2efd977bcdaea3523133ae0925367993c98d5e4",
+      "render_sha256": "b50048a450529b44793b3de63197761d3da2d06c019ac3e1e976ba8b8e35cf82",
       "returncode": 0,
-      "score": 0.5842293906810035,
+      "score": 1.0,
       "status": "rendered",
       "width": 832
     },
@@ -16707,7 +16707,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:13Z",
+      "observed_utc": "2026-09-21T17:09:43Z",
       "output_dimensions": [
         832,
         300
@@ -16946,7 +16946,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:15Z",
+      "observed_utc": "2026-09-21T17:09:44Z",
       "output_dimensions": [
         832,
         300
@@ -17172,32 +17172,32 @@
       "width": 832
     },
     {
-      "canvas_disagreement": 0.004254807692307692,
+      "canvas_disagreement": 0.0,
       "case": "argument-qr-ec-M",
       "diagnostic": "",
       "dimensions_match": true,
-      "exact": false,
-      "extra": 540,
+      "exact": true,
+      "extra": 0,
       "group": "barcode-arguments",
       "height": 300,
-      "ink": 2070,
-      "ink_exact": false,
-      "iou": 0.5902777777777778,
+      "ink": 2052,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "missing": 522,
-      "observed_utc": "2026-09-21T15:37:16Z",
+      "missing": 0,
+      "observed_utc": "2026-09-21T17:09:44Z",
       "output_dimensions": [
         832,
         300
       ],
-      "output_ink": 2070,
-      "precision": 0.7391304347826086,
-      "raw_png_sha256": "78485c45ce2fabb904c1259ca2713d1e470a43a2ef3ba9e10c4e148a4d7f023c",
-      "recall": 0.7456140350877193,
+      "output_ink": 2052,
+      "precision": 1.0,
+      "raw_png_sha256": "893e89a76b58d5460635a6334a9254b98d22c4cb3af68097bf95dd560f9499a4",
+      "recall": 1.0,
       "reference_ink": 2052,
-      "render_sha256": "1649cd2b77e06ba995dac2e3b0d1512b162803871ddc70ddd850a8d56b52d5c7",
+      "render_sha256": "4433b29107dcf384e0b5051a6b4be8389148964e77c77fa451c89060148ceff5",
       "returncode": 0,
-      "score": 0.5902777777777778,
+      "score": 1.0,
       "status": "rendered",
       "width": 832
     },
@@ -17424,7 +17424,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:18Z",
+      "observed_utc": "2026-09-21T17:09:44Z",
       "output_dimensions": [
         832,
         300
@@ -17650,32 +17650,32 @@
       "width": 832
     },
     {
-      "canvas_disagreement": 0.0021634615384615386,
+      "canvas_disagreement": 0.0,
       "case": "argument-qr-ec-H",
       "diagnostic": "",
       "dimensions_match": true,
-      "exact": false,
-      "extra": 234,
+      "exact": true,
+      "extra": 0,
       "group": "barcode-arguments",
       "height": 300,
-      "ink": 1944,
-      "ink_exact": false,
-      "iou": 0.76,
+      "ink": 2016,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "missing": 306,
-      "observed_utc": "2026-09-21T15:37:19Z",
+      "missing": 0,
+      "observed_utc": "2026-09-21T17:09:45Z",
       "output_dimensions": [
         832,
         300
       ],
-      "output_ink": 1944,
-      "precision": 0.8796296296296297,
-      "raw_png_sha256": "e51db181ff150dba511bcd0c16117e58038d25c803e45d3b050593e7832686eb",
-      "recall": 0.8482142857142857,
+      "output_ink": 2016,
+      "precision": 1.0,
+      "raw_png_sha256": "909fcdbf59713c98bb12dd068a867cf64023ec1d6a02c2aaf59ec847281cc29c",
+      "recall": 1.0,
       "reference_ink": 2016,
-      "render_sha256": "7f08527cb06fa2d7b885c721bf403897ad53d0b9e1a77ac4562bdabbad0cd047",
+      "render_sha256": "37c1a4efc9a81e5e086a890402d972d6d0205159fcee227e14179436620bd22a",
       "returncode": 0,
-      "score": 0.76,
+      "score": 1.0,
       "status": "rendered",
       "width": 832
     },
@@ -17902,7 +17902,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:21Z",
+      "observed_utc": "2026-09-21T17:09:45Z",
       "output_dimensions": [
         832,
         300
@@ -18141,7 +18141,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:22Z",
+      "observed_utc": "2026-09-21T17:09:45Z",
       "output_dimensions": [
         832,
         300
@@ -18380,7 +18380,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:24Z",
+      "observed_utc": "2026-09-21T17:09:46Z",
       "output_dimensions": [
         832,
         300
@@ -18606,32 +18606,32 @@
       "width": 832
     },
     {
-      "canvas_disagreement": 0.004182692307692307,
+      "canvas_disagreement": 0.0,
       "case": "argument-qr-mask-3",
       "diagnostic": "",
       "dimensions_match": true,
-      "exact": false,
-      "extra": 441,
+      "exact": true,
+      "extra": 0,
       "group": "barcode-arguments",
       "height": 300,
-      "ink": 1998,
-      "ink_exact": false,
-      "iou": 0.5986159169550173,
+      "ink": 2160,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "missing": 603,
-      "observed_utc": "2026-09-21T15:37:25Z",
+      "missing": 0,
+      "observed_utc": "2026-09-21T17:09:46Z",
       "output_dimensions": [
         832,
         300
       ],
-      "output_ink": 1998,
-      "precision": 0.7792792792792793,
-      "raw_png_sha256": "c30ee93eaf2f03b55cd337b262f26e8b7a01f5db9afbc73c6ea6aefbc2b8b5b6",
-      "recall": 0.7208333333333333,
+      "output_ink": 2160,
+      "precision": 1.0,
+      "raw_png_sha256": "75d7ab1de3134d91b5d49e0816001e2027b239ca7c4e15eae56e3fab21a77b23",
+      "recall": 1.0,
       "reference_ink": 2160,
-      "render_sha256": "3f05977734bf65ca06b4e5c8df6f3d2411c684a20eb9a31e740d4b80810e0462",
+      "render_sha256": "9ab3102f48d66d06608dd3dd64fa464cf36d9c710ef75a65dc7a9970fe4ba854",
       "returncode": 0,
-      "score": 0.5986159169550173,
+      "score": 1.0,
       "status": "rendered",
       "width": 832
     },
@@ -18845,32 +18845,32 @@
       "width": 832
     },
     {
-      "canvas_disagreement": 0.0021634615384615386,
+      "canvas_disagreement": 0.0,
       "case": "argument-qr-mask-7",
       "diagnostic": "",
       "dimensions_match": true,
-      "exact": false,
-      "extra": 279,
+      "exact": true,
+      "extra": 0,
       "group": "barcode-arguments",
       "height": 300,
-      "ink": 2178,
-      "ink_exact": false,
-      "iou": 0.7785977859778598,
+      "ink": 2160,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "missing": 261,
-      "observed_utc": "2026-09-21T15:37:27Z",
+      "missing": 0,
+      "observed_utc": "2026-09-21T17:09:46Z",
       "output_dimensions": [
         832,
         300
       ],
-      "output_ink": 2178,
-      "precision": 0.871900826446281,
-      "raw_png_sha256": "a835e2f2621d5db4591108b192f8daaac08e38cd98ce4c12ab1434e2a4022917",
-      "recall": 0.8791666666666667,
+      "output_ink": 2160,
+      "precision": 1.0,
+      "raw_png_sha256": "75d7ab1de3134d91b5d49e0816001e2027b239ca7c4e15eae56e3fab21a77b23",
+      "recall": 1.0,
       "reference_ink": 2160,
-      "render_sha256": "5a5ae7216b24a49e3b145ec1865038e7c22b775b2609e0b9aab70e4ec1868967",
+      "render_sha256": "9ab3102f48d66d06608dd3dd64fa464cf36d9c710ef75a65dc7a9970fe4ba854",
       "returncode": 0,
-      "score": 0.7785977859778598,
+      "score": 1.0,
       "status": "rendered",
       "width": 832
     },
@@ -19097,7 +19097,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:28Z",
+      "observed_utc": "2026-09-21T17:09:47Z",
       "output_dimensions": [
         832,
         300
@@ -19336,7 +19336,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:30Z",
+      "observed_utc": "2026-09-21T17:09:47Z",
       "output_dimensions": [
         832,
         300
@@ -19575,7 +19575,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:32Z",
+      "observed_utc": "2026-09-21T17:09:48Z",
       "output_dimensions": [
         832,
         1218
@@ -19814,7 +19814,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:34Z",
+      "observed_utc": "2026-09-21T17:09:48Z",
       "output_dimensions": [
         832,
         1218
@@ -20053,7 +20053,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:36Z",
+      "observed_utc": "2026-09-21T17:09:49Z",
       "output_dimensions": [
         832,
         1218
@@ -20292,7 +20292,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:37Z",
+      "observed_utc": "2026-09-21T17:09:49Z",
       "output_dimensions": [
         832,
         1218
@@ -20531,7 +20531,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:40Z",
+      "observed_utc": "2026-09-21T17:09:49Z",
       "output_dimensions": [
         832,
         1218
@@ -20753,7 +20753,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:42Z",
+      "observed_utc": "2026-09-21T17:09:49Z",
       "output_dimensions": [
         832,
         1218
@@ -20975,7 +20975,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:43Z",
+      "observed_utc": "2026-09-21T17:09:50Z",
       "output_dimensions": [
         832,
         1218
@@ -21197,7 +21197,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:45Z",
+      "observed_utc": "2026-09-21T17:09:50Z",
       "output_dimensions": [
         832,
         1218
@@ -21436,7 +21436,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:47Z",
+      "observed_utc": "2026-09-21T17:09:50Z",
       "output_dimensions": [
         832,
         1218
@@ -21675,7 +21675,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:49Z",
+      "observed_utc": "2026-09-21T17:09:51Z",
       "output_dimensions": [
         832,
         1218
@@ -21914,7 +21914,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:51Z",
+      "observed_utc": "2026-09-21T17:09:51Z",
       "output_dimensions": [
         832,
         1218
@@ -22153,7 +22153,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:53Z",
+      "observed_utc": "2026-09-21T17:09:51Z",
       "output_dimensions": [
         832,
         1218
@@ -22392,7 +22392,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:55Z",
+      "observed_utc": "2026-09-21T17:09:52Z",
       "output_dimensions": [
         832,
         1218
@@ -22631,7 +22631,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:57Z",
+      "observed_utc": "2026-09-21T17:09:52Z",
       "output_dimensions": [
         832,
         1218
@@ -22870,7 +22870,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:37:59Z",
+      "observed_utc": "2026-09-21T17:09:53Z",
       "output_dimensions": [
         832,
         1218
@@ -23109,7 +23109,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:01Z",
+      "observed_utc": "2026-09-21T17:09:53Z",
       "output_dimensions": [
         832,
         1218
@@ -23348,7 +23348,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:03Z",
+      "observed_utc": "2026-09-21T17:09:53Z",
       "output_dimensions": [
         832,
         1218
@@ -23587,7 +23587,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:05Z",
+      "observed_utc": "2026-09-21T17:09:54Z",
       "output_dimensions": [
         832,
         1218
@@ -23826,7 +23826,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:08Z",
+      "observed_utc": "2026-09-21T17:09:54Z",
       "output_dimensions": [
         832,
         1218
@@ -24065,7 +24065,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:09Z",
+      "observed_utc": "2026-09-21T17:09:55Z",
       "output_dimensions": [
         832,
         1218
@@ -24304,7 +24304,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:11Z",
+      "observed_utc": "2026-09-21T17:09:55Z",
       "output_dimensions": [
         832,
         1218
@@ -24543,7 +24543,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:13Z",
+      "observed_utc": "2026-09-21T17:09:55Z",
       "output_dimensions": [
         832,
         1218
@@ -24782,7 +24782,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:16Z",
+      "observed_utc": "2026-09-21T17:09:55Z",
       "output_dimensions": [
         832,
         1218
@@ -25021,7 +25021,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:17Z",
+      "observed_utc": "2026-09-21T17:09:56Z",
       "output_dimensions": [
         832,
         1218
@@ -25260,7 +25260,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:19Z",
+      "observed_utc": "2026-09-21T17:09:56Z",
       "output_dimensions": [
         832,
         1218
@@ -25499,7 +25499,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:21Z",
+      "observed_utc": "2026-09-21T17:09:57Z",
       "output_dimensions": [
         832,
         1218
@@ -25738,7 +25738,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:24Z",
+      "observed_utc": "2026-09-21T17:09:57Z",
       "output_dimensions": [
         832,
         1218
@@ -25977,7 +25977,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:26Z",
+      "observed_utc": "2026-09-21T17:09:58Z",
       "output_dimensions": [
         832,
         1218
@@ -26216,7 +26216,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:28Z",
+      "observed_utc": "2026-09-21T17:09:58Z",
       "output_dimensions": [
         832,
         1218
@@ -26455,7 +26455,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:30Z",
+      "observed_utc": "2026-09-21T17:09:58Z",
       "output_dimensions": [
         832,
         1218
@@ -26694,7 +26694,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:32Z",
+      "observed_utc": "2026-09-21T17:09:59Z",
       "output_dimensions": [
         832,
         1218
@@ -26933,7 +26933,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:34Z",
+      "observed_utc": "2026-09-21T17:09:59Z",
       "output_dimensions": [
         832,
         1218
@@ -27172,7 +27172,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:36Z",
+      "observed_utc": "2026-09-21T17:09:59Z",
       "output_dimensions": [
         832,
         1218
@@ -27411,7 +27411,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:38Z",
+      "observed_utc": "2026-09-21T17:10:00Z",
       "output_dimensions": [
         832,
         1218
@@ -27650,7 +27650,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:40Z",
+      "observed_utc": "2026-09-21T17:10:00Z",
       "output_dimensions": [
         832,
         1218
@@ -27889,7 +27889,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:42Z",
+      "observed_utc": "2026-09-21T17:10:01Z",
       "output_dimensions": [
         832,
         1218
@@ -28128,7 +28128,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:44Z",
+      "observed_utc": "2026-09-21T17:10:01Z",
       "output_dimensions": [
         832,
         1218
@@ -28350,7 +28350,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:46Z",
+      "observed_utc": "2026-09-21T17:10:02Z",
       "output_dimensions": [
         832,
         1218
@@ -28572,7 +28572,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:48Z",
+      "observed_utc": "2026-09-21T17:10:02Z",
       "output_dimensions": [
         832,
         1218
@@ -28811,7 +28811,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:51Z",
+      "observed_utc": "2026-09-21T17:10:02Z",
       "output_dimensions": [
         832,
         1218
@@ -29033,7 +29033,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:53Z",
+      "observed_utc": "2026-09-21T17:10:03Z",
       "output_dimensions": [
         832,
         1218
@@ -29255,7 +29255,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:55Z",
+      "observed_utc": "2026-09-21T17:10:03Z",
       "output_dimensions": [
         832,
         1218
@@ -29494,7 +29494,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:56Z",
+      "observed_utc": "2026-09-21T17:10:03Z",
       "output_dimensions": [
         832,
         1218
@@ -29733,7 +29733,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:38:58Z",
+      "observed_utc": "2026-09-21T17:10:04Z",
       "output_dimensions": [
         832,
         1218
@@ -29972,7 +29972,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:01Z",
+      "observed_utc": "2026-09-21T17:10:04Z",
       "output_dimensions": [
         832,
         1218
@@ -30211,7 +30211,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:02Z",
+      "observed_utc": "2026-09-21T17:10:04Z",
       "output_dimensions": [
         832,
         1218
@@ -30450,7 +30450,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:05Z",
+      "observed_utc": "2026-09-21T17:10:05Z",
       "output_dimensions": [
         832,
         1218
@@ -30689,7 +30689,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:06Z",
+      "observed_utc": "2026-09-21T17:10:05Z",
       "output_dimensions": [
         832,
         1218
@@ -30928,7 +30928,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:09Z",
+      "observed_utc": "2026-09-21T17:10:05Z",
       "output_dimensions": [
         832,
         1218
@@ -31167,7 +31167,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:11Z",
+      "observed_utc": "2026-09-21T17:10:06Z",
       "output_dimensions": [
         832,
         1218
@@ -31406,7 +31406,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:13Z",
+      "observed_utc": "2026-09-21T17:10:06Z",
       "output_dimensions": [
         832,
         1218
@@ -31645,7 +31645,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:15Z",
+      "observed_utc": "2026-09-21T17:10:06Z",
       "output_dimensions": [
         832,
         1218
@@ -31884,7 +31884,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:17Z",
+      "observed_utc": "2026-09-21T17:10:07Z",
       "output_dimensions": [
         832,
         1218
@@ -32123,7 +32123,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:19Z",
+      "observed_utc": "2026-09-21T17:10:07Z",
       "output_dimensions": [
         832,
         1218
@@ -32349,32 +32349,32 @@
       "width": 832
     },
     {
-      "canvas_disagreement": 0.0009473285335354301,
+      "canvas_disagreement": 0.0,
       "case": "barcode-qr",
       "diagnostic": "",
       "dimensions_match": true,
-      "exact": false,
-      "extra": 496,
+      "exact": true,
+      "extra": 0,
       "group": "barcode-formats",
       "height": 1218,
-      "ink": 3712,
-      "ink_exact": false,
-      "iou": 0.7701149425287356,
+      "ink": 3680,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "missing": 464,
-      "observed_utc": "2026-09-21T15:39:21Z",
+      "missing": 0,
+      "observed_utc": "2026-09-21T17:10:07Z",
       "output_dimensions": [
         832,
         1218
       ],
-      "output_ink": 3712,
-      "precision": 0.8663793103448276,
-      "raw_png_sha256": "7f32930459e4fd6159c2a03358599d2206ee69974a76cb64fc9bc93dc256f571",
-      "recall": 0.8739130434782608,
+      "output_ink": 3680,
+      "precision": 1.0,
+      "raw_png_sha256": "f4a1cac64541831e4d3fc4b5e1e529c044238c23e30c905f824169ecd88a6164",
+      "recall": 1.0,
       "reference_ink": 3680,
-      "render_sha256": "de20e7ad719729c36190bc0897e6ebf86ce0dfa70ceb0e4f56560c36073a0540",
+      "render_sha256": "3ab5438158d7e1bd32d55e173c4fdfa01dd1e1f3e0bc33cc0eb3a23e2a96cec7",
       "returncode": 0,
-      "score": 0.7701149425287356,
+      "score": 1.0,
       "status": "rendered",
       "width": 832
     },
@@ -32601,7 +32601,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:23Z",
+      "observed_utc": "2026-09-21T17:10:08Z",
       "output_dimensions": [
         832,
         1218
@@ -32840,7 +32840,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:25Z",
+      "observed_utc": "2026-09-21T17:10:08Z",
       "output_dimensions": [
         832,
         1218
@@ -33079,7 +33079,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:27Z",
+      "observed_utc": "2026-09-21T17:10:09Z",
       "output_dimensions": [
         832,
         1218
@@ -33318,7 +33318,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:29Z",
+      "observed_utc": "2026-09-21T17:10:09Z",
       "output_dimensions": [
         832,
         1218
@@ -33557,7 +33557,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-21T15:39:31Z",
+      "observed_utc": "2026-09-21T17:10:09Z",
       "output_dimensions": [
         832,
         1218
@@ -33766,7 +33766,7 @@
       "width": 832
     }
   ],
-  "measured_utc": "2026-09-21T15:39:32Z",
+  "measured_utc": "2026-09-21T17:10:09Z",
   "generation": "Bazel: independently cached local renders; saved printer and Labelary captures",
   "host": {
     "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
@@ -35267,7 +35267,7 @@
     "codyps-zpl": [
       {
         "name": "adapter",
-        "sha256": "b238be95ebf777cc7494a1f9b9962b1a22d9d2fe96c88cadbf2b23008304dc12"
+        "sha256": "a6212825ff67a33f2b68d02ba44b9fc8108dc61aa491bf3ee1c0f9663347babb"
       },
       {
         "name": "command.json",

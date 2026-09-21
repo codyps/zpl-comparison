@@ -20,13 +20,13 @@ Source: fresh arguments
 
 **codyps/zpl (Rust)**
 
-rendered · 58.42% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/argument-qr-model-1-printer.png)](../../../../../benchmarks/accuracy/reference/qr-model-1.png) | [![codyps-zpl render](../../previews/argument-qr-model-1-codyps-zpl.png)](../../images/argument-qr-model-1-codyps-zpl.png) | [![codyps-zpl difference](../../previews/argument-qr-model-1-codyps-zpl-diff.png)](../../images/argument-qr-model-1-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 522; extra ink: 522 pixels.
+Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

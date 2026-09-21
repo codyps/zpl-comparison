@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (8601) panicked at src/main.rs:27:10:
+thread 'main' (7138) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "invalid shape dimensions" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

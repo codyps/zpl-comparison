@@ -2,20 +2,20 @@
   "schema": 1,
   "inputs": {
     "docs/benchmarks/command-support.json": "0a535c919d7544dc9f9829f05f681e18dd730e4972a4ba43cda069e76be63a2d",
-    "docs/benchmarks/accuracy/results.json": "0662a5b0b7644aa3bc96fd59fe07cda2252cbaf97baa019abf8288ccbedc1d74",
+    "docs/benchmarks/accuracy/results.json": "ec09f84c8d402d00b7e6a6ebeb84255328d1bea0eb1af397ed2ce2c35db1ed8e",
     "test-data/render-conformance/manifest.json": "204029dd80fdf1d80753e087e29369e2d03d8b786ee9fb4d0acd60464aed53bc",
     "docs/benchmarks/argument-support.md": "b5e232126255bf0f7b3b92b4557208abed9c6cd0a32009055fdd5eb219079f75",
     "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
     "benchmarks/adapters/rust/Cargo.toml": "5e9439a9cf48001bbba347f1c593409e5948e6222045dc40a066104e08d42a20",
     "benchmarks/adapters/node/package.json": "863935d7c446fe4a34d5ab329cdf3d44203ccd9765f58a23233f9c9349970647",
     "benchmarks/adapters/dotnet/Comparison.csproj": "dedf04ed99b98e453e2fd9892210bc1becab3e56aad46c315ec8a2264df28a9d",
-    "benchmarks/sources.lock.json": "469e2e9ca84ebdd33d36299b77b4a518bdeeceb62a8fba972ad57b7166384f55",
+    "benchmarks/sources.lock.json": "33982a8ddbd38d0143dc379fc115e318f6922864c8f44b85f3fc2c28542cd51e",
     "benchmarks/compatibility.py": "2a330faf598a05f338df2a8dd0d06c612dd79cdf4fb0925a4281cb0b5c2785b7",
-    "docs/benchmarks/accuracy/comparisons/features/results.json": "cc999b54b60a29197b1eeeaed9f028990ef2775ba5cdced6d7d4d276ec14a2ce",
-    "docs/benchmarks/conformance/results.json": "ce6d797b43d293e45e02dd14c7c2de3183920170431aedd2e63b17e5e0ffa346"
+    "docs/benchmarks/accuracy/comparisons/features/results.json": "9b9d8097fc175b9bae920583babeb52cd5495088b195b30b5360dd282686c55d",
+    "docs/benchmarks/conformance/results.json": "ea845fd5b8b83ea7ad19afe82abe71304483f3ddc922baea3561859309ea3252"
   },
-  "accuracy_measured_utc": "2026-09-21T15:39:32Z",
-  "conformance_measured_utc": "2026-09-21T15:50:59Z",
+  "accuracy_measured_utc": "2026-09-21T17:10:09Z",
+  "conformance_measured_utc": "2026-09-21T17:12:14Z",
   "libraries": {
     "toolchain": "0.4.1",
     "labelize": "1.5.0",

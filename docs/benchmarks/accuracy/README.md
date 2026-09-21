@@ -8,10 +8,10 @@ Counts include failed, blank, excluded, and unavailable-reference cases. Scored 
 
 | Corpus | Cases | Categories | Attempts | Scored attempts | Image differences | Measured UTC |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Argument and archived barcode accuracy](#argument-and-archived-barcode-details) | 133 | 6 | 1064 | 1064 | 1052 | 2026-09-21T15:39:32Z |
-| [Feature conformance](comparisons/features/README.md) | 598 | 38 | 4784 | 4512 | 4484 | 2026-09-21T15:50:59Z |
-| [External examples](comparisons/external/README.md) | 8 | 8 | 64 | 48 | 47 | 2026-09-21T15:35:11Z |
-| [Font-free layout](comparisons/layout/README.md) | 20 | 1 | 140 | 140 | 140 | 2026-09-21T15:36:38Z |
+| [Argument and archived barcode accuracy](#argument-and-archived-barcode-details) | 133 | 6 | 1064 | 1064 | 1052 | 2026-09-21T17:10:09Z |
+| [Feature conformance](comparisons/features/README.md) | 598 | 38 | 4784 | 4512 | 4500 | 2026-09-21T17:12:14Z |
+| [External examples](comparisons/external/README.md) | 8 | 8 | 64 | 48 | 47 | 2026-09-21T17:09:11Z |
+| [Font-free layout](comparisons/layout/README.md) | 20 | 1 | 140 | 140 | 140 | 2026-09-21T17:09:15Z |
 
 ## Browse by library
 
@@ -32,41 +32,41 @@ Each cell shows mean IoU and its scored denominator in parentheses. Corpora rema
 
 | Corpus | Category | Cases | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Argument and archived barcode accuracy | barcode-arguments | 25 | 55.04% (25) | 93.25% (25) | 31.16% (25) | 52.35% (25) | 31.16% (25) | 77.18% (25) | 79.15% (25) | 94.60% (25) |
-| Argument and archived barcode accuracy | barcode-formats | 60 | 28.71% (60) | 99.62% (60) | 14.36% (60) | 31.53% (60) | 14.36% (60) | 76.90% (60) | 23.47% (60) | 83.84% (60) |
+| Argument and archived barcode accuracy | barcode-arguments | 25 | 55.04% (25) | 100.00% (25) | 31.16% (25) | 52.35% (25) | 31.16% (25) | 77.18% (25) | 79.15% (25) | 94.60% (25) |
+| Argument and archived barcode accuracy | barcode-formats | 60 | 28.71% (60) | 100.00% (60) | 14.36% (60) | 31.53% (60) | 14.36% (60) | 76.90% (60) | 23.47% (60) | 83.84% (60) |
 | Argument and archived barcode accuracy | graphics | 4 | 75.00% (4) | 100.00% (4) | 100.00% (4) | 36.86% (4) | 100.00% (4) | 100.00% (4) | 75.00% (4) | 100.00% (4) |
 | Argument and archived barcode accuracy | layout | 11 | 31.49% (11) | 100.00% (11) | 62.65% (11) | 27.92% (11) | 69.52% (11) | 62.76% (11) | 58.49% (11) | 29.41% (11) |
 | Argument and archived barcode accuracy | shapes | 9 | 78.78% (9) | 100.00% (9) | 66.09% (9) | 67.23% (9) | 66.09% (9) | 78.54% (9) | 73.57% (9) | 95.38% (9) |
 | Argument and archived barcode accuracy | text | 24 | 24.37% (24) | 100.00% (24) | 62.75% (24) | 42.60% (24) | 62.75% (24) | 73.99% (24) | 58.21% (24) | 31.67% (24) |
-| Feature conformance | barcode-arguments | 70 | 72.05% (66) | 95.82% (66) | 31.81% (66) | 61.51% (66) | 31.81% (66) | 82.03% (66) | 80.55% (66) | 84.99% (66) |
-| Feature conformance | barcode-families | 60 | 11.86% (60) | 33.65% (60) | 8.68% (60) | 16.16% (60) | 8.68% (60) | 28.06% (60) | 10.61% (60) | 31.94% (60) |
+| Feature conformance | barcode-arguments | 70 | 72.05% (66) | 100.00% (66) | 31.81% (66) | 61.51% (66) | 31.81% (66) | 82.03% (66) | 80.55% (66) | 84.99% (66) |
+| Feature conformance | barcode-families | 60 | 11.86% (60) | 33.66% (60) | 8.68% (60) | 16.16% (60) | 8.68% (60) | 28.06% (60) | 10.61% (60) | 31.94% (60) |
 | Feature conformance | baseline-barcode-arguments | 25 | 55.04% (25) | 56.21% (25) | 31.16% (25) | 52.35% (25) | 31.16% (25) | 55.88% (25) | 55.00% (25) | 55.90% (25) |
 | Feature conformance | baseline-graphics | 4 | 75.00% (4) | 100.00% (4) | 100.00% (4) | 36.86% (4) | 100.00% (4) | 100.00% (4) | 75.00% (4) | 100.00% (4) |
 | Feature conformance | baseline-layout | 11 | 31.49% (11) | 100.00% (11) | 62.65% (11) | 27.92% (11) | 69.52% (11) | 62.76% (11) | 58.49% (11) | 29.41% (11) |
 | Feature conformance | baseline-shapes | 9 | 78.78% (9) | 100.00% (9) | 66.09% (9) | 67.23% (9) | 66.09% (9) | 78.54% (9) | 73.57% (9) | 95.38% (9) |
 | Feature conformance | baseline-text | 24 | 24.37% (24) | 100.00% (24) | 62.75% (24) | 42.60% (24) | 62.75% (24) | 73.99% (24) | 58.21% (24) | 31.67% (24) |
 | Feature conformance | clipping | 5 | 100.00% (3) | 100.00% (3) | 100.00% (3) | 100.00% (3) | 100.00% (3) | 100.00% (3) | 100.00% (3) | 100.00% (3) |
-| Feature conformance | compact-barcodes | 7 | 64.34% (7) | 75.02% (7) | 38.24% (7) | 52.17% (7) | 38.24% (7) | 84.91% (7) | 69.86% (7) | 85.15% (7) |
+| Feature conformance | compact-barcodes | 7 | 64.34% (7) | 100.00% (7) | 38.24% (7) | 52.17% (7) | 38.24% (7) | 84.91% (7) | 69.86% (7) | 85.15% (7) |
 | Feature conformance | compact-compositing | 2 | 97.15% (2) | 100.00% (2) | 97.61% (2) | 97.31% (2) | 97.61% (2) | 98.05% (2) | 96.45% (2) | 97.88% (2) |
 | Feature conformance | compact-fonts | 5 | 29.76% (5) | 100.00% (5) | 29.37% (5) | 32.80% (5) | 29.37% (5) | 60.93% (5) | 28.95% (5) | 35.51% (5) |
 | Feature conformance | compact-layout | 4 | 18.97% (4) | 100.00% (4) | 34.42% (4) | 36.54% (4) | 34.42% (4) | 47.25% (4) | 41.71% (4) | 36.77% (4) |
 | Feature conformance | compact-shapes | 6 | 79.35% (6) | 100.00% (6) | 77.57% (6) | 75.26% (6) | 77.57% (6) | 79.06% (6) | 63.94% (6) | 89.48% (6) |
 | Feature conformance | compositing | 5 | 94.98% (5) | 100.00% (5) | 98.94% (5) | 98.09% (5) | 98.94% (5) | 98.38% (5) | 97.84% (5) | 95.91% (5) |
-| Feature conformance | encoding | 28 | 18.73% (25) | 76.00% (25) | 48.28% (25) | 27.50% (25) | 48.28% (25) | 70.22% (25) | 48.85% (25) | 23.69% (25) |
+| Feature conformance | encoding | 28 | 18.73% (25) | 100.00% (25) | 48.28% (25) | 27.50% (25) | 48.28% (25) | 70.22% (25) | 48.85% (25) | 23.69% (25) |
 | Feature conformance | fonts | 78 | 16.16% (78) | 99.99% (78) | 32.98% (78) | 29.00% (78) | 32.98% (78) | 60.86% (78) | 32.58% (78) | 23.65% (78) |
 | Feature conformance | graphics | 14 | 93.75% (12) | 100.00% (12) | 100.00% (12) | 78.57% (12) | 100.00% (12) | 100.00% (12) | 85.42% (12) | 100.00% (12) |
-| Feature conformance | lexical | 3 | 25.74% (3) | 33.33% (3) | 45.81% (3) | 39.82% (3) | 45.81% (3) | 84.61% (3) | 40.22% (3) | 23.23% (3) |
+| Feature conformance | lexical | 3 | 25.74% (3) | 99.89% (3) | 45.81% (3) | 39.82% (3) | 45.81% (3) | 84.61% (3) | 40.22% (3) | 23.23% (3) |
 | Feature conformance | metamorphic | 5 | 53.65% (5) | 100.00% (5) | 57.87% (5) | 42.70% (5) | 77.60% (5) | 82.15% (5) | 73.90% (5) | 67.17% (5) |
 | Feature conformance | negative | 14 | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) |
 | Feature conformance | position | 29 | 28.95% (29) | 100.00% (29) | 48.20% (29) | 8.21% (29) | 51.42% (29) | 73.05% (29) | 46.08% (29) | 36.06% (29) |
 | Feature conformance | printer-barcode-defaults | 20 | 58.17% (20) | 100.00% (20) | 28.73% (20) | 100.00% (20) | 28.73% (20) | 100.00% (20) | 100.00% (20) | 100.00% (20) |
 | Feature conformance | printer-box-minimum | 3 | 98.50% (3) | 100.00% (3) | 40.84% (3) | 0.00% (3) | 40.84% (3) | 98.69% (3) | 97.33% (3) | 58.45% (3) |
-| Feature conformance | printer-character-remap | 3 | 65.68% (3) | 0.00% (3) | 53.45% (3) | 0.00% (3) | 53.45% (3) | 87.71% (3) | 80.38% (3) | 61.99% (3) |
-| Feature conformance | printer-code93-controls | 3 | 48.08% (3) | 0.00% (3) | 10.02% (3) | 48.20% (3) | 10.02% (3) | 86.83% (3) | 0.67% (3) | 77.47% (3) |
+| Feature conformance | printer-character-remap | 3 | 65.68% (3) | 100.00% (3) | 53.45% (3) | 0.00% (3) | 53.45% (3) | 87.71% (3) | 80.38% (3) | 61.99% (3) |
+| Feature conformance | printer-code93-controls | 3 | 48.08% (3) | 100.00% (3) | 10.02% (3) | 48.20% (3) | 10.02% (3) | 86.83% (3) | 0.67% (3) | 77.47% (3) |
 | Feature conformance | printer-databar-retail | 15 | 5.51% (10) | 100.00% (10) | 8.78% (10) | 8.40% (10) | 8.78% (10) | 60.00% (10) | 7.99% (10) | 100.00% (10) |
 | Feature conformance | printer-field-block-rounding | 6 | 21.40% (6) | 100.00% (6) | 27.89% (6) | 37.78% (6) | 27.89% (6) | 65.66% (6) | 36.11% (6) | 25.27% (6) |
-| Feature conformance | printer-qr-module-state | 3 | 29.75% (3) | 33.91% (3) | 29.43% (3) | 29.77% (3) | 29.43% (3) | 93.89% (3) | 34.48% (3) | 33.81% (3) |
-| Feature conformance | printer-retail-caption-edges | 5 | 70.35% (5) | 79.18% (5) | 9.24% (5) | 41.09% (5) | 9.24% (5) | 84.71% (5) | 73.26% (5) | 70.34% (5) |
+| Feature conformance | printer-qr-module-state | 3 | 29.75% (3) | 100.00% (3) | 29.43% (3) | 29.77% (3) | 29.43% (3) | 93.89% (3) | 34.48% (3) | 33.81% (3) |
+| Feature conformance | printer-retail-caption-edges | 5 | 70.35% (5) | 100.00% (5) | 9.24% (5) | 41.09% (5) | 9.24% (5) | 84.71% (5) | 73.26% (5) | 70.34% (5) |
 | Feature conformance | printer-retail-data | 9 | 15.35% (9) | 100.00% (9) | 10.27% (9) | 0.00% (9) | 10.27% (9) | 75.80% (9) | 0.00% (9) | 53.82% (9) |
 | Feature conformance | serialization | 4 | 6.33% (4) | 100.00% (4) | 20.27% (4) | 9.64% (4) | 20.27% (4) | 61.57% (4) | 15.02% (4) | 25.78% (4) |
 | Feature conformance | shapes | 46 | 74.39% (46) | 100.00% (46) | 52.12% (46) | 52.70% (46) | 52.12% (46) | 80.23% (46) | 61.77% (46) | 64.68% (46) |
@@ -74,14 +74,14 @@ Each cell shows mean IoU and its scored denominator in parentheses. Corpora rema
 | Feature conformance | stress | 4 | 12.52% (4) | 100.00% (4) | 57.23% (4) | 50.70% (4) | 57.23% (4) | 56.22% (4) | 48.34% (4) | 49.01% (4) |
 | Feature conformance | text-data | 10 | 17.08% (9) | 100.00% (9) | 52.88% (9) | 30.31% (9) | 52.88% (9) | 59.77% (9) | 26.15% (9) | 29.55% (9) |
 | Feature conformance | text-layout | 45 | 11.71% (42) | 99.86% (42) | 26.42% (42) | 25.51% (42) | 26.42% (42) | 50.51% (42) | 19.84% (42) | 31.00% (42) |
-| Feature conformance | torture | 4 | 72.21% (4) | 97.68% (4) | 64.11% (4) | 65.24% (4) | 64.11% (4) | 84.31% (4) | 66.97% (4) | 77.63% (4) |
+| Feature conformance | torture | 4 | 72.21% (4) | 99.99% (4) | 64.11% (4) | 65.24% (4) | 64.11% (4) | 84.31% (4) | 66.97% (4) | 77.63% (4) |
 | Feature conformance | transforms | 4 | 68.51% (4) | 100.00% (4) | 91.40% (4) | 82.67% (4) | 91.40% (4) | 21.78% (4) | 42.54% (4) | 18.91% (4) |
 | External examples | asset | 1 | 67.90% (1) | 82.12% (1) | 72.82% (1) | 43.01% (1) | 72.82% (1) | 75.83% (1) | 71.67% (1) | 71.38% (1) |
-| External examples | compliance | 1 | 30.03% (1) | 34.24% (1) | 26.35% (1) | 30.25% (1) | 26.35% (1) | 34.51% (1) | 34.32% (1) | 34.85% (1) |
+| External examples | compliance | 1 | 30.03% (1) | 34.22% (1) | 26.35% (1) | 30.25% (1) | 26.35% (1) | 34.51% (1) | 34.32% (1) | 34.85% (1) |
 | External examples | printer-configuration | 1 | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) |
-| External examples | product | 1 | 23.40% (1) | 29.34% (1) | 20.23% (1) | 23.26% (1) | 20.23% (1) | 30.27% (1) | 29.82% (1) | 28.70% (1) |
+| External examples | product | 1 | 23.40% (1) | 29.69% (1) | 20.23% (1) | 23.26% (1) | 20.23% (1) | 30.27% (1) | 29.82% (1) | 28.70% (1) |
 | External examples | retail | 1 | 27.35% (1) | 0.00% (1) | 13.79% (1) | 28.09% (1) | 13.79% (1) | 27.90% (1) | 28.34% (1) | 28.08% (1) |
-| External examples | shipping | 1 | 25.92% (1) | 31.70% (1) | 25.77% (1) | 27.76% (1) | 25.77% (1) | 32.48% (1) | 32.25% (1) | 21.01% (1) |
+| External examples | shipping | 1 | 25.92% (1) | 31.72% (1) | 25.77% (1) | 27.76% (1) | 25.77% (1) | 32.48% (1) | 32.25% (1) | 21.01% (1) |
 | External examples | stateful | 1 | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) |
 | External examples | warehouse | 1 | 35.73% (1) | 45.07% (1) | 30.07% (1) | 37.76% (1) | 30.07% (1) | 45.36% (1) | 43.57% (1) | 38.10% (1) |
 | Font-free layout | font-free-layout | 20 | 79.44% (20) | 100.00% (20) | 69.32% (20) | 69.32% (20) | 75.20% (20) | N/A | 77.13% (20) | 70.98% (20) |
@@ -92,7 +92,7 @@ Each cell shows mean IoU and its scored denominator in parentheses. Corpora rema
 
 Each case below links to its printer preview, library renders and difference images. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.
 
-Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-21T15:39:32Z.
+Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-21T17:10:09Z.
 
 Local renders are cached per case and library; the comparison date is the latest execution in this snapshot. Per-result `observed_utc` values retain execution/capture dates.
 
@@ -114,7 +114,7 @@ The chart’s Overall column is the mean over all nonblank printer cases, not an
 
 | Library | Nonblank / 133 | Ink exact | Strict exact | Errors | Blank | All-case mean IoU | Fresh argument IoU | Archived barcode IoU | Shared-case mean IoU |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| codyps/zpl (Rust) | 133 | 127 | 127 | 0 | 0 | 98.56% | 97.69% | 99.62% | 98.72% |
+| codyps/zpl (Rust) | 133 | 133 | 133 | 0 | 0 | 100.00% | 100.00% | 100.00% | 100.00% |
 | Labelary (SaaS) | 131 | 56 | 56 | 0 | 2 | 76.06% | 75.37% | 76.90% | 80.83% |
 | ZPLr (TypeScript) | 133 | 61 | 61 | 0 | 0 | 73.21% | 64.48% | 83.84% | 73.83% |
 | labelize (Rust) | 128 | 24 | 24 | 5 | 0 | 48.04% | 68.24% | 23.47% | 49.98% |
@@ -154,17 +154,17 @@ Click any result to compare the printer preview, library render and difference t
 | [code128-rotation-B](../../../benchmarks/accuracy/reference/code128-rotation-B.zpl) · [printer](../../../benchmarks/accuracy/reference/code128-rotation-B.png) | ^BC | o=B,h=60 | [100.0%](comparisons/cases/argument-code128-rotation-B.md#codyps-zpl) | [100.0%](comparisons/cases/argument-code128-rotation-B.md#labelize) | [100.0%](comparisons/cases/argument-code128-rotation-B.md#forge) | [11.9%](comparisons/cases/argument-code128-rotation-B.md#go) | [11.9%](comparisons/cases/argument-code128-rotation-B.md#ffi) | [100.0%](comparisons/cases/argument-code128-rotation-B.md#binarykits) | [100.0%](comparisons/cases/argument-code128-rotation-B.md#zplr) | [100.0%](comparisons/cases/argument-code128-rotation-B.md#labelary) |
 | [code128-mode-N](../../../benchmarks/accuracy/reference/code128-mode-N.zpl) · [printer](../../../benchmarks/accuracy/reference/code128-mode-N.png) | ^BC | mode=N | [100.0%](comparisons/cases/argument-code128-mode-N.md#codyps-zpl) | [100.0%](comparisons/cases/argument-code128-mode-N.md#labelize) | [100.0%](comparisons/cases/argument-code128-mode-N.md#forge) | [100.0%](comparisons/cases/argument-code128-mode-N.md#go) | [100.0%](comparisons/cases/argument-code128-mode-N.md#ffi) | [100.0%](comparisons/cases/argument-code128-mode-N.md#binarykits) | [100.0%](comparisons/cases/argument-code128-mode-N.md#zplr) | [100.0%](comparisons/cases/argument-code128-mode-N.md#labelary) |
 | [code128-mode-A](../../../benchmarks/accuracy/reference/code128-mode-A.zpl) · [printer](../../../benchmarks/accuracy/reference/code128-mode-A.png) | ^BC | mode=A | [100.0%](comparisons/cases/argument-code128-mode-A.md#codyps-zpl) | [100.0%](comparisons/cases/argument-code128-mode-A.md#labelize) | [32.5%](comparisons/cases/argument-code128-mode-A.md#forge) | [100.0%](comparisons/cases/argument-code128-mode-A.md#go) | [100.0%](comparisons/cases/argument-code128-mode-A.md#ffi) | [100.0%](comparisons/cases/argument-code128-mode-A.md#binarykits) | [100.0%](comparisons/cases/argument-code128-mode-A.md#zplr) | [100.0%](comparisons/cases/argument-code128-mode-A.md#labelary) |
-| [qr-model-1](../../../benchmarks/accuracy/reference/qr-model-1.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-model-1.png) | ^BQ | o=N,model=1,magnification=3,EC=L,mask=0 | [58.4%](comparisons/cases/argument-qr-model-1.md#codyps-zpl) | [48.2%](comparisons/cases/argument-qr-model-1.md#labelize) | [0.0%](comparisons/cases/argument-qr-model-1.md#forge) | [0.0%](comparisons/cases/argument-qr-model-1.md#go) | [0.0%](comparisons/cases/argument-qr-model-1.md#ffi) | [0.0%](comparisons/cases/argument-qr-model-1.md#binarykits) | [100.0%](comparisons/cases/argument-qr-model-1.md#zplr) | [blank](comparisons/cases/argument-qr-model-1.md#labelary) |
+| [qr-model-1](../../../benchmarks/accuracy/reference/qr-model-1.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-model-1.png) | ^BQ | o=N,model=1,magnification=3,EC=L,mask=0 | [100.0%](comparisons/cases/argument-qr-model-1.md#codyps-zpl) | [48.2%](comparisons/cases/argument-qr-model-1.md#labelize) | [0.0%](comparisons/cases/argument-qr-model-1.md#forge) | [0.0%](comparisons/cases/argument-qr-model-1.md#go) | [0.0%](comparisons/cases/argument-qr-model-1.md#ffi) | [0.0%](comparisons/cases/argument-qr-model-1.md#binarykits) | [100.0%](comparisons/cases/argument-qr-model-1.md#zplr) | [blank](comparisons/cases/argument-qr-model-1.md#labelary) |
 | [qr-model-2](../../../benchmarks/accuracy/reference/qr-model-2.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-model-2.png) | ^BQ | o=N,model=2,magnification=3,EC=L,mask=0 | [100.0%](comparisons/cases/argument-qr-model-2.md#codyps-zpl) | [49.8%](comparisons/cases/argument-qr-model-2.md#labelize) | [0.0%](comparisons/cases/argument-qr-model-2.md#forge) | [0.0%](comparisons/cases/argument-qr-model-2.md#go) | [0.0%](comparisons/cases/argument-qr-model-2.md#ffi) | [0.0%](comparisons/cases/argument-qr-model-2.md#binarykits) | [100.0%](comparisons/cases/argument-qr-model-2.md#zplr) | [52.5%](comparisons/cases/argument-qr-model-2.md#labelary) |
 | [qr-ec-L](../../../benchmarks/accuracy/reference/qr-ec-L.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-ec-L.png) | ^BQ | model=2,magnification=3,EC=L,mask=0 | [100.0%](comparisons/cases/argument-qr-ec-L.md#codyps-zpl) | [49.8%](comparisons/cases/argument-qr-ec-L.md#labelize) | [0.0%](comparisons/cases/argument-qr-ec-L.md#forge) | [0.0%](comparisons/cases/argument-qr-ec-L.md#go) | [0.0%](comparisons/cases/argument-qr-ec-L.md#ffi) | [0.0%](comparisons/cases/argument-qr-ec-L.md#binarykits) | [100.0%](comparisons/cases/argument-qr-ec-L.md#zplr) | [52.5%](comparisons/cases/argument-qr-ec-L.md#labelary) |
-| [qr-ec-M](../../../benchmarks/accuracy/reference/qr-ec-M.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-ec-M.png) | ^BQ | model=2,magnification=3,EC=M,mask=0 | [59.0%](comparisons/cases/argument-qr-ec-M.md#codyps-zpl) | [71.0%](comparisons/cases/argument-qr-ec-M.md#labelize) | [0.0%](comparisons/cases/argument-qr-ec-M.md#forge) | [0.0%](comparisons/cases/argument-qr-ec-M.md#go) | [0.0%](comparisons/cases/argument-qr-ec-M.md#ffi) | [0.0%](comparisons/cases/argument-qr-ec-M.md#binarykits) | [59.0%](comparisons/cases/argument-qr-ec-M.md#zplr) | [49.2%](comparisons/cases/argument-qr-ec-M.md#labelary) |
+| [qr-ec-M](../../../benchmarks/accuracy/reference/qr-ec-M.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-ec-M.png) | ^BQ | model=2,magnification=3,EC=M,mask=0 | [100.0%](comparisons/cases/argument-qr-ec-M.md#codyps-zpl) | [71.0%](comparisons/cases/argument-qr-ec-M.md#labelize) | [0.0%](comparisons/cases/argument-qr-ec-M.md#forge) | [0.0%](comparisons/cases/argument-qr-ec-M.md#go) | [0.0%](comparisons/cases/argument-qr-ec-M.md#ffi) | [0.0%](comparisons/cases/argument-qr-ec-M.md#binarykits) | [59.0%](comparisons/cases/argument-qr-ec-M.md#zplr) | [49.2%](comparisons/cases/argument-qr-ec-M.md#labelary) |
 | [qr-ec-Q](../../../benchmarks/accuracy/reference/qr-ec-Q.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-ec-Q.png) | ^BQ | model=2,magnification=3,EC=Q,mask=0 | [100.0%](comparisons/cases/argument-qr-ec-Q.md#codyps-zpl) | [71.0%](comparisons/cases/argument-qr-ec-Q.md#labelize) | [0.0%](comparisons/cases/argument-qr-ec-Q.md#forge) | [0.0%](comparisons/cases/argument-qr-ec-Q.md#go) | [0.0%](comparisons/cases/argument-qr-ec-Q.md#ffi) | [0.0%](comparisons/cases/argument-qr-ec-Q.md#binarykits) | [100.0%](comparisons/cases/argument-qr-ec-Q.md#zplr) | [51.2%](comparisons/cases/argument-qr-ec-Q.md#labelary) |
-| [qr-ec-H](../../../benchmarks/accuracy/reference/qr-ec-H.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-ec-H.png) | ^BQ | model=2,magnification=3,EC=H,mask=0 | [76.0%](comparisons/cases/argument-qr-ec-H.md#codyps-zpl) | [70.6%](comparisons/cases/argument-qr-ec-H.md#labelize) | [0.0%](comparisons/cases/argument-qr-ec-H.md#forge) | [0.0%](comparisons/cases/argument-qr-ec-H.md#go) | [0.0%](comparisons/cases/argument-qr-ec-H.md#ffi) | [0.0%](comparisons/cases/argument-qr-ec-H.md#binarykits) | [76.0%](comparisons/cases/argument-qr-ec-H.md#zplr) | [70.6%](comparisons/cases/argument-qr-ec-H.md#labelary) |
+| [qr-ec-H](../../../benchmarks/accuracy/reference/qr-ec-H.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-ec-H.png) | ^BQ | model=2,magnification=3,EC=H,mask=0 | [100.0%](comparisons/cases/argument-qr-ec-H.md#codyps-zpl) | [70.6%](comparisons/cases/argument-qr-ec-H.md#labelize) | [0.0%](comparisons/cases/argument-qr-ec-H.md#forge) | [0.0%](comparisons/cases/argument-qr-ec-H.md#go) | [0.0%](comparisons/cases/argument-qr-ec-H.md#ffi) | [0.0%](comparisons/cases/argument-qr-ec-H.md#binarykits) | [76.0%](comparisons/cases/argument-qr-ec-H.md#zplr) | [70.6%](comparisons/cases/argument-qr-ec-H.md#labelary) |
 | [qr-module-2](../../../benchmarks/accuracy/reference/qr-module-2.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-module-2.png) | ^BQ | magnification=2 | [100.0%](comparisons/cases/argument-qr-module-2.md#codyps-zpl) | [45.3%](comparisons/cases/argument-qr-module-2.md#labelize) | [0.0%](comparisons/cases/argument-qr-module-2.md#forge) | [0.0%](comparisons/cases/argument-qr-module-2.md#go) | [0.0%](comparisons/cases/argument-qr-module-2.md#ffi) | [0.0%](comparisons/cases/argument-qr-module-2.md#binarykits) | [100.0%](comparisons/cases/argument-qr-module-2.md#zplr) | [48.0%](comparisons/cases/argument-qr-module-2.md#labelary) |
 | [qr-module-5](../../../benchmarks/accuracy/reference/qr-module-5.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-module-5.png) | ^BQ | magnification=5 | [100.0%](comparisons/cases/argument-qr-module-5.md#codyps-zpl) | [53.6%](comparisons/cases/argument-qr-module-5.md#labelize) | [4.2%](comparisons/cases/argument-qr-module-5.md#forge) | [6.8%](comparisons/cases/argument-qr-module-5.md#go) | [6.8%](comparisons/cases/argument-qr-module-5.md#ffi) | [5.4%](comparisons/cases/argument-qr-module-5.md#binarykits) | [100.0%](comparisons/cases/argument-qr-module-5.md#zplr) | [56.2%](comparisons/cases/argument-qr-module-5.md#labelary) |
 | [qr-mask-0](../../../benchmarks/accuracy/reference/qr-mask-0.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-mask-0.png) | ^BQ | mask=0 | [100.0%](comparisons/cases/argument-qr-mask-0.md#codyps-zpl) | [49.8%](comparisons/cases/argument-qr-mask-0.md#labelize) | [0.0%](comparisons/cases/argument-qr-mask-0.md#forge) | [0.0%](comparisons/cases/argument-qr-mask-0.md#go) | [0.0%](comparisons/cases/argument-qr-mask-0.md#ffi) | [0.0%](comparisons/cases/argument-qr-mask-0.md#binarykits) | [100.0%](comparisons/cases/argument-qr-mask-0.md#zplr) | [52.5%](comparisons/cases/argument-qr-mask-0.md#labelary) |
-| [qr-mask-3](../../../benchmarks/accuracy/reference/qr-mask-3.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-mask-3.png) | ^BQ | mask=3 | [59.9%](comparisons/cases/argument-qr-mask-3.md#codyps-zpl) | [49.8%](comparisons/cases/argument-qr-mask-3.md#labelize) | [0.0%](comparisons/cases/argument-qr-mask-3.md#forge) | [0.0%](comparisons/cases/argument-qr-mask-3.md#go) | [0.0%](comparisons/cases/argument-qr-mask-3.md#ffi) | [0.0%](comparisons/cases/argument-qr-mask-3.md#binarykits) | [59.9%](comparisons/cases/argument-qr-mask-3.md#zplr) | [52.5%](comparisons/cases/argument-qr-mask-3.md#labelary) |
-| [qr-mask-7](../../../benchmarks/accuracy/reference/qr-mask-7.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-mask-7.png) | ^BQ | mask=7 | [77.9%](comparisons/cases/argument-qr-mask-7.md#codyps-zpl) | [49.8%](comparisons/cases/argument-qr-mask-7.md#labelize) | [0.0%](comparisons/cases/argument-qr-mask-7.md#forge) | [0.0%](comparisons/cases/argument-qr-mask-7.md#go) | [0.0%](comparisons/cases/argument-qr-mask-7.md#ffi) | [0.0%](comparisons/cases/argument-qr-mask-7.md#binarykits) | [77.9%](comparisons/cases/argument-qr-mask-7.md#zplr) | [52.5%](comparisons/cases/argument-qr-mask-7.md#labelary) |
+| [qr-mask-3](../../../benchmarks/accuracy/reference/qr-mask-3.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-mask-3.png) | ^BQ | mask=3 | [100.0%](comparisons/cases/argument-qr-mask-3.md#codyps-zpl) | [49.8%](comparisons/cases/argument-qr-mask-3.md#labelize) | [0.0%](comparisons/cases/argument-qr-mask-3.md#forge) | [0.0%](comparisons/cases/argument-qr-mask-3.md#go) | [0.0%](comparisons/cases/argument-qr-mask-3.md#ffi) | [0.0%](comparisons/cases/argument-qr-mask-3.md#binarykits) | [59.9%](comparisons/cases/argument-qr-mask-3.md#zplr) | [52.5%](comparisons/cases/argument-qr-mask-3.md#labelary) |
+| [qr-mask-7](../../../benchmarks/accuracy/reference/qr-mask-7.zpl) · [printer](../../../benchmarks/accuracy/reference/qr-mask-7.png) | ^BQ | mask=7 | [100.0%](comparisons/cases/argument-qr-mask-7.md#codyps-zpl) | [49.8%](comparisons/cases/argument-qr-mask-7.md#labelize) | [0.0%](comparisons/cases/argument-qr-mask-7.md#forge) | [0.0%](comparisons/cases/argument-qr-mask-7.md#go) | [0.0%](comparisons/cases/argument-qr-mask-7.md#ffi) | [0.0%](comparisons/cases/argument-qr-mask-7.md#binarykits) | [77.9%](comparisons/cases/argument-qr-mask-7.md#zplr) | [52.5%](comparisons/cases/argument-qr-mask-7.md#labelary) |
 | [datamatrix-module-2](../../../benchmarks/accuracy/reference/datamatrix-module-2.zpl) · [printer](../../../benchmarks/accuracy/reference/datamatrix-module-2.png) | ^BX | o=N,module=2,quality=200 | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#codyps-zpl) | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#labelize) | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#forge) | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#go) | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#ffi) | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#binarykits) | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#zplr) | [100.0%](comparisons/cases/argument-datamatrix-module-2.md#labelary) |
 | [datamatrix-module-4](../../../benchmarks/accuracy/reference/datamatrix-module-4.zpl) · [printer](../../../benchmarks/accuracy/reference/datamatrix-module-4.png) | ^BX | o=N,module=4,quality=200 | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#codyps-zpl) | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#labelize) | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#forge) | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#go) | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#ffi) | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#binarykits) | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#zplr) | [100.0%](comparisons/cases/argument-datamatrix-module-4.md#labelary) |
 
@@ -226,7 +226,7 @@ Click any result to compare the printer preview, library render and difference t
 | [plessey](../../../references/barcodes-zd621-v1/plessey.zpl) · [printer](../../../references/barcodes-zd621-v1/plessey.png) | ^BP | See exact archived ZPL | [100.0%](comparisons/cases/barcode-plessey.md#codyps-zpl) | [2.3%](comparisons/cases/barcode-plessey.md#labelize) | [2.1%](comparisons/cases/barcode-plessey.md#forge) | [2.7%](comparisons/cases/barcode-plessey.md#go) | [2.7%](comparisons/cases/barcode-plessey.md#ffi) | [1.7%](comparisons/cases/barcode-plessey.md#binarykits) | [20.6%](comparisons/cases/barcode-plessey.md#zplr) | [100.0%](comparisons/cases/barcode-plessey.md#labelary) |
 | [postal_planet](../../../references/barcodes-zd621-v1/postal_planet.zpl) · [printer](../../../references/barcodes-zd621-v1/postal_planet.png) | ^BZ | See exact archived ZPL | [100.0%](comparisons/cases/barcode-postal_planet.md#codyps-zpl) | [2.4%](comparisons/cases/barcode-postal_planet.md#labelize) | [41.9%](comparisons/cases/barcode-postal_planet.md#forge) | [3.2%](comparisons/cases/barcode-postal_planet.md#go) | [3.2%](comparisons/cases/barcode-postal_planet.md#ffi) | [2.6%](comparisons/cases/barcode-postal_planet.md#binarykits) | [100.0%](comparisons/cases/barcode-postal_planet.md#zplr) | [100.0%](comparisons/cases/barcode-postal_planet.md#labelary) |
 | [postnet](../../../references/barcodes-zd621-v1/postnet.zpl) · [printer](../../../references/barcodes-zd621-v1/postnet.png) | ^BZ | See exact archived ZPL | [100.0%](comparisons/cases/barcode-postnet.md#codyps-zpl) | [2.3%](comparisons/cases/barcode-postnet.md#labelize) | [100.0%](comparisons/cases/barcode-postnet.md#forge) | [2.0%](comparisons/cases/barcode-postnet.md#go) | [2.0%](comparisons/cases/barcode-postnet.md#ffi) | [1.3%](comparisons/cases/barcode-postnet.md#binarykits) | [100.0%](comparisons/cases/barcode-postnet.md#zplr) | [100.0%](comparisons/cases/barcode-postnet.md#labelary) |
-| [qr](../../../references/barcodes-zd621-v1/qr.zpl) · [printer](../../../references/barcodes-zd621-v1/qr.png) | ^BQ | See exact archived ZPL | [77.0%](comparisons/cases/barcode-qr.md#codyps-zpl) | [50.4%](comparisons/cases/barcode-qr.md#labelize) | [6.1%](comparisons/cases/barcode-qr.md#forge) | [8.3%](comparisons/cases/barcode-qr.md#go) | [8.3%](comparisons/cases/barcode-qr.md#ffi) | [6.3%](comparisons/cases/barcode-qr.md#binarykits) | [77.0%](comparisons/cases/barcode-qr.md#zplr) | [58.6%](comparisons/cases/barcode-qr.md#labelary) |
+| [qr](../../../references/barcodes-zd621-v1/qr.zpl) · [printer](../../../references/barcodes-zd621-v1/qr.png) | ^BQ | See exact archived ZPL | [100.0%](comparisons/cases/barcode-qr.md#codyps-zpl) | [50.4%](comparisons/cases/barcode-qr.md#labelize) | [6.1%](comparisons/cases/barcode-qr.md#forge) | [8.3%](comparisons/cases/barcode-qr.md#go) | [8.3%](comparisons/cases/barcode-qr.md#ffi) | [6.3%](comparisons/cases/barcode-qr.md#binarykits) | [77.0%](comparisons/cases/barcode-qr.md#zplr) | [58.6%](comparisons/cases/barcode-qr.md#labelary) |
 | [standard2of5](../../../references/barcodes-zd621-v1/standard2of5.zpl) · [printer](../../../references/barcodes-zd621-v1/standard2of5.png) | ^BJ | See exact archived ZPL | [100.0%](comparisons/cases/barcode-standard2of5.md#codyps-zpl) | [2.9%](comparisons/cases/barcode-standard2of5.md#labelize) | [2.8%](comparisons/cases/barcode-standard2of5.md#forge) | [4.1%](comparisons/cases/barcode-standard2of5.md#go) | [4.1%](comparisons/cases/barcode-standard2of5.md#ffi) | [2.7%](comparisons/cases/barcode-standard2of5.md#binarykits) | [33.7%](comparisons/cases/barcode-standard2of5.md#zplr) | [100.0%](comparisons/cases/barcode-standard2of5.md#labelary) |
 | [tlc39_linear](../../../references/barcodes-zd621-v1/tlc39_linear.zpl) · [printer](../../../references/barcodes-zd621-v1/tlc39_linear.png) | ^BT | See exact archived ZPL | [100.0%](comparisons/cases/barcode-tlc39_linear.md#codyps-zpl) | [2.1%](comparisons/cases/barcode-tlc39_linear.md#labelize) | [2.1%](comparisons/cases/barcode-tlc39_linear.md#forge) | [3.3%](comparisons/cases/barcode-tlc39_linear.md#go) | [3.3%](comparisons/cases/barcode-tlc39_linear.md#ffi) | [2.3%](comparisons/cases/barcode-tlc39_linear.md#binarykits) | [100.0%](comparisons/cases/barcode-tlc39_linear.md#zplr) | [2.0%](comparisons/cases/barcode-tlc39_linear.md#labelary) |
 | [tlc39_linked](../../../references/barcodes-zd621-v1/tlc39_linked.zpl) · [printer](../../../references/barcodes-zd621-v1/tlc39_linked.png) | ^BT | See exact archived ZPL | [100.0%](comparisons/cases/barcode-tlc39_linked.md#codyps-zpl) | [4.9%](comparisons/cases/barcode-tlc39_linked.md#labelize) | [4.8%](comparisons/cases/barcode-tlc39_linked.md#forge) | [5.8%](comparisons/cases/barcode-tlc39_linked.md#go) | [5.8%](comparisons/cases/barcode-tlc39_linked.md#ffi) | [3.6%](comparisons/cases/barcode-tlc39_linked.md#binarykits) | [67.5%](comparisons/cases/barcode-tlc39_linked.md#zplr) | [5.3%](comparisons/cases/barcode-tlc39_linked.md#labelary) |
@@ -355,14 +355,14 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 | [readable-BU-R](comparisons/cases/conformance-readable-BU-R.md) | valid | 82.05% | 100.00% | 4.20% | 78.94% | 4.20% | 91.75% | 84.69% | 88.07% |
 | [readable-BU-I](comparisons/cases/conformance-readable-BU-I.md) | valid | 81.16% | 100.00% | 12.47% | 79.13% | 12.47% | 94.05% | 84.69% | 88.35% |
 | [readable-BU-B](comparisons/cases/conformance-readable-BU-B.md) | valid | 81.20% | 100.00% | 6.94% | 78.94% | 6.94% | 94.04% | 84.17% | 88.35% |
-| [qr-mask-full-0](comparisons/cases/conformance-qr-mask-full-0.md) | valid | 11.88% | 51.01% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 51.01% |
-| [qr-mask-full-1](comparisons/cases/conformance-qr-mask-full-1.md) | valid | 14.00% | 67.53% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 67.53% |
-| [qr-mask-full-2](comparisons/cases/conformance-qr-mask-full-2.md) | valid | 12.33% | 60.28% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 60.28% |
-| [qr-mask-full-3](comparisons/cases/conformance-qr-mask-full-3.md) | valid | 13.79% | 60.55% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 60.55% |
-| [qr-mask-full-4](comparisons/cases/conformance-qr-mask-full-4.md) | valid | 15.11% | 61.59% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 61.59% |
-| [qr-mask-full-5](comparisons/cases/conformance-qr-mask-full-5.md) | valid | 12.94% | 77.69% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 77.69% |
+| [qr-mask-full-0](comparisons/cases/conformance-qr-mask-full-0.md) | valid | 11.88% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 51.01% |
+| [qr-mask-full-1](comparisons/cases/conformance-qr-mask-full-1.md) | valid | 14.00% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 67.53% |
+| [qr-mask-full-2](comparisons/cases/conformance-qr-mask-full-2.md) | valid | 12.33% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 60.28% |
+| [qr-mask-full-3](comparisons/cases/conformance-qr-mask-full-3.md) | valid | 13.79% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 60.55% |
+| [qr-mask-full-4](comparisons/cases/conformance-qr-mask-full-4.md) | valid | 15.11% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 61.59% |
+| [qr-mask-full-5](comparisons/cases/conformance-qr-mask-full-5.md) | valid | 12.94% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 77.69% |
 | [qr-mask-full-6](comparisons/cases/conformance-qr-mask-full-6.md) | valid | 15.18% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 100.00% |
-| [qr-mask-full-7](comparisons/cases/conformance-qr-mask-full-7.md) | valid | 13.21% | 45.34% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 45.34% |
+| [qr-mask-full-7](comparisons/cases/conformance-qr-mask-full-7.md) | valid | 13.21% | 100.00% | 11.80% | 14.00% | 11.80% | 47.87% | 77.12% | 45.34% |
 | [datamatrix-quality-0](comparisons/cases/conformance-datamatrix-quality-0.md) | valid | 35.34% | 100.00% | 35.34% | 35.34% | 35.34% | 0.00% · blank | 35.34% | 100.00% |
 | [datamatrix-quality-50](comparisons/cases/conformance-datamatrix-quality-50.md) | valid | 29.75% | 100.00% | 29.75% | 29.75% | 29.75% | 0.00% · blank | 29.75% | 100.00% |
 | [datamatrix-quality-80](comparisons/cases/conformance-datamatrix-quality-80.md) | valid | 32.48% | 100.00% | 32.48% | 32.48% | 32.48% | 0.00% · blank | 32.48% | 100.00% |
@@ -443,7 +443,7 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 | [symbol-plessey](comparisons/cases/conformance-symbol-plessey.md) | valid | 1.36% | 19.23% | 1.87% | 1.69% | 1.87% | 19.23% | 2.11% | 35.16% |
 | [symbol-postal_planet](comparisons/cases/conformance-symbol-postal_planet.md) | valid | 2.15% | 59.20% | 2.86% | 67.30% | 2.86% | 59.20% | 2.69% | 59.20% |
 | [symbol-postnet](comparisons/cases/conformance-symbol-postnet.md) | valid | 0.99% | 55.25% | 1.69% | 55.25% | 1.69% | 55.25% | 2.09% | 55.25% |
-| [symbol-qr](comparisons/cases/conformance-symbol-qr.md) | valid | 4.86% | 34.11% | 7.21% | 4.91% | 7.21% | 32.81% | 31.02% | 34.11% |
+| [symbol-qr](comparisons/cases/conformance-symbol-qr.md) | valid | 4.86% | 34.31% | 7.21% | 4.91% | 7.21% | 32.81% | 31.02% | 34.11% |
 | [symbol-standard2of5](comparisons/cases/conformance-symbol-standard2of5.md) | valid | 2.32% | 45.24% | 3.34% | 2.90% | 3.34% | 45.24% | 2.68% | 15.45% |
 | [symbol-tlc39_linear](comparisons/cases/conformance-symbol-tlc39_linear.md) | valid | 1.84% | 38.27% | 2.75% | 2.00% | 2.75% | 1.83% | 1.85% | 38.27% |
 | [symbol-tlc39_linked](comparisons/cases/conformance-symbol-tlc39_linked.md) | valid | 4.17% | 33.46% | 5.60% | 4.35% | 5.60% | 4.68% | 4.29% | 32.71% |
@@ -562,9 +562,9 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [compact-state-qr-code128](comparisons/cases/conformance-compact-state-qr-code128.md) | valid | 24.93% | 25.11% | 25.11% | 25.07% | 25.11% | 95.21% | 25.13% | 25.10% |
+| [compact-state-qr-code128](comparisons/cases/conformance-compact-state-qr-code128.md) | valid | 24.93% | 100.00% | 25.11% | 25.07% | 25.11% | 95.21% | 25.13% | 25.10% |
 | [compact-state-code128-dm](comparisons/cases/conformance-compact-state-code128-dm.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [compact-code93-substitutes](comparisons/cases/conformance-compact-code93-substitutes.md) | valid | 36.42% | 0.00% · error | 7.69% | 36.31% | 7.69% | 93.26% | 7.09% | 92.38% |
+| [compact-code93-substitutes](comparisons/cases/conformance-compact-code93-substitutes.md) | valid | 36.42% | 100.00% | 7.69% | 36.31% | 7.69% | 93.26% | 7.09% | 92.38% |
 | [compact-qr-field-hex](comparisons/cases/conformance-compact-qr-field-hex.md) | valid | 14.14% | 100.00% | 10.72% | 15.31% | 10.72% | 52.38% | 76.91% | 100.00% |
 | [compact-pdf417-numeric](comparisons/cases/conformance-compact-pdf417-numeric.md) | valid | 100.00% | 100.00% | 100.00% | 14.85% | 100.00% | 71.01% | 100.00% | 100.00% |
 | [compact-caption-N](comparisons/cases/conformance-compact-caption-N.md) | valid | 88.29% | 100.00% | 12.08% | 86.76% | 12.08% | 89.38% | 90.88% | 86.52% |
@@ -637,12 +637,12 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 | [encoding-28](comparisons/cases/conformance-encoding-28.md) | valid | 22.40% | 100.00% | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
 | [encoding-29](comparisons/cases/conformance-encoding-29.md) | valid | unscored | unscored · error | unscored | unscored | unscored | unscored · blank | unscored | unscored |
 | [encoding-30](comparisons/cases/conformance-encoding-30.md) | valid | unscored | unscored · error | unscored | unscored | unscored | unscored | unscored | unscored |
-| [encoding-31](comparisons/cases/conformance-encoding-31.md) | valid | 22.40% | 0.00% · error | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
-| [encoding-33](comparisons/cases/conformance-encoding-33.md) | valid | 22.40% | 0.00% · error | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
-| [encoding-34](comparisons/cases/conformance-encoding-34.md) | valid | 22.40% | 0.00% · error | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
-| [encoding-35](comparisons/cases/conformance-encoding-35.md) | valid | 22.40% | 0.00% · error | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
-| [encoding-36](comparisons/cases/conformance-encoding-36.md) | valid | 22.40% | 0.00% · error | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
-| [encoding-remap](comparisons/cases/conformance-encoding-remap.md) | valid | 30.01% | 0.00% · error | 66.19% | 0.00% · error | 66.19% | 77.42% | 60.49% | 32.20% |
+| [encoding-31](comparisons/cases/conformance-encoding-31.md) | valid | 22.40% | 100.00% | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
+| [encoding-33](comparisons/cases/conformance-encoding-33.md) | valid | 22.40% | 100.00% | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
+| [encoding-34](comparisons/cases/conformance-encoding-34.md) | valid | 22.40% | 100.00% | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
+| [encoding-35](comparisons/cases/conformance-encoding-35.md) | valid | 22.40% | 100.00% | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
+| [encoding-36](comparisons/cases/conformance-encoding-36.md) | valid | 22.40% | 100.00% | 71.60% | 43.00% | 71.60% | 80.75% | 83.96% | 31.59% |
+| [encoding-remap](comparisons/cases/conformance-encoding-remap.md) | valid | 30.01% | 100.00% | 66.19% | 0.00% · error | 66.19% | 77.42% | 60.49% | 32.20% |
 | [advanced-text-0000](comparisons/cases/conformance-advanced-text-0000.md) | valid | 11.60% | 100.00% | 37.47% | 22.41% | 37.47% | 76.25% | 29.08% | 14.05% |
 | [advanced-text-1000](comparisons/cases/conformance-advanced-text-1000.md) | valid | 13.41% | 100.00% | 21.09% | 13.09% | 21.09% | 71.81% | 30.28% | 15.63% |
 | [advanced-text-0100](comparisons/cases/conformance-advanced-text-0100.md) | valid | 11.25% | 100.00% | 37.47% | 22.41% | 37.47% | 28.36% | 27.15% | 14.64% |
@@ -756,8 +756,8 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [hex-underscore](comparisons/cases/conformance-hex-underscore.md) | boundary | 26.87% | 0.00% · error | 25.11% | 26.42% | 25.11% | 83.36% | 27.65% | 18.80% |
-| [hex-hash](comparisons/cases/conformance-hex-hash.md) | boundary | 26.87% | 0.00% · error | 25.11% | 26.42% | 25.11% | 83.36% | 27.65% | 18.80% |
+| [hex-underscore](comparisons/cases/conformance-hex-underscore.md) | boundary | 26.87% | 99.84% | 25.11% | 26.42% | 25.11% | 83.36% | 27.65% | 18.80% |
+| [hex-hash](comparisons/cases/conformance-hex-hash.md) | boundary | 26.87% | 99.84% | 25.11% | 26.42% | 25.11% | 83.36% | 27.65% | 18.80% |
 | [comments-and-line-endings](comparisons/cases/conformance-comments-and-line-endings.md) | valid | 23.48% | 100.00% | 87.20% | 66.64% | 87.20% | 87.10% | 65.36% | 32.08% |
 
 ### Feature conformance: metamorphic
@@ -860,17 +860,17 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [printer-character-remap-scope-clean](comparisons/cases/conformance-printer-character-remap-scope-clean.md) | boundary | 30.56% | 0.00% · error | 69.19% | 0.00% · error | 69.19% | 79.52% | 71.95% | 34.28% |
-| [printer-character-remap-space-barcode-clean](comparisons/cases/conformance-printer-character-remap-space-barcode-clean.md) | boundary | 78.97% | 0.00% · error | 82.93% | 0.00% · error | 82.93% | 92.69% | 82.71% | 71.01% |
-| [printer-character-remap-retail-positive](comparisons/cases/conformance-printer-character-remap-retail-positive.md) | boundary | 87.51% | 0.00% · error | 8.24% | 0.00% · error | 8.24% | 90.93% | 86.47% | 80.69% |
+| [printer-character-remap-scope-clean](comparisons/cases/conformance-printer-character-remap-scope-clean.md) | boundary | 30.56% | 100.00% | 69.19% | 0.00% · error | 69.19% | 79.52% | 71.95% | 34.28% |
+| [printer-character-remap-space-barcode-clean](comparisons/cases/conformance-printer-character-remap-space-barcode-clean.md) | boundary | 78.97% | 100.00% | 82.93% | 0.00% · error | 82.93% | 92.69% | 82.71% | 71.01% |
+| [printer-character-remap-retail-positive](comparisons/cases/conformance-printer-character-remap-retail-positive.md) | boundary | 87.51% | 100.00% | 8.24% | 0.00% · error | 8.24% | 90.93% | 86.47% | 80.69% |
 
 ### Feature conformance: printer-code93-controls
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [printer-code93-controls-pairs](comparisons/cases/conformance-printer-code93-controls-pairs.md) | boundary | 49.02% | 0.00% · error | 11.01% | 49.42% | 11.01% | 86.70% | 0.67% | 72.95% |
-| [printer-code93-controls-holdouts](comparisons/cases/conformance-printer-code93-controls-holdouts.md) | boundary | 48.65% | 0.00% · error | 10.13% | 48.50% | 10.13% | 84.35% | 0.74% | 70.83% |
-| [printer-code93-controls-combined-checks](comparisons/cases/conformance-printer-code93-controls-combined-checks.md) | boundary | 46.58% | 0.00% · error | 8.92% | 46.69% | 8.92% | 89.44% | 0.60% | 88.62% |
+| [printer-code93-controls-pairs](comparisons/cases/conformance-printer-code93-controls-pairs.md) | boundary | 49.02% | 100.00% | 11.01% | 49.42% | 11.01% | 86.70% | 0.67% | 72.95% |
+| [printer-code93-controls-holdouts](comparisons/cases/conformance-printer-code93-controls-holdouts.md) | boundary | 48.65% | 100.00% | 10.13% | 48.50% | 10.13% | 84.35% | 0.74% | 70.83% |
+| [printer-code93-controls-combined-checks](comparisons/cases/conformance-printer-code93-controls-combined-checks.md) | boundary | 46.58% | 100.00% | 8.92% | 46.69% | 8.92% | 89.44% | 0.60% | 88.62% |
 
 ### Feature conformance: printer-databar-retail
 
@@ -907,19 +907,19 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [printer-qr-module-state-same-field](comparisons/cases/conformance-printer-qr-module-state-same-field.md) | boundary | 31.37% | 31.87% | 31.26% | 31.50% | 31.26% | 94.28% | 31.48% | 31.49% |
-| [printer-qr-module-state-next-field](comparisons/cases/conformance-printer-qr-module-state-next-field.md) | boundary | 25.80% | 37.64% | 24.64% | 25.68% | 24.64% | 87.97% | 39.77% | 37.34% |
-| [printer-qr-module-state-holdouts-basic](comparisons/cases/conformance-printer-qr-module-state-holdouts-basic.md) | boundary | 32.07% | 32.22% | 32.40% | 32.14% | 32.40% | 99.41% | 32.18% | 32.61% |
+| [printer-qr-module-state-same-field](comparisons/cases/conformance-printer-qr-module-state-same-field.md) | boundary | 31.37% | 100.00% | 31.26% | 31.50% | 31.26% | 94.28% | 31.48% | 31.49% |
+| [printer-qr-module-state-next-field](comparisons/cases/conformance-printer-qr-module-state-next-field.md) | boundary | 25.80% | 100.00% | 24.64% | 25.68% | 24.64% | 87.97% | 39.77% | 37.34% |
+| [printer-qr-module-state-holdouts-basic](comparisons/cases/conformance-printer-qr-module-state-holdouts-basic.md) | boundary | 32.07% | 100.00% | 32.40% | 32.14% | 32.40% | 99.41% | 32.18% | 32.61% |
 
 ### Feature conformance: printer-retail-caption-edges
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [printer-retail-caption-edges-small](comparisons/cases/conformance-printer-retail-caption-edges-small.md) | boundary | 80.89% | 99.24% | 14.30% | 75.17% | 14.30% | 86.16% | 78.62% | 72.90% |
-| [printer-retail-caption-edges-large](comparisons/cases/conformance-printer-retail-caption-edges-large.md) | boundary | 62.56% | 98.88% | 7.23% | 64.39% | 7.23% | 75.40% | 72.45% | 70.22% |
-| [printer-retail-caption-edges-rotations](comparisons/cases/conformance-printer-retail-caption-edges-rotations.md) | boundary | 65.30% | 98.95% | 6.89% | 65.91% | 6.89% | 86.13% | 73.12% | 71.96% |
-| [printer-retail-caption-edges-holdouts](comparisons/cases/conformance-printer-retail-caption-edges-holdouts.md) | boundary | 55.35% | 98.84% | 9.54% | 0.00% · error | 9.54% | 84.76% | 55.60% | 55.92% |
-| [printer-retail-caption-edges-discovery](comparisons/cases/conformance-printer-retail-caption-edges-discovery.md) | boundary | 87.66% | 0.00% · error | 8.24% | 0.00% · error | 8.24% | 91.09% | 86.52% | 80.69% |
+| [printer-retail-caption-edges-small](comparisons/cases/conformance-printer-retail-caption-edges-small.md) | boundary | 80.89% | 100.00% | 14.30% | 75.17% | 14.30% | 86.16% | 78.62% | 72.90% |
+| [printer-retail-caption-edges-large](comparisons/cases/conformance-printer-retail-caption-edges-large.md) | boundary | 62.56% | 100.00% | 7.23% | 64.39% | 7.23% | 75.40% | 72.45% | 70.22% |
+| [printer-retail-caption-edges-rotations](comparisons/cases/conformance-printer-retail-caption-edges-rotations.md) | boundary | 65.30% | 100.00% | 6.89% | 65.91% | 6.89% | 86.13% | 73.12% | 71.96% |
+| [printer-retail-caption-edges-holdouts](comparisons/cases/conformance-printer-retail-caption-edges-holdouts.md) | boundary | 55.35% | 100.00% | 9.54% | 0.00% · error | 9.54% | 84.76% | 55.60% | 55.92% |
+| [printer-retail-caption-edges-discovery](comparisons/cases/conformance-printer-retail-caption-edges-discovery.md) | boundary | 87.66% | 100.00% | 8.24% | 0.00% · error | 8.24% | 91.09% | 86.52% | 80.69% |
 
 ### Feature conformance: printer-retail-data
 
@@ -1084,9 +1084,9 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [torture-typography](comparisons/cases/conformance-torture-typography.md) | valid | 34.07% | 97.95% | 31.64% | 44.54% | 31.64% | 68.81% | 33.81% | 44.50% |
+| [torture-typography](comparisons/cases/conformance-torture-typography.md) | valid | 34.07% | 100.00% | 31.64% | 44.54% | 31.64% | 68.81% | 33.81% | 44.50% |
 | [torture-geometry](comparisons/cases/conformance-torture-geometry.md) | valid | 77.02% | 99.98% | 50.86% | 70.11% | 50.86% | 78.45% | 68.19% | 80.70% |
-| [torture-shipping-label](comparisons/cases/conformance-torture-shipping-label.md) | valid | 79.53% | 92.79% | 83.95% | 76.68% | 83.95% | 91.18% | 84.75% | 87.38% |
+| [torture-shipping-label](comparisons/cases/conformance-torture-shipping-label.md) | valid | 79.53% | 99.99% | 83.95% | 76.68% | 83.95% | 91.18% | 84.75% | 87.38% |
 | [torture-overlap](comparisons/cases/conformance-torture-overlap.md) | valid | 98.23% | 100.00% | 89.99% | 69.62% | 89.99% | 98.78% | 81.16% | 97.93% |
 
 ### Feature conformance: transforms
@@ -1108,7 +1108,7 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [zpl-toolchain-compliance_label](comparisons/cases/external-zpl-zpl-toolchain-compliance_label.md) | boundary | 30.03% | 34.24% | 26.35% | 30.25% | 26.35% | 34.51% | 34.32% | 34.85% |
+| [zpl-toolchain-compliance_label](comparisons/cases/external-zpl-zpl-toolchain-compliance_label.md) | boundary | 30.03% | 34.22% | 26.35% | 30.25% | 26.35% | 34.51% | 34.32% | 34.85% |
 
 ### External examples: printer-configuration
 
@@ -1120,7 +1120,7 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [zpl-toolchain-product_label](comparisons/cases/external-zpl-zpl-toolchain-product_label.md) | boundary | 23.40% | 29.34% | 20.23% | 23.26% | 20.23% | 30.27% | 29.82% | 28.70% |
+| [zpl-toolchain-product_label](comparisons/cases/external-zpl-zpl-toolchain-product_label.md) | boundary | 23.40% | 29.69% | 20.23% | 23.26% | 20.23% | 30.27% | 29.82% | 28.70% |
 
 ### External examples: retail
 
@@ -1132,7 +1132,7 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 | Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [zpl-toolchain-shipping_label](comparisons/cases/external-zpl-zpl-toolchain-shipping_label.md) | boundary | 25.92% | 31.70% | 25.77% | 27.76% | 25.77% | 32.48% | 32.25% | 21.01% |
+| [zpl-toolchain-shipping_label](comparisons/cases/external-zpl-zpl-toolchain-shipping_label.md) | boundary | 25.92% | 31.72% | 25.77% | 27.76% | 25.77% | 32.48% | 32.25% | 21.01% |
 
 ### External examples: stateful
 

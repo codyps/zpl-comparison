@@ -22,13 +22,13 @@ Zebra programming guide: [^BC](../../../../zpl-zbi2-pg-en.pdf#page=94) · [^BQ](
 
 **codyps/zpl (Rust)**
 
-rendered · 32.22% IoU · [All cases for this library](../features/libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../features/libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/printer-qr-module-state-holdouts-basic-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/printer-qr-module-state-holdouts-basic.png) | [![codyps-zpl render](../features/previews/printer-qr-module-state-holdouts-basic-codyps-zpl.png)](../../../conformance/images/printer-qr-module-state-holdouts-basic-codyps-zpl.png) | [![codyps-zpl difference](../features/previews/printer-qr-module-state-holdouts-basic-codyps-zpl-diff.png)](../features/images/printer-qr-module-state-holdouts-basic-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 900]; missing ink: 4720; extra ink: 8510 pixels.
+Library dimensions: [832, 900]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

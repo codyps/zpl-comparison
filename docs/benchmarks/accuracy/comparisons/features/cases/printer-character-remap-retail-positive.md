@@ -22,19 +22,13 @@ Zebra programming guide: [^BU](../../../../../zpl-zbi2-pg-en.pdf#page=142) · [^
 
 **codyps/zpl (Rust)**
 
-error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../previews/printer-character-remap-retail-positive-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-character-remap-retail-positive.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../previews/printer-character-remap-retail-positive-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-character-remap-retail-positive.png) | [![codyps-zpl render](../previews/printer-character-remap-retail-positive-codyps-zpl.png)](../../../../conformance/images/printer-character-remap-retail-positive-codyps-zpl.png) | [![codyps-zpl difference](../previews/printer-character-remap-retail-positive-codyps-zpl-diff.png)](../images/printer-character-remap-retail-positive-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (24410) panicked at src/main.rs:27:10:
-render: RenderError { offset: 55, message: "unexpected command parameters" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 500]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

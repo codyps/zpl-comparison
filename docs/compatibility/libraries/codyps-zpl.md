@@ -17,13 +17,13 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/codyps-zpl.md)
 
-127/133 exact; mean IoU 98.6%; 0 errors. Snapshot: 2026-09-21T15:39:32Z.
+133/133 exact; mean IoU 100.0%; 0 errors. Snapshot: 2026-09-21T17:10:09Z.
 
 ## Feature groups
 
 | Feature | Fixtures | Printer evidence | Conformance execution |
 | --- | --- | --- | --- |
-| [Barcode arguments](../features/barcode-arguments.md) | 70 | 59/66 exact; mean IoU 95.8%; 0 errors | 4 blank, 66 rendered |
+| [Barcode arguments](../features/barcode-arguments.md) | 70 | 66/66 exact; mean IoU 100.0%; 0 errors | 4 blank, 66 rendered |
 | [Barcode families](../features/barcode-families.md) | 60 | 1/60 exact; mean IoU 33.7%; 0 errors | 60 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 14/25 exact; mean IoU 56.2%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
@@ -31,27 +31,27 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 9/9 exact; mean IoU 100.0%; 0 errors | 9 rendered |
 | [Baseline text](../features/baseline-text.md) | 24 | 24/24 exact; mean IoU 100.0%; 0 errors | 24 rendered |
 | [Clipping](../features/clipping.md) | 5 | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
-| [Compact barcodes](../features/compact-barcodes.md) | 7 | 5/7 exact; mean IoU 75.0%; 1 errors | 1 error, 6 rendered |
+| [Compact barcodes](../features/compact-barcodes.md) | 7 | 7/7 exact; mean IoU 100.0%; 0 errors | 7 rendered |
 | [Compact compositing](../features/compact-compositing.md) | 2 | 2/2 exact; mean IoU 100.0%; 0 errors | 2 rendered |
 | [Compact fonts](../features/compact-fonts.md) | 5 | 5/5 exact; mean IoU 100.0%; 0 errors | 5 rendered |
 | [Compact layout](../features/compact-layout.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Compact shapes](../features/compact-shapes.md) | 6 | 6/6 exact; mean IoU 100.0%; 0 errors | 6 rendered |
 | [Compositing](../features/compositing.md) | 5 | 5/5 exact; mean IoU 100.0%; 0 errors | 5 rendered |
-| [Encoding](../features/encoding.md) | 28 | 19/25 exact; mean IoU 76.0%; 6 errors | 1 blank, 8 error, 19 rendered |
+| [Encoding](../features/encoding.md) | 28 | 25/25 exact; mean IoU 100.0%; 0 errors | 1 blank, 2 error, 25 rendered |
 | [Fonts](../features/fonts.md) | 78 | 76/78 exact; mean IoU 100.0%; 0 errors | 78 rendered |
 | [Graphics](../features/graphics.md) | 14 | 12/12 exact; mean IoU 100.0%; 0 errors | 14 rendered |
-| [Lexical](../features/lexical.md) | 3 | 1/3 exact; mean IoU 33.3%; 2 errors | 2 error, 1 rendered |
+| [Lexical](../features/lexical.md) | 3 | 1/3 exact; mean IoU 99.9%; 0 errors | 3 rendered |
 | [Metamorphic](../features/metamorphic.md) | 5 | 5/5 exact; mean IoU 100.0%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 12 error, 2 rendered |
 | [Position](../features/position.md) | 29 | 29/29 exact; mean IoU 100.0%; 0 errors | 29 rendered |
 | [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 20/20 exact; mean IoU 100.0%; 0 errors | 20 rendered |
 | [Printer box minimum](../features/printer-box-minimum.md) | 3 | 3/3 exact; mean IoU 100.0%; 0 errors | 3 rendered |
-| [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 0.0%; 3 errors | 3 error |
-| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 0.0%; 3 errors | 3 error |
+| [Printer character remap](../features/printer-character-remap.md) | 3 | 3/3 exact; mean IoU 100.0%; 0 errors | 3 rendered |
+| [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 3/3 exact; mean IoU 100.0%; 0 errors | 3 rendered |
 | [Printer databar retail](../features/printer-databar-retail.md) | 15 | 10/10 exact; mean IoU 100.0%; 0 errors | 10 rendered; Negative-input observations: 5 error |
 | [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 6/6 exact; mean IoU 100.0%; 0 errors | 6 rendered |
-| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 33.9%; 0 errors | 3 rendered |
-| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 79.2%; 1 errors | 1 error, 4 rendered |
+| [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 3/3 exact; mean IoU 100.0%; 0 errors | 3 rendered |
+| [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 5/5 exact; mean IoU 100.0%; 0 errors | 5 rendered |
 | [Printer retail data](../features/printer-retail-data.md) | 9 | 9/9 exact; mean IoU 100.0%; 0 errors | 9 rendered |
 | [Serialization](../features/serialization.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Shapes](../features/shapes.md) | 46 | 46/46 exact; mean IoU 100.0%; 0 errors | 46 rendered |
@@ -59,7 +59,7 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | [Stress](../features/stress.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Text data](../features/text-data.md) | 10 | 9/9 exact; mean IoU 100.0%; 0 errors | 1 blank, 9 rendered |
 | [Text layout](../features/text-layout.md) | 45 | 36/42 exact; mean IoU 99.9%; 0 errors | 3 blank, 42 rendered |
-| [Torture](../features/torture.md) | 4 | 1/4 exact; mean IoU 97.7%; 0 errors | 4 rendered |
+| [Torture](../features/torture.md) | 4 | 2/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Transforms](../features/transforms.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 
 
@@ -91,7 +91,7 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | [`^BM`](../commands/format-bm.md) | MSI Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L93) | 4/4 exact; mean IoU 100.0%; 0 errors |
 | [`^BO`](../commands/format-bo.md) | Aztec Bar Code Parameters | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L94) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BP`](../commands/format-bp.md) | Plessey Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L95) | 1/1 exact; mean IoU 100.0%; 0 errors |
-| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L96) | 6/12 exact; mean IoU 84.0%; 0 errors |
+| [`^BQ`](../commands/format-bq.md) | QR Code Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L96) | 12/12 exact; mean IoU 100.0%; 0 errors |
 | [`^BR`](../commands/format-br.md) | GS1 DataBar Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L97) | 14/14 exact; mean IoU 100.0%; 0 errors |
 | [`^BS`](../commands/format-bs.md) | UPC/EAN Extensions | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L98) | 2/2 exact; mean IoU 100.0%; 0 errors |
 | [`^BT`](../commands/format-bt.md) | TLC39 Bar Code | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/barcode.rs#L99) | 2/2 exact; mean IoU 100.0%; 0 errors |

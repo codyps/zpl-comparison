@@ -20,13 +20,13 @@ Source: archived barcode development corpus
 
 **codyps/zpl (Rust)**
 
-rendered · 77.01% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/barcode-qr-printer.png)](../../../../../references/barcodes-zd621-v1/qr.png) | [![codyps-zpl render](../../previews/barcode-qr-codyps-zpl.png)](../../images/barcode-qr-codyps-zpl.png) | [![codyps-zpl difference](../../previews/barcode-qr-codyps-zpl-diff.png)](../../images/barcode-qr-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 464; extra ink: 496 pixels.
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

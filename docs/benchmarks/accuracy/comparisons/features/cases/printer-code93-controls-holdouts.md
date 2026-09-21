@@ -22,19 +22,13 @@ Zebra programming guide: [^BA](../../../../../zpl-zbi2-pg-en.pdf#page=87) · [^B
 
 **codyps/zpl (Rust)**
 
-error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../previews/printer-code93-controls-holdouts-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-code93-controls-holdouts.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../previews/printer-code93-controls-holdouts-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-code93-controls-holdouts.png) | [![codyps-zpl render](../previews/printer-code93-controls-holdouts-codyps-zpl.png)](../../../../conformance/images/printer-code93-controls-holdouts-codyps-zpl.png) | [![codyps-zpl difference](../previews/printer-code93-controls-holdouts-codyps-zpl-diff.png)](../images/printer-code93-controls-holdouts-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (24113) panicked at src/main.rs:27:10:
-render: RenderError { offset: 89, message: "unsupported embedded font glyph '\\u{1}'" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 1000]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

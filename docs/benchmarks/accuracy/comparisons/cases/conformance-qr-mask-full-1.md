@@ -20,13 +20,13 @@ Zebra programming guide: [^BQ](../../../../zpl-zbi2-pg-en.pdf#page=128) · [^BY]
 
 **codyps/zpl (Rust)**
 
-rendered · 67.53% IoU · [All cases for this library](../features/libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../features/libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/qr-mask-full-1-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/qr-mask-full-1.png) | [![codyps-zpl render](../features/previews/qr-mask-full-1-codyps-zpl.png)](../../../conformance/images/qr-mask-full-1-codyps-zpl.png) | [![codyps-zpl difference](../features/previews/qr-mask-full-1-codyps-zpl-diff.png)](../features/images/qr-mask-full-1-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 880; extra ink: 528 pixels.
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

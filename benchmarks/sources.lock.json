@@ -34,7 +34,7 @@
   "zpl": {
     "url": "https://github.com/codyps/zpl",
     "fetch_url": "git@github.com:codyps/zpl.git",
-    "rev": "b6085d8e0a376e7cfbaac4fcc22820ada86a2797",
+    "rev": "fb7d352340c1d39db0a7946a0a0eaf4a70bfcabf",
     "version": "0.1.0"
   }
 }

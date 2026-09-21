@@ -28,7 +28,7 @@ rendered · 0.00% IoU · [All cases for this library](../features/libraries/cody
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-ec-M-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![codyps-zpl render](../features/previews/probe-qr-ec-M-codyps-zpl.png)](../../../conformance/images/probe-qr-ec-M-codyps-zpl.png) | [![codyps-zpl difference](../features/previews/probe-qr-ec-M-codyps-zpl-diff.png)](../features/images/probe-qr-ec-M-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2070 pixels.
+Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2052 pixels.
 
 ## labelize
 

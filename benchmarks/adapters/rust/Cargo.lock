@@ -3767,6 +3767,7 @@ dependencies = [
 name = "zpl"
 version = "0.1.0"
 dependencies = [
+ "encoding_rs",
  "raster-diff",
  "unicode-bidi",
  "unicode-normalization",

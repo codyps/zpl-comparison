@@ -22,19 +22,13 @@ Zebra programming guide: [^A](../../../../zpl-zbi2-pg-en.pdf#page=60) · [^BC](.
 
 **codyps/zpl (Rust)**
 
-error · 0.00% IoU · [All cases for this library](../features/libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../features/libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../features/previews/printer-character-remap-space-barcode-clean-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/printer-character-remap-space-barcode-clean.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../features/previews/printer-character-remap-space-barcode-clean-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/printer-character-remap-space-barcode-clean.png) | [![codyps-zpl render](../features/previews/printer-character-remap-space-barcode-clean-codyps-zpl.png)](../../../conformance/images/printer-character-remap-space-barcode-clean-codyps-zpl.png) | [![codyps-zpl difference](../features/previews/printer-character-remap-space-barcode-clean-codyps-zpl-diff.png)](../features/images/printer-character-remap-space-barcode-clean-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (24355) panicked at src/main.rs:27:10:
-render: RenderError { offset: 3, message: "unexpected command parameters" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 1000]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

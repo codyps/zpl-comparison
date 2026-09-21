@@ -22,19 +22,13 @@ Zebra programming guide: [^BA](../../../../../zpl-zbi2-pg-en.pdf#page=87) · [^B
 
 **codyps/zpl (Rust)**
 
-error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../previews/printer-code93-controls-combined-checks-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-code93-controls-combined-checks.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../previews/printer-code93-controls-combined-checks-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-code93-controls-combined-checks.png) | [![codyps-zpl render](../previews/printer-code93-controls-combined-checks-codyps-zpl.png)](../../../../conformance/images/printer-code93-controls-combined-checks-codyps-zpl.png) | [![codyps-zpl difference](../previews/printer-code93-controls-combined-checks-codyps-zpl-diff.png)](../images/printer-code93-controls-combined-checks-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (24161) panicked at src/main.rs:27:10:
-render: RenderError { offset: 88, message: "unsupported embedded font glyph '\\u{1}'" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 800]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 

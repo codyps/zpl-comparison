@@ -20,19 +20,13 @@ Zebra programming guide: [^BY](../../../../../zpl-zbi2-pg-en.pdf#page=148) · [^
 
 **codyps/zpl (Rust)**
 
-error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
-| [![Printer preview](../previews/encoding-31-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/encoding-31.png) | Render failed; no image | Unavailable |
+| [![Printer preview](../previews/encoding-31-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/encoding-31.png) | [![codyps-zpl render](../previews/encoding-31-codyps-zpl.png)](../../../../conformance/images/encoding-31-codyps-zpl.png) | [![codyps-zpl difference](../previews/encoding-31-codyps-zpl-diff.png)](../images/encoding-31-codyps-zpl-diff.png) |
 
-~~~text
-
-thread 'main' (23076) panicked at src/main.rs:27:10:
-render: RenderError { offset: 65, message: "character encoding unsupported" }
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-~~~
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 
