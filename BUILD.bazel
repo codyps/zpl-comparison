@@ -167,6 +167,7 @@ pipeline(
         "pages",
         [
             "benchmarks/accuracy/presentation.py",
+            "benchmarks/accuracy/overview.py",
             "benchmarks/formatting.py",
         ],
     ),
@@ -206,6 +207,7 @@ pipeline(
 py_test(
     name = "pipeline_test",
     srcs = [
+        "benchmarks/accuracy/overview.py",
         "benchmarks/accuracy/metrics.py",
         "benchmarks/accuracy/pixels.py",
         "benchmarks/accuracy/presentation.py",
@@ -225,4 +227,10 @@ py_test(
         requirement("numpy"),
         requirement("pillow"),
     ],
+)
+
+py_test(
+    name = "overview_test",
+    srcs = ["benchmarks/accuracy/overview.py", "build/overview_test.py"],
+    main = "build/overview_test.py",
 )

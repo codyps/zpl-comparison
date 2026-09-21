@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from conformance import load_cases, reference_images
 from accuracy.run import LIBRARIES, compare, gray, sha
 from accuracy.presentation import LEGEND, viewport, preview
+from accuracy.overview import case_page, rebase_links
 from report import NAMES, table
 
 REPO = Path(__file__).resolve().parents[2]
@@ -197,6 +198,9 @@ def generate(check=False):
                 )
             results.append(record)
         pages[page] = "\n\n".join(content) + "\n"
+        suite = {"external-zpl": "external-zpl", "layout-accuracy": "layout-accuracy"}.get(CORPUS.name, "conformance")
+        canonical = REPO / case_page(suite, name)
+        pages[canonical] = rebase_links(pages[page], page, canonical)
         if number % 50 == 0:
             print(
                 f"Verified artifacts for {number}/{len(cases)} feature fixtures",

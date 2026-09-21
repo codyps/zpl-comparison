@@ -11,6 +11,19 @@ from build.stage import stage
 
 
 class ReportRunnerTests(unittest.TestCase):
+    def test_read_only_tree_artifact_can_be_updated_without_mutating_input(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            artifact = root / "artifact"
+            artifact.mkdir()
+            (artifact / "README.md").write_text("earlier report")
+            (artifact / "README.md").chmod(0o444)
+            script = root / "update.py"
+            script.write_text("from pathlib import Path; Path('docs/README.md').write_text('complete report')")
+            stage({"inputs": [[str(artifact), "docs"], [str(script), "update.py"]], "commands": [["update.py"]]}, root / "output")
+            self.assertEqual((root / "output/docs/README.md").read_text(), "complete report")
+            self.assertEqual((artifact / "README.md").read_text(), "earlier report")
+
     def run_pipeline(self, source, root):
         script = root / "regenerate.py"
         script.write_text(source)

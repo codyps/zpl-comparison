@@ -24,7 +24,13 @@ def stage(spec, destination):
                     target.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copyfile(source / "image.png", target)
             elif source.is_dir():
-                shutil.copytree(source, target, dirs_exist_ok=True)
+                # Bazel tree artifacts are read-only. Copy their contents, not
+                # their modes: a later report stage may replace an earlier page.
+                for child in source.rglob("*"):
+                    if child.is_file():
+                        copied = target / child.relative_to(source)
+                        copied.parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copyfile(child, copied)
             else:
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(source, target)

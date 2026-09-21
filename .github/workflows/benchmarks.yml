@@ -55,7 +55,7 @@ jobs:
       - name: Test publication and report runner
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'
-          bazel test //:report_runner_test //:pipeline_test --test_output=errors
+          bazel test //:report_runner_test //:pipeline_test //:overview_test --test_output=errors
       - name: Build pinned renderer libraries
         if: github.event.pull_request.head.repo.fork != true
         timeout-minutes: 20

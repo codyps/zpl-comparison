@@ -46,6 +46,8 @@ REPORTS = [
     ["benchmarks/accuracy/features.py"],
     ["benchmarks/accuracy/features.py", "--suite", "external"],
     ["benchmarks/accuracy/features.py", "--suite", "layout"],
+    ["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy"],
+    ["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy", "--check"],
     ["benchmarks/compatibility.py"],
     ["benchmarks/compatibility.py", "--check"],
 ]

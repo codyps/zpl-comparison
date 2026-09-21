@@ -101,6 +101,14 @@ Bazel caches each library deployment (including the Go shared library used by
 FFI), each case/library render, each printer comparison and difference PNG, each
 metamorphic relation, each case viewport, each thumbnail, and each gallery page
 independently. Summary plots, report families, and final tree assembly are separate actions.
+The accuracy overview includes all four corpora and every category, with per-case
+IoU/status tables, scored denominators, difference-image counts, and separate
+metamorphic equality results. All tested cases have full pages under
+`docs/benchmarks/accuracy/comparisons/cases/`; additional corpora use
+`conformance-`, `external-zpl-`, or `layout-accuracy-` filename prefixes to avoid
+collisions. Existing nested gallery URLs remain available. Assembly validates
+that every comparison has a linked case page, renderer section, and all expected
+render/difference images before CI can publish the tree.
 Image actions use Bazel Python workers to reuse interpreter startup while retaining
 separate cache keys. An
 unchanged build executes none of these actions. A printer-reference change does

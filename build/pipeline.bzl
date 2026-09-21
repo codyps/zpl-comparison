@@ -148,13 +148,13 @@ def _impl(ctx):
                 publish.append((thumb, assets + "/previews/" + cid + "-" + suffix + ".png"))
                 case_outputs.append(thumb)
             page = _tree(ctx, suite + "/pages/" + cid)
-            _invoke(ctx, "pages", suite + "/page-" + cid, {"mode": "case", "page": base + "/cases/" + cid + ".md", "base": base, "assets": assets, "renders": renders, "title": case["name"], "cases": [case], "libraries": libraries, "rows": [r.path for r in rows], "source": zpl, "reference": reference, "failure": failures.get(cid, {}).get("error")}, rows, [page])
+            _invoke(ctx, "pages", suite + "/page-" + cid, {"mode": "case", "suite": suite, "page": base + "/cases/" + cid + ".md", "base": base, "assets": assets, "renders": renders, "title": case["name"], "cases": [case], "libraries": libraries, "rows": [r.path for r in rows], "source": zpl, "reference": reference, "failure": failures.get(cid, {}).get("error")}, rows, [page])
             publish.append((page, ""))
             groups["case_" + suite + "_" + cid] = depset(case_outputs + [frame, page])
         for lib in libraries + ["index"]:
             rows = compared if lib == "index" else [compared[i] for i in range(len(compared)) if i % len(libraries) == libraries.index(lib)]
             page = _tree(ctx, suite + "/pages/library-" + lib)
-            _invoke(ctx, "pages", suite + "/library-" + lib, {"mode": "index" if lib == "index" else "library", "page": base + ("/README.md" if lib == "index" else "/libraries/" + lib + ".md"), "base": base, "assets": assets, "title": suite + " comparisons" if lib == "index" else lib + " versus printer", "cases": cases, "rows": [r.path for r in rows], "libraries": libraries}, rows, [page])
+            _invoke(ctx, "pages", suite + "/library-" + lib, {"mode": "index" if lib == "index" else "library", "suite": suite, "page": base + ("/README.md" if lib == "index" else "/libraries/" + lib + ".md"), "base": base, "assets": assets, "title": suite + " comparisons" if lib == "index" else lib + " versus printer", "cases": cases, "rows": [r.path for r in rows], "libraries": libraries}, rows, [page])
             publish.append((page, ""))
         relations = []
         for (lib, group), entries in relation_groups.items():
@@ -198,6 +198,7 @@ def _impl(ctx):
         "compatibility": ["benchmarks/compatibility.py", "benchmarks/catalog.py", "benchmarks/sources.lock.json", "benchmarks/adapters/", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "references/", "test-data/render-conformance/", "docs/zpl-command-index.tsv", "docs/benchmarks/argument-support.md", "docs/benchmarks/command-support.json", "docs/benchmarks/labelary/captures.json"] + metric_scripts + plot_scripts,
         "validate": ["build/validate.py", "benchmarks/conformance.py", "benchmarks/accuracy/cases.py", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "benchmarks/accuracy/external-reference/", "benchmarks/accuracy/layout-reference/", "references/", "test-data/", "docs/zpl-command-index.tsv"] + metric_scripts + plot_scripts,
     }
+    accuracy_report = None
     for name, commands in [
         ("catalog", [["benchmarks/catalog.py"]]),
         ("support", [["benchmarks/support.py", "--reports-only"]]),
@@ -224,7 +225,11 @@ def _impl(ctx):
         elif name == "compatibility":
             selected += aggregates[:2]
         output = _stage(ctx, name, selected, commands)
+        if name == "accuracy-report":
+            accuracy_report = output
         publish.append((output, ""))
+    overview = _stage(ctx, "accuracy-overview", _select(files, ["benchmarks/accuracy/overview.py"]) + aggregates + [(accuracy_report, "")], [["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy"]])
+    publish.append((overview, ""))
     measurements = CATALOG["docs/benchmarks/results.json"]
     for part in ["parse", "png", "generate", "memory", "size"]:
         data = {"results": [], "sizes": {}}
@@ -237,7 +242,7 @@ def _impl(ctx):
         ctx.actions.write(source, json.encode(data))
         output = _stage(ctx, "plot-" + part, _select(files, plot_scripts) + [(source, "docs/benchmarks/results.json")], [["benchmarks/report.py", "docs/benchmarks", part]])
         publish.append((output, ""))
-    result = _stage(ctx, "assemble", static + publish, [], assemble = True)
+    result = _stage(ctx, "assemble", static + publish, [["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy", "--check"]], assemble = True)
     return [DefaultInfo(files = depset([result])), OutputGroupInfo(**groups)]
 
 pipeline = rule(implementation = _impl, attrs = dict({

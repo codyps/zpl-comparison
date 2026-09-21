@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 
 from benchmarks.accuracy.presentation import LEGEND
+from benchmarks.accuracy.overview import case_page, rebase_links
 from benchmarks.formatting import NAMES
 
 
@@ -168,6 +169,8 @@ def write(spec, destination):
                     "docs/benchmarks/accuracy/comparisons/external/README.md",
                     "External examples",
                 )
+                + " · "
+                + link(page, "docs/benchmarks/accuracy/comparisons/layout/README.md", "Font-free layout")
             )
         text.append(
             "| Case | Group | Result | Difference |\n|---|---|---|---|"
@@ -182,7 +185,7 @@ def write(spec, destination):
             seen.add(cid)
             text[-1] += (
                 "\n| "
-                + link(page, base + "/cases/" + cid + ".md", cid)
+                + link(page, case_page(spec["suite"], cid) if "suite" in spec else base + "/cases/" + cid + ".md", cid)
                 + " | "
                 + lookup[cid]["group"]
                 + " | "
@@ -207,7 +210,14 @@ def write(spec, destination):
                 )
     output = Path(destination) / page
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text("\n\n".join(text) + "\n")
+    content = "\n\n".join(text) + "\n"
+    output.write_text(content)
+    if mode == "case" and "suite" in spec:
+        canonical = case_page(spec["suite"], cases[0].get("id", cases[0]["name"]))
+        if canonical != page:
+            target = Path(destination) / canonical
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(rebase_links(content, page, canonical))
 
 
 if __name__ == "__main__":
