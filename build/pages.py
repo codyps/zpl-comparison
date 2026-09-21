@@ -37,9 +37,8 @@ def write(spec, destination):
         "# " + spec["title"],
         LEGEND,
         "All renderer images and measurements are saved observations; their original provenance is retained in results.json." if spec.get("saved") else "Printer and Labelary captures retain their original capture dates. Local renders are cached independently; execution timestamps are recorded per result in results.json.",
-        link(page, base + "/README.md", "All comparisons")
-        + " · "
-        + link(page, "docs/benchmarks/accuracy/README.md", "Accuracy summary"),
+        (link(page, base + "/README.md", "Corpus comparisons") + " · " if base != "docs/benchmarks/accuracy/comparisons" else "")
+        + link(page, "docs/benchmarks/accuracy/README.md", "All accuracy comparisons"),
     ]
     mode = spec["mode"]
     if mode == "case":

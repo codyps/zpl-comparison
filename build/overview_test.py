@@ -65,6 +65,24 @@ class OverviewTest(unittest.TestCase):
         self.assertIn("unscored · blank", text)
         self.assertIn("| 2 | 2 | 4 | 2 | 3 | saved |", text)
         self.assertIn("inconclusive", text)
+        self.assertNotIn("](comparisons/README.md)", text)
+        self.assertIn("](#argument-and-archived-barcode-details)", text)
+        for suite in suites:
+            for lib in suite["libraries"]:
+                self.assertIn(f"]({suite['gallery']}/libraries/{lib}.md)", text)
+
+    def test_retired_index_and_inbound_links_fail_publication(self):
+        suites = load_suites(self.dest)
+        text = compose(self.original, suites)
+        obsolete = self.dest / "comparisons/README.md"
+        obsolete.write_text("old index")
+        with self.assertRaisesRegex(ValueError, "Obsolete comparison index"):
+            verify(self.dest, suites, text)
+        obsolete.unlink()
+        (self.dest / "comparisons/libraries").mkdir()
+        (self.dest / "comparisons/libraries/a.md").write_text("[Old index](../README.md)")
+        with self.assertRaisesRegex(ValueError, "Link to obsolete comparison index"):
+            verify(self.dest, suites, text)
 
     def test_missing_suite_or_comparison_cannot_silently_disappear(self):
         path = self.dest / "comparisons/features/results.json"

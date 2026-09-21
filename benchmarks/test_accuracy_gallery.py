@@ -83,7 +83,7 @@ class GalleryTests(unittest.TestCase):
             "![codyps-zpl difference]",
             pages[Path("comparisons/libraries/codyps-zpl.md")],
         )
-        self.assertEqual(len(pages), len(gallery.LIBRARIES) + 2)
+        self.assertEqual(len(pages), len(gallery.LIBRARIES) + 1)
 
     def test_changed_labelary_snapshot_requires_new_measurement(self):
         snapshot = self.root / "docs/benchmarks/labelary/captures.json"

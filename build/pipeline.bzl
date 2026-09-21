@@ -151,7 +151,7 @@ def _impl(ctx):
             _invoke(ctx, "pages", suite + "/page-" + cid, {"mode": "case", "suite": suite, "page": base + "/cases/" + cid + ".md", "base": base, "assets": assets, "renders": renders, "title": case["name"], "cases": [case], "libraries": libraries, "rows": [r.path for r in rows], "source": zpl, "reference": reference, "failure": failures.get(cid, {}).get("error")}, rows, [page])
             publish.append((page, ""))
             groups["case_" + suite + "_" + cid] = depset(case_outputs + [frame, page])
-        for lib in libraries + ["index"]:
+        for lib in libraries + ([] if suite == "accuracy" else ["index"]):
             rows = compared if lib == "index" else [compared[i] for i in range(len(compared)) if i % len(libraries) == libraries.index(lib)]
             page = _tree(ctx, suite + "/pages/library-" + lib)
             _invoke(ctx, "pages", suite + "/library-" + lib, {"mode": "index" if lib == "index" else "library", "suite": suite, "page": base + ("/README.md" if lib == "index" else "/libraries/" + lib + ".md"), "base": base, "assets": assets, "title": suite + " comparisons" if lib == "index" else lib + " versus printer", "cases": cases, "rows": [r.path for r in rows], "libraries": libraries}, rows, [page])

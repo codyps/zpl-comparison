@@ -309,7 +309,7 @@ def artifacts(dest=DEST):
                 ]
             )
             + " · "
-            + link(page, ACCURACY.parent / "comparisons/README.md", "Compare images")
+            + link(page, ACCURACY.parent / "README.md", "Compare images")
             + "\n"
         )
 
