@@ -28,13 +28,13 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 [Feature fixtures](../features/README.md) · [External examples](README.md) · [Font-free layout](../layout/README.md)
 
-| Case | Group | Result |
-|---|---|---|
-| [zpl-toolchain-shipping_label](../cases/external-zpl-zpl-toolchain-shipping_label.md) | shipping | See all renderers |
-| [zpl-toolchain-product_label](../cases/external-zpl-zpl-toolchain-product_label.md) | product | See all renderers |
-| [zpl-toolchain-warehouse_label](../cases/external-zpl-zpl-toolchain-warehouse_label.md) | warehouse | See all renderers |
-| [zpl-toolchain-compliance_label](../cases/external-zpl-zpl-toolchain-compliance_label.md) | compliance | See all renderers |
-| [zpl-toolchain-usps_surepost_sample](../cases/external-zpl-zpl-toolchain-usps_surepost_sample.md) | printer-configuration | See all renderers |
-| [zplr-asset-matrix-pdf417](../cases/external-zpl-zplr-asset-matrix-pdf417.md) | asset | See all renderers |
-| [zplr-retail-upc-ean](../cases/external-zpl-zplr-retail-upc-ean.md) | retail | See all renderers |
-| [zplr-stored-resources](../cases/external-zpl-zplr-stored-resources.md) | stateful | See all renderers |
+| Case | Group | [codyps/zpl (Rust) IoU](libraries/codyps-zpl.md) | [labelize (Rust) IoU](libraries/labelize.md) | [zpl-forge (Rust) IoU](libraries/forge.md) | [go-zpl (Go) IoU](libraries/go.md) | [zpl-rs (Rust → Go) IoU](libraries/ffi.md) | [BinaryKits.Zpl (.NET) IoU](libraries/binarykits.md) | [ZPLr (TypeScript) IoU](libraries/zplr.md) | [Labelary (SaaS) IoU](libraries/labelary.md) |
+|---|---|---|---|---|---|---|---|---|---|
+| [zpl-toolchain-shipping_label](../cases/external-zpl-zpl-toolchain-shipping_label.md) | shipping | rendered · 31.70% IoU | rendered · 32.25% IoU | rendered · 27.76% IoU | rendered · 25.77% IoU | rendered · 25.77% IoU | rendered · 25.92% IoU | rendered · 21.01% IoU | rendered · 32.48% IoU |
+| [zpl-toolchain-product_label](../cases/external-zpl-zpl-toolchain-product_label.md) | product | rendered · 29.34% IoU | rendered · 29.82% IoU | rendered · 23.26% IoU | rendered · 20.23% IoU | rendered · 20.23% IoU | rendered · 23.40% IoU | rendered · 28.70% IoU | rendered · 30.27% IoU |
+| [zpl-toolchain-warehouse_label](../cases/external-zpl-zpl-toolchain-warehouse_label.md) | warehouse | rendered · 45.07% IoU | rendered · 43.57% IoU | rendered · 37.76% IoU | rendered · 30.07% IoU | rendered · 30.07% IoU | rendered · 35.73% IoU | rendered · 38.10% IoU | rendered · 45.36% IoU |
+| [zpl-toolchain-compliance_label](../cases/external-zpl-zpl-toolchain-compliance_label.md) | compliance | rendered · 34.24% IoU | rendered · 34.32% IoU | rendered · 30.25% IoU | rendered · 26.35% IoU | rendered · 26.35% IoU | rendered · 30.03% IoU | rendered · 34.85% IoU | rendered · 34.51% IoU |
+| [zpl-toolchain-usps_surepost_sample](../cases/external-zpl-zpl-toolchain-usps_surepost_sample.md) | printer-configuration | error · unscored | rendered · unscored | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [zplr-asset-matrix-pdf417](../cases/external-zpl-zplr-asset-matrix-pdf417.md) | asset | rendered · 82.12% IoU | rendered · 71.67% IoU | rendered · 43.01% IoU | rendered · 72.82% IoU | rendered · 72.82% IoU | rendered · 67.90% IoU | rendered · 71.38% IoU | rendered · 75.83% IoU |
+| [zplr-retail-upc-ean](../cases/external-zpl-zplr-retail-upc-ean.md) | retail | error · 0.00% IoU | rendered · 28.34% IoU | rendered · 28.09% IoU | rendered · 13.79% IoU | rendered · 13.79% IoU | rendered · 27.35% IoU | rendered · 28.08% IoU | rendered · 27.90% IoU |
+| [zplr-stored-resources](../cases/external-zpl-zplr-stored-resources.md) | stateful | error · unscored | rendered · unscored | error · unscored | rendered · unscored | rendered · unscored | crashed · unscored | rendered · unscored | rendered · unscored |

@@ -26,25 +26,25 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 [Feature fixtures](../features/README.md) · [External examples](../external/README.md) · [Font-free layout](README.md)
 
-| Case | Group | Result |
-|---|---|---|
-| [layout-control](../cases/layout-accuracy-layout-control.md) | font-free-layout | See all renderers |
-| [layout-home](../cases/layout-accuracy-layout-home.md) | font-free-layout | See all renderers |
-| [layout-home-direct](../cases/layout-accuracy-layout-home-direct.md) | font-free-layout | See all renderers |
-| [layout-LS--80](../cases/layout-accuracy-layout-LS--80.md) | font-free-layout | See all renderers |
-| [layout-LS-80](../cases/layout-accuracy-layout-LS-80.md) | font-free-layout | See all renderers |
-| [layout-LT--50](../cases/layout-accuracy-layout-LT--50.md) | font-free-layout | See all renderers |
-| [layout-LT-50](../cases/layout-accuracy-layout-LT-50.md) | font-free-layout | See all renderers |
-| [layout-offset-combined](../cases/layout-accuracy-layout-offset-combined.md) | font-free-layout | See all renderers |
-| [layout-transform-Y-N](../cases/layout-accuracy-layout-transform-Y-N.md) | font-free-layout | See all renderers |
-| [layout-transform-N-I](../cases/layout-accuracy-layout-transform-N-I.md) | font-free-layout | See all renderers |
-| [layout-transform-Y-I](../cases/layout-accuracy-layout-transform-Y-I.md) | font-free-layout | See all renderers |
-| [layout-clip-last-pixel](../cases/layout-accuracy-layout-clip-last-pixel.md) | font-free-layout | See all renderers |
-| [layout-clip-partial](../cases/layout-accuracy-layout-clip-partial.md) | font-free-layout | See all renderers |
-| [layout-clip-outside](../cases/layout-accuracy-layout-clip-outside.md) | font-free-layout | See all renderers |
-| [layout-label-reverse](../cases/layout-accuracy-layout-label-reverse.md) | font-free-layout | See all renderers |
-| [layout-field-reverse](../cases/layout-accuracy-layout-field-reverse.md) | font-free-layout | See all renderers |
-| [layout-field-orientation-N](../cases/layout-accuracy-layout-field-orientation-N.md) | font-free-layout | See all renderers |
-| [layout-field-orientation-R](../cases/layout-accuracy-layout-field-orientation-R.md) | font-free-layout | See all renderers |
-| [layout-field-orientation-I](../cases/layout-accuracy-layout-field-orientation-I.md) | font-free-layout | See all renderers |
-| [layout-field-orientation-B](../cases/layout-accuracy-layout-field-orientation-B.md) | font-free-layout | See all renderers |
+| Case | Group | [codyps/zpl (Rust) IoU](libraries/codyps-zpl.md) | [labelize (Rust) IoU](libraries/labelize.md) | [zpl-forge (Rust) IoU](libraries/forge.md) | [go-zpl (Go) IoU](libraries/go.md) | [zpl-rs (Rust → Go) IoU](libraries/ffi.md) | [BinaryKits.Zpl (.NET) IoU](libraries/binarykits.md) | [ZPLr (TypeScript) IoU](libraries/zplr.md) |
+|---|---|---|---|---|---|---|---|---|
+| [layout-control](../cases/layout-accuracy-layout-control.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-home](../cases/layout-accuracy-layout-home.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 3.64% IoU | rendered · 100.00% IoU · exact | rendered · 3.64% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-home-direct](../cases/layout-accuracy-layout-home-direct.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-LS--80](../cases/layout-accuracy-layout-LS--80.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 1.55% IoU | rendered · 1.55% IoU | rendered · 1.55% IoU | rendered · 1.55% IoU | rendered · 100.00% IoU · exact |
+| [layout-LS-80](../cases/layout-accuracy-layout-LS-80.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 4.99% IoU | rendered · 4.99% IoU | rendered · 4.99% IoU | rendered · 4.99% IoU | rendered · 80.36% IoU |
+| [layout-LT--50](../cases/layout-accuracy-layout-LT--50.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 5.39% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 4.11% IoU |
+| [layout-LT-50](../cases/layout-accuracy-layout-LT-50.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 3.87% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 3.87% IoU |
+| [layout-offset-combined](../cases/layout-accuracy-layout-offset-combined.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 31.26% IoU | rendered · 7.80% IoU | rendered · 28.94% IoU | rendered · 7.80% IoU | rendered · 28.94% IoU | rendered · 31.26% IoU |
+| [layout-transform-Y-N](../cases/layout-accuracy-layout-transform-Y-N.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 0.00% IoU |
+| [layout-transform-N-I](../cases/layout-accuracy-layout-transform-N-I.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 1.08% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 1.08% IoU |
+| [layout-transform-Y-I](../cases/layout-accuracy-layout-transform-Y-I.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 1.08% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 0.68% IoU |
+| [layout-clip-last-pixel](../cases/layout-accuracy-layout-clip-last-pixel.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-clip-partial](../cases/layout-accuracy-layout-clip-partial.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-clip-outside](../cases/layout-accuracy-layout-clip-outside.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-label-reverse](../cases/layout-accuracy-layout-label-reverse.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 98.54% IoU |
+| [layout-field-reverse](../cases/layout-accuracy-layout-field-reverse.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 99.61% IoU |
+| [layout-field-orientation-N](../cases/layout-accuracy-layout-field-orientation-N.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-field-orientation-R](../cases/layout-accuracy-layout-field-orientation-R.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 9.20% IoU | rendered · 9.20% IoU | rendered · 9.20% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [layout-field-orientation-I](../cases/layout-accuracy-layout-field-orientation-I.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 46.15% IoU | rendered · 46.15% IoU | rendered · 46.15% IoU | rendered · 26.67% IoU | rendered · 100.00% IoU · exact |
+| [layout-field-orientation-B](../cases/layout-accuracy-layout-field-orientation-B.md) | font-free-layout | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 13.10% IoU | rendered · 13.10% IoU | rendered · 13.10% IoU | rendered · 26.67% IoU | rendered · 100.00% IoU · exact |

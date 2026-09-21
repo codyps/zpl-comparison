@@ -28,603 +28,603 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 [Feature fixtures](README.md) · [External examples](../external/README.md) · [Font-free layout](../layout/README.md)
 
-| Case | Group | Result |
-|---|---|---|
-| [probe-font0-height-16](../cases/conformance-probe-font0-height-16.md) | baseline-text | See all renderers |
-| [probe-font0-height-32](../cases/conformance-probe-font0-height-32.md) | baseline-text | See all renderers |
-| [probe-font0-height-64](../cases/conformance-probe-font0-height-64.md) | baseline-text | See all renderers |
-| [probe-font0-width-16](../cases/conformance-probe-font0-width-16.md) | baseline-text | See all renderers |
-| [probe-font0-width-32](../cases/conformance-probe-font0-width-32.md) | baseline-text | See all renderers |
-| [probe-font0-width-64](../cases/conformance-probe-font0-width-64.md) | baseline-text | See all renderers |
-| [probe-font0-rotation-N](../cases/conformance-probe-font0-rotation-N.md) | baseline-text | See all renderers |
-| [probe-font0-rotation-R](../cases/conformance-probe-font0-rotation-R.md) | baseline-text | See all renderers |
-| [probe-font0-rotation-I](../cases/conformance-probe-font0-rotation-I.md) | baseline-text | See all renderers |
-| [probe-font0-rotation-B](../cases/conformance-probe-font0-rotation-B.md) | baseline-text | See all renderers |
-| [probe-font-A](../cases/conformance-probe-font-A.md) | baseline-text | See all renderers |
-| [probe-font-D](../cases/conformance-probe-font-D.md) | baseline-text | See all renderers |
-| [probe-fo-justify-0](../cases/conformance-probe-fo-justify-0.md) | baseline-layout | See all renderers |
-| [probe-fo-justify-1](../cases/conformance-probe-fo-justify-1.md) | baseline-layout | See all renderers |
-| [probe-fo-justify-2](../cases/conformance-probe-fo-justify-2.md) | baseline-layout | See all renderers |
-| [probe-ft-baseline](../cases/conformance-probe-ft-baseline.md) | baseline-layout | See all renderers |
-| [probe-layout-LH](../cases/conformance-probe-layout-LH.md) | baseline-layout | See all renderers |
-| [probe-layout-LS](../cases/conformance-probe-layout-LS.md) | baseline-layout | See all renderers |
-| [probe-layout-LT](../cases/conformance-probe-layout-LT.md) | baseline-layout | See all renderers |
-| [probe-layout-PO](../cases/conformance-probe-layout-PO.md) | baseline-layout | See all renderers |
-| [probe-layout-LR](../cases/conformance-probe-layout-LR.md) | baseline-layout | See all renderers |
-| [probe-layout-FW](../cases/conformance-probe-layout-FW.md) | baseline-layout | See all renderers |
-| [probe-field-reverse](../cases/conformance-probe-field-reverse.md) | baseline-layout | See all renderers |
-| [probe-block-L](../cases/conformance-probe-block-L.md) | baseline-text | See all renderers |
-| [probe-block-C](../cases/conformance-probe-block-C.md) | baseline-text | See all renderers |
-| [probe-block-R](../cases/conformance-probe-block-R.md) | baseline-text | See all renderers |
-| [probe-block-J](../cases/conformance-probe-block-J.md) | baseline-text | See all renderers |
-| [probe-block-indent](../cases/conformance-probe-block-indent.md) | baseline-text | See all renderers |
-| [probe-block-explicit-break](../cases/conformance-probe-block-explicit-break.md) | baseline-text | See all renderers |
-| [probe-field-hex](../cases/conformance-probe-field-hex.md) | baseline-text | See all renderers |
-| [probe-variable-data](../cases/conformance-probe-variable-data.md) | baseline-text | See all renderers |
-| [probe-encoding-0](../cases/conformance-probe-encoding-0.md) | baseline-text | See all renderers |
-| [probe-encoding-27](../cases/conformance-probe-encoding-27.md) | baseline-text | See all renderers |
-| [probe-encoding-28](../cases/conformance-probe-encoding-28.md) | baseline-text | See all renderers |
-| [probe-utf8-accent](../cases/conformance-probe-utf8-accent.md) | baseline-text | See all renderers |
-| [probe-box-thickness-1](../cases/conformance-probe-box-thickness-1.md) | baseline-shapes | See all renderers |
-| [probe-box-thickness-4](../cases/conformance-probe-box-thickness-4.md) | baseline-shapes | See all renderers |
-| [probe-box-thickness-60](../cases/conformance-probe-box-thickness-60.md) | baseline-shapes | See all renderers |
-| [probe-box-round](../cases/conformance-probe-box-round.md) | baseline-shapes | See all renderers |
-| [probe-box-white](../cases/conformance-probe-box-white.md) | baseline-shapes | See all renderers |
-| [probe-shape-GC-B](../cases/conformance-probe-shape-GC-B.md) | baseline-shapes | See all renderers |
-| [probe-shape-GE-B](../cases/conformance-probe-shape-GE-B.md) | baseline-shapes | See all renderers |
-| [probe-shape-GD-R](../cases/conformance-probe-shape-GD-R.md) | baseline-shapes | See all renderers |
-| [probe-shape-GD-L](../cases/conformance-probe-shape-GD-L.md) | baseline-shapes | See all renderers |
-| [probe-graphic-hex](../cases/conformance-probe-graphic-hex.md) | baseline-graphics | See all renderers |
-| [probe-graphic-binary](../cases/conformance-probe-graphic-binary.md) | baseline-graphics | See all renderers |
-| [probe-graphic-B64](../cases/conformance-probe-graphic-B64.md) | baseline-graphics | See all renderers |
-| [probe-graphic-Z64](../cases/conformance-probe-graphic-Z64.md) | baseline-graphics | See all renderers |
-| [probe-code39-ratio-2](../cases/conformance-probe-code39-ratio-2.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code39-ratio-3](../cases/conformance-probe-code39-ratio-3.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code39-check-N](../cases/conformance-probe-code39-check-N.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code39-check-Y](../cases/conformance-probe-code39-check-Y.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-text-NN](../cases/conformance-probe-code128-text-NN.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-text-YN](../cases/conformance-probe-code128-text-YN.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-text-YY](../cases/conformance-probe-code128-text-YY.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-rotation-R](../cases/conformance-probe-code128-rotation-R.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-rotation-I](../cases/conformance-probe-code128-rotation-I.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-rotation-B](../cases/conformance-probe-code128-rotation-B.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-mode-N](../cases/conformance-probe-code128-mode-N.md) | baseline-barcode-arguments | See all renderers |
-| [probe-code128-mode-A](../cases/conformance-probe-code128-mode-A.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-model-1](../cases/conformance-probe-qr-model-1.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-model-2](../cases/conformance-probe-qr-model-2.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-ec-L](../cases/conformance-probe-qr-ec-L.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-ec-M](../cases/conformance-probe-qr-ec-M.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-ec-Q](../cases/conformance-probe-qr-ec-Q.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-ec-H](../cases/conformance-probe-qr-ec-H.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-module-2](../cases/conformance-probe-qr-module-2.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-module-5](../cases/conformance-probe-qr-module-5.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-mask-0](../cases/conformance-probe-qr-mask-0.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-mask-3](../cases/conformance-probe-qr-mask-3.md) | baseline-barcode-arguments | See all renderers |
-| [probe-qr-mask-7](../cases/conformance-probe-qr-mask-7.md) | baseline-barcode-arguments | See all renderers |
-| [probe-datamatrix-module-2](../cases/conformance-probe-datamatrix-module-2.md) | baseline-barcode-arguments | See all renderers |
-| [probe-datamatrix-module-4](../cases/conformance-probe-datamatrix-module-4.md) | baseline-barcode-arguments | See all renderers |
-| [symbol-aztec](../cases/conformance-symbol-aztec.md) | barcode-families | See all renderers |
-| [symbol-aztec_alias](../cases/conformance-symbol-aztec_alias.md) | barcode-families | See all renderers |
-| [symbol-aztec_rune](../cases/conformance-symbol-aztec_rune.md) | barcode-families | See all renderers |
-| [symbol-codabar](../cases/conformance-symbol-codabar.md) | barcode-families | See all renderers |
-| [symbol-codablock_a](../cases/conformance-symbol-codablock_a.md) | barcode-families | See all renderers |
-| [symbol-codablock_e](../cases/conformance-symbol-codablock_e.md) | barcode-families | See all renderers |
-| [symbol-codablock_f](../cases/conformance-symbol-codablock_f.md) | barcode-families | See all renderers |
-| [symbol-code11](../cases/conformance-symbol-code11.md) | barcode-families | See all renderers |
-| [symbol-code128](../cases/conformance-symbol-code128.md) | barcode-families | See all renderers |
-| [symbol-code39](../cases/conformance-symbol-code39.md) | barcode-families | See all renderers |
-| [symbol-code49](../cases/conformance-symbol-code49.md) | barcode-families | See all renderers |
-| [symbol-code93](../cases/conformance-symbol-code93.md) | barcode-families | See all renderers |
-| [symbol-composite_a](../cases/conformance-symbol-composite_a.md) | barcode-families | See all renderers |
-| [symbol-composite_b](../cases/conformance-symbol-composite_b.md) | barcode-families | See all renderers |
-| [symbol-composite_c](../cases/conformance-symbol-composite_c.md) | barcode-families | See all renderers |
-| [symbol-data_matrix](../cases/conformance-symbol-data_matrix.md) | barcode-families | See all renderers |
-| [symbol-data_matrix_rectangular](../cases/conformance-symbol-data_matrix_rectangular.md) | barcode-families | See all renderers |
-| [symbol-databar_ean13](../cases/conformance-symbol-databar_ean13.md) | barcode-families | See all renderers |
-| [symbol-databar_ean8](../cases/conformance-symbol-databar_ean8.md) | barcode-families | See all renderers |
-| [symbol-databar_expanded](../cases/conformance-symbol-databar_expanded.md) | barcode-families | See all renderers |
-| [symbol-databar_expanded_stacked](../cases/conformance-symbol-databar_expanded_stacked.md) | barcode-families | See all renderers |
-| [symbol-databar_limited](../cases/conformance-symbol-databar_limited.md) | barcode-families | See all renderers |
-| [symbol-databar_omni](../cases/conformance-symbol-databar_omni.md) | barcode-families | See all renderers |
-| [symbol-databar_stacked](../cases/conformance-symbol-databar_stacked.md) | barcode-families | See all renderers |
-| [symbol-databar_stacked_omni](../cases/conformance-symbol-databar_stacked_omni.md) | barcode-families | See all renderers |
-| [symbol-databar_truncated](../cases/conformance-symbol-databar_truncated.md) | barcode-families | See all renderers |
-| [symbol-databar_upca](../cases/conformance-symbol-databar_upca.md) | barcode-families | See all renderers |
-| [symbol-databar_upce](../cases/conformance-symbol-databar_upce.md) | barcode-families | See all renderers |
-| [symbol-ean13](../cases/conformance-symbol-ean13.md) | barcode-families | See all renderers |
-| [symbol-ean8](../cases/conformance-symbol-ean8.md) | barcode-families | See all renderers |
-| [symbol-extension2](../cases/conformance-symbol-extension2.md) | barcode-families | See all renderers |
-| [symbol-extension5](../cases/conformance-symbol-extension5.md) | barcode-families | See all renderers |
-| [symbol-industrial2of5](../cases/conformance-symbol-industrial2of5.md) | barcode-families | See all renderers |
-| [symbol-intelligent_mail](../cases/conformance-symbol-intelligent_mail.md) | barcode-families | See all renderers |
-| [symbol-interleaved2of5](../cases/conformance-symbol-interleaved2of5.md) | barcode-families | See all renderers |
-| [symbol-logmars](../cases/conformance-symbol-logmars.md) | barcode-families | See all renderers |
-| [symbol-maxicode2](../cases/conformance-symbol-maxicode2.md) | barcode-families | See all renderers |
-| [symbol-maxicode3](../cases/conformance-symbol-maxicode3.md) | barcode-families | See all renderers |
-| [symbol-maxicode4](../cases/conformance-symbol-maxicode4.md) | barcode-families | See all renderers |
-| [symbol-maxicode5](../cases/conformance-symbol-maxicode5.md) | barcode-families | See all renderers |
-| [symbol-maxicode6](../cases/conformance-symbol-maxicode6.md) | barcode-families | See all renderers |
-| [symbol-micropdf417_1](../cases/conformance-symbol-micropdf417_1.md) | barcode-families | See all renderers |
-| [symbol-micropdf417_3](../cases/conformance-symbol-micropdf417_3.md) | barcode-families | See all renderers |
-| [symbol-micropdf417_4](../cases/conformance-symbol-micropdf417_4.md) | barcode-families | See all renderers |
-| [symbol-msi_a](../cases/conformance-symbol-msi_a.md) | barcode-families | See all renderers |
-| [symbol-msi_b](../cases/conformance-symbol-msi_b.md) | barcode-families | See all renderers |
-| [symbol-msi_c](../cases/conformance-symbol-msi_c.md) | barcode-families | See all renderers |
-| [symbol-msi_d](../cases/conformance-symbol-msi_d.md) | barcode-families | See all renderers |
-| [symbol-pdf417](../cases/conformance-symbol-pdf417.md) | barcode-families | See all renderers |
-| [symbol-pdf417_truncated](../cases/conformance-symbol-pdf417_truncated.md) | barcode-families | See all renderers |
-| [symbol-planet](../cases/conformance-symbol-planet.md) | barcode-families | See all renderers |
-| [symbol-plessey](../cases/conformance-symbol-plessey.md) | barcode-families | See all renderers |
-| [symbol-postal_planet](../cases/conformance-symbol-postal_planet.md) | barcode-families | See all renderers |
-| [symbol-postnet](../cases/conformance-symbol-postnet.md) | barcode-families | See all renderers |
-| [symbol-qr](../cases/conformance-symbol-qr.md) | barcode-families | See all renderers |
-| [symbol-standard2of5](../cases/conformance-symbol-standard2of5.md) | barcode-families | See all renderers |
-| [symbol-tlc39_linear](../cases/conformance-symbol-tlc39_linear.md) | barcode-families | See all renderers |
-| [symbol-tlc39_linked](../cases/conformance-symbol-tlc39_linked.md) | barcode-families | See all renderers |
-| [symbol-upca](../cases/conformance-symbol-upca.md) | barcode-families | See all renderers |
-| [symbol-upce](../cases/conformance-symbol-upce.md) | barcode-families | See all renderers |
-| [printer-databar-retail-retail-10-1](../cases/conformance-printer-databar-retail-retail-10-1.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-retail-10-3](../cases/conformance-printer-databar-retail-retail-10-3.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-retail-7-1](../cases/conformance-printer-databar-retail-retail-7-1.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-retail-7-3](../cases/conformance-printer-databar-retail-retail-7-3.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-retail-9-1](../cases/conformance-printer-databar-retail-retail-9-1.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-retail-9-3](../cases/conformance-printer-databar-retail-retail-9-3.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-00425261](../cases/conformance-printer-databar-retail-upce-00425261.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-01230000045](../cases/conformance-printer-databar-retail-upce-01230000045.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-01234000005](../cases/conformance-printer-databar-retail-upce-01234000005.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-01234500006](../cases/conformance-printer-databar-retail-upce-01234500006.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-04210000526](../cases/conformance-printer-databar-retail-upce-04210000526.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-042100005264](../cases/conformance-printer-databar-retail-upce-042100005264.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-042526](../cases/conformance-printer-databar-retail-upce-042526.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-0425261](../cases/conformance-printer-databar-retail-upce-0425261.md) | printer-databar-retail | See all renderers |
-| [printer-databar-retail-upce-original-invalid](../cases/conformance-printer-databar-retail-upce-original-invalid.md) | printer-databar-retail | See all renderers |
-| [printer-barcode-defaults-code128-64-then-empty](../cases/conformance-printer-barcode-defaults-code128-64-then-empty.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-64-then-module](../cases/conformance-printer-barcode-defaults-code128-64-then-module.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-64-then-ratio](../cases/conformance-printer-barcode-defaults-code128-64-then-ratio.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-all-retained](../cases/conformance-printer-barcode-defaults-code128-all-retained.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-empty](../cases/conformance-printer-barcode-defaults-code128-empty.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-explicit-10](../cases/conformance-printer-barcode-defaults-code128-explicit-10.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-explicit-64](../cases/conformance-printer-barcode-defaults-code128-explicit-64.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-module-only](../cases/conformance-printer-barcode-defaults-code128-module-only.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-module-ratio-retained](../cases/conformance-printer-barcode-defaults-code128-module-ratio-retained.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code128-none](../cases/conformance-printer-barcode-defaults-code128-none.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-64-then-empty](../cases/conformance-printer-barcode-defaults-code39-64-then-empty.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-64-then-module](../cases/conformance-printer-barcode-defaults-code39-64-then-module.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-64-then-ratio](../cases/conformance-printer-barcode-defaults-code39-64-then-ratio.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-all-retained](../cases/conformance-printer-barcode-defaults-code39-all-retained.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-empty](../cases/conformance-printer-barcode-defaults-code39-empty.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-explicit-10](../cases/conformance-printer-barcode-defaults-code39-explicit-10.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-explicit-64](../cases/conformance-printer-barcode-defaults-code39-explicit-64.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-module-only](../cases/conformance-printer-barcode-defaults-code39-module-only.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-module-ratio-retained](../cases/conformance-printer-barcode-defaults-code39-module-ratio-retained.md) | printer-barcode-defaults | See all renderers |
-| [printer-barcode-defaults-code39-none](../cases/conformance-printer-barcode-defaults-code39-none.md) | printer-barcode-defaults | See all renderers |
-| [printer-retail-data-length-B8](../cases/conformance-printer-retail-data-length-B8.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-length-BE](../cases/conformance-printer-retail-data-length-BE.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-length-BU](../cases/conformance-printer-retail-data-length-BU.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-sweep-B8](../cases/conformance-printer-retail-data-sweep-B8.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-sweep-BE](../cases/conformance-printer-retail-data-sweep-BE.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-sweep-BU](../cases/conformance-printer-retail-data-sweep-BU.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-validation-B8](../cases/conformance-printer-retail-data-validation-B8.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-validation-BE](../cases/conformance-printer-retail-data-validation-BE.md) | printer-retail-data | See all renderers |
-| [printer-retail-data-validation-BU](../cases/conformance-printer-retail-data-validation-BU.md) | printer-retail-data | See all renderers |
-| [printer-retail-caption-edges-small](../cases/conformance-printer-retail-caption-edges-small.md) | printer-retail-caption-edges | See all renderers |
-| [printer-retail-caption-edges-large](../cases/conformance-printer-retail-caption-edges-large.md) | printer-retail-caption-edges | See all renderers |
-| [printer-retail-caption-edges-rotations](../cases/conformance-printer-retail-caption-edges-rotations.md) | printer-retail-caption-edges | See all renderers |
-| [printer-retail-caption-edges-holdouts](../cases/conformance-printer-retail-caption-edges-holdouts.md) | printer-retail-caption-edges | See all renderers |
-| [printer-retail-caption-edges-discovery](../cases/conformance-printer-retail-caption-edges-discovery.md) | printer-retail-caption-edges | See all renderers |
-| [printer-code93-controls-pairs](../cases/conformance-printer-code93-controls-pairs.md) | printer-code93-controls | See all renderers |
-| [printer-code93-controls-holdouts](../cases/conformance-printer-code93-controls-holdouts.md) | printer-code93-controls | See all renderers |
-| [printer-code93-controls-combined-checks](../cases/conformance-printer-code93-controls-combined-checks.md) | printer-code93-controls | See all renderers |
-| [printer-qr-module-state-same-field](../cases/conformance-printer-qr-module-state-same-field.md) | printer-qr-module-state | See all renderers |
-| [printer-qr-module-state-next-field](../cases/conformance-printer-qr-module-state-next-field.md) | printer-qr-module-state | See all renderers |
-| [printer-qr-module-state-holdouts-basic](../cases/conformance-printer-qr-module-state-holdouts-basic.md) | printer-qr-module-state | See all renderers |
-| [printer-character-remap-scope-clean](../cases/conformance-printer-character-remap-scope-clean.md) | printer-character-remap | See all renderers |
-| [printer-character-remap-space-barcode-clean](../cases/conformance-printer-character-remap-space-barcode-clean.md) | printer-character-remap | See all renderers |
-| [printer-character-remap-retail-positive](../cases/conformance-printer-character-remap-retail-positive.md) | printer-character-remap | See all renderers |
-| [printer-box-minimum-round-0](../cases/conformance-printer-box-minimum-round-0.md) | printer-box-minimum | See all renderers |
-| [printer-box-minimum-round-1](../cases/conformance-printer-box-minimum-round-1.md) | printer-box-minimum | See all renderers |
-| [printer-box-minimum-round-8](../cases/conformance-printer-box-minimum-round-8.md) | printer-box-minimum | See all renderers |
-| [printer-field-block-rounding-0-1-gaps](../cases/conformance-printer-field-block-rounding-0-1-gaps.md) | printer-field-block-rounding | See all renderers |
-| [printer-field-block-rounding-0-2-gaps](../cases/conformance-printer-field-block-rounding-0-2-gaps.md) | printer-field-block-rounding | See all renderers |
-| [printer-field-block-rounding-0-3-gaps](../cases/conformance-printer-field-block-rounding-0-3-gaps.md) | printer-field-block-rounding | See all renderers |
-| [printer-field-block-rounding-A-1-gaps](../cases/conformance-printer-field-block-rounding-A-1-gaps.md) | printer-field-block-rounding | See all renderers |
-| [printer-field-block-rounding-A-2-gaps](../cases/conformance-printer-field-block-rounding-A-2-gaps.md) | printer-field-block-rounding | See all renderers |
-| [printer-field-block-rounding-A-3-gaps](../cases/conformance-printer-field-block-rounding-A-3-gaps.md) | printer-field-block-rounding | See all renderers |
-| [font-0-N](../cases/conformance-font-0-N.md) | fonts | See all renderers |
-| [font-0-R](../cases/conformance-font-0-R.md) | fonts | See all renderers |
-| [font-0-I](../cases/conformance-font-0-I.md) | fonts | See all renderers |
-| [font-0-B](../cases/conformance-font-0-B.md) | fonts | See all renderers |
-| [font-A-N](../cases/conformance-font-A-N.md) | fonts | See all renderers |
-| [font-A-R](../cases/conformance-font-A-R.md) | fonts | See all renderers |
-| [font-A-I](../cases/conformance-font-A-I.md) | fonts | See all renderers |
-| [font-A-B](../cases/conformance-font-A-B.md) | fonts | See all renderers |
-| [font-B-N](../cases/conformance-font-B-N.md) | fonts | See all renderers |
-| [font-B-R](../cases/conformance-font-B-R.md) | fonts | See all renderers |
-| [font-B-I](../cases/conformance-font-B-I.md) | fonts | See all renderers |
-| [font-B-B](../cases/conformance-font-B-B.md) | fonts | See all renderers |
-| [font-C-N](../cases/conformance-font-C-N.md) | fonts | See all renderers |
-| [font-C-R](../cases/conformance-font-C-R.md) | fonts | See all renderers |
-| [font-C-I](../cases/conformance-font-C-I.md) | fonts | See all renderers |
-| [font-C-B](../cases/conformance-font-C-B.md) | fonts | See all renderers |
-| [font-D-N](../cases/conformance-font-D-N.md) | fonts | See all renderers |
-| [font-D-R](../cases/conformance-font-D-R.md) | fonts | See all renderers |
-| [font-D-I](../cases/conformance-font-D-I.md) | fonts | See all renderers |
-| [font-D-B](../cases/conformance-font-D-B.md) | fonts | See all renderers |
-| [font-E-N](../cases/conformance-font-E-N.md) | fonts | See all renderers |
-| [font-E-R](../cases/conformance-font-E-R.md) | fonts | See all renderers |
-| [font-E-I](../cases/conformance-font-E-I.md) | fonts | See all renderers |
-| [font-E-B](../cases/conformance-font-E-B.md) | fonts | See all renderers |
-| [font-F-N](../cases/conformance-font-F-N.md) | fonts | See all renderers |
-| [font-F-R](../cases/conformance-font-F-R.md) | fonts | See all renderers |
-| [font-F-I](../cases/conformance-font-F-I.md) | fonts | See all renderers |
-| [font-F-B](../cases/conformance-font-F-B.md) | fonts | See all renderers |
-| [font-G-N](../cases/conformance-font-G-N.md) | fonts | See all renderers |
-| [font-G-R](../cases/conformance-font-G-R.md) | fonts | See all renderers |
-| [font-G-I](../cases/conformance-font-G-I.md) | fonts | See all renderers |
-| [font-G-B](../cases/conformance-font-G-B.md) | fonts | See all renderers |
-| [font-H-N](../cases/conformance-font-H-N.md) | fonts | See all renderers |
-| [font-H-R](../cases/conformance-font-H-R.md) | fonts | See all renderers |
-| [font-H-I](../cases/conformance-font-H-I.md) | fonts | See all renderers |
-| [font-H-B](../cases/conformance-font-H-B.md) | fonts | See all renderers |
-| [font-id-1](../cases/conformance-font-id-1.md) | fonts | See all renderers |
-| [font-id-2](../cases/conformance-font-id-2.md) | fonts | See all renderers |
-| [font-id-3](../cases/conformance-font-id-3.md) | fonts | See all renderers |
-| [font-id-4](../cases/conformance-font-id-4.md) | fonts | See all renderers |
-| [font-id-5](../cases/conformance-font-id-5.md) | fonts | See all renderers |
-| [font-id-6](../cases/conformance-font-id-6.md) | fonts | See all renderers |
-| [font-id-7](../cases/conformance-font-id-7.md) | fonts | See all renderers |
-| [font-id-8](../cases/conformance-font-id-8.md) | fonts | See all renderers |
-| [font-id-9](../cases/conformance-font-id-9.md) | fonts | See all renderers |
-| [font-id-I](../cases/conformance-font-id-I.md) | fonts | See all renderers |
-| [font-id-J](../cases/conformance-font-id-J.md) | fonts | See all renderers |
-| [font-id-K](../cases/conformance-font-id-K.md) | fonts | See all renderers |
-| [font-id-L](../cases/conformance-font-id-L.md) | fonts | See all renderers |
-| [font-id-M](../cases/conformance-font-id-M.md) | fonts | See all renderers |
-| [font-id-N](../cases/conformance-font-id-N.md) | fonts | See all renderers |
-| [font-id-O](../cases/conformance-font-id-O.md) | fonts | See all renderers |
-| [font-id-P](../cases/conformance-font-id-P.md) | fonts | See all renderers |
-| [font-id-Q](../cases/conformance-font-id-Q.md) | fonts | See all renderers |
-| [font-id-R](../cases/conformance-font-id-R.md) | fonts | See all renderers |
-| [font-id-S](../cases/conformance-font-id-S.md) | fonts | See all renderers |
-| [font-id-T](../cases/conformance-font-id-T.md) | fonts | See all renderers |
-| [font-id-U](../cases/conformance-font-id-U.md) | fonts | See all renderers |
-| [font-id-V](../cases/conformance-font-id-V.md) | fonts | See all renderers |
-| [font-id-W](../cases/conformance-font-id-W.md) | fonts | See all renderers |
-| [font-id-X](../cases/conformance-font-id-X.md) | fonts | See all renderers |
-| [font-id-Y](../cases/conformance-font-id-Y.md) | fonts | See all renderers |
-| [font-id-Z](../cases/conformance-font-id-Z.md) | fonts | See all renderers |
-| [font-dim-0-0](../cases/conformance-font-dim-0-0.md) | fonts | See all renderers |
-| [font-dim-1-1](../cases/conformance-font-dim-1-1.md) | fonts | See all renderers |
-| [font-dim-2-2](../cases/conformance-font-dim-2-2.md) | fonts | See all renderers |
-| [font-dim-7-0](../cases/conformance-font-dim-7-0.md) | fonts | See all renderers |
-| [font-dim-15-0](../cases/conformance-font-dim-15-0.md) | fonts | See all renderers |
-| [font-dim-17-0](../cases/conformance-font-dim-17-0.md) | fonts | See all renderers |
-| [font-dim-31-0](../cases/conformance-font-dim-31-0.md) | fonts | See all renderers |
-| [font-dim-33-0](../cases/conformance-font-dim-33-0.md) | fonts | See all renderers |
-| [font-dim-63-0](../cases/conformance-font-dim-63-0.md) | fonts | See all renderers |
-| [font-dim-65-0](../cases/conformance-font-dim-65-0.md) | fonts | See all renderers |
-| [font-dim-32-1](../cases/conformance-font-dim-32-1.md) | fonts | See all renderers |
-| [font-dim-1-32](../cases/conformance-font-dim-1-32.md) | fonts | See all renderers |
-| [font-dim-64-16](../cases/conformance-font-dim-64-16.md) | fonts | See all renderers |
-| [font-dim-16-64](../cases/conformance-font-dim-16-64.md) | fonts | See all renderers |
-| [font-dim-96-96](../cases/conformance-font-dim-96-96.md) | fonts | See all renderers |
-| [text-digits](../cases/conformance-text-digits.md) | text-data | See all renderers |
-| [text-case](../cases/conformance-text-case.md) | text-data | See all renderers |
-| [text-punctuation](../cases/conformance-text-punctuation.md) | text-data | See all renderers |
-| [text-spacing](../cases/conformance-text-spacing.md) | text-data | See all renderers |
-| [text-empty](../cases/conformance-text-empty.md) | text-data | See all renderers |
-| [fields-1](../cases/conformance-fields-1.md) | stress | See all renderers |
-| [fields-48](../cases/conformance-fields-48.md) | stress | See all renderers |
-| [fields-400](../cases/conformance-fields-400.md) | stress | See all renderers |
-| [field-data-3072-bytes](../cases/conformance-field-data-3072-bytes.md) | stress | See all renderers |
-| [field-defaults](../cases/conformance-field-defaults.md) | state | See all renderers |
-| [anchor-FO-N-0](../cases/conformance-anchor-FO-N-0.md) | position | See all renderers |
-| [anchor-FO-N-1](../cases/conformance-anchor-FO-N-1.md) | position | See all renderers |
-| [anchor-FO-N-2](../cases/conformance-anchor-FO-N-2.md) | position | See all renderers |
-| [anchor-FT-N-0](../cases/conformance-anchor-FT-N-0.md) | position | See all renderers |
-| [anchor-FT-N-1](../cases/conformance-anchor-FT-N-1.md) | position | See all renderers |
-| [anchor-FT-N-2](../cases/conformance-anchor-FT-N-2.md) | position | See all renderers |
-| [anchor-FO-R-0](../cases/conformance-anchor-FO-R-0.md) | position | See all renderers |
-| [anchor-FO-R-1](../cases/conformance-anchor-FO-R-1.md) | position | See all renderers |
-| [anchor-FO-R-2](../cases/conformance-anchor-FO-R-2.md) | position | See all renderers |
-| [anchor-FT-R-0](../cases/conformance-anchor-FT-R-0.md) | position | See all renderers |
-| [anchor-FT-R-1](../cases/conformance-anchor-FT-R-1.md) | position | See all renderers |
-| [anchor-FT-R-2](../cases/conformance-anchor-FT-R-2.md) | position | See all renderers |
-| [anchor-FO-I-0](../cases/conformance-anchor-FO-I-0.md) | position | See all renderers |
-| [anchor-FO-I-1](../cases/conformance-anchor-FO-I-1.md) | position | See all renderers |
-| [anchor-FO-I-2](../cases/conformance-anchor-FO-I-2.md) | position | See all renderers |
-| [anchor-FT-I-0](../cases/conformance-anchor-FT-I-0.md) | position | See all renderers |
-| [anchor-FT-I-1](../cases/conformance-anchor-FT-I-1.md) | position | See all renderers |
-| [anchor-FT-I-2](../cases/conformance-anchor-FT-I-2.md) | position | See all renderers |
-| [anchor-FO-B-0](../cases/conformance-anchor-FO-B-0.md) | position | See all renderers |
-| [anchor-FO-B-1](../cases/conformance-anchor-FO-B-1.md) | position | See all renderers |
-| [anchor-FO-B-2](../cases/conformance-anchor-FO-B-2.md) | position | See all renderers |
-| [anchor-FT-B-0](../cases/conformance-anchor-FT-B-0.md) | position | See all renderers |
-| [anchor-FT-B-1](../cases/conformance-anchor-FT-B-1.md) | position | See all renderers |
-| [anchor-FT-B-2](../cases/conformance-anchor-FT-B-2.md) | position | See all renderers |
-| [offset-LS--80](../cases/conformance-offset-LS--80.md) | position | See all renderers |
-| [offset-LS-80](../cases/conformance-offset-LS-80.md) | position | See all renderers |
-| [offset-LT--50](../cases/conformance-offset-LT--50.md) | position | See all renderers |
-| [offset-LT-50](../cases/conformance-offset-LT-50.md) | position | See all renderers |
-| [offset-LH-100-200](../cases/conformance-offset-LH-100-200.md) | position | See all renderers |
-| [clip-0-0](../cases/conformance-clip-0-0.md) | clipping | See all renderers |
-| [clip-831-1217](../cases/conformance-clip-831-1217.md) | clipping | See all renderers |
-| [clip-832-1218](../cases/conformance-clip-832-1218.md) | clipping | See all renderers |
-| [clip-800-1180](../cases/conformance-clip-800-1180.md) | clipping | See all renderers |
-| [clip-32000-32000](../cases/conformance-clip-32000-32000.md) | clipping | See all renderers |
-| [page-transform-N-N](../cases/conformance-page-transform-N-N.md) | transforms | See all renderers |
-| [page-transform-Y-N](../cases/conformance-page-transform-Y-N.md) | transforms | See all renderers |
-| [page-transform-N-I](../cases/conformance-page-transform-N-I.md) | transforms | See all renderers |
-| [page-transform-Y-I](../cases/conformance-page-transform-Y-I.md) | transforms | See all renderers |
-| [label-reverse](../cases/conformance-label-reverse.md) | compositing | See all renderers |
-| [field-direction-H-0](../cases/conformance-field-direction-H-0.md) | text-layout | See all renderers |
-| [field-direction-H-1](../cases/conformance-field-direction-H-1.md) | text-layout | See all renderers |
-| [field-direction-H-8](../cases/conformance-field-direction-H-8.md) | text-layout | See all renderers |
-| [field-direction-V-0](../cases/conformance-field-direction-V-0.md) | text-layout | See all renderers |
-| [field-direction-V-1](../cases/conformance-field-direction-V-1.md) | text-layout | See all renderers |
-| [field-direction-V-8](../cases/conformance-field-direction-V-8.md) | text-layout | See all renderers |
-| [field-direction-R-0](../cases/conformance-field-direction-R-0.md) | text-layout | See all renderers |
-| [field-direction-R-1](../cases/conformance-field-direction-R-1.md) | text-layout | See all renderers |
-| [field-direction-R-8](../cases/conformance-field-direction-R-8.md) | text-layout | See all renderers |
-| [block-1-L](../cases/conformance-block-1-L.md) | text-layout | See all renderers |
-| [block-1-C](../cases/conformance-block-1-C.md) | text-layout | See all renderers |
-| [block-1-R](../cases/conformance-block-1-R.md) | text-layout | See all renderers |
-| [block-1-J](../cases/conformance-block-1-J.md) | text-layout | See all renderers |
-| [block-20-L](../cases/conformance-block-20-L.md) | text-layout | See all renderers |
-| [block-20-C](../cases/conformance-block-20-C.md) | text-layout | See all renderers |
-| [block-20-R](../cases/conformance-block-20-R.md) | text-layout | See all renderers |
-| [block-20-J](../cases/conformance-block-20-J.md) | text-layout | See all renderers |
-| [block-120-L](../cases/conformance-block-120-L.md) | text-layout | See all renderers |
-| [block-120-C](../cases/conformance-block-120-C.md) | text-layout | See all renderers |
-| [block-120-R](../cases/conformance-block-120-R.md) | text-layout | See all renderers |
-| [block-120-J](../cases/conformance-block-120-J.md) | text-layout | See all renderers |
-| [block-300-L](../cases/conformance-block-300-L.md) | text-layout | See all renderers |
-| [block-300-C](../cases/conformance-block-300-C.md) | text-layout | See all renderers |
-| [block-300-R](../cases/conformance-block-300-R.md) | text-layout | See all renderers |
-| [block-300-J](../cases/conformance-block-300-J.md) | text-layout | See all renderers |
-| [block-spacing--12-indent-0](../cases/conformance-block-spacing--12-indent-0.md) | text-layout | See all renderers |
-| [block-spacing-12-indent-0](../cases/conformance-block-spacing-12-indent-0.md) | text-layout | See all renderers |
-| [block-spacing-0-indent-40](../cases/conformance-block-spacing-0-indent-40.md) | text-layout | See all renderers |
-| [block-spacing-8-indent-80](../cases/conformance-block-spacing-8-indent-80.md) | text-layout | See all renderers |
-| [block-content-breaks](../cases/conformance-block-content-breaks.md) | text-layout | See all renderers |
-| [block-content-long-word](../cases/conformance-block-content-long-word.md) | text-layout | See all renderers |
-| [block-content-spaces](../cases/conformance-block-content-spaces.md) | text-layout | See all renderers |
-| [block-content-empty](../cases/conformance-block-content-empty.md) | text-layout | See all renderers |
-| [text-block-N-1](../cases/conformance-text-block-N-1.md) | text-layout | See all renderers |
-| [text-block-N-40](../cases/conformance-text-block-N-40.md) | text-layout | See all renderers |
-| [text-block-N-120](../cases/conformance-text-block-N-120.md) | text-layout | See all renderers |
-| [text-block-R-1](../cases/conformance-text-block-R-1.md) | text-layout | See all renderers |
-| [text-block-R-40](../cases/conformance-text-block-R-40.md) | text-layout | See all renderers |
-| [text-block-R-120](../cases/conformance-text-block-R-120.md) | text-layout | See all renderers |
-| [text-block-I-1](../cases/conformance-text-block-I-1.md) | text-layout | See all renderers |
-| [text-block-I-40](../cases/conformance-text-block-I-40.md) | text-layout | See all renderers |
-| [text-block-I-120](../cases/conformance-text-block-I-120.md) | text-layout | See all renderers |
-| [text-block-B-1](../cases/conformance-text-block-B-1.md) | text-layout | See all renderers |
-| [text-block-B-40](../cases/conformance-text-block-B-40.md) | text-layout | See all renderers |
-| [text-block-B-120](../cases/conformance-text-block-B-120.md) | text-layout | See all renderers |
-| [unicode-latin](../cases/conformance-unicode-latin.md) | encoding | See all renderers |
-| [unicode-combining](../cases/conformance-unicode-combining.md) | encoding | See all renderers |
-| [unicode-greek](../cases/conformance-unicode-greek.md) | encoding | See all renderers |
-| [unicode-cyrillic](../cases/conformance-unicode-cyrillic.md) | encoding | See all renderers |
-| [unicode-hebrew](../cases/conformance-unicode-hebrew.md) | encoding | See all renderers |
-| [unicode-arabic](../cases/conformance-unicode-arabic.md) | encoding | See all renderers |
-| [unicode-cjk](../cases/conformance-unicode-cjk.md) | encoding | See all renderers |
-| [unicode-supplementary](../cases/conformance-unicode-supplementary.md) | encoding | See all renderers |
-| [unicode-controls](../cases/conformance-unicode-controls.md) | encoding | See all renderers |
-| [unicode-missing](../cases/conformance-unicode-missing.md) | encoding | See all renderers |
-| [encoding-0](../cases/conformance-encoding-0.md) | encoding | See all renderers |
-| [encoding-13](../cases/conformance-encoding-13.md) | encoding | See all renderers |
-| [encoding-27](../cases/conformance-encoding-27.md) | encoding | See all renderers |
-| [encoding-28](../cases/conformance-encoding-28.md) | encoding | See all renderers |
-| [encoding-29](../cases/conformance-encoding-29.md) | encoding | See all renderers |
-| [encoding-30](../cases/conformance-encoding-30.md) | encoding | See all renderers |
-| [encoding-31](../cases/conformance-encoding-31.md) | encoding | See all renderers |
-| [encoding-33](../cases/conformance-encoding-33.md) | encoding | See all renderers |
-| [encoding-34](../cases/conformance-encoding-34.md) | encoding | See all renderers |
-| [encoding-35](../cases/conformance-encoding-35.md) | encoding | See all renderers |
-| [encoding-36](../cases/conformance-encoding-36.md) | encoding | See all renderers |
-| [encoding-remap](../cases/conformance-encoding-remap.md) | encoding | See all renderers |
-| [advanced-text-0000](../cases/conformance-advanced-text-0000.md) | encoding | See all renderers |
-| [advanced-text-1000](../cases/conformance-advanced-text-1000.md) | encoding | See all renderers |
-| [advanced-text-0100](../cases/conformance-advanced-text-0100.md) | encoding | See all renderers |
-| [advanced-text-0010](../cases/conformance-advanced-text-0010.md) | encoding | See all renderers |
-| [advanced-text-0001](../cases/conformance-advanced-text-0001.md) | encoding | See all renderers |
-| [advanced-text-1111](../cases/conformance-advanced-text-1111.md) | encoding | See all renderers |
-| [hex-underscore](../cases/conformance-hex-underscore.md) | lexical | See all renderers |
-| [hex-hash](../cases/conformance-hex-hash.md) | lexical | See all renderers |
-| [hex-scope](../cases/conformance-hex-scope.md) | state | See all renderers |
-| [variable-field](../cases/conformance-variable-field.md) | text-data | See all renderers |
-| [numbered-fields-inline](../cases/conformance-numbered-fields-inline.md) | state | See all renderers |
-| [field-concat-whole](../cases/conformance-field-concat-whole.md) | text-data | See all renderers |
-| [field-concat-forward](../cases/conformance-field-concat-forward.md) | text-data | See all renderers |
-| [field-concat-backward](../cases/conformance-field-concat-backward.md) | text-data | See all renderers |
-| [field-concat-past-end](../cases/conformance-field-concat-past-end.md) | text-data | See all renderers |
-| [field-concat-scope](../cases/conformance-field-concat-scope.md) | state | See all renderers |
-| [interleaved-odd-digits](../cases/conformance-interleaved-odd-digits.md) | barcode-arguments | See all renderers |
-| [serial-000009-Y](../cases/conformance-serial-000009-Y.md) | serialization | See all renderers |
-| [serial-000009-N](../cases/conformance-serial-000009-N.md) | serialization | See all renderers |
-| [serial-A009Z-Y](../cases/conformance-serial-A009Z-Y.md) | serialization | See all renderers |
-| [serial-mask](../cases/conformance-serial-mask.md) | serialization | See all renderers |
-| [comments-and-line-endings](../cases/conformance-comments-and-line-endings.md) | lexical | See all renderers |
-| [box-rounding-0](../cases/conformance-box-rounding-0.md) | shapes | See all renderers |
-| [box-rounding-1](../cases/conformance-box-rounding-1.md) | shapes | See all renderers |
-| [box-rounding-2](../cases/conformance-box-rounding-2.md) | shapes | See all renderers |
-| [box-rounding-3](../cases/conformance-box-rounding-3.md) | shapes | See all renderers |
-| [box-rounding-4](../cases/conformance-box-rounding-4.md) | shapes | See all renderers |
-| [box-rounding-5](../cases/conformance-box-rounding-5.md) | shapes | See all renderers |
-| [box-rounding-6](../cases/conformance-box-rounding-6.md) | shapes | See all renderers |
-| [box-rounding-7](../cases/conformance-box-rounding-7.md) | shapes | See all renderers |
-| [box-rounding-8](../cases/conformance-box-rounding-8.md) | shapes | See all renderers |
-| [box-0-80-1](../cases/conformance-box-0-80-1.md) | shapes | See all renderers |
-| [box-80-0-1](../cases/conformance-box-80-0-1.md) | shapes | See all renderers |
-| [box-1-1-1](../cases/conformance-box-1-1-1.md) | shapes | See all renderers |
-| [box-2-2-1](../cases/conformance-box-2-2-1.md) | shapes | See all renderers |
-| [box-31-31-1](../cases/conformance-box-31-31-1.md) | shapes | See all renderers |
-| [box-32-32-1](../cases/conformance-box-32-32-1.md) | shapes | See all renderers |
-| [box-33-33-1](../cases/conformance-box-33-33-1.md) | shapes | See all renderers |
-| [box-100-60-30](../cases/conformance-box-100-60-30.md) | shapes | See all renderers |
-| [box-100-60-100](../cases/conformance-box-100-60-100.md) | shapes | See all renderers |
-| [shape-GC-B-plain](../cases/conformance-shape-GC-B-plain.md) | shapes | See all renderers |
-| [shape-GC-W-plain](../cases/conformance-shape-GC-W-plain.md) | shapes | See all renderers |
-| [shape-GE-B-plain](../cases/conformance-shape-GE-B-plain.md) | shapes | See all renderers |
-| [shape-GE-W-plain](../cases/conformance-shape-GE-W-plain.md) | shapes | See all renderers |
-| [shape-GD-B-L](../cases/conformance-shape-GD-B-L.md) | shapes | See all renderers |
-| [shape-GD-B-R](../cases/conformance-shape-GD-B-R.md) | shapes | See all renderers |
-| [shape-GD-W-L](../cases/conformance-shape-GD-W-L.md) | shapes | See all renderers |
-| [shape-GD-W-R](../cases/conformance-shape-GD-W-R.md) | shapes | See all renderers |
-| [symbol-graphic-A-N](../cases/conformance-symbol-graphic-A-N.md) | shapes | See all renderers |
-| [symbol-graphic-A-R](../cases/conformance-symbol-graphic-A-R.md) | shapes | See all renderers |
-| [symbol-graphic-A-I](../cases/conformance-symbol-graphic-A-I.md) | shapes | See all renderers |
-| [symbol-graphic-A-B](../cases/conformance-symbol-graphic-A-B.md) | shapes | See all renderers |
-| [symbol-graphic-B-N](../cases/conformance-symbol-graphic-B-N.md) | shapes | See all renderers |
-| [symbol-graphic-B-R](../cases/conformance-symbol-graphic-B-R.md) | shapes | See all renderers |
-| [symbol-graphic-B-I](../cases/conformance-symbol-graphic-B-I.md) | shapes | See all renderers |
-| [symbol-graphic-B-B](../cases/conformance-symbol-graphic-B-B.md) | shapes | See all renderers |
-| [symbol-graphic-C-N](../cases/conformance-symbol-graphic-C-N.md) | shapes | See all renderers |
-| [symbol-graphic-C-R](../cases/conformance-symbol-graphic-C-R.md) | shapes | See all renderers |
-| [symbol-graphic-C-I](../cases/conformance-symbol-graphic-C-I.md) | shapes | See all renderers |
-| [symbol-graphic-C-B](../cases/conformance-symbol-graphic-C-B.md) | shapes | See all renderers |
-| [symbol-graphic-D-N](../cases/conformance-symbol-graphic-D-N.md) | shapes | See all renderers |
-| [symbol-graphic-D-R](../cases/conformance-symbol-graphic-D-R.md) | shapes | See all renderers |
-| [symbol-graphic-D-I](../cases/conformance-symbol-graphic-D-I.md) | shapes | See all renderers |
-| [symbol-graphic-D-B](../cases/conformance-symbol-graphic-D-B.md) | shapes | See all renderers |
-| [symbol-graphic-E-N](../cases/conformance-symbol-graphic-E-N.md) | shapes | See all renderers |
-| [symbol-graphic-E-R](../cases/conformance-symbol-graphic-E-R.md) | shapes | See all renderers |
-| [symbol-graphic-E-I](../cases/conformance-symbol-graphic-E-I.md) | shapes | See all renderers |
-| [symbol-graphic-E-B](../cases/conformance-symbol-graphic-E-B.md) | shapes | See all renderers |
-| [paint-black-white](../cases/conformance-paint-black-white.md) | compositing | See all renderers |
-| [paint-white-black](../cases/conformance-paint-white-black.md) | compositing | See all renderers |
-| [paint-reverse-overlap](../cases/conformance-paint-reverse-overlap.md) | compositing | See all renderers |
-| [paint-reverse-twice](../cases/conformance-paint-reverse-twice.md) | compositing | See all renderers |
-| [reverse-field-scope](../cases/conformance-reverse-field-scope.md) | state | See all renderers |
-| [raster-equivalent-hex](../cases/conformance-raster-equivalent-hex.md) | graphics | See all renderers |
-| [raster-equivalent-B64](../cases/conformance-raster-equivalent-B64.md) | graphics | See all renderers |
-| [raster-equivalent-Z64](../cases/conformance-raster-equivalent-Z64.md) | graphics | See all renderers |
-| [raster-equivalent-binary](../cases/conformance-raster-equivalent-binary.md) | graphics | See all renderers |
-| [raster-fill-hex](../cases/conformance-raster-fill-hex.md) | graphics | See all renderers |
-| [raster-fill-rle](../cases/conformance-raster-fill-rle.md) | graphics | See all renderers |
-| [raster-repeat-hex](../cases/conformance-raster-repeat-hex.md) | graphics | See all renderers |
-| [raster-repeat-rle](../cases/conformance-raster-repeat-rle.md) | graphics | See all renderers |
-| [raster-binary-command-bytes](../cases/conformance-raster-binary-command-bytes.md) | graphics | See all renderers |
-| [raster-stride-1](../cases/conformance-raster-stride-1.md) | graphics | See all renderers |
-| [raster-stride-2](../cases/conformance-raster-stride-2.md) | graphics | See all renderers |
-| [raster-stride-3](../cases/conformance-raster-stride-3.md) | graphics | See all renderers |
-| [raster-stride-17](../cases/conformance-raster-stride-17.md) | graphics | See all renderers |
-| [raster-clipped](../cases/conformance-raster-clipped.md) | graphics | See all renderers |
-| [barcode-module-1-ratio-2.0](../cases/conformance-barcode-module-1-ratio-2.0.md) | barcode-arguments | See all renderers |
-| [barcode-module-1-ratio-2.5](../cases/conformance-barcode-module-1-ratio-2.5.md) | barcode-arguments | See all renderers |
-| [barcode-module-1-ratio-3.0](../cases/conformance-barcode-module-1-ratio-3.0.md) | barcode-arguments | See all renderers |
-| [barcode-module-2-ratio-2.0](../cases/conformance-barcode-module-2-ratio-2.0.md) | barcode-arguments | See all renderers |
-| [barcode-module-2-ratio-2.5](../cases/conformance-barcode-module-2-ratio-2.5.md) | barcode-arguments | See all renderers |
-| [barcode-module-2-ratio-3.0](../cases/conformance-barcode-module-2-ratio-3.0.md) | barcode-arguments | See all renderers |
-| [barcode-module-3-ratio-2.0](../cases/conformance-barcode-module-3-ratio-2.0.md) | barcode-arguments | See all renderers |
-| [barcode-module-3-ratio-2.5](../cases/conformance-barcode-module-3-ratio-2.5.md) | barcode-arguments | See all renderers |
-| [barcode-module-3-ratio-3.0](../cases/conformance-barcode-module-3-ratio-3.0.md) | barcode-arguments | See all renderers |
-| [barcode-module-10-ratio-2.0](../cases/conformance-barcode-module-10-ratio-2.0.md) | barcode-arguments | See all renderers |
-| [barcode-module-10-ratio-2.5](../cases/conformance-barcode-module-10-ratio-2.5.md) | barcode-arguments | See all renderers |
-| [barcode-module-10-ratio-3.0](../cases/conformance-barcode-module-10-ratio-3.0.md) | barcode-arguments | See all renderers |
-| [code128-mode-N](../cases/conformance-code128-mode-N.md) | barcode-arguments | See all renderers |
-| [code128-mode-U](../cases/conformance-code128-mode-U.md) | barcode-arguments | See all renderers |
-| [code128-mode-A](../cases/conformance-code128-mode-A.md) | barcode-arguments | See all renderers |
-| [code128-mode-D](../cases/conformance-code128-mode-D.md) | barcode-arguments | See all renderers |
-| [code128-subset-b](../cases/conformance-code128-subset-b.md) | barcode-arguments | See all renderers |
-| [code128-subset-c](../cases/conformance-code128-subset-c.md) | barcode-arguments | See all renderers |
-| [code128-switch](../cases/conformance-code128-switch.md) | barcode-arguments | See all renderers |
-| [code128-fnc1](../cases/conformance-code128-fnc1.md) | barcode-arguments | See all renderers |
-| [readable-B2-N](../cases/conformance-readable-B2-N.md) | barcode-arguments | See all renderers |
-| [readable-B2-R](../cases/conformance-readable-B2-R.md) | barcode-arguments | See all renderers |
-| [readable-B2-I](../cases/conformance-readable-B2-I.md) | barcode-arguments | See all renderers |
-| [readable-B2-B](../cases/conformance-readable-B2-B.md) | barcode-arguments | See all renderers |
-| [readable-B3-N](../cases/conformance-readable-B3-N.md) | barcode-arguments | See all renderers |
-| [readable-B3-R](../cases/conformance-readable-B3-R.md) | barcode-arguments | See all renderers |
-| [readable-B3-I](../cases/conformance-readable-B3-I.md) | barcode-arguments | See all renderers |
-| [readable-B3-B](../cases/conformance-readable-B3-B.md) | barcode-arguments | See all renderers |
-| [readable-BC-N](../cases/conformance-readable-BC-N.md) | barcode-arguments | See all renderers |
-| [readable-BC-R](../cases/conformance-readable-BC-R.md) | barcode-arguments | See all renderers |
-| [readable-BC-I](../cases/conformance-readable-BC-I.md) | barcode-arguments | See all renderers |
-| [readable-BC-B](../cases/conformance-readable-BC-B.md) | barcode-arguments | See all renderers |
-| [readable-BE-N](../cases/conformance-readable-BE-N.md) | barcode-arguments | See all renderers |
-| [readable-BE-R](../cases/conformance-readable-BE-R.md) | barcode-arguments | See all renderers |
-| [readable-BE-I](../cases/conformance-readable-BE-I.md) | barcode-arguments | See all renderers |
-| [readable-BE-B](../cases/conformance-readable-BE-B.md) | barcode-arguments | See all renderers |
-| [readable-BU-N](../cases/conformance-readable-BU-N.md) | barcode-arguments | See all renderers |
-| [readable-BU-R](../cases/conformance-readable-BU-R.md) | barcode-arguments | See all renderers |
-| [readable-BU-I](../cases/conformance-readable-BU-I.md) | barcode-arguments | See all renderers |
-| [readable-BU-B](../cases/conformance-readable-BU-B.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-0](../cases/conformance-qr-mask-full-0.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-1](../cases/conformance-qr-mask-full-1.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-2](../cases/conformance-qr-mask-full-2.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-3](../cases/conformance-qr-mask-full-3.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-4](../cases/conformance-qr-mask-full-4.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-5](../cases/conformance-qr-mask-full-5.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-6](../cases/conformance-qr-mask-full-6.md) | barcode-arguments | See all renderers |
-| [qr-mask-full-7](../cases/conformance-qr-mask-full-7.md) | barcode-arguments | See all renderers |
-| [datamatrix-quality-0](../cases/conformance-datamatrix-quality-0.md) | barcode-arguments | See all renderers |
-| [datamatrix-quality-50](../cases/conformance-datamatrix-quality-50.md) | barcode-arguments | See all renderers |
-| [datamatrix-quality-80](../cases/conformance-datamatrix-quality-80.md) | barcode-arguments | See all renderers |
-| [datamatrix-quality-100](../cases/conformance-datamatrix-quality-100.md) | barcode-arguments | See all renderers |
-| [datamatrix-quality-140](../cases/conformance-datamatrix-quality-140.md) | barcode-arguments | See all renderers |
-| [datamatrix-quality-200](../cases/conformance-datamatrix-quality-200.md) | barcode-arguments | See all renderers |
-| [datamatrix-size-10-10](../cases/conformance-datamatrix-size-10-10.md) | barcode-arguments | See all renderers |
-| [datamatrix-size-16-16](../cases/conformance-datamatrix-size-16-16.md) | barcode-arguments | See all renderers |
-| [datamatrix-size-18-8](../cases/conformance-datamatrix-size-18-8.md) | barcode-arguments | See all renderers |
-| [datamatrix-size-32-8](../cases/conformance-datamatrix-size-32-8.md) | barcode-arguments | See all renderers |
-| [pdf417-security-0-N](../cases/conformance-pdf417-security-0-N.md) | barcode-arguments | See all renderers |
-| [pdf417-security-0-Y](../cases/conformance-pdf417-security-0-Y.md) | barcode-arguments | See all renderers |
-| [pdf417-security-2-N](../cases/conformance-pdf417-security-2-N.md) | barcode-arguments | See all renderers |
-| [pdf417-security-2-Y](../cases/conformance-pdf417-security-2-Y.md) | barcode-arguments | See all renderers |
-| [pdf417-security-8-N](../cases/conformance-pdf417-security-8-N.md) | barcode-arguments | See all renderers |
-| [pdf417-security-8-Y](../cases/conformance-pdf417-security-8-Y.md) | barcode-arguments | See all renderers |
-| [pdf417-structured-origins-1](../cases/conformance-pdf417-structured-origins-1.md) | barcode-arguments | See all renderers |
-| [pdf417-structured-origins-3](../cases/conformance-pdf417-structured-origins-3.md) | barcode-arguments | See all renderers |
-| [structured-exclude-B7](../cases/conformance-structured-exclude-B7.md) | barcode-arguments | See all renderers |
-| [structured-exclude-BF](../cases/conformance-structured-exclude-BF.md) | barcode-arguments | See all renderers |
-| [barcode-validation](../cases/conformance-barcode-validation.md) | barcode-arguments | See all renderers |
-| [barcode-default-scope](../cases/conformance-barcode-default-scope.md) | state | See all renderers |
-| [equivalent-text-plain](../cases/conformance-equivalent-text-plain.md) | metamorphic | See all renderers |
-| [equivalent-text-hex](../cases/conformance-equivalent-text-hex.md) | metamorphic | See all renderers |
-| [equivalent-home-direct](../cases/conformance-equivalent-home-direct.md) | metamorphic | See all renderers |
-| [equivalent-home-offset](../cases/conformance-equivalent-home-offset.md) | metamorphic | See all renderers |
-| [equivalent-comment](../cases/conformance-equivalent-comment.md) | metamorphic | See all renderers |
-| [torture-typography](../cases/conformance-torture-typography.md) | torture | See all renderers |
-| [torture-geometry](../cases/conformance-torture-geometry.md) | torture | See all renderers |
-| [torture-shipping-label](../cases/conformance-torture-shipping-label.md) | torture | See all renderers |
-| [torture-overlap](../cases/conformance-torture-overlap.md) | torture | See all renderers |
-| [compact-baseline-0](../cases/conformance-compact-baseline-0.md) | compact-fonts | See all renderers |
-| [compact-baseline-A](../cases/conformance-compact-baseline-A.md) | compact-fonts | See all renderers |
-| [compact-baseline-B](../cases/conformance-compact-baseline-B.md) | compact-fonts | See all renderers |
-| [compact-baseline-C](../cases/conformance-compact-baseline-C.md) | compact-fonts | See all renderers |
-| [compact-baseline-F](../cases/conformance-compact-baseline-F.md) | compact-fonts | See all renderers |
-| [compact-wrap-L](../cases/conformance-compact-wrap-L.md) | compact-layout | See all renderers |
-| [compact-wrap-C](../cases/conformance-compact-wrap-C.md) | compact-layout | See all renderers |
-| [compact-wrap-R](../cases/conformance-compact-wrap-R.md) | compact-layout | See all renderers |
-| [compact-wrap-J](../cases/conformance-compact-wrap-J.md) | compact-layout | See all renderers |
-| [compact-circle-4](../cases/conformance-compact-circle-4.md) | compact-shapes | See all renderers |
-| [compact-circle-28](../cases/conformance-compact-circle-28.md) | compact-shapes | See all renderers |
-| [compact-circle-127](../cases/conformance-compact-circle-127.md) | compact-shapes | See all renderers |
-| [compact-rounded-1](../cases/conformance-compact-rounded-1.md) | compact-shapes | See all renderers |
-| [compact-rounded-4](../cases/conformance-compact-rounded-4.md) | compact-shapes | See all renderers |
-| [compact-rounded-8](../cases/conformance-compact-rounded-8.md) | compact-shapes | See all renderers |
-| [compact-state-qr-code128](../cases/conformance-compact-state-qr-code128.md) | compact-barcodes | See all renderers |
-| [compact-state-code128-dm](../cases/conformance-compact-state-code128-dm.md) | compact-barcodes | See all renderers |
-| [compact-code93-substitutes](../cases/conformance-compact-code93-substitutes.md) | compact-barcodes | See all renderers |
-| [compact-qr-field-hex](../cases/conformance-compact-qr-field-hex.md) | compact-barcodes | See all renderers |
-| [compact-pdf417-numeric](../cases/conformance-compact-pdf417-numeric.md) | compact-barcodes | See all renderers |
-| [compact-caption-N](../cases/conformance-compact-caption-N.md) | compact-barcodes | See all renderers |
-| [compact-caption-Y](../cases/conformance-compact-caption-Y.md) | compact-barcodes | See all renderers |
-| [compact-overlap-FR](../cases/conformance-compact-overlap-FR.md) | compact-compositing | See all renderers |
-| [compact-overlap-LR](../cases/conformance-compact-overlap-LR.md) | compact-compositing | See all renderers |
-| [invalid-bad-orientation](../cases/conformance-invalid-bad-orientation.md) | negative | See all renderers |
-| [invalid-negative-width](../cases/conformance-invalid-negative-width.md) | negative | See all renderers |
-| [invalid-bad-alignment](../cases/conformance-invalid-bad-alignment.md) | negative | See all renderers |
-| [invalid-bad-hex](../cases/conformance-invalid-bad-hex.md) | negative | See all renderers |
-| [invalid-truncated-hex](../cases/conformance-invalid-truncated-hex.md) | negative | See all renderers |
-| [invalid-bad-raster-count](../cases/conformance-invalid-bad-raster-count.md) | negative | See all renderers |
-| [invalid-zero-raster-stride](../cases/conformance-invalid-zero-raster-stride.md) | negative | See all renderers |
-| [invalid-bad-base64](../cases/conformance-invalid-bad-base64.md) | negative | See all renderers |
-| [invalid-bad-crc](../cases/conformance-invalid-bad-crc.md) | negative | See all renderers |
-| [invalid-qr-model-invalid](../cases/conformance-invalid-qr-model-invalid.md) | negative | See all renderers |
-| [invalid-qr-mask-invalid](../cases/conformance-invalid-qr-mask-invalid.md) | negative | See all renderers |
-| [invalid-ean-nonnumeric](../cases/conformance-invalid-ean-nonnumeric.md) | negative | See all renderers |
-| [invalid-code39-empty](../cases/conformance-invalid-code39-empty.md) | negative | See all renderers |
-| [invalid-unknown-encoding](../cases/conformance-invalid-unknown-encoding.md) | negative | See all renderers |
+| Case | Group | [codyps/zpl (Rust) IoU](libraries/codyps-zpl.md) | [labelize (Rust) IoU](libraries/labelize.md) | [zpl-forge (Rust) IoU](libraries/forge.md) | [go-zpl (Go) IoU](libraries/go.md) | [zpl-rs (Rust → Go) IoU](libraries/ffi.md) | [BinaryKits.Zpl (.NET) IoU](libraries/binarykits.md) | [ZPLr (TypeScript) IoU](libraries/zplr.md) | [Labelary (SaaS) IoU](libraries/labelary.md) |
+|---|---|---|---|---|---|---|---|---|---|
+| [probe-font0-height-16](../cases/conformance-probe-font0-height-16.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 55.99% IoU | rendered · 34.95% IoU | rendered · 81.10% IoU | rendered · 81.10% IoU | rendered · 14.89% IoU | rendered · 17.91% IoU | rendered · 64.47% IoU |
+| [probe-font0-height-32](../cases/conformance-probe-font0-height-32.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 67.30% IoU | rendered · 49.63% IoU | rendered · 85.00% IoU | rendered · 85.00% IoU | rendered · 19.25% IoU | rendered · 21.00% IoU | rendered · 73.93% IoU |
+| [probe-font0-height-64](../cases/conformance-probe-font0-height-64.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 76.33% IoU | rendered · 36.54% IoU | rendered · 89.59% IoU | rendered · 89.59% IoU | rendered · 17.34% IoU | rendered · 22.36% IoU | rendered · 80.41% IoU |
+| [probe-font0-width-16](../cases/conformance-probe-font0-width-16.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 31.79% IoU | rendered · 32.69% IoU | rendered · 42.29% IoU | rendered · 42.29% IoU | rendered · 14.18% IoU | rendered · 35.96% IoU | rendered · 65.46% IoU |
+| [probe-font0-width-32](../cases/conformance-probe-font0-width-32.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 67.30% IoU | rendered · 49.63% IoU | rendered · 85.00% IoU | rendered · 85.00% IoU | rendered · 19.25% IoU | rendered · 39.06% IoU | rendered · 73.93% IoU |
+| [probe-font0-width-64](../cases/conformance-probe-font0-width-64.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 70.77% IoU | rendered · 35.26% IoU | rendered · 62.08% IoU | rendered · 62.08% IoU | rendered · 16.82% IoU | rendered · 41.50% IoU | rendered · 79.08% IoU |
+| [probe-font0-rotation-N](../cases/conformance-probe-font0-rotation-N.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 85.14% IoU | rendered · 52.80% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.83% IoU | rendered · 37.09% IoU | rendered · 83.42% IoU |
+| [probe-font0-rotation-R](../cases/conformance-probe-font0-rotation-R.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 53.60% IoU | rendered · 50.68% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.37% IoU | rendered · 35.31% IoU | rendered · 76.58% IoU |
+| [probe-font0-rotation-I](../cases/conformance-probe-font0-rotation-I.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 31.09% IoU | rendered · 32.20% IoU | rendered · 65.11% IoU | rendered · 65.11% IoU | rendered · 28.17% IoU | rendered · 48.46% IoU | rendered · 76.58% IoU |
+| [probe-font0-rotation-B](../cases/conformance-probe-font0-rotation-B.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 39.68% IoU | rendered · 34.72% IoU | rendered · 65.11% IoU | rendered · 65.11% IoU | rendered · 28.11% IoU | rendered · 55.07% IoU | rendered · 83.42% IoU |
+| [probe-font-A](../cases/conformance-probe-font-A.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 10.20% IoU | rendered · 38.61% IoU | rendered · 8.60% IoU | rendered · 8.60% IoU | rendered · 38.52% IoU | rendered · 20.66% IoU | rendered · 53.12% IoU |
+| [probe-font-D](../cases/conformance-probe-font-D.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 47.95% IoU | rendered · 45.48% IoU | rendered · 12.57% IoU | rendered · 12.57% IoU | rendered · 42.12% IoU | rendered · 23.47% IoU | rendered · 55.96% IoU |
+| [probe-fo-justify-0](../cases/conformance-probe-fo-justify-0.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 67.30% IoU | error · 0.00% IoU | rendered · 85.00% IoU | rendered · 85.00% IoU | rendered · 19.25% IoU | rendered · 21.00% IoU | rendered · 73.93% IoU |
+| [probe-fo-justify-1](../cases/conformance-probe-fo-justify-1.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 42.16% IoU | error · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 21.68% IoU | rendered · 23.61% IoU | rendered · 37.90% IoU |
+| [probe-fo-justify-2](../cases/conformance-probe-fo-justify-2.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 67.30% IoU | error · 0.00% IoU | rendered · 85.00% IoU | rendered · 85.00% IoU | rendered · 19.25% IoU | rendered · 21.00% IoU | rendered · 73.93% IoU |
+| [probe-ft-baseline](../cases/conformance-probe-ft-baseline.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 59.88% IoU | rendered · 21.03% IoU | rendered · 85.00% IoU | rendered · 85.00% IoU | rendered · 19.25% IoU | rendered · 12.44% IoU | rendered · 73.93% IoU |
+| [probe-layout-LH](../cases/conformance-probe-layout-LH.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 85.14% IoU | rendered · 0.89% IoU | rendered · 77.23% IoU | rendered · 1.69% IoU | rendered · 31.83% IoU | rendered · 37.09% IoU | rendered · 83.42% IoU |
+| [probe-layout-LS](../cases/conformance-probe-layout-LS.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 85.14% IoU | rendered · 18.06% IoU | rendered · 24.51% IoU | rendered · 24.51% IoU | rendered · 15.63% IoU | rendered · 37.09% IoU | rendered · 83.42% IoU |
+| [probe-layout-LT](../cases/conformance-probe-layout-LT.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 6.69% IoU | rendered · 52.80% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.83% IoU | rendered · 5.12% IoU | rendered · 6.49% IoU |
+| [probe-layout-PO](../cases/conformance-probe-layout-PO.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 0.00% IoU | rendered · 52.80% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.83% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-layout-LR](../cases/conformance-probe-layout-LR.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 78.84% IoU | rendered · 52.80% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.83% IoU | rendered · 37.09% IoU | rendered · 82.89% IoU |
+| [probe-layout-FW](../cases/conformance-probe-layout-FW.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 53.60% IoU | rendered · 13.93% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.37% IoU | rendered · 35.31% IoU | rendered · 76.58% IoU |
+| [probe-field-reverse](../cases/conformance-probe-field-reverse.md) | baseline-layout | rendered · 100.00% IoU · exact | rendered · 97.34% IoU | rendered · 94.77% IoU | rendered · 99.06% IoU | rendered · 99.06% IoU | rendered · 92.65% IoU | rendered · 93.80% IoU | rendered · 97.84% IoU |
+| [probe-block-L](../cases/conformance-probe-block-L.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 56.23% IoU | rendered · 56.10% IoU | rendered · 75.12% IoU | rendered · 75.12% IoU | rendered · 21.58% IoU | rendered · 28.26% IoU | rendered · 67.48% IoU |
+| [probe-block-C](../cases/conformance-probe-block-C.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 18.40% IoU | rendered · 21.30% IoU | rendered · 27.53% IoU | rendered · 27.53% IoU | rendered · 12.72% IoU | rendered · 23.20% IoU | rendered · 72.67% IoU |
+| [probe-block-R](../cases/conformance-probe-block-R.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 55.81% IoU | rendered · 63.64% IoU | rendered · 39.12% IoU | rendered · 39.12% IoU | rendered · 17.24% IoU | rendered · 26.32% IoU | rendered · 41.03% IoU |
+| [probe-block-J](../cases/conformance-probe-block-J.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 41.85% IoU | rendered · 37.45% IoU | rendered · 47.62% IoU | rendered · 47.62% IoU | rendered · 20.47% IoU | rendered · 26.68% IoU | rendered · 82.39% IoU |
+| [probe-block-indent](../cases/conformance-probe-block-indent.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 35.88% IoU | rendered · 56.10% IoU | rendered · 47.24% IoU | rendered · 47.24% IoU | rendered · 21.58% IoU | rendered · 28.26% IoU | rendered · 67.48% IoU |
+| [probe-block-explicit-break](../cases/conformance-probe-block-explicit-break.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 63.41% IoU | rendered · 44.83% IoU | rendered · 72.02% IoU | rendered · 72.02% IoU | rendered · 29.94% IoU | rendered · 37.86% IoU | rendered · 77.91% IoU |
+| [probe-field-hex](../cases/conformance-probe-field-hex.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 85.14% IoU | rendered · 52.80% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.83% IoU | rendered · 37.09% IoU | rendered · 83.42% IoU |
+| [probe-variable-data](../cases/conformance-probe-variable-data.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 85.14% IoU | blank · 0.00% IoU | rendered · 77.23% IoU | rendered · 77.23% IoU | rendered · 31.83% IoU | rendered · 37.09% IoU | rendered · 83.42% IoU |
+| [probe-encoding-0](../cases/conformance-probe-encoding-0.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 82.31% IoU | rendered · 50.46% IoU | rendered · 73.48% IoU | rendered · 73.48% IoU | rendered · 21.55% IoU | rendered · 26.55% IoU | rendered · 83.72% IoU |
+| [probe-encoding-27](../cases/conformance-probe-encoding-27.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 82.31% IoU | rendered · 50.46% IoU | rendered · 73.48% IoU | rendered · 73.48% IoU | rendered · 21.55% IoU | rendered · 26.55% IoU | rendered · 83.72% IoU |
+| [probe-encoding-28](../cases/conformance-probe-encoding-28.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 82.31% IoU | rendered · 50.46% IoU | rendered · 73.48% IoU | rendered · 73.48% IoU | rendered · 21.55% IoU | rendered · 26.55% IoU | rendered · 83.72% IoU |
+| [probe-utf8-accent](../cases/conformance-probe-utf8-accent.md) | baseline-text | rendered · 100.00% IoU · exact | rendered · 71.12% IoU | rendered · 45.60% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 31.19% IoU | rendered · 37.88% IoU | rendered · 82.34% IoU |
+| [probe-box-thickness-1](../cases/conformance-probe-box-thickness-1.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-box-thickness-4](../cases/conformance-probe-box-thickness-4.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-box-thickness-60](../cases/conformance-probe-box-thickness-60.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-box-round](../cases/conformance-probe-box-round.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 84.08% IoU | rendered · 43.68% IoU | rendered · 71.47% IoU | rendered · 71.47% IoU | rendered · 93.81% IoU | rendered · 90.07% IoU | rendered · 93.05% IoU |
+| [probe-box-white](../cases/conformance-probe-box-white.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-shape-GC-B](../cases/conformance-probe-shape-GC-B.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 68.69% IoU | rendered · 59.82% IoU | rendered · 68.69% IoU | rendered · 68.69% IoU | rendered · 64.96% IoU | rendered · 91.71% IoU | rendered · 63.31% IoU |
+| [probe-shape-GE-B](../cases/conformance-probe-shape-GE-B.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 53.26% IoU | rendered · 37.47% IoU | rendered · 53.26% IoU | rendered · 53.26% IoU | rendered · 50.22% IoU | rendered · 76.60% IoU | rendered · 50.45% IoU |
+| [probe-shape-GD-R](../cases/conformance-probe-shape-GD-R.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 16.53% IoU | rendered · 49.84% IoU | rendered · 0.56% IoU | rendered · 0.56% IoU | rendered · 50.00% IoU | rendered · 100.00% IoU · exact | rendered · 50.00% IoU |
+| [probe-shape-GD-L](../cases/conformance-probe-shape-GD-L.md) | baseline-shapes | rendered · 100.00% IoU · exact | rendered · 39.60% IoU | rendered · 14.25% IoU | rendered · 0.84% IoU | rendered · 0.84% IoU | rendered · 50.00% IoU | rendered · 100.00% IoU · exact | rendered · 50.00% IoU |
+| [probe-graphic-hex](../cases/conformance-probe-graphic-hex.md) | baseline-graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-graphic-binary](../cases/conformance-probe-graphic-binary.md) | baseline-graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | blank · 0.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 0.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-graphic-B64](../cases/conformance-probe-graphic-B64.md) | baseline-graphics | rendered · 100.00% IoU · exact | error · 0.00% IoU | rendered · 26.67% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-graphic-Z64](../cases/conformance-probe-graphic-Z64.md) | baseline-graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 20.75% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code39-ratio-2](../cases/conformance-probe-code39-ratio-2.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 9.05% IoU | rendered · 9.05% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code39-ratio-3](../cases/conformance-probe-code39-ratio-3.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 7.82% IoU | rendered · 7.82% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code39-check-N](../cases/conformance-probe-code39-check-N.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 7.82% IoU | rendered · 7.82% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code39-check-Y](../cases/conformance-probe-code39-check-Y.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 83.95% IoU | rendered · 83.95% IoU | rendered · 7.35% IoU | rendered · 7.35% IoU | rendered · 83.95% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code128-text-NN](../cases/conformance-probe-code128-text-NN.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code128-text-YN](../cases/conformance-probe-code128-text-YN.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 94.28% IoU | rendered · 95.72% IoU | rendered · 91.72% IoU | rendered · 91.72% IoU | rendered · 94.49% IoU | rendered · 96.11% IoU | rendered · 95.99% IoU |
+| [probe-code128-text-YY](../cases/conformance-probe-code128-text-YY.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 91.60% IoU | rendered · 92.34% IoU | rendered · 91.53% IoU | rendered · 91.53% IoU | rendered · 92.22% IoU | rendered · 96.11% IoU | rendered · 95.99% IoU |
+| [probe-code128-rotation-R](../cases/conformance-probe-code128-rotation-R.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 8.70% IoU | rendered · 8.70% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code128-rotation-I](../cases/conformance-probe-code128-rotation-I.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 36.36% IoU | rendered · 36.36% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code128-rotation-B](../cases/conformance-probe-code128-rotation-B.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 11.94% IoU | rendered · 11.94% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code128-mode-N](../cases/conformance-probe-code128-mode-N.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-code128-mode-A](../cases/conformance-probe-code128-mode-A.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 32.53% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-qr-model-1](../cases/conformance-probe-qr-model-1.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | blank · 0.00% IoU |
+| [probe-qr-model-2](../cases/conformance-probe-qr-model-2.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-ec-L](../cases/conformance-probe-qr-ec-L.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-ec-M](../cases/conformance-probe-qr-ec-M.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-ec-Q](../cases/conformance-probe-qr-ec-Q.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-ec-H](../cases/conformance-probe-qr-ec-H.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-module-2](../cases/conformance-probe-qr-module-2.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-module-5](../cases/conformance-probe-qr-module-5.md) | baseline-barcode-arguments | rendered · 5.26% IoU | rendered · 5.22% IoU | rendered · 4.24% IoU | rendered · 6.76% IoU | rendered · 6.76% IoU | rendered · 5.45% IoU | rendered · 5.26% IoU | rendered · 4.98% IoU |
+| [probe-qr-mask-0](../cases/conformance-probe-qr-mask-0.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-mask-3](../cases/conformance-probe-qr-mask-3.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-mask-7](../cases/conformance-probe-qr-mask-7.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-datamatrix-module-2](../cases/conformance-probe-datamatrix-module-2.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [probe-datamatrix-module-4](../cases/conformance-probe-datamatrix-module-4.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [symbol-aztec](../cases/conformance-symbol-aztec.md) | barcode-families | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU |
+| [symbol-aztec_alias](../cases/conformance-symbol-aztec_alias.md) | barcode-families | rendered · 31.51% IoU | rendered · 8.85% IoU | rendered · 31.51% IoU | rendered · 10.62% IoU | rendered · 10.62% IoU | rendered · 8.14% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU |
+| [symbol-aztec_rune](../cases/conformance-symbol-aztec_rune.md) | barcode-families | rendered · 32.67% IoU | rendered · 29.29% IoU | rendered · 29.29% IoU | rendered · 29.29% IoU | rendered · 29.29% IoU | rendered · 29.29% IoU | rendered · 32.67% IoU | rendered · 32.67% IoU |
+| [symbol-codabar](../cases/conformance-symbol-codabar.md) | barcode-families | rendered · 35.59% IoU | rendered · 2.45% IoU | rendered · 2.68% IoU | rendered · 3.51% IoU | rendered · 3.51% IoU | rendered · 35.59% IoU | rendered · 35.59% IoU | rendered · 35.59% IoU |
+| [symbol-codablock_a](../cases/conformance-symbol-codablock_a.md) | barcode-families | rendered · 64.68% IoU | rendered · 3.97% IoU | error · 0.00% IoU | rendered · 4.30% IoU | rendered · 4.30% IoU | rendered · 3.85% IoU | rendered · 64.68% IoU | rendered · 3.98% IoU |
+| [symbol-codablock_e](../cases/conformance-symbol-codablock_e.md) | barcode-families | rendered · 51.11% IoU | rendered · 9.85% IoU | error · 0.00% IoU | rendered · 12.28% IoU | rendered · 12.28% IoU | rendered · 10.12% IoU | rendered · 51.54% IoU | rendered · 10.93% IoU |
+| [symbol-codablock_f](../cases/conformance-symbol-codablock_f.md) | barcode-families | rendered · 51.40% IoU | rendered · 8.65% IoU | error · 0.00% IoU | rendered · 10.70% IoU | rendered · 10.70% IoU | rendered · 9.00% IoU | rendered · 51.40% IoU | rendered · 9.49% IoU |
+| [symbol-code11](../cases/conformance-symbol-code11.md) | barcode-families | rendered · 32.50% IoU | rendered · 3.50% IoU | rendered · 2.68% IoU | rendered · 4.47% IoU | rendered · 4.47% IoU | rendered · 3.11% IoU | rendered · 36.84% IoU | rendered · 36.84% IoU |
+| [symbol-code128](../cases/conformance-symbol-code128.md) | barcode-families | rendered · 28.40% IoU | rendered · 28.40% IoU | rendered · 28.40% IoU | rendered · 28.40% IoU | rendered · 28.40% IoU | rendered · 28.40% IoU | rendered · 28.40% IoU | rendered · 28.40% IoU |
+| [symbol-code39](../cases/conformance-symbol-code39.md) | barcode-families | rendered · 43.59% IoU | rendered · 43.59% IoU | rendered · 43.59% IoU | rendered · 2.21% IoU | rendered · 2.21% IoU | rendered · 43.59% IoU | rendered · 43.59% IoU | rendered · 43.59% IoU |
+| [symbol-code49](../cases/conformance-symbol-code49.md) | barcode-families | rendered · 38.22% IoU | rendered · 4.89% IoU | rendered · 5.82% IoU | rendered · 5.95% IoU | rendered · 5.95% IoU | rendered · 4.96% IoU | rendered · 38.22% IoU | rendered · 5.23% IoU |
+| [symbol-code93](../cases/conformance-symbol-code93.md) | barcode-families | rendered · 28.95% IoU | rendered · 3.12% IoU | rendered · 21.00% IoU | rendered · 3.46% IoU | rendered · 3.46% IoU | rendered · 21.00% IoU | rendered · 21.00% IoU | rendered · 28.95% IoU |
+| [symbol-composite_a](../cases/conformance-symbol-composite_a.md) | barcode-families | rendered · 34.95% IoU | rendered · 2.28% IoU | rendered · 20.09% IoU | rendered · 2.46% IoU | rendered · 2.46% IoU | rendered · 1.99% IoU | rendered · 34.95% IoU | rendered · 35.34% IoU |
+| [symbol-composite_b](../cases/conformance-symbol-composite_b.md) | barcode-families | rendered · 34.46% IoU | rendered · 1.96% IoU | rendered · 8.60% IoU | rendered · 2.29% IoU | rendered · 2.29% IoU | rendered · 1.44% IoU | rendered · 34.50% IoU | rendered · 34.82% IoU |
+| [symbol-composite_c](../cases/conformance-symbol-composite_c.md) | barcode-families | rendered · 31.95% IoU | rendered · 2.69% IoU | rendered · 19.87% IoU | rendered · 3.01% IoU | rendered · 3.01% IoU | rendered · 2.49% IoU | rendered · 31.95% IoU | rendered · 31.95% IoU |
+| [symbol-data_matrix](../cases/conformance-symbol-data_matrix.md) | barcode-families | rendered · 29.20% IoU | rendered · 30.96% IoU | rendered · 30.96% IoU | rendered · 27.34% IoU | rendered · 27.34% IoU | rendered · 30.96% IoU | rendered · 29.20% IoU | rendered · 27.72% IoU |
+| [symbol-data_matrix_rectangular](../cases/conformance-symbol-data_matrix_rectangular.md) | barcode-families | rendered · 37.80% IoU | rendered · 21.74% IoU | rendered · 8.84% IoU | rendered · 8.84% IoU | rendered · 8.84% IoU | rendered · 8.84% IoU | rendered · 37.80% IoU | rendered · 37.80% IoU |
+| [symbol-databar_ean13](../cases/conformance-symbol-databar_ean13.md) | barcode-families | rendered · 24.05% IoU | rendered · 2.30% IoU | rendered · 27.09% IoU | rendered · 2.97% IoU | rendered · 2.97% IoU | rendered · 2.44% IoU | rendered · 24.05% IoU | rendered · 24.05% IoU |
+| [symbol-databar_ean8](../cases/conformance-symbol-databar_ean8.md) | barcode-families | rendered · 28.00% IoU | rendered · 2.17% IoU | rendered · 28.94% IoU | rendered · 2.74% IoU | rendered · 2.74% IoU | rendered · 1.57% IoU | rendered · 28.00% IoU | rendered · 28.00% IoU |
+| [symbol-databar_expanded](../cases/conformance-symbol-databar_expanded.md) | barcode-families | rendered · 37.86% IoU | rendered · 6.42% IoU | rendered · 26.52% IoU | rendered · 7.11% IoU | rendered · 7.11% IoU | rendered · 4.46% IoU | rendered · 37.48% IoU | rendered · 37.86% IoU |
+| [symbol-databar_expanded_stacked](../cases/conformance-symbol-databar_expanded_stacked.md) | barcode-families | rendered · 26.14% IoU | rendered · 6.73% IoU | rendered · 18.21% IoU | rendered · 7.71% IoU | rendered · 7.71% IoU | rendered · 4.02% IoU | rendered · 22.49% IoU | rendered · 26.14% IoU |
+| [symbol-databar_limited](../cases/conformance-symbol-databar_limited.md) | barcode-families | rendered · 25.42% IoU | rendered · 20.21% IoU | rendered · 14.88% IoU | rendered · 22.21% IoU | rendered · 22.21% IoU | rendered · 20.69% IoU | rendered · 25.42% IoU | rendered · 25.42% IoU |
+| [symbol-databar_omni](../cases/conformance-symbol-databar_omni.md) | barcode-families | rendered · 26.76% IoU | rendered · 7.07% IoU | rendered · 17.86% IoU | rendered · 8.25% IoU | rendered · 8.25% IoU | rendered · 6.17% IoU | rendered · 26.76% IoU | rendered · 26.76% IoU |
+| [symbol-databar_stacked](../cases/conformance-symbol-databar_stacked.md) | barcode-families | rendered · 24.32% IoU | rendered · 21.64% IoU | rendered · 14.25% IoU | rendered · 23.78% IoU | rendered · 23.78% IoU | rendered · 15.66% IoU | rendered · 24.32% IoU | rendered · 24.32% IoU |
+| [symbol-databar_stacked_omni](../cases/conformance-symbol-databar_stacked_omni.md) | barcode-families | rendered · 23.34% IoU | rendered · 5.96% IoU | rendered · 9.74% IoU | rendered · 6.74% IoU | rendered · 6.74% IoU | rendered · 4.34% IoU | rendered · 23.34% IoU | rendered · 23.34% IoU |
+| [symbol-databar_truncated](../cases/conformance-symbol-databar_truncated.md) | barcode-families | rendered · 26.76% IoU | rendered · 15.74% IoU | rendered · 23.24% IoU | rendered · 18.30% IoU | rendered · 18.30% IoU | rendered · 14.03% IoU | rendered · 26.76% IoU | rendered · 26.76% IoU |
+| [symbol-databar_upca](../cases/conformance-symbol-databar_upca.md) | barcode-families | rendered · 33.33% IoU | rendered · 1.92% IoU | rendered · 24.30% IoU | rendered · 2.58% IoU | rendered · 2.58% IoU | rendered · 2.19% IoU | rendered · 33.33% IoU | rendered · 33.33% IoU |
+| [symbol-databar_upce](../cases/conformance-symbol-databar_upce.md) | barcode-families | rendered · 100.00% IoU · exact | rendered · 4.89% IoU | rendered · 20.88% IoU | rendered · 5.45% IoU | rendered · 5.45% IoU | rendered · 3.74% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [symbol-ean13](../cases/conformance-symbol-ean13.md) | barcode-families | rendered · 23.47% IoU | rendered · 23.49% IoU | rendered · 23.76% IoU | rendered · 5.56% IoU | rendered · 5.56% IoU | rendered · 23.76% IoU | rendered · 23.76% IoU | rendered · 23.47% IoU |
+| [symbol-ean8](../cases/conformance-symbol-ean8.md) | barcode-families | rendered · 26.95% IoU | rendered · 26.99% IoU | rendered · 27.46% IoU | rendered · 4.41% IoU | rendered · 4.41% IoU | rendered · 2.99% IoU | rendered · 27.46% IoU | rendered · 26.95% IoU |
+| [symbol-extension2](../cases/conformance-symbol-extension2.md) | barcode-families | rendered · 17.65% IoU | rendered · 3.02% IoU | rendered · 12.50% IoU | rendered · 3.18% IoU | rendered · 3.18% IoU | rendered · 17.65% IoU | rendered · 14.09% IoU | rendered · 17.65% IoU |
+| [symbol-extension5](../cases/conformance-symbol-extension5.md) | barcode-families | rendered · 33.33% IoU | rendered · 3.54% IoU | rendered · 30.91% IoU | rendered · 3.28% IoU | rendered · 3.28% IoU | rendered · 33.33% IoU | rendered · 25.93% IoU | rendered · 33.33% IoU |
+| [symbol-industrial2of5](../cases/conformance-symbol-industrial2of5.md) | barcode-families | rendered · 46.67% IoU | rendered · 3.15% IoU | rendered · 2.11% IoU | rendered · 3.45% IoU | rendered · 3.45% IoU | rendered · 2.28% IoU | rendered · 46.67% IoU | rendered · 46.67% IoU |
+| [symbol-intelligent_mail](../cases/conformance-symbol-intelligent_mail.md) | barcode-families | rendered · 61.26% IoU | rendered · 4.94% IoU | rendered · 23.83% IoU | rendered · 5.07% IoU | rendered · 5.07% IoU | rendered · 3.95% IoU | rendered · 3.20% IoU | rendered · 60.01% IoU |
+| [symbol-interleaved2of5](../cases/conformance-symbol-interleaved2of5.md) | barcode-families | rendered · 34.69% IoU | rendered · 34.69% IoU | rendered · 34.69% IoU | rendered · 4.92% IoU | rendered · 4.92% IoU | rendered · 34.69% IoU | rendered · 34.69% IoU | rendered · 34.69% IoU |
+| [symbol-logmars](../cases/conformance-symbol-logmars.md) | barcode-families | rendered · 41.27% IoU | rendered · 2.53% IoU | rendered · 2.31% IoU | rendered · 2.84% IoU | rendered · 2.84% IoU | rendered · 2.10% IoU | rendered · 41.50% IoU | rendered · 41.48% IoU |
+| [symbol-maxicode2](../cases/conformance-symbol-maxicode2.md) | barcode-families | rendered · 17.72% IoU | error · 0.00% IoU | rendered · 3.18% IoU | rendered · 19.27% IoU | rendered · 19.27% IoU | rendered · 19.43% IoU | rendered · 16.65% IoU | rendered · 18.78% IoU |
+| [symbol-maxicode3](../cases/conformance-symbol-maxicode3.md) | barcode-families | rendered · 17.85% IoU | error · 0.00% IoU | rendered · 2.97% IoU | rendered · 19.00% IoU | rendered · 19.00% IoU | rendered · 19.48% IoU | rendered · 16.82% IoU | rendered · 18.71% IoU |
+| [symbol-maxicode4](../cases/conformance-symbol-maxicode4.md) | barcode-families | rendered · 17.81% IoU | rendered · 19.55% IoU | rendered · 1.36% IoU | rendered · 18.48% IoU | rendered · 18.48% IoU | rendered · 19.45% IoU | rendered · 16.45% IoU | rendered · 19.06% IoU |
+| [symbol-maxicode5](../cases/conformance-symbol-maxicode5.md) | barcode-families | rendered · 19.01% IoU | error · 0.00% IoU | rendered · 0.00% IoU | rendered · 6.81% IoU | rendered · 6.81% IoU | rendered · 6.65% IoU | rendered · 6.14% IoU | rendered · 6.55% IoU |
+| [symbol-maxicode6](../cases/conformance-symbol-maxicode6.md) | barcode-families | rendered · 17.84% IoU | error · 0.00% IoU | rendered · 1.35% IoU | rendered · 18.59% IoU | rendered · 18.59% IoU | rendered · 19.45% IoU | rendered · 16.41% IoU | rendered · 18.40% IoU |
+| [symbol-micropdf417_1](../cases/conformance-symbol-micropdf417_1.md) | barcode-families | rendered · 32.76% IoU | rendered · 0.15% IoU | rendered · 14.10% IoU | rendered · 0.10% IoU | rendered · 0.10% IoU | rendered · 0.79% IoU | rendered · 33.33% IoU | rendered · 36.05% IoU |
+| [symbol-micropdf417_3](../cases/conformance-symbol-micropdf417_3.md) | barcode-families | rendered · 32.66% IoU | rendered · 0.14% IoU | rendered · 10.02% IoU | rendered · 0.09% IoU | rendered · 0.09% IoU | rendered · 0.69% IoU | rendered · 30.17% IoU | rendered · 30.58% IoU |
+| [symbol-micropdf417_4](../cases/conformance-symbol-micropdf417_4.md) | barcode-families | rendered · 31.55% IoU | rendered · 0.11% IoU | rendered · 9.33% IoU | rendered · 0.08% IoU | rendered · 0.08% IoU | rendered · 0.58% IoU | rendered · 31.38% IoU | rendered · 34.69% IoU |
+| [symbol-msi_a](../cases/conformance-symbol-msi_a.md) | barcode-families | rendered · 17.33% IoU | rendered · 2.74% IoU | rendered · 16.25% IoU | rendered · 3.52% IoU | rendered · 3.52% IoU | rendered · 2.25% IoU | rendered · 17.33% IoU | rendered · 17.33% IoU |
+| [symbol-msi_b](../cases/conformance-symbol-msi_b.md) | barcode-families | rendered · 16.67% IoU | rendered · 2.47% IoU | rendered · 16.67% IoU | rendered · 3.18% IoU | rendered · 3.18% IoU | rendered · 2.03% IoU | rendered · 16.67% IoU | rendered · 16.67% IoU |
+| [symbol-msi_c](../cases/conformance-symbol-msi_c.md) | barcode-families | rendered · 16.13% IoU | rendered · 2.25% IoU | rendered · 15.73% IoU | rendered · 2.89% IoU | rendered · 2.89% IoU | rendered · 1.84% IoU | rendered · 16.13% IoU | rendered · 16.13% IoU |
+| [symbol-msi_d](../cases/conformance-symbol-msi_d.md) | barcode-families | rendered · 16.13% IoU | rendered · 2.25% IoU | rendered · 15.73% IoU | rendered · 2.89% IoU | rendered · 2.89% IoU | rendered · 1.84% IoU | rendered · 16.13% IoU | rendered · 16.13% IoU |
+| [symbol-pdf417](../cases/conformance-symbol-pdf417.md) | barcode-families | rendered · 31.46% IoU | rendered · 31.46% IoU | rendered · 10.22% IoU | rendered · 31.46% IoU | rendered · 31.46% IoU | rendered · 31.46% IoU | rendered · 33.99% IoU | rendered · 34.95% IoU |
+| [symbol-pdf417_truncated](../cases/conformance-symbol-pdf417_truncated.md) | barcode-families | rendered · 29.38% IoU | rendered · 29.38% IoU | rendered · 11.23% IoU | rendered · 25.39% IoU | rendered · 25.39% IoU | rendered · 29.38% IoU | rendered · 32.77% IoU | rendered · 34.06% IoU |
+| [symbol-planet](../cases/conformance-symbol-planet.md) | barcode-families | rendered · 59.20% IoU | rendered · 2.69% IoU | rendered · 2.20% IoU | rendered · 2.86% IoU | rendered · 2.86% IoU | rendered · 2.15% IoU | rendered · 59.20% IoU | rendered · 59.20% IoU |
+| [symbol-plessey](../cases/conformance-symbol-plessey.md) | barcode-families | rendered · 19.23% IoU | rendered · 2.11% IoU | rendered · 1.69% IoU | rendered · 1.87% IoU | rendered · 1.87% IoU | rendered · 1.36% IoU | rendered · 35.16% IoU | rendered · 19.23% IoU |
+| [symbol-postal_planet](../cases/conformance-symbol-postal_planet.md) | barcode-families | rendered · 59.20% IoU | rendered · 2.69% IoU | rendered · 67.30% IoU | rendered · 2.86% IoU | rendered · 2.86% IoU | rendered · 2.15% IoU | rendered · 59.20% IoU | rendered · 59.20% IoU |
+| [symbol-postnet](../cases/conformance-symbol-postnet.md) | barcode-families | rendered · 55.25% IoU | rendered · 2.09% IoU | rendered · 55.25% IoU | rendered · 1.69% IoU | rendered · 1.69% IoU | rendered · 0.99% IoU | rendered · 55.25% IoU | rendered · 55.25% IoU |
+| [symbol-qr](../cases/conformance-symbol-qr.md) | barcode-families | rendered · 34.11% IoU | rendered · 31.02% IoU | rendered · 4.91% IoU | rendered · 7.21% IoU | rendered · 7.21% IoU | rendered · 4.86% IoU | rendered · 34.11% IoU | rendered · 32.81% IoU |
+| [symbol-standard2of5](../cases/conformance-symbol-standard2of5.md) | barcode-families | rendered · 45.24% IoU | rendered · 2.68% IoU | rendered · 2.90% IoU | rendered · 3.34% IoU | rendered · 3.34% IoU | rendered · 2.32% IoU | rendered · 15.45% IoU | rendered · 45.24% IoU |
+| [symbol-tlc39_linear](../cases/conformance-symbol-tlc39_linear.md) | barcode-families | rendered · 38.27% IoU | rendered · 1.85% IoU | rendered · 2.00% IoU | rendered · 2.75% IoU | rendered · 2.75% IoU | rendered · 1.84% IoU | rendered · 38.27% IoU | rendered · 1.83% IoU |
+| [symbol-tlc39_linked](../cases/conformance-symbol-tlc39_linked.md) | barcode-families | rendered · 33.46% IoU | rendered · 4.29% IoU | rendered · 4.35% IoU | rendered · 5.60% IoU | rendered · 5.60% IoU | rendered · 4.17% IoU | rendered · 32.71% IoU | rendered · 4.68% IoU |
+| [symbol-upca](../cases/conformance-symbol-upca.md) | barcode-families | rendered · 32.14% IoU | rendered · 32.34% IoU | rendered · 32.45% IoU | rendered · 5.53% IoU | rendered · 5.53% IoU | rendered · 32.45% IoU | rendered · 32.45% IoU | rendered · 32.14% IoU |
+| [symbol-upce](../cases/conformance-symbol-upce.md) | barcode-families | rendered · 29.13% IoU | rendered · 29.17% IoU | error · 0.00% IoU | rendered · 4.29% IoU | rendered · 4.29% IoU | rendered · 29.67% IoU | rendered · 29.67% IoU | rendered · 29.13% IoU |
+| [printer-databar-retail-retail-10-1](../cases/conformance-printer-databar-retail-retail-10-1.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 14.26% IoU | rendered · 9.35% IoU | rendered · 15.84% IoU | rendered · 15.84% IoU | rendered · 9.81% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-databar-retail-retail-10-3](../cases/conformance-printer-databar-retail-retail-10-3.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 2.92% IoU | rendered · 6.05% IoU | rendered · 3.43% IoU | rendered · 3.43% IoU | rendered · 1.97% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-databar-retail-retail-7-1](../cases/conformance-printer-databar-retail-retail-7-1.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 15.23% IoU | rendered · 12.33% IoU | rendered · 14.71% IoU | rendered · 14.71% IoU | rendered · 8.32% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-databar-retail-retail-7-3](../cases/conformance-printer-databar-retail-retail-7-3.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 2.90% IoU | rendered · 4.01% IoU | rendered · 3.25% IoU | rendered · 3.25% IoU | rendered · 3.03% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-databar-retail-retail-9-1](../cases/conformance-printer-databar-retail-retail-9-1.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 10.79% IoU | rendered · 13.01% IoU | rendered · 12.35% IoU | rendered · 12.35% IoU | rendered · 7.71% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-databar-retail-retail-9-3](../cases/conformance-printer-databar-retail-retail-9-3.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 3.01% IoU | rendered · 4.25% IoU | rendered · 3.52% IoU | rendered · 3.52% IoU | rendered · 3.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-databar-retail-upce-00425261](../cases/conformance-printer-databar-retail-upce-00425261.md) | printer-databar-retail | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored |
+| [printer-databar-retail-upce-01230000045](../cases/conformance-printer-databar-retail-upce-01230000045.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 7.85% IoU | rendered · 8.83% IoU | rendered · 8.94% IoU | rendered · 8.94% IoU | rendered · 5.14% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [printer-databar-retail-upce-01234000005](../cases/conformance-printer-databar-retail-upce-01234000005.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 7.82% IoU | rendered · 8.08% IoU | rendered · 8.29% IoU | rendered · 8.29% IoU | rendered · 5.12% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [printer-databar-retail-upce-01234500006](../cases/conformance-printer-databar-retail-upce-01234500006.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 7.00% IoU | rendered · 8.71% IoU | rendered · 8.77% IoU | rendered · 8.77% IoU | rendered · 4.69% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [printer-databar-retail-upce-04210000526](../cases/conformance-printer-databar-retail-upce-04210000526.md) | printer-databar-retail | rendered · 100.00% IoU · exact | rendered · 8.18% IoU | rendered · 9.33% IoU | rendered · 8.67% IoU | rendered · 8.67% IoU | rendered · 6.28% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [printer-databar-retail-upce-042100005264](../cases/conformance-printer-databar-retail-upce-042100005264.md) | printer-databar-retail | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored |
+| [printer-databar-retail-upce-042526](../cases/conformance-printer-databar-retail-upce-042526.md) | printer-databar-retail | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored |
+| [printer-databar-retail-upce-0425261](../cases/conformance-printer-databar-retail-upce-0425261.md) | printer-databar-retail | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored |
+| [printer-databar-retail-upce-original-invalid](../cases/conformance-printer-databar-retail-upce-original-invalid.md) | printer-databar-retail | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored |
+| [printer-barcode-defaults-code128-64-then-empty](../cases/conformance-printer-barcode-defaults-code128-64-then-empty.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 15.62% IoU | rendered · 15.62% IoU | rendered · 15.62% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-64-then-module](../cases/conformance-printer-barcode-defaults-code128-64-then-module.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 15.62% IoU | rendered · 15.62% IoU | rendered · 15.62% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-64-then-ratio](../cases/conformance-printer-barcode-defaults-code128-64-then-ratio.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 15.62% IoU | rendered · 15.62% IoU | rendered · 15.62% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-all-retained](../cases/conformance-printer-barcode-defaults-code128-all-retained.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 5.24% IoU | rendered · 5.24% IoU | rendered · 5.24% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-empty](../cases/conformance-printer-barcode-defaults-code128-empty.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-explicit-10](../cases/conformance-printer-barcode-defaults-code128-explicit-10.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-explicit-64](../cases/conformance-printer-barcode-defaults-code128-explicit-64.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-module-only](../cases/conformance-printer-barcode-defaults-code128-module-only.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-module-ratio-retained](../cases/conformance-printer-barcode-defaults-code128-module-ratio-retained.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 26.76% IoU | rendered · 26.76% IoU | rendered · 26.76% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code128-none](../cases/conformance-printer-barcode-defaults-code128-none.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 10.00% IoU | rendered · 10.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-64-then-empty](../cases/conformance-printer-barcode-defaults-code39-64-then-empty.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 6.17% IoU | rendered · 6.17% IoU | rendered · 15.62% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-64-then-module](../cases/conformance-printer-barcode-defaults-code39-64-then-module.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 6.17% IoU | rendered · 6.17% IoU | rendered · 15.62% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-64-then-ratio](../cases/conformance-printer-barcode-defaults-code39-64-then-ratio.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 8.14% IoU | rendered · 8.14% IoU | rendered · 15.62% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-all-retained](../cases/conformance-printer-barcode-defaults-code39-all-retained.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 5.06% IoU | rendered · 5.06% IoU | rendered · 6.46% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-empty](../cases/conformance-printer-barcode-defaults-code39-empty.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 11.08% IoU | rendered · 11.08% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-explicit-10](../cases/conformance-printer-barcode-defaults-code39-explicit-10.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 11.08% IoU | rendered · 11.08% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-explicit-64](../cases/conformance-printer-barcode-defaults-code39-explicit-64.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 6.17% IoU | rendered · 6.17% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-module-only](../cases/conformance-printer-barcode-defaults-code39-module-only.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 11.08% IoU | rendered · 11.08% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-module-ratio-retained](../cases/conformance-printer-barcode-defaults-code39-module-ratio-retained.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 9.59% IoU | rendered · 9.59% IoU | rendered · 31.09% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-barcode-defaults-code39-none](../cases/conformance-printer-barcode-defaults-code39-none.md) | printer-barcode-defaults | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 11.08% IoU | rendered · 11.08% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [printer-retail-data-length-B8](../cases/conformance-printer-retail-data-length-B8.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 6.73% IoU | rendered · 6.73% IoU | rendered · 0.40% IoU | rendered · 43.57% IoU | rendered · 88.71% IoU |
+| [printer-retail-data-length-BE](../cases/conformance-printer-retail-data-length-BE.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 7.09% IoU | rendered · 7.09% IoU | crashed · 0.00% IoU | rendered · 44.88% IoU | rendered · 86.26% IoU |
+| [printer-retail-data-length-BU](../cases/conformance-printer-retail-data-length-BU.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 6.69% IoU | rendered · 6.69% IoU | crashed · 0.00% IoU | rendered · 48.06% IoU | rendered · 88.24% IoU |
+| [printer-retail-data-sweep-B8](../cases/conformance-printer-retail-data-sweep-B8.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 10.70% IoU | rendered · 10.70% IoU | rendered · 0.99% IoU | rendered · 76.22% IoU | rendered · 89.58% IoU |
+| [printer-retail-data-sweep-BE](../cases/conformance-printer-retail-data-sweep-BE.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 9.42% IoU | rendered · 9.42% IoU | rendered · 68.27% IoU | rendered · 74.61% IoU | rendered · 86.47% IoU |
+| [printer-retail-data-sweep-BU](../cases/conformance-printer-retail-data-sweep-BU.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 9.39% IoU | rendered · 9.39% IoU | rendered · 67.22% IoU | rendered · 79.57% IoU | rendered · 88.40% IoU |
+| [printer-retail-data-validation-B8](../cases/conformance-printer-retail-data-validation-B8.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 15.27% IoU | rendered · 15.27% IoU | rendered · 1.23% IoU | rendered · 36.88% IoU | rendered · 50.81% IoU |
+| [printer-retail-data-validation-BE](../cases/conformance-printer-retail-data-validation-BE.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 13.60% IoU | rendered · 13.60% IoU | crashed · 0.00% IoU | rendered · 37.46% IoU | rendered · 51.48% IoU |
+| [printer-retail-data-validation-BU](../cases/conformance-printer-retail-data-validation-BU.md) | printer-retail-data | rendered · 100.00% IoU · exact | error · 0.00% IoU | error · 0.00% IoU | rendered · 13.56% IoU | rendered · 13.56% IoU | crashed · 0.00% IoU | rendered · 43.12% IoU | rendered · 52.28% IoU |
+| [printer-retail-caption-edges-small](../cases/conformance-printer-retail-caption-edges-small.md) | printer-retail-caption-edges | rendered · 99.24% IoU | rendered · 78.62% IoU | rendered · 75.17% IoU | rendered · 14.30% IoU | rendered · 14.30% IoU | rendered · 80.89% IoU | rendered · 72.90% IoU | rendered · 86.16% IoU |
+| [printer-retail-caption-edges-large](../cases/conformance-printer-retail-caption-edges-large.md) | printer-retail-caption-edges | rendered · 98.88% IoU | rendered · 72.45% IoU | rendered · 64.39% IoU | rendered · 7.23% IoU | rendered · 7.23% IoU | rendered · 62.56% IoU | rendered · 70.22% IoU | rendered · 75.40% IoU |
+| [printer-retail-caption-edges-rotations](../cases/conformance-printer-retail-caption-edges-rotations.md) | printer-retail-caption-edges | rendered · 98.95% IoU | rendered · 73.12% IoU | rendered · 65.91% IoU | rendered · 6.89% IoU | rendered · 6.89% IoU | rendered · 65.30% IoU | rendered · 71.96% IoU | rendered · 86.13% IoU |
+| [printer-retail-caption-edges-holdouts](../cases/conformance-printer-retail-caption-edges-holdouts.md) | printer-retail-caption-edges | rendered · 98.84% IoU | rendered · 55.60% IoU | error · 0.00% IoU | rendered · 9.54% IoU | rendered · 9.54% IoU | rendered · 55.35% IoU | rendered · 55.92% IoU | rendered · 84.76% IoU |
+| [printer-retail-caption-edges-discovery](../cases/conformance-printer-retail-caption-edges-discovery.md) | printer-retail-caption-edges | error · 0.00% IoU | rendered · 86.52% IoU | error · 0.00% IoU | rendered · 8.24% IoU | rendered · 8.24% IoU | rendered · 87.66% IoU | rendered · 80.69% IoU | rendered · 91.09% IoU |
+| [printer-code93-controls-pairs](../cases/conformance-printer-code93-controls-pairs.md) | printer-code93-controls | error · 0.00% IoU | rendered · 0.67% IoU | rendered · 49.42% IoU | rendered · 11.01% IoU | rendered · 11.01% IoU | rendered · 49.02% IoU | rendered · 72.95% IoU | rendered · 86.70% IoU |
+| [printer-code93-controls-holdouts](../cases/conformance-printer-code93-controls-holdouts.md) | printer-code93-controls | error · 0.00% IoU | rendered · 0.74% IoU | rendered · 48.50% IoU | rendered · 10.13% IoU | rendered · 10.13% IoU | rendered · 48.65% IoU | rendered · 70.83% IoU | rendered · 84.35% IoU |
+| [printer-code93-controls-combined-checks](../cases/conformance-printer-code93-controls-combined-checks.md) | printer-code93-controls | error · 0.00% IoU | rendered · 0.60% IoU | rendered · 46.69% IoU | rendered · 8.92% IoU | rendered · 8.92% IoU | rendered · 46.58% IoU | rendered · 88.62% IoU | rendered · 89.44% IoU |
+| [printer-qr-module-state-same-field](../cases/conformance-printer-qr-module-state-same-field.md) | printer-qr-module-state | rendered · 31.87% IoU | rendered · 31.48% IoU | rendered · 31.50% IoU | rendered · 31.26% IoU | rendered · 31.26% IoU | rendered · 31.37% IoU | rendered · 31.49% IoU | rendered · 94.28% IoU |
+| [printer-qr-module-state-next-field](../cases/conformance-printer-qr-module-state-next-field.md) | printer-qr-module-state | rendered · 37.64% IoU | rendered · 39.77% IoU | rendered · 25.68% IoU | rendered · 24.64% IoU | rendered · 24.64% IoU | rendered · 25.80% IoU | rendered · 37.34% IoU | rendered · 87.97% IoU |
+| [printer-qr-module-state-holdouts-basic](../cases/conformance-printer-qr-module-state-holdouts-basic.md) | printer-qr-module-state | rendered · 32.22% IoU | rendered · 32.18% IoU | rendered · 32.14% IoU | rendered · 32.40% IoU | rendered · 32.40% IoU | rendered · 32.07% IoU | rendered · 32.61% IoU | rendered · 99.41% IoU |
+| [printer-character-remap-scope-clean](../cases/conformance-printer-character-remap-scope-clean.md) | printer-character-remap | error · 0.00% IoU | rendered · 71.95% IoU | error · 0.00% IoU | rendered · 69.19% IoU | rendered · 69.19% IoU | rendered · 30.56% IoU | rendered · 34.28% IoU | rendered · 79.52% IoU |
+| [printer-character-remap-space-barcode-clean](../cases/conformance-printer-character-remap-space-barcode-clean.md) | printer-character-remap | error · 0.00% IoU | rendered · 82.71% IoU | error · 0.00% IoU | rendered · 82.93% IoU | rendered · 82.93% IoU | rendered · 78.97% IoU | rendered · 71.01% IoU | rendered · 92.69% IoU |
+| [printer-character-remap-retail-positive](../cases/conformance-printer-character-remap-retail-positive.md) | printer-character-remap | error · 0.00% IoU | rendered · 86.47% IoU | error · 0.00% IoU | rendered · 8.24% IoU | rendered · 8.24% IoU | rendered · 87.51% IoU | rendered · 80.69% IoU | rendered · 90.93% IoU |
+| [printer-box-minimum-round-0](../cases/conformance-printer-box-minimum-round-0.md) | printer-box-minimum | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | error · 0.00% IoU | rendered · 42.29% IoU | rendered · 42.29% IoU | rendered · 100.00% IoU · exact | rendered · 59.41% IoU | rendered · 100.00% IoU · exact |
+| [printer-box-minimum-round-1](../cases/conformance-printer-box-minimum-round-1.md) | printer-box-minimum | rendered · 100.00% IoU · exact | rendered · 99.26% IoU | error · 0.00% IoU | rendered · 42.12% IoU | rendered · 42.12% IoU | rendered · 99.71% IoU | rendered · 59.06% IoU | rendered · 99.44% IoU |
+| [printer-box-minimum-round-8](../cases/conformance-printer-box-minimum-round-8.md) | printer-box-minimum | rendered · 100.00% IoU · exact | rendered · 92.73% IoU | error · 0.00% IoU | rendered · 38.12% IoU | rendered · 38.12% IoU | rendered · 95.80% IoU | rendered · 56.88% IoU | rendered · 96.64% IoU |
+| [printer-field-block-rounding-0-1-gaps](../cases/conformance-printer-field-block-rounding-0-1-gaps.md) | printer-field-block-rounding | rendered · 100.00% IoU · exact | rendered · 53.62% IoU | rendered · 38.60% IoU | rendered · 55.41% IoU | rendered · 55.41% IoU | rendered · 16.63% IoU | rendered · 38.01% IoU | rendered · 83.86% IoU |
+| [printer-field-block-rounding-0-2-gaps](../cases/conformance-printer-field-block-rounding-0-2-gaps.md) | printer-field-block-rounding | rendered · 100.00% IoU · exact | rendered · 48.08% IoU | rendered · 39.79% IoU | rendered · 52.56% IoU | rendered · 52.56% IoU | rendered · 17.22% IoU | rendered · 32.15% IoU | rendered · 80.65% IoU |
+| [printer-field-block-rounding-0-3-gaps](../cases/conformance-printer-field-block-rounding-0-3-gaps.md) | printer-field-block-rounding | rendered · 100.00% IoU · exact | rendered · 45.27% IoU | rendered · 40.54% IoU | rendered · 46.10% IoU | rendered · 46.10% IoU | rendered · 17.52% IoU | rendered · 31.78% IoU | rendered · 79.15% IoU |
+| [printer-field-block-rounding-A-1-gaps](../cases/conformance-printer-field-block-rounding-A-1-gaps.md) | printer-field-block-rounding | rendered · 100.00% IoU · exact | rendered · 25.62% IoU | rendered · 40.00% IoU | rendered · 2.58% IoU | rendered · 2.58% IoU | rendered · 27.24% IoU | rendered · 16.56% IoU | rendered · 47.06% IoU |
+| [printer-field-block-rounding-A-2-gaps](../cases/conformance-printer-field-block-rounding-A-2-gaps.md) | printer-field-block-rounding | rendered · 100.00% IoU · exact | rendered · 23.04% IoU | rendered · 35.85% IoU | rendered · 5.98% IoU | rendered · 5.98% IoU | rendered · 25.95% IoU | rendered · 16.92% IoU | rendered · 54.17% IoU |
+| [printer-field-block-rounding-A-3-gaps](../cases/conformance-printer-field-block-rounding-A-3-gaps.md) | printer-field-block-rounding | rendered · 100.00% IoU · exact | rendered · 21.06% IoU | rendered · 31.91% IoU | rendered · 4.70% IoU | rendered · 4.70% IoU | rendered · 23.82% IoU | rendered · 16.19% IoU | rendered · 49.09% IoU |
+| [font-0-N](../cases/conformance-font-0-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 49.39% IoU | rendered · 44.90% IoU | rendered · 51.37% IoU | rendered · 51.37% IoU | rendered · 22.66% IoU | rendered · 48.10% IoU | rendered · 53.98% IoU |
+| [font-0-R](../cases/conformance-font-0-R.md) | fonts | rendered · 99.80% IoU | rendered · 37.60% IoU | rendered · 43.32% IoU | rendered · 51.34% IoU | rendered · 51.34% IoU | rendered · 22.84% IoU | rendered · 44.37% IoU | rendered · 49.38% IoU |
+| [font-0-I](../cases/conformance-font-0-I.md) | fonts | rendered · 99.73% IoU | rendered · 41.53% IoU | rendered · 36.68% IoU | rendered · 30.16% IoU | rendered · 30.16% IoU | rendered · 21.70% IoU | rendered · 28.11% IoU | rendered · 44.23% IoU |
+| [font-0-B](../cases/conformance-font-0-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 55.20% IoU | rendered · 39.81% IoU | rendered · 30.21% IoU | rendered · 30.21% IoU | rendered · 22.14% IoU | rendered · 29.83% IoU | rendered · 47.54% IoU |
+| [font-A-N](../cases/conformance-font-A-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 13.93% IoU | rendered · 36.05% IoU | rendered · 12.06% IoU | rendered · 12.06% IoU | rendered · 36.64% IoU | rendered · 31.84% IoU | rendered · 50.84% IoU |
+| [font-A-R](../cases/conformance-font-A-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 16.30% IoU | rendered · 38.46% IoU | rendered · 12.37% IoU | rendered · 12.37% IoU | rendered · 21.07% IoU | rendered · 31.84% IoU | rendered · 50.85% IoU |
+| [font-A-I](../cases/conformance-font-A-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 10.06% IoU | rendered · 38.46% IoU | rendered · 7.24% IoU | rendered · 7.24% IoU | rendered · 9.12% IoU | rendered · 31.84% IoU | rendered · 47.62% IoU |
+| [font-A-B](../cases/conformance-font-A-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 10.49% IoU | rendered · 38.46% IoU | rendered · 6.35% IoU | rendered · 6.35% IoU | rendered · 12.96% IoU | rendered · 31.84% IoU | rendered · 47.62% IoU |
+| [font-B-N](../cases/conformance-font-B-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 18.45% IoU | rendered · 28.29% IoU | rendered · 11.18% IoU | rendered · 11.18% IoU | rendered · 12.11% IoU | rendered · 38.69% IoU | rendered · 72.16% IoU |
+| [font-B-R](../cases/conformance-font-B-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 8.89% IoU | rendered · 32.21% IoU | rendered · 12.30% IoU | rendered · 12.30% IoU | rendered · 10.94% IoU | rendered · 38.69% IoU | rendered · 72.12% IoU |
+| [font-B-I](../cases/conformance-font-B-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 14.20% IoU | rendered · 32.21% IoU | rendered · 17.16% IoU | rendered · 17.16% IoU | rendered · 11.06% IoU | rendered · 38.69% IoU | rendered · 62.86% IoU |
+| [font-B-B](../cases/conformance-font-B-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 11.78% IoU | rendered · 32.21% IoU | rendered · 14.99% IoU | rendered · 14.99% IoU | rendered · 12.10% IoU | rendered · 38.69% IoU | rendered · 62.95% IoU |
+| [font-C-N](../cases/conformance-font-C-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 17.76% IoU | rendered · 39.23% IoU | rendered · 14.77% IoU | rendered · 14.77% IoU | rendered · 41.96% IoU | rendered · 32.42% IoU | rendered · 54.76% IoU |
+| [font-C-R](../cases/conformance-font-C-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 15.35% IoU | rendered · 43.30% IoU | rendered · 15.56% IoU | rendered · 15.56% IoU | rendered · 22.12% IoU | rendered · 32.42% IoU | rendered · 54.82% IoU |
+| [font-C-I](../cases/conformance-font-C-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 11.43% IoU | rendered · 43.30% IoU | rendered · 9.50% IoU | rendered · 9.50% IoU | rendered · 9.27% IoU | rendered · 32.42% IoU | rendered · 51.02% IoU |
+| [font-C-B](../cases/conformance-font-C-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 11.60% IoU | rendered · 43.30% IoU | rendered · 8.27% IoU | rendered · 8.27% IoU | rendered · 12.93% IoU | rendered · 32.42% IoU | rendered · 50.95% IoU |
+| [font-D-N](../cases/conformance-font-D-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 43.00% IoU | rendered · 39.23% IoU | rendered · 19.09% IoU | rendered · 19.09% IoU | rendered · 41.96% IoU | rendered · 32.42% IoU | rendered · 54.76% IoU |
+| [font-D-R](../cases/conformance-font-D-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 19.10% IoU | rendered · 43.30% IoU | rendered · 14.90% IoU | rendered · 14.90% IoU | rendered · 22.12% IoU | rendered · 32.42% IoU | rendered · 54.82% IoU |
+| [font-D-I](../cases/conformance-font-D-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 30.78% IoU | rendered · 43.30% IoU | rendered · 9.55% IoU | rendered · 9.55% IoU | rendered · 9.27% IoU | rendered · 32.42% IoU | rendered · 51.02% IoU |
+| [font-D-B](../cases/conformance-font-D-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 13.54% IoU | rendered · 43.30% IoU | rendered · 11.32% IoU | rendered · 11.32% IoU | rendered · 12.93% IoU | rendered · 32.42% IoU | rendered · 50.95% IoU |
+| [font-E-N](../cases/conformance-font-E-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 15.94% IoU | rendered · 21.57% IoU | rendered · 5.52% IoU | rendered · 5.52% IoU | rendered · 18.24% IoU | rendered · 45.01% IoU | rendered · 73.85% IoU |
+| [font-E-R](../cases/conformance-font-E-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 13.88% IoU | rendered · 24.99% IoU | rendered · 6.77% IoU | rendered · 6.77% IoU | rendered · 11.66% IoU | rendered · 44.49% IoU | rendered · 72.76% IoU |
+| [font-E-I](../cases/conformance-font-E-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 9.40% IoU | rendered · 26.68% IoU | rendered · 4.55% IoU | rendered · 4.55% IoU | rendered · 9.57% IoU | rendered · 43.94% IoU | rendered · 68.98% IoU |
+| [font-E-B](../cases/conformance-font-E-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 9.45% IoU | rendered · 24.99% IoU | rendered · 2.14% IoU | rendered · 2.14% IoU | rendered · 12.53% IoU | rendered · 44.49% IoU | rendered · 68.89% IoU |
+| [font-F-N](../cases/conformance-font-F-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 9.41% IoU | rendered · 29.81% IoU | rendered · 11.03% IoU | rendered · 11.03% IoU | rendered · 14.13% IoU | rendered · 29.05% IoU | rendered · 53.37% IoU |
+| [font-F-R](../cases/conformance-font-F-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 11.66% IoU | rendered · 32.44% IoU | rendered · 10.41% IoU | rendered · 10.41% IoU | rendered · 8.99% IoU | rendered · 29.05% IoU | rendered · 53.37% IoU |
+| [font-F-I](../cases/conformance-font-F-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 10.33% IoU | rendered · 32.44% IoU | rendered · 7.70% IoU | rendered · 7.70% IoU | rendered · 9.62% IoU | rendered · 29.05% IoU | rendered · 48.86% IoU |
+| [font-F-B](../cases/conformance-font-F-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 9.65% IoU | rendered · 32.44% IoU | rendered · 6.95% IoU | rendered · 6.95% IoU | rendered · 14.48% IoU | rendered · 29.05% IoU | rendered · 48.92% IoU |
+| [font-G-N](../cases/conformance-font-G-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 13.75% IoU | rendered · 37.61% IoU | rendered · 5.91% IoU | rendered · 5.91% IoU | rendered · 13.83% IoU | rendered · 27.61% IoU | rendered · 54.49% IoU |
+| [font-G-R](../cases/conformance-font-G-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 13.95% IoU | rendered · 39.50% IoU | rendered · 5.58% IoU | rendered · 5.58% IoU | rendered · 9.58% IoU | rendered · 27.67% IoU | rendered · 54.05% IoU |
+| [font-G-I](../cases/conformance-font-G-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 6.53% IoU | rendered · 40.22% IoU | rendered · 2.16% IoU | rendered · 2.16% IoU | rendered · 6.71% IoU | rendered · 25.85% IoU | rendered · 55.25% IoU |
+| [font-G-B](../cases/conformance-font-G-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 9.34% IoU | rendered · 39.50% IoU | rendered · 4.70% IoU | rendered · 4.70% IoU | rendered · 9.64% IoU | rendered · 27.67% IoU | rendered · 53.58% IoU |
+| [font-H-N](../cases/conformance-font-H-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 4.82% IoU | rendered · 15.44% IoU | rendered · 4.35% IoU | rendered · 4.35% IoU | rendered · 9.49% IoU | rendered · 19.81% IoU | rendered · 80.36% IoU |
+| [font-H-R](../cases/conformance-font-H-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 9.11% IoU | rendered · 19.46% IoU | rendered · 4.40% IoU | rendered · 4.40% IoU | rendered · 7.20% IoU | rendered · 20.63% IoU | rendered · 80.40% IoU |
+| [font-H-I](../cases/conformance-font-H-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 9.43% IoU | rendered · 19.19% IoU | rendered · 6.56% IoU | rendered · 6.56% IoU | rendered · 9.00% IoU | rendered · 19.69% IoU | rendered · 70.34% IoU |
+| [font-H-B](../cases/conformance-font-H-B.md) | fonts | rendered · 100.00% IoU · exact | rendered · 10.85% IoU | rendered · 19.46% IoU | rendered · 7.96% IoU | rendered · 7.96% IoU | rendered · 9.37% IoU | rendered · 20.63% IoU | rendered · 70.56% IoU |
+| [font-id-1](../cases/conformance-font-id-1.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-2](../cases/conformance-font-id-2.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-3](../cases/conformance-font-id-3.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-4](../cases/conformance-font-id-4.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-5](../cases/conformance-font-id-5.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-6](../cases/conformance-font-id-6.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-7](../cases/conformance-font-id-7.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-8](../cases/conformance-font-id-8.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-9](../cases/conformance-font-id-9.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 48.27% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-I](../cases/conformance-font-id-I.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-J](../cases/conformance-font-id-J.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 19.31% IoU |
+| [font-id-K](../cases/conformance-font-id-K.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-L](../cases/conformance-font-id-L.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 55.94% IoU |
+| [font-id-M](../cases/conformance-font-id-M.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-N](../cases/conformance-font-id-N.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 19.72% IoU |
+| [font-id-O](../cases/conformance-font-id-O.md) | fonts | rendered · 100.00% IoU · exact | rendered · 56.96% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-P](../cases/conformance-font-id-P.md) | fonts | rendered · 100.00% IoU · exact | rendered · 28.54% IoU | rendered · 13.08% IoU | rendered · 17.82% IoU | rendered · 17.82% IoU | rendered · 16.88% IoU | rendered · 11.74% IoU | rendered · 81.94% IoU |
+| [font-id-Q](../cases/conformance-font-id-Q.md) | fonts | rendered · 100.00% IoU · exact | rendered · 20.37% IoU | rendered · 18.70% IoU | rendered · 30.94% IoU | rendered · 30.94% IoU | rendered · 14.08% IoU | rendered · 12.70% IoU | rendered · 37.58% IoU |
+| [font-id-R](../cases/conformance-font-id-R.md) | fonts | rendered · 100.00% IoU · exact | rendered · 22.20% IoU | rendered · 16.80% IoU | rendered · 18.37% IoU | rendered · 18.37% IoU | rendered · 13.84% IoU | rendered · 12.89% IoU | rendered · 54.98% IoU |
+| [font-id-S](../cases/conformance-font-id-S.md) | fonts | rendered · 100.00% IoU · exact | rendered · 21.49% IoU | rendered · 12.11% IoU | rendered · 19.42% IoU | rendered · 19.42% IoU | rendered · 12.82% IoU | rendered · 12.67% IoU | rendered · 71.18% IoU |
+| [font-id-T](../cases/conformance-font-id-T.md) | fonts | rendered · 100.00% IoU · exact | rendered · 26.35% IoU | rendered · 12.01% IoU | rendered · 11.04% IoU | rendered · 11.04% IoU | rendered · 14.94% IoU | rendered · 12.61% IoU | rendered · 82.72% IoU |
+| [font-id-U](../cases/conformance-font-id-U.md) | fonts | rendered · 100.00% IoU · exact | rendered · 25.15% IoU | rendered · 4.99% IoU | rendered · 6.19% IoU | rendered · 6.19% IoU | rendered · 13.40% IoU | rendered · 12.79% IoU | rendered · 88.80% IoU |
+| [font-id-V](../cases/conformance-font-id-V.md) | fonts | rendered · 100.00% IoU · exact | rendered · 27.66% IoU | rendered · 1.45% IoU | rendered · 1.71% IoU | rendered · 1.71% IoU | rendered · 15.16% IoU | rendered · 14.02% IoU | rendered · 70.84% IoU |
+| [font-id-W](../cases/conformance-font-id-W.md) | fonts | rendered · 100.00% IoU · exact | rendered · 15.22% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-X](../cases/conformance-font-id-X.md) | fonts | rendered · 100.00% IoU · exact | rendered · 15.22% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-Y](../cases/conformance-font-id-Y.md) | fonts | rendered · 100.00% IoU · exact | rendered · 15.22% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-id-Z](../cases/conformance-font-id-Z.md) | fonts | rendered · 100.00% IoU · exact | rendered · 15.22% IoU | rendered · 18.35% IoU | rendered · 63.57% IoU | rendered · 63.57% IoU | rendered · 19.72% IoU | rendered · 13.13% IoU | rendered · 62.52% IoU |
+| [font-dim-0-0](../cases/conformance-font-dim-0-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 5.03% IoU | blank · 0.00% IoU | rendered · 32.57% IoU | rendered · 32.57% IoU | rendered · 6.88% IoU | rendered · 25.67% IoU | rendered · 75.91% IoU |
+| [font-dim-1-1](../cases/conformance-font-dim-1-1.md) | fonts | rendered · 100.00% IoU · exact | rendered · 40.00% IoU | blank · 0.00% IoU | rendered · 0.84% IoU | rendered · 0.84% IoU | blank · 0.00% IoU | rendered · 0.00% IoU | rendered · 37.84% IoU |
+| [font-dim-2-2](../cases/conformance-font-dim-2-2.md) | fonts | rendered · 100.00% IoU · exact | rendered · 40.00% IoU | rendered · 0.84% IoU | rendered · 4.17% IoU | rendered · 4.17% IoU | blank · 0.00% IoU | rendered · 1.67% IoU | rendered · 37.84% IoU |
+| [font-dim-7-0](../cases/conformance-font-dim-7-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 40.00% IoU | rendered · 16.88% IoU | rendered · 21.86% IoU | rendered · 21.86% IoU | rendered · 13.79% IoU | rendered · 14.65% IoU | rendered · 37.84% IoU |
+| [font-dim-15-0](../cases/conformance-font-dim-15-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 60.75% IoU | rendered · 37.50% IoU | rendered · 64.27% IoU | rendered · 64.27% IoU | rendered · 22.56% IoU | rendered · 22.84% IoU | rendered · 62.41% IoU |
+| [font-dim-17-0](../cases/conformance-font-dim-17-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 61.71% IoU | rendered · 29.92% IoU | rendered · 54.70% IoU | rendered · 54.70% IoU | rendered · 15.53% IoU | rendered · 23.89% IoU | rendered · 71.52% IoU |
+| [font-dim-31-0](../cases/conformance-font-dim-31-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 73.12% IoU | rendered · 28.79% IoU | rendered · 69.67% IoU | rendered · 69.67% IoU | rendered · 22.99% IoU | rendered · 25.39% IoU | rendered · 75.43% IoU |
+| [font-dim-33-0](../cases/conformance-font-dim-33-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 68.80% IoU | rendered · 29.40% IoU | rendered · 75.72% IoU | rendered · 75.72% IoU | rendered · 18.80% IoU | rendered · 21.79% IoU | rendered · 64.75% IoU |
+| [font-dim-63-0](../cases/conformance-font-dim-63-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 79.50% IoU | rendered · 32.70% IoU | rendered · 80.47% IoU | rendered · 80.47% IoU | rendered · 20.93% IoU | rendered · 24.23% IoU | rendered · 93.10% IoU |
+| [font-dim-65-0](../cases/conformance-font-dim-65-0.md) | fonts | rendered · 100.00% IoU · exact | rendered · 78.86% IoU | rendered · 33.39% IoU | rendered · 86.54% IoU | rendered · 86.54% IoU | rendered · 21.60% IoU | rendered · 24.29% IoU | rendered · 86.80% IoU |
+| [font-dim-32-1](../cases/conformance-font-dim-32-1.md) | fonts | rendered · 100.00% IoU · exact | rendered · 22.78% IoU | rendered · 1.46% IoU | rendered · 4.74% IoU | rendered · 4.74% IoU | rendered · 0.49% IoU | rendered · 9.13% IoU | rendered · 39.80% IoU |
+| [font-dim-1-32](../cases/conformance-font-dim-1-32.md) | fonts | rendered · 100.00% IoU · exact | rendered · 41.00% IoU | rendered · 1.26% IoU | rendered · 2.92% IoU | rendered · 2.92% IoU | rendered · 0.00% IoU | rendered · 3.19% IoU | rendered · 70.97% IoU |
+| [font-dim-64-16](../cases/conformance-font-dim-64-16.md) | fonts | rendered · 100.00% IoU · exact | rendered · 27.35% IoU | rendered · 34.99% IoU | rendered · 72.39% IoU | rendered · 72.39% IoU | rendered · 18.90% IoU | rendered · 51.46% IoU | rendered · 76.12% IoU |
+| [font-dim-16-64](../cases/conformance-font-dim-16-64.md) | fonts | rendered · 100.00% IoU · exact | rendered · 57.19% IoU | rendered · 33.71% IoU | rendered · 80.69% IoU | rendered · 80.69% IoU | rendered · 19.69% IoU | rendered · 36.72% IoU | rendered · 85.55% IoU |
+| [font-dim-96-96](../cases/conformance-font-dim-96-96.md) | fonts | rendered · 100.00% IoU · exact | rendered · 83.47% IoU | rendered · 31.01% IoU | rendered · 87.29% IoU | rendered · 87.29% IoU | rendered · 20.84% IoU | rendered · 31.91% IoU | rendered · 92.01% IoU |
+| [text-digits](../cases/conformance-text-digits.md) | text-data | rendered · 100.00% IoU · exact | rendered · 33.80% IoU | rendered · 35.13% IoU | rendered · 74.42% IoU | rendered · 74.42% IoU | rendered · 17.09% IoU | rendered · 60.89% IoU | rendered · 43.07% IoU |
+| [text-case](../cases/conformance-text-case.md) | text-data | rendered · 100.00% IoU · exact | rendered · 33.36% IoU | rendered · 36.10% IoU | rendered · 54.65% IoU | rendered · 54.65% IoU | rendered · 23.09% IoU | rendered · 33.79% IoU | rendered · 57.13% IoU |
+| [text-punctuation](../cases/conformance-text-punctuation.md) | text-data | rendered · 100.00% IoU · exact | rendered · 25.34% IoU | rendered · 13.80% IoU | rendered · 19.14% IoU | rendered · 19.14% IoU | rendered · 14.06% IoU | rendered · 14.04% IoU | rendered · 21.85% IoU |
+| [text-spacing](../cases/conformance-text-spacing.md) | text-data | rendered · 100.00% IoU · exact | rendered · 39.82% IoU | rendered · 11.70% IoU | rendered · 24.21% IoU | rendered · 24.21% IoU | rendered · 51.56% IoU | rendered · 7.72% IoU | rendered · 22.13% IoU |
+| [text-empty](../cases/conformance-text-empty.md) | text-data | blank · unscored | error · unscored | blank · unscored | blank · unscored | blank · unscored | blank · unscored | blank · unscored | blank · unscored |
+| [fields-1](../cases/conformance-fields-1.md) | stress | rendered · 100.00% IoU · exact | rendered · 59.49% IoU | rendered · 63.36% IoU | rendered · 69.39% IoU | rendered · 69.39% IoU | rendered · 13.11% IoU | rendered · 53.57% IoU | rendered · 69.57% IoU |
+| [fields-48](../cases/conformance-fields-48.md) | stress | rendered · 100.00% IoU · exact | rendered · 53.32% IoU | rendered · 56.93% IoU | rendered · 67.85% IoU | rendered · 67.85% IoU | rendered · 8.49% IoU | rendered · 58.97% IoU | rendered · 66.86% IoU |
+| [fields-400](../cases/conformance-fields-400.md) | stress | rendered · 100.00% IoU · exact | rendered · 56.47% IoU | rendered · 60.24% IoU | rendered · 67.47% IoU | rendered · 67.47% IoU | rendered · 10.59% IoU | rendered · 60.88% IoU | rendered · 64.05% IoU |
+| [field-data-3072-bytes](../cases/conformance-field-data-3072-bytes.md) | stress | rendered · 100.00% IoU · exact | rendered · 24.08% IoU | rendered · 22.28% IoU | rendered · 24.20% IoU | rendered · 24.20% IoU | rendered · 17.88% IoU | rendered · 22.63% IoU | rendered · 24.41% IoU |
+| [field-defaults](../cases/conformance-field-defaults.md) | state | rendered · 100.00% IoU · exact | rendered · 67.45% IoU | rendered · 24.76% IoU | rendered · 32.60% IoU | rendered · 32.60% IoU | rendered · 24.83% IoU | rendered · 47.17% IoU | rendered · 69.05% IoU |
+| [anchor-FO-N-0](../cases/conformance-anchor-FO-N-0.md) | position | rendered · 100.00% IoU · exact | rendered · 72.50% IoU | error · 0.00% IoU | rendered · 81.20% IoU | rendered · 81.20% IoU | rendered · 27.84% IoU | rendered · 78.59% IoU | rendered · 84.30% IoU |
+| [anchor-FO-N-1](../cases/conformance-anchor-FO-N-1.md) | position | rendered · 100.00% IoU · exact | rendered · 72.40% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 30.60% IoU | rendered · 78.67% IoU | rendered · 66.89% IoU |
+| [anchor-FO-N-2](../cases/conformance-anchor-FO-N-2.md) | position | rendered · 100.00% IoU · exact | rendered · 72.50% IoU | error · 0.00% IoU | rendered · 81.20% IoU | rendered · 81.20% IoU | rendered · 27.84% IoU | rendered · 78.59% IoU | rendered · 84.30% IoU |
+| [anchor-FT-N-0](../cases/conformance-anchor-FT-N-0.md) | position | rendered · 100.00% IoU · exact | rendered · 68.46% IoU | error · 0.00% IoU | rendered · 81.18% IoU | rendered · 81.18% IoU | rendered · 27.85% IoU | rendered · 33.55% IoU | rendered · 84.13% IoU |
+| [anchor-FT-N-1](../cases/conformance-anchor-FT-N-1.md) | position | rendered · 100.00% IoU · exact | rendered · 1.17% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 30.63% IoU | rendered · 13.93% IoU | rendered · 66.97% IoU |
+| [anchor-FT-N-2](../cases/conformance-anchor-FT-N-2.md) | position | rendered · 100.00% IoU · exact | rendered · 68.46% IoU | error · 0.00% IoU | rendered · 81.18% IoU | rendered · 81.18% IoU | rendered · 27.85% IoU | rendered · 33.55% IoU | rendered · 84.13% IoU |
+| [anchor-FO-R-0](../cases/conformance-anchor-FO-R-0.md) | position | rendered · 100.00% IoU · exact | rendered · 60.17% IoU | error · 0.00% IoU | rendered · 76.73% IoU | rendered · 76.73% IoU | rendered · 27.99% IoU | rendered · 73.74% IoU | rendered · 76.36% IoU |
+| [anchor-FO-R-1](../cases/conformance-anchor-FO-R-1.md) | position | rendered · 100.00% IoU · exact | rendered · 48.53% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 1.17% IoU | rendered · 46.65% IoU | rendered · 47.67% IoU |
+| [anchor-FO-R-2](../cases/conformance-anchor-FO-R-2.md) | position | rendered · 100.00% IoU · exact | rendered · 60.17% IoU | error · 0.00% IoU | rendered · 76.73% IoU | rendered · 76.73% IoU | rendered · 27.99% IoU | rendered · 73.74% IoU | rendered · 76.36% IoU |
+| [anchor-FT-R-0](../cases/conformance-anchor-FT-R-0.md) | position | rendered · 100.00% IoU · exact | rendered · 65.92% IoU | error · 0.00% IoU | rendered · 77.20% IoU | rendered · 77.20% IoU | rendered · 27.60% IoU | rendered · 4.63% IoU | rendered · 84.18% IoU |
+| [anchor-FT-R-1](../cases/conformance-anchor-FT-R-1.md) | position | rendered · 100.00% IoU · exact | rendered · 1.00% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 30.75% IoU | rendered · 2.12% IoU | rendered · 66.93% IoU |
+| [anchor-FT-R-2](../cases/conformance-anchor-FT-R-2.md) | position | rendered · 100.00% IoU · exact | rendered · 65.92% IoU | error · 0.00% IoU | rendered · 77.20% IoU | rendered · 77.20% IoU | rendered · 27.60% IoU | rendered · 4.63% IoU | rendered · 84.18% IoU |
+| [anchor-FO-I-0](../cases/conformance-anchor-FO-I-0.md) | position | rendered · 100.00% IoU · exact | rendered · 23.88% IoU | error · 0.00% IoU | rendered · 64.60% IoU | rendered · 64.60% IoU | rendered · 18.48% IoU | rendered · 57.67% IoU | rendered · 62.81% IoU |
+| [anchor-FO-I-1](../cases/conformance-anchor-FO-I-1.md) | position | rendered · 100.00% IoU · exact | rendered · 60.17% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 1.17% IoU | rendered · 25.13% IoU | rendered · 26.14% IoU |
+| [anchor-FO-I-2](../cases/conformance-anchor-FO-I-2.md) | position | rendered · 100.00% IoU · exact | rendered · 23.88% IoU | error · 0.00% IoU | rendered · 64.60% IoU | rendered · 64.60% IoU | rendered · 18.48% IoU | rendered · 57.67% IoU | rendered · 62.81% IoU |
+| [anchor-FT-I-0](../cases/conformance-anchor-FT-I-0.md) | position | rendered · 100.00% IoU · exact | rendered · 40.41% IoU | error · 0.00% IoU | rendered · 64.27% IoU | rendered · 64.27% IoU | rendered · 27.57% IoU | rendered · 1.19% IoU | rendered · 84.07% IoU |
+| [anchor-FT-I-1](../cases/conformance-anchor-FT-I-1.md) | position | rendered · 100.00% IoU · exact | rendered · 1.01% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 30.60% IoU | rendered · 1.19% IoU | rendered · 84.07% IoU |
+| [anchor-FT-I-2](../cases/conformance-anchor-FT-I-2.md) | position | rendered · 100.00% IoU · exact | rendered · 40.41% IoU | error · 0.00% IoU | rendered · 64.27% IoU | rendered · 64.27% IoU | rendered · 27.57% IoU | rendered · 1.19% IoU | rendered · 84.07% IoU |
+| [anchor-FO-B-0](../cases/conformance-anchor-FO-B-0.md) | position | rendered · 100.00% IoU · exact | rendered · 27.75% IoU | error · 0.00% IoU | rendered · 67.70% IoU | rendered · 67.70% IoU | rendered · 18.10% IoU | rendered · 61.00% IoU | rendered · 66.89% IoU |
+| [anchor-FO-B-1](../cases/conformance-anchor-FO-B-1.md) | position | rendered · 100.00% IoU · exact | rendered · 21.17% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 1.17% IoU | rendered · 61.00% IoU | rendered · 66.89% IoU |
+| [anchor-FO-B-2](../cases/conformance-anchor-FO-B-2.md) | position | rendered · 100.00% IoU · exact | rendered · 27.75% IoU | error · 0.00% IoU | rendered · 67.70% IoU | rendered · 67.70% IoU | rendered · 18.10% IoU | rendered · 61.00% IoU | rendered · 66.89% IoU |
+| [anchor-FT-B-0](../cases/conformance-anchor-FT-B-0.md) | position | rendered · 100.00% IoU · exact | rendered · 40.41% IoU | error · 0.00% IoU | rendered · 49.31% IoU | rendered · 49.31% IoU | rendered · 27.76% IoU | rendered · 1.26% IoU | rendered · 84.13% IoU |
+| [anchor-FT-B-1](../cases/conformance-anchor-FT-B-1.md) | position | rendered · 100.00% IoU · exact | rendered · 1.00% IoU | error · 0.00% IoU | rendered · 1.14% IoU | rendered · 1.14% IoU | rendered · 30.75% IoU | rendered · 3.73% IoU | rendered · 84.22% IoU |
+| [anchor-FT-B-2](../cases/conformance-anchor-FT-B-2.md) | position | rendered · 100.00% IoU · exact | rendered · 40.41% IoU | error · 0.00% IoU | rendered · 49.31% IoU | rendered · 49.31% IoU | rendered · 27.76% IoU | rendered · 1.26% IoU | rendered · 84.13% IoU |
+| [offset-LS--80](../cases/conformance-offset-LS--80.md) | position | rendered · 100.00% IoU · exact | rendered · 90.26% IoU | rendered · 16.78% IoU | rendered · 15.41% IoU | rendered · 15.41% IoU | rendered · 17.04% IoU | rendered · 73.26% IoU | rendered · 98.08% IoU |
+| [offset-LS-80](../cases/conformance-offset-LS-80.md) | position | rendered · 100.00% IoU · exact | rendered · 90.79% IoU | rendered · 64.59% IoU | rendered · 61.66% IoU | rendered · 61.66% IoU | rendered · 58.98% IoU | rendered · 23.92% IoU | rendered · 98.30% IoU |
+| [offset-LT--50](../cases/conformance-offset-LT--50.md) | position | rendered · 100.00% IoU · exact | rendered · 51.07% IoU | rendered · 78.36% IoU | rendered · 93.56% IoU | rendered · 93.56% IoU | rendered · 66.79% IoU | rendered · 11.54% IoU | rendered · 52.47% IoU |
+| [offset-LT-50](../cases/conformance-offset-LT-50.md) | position | rendered · 100.00% IoU · exact | rendered · 8.36% IoU | rendered · 78.36% IoU | rendered · 93.56% IoU | rendered · 93.56% IoU | rendered · 66.79% IoU | rendered · 8.22% IoU | rendered · 8.02% IoU |
+| [offset-LH-100-200](../cases/conformance-offset-LH-100-200.md) | position | rendered · 100.00% IoU · exact | rendered · 90.26% IoU | rendered · 0.00% IoU | rendered · 93.56% IoU | rendered · 0.00% IoU | rendered · 66.79% IoU | rendered · 73.26% IoU | rendered · 98.08% IoU |
+| [clip-0-0](../cases/conformance-clip-0-0.md) | clipping | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [clip-831-1217](../cases/conformance-clip-831-1217.md) | clipping | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [clip-832-1218](../cases/conformance-clip-832-1218.md) | clipping | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact |
+| [clip-800-1180](../cases/conformance-clip-800-1180.md) | clipping | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [clip-32000-32000](../cases/conformance-clip-32000-32000.md) | clipping | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact | blank · unscored · exact |
+| [page-transform-N-N](../cases/conformance-page-transform-N-N.md) | transforms | rendered · 100.00% IoU · exact | rendered · 82.58% IoU | rendered · 82.67% IoU | rendered · 91.40% IoU | rendered · 91.40% IoU | rendered · 68.51% IoU | rendered · 72.93% IoU | rendered · 84.61% IoU |
+| [page-transform-Y-N](../cases/conformance-page-transform-Y-N.md) | transforms | rendered · 100.00% IoU · exact | rendered · 82.58% IoU | rendered · 82.67% IoU | rendered · 91.40% IoU | rendered · 91.40% IoU | rendered · 68.51% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [page-transform-N-I](../cases/conformance-page-transform-N-I.md) | transforms | rendered · 100.00% IoU · exact | rendered · 2.49% IoU | rendered · 82.67% IoU | rendered · 91.40% IoU | rendered · 91.40% IoU | rendered · 68.51% IoU | rendered · 2.70% IoU | rendered · 2.49% IoU |
+| [page-transform-Y-I](../cases/conformance-page-transform-Y-I.md) | transforms | rendered · 100.00% IoU · exact | rendered · 2.49% IoU | rendered · 82.67% IoU | rendered · 91.40% IoU | rendered · 91.40% IoU | rendered · 68.51% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [label-reverse](../cases/conformance-label-reverse.md) | compositing | rendered · 100.00% IoU · exact | rendered · 89.18% IoU | rendered · 90.47% IoU | rendered · 94.71% IoU | rendered · 94.71% IoU | rendered · 74.92% IoU | rendered · 79.54% IoU | rendered · 91.92% IoU |
+| [field-direction-H-0](../cases/conformance-field-direction-H-0.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 73.91% IoU | rendered · 40.13% IoU | rendered · 67.04% IoU | rendered · 67.04% IoU | rendered · 29.18% IoU | rendered · 30.95% IoU | rendered · 73.37% IoU |
+| [field-direction-H-1](../cases/conformance-field-direction-H-1.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 48.34% IoU | rendered · 57.34% IoU | rendered · 62.48% IoU | rendered · 62.48% IoU | rendered · 20.75% IoU | rendered · 30.34% IoU | rendered · 73.37% IoU |
+| [field-direction-H-8](../cases/conformance-field-direction-H-8.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 23.54% IoU | rendered · 25.59% IoU | rendered · 25.37% IoU | rendered · 25.37% IoU | rendered · 20.36% IoU | rendered · 30.34% IoU | rendered · 73.37% IoU |
+| [field-direction-V-0](../cases/conformance-field-direction-V-0.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 12.62% IoU | rendered · 10.41% IoU | rendered · 12.36% IoU | rendered · 12.36% IoU | rendered · 5.81% IoU | rendered · 13.52% IoU | rendered · 79.91% IoU |
+| [field-direction-V-1](../cases/conformance-field-direction-V-1.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 12.62% IoU | rendered · 10.41% IoU | rendered · 12.36% IoU | rendered · 12.36% IoU | rendered · 5.81% IoU | rendered · 13.52% IoU | rendered · 79.91% IoU |
+| [field-direction-V-8](../cases/conformance-field-direction-V-8.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 12.62% IoU | rendered · 10.41% IoU | rendered · 12.36% IoU | rendered · 12.36% IoU | rendered · 5.81% IoU | rendered · 8.55% IoU | rendered · 79.91% IoU |
+| [field-direction-R-0](../cases/conformance-field-direction-R-0.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 12.62% IoU | rendered · 10.41% IoU | rendered · 12.36% IoU | rendered · 12.36% IoU | rendered · 5.81% IoU | rendered · 22.48% IoU | rendered · 16.94% IoU |
+| [field-direction-R-1](../cases/conformance-field-direction-R-1.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 12.62% IoU | rendered · 10.41% IoU | rendered · 12.36% IoU | rendered · 12.36% IoU | rendered · 5.81% IoU | rendered · 21.28% IoU | rendered · 17.18% IoU |
+| [field-direction-R-8](../cases/conformance-field-direction-R-8.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 12.62% IoU | rendered · 10.41% IoU | rendered · 12.36% IoU | rendered · 12.36% IoU | rendered · 5.81% IoU | rendered · 15.63% IoU | rendered · 24.43% IoU |
+| [block-1-L](../cases/conformance-block-1-L.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 11.48% IoU | rendered · 47.63% IoU | rendered · 47.75% IoU | rendered · 47.75% IoU | rendered · 5.69% IoU | rendered · 56.65% IoU | rendered · 81.56% IoU |
+| [block-1-C](../cases/conformance-block-1-C.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 7.50% IoU | rendered · 47.63% IoU | rendered · 18.44% IoU | rendered · 18.44% IoU | rendered · 2.89% IoU | rendered · 40.31% IoU | rendered · 81.56% IoU |
+| [block-1-R](../cases/conformance-block-1-R.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 0.62% IoU | rendered · 47.63% IoU | rendered · 1.37% IoU | rendered · 1.37% IoU | rendered · 0.00% IoU | rendered · 41.81% IoU | rendered · 81.56% IoU |
+| [block-1-J](../cases/conformance-block-1-J.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 11.48% IoU | rendered · 47.63% IoU | rendered · 47.75% IoU | rendered · 47.75% IoU | rendered · 5.69% IoU | rendered · 56.65% IoU | rendered · 81.56% IoU |
+| [block-20-L](../cases/conformance-block-20-L.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 20.35% IoU | rendered · 33.58% IoU | rendered · 46.16% IoU | rendered · 46.16% IoU | rendered · 8.76% IoU | rendered · 62.92% IoU | rendered · 68.90% IoU |
+| [block-20-C](../cases/conformance-block-20-C.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 15.39% IoU | rendered · 26.85% IoU | rendered · 31.93% IoU | rendered · 31.93% IoU | rendered · 9.56% IoU | rendered · 54.06% IoU | rendered · 57.67% IoU |
+| [block-20-R](../cases/conformance-block-20-R.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 14.77% IoU | rendered · 28.96% IoU | rendered · 40.44% IoU | rendered · 40.44% IoU | rendered · 7.81% IoU | rendered · 59.35% IoU | rendered · 54.33% IoU |
+| [block-20-J](../cases/conformance-block-20-J.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 20.35% IoU | rendered · 33.58% IoU | rendered · 46.16% IoU | rendered · 46.16% IoU | rendered · 8.76% IoU | rendered · 62.92% IoU | rendered · 68.90% IoU |
+| [block-120-L](../cases/conformance-block-120-L.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 26.26% IoU | rendered · 24.62% IoU | rendered · 29.30% IoU | rendered · 29.30% IoU | rendered · 16.68% IoU | rendered · 27.96% IoU | rendered · 30.57% IoU |
+| [block-120-C](../cases/conformance-block-120-C.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 23.83% IoU | rendered · 21.11% IoU | rendered · 19.58% IoU | rendered · 19.58% IoU | rendered · 14.68% IoU | rendered · 23.08% IoU | rendered · 22.29% IoU |
+| [block-120-R](../cases/conformance-block-120-R.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 23.29% IoU | rendered · 22.15% IoU | rendered · 22.53% IoU | rendered · 22.53% IoU | rendered · 15.41% IoU | rendered · 24.80% IoU | rendered · 29.07% IoU |
+| [block-120-J](../cases/conformance-block-120-J.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 26.37% IoU | rendered · 22.77% IoU | rendered · 26.57% IoU | rendered · 26.57% IoU | rendered · 15.67% IoU | rendered · 26.27% IoU | rendered · 27.86% IoU |
+| [block-300-L](../cases/conformance-block-300-L.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 30.87% IoU | rendered · 46.05% IoU | rendered · 31.79% IoU | rendered · 31.79% IoU | rendered · 20.29% IoU | rendered · 31.06% IoU | rendered · 34.43% IoU |
+| [block-300-C](../cases/conformance-block-300-C.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 31.04% IoU | rendered · 29.13% IoU | rendered · 30.70% IoU | rendered · 30.70% IoU | rendered · 18.24% IoU | rendered · 27.72% IoU | rendered · 44.38% IoU |
+| [block-300-R](../cases/conformance-block-300-R.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 34.48% IoU | rendered · 34.59% IoU | rendered · 34.54% IoU | rendered · 34.54% IoU | rendered · 21.69% IoU | rendered · 34.96% IoU | rendered · 45.67% IoU |
+| [block-300-J](../cases/conformance-block-300-J.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 30.68% IoU | rendered · 37.12% IoU | rendered · 29.39% IoU | rendered · 29.39% IoU | rendered · 19.96% IoU | rendered · 43.33% IoU | rendered · 49.07% IoU |
+| [block-spacing--12-indent-0](../cases/conformance-block-spacing--12-indent-0.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 35.78% IoU | error · 0.00% IoU | rendered · 43.17% IoU | rendered · 43.17% IoU | rendered · 23.00% IoU | rendered · 34.17% IoU | rendered · 45.23% IoU |
+| [block-spacing-12-indent-0](../cases/conformance-block-spacing-12-indent-0.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 35.32% IoU | rendered · 39.04% IoU | rendered · 42.86% IoU | rendered · 42.86% IoU | rendered · 22.14% IoU | rendered · 34.01% IoU | rendered · 45.16% IoU |
+| [block-spacing-0-indent-40](../cases/conformance-block-spacing-0-indent-40.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 26.72% IoU | rendered · 39.04% IoU | rendered · 32.03% IoU | rendered · 32.03% IoU | rendered · 22.14% IoU | rendered · 34.01% IoU | rendered · 45.16% IoU |
+| [block-spacing-8-indent-80](../cases/conformance-block-spacing-8-indent-80.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 26.01% IoU | rendered · 39.04% IoU | rendered · 31.17% IoU | rendered · 31.17% IoU | rendered · 22.14% IoU | rendered · 34.01% IoU | rendered · 45.16% IoU |
+| [block-content-breaks](../cases/conformance-block-content-breaks.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 59.26% IoU | rendered · 58.29% IoU | rendered · 73.53% IoU | rendered · 73.53% IoU | rendered · 33.66% IoU | rendered · 64.82% IoU | rendered · 74.01% IoU |
+| [block-content-long-word](../cases/conformance-block-content-long-word.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 10.02% IoU | rendered · 34.83% IoU | rendered · 41.54% IoU | rendered · 41.54% IoU | rendered · 6.80% IoU | rendered · 47.50% IoU | rendered · 35.90% IoU |
+| [block-content-spaces](../cases/conformance-block-content-spaces.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 28.56% IoU | rendered · 35.31% IoU | rendered · 34.53% IoU | rendered · 34.53% IoU | rendered · 16.09% IoU | rendered · 37.64% IoU | rendered · 63.74% IoU |
+| [block-content-empty](../cases/conformance-block-content-empty.md) | text-layout | blank · unscored | blank · unscored | blank · unscored | blank · unscored | blank · unscored | blank · unscored | blank · unscored | blank · unscored |
+| [text-block-N-1](../cases/conformance-text-block-N-1.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 0.34% IoU | rendered · 0.32% IoU | rendered · 0.32% IoU | rendered · 0.32% IoU | rendered · 0.07% IoU | rendered · 9.23% IoU | rendered · 35.00% IoU |
+| [text-block-N-40](../cases/conformance-text-block-N-40.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 25.61% IoU | rendered · 39.37% IoU | rendered · 32.82% IoU | rendered · 32.82% IoU | rendered · 20.03% IoU | rendered · 25.37% IoU | rendered · 41.17% IoU |
+| [text-block-N-120](../cases/conformance-text-block-N-120.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 25.61% IoU | rendered · 39.37% IoU | rendered · 32.82% IoU | rendered · 32.82% IoU | rendered · 20.03% IoU | rendered · 25.37% IoU | rendered · 41.17% IoU |
+| [text-block-R-1](../cases/conformance-text-block-R-1.md) | text-layout | blank · unscored · exact | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [text-block-R-40](../cases/conformance-text-block-R-40.md) | text-layout | rendered · 99.28% IoU | rendered · 2.48% IoU | rendered · 2.69% IoU | rendered · 2.62% IoU | rendered · 2.62% IoU | rendered · 1.73% IoU | rendered · 17.72% IoU | rendered · 38.43% IoU |
+| [text-block-R-120](../cases/conformance-text-block-R-120.md) | text-layout | rendered · 99.28% IoU | rendered · 1.96% IoU | rendered · 2.49% IoU | rendered · 2.14% IoU | rendered · 2.14% IoU | rendered · 1.83% IoU | rendered · 0.00% IoU | rendered · 38.43% IoU |
+| [text-block-I-1](../cases/conformance-text-block-I-1.md) | text-layout | blank · unscored · exact | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [text-block-I-40](../cases/conformance-text-block-I-40.md) | text-layout | rendered · 98.45% IoU | rendered · 2.62% IoU | rendered · 3.27% IoU | rendered · 3.94% IoU | rendered · 3.94% IoU | rendered · 3.40% IoU | rendered · 17.93% IoU | rendered · 38.79% IoU |
+| [text-block-I-120](../cases/conformance-text-block-I-120.md) | text-layout | rendered · 98.45% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 38.79% IoU |
+| [text-block-B-1](../cases/conformance-text-block-B-1.md) | text-layout | rendered · 100.00% IoU · exact | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 9.23% IoU | rendered · 35.00% IoU |
+| [text-block-B-40](../cases/conformance-text-block-B-40.md) | text-layout | rendered · 99.40% IoU | rendered · 1.39% IoU | rendered · 0.94% IoU | rendered · 1.41% IoU | rendered · 1.41% IoU | rendered · 0.82% IoU | rendered · 25.32% IoU | rendered · 41.36% IoU |
+| [text-block-B-120](../cases/conformance-text-block-B-120.md) | text-layout | rendered · 99.40% IoU | rendered · 1.39% IoU | rendered · 0.94% IoU | rendered · 1.41% IoU | rendered · 1.41% IoU | rendered · 0.82% IoU | rendered · 25.32% IoU | rendered · 41.36% IoU |
+| [unicode-latin](../cases/conformance-unicode-latin.md) | encoding | rendered · 100.00% IoU · exact | rendered · 38.01% IoU | rendered · 23.61% IoU | rendered · 24.93% IoU | rendered · 24.93% IoU | rendered · 23.37% IoU | rendered · 31.23% IoU | rendered · 65.47% IoU |
+| [unicode-combining](../cases/conformance-unicode-combining.md) | encoding | rendered · 100.00% IoU · exact | rendered · 23.87% IoU | rendered · 16.39% IoU | rendered · 27.65% IoU | rendered · 27.65% IoU | rendered · 13.51% IoU | rendered · 23.31% IoU | rendered · 33.27% IoU |
+| [unicode-greek](../cases/conformance-unicode-greek.md) | encoding | rendered · 100.00% IoU · exact | rendered · 16.22% IoU | rendered · 24.19% IoU | rendered · 27.76% IoU | rendered · 27.76% IoU | rendered · 24.58% IoU | rendered · 26.11% IoU | rendered · 87.14% IoU |
+| [unicode-cyrillic](../cases/conformance-unicode-cyrillic.md) | encoding | rendered · 100.00% IoU · exact | rendered · 17.59% IoU | rendered · 20.85% IoU | rendered · 41.63% IoU | rendered · 41.63% IoU | rendered · 28.53% IoU | rendered · 12.36% IoU | rendered · 84.29% IoU |
+| [unicode-hebrew](../cases/conformance-unicode-hebrew.md) | encoding | rendered · 100.00% IoU · exact | rendered · 19.25% IoU | rendered · 14.92% IoU | rendered · 10.48% IoU | rendered · 10.48% IoU | rendered · 21.63% IoU | rendered · 15.13% IoU | rendered · 50.64% IoU |
+| [unicode-arabic](../cases/conformance-unicode-arabic.md) | encoding | rendered · 100.00% IoU · exact | rendered · 17.48% IoU | rendered · 10.36% IoU | rendered · 28.87% IoU | rendered · 28.87% IoU | rendered · 7.75% IoU | rendered · 11.02% IoU | rendered · 70.27% IoU |
+| [unicode-cjk](../cases/conformance-unicode-cjk.md) | encoding | blank · unscored · exact | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored · exact |
+| [unicode-supplementary](../cases/conformance-unicode-supplementary.md) | encoding | rendered · 100.00% IoU · exact | rendered · 36.93% IoU | rendered · 24.25% IoU | rendered · 59.25% IoU | rendered · 59.25% IoU | rendered · 13.13% IoU | rendered · 22.36% IoU | rendered · 37.44% IoU |
+| [unicode-controls](../cases/conformance-unicode-controls.md) | encoding | rendered · 100.00% IoU · exact | rendered · 23.77% IoU | rendered · 23.32% IoU | rendered · 24.53% IoU | rendered · 24.53% IoU | rendered · 18.25% IoU | rendered · 23.81% IoU | rendered · 29.48% IoU |
+| [unicode-missing](../cases/conformance-unicode-missing.md) | encoding | rendered · 100.00% IoU · exact | rendered · 36.93% IoU | rendered · 26.68% IoU | rendered · 59.25% IoU | rendered · 59.25% IoU | rendered · 13.13% IoU | rendered · 22.36% IoU | rendered · 81.58% IoU |
+| [encoding-0](../cases/conformance-encoding-0.md) | encoding | rendered · 100.00% IoU · exact | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-13](../cases/conformance-encoding-13.md) | encoding | rendered · 100.00% IoU · exact | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-27](../cases/conformance-encoding-27.md) | encoding | rendered · 100.00% IoU · exact | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-28](../cases/conformance-encoding-28.md) | encoding | rendered · 100.00% IoU · exact | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-29](../cases/conformance-encoding-29.md) | encoding | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored |
+| [encoding-30](../cases/conformance-encoding-30.md) | encoding | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [encoding-31](../cases/conformance-encoding-31.md) | encoding | error · 0.00% IoU | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-33](../cases/conformance-encoding-33.md) | encoding | error · 0.00% IoU | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-34](../cases/conformance-encoding-34.md) | encoding | error · 0.00% IoU | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-35](../cases/conformance-encoding-35.md) | encoding | error · 0.00% IoU | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-36](../cases/conformance-encoding-36.md) | encoding | error · 0.00% IoU | rendered · 83.96% IoU | rendered · 43.00% IoU | rendered · 71.60% IoU | rendered · 71.60% IoU | rendered · 22.40% IoU | rendered · 31.59% IoU | rendered · 80.75% IoU |
+| [encoding-remap](../cases/conformance-encoding-remap.md) | encoding | error · 0.00% IoU | rendered · 60.49% IoU | error · 0.00% IoU | rendered · 66.19% IoU | rendered · 66.19% IoU | rendered · 30.01% IoU | rendered · 32.20% IoU | rendered · 77.42% IoU |
+| [advanced-text-0000](../cases/conformance-advanced-text-0000.md) | encoding | rendered · 100.00% IoU · exact | rendered · 29.08% IoU | rendered · 22.41% IoU | rendered · 37.47% IoU | rendered · 37.47% IoU | rendered · 11.60% IoU | rendered · 14.05% IoU | rendered · 76.25% IoU |
+| [advanced-text-1000](../cases/conformance-advanced-text-1000.md) | encoding | rendered · 100.00% IoU · exact | rendered · 30.28% IoU | rendered · 13.09% IoU | rendered · 21.09% IoU | rendered · 21.09% IoU | rendered · 13.41% IoU | rendered · 15.63% IoU | rendered · 71.81% IoU |
+| [advanced-text-0100](../cases/conformance-advanced-text-0100.md) | encoding | rendered · 100.00% IoU · exact | rendered · 27.15% IoU | rendered · 22.41% IoU | rendered · 37.47% IoU | rendered · 37.47% IoU | rendered · 11.25% IoU | rendered · 14.64% IoU | rendered · 28.36% IoU |
+| [advanced-text-0010](../cases/conformance-advanced-text-0010.md) | encoding | rendered · 100.00% IoU · exact | rendered · 29.08% IoU | rendered · 22.41% IoU | rendered · 37.47% IoU | rendered · 37.47% IoU | rendered · 11.60% IoU | rendered · 14.05% IoU | rendered · 76.25% IoU |
+| [advanced-text-0001](../cases/conformance-advanced-text-0001.md) | encoding | rendered · 100.00% IoU · exact | rendered · 29.08% IoU | rendered · 22.41% IoU | rendered · 37.47% IoU | rendered · 37.47% IoU | rendered · 11.60% IoU | rendered · 14.05% IoU | rendered · 76.25% IoU |
+| [advanced-text-1111](../cases/conformance-advanced-text-1111.md) | encoding | rendered · 100.00% IoU · exact | rendered · 30.41% IoU | rendered · 13.09% IoU | rendered · 21.09% IoU | rendered · 21.09% IoU | rendered · 13.31% IoU | rendered · 15.69% IoU | rendered · 82.80% IoU |
+| [hex-underscore](../cases/conformance-hex-underscore.md) | lexical | error · 0.00% IoU | rendered · 27.65% IoU | rendered · 26.42% IoU | rendered · 25.11% IoU | rendered · 25.11% IoU | rendered · 26.87% IoU | rendered · 18.80% IoU | rendered · 83.36% IoU |
+| [hex-hash](../cases/conformance-hex-hash.md) | lexical | error · 0.00% IoU | rendered · 27.65% IoU | rendered · 26.42% IoU | rendered · 25.11% IoU | rendered · 25.11% IoU | rendered · 26.87% IoU | rendered · 18.80% IoU | rendered · 83.36% IoU |
+| [hex-scope](../cases/conformance-hex-scope.md) | state | rendered · 100.00% IoU · exact | rendered · 78.81% IoU | rendered · 23.23% IoU | rendered · 74.13% IoU | rendered · 74.13% IoU | rendered · 36.99% IoU | rendered · 27.88% IoU | rendered · 87.52% IoU |
+| [variable-field](../cases/conformance-variable-field.md) | text-data | rendered · 100.00% IoU · exact | rendered · 70.80% IoU | rendered · 31.13% IoU | rendered · 85.68% IoU | rendered · 85.68% IoU | rendered · 23.90% IoU | rendered · 31.87% IoU | rendered · 80.32% IoU |
+| [numbered-fields-inline](../cases/conformance-numbered-fields-inline.md) | state | rendered · 100.00% IoU · exact | blank · 0.00% IoU | rendered · 69.49% IoU | rendered · 73.05% IoU | rendered · 73.05% IoU | blank · 0.00% IoU | rendered · 18.25% IoU | rendered · 87.90% IoU |
+| [field-concat-whole](../cases/conformance-field-concat-whole.md) | text-data | rendered · 100.00% IoU · exact | rendered · 12.00% IoU | rendered · 32.93% IoU | rendered · 50.55% IoU | rendered · 50.55% IoU | rendered · 8.66% IoU | rendered · 27.63% IoU | rendered · 75.80% IoU |
+| [field-concat-forward](../cases/conformance-field-concat-forward.md) | text-data | rendered · 100.00% IoU · exact | rendered · 6.72% IoU | rendered · 37.38% IoU | rendered · 55.90% IoU | rendered · 55.90% IoU | rendered · 4.43% IoU | rendered · 30.94% IoU | rendered · 79.93% IoU |
+| [field-concat-backward](../cases/conformance-field-concat-backward.md) | text-data | rendered · 100.00% IoU · exact | rendered · 3.14% IoU | rendered · 34.90% IoU | rendered · 56.00% IoU | rendered · 56.00% IoU | rendered · 2.54% IoU | rendered · 28.24% IoU | rendered · 76.81% IoU |
+| [field-concat-past-end](../cases/conformance-field-concat-past-end.md) | text-data | rendered · 100.00% IoU · exact | rendered · 10.36% IoU | rendered · 39.74% IoU | rendered · 55.33% IoU | rendered · 55.33% IoU | rendered · 8.40% IoU | rendered · 30.85% IoU | rendered · 80.89% IoU |
+| [field-concat-scope](../cases/conformance-field-concat-scope.md) | state | rendered · 100.00% IoU · exact | rendered · 31.09% IoU | rendered · 46.72% IoU | rendered · 61.76% IoU | rendered · 61.76% IoU | rendered · 11.69% IoU | rendered · 31.21% IoU | rendered · 80.46% IoU |
+| [interleaved-odd-digits](../cases/conformance-interleaved-odd-digits.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 57.14% IoU | rendered · 100.00% IoU · exact | rendered · 11.42% IoU | rendered · 11.42% IoU | crashed · 0.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [serial-000009-Y](../cases/conformance-serial-000009-Y.md) | serialization | rendered · 100.00% IoU · exact | error · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | rendered · 33.76% IoU | rendered · 54.98% IoU |
+| [serial-000009-N](../cases/conformance-serial-000009-N.md) | serialization | rendered · 100.00% IoU · exact | error · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | rendered · 0.00% IoU | rendered · 43.43% IoU |
+| [serial-A009Z-Y](../cases/conformance-serial-A009Z-Y.md) | serialization | rendered · 100.00% IoU · exact | error · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | blank · 0.00% IoU | rendered · 33.19% IoU | rendered · 77.79% IoU |
+| [serial-mask](../cases/conformance-serial-mask.md) | serialization | rendered · 100.00% IoU · exact | rendered · 60.07% IoU | rendered · 38.57% IoU | rendered · 81.09% IoU | rendered · 81.09% IoU | rendered · 25.33% IoU | rendered · 36.18% IoU | rendered · 70.08% IoU |
+| [comments-and-line-endings](../cases/conformance-comments-and-line-endings.md) | lexical | rendered · 100.00% IoU · exact | rendered · 65.36% IoU | rendered · 66.64% IoU | rendered · 87.20% IoU | rendered · 87.20% IoU | rendered · 23.48% IoU | rendered · 32.08% IoU | rendered · 87.10% IoU |
+| [box-rounding-0](../cases/conformance-box-rounding-0.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-rounding-1](../cases/conformance-box-rounding-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 97.30% IoU | rendered · 98.39% IoU | rendered · 96.84% IoU | rendered · 96.84% IoU | rendered · 98.88% IoU | rendered · 98.08% IoU | rendered · 99.04% IoU |
+| [box-rounding-2](../cases/conformance-box-rounding-2.md) | shapes | rendered · 100.00% IoU · exact | rendered · 94.45% IoU | rendered · 94.86% IoU | rendered · 89.63% IoU | rendered · 89.63% IoU | rendered · 97.59% IoU | rendered · 95.83% IoU | rendered · 97.60% IoU |
+| [box-rounding-3](../cases/conformance-box-rounding-3.md) | shapes | rendered · 100.00% IoU · exact | rendered · 91.72% IoU | rendered · 88.55% IoU | rendered · 79.51% IoU | rendered · 79.51% IoU | rendered · 96.75% IoU | rendered · 94.82% IoU | rendered · 96.62% IoU |
+| [box-rounding-4](../cases/conformance-box-rounding-4.md) | shapes | rendered · 100.00% IoU · exact | rendered · 86.03% IoU | rendered · 79.97% IoU | rendered · 67.49% IoU | rendered · 67.49% IoU | rendered · 95.66% IoU | rendered · 91.64% IoU | rendered · 94.76% IoU |
+| [box-rounding-5](../cases/conformance-box-rounding-5.md) | shapes | rendered · 100.00% IoU · exact | rendered · 84.46% IoU | rendered · 66.23% IoU | rendered · 58.09% IoU | rendered · 58.09% IoU | rendered · 93.70% IoU | rendered · 91.33% IoU | rendered · 93.54% IoU |
+| [box-rounding-6](../cases/conformance-box-rounding-6.md) | shapes | rendered · 100.00% IoU · exact | rendered · 86.58% IoU | rendered · 51.11% IoU | rendered · 49.56% IoU | rendered · 49.56% IoU | rendered · 92.02% IoU | rendered · 92.23% IoU | rendered · 92.62% IoU |
+| [box-rounding-7](../cases/conformance-box-rounding-7.md) | shapes | rendered · 100.00% IoU · exact | rendered · 83.58% IoU | rendered · 68.22% IoU | rendered · 40.76% IoU | rendered · 40.76% IoU | rendered · 88.90% IoU | rendered · 90.10% IoU | rendered · 90.50% IoU |
+| [box-rounding-8](../cases/conformance-box-rounding-8.md) | shapes | rendered · 100.00% IoU · exact | rendered · 77.46% IoU | rendered · 78.27% IoU | rendered · 32.64% IoU | rendered · 32.64% IoU | rendered · 88.25% IoU | rendered · 88.77% IoU | rendered · 88.81% IoU |
+| [box-0-80-1](../cases/conformance-box-0-80-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-80-0-1](../cases/conformance-box-80-0-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-1-1-1](../cases/conformance-box-1-1-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-2-2-1](../cases/conformance-box-2-2-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-31-31-1](../cases/conformance-box-31-31-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-32-32-1](../cases/conformance-box-32-32-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-33-33-1](../cases/conformance-box-33-33-1.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-100-60-30](../cases/conformance-box-100-60-30.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [box-100-60-100](../cases/conformance-box-100-60-100.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 60.00% IoU | rendered · 60.00% IoU | rendered · 60.00% IoU | rendered · 100.00% IoU · exact | rendered · 60.00% IoU | rendered · 100.00% IoU · exact |
+| [shape-GC-B-plain](../cases/conformance-shape-GC-B-plain.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 85.64% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [shape-GC-W-plain](../cases/conformance-shape-GC-W-plain.md) | shapes | rendered · 100.00% IoU · exact | rendered · 97.96% IoU | rendered · 83.77% IoU | rendered · 98.54% IoU | rendered · 98.54% IoU | rendered · 98.04% IoU | rendered · 98.74% IoU | rendered · 97.96% IoU |
+| [shape-GE-B-plain](../cases/conformance-shape-GE-B-plain.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 75.17% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [shape-GE-W-plain](../cases/conformance-shape-GE-W-plain.md) | shapes | rendered · 100.00% IoU · exact | rendered · 95.23% IoU | rendered · 74.69% IoU | rendered · 96.64% IoU | rendered · 96.64% IoU | rendered · 93.93% IoU | rendered · 98.79% IoU | rendered · 95.02% IoU |
+| [shape-GD-B-L](../cases/conformance-shape-GD-B-L.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [shape-GD-B-R](../cases/conformance-shape-GD-B-R.md) | shapes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [shape-GD-W-L](../cases/conformance-shape-GD-W-L.md) | shapes | rendered · 100.00% IoU · exact | rendered · 99.13% IoU | rendered · 98.39% IoU | rendered · 97.82% IoU | rendered · 97.82% IoU | rendered · 99.76% IoU | rendered · 99.49% IoU | rendered · 99.76% IoU |
+| [shape-GD-W-R](../cases/conformance-shape-GD-W-R.md) | shapes | rendered · 100.00% IoU · exact | rendered · 99.13% IoU | rendered · 99.22% IoU | rendered · 97.82% IoU | rendered · 97.82% IoU | rendered · 99.76% IoU | rendered · 99.49% IoU | rendered · 99.76% IoU |
+| [symbol-graphic-A-N](../cases/conformance-symbol-graphic-A-N.md) | shapes | rendered · 100.00% IoU · exact | rendered · 21.39% IoU | rendered · 18.92% IoU | rendered · 23.44% IoU | rendered · 23.44% IoU | rendered · 65.89% IoU | rendered · 30.15% IoU | rendered · 57.40% IoU |
+| [symbol-graphic-A-R](../cases/conformance-symbol-graphic-A-R.md) | shapes | rendered · 100.00% IoU · exact | rendered · 13.05% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 65.89% IoU | rendered · 30.15% IoU | rendered · 57.40% IoU |
+| [symbol-graphic-A-I](../cases/conformance-symbol-graphic-A-I.md) | shapes | rendered · 100.00% IoU · exact | rendered · 4.91% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 3.14% IoU | rendered · 19.84% IoU | rendered · 56.77% IoU |
+| [symbol-graphic-A-B](../cases/conformance-symbol-graphic-A-B.md) | shapes | rendered · 100.00% IoU · exact | rendered · 24.54% IoU | rendered · 0.79% IoU | rendered · 1.51% IoU | rendered · 1.51% IoU | rendered · 3.14% IoU | rendered · 19.84% IoU | rendered · 56.77% IoU |
+| [symbol-graphic-B-N](../cases/conformance-symbol-graphic-B-N.md) | shapes | rendered · 100.00% IoU · exact | rendered · 16.33% IoU | rendered · 24.48% IoU | rendered · 23.54% IoU | rendered · 23.54% IoU | rendered · 62.37% IoU | rendered · 23.66% IoU | rendered · 44.80% IoU |
+| [symbol-graphic-B-R](../cases/conformance-symbol-graphic-B-R.md) | shapes | rendered · 100.00% IoU · exact | rendered · 11.45% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 62.37% IoU | rendered · 23.66% IoU | rendered · 44.80% IoU |
+| [symbol-graphic-B-I](../cases/conformance-symbol-graphic-B-I.md) | shapes | rendered · 100.00% IoU · exact | rendered · 5.13% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 4.43% IoU | rendered · 16.41% IoU | rendered · 44.51% IoU |
+| [symbol-graphic-B-B](../cases/conformance-symbol-graphic-B-B.md) | shapes | rendered · 100.00% IoU · exact | rendered · 25.85% IoU | rendered · 0.61% IoU | rendered · 1.20% IoU | rendered · 1.20% IoU | rendered · 4.43% IoU | rendered · 16.41% IoU | rendered · 44.51% IoU |
+| [symbol-graphic-C-N](../cases/conformance-symbol-graphic-C-N.md) | shapes | rendered · 100.00% IoU · exact | rendered · 14.46% IoU | rendered · 11.00% IoU | rendered · 9.09% IoU | rendered · 9.09% IoU | rendered · 77.10% IoU | rendered · 26.57% IoU | rendered · 60.42% IoU |
+| [symbol-graphic-C-R](../cases/conformance-symbol-graphic-C-R.md) | shapes | rendered · 100.00% IoU · exact | rendered · 9.77% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 77.10% IoU | rendered · 26.57% IoU | rendered · 60.42% IoU |
+| [symbol-graphic-C-I](../cases/conformance-symbol-graphic-C-I.md) | shapes | rendered · 100.00% IoU · exact | rendered · 0.49% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 23.62% IoU | rendered · 17.94% IoU | rendered · 67.89% IoU |
+| [symbol-graphic-C-B](../cases/conformance-symbol-graphic-C-B.md) | shapes | rendered · 100.00% IoU · exact | rendered · 46.43% IoU | rendered · 12.60% IoU | rendered · 14.06% IoU | rendered · 14.06% IoU | rendered · 23.62% IoU | rendered · 17.94% IoU | rendered · 67.89% IoU |
+| [symbol-graphic-D-N](../cases/conformance-symbol-graphic-D-N.md) | shapes | rendered · 100.00% IoU · exact | rendered · 18.62% IoU | rendered · 9.07% IoU | rendered · 11.35% IoU | rendered · 11.35% IoU | rendered · 65.32% IoU | rendered · 25.27% IoU | rendered · 59.72% IoU |
+| [symbol-graphic-D-R](../cases/conformance-symbol-graphic-D-R.md) | shapes | rendered · 100.00% IoU · exact | rendered · 17.08% IoU | rendered · 8.77% IoU | rendered · 11.14% IoU | rendered · 11.14% IoU | rendered · 65.32% IoU | rendered · 25.27% IoU | rendered · 59.86% IoU |
+| [symbol-graphic-D-I](../cases/conformance-symbol-graphic-D-I.md) | shapes | rendered · 100.00% IoU · exact | rendered · 12.82% IoU | rendered · 4.39% IoU | rendered · 5.78% IoU | rendered · 5.78% IoU | rendered · 30.68% IoU | rendered · 24.21% IoU | rendered · 52.19% IoU |
+| [symbol-graphic-D-B](../cases/conformance-symbol-graphic-D-B.md) | shapes | rendered · 100.00% IoU · exact | rendered · 17.72% IoU | rendered · 4.39% IoU | rendered · 5.41% IoU | rendered · 5.41% IoU | rendered · 30.68% IoU | rendered · 24.21% IoU | rendered · 52.32% IoU |
+| [symbol-graphic-E-N](../cases/conformance-symbol-graphic-E-N.md) | shapes | rendered · 100.00% IoU · exact | rendered · 21.90% IoU | rendered · 8.38% IoU | rendered · 7.66% IoU | rendered · 7.66% IoU | rendered · 69.69% IoU | rendered · 29.74% IoU | rendered · 68.83% IoU |
+| [symbol-graphic-E-R](../cases/conformance-symbol-graphic-E-R.md) | shapes | rendered · 100.00% IoU · exact | rendered · 21.02% IoU | rendered · 8.57% IoU | rendered · 7.66% IoU | rendered · 7.66% IoU | rendered · 69.69% IoU | rendered · 29.74% IoU | rendered · 68.83% IoU |
+| [symbol-graphic-E-I](../cases/conformance-symbol-graphic-E-I.md) | shapes | rendered · 100.00% IoU · exact | rendered · 20.85% IoU | rendered · 2.79% IoU | rendered · 2.17% IoU | rendered · 2.17% IoU | rendered · 37.08% IoU | rendered · 24.16% IoU | rendered · 59.43% IoU |
+| [symbol-graphic-E-B](../cases/conformance-symbol-graphic-E-B.md) | shapes | rendered · 100.00% IoU · exact | rendered · 24.68% IoU | rendered · 7.04% IoU | rendered · 7.94% IoU | rendered · 7.94% IoU | rendered · 37.08% IoU | rendered · 24.16% IoU | rendered · 59.60% IoU |
+| [paint-black-white](../cases/conformance-paint-black-white.md) | compositing | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [paint-white-black](../cases/conformance-paint-white-black.md) | compositing | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [paint-reverse-overlap](../cases/conformance-paint-reverse-overlap.md) | compositing | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [paint-reverse-twice](../cases/conformance-paint-reverse-twice.md) | compositing | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [reverse-field-scope](../cases/conformance-reverse-field-scope.md) | state | rendered · 100.00% IoU · exact | rendered · 99.73% IoU | rendered · 99.28% IoU | rendered · 99.87% IoU | rendered · 99.87% IoU | rendered · 98.91% IoU | rendered · 99.56% IoU | rendered · 99.82% IoU |
+| [raster-equivalent-hex](../cases/conformance-raster-equivalent-hex.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-equivalent-B64](../cases/conformance-raster-equivalent-B64.md) | graphics | rendered · 100.00% IoU · exact | error · 0.00% IoU | rendered · 20.78% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-equivalent-Z64](../cases/conformance-raster-equivalent-Z64.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 22.11% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-equivalent-binary](../cases/conformance-raster-equivalent-binary.md) | graphics | rendered · unscored | rendered · unscored | error · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored | rendered · unscored |
+| [raster-fill-hex](../cases/conformance-raster-fill-hex.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-fill-rle](../cases/conformance-raster-fill-rle.md) | graphics | rendered · 100.00% IoU · exact | rendered · 25.00% IoU | rendered · 0.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 25.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-repeat-hex](../cases/conformance-raster-repeat-hex.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-repeat-rle](../cases/conformance-raster-repeat-rle.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-binary-command-bytes](../cases/conformance-raster-binary-command-bytes.md) | graphics | rendered · unscored | blank · unscored | error · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored | rendered · unscored |
+| [raster-stride-1](../cases/conformance-raster-stride-1.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-stride-2](../cases/conformance-raster-stride-2.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-stride-3](../cases/conformance-raster-stride-3.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-stride-17](../cases/conformance-raster-stride-17.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [raster-clipped](../cases/conformance-raster-clipped.md) | graphics | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-1-ratio-2.0](../cases/conformance-barcode-module-1-ratio-2.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 12.89% IoU | rendered · 12.89% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-1-ratio-2.5](../cases/conformance-barcode-module-1-ratio-2.5.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 29.03% IoU | rendered · 12.89% IoU | rendered · 12.89% IoU | rendered · 100.00% IoU · exact | rendered · 29.03% IoU | rendered · 100.00% IoU · exact |
+| [barcode-module-1-ratio-3.0](../cases/conformance-barcode-module-1-ratio-3.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 10.10% IoU | rendered · 10.10% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-2-ratio-2.0](../cases/conformance-barcode-module-2-ratio-2.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 6.11% IoU | rendered · 6.11% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-2-ratio-2.5](../cases/conformance-barcode-module-2-ratio-2.5.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 32.74% IoU | rendered · 100.00% IoU · exact | rendered · 6.25% IoU | rendered · 6.25% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-2-ratio-3.0](../cases/conformance-barcode-module-2-ratio-3.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 5.05% IoU | rendered · 5.05% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-3-ratio-2.0](../cases/conformance-barcode-module-3-ratio-2.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 4.22% IoU | rendered · 4.22% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-3-ratio-2.5](../cases/conformance-barcode-module-3-ratio-2.5.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 35.80% IoU | rendered · 37.93% IoU | rendered · 4.19% IoU | rendered · 4.19% IoU | rendered · 100.00% IoU · exact | rendered · 37.93% IoU | rendered · 100.00% IoU · exact |
+| [barcode-module-3-ratio-3.0](../cases/conformance-barcode-module-3-ratio-3.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 3.75% IoU | rendered · 3.75% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-10-ratio-2.0](../cases/conformance-barcode-module-10-ratio-2.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 1.00% IoU | rendered · 1.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-10-ratio-2.5](../cases/conformance-barcode-module-10-ratio-2.5.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 32.74% IoU | rendered · 100.00% IoU · exact | rendered · 0.81% IoU | rendered · 0.81% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-module-10-ratio-3.0](../cases/conformance-barcode-module-10-ratio-3.0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 0.77% IoU | rendered · 0.77% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [code128-mode-N](../cases/conformance-code128-mode-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [code128-mode-U](../cases/conformance-code128-mode-U.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 34.55% IoU | rendered · 34.55% IoU | rendered · 34.55% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [code128-mode-A](../cases/conformance-code128-mode-A.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 32.73% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [code128-mode-D](../cases/conformance-code128-mode-D.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 36.22% IoU | rendered · 36.22% IoU | rendered · 36.22% IoU | rendered · 38.92% IoU | rendered · 50.00% IoU | rendered · 100.00% IoU · exact |
+| [code128-subset-b](../cases/conformance-code128-subset-b.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 88.24% IoU | rendered · 88.24% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [code128-subset-c](../cases/conformance-code128-subset-c.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [code128-switch](../cases/conformance-code128-switch.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 39.22% IoU | rendered · 41.41% IoU | rendered · 41.41% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [code128-fnc1](../cases/conformance-code128-fnc1.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 44.44% IoU | rendered · 33.33% IoU | rendered · 33.33% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [readable-B2-N](../cases/conformance-readable-B2-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 90.28% IoU | rendered · 90.52% IoU | rendered · 11.99% IoU | rendered · 11.99% IoU | rendered · 89.01% IoU | rendered · 94.75% IoU | rendered · 95.77% IoU |
+| [readable-B2-R](../cases/conformance-readable-B2-R.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 90.25% IoU | rendered · 87.49% IoU | rendered · 5.84% IoU | rendered · 5.84% IoU | rendered · 88.99% IoU | rendered · 94.75% IoU | rendered · 95.78% IoU |
+| [readable-B2-I](../cases/conformance-readable-B2-I.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 90.20% IoU | rendered · 87.49% IoU | rendered · 11.21% IoU | rendered · 11.21% IoU | rendered · 88.67% IoU | rendered · 28.15% IoU | rendered · 95.30% IoU |
+| [readable-B2-B](../cases/conformance-readable-B2-B.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 90.20% IoU | rendered · 87.49% IoU | rendered · 6.77% IoU | rendered · 6.77% IoU | rendered · 88.74% IoU | rendered · 28.15% IoU | rendered · 95.28% IoU |
+| [readable-B3-N](../cases/conformance-readable-B3-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 94.25% IoU | rendered · 94.48% IoU | rendered · 6.48% IoU | rendered · 6.48% IoU | rendered · 94.17% IoU | rendered · 96.55% IoU | rendered · 96.79% IoU |
+| [readable-B3-R](../cases/conformance-readable-B3-R.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 94.48% IoU | rendered · 92.77% IoU | rendered · 4.52% IoU | rendered · 4.52% IoU | rendered · 94.17% IoU | rendered · 96.55% IoU | rendered · 96.81% IoU |
+| [readable-B3-I](../cases/conformance-readable-B3-I.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 94.48% IoU | rendered · 92.77% IoU | rendered · 6.51% IoU | rendered · 6.51% IoU | rendered · 93.74% IoU | rendered · 29.20% IoU | rendered · 96.43% IoU |
+| [readable-B3-B](../cases/conformance-readable-B3-B.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 94.48% IoU | rendered · 92.77% IoU | rendered · 4.92% IoU | rendered · 4.92% IoU | rendered · 93.75% IoU | rendered · 29.20% IoU | rendered · 96.42% IoU |
+| [readable-BC-N](../cases/conformance-readable-BC-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 92.70% IoU | rendered · 93.34% IoU | rendered · 92.64% IoU | rendered · 92.64% IoU | rendered · 93.24% IoU | rendered · 96.63% IoU | rendered · 96.53% IoU |
+| [readable-BC-R](../cases/conformance-readable-BC-R.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 92.70% IoU | rendered · 90.73% IoU | rendered · 5.38% IoU | rendered · 5.38% IoU | rendered · 93.24% IoU | rendered · 96.63% IoU | rendered · 96.56% IoU |
+| [readable-BC-I](../cases/conformance-readable-BC-I.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 92.84% IoU | rendered · 90.73% IoU | rendered · 36.89% IoU | rendered · 36.89% IoU | rendered · 92.83% IoU | rendered · 96.26% IoU | rendered · 96.20% IoU |
+| [readable-BC-B](../cases/conformance-readable-BC-B.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 92.84% IoU | rendered · 90.73% IoU | rendered · 7.45% IoU | rendered · 7.45% IoU | rendered · 92.84% IoU | rendered · 96.26% IoU | rendered · 96.19% IoU |
+| [readable-BE-N](../cases/conformance-readable-BE-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 85.99% IoU | rendered · 84.88% IoU | rendered · 14.00% IoU | rendered · 14.00% IoU | rendered · 83.63% IoU | rendered · 90.65% IoU | rendered · 91.58% IoU |
+| [readable-BE-R](../cases/conformance-readable-BE-R.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 86.38% IoU | rendered · 80.71% IoU | rendered · 5.36% IoU | rendered · 5.36% IoU | rendered · 83.59% IoU | rendered · 90.65% IoU | rendered · 91.55% IoU |
+| [readable-BE-I](../cases/conformance-readable-BE-I.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 86.43% IoU | rendered · 80.75% IoU | rendered · 12.15% IoU | rendered · 12.15% IoU | rendered · 82.50% IoU | rendered · 90.47% IoU | rendered · 93.89% IoU |
+| [readable-BE-B](../cases/conformance-readable-BE-B.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 86.11% IoU | rendered · 80.71% IoU | rendered · 3.51% IoU | rendered · 3.51% IoU | rendered · 82.56% IoU | rendered · 90.47% IoU | rendered · 93.86% IoU |
+| [readable-BU-N](../cases/conformance-readable-BU-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 84.59% IoU | rendered · 83.05% IoU | rendered · 12.42% IoU | rendered · 12.42% IoU | rendered · 82.08% IoU | rendered · 88.07% IoU | rendered · 91.76% IoU |
+| [readable-BU-R](../cases/conformance-readable-BU-R.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 84.69% IoU | rendered · 78.94% IoU | rendered · 4.20% IoU | rendered · 4.20% IoU | rendered · 82.05% IoU | rendered · 88.07% IoU | rendered · 91.75% IoU |
+| [readable-BU-I](../cases/conformance-readable-BU-I.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 84.69% IoU | rendered · 79.13% IoU | rendered · 12.47% IoU | rendered · 12.47% IoU | rendered · 81.16% IoU | rendered · 88.35% IoU | rendered · 94.05% IoU |
+| [readable-BU-B](../cases/conformance-readable-BU-B.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 84.17% IoU | rendered · 78.94% IoU | rendered · 6.94% IoU | rendered · 6.94% IoU | rendered · 81.20% IoU | rendered · 88.35% IoU | rendered · 94.04% IoU |
+| [qr-mask-full-0](../cases/conformance-qr-mask-full-0.md) | barcode-arguments | rendered · 51.01% IoU | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 11.88% IoU | rendered · 51.01% IoU | rendered · 47.87% IoU |
+| [qr-mask-full-1](../cases/conformance-qr-mask-full-1.md) | barcode-arguments | rendered · 67.53% IoU | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 14.00% IoU | rendered · 67.53% IoU | rendered · 47.87% IoU |
+| [qr-mask-full-2](../cases/conformance-qr-mask-full-2.md) | barcode-arguments | rendered · 60.28% IoU | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 12.33% IoU | rendered · 60.28% IoU | rendered · 47.87% IoU |
+| [qr-mask-full-3](../cases/conformance-qr-mask-full-3.md) | barcode-arguments | rendered · 60.55% IoU | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 13.79% IoU | rendered · 60.55% IoU | rendered · 47.87% IoU |
+| [qr-mask-full-4](../cases/conformance-qr-mask-full-4.md) | barcode-arguments | rendered · 61.59% IoU | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 15.11% IoU | rendered · 61.59% IoU | rendered · 47.87% IoU |
+| [qr-mask-full-5](../cases/conformance-qr-mask-full-5.md) | barcode-arguments | rendered · 77.69% IoU | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 12.94% IoU | rendered · 77.69% IoU | rendered · 47.87% IoU |
+| [qr-mask-full-6](../cases/conformance-qr-mask-full-6.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 15.18% IoU | rendered · 100.00% IoU · exact | rendered · 47.87% IoU |
+| [qr-mask-full-7](../cases/conformance-qr-mask-full-7.md) | barcode-arguments | rendered · 45.34% IoU | rendered · 77.12% IoU | rendered · 14.00% IoU | rendered · 11.80% IoU | rendered · 11.80% IoU | rendered · 13.21% IoU | rendered · 45.34% IoU | rendered · 47.87% IoU |
+| [datamatrix-quality-0](../cases/conformance-datamatrix-quality-0.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 35.34% IoU | rendered · 35.34% IoU | rendered · 35.34% IoU | rendered · 35.34% IoU | rendered · 35.34% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [datamatrix-quality-50](../cases/conformance-datamatrix-quality-50.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 29.75% IoU | rendered · 29.75% IoU | rendered · 29.75% IoU | rendered · 29.75% IoU | rendered · 29.75% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [datamatrix-quality-80](../cases/conformance-datamatrix-quality-80.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 32.48% IoU | rendered · 32.48% IoU | rendered · 32.48% IoU | rendered · 32.48% IoU | rendered · 32.48% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [datamatrix-quality-100](../cases/conformance-datamatrix-quality-100.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 23.96% IoU | rendered · 23.96% IoU | rendered · 23.96% IoU | rendered · 23.96% IoU | rendered · 23.96% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [datamatrix-quality-140](../cases/conformance-datamatrix-quality-140.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 15.91% IoU | rendered · 15.91% IoU | rendered · 15.91% IoU | rendered · 15.91% IoU | rendered · 15.91% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [datamatrix-quality-200](../cases/conformance-datamatrix-quality-200.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [datamatrix-size-10-10](../cases/conformance-datamatrix-size-10-10.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [datamatrix-size-16-16](../cases/conformance-datamatrix-size-16-16.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 23.90% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 23.90% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [datamatrix-size-18-8](../cases/conformance-datamatrix-size-18-8.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 30.39% IoU | rendered · 30.39% IoU | rendered · 30.39% IoU | rendered · 30.39% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [datamatrix-size-32-8](../cases/conformance-datamatrix-size-32-8.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 38.27% IoU | rendered · 17.26% IoU | rendered · 17.26% IoU | rendered · 17.26% IoU | rendered · 17.26% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [pdf417-security-0-N](../cases/conformance-pdf417-security-0-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 73.19% IoU | rendered · 12.03% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 92.25% IoU | rendered · 84.36% IoU |
+| [pdf417-security-0-Y](../cases/conformance-pdf417-security-0-Y.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 73.90% IoU | rendered · 12.93% IoU | rendered · 77.53% IoU | rendered · 77.53% IoU | rendered · 100.00% IoU · exact | rendered · 90.14% IoU | rendered · 80.32% IoU |
+| [pdf417-security-2-N](../cases/conformance-pdf417-security-2-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 10.11% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 86.56% IoU | rendered · 79.45% IoU |
+| [pdf417-security-2-Y](../cases/conformance-pdf417-security-2-Y.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 10.81% IoU | rendered · 77.95% IoU | rendered · 77.95% IoU | rendered · 100.00% IoU · exact | rendered · 83.08% IoU | rendered · 74.39% IoU |
+| [pdf417-security-8-N](../cases/conformance-pdf417-security-8-N.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 14.42% IoU | error · 0.00% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 20.62% IoU | rendered · 62.76% IoU | rendered · 61.88% IoU |
+| [pdf417-security-8-Y](../cases/conformance-pdf417-security-8-Y.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 10.79% IoU | error · 0.00% IoU | rendered · 79.47% IoU | rendered · 79.47% IoU | rendered · 16.01% IoU | rendered · 55.30% IoU | rendered · 54.28% IoU |
+| [pdf417-structured-origins-1](../cases/conformance-pdf417-structured-origins-1.md) | barcode-arguments | blank · unscored · exact | error · unscored | error · unscored | blank · unscored · exact | blank · unscored · exact | crashed · unscored | blank · unscored · exact | blank · unscored · exact |
+| [pdf417-structured-origins-3](../cases/conformance-pdf417-structured-origins-3.md) | barcode-arguments | blank · unscored · exact | error · unscored | error · unscored | blank · unscored · exact | blank · unscored · exact | crashed · unscored | blank · unscored · exact | blank · unscored · exact |
+| [structured-exclude-B7](../cases/conformance-structured-exclude-B7.md) | barcode-arguments | blank · unscored · exact | error · unscored | error · unscored | blank · unscored · exact | blank · unscored · exact | crashed · unscored | blank · unscored · exact | blank · unscored · exact |
+| [structured-exclude-BF](../cases/conformance-structured-exclude-BF.md) | barcode-arguments | blank · unscored · exact | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored · exact | blank · unscored · exact |
+| [barcode-validation](../cases/conformance-barcode-validation.md) | barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [barcode-default-scope](../cases/conformance-barcode-default-scope.md) | state | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [equivalent-text-plain](../cases/conformance-equivalent-text-plain.md) | metamorphic | rendered · 100.00% IoU · exact | rendered · 56.50% IoU | rendered · 37.39% IoU | rendered · 62.66% IoU | rendered · 62.66% IoU | rendered · 22.75% IoU | rendered · 45.28% IoU | rendered · 70.24% IoU |
+| [equivalent-text-hex](../cases/conformance-equivalent-text-hex.md) | metamorphic | rendered · 100.00% IoU · exact | rendered · 56.50% IoU | rendered · 37.39% IoU | rendered · 62.66% IoU | rendered · 62.66% IoU | rendered · 22.75% IoU | rendered · 45.28% IoU | rendered · 70.24% IoU |
+| [equivalent-home-direct](../cases/conformance-equivalent-home-direct.md) | metamorphic | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [equivalent-home-offset](../cases/conformance-equivalent-home-offset.md) | metamorphic | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 1.33% IoU | rendered · 100.00% IoU · exact | rendered · 1.33% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [equivalent-comment](../cases/conformance-equivalent-comment.md) | metamorphic | rendered · 100.00% IoU · exact | rendered · 56.50% IoU | rendered · 37.39% IoU | rendered · 62.66% IoU | rendered · 62.66% IoU | rendered · 22.75% IoU | rendered · 45.28% IoU | rendered · 70.24% IoU |
+| [torture-typography](../cases/conformance-torture-typography.md) | torture | rendered · 97.95% IoU | rendered · 33.81% IoU | rendered · 44.54% IoU | rendered · 31.64% IoU | rendered · 31.64% IoU | rendered · 34.07% IoU | rendered · 44.50% IoU | rendered · 68.81% IoU |
+| [torture-geometry](../cases/conformance-torture-geometry.md) | torture | rendered · 99.98% IoU | rendered · 68.19% IoU | rendered · 70.11% IoU | rendered · 50.86% IoU | rendered · 50.86% IoU | rendered · 77.02% IoU | rendered · 80.70% IoU | rendered · 78.45% IoU |
+| [torture-shipping-label](../cases/conformance-torture-shipping-label.md) | torture | rendered · 92.79% IoU | rendered · 84.75% IoU | rendered · 76.68% IoU | rendered · 83.95% IoU | rendered · 83.95% IoU | rendered · 79.53% IoU | rendered · 87.38% IoU | rendered · 91.18% IoU |
+| [torture-overlap](../cases/conformance-torture-overlap.md) | torture | rendered · 100.00% IoU · exact | rendered · 81.16% IoU | rendered · 69.62% IoU | rendered · 89.99% IoU | rendered · 89.99% IoU | rendered · 98.23% IoU | rendered · 97.93% IoU | rendered · 98.78% IoU |
+| [compact-baseline-0](../cases/conformance-compact-baseline-0.md) | compact-fonts | rendered · 100.00% IoU · exact | rendered · 64.95% IoU | rendered · 41.11% IoU | rendered · 62.42% IoU | rendered · 62.42% IoU | rendered · 29.28% IoU | rendered · 41.79% IoU | rendered · 73.28% IoU |
+| [compact-baseline-A](../cases/conformance-compact-baseline-A.md) | compact-fonts | rendered · 100.00% IoU · exact | rendered · 20.43% IoU | rendered · 33.83% IoU | rendered · 19.59% IoU | rendered · 19.59% IoU | rendered · 41.24% IoU | rendered · 30.09% IoU | rendered · 53.42% IoU |
+| [compact-baseline-B](../cases/conformance-compact-baseline-B.md) | compact-fonts | rendered · 100.00% IoU · exact | rendered · 18.22% IoU | rendered · 32.86% IoU | rendered · 21.72% IoU | rendered · 21.72% IoU | rendered · 19.32% IoU | rendered · 42.55% IoU | rendered · 71.34% IoU |
+| [compact-baseline-C](../cases/conformance-compact-baseline-C.md) | compact-fonts | rendered · 100.00% IoU · exact | rendered · 21.16% IoU | rendered · 32.55% IoU | rendered · 24.94% IoU | rendered · 24.94% IoU | rendered · 40.36% IoU | rendered · 31.62% IoU | rendered · 52.53% IoU |
+| [compact-baseline-F](../cases/conformance-compact-baseline-F.md) | compact-fonts | rendered · 100.00% IoU · exact | rendered · 19.97% IoU | rendered · 23.64% IoU | rendered · 18.18% IoU | rendered · 18.18% IoU | rendered · 18.62% IoU | rendered · 31.52% IoU | rendered · 54.10% IoU |
+| [compact-wrap-L](../cases/conformance-compact-wrap-L.md) | compact-layout | rendered · 100.00% IoU · exact | rendered · 46.98% IoU | rendered · 39.42% IoU | rendered · 37.53% IoU | rendered · 37.53% IoU | rendered · 20.23% IoU | rendered · 28.45% IoU | rendered · 54.35% IoU |
+| [compact-wrap-C](../cases/conformance-compact-wrap-C.md) | compact-layout | rendered · 100.00% IoU · exact | rendered · 32.45% IoU | rendered · 34.16% IoU | rendered · 30.71% IoU | rendered · 30.71% IoU | rendered · 19.77% IoU | rendered · 33.54% IoU | rendered · 49.77% IoU |
+| [compact-wrap-R](../cases/conformance-compact-wrap-R.md) | compact-layout | rendered · 100.00% IoU · exact | rendered · 44.48% IoU | rendered · 39.28% IoU | rendered · 34.12% IoU | rendered · 34.12% IoU | rendered · 17.60% IoU | rendered · 37.52% IoU | rendered · 43.18% IoU |
+| [compact-wrap-J](../cases/conformance-compact-wrap-J.md) | compact-layout | rendered · 100.00% IoU · exact | rendered · 42.91% IoU | rendered · 33.29% IoU | rendered · 35.31% IoU | rendered · 35.31% IoU | rendered · 18.26% IoU | rendered · 47.57% IoU | rendered · 41.71% IoU |
+| [compact-circle-4](../cases/conformance-compact-circle-4.md) | compact-shapes | rendered · 100.00% IoU · exact | rendered · 60.78% IoU | rendered · 49.21% IoU | rendered · 62.22% IoU | rendered · 62.22% IoU | rendered · 61.90% IoU | rendered · 83.33% IoU | rendered · 61.90% IoU |
+| [compact-circle-28](../cases/conformance-compact-circle-28.md) | compact-shapes | rendered · 100.00% IoU · exact | rendered · 64.57% IoU | rendered · 54.40% IoU | rendered · 64.57% IoU | rendered · 64.57% IoU | rendered · 61.92% IoU | rendered · 81.36% IoU | rendered · 59.92% IoU |
+| [compact-circle-127](../cases/conformance-compact-circle-127.md) | compact-shapes | rendered · 100.00% IoU · exact | rendered · 54.12% IoU | rendered · 56.22% IoU | rendered · 63.38% IoU | rendered · 63.38% IoU | rendered · 55.04% IoU | rendered · 75.87% IoU | rendered · 55.17% IoU |
+| [compact-rounded-1](../cases/conformance-compact-rounded-1.md) | compact-shapes | rendered · 100.00% IoU · exact | rendered · 68.44% IoU | rendered · 99.64% IoU | rendered · 99.54% IoU | rendered · 99.54% IoU | rendered · 99.80% IoU | rendered · 99.75% IoU | rendered · 99.82% IoU |
+| [compact-rounded-4](../cases/conformance-compact-rounded-4.md) | compact-shapes | rendered · 100.00% IoU · exact | rendered · 67.60% IoU | rendered · 95.43% IoU | rendered · 94.64% IoU | rendered · 94.64% IoU | rendered · 99.32% IoU | rendered · 98.22% IoU | rendered · 99.17% IoU |
+| [compact-rounded-8](../cases/conformance-compact-rounded-8.md) | compact-shapes | rendered · 100.00% IoU · exact | rendered · 68.11% IoU | rendered · 96.68% IoU | rendered · 81.03% IoU | rendered · 81.03% IoU | rendered · 98.10% IoU | rendered · 98.37% IoU | rendered · 98.37% IoU |
+| [compact-state-qr-code128](../cases/conformance-compact-state-qr-code128.md) | compact-barcodes | rendered · 25.11% IoU | rendered · 25.13% IoU | rendered · 25.07% IoU | rendered · 25.11% IoU | rendered · 25.11% IoU | rendered · 24.93% IoU | rendered · 25.10% IoU | rendered · 95.21% IoU |
+| [compact-state-code128-dm](../cases/conformance-compact-state-code128-dm.md) | compact-barcodes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
+| [compact-code93-substitutes](../cases/conformance-compact-code93-substitutes.md) | compact-barcodes | error · 0.00% IoU | rendered · 7.09% IoU | rendered · 36.31% IoU | rendered · 7.69% IoU | rendered · 7.69% IoU | rendered · 36.42% IoU | rendered · 92.38% IoU | rendered · 93.26% IoU |
+| [compact-qr-field-hex](../cases/conformance-compact-qr-field-hex.md) | compact-barcodes | rendered · 100.00% IoU · exact | rendered · 76.91% IoU | rendered · 15.31% IoU | rendered · 10.72% IoU | rendered · 10.72% IoU | rendered · 14.14% IoU | rendered · 100.00% IoU · exact | rendered · 52.38% IoU |
+| [compact-pdf417-numeric](../cases/conformance-compact-pdf417-numeric.md) | compact-barcodes | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 14.85% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 71.01% IoU |
+| [compact-caption-N](../cases/conformance-compact-caption-N.md) | compact-barcodes | rendered · 100.00% IoU · exact | rendered · 90.88% IoU | rendered · 86.76% IoU | rendered · 12.08% IoU | rendered · 12.08% IoU | rendered · 88.29% IoU | rendered · 86.52% IoU | rendered · 89.38% IoU |
+| [compact-caption-Y](../cases/conformance-compact-caption-Y.md) | compact-barcodes | rendered · 100.00% IoU · exact | rendered · 88.98% IoU | rendered · 86.87% IoU | rendered · 12.08% IoU | rendered · 12.08% IoU | rendered · 86.58% IoU | rendered · 92.07% IoU | rendered · 93.16% IoU |
+| [compact-overlap-FR](../cases/conformance-compact-overlap-FR.md) | compact-compositing | rendered · 100.00% IoU · exact | rendered · 96.45% IoU | rendered · 97.31% IoU | rendered · 97.79% IoU | rendered · 97.79% IoU | rendered · 97.15% IoU | rendered · 97.88% IoU | rendered · 98.05% IoU |
+| [compact-overlap-LR](../cases/conformance-compact-overlap-LR.md) | compact-compositing | rendered · 100.00% IoU · exact | rendered · 96.45% IoU | rendered · 97.31% IoU | rendered · 97.44% IoU | rendered · 97.44% IoU | rendered · 97.15% IoU | rendered · 97.88% IoU | rendered · 98.05% IoU |
+| [invalid-bad-orientation](../cases/conformance-invalid-bad-orientation.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [invalid-negative-width](../cases/conformance-invalid-negative-width.md) | negative | error · unscored | rendered · unscored | error · unscored | blank · unscored | blank · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [invalid-bad-alignment](../cases/conformance-invalid-bad-alignment.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [invalid-bad-hex](../cases/conformance-invalid-bad-hex.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [invalid-truncated-hex](../cases/conformance-invalid-truncated-hex.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [invalid-bad-raster-count](../cases/conformance-invalid-bad-raster-count.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | error · unscored |
+| [invalid-zero-raster-stride](../cases/conformance-invalid-zero-raster-stride.md) | negative | error · unscored | blank · unscored | error · unscored | rendered · unscored | rendered · unscored | blank · unscored | rendered · unscored | rendered · unscored |
+| [invalid-bad-base64](../cases/conformance-invalid-bad-base64.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | blank · unscored | error · unscored |
+| [invalid-bad-crc](../cases/conformance-invalid-bad-crc.md) | negative | error · unscored | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | blank · unscored | rendered · unscored |
+| [invalid-qr-model-invalid](../cases/conformance-invalid-qr-model-invalid.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [invalid-qr-mask-invalid](../cases/conformance-invalid-qr-mask-invalid.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
+| [invalid-ean-nonnumeric](../cases/conformance-invalid-ean-nonnumeric.md) | negative | rendered · unscored | error · unscored | error · unscored | rendered · unscored | rendered · unscored | crashed · unscored | blank · unscored | rendered · unscored |
+| [invalid-code39-empty](../cases/conformance-invalid-code39-empty.md) | negative | rendered · unscored | rendered · unscored | error · unscored | blank · unscored | blank · unscored | rendered · unscored | blank · unscored | rendered · unscored |
+| [invalid-unknown-encoding](../cases/conformance-invalid-unknown-encoding.md) | negative | error · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored | rendered · unscored |
