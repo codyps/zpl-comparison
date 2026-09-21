@@ -2,7 +2,7 @@
   "schema": 1,
   "service": "https://labelary.com/service.html",
   "started_utc": "2026-09-19T03:17:15+00:00",
-  "completed_utc": "2026-09-20T22:29:57+00:00",
+  "completed_utc": "2026-09-21T17:18:35+00:00",
   "renderer_version": null,
   "identity": "UTC capture timestamps; no renderer version exposed",
   "dpmm": 8,
@@ -20957,6 +20957,566 @@
         832,
         1218
       ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-control",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-control.zpl",
+      "sha256": "e24f93cf727d4c4aff620f67f0f42a243639534b56336e9b2c47b881af1ebc99",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:21+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:22+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:22 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-control.png",
+      "png_sha256": "531428fe7d9865170729d38224811a20f04e4255c89fee4927ac61e1502822a7",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-home",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-home.zpl",
+      "sha256": "b8eabadd6c44f13eb20d505ccc3e8f00a376124e58d948caee5d5917ec6ae36c",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:22+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:23+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:23 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-home.png",
+      "png_sha256": "190db8caafd4c3c74326da7e5bc7b3bc48707bd3cb73eacccfd341cf1af7fa44",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-home-direct",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-home-direct.zpl",
+      "sha256": "2d08f0ccbbdd37051f07d11335d20c6ca5c5c979bed39a563186f064695a9d3a",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:23+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:23+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:23 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-home-direct.png",
+      "png_sha256": "190db8caafd4c3c74326da7e5bc7b3bc48707bd3cb73eacccfd341cf1af7fa44",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-LS--80",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-LS--80.zpl",
+      "sha256": "d762b1b856e7542a7774b00070b0a3fee57d716e25271ad56756f90b0f51dac8",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:23+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:24+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:24 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-LS--80.png",
+      "png_sha256": "798e226b9fcff4581267d4401d309f6ac53e0e2ce1dbb6b44b8b4a8f856a2f8a",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-LS-80",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-LS-80.zpl",
+      "sha256": "3089d08b446c5b97920bc377b172492b87abb01ddb61c9e4ccd3d425204c719a",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:24+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:25+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:25 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-LS-80.png",
+      "png_sha256": "22da67f023b8d6e25ee1368fefbb9adeeeb02a12343fbcac2cc26eaf7d0c4cf4",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-LT--50",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-LT--50.zpl",
+      "sha256": "afd24fa8056e8477259acb3ab85cca93589a42180fb6a9de35f4a2e0e2d3e612",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:25+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:25+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:25 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-LT--50.png",
+      "png_sha256": "9ffa42e44d6764cc9c7584551c4ac61238dce1ff67d5dce51762843430816a16",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-LT-50",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-LT-50.zpl",
+      "sha256": "878eac3ccc576051998f53b66063e8a75ca800f5d6b65ebf87d2fba4a299a4ac",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:25+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:26+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:26 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-LT-50.png",
+      "png_sha256": "b04bef91fa695b5df3e4b4577e48058cc1326a80f2fe63995dcab7becc8c6479",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-offset-combined",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-offset-combined.zpl",
+      "sha256": "a3278b6cbad7ee379cb7a248040d7ab1ec01ea0ac28e2baa9c279724bee86948",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:26+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:27+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:27 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-offset-combined.png",
+      "png_sha256": "fcb396109f3ffa38848e1b4146f5cf0c1d8cee4283a9395c8b68ab694e0e4162",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-transform-Y-N",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-transform-Y-N.zpl",
+      "sha256": "6148ad65da6a7fc369460d8fc24c1c6bd32d8c34ae4eed9c1d504017ef7b8eac",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:27+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:27+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:27 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-transform-Y-N.png",
+      "png_sha256": "c9bf37fb3185269cd91dd7df493c8f1c283bafdab6f174035e2fe2ad2923c238",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-transform-N-I",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-transform-N-I.zpl",
+      "sha256": "e48404eef2ccc72f73ff7edc6a06529342b9b83718a4467370a538d67978110e",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:27+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:28+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:28 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-transform-N-I.png",
+      "png_sha256": "5d8c0721472c8b949f0d6d867423fe8dddc4dbcf8dcdb3a9c815061d57dea6b6",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-transform-Y-I",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-transform-Y-I.zpl",
+      "sha256": "9a53f2137c811f6deb2aa443bb989bdc75f5b06967308a93ab57cf5e719a3eeb",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:28+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:29+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:29 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-transform-Y-I.png",
+      "png_sha256": "749feab546a9a6a0d5530db9e48bb97d7ebd60ad5cc0a125713ed79027c7a33d",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-clip-last-pixel",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-clip-last-pixel.zpl",
+      "sha256": "e4b916e661f47e619bca4916c68333067114faac6d63ee1449df33cb7a75ecd7",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:29+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:30+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:30 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-clip-last-pixel.png",
+      "png_sha256": "c7a8e3e86d5e02716e3db9bd00b95a4733aee5a8711cd523f26ffdd22f7a26e2",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-clip-partial",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-clip-partial.zpl",
+      "sha256": "7d76ada68f48a1afffb3f9fce04c18478ca2b498b82398c4cd844910525aba7c",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:30+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:30+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:30 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-clip-partial.png",
+      "png_sha256": "473ad8fd86efb8544a133fb48ad98585874a0541b4401f779ea56a2c56b83ab2",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-clip-outside",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-clip-outside.zpl",
+      "sha256": "a09680b2c886b570e3b1a8b711e8b1f96af0c6aab543822ba953587353e78926",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:30+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:31+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:31 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-clip-outside.png",
+      "png_sha256": "3f6bc381be19031e7f2c9fdc184b53ae3218f1077e2898c4b81f6d6fb09035e6",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-label-reverse",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-label-reverse.zpl",
+      "sha256": "1016e44928725aceef9bab2766e19fe120f4dfa1cb897e15927902ec06d915f1",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:31+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:32+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:32 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-label-reverse.png",
+      "png_sha256": "0579017715b937025048cbce1d6e34eb52a758d7c560ce5feff3a8644ae98fbc",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-field-reverse",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-field-reverse.zpl",
+      "sha256": "b4442b02a42135ae4d0abb2f0e7c561170ee34f963fabbd573c5e3a6bd12be0e",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:32+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:32+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:32 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-field-reverse.png",
+      "png_sha256": "d76ce31f2bdf51778f047fa06fd0c6417bd1d90fef7ddff04c5d6bf3c58cb934",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-field-orientation-N",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-field-orientation-N.zpl",
+      "sha256": "4aedb388db57f248b54310c47b7583f092c12d8df6750fe19c398e45932895cf",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:32+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:33+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:33 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-field-orientation-N.png",
+      "png_sha256": "21743d06defe3daf27df6b19af234be4b0225770f96466f66f12197ee68d1b33",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-field-orientation-R",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-field-orientation-R.zpl",
+      "sha256": "dc6b8ed1d92a50197b7da5cc2b2cd466bc9637d783e585ac8a1ccc68746da9fe",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:33+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:34+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:34 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-field-orientation-R.png",
+      "png_sha256": "a305a617723d8ed8e0462c65f51fbf0fe97622d896ee312e0864e8f2e04a20f4",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-field-orientation-I",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-field-orientation-I.zpl",
+      "sha256": "a841aa1687d23e31132b8ee74c0698863f804a53411962cccd5674d78c1dcb0c",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:34+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:35+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:35 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-field-orientation-I.png",
+      "png_sha256": "3b66c600c7a5d077965bbac3352d70ab0edeac14e682bf7b195e2860b1b0c898",
+      "dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "suite": "layout-accuracy",
+      "name": "layout-field-orientation-B",
+      "source": "test-data/layout-accuracy/cases/font-free-layout/layout-field-orientation-B.zpl",
+      "sha256": "7eca38b85080b5a783f8c2efed03056b40d48875e4a03c38630f4e06aae4f1a8",
+      "width": 832,
+      "height": 300,
+      "validity": "valid",
+      "requested_utc": "2026-09-21T17:18:35+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x1.477833/0/",
+      "received_utc": "2026-09-21T17:18:35+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Mon, 21 Sep 2026 17:18:35 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/layout-accuracy--layout-field-orientation-B.png",
+      "png_sha256": "620bcdd483a5b06ec078432076423c781b839fdbd75d31e7fe97a3986edf7d8c",
+      "dimensions": [
+        832,
+        300
+      ]
     }
   ],
   "extensions": [
@@ -20969,6 +21529,11 @@
       "started_utc": "2026-09-20T22:29:07+00:00",
       "previous_completed_utc": "2026-09-20T04:19:04+00:00",
       "existing_cases": 670
+    },
+    {
+      "started_utc": "2026-09-21T17:18:21+00:00",
+      "previous_completed_utc": "2026-09-20T22:29:57+00:00",
+      "existing_cases": 739
     }
   ]
 }

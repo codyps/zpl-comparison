@@ -356,5 +356,4 @@ if __name__ == "__main__":
         RENDERS = REPO / "docs/benchmarks/layout-accuracy"
         REFERENCES = REPO / "benchmarks/accuracy/layout-reference"
         DEST = REPO / "docs/benchmarks/accuracy/comparisons/layout"
-        LIBRARIES = [lib for lib in LIBRARIES if lib != "labelary"]
     generate(args.check)

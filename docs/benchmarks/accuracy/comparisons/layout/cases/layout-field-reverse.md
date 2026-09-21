@@ -99,3 +99,17 @@ rendered · 99.61% IoU · [All cases for this library](../libraries/zplr.md)
 | [![Printer preview](../previews/layout-field-reverse-printer.png)](../../../../../../benchmarks/accuracy/layout-reference/layout-field-reverse.png) | [![zplr render](../previews/layout-field-reverse-zplr.png)](../../../../layout-accuracy/images/layout-field-reverse-zplr.png) | [![zplr difference](../previews/layout-field-reverse-zplr-diff.png)](../images/layout-field-reverse-zplr-diff.png) |
 
 Library dimensions: [832, 300]; missing ink: 0; extra ink: 71 pixels.
+
+## labelary
+
+**Labelary (SaaS)**
+
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata, and original responses](../../../../labelary/README.md)
+
+| Printer preview | Library render | Difference |
+|---|---|---|
+| [![Printer preview](../previews/layout-field-reverse-printer.png)](../../../../../../benchmarks/accuracy/layout-reference/layout-field-reverse.png) | [![labelary render](../previews/layout-field-reverse-labelary.png)](../../../../layout-accuracy/images/layout-field-reverse-labelary.png) | [![labelary difference](../previews/layout-field-reverse-labelary-diff.png)](../images/layout-field-reverse-labelary-diff.png) |
+
+Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.

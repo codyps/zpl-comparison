@@ -11,7 +11,7 @@ Counts include failed, blank, excluded, and unavailable-reference cases. Scored 
 | [Argument and archived barcode accuracy](#argument-and-archived-barcode-details) | 133 | 6 | 1064 | 1064 | 1052 | 2026-09-21T17:10:09Z |
 | [Feature conformance](comparisons/features/README.md) | 598 | 38 | 4784 | 4512 | 4500 | 2026-09-21T17:12:14Z |
 | [External examples](comparisons/external/README.md) | 8 | 8 | 64 | 48 | 47 | 2026-09-21T17:09:11Z |
-| [Font-free layout](comparisons/layout/README.md) | 20 | 1 | 140 | 140 | 140 | 2026-09-21T17:09:15Z |
+| [Font-free layout](comparisons/layout/README.md) | 20 | 1 | 160 | 160 | 160 | 2026-09-21T17:18:35+00:00 |
 
 ## Browse by library
 
@@ -22,7 +22,7 @@ Counts include failed, blank, excluded, and unavailable-reference cases. Scored 
 | ffi | [Compare images](comparisons/libraries/ffi.md) | [Compare images](comparisons/features/libraries/ffi.md) | [Compare images](comparisons/external/libraries/ffi.md) | [Compare images](comparisons/layout/libraries/ffi.md) |
 | forge | [Compare images](comparisons/libraries/forge.md) | [Compare images](comparisons/features/libraries/forge.md) | [Compare images](comparisons/external/libraries/forge.md) | [Compare images](comparisons/layout/libraries/forge.md) |
 | go | [Compare images](comparisons/libraries/go.md) | [Compare images](comparisons/features/libraries/go.md) | [Compare images](comparisons/external/libraries/go.md) | [Compare images](comparisons/layout/libraries/go.md) |
-| labelary | [Compare images](comparisons/libraries/labelary.md) | [Compare images](comparisons/features/libraries/labelary.md) | [Compare images](comparisons/external/libraries/labelary.md) | N/A |
+| labelary | [Compare images](comparisons/libraries/labelary.md) | [Compare images](comparisons/features/libraries/labelary.md) | [Compare images](comparisons/external/libraries/labelary.md) | [Compare images](comparisons/layout/libraries/labelary.md) |
 | labelize | [Compare images](comparisons/libraries/labelize.md) | [Compare images](comparisons/features/libraries/labelize.md) | [Compare images](comparisons/external/libraries/labelize.md) | [Compare images](comparisons/layout/libraries/labelize.md) |
 | zplr | [Compare images](comparisons/libraries/zplr.md) | [Compare images](comparisons/features/libraries/zplr.md) | [Compare images](comparisons/external/libraries/zplr.md) | [Compare images](comparisons/layout/libraries/zplr.md) |
 
@@ -84,7 +84,7 @@ Each cell shows mean IoU and its scored denominator in parentheses. Corpora rema
 | External examples | shipping | 1 | 25.92% (1) | 31.72% (1) | 25.77% (1) | 27.76% (1) | 25.77% (1) | 32.48% (1) | 32.25% (1) | 21.01% (1) |
 | External examples | stateful | 1 | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) | unscored (0) |
 | External examples | warehouse | 1 | 35.73% (1) | 45.07% (1) | 30.07% (1) | 37.76% (1) | 30.07% (1) | 45.36% (1) | 43.57% (1) | 38.10% (1) |
-| Font-free layout | font-free-layout | 20 | 79.44% (20) | 100.00% (20) | 69.32% (20) | 69.32% (20) | 75.20% (20) | N/A | 77.13% (20) | 70.98% (20) |
+| Font-free layout | font-free-layout | 20 | 79.44% (20) | 100.00% (20) | 69.32% (20) | 69.32% (20) | 75.20% (20) | 72.11% (20) | 77.13% (20) | 70.98% (20) |
 
 <!-- argument-barcode-detail-start -->
 
@@ -1148,28 +1148,28 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 
 ### Font-free layout: font-free-layout
 
-| Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelize | zplr |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [layout-control](comparisons/cases/layout-accuracy-layout-control.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [layout-home](comparisons/cases/layout-accuracy-layout-home.md) | valid | 100.00% | 100.00% | 3.64% | 3.64% | 100.00% | 100.00% | 100.00% |
-| [layout-home-direct](comparisons/cases/layout-accuracy-layout-home-direct.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [layout-LS--80](comparisons/cases/layout-accuracy-layout-LS--80.md) | valid | 1.55% | 100.00% | 1.55% | 1.55% | 1.55% | 100.00% | 100.00% |
-| [layout-LS-80](comparisons/cases/layout-accuracy-layout-LS-80.md) | valid | 4.99% | 100.00% | 4.99% | 4.99% | 4.99% | 100.00% | 80.36% |
-| [layout-LT--50](comparisons/cases/layout-accuracy-layout-LT--50.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 5.39% | 4.11% |
-| [layout-LT-50](comparisons/cases/layout-accuracy-layout-LT-50.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 3.87% | 3.87% |
-| [layout-offset-combined](comparisons/cases/layout-accuracy-layout-offset-combined.md) | valid | 28.94% | 100.00% | 7.80% | 7.80% | 28.94% | 31.26% | 31.26% |
-| [layout-transform-Y-N](comparisons/cases/layout-accuracy-layout-transform-Y-N.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 0.00% |
-| [layout-transform-N-I](comparisons/cases/layout-accuracy-layout-transform-N-I.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 1.08% | 1.08% |
-| [layout-transform-Y-I](comparisons/cases/layout-accuracy-layout-transform-Y-I.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 1.08% | 0.68% |
-| [layout-clip-last-pixel](comparisons/cases/layout-accuracy-layout-clip-last-pixel.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [layout-clip-partial](comparisons/cases/layout-accuracy-layout-clip-partial.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [layout-clip-outside](comparisons/cases/layout-accuracy-layout-clip-outside.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [layout-label-reverse](comparisons/cases/layout-accuracy-layout-label-reverse.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 98.54% |
-| [layout-field-reverse](comparisons/cases/layout-accuracy-layout-field-reverse.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 99.61% |
-| [layout-field-orientation-N](comparisons/cases/layout-accuracy-layout-field-orientation-N.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [layout-field-orientation-R](comparisons/cases/layout-accuracy-layout-field-orientation-R.md) | valid | 100.00% | 100.00% | 9.20% | 9.20% | 9.20% | 100.00% | 100.00% |
-| [layout-field-orientation-I](comparisons/cases/layout-accuracy-layout-field-orientation-I.md) | valid | 26.67% | 100.00% | 46.15% | 46.15% | 46.15% | 100.00% | 100.00% |
-| [layout-field-orientation-B](comparisons/cases/layout-accuracy-layout-field-orientation-B.md) | valid | 26.67% | 100.00% | 13.10% | 13.10% | 13.10% | 100.00% | 100.00% |
+| Case | Classification | binarykits | codyps-zpl | ffi | forge | go | labelary | labelize | zplr |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [layout-control](comparisons/cases/layout-accuracy-layout-control.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| [layout-home](comparisons/cases/layout-accuracy-layout-home.md) | valid | 100.00% | 100.00% | 3.64% | 3.64% | 100.00% | 100.00% | 100.00% | 100.00% |
+| [layout-home-direct](comparisons/cases/layout-accuracy-layout-home-direct.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| [layout-LS--80](comparisons/cases/layout-accuracy-layout-LS--80.md) | valid | 1.55% | 100.00% | 1.55% | 1.55% | 1.55% | 100.00% | 100.00% | 100.00% |
+| [layout-LS-80](comparisons/cases/layout-accuracy-layout-LS-80.md) | valid | 4.99% | 100.00% | 4.99% | 4.99% | 4.99% | 100.00% | 100.00% | 80.36% |
+| [layout-LT--50](comparisons/cases/layout-accuracy-layout-LT--50.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 5.39% | 5.39% | 4.11% |
+| [layout-LT-50](comparisons/cases/layout-accuracy-layout-LT-50.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 3.87% | 3.87% | 3.87% |
+| [layout-offset-combined](comparisons/cases/layout-accuracy-layout-offset-combined.md) | valid | 28.94% | 100.00% | 7.80% | 7.80% | 28.94% | 31.26% | 31.26% | 31.26% |
+| [layout-transform-Y-N](comparisons/cases/layout-accuracy-layout-transform-Y-N.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 0.00% | 100.00% | 0.00% |
+| [layout-transform-N-I](comparisons/cases/layout-accuracy-layout-transform-N-I.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 1.08% | 1.08% | 1.08% |
+| [layout-transform-Y-I](comparisons/cases/layout-accuracy-layout-transform-Y-I.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 0.68% | 1.08% | 0.68% |
+| [layout-clip-last-pixel](comparisons/cases/layout-accuracy-layout-clip-last-pixel.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| [layout-clip-partial](comparisons/cases/layout-accuracy-layout-clip-partial.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| [layout-clip-outside](comparisons/cases/layout-accuracy-layout-clip-outside.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| [layout-label-reverse](comparisons/cases/layout-accuracy-layout-label-reverse.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 98.54% |
+| [layout-field-reverse](comparisons/cases/layout-accuracy-layout-field-reverse.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 99.61% |
+| [layout-field-orientation-N](comparisons/cases/layout-accuracy-layout-field-orientation-N.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| [layout-field-orientation-R](comparisons/cases/layout-accuracy-layout-field-orientation-R.md) | valid | 100.00% | 100.00% | 9.20% | 9.20% | 9.20% | 100.00% | 100.00% | 100.00% |
+| [layout-field-orientation-I](comparisons/cases/layout-accuracy-layout-field-orientation-I.md) | valid | 26.67% | 100.00% | 46.15% | 46.15% | 46.15% | 100.00% | 100.00% | 100.00% |
+| [layout-field-orientation-B](comparisons/cases/layout-accuracy-layout-field-orientation-B.md) | valid | 26.67% | 100.00% | 13.10% | 13.10% | 13.10% | 100.00% | 100.00% | 100.00% |
 
 ## Metamorphic image-equality checks
 
@@ -1224,5 +1224,6 @@ These compare thresholded renderer images between related inputs. They report eq
 | Font-free layout | font-free-home | ffi | different | [layout-home](comparisons/cases/layout-accuracy-layout-home.md) · [layout-home-direct](comparisons/cases/layout-accuracy-layout-home-direct.md) |
 | Font-free layout | font-free-home | binarykits | equal | [layout-home](comparisons/cases/layout-accuracy-layout-home.md) · [layout-home-direct](comparisons/cases/layout-accuracy-layout-home-direct.md) |
 | Font-free layout | font-free-home | zplr | equal | [layout-home](comparisons/cases/layout-accuracy-layout-home.md) · [layout-home-direct](comparisons/cases/layout-accuracy-layout-home-direct.md) |
+| Font-free layout | font-free-home | labelary | equal | [layout-home](comparisons/cases/layout-accuracy-layout-home.md) · [layout-home-direct](comparisons/cases/layout-accuracy-layout-home-direct.md) |
 
 Repeated printer captures are integrity controls, not additional accuracy samples. They must match before scoring. Invalid-input acceptance/rejection reports and parser/command-support inventories do not calculate image IoU.

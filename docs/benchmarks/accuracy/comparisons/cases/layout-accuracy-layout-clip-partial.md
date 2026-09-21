@@ -99,3 +99,17 @@ rendered · 100.00% IoU · exact · [All cases for this library](../layout/libra
 | [![Printer preview](../layout/previews/layout-clip-partial-printer.png)](../../../../../benchmarks/accuracy/layout-reference/layout-clip-partial.png) | [![zplr render](../layout/previews/layout-clip-partial-zplr.png)](../../../layout-accuracy/images/layout-clip-partial-zplr.png) | [![zplr difference](../layout/previews/layout-clip-partial-zplr-diff.png)](../layout/images/layout-clip-partial-zplr-diff.png) |
 
 Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.
+
+## labelary
+
+**Labelary (SaaS)**
+
+rendered · 100.00% IoU · exact · [All cases for this library](../layout/libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata, and original responses](../../../labelary/README.md)
+
+| Printer preview | Library render | Difference |
+|---|---|---|
+| [![Printer preview](../layout/previews/layout-clip-partial-printer.png)](../../../../../benchmarks/accuracy/layout-reference/layout-clip-partial.png) | [![labelary render](../layout/previews/layout-clip-partial-labelary.png)](../../../layout-accuracy/images/layout-clip-partial-labelary.png) | [![labelary difference](../layout/previews/layout-clip-partial-labelary-diff.png)](../layout/images/layout-clip-partial-labelary-diff.png) |
+
+Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.

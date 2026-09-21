@@ -99,3 +99,17 @@ rendered · 31.26% IoU · [All cases for this library](../layout/libraries/zplr.
 | [![Printer preview](../layout/previews/layout-offset-combined-printer.png)](../../../../../benchmarks/accuracy/layout-reference/layout-offset-combined.png) | [![zplr render](../layout/previews/layout-offset-combined-zplr.png)](../../../layout-accuracy/images/layout-offset-combined-zplr.png) | [![zplr difference](../layout/previews/layout-offset-combined-zplr-diff.png)](../layout/images/layout-offset-combined-zplr-diff.png) |
 
 Library dimensions: [832, 300]; missing ink: 1470; extra ink: 1470 pixels.
+
+## labelary
+
+**Labelary (SaaS)**
+
+rendered · 31.26% IoU · [All cases for this library](../layout/libraries/labelary.md)
+
+[Labelary capture timestamps, HTTP metadata, and original responses](../../../labelary/README.md)
+
+| Printer preview | Library render | Difference |
+|---|---|---|
+| [![Printer preview](../layout/previews/layout-offset-combined-printer.png)](../../../../../benchmarks/accuracy/layout-reference/layout-offset-combined.png) | [![labelary render](../layout/previews/layout-offset-combined-labelary.png)](../../../layout-accuracy/images/layout-offset-combined-labelary.png) | [![labelary difference](../layout/previews/layout-offset-combined-labelary-diff.png)](../layout/images/layout-offset-combined-labelary-diff.png) |
+
+Library dimensions: [832, 300]; missing ink: 1470; extra ink: 1470 pixels.

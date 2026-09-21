@@ -1,6 +1,6 @@
 # Labelary renderer captures
 
-[Service documentation](https://labelary.com/service.html). Captured **2026-09-19T03:17:15+00:00** through **2026-09-20T22:29:57+00:00**. Renderer version: not exposed; identified by UTC capture timestamps.
+[Service documentation](https://labelary.com/service.html). Captured **2026-09-19T03:17:15+00:00** through **2026-09-21T17:18:35+00:00**. Renderer version: not exposed; identified by UTC capture timestamps.
 
 Labelary is an additional renderer. The ZD621 printer captures remain the accuracy baseline. [Printer accuracy scores](../accuracy/README.md) · [Comparison gallery](../accuracy/comparisons/libraries/labelary.md).
 
@@ -749,3 +749,23 @@ Requests use 8 dpmm and label index 0. Dimensions are converted using 203 dots/i
 | conformance | printer-field-block-rounding-A-1-gaps | [PNG](images/conformance--printer-field-block-rounding-A-1-gaps.png) |
 | conformance | printer-field-block-rounding-A-2-gaps | [PNG](images/conformance--printer-field-block-rounding-A-2-gaps.png) |
 | conformance | printer-field-block-rounding-A-3-gaps | [PNG](images/conformance--printer-field-block-rounding-A-3-gaps.png) |
+| layout-accuracy | layout-control | [PNG](images/layout-accuracy--layout-control.png) |
+| layout-accuracy | layout-home | [PNG](images/layout-accuracy--layout-home.png) |
+| layout-accuracy | layout-home-direct | [PNG](images/layout-accuracy--layout-home-direct.png) |
+| layout-accuracy | layout-LS--80 | [PNG](images/layout-accuracy--layout-LS--80.png) |
+| layout-accuracy | layout-LS-80 | [PNG](images/layout-accuracy--layout-LS-80.png) |
+| layout-accuracy | layout-LT--50 | [PNG](images/layout-accuracy--layout-LT--50.png) |
+| layout-accuracy | layout-LT-50 | [PNG](images/layout-accuracy--layout-LT-50.png) |
+| layout-accuracy | layout-offset-combined | [PNG](images/layout-accuracy--layout-offset-combined.png) |
+| layout-accuracy | layout-transform-Y-N | [PNG](images/layout-accuracy--layout-transform-Y-N.png) |
+| layout-accuracy | layout-transform-N-I | [PNG](images/layout-accuracy--layout-transform-N-I.png) |
+| layout-accuracy | layout-transform-Y-I | [PNG](images/layout-accuracy--layout-transform-Y-I.png) |
+| layout-accuracy | layout-clip-last-pixel | [PNG](images/layout-accuracy--layout-clip-last-pixel.png) |
+| layout-accuracy | layout-clip-partial | [PNG](images/layout-accuracy--layout-clip-partial.png) |
+| layout-accuracy | layout-clip-outside | [PNG](images/layout-accuracy--layout-clip-outside.png) |
+| layout-accuracy | layout-label-reverse | [PNG](images/layout-accuracy--layout-label-reverse.png) |
+| layout-accuracy | layout-field-reverse | [PNG](images/layout-accuracy--layout-field-reverse.png) |
+| layout-accuracy | layout-field-orientation-N | [PNG](images/layout-accuracy--layout-field-orientation-N.png) |
+| layout-accuracy | layout-field-orientation-R | [PNG](images/layout-accuracy--layout-field-orientation-R.png) |
+| layout-accuracy | layout-field-orientation-I | [PNG](images/layout-accuracy--layout-field-orientation-I.png) |
+| layout-accuracy | layout-field-orientation-B | [PNG](images/layout-accuracy--layout-field-orientation-B.png) |
