@@ -113,6 +113,11 @@ class FeatureAccuracyTests(unittest.TestCase):
         features.generate()
         features.generate(check=True)
         results = json.loads((features.DEST / "results.json").read_text())["results"]
+        index = (features.DEST / "README.md").read_text()
+        for lib in features.LIBRARIES:
+            self.assertIn(f"[{features.NAMES[lib]} IoU](libraries/{lib}.md)", index)
+        self.assertIn("| 0.00% · error | 100.00%", index)
+        self.assertIn("unscored", index)
         self.assertEqual(results[0]["score"], 0)
         self.assertEqual(results[1]["score"], 1)
         self.assertTrue(all(r["score"] is None for r in results if r["case"] != "ink"))

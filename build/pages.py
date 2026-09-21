@@ -174,8 +174,12 @@ def write(spec, destination):
         text.append(
             "| Case | Group | Result | Difference |\n|---|---|---|---|"
             if mode == "library"
-            else "| Case | Group | Result |\n|---|---|---|"
+            else "| Case | Group | " + " | ".join(
+                link(page, base + "/libraries/" + lib + ".md", NAMES.get(lib, lib) + " IoU")
+                for lib in libraries
+            ) + " |\n|---|---|" + "---|" * len(libraries)
         )
+        comparisons = {(row["case"], row["library"]): row for row in rows}
         seen = set()
         for row in rows:
             cid = row["case"]
@@ -188,7 +192,9 @@ def write(spec, destination):
                 + " | "
                 + lookup[cid]["group"]
                 + " | "
-                + (result(row) if mode == "library" else "See all renderers")
+                + (result(row) if mode == "library" else " | ".join(
+                    result(comparisons[cid, lib]) for lib in libraries
+                ))
                 + " |"
             )
             if mode == "library":

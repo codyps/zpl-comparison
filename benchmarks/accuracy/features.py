@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from conformance import load_cases, reference_images
 from accuracy.run import LIBRARIES, compare, gray, sha
 from accuracy.presentation import LEGEND, viewport, preview
-from accuracy.overview import case_page, rebase_links
+from accuracy.overview import case_page, rebase_links, score as format_score
 from report import NAMES, table
 
 REPO = Path(__file__).resolve().parents[2]
@@ -284,16 +284,18 @@ def generate(check=False):
         if reference
         else "**Printer references pending.** Renders are available, but correctness scores and differences require a completed, stable printer capture. Incomplete captures are never used as a baseline.",
     )
+    comparisons = {(row["case"], row["library"]): row for row in results}
     for group in sorted({c["group"] for c in cases}):
         content += [
             "## " + group,
             table(
-                ["Compare renders and diffs", "Classification", "Purpose"],
+                ["Compare renders and diffs", "Classification", "Purpose", *[f"[{NAMES[lib]} IoU](libraries/{lib}.md)" for lib in LIBRARIES]],
                 [
                     [
                         f"[{c['name']}](cases/{c['name']}.md)",
                         c["validity"],
                         c["purpose"],
+                        *[format_score(comparisons[c["name"], lib]) for lib in LIBRARIES],
                     ]
                     for c in cases
                     if c["group"] == group

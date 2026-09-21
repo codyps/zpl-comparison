@@ -250,6 +250,22 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual([r["requestId"] for r in replies], [1, 2, 3])
         self.assertTrue((self.root / "images/image.png").exists())
 
+    def test_index_lists_each_library_score_in_configured_order(self):
+        paths = []
+        for library, status, score in [("b", "rendered", 0.75), ("a", "error", 0), ("c", "rendered", None)]:
+            path = self.root / (library + ".json")
+            path.write_text(json.dumps(dict(case="one", library=library, status=status, score=score)))
+            paths.append(str(path))
+        base = "docs/benchmarks/accuracy/comparisons/layout"
+        write(dict(mode="index", rows=paths, page=base + "/README.md", base=base,
+                   suite="layout-accuracy", title="Layout", cases=[dict(name="one", group="test")],
+                   libraries=["a", "b", "c"]), self.root / "pages")
+        text = (self.root / "pages" / base / "README.md").read_text()
+        self.assertIn("[a IoU](libraries/a.md) | [b IoU](libraries/b.md) | [c IoU](libraries/c.md)", text)
+        self.assertIn("| error · 0.00% IoU | rendered · 75.00% IoU | rendered · unscored |", text)
+        self.assertIn("../cases/layout-accuracy-one.md", text)
+        self.assertNotIn("See all renderers", text)
+
     def test_markdown_does_not_read_images(self):
         row = self.root / "row.json"
         row.write_text(
