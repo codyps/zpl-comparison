@@ -73,10 +73,13 @@ catalog(
         "//:docs/benchmarks/accuracy/results.json",
         "//:docs/benchmarks/conformance/results.json",
         "//:docs/benchmarks/external-zpl/results.json",
+        "//:docs/benchmarks/layout-accuracy/results.json",
         "//:test-data/render-conformance/manifest.json",
         "//:test-data/external-zpl/manifest.json",
+        "//:test-data/layout-accuracy/manifest.json",
         "//:benchmarks/accuracy/conformance-reference/manifest.json",
         "//:benchmarks/accuracy/external-reference/manifest.json",
+        "//:benchmarks/accuracy/layout-reference/manifest.json",
     ],
 )
 

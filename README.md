@@ -5,6 +5,9 @@ Repeatable comparisons of ZPL parsers, generators and renderers, with performanc
 **[Latest CI-generated reports](https://github.com/codyps/zpl-comparison/tree/generated)**
 are published automatically from `main` to an independent branch.
 
+[Font-free layout comparisons](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/layout/README.md)
+cover 20 graphics and caption-free barcode probes against ZD621 previews.
+
 [![Rendering accuracy against printer references](https://raw.githubusercontent.com/codyps/zpl-comparison/generated/docs/benchmarks/accuracy/accuracy.svg)](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
 
 - **[Compare library renders with printer previews](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/README.md)**: browse by library or case; see the printer, render and difference together.

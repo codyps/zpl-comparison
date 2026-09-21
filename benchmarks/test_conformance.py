@@ -33,6 +33,32 @@ finally:
 
 
 class ConformanceTests(unittest.TestCase):
+    def test_font_free_layout_corpus(self):
+        directory = SUITE.parent / "layout-accuracy"
+        layout = module("layout_generator", directory / "generate.py")
+        for filename, data in layout.artifacts().items():
+            self.assertEqual((directory / filename).read_bytes(), data, filename)
+        _, cases = conformance.load_cases(directory)
+        self.assertEqual(len(cases), 20)
+        for case in cases:
+            data = case["path"].read_bytes()
+            self.assertNotIn("^A", case["commands"])
+            self.assertNotIn("^CF", case["commands"])
+            if "^FD" in case["commands"]:
+                # Barcode data is permitted only with both caption flags off.
+                self.assertIn(b"^BC,40,N,N,N,N^FDAB12^FS", data)
+            else:
+                self.assertIn("^GB", case["commands"])
+        probes = capture.corpus_probes(directory)
+        self.assertEqual(probes[0]["zpl"], probes[-1]["zpl"])
+        reference, images = conformance.reference_images(
+            ROOT / "accuracy/layout-reference", cases
+        )
+        self.assertEqual(reference["corpus_sha256"], conformance.metrics.sha(directory / "manifest.json"))
+        self.assertEqual(set(images), {case["name"] for case in cases})
+        self.assertTrue(all(np.any(image < 128) for image in images.values()))
+        self.assertTrue(np.array_equal(images["layout-home"], images["layout-home-direct"]))
+
     def test_missing_adapter_fails_preflight(self):
         with self.assertRaisesRegex(ValueError, "Missing adapter executable"):
             conformance.metrics.preflight(

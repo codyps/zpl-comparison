@@ -100,7 +100,7 @@ jobs:
           bazel aquery 'mnemonic("Zpl(Render|Compare|LibraryBuild)", deps(//:reports))' \
             --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" \
             --output=jsonproto --include_commandline=false > "$RUNNER_TEMP/actions.json"
-          python3 build/check_action_graph.py "$RUNNER_TEMP/actions.json"
+          python3 build/check_action_graph.py "$RUNNER_TEMP/actions.json" test-data/layout-accuracy/manifest.json
       - name: Reproduce saved reports for fork pull requests
         if: github.event.pull_request.head.repo.fork == true
         run: bazel build //:reports_saved

@@ -1,5 +1,9 @@
 # Printer accuracy benchmark
 
+The [font-free layout suite](../../test-data/layout-accuracy/README.md) isolates
+offsets, page transforms, clipping, reversal and field orientation from glyph
+shapes, with its own ZD621 preview references and comparison command.
+
 For every generated resource in the repository, including performance and invalid-input reports, run `benchmarks/_work/venv/bin/python benchmarks/regenerate.py`. See the [complete generation inventory](../README.md#regenerate--test-the-harness). The accuracy-only commands below remain available.
 
 **[Compare printer previews, library renders and differences](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/README.md)** by library or case. Every case includes all eight renderers, including error diagnostics and blank output.

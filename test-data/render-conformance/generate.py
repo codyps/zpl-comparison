@@ -902,8 +902,8 @@ def rows():
     return result
 
 
-def artifacts():
-    cases = rows()
+def artifacts(cases=None, *, suite="render-conformance-v1"):
+    cases = rows() if cases is None else cases
     assert len({c["name"] for c in cases}) == len(cases)
     files = {}
     entries = []
@@ -926,7 +926,7 @@ def artifacts():
         )
     manifest = {
         "schema": 1,
-        "suite": "render-conformance-v1",
+        "suite": suite,
         "reference": "Zebra Programming Guide P1134473-11EN Rev A",
         "cases": entries,
     }

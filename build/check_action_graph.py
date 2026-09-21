@@ -11,7 +11,20 @@ import sys
 from pathlib import Path
 
 
-def verify(graph):
+LOCAL_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"}
+
+
+def verify_layout_matrix(renders, comparisons, cases):
+    expected = {f"{case}-{library}" for case in cases for library in LOCAL_LIBRARIES}
+    for kind, actual in [("renders", renders), ("printer comparisons", comparisons)]:
+        assert set(actual) == expected and len(actual) == len(expected), (
+            "Incomplete font-free layout " + kind,
+            sorted(expected - set(actual)),
+            sorted(set(actual) - expected),
+        )
+
+
+def verify(graph, layout_cases=()):
     fragments = {p["id"]: p for p in graph["pathFragments"]}
 
     @functools.cache
@@ -33,6 +46,7 @@ def verify(graph):
         )
 
     counts = {}
+    layout_renders, layout_comparisons = [], []
     for action in graph["actions"]:
         kind = action["mnemonic"]
         counts[kind] = counts.get(kind, 0) + 1
@@ -40,6 +54,17 @@ def verify(graph):
             *(inputs(i) for i in action.get("inputDepSetIds", []))
         )
         outputs = [artifacts[i] for i in action.get("outputIds", [])]
+        layout_outputs = [p for p in outputs if "/reports_actions/layout-accuracy/" in p]
+        if layout_outputs and kind == "ZplRender":
+            name = next(Path(p).name.removesuffix(".render.json") for p in layout_outputs if p.endswith(".render.json"))
+            layout_renders.append(name)
+            assert any(p.startswith("test-data/layout-accuracy/cases/") for p in files), (name, "missing layout source")
+        elif layout_outputs and kind == "ZplCompare":
+            name = next(Path(p).name.removesuffix(".comparison.json") for p in layout_outputs if p.endswith(".comparison.json"))
+            layout_comparisons.append(name)
+            library = next(lib for lib in LOCAL_LIBRARIES if name.endswith("-" + lib))
+            case = name.removesuffix("-" + library)
+            assert "benchmarks/accuracy/layout-reference/" + case + ".png" in files, (name, "missing printer reference")
         if kind == "ZplRender":
             sources = [p for p in files if p.endswith(".zpl")]
             assert len(sources) == 1, (
@@ -101,8 +126,11 @@ def verify(graph):
     assert counts.get("ZplLibraryBuild") == 8, counts
     assert counts.get("ZplRender", 0) > 0, counts
     assert counts.get("ZplCompare") == counts["ZplRender"], counts
+    if layout_cases:
+        verify_layout_matrix(layout_renders, layout_comparisons, layout_cases)
     return counts
 
 
 if __name__ == "__main__":
-    print(json.dumps(verify(json.loads(Path(sys.argv[1]).read_text())), sort_keys=True))
+    cases = [case["name"] for case in json.loads(Path(sys.argv[2]).read_text())["cases"]] if len(sys.argv) > 2 else []
+    print(json.dumps(verify(json.loads(Path(sys.argv[1]).read_text()), cases), sort_keys=True))

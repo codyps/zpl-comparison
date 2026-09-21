@@ -12,6 +12,7 @@ root = Path.cwd()
 corpus()
 for name, directory in [
     ("render-conformance", "conformance-reference"),
+    ("layout-accuracy", "layout-reference"),
     ("external-zpl", "external-reference"),
 ]:
     manifest, cases = load_cases(root / "test-data" / name, invalid=True)
@@ -37,7 +38,7 @@ for name, directory in [
                 raise ValueError(
                     "Missing or stale printer failure record: " + case["name"]
                 )
-for directory in ["render-conformance", "invalid-zpl"]:
+for directory in ["render-conformance", "layout-accuracy", "invalid-zpl"]:
     path = root / "test-data" / directory
 
     def snapshot(path=path):

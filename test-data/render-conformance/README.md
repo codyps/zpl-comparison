@@ -19,6 +19,9 @@ No page prints “PASS” as an oracle. A renderer producing an image has not ne
 
 ## Focused coverage
 
+For layout measurements independent of glyph shapes, see the separate
+[20-case font-free layout accuracy corpus](../layout-accuracy/README.md).
+
 | Area | Examples and edge cases |
 | --- | --- |
 | Fonts | All A–Z/0–9 selectors, bitmap/scalable metrics, all four rotations, zero/default dimensions, 1-dot text, odd/even scale boundaries, anisotropic scaling, ascenders/descenders, punctuation |

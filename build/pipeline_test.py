@@ -16,12 +16,21 @@ from benchmarks.accuracy.pixels import gray, sha
 from benchmarks.accuracy.presentation import rgb
 from benchmarks.accuracy.metrics import compare
 from build.compare import comparison, save_difference
+from build.check_action_graph import LOCAL_LIBRARIES, verify_layout_matrix
 from build.pages import write
 from build.render import render
 from build.stage import stage
 
 
 class PipelineTest(unittest.TestCase):
+    def test_layout_matrix_requires_every_renderer_and_printer_comparison(self):
+        cases = ["layout-control", "layout-home"]
+        complete = [f"{case}-{lib}" for case in cases for lib in LOCAL_LIBRARIES]
+        verify_layout_matrix(complete, complete, cases)
+        for renders, comparisons in [(complete[:-1], complete), (complete, complete[:-1]), (complete, complete + complete[:1])]:
+            with self.assertRaisesRegex(AssertionError, "Incomplete font-free layout"):
+                verify_layout_matrix(renders, comparisons, cases)
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary.cleanup)

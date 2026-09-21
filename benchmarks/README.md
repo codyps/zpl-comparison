@@ -120,6 +120,13 @@ is current before updating `generated`.
 `//:render_libraries` builds the adapters before image generation and checkpoints
 their cache separately. Both completed and partially completed report actions
 are saved on build failure, with step timeouts leaving room for that save.
+
+The same `//:reports` CI build includes the [font-free layout suite](../test-data/layout-accuracy/README.md):
+20 cases across seven local renderers, with saved ZD621 references, difference
+images and a separate gallery/summary. CI verifies all 140 render/comparison
+pairs and their printer-reference dependencies. Build only its images and gallery
+with `--output_groups=suite_layout-accuracy`; fork CI reproduces its saved evidence
+through `//:reports_saved`. Labelary is excluded until its captures are collected.
 The `build-performance` Actions artifact contains separate library/report Bazel
 profiles and build-event logs for checking cache reuse and execution costs.
 Generated renders use one lossless grayscale encode; difference PNGs use the

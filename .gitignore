@@ -15,6 +15,7 @@ _*
 !/docs/benchmarks/accuracy/
 !/docs/benchmarks/conformance/
 !/docs/benchmarks/external-zpl/
+!/docs/benchmarks/layout-accuracy/
 !/docs/benchmarks/invalid/
 !/docs/benchmarks/labelary/
 /docs/benchmarks/*/*

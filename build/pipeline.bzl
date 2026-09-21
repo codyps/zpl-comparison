@@ -46,15 +46,17 @@ def _impl(ctx):
     groups = {}
 
     # Maintained documents, captured evidence, and scripts remain downloadable.
-    static = [(f, p) for p, f in files.items() if not (p.startswith("docs/benchmarks/") and (("/images/" in p and not p.startswith("docs/benchmarks/labelary/")) or p in ["docs/benchmarks/" + s + "/results.json" for s in ["accuracy", "conformance", "external-zpl"]]))]
-    for suite in ["accuracy", "conformance", "external-zpl"]:
+    static = [(f, p) for p, f in files.items() if not (p.startswith("docs/benchmarks/") and (("/images/" in p and not p.startswith("docs/benchmarks/labelary/")) or p in ["docs/benchmarks/" + s + "/results.json" for s in ["accuracy", "conformance", "external-zpl", "layout-accuracy"]]))]
+    for suite in ["accuracy", "conformance", "external-zpl", "layout-accuracy"]:
+        suite_start = len(publish)
+        libraries = LIBRARIES[:-1] if suite == "layout-accuracy" else LIBRARIES
         saved = CATALOG["docs/benchmarks/" + suite + "/results.json"]
         renders = "docs/benchmarks/" + suite
-        base = "docs/benchmarks/accuracy/comparisons" + ("" if suite == "accuracy" else "/features" if suite == "conformance" else "/external")
+        base = "docs/benchmarks/accuracy/comparisons" + ("" if suite == "accuracy" else "/features" if suite == "conformance" else "/layout" if suite == "layout-accuracy" else "/external")
         assets = renders if suite == "accuracy" else base
-        corpus = "test-data/render-conformance" if suite == "conformance" else "test-data/external-zpl"
+        corpus = "test-data/render-conformance" if suite == "conformance" else "test-data/layout-accuracy" if suite == "layout-accuracy" else "test-data/external-zpl"
         cases = saved["cases"] if suite == "accuracy" else CATALOG[corpus + "/manifest.json"]["cases"]
-        reference_dir = "benchmarks/accuracy/" + ("conformance-reference" if suite == "conformance" else "external-reference")
+        reference_dir = "benchmarks/accuracy/" + ("conformance-reference" if suite == "conformance" else "layout-reference" if suite == "layout-accuracy" else "external-reference")
         references = {} if suite == "accuracy" else {r["name"]: r for r in CATALOG[reference_dir + "/manifest.json"]["cases"]}
         failures = {} if suite == "accuracy" else {r["name"]: r for r in CATALOG[reference_dir + "/manifest.json"].get("failures", [])}
         if suite == "accuracy":
@@ -77,7 +79,7 @@ def _impl(ctx):
             rows = []
             images = []
             diffs = []
-            for lib in LIBRARIES:
+            for lib in libraries:
                 key = suite + "/" + cid + "-" + lib
                 row = _file(ctx, key + ".render.json")
                 raster = _tree(ctx, key + ".render")
@@ -125,7 +127,7 @@ def _impl(ctx):
             frame = _file(ctx, suite + "/" + cid + ".viewport.json")
             visible = images + ([files[reference]] if reference else [])
             _invoke(ctx, "preview", suite + "/" + cid + "-viewport", {"mode": "frame", "images": [f.path for f in visible]}, visible, [frame])
-            previews = [(images[i], LIBRARIES[i]) for i in range(len(LIBRARIES))] + [(diffs[i], LIBRARIES[i] + "-diff") for i in range(len(LIBRARIES))]
+            previews = [(images[i], libraries[i]) for i in range(len(libraries))] + [(diffs[i], libraries[i] + "-diff") for i in range(len(libraries))]
             if reference:
                 previews.append((files[reference], "printer"))
             for image, suffix in previews:
@@ -134,13 +136,13 @@ def _impl(ctx):
                 publish.append((thumb, assets + "/previews/" + cid + "-" + suffix + ".png"))
                 case_outputs.append(thumb)
             page = _tree(ctx, suite + "/pages/" + cid)
-            _invoke(ctx, "pages", suite + "/page-" + cid, {"mode": "case", "page": base + "/cases/" + cid + ".md", "base": base, "assets": assets, "renders": renders, "title": case["name"], "cases": [case], "libraries": LIBRARIES, "rows": [r.path for r in rows], "source": zpl, "reference": reference, "failure": failures.get(cid, {}).get("error")}, rows, [page])
+            _invoke(ctx, "pages", suite + "/page-" + cid, {"mode": "case", "page": base + "/cases/" + cid + ".md", "base": base, "assets": assets, "renders": renders, "title": case["name"], "cases": [case], "libraries": libraries, "rows": [r.path for r in rows], "source": zpl, "reference": reference, "failure": failures.get(cid, {}).get("error")}, rows, [page])
             publish.append((page, ""))
             groups["case_" + suite + "_" + cid] = depset(case_outputs + [frame, page])
-        for lib in LIBRARIES + ["index"]:
-            rows = compared if lib == "index" else [compared[i] for i in range(len(compared)) if i % len(LIBRARIES) == LIBRARIES.index(lib)]
+        for lib in libraries + ["index"]:
+            rows = compared if lib == "index" else [compared[i] for i in range(len(compared)) if i % len(libraries) == libraries.index(lib)]
             page = _tree(ctx, suite + "/pages/library-" + lib)
-            _invoke(ctx, "pages", suite + "/library-" + lib, {"mode": "index" if lib == "index" else "library", "page": base + ("/README.md" if lib == "index" else "/libraries/" + lib + ".md"), "base": base, "assets": assets, "title": suite + " comparisons" if lib == "index" else lib + " versus printer", "cases": cases, "rows": [r.path for r in rows], "libraries": LIBRARIES}, rows, [page])
+            _invoke(ctx, "pages", suite + "/library-" + lib, {"mode": "index" if lib == "index" else "library", "page": base + ("/README.md" if lib == "index" else "/libraries/" + lib + ".md"), "base": base, "assets": assets, "title": suite + " comparisons" if lib == "index" else lib + " versus printer", "cases": cases, "rows": [r.path for r in rows], "libraries": libraries}, rows, [page])
             publish.append((page, ""))
         relations = []
         for (lib, group), entries in relation_groups.items():
@@ -152,18 +154,19 @@ def _impl(ctx):
         if suite == "accuracy":
             metadata["fresh_reference"] = {k: v for k, v in fresh.items() if k != "cases"}
             metadata["archived_reference"] = {k: v for k, v in archive.items() if k != "cases"}
-        spec = {"suite": suite, "metadata": metadata, "cases": cases, "rows": [r.path for r in (compared if suite == "accuracy" else rendered)], "comparisons": [r.path for r in compared], "relations": [r.path for r in relations], "captured_utc": saved["measured_utc"], "renders": renders, "base": base, "libraries": {lib: f.path for lib, f in compiled.items()}}
+        spec = {"suite": suite, "metadata": metadata, "cases": cases, "rows": [r.path for r in (compared if suite in ["accuracy", "layout-accuracy"] else rendered)], "comparisons": [r.path for r in compared], "relations": [r.path for r in relations], "captured_utc": saved["measured_utc"], "renders": renders, "base": base, "libraries": {lib: f.path for lib, f in compiled.items()}}
         inputs = compared + rendered + relations
         if suite == "accuracy":
             inputs += compiled.values()
         else:
             manifest = corpus + "/manifest.json"
             reference_manifest = reference_dir + "/manifest.json"
-            spec.update(manifest = files[manifest].path, manifest_name = manifest, reference_manifest = files[reference_manifest].path, reference_name = reference_manifest, coverage = {"cases": len(cases), "attempts": len(compared), "printer_references": len(references), "printer_unavailable": len(failures), "printer_excluded": len([c for c in cases if not c.get("capture_eligible", True)])})
+            spec.update(manifest = files[manifest].path, manifest_name = manifest, reference_manifest = files[reference_manifest].path, reference_name = reference_manifest, coverage = {"cases": len(cases), "attempts": len(compared), "printer_references": len([c for c in cases if c["name"] in references and c["validity"] != "invalid"]), "printer_unavailable": len(failures), "printer_excluded": len([c for c in cases if not c.get("capture_eligible", True)])})
             inputs += [files[manifest], files[reference_manifest]]
         _invoke(ctx, "aggregate", suite + "/aggregate", spec, inputs, [aggregate])
         aggregates.append((aggregate, ""))
         publish.append((aggregate, ""))
+        groups["suite_" + suite] = depset([f for f, _ in publish[suite_start:]])
 
     # Each legacy report family runs independently, using the cached result documents.
     metric_scripts = ["benchmarks/accuracy/run.py", "benchmarks/accuracy/pixels.py", "benchmarks/accuracy/metrics.py"]
@@ -175,10 +178,11 @@ def _impl(ctx):
         "invalid": ["benchmarks/invalid.py", "test-data/invalid-zpl/", "docs/benchmarks/invalid/results.json"] + metric_scripts + plot_scripts,
         "labelary": ["benchmarks/labelary.py", "benchmarks/conformance.py", "test-data/render-conformance/", "test-data/external-zpl/", "benchmarks/accuracy/reference/", "references/", "docs/benchmarks/labelary/"] + metric_scripts + plot_scripts,
         "conformance-report": ["benchmarks/conformance.py", "test-data/render-conformance/"] + metric_scripts + plot_scripts,
+        "layout-report": ["benchmarks/conformance.py", "test-data/layout-accuracy/"] + metric_scripts + plot_scripts,
         "external-report": ["benchmarks/conformance.py", "test-data/external-zpl/"] + metric_scripts + plot_scripts,
         "accuracy-report": ["benchmarks/accuracy/report.py", "benchmarks/accuracy/gallery.py", "benchmarks/accuracy/presentation.py"] + metric_scripts + plot_scripts,
         "compatibility": ["benchmarks/compatibility.py", "benchmarks/catalog.py", "benchmarks/sources.lock.json", "benchmarks/adapters/", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "references/", "test-data/render-conformance/", "docs/zpl-command-index.tsv", "docs/benchmarks/argument-support.md", "docs/benchmarks/command-support.json", "docs/benchmarks/labelary/captures.json"] + metric_scripts + plot_scripts,
-        "validate": ["build/validate.py", "benchmarks/conformance.py", "benchmarks/accuracy/cases.py", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "benchmarks/accuracy/external-reference/", "references/", "test-data/", "docs/zpl-command-index.tsv"] + metric_scripts + plot_scripts,
+        "validate": ["build/validate.py", "benchmarks/conformance.py", "benchmarks/accuracy/cases.py", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "benchmarks/accuracy/external-reference/", "benchmarks/accuracy/layout-reference/", "references/", "test-data/", "docs/zpl-command-index.tsv"] + metric_scripts + plot_scripts,
     }
     for name, commands in [
         ("catalog", [["benchmarks/catalog.py"]]),
@@ -187,6 +191,7 @@ def _impl(ctx):
         ("invalid", [["benchmarks/invalid.py", "--report-only"], ["benchmarks/invalid.py", "--check"]]),
         ("labelary", [["benchmarks/labelary.py"]]),
         ("conformance-report", [["benchmarks/conformance.py", "--reports-only", "--output", "docs/benchmarks/conformance"]]),
+        ("layout-report", [["benchmarks/conformance.py", "--reports-only", "--corpus", "test-data/layout-accuracy", "--output", "docs/benchmarks/layout-accuracy"]]),
         ("external-report", [["benchmarks/conformance.py", "--reports-only", "--corpus", "test-data/external-zpl", "--output", "docs/benchmarks/external-zpl"]]),
         ("accuracy-report", [["benchmarks/accuracy/report.py", "docs/benchmarks/accuracy", "--no-gallery", "--part=markdown"]]),
         ("accuracy-chart", [["benchmarks/accuracy/report.py", "docs/benchmarks/accuracy", "--no-gallery", "--part=chart"]]),
@@ -196,6 +201,8 @@ def _impl(ctx):
         selected = _select(files, report_inputs["accuracy-report" if name == "accuracy-chart" else name])
         if name == "conformance-report":
             selected += [aggregates[1]]
+        elif name == "layout-report":
+            selected += [aggregates[3]]
         elif name == "external-report":
             selected += [aggregates[2]]
         elif name in ["accuracy-report", "accuracy-chart"]:

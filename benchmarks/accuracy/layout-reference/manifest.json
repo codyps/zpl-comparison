@@ -1,0 +1,394 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "device": "ZTC ZD621-203dpi ZPL",
+  "firmware": "V93.21.33Z",
+  "dpi": 203,
+  "host": "http://d7j211001302.bed.einic.org/",
+  "captured_utc": "2026-09-21T04:17:28Z",
+  "method": "printer HTTP Preview Label; not physical print/scan",
+  "cases": [
+    {
+      "name": "layout-control",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Asymmetric rectangular landmarks at fixed origins",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "e37a43d78b324fd3157d27af2c17c832543166f27d6191f6803d71c0c8f8ffbc",
+      "captured_utc": "2026-09-21T04:17:30Z",
+      "zpl_sha256": "e24f93cf727d4c4aff620f67f0f42a243639534b56336e9b2c47b881af1ebc99",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-home",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Label home translates all graphic fields",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "064454e5994974657388e2d8c70be8c3de941a683a27d7e2c29f8a3ae8acd44e",
+      "captured_utc": "2026-09-21T04:17:32Z",
+      "zpl_sha256": "b8eabadd6c44f13eb20d505ccc3e8f00a376124e58d948caee5d5917ec6ae36c",
+      "png_sha256": "b231806c9d868ac8d1c72df6577cd4ad06eb3b5681e6b214826f58041ea61775",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-home-direct",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Direct origins equivalent to LH30,20",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "f7fb507c63511cccc000c52850e9c96254a99bc63e394d21434ec2ddd5423a9b",
+      "captured_utc": "2026-09-21T04:17:34Z",
+      "zpl_sha256": "2d08f0ccbbdd37051f07d11335d20c6ca5c5c979bed39a563186f064695a9d3a",
+      "png_sha256": "b231806c9d868ac8d1c72df6577cd4ad06eb3b5681e6b214826f58041ea61775",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LS--80",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "LS=-80: signed page offset and edge clipping",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "6a9eea92d27b2e3ea44e3a7ab42f9da118489bc13ce67e411987ad87ffe2af3f",
+      "captured_utc": "2026-09-21T04:17:36Z",
+      "zpl_sha256": "d762b1b856e7542a7774b00070b0a3fee57d716e25271ad56756f90b0f51dac8",
+      "png_sha256": "a511ed65e73ccd84ed52db310f43403297edf901ce6b48e696c7d732de509d25",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LS-80",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "LS=80: signed page offset and edge clipping",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "a3c56f854c74eb492a6c434ca3be899952ba79a18ba853b122f5b3bd78d33644",
+      "captured_utc": "2026-09-21T04:17:39Z",
+      "zpl_sha256": "3089d08b446c5b97920bc377b172492b87abb01ddb61c9e4ccd3d425204c719a",
+      "png_sha256": "a30a34f20ea4c7ec264c405c030a8175bc4cbc0deeeb2e0e04c6bdf5adee0d99",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LT--50",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "LT=-50: signed page offset and edge clipping",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "40e6cf6d0a423d66fe19d91817596447604fe90da6dfe3d57e88853c962d48b4",
+      "captured_utc": "2026-09-21T04:17:41Z",
+      "zpl_sha256": "afd24fa8056e8477259acb3ab85cca93589a42180fb6a9de35f4a2e0e2d3e612",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-LT-50",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "LT=50: signed page offset and edge clipping",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "823dbd333cfdb686481110d3200837d83c83eb9b26ba63bdc177f05be11c38f1",
+      "captured_utc": "2026-09-21T04:17:43Z",
+      "zpl_sha256": "878eac3ccc576051998f53b66063e8a75ca800f5d6b65ebf87d2fba4a299a4ac",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-offset-combined",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Combined home, horizontal shift and label top",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "46afd792aaf4911cc78d9b4b3290798062ca091d4e88b6c5041e7e3bb74c01dc",
+      "captured_utc": "2026-09-21T04:17:45Z",
+      "zpl_sha256": "a3278b6cbad7ee379cb7a248040d7ab1ec01ea0ac28e2baa9c279724bee86948",
+      "png_sha256": "18866f178782df95265ccbad53dcd05f6c39c55b05225da3e5054ef466522fb3",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-transform-Y-N",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Mirror=Y, orientation=N: asymmetric graphic landmarks",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "e1e422a6f2a3465a973ce798ad745039dc719502284575d16fd8a35c00c286ff",
+      "captured_utc": "2026-09-21T04:17:47Z",
+      "zpl_sha256": "6148ad65da6a7fc369460d8fc24c1c6bd32d8c34ae4eed9c1d504017ef7b8eac",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-transform-N-I",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Mirror=N, orientation=I: asymmetric graphic landmarks",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "c27b56fd9c2b2f20dd8b32037ca40f677688fb13a676d7229db1f6bbd965db55",
+      "captured_utc": "2026-09-21T04:17:49Z",
+      "zpl_sha256": "e48404eef2ccc72f73ff7edc6a06529342b9b83718a4467370a538d67978110e",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-transform-Y-I",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Mirror=Y, orientation=I: asymmetric graphic landmarks",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "4f500a0abc010d4f09af7fa8b272a43ef50e5661b95bae30b4127932250206d8",
+      "captured_utc": "2026-09-21T04:17:51Z",
+      "zpl_sha256": "9a53f2137c811f6deb2aa443bb989bdc75f5b06967308a93ab57cf5e719a3eeb",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-clip-last-pixel",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Edge clipping with a visible in-bounds control; no wraparound",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "d325ff7a92290d045ecd212658ac2be838bffa0b05a5551859f1de1eb372f064",
+      "captured_utc": "2026-09-21T04:17:53Z",
+      "zpl_sha256": "e4b916e661f47e619bca4916c68333067114faac6d63ee1449df33cb7a75ecd7",
+      "png_sha256": "4e4a7d9d240e2e8c621b26250b8a58639890ebd98d8141e413c7ae36f1aea705",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-clip-partial",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Edge clipping with a visible in-bounds control; no wraparound",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "a20c85aa57fd8a1adc6511c9d11b75fb1d561a9387568e07ae920ae1fe6eb627",
+      "captured_utc": "2026-09-21T04:17:55Z",
+      "zpl_sha256": "7d76ada68f48a1afffb3f9fce04c18478ca2b498b82398c4cd844910525aba7c",
+      "png_sha256": "bc8885403011f226c46e39c1334aeb5595c86b931caa410da93c487bd04ed313",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-clip-outside",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Edge clipping with a visible in-bounds control; no wraparound",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "f98f4576310bc0b6112437cfd61b584c4867f01c7bce77685ee6c2a0ac6c84a5",
+      "captured_utc": "2026-09-21T04:17:57Z",
+      "zpl_sha256": "a09680b2c886b570e3b1a8b711e8b1f96af0c6aab543822ba953587353e78926",
+      "png_sha256": "f825ec1436eaa20ae1cb7d631293cd8f8e583e3b27a535adef76856622c88bf5",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-label-reverse",
+      "group": "font-free-layout",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Label reversal on rectangular landmarks",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "85614c01020c2578db3aa8b0fdde32c8ac637b63c663cad4b1d582eb0cff427f",
+      "captured_utc": "2026-09-21T04:18:00Z",
+      "zpl_sha256": "1016e44928725aceef9bab2766e19fe120f4dfa1cb897e15927902ec06d915f1",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-field-reverse",
+      "group": "font-free-layout",
+      "command": "^FO ^FR ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Field reversal inside a solid box; following field remains ordinary",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "079d37177dd55b09579297a3a3f45f81538740b0618fd3e26ba84732f2cf6daf",
+      "captured_utc": "2026-09-21T04:18:02Z",
+      "zpl_sha256": "b4442b02a42135ae4d0abb2f0e7c561170ee34f963fabbd573c5e3a6bd12be0e",
+      "png_sha256": "e9e17e461ae85d20329e66080d199096b75ba95c8d542004f99163ed7a038df7",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-field-orientation-N",
+      "group": "font-free-layout",
+      "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "FW=N: Code128 with omitted orientation and both caption flags disabled",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "53bd79218cd63e5121e6b0eb3e983ec60eb66d4bb324a0b5a4744f736090cf47",
+      "captured_utc": "2026-09-21T04:18:04Z",
+      "zpl_sha256": "4aedb388db57f248b54310c47b7583f092c12d8df6750fe19c398e45932895cf",
+      "png_sha256": "d441b201896ef9a043c8d863485d7da8257785efd95b49eecb16eac254074606",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-field-orientation-R",
+      "group": "font-free-layout",
+      "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "FW=R: Code128 with omitted orientation and both caption flags disabled",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "ed6469c3b56984cbae2f5657ff4c7e2abd3310f8b8c1680112a536fac664cd9b",
+      "captured_utc": "2026-09-21T04:18:06Z",
+      "zpl_sha256": "dc6b8ed1d92a50197b7da5cc2b2cd466bc9637d783e585ac8a1ccc68746da9fe",
+      "png_sha256": "8b84623aa4e6e0f32b43ec891a004e36b09a7661ed78df328a817cf41a8e71af",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-field-orientation-I",
+      "group": "font-free-layout",
+      "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "FW=I: Code128 with omitted orientation and both caption flags disabled",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "ddfd4177e6f56809acfceed1f4c1d7b09257bcef25085e202938ed1698ad74a3",
+      "captured_utc": "2026-09-21T04:18:08Z",
+      "zpl_sha256": "a841aa1687d23e31132b8ee74c0698863f804a53411962cccd5674d78c1dcb0c",
+      "png_sha256": "e546559ebab0fd60b89dd2dda2e8468119905588ca1b66a28548133ca5267fd7",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "layout-field-orientation-B",
+      "group": "font-free-layout",
+      "command": "^BC ^BY ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "FW=B: Code128 with omitted orientation and both caption flags disabled",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "e073df5a2569d511ab914e15d5bfbb2595e8216bccb2acb26fecc73238c74d8d",
+      "captured_utc": "2026-09-21T04:18:10Z",
+      "zpl_sha256": "7eca38b85080b5a783f8c2efed03056b40d48875e4a03c38630f4e06aae4f1a8",
+      "png_sha256": "8957d20cba8225b0ada6c2f9718911d713e9885321fe72b76a35952aa753e5fe",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "repeat-end",
+      "group": "repeatability",
+      "command": "^FO ^FS ^FW ^GB ^LH ^LL ^LR ^LS ^LT ^PM ^PO ^PW ^XA ^XZ",
+      "arguments": "Asymmetric rectangular landmarks at fixed origins",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPLAY",
+      "submitted_sha256": "e37a43d78b324fd3157d27af2c17c832543166f27d6191f6803d71c0c8f8ffbc",
+      "captured_utc": "2026-09-21T04:18:12Z",
+      "zpl_sha256": "e24f93cf727d4c4aff620f67f0f42a243639534b56336e9b2c47b881af1ebc99",
+      "png_sha256": "b6c50510568c5c7620d823de9b306bfcdb4a8a70730e88dd37339d49ab5e7223",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    }
+  ],
+  "failures": [],
+  "preview_reset_zpl": "^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+  "corpus_sha256": "6e2e37b7d6a6f91d8e173a85b19927722f6dda8a98ae8f0ab61f3770057b1fda",
+  "repeat_pixels_equal": true
+}
