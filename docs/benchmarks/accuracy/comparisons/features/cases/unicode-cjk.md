@@ -32,13 +32,13 @@ Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 **labelize (Rust)**
 
-rendered · unscored · [All cases for this library](../libraries/labelize.md)
+blank · unscored · exact · [All cases for this library](../libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/unicode-cjk-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/unicode-cjk.png) | [![labelize render](../previews/unicode-cjk-labelize.png)](../../../../conformance/images/unicode-cjk-labelize.png) | [![labelize difference](../previews/unicode-cjk-labelize-diff.png)](../images/unicode-cjk-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 780 pixels.
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 ## forge
 

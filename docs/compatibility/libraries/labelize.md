@@ -5,7 +5,7 @@
 [Overview](../README.md) · [Libraries](README.md) · [Commands](../commands/README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
-**Rust · Parser and renderer · 1.5.0**
+**Rust · Parser and renderer · 1.6.0**
 
 ## Argument limits
 
@@ -17,7 +17,7 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/labelize.md)
 
-24/133 exact; mean IoU 48.0%; 5 errors. Snapshot: 2026-09-21T17:10:09Z.
+24/133 exact; mean IoU 48.5%; 5 errors. Snapshot: 2026-09-21T18:56:33Z.
 
 ## Feature groups
 
@@ -27,39 +27,39 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 | [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 10.6%; 4 errors | 4 error, 56 rendered |
 | [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 1 errors | 1 error, 3 rendered |
-| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 58.5%; 0 errors | 11 rendered |
+| [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 58.2%; 0 errors | 11 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 73.6%; 0 errors | 9 rendered |
-| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 58.2%; 0 errors | 24 rendered |
+| [Baseline text](../features/baseline-text.md) | 24 | 0/24 exact; mean IoU 60.9%; 0 errors | 24 rendered |
 | [Clipping](../features/clipping.md) | 5 | 3/3 exact; mean IoU 100.0%; 0 errors | 2 blank, 3 rendered |
 | [Compact barcodes](../features/compact-barcodes.md) | 7 | 2/7 exact; mean IoU 69.9%; 0 errors | 7 rendered |
 | [Compact compositing](../features/compact-compositing.md) | 2 | 0/2 exact; mean IoU 96.5%; 0 errors | 2 rendered |
 | [Compact fonts](../features/compact-fonts.md) | 5 | 0/5 exact; mean IoU 28.9%; 0 errors | 5 rendered |
-| [Compact layout](../features/compact-layout.md) | 4 | 0/4 exact; mean IoU 41.7%; 0 errors | 4 rendered |
+| [Compact layout](../features/compact-layout.md) | 4 | 0/4 exact; mean IoU 42.8%; 0 errors | 4 rendered |
 | [Compact shapes](../features/compact-shapes.md) | 6 | 0/6 exact; mean IoU 63.9%; 0 errors | 6 rendered |
 | [Compositing](../features/compositing.md) | 5 | 4/5 exact; mean IoU 97.8%; 0 errors | 5 rendered |
-| [Encoding](../features/encoding.md) | 28 | 0/25 exact; mean IoU 48.9%; 0 errors | 28 rendered |
-| [Fonts](../features/fonts.md) | 78 | 0/78 exact; mean IoU 32.6%; 0 errors | 78 rendered |
+| [Encoding](../features/encoding.md) | 28 | 0/25 exact; mean IoU 49.1%; 0 errors | 3 blank, 25 rendered |
+| [Fonts](../features/fonts.md) | 78 | 0/78 exact; mean IoU 30.9%; 0 errors | 78 rendered |
 | [Graphics](../features/graphics.md) | 14 | 10/12 exact; mean IoU 85.4%; 1 errors | 1 blank, 1 error, 12 rendered |
-| [Lexical](../features/lexical.md) | 3 | 0/3 exact; mean IoU 40.2%; 0 errors | 3 rendered |
+| [Lexical](../features/lexical.md) | 3 | 0/3 exact; mean IoU 38.3%; 0 errors | 3 rendered |
 | [Metamorphic](../features/metamorphic.md) | 5 | 2/5 exact; mean IoU 73.9%; 0 errors | 5 rendered |
 | [Negative](../features/negative.md) | 14 | Not measured | Negative-input observations: 1 blank, 2 error, 11 rendered |
-| [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 46.1%; 0 errors | 29 rendered |
+| [Position](../features/position.md) | 29 | 0/29 exact; mean IoU 52.9%; 0 errors | 29 rendered |
 | [Printer barcode defaults](../features/printer-barcode-defaults.md) | 20 | 20/20 exact; mean IoU 100.0%; 0 errors | 20 rendered |
 | [Printer box minimum](../features/printer-box-minimum.md) | 3 | 1/3 exact; mean IoU 97.3%; 0 errors | 3 rendered |
 | [Printer character remap](../features/printer-character-remap.md) | 3 | 0/3 exact; mean IoU 80.4%; 0 errors | 3 rendered |
 | [Printer code93 controls](../features/printer-code93-controls.md) | 3 | 0/3 exact; mean IoU 0.7%; 0 errors | 3 rendered |
 | [Printer databar retail](../features/printer-databar-retail.md) | 15 | 0/10 exact; mean IoU 8.0%; 0 errors | 10 rendered; Negative-input observations: 5 rendered |
-| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 36.1%; 0 errors | 6 rendered |
+| [Printer field block rounding](../features/printer-field-block-rounding.md) | 6 | 0/6 exact; mean IoU 51.8%; 0 errors | 6 rendered |
 | [Printer qr module state](../features/printer-qr-module-state.md) | 3 | 0/3 exact; mean IoU 34.5%; 0 errors | 3 rendered |
 | [Printer retail caption edges](../features/printer-retail-caption-edges.md) | 5 | 0/5 exact; mean IoU 73.3%; 0 errors | 5 rendered |
 | [Printer retail data](../features/printer-retail-data.md) | 9 | 0/9 exact; mean IoU 0.0%; 9 errors | 9 error |
 | [Serialization](../features/serialization.md) | 4 | 0/4 exact; mean IoU 15.0%; 3 errors | 3 error, 1 rendered |
-| [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 61.8%; 0 errors | 46 rendered |
+| [Shapes](../features/shapes.md) | 46 | 14/46 exact; mean IoU 61.3%; 0 errors | 46 rendered |
 | [State](../features/state.md) | 6 | 1/6 exact; mean IoU 62.8%; 0 errors | 1 blank, 5 rendered |
 | [Stress](../features/stress.md) | 4 | 0/4 exact; mean IoU 48.3%; 0 errors | 4 rendered |
 | [Text data](../features/text-data.md) | 10 | 0/9 exact; mean IoU 26.1%; 0 errors | 1 error, 9 rendered |
-| [Text layout](../features/text-layout.md) | 45 | 0/42 exact; mean IoU 19.8%; 0 errors | 1 blank, 44 rendered |
-| [Torture](../features/torture.md) | 4 | 0/4 exact; mean IoU 67.0%; 0 errors | 4 rendered |
+| [Text layout](../features/text-layout.md) | 45 | 0/42 exact; mean IoU 20.0%; 0 errors | 1 blank, 44 rendered |
+| [Torture](../features/torture.md) | 4 | 0/4 exact; mean IoU 67.4%; 0 errors | 4 rendered |
 | [Transforms](../features/transforms.md) | 4 | 0/4 exact; mean IoU 42.5%; 0 errors | 4 rendered |
 
 
@@ -67,7 +67,7 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 
 | Command | Name | Source evidence | Focused printer evidence |
 | --- | --- | --- | --- |
-| [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#228) | 0/12 exact; mean IoU 53.1%; 0 errors |
+| [`^A`](../commands/format-a.md) | Font Selection | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#228) | 0/12 exact; mean IoU 56.2%; 0 errors |
 | [`^A@`](../commands/format-a-named.md) | Use Font Name to Call Font | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#228) | Not measured |
 | [`^B0`](../commands/format-b0.md) | Aztec Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 12.5%; 0 errors |
 | [`^B1`](../commands/format-b1.md) | Code 11 Bar Code | ❔ No evidence found | 0/1 exact; mean IoU 4.0%; 0 errors |
@@ -123,7 +123,7 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 | [`~DU`](../commands/control-du.md) | Download Unbounded TrueType Font | ❔ No evidence found | Not measured |
 | [`~DY`](../commands/control-dy.md) | Download Objects | ❔ No evidence found | Not measured |
 | [`~EG`](../commands/control-eg.md) | Erase Download Graphics | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#394) | Not measured |
-| [`^FB`](../commands/format-fb.md) | Field Block | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#258) | 0/6 exact; mean IoU 45.3%; 0 errors |
+| [`^FB`](../commands/format-fb.md) | Field Block | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#258) | 0/6 exact; mean IoU 49.6%; 0 errors |
 | [`^FC`](../commands/format-fc.md) | Field Clock | ❔ No evidence found | Not measured |
 | [`^FD`](../commands/format-fd.md) | Field Data | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#263) | Not measured |
 | [`^FE`](../commands/format-fe.md) | Field Concatenation | ❔ No evidence found | Not measured |
@@ -137,7 +137,7 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 | [`^FS`](../commands/format-fs.md) | Field Separator | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#298) | Not measured |
 | [`^FT`](../commands/format-ft.md) | Field Typeset | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#253) | 0/1 exact; mean IoU 59.9%; 0 errors |
 | [`^FV`](../commands/format-fv.md) | Field Data | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#268) | 0/1 exact; mean IoU 85.1%; 0 errors |
-| [`^FW`](../commands/format-fw.md) | Field Orientation | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#243) | 0/1 exact; mean IoU 53.6%; 0 errors |
+| [`^FW`](../commands/format-fw.md) | Field Orientation | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#243) | 0/1 exact; mean IoU 50.6%; 0 errors |
 | [`^FX`](../commands/format-fx.md) | Comment | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#239) | Not measured |
 | [`^GB`](../commands/format-gb.md) | Graphic Box | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#357) | 4/5 exact; mean IoU 96.8%; 0 errors |
 | [`^GC`](../commands/format-gc.md) | Graphic Circle | [🧩 Handler found](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#360) | 0/1 exact; mean IoU 68.7%; 0 errors |

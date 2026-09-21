@@ -40,7 +40,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (15779) panicked at src/main.rs:44:14:
+thread 'main' (19999) panicked at src/main.rs:44:14:
 parse: "failed to decode hex string: hex decode error: invalid hex char: /"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

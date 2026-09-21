@@ -32,13 +32,13 @@ Library dimensions: [832, 1218]; missing ink: 2; extra ink: 1 pixels.
 
 **labelize (Rust)**
 
-rendered · 37.60% IoU · [All cases for this library](../features/libraries/labelize.md)
+rendered · 34.88% IoU · [All cases for this library](../features/libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/font-0-R-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/font-0-R.png) | [![labelize render](../features/previews/font-0-R-labelize.png)](../../../conformance/images/font-0-R-labelize.png) | [![labelize difference](../features/previews/font-0-R-labelize-diff.png)](../features/images/font-0-R-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 465; extra ink: 1226 pixels.
+Library dimensions: [832, 1218]; missing ink: 700; extra ink: 764 pixels.
 
 ## forge
 

@@ -42,7 +42,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (23722) panicked at src/main.rs:63:14:
+thread 'main' (22276) panicked at src/main.rs:63:14:
 PNG: "EAN-8: expected 7 or 8 digits, got 9"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -60,7 +60,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (23723) panicked at src/main.rs:79:32:
+thread 'main' (22270) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 9")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

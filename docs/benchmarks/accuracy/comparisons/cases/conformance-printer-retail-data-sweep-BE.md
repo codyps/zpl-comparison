@@ -42,7 +42,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/labeliz
 
 ~~~text
 
-thread 'main' (23631) panicked at src/main.rs:63:14:
+thread 'main' (22369) panicked at src/main.rs:63:14:
 PNG: "EAN-13: need at least 12 digits, got 1"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -60,7 +60,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/forge.m
 
 ~~~text
 
-thread 'main' (23638) panicked at src/main.rs:79:32:
+thread 'main' (22361) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 1")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

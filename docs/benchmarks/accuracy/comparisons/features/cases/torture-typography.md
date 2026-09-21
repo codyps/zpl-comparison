@@ -38,7 +38,7 @@ rendered · 33.81% IoU · [All cases for this library](../libraries/labelize.md)
 |---|---|---|
 | [![Printer preview](../previews/torture-typography-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/torture-typography.png) | [![labelize render](../previews/torture-typography-labelize.png)](../../../../conformance/images/torture-typography-labelize.png) | [![labelize difference](../previews/torture-typography-labelize-diff.png)](../images/torture-typography-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 32014; extra ink: 29013 pixels.
+Library dimensions: [832, 1218]; missing ink: 32380; extra ink: 27943 pixels.
 
 ## forge
 

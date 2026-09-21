@@ -32,13 +32,13 @@ Library dimensions: [832, 1218]; missing ink: 1; extra ink: 1 pixels.
 
 **labelize (Rust)**
 
-rendered · 27.65% IoU · [All cases for this library](../libraries/labelize.md)
+rendered · 24.73% IoU · [All cases for this library](../libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/hex-underscore-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/hex-underscore.png) | [![labelize render](../previews/hex-underscore-labelize.png)](../../../../conformance/images/hex-underscore-labelize.png) | [![labelize difference](../previews/hex-underscore-labelize-diff.png)](../images/hex-underscore-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 706; extra ink: 712 pixels.
+Library dimensions: [832, 1218]; missing ink: 818; extra ink: 491 pixels.
 
 ## forge
 

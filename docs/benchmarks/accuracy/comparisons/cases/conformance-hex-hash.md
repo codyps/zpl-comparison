@@ -32,13 +32,13 @@ Library dimensions: [832, 1218]; missing ink: 1; extra ink: 1 pixels.
 
 **labelize (Rust)**
 
-rendered · 27.65% IoU · [All cases for this library](../features/libraries/labelize.md)
+rendered · 24.73% IoU · [All cases for this library](../features/libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/hex-hash-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/hex-hash.png) | [![labelize render](../features/previews/hex-hash-labelize.png)](../../../conformance/images/hex-hash-labelize.png) | [![labelize difference](../features/previews/hex-hash-labelize-diff.png)](../features/images/hex-hash-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 706; extra ink: 712 pixels.
+Library dimensions: [832, 1218]; missing ink: 818; extra ink: 491 pixels.
 
 ## forge
 

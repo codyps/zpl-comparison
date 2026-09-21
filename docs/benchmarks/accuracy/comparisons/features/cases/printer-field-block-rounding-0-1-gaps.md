@@ -34,13 +34,13 @@ Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 **labelize (Rust)**
 
-rendered · 53.62% IoU · [All cases for this library](../libraries/labelize.md)
+rendered · 72.72% IoU · [All cases for this library](../libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/printer-field-block-rounding-0-1-gaps-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-field-block-rounding-0-1-gaps.png) | [![labelize render](../previews/printer-field-block-rounding-0-1-gaps-labelize.png)](../../../../conformance/images/printer-field-block-rounding-0-1-gaps-labelize.png) | [![labelize difference](../previews/printer-field-block-rounding-0-1-gaps-labelize-diff.png)](../images/printer-field-block-rounding-0-1-gaps-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 2142; extra ink: 3582 pixels.
+Library dimensions: [832, 1218]; missing ink: 924; extra ink: 2016 pixels.
 
 ## forge
 

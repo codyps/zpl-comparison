@@ -54,7 +54,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (24489) panicked at src/main.rs:74:10:
+thread 'main' (21550) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Digit)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

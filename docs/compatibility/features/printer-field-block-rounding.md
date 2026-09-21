@@ -13,7 +13,7 @@
 | --- | --- | --- | --- |
 | [codyps/zpl](../libraries/codyps-zpl.md) | 16 🧩 Handler found | 6/6 exact; mean IoU 100.0%; 0 errors | 6 rendered |
 | [zpl-toolchain](../libraries/toolchain.md) | 16 📐 Specification table | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
-| [labelize](../libraries/labelize.md) | 16 🧩 Handler found | 0/6 exact; mean IoU 36.1%; 0 errors | 6 rendered |
+| [labelize](../libraries/labelize.md) | 16 🧩 Handler found | 0/6 exact; mean IoU 51.8%; 0 errors | 6 rendered |
 | [zpl-forge](../libraries/forge.md) | 5 ❔ No evidence found; 11 🧩 Handler found | 0/6 exact; mean IoU 37.8%; 0 errors | 6 rendered |
 | [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/6 exact; mean IoU 27.9%; 0 errors | 6 rendered |
 | [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 13 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/6 exact; mean IoU 27.9%; 0 errors | 6 rendered |

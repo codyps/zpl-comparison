@@ -32,13 +32,13 @@ Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 **labelize (Rust)**
 
-rendered · 48.53% IoU · [All cases for this library](../features/libraries/labelize.md)
+rendered · 42.58% IoU · [All cases for this library](../features/libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/anchor-FO-R-1-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/anchor-FO-R-1.png) | [![labelize render](../features/previews/anchor-FO-R-1-labelize.png)](../../../conformance/images/anchor-FO-R-1-labelize.png) | [![labelize difference](../features/previews/anchor-FO-R-1-labelize-diff.png)](../features/images/anchor-FO-R-1-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 156; extra ink: 438 pixels.
+Library dimensions: [832, 1218]; missing ink: 280; extra ink: 308 pixels.
 
 ## forge
 
@@ -52,7 +52,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/forge.m
 
 ~~~text
 
-thread 'main' (28678) panicked at src/main.rs:74:10:
+thread 'main' (19489) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

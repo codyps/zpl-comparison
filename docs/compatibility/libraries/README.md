@@ -9,7 +9,7 @@
 | --- | --- | --- | --- | --- |
 | [codyps/zpl](codyps-zpl.md) | Rust | Parser and renderer | 0.1.0 @ b6085d8e0a37 | 133/133 exact; mean IoU 100.0%; 0 errors |
 | [zpl-toolchain](toolchain.md) | Rust | Parser and validator | 0.4.1 | N/A – no incoming-ZPL renderer |
-| [labelize](labelize.md) | Rust | Parser and renderer | 1.5.0 | 24/133 exact; mean IoU 48.0%; 5 errors |
+| [labelize](labelize.md) | Rust | Parser and renderer | 1.6.0 | 24/133 exact; mean IoU 48.5%; 5 errors |
 | [zpl-forge](forge.md) | Rust | Parser and renderer | 0.3.2 | 22/133 exact; mean IoU 39.7%; 7 errors |
 | [go-zpl](go.md) | Go | Parser and renderer | source 78b181940c76 | 16/133 exact; mean IoU 36.9%; 0 errors |
 | [zpl-rs](ffi.md) | Rust → Go | Renderer wrapper | 0.1.8 | 16/133 exact; mean IoU 36.3%; 0 errors |

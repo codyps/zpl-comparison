@@ -32,13 +32,13 @@ Library dimensions: [832, 1218]; missing ink: 0; extra ink: 0 pixels.
 
 **labelize (Rust)**
 
-rendered · 17.59% IoU · [All cases for this library](../libraries/labelize.md)
+blank · 0.00% IoU · [All cases for this library](../libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/unicode-cyrillic-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/unicode-cyrillic.png) | [![labelize render](../previews/unicode-cyrillic-labelize.png)](../../../../conformance/images/unicode-cyrillic-labelize.png) | [![labelize difference](../previews/unicode-cyrillic-labelize-diff.png)](../images/unicode-cyrillic-labelize-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 733; extra ink: 349 pixels.
+Library dimensions: [832, 1218]; missing ink: 964; extra ink: 0 pixels.
 
 ## forge
 

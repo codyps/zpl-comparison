@@ -15,7 +15,7 @@ Reference parameters: **v, n, z**. These describe the reference grammar, not a p
 | --- | --- | --- | --- | --- |
 | [codyps/zpl](../libraries/codyps-zpl.md) | 0.1.0 @ b6085d8e0a37 | [🧩 Handler found](https://github.com/codyps/zpl/blob/b6085d8e0a376e7cfbaac4fcc22820ada86a2797/zpl/src/render/mod.rs#L759) | Not measured | [Argument limits](../libraries/codyps-zpl.md#argument-limits) |
 | [zpl-toolchain](../libraries/toolchain.md) | 0.4.1 | [📐 Specification table](https://github.com/trevordcampbell/zpl-toolchain/blob/3da58518c1013fffd46d2147b0927a1d5b4aeab5/spec/commands/^SN.jsonc#L1) | N/A – no incoming-ZPL renderer | [Argument limits](../libraries/toolchain.md#argument-limits) |
-| [labelize](../libraries/labelize.md) | 1.5.0 | [⏭️ Ignored / stored only](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#413) | Not measured | [Argument limits](../libraries/labelize.md#argument-limits) |
+| [labelize](../libraries/labelize.md) | 1.6.0 | [⏭️ Ignored / stored only](https://docs.rs/crate/labelize/1.5.0/source/src/parsers/zpl_parser.rs#413) | Not measured | [Argument limits](../libraries/labelize.md#argument-limits) |
 | [zpl-forge](../libraries/forge.md) | 0.3.2 | ❔ No evidence found | Not measured | [Argument limits](../libraries/forge.md#argument-limits) |
 | [go-zpl](../libraries/go.md) | source 78b181940c76 | ❔ No evidence found | Not measured | [Argument limits](../libraries/go.md#argument-limits) |
 | [zpl-rs](../libraries/ffi.md) | 0.1.8 | ❔ No evidence found | Not measured | [Argument limits](../libraries/ffi.md#argument-limits) |

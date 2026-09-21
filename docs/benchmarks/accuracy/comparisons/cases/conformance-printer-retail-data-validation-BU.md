@@ -42,7 +42,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/labeliz
 
 ~~~text
 
-thread 'main' (23817) panicked at src/main.rs:63:14:
+thread 'main' (22172) panicked at src/main.rs:63:14:
 PNG: "UPC-A: expected 11 or 12 digits, got 9"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -60,7 +60,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/forge.m
 
 ~~~text
 
-thread 'main' (23819) panicked at src/main.rs:79:32:
+thread 'main' (22165) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 10")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -110,8 +110,8 @@ Unhandled exception. System.Exception: Error on zpl element "A12B34": Contents s
    --- End of inner exception stack trace ---
    at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)
    at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)
-   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-v1dvi0r9/benchmarks/adapters/dotnet/Program.cs:line 17
-   at Program.<Main>$(String[] args) in /tmp/zpl-build-v1dvi0r9/benchmarks/adapters/dotnet/Program.cs:line 40
+   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-k4jlj35z/benchmarks/adapters/dotnet/Program.cs:line 17
+   at Program.<Main>$(String[] args) in /tmp/zpl-build-k4jlj35z/benchmarks/adapters/dotnet/Program.cs:line 40
 
 ~~~
 
