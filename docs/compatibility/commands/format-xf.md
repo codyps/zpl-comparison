@@ -2,7 +2,7 @@
 
 # `^XF` – Recall Format
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Recalls a stored format to be merged with variable data. Multiple ^XF commands can appear in one format. When recalling, the calling format must contain ^FN commands to merge data properly.

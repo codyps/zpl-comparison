@@ -2,7 +2,7 @@
 
 # `^RU` – Read Unique RFID Chip Serialization
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Reads the TID (Tag ID) from the current RFID chip and formats a unique 38-bit serial number placed in the lower bits of the EPC code.

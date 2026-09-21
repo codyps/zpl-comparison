@@ -2,7 +2,7 @@
 
 # `^HG` – Host Graphic
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Uploads graphic data from the printer to the host computer. The graphic image can be stored for future use or downloaded to any Zebra printer.

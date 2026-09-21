@@ -2,7 +2,7 @@
 
 # `^RL` – RFID Lock/Unlock Tag Memory
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Locks or unlocks RFID tag memory. Supports permanent lock of all memory (P), permanent lock of specified sections (B), and reversible lock/unlock of individual memory banks (M).

@@ -2,7 +2,7 @@
 
 # `~JS` – Change Backfeed Sequence
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Controls the backfeed sequence for printers with or without cutters. Allows programming the rest point of continuous media cut edge or immediate backfeed after peel-off. Stays in effect until power off or new ~JS command.

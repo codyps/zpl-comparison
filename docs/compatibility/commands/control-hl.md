@@ -2,7 +2,7 @@
 
 # `~HL` – Return RFID Data Log to Host
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Returns the RFID data log stored in the printer's RAM to the host computer. The log contains RFID operation records including read/write operations, program positions, antenna elements, power levels, and status codes.

@@ -2,7 +2,7 @@
 
 # `^MA` – Set Maintenance Alerts
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Controls how the printer issues printed maintenance alerts for printhead cleaning or replacement. Alerts print a warning label when distance thresholds are reached.

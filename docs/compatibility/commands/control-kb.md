@@ -2,7 +2,7 @@
 
 # `~KB` – Kill Battery (Battery Discharge Mode)
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Places the printer in battery discharge mode, allowing the battery to be fully drained without printing. Used to maintain rechargeable battery performance in portable printers.

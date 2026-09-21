@@ -10,7 +10,7 @@ cover 20 graphics and caption-free barcode probes against ZD621 previews.
 
 [![Rendering accuracy against printer references](/../generated/docs/benchmarks/accuracy/accuracy.svg)](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
 
-- **[Compare library renders with printer previews](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/README.md)**: browse by library or case; see the printer, render and difference together.
+- **[Compare library renders with printer previews](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)**: browse by library or case; see the printer, render and difference together.
 - [Compare feature fixtures](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md): all eight renderers, printer previews and differences.
 - [Results, plots and tables](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/README.md)
 - [Which libraries reject invalid ZPL?](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/invalid/README.md)

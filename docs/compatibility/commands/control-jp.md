@@ -2,7 +2,7 @@
 
 # `~JP` – Pause and Cancel Format
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Clears the format currently being processed and places the printer into Pause Mode. Each subsequent ~JP clears the next buffered format until the buffer is empty. Identical to using CANCEL on the printer.

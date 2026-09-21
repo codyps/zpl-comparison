@@ -105,7 +105,7 @@ def generate(check=False):
         )
         content = [
             f"# {name}",
-            "[Feature comparisons](../README.md) · [All accuracy comparisons](../../README.md)",
+            "[Feature comparisons](../README.md) · [All accuracy comparisons](../../../README.md)",
             case["purpose"],
             f"{case['validity']} / {case.get('oracle', 'printer')} · [ZPL input]({link(case['path'])})",
             legend,
@@ -268,7 +268,7 @@ def generate(check=False):
             if CORPUS.name == "layout-accuracy"
             else "Feature accuracy comparisons"
         ),
-        "[All accuracy comparisons](../README.md) · [Compatibility features](../../../../compatibility/features/README.md)",
+        "[All accuracy comparisons](../../README.md) · [Compatibility features](../../../../compatibility/features/README.md)",
         f"{len(cases)} fixtures × {len(LIBRARIES)} renderers. Execution: {data['measured_utc']}. Printer: {reference.get('device', 'not captured')}, firmware {reference.get('firmware', 'N/A')}, captured {reference.get('captured_utc', 'N/A')} through {capture_end}.",
         f"{len(refs)} hash-matched printer previews; {len(failures)} unavailable previews. Invalid inputs run offline only. "
         + ("Labelary (SaaS) is a renderer, scored against the printer like every other library."

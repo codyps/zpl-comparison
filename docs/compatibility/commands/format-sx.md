@@ -2,7 +2,7 @@
 
 # `^SX` – Set ZebraNet Alert
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Configures the ZebraNet Alert System to send notifications for specific printer conditions to designated destinations (serial, parallel, email, TCP/IP, UDP/IP, or SNMP).

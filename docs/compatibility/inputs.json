@@ -10,7 +10,7 @@
     "benchmarks/adapters/node/package.json": "863935d7c446fe4a34d5ab329cdf3d44203ccd9765f58a23233f9c9349970647",
     "benchmarks/adapters/dotnet/Comparison.csproj": "dedf04ed99b98e453e2fd9892210bc1becab3e56aad46c315ec8a2264df28a9d",
     "benchmarks/sources.lock.json": "469e2e9ca84ebdd33d36299b77b4a518bdeeceb62a8fba972ad57b7166384f55",
-    "benchmarks/compatibility.py": "768744878470c0a07293bd2326494b8e439a3fe99ab91b8faf9d0cde1ef0ea51",
+    "benchmarks/compatibility.py": "2a330faf598a05f338df2a8dd0d06c612dd79cdf4fb0925a4281cb0b5c2785b7",
     "docs/benchmarks/accuracy/comparisons/features/results.json": "cc999b54b60a29197b1eeeaed9f028990ef2775ba5cdced6d7d4d276ec14a2ce",
     "docs/benchmarks/conformance/results.json": "ce6d797b43d293e45e02dd14c7c2de3183920170431aedd2e63b17e5e0ffa346"
   },

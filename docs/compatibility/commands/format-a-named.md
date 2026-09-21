@@ -2,7 +2,7 @@
 
 # `^A@` – Use Font Name to Call Font
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Selects a font by its full filename rather than a single-character identifier. Once defined, the font name persists for subsequent ^A@ commands until a new name is specified.

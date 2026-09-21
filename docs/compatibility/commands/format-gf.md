@@ -2,7 +2,7 @@
 
 # `^GF` – Graphic Field
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Graphic field: download graphic data directly into bitmap storage. Parameters: compression type (A=ASCII hex, B=binary, C=compressed binary), binary byte count, graphic field count, bytes per row, followed by data.

@@ -2,7 +2,7 @@
 
 # `^CM` – Change Memory Letter Designation
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Reassigns letter designations for the printer's memory devices (B:, E:, R:). Allows reformatting memory references without altering existing format files. Impacts all subsequent file operation commands.

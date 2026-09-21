@@ -106,7 +106,7 @@ def render_report(data, dest, part="all"):
         return
     text = [
         "# Accuracy against a real Zebra printer\n",
-        "**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.\n",
+        "Each case below links to its printer preview, library renders and difference images. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.\n",
         f"Reference: **{ref['device']}, firmware {ref['firmware']}**, {ref['dpi']} dpi. Fresh captures: {ref['captured_utc']}. Library comparisons: {data['measured_utc']}.\n",
         ("Local renders are cached per case and library; the comparison date is the latest execution in this snapshot. Per-result `observed_utc` values retain execution/capture dates.\n" if data.get("generation") else ""),
         "[Command/argument support](../command-support.md) · [Run/reproduce](../../../benchmarks/accuracy/README.md) · [Raw measurements](results.json).\n",

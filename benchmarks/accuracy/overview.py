@@ -76,8 +76,9 @@ def compose(original, suites):
     for suite in suites:
         key, rows, cases = suite["key"], suite["rows"], suite["cases"]
         groups = sorted({c["group"] for c in cases})
+        target = "#argument-and-archived-barcode-details" if key == "accuracy" else suite["gallery"] + "/README.md"
         inventory.append([
-            f"[{suite['title']}]({suite['gallery']}/README.md)", len(cases), len(groups), len(rows),
+            f"[{suite['title']}]({target})", len(cases), len(groups), len(rows),
             sum(r.get("score") is not None for r in rows), sum("iou" in r for r in rows),
             suite["data"]["measured_utc"],
         ])
@@ -110,6 +111,12 @@ def compose(original, suites):
         "image differences count actual image comparisons, including blank-reference comparisons whose IoU is excluded from scored means. "
         "Labelary is a renderer against the same printer baseline, not an additional accuracy corpus.",
         table(["Corpus", "Cases", "Categories", "Attempts", "Scored attempts", "Image differences", "Measured UTC"], inventory),
+        "## Browse by library",
+        table(["Library", *[suite["title"] for suite in suites]], [
+            [lib, *[f"[Compare images]({suite['gallery']}/libraries/{lib}.md)"
+                    if lib in suite["libraries"] else "N/A" for suite in suites]]
+            for lib in libraries
+        ]),
         "## Every category: mean foreground IoU",
         "Each cell shows mean IoU and its scored denominator in parentheses. Corpora remain separate because their sampling overlaps. "
         "N/A means the renderer was not tested in that corpus; unscored means no nonblank printer baseline. "
@@ -132,6 +139,19 @@ def compose(original, suites):
 
 def verify(dest, suites, text):
     repo = dest.resolve().parents[2]
+    obsolete = (dest / "comparisons/README.md").resolve()
+    if obsolete.exists():
+        raise ValueError("Obsolete comparison index: " + str(obsolete))
+    markdown_files = list((repo / "docs").rglob("*.md"))
+    if (repo / "README.md").is_file():
+        markdown_files.append(repo / "README.md")
+    for markdown in markdown_files:
+        for target in re.findall(r"\]\(([^)]+)\)", markdown.read_text()):
+            if target.split("#", 1)[0] == "https://github.com/codyps/zpl-comparison/blob/generated/" + ROOT + "/comparisons/README.md":
+                raise ValueError("Link to obsolete comparison index: " + str(markdown))
+            if "://" not in target and not target.startswith("#"):
+                if (markdown.parent / target.split("#", 1)[0]).resolve() == obsolete:
+                    raise ValueError("Link to obsolete comparison index: " + str(markdown))
     pages = {}
     for suite in suites:
         key = suite["key"]

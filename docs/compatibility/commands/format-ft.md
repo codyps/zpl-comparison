@@ -2,7 +2,7 @@
 
 # `^FT` – Field Typeset
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Set field typeset origin (x,y) using baseline positioning. If x or y is omitted, the position after the last formatted text field is used. Optional z parameter sets justification (0=left, 1=right, 2=auto).

@@ -8,10 +8,23 @@ Counts include failed, blank, excluded, and unavailable-reference cases. Scored 
 
 | Corpus | Cases | Categories | Attempts | Scored attempts | Image differences | Measured UTC |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Argument and archived barcode accuracy](comparisons/README.md) | 133 | 6 | 1064 | 1064 | 1052 | 2026-09-21T15:39:32Z |
+| [Argument and archived barcode accuracy](#argument-and-archived-barcode-details) | 133 | 6 | 1064 | 1064 | 1052 | 2026-09-21T15:39:32Z |
 | [Feature conformance](comparisons/features/README.md) | 598 | 38 | 4784 | 4512 | 4484 | 2026-09-21T15:50:59Z |
 | [External examples](comparisons/external/README.md) | 8 | 8 | 64 | 48 | 47 | 2026-09-21T15:35:11Z |
 | [Font-free layout](comparisons/layout/README.md) | 20 | 1 | 140 | 140 | 140 | 2026-09-21T15:36:38Z |
+
+## Browse by library
+
+| Library | Argument and archived barcode accuracy | Feature conformance | External examples | Font-free layout |
+| --- | --- | --- | --- | --- |
+| binarykits | [Compare images](comparisons/libraries/binarykits.md) | [Compare images](comparisons/features/libraries/binarykits.md) | [Compare images](comparisons/external/libraries/binarykits.md) | [Compare images](comparisons/layout/libraries/binarykits.md) |
+| codyps-zpl | [Compare images](comparisons/libraries/codyps-zpl.md) | [Compare images](comparisons/features/libraries/codyps-zpl.md) | [Compare images](comparisons/external/libraries/codyps-zpl.md) | [Compare images](comparisons/layout/libraries/codyps-zpl.md) |
+| ffi | [Compare images](comparisons/libraries/ffi.md) | [Compare images](comparisons/features/libraries/ffi.md) | [Compare images](comparisons/external/libraries/ffi.md) | [Compare images](comparisons/layout/libraries/ffi.md) |
+| forge | [Compare images](comparisons/libraries/forge.md) | [Compare images](comparisons/features/libraries/forge.md) | [Compare images](comparisons/external/libraries/forge.md) | [Compare images](comparisons/layout/libraries/forge.md) |
+| go | [Compare images](comparisons/libraries/go.md) | [Compare images](comparisons/features/libraries/go.md) | [Compare images](comparisons/external/libraries/go.md) | [Compare images](comparisons/layout/libraries/go.md) |
+| labelary | [Compare images](comparisons/libraries/labelary.md) | [Compare images](comparisons/features/libraries/labelary.md) | [Compare images](comparisons/external/libraries/labelary.md) | N/A |
+| labelize | [Compare images](comparisons/libraries/labelize.md) | [Compare images](comparisons/features/libraries/labelize.md) | [Compare images](comparisons/external/libraries/labelize.md) | [Compare images](comparisons/layout/libraries/labelize.md) |
+| zplr | [Compare images](comparisons/libraries/zplr.md) | [Compare images](comparisons/features/libraries/zplr.md) | [Compare images](comparisons/external/libraries/zplr.md) | [Compare images](comparisons/layout/libraries/zplr.md) |
 
 ## Every category: mean foreground IoU
 
@@ -77,7 +90,7 @@ Each cell shows mean IoU and its scored denominator in parentheses. Corpora rema
 
 ## Argument and archived barcode details
 
-**[Compare images by library or case](comparisons/README.md)**: printer preview, library render and difference together. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.
+Each case below links to its printer preview, library renders and difference images. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.
 
 Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-21T15:39:32Z.
 

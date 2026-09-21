@@ -6,7 +6,7 @@ Black = matching ink; magenta = printer only; cyan = library only. Compact previ
 
 Printer and Labelary captures retain their original capture dates. Local renders are cached independently; execution timestamps are recorded per result in results.json.
 
-[All comparisons](../README.md) · [Accuracy summary](../../../README.md)
+[Corpus comparisons](../README.md) · [All accuracy comparisons](../../../README.md)
 
 ^GB w=100,h=60,t=60,color=B,round=0
 

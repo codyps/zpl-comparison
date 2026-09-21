@@ -2,7 +2,7 @@
 
 # `^FR` – Field Reverse Print
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Allows a field to appear as white over black or black over white. The color of the output is the reverse of its background. Applies to only one field and must be specified each time. For label-wide reverse, use ^LR.

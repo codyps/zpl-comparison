@@ -2,7 +2,7 @@
 
 # `^SN` – Serialization Data
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Allows the printer to index data fields by a selected increment or decrement value. Can be performed on 100-150 fields per format, on both alphanumeric and barcode fields. A maximum of 12 right-most integers are subject to indexing.

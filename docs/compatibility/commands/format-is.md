@@ -2,7 +2,7 @@
 
 # `^IS` – Image Save
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Saves the current label format as a graphic image rather than a ZPL II script. The saved image can be recalled with ^IL with virtually no formatting time and overlaid with variable data.

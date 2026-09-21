@@ -2,7 +2,7 @@
 
 # `^DF` – Download Format
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Saves ZPL II format commands as text strings to be later merged using ^XF with variable data. The format may contain ^FN commands for field referencing when recalled. Enter immediately after ^XA.

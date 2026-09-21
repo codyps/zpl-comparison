@@ -2,7 +2,7 @@
 
 # `~DS` – Download Intellifont (Scalable Font)
 
-[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/comparisons/README.md)
+[Overview](../README.md) · [Libraries](../libraries/README.md) · [Commands](README.md) · [Features](../features/README.md) · [Evidence legend](../METHODOLOGY.md) · [Compare images](../../benchmarks/accuracy/README.md)
 
 
 Downloads a scalable Intellifont to the printer. Font must be converted using ZTools utility. Downloaded scalable fonts are not checked for integrity.

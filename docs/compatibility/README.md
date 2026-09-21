@@ -2,7 +2,7 @@
 
 # ZPL compatibility
 
-[Overview](README.md) · [Libraries](libraries/README.md) · [Commands](commands/README.md) · [Features](features/README.md) · [Evidence legend](METHODOLOGY.md) · [Compare images](../benchmarks/accuracy/comparisons/README.md)
+[Overview](README.md) · [Libraries](libraries/README.md) · [Commands](commands/README.md) · [Features](features/README.md) · [Evidence legend](METHODOLOGY.md) · [Compare images](../benchmarks/accuracy/README.md)
 
 
 Browse ZPL support by library or by command/feature. These are GitHub-native Markdown pages generated from the same evidence, not separate hand-maintained lists.
