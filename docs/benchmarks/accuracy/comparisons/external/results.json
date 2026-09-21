@@ -4,7 +4,7 @@
   "inputs": {
     "test-data/external-zpl/manifest.json": "d67331b8da175ee7bf7e359b3a222321b41e82152ee63f32cec8f42ad1b9de3f",
     "docs/benchmarks/external-zpl/results.json": "e709a31df71c39b33893277abf436dcd64e29e7f8b917a7ddc2b9aba95b0efe3",
-    "benchmarks/accuracy/external-reference/manifest.json": "9a224249ea9c498379917035f4a997ed4438907391edaf608faf4f08792cc16f"
+    "benchmarks/accuracy/external-reference/manifest.json": "35bb6715daf4e31a79cbc319ce15e0cbe3434096aef780a21c474bfa6d3f48c4"
   },
   "coverage": {
     "attempts": 64,

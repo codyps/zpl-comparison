@@ -22,91 +22,91 @@ Zebra programming guide: [^BQ](../../../../../zpl-zbi2-pg-en.pdf#page=128) · [^
 
 **codyps/zpl (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![codyps-zpl render](../previews/probe-qr-ec-M-codyps-zpl.png)](../../../../conformance/images/probe-qr-ec-M-codyps-zpl.png) | [![codyps-zpl difference](../previews/probe-qr-ec-M-codyps-zpl-diff.png)](../images/probe-qr-ec-M-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2052 pixels.
+Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 
 **labelize (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/labelize.md)
+rendered · 71.00% IoU · [All cases for this library](../libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![labelize render](../previews/probe-qr-ec-M-labelize.png)](../../../../conformance/images/probe-qr-ec-M-labelize.png) | [![labelize difference](../previews/probe-qr-ec-M-labelize-diff.png)](../images/probe-qr-ec-M-labelize-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2052 pixels.
+Library dimensions: [832, 300]; missing ink: 348; extra ink: 348 pixels.
 
 ## forge
 
 **zpl-forge (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/forge.md)
+rendered · 71.00% IoU · [All cases for this library](../libraries/forge.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![forge render](../previews/probe-qr-ec-M-forge.png)](../../../../conformance/images/probe-qr-ec-M-forge.png) | [![forge difference](../previews/probe-qr-ec-M-forge-diff.png)](../images/probe-qr-ec-M-forge-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2052 pixels.
+Library dimensions: [832, 300]; missing ink: 348; extra ink: 348 pixels.
 
 ## go
 
 **go-zpl (Go)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/go.md)
+rendered · 27.02% IoU · [All cases for this library](../libraries/go.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![go render](../previews/probe-qr-ec-M-go.png)](../../../../conformance/images/probe-qr-ec-M-go.png) | [![go difference](../previews/probe-qr-ec-M-go-diff.png)](../images/probe-qr-ec-M-go-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2052 pixels.
+Library dimensions: [832, 300]; missing ink: 1179; extra ink: 1179 pixels.
 
 ## ffi
 
 **zpl-rs (Rust → Go)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/ffi.md)
+rendered · 27.02% IoU · [All cases for this library](../libraries/ffi.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![ffi render](../previews/probe-qr-ec-M-ffi.png)](../../../../conformance/images/probe-qr-ec-M-ffi.png) | [![ffi difference](../previews/probe-qr-ec-M-ffi-diff.png)](../images/probe-qr-ec-M-ffi-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2052 pixels.
+Library dimensions: [832, 300]; missing ink: 1179; extra ink: 1179 pixels.
 
 ## binarykits
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 48.86% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![binarykits render](../previews/probe-qr-ec-M-binarykits.png)](../../../../conformance/images/probe-qr-ec-M-binarykits.png) | [![binarykits difference](../previews/probe-qr-ec-M-binarykits-diff.png)](../images/probe-qr-ec-M-binarykits-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2070 pixels.
+Library dimensions: [832, 300]; missing ink: 699; extra ink: 717 pixels.
 
 ## zplr
 
 **ZPLr (TypeScript)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/zplr.md)
+rendered · 59.03% IoU · [All cases for this library](../libraries/zplr.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![zplr render](../previews/probe-qr-ec-M-zplr.png)](../../../../conformance/images/probe-qr-ec-M-zplr.png) | [![zplr difference](../previews/probe-qr-ec-M-zplr-diff.png)](../images/probe-qr-ec-M-zplr-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2070 pixels.
+Library dimensions: [832, 300]; missing ink: 522; extra ink: 540 pixels.
 
 ## labelary
 
 **Labelary (SaaS)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/labelary.md)
+rendered · 49.17% IoU · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata, and original responses](../../../../labelary/README.md)
 
@@ -114,4 +114,4 @@ rendered · 0.00% IoU · [All cases for this library](../libraries/labelary.md)
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-ec-M-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-ec-M.png) | [![labelary render](../previews/probe-qr-ec-M-labelary.png)](../../../../conformance/images/probe-qr-ec-M-labelary.png) | [![labelary difference](../previews/probe-qr-ec-M-labelary-diff.png)](../images/probe-qr-ec-M-labelary-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2052; extra ink: 2016 pixels.
+Library dimensions: [832, 300]; missing ink: 711; extra ink: 675 pixels.

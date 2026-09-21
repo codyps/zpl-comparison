@@ -10,21 +10,21 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 ## Libraries
 
-[codyps/zpl (Rust)](libraries/codyps-zpl.md) · 90.99% mean IoU
+[codyps/zpl (Rust)](libraries/codyps-zpl.md) · 92.93% mean IoU
 
-[labelize (Rust)](libraries/labelize.md) · 48.94% mean IoU
+[labelize (Rust)](libraries/labelize.md) · 50.01% mean IoU
 
-[zpl-forge (Rust)](libraries/forge.md) · 40.27% mean IoU
+[zpl-forge (Rust)](libraries/forge.md) · 41.25% mean IoU
 
-[go-zpl (Go)](libraries/go.md) · 39.71% mean IoU
+[go-zpl (Go)](libraries/go.md) · 40.19% mean IoU
 
-[zpl-rs (Rust → Go)](libraries/ffi.md) · 39.23% mean IoU
+[zpl-rs (Rust → Go)](libraries/ffi.md) · 39.71% mean IoU
 
-[BinaryKits.Zpl (.NET)](libraries/binarykits.md) · 39.86% mean IoU
+[BinaryKits.Zpl (.NET)](libraries/binarykits.md) · 41.10% mean IoU
 
-[ZPLr (TypeScript)](libraries/zplr.md) · 51.46% mean IoU
+[ZPLr (TypeScript)](libraries/zplr.md) · 53.17% mean IoU
 
-[Labelary (SaaS)](libraries/labelary.md) · 67.51% mean IoU
+[Labelary (SaaS)](libraries/labelary.md) · 68.45% mean IoU
 
 [Feature fixtures](README.md) · [External examples](../external/README.md) · [Font-free layout](../layout/README.md)
 
@@ -90,17 +90,17 @@ Printer and Labelary captures retain their original capture dates. Local renders
 | [probe-code128-rotation-B](../cases/conformance-probe-code128-rotation-B.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 11.94% IoU | rendered · 11.94% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
 | [probe-code128-mode-N](../cases/conformance-probe-code128-mode-N.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
 | [probe-code128-mode-A](../cases/conformance-probe-code128-mode-A.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 32.53% IoU | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
-| [probe-qr-model-1](../cases/conformance-probe-qr-model-1.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | blank · 0.00% IoU |
-| [probe-qr-model-2](../cases/conformance-probe-qr-model-2.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-ec-L](../cases/conformance-probe-qr-ec-L.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-ec-M](../cases/conformance-probe-qr-ec-M.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-ec-Q](../cases/conformance-probe-qr-ec-Q.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-ec-H](../cases/conformance-probe-qr-ec-H.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-module-2](../cases/conformance-probe-qr-module-2.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-module-5](../cases/conformance-probe-qr-module-5.md) | baseline-barcode-arguments | rendered · 5.26% IoU | rendered · 5.22% IoU | rendered · 4.24% IoU | rendered · 6.76% IoU | rendered · 6.76% IoU | rendered · 5.45% IoU | rendered · 5.26% IoU | rendered · 4.98% IoU |
-| [probe-qr-mask-0](../cases/conformance-probe-qr-mask-0.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-mask-3](../cases/conformance-probe-qr-mask-3.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
-| [probe-qr-mask-7](../cases/conformance-probe-qr-mask-7.md) | baseline-barcode-arguments | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU | rendered · 0.00% IoU |
+| [probe-qr-model-1](../cases/conformance-probe-qr-model-1.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 48.18% IoU | rendered · 47.18% IoU | rendered · 24.59% IoU | rendered · 24.59% IoU | rendered · 48.71% IoU | rendered · 100.00% IoU · exact | blank · 0.00% IoU |
+| [probe-qr-model-2](../cases/conformance-probe-qr-model-2.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 49.84% IoU | rendered · 49.68% IoU | rendered · 24.68% IoU | rendered · 24.68% IoU | rendered · 72.66% IoU | rendered · 100.00% IoU · exact | rendered · 52.46% IoU |
+| [probe-qr-ec-L](../cases/conformance-probe-qr-ec-L.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 49.84% IoU | rendered · 49.68% IoU | rendered · 24.68% IoU | rendered · 24.68% IoU | rendered · 72.66% IoU | rendered · 100.00% IoU · exact | rendered · 52.46% IoU |
+| [probe-qr-ec-M](../cases/conformance-probe-qr-ec-M.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 71.00% IoU | rendered · 71.00% IoU | rendered · 27.02% IoU | rendered · 27.02% IoU | rendered · 48.86% IoU | rendered · 59.03% IoU | rendered · 49.17% IoU |
+| [probe-qr-ec-Q](../cases/conformance-probe-qr-ec-Q.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 71.00% IoU | rendered · 43.74% IoU | rendered · 25.34% IoU | rendered · 25.34% IoU | rendered · 71.00% IoU | rendered · 100.00% IoU · exact | rendered · 51.17% IoU |
+| [probe-qr-ec-H](../cases/conformance-probe-qr-ec-H.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 70.56% IoU | rendered · 47.62% IoU | rendered · 23.42% IoU | rendered · 23.42% IoU | rendered · 57.71% IoU | rendered · 76.00% IoU | rendered · 70.56% IoU |
+| [probe-qr-module-2](../cases/conformance-probe-qr-module-2.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 45.34% IoU | rendered · 45.05% IoU | rendered · 28.51% IoU | rendered · 28.51% IoU | rendered · 61.62% IoU | rendered · 100.00% IoU · exact | rendered · 48.01% IoU |
+| [probe-qr-module-5](../cases/conformance-probe-qr-module-5.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 53.64% IoU | rendered · 53.59% IoU | rendered · 25.85% IoU | rendered · 25.85% IoU | rendered · 82.65% IoU | rendered · 100.00% IoU · exact | rendered · 56.23% IoU |
+| [probe-qr-mask-0](../cases/conformance-probe-qr-mask-0.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 49.84% IoU | rendered · 49.68% IoU | rendered · 24.68% IoU | rendered · 24.68% IoU | rendered · 72.66% IoU | rendered · 100.00% IoU · exact | rendered · 52.46% IoU |
+| [probe-qr-mask-3](../cases/conformance-probe-qr-mask-3.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 49.84% IoU | rendered · 49.68% IoU | rendered · 24.68% IoU | rendered · 24.68% IoU | rendered · 49.68% IoU | rendered · 59.86% IoU | rendered · 52.46% IoU |
+| [probe-qr-mask-7](../cases/conformance-probe-qr-mask-7.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 49.84% IoU | rendered · 49.68% IoU | rendered · 24.68% IoU | rendered · 24.68% IoU | rendered · 61.93% IoU | rendered · 77.86% IoU | rendered · 52.46% IoU |
 | [probe-datamatrix-module-2](../cases/conformance-probe-datamatrix-module-2.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
 | [probe-datamatrix-module-4](../cases/conformance-probe-datamatrix-module-4.md) | baseline-barcode-arguments | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact | rendered · 100.00% IoU · exact |
 | [symbol-aztec](../cases/conformance-symbol-aztec.md) | barcode-families | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU | rendered · 31.51% IoU |

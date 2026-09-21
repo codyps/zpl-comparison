@@ -25,7 +25,7 @@ Upstream catalog explicitly separates supported/partial/unsupported/non-renderin
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 30/66 exact; mean IoU 85.0%; 0 errors | 4 blank, 66 rendered |
 | [Barcode families](../features/barcode-families.md) | 60 | 1/60 exact; mean IoU 31.9%; 0 errors | 60 rendered |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 12/25 exact; mean IoU 55.9%; 0 errors | 25 rendered |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 19/25 exact; mean IoU 94.6%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 29.4%; 0 errors | 11 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 6/9 exact; mean IoU 95.4%; 0 errors | 9 rendered |

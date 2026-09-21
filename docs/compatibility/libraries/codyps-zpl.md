@@ -25,7 +25,7 @@ Font `^A0` only; bitmap scaling for other sizes. `^CI` accepts 0/27/28, not arbi
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 66/66 exact; mean IoU 100.0%; 0 errors | 4 blank, 66 rendered |
 | [Barcode families](../features/barcode-families.md) | 60 | 1/60 exact; mean IoU 33.7%; 0 errors | 60 rendered |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 14/25 exact; mean IoU 56.2%; 0 errors | 25 rendered |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 25/25 exact; mean IoU 100.0%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 11/11 exact; mean IoU 100.0%; 0 errors | 11 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 9/9 exact; mean IoU 100.0%; 0 errors | 9 rendered |

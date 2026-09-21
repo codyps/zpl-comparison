@@ -11,7 +11,7 @@
     "benchmarks/adapters/dotnet/Comparison.csproj": "2697d238c5925bda8dfd54070163556d14ec55dd984f5743b3bd97bebeab3bb2",
     "benchmarks/sources.lock.json": "5f3ccb69f0dc42c5f0e7f397991efb64d750e116f1648e79d8b525ffecea4217",
     "benchmarks/compatibility.py": "2a330faf598a05f338df2a8dd0d06c612dd79cdf4fb0925a4281cb0b5c2785b7",
-    "docs/benchmarks/accuracy/comparisons/features/results.json": "e7ed3704ac7b28e63b89cabe02c1ddaaed338d5c6f764651e00f18e47e2c5a6b",
+    "docs/benchmarks/accuracy/comparisons/features/results.json": "4880276f99ea91abb1149cd08a97a713ce536f5e1ce779d1bc1b9ee8b134e29d",
     "docs/benchmarks/conformance/results.json": "e45aadbe26305505f509eb64549dedee1d4277f322ea10134d9381cf92da7503"
   },
   "accuracy_measured_utc": "2026-09-21T18:56:33Z",

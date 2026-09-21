@@ -25,7 +25,7 @@
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 17/66 exact; mean IoU 61.5%; 2 errors | 5 error, 65 rendered |
 | [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 16.2%; 4 errors | 4 error, 56 rendered |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 10/25 exact; mean IoU 52.4%; 0 errors | 25 rendered |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 10/25 exact; mean IoU 74.4%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 1/4 exact; mean IoU 36.9%; 0 errors | 1 blank, 3 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 27.9%; 3 errors | 3 error, 8 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 67.2%; 0 errors | 9 rendered |

@@ -40,7 +40,7 @@ Each cell shows mean IoU and its scored denominator in parentheses. Corpora rema
 | Argument and archived barcode accuracy | text | 24 | 24.37% (24) | 100.00% (24) | 62.75% (24) | 42.60% (24) | 62.75% (24) | 73.99% (24) | 60.86% (24) | 31.67% (24) |
 | Feature conformance | barcode-arguments | 70 | 72.05% (66) | 100.00% (66) | 31.81% (66) | 61.51% (66) | 31.81% (66) | 82.03% (66) | 80.55% (66) | 84.99% (66) |
 | Feature conformance | barcode-families | 60 | 11.86% (60) | 33.66% (60) | 8.68% (60) | 16.16% (60) | 8.68% (60) | 28.06% (60) | 10.61% (60) | 31.94% (60) |
-| Feature conformance | baseline-barcode-arguments | 25 | 55.04% (25) | 56.21% (25) | 31.16% (25) | 52.35% (25) | 31.16% (25) | 55.88% (25) | 55.00% (25) | 55.90% (25) |
+| Feature conformance | baseline-barcode-arguments | 25 | 82.83% (25) | 100.00% (25) | 42.02% (25) | 74.44% (25) | 42.02% (25) | 77.18% (25) | 79.15% (25) | 94.60% (25) |
 | Feature conformance | baseline-graphics | 4 | 75.00% (4) | 100.00% (4) | 100.00% (4) | 36.86% (4) | 100.00% (4) | 100.00% (4) | 75.00% (4) | 100.00% (4) |
 | Feature conformance | baseline-layout | 11 | 31.49% (11) | 100.00% (11) | 62.65% (11) | 27.92% (11) | 69.52% (11) | 62.76% (11) | 58.22% (11) | 29.41% (11) |
 | Feature conformance | baseline-shapes | 9 | 78.78% (9) | 100.00% (9) | 66.09% (9) | 67.23% (9) | 66.09% (9) | 78.54% (9) | 73.57% (9) | 95.38% (9) |
@@ -466,17 +466,17 @@ Values are foreground IoU against the printer. Case links open every renderer's 
 | [probe-code128-rotation-B](comparisons/cases/conformance-probe-code128-rotation-B.md) | valid | 100.00% | 100.00% | 11.94% | 100.00% | 11.94% | 100.00% | 100.00% | 100.00% |
 | [probe-code128-mode-N](comparisons/cases/conformance-probe-code128-mode-N.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
 | [probe-code128-mode-A](comparisons/cases/conformance-probe-code128-mode-A.md) | valid | 100.00% | 100.00% | 100.00% | 32.53% | 100.00% | 100.00% | 100.00% | 100.00% |
-| [probe-qr-model-1](comparisons/cases/conformance-probe-qr-model-1.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% · blank | 0.00% | 0.00% |
-| [probe-qr-model-2](comparisons/cases/conformance-probe-qr-model-2.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-ec-L](comparisons/cases/conformance-probe-qr-ec-L.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-ec-M](comparisons/cases/conformance-probe-qr-ec-M.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-ec-Q](comparisons/cases/conformance-probe-qr-ec-Q.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-ec-H](comparisons/cases/conformance-probe-qr-ec-H.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-module-2](comparisons/cases/conformance-probe-qr-module-2.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-module-5](comparisons/cases/conformance-probe-qr-module-5.md) | valid | 5.45% | 5.26% | 6.76% | 4.24% | 6.76% | 4.98% | 5.22% | 5.26% |
-| [probe-qr-mask-0](comparisons/cases/conformance-probe-qr-mask-0.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-mask-3](comparisons/cases/conformance-probe-qr-mask-3.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
-| [probe-qr-mask-7](comparisons/cases/conformance-probe-qr-mask-7.md) | valid | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
+| [probe-qr-model-1](comparisons/cases/conformance-probe-qr-model-1.md) | valid | 48.71% | 100.00% | 24.59% | 47.18% | 24.59% | 0.00% · blank | 48.18% | 100.00% |
+| [probe-qr-model-2](comparisons/cases/conformance-probe-qr-model-2.md) | valid | 72.66% | 100.00% | 24.68% | 49.68% | 24.68% | 52.46% | 49.84% | 100.00% |
+| [probe-qr-ec-L](comparisons/cases/conformance-probe-qr-ec-L.md) | valid | 72.66% | 100.00% | 24.68% | 49.68% | 24.68% | 52.46% | 49.84% | 100.00% |
+| [probe-qr-ec-M](comparisons/cases/conformance-probe-qr-ec-M.md) | valid | 48.86% | 100.00% | 27.02% | 71.00% | 27.02% | 49.17% | 71.00% | 59.03% |
+| [probe-qr-ec-Q](comparisons/cases/conformance-probe-qr-ec-Q.md) | valid | 71.00% | 100.00% | 25.34% | 43.74% | 25.34% | 51.17% | 71.00% | 100.00% |
+| [probe-qr-ec-H](comparisons/cases/conformance-probe-qr-ec-H.md) | valid | 57.71% | 100.00% | 23.42% | 47.62% | 23.42% | 70.56% | 70.56% | 76.00% |
+| [probe-qr-module-2](comparisons/cases/conformance-probe-qr-module-2.md) | valid | 61.62% | 100.00% | 28.51% | 45.05% | 28.51% | 48.01% | 45.34% | 100.00% |
+| [probe-qr-module-5](comparisons/cases/conformance-probe-qr-module-5.md) | valid | 82.65% | 100.00% | 25.85% | 53.59% | 25.85% | 56.23% | 53.64% | 100.00% |
+| [probe-qr-mask-0](comparisons/cases/conformance-probe-qr-mask-0.md) | valid | 72.66% | 100.00% | 24.68% | 49.68% | 24.68% | 52.46% | 49.84% | 100.00% |
+| [probe-qr-mask-3](comparisons/cases/conformance-probe-qr-mask-3.md) | valid | 49.68% | 100.00% | 24.68% | 49.68% | 24.68% | 52.46% | 49.84% | 59.86% |
+| [probe-qr-mask-7](comparisons/cases/conformance-probe-qr-mask-7.md) | valid | 61.93% | 100.00% | 24.68% | 49.68% | 24.68% | 52.46% | 49.84% | 77.86% |
 | [probe-datamatrix-module-2](comparisons/cases/conformance-probe-datamatrix-module-2.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
 | [probe-datamatrix-module-4](comparisons/cases/conformance-probe-datamatrix-module-4.md) | valid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
 

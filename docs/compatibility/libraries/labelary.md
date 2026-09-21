@@ -25,7 +25,7 @@ Public API responses at 8 dpmm, identified by capture timestamps when no build v
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 27/66 exact; mean IoU 82.0%; 0 errors | 9 blank, 61 rendered |
 | [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 28.1%; 0 errors | 1 blank, 59 rendered |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 12/25 exact; mean IoU 55.9%; 0 errors | 1 blank, 24 rendered |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 12/25 exact; mean IoU 77.2%; 0 errors | 1 blank, 24 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 4/4 exact; mean IoU 100.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 62.8%; 0 errors | 11 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 78.5%; 0 errors | 9 rendered |

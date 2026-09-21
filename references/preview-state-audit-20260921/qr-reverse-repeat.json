@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "device": "ZTC ZD621-203dpi ZPL",
+  "firmware": "V93.21.33Z",
+  "dpi": 203,
+  "host": "http://d7j211001302.bed.einic.org/",
+  "captured_utc": "2026-09-21T22:10:27Z",
+  "method": "printer HTTP Preview Label; not physical print/scan",
+  "cases": [
+    {
+      "name": "probe-qr-mask-7",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ mask=7",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "033014b0baa181199f177d57048d836f24b8889856b14f7b646164afc555c11a",
+      "captured_utc": "2026-09-21T22:10:28Z",
+      "zpl_sha256": "6f413e4b613b90233119e4a2277e40ba41fab7f13a2dbb7f4ee03ab9251290f0",
+      "png_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-mask-3",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ mask=3",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "320772888be7adcc0adb5bef1c6eaed1732f3068ef6e7a2031594beaf41c6c87",
+      "captured_utc": "2026-09-21T22:10:28Z",
+      "zpl_sha256": "4fabd53392d630e7d457feda26fcb32a35ab0abd30535619084304caef11e29e",
+      "png_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-mask-0",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ mask=0",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "22a91e38287778d0036616784e5195a4f2affe4632d9cdec9ecfbb008358c9c6",
+      "captured_utc": "2026-09-21T22:10:29Z",
+      "zpl_sha256": "20a33598bb1976b6792b399df77ea5eeafefe991e51d0cc7cfdec6a2a62d8740",
+      "png_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-module-5",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ magnification=5",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "05cd37899d68550256be4e1d6c75fb22179b5a12d742ea1db135a2824cfbddcb",
+      "captured_utc": "2026-09-21T22:10:30Z",
+      "zpl_sha256": "6e2816b158dcae7a42c4f8b86cc5122405b26be17d4def261f9cbee9fdecb714",
+      "png_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-module-2",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ magnification=2",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "dc80c115610d4e0326fd4529b24541c8fa8e0856a7b8099d444904d621114a37",
+      "captured_utc": "2026-09-21T22:10:30Z",
+      "zpl_sha256": "3b567f6659d35eca3331652be0edb9637f4a66c85133e3d10e8e4426ef755f7a",
+      "png_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-ec-H",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ model=2,magnification=3,EC=H,mask=0",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "e4526643f221bd64c1d46484f7d538bb5cb7d5c38a80bee89edd3c6287cd518b",
+      "captured_utc": "2026-09-21T22:10:31Z",
+      "zpl_sha256": "a2337e72420fee2a4e196ad39e5e7fe22f1decc24b4134f1175857f0046bbbc5",
+      "png_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-ec-Q",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ model=2,magnification=3,EC=Q,mask=0",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "0da281682a21fba73e450ca92da24caa379038cfc88b68fa37b17aa3be775c82",
+      "captured_utc": "2026-09-21T22:10:31Z",
+      "zpl_sha256": "0664b71de65470bcb4010a4fe6badc44613163072e894433533dff9f9ac6ad63",
+      "png_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-ec-M",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ model=2,magnification=3,EC=M,mask=0",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "25678f258d28ff0cf19feb9cea75baf9bbcbf02ba36a3cde771ab3e1ada78b8f",
+      "captured_utc": "2026-09-21T22:10:32Z",
+      "zpl_sha256": "6f9aa2cd1a38c00410e501a117a8b1b75da6543680b10b56479b75d1d5b10a2e",
+      "png_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-ec-L",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ model=2,magnification=3,EC=L,mask=0",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "22a91e38287778d0036616784e5195a4f2affe4632d9cdec9ecfbb008358c9c6",
+      "captured_utc": "2026-09-21T22:10:33Z",
+      "zpl_sha256": "20a33598bb1976b6792b399df77ea5eeafefe991e51d0cc7cfdec6a2a62d8740",
+      "png_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-model-2",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ o=N,model=2,magnification=3,EC=L,mask=0",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "22a91e38287778d0036616784e5195a4f2affe4632d9cdec9ecfbb008358c9c6",
+      "captured_utc": "2026-09-21T22:10:33Z",
+      "zpl_sha256": "20a33598bb1976b6792b399df77ea5eeafefe991e51d0cc7cfdec6a2a62d8740",
+      "png_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "probe-qr-model-1",
+      "group": "baseline-barcode-arguments",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ o=N,model=1,magnification=3,EC=L,mask=0",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "9bedfaa88f286cb7a51f948bfba29d8943b60dde11f7585f20ed06f3f0f13f42",
+      "captured_utc": "2026-09-21T22:10:34Z",
+      "zpl_sha256": "d150de931c74fb6f068869500db178f2a2cc46b2835262db6128ae29d33b5799",
+      "png_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    },
+    {
+      "name": "repeat-end",
+      "group": "repeatability",
+      "command": "^BQ ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "^BQ mask=7",
+      "width": 832,
+      "height": 300,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "033014b0baa181199f177d57048d836f24b8889856b14f7b646164afc555c11a",
+      "captured_utc": "2026-09-21T22:10:34Z",
+      "zpl_sha256": "6f413e4b613b90233119e4a2277e40ba41fab7f13a2dbb7f4ee03ab9251290f0",
+      "png_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593",
+      "printer_dimensions": [
+        832,
+        300
+      ]
+    }
+  ],
+  "failures": [],
+  "preview_reset_zpl": "^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,10^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+  "corpus_sha256": "c4771069429d9468b8855051fc0a4a820796ff64a934ca5f2586bc7a9bd2a7c5",
+  "repeat_pixels_equal": true
+}

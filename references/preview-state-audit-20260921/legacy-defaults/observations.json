@@ -1,0 +1,117 @@
+{
+  "device": "ZTC ZD621-203dpi ZPL",
+  "firmware": "V93.21.33Z",
+  "method": "printer HTTP Preview Label; not physical print/scan",
+  "preview_reset_zpl": "^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+  "status": "diagnostic subset from interrupted legacy-reset audit",
+  "cases": [
+    {
+      "name": "printer-barcode-defaults-code128-empty",
+      "group": "printer-barcode-defaults",
+      "command": "^BC ^BY ^FD ^FO ^FS ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "barcode defaults: code128-empty",
+      "width": 832,
+      "height": 400,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "6ca6e4ed8429bee43947c892d253490ed20b948aa0075f60b16f027ce4776b03",
+      "captured_utc": "2026-09-21T22:00:42Z",
+      "zpl_sha256": "d8b7053018461c38aeb5da97219ef05f0423a61e59382de1b9e39722bd23d43e",
+      "png_sha256": "d7bf26b372dd393ac1b600f0e3e245c022901f9efdff2815a3cae5e5a092be8f",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-module-only",
+      "group": "printer-barcode-defaults",
+      "command": "^BC ^BY ^FD ^FO ^FS ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "barcode defaults: code128-module-only",
+      "width": 832,
+      "height": 400,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "39c385df1e38abbc6a5e3144de10861088c315f7361d7782a79c645d9984fe24",
+      "captured_utc": "2026-09-21T22:00:45Z",
+      "zpl_sha256": "2ec0f12c4fe95f676e40bb21a95ee09a3c5a50ee4770a89a0889ac65be48bf61",
+      "png_sha256": "d7bf26b372dd393ac1b600f0e3e245c022901f9efdff2815a3cae5e5a092be8f",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code128-none",
+      "group": "printer-barcode-defaults",
+      "command": "^BC ^FD ^FO ^FS ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "barcode defaults: code128-none",
+      "width": 832,
+      "height": 400,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "8f9065b1146688f1fb76ba585a776b8cdc3a836407d38570bd7a9b2114769f15",
+      "captured_utc": "2026-09-21T22:00:47Z",
+      "zpl_sha256": "3a13f752c6cb798f8c80fb38138a14b44e695cff74d5c37efbb63337b80b51c5",
+      "png_sha256": "d7bf26b372dd393ac1b600f0e3e245c022901f9efdff2815a3cae5e5a092be8f",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-empty",
+      "group": "printer-barcode-defaults",
+      "command": "^B3 ^BY ^FD ^FO ^FS ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "barcode defaults: code39-empty",
+      "width": 832,
+      "height": 400,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "146b67aa93879136902d06f760ec857b3c437de82182185b9cdcf85e742cb484",
+      "captured_utc": "2026-09-21T22:00:53Z",
+      "zpl_sha256": "3e9d92fc7370031c9f66a5648ce9a0750f9b19003032c91f2c454424de385ada",
+      "png_sha256": "3228453e97c1a8a84eb2b02cb509a22c797efdd3f708fa0725ac49a4fa4cae69",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-module-only",
+      "group": "printer-barcode-defaults",
+      "command": "^B3 ^BY ^FD ^FO ^FS ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "barcode defaults: code39-module-only",
+      "width": 832,
+      "height": 400,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "30c2945d1ed7d873f70738463e9fb167a0a6ca50f95edb812db4a4b185339640",
+      "captured_utc": "2026-09-21T22:00:56Z",
+      "zpl_sha256": "23b0ba169a8697bbde0721d2d46e2b58a76b6a423beaa46d1566389aec56e6cb",
+      "png_sha256": "3228453e97c1a8a84eb2b02cb509a22c797efdd3f708fa0725ac49a4fa4cae69",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    },
+    {
+      "name": "printer-barcode-defaults-code39-none",
+      "group": "printer-barcode-defaults",
+      "command": "^B3 ^FD ^FO ^FS ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "barcode defaults: code39-none",
+      "width": 832,
+      "height": 400,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPAUDIT",
+      "submitted_sha256": "9b32a5aff9dfbab2628c865e28261b1459a829b247b70e88da48d6dd00f678d9",
+      "captured_utc": "2026-09-21T22:00:58Z",
+      "zpl_sha256": "ac29e0940e2e06cac91e9453e0e8efa437ebdc7792284226fa02d2725b9ccdad",
+      "png_sha256": "3228453e97c1a8a84eb2b02cb509a22c797efdd3f708fa0725ac49a4fa4cae69",
+      "printer_dimensions": [
+        832,
+        400
+      ]
+    }
+  ]
+}

@@ -25,7 +25,7 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 24/66 exact; mean IoU 80.5%; 0 errors | 3 error, 67 rendered |
 | [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 10.6%; 4 errors | 4 error, 56 rendered |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 79.2%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 1 errors | 1 error, 3 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 58.2%; 0 errors | 11 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 73.6%; 0 errors | 9 rendered |

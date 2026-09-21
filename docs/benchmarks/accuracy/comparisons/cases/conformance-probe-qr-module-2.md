@@ -22,91 +22,91 @@ Zebra programming guide: [^BQ](../../../../zpl-zbi2-pg-en.pdf#page=128) · [^CF]
 
 **codyps/zpl (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../features/libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![codyps-zpl render](../features/previews/probe-qr-module-2-codyps-zpl.png)](../../../conformance/images/probe-qr-module-2-codyps-zpl.png) | [![codyps-zpl difference](../features/previews/probe-qr-module-2-codyps-zpl-diff.png)](../features/images/probe-qr-module-2-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 960 pixels.
+Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 
 **labelize (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/labelize.md)
+rendered · 45.34% IoU · [All cases for this library](../features/libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![labelize render](../features/previews/probe-qr-module-2-labelize.png)](../../../conformance/images/probe-qr-module-2-labelize.png) | [![labelize difference](../features/previews/probe-qr-module-2-labelize-diff.png)](../features/images/probe-qr-module-2-labelize-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 912 pixels.
+Library dimensions: [832, 300]; missing ink: 376; extra ink: 328 pixels.
 
 ## forge
 
 **zpl-forge (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/forge.md)
+rendered · 45.05% IoU · [All cases for this library](../features/libraries/forge.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![forge render](../features/previews/probe-qr-module-2-forge.png)](../../../conformance/images/probe-qr-module-2-forge.png) | [![forge difference](../features/previews/probe-qr-module-2-forge-diff.png)](../features/images/probe-qr-module-2-forge-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 888 pixels.
+Library dimensions: [832, 300]; missing ink: 386; extra ink: 314 pixels.
 
 ## go
 
 **go-zpl (Go)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/go.md)
+rendered · 28.51% IoU · [All cases for this library](../features/libraries/go.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![go render](../features/previews/probe-qr-module-2-go.png)](../../../conformance/images/probe-qr-module-2-go.png) | [![go difference](../features/previews/probe-qr-module-2-go-diff.png)](../features/images/probe-qr-module-2-go-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 960 pixels.
+Library dimensions: [832, 300]; missing ink: 534; extra ink: 534 pixels.
 
 ## ffi
 
 **zpl-rs (Rust → Go)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/ffi.md)
+rendered · 28.51% IoU · [All cases for this library](../features/libraries/ffi.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![ffi render](../features/previews/probe-qr-module-2-ffi.png)](../../../conformance/images/probe-qr-module-2-ffi.png) | [![ffi difference](../features/previews/probe-qr-module-2-ffi-diff.png)](../features/images/probe-qr-module-2-ffi-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 960 pixels.
+Library dimensions: [832, 300]; missing ink: 534; extra ink: 534 pixels.
 
 ## binarykits
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/binarykits.md)
+rendered · 61.62% IoU · [All cases for this library](../features/libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![binarykits render](../features/previews/probe-qr-module-2-binarykits.png)](../../../conformance/images/probe-qr-module-2-binarykits.png) | [![binarykits difference](../features/previews/probe-qr-module-2-binarykits-diff.png)](../features/images/probe-qr-module-2-binarykits-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 960 pixels.
+Library dimensions: [832, 300]; missing ink: 228; extra ink: 228 pixels.
 
 ## zplr
 
 **ZPLr (TypeScript)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/zplr.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../features/libraries/zplr.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![zplr render](../features/previews/probe-qr-module-2-zplr.png)](../../../conformance/images/probe-qr-module-2-zplr.png) | [![zplr difference](../features/previews/probe-qr-module-2-zplr-diff.png)](../features/images/probe-qr-module-2-zplr-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 960 pixels.
+Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelary
 
 **Labelary (SaaS)**
 
-rendered · 0.00% IoU · [All cases for this library](../features/libraries/labelary.md)
+rendered · 48.01% IoU · [All cases for this library](../features/libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata, and original responses](../../../labelary/README.md)
 
@@ -114,4 +114,4 @@ rendered · 0.00% IoU · [All cases for this library](../features/libraries/labe
 |---|---|---|
 | [![Printer preview](../features/previews/probe-qr-module-2-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/probe-qr-module-2.png) | [![labelary render](../features/previews/probe-qr-module-2-labelary.png)](../../../conformance/images/probe-qr-module-2-labelary.png) | [![labelary difference](../features/previews/probe-qr-module-2-labelary-diff.png)](../features/images/probe-qr-module-2-labelary-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 960; extra ink: 896 pixels.
+Library dimensions: [832, 300]; missing ink: 358; extra ink: 294 pixels.

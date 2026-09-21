@@ -25,7 +25,7 @@ Per-command analyzers parse positional parameters; this inventory covers Viewer,
 | --- | --- | --- | --- |
 | [Barcode arguments](../features/barcode-arguments.md) | 70 | 26/66 exact; mean IoU 72.0%; 1 errors | 4 crashed, 66 rendered |
 | [Barcode families](../features/barcode-families.md) | 60 | 0/60 exact; mean IoU 11.9%; 0 errors | 60 rendered |
-| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 55.0%; 0 errors | 25 rendered |
+| [Baseline barcode arguments](../features/baseline-barcode-arguments.md) | 25 | 11/25 exact; mean IoU 82.8%; 0 errors | 25 rendered |
 | [Baseline graphics](../features/baseline-graphics.md) | 4 | 3/4 exact; mean IoU 75.0%; 0 errors | 4 rendered |
 | [Baseline layout](../features/baseline-layout.md) | 11 | 0/11 exact; mean IoU 31.5%; 0 errors | 11 rendered |
 | [Baseline shapes](../features/baseline-shapes.md) | 9 | 4/9 exact; mean IoU 78.8%; 0 errors | 9 rendered |

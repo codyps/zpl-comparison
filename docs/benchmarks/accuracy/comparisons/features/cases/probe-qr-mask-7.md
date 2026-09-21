@@ -22,91 +22,91 @@ Zebra programming guide: [^BQ](../../../../../zpl-zbi2-pg-en.pdf#page=128) · [^
 
 **codyps/zpl (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
+rendered · 100.00% IoU · exact · [All cases for this library](../libraries/codyps-zpl.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![codyps-zpl render](../previews/probe-qr-mask-7-codyps-zpl.png)](../../../../conformance/images/probe-qr-mask-7-codyps-zpl.png) | [![codyps-zpl difference](../previews/probe-qr-mask-7-codyps-zpl-diff.png)](../images/probe-qr-mask-7-codyps-zpl-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 2160 pixels.
+Library dimensions: [832, 300]; missing ink: 0; extra ink: 0 pixels.
 
 ## labelize
 
 **labelize (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/labelize.md)
+rendered · 49.84% IoU · [All cases for this library](../libraries/labelize.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![labelize render](../previews/probe-qr-mask-7-labelize.png)](../../../../conformance/images/probe-qr-mask-7-labelize.png) | [![labelize difference](../previews/probe-qr-mask-7-labelize-diff.png)](../images/probe-qr-mask-7-labelize-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 2052 pixels.
+Library dimensions: [832, 300]; missing ink: 759; extra ink: 651 pixels.
 
 ## forge
 
 **zpl-forge (Rust)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/forge.md)
+rendered · 49.68% IoU · [All cases for this library](../libraries/forge.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![forge render](../previews/probe-qr-mask-7-forge.png)](../../../../conformance/images/probe-qr-mask-7-forge.png) | [![forge difference](../previews/probe-qr-mask-7-forge-diff.png)](../images/probe-qr-mask-7-forge-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 1998 pixels.
+Library dimensions: [832, 300]; missing ink: 780; extra ink: 618 pixels.
 
 ## go
 
 **go-zpl (Go)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/go.md)
+rendered · 24.68% IoU · [All cases for this library](../libraries/go.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![go render](../previews/probe-qr-mask-7-go.png)](../../../../conformance/images/probe-qr-mask-7-go.png) | [![go difference](../previews/probe-qr-mask-7-go-diff.png)](../images/probe-qr-mask-7-go-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 2160 pixels.
+Library dimensions: [832, 300]; missing ink: 1305; extra ink: 1305 pixels.
 
 ## ffi
 
 **zpl-rs (Rust → Go)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/ffi.md)
+rendered · 24.68% IoU · [All cases for this library](../libraries/ffi.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![ffi render](../previews/probe-qr-mask-7-ffi.png)](../../../../conformance/images/probe-qr-mask-7-ffi.png) | [![ffi difference](../previews/probe-qr-mask-7-ffi-diff.png)](../images/probe-qr-mask-7-ffi-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 2160 pixels.
+Library dimensions: [832, 300]; missing ink: 1305; extra ink: 1305 pixels.
 
 ## binarykits
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 61.93% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![binarykits render](../previews/probe-qr-mask-7-binarykits.png)](../../../../conformance/images/probe-qr-mask-7-binarykits.png) | [![binarykits difference](../previews/probe-qr-mask-7-binarykits-diff.png)](../images/probe-qr-mask-7-binarykits-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 2178 pixels.
+Library dimensions: [832, 300]; missing ink: 501; extra ink: 519 pixels.
 
 ## zplr
 
 **ZPLr (TypeScript)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/zplr.md)
+rendered · 77.86% IoU · [All cases for this library](../libraries/zplr.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![zplr render](../previews/probe-qr-mask-7-zplr.png)](../../../../conformance/images/probe-qr-mask-7-zplr.png) | [![zplr difference](../previews/probe-qr-mask-7-zplr-diff.png)](../images/probe-qr-mask-7-zplr-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 2178 pixels.
+Library dimensions: [832, 300]; missing ink: 261; extra ink: 279 pixels.
 
 ## labelary
 
 **Labelary (SaaS)**
 
-rendered · 0.00% IoU · [All cases for this library](../libraries/labelary.md)
+rendered · 52.46% IoU · [All cases for this library](../libraries/labelary.md)
 
 [Labelary capture timestamps, HTTP metadata, and original responses](../../../../labelary/README.md)
 
@@ -114,4 +114,4 @@ rendered · 0.00% IoU · [All cases for this library](../libraries/labelary.md)
 |---|---|---|
 | [![Printer preview](../previews/probe-qr-mask-7-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/probe-qr-mask-7.png) | [![labelary render](../previews/probe-qr-mask-7-labelary.png)](../../../../conformance/images/probe-qr-mask-7-labelary.png) | [![labelary difference](../previews/probe-qr-mask-7-labelary-diff.png)](../images/probe-qr-mask-7-labelary-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 2160; extra ink: 2016 pixels.
+Library dimensions: [832, 300]; missing ink: 723; extra ink: 579 pixels.

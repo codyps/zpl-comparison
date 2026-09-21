@@ -21,6 +21,19 @@ from cases import probes
 LIMIT = 16 * 1024 * 1024
 
 
+def preview_reset():
+    # ^CI27 selects an encoding but does not clear the persistent legacy maps.
+    # The corpus remaps CI0 and CI13; barcode captions can use these tables even
+    # when normal fields select CI27. Equal source/destination pairs restore
+    # defaults, including mappings left by another preview client.
+    identity = ",".join(f"{value},{value}" for value in range(256))
+    remaps = f"^CI0,{identity}^CI13,{identity}".encode()
+    return (
+        b"^XA" + remaps + b"^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,10^CI27^CF0,32,0"
+        b"^FWN^LH0,0^LS0^LT0^PON^LRN^XZ"
+    )
+
+
 def sha(data):
     return hashlib.sha256(data).hexdigest()
 
@@ -215,9 +228,11 @@ def main():
         "cases": [],
         "failures": [],
     }
-    # Rendering defaults can survive format boundaries on hardware. Reset only
-    # content layout properties in a separate preview before each corpus sample.
-    reset = b"^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ"
+    # Rendering defaults survive format boundaries on hardware. Reset content
+    # layout inline, before the source, so each fixture may override it. ^BY's
+    # documented power-up height is 10, not 100; omitted/partial ^BY and QR
+    # origins otherwise inherit a synthetic height from the capture harness.
+    reset = preview_reset()
     manifest["preview_reset_zpl"] = reset.decode()
     if args.corpus:
         manifest["corpus_sha256"] = sha((args.corpus / "manifest.json").read_bytes())

@@ -1,0 +1,621 @@
+{
+  "method": "Offline production comparison pipeline against saved renderer outputs",
+  "results": [
+    {
+      "case": "probe-qr-model-1",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 0.5842293906810035,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.48184818481848185,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.4717607973421927,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.24594594594594596,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.24594594594594596,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.4870967741935484,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "library": "labelary",
+      "status": "blank",
+      "score": 0.0,
+      "reference_sha256": "840d10993b07e300ba73b16bbd880edabfd23b203b678759530d0f1d0fc6ae6a"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.4983991462113127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.49676025917926564,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.7266187050359713,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-model-2",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.524644030668127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.4983991462113127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.49676025917926564,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.7266187050359713,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-L",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.524644030668127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 0.5902777777777778,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.71,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.71,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.27019498607242337,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.27019498607242337,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.4886240520043337,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 0.5902777777777778,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-M",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.49174917491749176,
+      "reference_sha256": "1b133bcf3752e7af77052e8d6d475759df16f87f2c8d99ba10e064d442c61b18"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.7100371747211895,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.4374331550802139,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.25340599455040874,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.25340599455040874,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.7100371747211895,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-Q",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.51165371809101,
+      "reference_sha256": "d5872d733f4fa646e33950cde8b21e42a1e61fec311d5223877b1e5203b2bbbc"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 0.76,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.7055837563451777,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.47619047619047616,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.23415977961432508,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.23415977961432508,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.5770609318996416,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 0.76,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-ec-H",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.7055837563451777,
+      "reference_sha256": "ec80363b1a10afd444da4254cf2e90f723551751eb5629c27c3573291d477045"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.453416149068323,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.45054945054945056,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.285140562248996,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.285140562248996,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.6161616161616161,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-2",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.4800637958532695,
+      "reference_sha256": "bd4bbcd8ac728ff0829c2941bdefc8770476e7f4dc93aafb8e779c28d94deac2"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.5364412344057781,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.535904255319149,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.2585212375458836,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.2585212375458836,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.8264840182648402,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-module-5",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.5622895622895623,
+      "reference_sha256": "6b67999b82ace46837fe59f73c45f71946dae86c0faa6acfafce0ad6e5343a1d"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.4983991462113127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.49676025917926564,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.7266187050359713,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 1.0,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-0",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.524644030668127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 0.5986159169550173,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.4983991462113127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.49676025917926564,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.49676025917926564,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 0.5986159169550173,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-3",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.524644030668127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "codyps-zpl",
+      "status": "rendered",
+      "score": 0.7785977859778598,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "labelize",
+      "status": "rendered",
+      "score": 0.4983991462113127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "forge",
+      "status": "rendered",
+      "score": 0.49676025917926564,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "go",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "ffi",
+      "status": "rendered",
+      "score": 0.24675324675324675,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "binarykits",
+      "status": "rendered",
+      "score": 0.6192609182530795,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "zplr",
+      "status": "rendered",
+      "score": 0.7785977859778598,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    },
+    {
+      "case": "probe-qr-mask-7",
+      "library": "labelary",
+      "status": "rendered",
+      "score": 0.524644030668127,
+      "reference_sha256": "08c57148f3b58babdf303c89e6fb8bf9d49318a354025729eebb4d2875880593"
+    }
+  ]
+}
