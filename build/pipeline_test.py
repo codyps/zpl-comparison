@@ -19,10 +19,34 @@ from build.compare import comparison, save_difference
 from build.check_action_graph import LOCAL_LIBRARIES, verify_layout_matrix
 from build.pages import write
 from build.render import render
+from build.saved import saved
+from build.aggregate import aggregate
 from build.stage import stage
 
 
 class PipelineTest(unittest.TestCase):
+    def test_saved_import_preserves_bytes_and_failure_evidence(self):
+        row = {"case": "one", "library": "example", "status": "rendered", "raw_png_sha256": "original"}
+        saved({"row": row, "image": str(self.reference)}, self.root / "row", self.root / "images")
+        self.assertEqual((self.root / "images/image.png").read_bytes(), self.reference.read_bytes())
+        self.assertEqual(json.loads((self.root / "row").read_text()), row)
+        failure = {**row, "status": "timeout", "diagnostic": "saved timeout"}
+        saved({"row": failure}, self.root / "failed-row", self.root / "failed-images")
+        self.assertEqual(list((self.root / "failed-images").iterdir()), [])
+        self.assertEqual(json.loads((self.root / "failed-row").read_text()), failure)
+        with self.assertRaises(FileNotFoundError):
+            saved({"row": row, "image": str(self.root / "missing.png")}, self.root / "missing-row", self.root / "missing-images")
+
+    def test_saved_aggregate_preserves_measurement_provenance(self):
+        row = self.root / "row.json"
+        row.write_text(json.dumps({"case": "one", "status": "rendered"}))
+        provenance = {"host": {"machine": "original"}, "adapters": {"example": {"revision": "saved"}}, "measured_utc": "2020-01-01T00:00:00Z"}
+        aggregate({"metadata": {}, "cases": [], "rows": [str(row)], "suite": "accuracy", "captured_utc": provenance["measured_utc"], "libraries": {}, "saved_provenance": provenance, "renders": "results"}, self.root / "aggregate")
+        result = json.loads((self.root / "aggregate/results/results.json").read_text())
+        for key, value in provenance.items():
+            self.assertEqual(result[key], value)
+        self.assertIn("saved renderer", result["generation"])
+
     def test_layout_matrix_requires_every_renderer_and_printer_comparison(self):
         cases = ["layout-control", "layout-home"]
         complete = [f"{case}-{lib}" for case in cases for lib in LOCAL_LIBRARIES]

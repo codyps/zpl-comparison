@@ -6,9 +6,8 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch
 
-from build import report_runner
+from build.stage import stage
 
 
 class ReportRunnerTests(unittest.TestCase):
@@ -27,8 +26,7 @@ class ReportRunnerTests(unittest.TestCase):
             )
         )
         output = root / "reports"
-        with patch.object(sys, "argv", ["runner", str(manifest), str(output)]):
-            report_runner.main()
+        stage({"inputs": json.loads(manifest.read_text()), "commands": [["benchmarks/regenerate.py"]]}, output)
         return evidence, output
 
     def test_child_imports_wheels_and_only_mutates_copied_evidence(self):

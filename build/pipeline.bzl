@@ -5,6 +5,8 @@ load("@report_catalog//:catalog.bzl", "CATALOG")
 LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"]
 
 def _invoke(ctx, kind, name, spec, inputs, outputs):
+    if kind == "pages" and ctx.attr.saved:
+        spec = dict(spec, saved = True)
     manifest = ctx.actions.declare_file(ctx.label.name + "_actions/" + name + ".json")
     ctx.actions.write(manifest, json.encode(spec))
     runner = getattr(ctx.attr, "_" + kind)
@@ -51,6 +53,7 @@ def _impl(ctx):
         suite_start = len(publish)
         libraries = LIBRARIES[:-1] if suite == "layout-accuracy" else LIBRARIES
         saved = CATALOG["docs/benchmarks/" + suite + "/results.json"]
+        saved_rows = {(r["case"], r["library"]): r for r in saved["results"]} if ctx.attr.saved else {}
         renders = "docs/benchmarks/" + suite
         base = "docs/benchmarks/accuracy/comparisons" + ("" if suite == "accuracy" else "/features" if suite == "conformance" else "/layout" if suite == "layout-accuracy" else "/external")
         assets = renders if suite == "accuracy" else base
@@ -66,6 +69,8 @@ def _impl(ctx):
             cases = [dict(c, id = "argument-" + c["name"], source = "fresh arguments", zpl = "benchmarks/accuracy/reference/" + c["name"] + ".zpl", reference = "benchmarks/accuracy/reference/" + c["name"] + ".png") for c in fresh["cases"] if c["group"] != "repeatability"]
             for name, c in archive["cases"].items():
                 cases.append(dict(id = "barcode-" + name, name = name, group = "barcode-formats", command = old_cases.get("barcode-" + name, {}).get("command", "See ZPL"), arguments = "See exact archived ZPL", width = archive["width"], height = 1218, source = "archived barcode development corpus", zpl = "references/barcodes-zd621-v1/" + name + ".zpl", reference = "references/barcodes-zd621-v1/" + name + ".png", zpl_sha256 = c["zpl_sha256"], png_sha256 = c["printer_png_sha256"]))
+        if ctx.attr.saved and suite == "accuracy":
+            cases = saved["cases"]
         compared = []
         rendered = []
         relation_groups = {}
@@ -88,7 +93,14 @@ def _impl(ctx):
                     identity["validity"] = case["validity"]
                 spec = {"source": files[zpl].path, "sha256": digest, "width": case["width"], "height": case["height"], "row": identity, "timeout": 45 if suite == "accuracy" else 15}
                 inputs = [files[zpl]]
-                if lib == "labelary":
+                if ctx.attr.saved:
+                    evidence = saved_rows.get((cid, lib))
+                    if evidence == None:
+                        fail("Missing saved result for %s/%s/%s" % (suite, cid, lib))
+                    png = files[renders + "/images/" + cid + "-" + lib + ".png"] if evidence["status"] in ["rendered", "blank"] else None
+                    spec = {"row": evidence, "image": png.path if png else None}
+                    inputs = [png] if png else []
+                elif lib == "labelary":
                     capture = captures.get((digest, case["width"], case["height"]))
                     if capture == None:
                         fail("Missing saved Labelary capture for %s; collect or record unavailable service evidence first" % cid)
@@ -101,7 +113,7 @@ def _impl(ctx):
                 else:
                     spec["library"] = compiled[lib].path
                     inputs.append(compiled[lib])
-                _invoke(ctx, "render", key, spec, inputs, [row, raster])
+                _invoke(ctx, "saved" if ctx.attr.saved else "render", key, spec, inputs, [row, raster])
                 scored = _file(ctx, key + ".comparison.json")
                 diff = _tree(ctx, key + ".diff")
                 spec = {"suite": suite, "row": row.path, "image": raster.path}
@@ -156,6 +168,8 @@ def _impl(ctx):
             metadata["archived_reference"] = {k: v for k, v in archive.items() if k != "cases"}
         spec = {"suite": suite, "metadata": metadata, "cases": cases, "rows": [r.path for r in (compared if suite in ["accuracy", "layout-accuracy"] else rendered)], "comparisons": [r.path for r in compared], "relations": [r.path for r in relations], "captured_utc": saved["measured_utc"], "renders": renders, "base": base, "libraries": {lib: f.path for lib, f in compiled.items()}}
         inputs = compared + rendered + relations
+        if ctx.attr.saved:
+            spec["saved_provenance"] = {k: saved[k] for k in ["host", "adapters", "measured_utc"] if k in saved}
         if suite == "accuracy":
             inputs += compiled.values()
         else:
@@ -228,5 +242,6 @@ def _impl(ctx):
 
 pipeline = rule(implementation = _impl, attrs = dict({
     "srcs": attr.label_list(allow_files = True),
+    "saved": attr.bool(default = False),
     "libraries": attr.label_list(),
-}, **{"_" + name: attr.label(default = "//:action_" + name, executable = True, cfg = "exec") for name in ["render", "compare", "preview", "pages", "aggregate", "relation", "stage"]}))
+}, **{"_" + name: attr.label(default = "//:action_" + name, executable = True, cfg = "exec") for name in ["render", "compare", "preview", "pages", "aggregate", "relation", "saved", "stage"]}))

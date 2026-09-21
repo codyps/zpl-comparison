@@ -38,6 +38,9 @@ def aggregate(spec, destination):
             name: json.loads(Path(path).joinpath("identity.json").read_text())
             for name, path in spec["libraries"].items()
         }
+    if "saved_provenance" in spec:
+        data.update(spec["saved_provenance"])
+        data["generation"] = "Bazel: independently cached comparisons of saved renderer and printer evidence"
     target = output / spec["renders"] / "results.json"
     target.parent.mkdir(parents=True)
     target.write_text(json.dumps(data, indent=2) + "\n")

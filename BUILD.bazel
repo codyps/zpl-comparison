@@ -2,23 +2,11 @@ load("@report_deps//:requirements.bzl", "requirement")
 load("@rules_python//python:defs.bzl", "py_binary", "py_test")
 load("//:build/native.bzl", "native_library")
 load("//:build/pipeline.bzl", "pipeline")
-load("//:build/reports.bzl", "reports")
-
-py_binary(
-    name = "report_runner",
-    srcs = ["build/report_runner.py"],
-    main = "build/report_runner.py",
-    deps = [
-        requirement("matplotlib"),
-        requirement("numpy"),
-        requirement("pillow"),
-    ],
-)
 
 py_test(
     name = "report_runner_test",
     srcs = [
-        "build/report_runner.py",
+        "build/stage.py",
         "build/report_runner_test.py",
     ],
     main = "build/report_runner_test.py",
@@ -145,9 +133,10 @@ filegroup(
     ]],
 )
 
-reports(
+pipeline(
     name = "reports_saved",
     srcs = [":report_sources"],
+    saved = True,
 )
 
 [py_binary(
@@ -189,6 +178,7 @@ reports(
         "relation",
         ["benchmarks/accuracy/pixels.py"],
     ),
+    ("saved", []),
     ("stage", []),
 ]]
 
@@ -225,6 +215,8 @@ py_test(
         "build/pages.py",
         "build/pipeline_test.py",
         "build/render.py",
+        "build/saved.py",
+        "build/aggregate.py",
         "build/stage.py",
         "build/worker.py",
     ],

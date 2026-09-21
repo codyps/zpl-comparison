@@ -103,7 +103,11 @@ jobs:
           python3 build/check_action_graph.py "$RUNNER_TEMP/actions.json" test-data/layout-accuracy/manifest.json
       - name: Reproduce saved reports for fork pull requests
         if: github.event.pull_request.head.repo.fork == true
-        run: bazel build //:reports_saved
+        run: |
+          bazel build //:reports_saved
+          bazel aquery 'mnemonic("Zpl(Saved|Render|Compare|LibraryBuild|Reports)", deps(//:reports_saved))' \
+            --output=jsonproto --include_commandline=false > "$RUNNER_TEMP/saved-actions.json"
+          python3 build/check_action_graph.py "$RUNNER_TEMP/saved-actions.json" test-data/layout-accuracy/manifest.json --saved
       - name: Package report tree
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: tar -C bazel-bin/reports -czf "$RUNNER_TEMP/reports.tar.gz" .

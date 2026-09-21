@@ -16,6 +16,7 @@ def execute(kind, arguments):
         module,
         {
             "render": "render",
+            "saved": "saved",
             "compare": "comparison",
             "pages": "write",
             "aggregate": "aggregate",

@@ -24,7 +24,7 @@ def verify_layout_matrix(renders, comparisons, cases):
         )
 
 
-def verify(graph, layout_cases=()):
+def verify(graph, layout_cases=(), saved=False):
     fragments = {p["id"]: p for p in graph["pathFragments"]}
 
     @functools.cache
@@ -54,17 +54,24 @@ def verify(graph, layout_cases=()):
             *(inputs(i) for i in action.get("inputDepSetIds", []))
         )
         outputs = [artifacts[i] for i in action.get("outputIds", [])]
-        layout_outputs = [p for p in outputs if "/reports_actions/layout-accuracy/" in p]
-        if layout_outputs and kind == "ZplRender":
+        prefix = "reports_saved_actions" if saved else "reports_actions"
+        layout_outputs = [p for p in outputs if "/" + prefix + "/layout-accuracy/" in p]
+        if layout_outputs and kind in ["ZplRender", "ZplSaved"]:
             name = next(Path(p).name.removesuffix(".render.json") for p in layout_outputs if p.endswith(".render.json"))
             layout_renders.append(name)
-            assert any(p.startswith("test-data/layout-accuracy/cases/") for p in files), (name, "missing layout source")
+            if not saved:
+                assert any(p.startswith("test-data/layout-accuracy/cases/") for p in files), (name, "missing layout source")
         elif layout_outputs and kind == "ZplCompare":
             name = next(Path(p).name.removesuffix(".comparison.json") for p in layout_outputs if p.endswith(".comparison.json"))
             layout_comparisons.append(name)
             library = next(lib for lib in LOCAL_LIBRARIES if name.endswith("-" + lib))
             case = name.removesuffix("-" + library)
             assert "benchmarks/accuracy/layout-reference/" + case + ".png" in files, (name, "missing printer reference")
+        if kind == "ZplSaved":
+            assert not any("/bin/library_" in p or p.endswith("/results.json") for p in files), (outputs, "saved import depends on compilation or whole results document")
+            images = [p for p in files if p.endswith(".png")]
+            assert len(images) <= 1, (outputs, "saved import depends on unrelated images")
+            assert all(p.startswith("docs/benchmarks/") for p in images), (outputs, "saved import depends on printer evidence")
         if kind == "ZplRender":
             sources = [p for p in files if p.endswith(".zpl")]
             assert len(sources) == 1, (
@@ -123,9 +130,15 @@ def verify(graph, layout_cases=()):
                 assert not any("benchmarks/adapters/go/" in p for p in files), (
                     "Go shared library depends on adapter source"
                 )
-    assert counts.get("ZplLibraryBuild") == 8, counts
-    assert counts.get("ZplRender", 0) > 0, counts
-    assert counts.get("ZplCompare") == counts["ZplRender"], counts
+    if saved:
+        assert counts.get("ZplLibraryBuild", 0) == 0, counts
+        assert counts.get("ZplRender", 0) == 0, counts
+        assert counts.get("ZplReports", 0) == 0, counts
+    else:
+        assert counts.get("ZplLibraryBuild") == 8, counts
+    observation = "ZplSaved" if saved else "ZplRender"
+    assert counts.get(observation, 0) > 0, counts
+    assert counts.get("ZplCompare") == counts[observation], counts
     if layout_cases:
         verify_layout_matrix(layout_renders, layout_comparisons, layout_cases)
     return counts
@@ -133,4 +146,4 @@ def verify(graph, layout_cases=()):
 
 if __name__ == "__main__":
     cases = [case["name"] for case in json.loads(Path(sys.argv[2]).read_text())["cases"]] if len(sys.argv) > 2 else []
-    print(json.dumps(verify(json.loads(Path(sys.argv[1]).read_text()), cases), sort_keys=True))
+    print(json.dumps(verify(json.loads(Path(sys.argv[1]).read_text()), cases, saved="--saved" in sys.argv[3:]), sort_keys=True))

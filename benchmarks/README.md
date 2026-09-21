@@ -163,10 +163,28 @@ images/pages, use an output group, for example:
 bazelisk build //:reports --output_groups=case_accuracy_argument-font0-height-16
 ```
 
-`bazelisk build //:reports_saved` reproduces the previous saved-evidence pipeline
-without native compilation, writing `bazel-bin/reports_saved`. That historical
-snapshot target remains a single action. Fork pull requests use it because they
+`bazelisk build //:reports_saved` uses the same granular action graph without
+native compilation, writing `bazel-bin/reports_saved`. Each saved case/library
+observation is imported separately; comparisons, previews, pages, plots, and
+report families are independently cached. Original saved PNG bytes, measurement
+timestamps, host metadata, and adapter identities are retained. Missing successful
+render evidence fails the build. Fork pull requests use this target because they
 cannot access the private source token; trusted CI builds use `//:reports`.
+
+Both targets accept the same case and suite output groups. For example:
+
+```sh
+bazelisk build //:reports_saved --output_groups=case_layout-accuracy_layout-control
+```
+
+The broad `report_sources` filegroup makes sources available during analysis; it
+is not an input to every action. Only final tree assembly reads all published
+artifacts. Editing one saved PNG invalidates its import and comparison, the
+case viewport and affected previews, and downstream summaries and assembly;
+unrelated case image actions remain cached. Editing one result row changes only
+that observation's generated action specification, rather than making every
+image action depend on the complete results JSON. Bazel drives the stages directly;
+`benchmarks/regenerate.py` remains the manual checkout regeneration command.
 
 Fixture manifests and case bytes define the action graph. After editing a fixture
 generator, run it and include its updated manifest/cases. The build verifies that
