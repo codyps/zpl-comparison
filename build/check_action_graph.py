@@ -24,7 +24,7 @@ def verify_layout_matrix(renders, comparisons, cases):
         )
 
 
-def verify(graph, layout_cases=(), saved=False):
+def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
     fragments = {p["id"]: p for p in graph["pathFragments"]}
 
     @functools.cache
@@ -47,6 +47,7 @@ def verify(graph, layout_cases=(), saved=False):
 
     counts = {}
     layout_renders, layout_comparisons = [], []
+    zq610_renders, zq610_comparisons = [], []
     for action in graph["actions"]:
         kind = action["mnemonic"]
         counts[kind] = counts.get(kind, 0) + 1
@@ -55,6 +56,12 @@ def verify(graph, layout_cases=(), saved=False):
         )
         outputs = [artifacts[i] for i in action.get("outputIds", [])]
         prefix = "reports_saved_actions" if saved else "reports_actions"
+        zq610_outputs = [p for p in outputs if "/" + prefix + "/zq610-candidates/" in p]
+        if zq610_outputs and kind in ["ZplRender", "ZplSaved"]:
+            zq610_renders.append(next(Path(p).name.removesuffix(".render.json") for p in zq610_outputs if p.endswith(".render.json")))
+        elif zq610_outputs and kind == "ZplCompare":
+            zq610_comparisons.append(next(Path(p).name.removesuffix(".comparison.json") for p in zq610_outputs if p.endswith(".comparison.json")))
+            assert len([p for p in files if p.endswith(".png") and p.startswith(("references/zq610-plus-v1/", "references/zq610-candidates/smoke-"))]) == 1, (outputs, "missing native ZQ610 reference")
         layout_outputs = [p for p in outputs if "/" + prefix + "/layout-accuracy/" in p]
         if layout_outputs and kind in ["ZplRender", "ZplSaved"]:
             name = next(Path(p).name.removesuffix(".render.json") for p in layout_outputs if p.endswith(".render.json"))
@@ -71,7 +78,7 @@ def verify(graph, layout_cases=(), saved=False):
             assert not any("/bin/library_" in p or p.endswith("/results.json") for p in files), (outputs, "saved import depends on compilation or whole results document")
             images = [p for p in files if p.endswith(".png")]
             assert len(images) <= 1, (outputs, "saved import depends on unrelated images")
-            assert all(p.startswith("docs/benchmarks/") for p in images), (outputs, "saved import depends on printer evidence")
+            assert all(p.startswith(("docs/benchmarks/", "references/zq610-candidates/saved/images/")) for p in images), (outputs, "saved import depends on printer evidence")
         if kind == "ZplRender":
             sources = [p for p in files if p.endswith(".zpl")]
             assert len(sources) == 1, (
@@ -141,6 +148,10 @@ def verify(graph, layout_cases=(), saved=False):
     assert counts.get("ZplCompare") == counts[observation], counts
     if layout_cases:
         verify_layout_matrix(layout_renders, layout_comparisons, layout_cases)
+    if zq610_cases:
+        expected = {f"{case}-{lib}" for case in zq610_cases for lib in LAYOUT_LIBRARIES}
+        for rows in (zq610_renders, zq610_comparisons):
+            assert len(rows) == len(expected) and set(rows) == expected, "Incomplete ZQ610 renderer/reference matrix"
     return counts
 
 

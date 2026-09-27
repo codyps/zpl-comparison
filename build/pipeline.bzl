@@ -1,6 +1,7 @@
 """Fine-grained report action graph; no rendering in report assembly."""
 
 load("@report_catalog//:catalog.bzl", "CATALOG")
+load("//:build/zq610.bzl", "zq610_matrix")
 
 LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"]
 
@@ -22,6 +23,7 @@ def _invoke(ctx, kind, name, spec, inputs, outputs):
         execution_requirements = {"supports-workers": "1", "requires-worker-protocol": "json"} if worker else {},
         mnemonic = "Zpl" + kind.capitalize(),
         progress_message = "%s %s" % (kind, name),
+        use_default_shell_env = True,
         env = {"PYTHONHASHSEED": "0", "PYTHONDONTWRITEBYTECODE": "1", "MPLBACKEND": "Agg"},
     )
 
@@ -230,6 +232,11 @@ def _impl(ctx):
         publish.append((output, ""))
     overview = _stage(ctx, "accuracy-overview", _select(files, ["benchmarks/accuracy/overview.py"]) + aggregates + [(accuracy_report, "")], [["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy"]])
     publish.append((overview, ""))
+    zq610 = _stage(ctx, "zq610-report", _select(files, ["benchmarks/zq610_pages.py", "references/zq610-plus-v1/"]), [["benchmarks/zq610_pages.py"]])
+    publish.append((zq610, ""))
+    candidate_outputs = zq610_matrix(ctx, files, compiled, CATALOG, LIBRARIES, _invoke, _stage)
+    publish.extend(candidate_outputs)
+    groups["suite_zq610_candidates"] = depset([f for f, _ in candidate_outputs])
     measurements = CATALOG["docs/benchmarks/results.json"]
     for part in ["parse", "png", "generate", "memory", "size"]:
         data = {"results": [], "sizes": {}}

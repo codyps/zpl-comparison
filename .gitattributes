@@ -1,0 +1,4 @@
+# Acquisition evidence is byte-exact, including printer-supplied CRLF and spaces.
+references/zq610-plus-v1/**/*.html -text -diff -whitespace
+references/zq610-plus-v1/**/*.zpl -text
+references/zq610-candidates/*.zpl -text

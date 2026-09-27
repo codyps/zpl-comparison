@@ -45,7 +45,7 @@ def render(spec, metadata, images):
                 "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
                 "DOTNET_ROOT": str(library / "runtime"),
                 "DYLD_LIBRARY_PATH": str(library),
-                "LD_LIBRARY_PATH": str(library),
+                "LD_LIBRARY_PATH": os.pathsep.join(filter(None, [str(library), os.environ.get("LD_LIBRARY_PATH", "")])),
             }
             try:
                 proc = subprocess.run(

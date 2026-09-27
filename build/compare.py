@@ -34,13 +34,24 @@ def comparison(spec, metadata, images):
         ref = gray(reference)
         row["reference_ink"] = int(np.count_nonzero(ref < 128))
         if row["status"] in ["rendered", "blank"]:
-            metrics, diff = compare(ref, gray(Path(spec["image"]) / "image.png"))
+            if spec.get("strict_native_canvas") and sha(Path(spec["image"]) / "image.png") != row["render_sha256"]:
+                raise ValueError("Candidate render hash mismatch")
+            actual = gray(Path(spec["image"]) / "image.png")
+            if spec.get("strict_native_canvas") and actual.shape != ref.shape:
+                row.update(dimensions_match=False, exact=False,
+                           output_dimensions=[actual.shape[1], actual.shape[0]],
+                           reference_dimensions=[ref.shape[1], ref.shape[0]],
+                           comparison_status="canvas_mismatch",
+                           comparison_diagnostic="Native dimensions differ; no padding, crop, alignment or score applied")
+                Path(metadata).write_text(json.dumps(row, sort_keys=True) + "\n")
+                return
+            metrics, diff = compare(ref, actual)
             row.update(
                 metrics, score=metrics["iou"] if metrics["reference_ink"] else None
             )
             save_difference(diff, output / "image.png")
         else:
-            row["score"] = 0.0 if row["reference_ink"] else None
+            row["score"] = 0.0 if row["reference_ink"] and not spec.get("strict_native_canvas") else None
     if spec["suite"] == "accuracy" and row["status"] not in ["rendered", "blank"]:
         row["execution_status"] = row["status"]
         row.update(

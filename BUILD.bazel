@@ -44,6 +44,7 @@ filegroup(
             "**/node_modules/**",
             "**/obj/**",
             "**/bin/**",
+            "references/zq610-plus-v1/work/**",
             "docs/benchmarks/*/images/*-diff.png",
             "benchmarks/test_*.py",
             "test-data/render-conformance/COVERAGE.md",

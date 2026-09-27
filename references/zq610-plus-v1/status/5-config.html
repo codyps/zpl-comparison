@@ -1,0 +1,253 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=ISO-8859-1">
+<TITLE>Sample Web Page</TITLE>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+function openWin(wName, wWidth, wHeight, wResize)
+{
+   features = 'scrollbars=1,status=1,resizable=' + ((wResize) ? 1 : 0) + ((wWidth) ? ',width=' + wWidth : '') + ((wHeight) ? ',height=' + wHeight : '');
+   popWin = window.open('', wName, features);
+   if(popWin.focus){
+      popWin.focus();
+   }
+   return true;
+}
+// -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<CENTER><H1>
+<IMG SRC="LOGO.PNG" ALT="[Logo]"><BR>
+
+Zebra Technologies<BR>
+ZTC ZQ610 Plus-203dpi ZPL<BR>
+</H1>
+<A NAME = "STATUS"><H3><P>Printer Status</P></H3></A>
+<TABLE WIDTH=25% ALIGN=center BORDER=2 CELLSPACING=2 CELLPADDING=2>
+   <TR>
+   <TD>Firmware Version</TD>
+      <TD>V100.21.21Z</TD>
+   </TR>
+   <TR>
+      <TD>Baud Rate</TD>
+      <TD>19200</TD>
+   </TR>
+   <TR>
+      <TD>Power Status</TD>
+      <TD>ok</TD>
+   </TR>
+   <TR>
+      <TD>Voltage</TD>
+      <TD>8.25</TD>
+   </TR>
+   <TR>
+      <TD>Inactivity Timeout</TD>
+      <TD>36000 Seconds</TD>
+   </TR>
+   <TR>
+      <TD>Display Contrast</TD>
+      <TD>10</TD>
+   </TR>
+   <TR>
+      <TD>Head Latch</TD>
+      <TD>ok</TD>
+   </TR>
+   <TR>
+      <TD>Media Status</TD>
+      <TD>out</TD>
+   </TR>
+   <TR>
+      <TD>Media Sense Mode</TD>
+      <TD>bar</TD>
+   </TR>
+   <TR>
+      <TD>Media Type</TD>
+      <TD>label</TD>
+   </TR>
+   <TR>
+      <TD>Tone</TD>
+      <TD>0</TD>
+   </TR>
+   <TR>
+      <TD>Label Count</TD>
+      <TD>11</TD>
+   </TR>
+</TABLE>
+<A NAME = "IP"><H3><P>IP Status</P></H3></A>
+<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>
+   <TR>
+      <TD>IP Address</TD>
+      <TD>192.168.6.178</TD>
+   </TR>
+   <TR>
+      <TD>Subnet Mask</TD>
+      <TD>255.255.255.0</TD>
+   </TR>
+   <TR>
+      <TD>Gateway</TD>
+      <TD>192.168.6.1</TD>
+   </TR>
+   <TR>
+      <TD>TCP Port</TD>
+      <TD>6101</TD>
+   </TR>
+   <TR>
+      <TD>Alternate TCP Port</TD>
+      <TD>9100</TD>
+   </TR>
+   <TR>
+      <TD>UDP Port</TD>
+      <TD>6101</TD>
+   </TR>
+    <TR>
+      <TD>DHCP</TD>
+      <TD>on</TD>
+   </TR>
+    <TR>
+      <TD>Active Interface</TD>
+      <TD>wireless</TD>
+   </TR>
+</TABLE>
+   <SCRIPT>
+      var ethernet_mac ="00:07:4D:F7:49:1A";
+      if (ethernet_mac != "00:00:00:00:00:00") {
+         document.write('<A NAME = "LINK"><H3><P>Ethernet Status</P></H3></A>');
+         document.write('<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>');
+         document.write('   <TR>');
+         document.write('      <TD>MAC Address</TD>');
+         document.write('      <TD>00:07:4D:F7:49:1A</TD>');
+         document.write('   </TR>');
+         document.write('</TABLE>');
+      }
+   </SCRIPT>
+
+   <SCRIPT>
+      var wlan_radio ="48:a4:93:d2:81:ac";
+   
+      if (wlan_radio != "00:00:00:00:00:00") {
+         document.write('<A NAME = "WLAN"><H3><P>WLAN Status</P></H3></A>');
+         document.write('<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>');
+         document.write('<TR><TD>MAC Address</TD><TD>');
+         document.write(wlan_radio);
+         document.write('</TD></TR>');
+         document.write('<TR><TD>Channel</TD><TD>1</TD></TR>');
+         document.write('<TR><TD>Current ESSID</TD><TD>x25</TD></TR>');
+         document.write('<TR><TD>Signal Strength</TD><TD>100</TD></TR>');
+         document.write('</TABLE>');
+      }
+   </SCRIPT>
+
+   <SCRIPT>
+      var bt_radio ="5.2";
+   
+      if (bt_radio != "no radio") {
+         document.write('<A NAME = "BLUETOOTH"><H3><P>Bluetooth Status</P></H3></A>');
+         document.write('<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>');
+         document.write('<TR><TD>BT Spec Version</TD><TD>6.2</TD></TR>');
+         document.write('<TR><TD>BT Date</TD><TD>01/01/2020</TD></TR>');
+         document.write('<TR><TD>BT Address</TD><TD>48:A4:93:D2:81:AD</TD></TR>');
+         document.write('<TR><TD>BT Friendly Name</TD><TD>XXZMJ230802993</TD></TR>');
+         document.write('<TR><TD>BT Enable</TD><TD>on</TD></TR>');
+         document.write('<TR><TD>Discoverable</TD><TD>off</TD></TR>');
+         document.write('<TR><TD>Connected</TD><TD>no</TD></TR>');
+         document.write('<TR><TD>BT Radio Version</TD><TD>');
+         document.write(bt_radio);
+         document.write('</TD></TR>');
+         document.write('<TR><TD>Mode</TD><TD></TD></TR>');
+         document.write('<TR><TD>Minimum Security Mode</TD><TD>3</TD></TR>');
+         document.write('<TR><TD>Security Mode In Use</TD><TD>nc</TD></TR>');
+         document.write('</TABLE>');
+      }
+   </SCRIPT>
+
+<A NAME = "SERIAL"><H3><P>Serial (RS-232) Status</P></H3></A>
+<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>
+   <TR>
+      <TD>Baud Rate</TD>
+      <TD>19200</TD>
+   </TR>
+   <TR>
+      <TD>Parity</TD>
+      <TD>null</TD>
+   </TR>
+   <TR>
+      <TD>Data Bits</TD>
+      <TD>8</TD>
+   </TR>
+   <TR>
+      <TD>Stop Bits</TD>
+      <TD>1</TD>
+   </TR>
+   <TR>
+      <TD>DTR-Control</TD>
+      <TD>off</TD>
+   </TR>
+</TABLE>
+<FORM ACTION="/Zebra/cgi/setvars.cgi" METHOD="POST" target="setvar_results" onSubmit="return openWin(this.target, 400, 200, true)">
+<A NAME = "DISPLAY"><H3><P>Display Status</P></H3></A>
+<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>
+    <TR>
+      <TD>Backlight</TD>
+      <TD><select name="display.backlight"><option value="on" selected >on<option value="off">off</select></TD>
+   </TR>
+   <TR>
+      <TD>Contrast</TD>
+      <TD><select name="display.contrast"><option value=" 3"> 3<option value=" 4"> 4<option value=" 5"> 5<option value=" 6"> 6<option value=" 7"> 7<option value=" 8"> 8<option value=" 9"> 9<option value="10" selected >10<option value="11">11<option value="12">12<option value="13">13<option value="14">14<option value="15">15</select></TD>
+   </TR>
+   <TR>
+      <TD>Backlight Timeout</TD>
+        <TD><select name="display.backlight_on_time"><option value="0">0<option value="1">1<option value="2">2<option value="3">3<option value="4">4<option value="5">5<option value="6">6<option value="7">7<option value="8">8<option value="9">9<option value="10" selected >10<option value="11">11<option value="12">12<option value="13">13<option value="14">14<option value="15">15<option value="16">16<option value="17">17<option value="18">18<option value="19">19<option value="20">20<option value="21">21<option value="22">22<option value="23">23<option value="24">24<option value="25">25<option value="26">26<option value="27">27<option value="28">28<option value="29">29<option value="30">30</select></TD>
+   </TR>
+</TABLE>
+<P></BR></P>
+<INPUT TYPE="reset" VALUE="Undo Changes"><INPUT TYPE="submit" VALUE="Save Changes"> <br>
+<A NAME = "MEDIA"><H3><P>Media Status</P></H3></A>
+<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>
+   <TR>
+      <TD>Sensor</TD>
+      <TD>bar</TD>
+   </TR>
+   <TR>
+      <TD>Top Of Form</TD>
+      <TD>0</TD>
+   </TR>
+   <TR>
+      <TD>Type</TD>
+      <TD>label</TD>
+   </TR>
+</TABLE>
+<A NAME = "POWER"><H3><P>Battery/Power Status</P></H3></A>
+<TABLE WIDTH=35% BORDER=2 CELLSPACING=2 CELLPADDING=2>
+   <TR>
+      <TD>Battery Health</TD>
+      <TD>good</TD>
+   </TR>
+   <TR>
+      <TD>Cycle Count</TD>
+      <TD>21</TD>
+   </TR>
+   <TR>
+      <TD>First Used</TD>
+      <TD>6-2-2022</TD>
+   </TR>
+   <TR>
+      <TD>Serial Number</TD>
+      <TD>01221BCI1368RH</TD>
+   </TR>
+   <TR>
+      <TD>Inactivity Timeout</TD>
+      <TD>36000 Seconds</TD>
+   </TR>
+   <TR>
+      <TD>Battery Voltage</TD>
+      <TD>8.25</TD>
+   </TR>
+   <TR>
+      <TD>Low Voltage Warning</TD>
+      <TD>6.49</TD>
+   </TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

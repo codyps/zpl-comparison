@@ -25,6 +25,28 @@ from build.stage import stage
 
 
 class PipelineTest(unittest.TestCase):
+    def test_native_canvas_mismatch_is_unscored_and_never_padded(self):
+        images = self.root / "native-images"
+        images.mkdir()
+        Image.new("L", (3, 2), 255).save(images / "image.png")
+        row = self.root / "native-row.json"
+        row.write_text(json.dumps({"status": "rendered", "render_sha256": sha(images / "image.png")}))
+        result = self.root / "native-result.json"
+        diff = self.root / "native-diff"
+        comparison({"suite": "zq610", "row": str(row), "image": str(images),
+                    "reference": str(self.reference), "sha256": sha(self.reference),
+                    "strict_native_canvas": True}, result, diff)
+        metrics = json.loads(result.read_text())
+        self.assertEqual(metrics["comparison_status"], "canvas_mismatch")
+        self.assertIsNone(metrics["score"])
+        self.assertFalse(metrics["exact"])
+        self.assertEqual(list(diff.iterdir()), [])
+        Image.new("L", (2, 2), 255).save(images / "image.png")
+        with self.assertRaisesRegex(ValueError, "Candidate render hash mismatch"):
+            comparison({"suite": "zq610", "row": str(row), "image": str(images),
+                        "reference": str(self.reference), "sha256": sha(self.reference),
+                        "strict_native_canvas": True}, result, diff)
+
     def test_saved_import_preserves_bytes_and_failure_evidence(self):
         row = {"case": "one", "library": "example", "status": "rendered", "raw_png_sha256": "original"}
         saved({"row": row, "image": str(self.reference)}, self.root / "row", self.root / "images")

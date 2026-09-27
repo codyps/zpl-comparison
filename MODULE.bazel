@@ -67,6 +67,8 @@ catalog(
     name = "report_catalog",
     manifests = [
         "//:docs/benchmarks/results.json",
+        "//:references/zq610-candidates/manifest.json",
+        "//:references/zq610-candidates/saved/results.json",
         "//:benchmarks/accuracy/reference/manifest.json",
         "//:references/barcodes-zd621-v1/manifest.json",
         "//:docs/benchmarks/labelary/captures.json",
