@@ -54,7 +54,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/forge.m
 
 ~~~text
 
-thread 'main' (18625) panicked at src/main.rs:79:32:
+thread 'main' (29616) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -88,13 +88,13 @@ Library dimensions: [812, 1218]; missing ink: 5021; extra ink: 300 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 3.85% IoU · [All cases for this library](../features/libraries/binarykits.md)
+rendered · 4.81% IoU · [All cases for this library](../features/libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/symbol-codablock_a-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/symbol-codablock_a.png) | [![binarykits render](../features/previews/symbol-codablock_a-binarykits.png)](../../../conformance/images/symbol-codablock_a-binarykits.png) | [![binarykits difference](../features/previews/symbol-codablock_a-binarykits-diff.png)](../features/images/symbol-codablock_a-binarykits-diff.png) |
 
-Library dimensions: [812, 1218]; missing ink: 5050; extra ink: 196 pixels.
+Library dimensions: [812, 1218]; missing ink: 4998; extra ink: 191 pixels.
 
 ## zplr
 

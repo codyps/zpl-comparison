@@ -80,13 +80,13 @@ Library dimensions: [832, 1218]; missing ink: 47; extra ink: 124 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 36.99% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 22.93% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/hex-scope-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/hex-scope.png) | [![binarykits render](../previews/hex-scope-binarykits.png)](../../../../conformance/images/hex-scope-binarykits.png) | [![binarykits difference](../previews/hex-scope-binarykits-diff.png)](../images/hex-scope-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 247; extra ink: 247 pixels.
+Library dimensions: [832, 1218]; missing ink: 321; extra ink: 405 pixels.
 
 ## zplr
 

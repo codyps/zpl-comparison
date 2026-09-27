@@ -40,7 +40,7 @@ error · unscored · [All cases for this library](../features/libraries/labelize
 
 ~~~text
 
-thread 'main' (20958) panicked at src/main.rs:45:9:
+thread 'main' (38548) panicked at src/main.rs:45:9:
 assertion `left == right` failed
   left: 0
  right: 1

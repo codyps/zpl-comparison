@@ -80,13 +80,13 @@ Library dimensions: [832, 1218]; missing ink: 5011; extra ink: 302 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 3.30% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 4.58% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/barcode-ean8-printer.png)](../../../../../references/barcodes-zd621-v1/ean8.png) | [![binarykits render](../../previews/barcode-ean8-binarykits.png)](../../images/barcode-ean8-binarykits.png) | [![binarykits difference](../../previews/barcode-ean8-binarykits-diff.png)](../../images/barcode-ean8-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 5094; extra ink: 231 pixels.
+Library dimensions: [832, 1218]; missing ink: 5024; extra ink: 222 pixels.
 
 ## zplr
 

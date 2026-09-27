@@ -17,7 +17,7 @@ Parses resident/named font forms and numerous layout controls. `^LL` is recorded
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/labelize.md)
 
-24/133 exact; mean IoU 48.5%; 5 errors. Snapshot: 2026-09-27T04:12:49Z.
+24/133 exact; mean IoU 48.5%; 5 errors. Snapshot: 2026-09-27T21:27:01Z.
 
 ## Feature groups
 

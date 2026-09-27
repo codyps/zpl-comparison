@@ -52,7 +52,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/forge.m
 
 ~~~text
 
-thread 'main' (20174) panicked at src/main.rs:74:10:
+thread 'main' (39864) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -86,13 +86,13 @@ Library dimensions: [832, 1218]; missing ink: 700; extra ink: 775 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 30.75% IoU · [All cases for this library](../features/libraries/binarykits.md)
+rendered · 19.41% IoU · [All cases for this library](../features/libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/anchor-FT-B-1-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/anchor-FT-B-1.png) | [![binarykits render](../features/previews/anchor-FT-B-1-binarykits.png)](../../../conformance/images/anchor-FT-B-1-binarykits.png) | [![binarykits difference](../features/previews/anchor-FT-B-1-binarykits-diff.png)](../features/images/anchor-FT-B-1-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 372; extra ink: 405 pixels.
+Library dimensions: [832, 1218]; missing ink: 466; extra ink: 576 pixels.
 
 ## zplr
 

@@ -88,7 +88,7 @@ rendered · 2.15% IoU · [All cases for this library](../libraries/binarykits.md
 |---|---|---|
 | [![Printer preview](../previews/symbol-planet-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/symbol-planet.png) | [![binarykits render](../previews/symbol-planet-binarykits.png)](../../../../conformance/images/symbol-planet-binarykits.png) | [![binarykits difference](../previews/symbol-planet-binarykits-diff.png)](../images/symbol-planet-binarykits-diff.png) |
 
-Library dimensions: [812, 1218]; missing ink: 7441; extra ink: 530 pixels.
+Library dimensions: [812, 1218]; missing ink: 7439; extra ink: 627 pixels.
 
 ## zplr
 

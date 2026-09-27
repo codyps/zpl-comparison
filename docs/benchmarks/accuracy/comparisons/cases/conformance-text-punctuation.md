@@ -80,13 +80,13 @@ Library dimensions: [832, 1218]; missing ink: 787; extra ink: 683 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 14.06% IoU · [All cases for this library](../features/libraries/binarykits.md)
+rendered · 17.97% IoU · [All cases for this library](../features/libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/text-punctuation-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/text-punctuation.png) | [![binarykits render](../features/previews/text-punctuation-binarykits.png)](../../../conformance/images/text-punctuation-binarykits.png) | [![binarykits difference](../features/previews/text-punctuation-binarykits-diff.png)](../features/images/text-punctuation-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 907; extra ink: 487 pixels.
+Library dimensions: [832, 1218]; missing ink: 829; extra ink: 568 pixels.
 
 ## zplr
 

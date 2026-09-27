@@ -86,7 +86,7 @@ rendered · unscored · [All cases for this library](../libraries/binarykits.md)
 |---|---|---|
 | [![Printer preview](../previews/structured-exclude-BF-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/structured-exclude-BF.png) | [![binarykits render](../previews/structured-exclude-BF-binarykits.png)](../../../../conformance/images/structured-exclude-BF-binarykits.png) | [![binarykits difference](../previews/structured-exclude-BF-binarykits-diff.png)](../images/structured-exclude-BF-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 7102 pixels.
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 7235 pixels.
 
 ## zplr
 

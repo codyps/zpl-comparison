@@ -40,7 +40,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (27822) panicked at src/main.rs:63:14:
+thread 'main' (24563) panicked at src/main.rs:63:14:
 PNG: "MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

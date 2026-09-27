@@ -82,13 +82,13 @@ Library dimensions: [812, 1218]; missing ink: 6696; extra ink: 2290 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 3.95% IoU · [All cases for this library](../features/libraries/binarykits.md)
+rendered · 3.60% IoU · [All cases for this library](../features/libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/symbol-intelligent_mail-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/symbol-intelligent_mail.png) | [![binarykits render](../features/previews/symbol-intelligent_mail-binarykits.png)](../../../conformance/images/symbol-intelligent_mail-binarykits.png) | [![binarykits difference](../features/previews/symbol-intelligent_mail-binarykits-diff.png)](../features/images/symbol-intelligent_mail-binarykits-diff.png) |
 
-Library dimensions: [812, 1218]; missing ink: 6823; extra ink: 1756 pixels.
+Library dimensions: [812, 1218]; missing ink: 6841; extra ink: 2127 pixels.
 
 ## zplr
 

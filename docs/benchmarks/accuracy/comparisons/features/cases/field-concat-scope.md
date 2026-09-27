@@ -80,13 +80,13 @@ Library dimensions: [832, 1218]; missing ink: 468; extra ink: 386 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 11.69% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 15.31% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/field-concat-scope-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/field-concat-scope.png) | [![binarykits render](../previews/field-concat-scope-binarykits.png)](../../../../conformance/images/field-concat-scope-binarykits.png) | [![binarykits difference](../previews/field-concat-scope-binarykits-diff.png)](../images/field-concat-scope-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 1538; extra ink: 797 pixels.
+Library dimensions: [832, 1218]; missing ink: 1436; extra ink: 837 pixels.
 
 ## zplr
 

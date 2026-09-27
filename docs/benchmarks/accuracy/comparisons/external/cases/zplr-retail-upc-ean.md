@@ -28,7 +28,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (27241) panicked at src/main.rs:27:10:
+thread 'main' (37621) panicked at src/main.rs:27:10:
 render: RenderError { offset: 110, message: "unsupported legacy text byte; select ^CI28 for UTF-8" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -86,13 +86,13 @@ Library dimensions: [800, 500]; missing ink: 32373; extra ink: 8017 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 27.35% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 27.38% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/zplr-retail-upc-ean-printer.png)](../../../../../../benchmarks/accuracy/external-reference/zplr-retail-upc-ean.png) | [![binarykits render](../previews/zplr-retail-upc-ean-binarykits.png)](../../../../external-zpl/images/zplr-retail-upc-ean-binarykits.png) | [![binarykits difference](../previews/zplr-retail-upc-ean-binarykits-diff.png)](../images/zplr-retail-upc-ean-binarykits-diff.png) |
 
-Library dimensions: [800, 500]; missing ink: 22374; extra ink: 21333 pixels.
+Library dimensions: [800, 500]; missing ink: 22201; extra ink: 21904 pixels.
 
 ## zplr
 

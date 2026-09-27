@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (27180) panicked at src/main.rs:27:10:
+thread 'main' (37831) panicked at src/main.rs:27:10:
 render: RenderError { offset: 9, message: "unsupported command MN" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · unscored · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (21087) panicked at src/main.rs:79:32:
+thread 'main' (37824) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Found empty contents")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

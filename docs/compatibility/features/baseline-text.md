@@ -17,7 +17,7 @@
 | [zpl-forge](../libraries/forge.md) | 6 ❔ No evidence found; 13 🧩 Handler found | 0/24 exact; mean IoU 42.6%; 0 errors | 1 blank, 23 rendered |
 | [go-zpl](../libraries/go.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/24 exact; mean IoU 62.8%; 0 errors | 24 rendered |
 | [zpl-rs](../libraries/ffi.md) | 2 ❔ No evidence found; 16 🧩 Handler found; 1 ⏭️ Ignored / stored only | 0/24 exact; mean IoU 62.8%; 0 errors | 24 rendered |
-| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 12 🧩 Handler found | 0/24 exact; mean IoU 24.4%; 0 errors | 24 rendered |
+| [BinaryKits.Zpl Viewer](../libraries/binarykits.md) | 7 ❔ No evidence found; 12 🧩 Handler found | 0/24 exact; mean IoU 21.9%; 0 errors | 24 rendered |
 | [ZPLr](../libraries/zplr.md) | 1 🟡 Upstream: partial; 18 🟢 Upstream: supported | 0/24 exact; mean IoU 31.7%; 0 errors | 24 rendered |
 | [zpl-builder](../libraries/builder.md) | 11 ❔ No evidence found; 8 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |
 | [Python ZPL](../libraries/python.md) | 5 ❔ No evidence found; 14 🛠️ Typed emission | N/A – no incoming-ZPL renderer | N/A – no incoming-ZPL renderer |

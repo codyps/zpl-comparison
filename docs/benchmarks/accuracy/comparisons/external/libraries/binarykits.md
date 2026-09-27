@@ -10,11 +10,11 @@ Printer and Labelary captures retain their original capture dates. Local renders
 
 | Case | Group | Result | Difference |
 |---|---|---|---|
-| [zpl-toolchain-shipping_label](../../cases/external-zpl-zpl-toolchain-shipping_label.md) | shipping | rendered · 25.92% IoU | [![Difference](../previews/zpl-toolchain-shipping_label-binarykits-diff.png)](../images/zpl-toolchain-shipping_label-binarykits-diff.png) |
-| [zpl-toolchain-product_label](../../cases/external-zpl-zpl-toolchain-product_label.md) | product | rendered · 23.40% IoU | [![Difference](../previews/zpl-toolchain-product_label-binarykits-diff.png)](../images/zpl-toolchain-product_label-binarykits-diff.png) |
-| [zpl-toolchain-warehouse_label](../../cases/external-zpl-zpl-toolchain-warehouse_label.md) | warehouse | rendered · 35.73% IoU | [![Difference](../previews/zpl-toolchain-warehouse_label-binarykits-diff.png)](../images/zpl-toolchain-warehouse_label-binarykits-diff.png) |
-| [zpl-toolchain-compliance_label](../../cases/external-zpl-zpl-toolchain-compliance_label.md) | compliance | rendered · 30.03% IoU | [![Difference](../previews/zpl-toolchain-compliance_label-binarykits-diff.png)](../images/zpl-toolchain-compliance_label-binarykits-diff.png) |
+| [zpl-toolchain-shipping_label](../../cases/external-zpl-zpl-toolchain-shipping_label.md) | shipping | rendered · 24.99% IoU | [![Difference](../previews/zpl-toolchain-shipping_label-binarykits-diff.png)](../images/zpl-toolchain-shipping_label-binarykits-diff.png) |
+| [zpl-toolchain-product_label](../../cases/external-zpl-zpl-toolchain-product_label.md) | product | rendered · 22.76% IoU | [![Difference](../previews/zpl-toolchain-product_label-binarykits-diff.png)](../images/zpl-toolchain-product_label-binarykits-diff.png) |
+| [zpl-toolchain-warehouse_label](../../cases/external-zpl-zpl-toolchain-warehouse_label.md) | warehouse | rendered · 31.94% IoU | [![Difference](../previews/zpl-toolchain-warehouse_label-binarykits-diff.png)](../images/zpl-toolchain-warehouse_label-binarykits-diff.png) |
+| [zpl-toolchain-compliance_label](../../cases/external-zpl-zpl-toolchain-compliance_label.md) | compliance | rendered · 29.78% IoU | [![Difference](../previews/zpl-toolchain-compliance_label-binarykits-diff.png)](../images/zpl-toolchain-compliance_label-binarykits-diff.png) |
 | [zpl-toolchain-usps_surepost_sample](../../cases/external-zpl-zpl-toolchain-usps_surepost_sample.md) | printer-configuration | rendered · unscored | Unavailable |
-| [zplr-asset-matrix-pdf417](../../cases/external-zpl-zplr-asset-matrix-pdf417.md) | asset | rendered · 67.90% IoU | [![Difference](../previews/zplr-asset-matrix-pdf417-binarykits-diff.png)](../images/zplr-asset-matrix-pdf417-binarykits-diff.png) |
-| [zplr-retail-upc-ean](../../cases/external-zpl-zplr-retail-upc-ean.md) | retail | rendered · 27.35% IoU | [![Difference](../previews/zplr-retail-upc-ean-binarykits-diff.png)](../images/zplr-retail-upc-ean-binarykits-diff.png) |
+| [zplr-asset-matrix-pdf417](../../cases/external-zpl-zplr-asset-matrix-pdf417.md) | asset | rendered · 67.16% IoU | [![Difference](../previews/zplr-asset-matrix-pdf417-binarykits-diff.png)](../images/zplr-asset-matrix-pdf417-binarykits-diff.png) |
+| [zplr-retail-upc-ean](../../cases/external-zpl-zplr-retail-upc-ean.md) | retail | rendered · 27.38% IoU | [![Difference](../previews/zplr-retail-upc-ean-binarykits-diff.png)](../images/zplr-retail-upc-ean-binarykits-diff.png) |
 | [zplr-stored-resources](../../cases/external-zpl-zplr-stored-resources.md) | stateful | crashed · unscored | Unavailable |

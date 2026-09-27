@@ -86,7 +86,7 @@ rendered · 0.07% IoU · [All cases for this library](../libraries/binarykits.md
 |---|---|---|
 | [![Printer preview](../previews/text-block-N-1-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/text-block-N-1.png) | [![binarykits render](../previews/text-block-N-1-binarykits.png)](../../../../conformance/images/text-block-N-1-binarykits.png) | [![binarykits difference](../previews/text-block-N-1-binarykits-diff.png)](../images/text-block-N-1-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 12; extra ink: 1396 pixels.
+Library dimensions: [832, 1218]; missing ink: 12; extra ink: 1501 pixels.
 
 ## zplr
 

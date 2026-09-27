@@ -13,7 +13,7 @@
 | [zpl-forge](forge.md) | Rust | Parser and renderer | 0.3.2 | 22/133 exact; mean IoU 39.7%; 7 errors |
 | [go-zpl](go.md) | Go | Parser and renderer | source 78b181940c76 | 16/133 exact; mean IoU 36.9%; 0 errors |
 | [zpl-rs](ffi.md) | Rust → Go | Renderer wrapper | 0.1.8 | 16/133 exact; mean IoU 36.3%; 0 errors |
-| [BinaryKits.Zpl Viewer](binarykits.md) | .NET | Parser and renderer | 1.3.1 | 26/133 exact; mean IoU 37.9%; 0 errors |
+| [BinaryKits.Zpl Viewer](binarykits.md) | .NET | Parser and renderer | 1.3.1 | 26/133 exact; mean IoU 37.3%; 0 errors |
 | [ZPLr](zplr.md) | TypeScript | Parser and renderer | 0.3.0 | 61/133 exact; mean IoU 73.2%; 0 errors |
 | [zpl-builder](builder.md) | Rust | Typed generator | 0.1.0 | N/A – no incoming-ZPL renderer |
 | [Python ZPL](python.md) | Python | Typed generator | source 9bbeca05aa42 | N/A – no incoming-ZPL renderer |

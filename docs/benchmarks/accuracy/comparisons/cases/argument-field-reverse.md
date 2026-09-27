@@ -80,13 +80,13 @@ Library dimensions: [832, 300]; missing ink: 173; extra ink: 41 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 92.65% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 91.67% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../../previews/argument-field-reverse-printer.png)](../../../../../benchmarks/accuracy/reference/field-reverse.png) | [![binarykits render](../../previews/argument-field-reverse-binarykits.png)](../../images/argument-field-reverse-binarykits.png) | [![binarykits difference](../../previews/argument-field-reverse-binarykits-diff.png)](../../images/argument-field-reverse-binarykits-diff.png) |
 
-Library dimensions: [832, 300]; missing ink: 892; extra ink: 841 pixels.
+Library dimensions: [832, 300]; missing ink: 1087; extra ink: 881 pixels.
 
 ## zplr
 

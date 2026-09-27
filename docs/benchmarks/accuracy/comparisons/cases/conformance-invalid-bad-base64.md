@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../features/libraries/codyps-z
 
 ~~~text
 
-thread 'main' (26871) panicked at src/main.rs:27:10:
+thread 'main' (39742) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "ZPL framing error at byte 73: InvalidEncodedData" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

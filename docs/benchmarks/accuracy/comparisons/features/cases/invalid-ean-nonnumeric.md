@@ -40,7 +40,7 @@ error · unscored · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (26373) panicked at src/main.rs:63:14:
+thread 'main' (39104) panicked at src/main.rs:63:14:
 PNG: "EAN-13: need at least 12 digits, got 0"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · unscored · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (21169) panicked at src/main.rs:79:32:
+thread 'main' (39081) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Found empty contents")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -104,8 +104,8 @@ Unhandled exception. System.Exception: Error on zpl element "ABCDEFGHIJKL": Cont
    --- End of inner exception stack trace ---
    at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)
    at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)
-   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-yt66ne1c/benchmarks/adapters/dotnet/Program.cs:line 17
-   at Program.<Main>$(String[] args) in /tmp/zpl-build-yt66ne1c/benchmarks/adapters/dotnet/Program.cs:line 40
+   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-4l2vzkav/benchmarks/adapters/dotnet/Program.cs:line 17
+   at Program.<Main>$(String[] args) in /tmp/zpl-build-4l2vzkav/benchmarks/adapters/dotnet/Program.cs:line 40
 
 ~~~
 

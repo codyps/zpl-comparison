@@ -80,13 +80,13 @@ Library dimensions: [900, 500]; missing ink: 3288; extra ink: 5607 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 67.90% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 67.16% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/zplr-asset-matrix-pdf417-printer.png)](../../../../../../benchmarks/accuracy/external-reference/zplr-asset-matrix-pdf417.png) | [![binarykits render](../previews/zplr-asset-matrix-pdf417-binarykits.png)](../../../../external-zpl/images/zplr-asset-matrix-pdf417-binarykits.png) | [![binarykits difference](../previews/zplr-asset-matrix-pdf417-binarykits-diff.png)](../images/zplr-asset-matrix-pdf417-binarykits-diff.png) |
 
-Library dimensions: [900, 500]; missing ink: 4713; extra ink: 5876 pixels.
+Library dimensions: [900, 500]; missing ink: 4678; extra ink: 6294 pixels.
 
 ## zplr
 

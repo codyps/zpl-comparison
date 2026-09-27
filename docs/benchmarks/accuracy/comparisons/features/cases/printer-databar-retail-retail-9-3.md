@@ -82,13 +82,13 @@ Library dimensions: [832, 400]; missing ink: 31438; extra ink: 1311 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 3.00% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 3.22% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/printer-databar-retail-retail-9-3-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-databar-retail-retail-9-3.png) | [![binarykits render](../previews/printer-databar-retail-retail-9-3-binarykits.png)](../../../../conformance/images/printer-databar-retail-retail-9-3-binarykits.png) | [![binarykits difference](../previews/printer-databar-retail-retail-9-3-binarykits-diff.png)](../images/printer-databar-retail-retail-9-3-binarykits-diff.png) |
 
-Library dimensions: [832, 400]; missing ink: 31625; extra ink: 1034 pixels.
+Library dimensions: [832, 400]; missing ink: 31544; extra ink: 1208 pixels.
 
 ## zplr
 

@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (26880) panicked at src/main.rs:27:10:
+thread 'main' (39596) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "graphic CRC mismatch" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -48,7 +48,7 @@ error · unscored · [All cases for this library](../libraries/labelize.md)
 
 ~~~text
 
-thread 'main' (26320) panicked at src/main.rs:44:14:
+thread 'main' (39582) panicked at src/main.rs:44:14:
 parse: "failed to decode hex string: hex decode error: invalid hex char: /"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

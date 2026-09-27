@@ -82,13 +82,13 @@ Library dimensions: [812, 1218]; missing ink: 11337; extra ink: 397 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 2.10% IoU · [All cases for this library](../features/libraries/binarykits.md)
+rendered · 2.47% IoU · [All cases for this library](../features/libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/symbol-logmars-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/symbol-logmars.png) | [![binarykits render](../features/previews/symbol-logmars-binarykits.png)](../../../conformance/images/symbol-logmars-binarykits.png) | [![binarykits difference](../features/previews/symbol-logmars-binarykits-diff.png)](../features/images/symbol-logmars-binarykits-diff.png) |
 
-Library dimensions: [812, 1218]; missing ink: 11428; extra ink: 301 pixels.
+Library dimensions: [812, 1218]; missing ink: 11383; extra ink: 333 pixels.
 
 ## zplr
 

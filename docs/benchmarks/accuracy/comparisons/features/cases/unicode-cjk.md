@@ -86,7 +86,7 @@ rendered · unscored · [All cases for this library](../libraries/binarykits.md)
 |---|---|---|
 | [![Printer preview](../previews/unicode-cjk-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/unicode-cjk.png) | [![binarykits render](../previews/unicode-cjk-binarykits.png)](../../../../conformance/images/unicode-cjk-binarykits.png) | [![binarykits difference](../previews/unicode-cjk-binarykits-diff.png)](../images/unicode-cjk-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 848 pixels.
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 880 pixels.
 
 ## zplr
 

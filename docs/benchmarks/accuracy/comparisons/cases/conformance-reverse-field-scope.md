@@ -80,13 +80,13 @@ Library dimensions: [832, 1218]; missing ink: 36; extra ink: 15 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 98.91% IoU · [All cases for this library](../features/libraries/binarykits.md)
+rendered · 98.58% IoU · [All cases for this library](../features/libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../features/previews/reverse-field-scope-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/reverse-field-scope.png) | [![binarykits render](../features/previews/reverse-field-scope-binarykits.png)](../../../conformance/images/reverse-field-scope-binarykits.png) | [![binarykits difference](../features/previews/reverse-field-scope-binarykits-diff.png)](../features/images/reverse-field-scope-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 204; extra ink: 225 pixels.
+Library dimensions: [832, 1218]; missing ink: 267; extra ink: 294 pixels.
 
 ## zplr
 

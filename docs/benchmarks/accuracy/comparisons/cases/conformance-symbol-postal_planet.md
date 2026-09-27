@@ -88,7 +88,7 @@ rendered · 2.15% IoU · [All cases for this library](../features/libraries/bina
 |---|---|---|
 | [![Printer preview](../features/previews/symbol-postal_planet-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/symbol-postal_planet.png) | [![binarykits render](../features/previews/symbol-postal_planet-binarykits.png)](../../../conformance/images/symbol-postal_planet-binarykits.png) | [![binarykits difference](../features/previews/symbol-postal_planet-binarykits-diff.png)](../features/images/symbol-postal_planet-binarykits-diff.png) |
 
-Library dimensions: [812, 1218]; missing ink: 7441; extra ink: 530 pixels.
+Library dimensions: [812, 1218]; missing ink: 7439; extra ink: 627 pixels.
 
 ## zplr
 

@@ -54,7 +54,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (19154) panicked at src/main.rs:74:10:
+thread 'main' (34228) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -88,13 +88,13 @@ Library dimensions: [832, 1000]; missing ink: 2470; extra ink: 2171 pixels.
 
 **BinaryKits.Zpl (.NET)**
 
-rendered · 78.97% IoU · [All cases for this library](../libraries/binarykits.md)
+rendered · 77.84% IoU · [All cases for this library](../libraries/binarykits.md)
 
 | Printer preview | Library render | Difference |
 |---|---|---|
 | [![Printer preview](../previews/printer-character-remap-space-barcode-clean-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/printer-character-remap-space-barcode-clean.png) | [![binarykits render](../previews/printer-character-remap-space-barcode-clean-binarykits.png)](../../../../conformance/images/printer-character-remap-space-barcode-clean-binarykits.png) | [![binarykits difference](../previews/printer-character-remap-space-barcode-clean-binarykits-diff.png)](../images/printer-character-remap-space-barcode-clean-binarykits-diff.png) |
 
-Library dimensions: [832, 1000]; missing ink: 3237; extra ink: 2564 pixels.
+Library dimensions: [832, 1000]; missing ink: 3325; extra ink: 2852 pixels.
 
 ## zplr
 

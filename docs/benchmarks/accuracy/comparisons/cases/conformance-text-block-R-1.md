@@ -86,7 +86,7 @@ rendered · unscored · [All cases for this library](../features/libraries/binar
 |---|---|---|
 | [![Printer preview](../features/previews/text-block-R-1-printer.png)](../../../../../benchmarks/accuracy/conformance-reference/text-block-R-1.png) | [![binarykits render](../features/previews/text-block-R-1-binarykits.png)](../../../conformance/images/text-block-R-1-binarykits.png) | [![binarykits difference](../features/previews/text-block-R-1-binarykits-diff.png)](../features/images/text-block-R-1-binarykits-diff.png) |
 
-Library dimensions: [832, 1218]; missing ink: 0; extra ink: 1397 pixels.
+Library dimensions: [832, 1218]; missing ink: 0; extra ink: 1502 pixels.
 
 ## zplr
 

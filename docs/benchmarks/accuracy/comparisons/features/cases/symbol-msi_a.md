@@ -88,7 +88,7 @@ rendered · 2.25% IoU · [All cases for this library](../libraries/binarykits.md
 |---|---|---|
 | [![Printer preview](../previews/symbol-msi_a-printer.png)](../../../../../../benchmarks/accuracy/conformance-reference/symbol-msi_a.png) | [![binarykits render](../previews/symbol-msi_a-binarykits.png)](../../../../conformance/images/symbol-msi_a-binarykits.png) | [![binarykits difference](../previews/symbol-msi_a-binarykits-diff.png)](../images/symbol-msi_a-binarykits-diff.png) |
 
-Library dimensions: [812, 1218]; missing ink: 6876; extra ink: 249 pixels.
+Library dimensions: [812, 1218]; missing ink: 6875; extra ink: 309 pixels.
 
 ## zplr
 

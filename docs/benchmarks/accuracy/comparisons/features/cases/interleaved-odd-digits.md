@@ -96,8 +96,8 @@ Unhandled exception. System.Exception: Error on zpl element "12345": The length 
    --- End of inner exception stack trace ---
    at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)
    at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)
-   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-yt66ne1c/benchmarks/adapters/dotnet/Program.cs:line 17
-   at Program.<Main>$(String[] args) in /tmp/zpl-build-yt66ne1c/benchmarks/adapters/dotnet/Program.cs:line 40
+   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-4l2vzkav/benchmarks/adapters/dotnet/Program.cs:line 17
+   at Program.<Main>$(String[] args) in /tmp/zpl-build-4l2vzkav/benchmarks/adapters/dotnet/Program.cs:line 40
 
 ~~~
 
