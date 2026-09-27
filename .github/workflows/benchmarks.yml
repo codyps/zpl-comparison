@@ -142,10 +142,10 @@ jobs:
       group: publish-generated-reports
       cancel-in-progress: false
     steps:
-      - name: Install checkout dependencies
+      - name: Install publication dependencies
         run: |
           sudo apt-get -o Acquire::Retries=3 update
-          sudo apt-get -o Acquire::Retries=3 install -y --no-install-recommends git
+          sudo apt-get -o Acquire::Retries=3 install -y --no-install-recommends git python3
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.sha }}
