@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ZQ610 Plus comparisons</title><style>body{font:16px system-ui;margin:2rem;max-width:1200px}pre{white-space:pre-wrap;overflow-wrap:anywhere}td,th{border:1px solid #bbb;padding:.5rem}table{border-collapse:collapse}.panels{display:flex;gap:1rem;max-height:480px;overflow:auto}img{image-rendering:pixelated;max-width:none}</style><body><h1>barcode-ean8</h1><a href="../index.html">All comparisons</a><h2>zq610: native / local / diff</h2><div class="panels"><a href="zq610.png"><img src="zq610.png" alt="zq610.png"></a><a href="zq610-local.png"><img src="zq610-local.png" alt="zq610-local.png"></a><a href="zq610-diff.png"><img src="zq610-diff.png" alt="zq610-diff.png"></a></div><a href="zq610.zpl">Exact submitted ZPL</a><h2>zd621: native / local / diff</h2><div class="panels"><a href="zd621.png"><img src="zd621.png" alt="zd621.png"></a><a href="zd621-local.png"><img src="zd621-local.png" alt="zd621-local.png"></a><a href="zd621-diff.png"><img src="zd621-diff.png" alt="zd621-diff.png"></a></div><a href="zd621.zpl">Exact submitted ZPL</a><pre>{
+  &quot;capture&quot;: {
+    &quot;changes&quot;: [],
+    &quot;fits_narrow_width&quot;: true,
+    &quot;original&quot;: &quot;zebra-http-api/tests/fixtures/barcodes-zd621-v1/ean8.zpl&quot;,
+    &quot;original_measure&quot;: {
+      &quot;bbox&quot;: [
+        60,
+        60,
+        194,
+        153
+      ],
+      &quot;dimensions&quot;: [
+        832,
+        1218
+      ],
+      &quot;ink&quot;: 5276
+    },
+    &quot;original_sha256&quot;: &quot;9c84acd03d369be15828268478f6ee6d263536a2ef55c64b7bed5c80ac85deef&quot;,
+    &quot;predicted&quot;: {
+      &quot;bbox&quot;: [
+        60,
+        60,
+        194,
+        153
+      ],
+      &quot;dimensions&quot;: [
+        832,
+        2030
+      ],
+      &quot;ink&quot;: 5276
+    },
+    &quot;previous_attempts&quot;: {
+      &quot;zq610&quot;: [
+        {
+          &quot;error&quot;: &quot;timed out&quot;,
+          &quot;finished_utc&quot;: &quot;2026-09-27T02:39:33.814381+00:00&quot;,
+          &quot;started_utc&quot;: &quot;2026-09-27T02:39:03.393216+00:00&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;submitted_sha256&quot;: &quot;8781956577260d4e69fc3ddafb73fba9741527407d16050f3580f9dfa376f6e1&quot;
+        }
+      ]
+    },
+    &quot;source&quot;: &quot;barcode-ean8/zq610.zpl&quot;,
+    &quot;status&quot;: {
+      &quot;zd621&quot;: {
+        &quot;finished_utc&quot;: &quot;2026-09-27T02:41:53.328746+00:00&quot;,
+        &quot;image_url&quot;: &quot;png?prev=Y&amp;dev=R&amp;oname=__TMP586&amp;otype=PNG&quot;,
+        &quot;measurement&quot;: {
+          &quot;bbox&quot;: [
+            60,
+            60,
+            194,
+            153
+          ],
+          &quot;dimensions&quot;: [
+            832,
+            2030
+          ],
+          &quot;ink&quot;: 5276
+        },
+        &quot;started_utc&quot;: &quot;2026-09-27T02:41:52.183880+00:00&quot;,
+        &quot;status&quot;: &quot;captured&quot;,
+        &quot;submitted_sha256&quot;: &quot;44a819ca26052801686296913b7b1e9f197b7e14386007b1b59e278cb7fcfb89&quot;
+      },
+      &quot;zq610&quot;: {
+        &quot;finished_utc&quot;: &quot;2026-09-27T02:55:48.359128+00:00&quot;,
+        &quot;image_url&quot;: &quot;png?prev=Y&amp;dev=R&amp;oname=__TMP016&amp;otype=PNG&quot;,
+        &quot;measurement&quot;: {
+          &quot;bbox&quot;: [
+            60,
+            60,
+            194,
+            153
+          ],
+          &quot;dimensions&quot;: [
+            384,
+            2030
+          ],
+          &quot;ink&quot;: 5276
+        },
+        &quot;started_utc&quot;: &quot;2026-09-27T02:55:46.954105+00:00&quot;,
+        &quot;status&quot;: &quot;captured&quot;,
+        &quot;submitted_sha256&quot;: &quot;8781956577260d4e69fc3ddafb73fba9741527407d16050f3580f9dfa376f6e1&quot;
+      }
+    }
+  },
+  &quot;common_coordinate_region&quot;: {
+    &quot;both_black&quot;: 5276,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;region&quot;: [
+      0,
+      0,
+      384,
+      2030
+    ],
+    &quot;underpaint&quot;: 0
+  },
+  &quot;zd621&quot;: {
+    &quot;both_black&quot;: 5276,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;local_pixels_sha256&quot;: &quot;1ec832e74a57f9ffe7c9beb08c460acfff80b48258f53dc229dad24ea796cf84&quot;,
+    &quot;local_png_sha256&quot;: &quot;a66ec34d7a34c3ff2466a010bfb64fadd6650d28cb82ac29073388c9e8ee2e43&quot;,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;underpaint&quot;: 0
+  },
+  &quot;zq610&quot;: {
+    &quot;both_black&quot;: 5276,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;local_pixels_sha256&quot;: &quot;c27c5b6a164d82311bb4da7ab983413850cef6ba64e69dc34bf0a8d83327b769&quot;,
+    &quot;local_png_sha256&quot;: &quot;7f253cfa924746c3d70b4ee60c390f038903df1e766de5656c97a91431fb15d6&quot;,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;underpaint&quot;: 0
+  }
+}</pre></body></html>

@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ZQ610 Plus comparisons</title><style>body{font:16px system-ui;margin:2rem;max-width:1200px}pre{white-space:pre-wrap;overflow-wrap:anywhere}td,th{border:1px solid #bbb;padding:.5rem}table{border-collapse:collapse}.panels{display:flex;gap:1rem;max-height:480px;overflow:auto}img{image-rendering:pixelated;max-width:none}</style><body><h1>width-boundary-384-fit</h1><a href="../index.html">All comparisons</a><h2>zq610: native / local / diff</h2><div class="panels"><a href="zq610.png"><img src="zq610.png" alt="zq610.png"></a><a href="zq610-local.png"><img src="zq610-local.png" alt="zq610-local.png"></a><a href="zq610-diff.png"><img src="zq610-diff.png" alt="zq610-diff.png"></a></div><a href="zq610.zpl">Exact submitted ZPL</a><h2>zd621: native / local / diff</h2><div class="panels"><a href="zd621.png"><img src="zd621.png" alt="zd621.png"></a><a href="zd621-local.png"><img src="zd621-local.png" alt="zd621-local.png"></a><a href="zd621-diff.png"><img src="zd621-diff.png" alt="zd621-diff.png"></a></div><a href="zd621.zpl">Exact submitted ZPL</a><pre>{
+  &quot;capture&quot;: {
+    &quot;changes&quot;: [
+      &quot;^GB404,10,10 -&gt; ^GB340,10,10&quot;,
+      &quot;^FO383,40 -&gt; ^FO350,40&quot;,
+      &quot;^FO0, -&gt; ^FO20,&quot;
+    ],
+    &quot;fits_narrow_width&quot;: true,
+    &quot;original_case&quot;: &quot;width-boundary-384&quot;,
+    &quot;predicted&quot;: {
+      &quot;bbox&quot;: [
+        20,
+        20,
+        360,
+        70
+      ],
+      &quot;dimensions&quot;: [
+        384,
+        2030
+      ],
+      &quot;ink&quot;: 3460
+    },
+    &quot;source&quot;: &quot;width-boundary-384-fit/zq610.zpl&quot;,
+    &quot;status&quot;: {
+      &quot;zd621&quot;: {
+        &quot;finished_utc&quot;: &quot;2026-09-27T03:15:52.047922+00:00&quot;,
+        &quot;image_url&quot;: &quot;png?prev=Y&amp;dev=R&amp;oname=__TMP675&amp;otype=PNG&quot;,
+        &quot;measurement&quot;: {
+          &quot;bbox&quot;: [
+            20,
+            20,
+            360,
+            70
+          ],
+          &quot;dimensions&quot;: [
+            384,
+            200
+          ],
+          &quot;ink&quot;: 3460
+        },
+        &quot;started_utc&quot;: &quot;2026-09-27T03:15:50.943263+00:00&quot;,
+        &quot;status&quot;: &quot;captured&quot;,
+        &quot;submitted_sha256&quot;: &quot;0cae903d0a7b6b6f0aa001fec33c1f4aa43f098711a07534f774c0ed68043dd6&quot;
+      },
+      &quot;zq610&quot;: {
+        &quot;finished_utc&quot;: &quot;2026-09-27T03:15:46.666766+00:00&quot;,
+        &quot;image_url&quot;: &quot;png?prev=Y&amp;dev=R&amp;oname=__TMP033&amp;otype=PNG&quot;,
+        &quot;measurement&quot;: {
+          &quot;bbox&quot;: [
+            20,
+            20,
+            360,
+            70
+          ],
+          &quot;dimensions&quot;: [
+            384,
+            2030
+          ],
+          &quot;ink&quot;: 3460
+        },
+        &quot;started_utc&quot;: &quot;2026-09-27T03:15:45.220790+00:00&quot;,
+        &quot;status&quot;: &quot;captured&quot;,
+        &quot;submitted_sha256&quot;: &quot;0cae903d0a7b6b6f0aa001fec33c1f4aa43f098711a07534f774c0ed68043dd6&quot;
+      }
+    }
+  },
+  &quot;common_coordinate_region&quot;: {
+    &quot;both_black&quot;: 3460,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;region&quot;: [
+      0,
+      0,
+      384,
+      200
+    ],
+    &quot;underpaint&quot;: 0
+  },
+  &quot;zd621&quot;: {
+    &quot;both_black&quot;: 3460,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;local_pixels_sha256&quot;: &quot;a6b505b0014d821297aeb261f79ee30e2caf0af9fcd4ec917d46aa6e2ecac656&quot;,
+    &quot;local_png_sha256&quot;: &quot;453e3fadfb59ac08be8826a396785c57cd25d118f9ccdeab86a1ba3e8f2a5f96&quot;,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;underpaint&quot;: 0
+  },
+  &quot;zq610&quot;: {
+    &quot;both_black&quot;: 3460,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;local_pixels_sha256&quot;: &quot;655a54e4c198c62116ce76f454daa2f3cb34e08106198f6b543b9be5f928ae6e&quot;,
+    &quot;local_png_sha256&quot;: &quot;7edf3d58f7272edb2d1302da77107190e1be0b571e95d7310b8b532a6efd8d0e&quot;,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;underpaint&quot;: 0
+  }
+}</pre></body></html>

@@ -52,7 +52,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (19913) panicked at src/main.rs:79:32:
+thread 'main' (20211) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

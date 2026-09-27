@@ -34,3 +34,17 @@ measurement and capture inputs required by Bazel. Derived reports, plots,
 differences, thumbnails, and galleries are ignored here and published only on
 [`generated`](https://github.com/codyps/zpl-comparison/tree/generated).
 For an offline rebuild from saved renderer images, use `bazelisk build //:reports_saved`.
+## ZQ610 Plus preview campaign
+
+The ZQ610 Plus comparison pages (`docs/benchmarks/zq610-plus/index.html`, built
+by both report targets) show 116 paired native printer captures and full-canvas
+local comparisons. See [capture provenance and reproduction](references/zq610-plus-v1/README.md).
+
+The [ZQ610 candidate matrix](references/zq610-candidates/README.md) covers all
+120 reference cases against every rendering candidate, including saved Labelary
+API PNGs. Build only this matrix with
+`bazelisk build //:reports --output_groups=suite_zq610_candidates`.
+
+## License
+
+Licensed under the [Open Software License version 3.0](LICENSE).

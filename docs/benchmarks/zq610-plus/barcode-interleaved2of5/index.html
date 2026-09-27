@@ -1,0 +1,114 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ZQ610 Plus comparisons</title><style>body{font:16px system-ui;margin:2rem;max-width:1200px}pre{white-space:pre-wrap;overflow-wrap:anywhere}td,th{border:1px solid #bbb;padding:.5rem}table{border-collapse:collapse}.panels{display:flex;gap:1rem;max-height:480px;overflow:auto}img{image-rendering:pixelated;max-width:none}</style><body><h1>barcode-interleaved2of5</h1><a href="../index.html">All comparisons</a><h2>zq610: native / local / diff</h2><div class="panels"><a href="zq610.png"><img src="zq610.png" alt="zq610.png"></a><a href="zq610-local.png"><img src="zq610-local.png" alt="zq610-local.png"></a><a href="zq610-diff.png"><img src="zq610-diff.png" alt="zq610-diff.png"></a></div><a href="zq610.zpl">Exact submitted ZPL</a><h2>zd621: native / local / diff</h2><div class="panels"><a href="zd621.png"><img src="zd621.png" alt="zd621.png"></a><a href="zd621-local.png"><img src="zd621-local.png" alt="zd621-local.png"></a><a href="zd621-diff.png"><img src="zd621-diff.png" alt="zd621-diff.png"></a></div><a href="zd621.zpl">Exact submitted ZPL</a><pre>{
+  &quot;capture&quot;: {
+    &quot;changes&quot;: [],
+    &quot;fits_narrow_width&quot;: true,
+    &quot;original&quot;: &quot;zebra-http-api/tests/fixtures/barcodes-zd621-v1/interleaved2of5.zpl&quot;,
+    &quot;original_measure&quot;: {
+      &quot;bbox&quot;: [
+        60,
+        60,
+        188,
+        140
+      ],
+      &quot;dimensions&quot;: [
+        832,
+        1218
+      ],
+      &quot;ink&quot;: 5280
+    },
+    &quot;original_sha256&quot;: &quot;8bbc33fc95caee703a8d8b96fa388344175c0ce9fd5e863565c7ab4f4165121b&quot;,
+    &quot;predicted&quot;: {
+      &quot;bbox&quot;: [
+        60,
+        60,
+        188,
+        140
+      ],
+      &quot;dimensions&quot;: [
+        832,
+        2030
+      ],
+      &quot;ink&quot;: 5280
+    },
+    &quot;source&quot;: &quot;barcode-interleaved2of5/zq610.zpl&quot;,
+    &quot;status&quot;: {
+      &quot;zd621&quot;: {
+        &quot;finished_utc&quot;: &quot;2026-09-27T02:41:59.077796+00:00&quot;,
+        &quot;image_url&quot;: &quot;png?prev=Y&amp;dev=R&amp;oname=__TMP591&amp;otype=PNG&quot;,
+        &quot;measurement&quot;: {
+          &quot;bbox&quot;: [
+            60,
+            60,
+            188,
+            140
+          ],
+          &quot;dimensions&quot;: [
+            832,
+            2030
+          ],
+          &quot;ink&quot;: 5280
+        },
+        &quot;started_utc&quot;: &quot;2026-09-27T02:41:57.932856+00:00&quot;,
+        &quot;status&quot;: &quot;captured&quot;,
+        &quot;submitted_sha256&quot;: &quot;85e44a983a047564a3a34c6e639dfcd875978498fc0d8f3007810ef6aca6bff7&quot;
+      },
+      &quot;zq610&quot;: {
+        &quot;finished_utc&quot;: &quot;2026-09-27T02:55:55.543224+00:00&quot;,
+        &quot;image_url&quot;: &quot;png?prev=Y&amp;dev=R&amp;oname=__TMP021&amp;otype=PNG&quot;,
+        &quot;measurement&quot;: {
+          &quot;bbox&quot;: [
+            60,
+            60,
+            188,
+            140
+          ],
+          &quot;dimensions&quot;: [
+            384,
+            2030
+          ],
+          &quot;ink&quot;: 5280
+        },
+        &quot;started_utc&quot;: &quot;2026-09-27T02:55:54.123773+00:00&quot;,
+        &quot;status&quot;: &quot;captured&quot;,
+        &quot;submitted_sha256&quot;: &quot;9890a5a3e48d4d32e227350151fde76922e6a0245ad8c6eb430212315ef3116c&quot;
+      }
+    }
+  },
+  &quot;common_coordinate_region&quot;: {
+    &quot;both_black&quot;: 5280,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;region&quot;: [
+      0,
+      0,
+      384,
+      2030
+    ],
+    &quot;underpaint&quot;: 0
+  },
+  &quot;zd621&quot;: {
+    &quot;both_black&quot;: 5280,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;local_pixels_sha256&quot;: &quot;72f478b3bc096043dff3fa1faeb253a1ea3cbc034c1a2adf00a679a47e26910a&quot;,
+    &quot;local_png_sha256&quot;: &quot;aef5875e56928847109cd48e4adeb321d7c819b76dee892b3d6b34a919fd5bfb&quot;,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;underpaint&quot;: 0
+  },
+  &quot;zq610&quot;: {
+    &quot;both_black&quot;: 5280,
+    &quot;dimensions_equal&quot;: true,
+    &quot;exact&quot;: true,
+    &quot;foreground_iou&quot;: 1.0,
+    &quot;local_pixels_sha256&quot;: &quot;457c5a23aaab2e18369d09fc63db59f1b4620938e4cf4a1bd3c5a1cee6647623&quot;,
+    &quot;local_png_sha256&quot;: &quot;711dd195680b76a5f2a4318729db7001efa2b001d42c32f218064744a7f38576&quot;,
+    &quot;nonblank&quot;: true,
+    &quot;overpaint&quot;: 0,
+    &quot;underpaint&quot;: 0
+  }
+}</pre></body></html>

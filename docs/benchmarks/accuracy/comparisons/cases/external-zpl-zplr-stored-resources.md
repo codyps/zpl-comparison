@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../external/libraries/codyps-z
 
 ~~~text
 
-thread 'main' (19248) panicked at src/main.rs:27:10:
+thread 'main' (27251) panicked at src/main.rs:27:10:
 render: RenderError { offset: 56, message: "unsupported command DF" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · unscored · [All cases for this library](../external/libraries/forge.md
 
 ~~~text
 
-thread 'main' (20531) panicked at src/main.rs:74:10:
+thread 'main' (21061) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Eof)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -100,8 +100,8 @@ Unhandled exception. System.InvalidOperationException: Could not find format R:A
    at BinaryKits.Zpl.Viewer.FormatMerger.GetMergedElements(LabelInfo rawLabelInfo, Dictionary`2 templateFormats)
    at BinaryKits.Zpl.Viewer.FormatMerger.MergeFormats(List`1 rawLabelInfos)
    at BinaryKits.Zpl.Viewer.ZplAnalyzer.Analyze(String zplData)
-   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-k4jlj35z/benchmarks/adapters/dotnet/Program.cs:line 14
-   at Program.<Main>$(String[] args) in /tmp/zpl-build-k4jlj35z/benchmarks/adapters/dotnet/Program.cs:line 40
+   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-yt66ne1c/benchmarks/adapters/dotnet/Program.cs:line 14
+   at Program.<Main>$(String[] args) in /tmp/zpl-build-yt66ne1c/benchmarks/adapters/dotnet/Program.cs:line 40
 
 ~~~
 

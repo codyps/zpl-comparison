@@ -17,7 +17,7 @@ Shares the pinned Go parser and its argument limits. Wrapper/render defaults are
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/ffi.md)
 
-16/133 exact; mean IoU 36.3%; 0 errors. Snapshot: 2026-09-21T18:56:33Z.
+16/133 exact; mean IoU 36.3%; 0 errors. Snapshot: 2026-09-27T04:12:49Z.
 
 ## Feature groups
 

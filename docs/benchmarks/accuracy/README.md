@@ -8,10 +8,10 @@ Counts include failed, blank, excluded, and unavailable-reference cases. Scored 
 
 | Corpus | Cases | Categories | Attempts | Scored attempts | Image differences | Measured UTC |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Argument and archived barcode accuracy](#argument-and-archived-barcode-details) | 133 | 6 | 1064 | 1064 | 1052 | 2026-09-21T18:56:33Z |
-| [Feature conformance](comparisons/features/README.md) | 598 | 38 | 4784 | 4512 | 4500 | 2026-09-21T18:58:57Z |
-| [External examples](comparisons/external/README.md) | 8 | 8 | 64 | 48 | 47 | 2026-09-21T18:52:15Z |
-| [Font-free layout](comparisons/layout/README.md) | 20 | 1 | 160 | 160 | 160 | 2026-09-21T18:51:56Z |
+| [Argument and archived barcode accuracy](#argument-and-archived-barcode-details) | 133 | 6 | 1064 | 1064 | 1052 | 2026-09-27T04:12:49Z |
+| [Feature conformance](comparisons/features/README.md) | 598 | 38 | 4784 | 4512 | 4500 | 2026-09-27T04:16:06Z |
+| [External examples](comparisons/external/README.md) | 8 | 8 | 64 | 48 | 47 | 2026-09-27T04:13:02Z |
+| [Font-free layout](comparisons/layout/README.md) | 20 | 1 | 160 | 160 | 160 | 2026-09-27T04:12:39Z |
 
 ## Browse by library
 
@@ -92,7 +92,7 @@ Each cell shows mean IoU and its scored denominator in parentheses. Corpora rema
 
 Each case below links to its printer preview, library renders and difference images. [Feature fixtures and differences](comparisons/features/README.md) use the same metric and a separate aggregate.
 
-Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-21T18:56:33Z.
+Reference: **ZTC ZD621-203dpi ZPL, firmware V93.21.33Z**, 203 dpi. Fresh captures: 2026-09-18T23:34:22Z. Library comparisons: 2026-09-27T04:12:49Z.
 
 Local renders are cached per case and library; the comparison date is the latest execution in this snapshot. Per-result `observed_utc` values retain execution/capture dates.
 

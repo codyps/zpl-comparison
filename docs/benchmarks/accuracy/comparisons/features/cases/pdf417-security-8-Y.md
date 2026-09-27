@@ -52,7 +52,7 @@ error · 0.00% IoU · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (20304) panicked at src/main.rs:79:32:
+thread 'main' (21578) panicked at src/main.rs:79:32:
 PNG: BackendError("Barcode Generation Error: WriterException - Unable to fit message in columns")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

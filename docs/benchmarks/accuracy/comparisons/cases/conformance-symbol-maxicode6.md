@@ -42,7 +42,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/labeliz
 
 ~~~text
 
-thread 'main' (23891) panicked at src/main.rs:63:14:
+thread 'main' (19568) panicked at src/main.rs:63:14:
 PNG: "MaxiCode mode 6 is not supported; expected 2, 3, or 4"
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
