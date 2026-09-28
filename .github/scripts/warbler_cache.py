@@ -7,8 +7,24 @@ import os
 from pathlib import Path
 import ssl
 import sys
+import time
 import urllib.error
 import urllib.request
+
+def open_with_retries(request, context):
+    """Bound optional-cache outages; never disable TLS verification."""
+    for attempt in range(3):
+        try:
+            return urllib.request.urlopen(request, context=context, timeout=15)
+        except urllib.error.HTTPError as error:
+            if error.code < 500:
+                raise
+        except (urllib.error.URLError, TimeoutError, OSError):
+            pass
+        if attempt < 2:
+            time.sleep(2 ** (attempt + 1))
+    return None
+
 
 ENDPOINT = "https://10.77.0.1:9443/zpl-comparison"
 
@@ -28,14 +44,24 @@ def configure():
     auth = {key: values[0] for key, values in headers(credential).items()}
     empty = hashlib.sha256(b"").hexdigest()
     request = urllib.request.Request(f"{ENDPOINT}/cas/{empty}", headers=auth)
-    with urllib.request.urlopen(request, context=context, timeout=15) as response:
+    try:
+        response = open_with_retries(request, context)
+    except urllib.error.HTTPError:
+        response = None
+    if response is None:
+        print("::warning::Warbler cache unavailable; building uncached.")
+        return
+    with response:
         assert response.status == 200
     # Verify server-side denial, not merely the client upload setting.
     writer = credential.startswith("writer:")
     if not writer:
         request = urllib.request.Request(f"{ENDPOINT}/cas/{empty}", data=b"", headers=auth, method="PUT")
         try:
-            urllib.request.urlopen(request, context=context, timeout=15)
+            response = open_with_retries(request, context)
+            if response is None:
+                print("::warning::Warbler cache unavailable; building uncached.")
+                return
         except urllib.error.HTTPError as error:
             if error.code not in (401, 403):
                 raise
