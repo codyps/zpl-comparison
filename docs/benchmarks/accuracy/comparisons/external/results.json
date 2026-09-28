@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "measured_utc": "2026-09-27T21:31:17Z",
+  "measured_utc": "2026-09-28T01:33:37Z",
   "inputs": {
     "test-data/external-zpl/manifest.json": "d67331b8da175ee7bf7e359b3a222321b41e82152ee63f32cec8f42ad1b9de3f",
-    "docs/benchmarks/external-zpl/results.json": "697f434e520653de6fdf72a65455ef9b7d00406624b736efe6b74a83da3a4afe",
+    "docs/benchmarks/external-zpl/results.json": "864358ef13371adab23e9005b68b95225ab7ca0e6aae633f27ea96ba8fdfd477",
     "benchmarks/accuracy/external-reference/manifest.json": "35bb6715daf4e31a79cbc319ce15e0cbe3434096aef780a21c474bfa6d3f48c4"
   },
   "coverage": {
@@ -30,7 +30,7 @@
       "iou": 0.31716243575767017,
       "library": "codyps-zpl",
       "missing": 30543,
-      "observed_utc": "2026-09-27T21:31:17Z",
+      "observed_utc": "2026-09-28T01:33:37Z",
       "output_dimensions": [
         812,
         1218
@@ -63,7 +63,7 @@
       "iou": 0.3224837575886676,
       "library": "labelize",
       "missing": 28776,
-      "observed_utc": "2026-09-27T21:31:17Z",
+      "observed_utc": "2026-09-28T01:33:37Z",
       "output_dimensions": [
         812,
         1218
@@ -96,7 +96,7 @@
       "iou": 0.2775660180130716,
       "library": "forge",
       "missing": 32766,
-      "observed_utc": "2026-09-27T21:31:17Z",
+      "observed_utc": "2026-09-28T01:33:36Z",
       "output_dimensions": [
         812,
         1218
@@ -129,7 +129,7 @@
       "iou": 0.25770561372757045,
       "library": "go",
       "missing": 31120,
-      "observed_utc": "2026-09-27T21:31:17Z",
+      "observed_utc": "2026-09-28T01:33:36Z",
       "output_dimensions": [
         812,
         1218
@@ -162,7 +162,7 @@
       "iou": 0.25770561372757045,
       "library": "ffi",
       "missing": 31120,
-      "observed_utc": "2026-09-27T21:31:16Z",
+      "observed_utc": "2026-09-28T01:33:36Z",
       "output_dimensions": [
         812,
         1218
@@ -195,7 +195,7 @@
       "iou": 0.24992787289712187,
       "library": "binarykits",
       "missing": 33932,
-      "observed_utc": "2026-09-27T21:31:16Z",
+      "observed_utc": "2026-09-28T01:33:36Z",
       "output_dimensions": [
         812,
         1218
@@ -228,7 +228,7 @@
       "iou": 0.21009619938031904,
       "library": "zplr",
       "missing": 43526,
-      "observed_utc": "2026-09-27T21:31:15Z",
+      "observed_utc": "2026-09-28T01:33:35Z",
       "output_dimensions": [
         812,
         1218
@@ -293,7 +293,7 @@
       "iou": 0.2969394983024352,
       "library": "codyps-zpl",
       "missing": 14343,
-      "observed_utc": "2026-09-27T21:31:15Z",
+      "observed_utc": "2026-09-28T01:33:34Z",
       "output_dimensions": [
         609,
         406
@@ -326,7 +326,7 @@
       "iou": 0.29815989693478206,
       "library": "labelize",
       "missing": 14234,
-      "observed_utc": "2026-09-27T21:31:15Z",
+      "observed_utc": "2026-09-28T01:33:34Z",
       "output_dimensions": [
         609,
         406
@@ -359,7 +359,7 @@
       "iou": 0.23262646605852388,
       "library": "forge",
       "missing": 16682,
-      "observed_utc": "2026-09-27T21:31:14Z",
+      "observed_utc": "2026-09-28T01:33:34Z",
       "output_dimensions": [
         609,
         406
@@ -392,7 +392,7 @@
       "iou": 0.2023041474654378,
       "library": "go",
       "missing": 18598,
-      "observed_utc": "2026-09-27T21:31:14Z",
+      "observed_utc": "2026-09-28T01:33:34Z",
       "output_dimensions": [
         609,
         406
@@ -425,7 +425,7 @@
       "iou": 0.2023041474654378,
       "library": "ffi",
       "missing": 18598,
-      "observed_utc": "2026-09-27T21:31:14Z",
+      "observed_utc": "2026-09-28T01:33:34Z",
       "output_dimensions": [
         609,
         406
@@ -458,7 +458,7 @@
       "iou": 0.22762636957922844,
       "library": "binarykits",
       "missing": 16611,
-      "observed_utc": "2026-09-27T21:31:14Z",
+      "observed_utc": "2026-09-28T01:33:34Z",
       "output_dimensions": [
         609,
         406
@@ -491,7 +491,7 @@
       "iou": 0.28696593817680643,
       "library": "zplr",
       "missing": 14840,
-      "observed_utc": "2026-09-27T21:31:13Z",
+      "observed_utc": "2026-09-28T01:33:33Z",
       "output_dimensions": [
         609,
         406
@@ -556,7 +556,7 @@
       "iou": 0.45067359916500765,
       "library": "codyps-zpl",
       "missing": 27990,
-      "observed_utc": "2026-09-27T21:31:13Z",
+      "observed_utc": "2026-09-28T01:33:33Z",
       "output_dimensions": [
         812,
         609
@@ -589,7 +589,7 @@
       "iou": 0.4357230386336218,
       "library": "labelize",
       "missing": 28754,
-      "observed_utc": "2026-09-27T21:31:13Z",
+      "observed_utc": "2026-09-28T01:33:33Z",
       "output_dimensions": [
         812,
         609
@@ -622,7 +622,7 @@
       "iou": 0.37757046372108816,
       "library": "forge",
       "missing": 34596,
-      "observed_utc": "2026-09-27T21:31:13Z",
+      "observed_utc": "2026-09-28T01:33:33Z",
       "output_dimensions": [
         812,
         609
@@ -655,7 +655,7 @@
       "iou": 0.30074113522389384,
       "library": "go",
       "missing": 40740,
-      "observed_utc": "2026-09-27T21:31:12Z",
+      "observed_utc": "2026-09-28T01:33:32Z",
       "output_dimensions": [
         812,
         609
@@ -688,7 +688,7 @@
       "iou": 0.30074113522389384,
       "library": "ffi",
       "missing": 40740,
-      "observed_utc": "2026-09-27T21:31:12Z",
+      "observed_utc": "2026-09-28T01:33:32Z",
       "output_dimensions": [
         812,
         609
@@ -721,7 +721,7 @@
       "iou": 0.31937871721364086,
       "library": "binarykits",
       "missing": 37302,
-      "observed_utc": "2026-09-27T21:31:12Z",
+      "observed_utc": "2026-09-28T01:33:32Z",
       "output_dimensions": [
         812,
         609
@@ -754,7 +754,7 @@
       "iou": 0.38096944887237194,
       "library": "zplr",
       "missing": 34233,
-      "observed_utc": "2026-09-27T21:31:11Z",
+      "observed_utc": "2026-09-28T01:33:31Z",
       "output_dimensions": [
         812,
         609
@@ -819,7 +819,7 @@
       "iou": 0.3422410079062889,
       "library": "codyps-zpl",
       "missing": 28035,
-      "observed_utc": "2026-09-27T21:31:11Z",
+      "observed_utc": "2026-09-28T01:33:31Z",
       "output_dimensions": [
         812,
         1218
@@ -852,7 +852,7 @@
       "iou": 0.343156049094097,
       "library": "labelize",
       "missing": 28070,
-      "observed_utc": "2026-09-27T21:31:11Z",
+      "observed_utc": "2026-09-28T01:33:31Z",
       "output_dimensions": [
         812,
         1218
@@ -885,7 +885,7 @@
       "iou": 0.3024871261093459,
       "library": "forge",
       "missing": 29819,
-      "observed_utc": "2026-09-27T21:31:11Z",
+      "observed_utc": "2026-09-28T01:33:31Z",
       "output_dimensions": [
         812,
         1218
@@ -918,7 +918,7 @@
       "iou": 0.2634599290638824,
       "library": "go",
       "missing": 30983,
-      "observed_utc": "2026-09-27T21:31:11Z",
+      "observed_utc": "2026-09-28T01:33:31Z",
       "output_dimensions": [
         812,
         1218
@@ -951,7 +951,7 @@
       "iou": 0.2634599290638824,
       "library": "ffi",
       "missing": 30983,
-      "observed_utc": "2026-09-27T21:31:10Z",
+      "observed_utc": "2026-09-28T01:33:31Z",
       "output_dimensions": [
         812,
         1218
@@ -984,7 +984,7 @@
       "iou": 0.29779936492481995,
       "library": "binarykits",
       "missing": 30511,
-      "observed_utc": "2026-09-27T21:31:10Z",
+      "observed_utc": "2026-09-28T01:33:30Z",
       "output_dimensions": [
         812,
         1218
@@ -1017,7 +1017,7 @@
       "iou": 0.34846603796108394,
       "library": "zplr",
       "missing": 28236,
-      "observed_utc": "2026-09-27T21:31:09Z",
+      "observed_utc": "2026-09-28T01:33:29Z",
       "output_dimensions": [
         813,
         1219
@@ -1070,10 +1070,10 @@
     },
     {
       "case": "zpl-toolchain-usps_surepost_sample",
-      "diagnostic": "\nthread 'main' (37831) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 9, message: \"unsupported command MN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (30479) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 9, message: \"unsupported command MN\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "group": "printer-configuration",
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T21:31:09Z",
+      "observed_utc": "2026-09-28T01:33:29Z",
       "returncode": 101,
       "score": null,
       "status": "error",
@@ -1086,7 +1086,7 @@
       "height": 1524,
       "ink": 288110,
       "library": "labelize",
-      "observed_utc": "2026-09-27T21:31:09Z",
+      "observed_utc": "2026-09-28T01:33:29Z",
       "raw_png_sha256": "dd60f617d84e34db55a834cab61e6a707644bf00261d4760499b97800136d3cc",
       "render_sha256": "4c88d441c764659aea200bc5e3c4be24027ac0ce80e58e6923cec92dc5dca266",
       "returncode": 0,
@@ -1098,10 +1098,10 @@
     },
     {
       "case": "zpl-toolchain-usps_surepost_sample",
-      "diagnostic": "\nthread 'main' (37824) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (30470) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "group": "printer-configuration",
       "library": "forge",
-      "observed_utc": "2026-09-27T21:31:09Z",
+      "observed_utc": "2026-09-28T01:33:29Z",
       "returncode": 101,
       "score": null,
       "status": "error",
@@ -1114,7 +1114,7 @@
       "height": 1524,
       "ink": 294242,
       "library": "go",
-      "observed_utc": "2026-09-27T21:31:08Z",
+      "observed_utc": "2026-09-28T01:33:28Z",
       "raw_png_sha256": "0ba1514bae1c44ac439dff6c63754a63ac053361db835c9b89e12074ad368591",
       "render_sha256": "7c89e368603d822a0f1acc20439bef0ff736d5903dcdc384b0fbb10827e037cd",
       "returncode": 0,
@@ -1131,7 +1131,7 @@
       "height": 1524,
       "ink": 296660,
       "library": "ffi",
-      "observed_utc": "2026-09-27T21:31:08Z",
+      "observed_utc": "2026-09-28T01:33:28Z",
       "raw_png_sha256": "d7313bf188f75e99048b4dc31ce52ae6fccb928fe7481cc18b37f2ffa5995a23",
       "render_sha256": "f440fbffd5186d5b418f6cb3b4b4f9d99f18823c09acb95f2b8ec4955148048b",
       "returncode": 0,
@@ -1148,7 +1148,7 @@
       "height": 1524,
       "ink": 284024,
       "library": "binarykits",
-      "observed_utc": "2026-09-27T21:31:08Z",
+      "observed_utc": "2026-09-28T01:33:27Z",
       "raw_png_sha256": "bb47ffdeef96a47db32e3fc28f8dff057c5b945a878636f0813a1fe95cdc2b0b",
       "render_sha256": "cd2593b2c2246446dc730433dee2d20efc482470ca2aee7541bda3c3e8eb60bd",
       "returncode": 0,
@@ -1165,7 +1165,7 @@
       "height": 1219,
       "ink": 257138,
       "library": "zplr",
-      "observed_utc": "2026-09-27T21:31:07Z",
+      "observed_utc": "2026-09-28T01:33:27Z",
       "raw_png_sha256": "7635c576bfaa3cf6afdecc573f3a21df1d25c4e04f7a61385e32d663ea2c1462",
       "render_sha256": "75240dd076fe450848c693e97e025ebb4adcc7fc05e1569da0c549273b054062",
       "returncode": 0,
@@ -1205,7 +1205,7 @@
       "iou": 0.8212499187942571,
       "library": "codyps-zpl",
       "missing": 1833,
-      "observed_utc": "2026-09-27T21:31:06Z",
+      "observed_utc": "2026-09-28T01:33:26Z",
       "output_dimensions": [
         900,
         500
@@ -1238,7 +1238,7 @@
       "iou": 0.7167115408150777,
       "library": "labelize",
       "missing": 3691,
-      "observed_utc": "2026-09-27T21:31:06Z",
+      "observed_utc": "2026-09-28T01:33:26Z",
       "output_dimensions": [
         900,
         500
@@ -1271,7 +1271,7 @@
       "iou": 0.4300856653340948,
       "library": "forge",
       "missing": 8289,
-      "observed_utc": "2026-09-27T21:31:06Z",
+      "observed_utc": "2026-09-28T01:33:26Z",
       "output_dimensions": [
         900,
         500
@@ -1304,7 +1304,7 @@
       "iou": 0.7281728447880695,
       "library": "go",
       "missing": 3288,
-      "observed_utc": "2026-09-27T21:31:06Z",
+      "observed_utc": "2026-09-28T01:33:26Z",
       "output_dimensions": [
         900,
         500
@@ -1337,7 +1337,7 @@
       "iou": 0.7281728447880695,
       "library": "ffi",
       "missing": 3288,
-      "observed_utc": "2026-09-27T21:31:06Z",
+      "observed_utc": "2026-09-28T01:33:26Z",
       "output_dimensions": [
         900,
         500
@@ -1370,7 +1370,7 @@
       "iou": 0.6715953307392996,
       "library": "binarykits",
       "missing": 4678,
-      "observed_utc": "2026-09-27T21:31:05Z",
+      "observed_utc": "2026-09-28T01:33:25Z",
       "output_dimensions": [
         900,
         500
@@ -1403,7 +1403,7 @@
       "iou": 0.7137989778534923,
       "library": "zplr",
       "missing": 4071,
-      "observed_utc": "2026-09-27T21:31:05Z",
+      "observed_utc": "2026-09-28T01:33:25Z",
       "output_dimensions": [
         900,
         500
@@ -1456,10 +1456,10 @@
     },
     {
       "case": "zplr-retail-upc-ean",
-      "diagnostic": "\nthread 'main' (37621) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (30272) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "group": "retail",
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T21:31:04Z",
+      "observed_utc": "2026-09-28T01:33:24Z",
       "reference_ink": 38832,
       "returncode": 101,
       "score": 0.0,
@@ -1480,7 +1480,7 @@
       "iou": 0.28338457425477875,
       "library": "labelize",
       "missing": 21872,
-      "observed_utc": "2026-09-27T21:31:04Z",
+      "observed_utc": "2026-09-28T01:33:24Z",
       "output_dimensions": [
         800,
         500
@@ -1513,7 +1513,7 @@
       "iou": 0.2808554107914392,
       "library": "forge",
       "missing": 22061,
-      "observed_utc": "2026-09-27T21:31:04Z",
+      "observed_utc": "2026-09-28T01:33:24Z",
       "output_dimensions": [
         800,
         500
@@ -1546,7 +1546,7 @@
       "iou": 0.1378684710452731,
       "library": "go",
       "missing": 32373,
-      "observed_utc": "2026-09-27T21:31:04Z",
+      "observed_utc": "2026-09-28T01:33:24Z",
       "output_dimensions": [
         800,
         500
@@ -1579,7 +1579,7 @@
       "iou": 0.1378684710452731,
       "library": "ffi",
       "missing": 32373,
-      "observed_utc": "2026-09-27T21:31:04Z",
+      "observed_utc": "2026-09-28T01:33:24Z",
       "output_dimensions": [
         800,
         500
@@ -1612,7 +1612,7 @@
       "iou": 0.2738244204425711,
       "library": "binarykits",
       "missing": 22201,
-      "observed_utc": "2026-09-27T21:31:03Z",
+      "observed_utc": "2026-09-28T01:33:24Z",
       "output_dimensions": [
         800,
         500
@@ -1645,7 +1645,7 @@
       "iou": 0.2807815845824411,
       "library": "zplr",
       "missing": 22048,
-      "observed_utc": "2026-09-27T21:31:03Z",
+      "observed_utc": "2026-09-28T01:33:23Z",
       "output_dimensions": [
         800,
         500
@@ -1698,10 +1698,10 @@
     },
     {
       "case": "zplr-stored-resources",
-      "diagnostic": "\nthread 'main' (37543) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 56, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (30171) panicked at src/main.rs:27:10:\nrender: RenderError { offset: 56, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "group": "stateful",
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T21:31:02Z",
+      "observed_utc": "2026-09-28T01:33:23Z",
       "returncode": 101,
       "score": null,
       "status": "error",
@@ -1714,7 +1714,7 @@
       "height": 220,
       "ink": 4549,
       "library": "labelize",
-      "observed_utc": "2026-09-27T21:31:02Z",
+      "observed_utc": "2026-09-28T01:33:22Z",
       "raw_png_sha256": "bc2cc608b48e3a6675490fdc84ed061bf423c5f6d1f1b9b5e9bdf52006a0535f",
       "render_sha256": "48806e6aef5e5f529f69df24ee0eaf2823cf7a06b4bee9be4fd68f5f644b5595",
       "returncode": 0,
@@ -1726,10 +1726,10 @@
     },
     {
       "case": "zplr-stored-resources",
-      "diagnostic": "\nthread 'main' (37526) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (30166) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "group": "stateful",
       "library": "forge",
-      "observed_utc": "2026-09-27T21:31:02Z",
+      "observed_utc": "2026-09-28T01:33:22Z",
       "returncode": 101,
       "score": null,
       "status": "error",
@@ -1742,7 +1742,7 @@
       "height": 220,
       "ink": 3884,
       "library": "go",
-      "observed_utc": "2026-09-27T21:31:02Z",
+      "observed_utc": "2026-09-28T01:33:22Z",
       "raw_png_sha256": "3fb7a68b4a874b8cba988560d62ae4b1d9e21334949b4b923861f19d74520a5a",
       "render_sha256": "3f0ed7401e4ed6a09a6b6b79ec0205d2670c96e32cddf0f9e3812a96c61bebd1",
       "returncode": 0,
@@ -1759,7 +1759,7 @@
       "height": 220,
       "ink": 3884,
       "library": "ffi",
-      "observed_utc": "2026-09-27T21:31:02Z",
+      "observed_utc": "2026-09-28T01:33:22Z",
       "raw_png_sha256": "3fb7a68b4a874b8cba988560d62ae4b1d9e21334949b4b923861f19d74520a5a",
       "render_sha256": "3f0ed7401e4ed6a09a6b6b79ec0205d2670c96e32cddf0f9e3812a96c61bebd1",
       "returncode": 0,
@@ -1771,10 +1771,10 @@
     },
     {
       "case": "zplr-stored-resources",
-      "diagnostic": "Unhandled exception. System.InvalidOperationException: Could not find format R:ASSET.ZPL\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetFormatLabelInfo(ZplRecallFormat recallFormat, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetMergedElements(LabelInfo rawLabelInfo, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.MergeFormats(List`1 rawLabelInfos)\n   at BinaryKits.Zpl.Viewer.ZplAnalyzer.Analyze(String zplData)\n   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-4l2vzkav/benchmarks/adapters/dotnet/Program.cs:line 14\n   at Program.<Main>$(String[] args) in /tmp/zpl-build-4l2vzkav/benchmarks/adapters/dotnet/Program.cs:line 40\n",
+      "diagnostic": "Unhandled exception. System.InvalidOperationException: Could not find format R:ASSET.ZPL\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetFormatLabelInfo(ZplRecallFormat recallFormat, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetMergedElements(LabelInfo rawLabelInfo, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.MergeFormats(List`1 rawLabelInfos)\n   at BinaryKits.Zpl.Viewer.ZplAnalyzer.Analyze(String zplData)\n   at Program.<<Main>$>g__Operation|0_0(<>c__DisplayClass0_0&) in /tmp/zpl-build-gljd0b_k/benchmarks/adapters/dotnet/Program.cs:line 14\n   at Program.<Main>$(String[] args) in /tmp/zpl-build-gljd0b_k/benchmarks/adapters/dotnet/Program.cs:line 40\n",
       "group": "stateful",
       "library": "binarykits",
-      "observed_utc": "2026-09-27T21:31:02Z",
+      "observed_utc": "2026-09-28T01:33:22Z",
       "returncode": -6,
       "score": null,
       "status": "crashed",
@@ -1787,7 +1787,7 @@
       "height": 220,
       "ink": 4358,
       "library": "zplr",
-      "observed_utc": "2026-09-27T21:31:01Z",
+      "observed_utc": "2026-09-28T01:33:21Z",
       "raw_png_sha256": "7d7a723392c7bf945dd4a5a876a20a28acee70a990a98bf697a008be02bd454c",
       "render_sha256": "b6f22f8e121fa081ae80febf70e412af104090f4d48baf0bce043df13752abe8",
       "returncode": 0,

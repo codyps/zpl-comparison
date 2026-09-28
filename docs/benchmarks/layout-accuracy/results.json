@@ -2245,7 +2245,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:08Z",
+      "observed_utc": "2026-09-28T01:32:44Z",
       "output_dimensions": [
         832,
         300
@@ -2276,7 +2276,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:07Z",
+      "observed_utc": "2026-09-28T01:32:44Z",
       "output_dimensions": [
         832,
         300
@@ -2307,7 +2307,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:07Z",
+      "observed_utc": "2026-09-28T01:32:44Z",
       "output_dimensions": [
         832,
         300
@@ -2338,7 +2338,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:07Z",
+      "observed_utc": "2026-09-28T01:32:44Z",
       "output_dimensions": [
         832,
         300
@@ -2369,7 +2369,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:07Z",
+      "observed_utc": "2026-09-28T01:32:44Z",
       "output_dimensions": [
         832,
         300
@@ -2400,7 +2400,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:07Z",
+      "observed_utc": "2026-09-28T01:32:43Z",
       "output_dimensions": [
         832,
         300
@@ -2431,7 +2431,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:06Z",
+      "observed_utc": "2026-09-28T01:32:43Z",
       "output_dimensions": [
         832,
         300
@@ -2492,7 +2492,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:06Z",
+      "observed_utc": "2026-09-28T01:32:43Z",
       "output_dimensions": [
         832,
         300
@@ -2523,7 +2523,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:06Z",
+      "observed_utc": "2026-09-28T01:32:43Z",
       "output_dimensions": [
         832,
         300
@@ -2554,7 +2554,7 @@
       "iou": 0.03636699280044305,
       "library": "forge",
       "missing": 2610,
-      "observed_utc": "2026-09-27T21:30:06Z",
+      "observed_utc": "2026-09-28T01:32:43Z",
       "output_dimensions": [
         832,
         300
@@ -2585,7 +2585,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:06Z",
+      "observed_utc": "2026-09-28T01:32:43Z",
       "output_dimensions": [
         832,
         300
@@ -2616,7 +2616,7 @@
       "iou": 0.03636699280044305,
       "library": "ffi",
       "missing": 2610,
-      "observed_utc": "2026-09-27T21:30:06Z",
+      "observed_utc": "2026-09-28T01:32:42Z",
       "output_dimensions": [
         832,
         300
@@ -2647,7 +2647,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:05Z",
+      "observed_utc": "2026-09-28T01:32:42Z",
       "output_dimensions": [
         832,
         300
@@ -2678,7 +2678,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:05Z",
+      "observed_utc": "2026-09-28T01:32:42Z",
       "output_dimensions": [
         832,
         300
@@ -2739,7 +2739,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:05Z",
+      "observed_utc": "2026-09-28T01:32:42Z",
       "output_dimensions": [
         832,
         300
@@ -2770,7 +2770,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:05Z",
+      "observed_utc": "2026-09-28T01:32:41Z",
       "output_dimensions": [
         832,
         300
@@ -2801,7 +2801,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:05Z",
+      "observed_utc": "2026-09-28T01:32:41Z",
       "output_dimensions": [
         832,
         300
@@ -2832,7 +2832,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:04Z",
+      "observed_utc": "2026-09-28T01:32:41Z",
       "output_dimensions": [
         832,
         300
@@ -2863,7 +2863,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:04Z",
+      "observed_utc": "2026-09-28T01:32:41Z",
       "output_dimensions": [
         832,
         300
@@ -2894,7 +2894,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:04Z",
+      "observed_utc": "2026-09-28T01:32:41Z",
       "output_dimensions": [
         832,
         300
@@ -2925,7 +2925,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:03Z",
+      "observed_utc": "2026-09-28T01:32:40Z",
       "output_dimensions": [
         832,
         300
@@ -2986,7 +2986,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:03Z",
+      "observed_utc": "2026-09-28T01:32:40Z",
       "output_dimensions": [
         832,
         300
@@ -3017,7 +3017,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:03Z",
+      "observed_utc": "2026-09-28T01:32:40Z",
       "output_dimensions": [
         832,
         300
@@ -3048,7 +3048,7 @@
       "iou": 0.015463917525773196,
       "library": "forge",
       "missing": 2431,
-      "observed_utc": "2026-09-27T21:30:03Z",
+      "observed_utc": "2026-09-28T01:32:40Z",
       "output_dimensions": [
         832,
         300
@@ -3079,7 +3079,7 @@
       "iou": 0.015463917525773196,
       "library": "go",
       "missing": 2431,
-      "observed_utc": "2026-09-27T21:30:03Z",
+      "observed_utc": "2026-09-28T01:32:40Z",
       "output_dimensions": [
         832,
         300
@@ -3110,7 +3110,7 @@
       "iou": 0.015463917525773196,
       "library": "ffi",
       "missing": 2431,
-      "observed_utc": "2026-09-27T21:30:03Z",
+      "observed_utc": "2026-09-28T01:32:40Z",
       "output_dimensions": [
         832,
         300
@@ -3141,7 +3141,7 @@
       "iou": 0.015463917525773196,
       "library": "binarykits",
       "missing": 2431,
-      "observed_utc": "2026-09-27T21:30:02Z",
+      "observed_utc": "2026-09-28T01:32:39Z",
       "output_dimensions": [
         832,
         300
@@ -3172,7 +3172,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:02Z",
+      "observed_utc": "2026-09-28T01:32:39Z",
       "output_dimensions": [
         832,
         300
@@ -3233,7 +3233,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:01Z",
+      "observed_utc": "2026-09-28T01:32:39Z",
       "output_dimensions": [
         832,
         300
@@ -3264,7 +3264,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:01Z",
+      "observed_utc": "2026-09-28T01:32:39Z",
       "output_dimensions": [
         832,
         300
@@ -3295,7 +3295,7 @@
       "iou": 0.0499345427342435,
       "library": "forge",
       "missing": 2540,
-      "observed_utc": "2026-09-27T21:30:01Z",
+      "observed_utc": "2026-09-28T01:32:39Z",
       "output_dimensions": [
         832,
         300
@@ -3326,7 +3326,7 @@
       "iou": 0.0499345427342435,
       "library": "go",
       "missing": 2540,
-      "observed_utc": "2026-09-27T21:30:01Z",
+      "observed_utc": "2026-09-28T01:32:38Z",
       "output_dimensions": [
         832,
         300
@@ -3357,7 +3357,7 @@
       "iou": 0.0499345427342435,
       "library": "ffi",
       "missing": 2540,
-      "observed_utc": "2026-09-27T21:30:01Z",
+      "observed_utc": "2026-09-28T01:32:38Z",
       "output_dimensions": [
         832,
         300
@@ -3388,7 +3388,7 @@
       "iou": 0.0499345427342435,
       "library": "binarykits",
       "missing": 2540,
-      "observed_utc": "2026-09-27T21:30:01Z",
+      "observed_utc": "2026-09-28T01:32:38Z",
       "output_dimensions": [
         832,
         300
@@ -3419,7 +3419,7 @@
       "iou": 0.8036326250856751,
       "library": "zplr",
       "missing": 462,
-      "observed_utc": "2026-09-27T21:30:00Z",
+      "observed_utc": "2026-09-28T01:32:38Z",
       "output_dimensions": [
         832,
         300
@@ -3480,7 +3480,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:00Z",
+      "observed_utc": "2026-09-28T01:32:37Z",
       "output_dimensions": [
         832,
         300
@@ -3511,7 +3511,7 @@
       "iou": 0.05387647831800263,
       "library": "labelize",
       "missing": 2520,
-      "observed_utc": "2026-09-27T21:30:00Z",
+      "observed_utc": "2026-09-28T01:32:37Z",
       "output_dimensions": [
         832,
         300
@@ -3542,7 +3542,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:30:00Z",
+      "observed_utc": "2026-09-28T01:32:37Z",
       "output_dimensions": [
         832,
         300
@@ -3573,7 +3573,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:59Z",
+      "observed_utc": "2026-09-28T01:32:37Z",
       "output_dimensions": [
         832,
         300
@@ -3604,7 +3604,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:59Z",
+      "observed_utc": "2026-09-28T01:32:37Z",
       "output_dimensions": [
         832,
         300
@@ -3635,7 +3635,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:59Z",
+      "observed_utc": "2026-09-28T01:32:37Z",
       "output_dimensions": [
         832,
         300
@@ -3666,7 +3666,7 @@
       "iou": 0.04106090373280943,
       "library": "zplr",
       "missing": 2598,
-      "observed_utc": "2026-09-27T21:29:59Z",
+      "observed_utc": "2026-09-28T01:32:36Z",
       "output_dimensions": [
         832,
         300
@@ -3727,7 +3727,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:58Z",
+      "observed_utc": "2026-09-28T01:32:36Z",
       "output_dimensions": [
         832,
         300
@@ -3758,7 +3758,7 @@
       "iou": 0.03866790009250694,
       "library": "labelize",
       "missing": 2598,
-      "observed_utc": "2026-09-27T21:29:58Z",
+      "observed_utc": "2026-09-28T01:32:36Z",
       "output_dimensions": [
         832,
         300
@@ -3789,7 +3789,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:58Z",
+      "observed_utc": "2026-09-28T01:32:36Z",
       "output_dimensions": [
         832,
         300
@@ -3820,7 +3820,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:58Z",
+      "observed_utc": "2026-09-28T01:32:36Z",
       "output_dimensions": [
         832,
         300
@@ -3851,7 +3851,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:58Z",
+      "observed_utc": "2026-09-28T01:32:36Z",
       "output_dimensions": [
         832,
         300
@@ -3882,7 +3882,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:58Z",
+      "observed_utc": "2026-09-28T01:32:36Z",
       "output_dimensions": [
         832,
         300
@@ -3913,7 +3913,7 @@
       "iou": 0.03866790009250694,
       "library": "zplr",
       "missing": 2598,
-      "observed_utc": "2026-09-27T21:29:57Z",
+      "observed_utc": "2026-09-28T01:32:35Z",
       "output_dimensions": [
         832,
         300
@@ -3974,7 +3974,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:57Z",
+      "observed_utc": "2026-09-28T01:32:35Z",
       "output_dimensions": [
         832,
         300
@@ -4005,7 +4005,7 @@
       "iou": 0.31260229132569556,
       "library": "labelize",
       "missing": 1470,
-      "observed_utc": "2026-09-27T21:29:57Z",
+      "observed_utc": "2026-09-28T01:32:35Z",
       "output_dimensions": [
         832,
         300
@@ -4036,7 +4036,7 @@
       "iou": 0.07795698924731183,
       "library": "forge",
       "missing": 2401,
-      "observed_utc": "2026-09-27T21:29:57Z",
+      "observed_utc": "2026-09-28T01:32:35Z",
       "output_dimensions": [
         832,
         300
@@ -4067,7 +4067,7 @@
       "iou": 0.28938906752411575,
       "library": "go",
       "missing": 1547,
-      "observed_utc": "2026-09-27T21:29:56Z",
+      "observed_utc": "2026-09-28T01:32:35Z",
       "output_dimensions": [
         832,
         300
@@ -4098,7 +4098,7 @@
       "iou": 0.07795698924731183,
       "library": "ffi",
       "missing": 2401,
-      "observed_utc": "2026-09-27T21:29:56Z",
+      "observed_utc": "2026-09-28T01:32:35Z",
       "output_dimensions": [
         832,
         300
@@ -4129,7 +4129,7 @@
       "iou": 0.28938906752411575,
       "library": "binarykits",
       "missing": 1547,
-      "observed_utc": "2026-09-27T21:29:56Z",
+      "observed_utc": "2026-09-28T01:32:35Z",
       "output_dimensions": [
         832,
         300
@@ -4160,7 +4160,7 @@
       "iou": 0.31260229132569556,
       "library": "zplr",
       "missing": 1470,
-      "observed_utc": "2026-09-27T21:29:55Z",
+      "observed_utc": "2026-09-28T01:32:34Z",
       "output_dimensions": [
         832,
         300
@@ -4221,7 +4221,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:55Z",
+      "observed_utc": "2026-09-28T01:32:34Z",
       "output_dimensions": [
         832,
         300
@@ -4252,7 +4252,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:55Z",
+      "observed_utc": "2026-09-28T01:32:34Z",
       "output_dimensions": [
         832,
         300
@@ -4283,7 +4283,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:55Z",
+      "observed_utc": "2026-09-28T01:32:34Z",
       "output_dimensions": [
         832,
         300
@@ -4314,7 +4314,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:55Z",
+      "observed_utc": "2026-09-28T01:32:34Z",
       "output_dimensions": [
         832,
         300
@@ -4345,7 +4345,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:55Z",
+      "observed_utc": "2026-09-28T01:32:33Z",
       "output_dimensions": [
         832,
         300
@@ -4376,7 +4376,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:54Z",
+      "observed_utc": "2026-09-28T01:32:33Z",
       "output_dimensions": [
         832,
         300
@@ -4407,7 +4407,7 @@
       "iou": 0.0,
       "library": "zplr",
       "missing": 2807,
-      "observed_utc": "2026-09-27T21:29:54Z",
+      "observed_utc": "2026-09-28T01:32:32Z",
       "output_dimensions": [
         832,
         300
@@ -4468,7 +4468,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:53Z",
+      "observed_utc": "2026-09-28T01:32:32Z",
       "output_dimensions": [
         832,
         300
@@ -4499,7 +4499,7 @@
       "iou": 0.010803024846957148,
       "library": "labelize",
       "missing": 2747,
-      "observed_utc": "2026-09-27T21:29:53Z",
+      "observed_utc": "2026-09-28T01:32:32Z",
       "output_dimensions": [
         832,
         300
@@ -4530,7 +4530,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:53Z",
+      "observed_utc": "2026-09-28T01:32:32Z",
       "output_dimensions": [
         832,
         300
@@ -4561,7 +4561,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:53Z",
+      "observed_utc": "2026-09-28T01:32:32Z",
       "output_dimensions": [
         832,
         300
@@ -4592,7 +4592,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:53Z",
+      "observed_utc": "2026-09-28T01:32:32Z",
       "output_dimensions": [
         832,
         300
@@ -4623,7 +4623,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:53Z",
+      "observed_utc": "2026-09-28T01:32:31Z",
       "output_dimensions": [
         832,
         300
@@ -4654,7 +4654,7 @@
       "iou": 0.010803024846957148,
       "library": "zplr",
       "missing": 2747,
-      "observed_utc": "2026-09-27T21:29:52Z",
+      "observed_utc": "2026-09-28T01:32:31Z",
       "output_dimensions": [
         832,
         300
@@ -4715,7 +4715,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:52Z",
+      "observed_utc": "2026-09-28T01:32:31Z",
       "output_dimensions": [
         832,
         300
@@ -4746,7 +4746,7 @@
       "iou": 0.010803024846957148,
       "library": "labelize",
       "missing": 2747,
-      "observed_utc": "2026-09-27T21:29:52Z",
+      "observed_utc": "2026-09-28T01:32:31Z",
       "output_dimensions": [
         832,
         300
@@ -4777,7 +4777,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:52Z",
+      "observed_utc": "2026-09-28T01:32:31Z",
       "output_dimensions": [
         832,
         300
@@ -4808,7 +4808,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:52Z",
+      "observed_utc": "2026-09-28T01:32:30Z",
       "output_dimensions": [
         832,
         300
@@ -4839,7 +4839,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:52Z",
+      "observed_utc": "2026-09-28T01:32:30Z",
       "output_dimensions": [
         832,
         300
@@ -4870,7 +4870,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:51Z",
+      "observed_utc": "2026-09-28T01:32:30Z",
       "output_dimensions": [
         832,
         300
@@ -4901,7 +4901,7 @@
       "iou": 0.0068149210903873745,
       "library": "zplr",
       "missing": 2769,
-      "observed_utc": "2026-09-27T21:29:51Z",
+      "observed_utc": "2026-09-28T01:32:29Z",
       "output_dimensions": [
         832,
         300
@@ -4962,7 +4962,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:51Z",
+      "observed_utc": "2026-09-28T01:32:29Z",
       "output_dimensions": [
         832,
         300
@@ -4993,7 +4993,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:50Z",
+      "observed_utc": "2026-09-28T01:32:29Z",
       "output_dimensions": [
         832,
         300
@@ -5024,7 +5024,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:50Z",
+      "observed_utc": "2026-09-28T01:32:29Z",
       "output_dimensions": [
         832,
         300
@@ -5055,7 +5055,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:50Z",
+      "observed_utc": "2026-09-28T01:32:29Z",
       "output_dimensions": [
         832,
         300
@@ -5086,7 +5086,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:50Z",
+      "observed_utc": "2026-09-28T01:32:29Z",
       "output_dimensions": [
         832,
         300
@@ -5117,7 +5117,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:50Z",
+      "observed_utc": "2026-09-28T01:32:29Z",
       "output_dimensions": [
         832,
         300
@@ -5148,7 +5148,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:49Z",
+      "observed_utc": "2026-09-28T01:32:28Z",
       "output_dimensions": [
         832,
         300
@@ -5209,7 +5209,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:49Z",
+      "observed_utc": "2026-09-28T01:32:28Z",
       "output_dimensions": [
         832,
         300
@@ -5240,7 +5240,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:49Z",
+      "observed_utc": "2026-09-28T01:32:28Z",
       "output_dimensions": [
         832,
         300
@@ -5271,7 +5271,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:49Z",
+      "observed_utc": "2026-09-28T01:32:28Z",
       "output_dimensions": [
         832,
         300
@@ -5302,7 +5302,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:49Z",
+      "observed_utc": "2026-09-28T01:32:28Z",
       "output_dimensions": [
         832,
         300
@@ -5333,7 +5333,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:48Z",
+      "observed_utc": "2026-09-28T01:32:28Z",
       "output_dimensions": [
         832,
         300
@@ -5364,7 +5364,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:48Z",
+      "observed_utc": "2026-09-28T01:32:27Z",
       "output_dimensions": [
         832,
         300
@@ -5395,7 +5395,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:47Z",
+      "observed_utc": "2026-09-28T01:32:27Z",
       "output_dimensions": [
         832,
         300
@@ -5456,7 +5456,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:47Z",
+      "observed_utc": "2026-09-28T01:32:27Z",
       "output_dimensions": [
         832,
         300
@@ -5487,7 +5487,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:47Z",
+      "observed_utc": "2026-09-28T01:32:27Z",
       "output_dimensions": [
         832,
         300
@@ -5518,7 +5518,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:47Z",
+      "observed_utc": "2026-09-28T01:32:27Z",
       "output_dimensions": [
         832,
         300
@@ -5549,7 +5549,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:47Z",
+      "observed_utc": "2026-09-28T01:32:27Z",
       "output_dimensions": [
         832,
         300
@@ -5580,7 +5580,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:47Z",
+      "observed_utc": "2026-09-28T01:32:26Z",
       "output_dimensions": [
         832,
         300
@@ -5611,7 +5611,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:46Z",
+      "observed_utc": "2026-09-28T01:32:26Z",
       "output_dimensions": [
         832,
         300
@@ -5642,7 +5642,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:46Z",
+      "observed_utc": "2026-09-28T01:32:26Z",
       "output_dimensions": [
         832,
         300
@@ -5703,7 +5703,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:46Z",
+      "observed_utc": "2026-09-28T01:32:25Z",
       "output_dimensions": [
         832,
         300
@@ -5734,7 +5734,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:45Z",
+      "observed_utc": "2026-09-28T01:32:25Z",
       "output_dimensions": [
         832,
         300
@@ -5765,7 +5765,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:45Z",
+      "observed_utc": "2026-09-28T01:32:25Z",
       "output_dimensions": [
         832,
         300
@@ -5796,7 +5796,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:45Z",
+      "observed_utc": "2026-09-28T01:32:25Z",
       "output_dimensions": [
         832,
         300
@@ -5827,7 +5827,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:45Z",
+      "observed_utc": "2026-09-28T01:32:25Z",
       "output_dimensions": [
         832,
         300
@@ -5858,7 +5858,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:45Z",
+      "observed_utc": "2026-09-28T01:32:25Z",
       "output_dimensions": [
         832,
         300
@@ -5889,7 +5889,7 @@
       "iou": 0.985393658710367,
       "library": "zplr",
       "missing": 41,
-      "observed_utc": "2026-09-27T21:29:44Z",
+      "observed_utc": "2026-09-28T01:32:24Z",
       "output_dimensions": [
         832,
         300
@@ -5950,7 +5950,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:44Z",
+      "observed_utc": "2026-09-28T01:32:24Z",
       "output_dimensions": [
         832,
         300
@@ -5981,7 +5981,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:44Z",
+      "observed_utc": "2026-09-28T01:32:24Z",
       "output_dimensions": [
         832,
         300
@@ -6012,7 +6012,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:44Z",
+      "observed_utc": "2026-09-28T01:32:24Z",
       "output_dimensions": [
         832,
         300
@@ -6043,7 +6043,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:44Z",
+      "observed_utc": "2026-09-28T01:32:24Z",
       "output_dimensions": [
         832,
         300
@@ -6074,7 +6074,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:43Z",
+      "observed_utc": "2026-09-28T01:32:24Z",
       "output_dimensions": [
         832,
         300
@@ -6105,7 +6105,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:43Z",
+      "observed_utc": "2026-09-28T01:32:24Z",
       "output_dimensions": [
         832,
         300
@@ -6136,7 +6136,7 @@
       "iou": 0.9960505089837014,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:42Z",
+      "observed_utc": "2026-09-28T01:32:23Z",
       "output_dimensions": [
         832,
         300
@@ -6197,7 +6197,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:42Z",
+      "observed_utc": "2026-09-28T01:32:23Z",
       "output_dimensions": [
         832,
         300
@@ -6228,7 +6228,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:42Z",
+      "observed_utc": "2026-09-28T01:32:23Z",
       "output_dimensions": [
         832,
         300
@@ -6259,7 +6259,7 @@
       "iou": 1.0,
       "library": "forge",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:42Z",
+      "observed_utc": "2026-09-28T01:32:23Z",
       "output_dimensions": [
         832,
         300
@@ -6290,7 +6290,7 @@
       "iou": 1.0,
       "library": "go",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:42Z",
+      "observed_utc": "2026-09-28T01:32:23Z",
       "output_dimensions": [
         832,
         300
@@ -6321,7 +6321,7 @@
       "iou": 1.0,
       "library": "ffi",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:42Z",
+      "observed_utc": "2026-09-28T01:32:23Z",
       "output_dimensions": [
         832,
         300
@@ -6352,7 +6352,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:42Z",
+      "observed_utc": "2026-09-28T01:32:22Z",
       "output_dimensions": [
         832,
         300
@@ -6383,7 +6383,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:41Z",
+      "observed_utc": "2026-09-28T01:32:22Z",
       "output_dimensions": [
         832,
         300
@@ -6444,7 +6444,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:41Z",
+      "observed_utc": "2026-09-28T01:32:22Z",
       "output_dimensions": [
         832,
         300
@@ -6475,7 +6475,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:41Z",
+      "observed_utc": "2026-09-28T01:32:22Z",
       "output_dimensions": [
         832,
         300
@@ -6506,7 +6506,7 @@
       "iou": 0.09195402298850575,
       "library": "forge",
       "missing": 1264,
-      "observed_utc": "2026-09-27T21:29:41Z",
+      "observed_utc": "2026-09-28T01:32:22Z",
       "output_dimensions": [
         832,
         300
@@ -6537,7 +6537,7 @@
       "iou": 0.09195402298850575,
       "library": "go",
       "missing": 1264,
-      "observed_utc": "2026-09-27T21:29:41Z",
+      "observed_utc": "2026-09-28T01:32:22Z",
       "output_dimensions": [
         832,
         300
@@ -6568,7 +6568,7 @@
       "iou": 0.09195402298850575,
       "library": "ffi",
       "missing": 1264,
-      "observed_utc": "2026-09-27T21:29:41Z",
+      "observed_utc": "2026-09-28T01:32:22Z",
       "output_dimensions": [
         832,
         300
@@ -6599,7 +6599,7 @@
       "iou": 1.0,
       "library": "binarykits",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:40Z",
+      "observed_utc": "2026-09-28T01:32:21Z",
       "output_dimensions": [
         832,
         300
@@ -6630,7 +6630,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:39Z",
+      "observed_utc": "2026-09-28T01:32:21Z",
       "output_dimensions": [
         832,
         300
@@ -6691,7 +6691,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:39Z",
+      "observed_utc": "2026-09-28T01:32:20Z",
       "output_dimensions": [
         832,
         300
@@ -6722,7 +6722,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:39Z",
+      "observed_utc": "2026-09-28T01:32:20Z",
       "output_dimensions": [
         832,
         300
@@ -6753,7 +6753,7 @@
       "iou": 0.46153846153846156,
       "library": "forge",
       "missing": 560,
-      "observed_utc": "2026-09-27T21:29:39Z",
+      "observed_utc": "2026-09-28T01:32:20Z",
       "output_dimensions": [
         832,
         300
@@ -6784,7 +6784,7 @@
       "iou": 0.46153846153846156,
       "library": "go",
       "missing": 560,
-      "observed_utc": "2026-09-27T21:29:39Z",
+      "observed_utc": "2026-09-28T01:32:20Z",
       "output_dimensions": [
         832,
         300
@@ -6815,7 +6815,7 @@
       "iou": 0.46153846153846156,
       "library": "ffi",
       "missing": 560,
-      "observed_utc": "2026-09-27T21:29:39Z",
+      "observed_utc": "2026-09-28T01:32:20Z",
       "output_dimensions": [
         832,
         300
@@ -6846,7 +6846,7 @@
       "iou": 0.26666666666666666,
       "library": "binarykits",
       "missing": 880,
-      "observed_utc": "2026-09-27T21:29:39Z",
+      "observed_utc": "2026-09-28T01:32:20Z",
       "output_dimensions": [
         832,
         300
@@ -6877,7 +6877,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:38Z",
+      "observed_utc": "2026-09-28T01:32:19Z",
       "output_dimensions": [
         832,
         300
@@ -6938,7 +6938,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:38Z",
+      "observed_utc": "2026-09-28T01:32:19Z",
       "output_dimensions": [
         832,
         300
@@ -6969,7 +6969,7 @@
       "iou": 1.0,
       "library": "labelize",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:38Z",
+      "observed_utc": "2026-09-28T01:32:19Z",
       "output_dimensions": [
         832,
         300
@@ -7000,7 +7000,7 @@
       "iou": 0.13095238095238096,
       "library": "forge",
       "missing": 1168,
-      "observed_utc": "2026-09-27T21:29:38Z",
+      "observed_utc": "2026-09-28T01:32:19Z",
       "output_dimensions": [
         832,
         300
@@ -7031,7 +7031,7 @@
       "iou": 0.13095238095238096,
       "library": "go",
       "missing": 1168,
-      "observed_utc": "2026-09-27T21:29:38Z",
+      "observed_utc": "2026-09-28T01:32:19Z",
       "output_dimensions": [
         832,
         300
@@ -7062,7 +7062,7 @@
       "iou": 0.13095238095238096,
       "library": "ffi",
       "missing": 1168,
-      "observed_utc": "2026-09-27T21:29:38Z",
+      "observed_utc": "2026-09-28T01:32:19Z",
       "output_dimensions": [
         832,
         300
@@ -7093,7 +7093,7 @@
       "iou": 0.26666666666666666,
       "library": "binarykits",
       "missing": 880,
-      "observed_utc": "2026-09-27T21:29:38Z",
+      "observed_utc": "2026-09-28T01:32:18Z",
       "output_dimensions": [
         832,
         300
@@ -7124,7 +7124,7 @@
       "iou": 1.0,
       "library": "zplr",
       "missing": 0,
-      "observed_utc": "2026-09-27T21:29:37Z",
+      "observed_utc": "2026-09-28T01:32:18Z",
       "output_dimensions": [
         832,
         300
@@ -7172,7 +7172,7 @@
       "width": 832
     }
   ],
-  "measured_utc": "2026-09-27T21:30:08Z",
+  "measured_utc": "2026-09-28T01:32:44Z",
   "generation": "Bazel: independently cached local renders; saved printer and Labelary captures",
   "host": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
   "relations": [

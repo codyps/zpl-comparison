@@ -17,7 +17,7 @@
 
 [Compare this library's renders with printer previews](../../benchmarks/accuracy/comparisons/libraries/go.md)
 
-16/133 exact; mean IoU 36.9%; 0 errors. Snapshot: 2026-09-27T21:27:01Z.
+16/133 exact; mean IoU 36.9%; 0 errors. Snapshot: 2026-09-28T01:31:50Z.
 
 ## Feature groups
 

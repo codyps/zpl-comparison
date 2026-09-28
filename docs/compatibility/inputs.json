@@ -2,7 +2,7 @@
   "schema": 1,
   "inputs": {
     "docs/benchmarks/command-support.json": "0a535c919d7544dc9f9829f05f681e18dd730e4972a4ba43cda069e76be63a2d",
-    "docs/benchmarks/accuracy/results.json": "3352b67a365c3d815292402c2c9c03bac08ac64407ef4b52608a9db81be1daf9",
+    "docs/benchmarks/accuracy/results.json": "7d855704fdfc26d64c83932bf30fd522e58120eee72d8eff239bebf834c22cf9",
     "test-data/render-conformance/manifest.json": "204029dd80fdf1d80753e087e29369e2d03d8b786ee9fb4d0acd60464aed53bc",
     "docs/benchmarks/argument-support.md": "b5e232126255bf0f7b3b92b4557208abed9c6cd0a32009055fdd5eb219079f75",
     "docs/zpl-command-index.tsv": "58798708e7b478c542c441f1b8c2ef8cc8589075afb9584049eaa983207c60b1",
@@ -11,11 +11,11 @@
     "benchmarks/adapters/dotnet/Comparison.csproj": "2697d238c5925bda8dfd54070163556d14ec55dd984f5743b3bd97bebeab3bb2",
     "benchmarks/sources.lock.json": "5f3ccb69f0dc42c5f0e7f397991efb64d750e116f1648e79d8b525ffecea4217",
     "benchmarks/compatibility.py": "2a330faf598a05f338df2a8dd0d06c612dd79cdf4fb0925a4281cb0b5c2785b7",
-    "docs/benchmarks/accuracy/comparisons/features/results.json": "5a3dc7c5a39af3fbd4b709549144ae383b07db46f85633f72e0cd4b3af884885",
-    "docs/benchmarks/conformance/results.json": "400bbbccd845490a1ae394f505da004f72ec8f550087c77761796033b0eaee24"
+    "docs/benchmarks/accuracy/comparisons/features/results.json": "3a9d803f790e9a4f70bb872a8a1a36cc09b5a51771ddf474f1531988256e401f",
+    "docs/benchmarks/conformance/results.json": "d017de1615018300d628d858b96075cacadbb5c4a997c850bce8544a3765d2cd"
   },
-  "accuracy_measured_utc": "2026-09-27T21:27:01Z",
-  "conformance_measured_utc": "2026-09-27T21:35:34Z",
+  "accuracy_measured_utc": "2026-09-28T01:31:50Z",
+  "conformance_measured_utc": "2026-09-28T01:40:28Z",
   "libraries": {
     "toolchain": "0.4.1",
     "labelize": "1.6.0",

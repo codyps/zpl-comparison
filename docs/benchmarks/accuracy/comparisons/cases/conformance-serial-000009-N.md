@@ -40,7 +40,7 @@ error · 0.00% IoU · [All cases for this library](../features/libraries/labeliz
 
 ~~~text
 
-thread 'main' (44561) panicked at src/main.rs:45:9:
+thread 'main' (46202) panicked at src/main.rs:45:9:
 assertion `left == right` failed
   left: 0
  right: 1

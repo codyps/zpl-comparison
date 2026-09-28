@@ -30,7 +30,7 @@ error · unscored · [All cases for this library](../libraries/codyps-zpl.md)
 
 ~~~text
 
-thread 'main' (40694) panicked at src/main.rs:27:10:
+thread 'main' (31913) panicked at src/main.rs:27:10:
 render: RenderError { offset: 73, message: "invalid shape dimensions" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
@@ -58,7 +58,7 @@ error · unscored · [All cases for this library](../libraries/forge.md)
 
 ~~~text
 
-thread 'main' (40683) panicked at src/main.rs:74:10:
+thread 'main' (31911) panicked at src/main.rs:74:10:
 parse: ParseError { line: 1, message: "Invalid or malformed ZPL command (Error code: Digit)" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 

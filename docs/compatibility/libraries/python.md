@@ -17,7 +17,7 @@ Text supports orientation/font dimensions, block L/C/R/J and hanging indent. Fon
 
 This library does not render incoming ZPL.
 
-N/A – no incoming-ZPL renderer. Snapshot: 2026-09-27T21:27:01Z.
+N/A – no incoming-ZPL renderer. Snapshot: 2026-09-28T01:31:50Z.
 
 ## Feature groups
 
