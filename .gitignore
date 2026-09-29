@@ -5,7 +5,7 @@ _*
 .DS_Store
 /bazel-*
 
-# Derived reports are published by Bazel CI to the generated branch.
+# Derived reports are intermediate inputs to the GitHub Pages site.
 # Keep only maintained notes and saved measurement/capture inputs here.
 /docs/benchmarks/*
 !/docs/benchmarks/argument-support.md

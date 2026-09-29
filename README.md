@@ -1,49 +1,22 @@
-# ZPL library comparison
+# ZPL implementation comparisons
 
-Repeatable comparisons of ZPL parsers, generators and renderers, with performance, memory, deployment size and printer-reference accuracy measurements.
+[**Browse the comparison site**](https://codyps.github.io/zpl-comparison/)
 
-**[Latest CI-generated reports](https://github.com/codyps/zpl-comparison/tree/generated)**
-are published automatically from `main` to an independent branch.
+Compare ZPL implementations by library, test category, or individual document.
+The site includes a quantitative printer-fidelity heatmap, printer/render/difference
+images, native-size overlays, performance measurements, and invalid-input behavior.
+Source examination and upstream support claims have their own section and do not
+contribute to measured quality scores.
 
-[Font-free layout comparisons](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/layout/README.md)
-cover 20 graphics and caption-free barcode probes against ZD621 previews.
+## Work on the comparisons
 
-[![Rendering accuracy against printer references](/../generated/docs/benchmarks/accuracy/accuracy.svg)](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
+The repository retains fixtures, measurement inputs, capture evidence and generators.
+GitHub Pages is the publication destination; the old `generated` branch is an archive.
 
-- **[Compare library renders with printer previews](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)**: browse by library or case; see the printer, render and difference together.
-- [Compare feature fixtures](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md): all eight renderers, printer previews and differences.
-- [Results, plots and tables](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/README.md)
-- [Which libraries reject invalid ZPL?](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/invalid/README.md)
-- [Browse support by library, command or feature](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/README.md)
-- [Rendering conformance corpus](test-data/render-conformance/README.md)
-- [Run the benchmarks](benchmarks/README.md)
+- [Run and reproduce measurements](benchmarks/README.md)
+- [Site generation and publication](site/README.md)
 - [Setup and provenance](PROVENANCE.md)
-
-Support claims and measured rendering accuracy are separate evidence. Missing printer references are unscored, not passes.
-
-Build pinned libraries, render locally, and assemble the reports in Bazel's output tree:
-
-```sh
-bazelisk build //:reports
-```
-
-Library builds, individual renders, comparisons, thumbnails, and report stages are cached independently. See [Bazel setup and cache behavior](benchmarks/README.md#regenerate--test-the-harness).
-
-Source branches retain maintained documentation, fixture manifests/cases, and saved
-measurement and capture inputs required by Bazel. Derived reports, plots,
-differences, thumbnails, and galleries are ignored here and published only on
-[`generated`](https://github.com/codyps/zpl-comparison/tree/generated).
-For an offline rebuild from saved renderer images, use `bazelisk build //:reports_saved`.
-## ZQ610 Plus preview campaign
-
-The ZQ610 Plus comparison pages (`docs/benchmarks/zq610-plus/index.html`, built
-by both report targets) show 116 paired native printer captures and full-canvas
-local comparisons. See [capture provenance and reproduction](references/zq610-plus-v1/README.md).
-
-The [ZQ610 candidate matrix](references/zq610-candidates/README.md) covers all
-120 reference cases against every rendering candidate, including saved Labelary
-API PNGs. Build only this matrix with
-`bazelisk build //:reports --output_groups=suite_zq610_candidates`.
+- [Capture provenance](references/zq610-plus-v1/README.md)
 
 ## License
 

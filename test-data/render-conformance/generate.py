@@ -55,7 +55,7 @@ def commands(data):
     return sorted(result)
 
 
-def rows():
+def rows(*, native_preview=False):
     result = []
 
     def add(
@@ -121,12 +121,27 @@ def rows():
             # Preserve historical inputs except the corrected BR8 positive case,
             # whose verified capture uses PW832 and uncompressed UPC-A data.
             path.read_bytes()
-            if path.stem == "databar_upce"
+            if native_preview or path.stem == "databar_upce"
             else path.read_bytes().replace(b"^PW832", b"^PW812"),
             document=True,
             source=str(path.relative_to(REPO)),
         )
-        result[-1]["width"] = 832 if path.stem == "databar_upce" else 812
+        result[-1]["width"] = 832 if native_preview or path.stem == "databar_upce" else 812
+
+    if native_preview:
+        # Keep rounding out of ordinary symbol accuracy tests. These paired,
+        # font-free controls deliberately exercise it without image alignment.
+        for width in (812, 832):
+            add(
+                f"preview-width-{width}",
+                "preview-width-rounding",
+                f"Requested width {width}; ZD621 preview should be 832 dots wide "
+                f"with landmarks shifted {(832 - width) // 2} dots right",
+                "^FO0,20^GB2,40,2^FS^FO100,30^GB30,7,7^FS"
+                "^FO300,70^GB11,19,11^FS^FO790,110^GB4,20,4^FS",
+                width=width,
+                height=256,
+            )
 
     # Imported printer controls retain exact submitted bytes and source provenance.
     imported = json.loads((REPO / "references/upstream-zd621/manifest.json").read_text())
@@ -977,14 +992,19 @@ def artifacts(cases=None, *, suite="render-conformance-v1"):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--native-preview", action="store_true",
+                    help="Prepare native-width symbols and explicit rounding controls")
+    ap.add_argument("--output", type=Path, default=HERE)
     args = ap.parse_args()
-    generated = artifacts()
-    actual = {str(p.relative_to(HERE)) for p in (HERE / "cases").rglob("*.zpl")}
+    if args.native_preview and args.output.resolve() == HERE.resolve():
+        ap.error("Use a separate --output until fresh printer evidence is captured")
+    generated = artifacts(rows(native_preview=args.native_preview))
+    actual = {str(p.relative_to(args.output)) for p in (args.output / "cases").rglob("*.zpl")}
     stale = actual - set(generated)
     if stale:
         raise SystemExit(f"Stale generated cases: {sorted(stale)}")
     for name, data in generated.items():
-        path = HERE / name
+        path = args.output / name
         if args.check:
             if not path.exists() or path.read_bytes() != data:
                 raise SystemExit(f"Out of date: {path}")

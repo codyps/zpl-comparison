@@ -11,6 +11,7 @@ import importlib.util
 import json
 from pathlib import Path
 import re
+import socket
 import time
 import urllib.error
 import urllib.parse
@@ -36,6 +37,25 @@ def preview_reset():
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
+
+
+def validate_capture_source(source, row, scope):
+    """Explicit opt-ins for the reviewed external examples, never arbitrary settings."""
+    mode = row.get("capture_scope")
+    if mode == "ram-resources":
+        patterns = (
+            rb"\A~DGR:CMPEX\.GRF,16,2,[0-9A-F]{32}\n",
+            rb"\^DFR:CMPEX\.ZPL(?=\n)",
+            rb"\^XFR:CMPEX\.ZPL(?=\n)",
+            rb"\^XGR:CMPEX\.GRF,2,2(?=\^FS)",
+        )
+        for pattern in patterns:
+            source, count = re.subn(pattern, b"", source)
+            if count != 1:
+                raise ValueError("Unexpected RAM resource command")
+    elif mode is not None:
+        raise ValueError("Unknown capture scope")
+    scope.commands(source)
 
 
 def corpus_probes(directory, groups=None):
@@ -66,7 +86,7 @@ def corpus_probes(directory, groups=None):
             or row["name"] == "repeat-end"
         ):
             raise ValueError("Invalid case name")
-        scope.commands(source)
+        validate_capture_source(source, row, scope)
         selected.append(
             dict(
                 name=row["name"],
@@ -78,6 +98,8 @@ def corpus_probes(directory, groups=None):
                 zpl=source,
             )
         )
+        if row.get("capture_scope"):
+            selected[-1]["capture_scope"] = row["capture_scope"]
     if not selected:
         raise ValueError("No capture-eligible cases selected")
     selected.append({**selected[0], "name": "repeat-end", "group": "repeatability"})
@@ -188,7 +210,7 @@ def main():
             return fetch(path, data)
         except urllib.error.HTTPError:
             raise
-        except (TimeoutError, urllib.error.URLError) as error:
+        except (TimeoutError, socket.timeout, urllib.error.URLError) as error:
             # Do not immediately replay a POST that may still be executing.
             for attempt in range(args.recovery_attempts):
                 print(
@@ -198,7 +220,7 @@ def main():
                 time.sleep(args.cooldown)
                 try:
                     fetch("/")
-                except (TimeoutError, urllib.error.URLError):
+                except (TimeoutError, socket.timeout, urllib.error.URLError):
                     continue
                 if data is None:
                     return fetch(path)
@@ -307,8 +329,10 @@ def main():
             save()
             continue
         time.sleep(args.interval)
-        if not source.startswith(b"^XA"):
-            raise ValueError("Inline reset requires a standard ^XA format")
+        ram_setup = probe.get("capture_scope") == "ram-resources"
+        start = source.rfind(b"^XA") if ram_setup else source.find(b"^XA")
+        if start < 0 or (start != 0 and not ram_setup):
+            raise ValueError("Inline reset requires a standard ^XA format or reviewed RAM preamble")
         # One format/request prevents another client entering between a reset
         # preview and the fixture. The original corpus bytes remain on disk.
         canvas = (
@@ -316,9 +340,21 @@ def main():
             if "width" in probe and "height" in probe
             else b""
         )
-        submitted = source[:3] + canvas + reset[3:-3] + source[3:]
+        if ram_setup:
+            # Install only the reviewed RAM graphic and stored format. ^DF stores
+            # this format; the final recall is sent exclusively to HTTP Preview.
+            setup = source[:start]
+            if setup.count(b"^DFR:CMPEX.ZPL") != 1 or setup.count(b"^XZ") != 1:
+                raise ValueError("RAM setup must contain exactly one stored format")
+            with socket.create_connection((url.hostname, 9100), timeout=10) as connection:
+                connection.sendall(setup)
+            probe["setup_sha256"] = sha(setup)
+            time.sleep(args.interval)
+            submitted = source[start:start + 3] + canvas + reset[3:-3] + source[start + 3:]
+        else:
+            submitted = source[:start + 3] + canvas + reset[3:-3] + source[start + 3:]
         probe.update(
-            submission_mode="inline-reset-canvas" if canvas else "inline-reset",
+            submission_mode=("ram-setup-inline-reset-canvas" if ram_setup else "inline-reset-canvas") if canvas else "inline-reset",
             object_name=args.object_name,
             submitted_sha256=sha(submitted),
             captured_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),

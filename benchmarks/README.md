@@ -1,16 +1,16 @@
 # Repeatable ZPL library comparison
 
-**[Read the GitHub-rendered report, plots and tables](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/README.md).**
-The root README links to these detailed reports. [Library capabilities and selection](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/capabilities.md) distinguish parsers, renderers and generators.
+**[Read the comparison site, plots and tables](https://codyps.github.io/zpl-comparison/categories/performance.html).**
+The root README links to these detailed reports. [Library capabilities and selection](https://codyps.github.io/zpl-comparison/examination.html) distinguish parsers, renderers and generators.
 
-[Command/argument inventory](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/command-support.md) and [printer accuracy reproduction](accuracy/README.md) extend the comparison with offline captured references.
+[Command/argument inventory](https://codyps.github.io/zpl-comparison/examination.html) and [printer accuracy reproduction](accuracy/README.md) extend the comparison with offline captured references.
 
 [Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
 
-The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 598 focused and combined test files. Its [shared accuracy gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
+The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 598 focused and combined test files. Its [shared accuracy gallery](https://codyps.github.io/zpl-comparison/categories/conformance.html) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
 The [external label corpus](../test-data/external-zpl/README.md) adds eight unchanged,
-pinned upstream examples. [Execution report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/external-zpl/README.md).
+pinned upstream examples. [Execution report](https://codyps.github.io/zpl-comparison/categories/external-zpl.html).
 Regenerate its images, JSON and Markdown with:
 
 ```sh
@@ -36,7 +36,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI uses Bazel to build the pinned renderer libraries, render the local accuracy and conformance cases, and assemble reports alongside this collected evidence. Successful builds of `main` automatically publish the complete output tree to the independent [`generated` branch](https://github.com/codyps/zpl-comparison/tree/generated). CI does not recollect performance measurements or contact printers or rendering services.
+The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI uses Bazel to build the pinned renderer libraries, render the local accuracy and conformance cases, and assemble reports alongside this collected evidence. Successful builds of `main` generate and deploy the comparison site to [GitHub Pages](https://codyps.github.io/zpl-comparison/); see [site publication](../site/README.md). CI does not recollect performance measurements or contact printers or rendering services.
 
 ## Pins
 
@@ -73,7 +73,7 @@ Each sample is a batch average. The reported median and min–max are **not per-
 
 PNG files are fully decoded with Pillow and must be 400×300 with both dark/light pixels after alpha compositing onto white. Boxes are also compared to a hand-defined inward-border mask: a 100×60 box at (20,20) with thickness 4 and an 80×80 filled box at (180,100). Pixel differences are reported, never silently corrected. Generated ZPL must contain the expected framing, field count and every `Item NN` value. Parser completion is only an API smoke check, not semantic parity. No library is used as another's correctness oracle.
 
-Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these five fixtures. Those remain selection criteria in [capabilities](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/capabilities.md) and the repository's separate conformance tests.
+Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these five fixtures. Those remain selection criteria in [capabilities](https://codyps.github.io/zpl-comparison/examination.html) and the repository's separate conformance tests.
 
 ## Code-size accounting
 
@@ -268,14 +268,14 @@ Static SVG plots and relative image links render directly in GitHub Markdown; no
 ## Labelary renderer captures
 
 Labelary is included in the printer-accuracy matrix as an additional renderer.
-[Capture provenance and original PNGs](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/labelary/README.md)
+[Capture provenance and original PNGs](https://codyps.github.io/zpl-comparison/methodology.html)
 record UTC timestamps when the service exposes no build version. Tests replay
 these responses offline; the ZD621 captures remain the correctness baseline.
 See [capture and refresh commands](accuracy/README.md#labelary-renderer).
 
 ## Generate the compatibility reference
 
-[Browse by library, command or feature](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/README.md). These
+[Browse by library, command or feature](https://codyps.github.io/zpl-comparison/examination.html). These
 GitHub Markdown pages use checked-in source evidence, argument notes, printer
 measurements and the conformance manifest. Saved conformance execution results
 are included when `docs/benchmarks/conformance/results.json` exists.

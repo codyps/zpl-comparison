@@ -1,59 +1,53 @@
 # External ZPL examples
 
-Eight complete labels imported byte-for-byte from the pinned public repositories
-in [manifest.json](manifest.json). They supplement the generated command probes
-with independently authored layouts and command combinations.
+Eight complete labels adapted from pinned, MIT-licensed public examples. Each
+manifest entry links its original file, revision, license and SHA-256. Original
+upstream files remain unchanged beside the explicitly named native-width variants.
 
-[Browse the execution report and images](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/external-zpl/README.md).
+| Example | Preview canvas (dots) |
+| --- | --- |
+| Shipping | 832 × 1218 |
+| Product | 640 × 406 |
+| Warehouse | 832 × 609 |
+| Compliance | 832 × 1218 |
+| SurePost | 832 × 1524 |
+| Asset Data Matrix/PDF417 | 832 × 500 |
+| Retail UPC/EAN | 832 × 500 |
+| Stored resources | 448 × 220 |
 
-| Source | Examples | License |
-| --- | --- | --- |
-| zpl-toolchain at `3da58518c1013fffd46d2147b0927a1d5b4aeab5` | Shipping, product, warehouse, compliance, UPS/USPS SurePost sample | [MIT](licenses/zpl-toolchain.txt) |
-| ZPLr at `1c94eadfc5afb494b4c92dd10ad4808bd3d19529` | Asset Data Matrix/PDF417, retail UPC/EAN, stored resources | [MIT](licenses/zplr.txt) |
+Widths are multiples of 64 within the ZD621 preview limit, avoiding its width
+rounding and centering offset. Lengths are explicit. The original asset example
+requested 900 dots; its 832-dot variant clips content beyond the right edge rather
+than scaling or moving it.
 
-Each manifest entry links to its exact upstream file. These are library examples,
-not carrier-certified labels or an independent holdout for their originating
-libraries. The compliance example's name does not establish GS1 compliance.
-No source bytes have been repaired, normalized or stripped of commands. All cases
-are classified as boundary inputs because their semantics have not been certified.
-Errors, blank output and unsupported commands remain observations in the report.
+SurePost's preview variant omits `^MNY`, `^MFN,N`, and `^MCY`: these device-setting
+commands changed the printer's media length during the first capture attempt.
+Its label content, coordinates and orientation remain intact. The stored-resource
+variant uses isolated `R:CMPEX` object names and explicit dimensions in both
+formats. All adaptations are recorded in `derived_from` in the manifest.
 
-## Run and regenerate
+## Printer references
 
-After the adapter setup in [the benchmark guide](../../benchmarks/README.md):
+All eight examples have HTTP Preview Label captures, not physical print/scan
+measurements. Each capture applies the common rendering-state reset. The stored
+example first uploads only its RAM graphic and `^DF` format through port 9100;
+its final `^XF` label is submitted only to HTTP Preview. The manifest hashes both
+the RAM setup and the exact preview submission. A repeated first-label control
+must match before captures are accepted. No label-print command is submitted.
+
+Labelary and all local adapters receive the same complete derived ZPL and requested
+canvas. Renderer failures remain failures; they do not receive replacement images.
+These are example layouts, not carrier certification tests or independent holdouts
+for the libraries that authored them.
+
+## Regeneration
+
+Use the adapter setup in [the benchmark guide](../../benchmarks/README.md), then:
 
 ```sh
 benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/external-zpl --only all --output docs/benchmarks/external-zpl
-benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'
+benchmarks/_work/venv/bin/python benchmarks/accuracy/features.py --suite external
 ```
 
-The command verifies fixture hashes, runs all 64 case/renderer combinations (including captured Labelary responses),
-and regenerates JSON, PNGs and GitHub-rendered Markdown. CI runs the same command.
-Use `--only codyps-zpl` for one renderer or `--group stateful` for stored resources.
-Every case runs in a fresh process; all commands within that case remain together.
-The existing adapters produce one output image per case. This suite does not test
-persistence between separate processes or certify multi-page output.
-
-Explicit `^PW`/`^LL` values determine the manifest dimensions when present.
-The harness supplies 812×1218 dots for the compliance label, which omits both,
-and 812×1524 for SurePost, which omits label length and has fields below dot 1400.
-These are documented harness choices at 203 DPI, not inferred printer settings.
-The 900-dot-wide asset example remains 900 dots wide; it is not resized to 832.
-
-## Printer references and state
-
-No printer captures are included, so every printer-accuracy score is N/A.
-The SurePost sample includes media/configuration commands (`^MN`, `^MF`, `^MC`);
-the stored-resource sample defines and recalls a format and a graphic
-(`^DF`, `^XF`, `^FN`, `~DG`, `^XG`). Both are marked `capture_eligible: false`.
-The capture tool additionally applies its rendering-command allowlist to the
-remaining six examples. This import performs no printer operations.
-
-The official Zebra exercises remain a specification reference in the bundled
-[programming guide](../../docs/zpl-zbi2-pg-en.pdf); this directory imports the
-redistributable repository fixtures rather than republishing manual excerpts.
-
-To update an example, explicitly select an upstream commit, preserve its license,
-replace the original file, and update its provenance and SHA-256 in the manifest.
-Never silently rewrite an original to make a renderer pass; use a separately named
-and documented derived case for adaptations.
+Captures are an explicit separate operation. Preserve old evidence until fresh
+source hashes, dimensions, submission hashes and the repeated control are verified.

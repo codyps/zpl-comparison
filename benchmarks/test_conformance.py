@@ -33,6 +33,30 @@ finally:
 
 
 class ConformanceTests(unittest.TestCase):
+    def test_native_preview_migration_isolates_rounding(self):
+        historical = {c['name']: c for c in generator.rows()}
+        native = {c['name']: c for c in generator.rows(native_preview=True)}
+        changed = {name for name in historical
+                   if historical[name]['zpl'] != native[name]['zpl']}
+        self.assertEqual(len(changed), 59)
+        for name in changed:
+            self.assertEqual(native[name]['group'], 'barcode-families')
+            self.assertEqual(native[name]['width'], 832)
+            self.assertEqual(native[name]['zpl'],
+                             historical[name]['zpl'].replace(b'^PW812', b'^PW832'))
+        low, high = (native[f'preview-width-{w}'] for w in (812, 832))
+        self.assertEqual(low['zpl'].replace(b'^PW812', b'^PW832'), high['zpl'])
+        self.assertEqual(low['group'], 'preview-width-rounding')
+        self.assertNotIn(b'^FD', low['zpl'])
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp)
+            for name, data in generator.artifacts(list(native.values())).items():
+                path = dest / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(data)
+            probes = capture.corpus_probes(dest, groups=['preview-width-rounding'])
+            self.assertEqual([p['width'] for p in probes], [812, 832, 812])
+
     def test_font_free_layout_corpus(self):
         directory = SUITE.parent / "layout-accuracy"
         layout = module("layout_generator", directory / "generate.py")
@@ -319,14 +343,32 @@ class ConformanceTests(unittest.TestCase):
         for case in cases:
             self.assertIn(case["revision"], case["source"])
             self.assertTrue((directory / case["license"]).is_file())
+        shipping = next(c for c in cases if c["name"] == "zpl-toolchain-shipping_label")
+        original = directory / shipping["derived_from"]["file"]
+        self.assertEqual(conformance.metrics.sha(original), shipping["derived_from"]["sha256"])
+        self.assertEqual(shipping["path"].read_bytes(), original.read_bytes().replace(b"^PW812", b"^PW832"))
+        self.assertEqual(shipping["width"], 832)
         probes = capture.corpus_probes(directory)
-        self.assertEqual(len(probes), 7)  # Six content cases plus repeated control.
-        self.assertFalse(
-            any(p["group"] in {"stateful", "printer-configuration"} for p in probes)
-        )
+        self.assertEqual(len(probes), 9)  # Eight examples plus repeated control.
+        for case in cases:
+            self.assertEqual(case["width"] % 64, 0)
+            self.assertLessEqual(case["width"], 832)
+            self.assertIn(f"^PW{case['width']}".encode(), case["path"].read_bytes())
         for group in ["stateful", "printer-configuration"]:
-            with self.assertRaisesRegex(ValueError, "No capture-eligible"):
-                capture.corpus_probes(directory, [group])
+            self.assertEqual(len(capture.corpus_probes(directory, [group])), 2)
+        _, images = conformance.reference_images(ROOT / "accuracy/external-reference", cases)
+        self.assertEqual(len(images), 8)
+        for case in cases:
+            self.assertEqual(images[case["name"]].shape, (case["height"], case["width"]))
+
+    def test_ram_capture_scope_is_limited_to_reviewed_resources(self):
+        _, cases = conformance.load_cases(SUITE.parent / "external-zpl")
+        case = next(c for c in cases if c["group"] == "stateful")
+        source = case["path"].read_bytes()
+        capture.validate_capture_source(source, case, generator)
+        for unsafe in [source.replace(b"R:CMPEX", b"E:CMPEX"), source + b"~JA", source.replace(b",16,2,", b",32,2,")]:
+            with self.assertRaises(ValueError):
+                capture.validate_capture_source(unsafe, case, generator)
 
     def test_references_require_matching_bytes_and_stable_control(self):
         _, cases = conformance.load_cases(groups=["metamorphic"])

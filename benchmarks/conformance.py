@@ -64,17 +64,23 @@ def reference_images(directory, cases):
             or metrics.sha(directory / (name + ".png")) != row["png_sha256"]
         ):
             raise ValueError("Reference hash mismatch")
-        if row.get("submission_mode") in {"inline-reset", "inline-reset-canvas"}:
+        if row.get("submission_mode") in {"inline-reset", "inline-reset-canvas", "ram-setup-inline-reset-canvas"}:
             source = (directory / (name + ".zpl")).read_bytes()
             reset = manifest["preview_reset_zpl"].encode()
             canvas = (
                 f"^PW{row['width']}^LL{row['height']}".encode()
-                if row["submission_mode"] == "inline-reset-canvas"
+                if row["submission_mode"] != "inline-reset"
                 else b""
             )
-            submitted = source[:3] + canvas + reset[3:-3] + source[3:]
+            ram_setup = row["submission_mode"] == "ram-setup-inline-reset-canvas"
+            start = source.rfind(b"^XA") if ram_setup else 0
+            if start < 0:
+                raise ValueError("Missing format after resource preamble")
+            if ram_setup and hashlib.sha256(source[:start]).hexdigest() != row.get("setup_sha256"):
+                raise ValueError("RAM setup hash mismatch")
+            submitted = (source[start:start + 3] if ram_setup else source[:3]) + canvas + reset[3:-3] + source[start + 3:]
             if (
-                not source.startswith(b"^XA")
+                not source[start:].startswith(b"^XA")
                 or hashlib.sha256(submitted).hexdigest() != row["submitted_sha256"]
             ):
                 raise ValueError("Submitted preview hash mismatch")

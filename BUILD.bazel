@@ -235,3 +235,19 @@ py_test(
     srcs = ["benchmarks/accuracy/overview.py", "build/overview_test.py"],
     main = "build/overview_test.py",
 )
+
+py_binary(
+    name = "comparison_site",
+    srcs = ["site/generate.py"],
+    main = "site/generate.py",
+    data = ["site/style.css", "site/site.js"],
+    deps = [requirement("pillow")],
+)
+
+py_test(
+    name = "site_test",
+    srcs = ["site/generate.py", "site/test_generate.py"],
+    main = "site/test_generate.py",
+    data = ["site/style.css", "site/site.js"],
+    deps = [requirement("pillow")],
+)

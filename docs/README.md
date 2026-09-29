@@ -1,15 +1,9 @@
-# Comparison documentation
+# Comparison results
 
-- [ZQ610 Plus versus ZD621: native captures and local-renderer comparisons](benchmarks/zq610-plus/index.html)
+[Browse the comparison site](https://codyps.github.io/zpl-comparison/).
 
-- **[Library renders versus printer previews](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)**
-- [Benchmark results](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/README.md)
-- [Invalid-ZPL rejection and recovery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/invalid/README.md)
-- [Compatibility reference](https://github.com/codyps/zpl-comparison/blob/generated/docs/compatibility/README.md)
-- [Printer accuracy](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
-- [Font-free layout accuracy](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/layout/README.md)
-- [Conformance results](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/conformance/README.md)
-## ZQ610 candidate comparisons
+The site groups measured results by comparison category, library and ZPL document.
+Examined support is separate from quantitative results. Files retained here are
+measurement inputs and maintained source notes; public reports are HTML.
 
-The [all-candidate matrix](benchmarks/zq610-candidates/index.html) includes every
-ZQ610 case, saved Labelary API PNGs, and native-dimension comparison diagnostics.
+See [site generation](../site/README.md) for contributor instructions.
