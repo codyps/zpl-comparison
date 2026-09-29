@@ -40,6 +40,8 @@ def render(spec, metadata, images):
             env = {
                 **os.environ,
                 "HOME": temporary,
+                # Never inherit a caller profile into unrelated suites.
+                "ZPL_RENDER_PROFILE": spec.get("render_profile", "zd621-203dpi"),
                 "TMPDIR": temporary,
                 "DOTNET_CLI_HOME": temporary,
                 "DOTNET_CLI_TELEMETRY_OPTOUT": "1",

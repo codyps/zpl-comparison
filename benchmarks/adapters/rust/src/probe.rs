@@ -30,16 +30,8 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Result<Vec<u8
             return Ok(vec![]);
         }
         use codyps_zpl::output::Adapter;
-        let doc = codyps_zpl::render(
-            input,
-            codyps_zpl::Options {
-                width,
-                height,
-                dpi: 203,
-                ..Default::default()
-            },
-        )
-        .map_err(|e| format!("{e:?}"))?;
+        let doc = codyps_zpl::render(input, super::render_options(width, height))
+            .map_err(|e| format!("{e:?}"))?;
         return match doc.labels.first() {
             Some(label) => codyps_zpl::output::Png
                 .encode(label)

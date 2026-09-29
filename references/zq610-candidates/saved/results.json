@@ -1533,7 +1533,7 @@
     "codyps-zpl": [
       {
         "name": "adapter",
-        "sha256": "9e059d7fd9f0c89f569524894fe0d89ec5020bb1e4329245b3b06e76b7282d2c"
+        "sha256": "99d32066d93135e642595cf0cb3ace348f1ef7c6729f40cf85ccb443ef152237"
       },
       {
         "name": "command.json",
@@ -23944,7 +23944,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-aztec",
       "diagnostic": "",
@@ -23958,14 +23958,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "observed_utc": "2026-09-29T19:03:13Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1920,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "7132bf71acf9422cbb4c89e3550576f1b1486eeb75ef307af1b96a7affb07f36",
       "recall": 1.0,
       "reference_ink": 1920,
@@ -24208,7 +24208,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-aztec_alias",
       "diagnostic": "",
@@ -24222,14 +24222,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:28Z",
+      "observed_utc": "2026-09-29T19:03:13Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1920,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "7132bf71acf9422cbb4c89e3550576f1b1486eeb75ef307af1b96a7affb07f36",
       "recall": 1.0,
       "reference_ink": 1920,
@@ -24491,7 +24491,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-aztec_rune",
       "diagnostic": "",
@@ -24505,14 +24505,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:28Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1072,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "87a53e3d5060d1cdfbbdb5c06571aa01e2e6826555bb53098c1dd4ada1f5c133",
       "recall": 1.0,
       "reference_ink": 1072,
@@ -24774,7 +24774,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-codabar",
       "diagnostic": "",
@@ -24788,14 +24788,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 6400,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "461740d5f27c76d62402a4b7e2665c3fb771525b924a512442401f2ac1857319",
       "recall": 1.0,
       "reference_ink": 6400,
@@ -25038,7 +25038,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-codablock_a",
       "diagnostic": "",
@@ -25052,14 +25052,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 5260,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "72a3132cc745fa8967e9f86235381553febe50d2a31fcdbc194924c6833fb720",
       "recall": 1.0,
       "reference_ink": 5260,
@@ -25302,7 +25302,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-codablock_e",
       "diagnostic": "",
@@ -25316,14 +25316,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 4092,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "2afffb320e856d9ab6f120273429e2a03d75392c0ff0e5269855bf89da5131db",
       "recall": 1.0,
       "reference_ink": 4092,
@@ -25566,7 +25566,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-codablock_f",
       "diagnostic": "",
@@ -25580,14 +25580,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 4124,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "b87b8f132e3420109c099b5c47f4a239f935c4b7825d7a75cff68f8bf5a64430",
       "recall": 1.0,
       "reference_ink": 4124,
@@ -25830,7 +25830,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-code11",
       "diagnostic": "",
@@ -25844,14 +25844,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8480,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "75810e60f8577caa8d150c871b15b83306a7c1253f2843483033d573ae85e363",
       "recall": 1.0,
       "reference_ink": 8480,
@@ -26113,7 +26113,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-code128",
       "diagnostic": "",
@@ -26127,14 +26127,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8320,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "620c86f8dd86c2fd79667c988b5487fbf1042404c7956b8cf066c2a5dc0c7327",
       "recall": 1.0,
       "reference_ink": 8320,
@@ -26396,7 +26396,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-code39",
       "diagnostic": "",
@@ -26410,14 +26410,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8960,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "312ea01ff44713decc734f387c21dee50ff90dc12e964c325145a0778447b3b1",
       "recall": 1.0,
       "reference_ink": 8960,
@@ -26660,7 +26660,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-code49",
       "diagnostic": "",
@@ -26674,14 +26674,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 5728,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "7819c785b82fca73132fb0d9239861096186f51d710f73122b44b3037cf64a52",
       "recall": 1.0,
       "reference_ink": 5728,
@@ -26943,7 +26943,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-code93",
       "diagnostic": "",
@@ -26957,14 +26957,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7840,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "7fe59c44b7e6581a247803fded1756c7a7ebb0e0e4d1e280cf2c220b56efdbc5",
       "recall": 1.0,
       "reference_ink": 7840,
@@ -27207,7 +27207,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-composite_a",
       "diagnostic": "",
@@ -27221,14 +27221,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 28388,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "9e3284905cbabeed0b75b6422d4381b81889210952e297cb87a6d10bd7e93e5b",
       "recall": 1.0,
       "reference_ink": 28388,
@@ -27471,7 +27471,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-composite_b",
       "diagnostic": "",
@@ -27485,14 +27485,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:14Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 33116,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "d9cc230a9bc8f38c66ed77e4c592c85f0f199e126fec1a31ed50d0848e2ddd7d",
       "recall": 1.0,
       "reference_ink": 33116,
@@ -27735,7 +27735,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-composite_c",
       "diagnostic": "",
@@ -27749,14 +27749,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 28752,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "7c945d8b622bfa0e331926b7bed3fd6580f53df1bff99bfa81f7c2289736ef31",
       "recall": 1.0,
       "reference_ink": 28752,
@@ -28018,7 +28018,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-data_matrix",
       "diagnostic": "",
@@ -28032,14 +28032,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 2832,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "605a8866491d1cd95486890a9010fda63eb05944657ba628696455238eba6e17",
       "recall": 1.0,
       "reference_ink": 2832,
@@ -28301,7 +28301,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-data_matrix_rectangular",
       "diagnostic": "",
@@ -28315,14 +28315,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:29Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 2304,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "6c3606e377cc67086e9ad2eebd31235d554f872a371195662445a9f346e85f6b",
       "recall": 1.0,
       "reference_ink": 2304,
@@ -28565,7 +28565,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_ean13",
       "diagnostic": "",
@@ -28579,14 +28579,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 14504,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "d83aac4a4ef67b0edbc6f9d54d6c15ac563c5dc5ca8c71e2d3dc01fb48514af7",
       "recall": 1.0,
       "reference_ink": 14504,
@@ -28829,7 +28829,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_ean8",
       "diagnostic": "",
@@ -28843,14 +28843,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7680,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "b400b05b56a6fc5dec3721239d800dd9711f44c26dd99de0f0ec13beab8fcc74",
       "recall": 1.0,
       "reference_ink": 7680,
@@ -29093,7 +29093,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_expanded",
       "diagnostic": "",
@@ -29107,14 +29107,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 9656,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "f6c681a84f17d1a42e4f3c6f4333c8dfd49d0f55ec22d1a0563bfde7c577c8c1",
       "recall": 1.0,
       "reference_ink": 9656,
@@ -29357,7 +29357,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_expanded_stacked",
       "diagnostic": "",
@@ -29371,14 +29371,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 10780,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "49f6bab3c3f1ea7c5f055a27ad1fa7fb5db4bb0590d8d418aa7e9ad25cf6e0a5",
       "recall": 1.0,
       "reference_ink": 10780,
@@ -29621,7 +29621,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_limited",
       "diagnostic": "",
@@ -29635,14 +29635,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1480,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "e58b22a548b5397b3d243a6d8bbd58789564be1645b2536aa08f42a6244d5bd4",
       "recall": 1.0,
       "reference_ink": 1480,
@@ -29885,7 +29885,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_omni",
       "diagnostic": "",
@@ -29899,14 +29899,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 5940,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "53e5ce765f003fee3e1561d8978c33dbd6037504c1d76573769305c480081b4a",
       "recall": 1.0,
       "reference_ink": 5940,
@@ -30149,7 +30149,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_stacked",
       "diagnostic": "",
@@ -30163,14 +30163,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1196,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "b28df5ba45511cde2aceb9a920ed76b4733fe09cb12e5a471f581feb15183144",
       "recall": 1.0,
       "reference_ink": 1196,
@@ -30413,7 +30413,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_stacked_omni",
       "diagnostic": "",
@@ -30427,14 +30427,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:15Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 6448,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "5b0ba0ba0b0d2b183153e6ccf9721a087160076c8e7a2a6a6232261d218f8820",
       "recall": 1.0,
       "reference_ink": 6448,
@@ -30677,7 +30677,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_truncated",
       "diagnostic": "",
@@ -30691,14 +30691,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 2340,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "fd90197bfee38cd0f921f1a4ece308f16738016c62d359425dd6723d981c33e8",
       "recall": 1.0,
       "reference_ink": 2340,
@@ -30941,7 +30941,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_upca",
       "diagnostic": "",
@@ -30955,14 +30955,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 15392,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "bc646a653681ad1670ba641bcac5de39dc09554cf5ad01c345ed8cf505d57bbe",
       "recall": 1.0,
       "reference_ink": 15392,
@@ -31205,7 +31205,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_upce",
       "diagnostic": "",
@@ -31219,14 +31219,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8288,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "18f75298f92644b1fdedfb55ff1fc830cce216954b1c432f641154d3ebd4192b",
       "recall": 1.0,
       "reference_ink": 8288,
@@ -31488,7 +31488,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-ean13",
       "diagnostic": "",
@@ -31502,14 +31502,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7996,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "c0bb7ed7d954a2d6186a20bdaefbd01101149518121707bdb59b8ffaa1dcec1c",
       "recall": 1.0,
       "reference_ink": 7996,
@@ -31752,7 +31752,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-ean8",
       "diagnostic": "",
@@ -31766,14 +31766,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 5276,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "712d3e4798d15d261c78af0c40ca1d5bbaea81917975147189430ed85568beb9",
       "recall": 1.0,
       "reference_ink": 5276,
@@ -32035,7 +32035,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-extension2",
       "diagnostic": "",
@@ -32049,14 +32049,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1600,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "b1b096cd1a5da37cff0b4e8f80741880d4b8926511b05995eb1efe7696c5c381",
       "recall": 1.0,
       "reference_ink": 1600,
@@ -32318,7 +32318,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-extension5",
       "diagnostic": "",
@@ -32332,14 +32332,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:30Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 4160,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "c947190b5763ffb9e71975031e0f753be54e2c537366bd5f30fac7a8ffe18bdb",
       "recall": 1.0,
       "reference_ink": 4160,
@@ -32582,7 +32582,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-industrial2of5",
       "diagnostic": "",
@@ -32596,14 +32596,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 10560,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "8a433f93f4c1ffbb59921b9fff55ecc1c779dda2c051d573d9d757e78974dcbc",
       "recall": 1.0,
       "reference_ink": 10560,
@@ -32846,7 +32846,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-intelligent_mail",
       "diagnostic": "",
@@ -32860,14 +32860,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7176,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "b9735c49647287a3d93a6744e8095a2798761c391ad1a32b5b308928ef4783ff",
       "recall": 1.0,
       "reference_ink": 7176,
@@ -33129,7 +33129,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-interleaved2of5",
       "diagnostic": "",
@@ -33143,14 +33143,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 5280,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "b81b9ca619de29c5bd65178b2808d28f481117fa4025da7247befae43ae360c0",
       "recall": 1.0,
       "reference_ink": 5280,
@@ -33393,7 +33393,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-logmars",
       "diagnostic": "",
@@ -33407,14 +33407,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 11680,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "a3f0f8988a2b027e7a4e9e26fffc376e080ac47fc02853d4c2f88fb7714d9efd",
       "recall": 1.0,
       "reference_ink": 11680,
@@ -33676,7 +33676,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode2",
       "diagnostic": "",
@@ -33690,14 +33690,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:16Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 12540,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "7ca50d934006908f21ed5b373dabd6bdb7baa81f68b0bc9353a2d0497613bb4e",
       "recall": 1.0,
       "reference_ink": 12540,
@@ -33940,7 +33940,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode3",
       "diagnostic": "",
@@ -33954,14 +33954,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 12840,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "cfb1aafc93b7df732dd7bc0203e1c3ca803b4ef2188ef700170f3960d48e2f25",
       "recall": 1.0,
       "reference_ink": 12840,
@@ -34204,7 +34204,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode4",
       "diagnostic": "",
@@ -34218,14 +34218,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 13140,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "698ee1d559d97c6b18e75300d6748197396d890ae1fe18819a92158bafa98bd3",
       "recall": 1.0,
       "reference_ink": 13140,
@@ -34487,7 +34487,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode5",
       "diagnostic": "",
@@ -34501,14 +34501,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 2010,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "a88071572ae710912e05be9d9b7d115281845fe2109b869b021a12bda4ee600e",
       "recall": 1.0,
       "reference_ink": 2010,
@@ -34751,7 +34751,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode6",
       "diagnostic": "",
@@ -34765,14 +34765,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 13200,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "07ff6c73cf72d35a86ca9017ea1d6bdbfd05c22dcfe032038786250dea3d62cb",
       "recall": 1.0,
       "reference_ink": 13200,
@@ -34996,7 +34996,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-micropdf417_1",
       "diagnostic": "",
@@ -35010,14 +35010,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1848,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "6b0e7b3285457490e95243a58cf65017b7e5d01147109a72cd706a9cfbeb0af8",
       "recall": 1.0,
       "reference_ink": 1848,
@@ -35260,7 +35260,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-micropdf417_3",
       "diagnostic": "",
@@ -35274,14 +35274,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 2112,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "a8102caeca1e3d73285f0ec52d5c5b1aade85c4d663764431ed9e542c6bd0a5e",
       "recall": 1.0,
       "reference_ink": 2112,
@@ -35524,7 +35524,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-micropdf417_4",
       "diagnostic": "",
@@ -35538,14 +35538,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 2552,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "c6ae06e7047e287635171691b2bc80532ba82d835830c70cd220f616ad60b206",
       "recall": 1.0,
       "reference_ink": 2552,
@@ -35788,7 +35788,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_a",
       "diagnostic": "",
@@ -35802,14 +35802,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7040,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "029c95e2029fa5892db3bbbc0ec96a0fcd7ef7344f6947d8e894fe0b7ae0de0f",
       "recall": 1.0,
       "reference_ink": 7040,
@@ -36052,7 +36052,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_b",
       "diagnostic": "",
@@ -36066,14 +36066,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7840,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "6a7f74a361111e51309b6ed91f9edf0b6c512beaeed0766a3c8a85e75086f455",
       "recall": 1.0,
       "reference_ink": 7840,
@@ -36316,7 +36316,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_c",
       "diagnostic": "",
@@ -36330,14 +36330,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:31Z",
+      "observed_utc": "2026-09-29T19:03:17Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8640,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "538b2b5e2d1db884858fb7a130973d748377f448a61b98ef168bbb459fc7bf3f",
       "recall": 1.0,
       "reference_ink": 8640,
@@ -36580,7 +36580,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_d",
       "diagnostic": "",
@@ -36594,14 +36594,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8640,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "538b2b5e2d1db884858fb7a130973d748377f448a61b98ef168bbb459fc7bf3f",
       "recall": 1.0,
       "reference_ink": 8640,
@@ -36863,7 +36863,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-pdf417",
       "diagnostic": "",
@@ -36877,14 +36877,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 4488,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "9d3308e5479d4300df1562d68128930097ea1011b3622188c57b67bc781e3801",
       "recall": 1.0,
       "reference_ink": 4488,
@@ -37146,7 +37146,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-pdf417_truncated",
       "diagnostic": "",
@@ -37160,14 +37160,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 3276,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "81721dffd8ae4662a5963b732c8618cc05f0bb1ebe80b50cc16be9764e684986",
       "recall": 1.0,
       "reference_ink": 3276,
@@ -37410,7 +37410,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-planet",
       "diagnostic": "",
@@ -37424,14 +37424,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7616,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "bb81122db17b1e485b89d5ef527401b2f445425478bbf0bcff318aed14b86065",
       "recall": 1.0,
       "reference_ink": 7616,
@@ -37674,7 +37674,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-plessey",
       "diagnostic": "",
@@ -37688,14 +37688,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 9920,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "2253cd5035566bd947cf4ad9d45da906c58cd275eeeefc110d032e84f2d61109",
       "recall": 1.0,
       "reference_ink": 9920,
@@ -37938,7 +37938,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-postal_planet",
       "diagnostic": "",
@@ -37952,14 +37952,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 7616,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "bb81122db17b1e485b89d5ef527401b2f445425478bbf0bcff318aed14b86065",
       "recall": 1.0,
       "reference_ink": 7616,
@@ -38202,7 +38202,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-postnet",
       "diagnostic": "",
@@ -38216,14 +38216,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 5440,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "47a5bc25979780d32b9d77c16893ee4941610e7dc8c124970e02323110e82eb9",
       "recall": 1.0,
       "reference_ink": 5440,
@@ -38485,7 +38485,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-qr",
       "diagnostic": "",
@@ -38499,14 +38499,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 3680,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "35faeba6d6f7db5b913b98844db52c604bc2349931d7305f3c8741ba9430368f",
       "recall": 1.0,
       "reference_ink": 3680,
@@ -38749,7 +38749,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-standard2of5",
       "diagnostic": "",
@@ -38763,14 +38763,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 9760,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "d415ffe936ce05fc2080dcb8f2da1f126ad3b19478b4c90d6159bdc27a0bb11f",
       "recall": 1.0,
       "reference_ink": 9760,
@@ -39013,7 +39013,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-tlc39_linear",
       "diagnostic": "",
@@ -39027,14 +39027,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8960,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "676127eb8422bc964cfeefadca8dc1f5a31689b42bf05b5bd1316b1c256449b5",
       "recall": 1.0,
       "reference_ink": 8960,
@@ -39277,7 +39277,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-tlc39_linked",
       "diagnostic": "",
@@ -39291,14 +39291,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 13052,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "078febb7239e970e901dfc0108d5d27cbf4fb4c6b997cf65cb07a36974475898",
       "recall": 1.0,
       "reference_ink": 13052,
@@ -39560,7 +39560,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-upca",
       "diagnostic": "",
@@ -39574,14 +39574,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:18Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 8658,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "6ffa7fa25744d501d882c4bcd10c8df93809b7231c2cb19a68f37a2bc6090c6d",
       "recall": 1.0,
       "reference_ink": 8658,
@@ -39843,7 +39843,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "barcode-upce",
       "diagnostic": "",
@@ -39857,14 +39857,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 4610,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "f6e83f59d34d13e97328dd0a7615a335e69d3ec0d971d58e17582c79f2c9a06c",
       "recall": 1.0,
       "reference_ink": 4610,
@@ -40126,37 +40126,39 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-height-120",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 120,
-      "ink": 264,
+      "height": 2030,
+      "ink": 408,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        384,
-        120
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "5d7ec5ebdb29b3ebcaea6d9515bf54f6a4eb806824113ad0f2ea86352bbd3591",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 408,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "838fe808e37b6fb6f9609571e8e932958927142b65f56d692a7d14b87f8dbde8",
+      "recall": 1.0,
       "reference_ink": 408,
       "reference_sha256": "88d2597bc8e86dc633e67a0533057105f28f11214ee3c025331022a251583ab0",
-      "render_sha256": "1036ac42108bb9e71a91a25a913b13799968eb1b823b7166dd6e8439fe039565",
+      "render_sha256": "13462e84fc45edb844ae5e6503230f14b82a3e82eaaa4c26865090cacdd32b14",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "f0560e21b6e688940abff31cf21f8c09b8e91a129b583d0c937152a3af7e1db9",
       "status": "rendered",
       "width": 384
@@ -40405,7 +40407,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "canvas-height-2030",
       "diagnostic": "",
@@ -40419,14 +40421,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:32Z",
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 408,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "838fe808e37b6fb6f9609571e8e932958927142b65f56d692a7d14b87f8dbde8",
       "recall": 1.0,
       "reference_ink": 408,
@@ -40688,37 +40690,39 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-height-400",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 400,
-      "ink": 264,
+      "height": 2030,
+      "ink": 408,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        384,
-        400
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "617db29cbb8e4d2d0fd62d303319e8f9262d8c0200ef37a28d85a8df8f9eb064",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 408,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "838fe808e37b6fb6f9609571e8e932958927142b65f56d692a7d14b87f8dbde8",
+      "recall": 1.0,
       "reference_ink": 408,
       "reference_sha256": "88d2597bc8e86dc633e67a0533057105f28f11214ee3c025331022a251583ab0",
-      "render_sha256": "2de7075b2ce91d8c1b529ea1e01e0eb4eb5df094ed5eabecc125bf602fb5e3c1",
+      "render_sha256": "13462e84fc45edb844ae5e6503230f14b82a3e82eaaa4c26865090cacdd32b14",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "98071fe8717ac7118bdc599244e5973085e672ec0639a7036a6e2204eebedf2e",
       "status": "rendered",
       "width": 384
@@ -40967,40 +40971,42 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-width-120",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
       "height": 2030,
       "ink": 300,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        120,
-        2030
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "d28bf329678d714ca76374ec21a494ba9a7efa171e9e10a880afcc4fe3679695",
-      "reference_dimensions": [
         128,
         2030
       ],
+      "output_ink": 300,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "cd5084f7c4f938a35679d2d887cd95427d6718de483e2e7670ff492cea354d49",
+      "recall": 1.0,
       "reference_ink": 300,
       "reference_sha256": "72558c2c09401e04335598489608a634b002436216ff67b443eb5ff473415fb0",
-      "render_sha256": "4ab3c6f17792490b6d47a5ad4d594dfaf09b03d364859fbadcd0cf6b54c99176",
+      "render_sha256": "8748d4051f297db9c88b3379e745e2e958e8c921ef2234f02ca7252040d94fd5",
       "requested_dimensions": [
         128,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "740556b957f15ab4de309fa65c5606931889a016eb1b27ec9144925f13b121a6",
       "status": "rendered",
-      "width": 120
+      "width": 128
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -41079,40 +41085,42 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-width-120-fit",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
       "height": 2030,
       "ink": 412,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        120,
-        2030
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "5fd8d499b54ecc614ccce0733cdaab4ec50c769c236123ffda53f565abe3128e",
-      "reference_dimensions": [
         128,
         2030
       ],
+      "output_ink": 412,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "1b68bab172a32bd4533998f14f3eacd9475026bd6dc2ffbed238d1915ba95194",
+      "recall": 1.0,
       "reference_ink": 412,
       "reference_sha256": "deff446ecb7ed6f5b537d1c569fd6c29560269b08b1a23f0a6d5d11e0a53dd39",
-      "render_sha256": "dce320defb1fa87216b2b5227b970332cda973ba14296c1bd41739b6cff85437",
+      "render_sha256": "950d0c40de58966c5575686dd981fd82ddcf24a8f5750af7a28082401a9259dc",
       "requested_dimensions": [
         128,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "2a6290530cb6e0ad5cc4897467129c3f5b99d20c11d7740036cf9a15ac85a95f",
       "status": "rendered",
-      "width": 120
+      "width": 128
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -41525,40 +41533,42 @@
       "width": 320
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-width-300",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
       "height": 2030,
       "ink": 300,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        300,
-        2030
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "c40d15b3345842400dbabacccd015bc9ad665abfe474340538255830bb2007fe",
-      "reference_dimensions": [
         320,
         2030
       ],
+      "output_ink": 300,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "1411751248d1122aaf06b357099c74f5dc156877291f31f657d4bdd5f111478d",
+      "recall": 1.0,
       "reference_ink": 300,
       "reference_sha256": "37a44b0878ff1c46573a1b8870a5daa9e33c8706dce3e0f90106f5f4ee5e557c",
-      "render_sha256": "76117e224a430143d8db8801f87112b1a3d4abe77a5f66e68b239eed3c19c960",
+      "render_sha256": "cf0df30b979d23d6db9cc1db652c9bfce5d5cee5579aaa294f8dfc18d4197fd3",
       "requested_dimensions": [
         320,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "5660a635a60707713b119ef4484b48fbe73818391afa2061188ced9e84f01041",
       "status": "rendered",
-      "width": 300
+      "width": 320
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -41637,40 +41647,42 @@
       "width": 320
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-width-300-fit",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
       "height": 2030,
       "ink": 412,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        300,
-        2030
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "def5356ca6ac4d100a9264d9ae2b5e122f61b5c8cc9d2ffb7f50c12664e693ec",
-      "reference_dimensions": [
         320,
         2030
       ],
+      "output_ink": 412,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "66986f3004ff67f8f6f15eeaa0c53efc62ca4d9ca1fee73f0ff8ae8549ec49b5",
+      "recall": 1.0,
       "reference_ink": 412,
       "reference_sha256": "3f6c6ab970a1be0342180b06bf07848c02ecb31648815f30133de2a374306ca8",
-      "render_sha256": "ef51053b014b39e5194221a0dcc24dc57dde744b0d32e3f6e7970e82341c2887",
+      "render_sha256": "682e85053c9283cd440765cdfb5bfa6ad5f91b1029b4dc657074eb63483893aa",
       "requested_dimensions": [
         320,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "970eecfd1f4985fcb8abadfbefaae59815973006147f8d55194a9ccbea0436ea",
       "status": "rendered",
-      "width": 300
+      "width": 320
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -42083,7 +42095,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-384",
       "diagnostic": "",
@@ -42097,14 +42109,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 412,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "dfe5abab87a07d79f7c6d951c0a37225d609e3a16919168b8910c5255be2bc40",
       "recall": 1.0,
       "reference_ink": 412,
@@ -42366,40 +42378,42 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-width-400",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
       "height": 2030,
       "ink": 412,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        400,
-        2030
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "83ea5cba54c5d6781a7f8dcf8d69f188fa2fd6b8758fc31f0c3431c84afdc5e2",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 412,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "dfe5abab87a07d79f7c6d951c0a37225d609e3a16919168b8910c5255be2bc40",
+      "recall": 1.0,
       "reference_ink": 412,
       "reference_sha256": "47478ceee162321b17d0c801d253d312d4b9d27ba991d42c6636bc8ba0d3880f",
-      "render_sha256": "e8d96a90b4c012e05cc2cc66e5ac2809c7e8aa7137c951bafde8f97e506880e1",
+      "render_sha256": "3a454d7fc2dac5227c58190f06e202b776a15b82231a42ae18c7ca5b37c54fff",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "924c79fb0250f640cce6e75e5d4325fbfa16e573ce384476f6f000742a3db04d",
       "status": "rendered",
-      "width": 400
+      "width": 384
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -42645,40 +42659,42 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "canvas-width-832",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
       "height": 2030,
       "ink": 412,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
-        832,
-        2030
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "25f032c27e28fc822ea5f05452cf911a36bc7d2095c04eee1650caacdadcc329",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 412,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "dfe5abab87a07d79f7c6d951c0a37225d609e3a16919168b8910c5255be2bc40",
+      "recall": 1.0,
       "reference_ink": 412,
       "reference_sha256": "47478ceee162321b17d0c801d253d312d4b9d27ba991d42c6636bc8ba0d3880f",
-      "render_sha256": "92c23784c910b94c10e499d5bc37f541bd837dae10d22e818beba7f764c00553",
+      "render_sha256": "3a454d7fc2dac5227c58190f06e202b776a15b82231a42ae18c7ca5b37c54fff",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "6f5505ff1b6c494a0137971616f6f9260fb47da26bfaae3d3bb9a9dd95578448",
       "status": "rendered",
-      "width": 832
+      "width": 384
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -42924,7 +42940,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "graphic",
       "diagnostic": "",
@@ -42938,14 +42954,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:19Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 28,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "5cb13e532e18af791724307bf9e4a03dba3031e03b7f05cf4bc2167137286c60",
       "recall": 1.0,
       "reference_ink": 28,
@@ -43207,7 +43223,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "layout-LS12",
       "diagnostic": "",
@@ -43221,14 +43237,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 624,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "813be2a2a1ef4d8e3b41ab5d0a5a68197825a96ae7c9c691618deaa07564a7a9",
       "recall": 1.0,
       "reference_ink": 624,
@@ -43490,7 +43506,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "layout-LT0",
       "diagnostic": "",
@@ -43504,14 +43520,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 624,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "8ac4bdadd8c1a3f7b059b81988116721ecf9576ec71feabd225c71111eb0328e",
       "recall": 1.0,
       "reference_ink": 624,
@@ -43773,7 +43789,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "layout-LT30",
       "diagnostic": "",
@@ -43787,14 +43803,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 624,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "8ac4bdadd8c1a3f7b059b81988116721ecf9576ec71feabd225c71111eb0328e",
       "recall": 1.0,
       "reference_ink": 624,
@@ -44056,7 +44072,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "layout-PMN",
       "diagnostic": "",
@@ -44070,14 +44086,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 624,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "8ac4bdadd8c1a3f7b059b81988116721ecf9576ec71feabd225c71111eb0328e",
       "recall": 1.0,
       "reference_ink": 624,
@@ -44339,7 +44355,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "layout-PMY",
       "diagnostic": "",
@@ -44353,14 +44369,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 624,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "8ac4bdadd8c1a3f7b059b81988116721ecf9576ec71feabd225c71111eb0328e",
       "recall": 1.0,
       "reference_ink": 624,
@@ -44622,7 +44638,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "layout-POI",
       "diagnostic": "",
@@ -44636,14 +44652,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 624,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "8ac4bdadd8c1a3f7b059b81988116721ecf9576ec71feabd225c71111eb0328e",
       "recall": 1.0,
       "reference_ink": 624,
@@ -44905,7 +44921,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "layout-PON",
       "diagnostic": "",
@@ -44919,14 +44935,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 624,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "8ac4bdadd8c1a3f7b059b81988116721ecf9576ec71feabd225c71111eb0328e",
       "recall": 1.0,
       "reference_ink": 624,
@@ -45188,7 +45204,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "shape-GB",
       "diagnostic": "",
@@ -45202,14 +45218,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:33Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1044,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "a9a2bbe6df43a0b84250133b5141666145977ae6a66d3986b96f68daefe5d68b",
       "recall": 1.0,
       "reference_ink": 1044,
@@ -45471,7 +45487,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "shape-GC",
       "diagnostic": "",
@@ -45485,14 +45501,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 746,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "dbbe5bbd9971058f413ae61260d01b8937ac852d340820c04877e1cb16397dfc",
       "recall": 1.0,
       "reference_ink": 746,
@@ -45754,7 +45770,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "shape-GD",
       "diagnostic": "",
@@ -45768,14 +45784,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 180,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "fe254b7f4e62a4f47d0f54aed479d14ecfd24d9ac20b8b4e02203e0a84ea775d",
       "recall": 1.0,
       "reference_ink": 180,
@@ -46037,7 +46053,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "shape-GE",
       "diagnostic": "",
@@ -46051,14 +46067,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:20Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 990,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "ed85425e4f0fc089dde0ead3eed72b39715ac100277b132ecb545195b706a40a",
       "recall": 1.0,
       "reference_ink": 990,
@@ -46320,37 +46336,39 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "smoke-aztec",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 1218,
+      "height": 2030,
       "ink": 1920,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:24Z",
       "output_dimensions": [
-        384,
-        1218
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "955fe33fa55c612de4995c6dd7df01883c118158b9f03178f548d9ad9bd6bb2b",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 1920,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "7132bf71acf9422cbb4c89e3550576f1b1486eeb75ef307af1b96a7affb07f36",
+      "recall": 1.0,
       "reference_ink": 1920,
       "reference_sha256": "594dd628d89ef688dfeaf2489cfc13f16799eb534745cc446046963148ebc703",
-      "render_sha256": "4b4061a65614e738ac6276102a73f24ec9658c9c25db691da80d79dbf3eddc18",
+      "render_sha256": "c0d9d6e19a48c27602a26c3a2d0effefa5bcb9f3652c4b2335f7cbc394156eb2",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "81ed02e7e775d69073a83d2d091a6a4709798a66592b578eca80ab7e80f879c4",
       "status": "rendered",
       "width": 384
@@ -46580,37 +46598,39 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "smoke-aztec_alias",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 1218,
+      "height": 2030,
       "ink": 1920,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:24Z",
       "output_dimensions": [
-        384,
-        1218
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "955fe33fa55c612de4995c6dd7df01883c118158b9f03178f548d9ad9bd6bb2b",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 1920,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "7132bf71acf9422cbb4c89e3550576f1b1486eeb75ef307af1b96a7affb07f36",
+      "recall": 1.0,
       "reference_ink": 1920,
       "reference_sha256": "594dd628d89ef688dfeaf2489cfc13f16799eb534745cc446046963148ebc703",
-      "render_sha256": "4b4061a65614e738ac6276102a73f24ec9658c9c25db691da80d79dbf3eddc18",
+      "render_sha256": "c0d9d6e19a48c27602a26c3a2d0effefa5bcb9f3652c4b2335f7cbc394156eb2",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "367ec2addf6dc588405bcd03bcb5d0e68696dff72ba4783969363b9cc019d63d",
       "status": "rendered",
       "width": 384
@@ -46859,37 +46879,39 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "smoke-aztec_rune",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 1218,
+      "height": 2030,
       "ink": 1072,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:24Z",
       "output_dimensions": [
-        384,
-        1218
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "6519b972f71d1ea3f9b3945867ffa2863c07fc7b8b461c27eba1373adb4aecbe",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 1072,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "87a53e3d5060d1cdfbbdb5c06571aa01e2e6826555bb53098c1dd4ada1f5c133",
+      "recall": 1.0,
       "reference_ink": 1072,
       "reference_sha256": "e179cacd88ed4014125525e2c28bb69a0ec610efc33e239b28797f119b994fb6",
-      "render_sha256": "48aaa0352ca4846ca8279f96db8870c3ae2e50b4a58cc6617e903ebde0004da5",
+      "render_sha256": "b05f74145822ea826e59150090648b6c79a52058eb7d8a4b67e1a7c41bc78edf",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "7069ef01dfc86fdd5467150d9041ac945476bffba2c62d1651e8558182e3088c",
       "status": "rendered",
       "width": 384
@@ -47138,37 +47160,39 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "smoke-codabar",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 1218,
+      "height": 2030,
       "ink": 6400,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:24Z",
       "output_dimensions": [
-        384,
-        1218
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "b403df9a7d06cce4e6ba35757d0bccdc7a49f1bc7f3d680b4e4c78c2d73a699e",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 6400,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "461740d5f27c76d62402a4b7e2665c3fb771525b924a512442401f2ac1857319",
+      "recall": 1.0,
       "reference_ink": 6400,
       "reference_sha256": "c0026f309b34987e76d228c4f707b293b83e1ef2d531903a2750257d3c5e77dc",
-      "render_sha256": "a0fd1405c4a78046f909538e5133c121bc812d79e756dcc73d2e7c30ad1a38a1",
+      "render_sha256": "fcf43447291c1e5998178bf5d96e472933a848bc6ee00b7614987be1af532e41",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "852f065d29e73ff2c7e5ac1bc6add655263bdc6c595c30325d779acac4b6e6cf",
       "status": "rendered",
       "width": 384
@@ -47398,7 +47422,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 5.13136288998358e-06,
       "case": "text-0-B",
       "diagnostic": "",
@@ -47412,14 +47436,14 @@
       "iou": 0.9926470588235294,
       "library": "codyps-zpl",
       "missing": 1,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 543,
       "precision": 0.994475138121547,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "cb6018bdf58f6ca7e8f67a3bb246ed11fa586c633372aec9958abfa42aa03184",
       "recall": 0.9981515711645101,
       "reference_ink": 541,
@@ -47662,7 +47686,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 1.026272577996716e-05,
       "case": "text-0-I",
       "diagnostic": "",
@@ -47676,14 +47700,14 @@
       "iou": 0.9854014598540146,
       "library": "codyps-zpl",
       "missing": 5,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 543,
       "precision": 0.994475138121547,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "87b825c44a329fda29cecc1a3e55cebb6e95f7e080286b4b645fe84475c38da3",
       "recall": 0.9908256880733946,
       "reference_ink": 545,
@@ -47926,7 +47950,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-0-N",
       "diagnostic": "",
@@ -47940,14 +47964,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 543,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "31f5b22bbf793d7603855a96d4f9f63650e3857d2af790e2d979a1a7020e5c55",
       "recall": 1.0,
       "reference_ink": 543,
@@ -48190,7 +48214,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 6.414203612479474e-06,
       "case": "text-0-R",
       "diagnostic": "",
@@ -48204,14 +48228,14 @@
       "iou": 0.9908759124087592,
       "library": "codyps-zpl",
       "missing": 5,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 543,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "aa01e3b897271eaf28e5501aca1ce2fc198c6340b6b45598850aca95076b9bc1",
       "recall": 0.9908759124087592,
       "reference_ink": 548,
@@ -48454,7 +48478,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-A-B",
       "diagnostic": "",
@@ -48468,14 +48492,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 945,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "6d4e685a05d4fc5975e7f1a32bfcd8b27f2ae7c5d911bd895ffe27c21c55a787",
       "recall": 1.0,
       "reference_ink": 945,
@@ -48718,7 +48742,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-A-I",
       "diagnostic": "",
@@ -48732,14 +48756,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 405,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "d8cd619c7f9a313cd7d4845343fbb0487c7058aa756b103f83f34c84716f8bc3",
       "recall": 1.0,
       "reference_ink": 405,
@@ -48813,7 +48837,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-A-I-fit",
       "diagnostic": "",
@@ -48827,14 +48851,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 945,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "dd2ee19d64815d099229eaf1f9783d7acd8c5a78c1add40180d95709fa2d0c98",
       "recall": 1.0,
       "reference_ink": 945,
@@ -49246,7 +49270,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-A-N",
       "diagnostic": "",
@@ -49260,14 +49284,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 945,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "c6c4cc4f4a630996287778abf7b5fd70c1948fb0a0bb7b1c09ceb24d6acb3269",
       "recall": 1.0,
       "reference_ink": 945,
@@ -49510,7 +49534,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-A-R",
       "diagnostic": "",
@@ -49524,14 +49548,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:21Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 945,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "22e0126d5dc817f470d65543b4c100a83272cccf86d028e593cb36ea5e4feca1",
       "recall": 1.0,
       "reference_ink": 945,
@@ -49774,7 +49798,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-D-B",
       "diagnostic": "",
@@ -49788,14 +49812,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:34Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1928,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "5d28a89617c06d8b793452849143ae08a1ead7a1432dccddc3caf8c5928c4330",
       "recall": 1.0,
       "reference_ink": 1928,
@@ -50038,7 +50062,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-D-I",
       "diagnostic": "",
@@ -50052,14 +50076,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 716,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "d7be84acb80433b606ce3c072c61af2859b4c704002218128985ae379b2a858c",
       "recall": 1.0,
       "reference_ink": 716,
@@ -50133,7 +50157,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-D-I-fit",
       "diagnostic": "",
@@ -50147,14 +50171,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1928,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "66927763ce3f97bbc3659dac9e192fab3d3ebaa8c3cc2f874107049807a1828c",
       "recall": 1.0,
       "reference_ink": 1928,
@@ -50566,7 +50590,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-D-N",
       "diagnostic": "",
@@ -50580,14 +50604,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1928,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "dd9e46478bd6087ed49135f227e1e25e1ef5c58bfba8ba30aecbe4cfab3ccbb5",
       "recall": 1.0,
       "reference_ink": 1928,
@@ -50830,7 +50854,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-D-R",
       "diagnostic": "",
@@ -50844,14 +50868,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 1928,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "6759d5b838640e6901acfc8f7457db544704a142ffebe1bf6f0767b7b4e23337",
       "recall": 1.0,
       "reference_ink": 1928,
@@ -51094,7 +51118,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-E-B",
       "diagnostic": "",
@@ -51108,14 +51132,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 929,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "9d9e4af0d613d57fda90354f7c36b20c60a7b6a2f813acc9e23778e0a8141c45",
       "recall": 1.0,
       "reference_ink": 929,
@@ -51358,7 +51382,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-E-I",
       "diagnostic": "",
@@ -51372,14 +51396,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 419,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "0410cf0914b2483562b6f2113364bac19450138693b840ecb62e2bd6e07d0a95",
       "recall": 1.0,
       "reference_ink": 419,
@@ -51453,7 +51477,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-E-I-fit",
       "diagnostic": "",
@@ -51467,14 +51491,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 929,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "f08097ae40de5006ebabfe3b294d9ca408fffaaaa40b72a4867e0384d6417719",
       "recall": 1.0,
       "reference_ink": 929,
@@ -51886,7 +51910,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-E-N",
       "diagnostic": "",
@@ -51900,14 +51924,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:22Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 929,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "473c9b38544d4e49ea311d365e3c98593272608078d907f0444f6ff832121cb7",
       "recall": 1.0,
       "reference_ink": 929,
@@ -52150,7 +52174,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-E-R",
       "diagnostic": "",
@@ -52164,14 +52188,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 929,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "adbfa99cb4d40f0c38670556bc446ac53203105a3924b282e7a679d165315ef5",
       "recall": 1.0,
       "reference_ink": 929,
@@ -52414,7 +52438,7 @@
       "status": "crashed"
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
       "canvas_disagreement": 0.0,
       "case": "text-block",
       "diagnostic": "",
@@ -52428,14 +52452,14 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
         384,
         2030
       ],
       "output_ink": 2768,
       "precision": 1.0,
-      "profile": "pinned library defaults; exact source and native requested canvas",
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
       "raw_png_sha256": "b1953ad73b1b67dcbaf3f88146d72288eefc68c824cbd12553c4e0ba63f0645c",
       "recall": 1.0,
       "reference_ink": 2768,
@@ -52697,40 +52721,42 @@
       "width": 64
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-1",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 30,
+      "height": 2030,
+      "ink": 270,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        1,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "15f5054aae8ae7b9db45cede262a202bc01f0a99a0f32af43682fe888ed0cb47",
-      "reference_dimensions": [
         64,
         2030
       ],
+      "output_ink": 270,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "dfad2c2801ecc40d91174b4e55b3001ff843b691e638ff1067e578ed83f4b9b5",
+      "recall": 1.0,
       "reference_ink": 270,
       "reference_sha256": "8f69aae1959de417f179b2991199d1d0d2f3b343383091e953de772203cb4577",
-      "render_sha256": "bef49802237b65cfc2c4ce3eb8f5e2390a5cb481797a58bc5ad84feb028d7f93",
+      "render_sha256": "4b75b51b265044d6c3303a425e3fe2c4b028f0ed54a0c7c206f9464a588fca73",
       "requested_dimensions": [
         64,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "e221ffa926aa45bfaf4e5b8a9a13e194ca05677c8040bbf39bbfecce70b87ee5",
       "status": "rendered",
-      "width": 1
+      "width": 64
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -52976,40 +53002,42 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-127",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 1300,
+      "height": 2030,
+      "ink": 1320,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        127,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "e1c1575abaa98daacb47ead88f367492f382454d8383f11f0bfd25edcb7b74f2",
-      "reference_dimensions": [
         128,
         2030
       ],
+      "output_ink": 1320,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "0167fcbf2fa76cf71d1d8849f4ccd0fc9a98eb2a40971164337791e469873b19",
+      "recall": 1.0,
       "reference_ink": 1320,
       "reference_sha256": "dcc3aca9031151bab9d6c6148916cf4d6160f3491ca6053765921b7473f330f1",
-      "render_sha256": "ffa04414a09afe710530e98b48528aecc145a4f3ef794249aab7faa09e1dc506",
+      "render_sha256": "9d588d9a3389b36db7815d69679cf78c01b9cb25eb319ceac343765bd48e79a7",
       "requested_dimensions": [
         128,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "27cf07d4f3794eb789b3a3e71568910b4d2eaca22ea30836f7600a5b42dc4306",
       "status": "rendered",
-      "width": 127
+      "width": 128
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -53255,37 +53283,39 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-128",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
+      "height": 2030,
       "ink": 1310,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        128,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "989dda502bb3aba01cecae404829da21c31dcc9ddf8a793d7d24ce1eae7be959",
-      "reference_dimensions": [
         128,
         2030
       ],
+      "output_ink": 1310,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "110f718f9adc8b608e0d773038157bb446be7cdd13186d73836e7f9f87017727",
+      "recall": 1.0,
       "reference_ink": 1310,
       "reference_sha256": "75e599dde9de59c426b52e8100722d780cd0e17cea712f28cf820c025312fa29",
-      "render_sha256": "13cb068eb1b1d2513adb8ec72ad1dc376f8edae78a3f35729bcda6ae41e95973",
+      "render_sha256": "65484cdfbc78e27c6e588c7476ef7482ae83825527fae9f484b25a79eef99af1",
       "requested_dimensions": [
         128,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "4ecbaa62a5671da13dfbaca71c5618f7a218f002d8a7b9013797b1d914511cab",
       "status": "rendered",
       "width": 128
@@ -53534,40 +53564,42 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-383",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 3860,
+      "height": 2030,
+      "ink": 3880,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:35Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        383,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "995b48f9d991e88870dda6004373eb4b41bdb69b7db738bc6c7e4bea3ea5e89f",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 3880,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "575df28ebfad2393782f8c26343f15c24e85c216434860d0d5f54fe1c05d60f0",
+      "recall": 1.0,
       "reference_ink": 3880,
       "reference_sha256": "9e6d52cbc4b0529b5795f15fc0ef1f286692a60fdd3fc332aca6f34288164458",
-      "render_sha256": "96909c35feb0da50eb764c844d7f136622b910d457524595f246a8b7a5e7ddec",
+      "render_sha256": "fa87a244406f739d82a502c7ed2c7ca21c28839250a9ff1c37e18b08dda5bb3f",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "d9726b067513794886a5231834cfd891ccc3e0f4364a9a4fff8c8183d2a30cc0",
       "status": "rendered",
-      "width": 383
+      "width": 384
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -53813,37 +53845,39 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-384",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
+      "height": 2030,
       "ink": 3870,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        384,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "104f99d9a99a33a357a6f5957bc6e610e2589928640e22b9ef0969bf917e6d0e",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 3870,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "934aaaca87a53c3461c65cae3af7798ea7ff3816218987bb8d23904c343d7fec",
+      "recall": 1.0,
       "reference_ink": 3870,
       "reference_sha256": "eebeefd5208e545179d49a8352f7f0d3444ad68739f6c073624a8b4eec87bc82",
-      "render_sha256": "a6e3ab36c2601d0cd40fe07ca1c4a90c1106f85c4305d33083cffbc5b3897658",
+      "render_sha256": "675f3fb6e601667edffd0e8ed9e9a367ec8941bd143b667e9ba697af6e95ed8e",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "ba08420de35a7e7f7e6ac1217fe500832c162adcafc540b5e57c2d18ccecf0ce",
       "status": "rendered",
       "width": 384
@@ -53925,37 +53959,39 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-384-fit",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
+      "height": 2030,
       "ink": 3460,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        384,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "92aeefbf670b0e71b24f9b0ae6a770458161e885e9e78bc7aabc2d3e4d333e2c",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 3460,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "4e6c7c52de9f784a62ade2c62b6585a142103b98963f88862cdb6f97fae0806a",
+      "recall": 1.0,
       "reference_ink": 3460,
       "reference_sha256": "b613feb06e9e9c638e37d183deeb8618267375a3cda0c8de63de29f00dc9730e",
-      "render_sha256": "aaf756c9828748fec1f3521f801a04b90fc21555e4f1958ba591dc6426439530",
+      "render_sha256": "b73ad07e9a26c5f30015a94492da746aa5c92bfb16eed20b6776896088c67e52",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "0cae903d0a7b6b6f0aa001fec33c1f4aa43f098711a07534f774c0ed68043dd6",
       "status": "rendered",
       "width": 384
@@ -54371,40 +54407,42 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-385",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 3880,
+      "height": 2030,
+      "ink": 3860,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        385,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "ea4c31641c75a05ae3edd7448136b8c78627275cb197327cc9870fe68af93ca7",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 3860,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "048d3c55f413d6ebafc7ddedeea6c3a38b01b0c692d018e60ac57c8b0e12246e",
+      "recall": 1.0,
       "reference_ink": 3860,
       "reference_sha256": "cb224ea548d4806d6b4876fad16e5f4436ed86c2cba943db74a194d28af3d8d9",
-      "render_sha256": "909412d0babfdaccee6a87035c03dd54036e6ef4f63cf33f39c7cafe5b3feb74",
+      "render_sha256": "7aab1a5bc4e51f49910f0898489858ac6a81bacec00720fce47f98b7da563ad2",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "bc24be83052747823f59c675c11d950628ef0e3ba5116da3a308455963def597",
       "status": "rendered",
-      "width": 385
+      "width": 384
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -54650,40 +54688,42 @@
       "width": 64
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-63",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 660,
+      "height": 2030,
+      "ink": 680,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        63,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "23b7f02687742fbefd6f4b55af2418983eba7c1fe74dba982ee0933ce71c3c29",
-      "reference_dimensions": [
         64,
         2030
       ],
+      "output_ink": 680,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "b5f1bb8953c32a3ada659de6f015adae33d937372e3088d675a446861c063f67",
+      "recall": 1.0,
       "reference_ink": 680,
       "reference_sha256": "dc1aeaf063402098ec9c7fe71dc3290f82b35c2006d8cdda42f3c35365428d0c",
-      "render_sha256": "e868c043457fa991d9e5f41aaa93397ab3c830b7a82c322b98b45259ed3aca1d",
+      "render_sha256": "da8c4039a42c5e33b8b339d35c5ec3d9fff438350e8d9c0f32f28974c61d02b2",
       "requested_dimensions": [
         64,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "e1db59b723f56d14c82426f4b659c99d9076feba4d45d0237bb4e01f78cb7561",
       "status": "rendered",
-      "width": 63
+      "width": 64
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -54929,37 +54969,39 @@
       "width": 64
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-64",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
+      "height": 2030,
       "ink": 670,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        64,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "74d3d0dc03de827de41c6b184388952b4855179f5997446b5c0bdd5aa2ae3af4",
-      "reference_dimensions": [
         64,
         2030
       ],
+      "output_ink": 670,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "f3b253b60c47cb9c2cbf3e63d65389370b5f45a7f2170f113c7bb60aca834773",
+      "recall": 1.0,
       "reference_ink": 670,
       "reference_sha256": "b6a5048c7b55e98ebe6737ac2bc1dddb5c33e0a5534717ca67c3cdd1c2b64836",
-      "render_sha256": "59383031d03d6720d5ecc1bb5707acb1f3947ed3d9f68f5337e1b6a25dd70395",
+      "render_sha256": "dd2c886c6e844060dd5800257b7ea64d9a44cc17e12e028f993ff2508b111c22",
       "requested_dimensions": [
         64,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "a13845cb581577aaf8f14e87f45db425d979da7b7e7f9f16b2dc13f788368533",
       "status": "rendered",
       "width": 64
@@ -55208,40 +55250,42 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-65",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 680,
+      "height": 2030,
+      "ink": 910,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        65,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "031941f1c516db51290dcbefdad2a00846e69b905d726889a8c899ec386627f3",
-      "reference_dimensions": [
         128,
         2030
       ],
+      "output_ink": 910,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "61ff89751f4d6ab98d83c787c73e477806a822567d9172212abc8a3f25215349",
+      "recall": 1.0,
       "reference_ink": 910,
       "reference_sha256": "42575c3b50bb96475dfd8a0a20d1e2ee564484ffb6722ce65dd861d4c49de8ce",
-      "render_sha256": "a22d06561e0377bf2df87a19763b559932a9042b99d7a8ac9869667c93315228",
+      "render_sha256": "6578fa3d2e2d48545233dbbcba212b667b8b52f48394a9dff4220408367b2092",
       "requested_dimensions": [
         128,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "015f7c0f13792ca0d980747fc410b1411f5dec51b1cbfe6266a5c30d360fdf10",
       "status": "rendered",
-      "width": 65
+      "width": 128
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -55487,40 +55531,42 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-boundary-800",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 8030,
+      "height": 2030,
+      "ink": 3860,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        800,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "5cc533f46f24cdd8285d5a3bde8dc5b1efac212738c6cd862c000f9bf60fef11",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 3860,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "048d3c55f413d6ebafc7ddedeea6c3a38b01b0c692d018e60ac57c8b0e12246e",
+      "recall": 1.0,
       "reference_ink": 3860,
       "reference_sha256": "cb224ea548d4806d6b4876fad16e5f4436ed86c2cba943db74a194d28af3d8d9",
-      "render_sha256": "6f38084a388f59a892363e2ac307734fe1587603f7e8ce1df0d7e928aa76c055",
+      "render_sha256": "7aab1a5bc4e51f49910f0898489858ac6a81bacec00720fce47f98b7da563ad2",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "564d430154d95776ebbfc64c9d30e7f89a3ca77a4769cb9e1ef307a5369ee10a",
       "status": "rendered",
-      "width": 800
+      "width": 384
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -55766,31 +55812,33 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-late-grow",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 204,
+      "height": 2030,
+      "ink": 0,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:23Z",
       "output_dimensions": [
-        384,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "7171a9d09f5a6f11ee4223da4852d165731b48a7279d59ef011ac6ceed77affe",
-      "reference_dimensions": [
         128,
         2030
       ],
+      "output_ink": 0,
+      "precision": 0.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "6ad0e8fc8448ffc5135f2a7b77471c943bd4b94f42382f96e0304e3d44d51905",
+      "recall": 0.0,
       "reference_ink": 0,
       "reference_sha256": "81fb85d8c6e02358d2042667c290f221e6834f81149185cd8ccb463c28bcfc75",
-      "render_sha256": "63cf5f83a4de60e724de6d66bc4a43954b78b8baa8d2573ce0299f6b6dec1fbc",
+      "render_sha256": "627faa14bb89e3c7d41942ff08dcbd42bc0568341d9f71ca6b776b1c60edcc80",
       "requested_dimensions": [
         128,
         2030
@@ -55798,8 +55846,8 @@
       "returncode": 0,
       "score": null,
       "source_sha256": "c10a241ceddb7731d7f34b86b97ec137a3ef686cac976ab711b1c5eec9001095",
-      "status": "rendered",
-      "width": 384
+      "status": "blank",
+      "width": 128
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -55878,40 +55926,42 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-late-grow-fit",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
+      "height": 2030,
       "ink": 204,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:24Z",
       "output_dimensions": [
-        384,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "68461cee7e55d013115a57faf207f63ab4dd58cfc04f932fdd1e248ae2e7a481",
-      "reference_dimensions": [
         128,
         2030
       ],
+      "output_ink": 204,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "c8e68803ee993e52b4b8492be1e6f0a8ba625572d49105c126d1094c77ef65dc",
+      "recall": 1.0,
       "reference_ink": 204,
       "reference_sha256": "c5ffffb1f43a3e489d386b6c950d47f190781956771912ca5ac781622ce4d9ae",
-      "render_sha256": "c82c4cf257f83a1fd8d7ffe7b1d17aa7ce0169c08286953e55dfb1e0bb339fcf",
+      "render_sha256": "ef4159d85a56c8fa4eac5bd3e7ec6a0f3393b6347c5ddb85160860762714b3bb",
       "requested_dimensions": [
         128,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "a3ac16089902e74b4eaf4af58334d4f9dc72c1094ac9a40d63ee88a261d405ad",
       "status": "rendered",
-      "width": 384
+      "width": 128
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -56324,40 +56374,42 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "cd3a0649683f9f6159e617bf7e14646163495b1f7e6bb223a253dd79ac2ca251",
+      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "canvas_disagreement": 0.0,
       "case": "width-late-shrink",
-      "comparison_diagnostic": "Native dimensions differ; no padding, crop, alignment or score applied",
-      "comparison_status": "canvas_mismatch",
       "diagnostic": "",
-      "dimensions_match": false,
-      "exact": false,
+      "dimensions_match": true,
+      "exact": true,
+      "extra": 0,
       "group": "zq610",
-      "height": 200,
-      "ink": 162,
+      "height": 2030,
+      "ink": 324,
+      "ink_exact": true,
+      "iou": 1.0,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-27T03:29:36Z",
+      "missing": 0,
+      "observed_utc": "2026-09-29T19:03:24Z",
       "output_dimensions": [
-        120,
-        200
-      ],
-      "profile": "pinned library defaults; exact source and native requested canvas",
-      "raw_png_sha256": "8b88ae0cbaab3b0745eb7aa96b71168f36aa8434389a911225b53a061ec5ddee",
-      "reference_dimensions": [
         384,
         2030
       ],
+      "output_ink": 324,
+      "precision": 1.0,
+      "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas",
+      "raw_png_sha256": "ef4462f9690044fdd3d002d6772f46d61354301ce4b590b6fbeda7b16370da93",
+      "recall": 1.0,
       "reference_ink": 324,
       "reference_sha256": "a4caf42421a3176243e3525b7705856be9975149c912c476b2cae8dab08404c7",
-      "render_sha256": "dc56f54683f2bf6dae43929c5cf5a9f0a20bb7be392a32a93a553beebaa4eaab",
+      "render_sha256": "807d3e755023087d04d58213b445533049bf5a9f0a7d0b97da5789fa2a163f39",
       "requested_dimensions": [
         384,
         2030
       ],
       "returncode": 0,
-      "score": null,
+      "score": 1.0,
       "source_sha256": "7212cfeadd8d5db680f44639b9bc98f45552cb51c2efea3de47cf4a464811a0f",
       "status": "rendered",
-      "width": 120
+      "width": 384
     },
     {
       "adapter_identity_sha256": "8f67085e5419a5cf307ccc81301077125ba0048a689fb64f309afe4f30559380",
@@ -56588,7 +56640,7 @@
     },
     "zpl": {
       "fetch_url": "git@github.com:codyps/zpl.git",
-      "rev": "fb7d352340c1d39db0a7946a0a0eaf4a70bfcabf",
+      "rev": "e72ec442c94159bfe792c480c018690e234948e4",
       "url": "https://github.com/codyps/zpl",
       "version": "0.1.0"
     },

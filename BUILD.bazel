@@ -251,3 +251,15 @@ py_test(
     data = ["site/style.css", "site/site.js"],
     deps = [requirement("pillow")],
 )
+
+py_test(
+    name = "canvas_profile_test",
+    srcs = [
+        "build/canvas_profile_test.py",
+        "build/render.py",
+        "benchmarks/accuracy/pixels.py",
+    ],
+    main = "build/canvas_profile_test.py",
+    data = [":library_codyps-zpl"],
+    deps = [requirement("numpy"), requirement("pillow")],
+)

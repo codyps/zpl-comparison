@@ -3,6 +3,24 @@
 use std::{env, fs, hint::black_box, time::Instant};
 mod probe;
 
+#[cfg(feature = "codyps-zpl")]
+fn render_options(width: u32, height: u32) -> codyps_zpl::Options {
+    use codyps_zpl::render::profiles::{ZD621_203_DPI, ZQ610_PLUS_203_DPI};
+    // Select the captured device explicitly; dimensions alone do not select
+    // firmware behavior (in particular ZQ610 ^LL and preview width handling).
+    let profile = match env::var("ZPL_RENDER_PROFILE").as_deref() {
+        Ok("zq610-plus-203dpi") => ZQ610_PLUS_203_DPI,
+        Ok("zd621-203dpi") | Err(env::VarError::NotPresent) => ZD621_203_DPI,
+        other => panic!("unknown ZPL_RENDER_PROFILE: {other:?}"),
+    };
+    codyps_zpl::Options {
+        width,
+        height,
+        dpi: 203,
+        ..profile
+    }
+}
+
 fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
     #[cfg(feature = "codyps-zpl")]
     {
@@ -15,16 +33,8 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
             return count.to_le_bytes().to_vec();
         }
         use codyps_zpl::output::Adapter;
-        let doc = codyps_zpl::render(
-            black_box(input),
-            codyps_zpl::Options {
-                width,
-                height,
-                dpi: 203,
-                ..Default::default()
-            },
-        )
-        .expect("render");
+        let doc =
+            codyps_zpl::render(black_box(input), render_options(width, height)).expect("render");
         assert_eq!(doc.labels.len(), 1);
         return codyps_zpl::output::Png.encode(&doc.labels[0]).expect("PNG");
     }

@@ -16,14 +16,18 @@ def zq610_matrix(ctx, files, compiled, catalog, libraries, invoke, stage):
             identity = {"case": name, "library": lib, "group": "zq610", "score": None,
                         "source_sha256": case["sha256"], "reference_sha256": case["png_sha256"],
                         "requested_dimensions": [case["width"], case["height"]],
-                        "profile": "pinned library defaults; exact source and native requested canvas"}
+                        "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas" if lib == "codyps-zpl" else "pinned library defaults; exact source and native requested canvas"}
             spec = {"source": files[case["source"]].path, "sha256": case["sha256"],
                     "width": case["width"], "height": case["height"], "row": identity, "timeout": 30}
+            if lib == "codyps-zpl":
+                spec["render_profile"] = "zq610-plus-203dpi"
             inputs = [files[case["source"]]]
             if ctx.attr.saved:
                 evidence = saved.get((name, lib))
                 if evidence == None:
                     fail("Missing saved ZQ610 candidate result: %s/%s; build suite_zq610_candidates and save results first" % (name, lib))
+                if lib == "codyps-zpl" and evidence.get("profile") != identity["profile"]:
+                    fail("Stale saved ZQ610 profile: " + name + "; rerender and save candidates")
                 if evidence["source_sha256"] != case["sha256"] or evidence["reference_sha256"] != case["png_sha256"]:
                     fail("Stale saved ZQ610 candidate evidence: %s/%s" % (name, lib))
                 png = files[root + "saved/images/" + name + "-" + lib + ".png"] if evidence["status"] in ["rendered", "blank"] else None

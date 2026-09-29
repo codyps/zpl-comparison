@@ -25,6 +25,27 @@ from build.stage import stage
 
 
 class PipelineTest(unittest.TestCase):
+    def test_render_profile_is_explicit_and_does_not_leak_from_environment(self):
+        library = self.root / "library"
+        library.mkdir()
+        (library / "command.json").write_text('["adapter"]')
+        spec = self.spec()
+        spec.pop("saved")
+        spec["library"] = str(library)
+
+        def execute(command, **kwargs):
+            self.assertEqual(kwargs["env"]["ZPL_RENDER_PROFILE"], expected)
+            Image.new("L", (2, 2), 0).save(command[4])
+            return subprocess.CompletedProcess(command, 0, b"", b"")
+
+        with patch.dict(os.environ, {"ZPL_RENDER_PROFILE": "ambient-invalid"}):
+            for expected in ("zd621-203dpi", "zq610-plus-203dpi"):
+                if expected == "zq610-plus-203dpi":
+                    spec["render_profile"] = expected
+                with patch("build.render.subprocess.run", side_effect=execute):
+                    render(spec, self.root / "result.json", self.root / expected)
+                self.assertEqual(json.loads((self.root / "result.json").read_text())["status"], "rendered")
+
     def test_native_canvas_mismatch_is_unscored_and_never_padded(self):
         images = self.root / "native-images"
         images.mkdir()

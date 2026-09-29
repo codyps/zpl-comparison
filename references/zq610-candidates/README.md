@@ -6,7 +6,8 @@ forge, go, ffi, binarykits, zplr and Labelary. Session repeatability captures
 remain provenance rather than duplicate scored test cases.
 
 The exact submitted ZPL is passed unchanged, with the native printer's width
-and height as adapter options. Candidates use their pinned library defaults.
+and height as adapter options. codyps-zpl explicitly uses `ZQ610_PLUS_203_DPI`; other candidates use their
+pinned library defaults. Dimensions alone do not select a device profile.
 The codyps-zpl candidate is the revision in sources.lock.json; the separate
 paired gallery measures the current checkout's ZQ610 profile. These identities
 are intentionally explicit, so a pinned older renderer is not represented as
@@ -17,6 +18,9 @@ cropping, resizing or alignment is used for metrics. Equal native canvases
 use directional ink counts and foreground IoU. Blank diagnostics, execution
 failures and uncaptured candidates remain visible and never become fabricated
 positive matches. Candidate raster hashes are checked before comparison.
+
+The [canvas dimension audit](../../docs/canvas-dimension-audit.md) lists the
+26 cases previously affected by the default ZD621 profile and the validation.
 
 ## Acquisition and offline generation
 

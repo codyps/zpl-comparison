@@ -39,7 +39,7 @@ SUITES = [
     ("conformance", "ZD621 · feature tests", "features", "render-conformance"),
     ("external-zpl", "ZD621 · example labels", "external", "external-zpl"),
     ("layout-accuracy", "ZD621 · font-free layout", "layout", "layout-accuracy"),
-    ("zq610-candidates", "ZQ610 Plus · renderer defaults", None, None),
+    ("zq610-candidates", "ZQ610 Plus · renderer candidates", None, None),
 ]
 E = lambda value: html.escape(str(value), quote=True)
 
