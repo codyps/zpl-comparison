@@ -118,15 +118,13 @@ def rows(*, native_preview=False):
             "symbol-" + path.stem,
             "barcode-families",
             "Reference symbol variant: " + path.stem,
-            # Preserve historical inputs except the corrected BR8 positive case,
-            # whose verified capture uses PW832 and uncompressed UPC-A data.
-            path.read_bytes()
-            if native_preview or path.stem == "databar_upce"
-            else path.read_bytes().replace(b"^PW832", b"^PW812"),
+            # Use the source's native 832-dot canvas. PW812 makes the HTTP
+            # preview round to 832 and shift every field ten dots right.
+            path.read_bytes(),
             document=True,
             source=str(path.relative_to(REPO)),
         )
-        result[-1]["width"] = 832 if native_preview or path.stem == "databar_upce" else 812
+        result[-1]["width"] = 832
 
     if native_preview:
         # Keep rounding out of ordinary symbol accuracy tests. These paired,

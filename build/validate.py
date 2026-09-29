@@ -22,6 +22,20 @@ for name, directory in [
         root / "test-data" / name / "manifest.json"
     ):
         raise ValueError("Stale printer capture corpus: " + name)
+    for batch in reference.get("refresh_batches", []):
+        batch_path = (root / batch["manifest"]).resolve()
+        if not batch_path.is_relative_to((root / "references").resolve()):
+            raise ValueError("Refresh batch escapes reference evidence")
+        if sha(batch_path) != batch["manifest_sha256"]:
+            raise ValueError("Refresh batch manifest changed")
+        selected = [case for case in cases if case["name"] in batch["cases"]]
+        fresh, fresh_images = reference_images(batch_path.parent, selected)
+        if set(fresh_images) != set(batch["cases"]):
+            raise ValueError("Incomplete refresh batch")
+        adopted = {row["name"]: row for row in reference["cases"]}
+        for row in fresh["cases"]:
+            if row["name"] in batch["cases"] and adopted.get(row["name"]) != row:
+                raise ValueError("Adopted reference differs from refresh batch")
     failures = {row["name"]: row for row in reference.get("failures", [])}
     for case in cases:
         if (

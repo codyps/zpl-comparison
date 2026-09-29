@@ -1,0 +1,1694 @@
+{
+  "schema": 1,
+  "service": "https://labelary.com/service.html",
+  "started_utc": "2026-09-29T17:41:08+00:00",
+  "completed_utc": "2026-09-29T17:41:49+00:00",
+  "renderer_version": null,
+  "identity": "UTC capture timestamps; no renderer version exposed",
+  "dpmm": 8,
+  "dimension_conversion": "inches = ceil(dots / 203 to six decimal places); avoids truncation below the requested dot",
+  "label_index": 0,
+  "status": "complete",
+  "cases": [
+    {
+      "suite": "conformance",
+      "name": "symbol-aztec",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-aztec.zpl",
+      "sha256": "227c0bae856655b365bb774bec7d83fefa16f19bf573fc32756b9afb3d995993",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:08+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:08+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:08 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-aztec.png",
+      "png_sha256": "948fb429b0592a161156d0391e62ceb2b70b248808b9e847cc7ad31440acf4ef",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-aztec_alias",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-aztec_alias.zpl",
+      "sha256": "e85ea234afef130997c4e52816670545b876ca8683495dae4d84efd1621b03af",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:08+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:09+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:09 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-aztec_alias.png",
+      "png_sha256": "b91b2f6475ff7ce3d4865b934fb756945926549769d1f947bf0f2f415d780240",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-aztec_rune",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-aztec_rune.zpl",
+      "sha256": "125de589369cf0c7c0bbc83e70c4030409ce7365d5f5f19901b10a14e570d273",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:09+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:10+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:10 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-aztec_rune.png",
+      "png_sha256": "803bd94116cd8a33b8354dbbe7c310be5842e6d616b8569cddd4b61b0e4cc673",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-codabar",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-codabar.zpl",
+      "sha256": "0a40058c769ec1e24fb5a973910cc906b4d882ffd321e0b234c2980a3e701958",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:10+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:11+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:11 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-codabar.png",
+      "png_sha256": "a27660bcfeb946968ca807539a8ac27557ab406de2ade4fc783a304b4a0214c2",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-codablock_a",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-codablock_a.zpl",
+      "sha256": "624ec097053d0ac7b771839be78dd7b958b2f4529622d860ce4b302a8effd7b3",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:11+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:11+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:11 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-codablock_a.png",
+      "png_sha256": "a05526a1db67097ff51a7a9934d6e5e8e8a3a0041ef968cd1b6c7ddfa023903a",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-codablock_e",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-codablock_e.zpl",
+      "sha256": "c5310eae9cd3962980ed63aa235afa84610d37a383ba7eb72de61bf3b7448923",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:11+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:12+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:12 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-codablock_e.png",
+      "png_sha256": "2c421387cf19cbdccb2514a430fc840a0b1feb85a7cca9c88897866e2de1f062",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-codablock_f",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-codablock_f.zpl",
+      "sha256": "808ed43478077960ce3758abbbc2671d47739e6daee3d6d986c23343c60a7c54",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:12+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:13+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:13 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-codablock_f.png",
+      "png_sha256": "ab4ce57a719436a0a464ea21d9b85a9ee455bdf292f1da6b6ebef15cfd9be6df",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-code11",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-code11.zpl",
+      "sha256": "d32689a37d72c3cd213db9daa4fbee77f39a1ddc0ebef9ec82a70cbcd4e2b603",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:13+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:13+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:13 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-code11.png",
+      "png_sha256": "3fab4fa634c3c76122307a6cdb6243dc983e6e466a31c6043b01f8878198caad",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-code128",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-code128.zpl",
+      "sha256": "85fd959b91acb595223af2323bb252a9ed9fda0a41a34e8573c1d6413b8baaaa",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:13+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:14+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:14 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-code128.png",
+      "png_sha256": "359d420d4b1c40ad273761fbafae35af3d656166319e2a0d3fe849c261d7a847",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-code39",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-code39.zpl",
+      "sha256": "0c3aa62b1549bef15fedec3c9a1d647c33ab4e5e96cce4c8de5ba68dce3aea69",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:14+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:15+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:15 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-code39.png",
+      "png_sha256": "1ebab7cdcbdf101ac4562c4db1fe08ef4e900fd2a316e35d642e1eb195e3ed9a",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-code49",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-code49.zpl",
+      "sha256": "dc2e6f8ca6607714aa72195d5c9047be9063623853fc2afea87ca88bcb991f82",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:15+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:15+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:15 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-code49.png",
+      "png_sha256": "9c3e11734a2c645763a75ea2058905ca683150b9970a4720a0566249ec3f2890",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-code93",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-code93.zpl",
+      "sha256": "634905534f6f5ae329514a7fc3afc4cc4741850011528526dbd80557795fce6a",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:15+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:16+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:16 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-code93.png",
+      "png_sha256": "0379e48d9170e56ef543b408fa00f7c5128f05416691fb2d82770427c066dade",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-composite_a",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-composite_a.zpl",
+      "sha256": "726642fe94a2cd7be7f28638a290be94759a9a2213b4c7a388de5df8ae7f2868",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:16+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:17+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:17 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-composite_a.png",
+      "png_sha256": "8d301ef5b397a05d41b1a1da28bc5ffd5709bae0bca4be82e0a901f9dfd85259",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-composite_b",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-composite_b.zpl",
+      "sha256": "971427617f683c279da66e9d8a6c20c2bb9b381ffa1fe4b629d7c07b9015ff2a",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:17+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:17+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:17 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-composite_b.png",
+      "png_sha256": "9c084afab26743e404953efe927a472fc8fe67db102f1a4dee7f0cca5d38ee05",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-composite_c",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-composite_c.zpl",
+      "sha256": "578a5c7890bb5a04aac94aec27815198bd8f0912a921deeae65719eecbcf5820",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:17+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:18+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:18 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-composite_c.png",
+      "png_sha256": "674002915fc367cfb46d22835e42e11dd9b36f788c0dc1d202a567e31215ee07",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-data_matrix",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-data_matrix.zpl",
+      "sha256": "7a3bb5d68899e55f54b4d126af141393173dce73b315cd186286a6ab90f2d711",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:18+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:19+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:19 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-data_matrix.png",
+      "png_sha256": "79af56b37e349af55113936535d46a7c2276fa493c1cd38c47396656dc21f05e",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-data_matrix_rectangular",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-data_matrix_rectangular.zpl",
+      "sha256": "9160917d497ad71382d1d2a5e7d5353e41042cfdf8b36aca41c825e69e3bb392",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:19+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:19+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:19 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-data_matrix_rectangular.png",
+      "png_sha256": "82e4d3f4a5d4b99c42df43ee195c5b5caab9eb5ee090d985606f23442f4d172d",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_ean13",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_ean13.zpl",
+      "sha256": "39d1267c9389722731040e83ddb9313fe97e49713721efe78feb45645bfc6c7f",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:19+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:20+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:20 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_ean13.png",
+      "png_sha256": "07ae88149d61a0faeda239adb99e1c04d17bd396449589dc1c621510fc936fd8",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_ean8",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_ean8.zpl",
+      "sha256": "04305076b879b991cc5f16f37ebcf9106b2d2980b0bfdc7362d327af7ee51a5e",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:20+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:21+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:21 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_ean8.png",
+      "png_sha256": "995e4c72dd161d8de32eb3ba084b2777f4af37f5a4f01e655975923648c905df",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_expanded",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_expanded.zpl",
+      "sha256": "eec9638001599a426ded0ad193534d69d3e9e3a4a20bd44fb398cbf2d43bfc78",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:21+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:22+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:22 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_expanded.png",
+      "png_sha256": "61eab9ea443cb35c26cf304cb76c1861465908dc87a921768728a713ae87b1dd",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_expanded_stacked",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_expanded_stacked.zpl",
+      "sha256": "f9d3d568b09dd3ddb90312d097921ef2239f4e54201084dbfb70ed266ebda549",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:22+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:22+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:22 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_expanded_stacked.png",
+      "png_sha256": "1cdcb9d47498ccf806c6b0e252fc42b325785c3c91df59ff82be9894df0d5a97",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_limited",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_limited.zpl",
+      "sha256": "14a1e79c7686ee8dfed1e23a135f4c1fb68005870e969e786c930c6742fa1c00",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:22+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:23+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:23 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_limited.png",
+      "png_sha256": "be4d5c5f1037efce2f7d66269e584202ab3c15b91c71b326cbcf038cc111ef03",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_omni",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_omni.zpl",
+      "sha256": "74c6e4c43217d49bcdf686f2726d7f79cd12bf644f073f1216eb5de87a7d2f4d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:23+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:24+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:24 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_omni.png",
+      "png_sha256": "da33d9ba09fa2f30e5207463d7b51c8a208fc57134e5c811e15b939093e71319",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_stacked",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_stacked.zpl",
+      "sha256": "8f705b79d4e12c5a6a2e6f17a47203df8713a9406ef346e1c9f58f4a64d8086e",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:24+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:24+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:24 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_stacked.png",
+      "png_sha256": "fc3e9b3cd1fe646245c90b01d772b322f661b6c4d1ca4e2c22316758c54632b7",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_stacked_omni",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_stacked_omni.zpl",
+      "sha256": "a3ad9ceb25b6c4def44f88a36fb8aea11c9d69f8122ed9fd5adf87589d5fa5d1",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:24+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:25+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:25 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_stacked_omni.png",
+      "png_sha256": "621d314f99d28cf8ba3d84ea498273908dc5a29abc5758cb1222dd88c68f39fc",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_truncated",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_truncated.zpl",
+      "sha256": "ea15f39d8eb7739910a1352ddc97309628e5f8863f00b475994da9c527eb506b",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:25+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:26+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:26 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_truncated.png",
+      "png_sha256": "d382162b4d807bb0caad8d4f08dfdc72af6404b0147412572b1ac4c5c4f89970",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_upca",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_upca.zpl",
+      "sha256": "93d4db16db6e2c911e22d41ca645f52bbe64fb8cbd3a8ebf1b5fe7247da8cedd",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:26+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:26+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:26 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_upca.png",
+      "png_sha256": "24c307ba97ffb8f5014de7d1db1c1f34b22fcc2fde67c777db03b822a84b2c17",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-databar_upce",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-databar_upce.zpl",
+      "sha256": "3b313e0cd1b56186d659f175c07a4c588b8d31cf9cd8046a5857328b79f2c562",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:26+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:27+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:27 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-databar_upce.png",
+      "png_sha256": "d3cf2f38158b36fad5a961fdbc7a7ce826c3d447a106886643ead66797951d80",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-ean13",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-ean13.zpl",
+      "sha256": "742a53a79ca60e0d6b19f4e0ae9b912ea90f165d5b57e5dceea9a11d3e42c440",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:27+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:28+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:28 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-ean13.png",
+      "png_sha256": "e2417fb7cdf7c228091d074189114dff3792e5f3cee34fc56dffec1ecbe1f54b",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-ean8",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-ean8.zpl",
+      "sha256": "9c84acd03d369be15828268478f6ee6d263536a2ef55c64b7bed5c80ac85deef",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:28+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:28+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:28 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-ean8.png",
+      "png_sha256": "bb169b4cae6a496f8a9779ed3b296bfc2a9d76f0f20659b577c9cc69776ddb7a",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-extension2",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-extension2.zpl",
+      "sha256": "f77d58036b4585eb3bcedf358ecf170fd230545cba4d39290efc64373470bed8",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:28+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:29+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:29 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-extension2.png",
+      "png_sha256": "e158542262839551408b8ae26d0d828965049bddd1532bf0f20fa57e815773f2",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-extension5",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-extension5.zpl",
+      "sha256": "4c25882ddd06875e72ed0071d6d63f0d765ea6d909916b3283310bfced558f87",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:29+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:30+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:30 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-extension5.png",
+      "png_sha256": "dbf887666fda111496dbe87125233c75a4ec63f7fbb8de29415a0752690534fe",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-industrial2of5",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-industrial2of5.zpl",
+      "sha256": "b0976c57662a03ea832f8a0816a46b248d6916719499cd4de8188c248bd83246",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:30+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:30+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:30 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-industrial2of5.png",
+      "png_sha256": "d0ffd6ef31713cbf4544c6ddffe4af621c7bcc32750a9583a3f15249bc3b322b",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-intelligent_mail",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-intelligent_mail.zpl",
+      "sha256": "bb2ca33c8c620dc70ba951d090e4b08be5c3a17aba8edb3857967f988221b940",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:30+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:31+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:31 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-intelligent_mail.png",
+      "png_sha256": "3959956292f6f14ba7de611c519518a5e95e626c653256fb577527e8eba61ef2",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-interleaved2of5",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-interleaved2of5.zpl",
+      "sha256": "8bbc33fc95caee703a8d8b96fa388344175c0ce9fd5e863565c7ab4f4165121b",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:31+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:32+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:32 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-interleaved2of5.png",
+      "png_sha256": "ee14ba07d7cbd0e0dfb2954a68fd8bc40dc4ac3b54d0cc3589276beeed417d66",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-logmars",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-logmars.zpl",
+      "sha256": "cf9c5f0b149e47e80a6356bbc49074d34d19429412cd5b3be799128cc21b5986",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:32+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:33+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:33 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-logmars.png",
+      "png_sha256": "c860f06c7afe76a281bd9e5362c29953d82de157143ad1381f4222530b240e86",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-maxicode2",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-maxicode2.zpl",
+      "sha256": "71fe256cde77dd71a940b7c5f9e57f5029a0055bdd8e987e183155d3ba23fce5",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:33+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:33+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:33 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-maxicode2.png",
+      "png_sha256": "55fd3c20d01f290c1dbff595d2b8918d098a1979cc6c20328cbeefb2d61bfbd3",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-maxicode3",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-maxicode3.zpl",
+      "sha256": "198d5253c17ee0adec4ff027f5602d6f029b0d2f20498a90c7fa677d983f7bc2",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:33+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:34+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:34 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-maxicode3.png",
+      "png_sha256": "c88a3880790a320b192c4866478c9f3f58ece92ae6ebcf0013fc2842c7619a0f",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-maxicode4",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-maxicode4.zpl",
+      "sha256": "83dddd887d6c9e459a17e4ac3e132d9331002f029e4bccaba256a6de97024968",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:34+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:35+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:35 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-maxicode4.png",
+      "png_sha256": "58e02ac3a8bc13952af0738b9ab18491e53e005443e9daa905f00e19bb6961ea",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-maxicode5",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-maxicode5.zpl",
+      "sha256": "a4a64a757bf1c3ccaebcb039d0d0ee8e312450ccdb45019841ed44ba1f1f35f5",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:35+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:35+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:35 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-maxicode5.png",
+      "png_sha256": "8a2f78c4d91e50a5feeac3c7331112b4c19a58616e74710a0cab701982f47435",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-maxicode6",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-maxicode6.zpl",
+      "sha256": "828e7b703fa4bb36edffb763ca776eb93e8450392460fb26dbafc61d60d47af7",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:35+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:36+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:36 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-maxicode6.png",
+      "png_sha256": "d04c9634ef8dadd94faebdd6d2bb3aa419c378b4f8241043962f1533f7310023",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-micropdf417_1",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-micropdf417_1.zpl",
+      "sha256": "4ab860b7a0761aeb7f4b06af020d8901e75014267374c5fbdf2450114497bfef",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:36+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:37+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:37 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-micropdf417_1.png",
+      "png_sha256": "d010f3b20a9f64aa8910bfa1d82af06f1857ce51cd7710d99e8839213930a819",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-micropdf417_3",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-micropdf417_3.zpl",
+      "sha256": "075cc8ecd929670fb48f261e2bc21d4f64614dffa1c3dc37528cf8a395b823d1",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:37+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:37+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:37 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-micropdf417_3.png",
+      "png_sha256": "728f8708ec6dd51437736273731c1a7593624280e3661bb268173e696737695f",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-micropdf417_4",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-micropdf417_4.zpl",
+      "sha256": "8ddd96c6fd7b4a0245c033b2d807bf48909ed6bd6233dead85be645c0ac4e441",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:37+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:38+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:38 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-micropdf417_4.png",
+      "png_sha256": "2f1a44a031f15d05be4a817aa4314d01ae59eb501c4d373e888dfa55350fa92e",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-msi_a",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-msi_a.zpl",
+      "sha256": "9e8d688719c54826ae10e2409108ad259af9d43e15540cbfff720d6dbfaaeeec",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:38+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:39+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:39 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-msi_a.png",
+      "png_sha256": "ffa9f1dbddba437cb967b38086c062ebbab9a90bee93e5e2e262ad6966d3f181",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-msi_b",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-msi_b.zpl",
+      "sha256": "b604eb8d1cb47071aca54eec971795cac8de14565698a2886634bd655e0e822d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:39+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:40+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:40 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-msi_b.png",
+      "png_sha256": "9665df1fc2441390b8b85ec88503e0349103aa3fdf63dca03e9d00a7c1bde1b2",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-msi_c",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-msi_c.zpl",
+      "sha256": "ee3ef08f896ac8c037e1cb7dd540a47b0bb698639059d1f9e5a0a3fb1aa9470d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:40+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:40+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:40 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-msi_c.png",
+      "png_sha256": "ff33affea471c606c5c022afee4e37d9752076cf79207a93e8e88462e7075e15",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-msi_d",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-msi_d.zpl",
+      "sha256": "167e07e1c964b78ba7018f4354210aaf4aa29e0a417b50622daaf2a1ee23ff04",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:40+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:41+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:41 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-msi_d.png",
+      "png_sha256": "14a0232acc6cf7795937d9af77bf1acf86a59fdb27451b9f7fb25f2a0a5436d7",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-pdf417",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-pdf417.zpl",
+      "sha256": "97b88879b55074538c8a9c550819f4e76e3c8ef1f438703530059aaa7914db98",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:41+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:42+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:42 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-pdf417.png",
+      "png_sha256": "0caa7d0c5e19b7df92ed6f348a7ff18c0a68e1a57a5930ad1c31dbc9f5b87684",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-pdf417_truncated",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-pdf417_truncated.zpl",
+      "sha256": "dcf88c20b91cd8057c6650a8ec08ae3efe7e4848f8dc8a7529b46d42ce16f0d9",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:42+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:42+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:42 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-pdf417_truncated.png",
+      "png_sha256": "446b154f0d19b4a195ff196925a08f60ef46bc26f27b4a49e97f29c3ca27e8d5",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-planet",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-planet.zpl",
+      "sha256": "c423f03f0fb39bf56c70472a6518462966ef1fa7807a12b3c269c25c2b8de06f",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:42+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:43+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:43 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-planet.png",
+      "png_sha256": "f810a36bdddfa88cbb6f292fb4a413340806d1f85eeafd425ad3ef8557194939",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-plessey",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-plessey.zpl",
+      "sha256": "e0ba555cda0485be6cef8f00cce6e8dea4818323c7c2a76790a660d93cd27e58",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:43+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:44+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:44 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-plessey.png",
+      "png_sha256": "7cc282e4b9065e1d3b59fde19072a0a3f6df7fe9c9690955384791dab651168d",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-postal_planet",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-postal_planet.zpl",
+      "sha256": "c33ea7a525d06e830d93d8adc4b20b58b2f4066de5f63aeb2ffcaf380b05e9b3",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:44+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:44+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:44 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-postal_planet.png",
+      "png_sha256": "c3f609b3caa7e3d60fd58312a5e5e10b84c04fe0b3dd9150b98548763f0bd5c4",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-postnet",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-postnet.zpl",
+      "sha256": "d4a2272088a1cb63f9d0ecb53a8688b4ea95996a0ea2a6578e6dfca4a230a78c",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:44+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:45+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:45 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-postnet.png",
+      "png_sha256": "59c3b53a7b50d5f52e023966c5218bddeb2dae7767000f64cc50836d8d5d92d3",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-qr",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-qr.zpl",
+      "sha256": "4751aff11c58850815b8428fcf199074e1fe7ea634b90138187518f505726370",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:45+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:46+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:46 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-qr.png",
+      "png_sha256": "bed5ee9678987b28de0e7e7e0786f8cb039d2c8db3ab299c632994c9c5b8e91d",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-standard2of5",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-standard2of5.zpl",
+      "sha256": "c057a88f340a2bcca096da5fdac5300b30273670a8ad286b06eb3f731a38fcdd",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:46+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:46+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:46 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-standard2of5.png",
+      "png_sha256": "70be4911d5de22261155d7397025ef8ddaeba001500a79cddbe0f48adba590b2",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-tlc39_linear",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-tlc39_linear.zpl",
+      "sha256": "ec25e9bb3400a3a351ce8c5aadbfe685702b5d75987b34392d7cb79338df69e5",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:46+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:47+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:47 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-tlc39_linear.png",
+      "png_sha256": "526c6c04552acdf590a566ba0adb66202012f9dd2a2a8fc0a044f7d0f9c62aa6",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-tlc39_linked",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-tlc39_linked.zpl",
+      "sha256": "62768cae0a2bfa5e196259d9459090b4875c05dd1c57ff686af883b7ab126550",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:47+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:48+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:48 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-tlc39_linked.png",
+      "png_sha256": "b0176ef14da93e18164777462716a66753400fbd7735bcec95c9d9aa86572307",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-upca",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-upca.zpl",
+      "sha256": "ae640d1f7d4b6e6ac3af33610b00b28e7055fb1d8288fb81d6ce8bf835276044",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:48+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:49+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:49 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-upca.png",
+      "png_sha256": "7b6b9d8bbef11fc791b2bbb8c5dc6b20eca430a2312e0af4d28dcdf677b9cc2c",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "symbol-upce",
+      "source": "test-data/render-conformance/cases/barcode-families/symbol-upce.zpl",
+      "sha256": "4f8e4563e0693cb497b8c189b16fdaf9529aa8671b2be536551510a7408fa9d7",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-29T17:41:49+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-29T17:41:49+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 17:41:49 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--symbol-upce.png",
+      "png_sha256": "ba56ea983061a6a1df37f3a6ff8bde91494e6d8434b683904959085738ebfa36",
+      "dimensions": [
+        832,
+        1218
+      ]
+    }
+  ]
+}

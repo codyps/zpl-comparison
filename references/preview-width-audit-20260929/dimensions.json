@@ -1,0 +1,890 @@
+{
+  "tracked_zpl_files": 1891,
+  "roles": {
+    "explicit-device-canvas-boundary-diagnostic": 372,
+    "historical-audit-evidence": 23,
+    "offline-only-performance-or-invalid-input": 41,
+    "ordinary-comparison": 626,
+    "preserved-upstream-original": 8,
+    "printer-capture-or-imported-reference": 821
+  },
+  "ordinary_manifest_cases": 626,
+  "unaligned": [
+    {
+      "file": "benchmarks/fixtures/boxes.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "benchmarks/fixtures/code128.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "benchmarks/fixtures/dense.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "benchmarks/fixtures/qr.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "benchmarks/fixtures/text.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "references/preview-state-audit-20260921/legacy-controls/repeat-end.zpl",
+      "role": "historical-audit-evidence",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "references/preview-state-audit-20260921/legacy-controls/shipping-after-dirty.zpl",
+      "role": "historical-audit-evidence",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "references/preview-state-audit-20260921/legacy-controls/shipping-clean.zpl",
+      "role": "historical-audit-evidence",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "references/preview-state-audit-20260921/legacy-controls/shipping-original.zpl",
+      "role": "historical-audit-evidence",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "references/preview-state-audit-20260921/legacy-controls/shipping-qr-height-one.zpl",
+      "role": "historical-audit-evidence",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "references/preview-state-audit-20260921/legacy-controls/shipping-units-reset.zpl",
+      "role": "historical-audit-evidence",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "references/preview-width-audit-20260929/printer/preview-width-812.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        256
+      ]
+    },
+    {
+      "file": "references/upstream-zd621/superseded-labelary/conformance--symbol-databar_upce.zpl",
+      "role": "historical-audit-evidence",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-120-fit/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        832,
+        120
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-120-fit/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        384,
+        120
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-120/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        832,
+        120
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-120/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        384,
+        120
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-300-fit/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        832,
+        300
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-300-fit/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        384,
+        300
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-300/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        832,
+        300
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-300/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        384,
+        300
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-400/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        832,
+        400
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/canvas-width-400/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        384,
+        400
+      ],
+      "lengths": [
+        2030
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-1/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        1
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-1/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        1
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-127/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        127
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-127/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        127
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-383/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        383
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-383/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        383
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-385/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        385
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-385/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        385
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-63/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        63
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-63/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        63
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-65/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        65
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-65/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        65
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-800/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        800
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-boundary-800/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        800
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-late-grow-fit/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        120,
+        384
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-late-grow-fit/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        120,
+        384
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-late-grow/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        120,
+        384
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-late-grow/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        120,
+        384
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-late-shrink/zd621.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        384,
+        120
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "references/zq610-plus-v1/width-late-shrink/zq610.zpl",
+      "role": "explicit-device-canvas-boundary-diagnostic",
+      "widths": [
+        384,
+        120
+      ],
+      "lengths": [
+        200
+      ]
+    },
+    {
+      "file": "test-data/external-zpl/cases/zpl-toolchain-product_label.zpl",
+      "role": "preserved-upstream-original",
+      "widths": [
+        609
+      ],
+      "lengths": [
+        406
+      ]
+    },
+    {
+      "file": "test-data/external-zpl/cases/zpl-toolchain-shipping_label.zpl",
+      "role": "preserved-upstream-original",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        1218
+      ]
+    },
+    {
+      "file": "test-data/external-zpl/cases/zpl-toolchain-usps_surepost_sample.zpl",
+      "role": "preserved-upstream-original",
+      "widths": [
+        812
+      ],
+      "lengths": []
+    },
+    {
+      "file": "test-data/external-zpl/cases/zpl-toolchain-warehouse_label.zpl",
+      "role": "preserved-upstream-original",
+      "widths": [
+        812
+      ],
+      "lengths": [
+        609
+      ]
+    },
+    {
+      "file": "test-data/external-zpl/cases/zplr-asset-matrix-pdf417.zpl",
+      "role": "preserved-upstream-original",
+      "widths": [
+        900
+      ],
+      "lengths": [
+        500
+      ]
+    },
+    {
+      "file": "test-data/external-zpl/cases/zplr-retail-upc-ean.zpl",
+      "role": "preserved-upstream-original",
+      "widths": [
+        800
+      ],
+      "lengths": [
+        500
+      ]
+    },
+    {
+      "file": "test-data/external-zpl/cases/zplr-stored-resources.zpl",
+      "role": "preserved-upstream-original",
+      "widths": [
+        420
+      ],
+      "lengths": [
+        220
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/alignment-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/alignment-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/base64-alphabet-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/base64-alphabet-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/base64-crc-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/base64-crc-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/binary-truncated-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/binary-truncated-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/ean-nonnumeric-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/ean-nonnumeric-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/encoding-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/encoding-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/field-hex-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/field-hex-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/field-hex-truncated-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/field-hex-truncated-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/missing-end-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/missing-end-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/negative-width-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/negative-width-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/orientation-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/orientation-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/qr-mask-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/qr-mask-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/qr-model-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/qr-model-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/raster-invalid-hex-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/raster-invalid-hex-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/raster-short-data-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/raster-short-data-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/truncated-command-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/truncated-command-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/z64-invalid-stream-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/z64-invalid-stream-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/zero-stride-control.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    },
+    {
+      "file": "test-data/invalid-zpl/cases/zero-stride-invalid.zpl",
+      "role": "offline-only-performance-or-invalid-input",
+      "widths": [
+        400
+      ],
+      "lengths": [
+        300
+      ]
+    }
+  ],
+  "failures": [],
+  "policy": "ZD621 preview widths use multiples of 64. LL is not rounded to 64; preserve requested heights. ZQ610 canvas/width diagnostics and historical originals retain exact bytes. Offline-only performance and invalid-input probes do not have printer comparisons."
+}

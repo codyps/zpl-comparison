@@ -34,16 +34,14 @@ finally:
 
 class ConformanceTests(unittest.TestCase):
     def test_native_preview_migration_isolates_rounding(self):
-        historical = {c['name']: c for c in generator.rows()}
+        regular = {c['name']: c for c in generator.rows()}
         native = {c['name']: c for c in generator.rows(native_preview=True)}
-        changed = {name for name in historical
-                   if historical[name]['zpl'] != native[name]['zpl']}
-        self.assertEqual(len(changed), 59)
-        for name in changed:
-            self.assertEqual(native[name]['group'], 'barcode-families')
-            self.assertEqual(native[name]['width'], 832)
-            self.assertEqual(native[name]['zpl'],
-                             historical[name]['zpl'].replace(b'^PW812', b'^PW832'))
+        for name, case in regular.items():
+            self.assertEqual(case['width'] % 64, 0, name)
+            self.assertEqual(case['zpl'], native[name]['zpl'])
+            if case['group'] == 'barcode-families':
+                self.assertEqual(case['width'], 832)
+                self.assertEqual(case['zpl'], (ROOT.parent / case['source']).read_bytes())
         low, high = (native[f'preview-width-{w}'] for w in (812, 832))
         self.assertEqual(low['zpl'].replace(b'^PW812', b'^PW832'), high['zpl'])
         self.assertEqual(low['group'], 'preview-width-rounding')
