@@ -34,11 +34,21 @@ def refresh(root, cargo):
     print(f"codyps/zpl {version} at {revision}")
 
 
-if __name__ == "__main__":
+def pinned_cargo():
     # Locate Cargo in the same pinned toolchain used by renderer compilation.
     files = subprocess.check_output(
         ["bazel", "cquery", "@native_tools//:rust", "--output=files"], text=True
     ).splitlines()
-    execution_root = subprocess.check_output(["bazel", "info", "execution_root"], text=True).strip()
-    cargo = next(Path(execution_root) / p for p in files if p.endswith("/bin/cargo"))
-    refresh(Path.cwd(), cargo)
+    # cquery fetches external repositories but does not populate the execroot's
+    # symlink forest on a fresh runner. Use the fetched repository directly.
+    # https://bazel.build/remote/output-directories#layout-diagram
+    output_base = subprocess.check_output(["bazel", "info", "output_base"], text=True).strip()
+    cargo = next(Path(output_base) / p for p in files
+                 if p.startswith("external/") and p.endswith("/rust/bin/cargo"))
+    if not cargo.is_file():
+        raise FileNotFoundError(f"Pinned Cargo was not fetched: {cargo}")
+    return cargo
+
+
+if __name__ == "__main__":
+    refresh(Path.cwd(), pinned_cargo())

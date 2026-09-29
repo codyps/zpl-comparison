@@ -12,6 +12,24 @@ spec.loader.exec_module(module)
 
 
 class RefreshTests(unittest.TestCase):
+    def test_pinned_cargo_before_execroot_symlinks_exist(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output_base = Path(temp)
+            relative = "external/+native_tools+native_tools/rust/bin/cargo"
+            cargo = output_base / relative
+            cargo.parent.mkdir(parents=True)
+            cargo.write_text("#!/bin/sh\necho pinned-cargo\n")
+            cargo.chmod(0o755)
+            self.assertFalse((output_base / "execroot").exists())
+            with patch.object(module.subprocess, "check_output", side_effect=[
+                "external/+native_tools+native_tools/host.txt\n" + relative + "\n",
+                str(output_base) + "\n",
+            ]) as query:
+                resolved = module.pinned_cargo()
+            self.assertEqual(resolved, cargo)
+            self.assertEqual(query.call_args.args[0], ["bazel", "info", "output_base"])
+            self.assertEqual(subprocess.check_output([resolved], text=True), "pinned-cargo\n")
+
     def test_resolved_checkout_is_recorded_without_changing_other_pins(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
