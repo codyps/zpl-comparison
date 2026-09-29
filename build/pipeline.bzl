@@ -171,7 +171,7 @@ def _impl(ctx):
         spec = {"suite": suite, "metadata": metadata, "cases": cases, "rows": [r.path for r in (compared if suite in ["accuracy", "layout-accuracy"] else rendered)], "comparisons": [r.path for r in compared], "relations": [r.path for r in relations], "captured_utc": saved["measured_utc"], "renders": renders, "base": base, "libraries": {lib: f.path for lib, f in compiled.items()}}
         inputs = compared + rendered + relations
         if ctx.attr.saved:
-            spec["saved_provenance"] = {k: saved[k] for k in ["host", "adapters", "measured_utc"] if k in saved}
+            spec["saved_provenance"] = {k: saved[k] for k in ["host", "adapters", "measured_utc", "refreshes", "refreshed_utc"] if k in saved}
         if suite == "accuracy":
             inputs += compiled.values()
         else:

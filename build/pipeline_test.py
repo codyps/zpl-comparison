@@ -22,6 +22,7 @@ from build.render import render
 from build.saved import saved
 from build.aggregate import aggregate
 from build.stage import stage
+from benchmarks import refresh_candidates
 
 
 class PipelineTest(unittest.TestCase):
@@ -45,6 +46,34 @@ class PipelineTest(unittest.TestCase):
                 with patch("build.render.subprocess.run", side_effect=execute):
                     render(spec, self.root / "result.json", self.root / expected)
                 self.assertEqual(json.loads((self.root / "result.json").read_text())["status"], "rendered")
+
+    def test_selective_refresh_preserves_other_library_evidence(self):
+        folder = self.root / "docs/benchmarks/accuracy"
+        images = folder / "images"
+        images.mkdir(parents=True)
+        untouched = b"unrelated saved bytes"
+        (images / "one-other.png").write_bytes(untouched)
+        library = self.root / "bazel-bin/library_example"
+        library.mkdir(parents=True)
+        (library / "identity.json").write_text("[]")
+        (self.root / "benchmarks").mkdir()
+        (self.root / "benchmarks/sources.lock.json").write_text("{}")
+        other = dict(case="one", library="other", status="rendered", observed_utc="original")
+        data = dict(cases=[dict(id="one", name="one", group="test", width=2, height=2,
+                               zpl="case.zpl", zpl_sha256=sha(self.source),
+                               reference="printer.png", png_sha256=sha(self.reference))],
+                    results=[dict(case="one", library="example", status="error"), other])
+        target = folder / "results.json"
+        target.write_text(json.dumps(data))
+        def saved_render(spec, metadata, output):
+            render({**spec, "saved": str(self.reference), "png_sha256": sha(self.reference)}, metadata, output)
+        with patch.object(refresh_candidates, "ROOT", self.root), patch.object(refresh_candidates, "render", side_effect=saved_render):
+            refresh_candidates.refresh("accuracy", ["example"], self.root / "work", save=True)
+        result = json.loads(target.read_text())
+        self.assertEqual(result["results"][1], other)
+        self.assertEqual((images / "one-other.png").read_bytes(), untouched)
+        self.assertTrue(result["results"][0]["exact"])
+        self.assertEqual(result["refreshes"][0]["libraries"], ["example"])
 
     def test_native_canvas_mismatch_is_unscored_and_never_padded(self):
         images = self.root / "native-images"

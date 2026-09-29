@@ -1,0 +1,4293 @@
+{
+  "counts": {
+    "accuracy/binarykits": {
+      "observations": 133,
+      "status_rendered": 133,
+      "zero_ink_overlap": 11
+    },
+    "accuracy/codyps-zpl": {
+      "observations": 133,
+      "status_rendered": 133
+    },
+    "accuracy/ffi": {
+      "observations": 133,
+      "status_rendered": 133,
+      "zero_ink_overlap": 11
+    },
+    "accuracy/forge": {
+      "blank_against_ink": 2,
+      "execution_error": 7,
+      "observations": 133,
+      "status_blank": 2,
+      "status_error": 7,
+      "status_rendered": 124,
+      "zero_ink_overlap": 11
+    },
+    "accuracy/go": {
+      "observations": 133,
+      "status_rendered": 133,
+      "zero_ink_overlap": 11
+    },
+    "accuracy/labelary": {
+      "blank_against_ink": 2,
+      "observations": 133,
+      "status_blank": 2,
+      "status_rendered": 131,
+      "zero_ink_overlap": 1
+    },
+    "accuracy/labelize": {
+      "execution_error": 5,
+      "observations": 133,
+      "status_error": 5,
+      "status_rendered": 128,
+      "zero_ink_overlap": 1
+    },
+    "accuracy/zplr": {
+      "observations": 133,
+      "status_rendered": 133,
+      "zero_ink_overlap": 1
+    },
+    "conformance/binarykits": {
+      "blank_against_ink": 6,
+      "execution_crashed": 11,
+      "observations": 598,
+      "status_blank": 13,
+      "status_crashed": 11,
+      "status_rendered": 574,
+      "unscored": 34,
+      "zero_ink_overlap": 5
+    },
+    "conformance/codyps-zpl": {
+      "execution_error": 19,
+      "observations": 598,
+      "status_blank": 11,
+      "status_error": 19,
+      "status_rendered": 568,
+      "unscored": 34
+    },
+    "conformance/ffi": {
+      "blank_against_ink": 3,
+      "observations": 598,
+      "status_blank": 12,
+      "status_rendered": 586,
+      "unscored": 34,
+      "zero_ink_overlap": 10
+    },
+    "conformance/forge": {
+      "blank_against_ink": 7,
+      "execution_error": 61,
+      "observations": 598,
+      "status_blank": 11,
+      "status_error": 61,
+      "status_rendered": 526,
+      "unscored": 34,
+      "zero_ink_overlap": 11
+    },
+    "conformance/go": {
+      "blank_against_ink": 3,
+      "observations": 598,
+      "status_blank": 12,
+      "status_rendered": 586,
+      "unscored": 34,
+      "zero_ink_overlap": 9
+    },
+    "conformance/labelary": {
+      "blank_against_ink": 11,
+      "execution_error": 2,
+      "observations": 598,
+      "status_blank": 26,
+      "status_error": 2,
+      "status_rendered": 570,
+      "unscored": 34,
+      "zero_ink_overlap": 3
+    },
+    "conformance/labelize": {
+      "blank_against_ink": 1,
+      "execution_error": 24,
+      "observations": 598,
+      "status_blank": 6,
+      "status_error": 24,
+      "status_rendered": 568,
+      "unscored": 34,
+      "zero_ink_overlap": 3
+    },
+    "conformance/zplr": {
+      "observations": 598,
+      "status_blank": 18,
+      "status_rendered": 580,
+      "unscored": 34,
+      "zero_ink_overlap": 7
+    },
+    "external-zpl/binarykits": {
+      "execution_crashed": 1,
+      "observations": 8,
+      "status_crashed": 1,
+      "status_rendered": 7
+    },
+    "external-zpl/codyps-zpl": {
+      "execution_error": 2,
+      "observations": 8,
+      "status_error": 2,
+      "status_rendered": 6
+    },
+    "external-zpl/ffi": {
+      "observations": 8,
+      "status_rendered": 8
+    },
+    "external-zpl/forge": {
+      "execution_error": 2,
+      "observations": 8,
+      "status_error": 2,
+      "status_rendered": 6
+    },
+    "external-zpl/go": {
+      "observations": 8,
+      "status_rendered": 8
+    },
+    "external-zpl/labelary": {
+      "observations": 8,
+      "status_rendered": 8
+    },
+    "external-zpl/labelize": {
+      "observations": 8,
+      "status_rendered": 8
+    },
+    "external-zpl/zplr": {
+      "observations": 8,
+      "status_rendered": 8
+    },
+    "layout-accuracy/binarykits": {
+      "observations": 20,
+      "status_rendered": 20
+    },
+    "layout-accuracy/codyps-zpl": {
+      "observations": 20,
+      "status_rendered": 20
+    },
+    "layout-accuracy/ffi": {
+      "observations": 20,
+      "status_rendered": 20
+    },
+    "layout-accuracy/forge": {
+      "observations": 20,
+      "status_rendered": 20
+    },
+    "layout-accuracy/go": {
+      "observations": 20,
+      "status_rendered": 20
+    },
+    "layout-accuracy/labelary": {
+      "observations": 20,
+      "status_rendered": 20,
+      "zero_ink_overlap": 1
+    },
+    "layout-accuracy/labelize": {
+      "observations": 20,
+      "status_rendered": 20
+    },
+    "layout-accuracy/zplr": {
+      "observations": 20,
+      "status_rendered": 20,
+      "zero_ink_overlap": 1
+    },
+    "zq610-candidates/binarykits": {
+      "observations": 120,
+      "status_blank": 1,
+      "status_rendered": 119,
+      "unscored": 1,
+      "zero_ink_overlap": 1
+    },
+    "zq610-candidates/codyps-zpl": {
+      "observations": 120,
+      "status_blank": 1,
+      "status_rendered": 119,
+      "unscored": 1
+    },
+    "zq610-candidates/ffi": {
+      "observations": 120,
+      "status_blank": 1,
+      "status_rendered": 119,
+      "unscored": 1,
+      "zero_ink_overlap": 1
+    },
+    "zq610-candidates/forge": {
+      "execution_error": 120,
+      "observations": 120,
+      "status_error": 120,
+      "unscored": 120
+    },
+    "zq610-candidates/go": {
+      "observations": 120,
+      "status_blank": 1,
+      "status_rendered": 119,
+      "unscored": 1,
+      "zero_ink_overlap": 1
+    },
+    "zq610-candidates/labelary": {
+      "blank_against_ink": 1,
+      "observations": 120,
+      "status_blank": 2,
+      "status_rendered": 118,
+      "unscored": 1,
+      "zero_ink_overlap": 3
+    },
+    "zq610-candidates/labelize": {
+      "execution_error": 4,
+      "observations": 120,
+      "status_blank": 1,
+      "status_error": 4,
+      "status_rendered": 115,
+      "unscored": 5,
+      "zero_ink_overlap": 3
+    },
+    "zq610-candidates/zplr": {
+      "observations": 120,
+      "status_blank": 1,
+      "status_rendered": 119,
+      "unscored": 1,
+      "zero_ink_overlap": 4
+    }
+  },
+  "failures": [
+    {
+      "case": "argument-fo-justify-0",
+      "diagnostic": "\nthread 'main' (47093184) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-fo-justify-1",
+      "diagnostic": "\nthread 'main' (47093297) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-fo-justify-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-fo-justify-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-fo-justify-2",
+      "diagnostic": "\nthread 'main' (47093405) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-layout-PO",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelize",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-layout-PO",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-layout-PO",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-variable-data",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-graphic-binary",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-graphic-binary",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-graphic-B64",
+      "diagnostic": "\nthread 'main' (47099030) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-1",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-model-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-L",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-L",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-L",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-L",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-M",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-M",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-M",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-M",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-Q",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-Q",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-Q",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-Q",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-H",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-H",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-H",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-ec-H",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-module-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-module-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-module-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-module-2",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-0",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-0",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-0",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-0",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-3",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-3",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-3",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-3",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-7",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-7",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-7",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "argument-qr-mask-7",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-codablock_a",
+      "diagnostic": "\nthread 'main' (47114783) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-codablock_e",
+      "diagnostic": "\nthread 'main' (47115855) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-codablock_f",
+      "diagnostic": "\nthread 'main' (47116597) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_upce",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode2",
+      "diagnostic": "\nthread 'main' (47147641) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode3",
+      "diagnostic": "\nthread 'main' (47148702) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode5",
+      "diagnostic": "\nthread 'main' (47150091) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode5",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode6",
+      "diagnostic": "\nthread 'main' (47150851) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-upce",
+      "diagnostic": "\nthread 'main' (47165448) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "accuracy",
+      "validity": "unspecified"
+    },
+    {
+      "case": "probe-fo-justify-0",
+      "diagnostic": "\nthread 'main' (47180047) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-fo-justify-1",
+      "diagnostic": "\nthread 'main' (47180204) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-fo-justify-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-fo-justify-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-fo-justify-2",
+      "diagnostic": "\nthread 'main' (47180234) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-layout-PO",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-layout-PO",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-layout-PO",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-variable-data",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-graphic-binary",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-graphic-binary",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-graphic-B64",
+      "diagnostic": "\nthread 'main' (47183780) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "probe-qr-model-1",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-codablock_a",
+      "diagnostic": "\nthread 'main' (11402097) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: ABC123\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-codablock_e",
+      "diagnostic": "\nthread 'main' (11402196) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-codablock_f",
+      "diagnostic": "\nthread 'main' (11402294) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Invalid start/end guards: HELLO WORLD\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-databar_upce",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-maxicode2",
+      "diagnostic": "\nthread 'main' (11405591) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-maxicode3",
+      "diagnostic": "\nthread 'main' (11405681) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-maxicode5",
+      "diagnostic": "\nthread 'main' (11405930) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-maxicode5",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-maxicode6",
+      "diagnostic": "\nthread 'main' (11406013) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-upce",
+      "diagnostic": "\nthread 'main' (11408628) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "printer-databar-retail-upce-00425261",
+      "diagnostic": "\nthread 'main' (11846887) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "printer-databar-retail-upce-01230000045",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-databar-retail-upce-01234000005",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-databar-retail-upce-01234500006",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-databar-retail-upce-04210000526",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-databar-retail-upce-042100005264",
+      "diagnostic": "\nthread 'main' (11846901) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "printer-databar-retail-upce-042526",
+      "diagnostic": "\nthread 'main' (11846907) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "printer-databar-retail-upce-0425261",
+      "diagnostic": "\nthread 'main' (11846913) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "printer-databar-retail-upce-original-invalid",
+      "diagnostic": "\nthread 'main' (11846922) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 86, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "printer-retail-data-length-B8",
+      "diagnostic": "\nthread 'main' (47197331) panicked at src/main.rs:63:14:\nPNG: \"EAN-8: expected 7 or 8 digits, got 1\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-length-B8",
+      "diagnostic": "\nthread 'main' (47197328) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 1\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-length-BE",
+      "diagnostic": "\nthread 'main' (47197459) panicked at src/main.rs:63:14:\nPNG: \"EAN-13: need at least 12 digits, got 1\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-length-BE",
+      "diagnostic": "\nthread 'main' (47197397) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 1\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-length-BE",
+      "diagnostic": "Unhandled exception. System.Exception: Error on zpl element \"   1234\": Contents should only contain digits, but got ' '\n ---> System.ArgumentException: Contents should only contain digits, but got ' '\n   at ZXing.OneD.UPCEANReader.getStandardUPCEANChecksum(String s)\n   at ZXing.OneD.EAN13Writer.encode(String contents)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.BarcodeEAN13ElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   --- End of inner exception stack trace ---\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-length-BU",
+      "diagnostic": "\nthread 'main' (47197504) panicked at src/main.rs:63:14:\nPNG: \"UPC-A: expected 11 or 12 digits, got 1\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-length-BU",
+      "diagnostic": "\nthread 'main' (47197528) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 2\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-length-BU",
+      "diagnostic": "Unhandled exception. System.Exception: Error on zpl element \"   1234\": Contents should only contain digits, but got ' '\n ---> System.ArgumentException: Contents should only contain digits, but got ' '\n   at ZXing.OneD.UPCEANReader.getStandardUPCEANChecksum(String s)\n   at ZXing.OneD.EAN13Writer.encode(String contents)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.BarcodeUpcAElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   --- End of inner exception stack trace ---\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-sweep-B8",
+      "diagnostic": "\nthread 'main' (47197611) panicked at src/main.rs:63:14:\nPNG: \"EAN-8: expected 7 or 8 digits, got 1\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-sweep-B8",
+      "diagnostic": "\nthread 'main' (47197625) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 1\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-sweep-BE",
+      "diagnostic": "\nthread 'main' (47197700) panicked at src/main.rs:63:14:\nPNG: \"EAN-13: need at least 12 digits, got 1\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-sweep-BE",
+      "diagnostic": "\nthread 'main' (47197703) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 1\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-sweep-BU",
+      "diagnostic": "\nthread 'main' (47197796) panicked at src/main.rs:63:14:\nPNG: \"UPC-A: expected 11 or 12 digits, got 1\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-sweep-BU",
+      "diagnostic": "\nthread 'main' (47197803) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 2\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-B8",
+      "diagnostic": "\nthread 'main' (47198047) panicked at src/main.rs:63:14:\nPNG: \"EAN-8: expected 7 or 8 digits, got 9\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-B8",
+      "diagnostic": "\nthread 'main' (47197925) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 9\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-BE",
+      "diagnostic": "\nthread 'main' (47198055) panicked at src/main.rs:63:14:\nPNG: \"EAN-13: need at least 12 digits, got 9\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-BE",
+      "diagnostic": "\nthread 'main' (47198065) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 9\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-BE",
+      "diagnostic": "Unhandled exception. System.Exception: Error on zpl element \"A12B34\": Contents should only contain digits, but got 'B'\n ---> System.ArgumentException: Contents should only contain digits, but got 'B'\n   at ZXing.OneD.UPCEANReader.getStandardUPCEANChecksum(String s)\n   at ZXing.OneD.EAN13Writer.encode(String contents)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.BarcodeEAN13ElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   --- End of inner exception stack trace ---\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-BU",
+      "diagnostic": "\nthread 'main' (47198198) panicked at src/main.rs:63:14:\nPNG: \"UPC-A: expected 11 or 12 digits, got 9\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-BU",
+      "diagnostic": "\nthread 'main' (47198202) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 12 or 13 digits long, but got 10\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-data-validation-BU",
+      "diagnostic": "Unhandled exception. System.Exception: Error on zpl element \"A12B34\": Contents should only contain digits, but got 'B'\n ---> System.ArgumentException: Contents should only contain digits, but got 'B'\n   at ZXing.OneD.UPCEANReader.getStandardUPCEANChecksum(String s)\n   at ZXing.OneD.EAN13Writer.encode(String contents)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.BarcodeUpcAElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   --- End of inner exception stack trace ---\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-caption-edges-holdouts",
+      "diagnostic": "\nthread 'main' (47198666) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Requested contents should be 7 or 8 digits long, but got 6\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-retail-caption-edges-discovery",
+      "diagnostic": "\nthread 'main' (47198851) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-character-remap-scope-clean",
+      "diagnostic": "\nthread 'main' (47199691) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-character-remap-space-barcode-clean",
+      "diagnostic": "\nthread 'main' (47199798) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-character-remap-retail-positive",
+      "diagnostic": "\nthread 'main' (47199911) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-box-minimum-round-0",
+      "diagnostic": "\nthread 'main' (47200040) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Digit)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-box-minimum-round-1",
+      "diagnostic": "\nthread 'main' (47200173) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Digit)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "printer-box-minimum-round-8",
+      "diagnostic": "\nthread 'main' (47200362) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Digit)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "font-dim-0-0",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "font-dim-1-1",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "font-dim-1-1",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "font-dim-1-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-empty",
+      "diagnostic": "\nthread 'main' (47209884) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-N-0",
+      "diagnostic": "\nthread 'main' (47210638) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-N-1",
+      "diagnostic": "\nthread 'main' (47210793) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-N-2",
+      "diagnostic": "\nthread 'main' (47210827) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-N-0",
+      "diagnostic": "\nthread 'main' (47210987) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-N-1",
+      "diagnostic": "\nthread 'main' (47211037) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-N-2",
+      "diagnostic": "\nthread 'main' (47211239) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-R-0",
+      "diagnostic": "\nthread 'main' (47211153) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-R-1",
+      "diagnostic": "\nthread 'main' (47211317) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-R-2",
+      "diagnostic": "\nthread 'main' (47211365) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-R-0",
+      "diagnostic": "\nthread 'main' (47211534) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-R-1",
+      "diagnostic": "\nthread 'main' (47211576) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-R-2",
+      "diagnostic": "\nthread 'main' (47211757) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-I-0",
+      "diagnostic": "\nthread 'main' (47211762) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-I-1",
+      "diagnostic": "\nthread 'main' (47211977) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-I-2",
+      "diagnostic": "\nthread 'main' (47212020) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-I-0",
+      "diagnostic": "\nthread 'main' (47212146) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-I-1",
+      "diagnostic": "\nthread 'main' (47212310) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-I-2",
+      "diagnostic": "\nthread 'main' (47212367) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-B-0",
+      "diagnostic": "\nthread 'main' (47212430) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-B-1",
+      "diagnostic": "\nthread 'main' (47212585) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FO-B-2",
+      "diagnostic": "\nthread 'main' (47212630) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-B-0",
+      "diagnostic": "\nthread 'main' (47212793) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-B-1",
+      "diagnostic": "\nthread 'main' (47212821) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "anchor-FT-B-2",
+      "diagnostic": "\nthread 'main' (47213028) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "offset-LH-100-200",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "offset-LH-100-200",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "page-transform-Y-N",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "page-transform-Y-N",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "page-transform-Y-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "page-transform-Y-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "block-1-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "block-spacing--12-indent-0",
+      "diagnostic": "\nthread 'main' (47217413) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-N-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "text-block-R-120",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-I-120",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-I-120",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-I-120",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-I-120",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-I-120",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-I-120",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "text-block-B-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "text-block-B-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "text-block-B-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "text-block-B-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "text-block-B-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "unicode-cyrillic",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "encoding-29",
+      "diagnostic": "\nthread 'main' (11848947) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "encoding-30",
+      "diagnostic": "\nthread 'main' (11848950) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "encoding-remap",
+      "diagnostic": "\nthread 'main' (47222366) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "numbered-fields-inline",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "numbered-fields-inline",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "interleaved-odd-digits",
+      "diagnostic": "Unhandled exception. System.Exception: Error on zpl element \"12345\": The length of the input should be even\n ---> System.ArgumentException: The length of the input should be even\n   at ZXing.OneD.ITFWriter.encode(String contents)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.Interleaved2of5BarcodeDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.ElementDrawerBase.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   --- End of inner exception stack trace ---\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "serial-000009-Y",
+      "diagnostic": "\nthread 'main' (47224680) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-N",
+      "diagnostic": "\nthread 'main' (47224823) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-N",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-N",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-N",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-N",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-000009-N",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-A009Z-Y",
+      "diagnostic": "\nthread 'main' (47225052) panicked at src/main.rs:45:9:\nassertion `left == right` failed\n  left: 0\n right: 1\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-A009Z-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-A009Z-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-A009Z-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "serial-A009Z-Y",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-A-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-A-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-A-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-A-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-A-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-A-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-B-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-B-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-B-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-B-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-B-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-B-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-C-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-C-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-C-R",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-C-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-C-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "symbol-graphic-C-I",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "raster-equivalent-B64",
+      "diagnostic": "\nthread 'main' (47231292) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "raster-equivalent-binary",
+      "diagnostic": "\nthread 'main' (47231638) panicked at src/main.rs:69:50:\ncalled `Result::unwrap()` on an `Err` value: Utf8Error { valid_up_to: 86, error_len: Some(1) }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "raster-equivalent-binary",
+      "diagnostic": "Unhandled exception. System.Text.DecoderFallbackException: Unable to translate bytes [FF] at index 86 from specified code page to Unicode.\n   at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, Int32 index)\n   at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, Int32 index)\n   at System.Text.Encoding.GetCharCountWithFallback(ReadOnlySpan`1 bytes, Int32 originalBytesLength, DecoderNLS decoder)\n   at System.Text.Encoding.GetCharCountWithFallback(Byte* pBytesOriginal, Int32 originalByteCount, Int32 bytesConsumedSoFar)\n   at System.Text.UTF8Encoding.GetCharCount(Byte* bytes, Int32 count)\n   at System.String.CreateStringFromEncoding(Byte* bytes, Int32 byteLength, Encoding encoding)\n   at System.Text.UTF8Encoding.GetString(Byte[] bytes, Int32 index, Int32 count)\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 10\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "raster-fill-rle",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "raster-binary-command-bytes",
+      "diagnostic": "\nthread 'main' (47232728) panicked at src/main.rs:69:50:\ncalled `Result::unwrap()` on an `Err` value: Utf8Error { valid_up_to: 91, error_len: Some(1) }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "raster-binary-command-bytes",
+      "diagnostic": "Unhandled exception. System.Text.DecoderFallbackException: Unable to translate bytes [FF] at index 91 from specified code page to Unicode.\n   at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, Int32 index)\n   at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, Int32 index)\n   at System.Text.Encoding.GetCharCountWithFallback(ReadOnlySpan`1 bytes, Int32 originalBytesLength, DecoderNLS decoder)\n   at System.Text.Encoding.GetCharCountWithFallback(Byte* pBytesOriginal, Int32 originalByteCount, Int32 bytesConsumedSoFar)\n   at System.Text.UTF8Encoding.GetCharCount(Byte* bytes, Int32 count)\n   at System.String.CreateStringFromEncoding(Byte* bytes, Int32 byteLength, Encoding encoding)\n   at System.Text.UTF8Encoding.GetString(Byte[] bytes, Int32 index, Int32 count)\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 10\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "datamatrix-quality-0",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "datamatrix-quality-50",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "datamatrix-quality-80",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "datamatrix-quality-100",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "datamatrix-quality-140",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "pdf417-security-8-N",
+      "diagnostic": "\nthread 'main' (47244237) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "pdf417-security-8-Y",
+      "diagnostic": "\nthread 'main' (47244311) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "valid"
+    },
+    {
+      "case": "pdf417-structured-origins-1",
+      "diagnostic": "\nthread 'main' (47244389) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "pdf417-structured-origins-1",
+      "diagnostic": "\nthread 'main' (47244384) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "pdf417-structured-origins-1",
+      "diagnostic": "Unhandled exception. ZXing.WriterException: Unable to fit message in columns\n   at ZXing.PDF417.Internal.PDF417.determineDimensions(Int32 sourceCodeWords, Int32 errorCorrectionCodeWords, Int32 longDimension, Int32 shortDimension, Int32& aspectRatio)\n   at ZXing.PDF417.Internal.PDF417.generateBarcodeLogic(String msg, Int32 errorCorrectionLevel, Int32 longDimension, Int32 shortDimension, Int32& aspectRatio, Boolean autoECI)\n   at ZXing.PDF417.PDF417Writer.bitMatrixFromEncoder(PDF417 encoder, String contents, Int32 errorCorrectionLevel, Int32 width, Int32 height, Int32 margin, Int32 aspectRatio, Boolean autoECI)\n   at ZXing.PDF417.PDF417Writer.encode(String contents, BarcodeFormat format, Int32 width, Int32 height, IDictionary`2 hints)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.Pdf417ElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.ElementDrawerBase.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "pdf417-structured-origins-3",
+      "diagnostic": "\nthread 'main' (47244562) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "pdf417-structured-origins-3",
+      "diagnostic": "\nthread 'main' (47244535) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "pdf417-structured-origins-3",
+      "diagnostic": "Unhandled exception. ZXing.WriterException: Unable to fit message in columns\n   at ZXing.PDF417.Internal.PDF417.determineDimensions(Int32 sourceCodeWords, Int32 errorCorrectionCodeWords, Int32 longDimension, Int32 shortDimension, Int32& aspectRatio)\n   at ZXing.PDF417.Internal.PDF417.generateBarcodeLogic(String msg, Int32 errorCorrectionLevel, Int32 longDimension, Int32 shortDimension, Int32& aspectRatio, Boolean autoECI)\n   at ZXing.PDF417.PDF417Writer.bitMatrixFromEncoder(PDF417 encoder, String contents, Int32 errorCorrectionLevel, Int32 width, Int32 height, Int32 margin, Int32 aspectRatio, Boolean autoECI)\n   at ZXing.PDF417.PDF417Writer.encode(String contents, BarcodeFormat format, Int32 width, Int32 height, IDictionary`2 hints)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.Pdf417ElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.ElementDrawerBase.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "structured-exclude-B7",
+      "diagnostic": "\nthread 'main' (47244626) panicked at src/main.rs:63:14:\nPNG: \"PDF417 encoding failed: WriterException - Unable to fit message in columns\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "structured-exclude-B7",
+      "diagnostic": "\nthread 'main' (47244629) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: WriterException - Unable to fit message in columns\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "structured-exclude-B7",
+      "diagnostic": "Unhandled exception. ZXing.WriterException: Unable to fit message in columns\n   at ZXing.PDF417.Internal.PDF417.determineDimensions(Int32 sourceCodeWords, Int32 errorCorrectionCodeWords, Int32 longDimension, Int32 shortDimension, Int32& aspectRatio)\n   at ZXing.PDF417.Internal.PDF417.generateBarcodeLogic(String msg, Int32 errorCorrectionLevel, Int32 longDimension, Int32 shortDimension, Int32& aspectRatio, Boolean autoECI)\n   at ZXing.PDF417.PDF417Writer.bitMatrixFromEncoder(PDF417 encoder, String contents, Int32 errorCorrectionLevel, Int32 width, Int32 height, Int32 margin, Int32 aspectRatio, Boolean autoECI)\n   at ZXing.PDF417.PDF417Writer.encode(String contents, BarcodeFormat format, Int32 width, Int32 height, IDictionary`2 hints)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.Pdf417ElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.ElementDrawerBase.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "boundary"
+    },
+    {
+      "case": "invalid-bad-orientation",
+      "diagnostic": "\nthread 'main' (11850184) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"unsupported orientation\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-negative-width",
+      "diagnostic": "\nthread 'main' (11850187) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"invalid shape dimensions\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-negative-width",
+      "diagnostic": "\nthread 'main' (47250785) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Digit)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-alignment",
+      "diagnostic": "\nthread 'main' (11850190) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-hex",
+      "diagnostic": "\nthread 'main' (11850198) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 77, message: \"invalid hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-truncated-hex",
+      "diagnostic": "\nthread 'main' (11850206) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 77, message: \"truncated field hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-raster-count",
+      "diagnostic": "\nthread 'main' (11850211) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"graphic byte count mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-raster-count",
+      "diagnostic": "Labelary HTTP 404: ERROR: Requested 1st label but ZPL generated no labels\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-zero-raster-stride",
+      "diagnostic": "\nthread 'main' (11850213) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"invalid graphic count\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-zero-raster-stride",
+      "diagnostic": "\nthread 'main' (47251554) panicked at /tmp/zpl-comparison-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zpl-forge-0.3.2/src/forge/png.rs:418:45:\nchunk size must be non-zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-base64",
+      "diagnostic": "\nthread 'main' (11850215) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"ZPL framing error at byte 73: InvalidEncodedData\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-base64",
+      "diagnostic": "Labelary HTTP 404: ERROR: Requested 1st label but ZPL generated no labels\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelary",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-crc",
+      "diagnostic": "\nthread 'main' (11850217) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"graphic CRC mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-bad-crc",
+      "diagnostic": "\nthread 'main' (47251873) panicked at src/main.rs:44:14:\nparse: \"failed to decode hex string: hex decode error: invalid hex char: /\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-qr-model-invalid",
+      "diagnostic": "\nthread 'main' (11850219) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 85, message: \"BQ: parameter 2 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-qr-mask-invalid",
+      "diagnostic": "\nthread 'main' (11850223) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 85, message: \"BQ: parameter 5 out of range\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-ean-nonnumeric",
+      "diagnostic": "\nthread 'main' (47252245) panicked at src/main.rs:63:14:\nPNG: \"EAN-13: need at least 12 digits, got 0\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-ean-nonnumeric",
+      "diagnostic": "\nthread 'main' (47252206) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-ean-nonnumeric",
+      "diagnostic": "Unhandled exception. System.Exception: Error on zpl element \"ABCDEFGHIJKL\": Contents should only contain digits, but got 'L'\n ---> System.ArgumentException: Contents should only contain digits, but got 'L'\n   at ZXing.OneD.UPCEANReader.getStandardUPCEANChecksum(String s)\n   at ZXing.OneD.EAN13Writer.encode(String contents)\n   at BinaryKits.Zpl.Viewer.ElementDrawers.BarcodeEAN13ElementDrawer.Draw(ZplElementBase element, DrawerOptions options, SKPoint currentPosition, InternationalFont internationalFont, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   --- End of inner exception stack trace ---\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.DrawMulti(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at BinaryKits.Zpl.Viewer.ZplElementDrawer.Draw(IEnumerable`1 elements, Double labelWidth, Double labelHeight, Int32 printDensityDpmm)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 30\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-code39-empty",
+      "diagnostic": "\nthread 'main' (47252320) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "invalid-unknown-encoding",
+      "diagnostic": "\nthread 'main' (11850230) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "conformance",
+      "validity": "invalid"
+    },
+    {
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "layout-accuracy",
+      "validity": "valid"
+    },
+    {
+      "case": "layout-transform-Y-N",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "layout-accuracy",
+      "validity": "valid"
+    },
+    {
+      "case": "zpl-toolchain-usps_surepost_sample",
+      "diagnostic": "\nthread 'main' (10268176) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "external-zpl",
+      "validity": "boundary"
+    },
+    {
+      "case": "zplr-retail-upc-ean",
+      "diagnostic": "\nthread 'main' (11850429) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "external-zpl",
+      "validity": "boundary"
+    },
+    {
+      "case": "zplr-stored-resources",
+      "diagnostic": "\nthread 'main' (11850435) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 71, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "codyps-zpl",
+      "suite": "external-zpl",
+      "validity": "boundary"
+    },
+    {
+      "case": "zplr-stored-resources",
+      "diagnostic": "\nthread 'main' (10268452) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "external-zpl",
+      "validity": "boundary"
+    },
+    {
+      "case": "zplr-stored-resources",
+      "diagnostic": "Unhandled exception. System.InvalidOperationException: Could not find format R:CMPEX.ZPL\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetFormatLabelInfo(ZplRecallFormat recallFormat, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetMergedElements(LabelInfo rawLabelInfo, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.MergeFormats(List`1 rawLabelInfos)\n   at BinaryKits.Zpl.Viewer.ZplAnalyzer.Analyze(String zplData)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 27\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
+      "kinds": [
+        "execution_crashed"
+      ],
+      "library": "binarykits",
+      "suite": "external-zpl",
+      "validity": "boundary"
+    },
+    {
+      "case": "barcode-aztec",
+      "diagnostic": "\nthread 'main' (70487) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-aztec_alias",
+      "diagnostic": "\nthread 'main' (70488) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-aztec_rune",
+      "diagnostic": "\nthread 'main' (70494) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-codabar",
+      "diagnostic": "\nthread 'main' (70498) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-codablock_a",
+      "diagnostic": "\nthread 'main' (70499) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-codablock_e",
+      "diagnostic": "\nthread 'main' (70500) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-codablock_f",
+      "diagnostic": "\nthread 'main' (70502) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-code11",
+      "diagnostic": "\nthread 'main' (70503) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-code128",
+      "diagnostic": "\nthread 'main' (70504) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-code39",
+      "diagnostic": "\nthread 'main' (70508) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-code49",
+      "diagnostic": "\nthread 'main' (70509) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-code93",
+      "diagnostic": "\nthread 'main' (70514) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-composite_a",
+      "diagnostic": "\nthread 'main' (70517) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-composite_b",
+      "diagnostic": "\nthread 'main' (70523) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-composite_c",
+      "diagnostic": "\nthread 'main' (70527) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-data_matrix",
+      "diagnostic": "\nthread 'main' (70535) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-data_matrix_rectangular",
+      "diagnostic": "\nthread 'main' (70538) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_ean13",
+      "diagnostic": "\nthread 'main' (70550) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_ean8",
+      "diagnostic": "\nthread 'main' (70555) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_expanded",
+      "diagnostic": "\nthread 'main' (70556) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_expanded_stacked",
+      "diagnostic": "\nthread 'main' (70562) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_limited",
+      "diagnostic": "\nthread 'main' (70566) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_omni",
+      "diagnostic": "\nthread 'main' (70567) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_stacked",
+      "diagnostic": "\nthread 'main' (70568) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_stacked_omni",
+      "diagnostic": "\nthread 'main' (70569) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_truncated",
+      "diagnostic": "\nthread 'main' (70570) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_upca",
+      "diagnostic": "\nthread 'main' (70576) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_upce",
+      "diagnostic": "\nthread 'main' (70585) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-databar_upce",
+      "diagnostic": "",
+      "kinds": [
+        "blank_against_ink"
+      ],
+      "library": "labelary",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-ean13",
+      "diagnostic": "\nthread 'main' (70604) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-ean8",
+      "diagnostic": "\nthread 'main' (70613) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-extension2",
+      "diagnostic": "\nthread 'main' (70618) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-extension5",
+      "diagnostic": "\nthread 'main' (70628) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-industrial2of5",
+      "diagnostic": "\nthread 'main' (70634) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-intelligent_mail",
+      "diagnostic": "\nthread 'main' (70638) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-interleaved2of5",
+      "diagnostic": "\nthread 'main' (70640) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-logmars",
+      "diagnostic": "\nthread 'main' (70641) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode2",
+      "diagnostic": "\nthread 'main' (70642) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode2",
+      "diagnostic": "\nthread 'main' (73119) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 2 postal code must contain 1 to 9 digits\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode3",
+      "diagnostic": "\nthread 'main' (70646) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode3",
+      "diagnostic": "\nthread 'main' (73118) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 3 postal code must contain exactly 6 alphanumeric characters\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode4",
+      "diagnostic": "\nthread 'main' (70653) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode5",
+      "diagnostic": "\nthread 'main' (70654) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode5",
+      "diagnostic": "\nthread 'main' (73116) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 5 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode6",
+      "diagnostic": "\nthread 'main' (70660) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-maxicode6",
+      "diagnostic": "\nthread 'main' (73115) panicked at src/main.rs:63:14:\nPNG: \"MaxiCode mode 6 is not supported; expected 2, 3, or 4\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "labelize",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-micropdf417_1",
+      "diagnostic": "\nthread 'main' (70668) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-micropdf417_3",
+      "diagnostic": "\nthread 'main' (70670) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-micropdf417_4",
+      "diagnostic": "\nthread 'main' (70685) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-msi_a",
+      "diagnostic": "\nthread 'main' (70687) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-msi_b",
+      "diagnostic": "\nthread 'main' (70691) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-msi_c",
+      "diagnostic": "\nthread 'main' (70700) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-msi_d",
+      "diagnostic": "\nthread 'main' (70708) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-pdf417",
+      "diagnostic": "\nthread 'main' (70717) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-pdf417_truncated",
+      "diagnostic": "\nthread 'main' (70727) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-planet",
+      "diagnostic": "\nthread 'main' (70730) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-plessey",
+      "diagnostic": "\nthread 'main' (70731) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-postal_planet",
+      "diagnostic": "\nthread 'main' (70735) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-postnet",
+      "diagnostic": "\nthread 'main' (70742) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-qr",
+      "diagnostic": "\nthread 'main' (70752) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-standard2of5",
+      "diagnostic": "\nthread 'main' (70754) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-tlc39_linear",
+      "diagnostic": "\nthread 'main' (70758) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-tlc39_linked",
+      "diagnostic": "\nthread 'main' (70765) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-upca",
+      "diagnostic": "\nthread 'main' (70766) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "barcode-upce",
+      "diagnostic": "\nthread 'main' (70767) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-height-120",
+      "diagnostic": "\nthread 'main' (70769) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-height-2030",
+      "diagnostic": "\nthread 'main' (70770) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-height-400",
+      "diagnostic": "\nthread 'main' (70771) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-width-120-fit",
+      "diagnostic": "\nthread 'main' (70773) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-width-120",
+      "diagnostic": "\nthread 'main' (70772) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-width-300-fit",
+      "diagnostic": "\nthread 'main' (70776) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-width-300",
+      "diagnostic": "\nthread 'main' (70775) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-width-384",
+      "diagnostic": "\nthread 'main' (70780) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-width-400",
+      "diagnostic": "\nthread 'main' (70785) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "canvas-width-832",
+      "diagnostic": "\nthread 'main' (70792) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "graphic",
+      "diagnostic": "\nthread 'main' (70794) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-LS12",
+      "diagnostic": "\nthread 'main' (70795) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-LT0",
+      "diagnostic": "\nthread 'main' (70797) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-LT30",
+      "diagnostic": "\nthread 'main' (70801) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-LT30",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-LT30",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelize",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-LT30",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-PMN",
+      "diagnostic": "\nthread 'main' (70806) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-PMY",
+      "diagnostic": "\nthread 'main' (70808) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-PMY",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-PMY",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-POI",
+      "diagnostic": "\nthread 'main' (70811) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-POI",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelary",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-POI",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelize",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-POI",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "layout-PON",
+      "diagnostic": "\nthread 'main' (70813) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "shape-GB",
+      "diagnostic": "\nthread 'main' (70815) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "shape-GC",
+      "diagnostic": "\nthread 'main' (70818) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "shape-GD",
+      "diagnostic": "\nthread 'main' (70821) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "shape-GE",
+      "diagnostic": "\nthread 'main' (70823) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "smoke-aztec",
+      "diagnostic": "\nthread 'main' (70928) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "smoke-aztec_alias",
+      "diagnostic": "\nthread 'main' (70936) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "smoke-aztec_rune",
+      "diagnostic": "\nthread 'main' (70945) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "smoke-codabar",
+      "diagnostic": "\nthread 'main' (70946) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-0-B",
+      "diagnostic": "\nthread 'main' (70826) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-0-I",
+      "diagnostic": "\nthread 'main' (70832) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-0-N",
+      "diagnostic": "\nthread 'main' (70833) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-0-R",
+      "diagnostic": "\nthread 'main' (70836) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-A-B",
+      "diagnostic": "\nthread 'main' (70839) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-A-I-fit",
+      "diagnostic": "\nthread 'main' (70841) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-A-I",
+      "diagnostic": "\nthread 'main' (70840) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-A-N",
+      "diagnostic": "\nthread 'main' (70843) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-A-R",
+      "diagnostic": "\nthread 'main' (70845) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-D-B",
+      "diagnostic": "\nthread 'main' (70846) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-D-I-fit",
+      "diagnostic": "\nthread 'main' (70854) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-D-I",
+      "diagnostic": "\nthread 'main' (70849) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-D-N",
+      "diagnostic": "\nthread 'main' (70856) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-D-R",
+      "diagnostic": "\nthread 'main' (70861) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-E-B",
+      "diagnostic": "\nthread 'main' (70864) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-E-I-fit",
+      "diagnostic": "\nthread 'main' (70870) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-E-I",
+      "diagnostic": "\nthread 'main' (70868) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-E-N",
+      "diagnostic": "\nthread 'main' (70873) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-E-R",
+      "diagnostic": "\nthread 'main' (70874) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "text-block",
+      "diagnostic": "\nthread 'main' (70876) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "binarykits",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "ffi",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-1",
+      "diagnostic": "\nthread 'main' (70879) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "go",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-1",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "zplr",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-127",
+      "diagnostic": "\nthread 'main' (70881) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-128",
+      "diagnostic": "\nthread 'main' (70882) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-383",
+      "diagnostic": "\nthread 'main' (70887) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-384-fit",
+      "diagnostic": "\nthread 'main' (70901) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-384",
+      "diagnostic": "\nthread 'main' (70893) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-385",
+      "diagnostic": "\nthread 'main' (70904) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-63",
+      "diagnostic": "\nthread 'main' (70905) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-64",
+      "diagnostic": "\nthread 'main' (70908) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-65",
+      "diagnostic": "\nthread 'main' (70915) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-boundary-800",
+      "diagnostic": "\nthread 'main' (70917) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-late-grow-fit",
+      "diagnostic": "\nthread 'main' (70920) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-late-grow",
+      "diagnostic": "\nthread 'main' (70919) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-late-shrink",
+      "diagnostic": "\nthread 'main' (70925) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "kinds": [
+        "execution_error"
+      ],
+      "library": "forge",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    },
+    {
+      "case": "width-late-shrink",
+      "diagnostic": "",
+      "kinds": [
+        "zero_ink_overlap"
+      ],
+      "library": "labelize",
+      "suite": "zq610-candidates",
+      "validity": "unspecified"
+    }
+  ]
+}

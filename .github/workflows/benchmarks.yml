@@ -74,6 +74,7 @@ jobs:
       - name: Test publication and report runner
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'
+          python3 -m unittest benchmarks.test_audit_failures
           bazel test //:site_test //:report_runner_test //:pipeline_test //:overview_test --test_output=errors
       - name: Build pinned renderer libraries
         if: github.event.pull_request.head.repo.fork != true
@@ -83,6 +84,11 @@ jobs:
             --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" --jobs=2 \
             --profile="$RUNNER_TEMP/libraries.profile.gz" \
             --build_event_json_file="$RUNNER_TEMP/libraries.events.json"
+      - name: Test native adapter contracts
+        if: github.event.pull_request.head.repo.fork != true
+        run: |
+          bazel test //:canvas_profile_test //:adapter_contract_test \
+            --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" --jobs=2 --test_output=errors
       - name: Build local renders and reports
         if: github.event.pull_request.head.repo.fork != true
         timeout-minutes: 30

@@ -115,6 +115,7 @@ native_library(
         "benchmarks/adapters/dotnet/*.cs",
         "benchmarks/adapters/dotnet/*.csproj",
         "benchmarks/adapters/dotnet/*.json",
+        "benchmarks/adapters/dotnet/fonts/**",
     ]),
     library = "binarykits",
     toolchain = ["@native_tools//:dotnet"],
@@ -217,6 +218,7 @@ py_test(
         "build/check_action_graph.py",
         "build/pages.py",
         "build/pipeline_test.py",
+        "benchmarks/refresh_candidates.py",
         "build/render.py",
         "build/saved.py",
         "build/aggregate.py",
@@ -261,5 +263,17 @@ py_test(
     ],
     main = "build/canvas_profile_test.py",
     data = [":library_codyps-zpl"],
+    deps = [requirement("numpy"), requirement("pillow")],
+)
+
+py_test(
+    name = "adapter_contract_test",
+    srcs = [
+        "build/adapter_contract_test.py",
+        "build/render.py",
+        "benchmarks/accuracy/pixels.py",
+    ],
+    main = "build/adapter_contract_test.py",
+    data = [":library_binarykits", ":library_zplr"],
     deps = [requirement("numpy"), requirement("pillow")],
 )

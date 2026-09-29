@@ -17,6 +17,7 @@ GitHub Pages is the publication destination; the old `generated` branch is an ar
 - [Site generation and publication](site/README.md)
 - [Setup and provenance](PROVENANCE.md)
 - [Capture provenance](references/zq610-plus-v1/README.md)
+- [Total comparison failure audit](docs/total-failure-audit.md)
 
 ## License
 

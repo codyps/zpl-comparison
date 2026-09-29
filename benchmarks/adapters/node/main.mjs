@@ -1,10 +1,37 @@
 // Node-only benchmark driver; upstream APIs are linked in benchmarks/README.md.
 import fs from 'node:fs';
-const [library, mode, file, count, output] = process.argv.slice(2);
-const source = fs.readFileSync(file, 'utf8');
+const [library, mode, file, count, output, widthArg = "400", heightArg = "300"] = process.argv.slice(2);
+const width = Number(widthArg);
+const height = Number(heightArg);
+if (![width, height].every(value => Number.isSafeInteger(value) && value > 0)) throw new Error("canvas dimensions");
+// Match the other adapters: pass the requested canvas through the public API.
+const renderOptions = { printDensity: 8, width, height };
+const sourceBytes = fs.readFileSync(file);
 const n = Number(count);
 if (!Number.isSafeInteger(n) || n < 1) throw new Error('iterations');
 const api = await import(library);
+// JS strings represent raw graphic bytes as byte-valued characters, while
+// ordinary source text is UTF-8. Use the library's own byte-count-aware
+// tokenizer (including changed prefixes/delimiters) to locate binary spans.
+function sourceString(bytes) {
+  const utf8 = data => new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(data);
+  if (library !== 'zplr') return utf8(bytes);
+  const raw = bytes.toString('latin1');
+  const document = api.parseDocument(raw);
+  const commands = document.items.flatMap(item => item.kind === 'label' ? item.commands : [item]);
+  const binary = commands.filter(command =>
+    (command.canonical === '^GF' && ['B', 'C'].includes(command.parameters[0]?.trim().toUpperCase())) ||
+    (command.canonical === '~DY' && ['B', 'C'].includes(command.parameters[1]?.trim().toUpperCase())));
+  let cursor = 0;
+  let result = '';
+  for (const command of binary) {
+    result += utf8(bytes.subarray(cursor, command.span.start));
+    result += raw.slice(command.span.start, command.span.end);
+    cursor = command.span.end;
+  }
+  return result + utf8(bytes.subarray(cursor));
+}
+const source = sourceString(sourceBytes);
 async function operation() {
   if (library === 'jszpl') {
     const label = new api.Label();
@@ -23,7 +50,7 @@ async function operation() {
     return label.generateZPL();
   }
   if (mode === 'parse') return api.parseDocument(source);
-  const pngs = await api.renderZplPNG(source, { printDensity: 8 });
+  const pngs = await api.renderZplPNG(source, renderOptions);
   if (pngs.length !== 1) throw new Error('expected one label');
   return pngs[0];
 }
@@ -36,7 +63,7 @@ if (mode === 'probe-parse' || mode === 'probe-render') {
       for (const diagnostic of parsed.diagnostics) console.error(JSON.stringify(diagnostic));
       if (parsed.diagnostics.some(d => d.severity === 'error')) verdict = 'rejected';
     } else {
-      const images = await api.renderZplPNG(source, { printDensity: 8 });
+      const images = await api.renderZplPNG(source, renderOptions);
       result = images[0];
       if (!result) verdict = 'accepted-empty';
     }
