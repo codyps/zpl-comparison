@@ -37,7 +37,8 @@ jobs:
           bazelisk-cache: true
           disk-cache: true
           repository-cache: true
-          cache-save: ${{ github.event_name != 'pull_request' }}
+          # The action saves after failures too; PR caches are scoped to that PR.
+          cache-save: ${{ github.event.pull_request.head.repo.fork != true }}
       - name: Read pinned private source revision
         if: github.event.pull_request.head.repo.fork != true
         id: source
