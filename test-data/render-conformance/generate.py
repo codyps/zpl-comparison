@@ -947,7 +947,7 @@ def artifacts(cases=None, *, suite="render-conformance-v1"):
                 "file": filename,
                 "sha256": hashlib.sha256(data).hexdigest(),
                 "bytes": len(data),
-                "capture_eligible": c["validity"] != "invalid",
+                "capture_eligible": c["validity"] != "invalid" and c["oracle"] != "metamorphic",
                 "references": [
                     {"command": cmd, "pdf_page": int(PAGES[cmd])}
                     for cmd in c["commands"]

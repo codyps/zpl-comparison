@@ -40815,7 +40815,7 @@
       "file": "cases/encoding/encoding-remap-control.zpl",
       "sha256": "f480a862edeadfa74d2b3ead1f711af6220587b2f58c95bf5a844fb2eb264f5d",
       "bytes": 105,
-      "capture_eligible": true,
+      "capture_eligible": false,
       "references": [
         {
           "command": "^A",
@@ -40922,7 +40922,7 @@
       "file": "cases/encoding/encoding-remap-identity.zpl",
       "sha256": "374f3e5764d333d803d47316f4a695139e77f98df87055910d39eead3e638d56",
       "bytes": 109,
-      "capture_eligible": true,
+      "capture_eligible": false,
       "references": [
         {
           "command": "^A",

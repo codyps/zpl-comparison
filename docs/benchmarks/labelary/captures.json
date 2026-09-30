@@ -2,7 +2,7 @@
   "schema": 1,
   "service": "https://labelary.com/service.html",
   "started_utc": "2026-09-19T03:17:15+00:00",
-  "completed_utc": "2026-09-29T23:56:18+00:00",
+  "completed_utc": "2026-09-30T03:44:32+00:00",
   "renderer_version": null,
   "identity": "UTC capture timestamps; no renderer version exposed",
   "dpmm": 8,
@@ -21545,6 +21545,62 @@
         832,
         500
       ]
+    },
+    {
+      "suite": "conformance",
+      "name": "encoding-remap-control",
+      "source": "test-data/render-conformance/cases/encoding/encoding-remap-control.zpl",
+      "sha256": "f480a862edeadfa74d2b3ead1f711af6220587b2f58c95bf5a844fb2eb264f5d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-30T03:44:31+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-30T03:44:32+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Wed, 30 Sep 2026 03:44:32 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--encoding-remap-control.png",
+      "png_sha256": "69b0da935adbc3f96c5f9bc5294ea50709239cebc5762e2e197674512294ecf9",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "encoding-remap-identity",
+      "source": "test-data/render-conformance/cases/encoding/encoding-remap-identity.zpl",
+      "sha256": "374f3e5764d333d803d47316f4a695139e77f98df87055910d39eead3e638d56",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-09-30T03:44:32+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-09-30T03:44:32+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Wed, 30 Sep 2026 03:44:32 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--encoding-remap-identity.png",
+      "png_sha256": "69b0da935adbc3f96c5f9bc5294ea50709239cebc5762e2e197674512294ecf9",
+      "dimensions": [
+        832,
+        1218
+      ]
     }
   ],
   "extensions": [
@@ -21567,6 +21623,11 @@
       "started_utc": "2026-09-29T23:56:17+00:00",
       "previous_completed_utc": "2026-09-29T03:23:04+00:00",
       "existing_cases": 759
+    },
+    {
+      "started_utc": "2026-09-30T03:44:31+00:00",
+      "previous_completed_utc": "2026-09-29T23:56:18+00:00",
+      "existing_cases": 760
     }
   ],
   "superseded": [
