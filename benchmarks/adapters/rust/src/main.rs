@@ -136,7 +136,7 @@ fn main() {
     // Warm-up is outside the timer, but included in process peak RSS.
     let warmup = Instant::now();
     let mut warmed = 0;
-    while warmed < 3 || warmup.elapsed().as_millis() < 250 {
+    while warmed < 3 || (env::var("ZPL_BENCH_MEMORY").as_deref() != Ok("1") && warmup.elapsed().as_millis() < 250) {
         black_box(operation(&args[1], &input, width, height));
         warmed += 1;
     }

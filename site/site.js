@@ -59,7 +59,7 @@ for (const table of document.querySelectorAll("table[data-sortable]")) {
       heading.setAttribute("aria-sort", ascending ? "ascending" : "descending");
       const value = row => {
         const text = row.cells[column].textContent.trim();
-        return /^\d+(\.\d+)?(\s*(µs|ms|MiB))?$/.test(text) ? Number.parseFloat(text) : text;
+        return /^\d+(\.\d+)?(–\d+(\.\d+)?)?(\s*(µs|ms|MiB))?$/.test(text) ? Number.parseFloat(text) : text;
       };
       const rows = [...table.tBodies[0].rows];
       rows.sort((a, b) => {

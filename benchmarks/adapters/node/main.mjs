@@ -81,7 +81,7 @@ if (mode === "accuracy") {
 }
 let sink;
 const warmup = performance.now();
-for (let i = 0; i < 3 || performance.now() - warmup < 250; i++) sink = await operation();
+for (let i = 0; i < 3 || (process.env.ZPL_BENCH_MEMORY !== "1" && performance.now() - warmup < 250); i++) sink = await operation();
 const start = process.hrtime.bigint();
 let checksum = 0;
 for (let i = 0; i < n; i++) {

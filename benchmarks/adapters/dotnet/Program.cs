@@ -52,7 +52,7 @@ if (mode == "probe-parse" || mode == "probe-render") {
 }
 if (mode == "accuracy") { File.WriteAllBytes(args[3], Operation()); return; }
 var warmup = Stopwatch.StartNew();
-for (var i=0; i<3 || warmup.ElapsedMilliseconds < 250; i++) GC.KeepAlive(Operation());
+for (var i=0; i<3 || (Environment.GetEnvironmentVariable("ZPL_BENCH_MEMORY") != "1" && warmup.ElapsedMilliseconds < 250); i++) GC.KeepAlive(Operation());
 var start = Stopwatch.GetTimestamp();
 long checksum = 0;
 for (var i=0; i<n; i++) { var result=Operation(); checksum+=result.Length; GC.KeepAlive(result); }

@@ -1,3 +1,4 @@
+load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
 load("@report_deps//:requirements.bzl", "requirement")
 load("@rules_python//python:defs.bzl", "py_binary", "py_test")
 load("//:build/native.bzl", "native_library")
@@ -276,12 +277,15 @@ py_test(
     deps = [requirement("numpy"), requirement("pillow")],
 )
 
+cc_binary(name = "memory_runner", srcs = ["build/memory_runner.c"])
+cc_binary(name = "memory_fixture", srcs = ["build/memory_fixture.c"], testonly = True)
+
 # bazel run executes the measurement process every time; only compilation is cached.
 py_binary(
     name = "performance",
     srcs = ["build/performance.py", "benchmarks/run.py"],
     main = "build/performance.py",
-    data = [":render_libraries"],
+    data = [":render_libraries", ":memory_runner"],
     deps = [requirement("pillow")],
 )
 
@@ -289,5 +293,6 @@ py_test(
     name = "performance_test",
     srcs = ["build/performance_test.py", "build/performance.py", "build/native_build.py", "benchmarks/run.py"],
     main = "build/performance_test.py",
+    data = [":memory_runner", ":memory_fixture"],
     deps = [requirement("pillow")],
 )

@@ -15,6 +15,27 @@ spec.loader.exec_module(generate)
 
 
 class PublicationTests(unittest.TestCase):
+    def test_memory_page_identifies_protocol_and_sample_range(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            site = generate.Site(root / "input", root / "output")
+            site.performance = dict(timestamp_utc="test", sizes={},
+                memory=dict(warmup_operations=3, iterations=10, samples=5),
+                results=[dict(library="go", mode="parse", fixture="text", status="ok",
+                              median_ns=1000, peak_rss_bytes=2**20,
+                              min_peak_rss_bytes=2**19, max_peak_rss_bytes=2**21)])
+            rendered = []
+            def capture(title, body, **kwargs):
+                rendered.append(body)
+                raise StopIteration
+            site.write = capture
+            with self.assertRaises(StopIteration):
+                site.other_pages()
+            self.assertIn("Median peak RSS", rendered[0])
+            self.assertIn("0.50–2.00 MiB", rendered[0])
+            self.assertIn("10 measured operations", rendered[0])
+            self.assertIn("not per-operation allocation", rendered[0])
+
     def test_aztec_context_links_only_available_independent_checks(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

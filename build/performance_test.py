@@ -7,11 +7,36 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
+from benchmarks.run import measure
 from build.performance import collect
 from build.native_build import source_size
 
 
 class PerformanceTest(unittest.TestCase):
+    @unittest.skipUnless(sys.platform == "linux", "Linux pre-exec RSS regression")
+    def test_native_launcher_excludes_parent_and_keeps_transient_peak(self):
+        import os
+        root = Path(__file__).absolute().parents[1]
+        ballast = bytearray(64 * 2**20)
+        small = measure([str(root / "memory_fixture"), "8"], os.environ,
+                        launcher=root / "memory_runner")
+        large = measure([str(root / "memory_fixture"), "96"], os.environ,
+                        launcher=root / "memory_runner")
+        self.assertGreaterEqual(small["peak_rss_bytes"], 7 * 2**20)
+        self.assertLess(small["peak_rss_bytes"], len(ballast) // 2)
+        self.assertGreaterEqual(large["peak_rss_bytes"], 95 * 2**20)
+        self.assertEqual(small["memory_method"], "isolated-native-wait4")
+
+    def test_native_launcher_preserves_errors_and_timeout(self):
+        import os
+        launcher = Path(__file__).absolute().parents[1] / "memory_runner"
+        with self.assertRaisesRegex(RuntimeError, "Exit 7: deliberate"):
+            measure([sys.executable, "-c", "import sys; print('deliberate', file=sys.stderr); sys.exit(7)"],
+                    os.environ, launcher=launcher)
+        with self.assertRaisesRegex(RuntimeError, "Timed out"):
+            measure([sys.executable, "-c", "import time; time.sleep(30)"],
+                    os.environ, timeout=.05, launcher=launcher)
+
     def test_source_size_excludes_tests_and_counts_selected_implementation(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -62,6 +87,10 @@ print(json.dumps(dict(ns=ns, iterations=count, checksum=checksum)))
                 self.assertEqual(data['sizes']['go']['artifact_bytes'], 99)
                 self.assertEqual(row['status'], 'ok')
                 self.assertEqual(len(row['samples']), 2)
+                self.assertEqual([s['iterations'] for s in row['memory_samples']], [10, 10])
+                self.assertEqual(data['memory']['warmup_operations'], 3)
+                self.assertLessEqual(row['min_peak_rss_bytes'], row['peak_rss_bytes'])
+                self.assertLessEqual(row['peak_rss_bytes'], row['max_peak_rss_bytes'])
                 self.assertGreater(row['median_ns'], 0)
                 self.assertGreater(row['peak_rss_bytes'], 0)
                 self.assertEqual(next(r for r in data['results'] if r['mode'] == 'png')['status'], 'failed')

@@ -76,7 +76,7 @@ func main() {
 		panic("iterations")
 	}
 	warmup := time.Now()
-	for i := 0; i < 3 || time.Since(warmup) < 250*time.Millisecond; i++ {
+	for i := 0; i < 3 || (os.Getenv("ZPL_BENCH_MEMORY") != "1" && time.Since(warmup) < 250*time.Millisecond); i++ {
 		runtime.KeepAlive(operation(os.Args[1], source, width, height))
 	}
 	start := time.Now()

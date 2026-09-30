@@ -97,9 +97,12 @@ def node_files(name):
     ]
 
 
-def measure(command, env, timeout=90):
-    """wait4 gives *this child* peak RSS, never the parent's cumulative maximum."""
-    with tempfile.TemporaryFile() as out, tempfile.TemporaryFile() as err:
+def measure(command, env, timeout=90, launcher=None):
+    """Collect child timing; an optional native launcher isolates pre-exec RSS."""
+    with tempfile.TemporaryFile() as out, tempfile.TemporaryFile() as err, tempfile.TemporaryDirectory() as evidence:
+        memory_path = Path(evidence) / "memory.json"
+        if launcher:
+            command = [str(launcher), str(memory_path), *command]
         start = time.monotonic()
         proc = subprocess.Popen(
             command, stdout=out, stderr=err, env=env, start_new_session=True
@@ -126,6 +129,9 @@ def measure(command, env, timeout=90):
         value["peak_rss_bytes"] = usage.ru_maxrss * (
             1 if platform.system() == "Darwin" else 1024
         )
+        if launcher:
+            value["peak_rss_bytes"] = json.loads(memory_path.read_text())["peak_rss_bytes"]
+            value["memory_method"] = "isolated-native-wait4"
         value["process_seconds"] = time.monotonic() - start
         value["stderr"] = stderr[-3000:]
         return value

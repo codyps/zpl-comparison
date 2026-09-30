@@ -1006,6 +1006,13 @@ class Site:
             + (self.link(evidence, "Samples, host, output checks & versions (JSON)") if evidence else "Performance is collected in trusted CI runs; this preview has no timing measurements.")
             + "</p>"
         )
+        memory = data.get("memory")
+        if memory:
+            body += ("<p>Memory uses separate fresh processes with " + E(memory["warmup_operations"])
+                     + " warm-up operations, " + E(memory["iterations"]) + " measured operations and one output capture each. "
+                     + "Charts show the median process peak across " + E(memory["samples"])
+                     + " runs; tables also show the min–max range. A small native launcher excludes the Python controller’s inherited memory. "
+                     + "RSS includes runtime and startup; it is not per-operation allocation or retained heap.</p>")
         for mode, title in [
             ("parse", "Parsing"),
             ("png", "PNG rendering"),
@@ -1050,6 +1057,8 @@ class Site:
                             if r.get("peak_rss_bytes") is not None
                             else "Unavailable"
                         ),
+                        E(f"{r['min_peak_rss_bytes'] / 2**20:.2f}–{r['max_peak_rss_bytes'] / 2**20:.2f} MiB")
+                        if r.get("min_peak_rss_bytes") is not None else "Unavailable",
                         preview,
                     ]
                 )
@@ -1059,14 +1068,15 @@ class Site:
             body += (
                 "<h2>" + title + "</h2>"
                 + performance_chart(measured, "median_ns", 1e3, "µs", "Median duration · lower is faster")
-                + performance_chart(measured, "peak_rss_bytes", 2**20, "MiB", "Peak process memory · lower uses less")
+                + performance_chart(measured, "peak_rss_bytes", 2**20, "MiB", ("Median peak process memory · lower uses less" if memory else "Peak process memory · lower uses less"))
                 + "<p>Bars use a linear scale within each workload. Peak RSS includes the runtime, warm-up and output capture. Select a table heading to sort.</p>"
                 + table(
                     [
                         "Library",
                         "Workload",
                         "Median duration",
-                        "Peak process RSS",
+                        ("Median peak RSS" if memory else "Peak process RSS"),
+                        "Peak RSS min–max",
                         "Output sample",
                     ],
                     rows,
