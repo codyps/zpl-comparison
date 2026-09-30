@@ -508,3 +508,13 @@ header .nav-methodology:hover {
   min-width: 0;
 }
 .library-section-heading .heat strong { font-size: 1rem; }
+
+.metric-chart { margin: 1rem 0; padding: 1rem; border: 1px solid #ccd5df; border-radius: .4rem; }
+.metric-chart h4 { margin: 0 0 .7rem; }
+.metric-row { display: grid; grid-template-columns: minmax(7rem, 1fr) minmax(4rem, 3fr) minmax(7rem, 1fr); gap: .7rem; align-items: center; margin: .4rem 0; }
+.metric-track { background: #edf0f3; }
+.metric-bar { background: #1967a3; height: 1.1rem; min-width: 2px; }
+.metric-row strong { text-align: right; font-variant-numeric: tabular-nums; }
+th button { font: inherit; color: inherit; background: transparent; border: 0; cursor: pointer; text-align: left; text-decoration: underline; }
+th[aria-sort="ascending"] button::after { content: " ▲"; }
+th[aria-sort="descending"] button::after { content: " ▼"; }

@@ -55,7 +55,8 @@ def collect(libraries, fixtures, output, samples=5, seconds=0.2):
         rows.append(row)
     data = dict(schema=1, timestamp_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 host=dict(platform=platform.platform(), machine=platform.machine(), logical_cpus=os.cpu_count()),
-                samples=samples, target_seconds=seconds, seed=20260918, sizes={}, results=rows,
+                samples=samples, target_seconds=seconds, seed=20260918, sizes={name: json.loads((library / "size.json").read_text())
+                       for name, (library, _) in deployments.items()}, results=rows,
                 adapters={name: json.loads((library / "identity.json").read_text()) for name, (library, _) in deployments.items()},
                 ci={key: os.environ.get(key) for key in ("GITHUB_SHA", "GITHUB_RUN_ID", "GITHUB_RUN_ATTEMPT")})
     source_lock = fixtures.parent / "sources.lock.json"

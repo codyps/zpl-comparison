@@ -104,7 +104,7 @@ def table(headers, rows, caption, kind=""):
         + E(kind)
         + '" role="region" aria-label="'
         + E(caption)
-        + '" tabindex="0"><table><caption>'
+        + '" tabindex="0"><table' + (' data-sortable' if kind == "sortable" else "") + '><caption>'
         + E(caption)
         + "</caption><thead><tr>"
         + "".join('<th scope="col">' + h + "</th>" for h in headers)
@@ -119,6 +119,25 @@ def table(headers, rows, caption, kind=""):
         )
         + "</tbody></table></div>"
     )
+
+
+def performance_chart(rows, field, divisor, unit, title):
+    groups = []
+    for fixture in sorted({r["fixture"] for r in rows}):
+        measured = sorted([r for r in rows if r["fixture"] == fixture
+                           and r["status"] == "ok" and r.get(field) is not None],
+                          key=lambda r: r[field])
+        if not measured:
+            continue
+        maximum = max(r[field] for r in measured) or 1
+        bars = "".join(
+            '<div class="metric-row"><span>' + E(NAMES.get(r["library"], r["library"]))
+            + '</span><div class="metric-track"><div class="metric-bar" style="width:'
+            + str(100 * r[field] / maximum) + '%"></div></div><strong>'
+            + E(f'{r[field] / divisor:.3f} {unit}') + '</strong></div>'
+            for r in measured)
+        groups.append('<section class="metric-chart"><h4>' + E(fixture) + '</h4>' + bars + '</section>')
+    return '<h3>' + E(title) + '</h3>' + "".join(groups) if groups else ""
 
 
 def summary(rows):
@@ -993,7 +1012,7 @@ class Site:
             ("generate", "ZPL generation"),
         ]:
             rows = []
-            for r in data["results"]:
+            for r in sorted(data["results"], key=lambda r: (r["fixture"], r.get("median_ns", float("inf")), r["library"])):
                 if r["mode"] != mode:
                     continue
                 label = (
@@ -1036,13 +1055,12 @@ class Site:
                 )
             if not rows:
                 continue
-            chart = self.asset("docs/benchmarks/" + mode + ".svg", required=False)
+            measured = [r for r in data["results"] if r["mode"] == mode]
             body += (
-                "<h2>"
-                + title
-                + '</h2><div class="chart">'
-                + (self.image(chart, title + " timing chart") if chart else "")
-                + "</div>"
+                "<h2>" + title + "</h2>"
+                + performance_chart(measured, "median_ns", 1e6, "ms", "Median duration · lower is faster")
+                + performance_chart(measured, "peak_rss_bytes", 2**20, "MiB", "Peak process memory · lower uses less")
+                + "<p>Bars use a linear scale within each workload. Peak RSS includes the runtime, warm-up and output capture. Select a table heading to sort.</p>"
                 + table(
                     [
                         "Library",
@@ -1053,6 +1071,7 @@ class Site:
                     ],
                     rows,
                     title + " observations",
+                    kind="sortable",
                 )
             )
         body += "<h2>Deployment size</h2>" + table(
@@ -1066,7 +1085,8 @@ class Site:
                 for lib, r in data["sizes"].items()
             ],
             "Source and artifact sizes",
-        )
+            kind="sortable",
+        ) + "<p>Source counts cover selected implementation trees, excluding external dependencies. Artifact bytes include adapters and deployed dependencies, excluding shared runtimes and measurement metadata.</p>"
         self.write("Speed, memory & size", body)
         self.page = "categories/invalid.html"
         evidence = self.asset("docs/benchmarks/invalid/results.json")

@@ -51,3 +51,5 @@ where compatible and resolves changes required by that checkout. Both resolved
 lock files are uploaded as the `resolved-source-pins` artifact. Pull requests and
 local builds retain the checked-in revision. Saved observations keep their original
 version provenance; refreshing a build does not relabel historical measurements.
+
+Performance pages generate latency and peak RSS bars directly from saved JSON, grouped by operation and workload. Select table headings to sort ascending or descending. Adapter builds record source bytes, physical lines and file hashes alongside deployed artifact bytes; shared runtimes are excluded.

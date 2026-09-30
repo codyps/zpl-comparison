@@ -35,6 +35,18 @@ class PublicationTests(unittest.TestCase):
                 self.assertIn('symbol-' + variant + '.html', s.compatibility_context(
                     {**case, 'id': 'smoke-' + variant}))
 
+    def test_performance_charts_sort_within_workload_and_exclude_failures(self):
+        rows = [dict(library="go", fixture="text", status="ok", median_ns=2000000, peak_rss_bytes=2097152),
+                dict(library="labelize", fixture="text", status="ok", median_ns=1000000, peak_rss_bytes=1048576),
+                dict(library="forge", fixture="text", status="failed")]
+        for field, divisor, unit in [("median_ns", 1e6, "ms"), ("peak_rss_bytes", 2**20, "MiB")]:
+            chart = generate.performance_chart(rows, field, divisor, unit, "Comparison")
+            self.assertLess(chart.index("labelize"), chart.index("go-zpl"))
+            self.assertNotIn("zpl-forge", chart)
+            self.assertIn("width:50.0%", chart)
+            self.assertIn("1.000 " + unit, chart)
+        self.assertIn("data-sortable", generate.table(["Duration"], [["1"]], "Timings", "sortable"))
+
     def test_unscored_is_not_zero_and_failure_zero_is_preserved(self):
         self.assertEqual(
             generate.summary([{"score": 1}, {"score": 0}, {"score": None}]), (0.5, 2, 3)

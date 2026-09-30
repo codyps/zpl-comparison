@@ -7,7 +7,40 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import tomllib
 from pathlib import Path
+
+
+def source_size(root, name, native=None):
+    roots = {
+        "codyps-zpl": [root / "benchmarks/_work/zpl/zpl/src", root / "benchmarks/_work/zpl/raster-diff/src"],
+        "go": [root / "benchmarks/_work/go-zpl"],
+        "go-native": [root / "benchmarks/_work/go-zpl"],
+        "binarykits": [root / "benchmarks/_work/BinaryKits.Zpl/src/BinaryKits.Zpl.Viewer", root / "benchmarks/_work/BinaryKits.Zpl/src/BinaryKits.Zpl.Label"],
+        "zplr": [root / "benchmarks/_work/zplr/src"],
+    }
+    package = {"labelize": "labelize", "forge": "zpl-forge", "ffi": "zpl-rs"}.get(name)
+    if package:
+        roots[name] = [p.parent / "src" for p in (root / "vendor").glob("*/Cargo.toml")
+                       if tomllib.loads(p.read_text()).get("package", {}).get("name") == package]
+    selected = roots.get(name, [])
+    if not selected or any(not p.is_dir() for p in selected):
+        raise ValueError("Missing implementation source for " + name)
+    files = sorted({p for folder in selected for p in folder.rglob("*")
+                    if p.is_file() and p.suffix in {".rs", ".go", ".cs", ".ts", ".js"}
+                    and not any(part in {"cmd", "bin", "obj", "target", "node_modules", "examples", ".git"} for part in p.relative_to(folder).parts)
+                    and not any(mark in p.name for mark in ("_test.", ".test.", ".spec."))})
+    if not files:
+        raise ValueError("No implementation source files for " + name)
+    result = dict(bytes=sum(p.stat().st_size for p in files),
+                  lines=sum(len(p.read_bytes().splitlines()) for p in files), files=len(files),
+                  source_manifest=[dict(name=str(p.relative_to(root)), sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in files])
+    if name == "ffi":
+        go = json.loads((native / "size.json").read_text())
+        for field in ("bytes", "lines", "files"):
+            result[field] += go[field]
+        result["source_manifest"] += go["source_manifest"]
+    return result
 
 
 def build(spec, output):
@@ -138,6 +171,11 @@ def build(spec, output):
             shutil.copy2(tools / "dotnet/dotnet", output / "runtime/dotnet")
         else:
             raise ValueError(name)
+        size = source_size(root, name, Path(spec["native"]).resolve() if spec.get("native") else None)
+        deployed = [p for p in output.rglob("*") if p.is_file() and "runtime" not in p.relative_to(output).parts]
+        size["artifact_bytes"] = sum(p.stat().st_size for p in deployed)
+        size["artifact_manifest"] = [dict(name=str(p.relative_to(output)), sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in sorted(deployed)]
+        (output / "size.json").write_text(json.dumps(size) + "\n")
         # Runtime invocation is relocatable; no sandbox paths are embedded in metadata.
         command = (
             ["runtime/bin/node", "main.mjs", "zplr"]

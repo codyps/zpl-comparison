@@ -46,3 +46,30 @@ for (const comparison of document.querySelectorAll("[data-output-comparison]")) 
   toggle.addEventListener("change", update);
   update();
 }
+
+for (const table of document.querySelectorAll("table[data-sortable]")) {
+  for (const [column, heading] of [...table.tHead.rows[0].cells].entries()) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = heading.textContent;
+    heading.replaceChildren(button);
+    button.addEventListener("click", () => {
+      const ascending = heading.getAttribute("aria-sort") !== "ascending";
+      for (const cell of table.tHead.rows[0].cells) cell.removeAttribute("aria-sort");
+      heading.setAttribute("aria-sort", ascending ? "ascending" : "descending");
+      const value = row => {
+        const text = row.cells[column].textContent.trim();
+        return /^\d+(\.\d+)?(\s*(ms|MiB))?$/.test(text) ? Number.parseFloat(text) : text;
+      };
+      const rows = [...table.tBodies[0].rows];
+      rows.sort((a, b) => {
+        const x = value(a), y = value(b);
+        if (typeof x === "number" && typeof y !== "number") return -1;
+        if (typeof y === "number" && typeof x !== "number") return 1;
+        const order = typeof x === "number" ? x - y : x.localeCompare(y, undefined, {numeric: true});
+        return ascending ? order : -order;
+      });
+      table.tBodies[0].append(...rows);
+    });
+  }
+}

@@ -147,6 +147,7 @@ elif kind == "go":
     for cwd in [root / "benchmarks/adapters/go", root / "benchmarks/_work/go-zpl"]:
         run("go", "mod", "download", "all", cwd=cwd)
 elif kind == "node":
+    source("zplr", root / "benchmarks/_work/zplr")
     for name in ["package.json", "package-lock.json"]:
         copy("benchmarks/adapters/node/" + name, name)
     env["npm_config_cache"] = str(root / "npm-cache")
@@ -154,6 +155,7 @@ elif kind == "node":
     run("node", "lib/prebuild.mjs", "download", cwd=root / "node_modules/skia-canvas")
     shutil.rmtree(root / "npm-cache")
 elif kind == "dotnet":
+    source("BinaryKits.Zpl", root / "benchmarks/_work/BinaryKits.Zpl")
     for name in ["Comparison.csproj", "packages.lock.json"]:
         copy("benchmarks/adapters/dotnet/" + name, name)
     feed = root / "packages"

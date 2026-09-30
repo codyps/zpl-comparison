@@ -47,6 +47,7 @@ native_inputs(
     name = "node_inputs",
     kind = "node",
     manifests = [
+        "//:benchmarks/sources.lock.json",
         "//:benchmarks/adapters/node/package.json",
         "//:benchmarks/adapters/node/package-lock.json",
     ],
@@ -56,6 +57,7 @@ native_inputs(
     name = "dotnet_inputs",
     kind = "dotnet",
     manifests = [
+        "//:benchmarks/sources.lock.json",
         "//:benchmarks/adapters/dotnet/Comparison.csproj",
         "//:benchmarks/adapters/dotnet/packages.lock.json",
     ],
