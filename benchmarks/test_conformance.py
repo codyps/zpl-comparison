@@ -331,8 +331,8 @@ class ConformanceTests(unittest.TestCase):
     def test_external_examples_are_pinned_and_capture_scope_is_separate(self):
         directory = ROOT.parent / "test-data/external-zpl"
         manifest, cases = conformance.load_cases(directory)
-        self.assertEqual(len(cases), 8)
-        self.assertEqual(len({c["name"] for c in cases}), 8)
+        self.assertEqual(len(cases), 9)
+        self.assertEqual(len({c["name"] for c in cases}), 9)
         for source in manifest["sources"]:
             self.assertEqual(
                 conformance.metrics.sha(directory / source["license"]),
@@ -347,7 +347,7 @@ class ConformanceTests(unittest.TestCase):
         self.assertEqual(shipping["path"].read_bytes(), original.read_bytes().replace(b"^PW812", b"^PW832"))
         self.assertEqual(shipping["width"], 832)
         probes = capture.corpus_probes(directory)
-        self.assertEqual(len(probes), 9)  # Eight examples plus repeated control.
+        self.assertEqual(len(probes), 10)  # Nine examples plus repeated control.
         for case in cases:
             self.assertEqual(case["width"] % 64, 0)
             self.assertLessEqual(case["width"], 832)
@@ -357,7 +357,17 @@ class ConformanceTests(unittest.TestCase):
         _, images = conformance.reference_images(ROOT / "accuracy/external-reference", cases)
         self.assertEqual(len(images), 8)
         for case in cases:
-            self.assertEqual(images[case["name"]].shape, (case["height"], case["width"]))
+            if case.get("reference_unscored_reason"):
+                self.assertNotIn(case["name"], images)
+            else:
+                self.assertEqual(images[case["name"]].shape, (case["height"], case["width"]))
+        retail = next(c for c in cases if c["name"] == "zplr-retail-upc-ean")
+        utf8 = next(c for c in cases if c["name"] == "zplr-retail-upc-ean-utf8")
+        self.assertNotIn(b"^CI", retail["path"].read_bytes())
+        self.assertEqual(utf8["path"].read_bytes(), retail["path"].read_bytes().replace(b"^XA\n", b"^XA\n^CI28\n", 1))
+        self.assertIn(utf8["name"], images)
+        with self.assertRaisesRegex(ValueError, "Reference belongs to different input"):
+            conformance.reference_images(ROOT / "accuracy/external-reference", [dict(retail, sha256="0" * 64)])
 
     def test_ram_capture_scope_is_limited_to_reviewed_resources(self):
         _, cases = conformance.load_cases(SUITE.parent / "external-zpl")

@@ -120,41 +120,47 @@
     },
     "external-zpl/binarykits": {
       "execution_crashed": 1,
-      "observations": 8,
+      "observations": 9,
       "status_crashed": 1,
-      "status_rendered": 7
+      "status_rendered": 8,
+      "unscored": 1
     },
     "external-zpl/codyps-zpl": {
-      "execution_error": 2,
-      "observations": 8,
-      "status_error": 2,
-      "status_rendered": 6
+      "observations": 9,
+      "status_rendered": 9,
+      "unscored": 1
     },
     "external-zpl/ffi": {
-      "observations": 8,
-      "status_rendered": 8
+      "observations": 9,
+      "status_rendered": 9,
+      "unscored": 1
     },
     "external-zpl/forge": {
       "execution_error": 2,
-      "observations": 8,
+      "observations": 9,
       "status_error": 2,
-      "status_rendered": 6
+      "status_rendered": 7,
+      "unscored": 1
     },
     "external-zpl/go": {
-      "observations": 8,
-      "status_rendered": 8
+      "observations": 9,
+      "status_rendered": 9,
+      "unscored": 1
     },
     "external-zpl/labelary": {
-      "observations": 8,
-      "status_rendered": 8
+      "observations": 9,
+      "status_rendered": 9,
+      "unscored": 1
     },
     "external-zpl/labelize": {
-      "observations": 8,
-      "status_rendered": 8
+      "observations": 9,
+      "status_rendered": 9,
+      "unscored": 1
     },
     "external-zpl/zplr": {
-      "observations": 8,
-      "status_rendered": 8
+      "observations": 9,
+      "status_rendered": 9,
+      "unscored": 1
     },
     "layout-accuracy/binarykits": {
       "observations": 20,
@@ -1111,7 +1117,7 @@
     },
     {
       "case": "printer-databar-retail-upce-00425261",
-      "diagnostic": "\nthread 'main' (11846887) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12662292) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -1161,7 +1167,7 @@
     },
     {
       "case": "printer-databar-retail-upce-042100005264",
-      "diagnostic": "\nthread 'main' (11846901) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12662302) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -1171,7 +1177,7 @@
     },
     {
       "case": "printer-databar-retail-upce-042526",
-      "diagnostic": "\nthread 'main' (11846907) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12662305) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -1181,7 +1187,7 @@
     },
     {
       "case": "printer-databar-retail-upce-0425261",
-      "diagnostic": "\nthread 'main' (11846913) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12662307) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 81, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -1191,7 +1197,7 @@
     },
     {
       "case": "printer-databar-retail-upce-original-invalid",
-      "diagnostic": "\nthread 'main' (11846922) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 86, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12662319) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 86, message: \"^BR UPC-E requires 11 uncompressed UPC-A digits\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2011,7 +2017,7 @@
     },
     {
       "case": "encoding-29",
-      "diagnostic": "\nthread 'main' (11848947) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12664696) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2021,7 +2027,7 @@
     },
     {
       "case": "encoding-30",
-      "diagnostic": "\nthread 'main' (11848950) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12664698) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2631,7 +2637,7 @@
     },
     {
       "case": "invalid-bad-orientation",
-      "diagnostic": "\nthread 'main' (11850184) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"unsupported orientation\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666856) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"unsupported orientation\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2641,7 +2647,7 @@
     },
     {
       "case": "invalid-negative-width",
-      "diagnostic": "\nthread 'main' (11850187) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"invalid shape dimensions\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666859) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"invalid shape dimensions\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2661,7 +2667,7 @@
     },
     {
       "case": "invalid-bad-alignment",
-      "diagnostic": "\nthread 'main' (11850190) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666867) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"unsupported or invalid field block parameters\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2671,7 +2677,7 @@
     },
     {
       "case": "invalid-bad-hex",
-      "diagnostic": "\nthread 'main' (11850198) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 77, message: \"invalid hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666875) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 77, message: \"invalid hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2681,7 +2687,7 @@
     },
     {
       "case": "invalid-truncated-hex",
-      "diagnostic": "\nthread 'main' (11850206) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 77, message: \"truncated field hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666877) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 77, message: \"truncated field hex escape\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2691,7 +2697,7 @@
     },
     {
       "case": "invalid-bad-raster-count",
-      "diagnostic": "\nthread 'main' (11850211) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"graphic byte count mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666882) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"graphic byte count mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2711,7 +2717,7 @@
     },
     {
       "case": "invalid-zero-raster-stride",
-      "diagnostic": "\nthread 'main' (11850213) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"invalid graphic count\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666884) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"invalid graphic count\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2731,7 +2737,7 @@
     },
     {
       "case": "invalid-bad-base64",
-      "diagnostic": "\nthread 'main' (11850215) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"ZPL framing error at byte 73: InvalidEncodedData\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666886) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"ZPL framing error at byte 73: InvalidEncodedData\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2751,7 +2757,7 @@
     },
     {
       "case": "invalid-bad-crc",
-      "diagnostic": "\nthread 'main' (11850217) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"graphic CRC mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666891) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 73, message: \"graphic CRC mismatch\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2771,7 +2777,7 @@
     },
     {
       "case": "invalid-qr-model-invalid",
-      "diagnostic": "\nthread 'main' (11850219) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 85, message: \"BQ: parameter 2 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666893) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 85, message: \"BQ: parameter 2 mode unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2781,7 +2787,7 @@
     },
     {
       "case": "invalid-qr-mask-invalid",
-      "diagnostic": "\nthread 'main' (11850223) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 85, message: \"BQ: parameter 5 out of range\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666898) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 85, message: \"BQ: parameter 5 out of range\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2831,7 +2837,7 @@
     },
     {
       "case": "invalid-unknown-encoding",
-      "diagnostic": "\nthread 'main' (11850230) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12666909) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 65, message: \"character encoding unsupported\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2861,7 +2867,7 @@
     },
     {
       "case": "zpl-toolchain-usps_surepost_sample",
-      "diagnostic": "\nthread 'main' (10268176) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12595034) panicked at src/main.rs:89:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],
@@ -2870,28 +2876,8 @@
       "validity": "boundary"
     },
     {
-      "case": "zplr-retail-upc-ean",
-      "diagnostic": "\nthread 'main' (11850429) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "kinds": [
-        "execution_error"
-      ],
-      "library": "codyps-zpl",
-      "suite": "external-zpl",
-      "validity": "boundary"
-    },
-    {
       "case": "zplr-stored-resources",
-      "diagnostic": "\nthread 'main' (11850435) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 71, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "kinds": [
-        "execution_error"
-      ],
-      "library": "codyps-zpl",
-      "suite": "external-zpl",
-      "validity": "boundary"
-    },
-    {
-      "case": "zplr-stored-resources",
-      "diagnostic": "\nthread 'main' (10268452) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12595266) panicked at src/main.rs:84:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "kinds": [
         "execution_error"
       ],

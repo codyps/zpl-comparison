@@ -261,8 +261,6 @@ conformance	codyps-zpl	invalid-unknown-encoding	invalid	execution_error
 layout-accuracy	zplr	layout-transform-Y-N	valid	zero_ink_overlap
 layout-accuracy	labelary	layout-transform-Y-N	valid	zero_ink_overlap
 external-zpl	forge	zpl-toolchain-usps_surepost_sample	boundary	execution_error
-external-zpl	codyps-zpl	zplr-retail-upc-ean	boundary	execution_error
-external-zpl	codyps-zpl	zplr-stored-resources	boundary	execution_error
 external-zpl	forge	zplr-stored-resources	boundary	execution_error
 external-zpl	binarykits	zplr-stored-resources	boundary	execution_crashed
 zq610-candidates	forge	barcode-aztec	unspecified	execution_error

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "suite": "external-zpl-v1",
-  "manifest_sha256": "2178f2ea78138c24eb42f0ec377f85449055e69a3b835e6b52773f717b18905c",
+  "manifest_sha256": "368b2ec3d434c02e601f64f1dd40763fc4adc4b14ef7ed5f36c6abcc6f28da40",
   "measured_utc": "2026-09-29T03:23:04+00:00",
   "host": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
   "cases": [
@@ -251,12 +251,13 @@
         "^XZ"
       ],
       "purpose": "External retail example with explicit native-width preview canvas",
-      "notes": "Preview canvas: 832 \u00d7 500 dots. Original upstream example retained; dimension changes are recorded with the source.",
+      "notes": "Preview canvas: 832 \u00d7 500 dots. Original upstream example retained; dimension changes are recorded with the source. The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
       "derived_from": {
         "file": "cases/zplr-retail-upc-ean.zpl",
         "sha256": "5b4ac6cde195c92ffccfe5e739e0047d4c75c1148d34bd5e9c274b634cf63726",
         "change": "Explicit 832x500-dot canvas; width is a 64-dot multiple within the ZD621 preview limit"
-      }
+      },
+      "reference_unscored_reason": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison."
     },
     {
       "name": "zplr-stored-resources",
@@ -294,6 +295,42 @@
         "file": "cases/zplr-stored-resources.zpl",
         "sha256": "9d7e500c270b05aa7f4b54ecb4affd5798abf0cf9a1105a042a316e289e70559",
         "change": "Explicit 448x220-dot canvas; width is a 64-dot multiple within the ZD621 preview limit; Temporary RAM resource names changed to CMPEX to isolate the test"
+      }
+    },
+    {
+      "name": "zplr-retail-upc-ean-utf8",
+      "group": "retail",
+      "file": "cases/zplr-retail-upc-ean-utf8-native-width.zpl",
+      "sha256": "ba5cf7841e8af2e4b2e916ffdb915684bb3016c032f01017fc49a6d2280a3711",
+      "width": 832,
+      "height": 500,
+      "validity": "boundary",
+      "relation": null,
+      "capture_eligible": true,
+      "source": "https://github.com/le2ni/zplr/blob/1c94eadfc5afb494b4c92dd10ad4808bd3d19529/fixtures/retail-upc-ean.zpl",
+      "revision": "1c94eadfc5afb494b4c92dd10ad4808bd3d19529",
+      "license": "licenses/zplr.txt",
+      "commands": [
+        "^A0",
+        "^BE",
+        "^BU",
+        "^BY",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^GB",
+        "^LL",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "purpose": "Explicit UTF-8 variant of external retail example",
+      "notes": "Preserves the original retail case separately. Selects ^CI28 so UTF-8 C2 B7 prints the intended middle dot; requires its own printer reference.",
+      "derived_from": {
+        "file": "cases/zplr-retail-upc-ean-native-width.zpl",
+        "sha256": "6e06ba90d81d35a5793e8bc91df6ad63c2a1495065e5ca6ebb643d4540acba96",
+        "change": "Add ^CI28 immediately after ^XA; retain all original content and native canvas."
       }
     }
   ],
@@ -454,6 +491,24 @@
         ]
       },
       {
+        "name": "zplr-retail-upc-ean-utf8",
+        "group": "retail",
+        "command": "^A0 ^BE ^BU ^BY ^CI ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+        "arguments": "Explicit UTF-8 variant of external retail example",
+        "width": 832,
+        "height": 500,
+        "submission_mode": "inline-reset-canvas",
+        "object_name": "CMPACC",
+        "submitted_sha256": "845d6c1754610ef365d6773b4d497b7713f95502045647cb56620178dc0eb031",
+        "captured_utc": "2026-09-29T23:50:47Z",
+        "zpl_sha256": "ba5cf7841e8af2e4b2e916ffdb915684bb3016c032f01017fc49a6d2280a3711",
+        "png_sha256": "66beaf3fb4b9798162f61197f0b36cd08c9383d7dd303db7a1df2af9935852f7",
+        "printer_dimensions": [
+          832,
+          500
+        ]
+      },
+      {
         "name": "repeat-end",
         "group": "repeatability",
         "command": "^A0 ^BC ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
@@ -461,9 +516,9 @@
         "width": 832,
         "height": 1218,
         "submission_mode": "inline-reset-canvas",
-        "object_name": "CMPEXALL",
+        "object_name": "CMPACC",
         "submitted_sha256": "8c5982fcc7ada55af73bbf2cc7c391acbdfd2dd0e2846b8cdbcbb86ef9db5075",
-        "captured_utc": "2026-09-29T03:22:40Z",
+        "captured_utc": "2026-09-29T23:50:49Z",
         "zpl_sha256": "61de15a92b51f96677b75a732c0148bcb347c9c41393aec48c7a81fbe9f0dc51",
         "png_sha256": "7a4a37da5b509df7746da7d15e725519b774b8c917bd841cce3011b8b93ec3fc",
         "printer_dimensions": [
@@ -474,8 +529,15 @@
     ],
     "failures": [],
     "preview_reset_zpl": "^XA^CI0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^CI13,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,10^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
-    "corpus_sha256": "2178f2ea78138c24eb42f0ec377f85449055e69a3b835e6b52773f717b18905c",
-    "repeat_pixels_equal": true
+    "corpus_sha256": "368b2ec3d434c02e601f64f1dd40763fc4adc4b14ef7ed5f36c6abcc6f28da40",
+    "repeat_pixels_equal": true,
+    "corpus_history": [
+      "2178f2ea78138c24eb42f0ec377f85449055e69a3b835e6b52773f717b18905c",
+      "7d2617326081b2a7dcde58b3be48f8029b176b266c8e1cfa370b177a2f0f7acc"
+    ],
+    "resumed_utc": [
+      "2026-09-29T23:50:45Z"
+    ]
   },
   "results": [
     {
@@ -492,7 +554,7 @@
       "iou": 0.9194481819508162,
       "library": "codyps-zpl",
       "missing": 2336,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:37:43Z",
       "output_dimensions": [
         832,
         1218
@@ -508,71 +570,135 @@
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
+      "canvas_disagreement": 0.023233232284956423,
       "case": "zpl-toolchain-shipping_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 14802,
       "group": "shipping",
       "height": 1218,
       "ink": 65114,
+      "ink_exact": false,
+      "iou": 0.6812175043327556,
       "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:46Z",
+      "missing": 8742,
+      "observed_utc": "2026-09-30T00:21:49Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 65114,
+      "precision": 0.7726756150750991,
       "raw_png_sha256": "0ebe18766f839a7e4bd72d24f98daec8ae0cd33d6af0df879568756e8b918084",
+      "recall": 0.8519659972228808,
+      "reference_ink": 59054,
       "render_sha256": "784159f1f50e9cde320a9b2ed11be7177034cd1a34de5f4b460ba5aa253bd6bd",
       "returncode": 0,
+      "score": 0.6812175043327556,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
+      "canvas_disagreement": 0.056576236263736264,
       "case": "zpl-toolchain-shipping_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 30111,
       "group": "shipping",
       "height": 1218,
       "ink": 61943,
+      "ink_exact": false,
+      "iou": 0.3570010654404755,
       "library": "forge",
-      "observed_utc": "2026-09-29T03:23:46Z",
+      "missing": 27222,
+      "observed_utc": "2026-09-30T00:21:49Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 61943,
+      "precision": 0.5138918037550652,
       "raw_png_sha256": "0e1b597d32e519ee623be2ff8ab94ea20748bd536187d51fd8e3fa90bdb0a12a",
+      "recall": 0.5390320723405696,
+      "reference_ink": 59054,
       "render_sha256": "711b47d9b24580012cb27832a1b50ae46fb871d97ac4d7afcc83d812b7b87f11",
       "returncode": 0,
+      "score": 0.3570010654404755,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
+      "canvas_disagreement": 0.06318582638625742,
       "case": "zpl-toolchain-shipping_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 41726,
       "group": "shipping",
       "height": 1218,
       "ink": 78475,
+      "ink_exact": false,
+      "iou": 0.3646457630482239,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:46Z",
+      "missing": 22305,
+      "observed_utc": "2026-09-30T00:21:50Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 78475,
+      "precision": 0.4682892640968461,
       "raw_png_sha256": "852db307fee66419ea62d4e6d634f506fe4583c917cd06de8aafb2ffaf7672ab",
+      "recall": 0.6222948487824703,
+      "reference_ink": 59054,
       "render_sha256": "3e0622d880b3fd5e783e5d3119e2b8883b2f5e32fa5b8831ab0e41c26bc3d6a2",
       "returncode": 0,
+      "score": 0.3646457630482239,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
+      "canvas_disagreement": 0.06318582638625742,
       "case": "zpl-toolchain-shipping_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 41726,
       "group": "shipping",
       "height": 1218,
       "ink": 78475,
+      "ink_exact": false,
+      "iou": 0.3646457630482239,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:47Z",
+      "missing": 22305,
+      "observed_utc": "2026-09-30T00:21:51Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 78475,
+      "precision": 0.4682892640968461,
       "raw_png_sha256": "0342d1f00aaba7666b077414a1cc101e01597ec18056c20ba3dd0014795b8793",
+      "recall": 0.6222948487824703,
+      "reference_ink": 59054,
       "render_sha256": "3e0622d880b3fd5e783e5d3119e2b8883b2f5e32fa5b8831ab0e41c26bc3d6a2",
       "returncode": 0,
+      "score": 0.3646457630482239,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
       "canvas_disagreement": 0.04561386888973096,
@@ -588,7 +714,7 @@
       "iou": 0.45620103056398675,
       "library": "binarykits",
       "missing": 20276,
-      "observed_utc": "2026-09-29T21:21:19Z",
+      "observed_utc": "2026-09-30T00:21:52Z",
       "output_dimensions": [
         832,
         1218
@@ -620,7 +746,7 @@
       "iou": 0.3466791140288799,
       "library": "zplr",
       "missing": 36030,
-      "observed_utc": "2026-09-29T21:21:19Z",
+      "observed_utc": "2026-09-30T00:21:53Z",
       "output_dimensions": [
         832,
         1218
@@ -665,7 +791,7 @@
       "iou": 0.9197367945334249,
       "library": "codyps-zpl",
       "missing": 1061,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:37:43Z",
       "output_dimensions": [
         640,
         406
@@ -681,71 +807,135 @@
       "status": "rendered",
       "validity": "boundary",
       "width": 640,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
+      "canvas_disagreement": 0.040759698275862066,
       "case": "zpl-toolchain-product_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 5498,
       "group": "product",
       "height": 406,
       "ink": 26905,
+      "ink_exact": false,
+      "iou": 0.6690105631601975,
       "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:48Z",
+      "missing": 5093,
+      "observed_utc": "2026-09-30T00:21:57Z",
+      "output_dimensions": [
+        640,
+        406
+      ],
+      "output_ink": 26905,
+      "precision": 0.7956513659171158,
       "raw_png_sha256": "5562e0f3add62530b8bda1b5f0bb17e0aad0c0b84d67c1eef4ebf5ca7a58cc7e",
+      "recall": 0.807811320754717,
+      "reference_ink": 26500,
       "render_sha256": "76c8b29fddb4c2f5104d4767c6636b211668c26f75724cf2837331193b110f51",
       "returncode": 0,
+      "score": 0.6690105631601975,
       "status": "rendered",
       "validity": "boundary",
       "width": 640,
-      "score": null
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
+      "canvas_disagreement": 0.07708205049261084,
       "case": "zpl-toolchain-product_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 9526,
       "group": "product",
       "height": 406,
       "ink": 25523,
+      "ink_exact": false,
+      "iou": 0.4440404152556487,
       "library": "forge",
-      "observed_utc": "2026-09-29T03:23:48Z",
+      "missing": 10503,
+      "observed_utc": "2026-09-30T00:21:57Z",
+      "output_dimensions": [
+        640,
+        406
+      ],
+      "output_ink": 25523,
+      "precision": 0.6267680131645966,
       "raw_png_sha256": "9c4b7c50f9fbe4ae9c37f36cd1fe12b522a263f1fb2640db5b81e65f1dc99bdf",
+      "recall": 0.6036603773584905,
+      "reference_ink": 26500,
       "render_sha256": "8aff18ae50d0734b270aec60c7ae99b27954157f4bf3e11708fc62d06ad29877",
       "returncode": 0,
+      "score": 0.4440404152556487,
       "status": "rendered",
       "validity": "boundary",
       "width": 640,
-      "score": null
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
+      "canvas_disagreement": 0.09717518472906404,
       "case": "zpl-toolchain-product_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 9606,
       "group": "product",
       "height": 406,
       "ink": 20462,
+      "ink_exact": false,
+      "iou": 0.3006702487121254,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:48Z",
+      "missing": 15644,
+      "observed_utc": "2026-09-30T00:21:57Z",
+      "output_dimensions": [
+        640,
+        406
+      ],
+      "output_ink": 20462,
+      "precision": 0.5305444238099892,
       "raw_png_sha256": "97fa83f9f052bd35e160c0f3b309b463c3e8543e9ab16a04f9376d57b490e98f",
+      "recall": 0.4096603773584906,
+      "reference_ink": 26500,
       "render_sha256": "1254033c7fa6fecde848fedc5a86caea1a46d495a1f5226d7ac8764467888f68",
       "returncode": 0,
+      "score": 0.3006702487121254,
       "status": "rendered",
       "validity": "boundary",
       "width": 640,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
+      "canvas_disagreement": 0.09717518472906404,
       "case": "zpl-toolchain-product_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 9606,
       "group": "product",
       "height": 406,
       "ink": 20462,
+      "ink_exact": false,
+      "iou": 0.3006702487121254,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:49Z",
+      "missing": 15644,
+      "observed_utc": "2026-09-30T00:21:57Z",
+      "output_dimensions": [
+        640,
+        406
+      ],
+      "output_ink": 20462,
+      "precision": 0.5305444238099892,
       "raw_png_sha256": "0f39653e921d728345b1b66299703804c32e42fa704ebc8c00a9bce92116750b",
+      "recall": 0.4096603773584906,
+      "reference_ink": 26500,
       "render_sha256": "1254033c7fa6fecde848fedc5a86caea1a46d495a1f5226d7ac8764467888f68",
       "returncode": 0,
+      "score": 0.3006702487121254,
       "status": "rendered",
       "validity": "boundary",
       "width": 640,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
       "canvas_disagreement": 0.08539100985221675,
@@ -761,7 +951,7 @@
       "iou": 0.40708674042007376,
       "library": "binarykits",
       "missing": 11266,
-      "observed_utc": "2026-09-29T21:21:19Z",
+      "observed_utc": "2026-09-30T00:21:57Z",
       "output_dimensions": [
         640,
         406
@@ -793,7 +983,7 @@
       "iou": 0.6108680919228636,
       "library": "zplr",
       "missing": 6670,
-      "observed_utc": "2026-09-29T21:21:19Z",
+      "observed_utc": "2026-09-30T00:21:58Z",
       "output_dimensions": [
         640,
         406
@@ -838,7 +1028,7 @@
       "iou": 0.9358903261584492,
       "library": "codyps-zpl",
       "missing": 2055,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:37:43Z",
       "output_dimensions": [
         832,
         609
@@ -854,71 +1044,135 @@
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
+      "canvas_disagreement": 0.019961001642036125,
       "case": "zpl-toolchain-warehouse_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 6004,
       "group": "warehouse",
       "height": 609,
       "ink": 76517,
+      "ink_exact": false,
+      "iou": 0.8745581504954916,
       "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:52Z",
+      "missing": 4110,
+      "observed_utc": "2026-09-30T00:21:59Z",
+      "output_dimensions": [
+        832,
+        609
+      ],
+      "output_ink": 76517,
+      "precision": 0.9215337768077682,
       "raw_png_sha256": "33cc303887b99e5a5b1067f16a66a4f532aca1ffcd5bc7946344368ec409387b",
+      "recall": 0.9449231470190156,
+      "reference_ink": 74623,
       "render_sha256": "c7744af5e16c96cb5b47a1ff43dfa7a6d5f6f47e26d8171cabc20a3f06225f1a",
       "returncode": 0,
+      "score": 0.8745581504954916,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
+      "canvas_disagreement": 0.061799371605406085,
       "case": "zpl-toolchain-warehouse_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 14053,
       "group": "warehouse",
       "height": 609,
       "ink": 71416,
+      "ink_exact": false,
+      "iou": 0.6468830348685101,
       "library": "forge",
-      "observed_utc": "2026-09-29T03:23:52Z",
+      "missing": 17260,
+      "observed_utc": "2026-09-30T00:21:59Z",
+      "output_dimensions": [
+        832,
+        609
+      ],
+      "output_ink": 71416,
+      "precision": 0.803223367312647,
       "raw_png_sha256": "fe9f483393a5bcc05eabc5a68b68d36bcb225f3884bd7fe61ba997e17b93d19e",
+      "recall": 0.7687040188681774,
+      "reference_ink": 74623,
       "render_sha256": "9d97f059e0ff6817227f6e161b60b352ce7b915956ee61d253cd69d90806e28c",
       "returncode": 0,
+      "score": 0.6468830348685101,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
+      "canvas_disagreement": 0.12666571933813314,
       "case": "zpl-toolchain-warehouse_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 30741,
       "group": "warehouse",
       "height": 609,
       "ink": 71925,
+      "ink_exact": false,
+      "iou": 0.39087354314566647,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 33439,
+      "observed_utc": "2026-09-30T00:21:59Z",
+      "output_dimensions": [
+        832,
+        609
+      ],
+      "output_ink": 71925,
+      "precision": 0.5725964546402502,
       "raw_png_sha256": "a8fb04dac8ae43bb9d3abe0afb8699e67e1acba8d7b3570655569e2d10caec4e",
+      "recall": 0.5518941881189445,
+      "reference_ink": 74623,
       "render_sha256": "561e3a76a10f3eee4cfdcc2ebe61bd55ead6a07eb157736fde3d6ba4f42f232b",
       "returncode": 0,
+      "score": 0.39087354314566647,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
+      "canvas_disagreement": 0.12666571933813314,
       "case": "zpl-toolchain-warehouse_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 30741,
       "group": "warehouse",
       "height": 609,
       "ink": 71925,
+      "ink_exact": false,
+      "iou": 0.39087354314566647,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 33439,
+      "observed_utc": "2026-09-30T00:21:59Z",
+      "output_dimensions": [
+        832,
+        609
+      ],
+      "output_ink": 71925,
+      "precision": 0.5725964546402502,
       "raw_png_sha256": "f0cbd654a1b51fbe2413174f8c4ae8998012d99106087f430a3565120fca80b5",
+      "recall": 0.5518941881189445,
+      "reference_ink": 74623,
       "render_sha256": "561e3a76a10f3eee4cfdcc2ebe61bd55ead6a07eb157736fde3d6ba4f42f232b",
       "returncode": 0,
+      "score": 0.39087354314566647,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
       "canvas_disagreement": 0.027748831628141974,
@@ -934,7 +1188,7 @@
       "iou": 0.8255539839698256,
       "library": "binarykits",
       "missing": 8085,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:21:59Z",
       "output_dimensions": [
         832,
         609
@@ -966,7 +1220,7 @@
       "iou": 0.6342478903424565,
       "library": "zplr",
       "missing": 17802,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:21:59Z",
       "output_dimensions": [
         832,
         609
@@ -1011,7 +1265,7 @@
       "iou": 0.8842230867305241,
       "library": "codyps-zpl",
       "missing": 3332,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:37:43Z",
       "output_dimensions": [
         832,
         1218
@@ -1027,71 +1281,135 @@
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
+      "canvas_disagreement": 0.013796458570165466,
       "case": "zpl-toolchain-compliance_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 7017,
       "group": "compliance",
       "height": 1218,
       "ink": 57480,
+      "ink_exact": false,
+      "iou": 0.7830519520824282,
       "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 6964,
+      "observed_utc": "2026-09-30T00:22:00Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 57480,
+      "precision": 0.8779227557411273,
       "raw_png_sha256": "4adabf15abb3fc39e98110b393ab9ead647d78d2fa2db4b281e6f6fb8c0e9abf",
+      "recall": 0.8787330001567207,
+      "reference_ink": 57427,
       "render_sha256": "4ff081a4125b2d929b338552fc408137ae41866f0960cc7a690b3e8c5e8a8da0",
       "returncode": 0,
+      "score": 0.7830519520824282,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
+      "canvas_disagreement": 0.04586056902867248,
       "case": "zpl-toolchain-compliance_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 25249,
       "group": "compliance",
       "height": 1218,
       "ink": 61451,
+      "ink_exact": false,
+      "iou": 0.43787798151821566,
       "library": "forge",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 21225,
+      "observed_utc": "2026-09-30T00:22:00Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 61451,
+      "precision": 0.5891197864965583,
       "raw_png_sha256": "de46ce386d4cefbafbaffeebfb44779cdc33cc0088a697c61444e751b0cda464",
+      "recall": 0.6304003343375068,
+      "reference_ink": 57427,
       "render_sha256": "24d5e2824fb9eabbc700f84a652b161c852439a5bc4f466538fe088a75465217",
       "returncode": 0,
+      "score": 0.43787798151821566,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
+      "canvas_disagreement": 0.05803374068460276,
       "case": "zpl-toolchain-compliance_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 35786,
       "group": "compliance",
       "height": 1218,
       "ink": 70189,
+      "ink_exact": false,
+      "iou": 0.36907942025253987,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 23024,
+      "observed_utc": "2026-09-30T00:22:00Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 70189,
+      "precision": 0.49014802889341635,
       "raw_png_sha256": "f1fbc94e1a1bcc9f71f87f27a4c3e5f562a7226fa04a9b2dc190064c8b466b79",
+      "recall": 0.5990736064917199,
+      "reference_ink": 57427,
       "render_sha256": "eacb7e73d4458664ea20f900df477bd26e7a89f87d044359f7072c28d3334519",
       "returncode": 0,
+      "score": 0.36907942025253987,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
+      "canvas_disagreement": 0.05803374068460276,
       "case": "zpl-toolchain-compliance_label",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 35786,
       "group": "compliance",
       "height": 1218,
       "ink": 70189,
+      "ink_exact": false,
+      "iou": 0.36907942025253987,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 23024,
+      "observed_utc": "2026-09-30T00:22:00Z",
+      "output_dimensions": [
+        832,
+        1218
+      ],
+      "output_ink": 70189,
+      "precision": 0.49014802889341635,
       "raw_png_sha256": "c71bb618efdc7227ede3399a991528ec22e449982bf05a1bc399d3c22b11c99a",
+      "recall": 0.5990736064917199,
+      "reference_ink": 57427,
       "render_sha256": "eacb7e73d4458664ea20f900df477bd26e7a89f87d044359f7072c28d3334519",
       "returncode": 0,
+      "score": 0.36907942025253987,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
       "canvas_disagreement": 0.02724260294303398,
@@ -1107,7 +1425,7 @@
       "iou": 0.6190456477341724,
       "library": "binarykits",
       "missing": 12566,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:22:00Z",
       "output_dimensions": [
         832,
         1218
@@ -1139,7 +1457,7 @@
       "iou": 0.757956331605895,
       "library": "zplr",
       "missing": 8723,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:22:00Z",
       "output_dimensions": [
         832,
         1218
@@ -1184,7 +1502,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:37:43Z",
       "output_dimensions": [
         832,
         1524
@@ -1200,66 +1518,116 @@
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
+      "canvas_disagreement": 0.3485821408742176,
       "case": "zpl-toolchain-usps_surepost_sample",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 223323,
       "group": "printer-configuration",
       "height": 1524,
       "ink": 289520,
+      "ink_exact": false,
+      "iou": 0.13026084834746196,
       "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 218668,
+      "observed_utc": "2026-09-30T00:22:01Z",
+      "output_dimensions": [
+        832,
+        1524
+      ],
+      "output_ink": 289520,
+      "precision": 0.22864396242055818,
       "raw_png_sha256": "0c6245b5814bbaee5c0aab3772d26dd2fcf17138b40efe0544521ecfc85d548b",
+      "recall": 0.23238025029399892,
+      "reference_ink": 284865,
       "render_sha256": "5c9c7ac64265261e75023ee4de51fa95324618912ec2bd14d31d01ba95147c93",
       "returncode": 0,
+      "score": 0.13026084834746196,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
       "case": "zpl-toolchain-usps_surepost_sample",
-      "diagnostic": "\nthread 'main' (10268176) panicked at src/main.rs:79:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12595034) panicked at src/main.rs:89:32:\nPNG: BackendError(\"Barcode Generation Error: IllegalArgumentException - Found empty contents\")\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "group": "printer-configuration",
       "library": "forge",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "observed_utc": "2026-09-30T00:22:01Z",
+      "reference_ink": 284865,
       "returncode": 101,
+      "score": 0.0,
       "status": "error",
       "validity": "boundary",
-      "score": null
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
+      "canvas_disagreement": 0.08048073768423178,
       "case": "zpl-toolchain-usps_surepost_sample",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 57425,
       "group": "printer-configuration",
       "height": 1524,
       "ink": 297668,
+      "ink_exact": false,
+      "iou": 0.7018697595606065,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 44622,
+      "observed_utc": "2026-09-30T00:22:01Z",
+      "output_dimensions": [
+        832,
+        1524
+      ],
+      "output_ink": 297668,
+      "precision": 0.8070837308679468,
       "raw_png_sha256": "e0f03f4a6caa84cfc00d766ee30b58f3322ab31a32e0e9f7ce06ca64bdda5dff",
+      "recall": 0.8433573798114896,
+      "reference_ink": 284865,
       "render_sha256": "9368f6c846837c730e3bdd1713f27d521fd84a76e14cf84180301621288b8033",
       "returncode": 0,
+      "score": 0.7018697595606065,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
+      "canvas_disagreement": 0.26962273495861094,
       "case": "zpl-toolchain-usps_surepost_sample",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 177626,
       "group": "printer-configuration",
       "height": 1524,
       "ink": 298244,
+      "ink_exact": false,
+      "iou": 0.26080075071731124,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 164247,
+      "observed_utc": "2026-09-30T00:22:01Z",
+      "output_dimensions": [
+        832,
+        1524
+      ],
+      "output_ink": 298244,
+      "precision": 0.40442724748863346,
       "raw_png_sha256": "5dd7478052ed7522ee7e27009ce5de96019e5d04457cd42cebeaa8dc299a549d",
+      "recall": 0.4234216207677321,
+      "reference_ink": 284865,
       "render_sha256": "811fa69f1d968d05dc492aa687c60bd5097bc493b7e6f915cbb298263da948b0",
       "returncode": 0,
+      "score": 0.26080075071731124,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
       "canvas_disagreement": 0.06584314430648092,
@@ -1275,7 +1643,7 @@
       "iou": 0.7441301676131749,
       "library": "binarykits",
       "missing": 42065,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:22:01Z",
       "output_dimensions": [
         832,
         1524
@@ -1307,7 +1675,7 @@
       "iou": 0.13181268421688155,
       "library": "zplr",
       "missing": 218276,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:22:02Z",
       "output_dimensions": [
         832,
         1524
@@ -1352,7 +1720,7 @@
       "iou": 0.865885818007466,
       "library": "codyps-zpl",
       "missing": 1833,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:37:43Z",
       "output_dimensions": [
         832,
         500
@@ -1368,71 +1736,135 @@
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
+      "canvas_disagreement": 0.01873076923076923,
       "case": "zplr-asset-matrix-pdf417",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 4101,
       "group": "asset",
       "height": 500,
       "ink": 27526,
+      "ink_exact": false,
+      "iou": 0.7503924143895954,
       "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 3691,
+      "observed_utc": "2026-09-30T00:22:02Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 27526,
+      "precision": 0.8510135871539636,
       "raw_png_sha256": "e7d4e859522118c1b5821b35a7804fd9cede477a60c351e5e2524f5564c16cca",
+      "recall": 0.8638811034075823,
+      "reference_ink": 27116,
       "render_sha256": "070f44853bd78927b37c3cf4f25e45962f6784633d9a6b8fbe513be3466d1dfb",
       "returncode": 0,
+      "score": 0.7503924143895954,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
+      "canvas_disagreement": 0.056213942307692305,
       "case": "zplr-asset-matrix-pdf417",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 15096,
       "group": "asset",
       "height": 500,
       "ink": 33923,
+      "ink_exact": false,
+      "iou": 0.44601061309580214,
       "library": "forge",
-      "observed_utc": "2026-09-29T03:23:53Z",
+      "missing": 8289,
+      "observed_utc": "2026-09-30T00:22:03Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 33923,
+      "precision": 0.5549921881909029,
       "raw_png_sha256": "da53843bde3dba4eac1ea4958e792198d7232b1a5a405064c8c9085eb3db369d",
+      "recall": 0.6943133205487535,
+      "reference_ink": 27116,
       "render_sha256": "89eb29353145015b2f91cdbcb7b70ed652af054a0f3e8340a95365bfcd9c673a",
       "returncode": 0,
+      "score": 0.44601061309580214,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
+      "canvas_disagreement": 0.017524038461538462,
       "case": "zplr-asset-matrix-pdf417",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 4002,
       "group": "asset",
       "height": 500,
       "ink": 27830,
+      "ink_exact": false,
+      "iou": 0.7657304454013754,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "missing": 3288,
+      "observed_utc": "2026-09-30T00:22:03Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 27830,
+      "precision": 0.856198347107438,
       "raw_png_sha256": "87947b274db983e006fb4d3c2479a1508f41b4095675d6979c1cf64d3e40bbcb",
+      "recall": 0.8787431774598023,
+      "reference_ink": 27116,
       "render_sha256": "a85aed4594661a99cebf0577eaf13d090f95132cc379d629aa292835e2875f15",
       "returncode": 0,
+      "score": 0.7657304454013754,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
+      "canvas_disagreement": 0.017524038461538462,
       "case": "zplr-asset-matrix-pdf417",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 4002,
       "group": "asset",
       "height": 500,
       "ink": 27830,
+      "ink_exact": false,
+      "iou": 0.7657304454013754,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "missing": 3288,
+      "observed_utc": "2026-09-30T00:22:03Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 27830,
+      "precision": 0.856198347107438,
       "raw_png_sha256": "c650931c3ea6fb0b69002cc7fe15377c21559b637e90cbce672211efdd261812",
+      "recall": 0.8787431774598023,
+      "reference_ink": 27116,
       "render_sha256": "a85aed4594661a99cebf0577eaf13d090f95132cc379d629aa292835e2875f15",
       "returncode": 0,
+      "score": 0.7657304454013754,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
       "canvas_disagreement": 0.018451923076923078,
@@ -1448,7 +1880,7 @@
       "iou": 0.7514651125141655,
       "library": "binarykits",
       "missing": 3907,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:22:03Z",
       "output_dimensions": [
         832,
         500
@@ -1480,7 +1912,7 @@
       "iou": 0.7476317155463276,
       "library": "zplr",
       "missing": 4071,
-      "observed_utc": "2026-09-29T21:21:20Z",
+      "observed_utc": "2026-09-30T00:22:03Z",
       "output_dimensions": [
         832,
         500
@@ -1513,140 +1945,125 @@
     },
     {
       "case": "zplr-retail-upc-ean",
-      "diagnostic": "\nthread 'main' (11850429) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 110, message: \"unsupported legacy text byte; select ^CI28 for UTF-8\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
+      "diagnostic": "",
       "group": "retail",
+      "height": 500,
+      "ink": 38919,
       "library": "codyps-zpl",
-      "observed_utc": "2026-09-29T21:07:34Z",
-      "reference_ink": 38832,
-      "returncode": 101,
-      "score": 0.0,
-      "status": "error",
+      "observed_utc": "2026-09-30T00:37:43Z",
+      "raw_png_sha256": "18ad835ea621d0b45fe34220def23b75dfe4b037dd47ead9ac9e11c25f815e5e",
+      "render_sha256": "6a11ae44aabc2b6bda1deabb7c20673cb8cd1da1bde1abd034ee5ab333edd726",
+      "returncode": 0,
+      "score": null,
+      "status": "rendered",
       "validity": "boundary",
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "width": 832,
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "case": "zplr-retail-upc-ean",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
       "diagnostic": "",
       "group": "retail",
       "height": 500,
       "ink": 37976,
       "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "observed_utc": "2026-09-30T00:22:03Z",
       "raw_png_sha256": "3a5b45ae12ce25e7e6b83bed09daee02dcee05feedd6279ddee6b1359e9b21dd",
       "render_sha256": "dec75a044776aa69166504cc05049df0dd1a26ed5904e5a6ef89486458f83af2",
       "returncode": 0,
+      "score": null,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
       "case": "zplr-retail-upc-ean",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
       "diagnostic": "",
       "group": "retail",
       "height": 500,
       "ink": 37653,
       "library": "forge",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "observed_utc": "2026-09-30T00:22:03Z",
       "raw_png_sha256": "550cbccb60c4c8127046980cc091740af9d0fc99d58c12a4591531fa22776bae",
       "render_sha256": "f4d6eab0089d144f9cb5133e6a2d9247d4b08e415d2af59f750e50db1d55bee6",
       "returncode": 0,
+      "score": null,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
       "case": "zplr-retail-upc-ean",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
       "diagnostic": "",
       "group": "retail",
       "height": 500,
       "ink": 14476,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "observed_utc": "2026-09-30T00:22:04Z",
       "raw_png_sha256": "71c7b3a99433d225cff0eb94d4d07e7655ef563c9334b623c098449ea2eb8e10",
       "render_sha256": "811d2cc759c88d04bb6368515184e293509153ffa317563f538630b415b643cb",
       "returncode": 0,
+      "score": null,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
       "case": "zplr-retail-upc-ean",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
       "diagnostic": "",
       "group": "retail",
       "height": 500,
       "ink": 14476,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "observed_utc": "2026-09-30T00:22:04Z",
       "raw_png_sha256": "eab1d036fb49cd695f8c0f0ccff260da67ba347f8f3b095216a689177b4fdda6",
       "render_sha256": "811d2cc759c88d04bb6368515184e293509153ffa317563f538630b415b643cb",
       "returncode": 0,
+      "score": null,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
-      "canvas_disagreement": 0.01902403846153846,
       "case": "zplr-retail-upc-ean",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
       "diagnostic": "",
-      "dimensions_match": true,
-      "exact": false,
-      "extra": 3862,
       "group": "retail",
       "height": 500,
       "ink": 38642,
-      "ink_exact": false,
-      "iou": 0.8146343748536095,
       "library": "binarykits",
-      "missing": 4052,
-      "observed_utc": "2026-09-29T21:21:21Z",
-      "output_dimensions": [
-        832,
-        500
-      ],
-      "output_ink": 38642,
-      "precision": 0.9000569328709694,
+      "observed_utc": "2026-09-30T00:22:04Z",
       "raw_png_sha256": "8836a405400635d7be49bd5669309ddce0a08e789b6a34db26fdc539a596de9b",
-      "recall": 0.8956530696332922,
-      "reference_ink": 38832,
       "render_sha256": "ec67306233bc07af89fdb4fce98ad6dd60a91decfad2c4eb5785a5dfeaa85e1e",
       "returncode": 0,
-      "score": 0.8146343748536095,
+      "score": null,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
       "adapter_identity_sha256": "0a4050bce96810cd5fbc26a4b52dd3c0f6056e14b3a089fd393658478301d8d0"
     },
     {
-      "canvas_disagreement": 0.019144230769230768,
       "case": "zplr-retail-upc-ean",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison.",
       "diagnostic": "",
-      "dimensions_match": true,
-      "exact": false,
-      "extra": 3430,
       "group": "retail",
       "height": 500,
       "ink": 37728,
-      "ink_exact": false,
-      "iou": 0.8115564809994794,
       "library": "zplr",
-      "missing": 4534,
-      "observed_utc": "2026-09-29T21:21:21Z",
-      "output_dimensions": [
-        832,
-        500
-      ],
-      "output_ink": 37728,
-      "precision": 0.9090860899067006,
+      "observed_utc": "2026-09-30T00:22:04Z",
       "raw_png_sha256": "29f436e490fa7dee15305cc49000af6c4431aa8678bec54d88461db09bd392d6",
-      "recall": 0.8832406262875978,
-      "reference_ink": 38832,
       "render_sha256": "a4fbbb40acc440117f3bc5354d287b17f0f4413e659ad8609f65080482203412",
       "returncode": 0,
-      "score": 0.8115564809994794,
+      "score": null,
       "status": "rendered",
       "validity": "boundary",
       "width": 832,
@@ -1663,86 +2080,156 @@
       "height": 500,
       "ink": 38700,
       "observed_utc": "2026-09-29T03:23:04+00:00",
-      "raw_png_sha256": "bddddd468298a9db17f49d6324ed7b48b6381be96a6d715bc56f03167ad0d903"
+      "raw_png_sha256": "bddddd468298a9db17f49d6324ed7b48b6381be96a6d715bc56f03167ad0d903",
+      "comparison_diagnostic": "The source contains UTF-8 C2 B7 without selecting UTF-8. Its printer capture inherited CI27, while local renderers use their own initial encodings. Retained as an encoding diagnostic; use the explicit CI28 variant for a scored comparison."
+    },
+    {
+      "canvas_disagreement": 0.003926542207792208,
+      "case": "zplr-stored-resources",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 196,
+      "group": "stateful",
+      "height": 220,
+      "ink": 4505,
+      "ink_exact": false,
+      "iou": 0.9175894378194208,
+      "library": "codyps-zpl",
+      "missing": 191,
+      "observed_utc": "2026-09-30T00:37:43Z",
+      "output_dimensions": [
+        448,
+        220
+      ],
+      "output_ink": 4505,
+      "precision": 0.9564927857935627,
+      "raw_png_sha256": "4937aaeb751de7099edcf2339e3cf99775a4e10e752035f588b7f258befd7d61",
+      "recall": 0.9575555555555556,
+      "reference_ink": 4500,
+      "render_sha256": "0baebb9e29aa3479539a4d2f4ac89806c31bc418a17f6015a00b3467f022ef6b",
+      "returncode": 0,
+      "score": 0.9175894378194208,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 448,
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
+    },
+    {
+      "canvas_disagreement": 0.013869724025974027,
+      "case": "zplr-stored-resources",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 708,
+      "group": "stateful",
+      "height": 220,
+      "ink": 4549,
+      "ink_exact": false,
+      "iou": 0.7375192012288786,
+      "library": "labelize",
+      "missing": 659,
+      "observed_utc": "2026-09-30T00:22:04Z",
+      "output_dimensions": [
+        448,
+        220
+      ],
+      "output_ink": 4549,
+      "precision": 0.8443613981094746,
+      "raw_png_sha256": "d44c3cd313068ff75bf985ca81a636c34845719ab5e4fcaf61bc010a5bab6b48",
+      "recall": 0.8535555555555555,
+      "reference_ink": 4500,
+      "render_sha256": "26b99b2970a2b916f18eabc05ed0f04d30e1e052496ad57b9e9d5ad8d2d69c29",
+      "returncode": 0,
+      "score": 0.7375192012288786,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 448,
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
     },
     {
       "case": "zplr-stored-resources",
-      "diagnostic": "\nthread 'main' (11850435) panicked at src/main.rs:37:81:\nrender: RenderError { offset: 71, message: \"unsupported command DF\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "diagnostic": "\nthread 'main' (12595266) panicked at src/main.rs:84:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
       "group": "stateful",
-      "library": "codyps-zpl",
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "library": "forge",
+      "observed_utc": "2026-09-30T00:22:04Z",
       "reference_ink": 4500,
       "returncode": 101,
       "score": 0.0,
       "status": "error",
       "validity": "boundary",
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
     },
     {
+      "canvas_disagreement": 0.015787337662337662,
       "case": "zplr-stored-resources",
       "diagnostic": "",
-      "group": "stateful",
-      "height": 220,
-      "ink": 4549,
-      "library": "labelize",
-      "observed_utc": "2026-09-29T03:23:54Z",
-      "raw_png_sha256": "d44c3cd313068ff75bf985ca81a636c34845719ab5e4fcaf61bc010a5bab6b48",
-      "render_sha256": "26b99b2970a2b916f18eabc05ed0f04d30e1e052496ad57b9e9d5ad8d2d69c29",
-      "returncode": 0,
-      "status": "rendered",
-      "validity": "boundary",
-      "width": 448,
-      "score": null
-    },
-    {
-      "case": "zplr-stored-resources",
-      "diagnostic": "\nthread 'main' (10268452) panicked at src/main.rs:74:10:\nparse: ParseError { line: 1, message: \"Invalid or malformed ZPL command (Error code: Eof)\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-      "group": "stateful",
-      "library": "forge",
-      "observed_utc": "2026-09-29T03:23:54Z",
-      "returncode": 101,
-      "status": "error",
-      "validity": "boundary",
-      "score": null
-    },
-    {
-      "case": "zplr-stored-resources",
-      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 470,
       "group": "stateful",
       "height": 220,
       "ink": 3884,
+      "ink_exact": false,
+      "iou": 0.6869215291750503,
       "library": "go",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "missing": 1086,
+      "observed_utc": "2026-09-30T00:22:04Z",
+      "output_dimensions": [
+        448,
+        220
+      ],
+      "output_ink": 3884,
+      "precision": 0.8789907312049433,
       "raw_png_sha256": "57b8a744190eb7e049097c2d5cac9c33707727664333fb6c90605d961fd56c09",
+      "recall": 0.7586666666666667,
+      "reference_ink": 4500,
       "render_sha256": "440f254b2314d96ccb89aae35a8b96506c37f3f6094f38272e489aaffde89eb8",
       "returncode": 0,
+      "score": 0.6869215291750503,
       "status": "rendered",
       "validity": "boundary",
       "width": 448,
-      "score": null
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
     },
     {
+      "canvas_disagreement": 0.015787337662337662,
       "case": "zplr-stored-resources",
       "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 470,
       "group": "stateful",
       "height": 220,
       "ink": 3884,
+      "ink_exact": false,
+      "iou": 0.6869215291750503,
       "library": "ffi",
-      "observed_utc": "2026-09-29T03:23:54Z",
+      "missing": 1086,
+      "observed_utc": "2026-09-30T00:22:04Z",
+      "output_dimensions": [
+        448,
+        220
+      ],
+      "output_ink": 3884,
+      "precision": 0.8789907312049433,
       "raw_png_sha256": "bf5e569376b3a2d257e2c7dd3ede464052d259626b975558a9989b62451dd592",
+      "recall": 0.7586666666666667,
+      "reference_ink": 4500,
       "render_sha256": "440f254b2314d96ccb89aae35a8b96506c37f3f6094f38272e489aaffde89eb8",
       "returncode": 0,
+      "score": 0.6869215291750503,
       "status": "rendered",
       "validity": "boundary",
       "width": 448,
-      "score": null
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
     },
     {
       "case": "zplr-stored-resources",
       "diagnostic": "Unhandled exception. System.InvalidOperationException: Could not find format R:CMPEX.ZPL\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetFormatLabelInfo(ZplRecallFormat recallFormat, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.GetMergedElements(LabelInfo rawLabelInfo, Dictionary`2 templateFormats)\n   at BinaryKits.Zpl.Viewer.FormatMerger.MergeFormats(List`1 rawLabelInfos)\n   at BinaryKits.Zpl.Viewer.ZplAnalyzer.Analyze(String zplData)\n   at Program.<>c__DisplayClass0_0.<<Main>$>g__Operation|1() in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 27\n   at Program.<Main>$(String[] args) in /private/var/folders/0d/2w_b3_k16yzcykll2mswwxth0000gn/T/zpl-build-k_zko7ir/benchmarks/adapters/dotnet/Program.cs:line 53\n",
       "group": "stateful",
       "library": "binarykits",
-      "observed_utc": "2026-09-29T21:21:21Z",
+      "observed_utc": "2026-09-30T00:22:04Z",
       "reference_ink": 4500,
       "returncode": -6,
       "score": 0.0,
@@ -1764,7 +2251,7 @@
       "iou": 0.8022380467955239,
       "library": "zplr",
       "missing": 557,
-      "observed_utc": "2026-09-29T21:21:21Z",
+      "observed_utc": "2026-09-30T00:22:04Z",
       "output_dimensions": [
         448,
         220
@@ -1794,6 +2281,259 @@
       "ink": 4499,
       "observed_utc": "2026-09-29T03:23:04+00:00",
       "raw_png_sha256": "7886f79aae2211ce914bb8329d41d68573d55f355403811e44ab1e7e4ba6523b"
+    },
+    {
+      "canvas_disagreement": 0.018728365384615385,
+      "case": "zplr-retail-upc-ean-utf8",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 3843,
+      "group": "retail",
+      "height": 500,
+      "ink": 38642,
+      "ink_exact": false,
+      "iou": 0.8170697346795023,
+      "library": "binarykits",
+      "missing": 3948,
+      "observed_utc": "2026-09-30T00:22:05Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 38642,
+      "precision": 0.9005486258475234,
+      "raw_png_sha256": "8836a405400635d7be49bd5669309ddce0a08e789b6a34db26fdc539a596de9b",
+      "recall": 0.8981082406379849,
+      "reference_ink": 38747,
+      "render_sha256": "ec67306233bc07af89fdb4fce98ad6dd60a91decfad2c4eb5785a5dfeaa85e1e",
+      "returncode": 0,
+      "score": 0.8170697346795023,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832,
+      "adapter_identity_sha256": "0a4050bce96810cd5fbc26a4b52dd3c0f6056e14b3a089fd393658478301d8d0"
+    },
+    {
+      "canvas_disagreement": 0.003641826923076923,
+      "case": "zplr-retail-upc-ean-utf8",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 784,
+      "group": "retail",
+      "height": 500,
+      "ink": 38800,
+      "ink_exact": false,
+      "iou": 0.9616756469606131,
+      "library": "codyps-zpl",
+      "missing": 731,
+      "observed_utc": "2026-09-30T00:37:43Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 38800,
+      "precision": 0.9797938144329897,
+      "raw_png_sha256": "0c9e1fc8567855ee006ae773338a54aba6ea3a6c436422ff8be51f0297c12251",
+      "recall": 0.9811340232792216,
+      "reference_ink": 38747,
+      "render_sha256": "5f1a6aac0d227dd4eb1aba1daa7bfd9eb46c6eb2a7b86fcf85de230a6678f43f",
+      "returncode": 0,
+      "score": 0.9616756469606131,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832,
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
+    },
+    {
+      "canvas_disagreement": 0.07613221153846154,
+      "case": "zplr-retail-upc-ean-utf8",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 3700,
+      "group": "retail",
+      "height": 500,
+      "ink": 14476,
+      "ink_exact": false,
+      "iou": 0.2538695314156478,
+      "library": "ffi",
+      "missing": 27971,
+      "observed_utc": "2026-09-30T00:22:05Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 14476,
+      "precision": 0.7444045316385742,
+      "raw_png_sha256": "eab1d036fb49cd695f8c0f0ccff260da67ba347f8f3b095216a689177b4fdda6",
+      "recall": 0.278111853820941,
+      "reference_ink": 38747,
+      "render_sha256": "811d2cc759c88d04bb6368515184e293509153ffa317563f538630b415b643cb",
+      "returncode": 0,
+      "score": 0.2538695314156478,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832,
+      "adapter_identity_sha256": "51884f77bba783f0bb7e4454b365d9f756a9d6c353cdcd92766b4cd6f19e9377"
+    },
+    {
+      "canvas_disagreement": 0.02020673076923077,
+      "case": "zplr-retail-upc-ean-utf8",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 3656,
+      "group": "retail",
+      "height": 500,
+      "ink": 37653,
+      "ink_exact": false,
+      "iou": 0.8017593094828196,
+      "library": "forge",
+      "missing": 4750,
+      "observed_utc": "2026-09-30T00:22:05Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 37653,
+      "precision": 0.9029028231482219,
+      "raw_png_sha256": "550cbccb60c4c8127046980cc091740af9d0fc99d58c12a4591531fa22776bae",
+      "recall": 0.8774098639894702,
+      "reference_ink": 38747,
+      "render_sha256": "f4d6eab0089d144f9cb5133e6a2d9247d4b08e415d2af59f750e50db1d55bee6",
+      "returncode": 0,
+      "score": 0.8017593094828196,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832,
+      "adapter_identity_sha256": "9dc9681e03fb76773ed0dd381722535cecbc4475325ab954888ec60060171e01"
+    },
+    {
+      "canvas_disagreement": 0.07613221153846154,
+      "case": "zplr-retail-upc-ean-utf8",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 3700,
+      "group": "retail",
+      "height": 500,
+      "ink": 14476,
+      "ink_exact": false,
+      "iou": 0.2538695314156478,
+      "library": "go",
+      "missing": 27971,
+      "observed_utc": "2026-09-30T00:22:05Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 14476,
+      "precision": 0.7444045316385742,
+      "raw_png_sha256": "71c7b3a99433d225cff0eb94d4d07e7655ef563c9334b623c098449ea2eb8e10",
+      "recall": 0.278111853820941,
+      "reference_ink": 38747,
+      "render_sha256": "811d2cc759c88d04bb6368515184e293509153ffa317563f538630b415b643cb",
+      "returncode": 0,
+      "score": 0.2538695314156478,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832,
+      "adapter_identity_sha256": "95b1a8f9a8b5225962ff010869f6de5f03af1b99e68c2b8adadec5518543849b"
+    },
+    {
+      "canvas_disagreement": 0.010009615384615384,
+      "case": "zplr-retail-upc-ean-utf8",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 2002,
+      "group": "retail",
+      "height": 500,
+      "ink": 38587,
+      "ink_exact": false,
+      "iou": 0.8978134432746816,
+      "library": "labelary",
+      "missing": 2162,
+      "observed_utc": "2026-09-29T23:56:18+00:00",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 38587,
+      "precision": 0.9481172415580377,
+      "raw_png_sha256": "18f2b634a8cb1bf30857682213c57ea86082e7da84f545c67436c6b18ba6f299",
+      "recall": 0.9442021317779441,
+      "reference_ink": 38747,
+      "render_sha256": "8e30e567a067d9115b3282722853f6af878045d3fca510bd14887726fa671fd2",
+      "score": 0.8978134432746816,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832
+    },
+    {
+      "canvas_disagreement": 0.018271634615384617,
+      "case": "zplr-retail-upc-ean-utf8",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 3415,
+      "group": "retail",
+      "height": 500,
+      "ink": 37976,
+      "ink_exact": false,
+      "iou": 0.8197191784070964,
+      "library": "labelize",
+      "missing": 4186,
+      "observed_utc": "2026-09-30T00:22:05Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 37976,
+      "precision": 0.9100747840741521,
+      "raw_png_sha256": "3a5b45ae12ce25e7e6b83bed09daee02dcee05feedd6279ddee6b1359e9b21dd",
+      "recall": 0.8919658296126152,
+      "reference_ink": 38747,
+      "render_sha256": "dec75a044776aa69166504cc05049df0dd1a26ed5904e5a6ef89486458f83af2",
+      "returncode": 0,
+      "score": 0.8197191784070964,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832,
+      "adapter_identity_sha256": "88e22e006fc81703ce32e2316aeea7c18b663ec716f4a2173d44b475bd2ed8ae"
+    },
+    {
+      "canvas_disagreement": 0.018536057692307692,
+      "case": "zplr-retail-upc-ean-utf8",
+      "diagnostic": "",
+      "dimensions_match": true,
+      "exact": false,
+      "extra": 3346,
+      "group": "retail",
+      "height": 500,
+      "ink": 37728,
+      "ink_exact": false,
+      "iou": 0.8168103960278431,
+      "library": "zplr",
+      "missing": 4365,
+      "observed_utc": "2026-09-30T00:22:05Z",
+      "output_dimensions": [
+        832,
+        500
+      ],
+      "output_ink": 37728,
+      "precision": 0.9113125530110263,
+      "raw_png_sha256": "29f436e490fa7dee15305cc49000af6c4431aa8678bec54d88461db09bd392d6",
+      "recall": 0.8873461171187447,
+      "reference_ink": 38747,
+      "render_sha256": "a4fbbb40acc440117f3bc5354d287b17f0f4413e659ad8609f65080482203412",
+      "returncode": 0,
+      "score": 0.8168103960278431,
+      "status": "rendered",
+      "validity": "boundary",
+      "width": 832,
+      "adapter_identity_sha256": "f9869cde721d57709b73eb14a7cd16b54be011ee46009f927b77f4bf3e0188b9"
     }
   ],
   "relations": [],
@@ -1802,7 +2542,7 @@
     "codyps-zpl": [
       {
         "name": "adapter",
-        "sha256": "99d32066d93135e642595cf0cb3ace348f1ef7c6729f40cf85ccb443ef152237"
+        "sha256": "60ffb1435ae402d7eedece21ea28da89696eb59dca49da9da98910b464dd27ae"
       },
       {
         "name": "command.json",
@@ -24580,6 +25320,54 @@
         "name": "zxing.dll",
         "sha256": "0aad7a70ad42a48d74f75204a9dcf05a94bb1ed66c0824f49d6f8bd08fefb127"
       }
+    ],
+    "ffi": [
+      {
+        "name": "adapter",
+        "sha256": "3a3ce150d77b2a9fb2df536c7565ba6fa496640c7f4344263aa4f87b7fd4102d"
+      },
+      {
+        "name": "command.json",
+        "sha256": "fa27e9af15ffb8dc1016a412919ca1f924f30b2ab217cc7f6a703ffa5f09107e"
+      },
+      {
+        "name": "libzpl.dylib",
+        "sha256": "750a1b3559b779b275b0c7581fbc53f91a387bb1ea7949e6065dadb32b0b219d"
+      },
+      {
+        "name": "libzpl.h",
+        "sha256": "1d49b37cbafaaf94d27b00cbaab8794c2848ca812ba9bb526cb9210e428d7101"
+      }
+    ],
+    "forge": [
+      {
+        "name": "adapter",
+        "sha256": "338d6c7a34bb9e33a1cf2723e7cf5e8fa7c81e33cf3d6146961bffc228b89b97"
+      },
+      {
+        "name": "command.json",
+        "sha256": "fa27e9af15ffb8dc1016a412919ca1f924f30b2ab217cc7f6a703ffa5f09107e"
+      }
+    ],
+    "go": [
+      {
+        "name": "adapter",
+        "sha256": "7b366b77bdbe273925f4a13706d965d50d08db761564533f7a802ef003ef86b9"
+      },
+      {
+        "name": "command.json",
+        "sha256": "fa27e9af15ffb8dc1016a412919ca1f924f30b2ab217cc7f6a703ffa5f09107e"
+      }
+    ],
+    "labelize": [
+      {
+        "name": "adapter",
+        "sha256": "614b41ddd1e30fb4e90b8a401d8fbc0e0fcb54efb28ab05136e0215e37044b0c"
+      },
+      {
+        "name": "command.json",
+        "sha256": "fa27e9af15ffb8dc1016a412919ca1f924f30b2ab217cc7f6a703ffa5f09107e"
+      }
     ]
   },
   "refreshes": [
@@ -24751,6 +25539,127 @@
           "url": "https://github.com/codyps/zpl",
           "fetch_url": "git@github.com:codyps/zpl.git",
           "rev": "e72ec442c94159bfe792c480c018690e234948e4",
+          "version": "0.1.0"
+        }
+      }
+    },
+    {
+      "measured_utc": "2026-09-30T00:22:06Z",
+      "host": "macOS-26.7-x86_64-i386-64bit-Mach-O",
+      "libraries": [
+        "binarykits",
+        "ffi",
+        "forge",
+        "go",
+        "labelize",
+        "zplr"
+      ],
+      "cases": [
+        "zpl-toolchain-shipping_label",
+        "zpl-toolchain-product_label",
+        "zpl-toolchain-warehouse_label",
+        "zpl-toolchain-compliance_label",
+        "zpl-toolchain-usps_surepost_sample",
+        "zplr-asset-matrix-pdf417",
+        "zplr-retail-upc-ean",
+        "zplr-stored-resources",
+        "zplr-retail-upc-ean-utf8"
+      ],
+      "source_lock": {
+        "go-zpl": {
+          "url": "https://github.com/StirlingMarketingGroup/go-zpl",
+          "rev": "78b181940c76efa25571c48a2257a130e48a6191"
+        },
+        "BinaryKits.Zpl": {
+          "url": "https://github.com/BinaryKits/BinaryKits.Zpl",
+          "rev": "9d316458c33c90608859cc935d3ba1e0c7587be7"
+        },
+        "python-zpl": {
+          "url": "https://github.com/cod3monk/zpl",
+          "rev": "9bbeca05aa42e41576bf43ee3ae7ec268a3df032"
+        },
+        "zplr": {
+          "url": "https://github.com/le2ni/zplr",
+          "rev": "1c94eadfc5afb494b4c92dd10ad4808bd3d19529"
+        },
+        "jszpl": {
+          "url": "https://github.com/DanieLeeuwner/JSZPL",
+          "rev": "53c916717c0dfdb1e6bca266eb6280c8f156c6ca"
+        },
+        "zpl-toolchain": {
+          "url": "https://github.com/trevordcampbell/zpl-toolchain",
+          "rev": "3da58518c1013fffd46d2147b0927a1d5b4aeab5"
+        },
+        "labelize": {
+          "url": "https://github.com/GOODBOY008/labelize",
+          "rev": "b9598a530178d65e6a293f06137a0e27a86bd2e8"
+        },
+        "zpl-forge": {
+          "url": "https://github.com/rafael-arreola/zpl-forge",
+          "rev": "1bed1721cf8dde70e4f304710b923b0efc7f600a"
+        },
+        "zpl": {
+          "url": "https://github.com/codyps/zpl",
+          "fetch_url": "git@github.com:codyps/zpl.git",
+          "rev": "e72ec442c94159bfe792c480c018690e234948e4",
+          "version": "0.1.0"
+        }
+      }
+    },
+    {
+      "measured_utc": "2026-09-30T00:37:44Z",
+      "host": "macOS-26.7-x86_64-i386-64bit-Mach-O",
+      "libraries": [
+        "codyps-zpl"
+      ],
+      "cases": [
+        "zpl-toolchain-shipping_label",
+        "zpl-toolchain-product_label",
+        "zpl-toolchain-warehouse_label",
+        "zpl-toolchain-compliance_label",
+        "zpl-toolchain-usps_surepost_sample",
+        "zplr-asset-matrix-pdf417",
+        "zplr-retail-upc-ean",
+        "zplr-stored-resources",
+        "zplr-retail-upc-ean-utf8"
+      ],
+      "source_lock": {
+        "go-zpl": {
+          "url": "https://github.com/StirlingMarketingGroup/go-zpl",
+          "rev": "78b181940c76efa25571c48a2257a130e48a6191"
+        },
+        "BinaryKits.Zpl": {
+          "url": "https://github.com/BinaryKits/BinaryKits.Zpl",
+          "rev": "9d316458c33c90608859cc935d3ba1e0c7587be7"
+        },
+        "python-zpl": {
+          "url": "https://github.com/cod3monk/zpl",
+          "rev": "9bbeca05aa42e41576bf43ee3ae7ec268a3df032"
+        },
+        "zplr": {
+          "url": "https://github.com/le2ni/zplr",
+          "rev": "1c94eadfc5afb494b4c92dd10ad4808bd3d19529"
+        },
+        "jszpl": {
+          "url": "https://github.com/DanieLeeuwner/JSZPL",
+          "rev": "53c916717c0dfdb1e6bca266eb6280c8f156c6ca"
+        },
+        "zpl-toolchain": {
+          "url": "https://github.com/trevordcampbell/zpl-toolchain",
+          "rev": "3da58518c1013fffd46d2147b0927a1d5b4aeab5"
+        },
+        "labelize": {
+          "url": "https://github.com/GOODBOY008/labelize",
+          "rev": "b9598a530178d65e6a293f06137a0e27a86bd2e8"
+        },
+        "zpl-forge": {
+          "url": "https://github.com/rafael-arreola/zpl-forge",
+          "rev": "1bed1721cf8dde70e4f304710b923b0efc7f600a"
+        },
+        "zpl": {
+          "url": "https://github.com/codyps/zpl",
+          "fetch_url": "git@github.com:codyps/zpl.git",
+          "rev": "f75ee34b58af1e8203e5c967ec73434d559e2eed",
           "version": "0.1.0"
         }
       }

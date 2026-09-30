@@ -96,9 +96,13 @@ def reference_images(directory, cases):
     selected = {}
     for case in cases:
         row = lookup.get(case["name"])
+        if case.get("reference_unscored_reason") and not row:
+            raise ValueError("Missing diagnostic reference")
         if row:
             if row["zpl_sha256"] != case["sha256"]:
                 raise ValueError("Reference belongs to different input")
+            if case.get("reference_unscored_reason"):
+                continue
             selected[case["name"]] = metrics.gray(directory / (case["name"] + ".png"))
     if not selected:
         raise ValueError("No matching reference cases")

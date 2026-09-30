@@ -2,7 +2,7 @@
   "schema": 1,
   "service": "https://labelary.com/service.html",
   "started_utc": "2026-09-19T03:17:15+00:00",
-  "completed_utc": "2026-09-29T03:23:04+00:00",
+  "completed_utc": "2026-09-29T23:56:18+00:00",
   "renderer_version": null,
   "identity": "UTC capture timestamps; no renderer version exposed",
   "dpmm": 8,
@@ -21517,6 +21517,34 @@
         832,
         300
       ]
+    },
+    {
+      "suite": "external-zpl",
+      "name": "zplr-retail-upc-ean-utf8",
+      "source": "test-data/external-zpl/cases/zplr-retail-upc-ean-utf8-native-width.zpl",
+      "sha256": "ba5cf7841e8af2e4b2e916ffdb915684bb3016c032f01017fc49a6d2280a3711",
+      "width": 832,
+      "height": 500,
+      "validity": "boundary",
+      "requested_utc": "2026-09-29T23:56:17+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x2.463055/0/",
+      "received_utc": "2026-09-29T23:56:18+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Tue, 29 Sep 2026 23:56:18 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/external-zpl--zplr-retail-upc-ean-utf8.png",
+      "png_sha256": "18f2b634a8cb1bf30857682213c57ea86082e7da84f545c67436c6b18ba6f299",
+      "dimensions": [
+        832,
+        500
+      ]
     }
   ],
   "extensions": [
@@ -21534,6 +21562,11 @@
       "started_utc": "2026-09-21T17:18:21+00:00",
       "previous_completed_utc": "2026-09-20T22:29:57+00:00",
       "existing_cases": 739
+    },
+    {
+      "started_utc": "2026-09-29T23:56:17+00:00",
+      "previous_completed_utc": "2026-09-29T03:23:04+00:00",
+      "existing_cases": 759
     }
   ],
   "superseded": [

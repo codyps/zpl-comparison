@@ -9,8 +9,8 @@ The root README links to these detailed reports. [Library capabilities and selec
 
 The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 598 focused and combined test files. Its [shared accuracy gallery](https://codyps.github.io/zpl-comparison/categories/conformance.html) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
-The [external label corpus](../test-data/external-zpl/README.md) adds eight unchanged,
-pinned upstream examples. [Execution report](https://codyps.github.io/zpl-comparison/categories/external-zpl.html).
+The [external label corpus](../test-data/external-zpl/README.md) contains eight pinned upstream examples with documented native-canvas adaptations,
+plus an explicit UTF-8 retail variant with its own printer reference. [Execution report](https://codyps.github.io/zpl-comparison/categories/external-zpl.html).
 Regenerate its images, JSON and Markdown with:
 
 ```sh

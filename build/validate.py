@@ -42,6 +42,7 @@ for name, directory in [
             case.get("capture_eligible", True)
             and case["validity"] != "invalid"
             and case["name"] not in refs
+            and not case.get("reference_unscored_reason")
         ):
             failure = failures.get(case["name"])
             if (

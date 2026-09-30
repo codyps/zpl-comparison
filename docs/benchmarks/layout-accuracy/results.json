@@ -2246,7 +2246,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:32Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -2262,7 +2262,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -2466,7 +2466,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:32Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -2482,7 +2482,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -2686,7 +2686,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:32Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -2702,7 +2702,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -2906,7 +2906,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:32Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -2922,7 +2922,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -3126,7 +3126,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:32Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -3142,7 +3142,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -3346,7 +3346,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:32Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -3362,7 +3362,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -3566,7 +3566,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -3582,7 +3582,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -3786,7 +3786,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -3802,7 +3802,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -4006,7 +4006,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -4022,7 +4022,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -4226,7 +4226,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -4242,7 +4242,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -4446,7 +4446,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:43Z",
       "output_dimensions": [
         832,
         300
@@ -4462,7 +4462,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -4666,7 +4666,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -4682,7 +4682,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -4886,7 +4886,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -4902,7 +4902,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -5106,7 +5106,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -5122,7 +5122,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -5326,7 +5326,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -5342,7 +5342,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -5546,7 +5546,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -5562,7 +5562,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -5766,7 +5766,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -5782,7 +5782,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -5986,7 +5986,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -6002,7 +6002,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -6206,7 +6206,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -6222,7 +6222,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -6426,7 +6426,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:33Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         832,
         300
@@ -6442,7 +6442,7 @@
       "status": "rendered",
       "validity": "valid",
       "width": 832,
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3"
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061"
     },
     {
       "library": "forge",
@@ -7372,7 +7372,7 @@
     "codyps-zpl": [
       {
         "name": "adapter",
-        "sha256": "99d32066d93135e642595cf0cb3ace348f1ef7c6729f40cf85ccb443ef152237"
+        "sha256": "60ffb1435ae402d7eedece21ea28da89696eb59dca49da9da98910b464dd27ae"
       },
       {
         "name": "command.json",
@@ -30357,6 +30357,75 @@
           "url": "https://github.com/codyps/zpl",
           "fetch_url": "git@github.com:codyps/zpl.git",
           "rev": "e72ec442c94159bfe792c480c018690e234948e4",
+          "version": "0.1.0"
+        }
+      }
+    },
+    {
+      "measured_utc": "2026-09-30T00:38:44Z",
+      "host": "macOS-26.7-x86_64-i386-64bit-Mach-O",
+      "libraries": [
+        "codyps-zpl"
+      ],
+      "cases": [
+        "layout-control",
+        "layout-home",
+        "layout-home-direct",
+        "layout-LS--80",
+        "layout-LS-80",
+        "layout-LT--50",
+        "layout-LT-50",
+        "layout-offset-combined",
+        "layout-transform-Y-N",
+        "layout-transform-N-I",
+        "layout-transform-Y-I",
+        "layout-clip-last-pixel",
+        "layout-clip-partial",
+        "layout-clip-outside",
+        "layout-label-reverse",
+        "layout-field-reverse",
+        "layout-field-orientation-N",
+        "layout-field-orientation-R",
+        "layout-field-orientation-I",
+        "layout-field-orientation-B"
+      ],
+      "source_lock": {
+        "go-zpl": {
+          "url": "https://github.com/StirlingMarketingGroup/go-zpl",
+          "rev": "78b181940c76efa25571c48a2257a130e48a6191"
+        },
+        "BinaryKits.Zpl": {
+          "url": "https://github.com/BinaryKits/BinaryKits.Zpl",
+          "rev": "9d316458c33c90608859cc935d3ba1e0c7587be7"
+        },
+        "python-zpl": {
+          "url": "https://github.com/cod3monk/zpl",
+          "rev": "9bbeca05aa42e41576bf43ee3ae7ec268a3df032"
+        },
+        "zplr": {
+          "url": "https://github.com/le2ni/zplr",
+          "rev": "1c94eadfc5afb494b4c92dd10ad4808bd3d19529"
+        },
+        "jszpl": {
+          "url": "https://github.com/DanieLeeuwner/JSZPL",
+          "rev": "53c916717c0dfdb1e6bca266eb6280c8f156c6ca"
+        },
+        "zpl-toolchain": {
+          "url": "https://github.com/trevordcampbell/zpl-toolchain",
+          "rev": "3da58518c1013fffd46d2147b0927a1d5b4aeab5"
+        },
+        "labelize": {
+          "url": "https://github.com/GOODBOY008/labelize",
+          "rev": "b9598a530178d65e6a293f06137a0e27a86bd2e8"
+        },
+        "zpl-forge": {
+          "url": "https://github.com/rafael-arreola/zpl-forge",
+          "rev": "1bed1721cf8dde70e4f304710b923b0efc7f600a"
+        },
+        "zpl": {
+          "url": "https://github.com/codyps/zpl",
+          "fetch_url": "git@github.com:codyps/zpl.git",
+          "rev": "f75ee34b58af1e8203e5c967ec73434d559e2eed",
           "version": "0.1.0"
         }
       }

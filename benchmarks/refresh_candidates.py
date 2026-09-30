@@ -44,6 +44,8 @@ def refresh(suite, libraries, work, save=False, jobs=2, library_root=None):
         row = dict(case=cid, library=lib, group=case.get("group", "zq610"), score=None)
         if "validity" in case:
             row["validity"] = case["validity"]
+        if case.get("reference_unscored_reason"):
+            row["comparison_diagnostic"] = case["reference_unscored_reason"]
         if mobile:
             row.update(source_sha256=digest, reference_sha256=case["png_sha256"],
                        requested_dimensions=[case["width"], case["height"]],
@@ -57,7 +59,7 @@ def refresh(suite, libraries, work, save=False, jobs=2, library_root=None):
         reference, reference_hash = None, None
         if suite == "accuracy" or mobile:
             reference, reference_hash = ROOT / case["reference"], case["png_sha256"]
-        elif cid in references and case["validity"] != "invalid":
+        elif cid in references and case["validity"] != "invalid" and not case.get("reference_unscored_reason"):
             reference, reference_hash = reference_dir / (cid + ".png"), references[cid]["png_sha256"]
         result = work / (name + ".comparison.json")
         comparison(dict(suite="zq610" if mobile else suite, row=str(metadata), image=str(images),

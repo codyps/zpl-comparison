@@ -1,6 +1,6 @@
 # Total comparison failure audit
 
-This audit covers all 7,032 observations across five rendering suites and eight
+The initial audit at `e3831222` covered all 7,032 observations across five rendering suites and eight
 libraries. It distinguishes execution failures, blank output against a nonblank
 printer reference, zero ink overlap, and mismatched native canvases. Unscored
 observations without a usable printer reference are not automatically failures.
@@ -51,7 +51,7 @@ is retained when generating saved reports.
 - Forge, Labelize, go-zpl, zpl-rs FFI, and Labelary observation rows were
   checked against the preceding commit and remain exactly unchanged.
 
-## Final inventory and validation
+## Initial inventory and validation
 
 The rebuilt reports contain **404 flagged observations out of 7,032**, down
 from 500 before these fixes. There are **zero canvas mismatches**. The flags
@@ -82,7 +82,7 @@ and site tests, the failure-inventory unit tests, workflow lint, and the complet
 reports, including all recomputed comparisons, rather than only the saved
 observation metadata.
 
-## Remaining failures and harness assessment
+## Initial remaining failures and harness assessment
 
 | Library | Assessment |
 |---|---|
@@ -95,16 +95,58 @@ observation metadata.
 | zplr | Requested-canvas and binary-string conversion faults are fixed. Remaining blank/zero-overlap or explicitly unsupported input results are retained as measured library behavior. Its only public profile is `zpl-ii-2025`, so there is no mobile-printer profile to select. |
 | Labelary | Saved HTTP requests use exact source hashes, requested dimensions, and 8 dots/mm. The two HTTP 404 results are intentionally invalid inputs that generated no labels. Remaining blank and displaced images are actual captured service outputs, not local adapter failures. No API recapture or pixel adjustment was performed. |
 
-The external printer capture also records an inline state reset. Reconstructing
-its exact submitted retail payload and checking `submitted_sha256` changes the
-initial diagnostic from legacy-byte rejection to unsupported glyph U+00C2;
-it still fails. Selecting UTF-8 would change the submitted label semantics,
-not fix the harness. This was checked without making a new printer request.
+## Retail and stored-resource follow-up
+
+The original `zplr-retail-upc-ean` contains UTF-8 bytes for a middle dot but
+never selects UTF-8. The saved printer preview reset selects `^CI27`, whereas
+codyps/zpl starts in `^CI0`. Those bytes therefore describe different glyphs.
+The original source and capture remain available as an unscored diagnostic;
+they cannot establish text accuracy across different initial encoding states.
+A separate `zplr-retail-upc-ean-utf8` case adds only `^CI28` and has its own
+ZD621 preview capture, plus a repeated control and a fresh Labelary response.
+
+Renderer commit [`f75ee34`](https://github.com/codyps/zpl/commit/f75ee34b58af1e8203e5c967ec73434d559e2eed) now maps legacy CP850 bytes and includes native ZD621 Font 0
+captures for the missing retail glyphs. It does not guess UTF-8 from the bytes.
+The supplemental strikes have independent composition and rotation controls.
+
+`zplr-stored-resources` required renderer support for `^DF` and `^XF`.
+Formats are now stored within one render request and expanded before numbered
+field substitution, so the downloaded graphic and `SESSION-42` field render
+together. The refreshed stored-resource comparison has 91.76% foreground IoU;
+the explicit UTF-8 retail case has 96.17%. Both retain their native canvases.
+Recall depth, object count, expansion count, and output size are
+bounded. Persistent printer storage and proxy admission are unchanged.
+
+Other libraries were rerun on all nine external fixtures without changing their
+implementations. The BinaryKits stored-format exception and Forge parser errors
+remain library limitations; their adapters still submit the complete inputs.
 
 Zero ink overlap is not necessarily failure to execute: QR/barcode/text output
 can be displaced completely from printer ink. Native dimensions and the original
 origin remain unchanged; no alignment, cropping, padding, or score tolerances
 were added to improve these results. Third-party renderer code was not changed.
+
+## Current inventory after the follow-up
+
+The rebuilt reports contain **7,040 observations and 402 flagged rows**, with
+**zero native canvas mismatches**. The flags comprise 256 execution failures
+or rejections, 110 zero-ink-overlap renders, and 36 blank outputs against
+nonblank references. codyps/zpl now has 19 flags: 17 intentionally invalid
+inputs and two unsupported UTF-16 cases (`encoding-29` and `encoding-30`).
+Other libraries' flagged totals are unchanged from the initial inventory.
+
+All nine external labels render with codyps/zpl. The original retail case is
+unscored; its explicit UTF-8 variant and the stored-resource case are scored
+against their corresponding printer captures. The five-suite refresh changed
+no previously successful codyps/zpl image files. The initial table above is
+retained as the audit history; the JSON/TSV inventory reflects this follow-up.
+
+Validation passed: native encoding and rotation controls (exact pixels), stored
+format and numbered-field tests, renderer unit tests, printer accuracy and
+conformance previews, font-asset reproduction, formatting, 15 comparison
+conformance tests, two audit tests, pipeline/site tests, and the complete
+`//:reports_saved` build. The validator also verifies source hashes for unscored
+diagnostic references instead of treating them as missing printer captures.
 
 ## Reproduce
 

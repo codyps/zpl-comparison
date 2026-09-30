@@ -80,7 +80,7 @@ def _impl(ctx):
             cid = case.get("id", case["name"])
             zpl = case["zpl"] if suite == "accuracy" else corpus + "/" + case["file"]
             digest = case["zpl_sha256"] if suite == "accuracy" else case["sha256"]
-            reference = case["reference"] if suite == "accuracy" else reference_dir + "/" + cid + ".png" if cid in references and case["validity"] != "invalid" else None
+            reference = case["reference"] if suite == "accuracy" else reference_dir + "/" + cid + ".png" if cid in references and case["validity"] != "invalid" and not case.get("reference_unscored_reason") else None
             reference_hash = case["png_sha256"] if suite == "accuracy" else references[cid]["png_sha256"] if reference else None
             case_outputs = []
             rows = []
@@ -93,6 +93,8 @@ def _impl(ctx):
                 identity = {"case": cid, "library": lib, "group": case["group"], "score": None}
                 if suite != "accuracy":
                     identity["validity"] = case["validity"]
+                    if case.get("reference_unscored_reason"):
+                        identity["comparison_diagnostic"] = case["reference_unscored_reason"]
                 spec = {"source": files[zpl].path, "sha256": digest, "width": case["width"], "height": case["height"], "row": identity, "timeout": 45 if suite == "accuracy" else 15}
                 inputs = [files[zpl]]
                 if ctx.attr.saved:

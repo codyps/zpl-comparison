@@ -1553,7 +1553,7 @@
     "codyps-zpl": [
       {
         "name": "adapter",
-        "sha256": "99d32066d93135e642595cf0cb3ace348f1ef7c6729f40cf85ccb443ef152237"
+        "sha256": "60ffb1435ae402d7eedece21ea28da89696eb59dca49da9da98910b464dd27ae"
       },
       {
         "name": "command.json",
@@ -24432,6 +24432,175 @@
           "url": "https://github.com/le2ni/zplr"
         }
       }
+    },
+    {
+      "cases": [
+        "barcode-aztec",
+        "barcode-aztec_alias",
+        "barcode-aztec_rune",
+        "barcode-codabar",
+        "barcode-codablock_a",
+        "barcode-codablock_e",
+        "barcode-codablock_f",
+        "barcode-code11",
+        "barcode-code128",
+        "barcode-code39",
+        "barcode-code49",
+        "barcode-code93",
+        "barcode-composite_a",
+        "barcode-composite_b",
+        "barcode-composite_c",
+        "barcode-data_matrix",
+        "barcode-data_matrix_rectangular",
+        "barcode-databar_ean13",
+        "barcode-databar_ean8",
+        "barcode-databar_expanded",
+        "barcode-databar_expanded_stacked",
+        "barcode-databar_limited",
+        "barcode-databar_omni",
+        "barcode-databar_stacked",
+        "barcode-databar_stacked_omni",
+        "barcode-databar_truncated",
+        "barcode-databar_upca",
+        "barcode-databar_upce",
+        "barcode-ean13",
+        "barcode-ean8",
+        "barcode-extension2",
+        "barcode-extension5",
+        "barcode-industrial2of5",
+        "barcode-intelligent_mail",
+        "barcode-interleaved2of5",
+        "barcode-logmars",
+        "barcode-maxicode2",
+        "barcode-maxicode3",
+        "barcode-maxicode4",
+        "barcode-maxicode5",
+        "barcode-maxicode6",
+        "barcode-micropdf417_1",
+        "barcode-micropdf417_3",
+        "barcode-micropdf417_4",
+        "barcode-msi_a",
+        "barcode-msi_b",
+        "barcode-msi_c",
+        "barcode-msi_d",
+        "barcode-pdf417",
+        "barcode-pdf417_truncated",
+        "barcode-planet",
+        "barcode-plessey",
+        "barcode-postal_planet",
+        "barcode-postnet",
+        "barcode-qr",
+        "barcode-standard2of5",
+        "barcode-tlc39_linear",
+        "barcode-tlc39_linked",
+        "barcode-upca",
+        "barcode-upce",
+        "canvas-height-120",
+        "canvas-height-2030",
+        "canvas-height-400",
+        "canvas-width-120",
+        "canvas-width-120-fit",
+        "canvas-width-300",
+        "canvas-width-300-fit",
+        "canvas-width-384",
+        "canvas-width-400",
+        "canvas-width-832",
+        "graphic",
+        "layout-LS12",
+        "layout-LT0",
+        "layout-LT30",
+        "layout-PMN",
+        "layout-PMY",
+        "layout-POI",
+        "layout-PON",
+        "shape-GB",
+        "shape-GC",
+        "shape-GD",
+        "shape-GE",
+        "text-0-B",
+        "text-0-I",
+        "text-0-N",
+        "text-0-R",
+        "text-A-B",
+        "text-A-I",
+        "text-A-I-fit",
+        "text-A-N",
+        "text-A-R",
+        "text-D-B",
+        "text-D-I",
+        "text-D-I-fit",
+        "text-D-N",
+        "text-D-R",
+        "text-E-B",
+        "text-E-I",
+        "text-E-I-fit",
+        "text-E-N",
+        "text-E-R",
+        "text-block",
+        "width-boundary-1",
+        "width-boundary-127",
+        "width-boundary-128",
+        "width-boundary-383",
+        "width-boundary-384",
+        "width-boundary-384-fit",
+        "width-boundary-385",
+        "width-boundary-63",
+        "width-boundary-64",
+        "width-boundary-65",
+        "width-boundary-800",
+        "width-late-grow",
+        "width-late-grow-fit",
+        "width-late-shrink",
+        "smoke-aztec",
+        "smoke-aztec_alias",
+        "smoke-aztec_rune",
+        "smoke-codabar"
+      ],
+      "host": "macOS-26.7-x86_64-i386-64bit-Mach-O",
+      "libraries": [
+        "codyps-zpl"
+      ],
+      "measured_utc": "2026-09-30T00:38:55Z",
+      "source_lock": {
+        "BinaryKits.Zpl": {
+          "rev": "9d316458c33c90608859cc935d3ba1e0c7587be7",
+          "url": "https://github.com/BinaryKits/BinaryKits.Zpl"
+        },
+        "go-zpl": {
+          "rev": "78b181940c76efa25571c48a2257a130e48a6191",
+          "url": "https://github.com/StirlingMarketingGroup/go-zpl"
+        },
+        "jszpl": {
+          "rev": "53c916717c0dfdb1e6bca266eb6280c8f156c6ca",
+          "url": "https://github.com/DanieLeeuwner/JSZPL"
+        },
+        "labelize": {
+          "rev": "b9598a530178d65e6a293f06137a0e27a86bd2e8",
+          "url": "https://github.com/GOODBOY008/labelize"
+        },
+        "python-zpl": {
+          "rev": "9bbeca05aa42e41576bf43ee3ae7ec268a3df032",
+          "url": "https://github.com/cod3monk/zpl"
+        },
+        "zpl": {
+          "fetch_url": "git@github.com:codyps/zpl.git",
+          "rev": "f75ee34b58af1e8203e5c967ec73434d559e2eed",
+          "url": "https://github.com/codyps/zpl",
+          "version": "0.1.0"
+        },
+        "zpl-forge": {
+          "rev": "1bed1721cf8dde70e4f304710b923b0efc7f600a",
+          "url": "https://github.com/rafael-arreola/zpl-forge"
+        },
+        "zpl-toolchain": {
+          "rev": "3da58518c1013fffd46d2147b0927a1d5b4aeab5",
+          "url": "https://github.com/trevordcampbell/zpl-toolchain"
+        },
+        "zplr": {
+          "rev": "1c94eadfc5afb494b4c92dd10ad4808bd3d19529",
+          "url": "https://github.com/le2ni/zplr"
+        }
+      }
     }
   ],
   "results": [
@@ -24474,7 +24643,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-aztec",
       "diagnostic": "",
@@ -24488,7 +24657,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         384,
         2030
@@ -24757,7 +24926,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-aztec_alias",
       "diagnostic": "",
@@ -24771,7 +24940,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         384,
         2030
@@ -25040,7 +25209,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-aztec_rune",
       "diagnostic": "",
@@ -25054,7 +25223,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         384,
         2030
@@ -25323,7 +25492,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-codabar",
       "diagnostic": "",
@@ -25337,7 +25506,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         384,
         2030
@@ -25606,7 +25775,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-codablock_a",
       "diagnostic": "",
@@ -25620,7 +25789,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:44Z",
       "output_dimensions": [
         384,
         2030
@@ -25889,7 +26058,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-codablock_e",
       "diagnostic": "",
@@ -25903,7 +26072,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -26172,7 +26341,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-codablock_f",
       "diagnostic": "",
@@ -26186,7 +26355,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -26455,7 +26624,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-code11",
       "diagnostic": "",
@@ -26469,7 +26638,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -26738,7 +26907,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-code128",
       "diagnostic": "",
@@ -26752,7 +26921,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:34Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -27021,7 +27190,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-code39",
       "diagnostic": "",
@@ -27035,7 +27204,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -27304,7 +27473,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-code49",
       "diagnostic": "",
@@ -27318,7 +27487,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -27587,7 +27756,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-code93",
       "diagnostic": "",
@@ -27601,7 +27770,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -27870,7 +28039,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-composite_a",
       "diagnostic": "",
@@ -27884,7 +28053,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -28153,7 +28322,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-composite_b",
       "diagnostic": "",
@@ -28167,7 +28336,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -28436,7 +28605,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-composite_c",
       "diagnostic": "",
@@ -28450,7 +28619,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -28719,7 +28888,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-data_matrix",
       "diagnostic": "",
@@ -28733,7 +28902,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:45Z",
       "output_dimensions": [
         384,
         2030
@@ -29002,7 +29171,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-data_matrix_rectangular",
       "diagnostic": "",
@@ -29016,7 +29185,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -29285,7 +29454,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_ean13",
       "diagnostic": "",
@@ -29299,7 +29468,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -29568,7 +29737,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_ean8",
       "diagnostic": "",
@@ -29582,7 +29751,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -29851,7 +30020,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_expanded",
       "diagnostic": "",
@@ -29865,7 +30034,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -30134,7 +30303,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_expanded_stacked",
       "diagnostic": "",
@@ -30148,7 +30317,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -30417,7 +30586,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_limited",
       "diagnostic": "",
@@ -30431,7 +30600,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -30700,7 +30869,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_omni",
       "diagnostic": "",
@@ -30714,7 +30883,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -30983,7 +31152,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_stacked",
       "diagnostic": "",
@@ -30997,7 +31166,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -31266,7 +31435,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_stacked_omni",
       "diagnostic": "",
@@ -31280,7 +31449,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:35Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -31549,7 +31718,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_truncated",
       "diagnostic": "",
@@ -31563,7 +31732,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:46Z",
       "output_dimensions": [
         384,
         2030
@@ -31832,7 +32001,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_upca",
       "diagnostic": "",
@@ -31846,7 +32015,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -32115,7 +32284,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-databar_upce",
       "diagnostic": "",
@@ -32129,7 +32298,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -32398,7 +32567,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-ean13",
       "diagnostic": "",
@@ -32412,7 +32581,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -32681,7 +32850,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-ean8",
       "diagnostic": "",
@@ -32695,7 +32864,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -32964,7 +33133,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-extension2",
       "diagnostic": "",
@@ -32978,7 +33147,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -33247,7 +33416,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-extension5",
       "diagnostic": "",
@@ -33261,7 +33430,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -33530,7 +33699,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-industrial2of5",
       "diagnostic": "",
@@ -33544,7 +33713,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -33813,7 +33982,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-intelligent_mail",
       "diagnostic": "",
@@ -33827,7 +33996,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -34096,7 +34265,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-interleaved2of5",
       "diagnostic": "",
@@ -34110,7 +34279,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -34379,7 +34548,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-logmars",
       "diagnostic": "",
@@ -34393,7 +34562,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -34662,7 +34831,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode2",
       "diagnostic": "",
@@ -34676,7 +34845,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:47Z",
       "output_dimensions": [
         384,
         2030
@@ -34926,7 +35095,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode3",
       "diagnostic": "",
@@ -34940,7 +35109,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -35190,7 +35359,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode4",
       "diagnostic": "",
@@ -35204,7 +35373,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -35473,7 +35642,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode5",
       "diagnostic": "",
@@ -35487,7 +35656,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:36Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -35737,7 +35906,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-maxicode6",
       "diagnostic": "",
@@ -35751,7 +35920,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -36001,7 +36170,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-micropdf417_1",
       "diagnostic": "",
@@ -36015,7 +36184,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -36284,7 +36453,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-micropdf417_3",
       "diagnostic": "",
@@ -36298,7 +36467,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -36567,7 +36736,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-micropdf417_4",
       "diagnostic": "",
@@ -36581,7 +36750,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -36850,7 +37019,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_a",
       "diagnostic": "",
@@ -36864,7 +37033,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -37133,7 +37302,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_b",
       "diagnostic": "",
@@ -37147,7 +37316,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -37416,7 +37585,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_c",
       "diagnostic": "",
@@ -37430,7 +37599,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -37699,7 +37868,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-msi_d",
       "diagnostic": "",
@@ -37713,7 +37882,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -37982,7 +38151,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-pdf417",
       "diagnostic": "",
@@ -37996,7 +38165,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:48Z",
       "output_dimensions": [
         384,
         2030
@@ -38265,7 +38434,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-pdf417_truncated",
       "diagnostic": "",
@@ -38279,7 +38448,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -38548,7 +38717,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-planet",
       "diagnostic": "",
@@ -38562,7 +38731,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -38831,7 +39000,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-plessey",
       "diagnostic": "",
@@ -38845,7 +39014,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -39114,7 +39283,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-postal_planet",
       "diagnostic": "",
@@ -39128,7 +39297,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -39397,7 +39566,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-postnet",
       "diagnostic": "",
@@ -39411,7 +39580,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -39680,7 +39849,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-qr",
       "diagnostic": "",
@@ -39694,7 +39863,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:37Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -39963,7 +40132,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-standard2of5",
       "diagnostic": "",
@@ -39977,7 +40146,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -40246,7 +40415,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-tlc39_linear",
       "diagnostic": "",
@@ -40260,7 +40429,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -40529,7 +40698,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-tlc39_linked",
       "diagnostic": "",
@@ -40543,7 +40712,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -40812,7 +40981,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-upca",
       "diagnostic": "",
@@ -40826,7 +40995,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -41095,7 +41264,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "barcode-upce",
       "diagnostic": "",
@@ -41109,7 +41278,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:49Z",
       "output_dimensions": [
         384,
         2030
@@ -41378,7 +41547,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-height-120",
       "diagnostic": "",
@@ -41392,7 +41561,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         384,
         2030
@@ -41661,7 +41830,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-height-2030",
       "diagnostic": "",
@@ -41675,7 +41844,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         384,
         2030
@@ -41944,7 +42113,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-height-400",
       "diagnostic": "",
@@ -41958,7 +42127,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         384,
         2030
@@ -42227,7 +42396,7 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-120",
       "diagnostic": "",
@@ -42241,7 +42410,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         128,
         2030
@@ -42341,7 +42510,7 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-120-fit",
       "diagnostic": "",
@@ -42355,7 +42524,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         128,
         2030
@@ -42793,7 +42962,7 @@
       "width": 320
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-300",
       "diagnostic": "",
@@ -42807,7 +42976,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         320,
         2030
@@ -42907,7 +43076,7 @@
       "width": 320
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-300-fit",
       "diagnostic": "",
@@ -42921,7 +43090,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         320,
         2030
@@ -43359,7 +43528,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-384",
       "diagnostic": "",
@@ -43373,7 +43542,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         384,
         2030
@@ -43642,7 +43811,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-400",
       "diagnostic": "",
@@ -43656,7 +43825,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         384,
         2030
@@ -43925,7 +44094,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "canvas-width-832",
       "diagnostic": "",
@@ -43939,7 +44108,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:38Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         384,
         2030
@@ -44208,7 +44377,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "graphic",
       "diagnostic": "",
@@ -44222,7 +44391,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:50Z",
       "output_dimensions": [
         384,
         2030
@@ -44491,7 +44660,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "layout-LS12",
       "diagnostic": "",
@@ -44505,7 +44674,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -44774,7 +44943,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "layout-LT0",
       "diagnostic": "",
@@ -44788,7 +44957,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -45057,7 +45226,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "layout-LT30",
       "diagnostic": "",
@@ -45071,7 +45240,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -45340,7 +45509,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "layout-PMN",
       "diagnostic": "",
@@ -45354,7 +45523,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -45623,7 +45792,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "layout-PMY",
       "diagnostic": "",
@@ -45637,7 +45806,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -45906,7 +46075,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "layout-POI",
       "diagnostic": "",
@@ -45920,7 +46089,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -46189,7 +46358,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "layout-PON",
       "diagnostic": "",
@@ -46203,7 +46372,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -46472,7 +46641,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "shape-GB",
       "diagnostic": "",
@@ -46486,7 +46655,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -46755,7 +46924,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "shape-GC",
       "diagnostic": "",
@@ -46769,7 +46938,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -47038,7 +47207,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "shape-GD",
       "diagnostic": "",
@@ -47052,7 +47221,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -47321,7 +47490,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "shape-GE",
       "diagnostic": "",
@@ -47335,7 +47504,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -47604,7 +47773,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "smoke-aztec",
       "diagnostic": "",
@@ -47618,7 +47787,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:51Z",
       "output_dimensions": [
         384,
         2030
@@ -47887,7 +48056,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "smoke-aztec_alias",
       "diagnostic": "",
@@ -47901,7 +48070,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -48170,7 +48339,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "smoke-aztec_rune",
       "diagnostic": "",
@@ -48184,7 +48353,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:39Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -48453,7 +48622,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "smoke-codabar",
       "diagnostic": "",
@@ -48467,7 +48636,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -48736,7 +48905,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 5.13136288998358e-06,
       "case": "text-0-B",
       "diagnostic": "",
@@ -48750,7 +48919,7 @@
       "iou": 0.9926470588235294,
       "library": "codyps-zpl",
       "missing": 1,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -49019,7 +49188,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 1.026272577996716e-05,
       "case": "text-0-I",
       "diagnostic": "",
@@ -49033,7 +49202,7 @@
       "iou": 0.9854014598540146,
       "library": "codyps-zpl",
       "missing": 5,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -49302,7 +49471,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-0-N",
       "diagnostic": "",
@@ -49316,7 +49485,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -49585,7 +49754,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 6.414203612479474e-06,
       "case": "text-0-R",
       "diagnostic": "",
@@ -49599,7 +49768,7 @@
       "iou": 0.9908759124087592,
       "library": "codyps-zpl",
       "missing": 5,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -49868,7 +50037,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-A-B",
       "diagnostic": "",
@@ -49882,7 +50051,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -50151,7 +50320,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-A-I",
       "diagnostic": "",
@@ -50165,7 +50334,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:52Z",
       "output_dimensions": [
         384,
         2030
@@ -50265,7 +50434,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-A-I-fit",
       "diagnostic": "",
@@ -50279,7 +50448,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -50717,7 +50886,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-A-N",
       "diagnostic": "",
@@ -50731,7 +50900,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -51000,7 +51169,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-A-R",
       "diagnostic": "",
@@ -51014,7 +51183,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -51283,7 +51452,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-D-B",
       "diagnostic": "",
@@ -51297,7 +51466,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -51566,7 +51735,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-D-I",
       "diagnostic": "",
@@ -51580,7 +51749,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -51680,7 +51849,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-D-I-fit",
       "diagnostic": "",
@@ -51694,7 +51863,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -52132,7 +52301,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-D-N",
       "diagnostic": "",
@@ -52146,7 +52315,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:40Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -52415,7 +52584,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-D-R",
       "diagnostic": "",
@@ -52429,7 +52598,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -52698,7 +52867,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-E-B",
       "diagnostic": "",
@@ -52712,7 +52881,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -52981,7 +53150,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-E-I",
       "diagnostic": "",
@@ -52995,7 +53164,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -53095,7 +53264,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-E-I-fit",
       "diagnostic": "",
@@ -53109,7 +53278,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:53Z",
       "output_dimensions": [
         384,
         2030
@@ -53547,7 +53716,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-E-N",
       "diagnostic": "",
@@ -53561,7 +53730,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         384,
         2030
@@ -53830,7 +53999,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-E-R",
       "diagnostic": "",
@@ -53844,7 +54013,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         384,
         2030
@@ -54113,7 +54282,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "text-block",
       "diagnostic": "",
@@ -54127,7 +54296,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         384,
         2030
@@ -54396,7 +54565,7 @@
       "width": 64
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-1",
       "diagnostic": "",
@@ -54410,7 +54579,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         64,
         2030
@@ -54679,7 +54848,7 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-127",
       "diagnostic": "",
@@ -54693,7 +54862,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         128,
         2030
@@ -54962,7 +55131,7 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-128",
       "diagnostic": "",
@@ -54976,7 +55145,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         128,
         2030
@@ -55245,7 +55414,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-383",
       "diagnostic": "",
@@ -55259,7 +55428,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         384,
         2030
@@ -55528,7 +55697,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-384",
       "diagnostic": "",
@@ -55542,7 +55711,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         384,
         2030
@@ -55642,7 +55811,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-384-fit",
       "diagnostic": "",
@@ -55656,7 +55825,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         384,
         2030
@@ -56094,7 +56263,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-385",
       "diagnostic": "",
@@ -56108,7 +56277,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         384,
         2030
@@ -56377,7 +56546,7 @@
       "width": 64
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-63",
       "diagnostic": "",
@@ -56391,7 +56560,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         64,
         2030
@@ -56660,7 +56829,7 @@
       "width": 64
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-64",
       "diagnostic": "",
@@ -56674,7 +56843,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:41Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         64,
         2030
@@ -56943,7 +57112,7 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-65",
       "diagnostic": "",
@@ -56957,7 +57126,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:42Z",
+      "observed_utc": "2026-09-30T00:38:54Z",
       "output_dimensions": [
         128,
         2030
@@ -57226,7 +57395,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-boundary-800",
       "diagnostic": "",
@@ -57240,7 +57409,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:42Z",
+      "observed_utc": "2026-09-30T00:38:55Z",
       "output_dimensions": [
         384,
         2030
@@ -57509,7 +57678,7 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-late-grow",
       "diagnostic": "",
@@ -57523,7 +57692,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:42Z",
+      "observed_utc": "2026-09-30T00:38:55Z",
       "output_dimensions": [
         128,
         2030
@@ -57623,7 +57792,7 @@
       "width": 128
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-late-grow-fit",
       "diagnostic": "",
@@ -57637,7 +57806,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:42Z",
+      "observed_utc": "2026-09-30T00:38:55Z",
       "output_dimensions": [
         128,
         2030
@@ -58075,7 +58244,7 @@
       "width": 384
     },
     {
-      "adapter_identity_sha256": "8366be1d4651bdc7a762b320b73ee787b0d2c872d75723e7298016da42f859a3",
+      "adapter_identity_sha256": "3341b19d6c81ddacf5bf8373093eddac0cd28fc27d282058b61225bcf3732061",
       "canvas_disagreement": 0.0,
       "case": "width-late-shrink",
       "diagnostic": "",
@@ -58089,7 +58258,7 @@
       "iou": 1.0,
       "library": "codyps-zpl",
       "missing": 0,
-      "observed_utc": "2026-09-29T21:07:42Z",
+      "observed_utc": "2026-09-30T00:38:55Z",
       "output_dimensions": [
         384,
         2030
@@ -58343,7 +58512,7 @@
     },
     "zpl": {
       "fetch_url": "git@github.com:codyps/zpl.git",
-      "rev": "e72ec442c94159bfe792c480c018690e234948e4",
+      "rev": "f75ee34b58af1e8203e5c967ec73434d559e2eed",
       "url": "https://github.com/codyps/zpl",
       "version": "0.1.0"
     },
