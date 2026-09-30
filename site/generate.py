@@ -1016,7 +1016,7 @@ class Site:
                 if r["mode"] != mode:
                     continue
                 label = (
-                    f"{r['median_ns'] / 1e6:.4f} ms"
+                    f"{r['median_ns'] / 1e3:.3f} µs"
                     if r["status"] == "ok"
                     else r["status"]
                 )
@@ -1058,7 +1058,7 @@ class Site:
             measured = [r for r in data["results"] if r["mode"] == mode]
             body += (
                 "<h2>" + title + "</h2>"
-                + performance_chart(measured, "median_ns", 1e6, "ms", "Median duration · lower is faster")
+                + performance_chart(measured, "median_ns", 1e3, "µs", "Median duration · lower is faster")
                 + performance_chart(measured, "peak_rss_bytes", 2**20, "MiB", "Peak process memory · lower uses less")
                 + "<p>Bars use a linear scale within each workload. Peak RSS includes the runtime, warm-up and output capture. Select a table heading to sort.</p>"
                 + table(

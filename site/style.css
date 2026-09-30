@@ -20,6 +20,7 @@ a {
 a:hover {
   color: #9b3c19;
 }
+button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 summary:focus-visible,
