@@ -7243,7 +7243,7 @@
     {
       "name": "symbol-aztec",
       "group": "barcode-families",
-      "purpose": "Reference symbol variant: aztec",
+      "purpose": "Reference symbol variant: aztec; isolated barcode check without printer-reset CI remapping. Rendering alone is not a fidelity pass; compare printer pixels, especially for rune mode. See encoding-remap-identity separately.",
       "validity": "valid",
       "oracle": "printer",
       "relation": null,
@@ -7347,7 +7347,7 @@
     {
       "name": "symbol-aztec_alias",
       "group": "barcode-families",
-      "purpose": "Reference symbol variant: aztec_alias",
+      "purpose": "Reference symbol variant: aztec_alias; isolated barcode check without printer-reset CI remapping. Rendering alone is not a fidelity pass; compare printer pixels, especially for rune mode. See encoding-remap-identity separately.",
       "validity": "valid",
       "oracle": "printer",
       "relation": null,
@@ -7451,7 +7451,7 @@
     {
       "name": "symbol-aztec_rune",
       "group": "barcode-families",
-      "purpose": "Reference symbol variant: aztec_rune",
+      "purpose": "Reference symbol variant: aztec_rune; isolated barcode check without printer-reset CI remapping. Rendering alone is not a fidelity pass; compare printer pixels, especially for rune mode. See encoding-remap-identity separately.",
       "validity": "valid",
       "oracle": "printer",
       "relation": null,
@@ -40729,6 +40729,220 @@
         {
           "command": "^FH",
           "pdf_page": 193
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "encoding-remap-control",
+      "group": "encoding",
+      "purpose": "CI identity-remap syntax: ^CI0; must render the same ASCII text as the paired control. Non-identity mapping behavior is tested by encoding-remap.",
+      "validity": "valid",
+      "oracle": "metamorphic",
+      "relation": {
+        "kind": "same-raster",
+        "set": "ci-identity-remap"
+      },
+      "source": null,
+      "commands": [
+        "^A",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/encoding/encoding-remap-control.zpl",
+      "sha256": "f480a862edeadfa74d2b3ead1f711af6220587b2f58c95bf5a844fb2eb264f5d",
+      "bytes": 105,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "encoding-remap-identity",
+      "group": "encoding",
+      "purpose": "CI identity-remap syntax: ^CI0,0,0; must render the same ASCII text as the paired control. Non-identity mapping behavior is tested by encoding-remap.",
+      "validity": "valid",
+      "oracle": "metamorphic",
+      "relation": {
+        "kind": "same-raster",
+        "set": "ci-identity-remap"
+      },
+      "source": null,
+      "commands": [
+        "^A",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/encoding/encoding-remap-identity.zpl",
+      "sha256": "374f3e5764d333d803d47316f4a695139e77f98df87055910d39eead3e638d56",
+      "bytes": 109,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A",
+          "pdf_page": 60
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
         },
         {
           "command": "^FO",

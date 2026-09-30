@@ -19,6 +19,15 @@ use directional ink counts and foreground IoU. Blank diagnostics, execution
 failures and uncaptured candidates remain visible and never become fabricated
 positive matches. Candidate raster hashes are checked before comparison.
 
+Aztec observations here include the printer-state reset prefix. zpl-forge
+0.3.2 rejects its `^CI` remapping arguments before reaching the barcode;
+these errors do not establish an Aztec limitation. The site links these cases
+to the independent conformance `symbol-aztec`, `symbol-aztec_alias`, and
+`symbol-aztec_rune` comparisons. Dedicated `encoding-remap-control` and
+`encoding-remap-identity` fixtures separately compare `^CI0` with `^CI0,0,0`;
+`encoding-remap` continues to check non-identity remapping. Captured sources
+and their hashes remain unchanged.
+
 The [canvas dimension audit](../../docs/canvas-dimension-audit.md) lists the
 26 cases previously affected by the default ZD621 profile and the validation.
 

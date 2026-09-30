@@ -601,6 +601,30 @@ class Site:
             )
         )
 
+    def compatibility_context(self, case):
+        """Keep reset-prefixed observations distinct from isolated feature checks."""
+        variant = re.fullmatch(r"(?:barcode|smoke)-(aztec(?:_alias|_rune)?)", case["id"])
+        if case["suite"] != "zq610-candidates" or not variant:
+            return ""
+        targets = [
+            ("conformance--symbol-" + variant[1], "Isolated " + variant[1] + " comparison"),
+            ("conformance--encoding-remap-control", "CI0 control"),
+            ("conformance--encoding-remap-identity", "CI0,0,0 compatibility check"),
+            ("conformance--encoding-remap", "Non-identity character remapping"),
+        ]
+        available = {c["key"] for c in self.cases}
+        links = [self.link("cases/" + key + ".html", label)
+                 for key, label in targets if key in available]
+        return (
+            '<aside class="compatibility-context"><p>This exact printer submission includes '
+            'character-remapping resets before the Aztec command. A reset-prefix parse '
+            'failure does not establish an Aztec limitation. zpl-forge 0.3.2 rejects '
+            'the CI remapping arguments before reaching the barcode. Use the isolated '
+            'comparison to assess barcode fidelity; PNG creation alone is not a pass.</p>'
+            + ("<p>" + " · ".join(links) + "</p>" if links else "")
+            + "</aside>"
+        )
+
     def case_pages(self):
         for c in self.cases:
             self.page = "cases/" + c["key"] + ".html"
@@ -618,6 +642,7 @@ class Site:
                 + E(c["notes"])
                 + "</p>"
             )
+            body += self.compatibility_context(c)
             original = c["metadata"].get("source", "")
             if isinstance(original, str) and urlsplit(original).scheme in (
                 "http",

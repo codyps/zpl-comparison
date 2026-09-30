@@ -33,6 +33,20 @@ finally:
 
 
 class ConformanceTests(unittest.TestCase):
+    def test_aztec_and_ci_remapping_are_independent(self):
+        cases = {c['name']: c for c in generator.rows()}
+        for variant in ('aztec', 'aztec_alias', 'aztec_rune'):
+            data = cases['symbol-' + variant]['zpl']
+            self.assertNotRegex(data, rb'\^CI\d+,')
+            self.assertRegex(data, rb'\^B[O0]')
+        control = cases['encoding-remap-control']
+        identity = cases['encoding-remap-identity']
+        self.assertIn(b'^CI0,0,0', identity['zpl'])
+        self.assertEqual(identity['zpl'].replace(b'^CI0,0,0', b'^CI0'), control['zpl'])
+        self.assertEqual(identity['relation'], control['relation'])
+        self.assertNotRegex(identity['zpl'], rb'\^B[O0]')
+        self.assertIn(b'^CI0,65,66', cases['encoding-remap']['zpl'])
+
     def test_native_preview_migration_isolates_rounding(self):
         regular = {c['name']: c for c in generator.rows()}
         native = {c['name']: c for c in generator.rows(native_preview=True)}

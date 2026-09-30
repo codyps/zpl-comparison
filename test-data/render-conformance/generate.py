@@ -125,6 +125,12 @@ def rows(*, native_preview=False):
             source=str(path.relative_to(REPO)),
         )
         result[-1]["width"] = 832
+        if path.stem in {"aztec", "aztec_alias", "aztec_rune"}:
+            result[-1]["purpose"] += (
+                "; isolated barcode check without printer-reset CI remapping. "
+                "Rendering alone is not a fidelity pass; compare printer pixels, "
+                "especially for rune mode. See encoding-remap-identity separately."
+            )
 
     if native_preview:
         # Keep rounding out of ordinary symbol accuracy tests. These paired,
@@ -366,6 +372,17 @@ def rows(*, native_preview=False):
             f"CI {mode}: ASCII repertoire in the requested byte encoding",
             f"^CI{mode}^FO80,100^FH_^FD" + "".join(f"_{b:02X}" for b in data) + "^FS",
             oracle="font-dependent",
+        )
+    for name, encoding in [("control", "^CI0"), ("identity", "^CI0,0,0")]:
+        add(
+            "encoding-remap-" + name,
+            "encoding",
+            "CI identity-remap syntax: " + encoding
+            + "; must render the same ASCII text as the paired control. "
+            "Non-identity mapping behavior is tested by encoding-remap.",
+            encoding + "^FO80,100^A0N,32,24^FDABC 123^FS",
+            oracle="metamorphic",
+            relation={"kind": "same-raster", "set": "ci-identity-remap"},
         )
     add(
         "encoding-remap",

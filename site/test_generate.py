@@ -15,6 +15,26 @@ spec.loader.exec_module(generate)
 
 
 class PublicationTests(unittest.TestCase):
+    def test_aztec_context_links_only_available_independent_checks(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            s = generate.Site(root / 'input', root / 'output')
+            s.page = 'cases/zq610-candidates--barcode-aztec.html'
+            s.cases = [{'key': 'conformance--symbol-aztec'},
+                       {'key': 'conformance--encoding-remap-identity'}]
+            case = {'suite': 'zq610-candidates', 'id': 'barcode-aztec'}
+            context = s.compatibility_context(case)
+            self.assertIn('symbol-aztec.html', context)
+            self.assertIn('encoding-remap-identity.html', context)
+            self.assertNotIn('encoding-remap-control.html', context)
+            self.assertIn('before reaching the barcode', context)
+            self.assertEqual(s.compatibility_context({**case, 'id': 'barcode-qr'}), '')
+            self.assertEqual(s.compatibility_context({**case, 'suite': 'conformance'}), '')
+            for variant in ('aztec_alias', 'aztec_rune'):
+                s.cases = [{'key': 'conformance--symbol-' + variant}]
+                self.assertIn('symbol-' + variant + '.html', s.compatibility_context(
+                    {**case, 'id': 'smoke-' + variant}))
+
     def test_unscored_is_not_zero_and_failure_zero_is_preserved(self):
         self.assertEqual(
             generate.summary([{"score": 1}, {"score": 0}, {"score": None}]), (0.5, 2, 3)

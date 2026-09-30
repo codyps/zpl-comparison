@@ -1,6 +1,6 @@
 # ZPL rendering conformance corpus
 
-**598 standalone ZPL files**, exercising **68 content-command families**: 579 valid/boundary probes and 19 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
+**600 standalone ZPL files**, exercising **68 content-command families**: 581 valid/boundary probes and 19 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
 
 [Complete command coverage and case catalog](https://github.com/codyps/zpl-comparison/blob/generated/test-data/render-conformance/COVERAGE.md) · [Manifest](manifest.json) · [Generator](generate.py) · [Existing printer accuracy report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
 
@@ -16,6 +16,15 @@ These are tests of ZPL, not examples restricted to what this repository currentl
 | [Overlap stress](cases/torture/torture-overlap.zpl) | 96 overlapping black/white rounded shapes; draw order is observable |
 
 No page prints “PASS” as an oracle. A renderer producing an image has not necessarily passed. Compare against printer captures or the documented equal-raster relationships.
+
+The `symbol-aztec`, `symbol-aztec_alias`, and `symbol-aztec_rune` cases assess
+barcodes without the character-remapping reset prefix in the ZQ610 submissions.
+Keep those exact printer submissions as separate integration observations.
+`encoding-remap-identity` tests `^CI0,0,0` independently against the identical
+ASCII label using plain `^CI0` in `encoding-remap-control`. Both must render
+nonblank, equal rasters; two failures cannot pass the relationship. This checks
+identity-remap syntax and unchanged text, while `encoding-remap` exercises a
+non-identity mapping. The new pair has no captured printer reference yet.
 
 ## Focused coverage
 
