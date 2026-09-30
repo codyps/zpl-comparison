@@ -75,7 +75,7 @@ jobs:
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'
           python3 -m unittest benchmarks.test_audit_failures
-          bazel test //:site_test //:report_runner_test //:pipeline_test //:overview_test --test_output=errors
+          bazel test //:site_test //:report_runner_test //:pipeline_test //:overview_test //:performance_test --test_output=errors
       - name: Build pinned renderer libraries
         if: github.event.pull_request.head.repo.fork != true
         timeout-minutes: 20
@@ -121,12 +121,33 @@ jobs:
           bazel aquery 'mnemonic("Zpl(Saved|Render|Compare|LibraryBuild|Reports)", deps(//:reports_saved))' \
             --output=jsonproto --include_commandline=false > "$RUNNER_TEMP/saved-actions.json"
           python3 build/check_action_graph.py "$RUNNER_TEMP/saved-actions.json" test-data/layout-accuracy/manifest.json --saved
+      - name: Measure renderer performance (uncached)
+        if: github.event.pull_request.head.repo.fork != true
+        timeout-minutes: 15
+        run: |
+          bazel run //:performance \
+            --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" -- \
+            --libraries "$GITHUB_WORKSPACE/bazel-bin" \
+            --fixtures "$GITHUB_WORKSPACE/benchmarks/fixtures" \
+            --output "$RUNNER_TEMP/performance"
+      - name: Upload measured performance evidence
+        if: always() && github.event.pull_request.head.repo.fork != true
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: renderer-performance
+          path: ${{ runner.temp }}/performance
+          if-no-files-found: error
+          retention-days: 30
       - name: Generate and validate comparison site
         run: |
           if [ "${{ github.event.pull_request.head.repo.fork }}" = "true" ]; then
             bazel run //:comparison_site -- --input "$GITHUB_WORKSPACE/bazel-bin/reports_saved" --output "$GITHUB_WORKSPACE/_site"
           else
-            bazel run //:comparison_site -- --input "$GITHUB_WORKSPACE/bazel-bin/reports" --output "$GITHUB_WORKSPACE/_site"
+            # Stage a writable tree; never modify cached Bazel outputs.
+            cp -RL bazel-bin/reports "$RUNNER_TEMP/measured-reports"
+            chmod -R u+w "$RUNNER_TEMP/measured-reports"
+            cp -R "$RUNNER_TEMP/performance/." "$RUNNER_TEMP/measured-reports/docs/benchmarks/"
+            bazel run //:comparison_site -- --input "$RUNNER_TEMP/measured-reports" --output "$GITHUB_WORKSPACE/_site"
           fi
       - name: Upload comparison site preview
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

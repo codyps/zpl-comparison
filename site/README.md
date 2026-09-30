@@ -16,7 +16,7 @@ python3 -m http.server 8000 --directory _site
 
 Choose an empty output directory; generation refuses to overwrite existing files.
 For current local renderer observations, use `//:reports` and `bazel-bin/reports`.
-Generation never runs a renderer or relabels saved measurements as fresh.
+Generation never runs a renderer or relabels saved measurements as fresh. CI stages fresh `//:performance` results into the report tree before site generation. Local report builds and fork previews have no performance measurements unless explicitly supplied.
 
 ```sh
 bazelisk test //:site_test

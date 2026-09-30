@@ -36,7 +36,17 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-The saved measurements are actual local runs. CPU/toolchain/OS metadata is in the report and JSON. CI uses Bazel to build the pinned renderer libraries, render the local accuracy and conformance cases, and assemble reports alongside this collected evidence. Successful builds of `main` generate and deploy the comparison site to [GitHub Pages](https://codyps.github.io/zpl-comparison/); see [site publication](../site/README.md). CI does not recollect performance measurements or contact printers or rendering services.
+CI measures parsing and PNG rendering for the seven Bazel-built renderer adapters on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings, peak RSS, output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
+
+Old checked-in performance results and samples have been removed. The broader manual harness above remains available for generator-only libraries and source/deployment size surveys; those measurements are not presented as current CI results. Fixed input fixtures and a stable shuffle make runs comparable; measured durations are never fixed or replayed.
+
+To run the same CI performance collection locally after building `//:render_libraries`:
+
+```sh
+bazel run //:performance -- --libraries "$PWD/bazel-bin" --fixtures "$PWD/benchmarks/fixtures" --output "$PWD/benchmarks/_work/performance"
+```
+
+Use a new output directory per run. Individual unsupported workloads retain diagnostics; a missing deployment or an adapter with no successful measurements fails the run.
 
 ## Pins
 
@@ -94,7 +104,7 @@ Open `bazel-bin/reports/README.md` or
 evidence and maintained documentation at their original relative paths so report
 links and images remain usable. The default target compiles each local renderer
 and generates each case/library image locally. Printer previews, Labelary responses,
-performance timings, invalid-input measurements, and source-support inventories
+invalid-input measurements and source-support inventories
 remain saved evidence; this build never contacts a printer or rendering service.
 
 Bazel caches each library deployment (including the Go shared library used by
@@ -237,7 +247,7 @@ This includes `docs/benchmarks/accuracy/accuracy.svg` (the chart embedded near t
 | Collected or maintained input | Regenerated resources |
 | --- | --- |
 | Render-conformance and invalid-input fixture definitions | ZPL fixtures, manifests and generated coverage catalog |
-| `docs/benchmarks/results.json` | Performance, memory and size SVG/PNG plots and benchmark README |
+| CI `renderer-performance` artifact | Fresh performance timings and output samples published with that run |
 | Popularity snapshot, dependency locks, pinned revisions and maintained capability template | Capabilities survey and complete popularity table |
 | `docs/benchmarks/command-support.json` and command index | Command-support Markdown inventory |
 | `docs/benchmarks/invalid/results.json` | Invalid-input report |

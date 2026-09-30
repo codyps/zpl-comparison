@@ -10,8 +10,6 @@ _*
 /docs/benchmarks/*
 !/docs/benchmarks/argument-support.md
 !/docs/benchmarks/command-support.json
-!/docs/benchmarks/results.json
-!/docs/benchmarks/samples/
 !/docs/benchmarks/accuracy/
 !/docs/benchmarks/conformance/
 !/docs/benchmarks/external-zpl/
@@ -19,7 +17,6 @@ _*
 !/docs/benchmarks/invalid/
 !/docs/benchmarks/labelary/
 /docs/benchmarks/*/*
-!/docs/benchmarks/samples/*
 !/docs/benchmarks/*/results.json
 !/docs/benchmarks/labelary/captures.json
 !/docs/benchmarks/*/images/

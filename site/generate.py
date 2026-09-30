@@ -406,7 +406,9 @@ class Site:
         self.load_paired()
         if len({c["key"] for c in self.cases}) != len(self.cases):
             raise ValueError("Case URL collision")
-        self.performance = self.read("docs/benchmarks/results.json")
+        self.performance = (self.read("docs/benchmarks/results.json")
+                            if (self.source / "docs/benchmarks/results.json").exists()
+                            else {"timestamp_utc": "Not measured in this build", "results": [], "sizes": {}})
         self.invalid = self.read("docs/benchmarks/invalid/results.json")
         self.support = self.read("docs/benchmarks/command-support.json")
         self.libraries = sorted(
@@ -952,12 +954,12 @@ class Site:
     def other_pages(self):
         self.page = "categories/performance.html"
         data = self.performance
-        evidence = self.asset("docs/benchmarks/results.json")
+        evidence = self.asset("docs/benchmarks/results.json", required=False)
         body = (
             "<p>Observed: "
             + E(data["timestamp_utc"])
-            + ". These are saved timings on the recorded host, not a current service benchmark. Successful API calls do not establish equivalent output or printer fidelity.</p><p>"
-            + self.link(evidence, "Samples, host, output checks & versions (JSON)")
+            + ". Timings are measured on the recorded host. Successful API calls do not establish equivalent output or printer fidelity.</p><p>"
+            + (self.link(evidence, "Samples, host, output checks & versions (JSON)") if evidence else "Performance is collected in trusted CI runs; this preview has no timing measurements.")
             + "</p>"
         )
         for mode, title in [
@@ -1007,12 +1009,14 @@ class Site:
                         preview,
                     ]
                 )
-            chart = self.asset("docs/benchmarks/" + mode + ".svg")
+            if not rows:
+                continue
+            chart = self.asset("docs/benchmarks/" + mode + ".svg", required=False)
             body += (
                 "<h2>"
                 + title
                 + '</h2><div class="chart">'
-                + self.image(chart, title + " timing chart")
+                + (self.image(chart, title + " timing chart") if chart else "")
                 + "</div>"
                 + table(
                     [

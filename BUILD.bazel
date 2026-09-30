@@ -34,7 +34,6 @@ filegroup(
             "test-data/render-conformance/**",
             "test-data/layout-accuracy/**",
             "test-data/invalid-zpl/**",
-            "docs/benchmarks/samples/**",
             "docs/benchmarks/*/images/*.png",
             "docs/benchmarks/labelary/captures.json",
         ],
@@ -63,7 +62,6 @@ filegroup(
         "docs/benchmarks/external-zpl/results.json",
         "docs/benchmarks/layout-accuracy/results.json",
         "docs/benchmarks/invalid/results.json",
-        "docs/benchmarks/results.json",
         "docs/compatibility/METHODOLOGY.md",
         "docs/zpl-command-index.tsv",
         "docs/zpl-zbi2-pg-en.pdf",
@@ -276,4 +274,20 @@ py_test(
     main = "build/adapter_contract_test.py",
     data = [":library_binarykits", ":library_zplr"],
     deps = [requirement("numpy"), requirement("pillow")],
+)
+
+# bazel run executes the measurement process every time; only compilation is cached.
+py_binary(
+    name = "performance",
+    srcs = ["build/performance.py", "benchmarks/run.py"],
+    main = "build/performance.py",
+    data = [":render_libraries"],
+    deps = [requirement("pillow")],
+)
+
+py_test(
+    name = "performance_test",
+    srcs = ["build/performance_test.py", "build/performance.py", "benchmarks/run.py"],
+    main = "build/performance_test.py",
+    deps = [requirement("pillow")],
 )

@@ -140,6 +140,8 @@ def regenerate(measure=False):
                 json.loads(snapshot.read_text())
                 failed = True
     for step in REPORTS:
+        if step[0] == "benchmarks/report.py" and not (REPO / "docs/benchmarks/results.json").exists():
+            continue
         if status := run(step):
             return status
     if failed:

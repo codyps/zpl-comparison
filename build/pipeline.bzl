@@ -190,9 +190,8 @@ def _impl(ctx):
     metric_scripts = ["benchmarks/accuracy/run.py", "benchmarks/accuracy/pixels.py", "benchmarks/accuracy/metrics.py"]
     plot_scripts = ["benchmarks/report.py", "benchmarks/formatting.py"]
     report_inputs = {
-        "catalog": ["benchmarks/catalog.py", "benchmarks/templates/", "benchmarks/popularity.json", "benchmarks/sources.lock.json", "benchmarks/adapters/", "docs/benchmarks/results.json"] + plot_scripts,
+        "catalog": ["benchmarks/catalog.py", "benchmarks/templates/", "benchmarks/popularity.json", "benchmarks/sources.lock.json", "benchmarks/adapters/"] + plot_scripts,
         "support": ["benchmarks/support.py", "docs/benchmarks/command-support.json", "docs/zpl-command-index.tsv"] + plot_scripts,
-        "performance": ["benchmarks/run.py", "docs/benchmarks/results.json", "docs/benchmarks/samples/"] + plot_scripts,
         "invalid": ["benchmarks/invalid.py", "test-data/invalid-zpl/", "docs/benchmarks/invalid/results.json"] + metric_scripts + plot_scripts,
         "labelary": ["benchmarks/labelary.py", "benchmarks/conformance.py", "test-data/render-conformance/", "test-data/external-zpl/", "test-data/layout-accuracy/", "benchmarks/accuracy/reference/", "references/", "docs/benchmarks/labelary/"] + metric_scripts + plot_scripts,
         "conformance-report": ["benchmarks/conformance.py", "test-data/render-conformance/"] + metric_scripts + plot_scripts,
@@ -206,7 +205,6 @@ def _impl(ctx):
     for name, commands in [
         ("catalog", [["benchmarks/catalog.py"]]),
         ("support", [["benchmarks/support.py", "--reports-only"]]),
-        ("performance", [["benchmarks/report.py", "docs/benchmarks", "markdown"]]),
         ("invalid", [["benchmarks/invalid.py", "--report-only"], ["benchmarks/invalid.py", "--check"]]),
         ("labelary", [["benchmarks/labelary.py"]]),
         ("conformance-report", [["benchmarks/conformance.py", "--reports-only", "--output", "docs/benchmarks/conformance"]]),
@@ -239,18 +237,6 @@ def _impl(ctx):
     candidate_outputs = zq610_matrix(ctx, files, compiled, CATALOG, LIBRARIES, _invoke, _stage)
     publish.extend(candidate_outputs)
     groups["suite_zq610_candidates"] = depset([f for f, _ in candidate_outputs])
-    measurements = CATALOG["docs/benchmarks/results.json"]
-    for part in ["parse", "png", "generate", "memory", "size"]:
-        data = {"results": [], "sizes": {}}
-        if part == "size":
-            data["sizes"] = {lib: {k: row[k] for k in ["bytes", "artifact_bytes"] if k in row} for lib, row in measurements["sizes"].items()}
-        else:
-            fields = ["status", "library", "peak_rss_bytes"] if part == "memory" else ["status", "library", "fixture", "mode", "median_ns", "min_ns", "max_ns"]
-            data["results"] = [{k: row[k] for k in fields} for row in measurements["results"] if row["status"] == "ok" and (part == "memory" or row["mode"] == part)]
-        source = _file(ctx, "plots/" + part + ".json")
-        ctx.actions.write(source, json.encode(data))
-        output = _stage(ctx, "plot-" + part, _select(files, plot_scripts) + [(source, "docs/benchmarks/results.json")], [["benchmarks/report.py", "docs/benchmarks", part]])
-        publish.append((output, ""))
     result = _stage(ctx, "assemble", static + publish, [["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy", "--check"]], assemble = True)
     return [DefaultInfo(files = depset([result])), OutputGroupInfo(**groups)]
 
