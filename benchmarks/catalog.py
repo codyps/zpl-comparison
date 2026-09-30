@@ -74,7 +74,9 @@ def main():
         json.loads((ROOT / "sources.lock.json").read_text()),
         package_versions(),
     )
-    (REPO / "docs/benchmarks/capabilities.md").write_text(result)
+    output = REPO / "docs/benchmarks/capabilities.md"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(result)
     print("Generated capabilities survey and popularity table")
 
 
