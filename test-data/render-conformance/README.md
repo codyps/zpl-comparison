@@ -24,7 +24,8 @@ Keep those exact printer submissions as separate integration observations.
 ASCII label using plain `^CI0` in `encoding-remap-control`. Both must render
 nonblank, equal rasters; two failures cannot pass the relationship. This checks
 identity-remap syntax and unchanged text, while `encoding-remap` exercises a
-non-identity mapping. The new pair has no captured printer reference yet.
+non-identity mapping. The pair uses a local equal-raster oracle and is excluded
+from printer capture; it has no printer fidelity score.
 
 ## Focused coverage
 
