@@ -89,5 +89,7 @@ for (let i = 0; i < n; i++) {
   checksum += sink.length ?? 1;
 }
 const ns = Number(process.hrtime.bigint() - start);
+// Match the other adapters' one untimed output-capture operation in memory runs.
+if (process.env.ZPL_BENCH_MEMORY === '1') sink = await operation();
 fs.writeFileSync(output, mode === 'parse' ? JSON.stringify(sink) : sink);
 console.log(JSON.stringify({ns, iterations: n, checksum}));
