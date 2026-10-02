@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import tomllib
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
@@ -15,8 +16,14 @@ sys.path.insert(0, str(ROOT))
 from report import NAMES, table  # noqa: E402
 
 
-def collect():
-    metadata = json.loads((ROOT / "_work/cargo-metadata.json").read_text())
+def collect(vendor=None):
+    if vendor:
+        metadata = {"packages": []}
+        for path in sorted(vendor.glob("*/Cargo.toml")):
+            package = tomllib.loads(path.read_text())["package"]
+            metadata["packages"].append(dict(name=package["name"], version=package["version"], manifest_path=str(path)))
+    else:
+        metadata = json.loads((ROOT / "_work/cargo-metadata.json").read_text())
     packages = {
         p["name"]: Path(p["manifest_path"]).parent for p in metadata["packages"]
     }
@@ -247,7 +254,7 @@ def render_report(data):
 
 [Browse by library or feature](../compatibility/README.md) · [Printer accuracy benchmark](accuracy/README.md) · [Performance comparison](README.md) · [Detailed argument limits](argument-support.md).
 
-This is a **source-evidence inventory**, with a separate executed argument/accuracy matrix. Versions are the same pinned packages as the performance suite. The universe is the repository's {len(index)}-spelling [Zebra guide index](../zpl-command-index.tsv), including format/control aliases. `^A` represents the dynamic font-selection family; it does not mean every resident font is implemented. Non-Zebra extensions are excluded.
+This is a **source-evidence inventory**, with a separate executed argument/accuracy matrix. Source and package revisions are recorded in `command-support.json` and the source links. Saved previews retain their baseline source snapshot; trusted builds extract evidence from the selected sources. The universe is the repository's {len(index)}-spelling [Zebra guide index](../zpl-command-index.tsv), including format/control aliases. `^A` represents the dynamic font-selection family; it does not mean every resident font is implemented. Non-Zebra extensions are excluded.
 
 | Mark | Meaning |
 | --- | --- |
@@ -294,19 +301,24 @@ Counts below are not interchangeable support percentages: a parser table, emitte
     return output
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--reports-only",
         action="store_true",
         help="Use saved command-support.json without source checkouts or Cargo metadata",
     )
-    args = parser.parse_args()
+    parser.add_argument("--vendor", type=Path, help="Pinned Cargo vendor tree for offline source extraction")
+    args = parser.parse_args(argv)
     snapshot = REPO / "docs/benchmarks/command-support.json"
     if args.reports_only:
         data = json.loads(snapshot.read_text())
     else:
-        data = collect()
+        data = collect(args.vendor.resolve() if args.vendor else None)
+        for name in ["codyps-zpl", "labelize", "forge", "go", "binarykits", "zplr"]:
+            if not data["commands"][name]:
+                raise ValueError("Source extractor found no commands for " + name)
+        snapshot.parent.mkdir(parents=True, exist_ok=True)
         snapshot.write_text(json.dumps(data, indent=2) + "\n")
     snapshot.with_suffix(".md").write_text(render_report(data))
     print("Generated command support report")

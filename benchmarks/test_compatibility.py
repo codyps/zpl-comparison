@@ -1,6 +1,8 @@
 """Compatibility pages must agree, retain evidence boundaries and resolve links."""
 
 import json
+import importlib.util
+import os
 from pathlib import Path
 import re
 import tempfile
@@ -12,6 +14,14 @@ import compatibility as catalog
 class CompatibilityTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        global catalog
+        if not catalog.SUPPORT.exists():
+            reports = Path(os.environ.get("ZPL_REPORTS_PATH", catalog.REPO / "bazel-bin/reports")).resolve()
+            if not (reports / "benchmarks/compatibility.py").exists():
+                raise unittest.SkipTest("Build //:reports and set ZPL_REPORTS_PATH to run report integration checks")
+            spec = importlib.util.spec_from_file_location("generated_compatibility", reports / "benchmarks/compatibility.py")
+            catalog = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(catalog)
         cls.generated = catalog.artifacts()
         cls.support = catalog.load(catalog.SUPPORT)
 

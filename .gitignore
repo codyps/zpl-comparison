@@ -6,21 +6,21 @@ _*
 /bazel-*
 
 # Derived reports are intermediate inputs to the GitHub Pages site.
-# Keep only maintained notes and saved measurement/capture inputs here.
+# Keep maintained notes and original external captures.
 /docs/benchmarks/*
 !/docs/benchmarks/argument-support.md
-!/docs/benchmarks/command-support.json
-!/docs/benchmarks/accuracy/
-!/docs/benchmarks/conformance/
-!/docs/benchmarks/external-zpl/
-!/docs/benchmarks/layout-accuracy/
-!/docs/benchmarks/invalid/
 !/docs/benchmarks/labelary/
 /docs/benchmarks/*/*
-!/docs/benchmarks/*/results.json
 !/docs/benchmarks/labelary/captures.json
-!/docs/benchmarks/*/images/
-/docs/benchmarks/*/images/*-diff.png
+!/docs/benchmarks/labelary/images/
 /docs/compatibility/*
 !/docs/compatibility/METHODOLOGY.md
-/test-data/render-conformance/COVERAGE.md
+/test-data/*/COVERAGE.md
+/docs/public-examples/*
+!/docs/public-examples/FINDINGS.md
+/docs/total-failures.json
+/docs/total-failures.tsv
+/references/zq610-candidates/saved/
+/references/zq610-plus-v1/analysis.json
+/references/zq610-plus-v1/*/*-local.png
+/benchmarks/popularity.json

@@ -25,9 +25,10 @@ class CanvasProfileTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             source = root / "input.zpl"
+            previews = [(384, 120), (128, 200), (832, 200), (128, 200), (384, 200)]
             for index, (body, default, mobile) in enumerate(cases):
                 source.write_text("^XA" + body + "^XZ")
-                for profile, size in [("zd621-203dpi", default), ("zq610-plus-203dpi", mobile)]:
+                for profile, size in [("zd621-203dpi", default), ("zq610-plus-203dpi", mobile), ("zd621-preview-203dpi", previews[index])]:
                     with self.subTest(index=index, profile=profile):
                         images = root / f"{index}-{profile}"
                         metadata = root / "row.json"

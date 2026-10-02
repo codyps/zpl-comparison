@@ -1,5 +1,9 @@
 # Total comparison failure audit
 
+This is a historical audit. Its [recorded inventory](https://github.com/codyps/zpl-comparison/blob/aed30e94ed1531a424b32eac8da60bd313ca2f21/docs/total-failures.json)
+remains available at the pre-migration revision. CI now recomputes the inventory
+from current observations; the counts below describe the original campaigns.
+
 The initial audit at `e3831222` covered all 7,032 observations across five rendering suites and eight
 libraries. It distinguishes execution failures, blank output against a nonblank
 printer reference, zero ink overlap, and mismatched native canvases. Unscored
@@ -148,16 +152,16 @@ conformance tests, two audit tests, pipeline/site tests, and the complete
 `//:reports_saved` build. The validator also verifies source hashes for unscored
 diagnostic references instead of treating them as missing printer captures.
 
-## Reproduce
+## Generate the current inventory
 
 ```sh
 bazelisk test //:adapter_contract_test //:canvas_profile_test //:pipeline_test //:site_test
-PYTHONPATH="$PWD" benchmarks/_work/venv/bin/python benchmarks/refresh_candidates.py \
-  --libraries codyps-zpl,binarykits,zplr --save --jobs 3
-bazelisk build //:reports_saved --jobs=2
-python3 benchmarks/audit_failures.py --output docs/total-failures.json
+bazelisk build //:reports --jobs=4
 ```
 
-`total-failures.tsv` lists every flagged case; `total-failures.json` includes
+`bazel-bin/reports/docs/total-failures.tsv` lists every flagged case;
+`bazel-bin/reports/docs/total-failures.json` includes
 per-suite/library counts and captured diagnostics. The inventory intentionally
 retains invalid-input rejections and genuine library limitations.
+For replay without compiling adapters, select a compatible observation bundle
+and build `//:reports_saved` as described in the [reproduction guide](../benchmarks/README.md).

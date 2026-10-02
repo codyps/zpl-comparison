@@ -31,7 +31,7 @@ def copy(key, dest):
 
 def source(name, dest):
     spec = json.loads(files["benchmarks/sources.lock.json"].read_text())[name]
-    run("git", "init", dest)
+    run("git", "init", "--initial-branch=main", dest)
     url = (
         local_source
         if name == "zpl" and local_source
@@ -79,12 +79,21 @@ if kind == "rust":
         if "path" in dependency:
             dependency["path"] = "../../benchmarks/_work/zpl/zpl"
         encoded = ", ".join(k + "=" + json.dumps(v) for k, v in dependency.items())
+        # Shared adapter sources mention every feature. Keep those names known to
+        # rustc while resolving only this adapter's dependency closure.
+        features = "\n".join(
+            json.dumps(feature) + "=" + json.dumps(["dep:" + name] if feature == name else [])
+            for feature, spec in original["dependencies"].items()
+            if spec.get("optional")
+        )
         manifest = (
             '[package]\nname="zpl-comparison"\nversion="0.0.0"\nedition="2021"\n[workspace]\n[dependencies]\n'
             + name
             + "={"
             + encoded
-            + "}\n[[bin]]\nname="
+            + "}\n[features]\n"
+            + features
+            + "\n[[bin]]\nname="
             + json.dumps(name)
             + '\npath="src/main.rs"\nrequired-features=['
             + json.dumps(name)

@@ -50,6 +50,13 @@ def _inputs_impl(ctx):
     if ctx.attr.kind == "rust":
         for name, patterns in json.decode(ctx.read("groups.json")).items():
             build += 'filegroup(name=%s,srcs=glob(%s))\n' % (repr(name), repr(patterns))
+    support = {
+        "rust": ["vendor/labelize*/**", "vendor/zpl-forge*/**", "vendor/zpl-builder*/**", "benchmarks/_work/zpl/**"],
+        "go": ["benchmarks/_work/go-zpl/**"],
+        "node": ["benchmarks/_work/zplr/**"],
+        "dotnet": ["benchmarks/_work/BinaryKits.Zpl/**"],
+    }
+    build += 'filegroup(name="support",srcs=glob(%s))\n' % repr(support[ctx.attr.kind])
     ctx.file("BUILD.bazel", build)
 
 native_inputs = repository_rule(
@@ -64,10 +71,62 @@ native_inputs = repository_rule(
 
 def _catalog_impl(ctx):
     values = {label.name: json.decode(ctx.read(label)) for label in ctx.attr.manifests}
+    commands = {}
+    for name in values["references/barcodes-zd621-v1/manifest.json"]["cases"]:
+        source = ctx.read(Label("//:references/barcodes-zd621-v1/" + name + ".zpl"))
+        codes = [part[:2] for part in source.split("^")[1:] if part.startswith("B") and part[:2] != "BY"]
+        commands[name] = "^" + codes[0] if codes else "See ZPL"
+    values["barcode_commands"] = commands
+    inputs = {}
+    for label in ctx.attr.inputs:
+        ctx.read(label)
+        inputs[label.name] = str(ctx.path(label))
+    result = ctx.execute(["python3", str(ctx.path(ctx.attr.identity)), json.encode(inputs), "render", ctx.attr.python_version])
+    if result.return_code:
+        fail(result.stderr)
+    values["render_inputs"] = json.decode(result.stdout)
+    result = ctx.execute(["python3", str(ctx.path(ctx.attr.identity)), json.encode(inputs), "probe", ctx.attr.python_version])
+    if result.return_code:
+        fail(result.stderr)
+    values["probe_inputs"] = json.decode(result.stdout)
     ctx.file("catalog.bzl", "CATALOG = json.decode(%s)\n" % repr(json.encode(values)))
     ctx.file("BUILD.bazel", 'exports_files(["catalog.bzl"])\n')
 
-catalog = repository_rule(implementation = _catalog_impl, attrs = {"manifests": attr.label_list()})
+catalog = repository_rule(implementation = _catalog_impl, attrs = {
+    "python_version": attr.string(mandatory = True),
+    "manifests": attr.label_list(),
+    "inputs": attr.label_list(),
+    "identity": attr.label(default = "//:build/observation_inputs.py"),
+})
+
+def _baseline_impl(ctx):
+    override = ctx.getenv("ZPL_BASELINE_LOCK", "")
+    lock = json.decode(ctx.read(ctx.path(override) if override else ctx.attr.lock))
+    ctx.download(lock["url"], "baseline.tar.gz", sha256 = lock["sha256"])
+    ctx.extract("baseline.tar.gz", output = "archive", stripPrefix = lock["strip_prefix"])
+    _run(ctx, ["python3", str(ctx.path(ctx.attr.prepare)), "--source", str(ctx.path("archive")), "--output", str(ctx.path("observations")), "--revision", lock["revision"]])
+    ctx.delete("archive")
+    ctx.delete("baseline.tar.gz")
+    ctx.file("BUILD.bazel", 'package(default_visibility=["//visibility:public"])\nfilegroup(name="files",srcs=glob(["observations/**"]))\n')
+
+observation_baseline = repository_rule(implementation = _baseline_impl, attrs = {
+    "lock": attr.label(mandatory = True),
+    "prepare": attr.label(default = "//:build/baseline.py"),
+})
+
+def _support_sources_impl(ctx):
+    pins = json.decode(ctx.read(ctx.attr.lock))
+    for name in ["zpl-toolchain", "python-zpl", "jszpl"]:
+        dest = str(ctx.path("benchmarks/_work/" + name))
+        _run(ctx, ["git", "init", "--initial-branch=main", dest])
+        _run(ctx, ["git", "-C", dest, "fetch", "--depth=1", pins[name]["url"], pins[name]["rev"]])
+        _run(ctx, ["git", "-C", dest, "checkout", "--detach", "FETCH_HEAD"])
+        if _run(ctx, ["git", "-C", dest, "rev-parse", "HEAD"]).strip() != pins[name]["rev"]:
+            fail("Support source revision mismatch: " + name)
+        ctx.delete(dest + "/.git")
+    ctx.file("BUILD.bazel", 'package(default_visibility=["//visibility:public"])\nfilegroup(name="files",srcs=glob(["benchmarks/**"]))\n')
+
+support_sources = repository_rule(implementation = _support_sources_impl, attrs = {"lock": attr.label(mandatory = True)})
 
 
 def _host_impl(ctx):

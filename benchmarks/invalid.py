@@ -12,8 +12,8 @@ import subprocess
 import sys
 import time
 
-from accuracy.run import gray, sha
-from report import NAMES, table
+from accuracy.pixels import gray, sha
+from formatting import NAMES, table
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
@@ -101,6 +101,8 @@ def attempt(command, env, source, output, mode, timeout):
 
 def classify(controls, invalid, mode):
     all_rows = controls + invalid
+    if any(r["status"] == "not_captured" for r in all_rows):
+        return "not measured"
     if any(r["status"] in FAULTS for r in all_rows):
         return "execution failure"
 
@@ -170,6 +172,7 @@ def render_report(data, dest):
                             "control failed",
                             "execution failure",
                             "unstable",
+                            "not measured",
                         ]
                     ],
                 ]
@@ -184,6 +187,7 @@ def render_report(data, dest):
                 "Control failed",
                 "Execution failure",
                 "Unstable",
+                "Not measured",
             ],
             summary,
         )

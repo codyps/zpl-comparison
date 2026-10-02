@@ -16,7 +16,7 @@ SUITES = {
 
 def failure_kinds(row):
     kinds = []
-    if row["status"] not in ("rendered", "blank"):
+    if row["status"] not in ("rendered", "blank", "not_captured"):
         kinds.append("execution_" + row["status"])
     if row.get("dimensions_match") is False:
         kinds.append("canvas_mismatch")

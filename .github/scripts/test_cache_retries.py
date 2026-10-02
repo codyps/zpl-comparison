@@ -24,6 +24,7 @@ class CacheRetryTest(unittest.TestCase):
 
     def test_authorization_denial_is_preserved(self):
         error = urllib.error.HTTPError("https://cache", 401, "Unauthorized", {}, None)
+        self.addCleanup(error.close)
         with patch.object(cache.urllib.request, "urlopen", side_effect=error) as request:
             with self.assertRaises(urllib.error.HTTPError):
                 cache.open_with_retries(None, None)

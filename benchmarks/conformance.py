@@ -349,7 +349,7 @@ def report(data, dest, corpus=SUITE):
                 len(row),
                 *[
                     sum(r["status"] == status for r in row)
-                    for status in ["rendered", "blank", "error", "crashed", "timeout"]
+                    for status in ["rendered", "blank", "error", "crashed", "timeout", "not_captured"]
                 ],
                 f"{statistics.mean(scores) * 100:.2f}%" if scores else "N/A",
             ]
@@ -364,6 +364,7 @@ def report(data, dest, corpus=SUITE):
                 "Errors",
                 "Crashes",
                 "Timeouts",
+                "Not measured",
                 "Printer IoU",
             ],
             summary,

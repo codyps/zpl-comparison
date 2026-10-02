@@ -43,7 +43,7 @@ class AdapterContractTest(unittest.TestCase):
             self.assertEqual(binary, ascii_hex)
             with Image.open(root / "binary/image.png") as image:
                 # FF,81,81,FF is a visible 8-by-4 frame, not two omitted graphics.
-                self.assertEqual(sum(v < 128 for v in image.crop((10, 60, 18, 64)).getdata()), 20)
+                self.assertEqual(sum(v < 128 for v in image.crop((10, 60, 18, 64)).get_flattened_data()), 20)
 
     def test_text_adapters_do_not_replace_invalid_utf8(self):
         with tempfile.TemporaryDirectory() as temporary:

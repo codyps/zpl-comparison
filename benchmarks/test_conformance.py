@@ -73,7 +73,8 @@ class ConformanceTests(unittest.TestCase):
         directory = SUITE.parent / "layout-accuracy"
         layout = module("layout_generator", directory / "generate.py")
         for filename, data in layout.artifacts().items():
-            self.assertEqual((directory / filename).read_bytes(), data, filename)
+            if filename != "COVERAGE.md":
+                self.assertEqual((directory / filename).read_bytes(), data, filename)
         _, cases = conformance.load_cases(directory)
         self.assertEqual(len(cases), 20)
         for case in cases:

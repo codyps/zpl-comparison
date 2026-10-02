@@ -1,5 +1,7 @@
 # Findings from public ZPL documents
 
+These findings describe the archived October 2 observations. [Current CI evaluation](https://codyps.github.io/zpl-comparison/categories/public-zpl.html) is generated against the same printer captures.
+
 On 2026-10-02, **5 of 22 labels matched the ZD621 preview pixel-for-pixel,
 12 rendered with differences, and 5 returned local rendering errors**.
 All 22 printer previews were nonblank, at the expected native dimensions.
@@ -9,8 +11,8 @@ Renderer: zpl `6aa0435f057f048f0b238e2f86ea06e8de4d12e0`, clean checkout,
 explicit `ZD621_203_DPI` profile. Printer: ZTC ZD621-203dpi ZPL, firmware
 V93.21.33Z. These are HTTP Preview Label responses, not physical print/scan results.
 
-[Complete table](README.md) · [Interactive gallery](index.html) ·
-[zpl counts, hashes and errors](results.json) · [Labelary comparisons](labelary-results.json) ·
+[Complete table](https://github.com/codyps/zpl-comparison/blob/aed30e94ed1531a424b32eac8da60bd313ca2f21/docs/public-examples/README.md) · [Interactive gallery](https://github.com/codyps/zpl-comparison/blob/aed30e94ed1531a424b32eac8da60bd313ca2f21/docs/public-examples/index.html) ·
+[zpl counts, hashes and errors](https://github.com/codyps/zpl-comparison/blob/aed30e94ed1531a424b32eac8da60bd313ca2f21/docs/public-examples/results.json) · [Labelary comparisons](https://github.com/codyps/zpl-comparison/blob/aed30e94ed1531a424b32eac8da60bd313ca2f21/docs/public-examples/labelary-results.json) ·
 [Pinned source provenance](../../test-data/public-zpl/sources.json)
 
 ## Exact labels
@@ -37,7 +39,7 @@ does not enable `^FH`, so these are not decoded separator bytes. Its Code 128
 tracking barcode decodes identically too. Whole-label errors also include text.
 
 These payload observations use zxing-cpp 3.1.1 and are separately recorded,
-with input PNG hashes, in [barcodes.json](barcodes.json). Successful decoding
+with input PNG hashes, in [barcodes.json](https://github.com/codyps/zpl-comparison/blob/aed30e94ed1531a424b32eac8da60bd313ca2f21/docs/public-examples/barcodes.json). Successful decoding
 does not establish printer geometry, standards conformance or carrier acceptance.
 
 ## Other rendering differences
@@ -89,7 +91,7 @@ The five cases rejected by zpl render in Labelary with **60.691%–89.884%** IoU
 The independent decoder also finds the truncated `kage…` QR payload, `%s` decoded
 as `~`, and `{0}` decoded as `0`; it finds no barcode in Example6. These are
 diagnostic observations, not evidence that the intended shipment data is correct.
-The extended [barcode audit](barcodes.json) preserves all previous observations.
+The extended [barcode audit](https://github.com/codyps/zpl-comparison/blob/aed30e94ed1531a424b32eac8da60bd313ca2f21/docs/public-examples/barcodes.json) preserves all previous observations.
 
 The exact service PNGs and per-request metadata are retained in
 [captures.json](../benchmarks/labelary/captures.json). All 762 previous service

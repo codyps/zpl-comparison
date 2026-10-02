@@ -3,13 +3,18 @@ module(name = "zpl_comparison")
 bazel_dep(name = "rules_python", version = "2.3.3")
 bazel_dep(name = "rules_cc", version = "0.2.17")
 
+# Use Python's native namespace packages instead of synthesizing __init__.py.
+rules_python_config = use_extension("@rules_python//python/extensions:config.bzl", "config")
+rules_python_config.explicit_init_py(default = True)
+
 python = use_extension("@rules_python//python/extensions:python.bzl", "python")
-python.toolchain(python_version = "3.13.13")
+PYTHON_VERSION = "3.13.13"
+python.toolchain(python_version = PYTHON_VERSION)
 
 pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
 pip.parse(
     hub_name = "report_deps",
-    python_version = "3.13.13",
+    python_version = PYTHON_VERSION,
     requirements_lock = "//:build/requirements.lock.txt",
 )
 use_repo(pip, "report_deps")
@@ -68,19 +73,52 @@ catalog = use_repo_rule("//:build/repositories.bzl", "catalog")
 
 catalog(
     name = "report_catalog",
+    python_version = PYTHON_VERSION,
+    inputs = [
+        "//:benchmarks/accuracy/pixels.py",
+        "//:build/requirements.lock.txt",
+        "//:build/native.bzl",
+        "//:build/probe.py",
+        "//:benchmarks/invalid.py",
+        "//:benchmarks/sources.lock.json",
+        "//:build/render.py",
+        "//:build/native_build.py",
+        "//:build/bootstrap.py",
+        "//:build/toolchains.lock.json",
+        "//:benchmarks/adapters/dotnet/Comparison.csproj",
+        "//:benchmarks/adapters/dotnet/Program.cs",
+        "//:benchmarks/adapters/dotnet/fonts/DejaVu Fonts.LICENSE",
+        "//:benchmarks/adapters/dotnet/fonts/DejaVu Sans Mono.ttf",
+        "//:benchmarks/adapters/dotnet/fonts/README.md",
+        "//:benchmarks/adapters/dotnet/fonts/TeX Gyre Fonts.LICENSE",
+        "//:benchmarks/adapters/dotnet/fonts/TeX Gyre Heros Cn-Bold.otf",
+        "//:benchmarks/adapters/dotnet/packages.lock.json",
+        "//:benchmarks/adapters/go/go.mod",
+        "//:benchmarks/adapters/go/go.sum",
+        "//:benchmarks/adapters/go/main.go",
+        "//:benchmarks/adapters/labelary.py",
+        "//:benchmarks/adapters/node/main.mjs",
+        "//:benchmarks/adapters/node/package-lock.json",
+        "//:benchmarks/adapters/node/package.json",
+        "//:benchmarks/adapters/python.py",
+        "//:benchmarks/adapters/rust/Cargo.lock",
+        "//:benchmarks/adapters/rust/Cargo.toml",
+        "//:benchmarks/adapters/rust/src/main.rs",
+        "//:benchmarks/adapters/rust/src/probe.rs",
+    ],
     manifests = [
         "//:references/zq610-candidates/manifest.json",
-        "//:references/zq610-candidates/saved/results.json",
         "//:benchmarks/accuracy/reference/manifest.json",
         "//:references/barcodes-zd621-v1/manifest.json",
         "//:docs/benchmarks/labelary/captures.json",
-        "//:docs/benchmarks/accuracy/results.json",
-        "//:docs/benchmarks/conformance/results.json",
-        "//:docs/benchmarks/external-zpl/results.json",
-        "//:docs/benchmarks/layout-accuracy/results.json",
         "//:test-data/render-conformance/manifest.json",
         "//:test-data/external-zpl/manifest.json",
         "//:test-data/layout-accuracy/manifest.json",
+        "//:test-data/invalid-zpl/manifest.json",
+        "//:test-data/public-zpl/manifest.json",
+        "//:references/public-zd621-20261002/manifest.json",
+        "//:references/zq610-plus-v1/manifest.json",
+        "//:benchmarks/sources.lock.json",
         "//:benchmarks/accuracy/conformance-reference/manifest.json",
         "//:benchmarks/accuracy/external-reference/manifest.json",
         "//:benchmarks/accuracy/layout-reference/manifest.json",
@@ -90,3 +128,9 @@ catalog(
 native_host = use_repo_rule("//:build/repositories.bzl", "native_host")
 
 native_host(name = "native_host")
+
+observation_baseline = use_repo_rule("//:build/repositories.bzl", "observation_baseline")
+observation_baseline(name = "observation_baseline", lock = "//:build/baseline.lock.json")
+
+support_sources = use_repo_rule("//:build/repositories.bzl", "support_sources")
+support_sources(name = "support_sources", lock = "//:benchmarks/sources.lock.json")

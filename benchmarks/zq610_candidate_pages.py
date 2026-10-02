@@ -22,10 +22,8 @@ def generate():
     manifest = json.loads(manifest_path.read_text())
     rows = [json.loads(p.read_text()) for p in sorted(Path("_candidate_rows").glob("*.json"))]
     identities = {p.parent.name: json.loads(p.read_text()) for p in Path("_candidate_libraries").glob("*/identity.json")}
-    if not identities:
-        identities = json.loads(Path("_candidate_saved.json").read_text()).get("adapters", {})
     for row in rows:
-        if row["library"] in identities:
+        if row["library"] in identities and "adapter_identity_sha256" not in row:
             row["adapter_identity_sha256"] = hashlib.sha256(json.dumps(identities[row["library"]], sort_keys=True).encode()).hexdigest()
     expected = {(c["name"], lib) for c in manifest["cases"] for lib in LIBRARIES}
     lookup = {(r["case"], r["library"]): r for r in rows}

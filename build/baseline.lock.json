@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "kind": "git-archive",
+  "revision": "aed30e94ed1531a424b32eac8da60bd313ca2f21",
+  "url": "https://codeload.github.com/codyps/zpl-comparison/tar.gz/aed30e94ed1531a424b32eac8da60bd313ca2f21",
+  "sha256": "4bda9c918ebb2db1e8e49d5a74a7aea5fe14af1acee4806733f2a775eeddbcef",
+  "strip_prefix": "zpl-comparison-aed30e94ed1531a424b32eac8da60bd313ca2f21"
+}

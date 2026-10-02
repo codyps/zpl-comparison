@@ -6,6 +6,7 @@ load("//:build/pipeline.bzl", "pipeline")
 
 py_test(
     name = "report_runner_test",
+    size = "small",
     srcs = [
         "build/stage.py",
         "build/report_runner_test.py",
@@ -16,7 +17,7 @@ py_test(
 
 # Collected evidence and maintained sources only. Generated reports, differences,
 # thumbnails, and the fixture coverage catalog are deliberately excluded.
-# Fixture manifests/cases and saved renders remain inputs to the action graph.
+# Fixture manifests/cases define the graph; renderer observations are outputs.
 filegroup(
     name = "report_sources",
     srcs = glob(
@@ -36,11 +37,12 @@ filegroup(
             "test-data/render-conformance/**",
             "test-data/layout-accuracy/**",
             "test-data/invalid-zpl/**",
-            "docs/benchmarks/*/images/*.png",
+            "docs/benchmarks/labelary/images/*.png",
             "docs/benchmarks/labelary/captures.json",
-            "docs/public-examples/**",
+            "docs/public-examples/FINDINGS.md",
         ],
         exclude = [
+            "benchmarks/popularity.json",
             "**/__pycache__/**",
             "**/target/**",
             "**/node_modules/**",
@@ -49,7 +51,10 @@ filegroup(
             "references/zq610-plus-v1/work/**",
             "docs/benchmarks/*/images/*-diff.png",
             "benchmarks/test_*.py",
-            "test-data/render-conformance/COVERAGE.md",
+            "test-data/*/COVERAGE.md",
+            "references/zq610-candidates/saved/**",
+            "references/zq610-plus-v1/analysis.json",
+            "references/zq610-plus-v1/*/*-local.png",
         ],
     ) + [
         "LICENSE",
@@ -57,14 +62,13 @@ filegroup(
         "README.md",
         "benchmarks/invalid/README.md",
         "build/validate.py",
+        "build/invalid_report.py",
+        "build/public_report.py",
+        "build/paired_report.py",
+        "docs/total-failure-audit.md",
+        "docs/canvas-dimension-audit.md",
         "docs/README.md",
-        "docs/benchmarks/accuracy/results.json",
         "docs/benchmarks/argument-support.md",
-        "docs/benchmarks/command-support.json",
-        "docs/benchmarks/conformance/results.json",
-        "docs/benchmarks/external-zpl/results.json",
-        "docs/benchmarks/layout-accuracy/results.json",
-        "docs/benchmarks/invalid/results.json",
         "docs/compatibility/METHODOLOGY.md",
         "docs/zpl-command-index.tsv",
         "docs/zpl-zbi2-pg-en.pdf",
@@ -140,16 +144,18 @@ pipeline(
     name = "reports_saved",
     srcs = [":report_sources"],
     saved = True,
+    baseline = ["@observation_baseline//:files"],
 )
 
 [py_binary(
     name = "action_" + name,
     srcs = ["build/" + name + ".py"] + extra + (["build/worker.py"] if name != "stage" else []),
     main = "build/worker.py" if name != "stage" else "build/stage.py",
+    imports = ["benchmarks"],
     deps = [
         requirement("numpy"),
         requirement("pillow"),
-    ] + ([requirement("matplotlib")] if name == "stage" else []),
+    ] + ([requirement("matplotlib"), requirement("zxing-cpp")] if name == "stage" else []),
 ) for name, extra in [
     (
         "render",
@@ -182,7 +188,8 @@ pipeline(
         "relation",
         ["benchmarks/accuracy/pixels.py"],
     ),
-    ("saved", []),
+    ("saved", ["build/render.py", "benchmarks/accuracy/pixels.py"]),
+    ("probe", ["benchmarks/invalid.py", "benchmarks/accuracy/pixels.py", "benchmarks/formatting.py"]),
     ("stage", []),
 ]]
 
@@ -195,6 +202,7 @@ filegroup(
 
 pipeline(
     name = "reports",
+    support_inputs = ["@rust_inputs//:support", "@go_inputs//:support", "@node_inputs//:support", "@dotnet_inputs//:support", "@support_sources//:files"],
     srcs = [":report_sources"],
     libraries = [":library_" + lib for lib in [
         "codyps-zpl",
@@ -209,6 +217,7 @@ pipeline(
 
 py_test(
     name = "pipeline_test",
+    size = "small",
     srcs = [
         "benchmarks/accuracy/overview.py",
         "benchmarks/accuracy/metrics.py",
@@ -235,6 +244,7 @@ py_test(
 
 py_test(
     name = "overview_test",
+    size = "small",
     srcs = ["benchmarks/accuracy/overview.py", "build/overview_test.py"],
     main = "build/overview_test.py",
 )
@@ -249,6 +259,7 @@ py_binary(
 
 py_test(
     name = "site_test",
+    size = "small",
     srcs = ["site/generate.py", "site/test_generate.py"],
     main = "site/test_generate.py",
     data = ["site/style.css", "site/site.js"],
@@ -257,6 +268,7 @@ py_test(
 
 py_test(
     name = "canvas_profile_test",
+    size = "small",
     srcs = [
         "build/canvas_profile_test.py",
         "build/render.py",
@@ -269,6 +281,7 @@ py_test(
 
 py_test(
     name = "adapter_contract_test",
+    size = "small",
     srcs = [
         "build/adapter_contract_test.py",
         "build/render.py",
@@ -293,8 +306,28 @@ py_binary(
 
 py_test(
     name = "performance_test",
+    size = "small",
     srcs = ["build/performance_test.py", "build/performance.py", "build/native_build.py", "benchmarks/run.py"],
     main = "build/performance_test.py",
     data = [":memory_runner", ":memory_fixture"],
     deps = [requirement("pillow")],
+)
+
+py_test(
+    name = "automation_test",
+    size = "small",
+    srcs = ["build/automation_test.py", "build/baseline.py", "build/probe.py", "build/observation_inputs.py", "benchmarks/invalid.py", "benchmarks/accuracy/pixels.py", "benchmarks/formatting.py"],
+    main = "build/automation_test.py",
+    imports = ["benchmarks"],
+    deps = [requirement("numpy"), requirement("pillow")],
+)
+
+filegroup(name = "support_results", srcs = [":reports"], output_group = "suite_support")
+
+py_test(
+    name = "support_test",
+    size = "small",
+    srcs = ["build/support_test.py"],
+    main = "build/support_test.py",
+    data = [":support_results", "benchmarks/sources.lock.json"],
 )

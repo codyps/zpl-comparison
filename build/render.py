@@ -1,6 +1,7 @@
 """One source/canvas/library render. No comparison or reporting dependencies."""
 
 import json
+import hashlib
 import os
 import shutil
 import subprocess
@@ -19,6 +20,10 @@ def render(spec, metadata, images):
     output = Path(images).resolve()
     output.mkdir(parents=True, exist_ok=True)
     row = dict(spec["row"])
+    row.update(source_sha256=spec["sha256"], requested_dimensions=[spec["width"], spec["height"]],
+               render_profile=spec.get("render_profile", "zd621-203dpi"), timeout_seconds=spec.get("timeout", 45))
+    if "input_identity" in spec:
+        row["input_identity"] = spec["input_identity"]
     source = Path(spec["source"])
     if sha(source) != spec["sha256"]:
         raise ValueError("Input hash mismatch: " + str(source))
@@ -31,6 +36,8 @@ def render(spec, metadata, images):
             shutil.copyfile(spec["saved"], image)
     else:
         library = Path(spec["library"]).resolve()
+        if (library / "identity.json").exists():
+            row["adapter_identity_sha256"] = sha(library / "identity.json")
         command = json.loads((library / "command.json").read_text())
         command = [
             str(library / arg) if (library / arg).exists() else arg for arg in command
@@ -98,6 +105,7 @@ def render(spec, metadata, images):
             width=raster.shape[1],
             height=raster.shape[0],
             render_sha256=sha(image),
+            pixel_sha256=hashlib.sha256(raster.tobytes()).hexdigest(),
         )
     elif row["status"] in ["rendered", "blank"]:
         raise ValueError("Missing successful render")

@@ -4,11 +4,11 @@ The [font-free layout suite](../../test-data/layout-accuracy/README.md) isolates
 offsets, page transforms, clipping, reversal and field orientation from glyph
 shapes, with its own ZD621 preview references and comparison command.
 
-For every generated resource in the repository, including performance and invalid-input reports, run `benchmarks/_work/venv/bin/python benchmarks/regenerate.py`. See the [complete generation inventory](../README.md#regenerate--test-the-harness). The accuracy-only commands below remain available.
+Build current comparisons and behavioral evaluations with `bazel build //:reports`; use `//:reports_saved` for a hash-verified baseline preview. Performance is collected separately with `bazel run //:performance`. See the [complete generation inventory](../README.md#regenerate--test-the-harness). The accuracy-only commands below remain available.
 
-**[Compare printer previews, library renders and differences](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)** by library or case. Every case includes all eight renderers, including error diagnostics and blank output.
+**[Compare printer previews, library renders and differences](https://codyps.github.io/zpl-comparison/categories/accuracy.html)** by library or case. Every case includes all eight renderers, including error diagnostics and blank output.
 
-The [checked-in report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md) compares eight rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. The codyps-zpl adapter uses the library’s default ZD621 compatibility profile with the case dimensions and 203 DPI. It is separate from the [performance suite](../README.md); timing and code-size measurements remain the historical run recorded there.
+The [CI-generated report](https://codyps.github.io/zpl-comparison/categories/accuracy.html) compares eight rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. The codyps-zpl adapter uses the library’s default ZD621 compatibility profile with the case dimensions and 203 DPI. It is separate from the [performance suite](../README.md); timing and memory measurements are recollected on each trusted CI run.
 
 ## Reproduce offline
 

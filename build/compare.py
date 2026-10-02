@@ -49,10 +49,12 @@ def comparison(spec, metadata, images):
             row.update(
                 metrics, score=metrics["iou"] if metrics["reference_ink"] else None
             )
+            if spec["suite"] in {"public", "paired"}:
+                row["comparison"] = metrics
             save_difference(diff, output / "image.png")
         else:
-            row["score"] = 0.0 if row["reference_ink"] and not spec.get("strict_native_canvas") else None
-    if spec["suite"] == "accuracy" and row["status"] not in ["rendered", "blank"]:
+            row["score"] = 0.0 if row["reference_ink"] and not spec.get("strict_native_canvas") and row["status"] != "not_captured" else None
+    if spec["suite"] == "accuracy" and row["status"] not in ["rendered", "blank", "not_captured"]:
         row["execution_status"] = row["status"]
         row.update(
             status="error",

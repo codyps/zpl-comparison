@@ -10,6 +10,12 @@ fn render_options(width: u32, height: u32) -> codyps_zpl::Options {
     // firmware behavior (in particular ZQ610 ^LL and preview width handling).
     let profile = match env::var("ZPL_RENDER_PROFILE").as_deref() {
         Ok("zq610-plus-203dpi") => ZQ610_PLUS_203_DPI,
+        Ok("zd621-preview-203dpi") => {
+            let mut preview = ZD621_203_DPI;
+            preview.compatibility.preview_width_quantum = Some(64);
+            preview.compatibility.preview_width_latched_at_first_draw = true;
+            preview
+        }
         Ok("zd621-203dpi") | Err(env::VarError::NotPresent) => ZD621_203_DPI,
         other => panic!("unknown ZPL_RENDER_PROFILE: {other:?}"),
     };
@@ -136,7 +142,10 @@ fn main() {
     // Warm-up is outside the timer, but included in process peak RSS.
     let warmup = Instant::now();
     let mut warmed = 0;
-    while warmed < 3 || (env::var("ZPL_BENCH_MEMORY").as_deref() != Ok("1") && warmup.elapsed().as_millis() < 250) {
+    while warmed < 3
+        || (env::var("ZPL_BENCH_MEMORY").as_deref() != Ok("1")
+            && warmup.elapsed().as_millis() < 250)
+    {
         black_box(operation(&args[1], &input, width, height));
         warmed += 1;
     }

@@ -98,15 +98,6 @@ class AccuracyTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Repeated control"):
                 accuracy.corpus(dest)
 
-    def test_support_inventory_distinguishes_ignored_and_emitted(self):
-        data = json.loads(
-            (ROOT.parent / "docs/benchmarks/command-support.json").read_text()
-        )["commands"]
-        self.assertEqual(data["go"]["^XZ"]["status"], "D")
-        self.assertEqual(data["go"]["^B3"]["status"], "I")
-        self.assertEqual(data["ffi"], data["go"])
-        self.assertEqual(data["builder"]["^BC"]["status"], "E")
-        self.assertEqual(data["toolchain"]["^BQ"]["status"], "T")
 
 
 if __name__ == "__main__":

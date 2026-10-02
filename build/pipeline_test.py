@@ -26,6 +26,49 @@ from benchmarks import refresh_candidates
 
 
 class PipelineTest(unittest.TestCase):
+    def test_missing_or_changed_baseline_is_unscored(self):
+        expected = dict(source_sha256=sha(self.source), requested_dimensions=[2, 2],
+                        render_profile="zd621-203dpi", input_identity="current-adapter", timeout_seconds=45)
+        evidence = self.root / "evidence.json"
+        matching = dict(expected, case="new-case", library="example", status="rendered",
+                        render_sha256=sha(self.reference), observed_utc="2026-10-02T00:00:00Z")
+        variants = [None] + [dict(matching, **{key: "changed"}) for key in expected]
+        for index, value in enumerate(variants):
+            if value:
+                evidence.write_text(json.dumps(value))
+            row, images = self.root / f"row{index}.json", self.root / f"images{index}"
+            saved(dict(row=dict(case="new-case", library="example"), expected=expected,
+                       evidence=str(evidence) if value else None, image=str(self.reference)), row, images)
+            self.assertEqual(json.loads(row.read_text())["status"], "not_captured")
+            self.assertFalse(list(images.iterdir()))
+            scored = self.root / f"score{index}.json"
+            comparison(dict(suite="accuracy", row=str(row), image=str(images),
+                            reference=str(self.reference), sha256=sha(self.reference)), scored, self.root / f"diff{index}")
+            self.assertIsNone(json.loads(scored.read_text())["score"])
+
+    def test_compatible_baseline_preserves_evidence_and_rejects_corruption(self):
+        expected = dict(source_sha256=sha(self.source), requested_dimensions=[2, 2],
+                        render_profile="zd621-203dpi", input_identity="current-adapter", timeout_seconds=45)
+        evidence = self.root / "evidence.json"
+        row = dict(expected, case="case", library="example", status="rendered",
+                   render_sha256=sha(self.reference), observed_utc="2026-10-02T00:00:00Z",
+                   adapter_identity_sha256="recorded-deployment")
+        evidence.write_text(json.dumps(row))
+        spec = dict(row=dict(case="case", library="example"), expected=expected,
+                    evidence=str(evidence), image=str(self.reference))
+        saved(spec, self.root / "row.json", self.root / "images")
+        self.assertEqual(json.loads((self.root / "row.json").read_text()), dict(row, evidence_mode="saved"))
+        self.assertEqual(sha(self.root / "images/image.png"), sha(self.reference))
+        evidence.write_text(json.dumps(dict(row, iou=0.9, reference_ink=20, comparison={"exact": True})))
+        saved(spec, self.root / "row.json", self.root / "images")
+        replay = json.loads((self.root / "row.json").read_text())
+        self.assertNotIn("iou", replay)
+        self.assertNotIn("comparison", replay)
+        self.assertNotIn("reference_ink", replay)
+        self.reference.write_bytes(b"corrupted")
+        with self.assertRaisesRegex(ValueError, "hash mismatch"):
+            saved(spec, self.root / "bad.json", self.root / "bad-images")
+
     def test_render_profile_is_explicit_and_does_not_leak_from_environment(self):
         library = self.root / "library"
         library.mkdir()
@@ -118,6 +161,22 @@ class PipelineTest(unittest.TestCase):
         for key, value in provenance.items():
             self.assertEqual(result[key], value)
         self.assertIn("saved renderer", result["generation"])
+
+    def test_replay_keeps_adapter_identity_only_for_compatible_observations(self):
+        rows = []
+        for library, mode in [("measured", "saved"), ("changed", "unavailable")]:
+            path = self.root / (library + ".json")
+            path.write_text(json.dumps(dict(library=library, evidence_mode=mode,
+                                           observed_utc="2020-01-01T00:00:00Z" if mode == "saved" else "unavailable")))
+            rows.append(str(path))
+        identities = self.root / "adapters.json"
+        identities.write_text(json.dumps({name: dict(revision="original") for name in ["measured", "changed"]}))
+        aggregate(dict(metadata={}, cases=[], rows=rows, suite="accuracy", libraries={},
+                       saved_adapters=str(identities), saved_provenance=dict(host="Saved observations"),
+                       renders="results"), self.root / "aggregate")
+        result = json.loads((self.root / "aggregate/results/results.json").read_text())
+        self.assertEqual(result["adapters"], dict(measured=dict(revision="original")))
+        self.assertEqual(result["measured_utc"], "2020-01-01T00:00:00Z")
 
     def test_layout_matrix_requires_every_renderer_and_printer_comparison(self):
         cases = ["layout-control", "layout-home"]

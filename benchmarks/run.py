@@ -145,7 +145,7 @@ def check_output(path, mode, fixture):
                 raise RuntimeError(f"Unexpected image: {raw.format} {raw.size}")
             image = Image.new("RGBA", raw.size, "white")
             image.alpha_composite(raw.convert("RGBA"))
-            pixels = list(image.convert("L").getdata())
+            pixels = image.convert("L").get_flattened_data()
         black = [v < 128 for v in pixels]
         if not any(black) or all(black):
             raise RuntimeError("Blank/solid image")

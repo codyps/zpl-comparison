@@ -126,7 +126,7 @@ def verify(result, output, cases, images):
         if row["source_sha256"] != case["sha256"]:
             raise ValueError("Wrong measured source")
         path = output / "images" / (case["name"] + ".png")
-        if row["status"] in {"error", "timeout"}:
+        if row["status"] not in {"rendered", "blank"}:
             if path.exists() or "comparison" in row or not row.get("diagnostic"):
                 raise ValueError("Invalid failure evidence")
             continue

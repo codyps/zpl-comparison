@@ -7,9 +7,9 @@ The root README links to these detailed reports. [Library capabilities and selec
 
 [Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
 
-The [rendering conformance corpus](../test-data/render-conformance/README.md) adds 598 focused and combined test files. Its [shared accuracy gallery](https://codyps.github.io/zpl-comparison/categories/conformance.html) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
+The [rendering conformance corpus](../test-data/render-conformance/README.md) adds focused and combined test files defined by its generated manifest. Its [shared accuracy gallery](https://codyps.github.io/zpl-comparison/categories/conformance.html) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
-The [external label corpus](../test-data/external-zpl/README.md) contains eight pinned upstream examples with documented native-canvas adaptations,
+The [external label corpus](../test-data/external-zpl/README.md) contains pinned upstream examples with documented native-canvas adaptations,
 plus an explicit UTF-8 retail variant with its own printer reference. [Execution report](https://codyps.github.io/zpl-comparison/categories/external-zpl.html).
 Regenerate its images, JSON and Markdown with:
 
@@ -19,8 +19,8 @@ benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/ex
 
 The [October 2026 public-document campaign](../test-data/public-zpl/README.md) adds
 22 labels from Labelixa and BinaryKits, fresh ZD621 previews, and dated codyps/zpl
-and Labelary observations. [Findings and native gallery](../docs/public-examples/README.md).
-`python benchmarks/public_examples.py --check` validates its saved evidence offline.
+and Labelary observations. [Historical findings](../docs/public-examples/FINDINGS.md) and [current CI gallery](https://codyps.github.io/zpl-comparison/categories/public-zpl.html).
+CI reruns the local renderer and regenerates the native comparisons and decoder evidence offline.
 The site publishes it as a separate category; the remaining libraries were not measured.
 
 ## Run
@@ -110,9 +110,10 @@ Open `bazel-bin/reports/README.md` or
 `bazel-bin/reports/docs/benchmarks/README.md`. The output includes collected
 evidence and maintained documentation at their original relative paths so report
 links and images remain usable. The default target compiles each local renderer
-and generates each case/library image locally. Printer previews, Labelary responses,
-invalid-input measurements and source-support inventories
-remain saved evidence; this build never contacts a printer or rendering service.
+and generates each case/library image locally. It also runs the invalid-input
+probes and extracts command support from the selected sources. Printer previews
+and Labelary responses remain saved evidence; this build never contacts a printer
+or rendering service.
 
 Bazel caches each library deployment (including the Go shared library used by
 FFI), each case/library render, each printer comparison and difference PNG, each
@@ -139,8 +140,8 @@ restore-key match is expected; Bazel's own disk-cache hit counts establish which
 actions were reused. The older BUILD/MODULE-keyed cache stopped saving on exact
 hits, so new fixture results could be rebuilt on every runner. Main builds now
 finish instead of cancelling one another before cache upload; superseded PR
-builds may still be cancelled. Publication still checks that the source revision
-is current before updating `generated`.
+builds may still be cancelled. Successful main runs publish GitHub Pages and
+retain immutable observation bundles as release assets.
 
 `//:render_libraries` builds the adapters before image generation and checkpoints
 their cache separately. Both completed and partially completed report actions
@@ -188,92 +189,92 @@ images/pages, use an output group, for example:
 bazelisk build //:reports --output_groups=case_accuracy_argument-font0-height-16
 ```
 
-`bazelisk build //:reports_saved` uses the same granular action graph without
-native compilation, writing `bazel-bin/reports_saved`. Each saved case/library
-observation is imported separately; comparisons, previews, pages, plots, and
-report families are independently cached. Original saved PNG bytes, measurement
-timestamps, host metadata, and adapter identities are retained. Missing successful
-render evidence fails the build. Fork pull requests use this target because they
-cannot access the private source token; trusted CI builds use `//:reports`.
+`bazelisk build //:reports_saved` builds a fork/offline preview without native
+compilation. It downloads the immutable archive pinned in
+[`build/baseline.lock.json`](../build/baseline.lock.json), or a selected CI bundle,
+and imports observations independently. Each replay must match the source bytes,
+requested canvas, device profile, and adapter/source/dependency input identity.
+Missing or changed observations are **not measured**, with no image or score.
+A corrupt successful observation fails the build. Original observation times and
+deployment hashes are retained; report generation does not create a new measurement.
 
-Both targets accept the same case and suite output groups. For example:
+New fixtures require their source definitions and appropriate external-reference
+metadata. Local renderer snapshots never need to be committed. Trusted CI measures
+the new cases; fork previews show unavailable observations until a compatible
+trusted bundle exists. Labelary responses are replayed directly from the canonical
+capture archive, with missing responses explicitly unavailable.
+
+The `Comparison site` workflow runs on pull requests, main pushes, manual dispatch,
+and a daily schedule. Trusted runs resolve the selected sources and build local
+observations; main publication follows the current private renderer main revision.
+Fork runs resolve a published `ci-observations-*` release to a concrete URL and
+SHA-256 before building. The initial archive remains the fallback before the first
+release is published. It is historical evidence and lacks current input identities,
+so its local render rows remain unavailable in current comparisons.
+
+Successful main runs publish the site through GitHub Pages and retain observation
+bundles as release assets. Those releases have no artifact-expiration deadline.
+The seven-day Actions artifact transfers the bundle to the publication job; it is
+not the durable copy. The build job retains read-only repository permissions; only
+the main-only publication job can create releases. Each release uses a unique run
+and attempt tag and contains the archive plus its hash/identity manifest. Do not
+remove releases still used by replay locks.
+
+To select a current bundle locally, with the GitHub CLI configured:
 
 ```sh
-bazelisk build //:reports_saved --output_groups=case_layout-accuracy_layout-control
+mkdir -p benchmarks/_work
+python3 .github/scripts/fetch_baseline.py --repository codyps/zpl-comparison --output "$PWD/benchmarks/_work/baseline.lock.json"
+bazelisk build //:reports_saved --repo_env=ZPL_BASELINE_LOCK="$PWD/benchmarks/_work/baseline.lock.json"
 ```
 
-The broad `report_sources` filegroup makes sources available during analysis; it
-is not an input to every action. Only final tree assembly reads all published
-artifacts. Editing one saved PNG invalidates its import and comparison, the
-case viewport and affected previews, and downstream summaries and assembly;
-unrelated case image actions remain cached. Editing one result row changes only
-that observation's generated action specification, rather than making every
-image action depend on the complete results JSON. Bazel drives the stages directly;
-`benchmarks/regenerate.py` remains the manual checkout regeneration command.
+Keep the resolved lock to reproduce that exact preview. Bazel's repository cache
+supports subsequent offline replay. The same case and suite output groups work
+with live and saved targets. Additional groups are `suite_invalid`, `suite_support`,
+`suite_public`, and `suite_paired`.
 
-Fixture manifests and case bytes define the action graph. After editing a fixture
-generator, run it and include its updated manifest/cases. The build verifies that
-they agree. Reference capture hashes and repeated-control checks remain enforced.
-Renderer failures are benchmark outcomes: they remain visible as error/crash/timeout
-rows and produce no fabricated image. Broken input hashes, missing tools, or a
-successful command without a valid PNG fail the build. Each local result
-records when its cached render was executed; changing report code does not
-pretend the renderer was measured again.
+| Inputs retained in source | CI-owned results |
+| --- | --- |
+| Fixture definitions, adapters, source/dependency/toolchain pins | Local PNGs, statuses, diagnostics, deployment identities |
+| Valid/invalid fixture pairs and probe contracts | Two repetitions of each input across the seven built adapters' 13 API lanes; classifications and report |
+| Resolved source/package trees and maintained argument notes | Extracted command support, inventory and compatibility pages |
+| Exact printer/SaaS captures, submitted bytes, settings and provenance | Comparisons, relations, scores, differences, thumbnails and galleries |
+| Public-label fixtures and paired printer captures | Current public-document and ZQ610/ZD621 profile evaluations |
+| Pinned barcode decoder and input images | Decoder evidence with input hashes; decoding does not establish pixel parity |
+| Current comparison rows | Total-failure JSON and TSV; unavailable observations are unscored |
+| Capability template and selected repositories | Timestamped GitHub popularity data on main/scheduled runs; API failures stay unavailable |
+| Performance workloads and built adapters | Fresh uncached timings and memory measurements on each trusted run |
 
-The Bazel version is pinned in `.bazelversion`; Python and `rules_python` are pinned
-in `MODULE.bazel`. After changing `benchmarks/requirements.txt`, update the full
-dependency lock with:
+Renderer and probe actions are cached on their declared inputs. Changing reporting
+code recomputes reports without rerunning adapters. Source support is extracted
+from the resolved source/package trees on trusted builds; saved previews explicitly
+retain the baseline's source revisions. Performance timings always run outside the
+action cache. Independent decoder checks run offline using the pinned dependency.
+
+Fixture manifests and case bytes still define the analysis graph. After editing a
+generator, run it and include the updated manifest/cases; CI verifies byte equality.
+Coverage catalogs are generated in the output tree. Captured historical corpus
+manifests and exact submitted ZPL stay unchanged as external-evidence provenance.
+No printer or rendering-service request occurs in the build.
+
+Raw external captures, imported sources/licenses, fonts, lockfiles, fixture
+specifications and authored findings remain repository inputs. Local renderer
+observations, computed JSON/TSV, coverage catalogs, plots, diffs and generated pages
+are ignored build outputs. Historical authored findings link to the original Git
+revision. The pre-migration archive preserves the removed historical snapshots.
+
+The Bazel and Python versions are pinned. Update Python dependencies with:
 
 ```sh
 uv pip compile benchmarks/requirements.txt --python-version 3.13 --generate-hashes -o build/requirements.lock.txt
 ```
 
-Keep `MODULE.bazel.lock` checked in. Bazel outputs and downloaded dependencies are
-not checked into the source branch. To inspect why an action runs, use
+Keep `MODULE.bazel.lock` checked in. To inspect cache behavior, use
 `bazelisk build //:reports --explain=/tmp/zpl-reports-explain.log --verbose_explanations`.
-
-The `Generated reports` workflow builds this target on pull requests, pushes to
-`main`, and manual dispatch. Only successful `main` runs publish. The first
-publication creates an orphan root commit on `generated`; subsequent publications
-append to that branch's own history without force pushes or merging `main`.
-Identical output creates no new commit, and a build whose source revision is no
-longer the tip of `main` is skipped. Publication replaces the complete snapshot,
-including removing obsolete files, and records the source commit and CI run in
-the commit message. An intermediate artifact transfers the tree between the
-read-only build job and the publishing job; the branch is the published result.
-Bazel dependency and action caches are reused across CI runs.
-
-Reproduce derived resources from saved collected evidence in Bazel's output tree:
-
-```sh
-bazelisk build //:reports_saved
-```
-
-This includes `docs/benchmarks/accuracy/accuracy.svg` (the chart embedded near the top of the repository README), its PNG, every other plot, generated Markdown, difference PNGs, thumbnails and compatibility pages. Bazel resolves the Python dependencies; this target needs no adapters, renderer source checkouts, printer, or rendering service. Saved measurements and capture dates are preserved. Missing or inconsistent input evidence fails the command rather than producing invented results.
-
-| Collected or maintained input | Regenerated resources |
-| --- | --- |
-| Render-conformance and invalid-input fixture definitions | ZPL fixtures, manifests and generated coverage catalog |
-| CI `renderer-performance` artifact | Fresh performance timings and output samples published with that run |
-| Popularity snapshot, dependency locks, pinned revisions and maintained capability template | Capabilities survey and complete popularity table |
-| `docs/benchmarks/command-support.json` and command index | Command-support Markdown inventory |
-| `docs/benchmarks/invalid/results.json` | Invalid-input report |
-| Labelary capture manifest and original response images | Service capture report |
-| Accuracy results, original library renders and printer captures | Accuracy SVG/PNG, report, argument matrix, full-size differences, compact thumbnails and case/library pages |
-| Feature/external results, original renders and printer captures | Execution reports, computed accuracy JSON, full-size differences, compact thumbnails and case/library pages |
-| Saved support evidence, measurements, corpus and maintained argument notes | Compatibility library/command/feature pages and input hashes |
-
-Raw renderer samples, imported examples/licenses, printer captures, Labelary responses and measurement JSON are collected evidence, not synthesized reports. Argument notes, the capabilities template (`benchmarks/templates/capabilities.md`), the command index, provenance documents and source-inspiration notes are maintained inputs. The command composes the published outputs from these inputs; it does not replace them with new measurements or downloads.
-
-To collect fresh local measurements **and** rebuild everything, after preparing all adapters:
-
-```sh
-benchmarks/_work/venv/bin/python benchmarks/regenerate.py --measure
-```
-
-This refreshes source-support evidence, performance, invalid-input behavior, original accuracy, features and external examples. Printer and SaaS captures use the explicit collection commands below. A runner failure with no fresh saved result stops regeneration; recorded crashes/timeouts are published and cause a nonzero exit after reports are rebuilt.
-
-Measurement commands write local evidence and may also produce ignored reports. Commit refreshed evidence inputs; use `bazelisk build //:reports` to validate the output. CI publishes derived files to `generated`; do not commit them to the source branch. The narrower `benchmarks/accuracy/regenerate.py` remains available for accuracy-only collection.
+The legacy `benchmarks/regenerate.py --measure` and `benchmarks/accuracy/regenerate.py`
+commands remain available for manual measurements, including generator-only
+libraries outside the CI renderer set. Their outputs belong in ignored work
+folders or archived observation bundles, not the source branch.
 
 ```sh
 benchmarks/_work/venv/bin/python -m unittest discover -s benchmarks -p 'test_*.py'

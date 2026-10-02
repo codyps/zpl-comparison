@@ -1,5 +1,12 @@
 //! One-shot error probes: returned library errors are distinct from panics.
-use std::{fs, hint::black_box};
+use std::fs;
+#[cfg(any(
+    feature = "codyps-zpl",
+    feature = "toolchain",
+    feature = "labelize",
+    feature = "forge"
+))]
+use std::hint::black_box;
 
 pub fn run(mode: &str, input: &[u8], output: &str, width: u32, height: u32) {
     match operation(mode, input, width, height) {

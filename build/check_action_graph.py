@@ -78,7 +78,7 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
             assert not any("/bin/library_" in p or p.endswith("/results.json") for p in files), (outputs, "saved import depends on compilation or whole results document")
             images = [p for p in files if p.endswith(".png")]
             assert len(images) <= 1, (outputs, "saved import depends on unrelated images")
-            assert all(p.startswith(("docs/benchmarks/", "references/zq610-candidates/saved/images/")) for p in images), (outputs, "saved import depends on printer evidence")
+            assert all(p.startswith(("docs/benchmarks/labelary/", "references/zq610-candidates/labelary/", "external/+observation_baseline")) for p in images), (outputs, "saved import depends on printer evidence")
         if kind == "ZplRender":
             sources = [p for p in files if p.endswith(".zpl")]
             assert len(sources) == 1, (

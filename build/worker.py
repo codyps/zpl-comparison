@@ -22,6 +22,7 @@ def execute(kind, arguments):
             "aggregate": "aggregate",
             "preview": "main",
             "relation": "main",
+            "probe": "probe",
         }[kind],
     )
     spec = json.loads(Path(arguments[0]).read_text())

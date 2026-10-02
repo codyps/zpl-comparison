@@ -15,9 +15,8 @@ def aggregate(spec, destination):
     data = spec["metadata"]
     data["cases"] = spec["cases"]
     data["results"] = rows
-    data["measured_utc"] = max(
-        [r.get("observed_utc", spec["captured_utc"]) for r in rows]
-    )
+    data["measured_utc"] = max((r["observed_utc"] for r in rows
+                                if r.get("observed_utc", "")[:4].isdigit()), default="unavailable")
     data["generation"] = (
         "Bazel: independently cached local renders; saved printer and Labelary captures"
     )
@@ -41,6 +40,10 @@ def aggregate(spec, destination):
     if "saved_provenance" in spec:
         data.update(spec["saved_provenance"])
         data["generation"] = "Bazel: independently cached comparisons of saved renderer and printer evidence"
+    if "saved_adapters" in spec:
+        measured = {r["library"] for r in rows if r.get("evidence_mode") == "saved"}
+        data["adapters"] = {name: identity for name, identity in json.loads(Path(spec["saved_adapters"]).read_text()).items()
+                            if name in measured}
     target = output / spec["renders"] / "results.json"
     target.parent.mkdir(parents=True)
     target.write_text(json.dumps(data, indent=2) + "\n")

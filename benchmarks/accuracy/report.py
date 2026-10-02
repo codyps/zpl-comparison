@@ -22,12 +22,22 @@ from accuracy.gallery import generate  # noqa: E402
 from accuracy.run import LIBRARIES
 
 
+def mean(values):
+    values = list(values)
+    return statistics.mean(values) if values else float("nan")
+
+
+def percent(values):
+    value = mean(values)
+    return f"{value * 100:.2f}%" if np.isfinite(value) else "N/A"
+
+
 def render_report(data, dest, part="all"):
     plt.rcParams["svg.hashsalt"] = "zpl-comparison-accuracy"
     rows = data["results"]
     cases = data["cases"]
     scored = [r for r in rows if r["score"] is not None]
-    valid = {r["case"] for r in scored}
+    valid = {r["case"] for r in rows if r.get("reference_ink", 0) > 0}
     common = {
         c
         for c in valid
@@ -35,10 +45,10 @@ def render_report(data, dest, part="all"):
     }
     groups = sorted({c["group"] for c in cases})
     overall = {
-        name: statistics.mean(r["score"] for r in scored if r["library"] == name)
+        name: mean(r["score"] for r in scored if r["library"] == name)
         for name in LIBRARIES
     }
-    ranked = sorted(LIBRARIES, key=lambda name: (-overall[name], name))
+    ranked = sorted(LIBRARIES, key=lambda name: (-overall[name] if np.isfinite(overall[name]) else float("inf"), name))
     columns = ["Overall", *groups]
     summary = []
     for name in ranked:
@@ -52,10 +62,11 @@ def render_report(data, dest, part="all"):
                 sum(r.get("exact", False) for r in samples),
                 sum(r["status"] == "error" for r in samples),
                 sum(r["status"] == "blank" for r in samples),
-                f"{statistics.mean(r['score'] for r in samples) * 100:.2f}%",
-                f"{statistics.mean(r['score'] for r in samples if r['group'] != 'barcode-formats') * 100:.2f}%",
-                f"{statistics.mean(r['score'] for r in samples if r['group'] == 'barcode-formats') * 100:.2f}%",
-                f"{statistics.mean(shared) * 100:.2f}%" if shared else "N/A",
+                sum(r["status"] == "not_captured" for r in rows if r["library"] == name),
+                percent(r['score'] for r in samples),
+                percent(r['score'] for r in samples if r['group'] != 'barcode-formats'),
+                percent(r['score'] for r in samples if r['group'] == 'barcode-formats'),
+                percent(shared),
             ]
         )
     if part != "markdown":
@@ -64,7 +75,7 @@ def render_report(data, dest, part="all"):
                 [
                     [overall[n]]
                     + [
-                        statistics.mean(
+                        mean(
                             r["score"]
                             for r in scored
                             if r["library"] == n and r["group"] == g
@@ -87,7 +98,7 @@ def render_report(data, dest, part="all"):
                 ax.text(
                     x,
                     y,
-                    f"{plot[y, x]:.1f}",
+                    f"{plot[y, x]:.1f}" if np.isfinite(plot[y, x]) else "N/A",
                     ha="center",
                     va="center",
                     color="white" if plot[y, x] < 55 else "black",
@@ -119,7 +130,7 @@ def render_report(data, dest, part="all"):
         "**Foreground IoU = matching black pixels / pixels black in either image.** "
         "It avoids making an empty label look accurate because most pixels are white. The fixed threshold is gray <128 after compositing transparency onto white. "
         "Missing and extra pixels, precision, recall and full-canvas mismatch are retained per cell in JSON. "
-        "Errors and blank library output score zero for a nonblank printer reference; blank printer references are quarantined from scores. "
+        "Errors and blank library output score zero for a nonblank printer reference; blank printer references and unavailable observations are unscored. "
         "“Ink exact” permits only all-white canvas margins to differ; “strict exact” additionally requires identical dimensions.\n",
         f"The all-case mean weights each nonblank case equally, including unsupported cases. Shared-case mean uses the **{len(common)} cases** for which all {len(LIBRARIES)} adapters returned nonblank rasters; it isolates a smaller common subset and is subject to selection bias. The corpus is broad but not representative of every deployment.\n",
         "The chart’s Overall column is the mean over all nonblank printer cases, not an equal-weight mean of the group columns. Rows are sorted highest to lowest by Overall.\n",
@@ -132,6 +143,7 @@ def render_report(data, dest, part="all"):
                 "Strict exact",
                 "Errors",
                 "Blank",
+                "Not measured",
                 "All-case mean IoU",
                 "Fresh argument IoU",
                 "Archived barcode IoU",
@@ -164,7 +176,9 @@ def render_report(data, dest, part="all"):
                 r = next(
                     r for r in rows if r["case"] == case["id"] and r["library"] == n
                 )
-                if r["score"] is None:
+                if r["status"] == "not_captured":
+                    label_text = "not measured"
+                elif r["score"] is None:
                     label_text = "reference blank"
                 elif r["status"] != "rendered":
                     label_text = r["status"]
