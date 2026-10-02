@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 
-LAYOUT_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"}
+LAYOUT_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "labelary"}
 
 
 def verify_layout_matrix(renders, comparisons, cases):
@@ -119,9 +119,9 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
             )
         elif kind == "ZplLibraryBuild":
             library = Path(outputs[0]).name
-            if library in ["library_go", "library_go-native"]:
+            if library in ["library_go", "library_go-native", "library_zebrash"]:
                 assert not any(
-                    "+go_inputs/" in p
+                    ("+go_inputs/" in p or "+zebrash_inputs/" in p)
                     and any(
                         part in p
                         for part in ["/go-home/", "/home/", "/modules/cache/download/sumdb/"]
@@ -142,7 +142,8 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
         assert counts.get("ZplRender", 0) == 0, counts
         assert counts.get("ZplReports", 0) == 0, counts
     else:
-        assert counts.get("ZplLibraryBuild") == 8, counts
+        # Local renderers plus the shared go-zpl library used by the FFI adapter.
+        assert counts.get("ZplLibraryBuild") == len(LAYOUT_LIBRARIES), counts
     observation = "ZplSaved" if saved else "ZplRender"
     assert counts.get(observation, 0) > 0, counts
     assert counts.get("ZplCompare") == counts[observation], counts

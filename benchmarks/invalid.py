@@ -27,6 +27,9 @@ LANES = {
     "ffi": ["render"],
     "binarykits": ["parse", "render"],
     "zplr": ["parse", "render"],
+    "zebrash": ["parse", "render"],
+    "zpl-renderer-js": ["render"],
+    "zebrash-ts": ["parse", "render"],
 }
 FAULTS = {"crash", "timeout", "process-error", "harness-error"}
 
@@ -313,6 +316,12 @@ def main():
         ROOT / "adapters/rust/src/probe.rs",
         ROOT / "adapters/go/main.go",
         ROOT / "adapters/node/main.mjs",
+        ROOT / "adapters/node/renderers.mjs",
+        ROOT / "adapters/zebrash/main.go",
+        ROOT / "adapters/zebrash/go.mod",
+        ROOT / "adapters/zebrash/go.sum",
+        ROOT / "adapters/zpl-renderer-js/package-lock.json",
+        ROOT / "adapters/zebrash-ts/package-lock.json",
         ROOT / "adapters/dotnet/Program.cs",
     ]
     # Record actual adapter executables and managed/native runtime dependencies.
@@ -329,6 +338,9 @@ def main():
             )
         if lib == "binarykits":
             files.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
+        if lib in {"zpl-renderer-js", "zebrash-ts"}:
+            from run import node_files
+            files.extend(node_files(lib))
         identities[lib] = [dict(name=p.name, sha256=sha(p)) for p in files]
     data = dict(
         schema=1,

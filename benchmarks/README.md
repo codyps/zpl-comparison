@@ -7,7 +7,7 @@ The root README links to these detailed reports. [Library capabilities and selec
 
 [Invalid-ZPL rejection tests](invalid/README.md) run paired valid/invalid inputs across parser and renderer APIs, with repeated executions and explicit error/crash classification.
 
-The [rendering conformance corpus](../test-data/render-conformance/README.md) adds focused and combined test files defined by its generated manifest. Its [shared accuracy gallery](https://codyps.github.io/zpl-comparison/categories/conformance.html) shows each printer preview alongside all eight renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
+The [rendering conformance corpus](../test-data/render-conformance/README.md) adds focused and combined test files defined by its generated manifest. Its [shared accuracy gallery](https://codyps.github.io/zpl-comparison/categories/conformance.html) shows each printer preview alongside all configured renderer outputs and pixel differences. Invalid inputs run offline only. Feature scores are reported separately from the argument/barcode chart because the sampling differs.
 
 The [external label corpus](../test-data/external-zpl/README.md) contains pinned upstream examples with documented native-canvas adaptations,
 plus an explicit UTF-8 retail variant with its own printer reference. [Execution report](https://codyps.github.io/zpl-comparison/categories/external-zpl.html).
@@ -25,7 +25,7 @@ The site publishes it as a separate category; the remaining libraries were not m
 
 ## Run
 
-Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥22 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.
+Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥24 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.
 
 ```sh
 python3 -m venv benchmarks/_work/venv
@@ -42,7 +42,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-CI measures parsing and PNG rendering for the seven Bazel-built renderer adapters on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
+CI measures parsing and PNG rendering for the ten Bazel-built renderer adapters (rendering only where no standalone parser is exposed) on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
 
 Old checked-in performance results and samples have been removed. The broader manual harness above remains available for generator-only libraries and source/deployment size surveys; those measurements are not presented as current CI results. Fixed input fixtures and a stable shuffle make runs comparable; measured durations are never fixed or replayed.
 
@@ -54,7 +54,29 @@ bazel run //:performance -- --libraries "$PWD/bazel-bin" --fixtures "$PWD/benchm
 
 Use a new output directory per run. Individual unsupported workloads retain diagnostics; a missing deployment or an adapter with no successful measurements fails the run.
 
+If `/tmp` is a small memory-backed filesystem, point native build and report scratch space
+at an existing disk directory with `--action_env=ZPL_BUILD_TMPDIR=/absolute/path`.
+
 ## Pins
+
+The 2026-10-02 renderer search adds `zebrash` (Go 1.38.0),
+`zpl-renderer-js` (4.0.0, wrapping the same Zebrash release in WASM), and
+`zebrash-ts` (`@zebrash/node` 1.0.4). All three join the ZD621 argument,
+conformance, external-label and layout suites, the ZQ610 candidate matrix,
+invalid-input probes and CI performance collection. The public-document and
+paired-printer campaigns retain their existing selected adapters.
+Additional PHP, Android, SVG and service projects are documented in the
+[maintained survey](templates/capabilities.md), with unmeasured status explicit.
+
+Zebrash uses a separate `adapters/zebrash/go.mod` / `go.sum`; each new Node
+adapter has its own `package-lock.json` and isolated deployment dependency tree.
+WASM bytes and Node fonts load from local packages. The adapters pass the native
+canvas at 8 dots/mm, enable inverted labels, and retain monochrome PNG defaults.
+WASM initialization is outside warm timing and inside process RSS; Base64-to-PNG
+decoding is timed. The wrapper has no parse-only lane. Source-size accounting
+for it includes wrapper sources, not the embedded Go dependency, whereas its
+deployment size includes the packaged engine. Native Zebrash and its TypeScript
+port create fresh parser/drawer state per operation.
 
 - [`sources.lock.json`](sources.lock.json): immutable source commits for the Go engine, Python package and source-size survey. Git checkouts must be clean when changing revisions.
 - [`adapters/rust/Cargo.lock`](adapters/rust/Cargo.lock): exact Rust dependency graph. Each binary is built separately with one feature; `--all-features` is **not** a supported build. codyps/zpl and its raster dependency are path dependencies.
@@ -148,7 +170,7 @@ their cache separately. Both completed and partially completed report actions
 are saved on build failure, with step timeouts leaving room for that save.
 
 The same `//:reports` CI build includes the [font-free layout suite](../test-data/layout-accuracy/README.md):
-20 cases across seven local renderers plus saved Labelary responses, with saved ZD621 references, difference
+20 cases across ten local renderer adapters plus saved Labelary responses, with saved ZD621 references, difference
 images and a separate gallery/summary. CI verifies all 160 render/comparison
 pairs and their printer-reference dependencies. Build only its images and gallery
 with `--output_groups=suite_layout-accuracy`; fork CI reproduces its saved evidence
@@ -236,7 +258,7 @@ with live and saved targets. Additional groups are `suite_invalid`, `suite_suppo
 | Inputs retained in source | CI-owned results |
 | --- | --- |
 | Fixture definitions, adapters, source/dependency/toolchain pins | Local PNGs, statuses, diagnostics, deployment identities |
-| Valid/invalid fixture pairs and probe contracts | Two repetitions of each input across the seven built adapters' 13 API lanes; classifications and report |
+| Valid/invalid fixture pairs and probe contracts | Two repetitions of each input across the ten built adapters' 18 API lanes; classifications and report |
 | Resolved source/package trees and maintained argument notes | Extracted command support, inventory and compatibility pages |
 | Exact printer/SaaS captures, submitted bytes, settings and provenance | Comparisons, relations, scores, differences, thumbnails and galleries |
 | Public-label fixtures and paired printer captures | Current public-document and ZQ610/ZD621 profile evaluations |
@@ -311,7 +333,7 @@ Source and renderer measurements remain separate, dated evidence.
 ### Feature renders and printer differences
 
 The repository-wide command rebuilds feature and external galleries from saved results.
-With `--measure`, it also runs all feature fixtures through all eight renderers.
+With `--measure`, it also runs all feature fixtures through all configured renderers.
 The narrower accuracy command accepts `--reports-only` to rebuild accuracy pages and
 differences offline from saved render results and checked-in printer captures. Renderer crashes/timeouts remain failures after the
 reports are preserved; they do not prevent the remaining fixtures from running.

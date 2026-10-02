@@ -155,6 +155,19 @@ elif kind == "go":
     )
     for cwd in [root / "benchmarks/adapters/go", root / "benchmarks/_work/go-zpl"]:
         run("go", "mod", "download", "all", cwd=cwd)
+elif kind == "zebrash":
+    for name in ["go.mod", "go.sum"]:
+        copy("benchmarks/adapters/zebrash/" + name, "benchmarks/adapters/zebrash/" + name)
+    source("zebrash", root / "benchmarks/_work/zebrash")
+    env.update(GOMODCACHE=str(root / "modules"), GOPATH=str(root / "go-home"), GOTOOLCHAIN="local")
+    run("go", "mod", "download", "all", cwd=root / "benchmarks/adapters/zebrash")
+elif kind in ["zpl-renderer-js", "zebrash-ts"]:
+    source(kind, root / "benchmarks/_work" / kind)
+    for name in ["package.json", "package-lock.json"]:
+        copy("benchmarks/adapters/" + kind + "/" + name, name)
+    env["npm_config_cache"] = str(root / "npm-cache")
+    run("npm", "ci", "--ignore-scripts")
+    shutil.rmtree(root / "npm-cache")
 elif kind == "node":
     source("zplr", root / "benchmarks/_work/zplr")
     for name in ["package.json", "package-lock.json"]:

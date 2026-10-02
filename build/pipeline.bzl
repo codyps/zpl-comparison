@@ -5,7 +5,7 @@ load("//:build/zq610.bzl", "zq610_matrix")
 load("//:build/evaluations.bzl", "invalid_matrix")
 load("//:build/campaigns.bzl", "campaigns")
 
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "labelary"]
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "labelary"]
 
 def _invoke(ctx, kind, name, spec, inputs, outputs):
     if kind == "pages" and ctx.attr.saved:

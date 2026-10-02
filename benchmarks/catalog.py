@@ -23,6 +23,10 @@ def package_versions():
     versions.update(
         {name: node["node_modules/" + name]["version"] for name in ["jszpl", "zplr"]}
     )
+    for adapter, package in [("zpl-renderer-js", "zpl-renderer-js"), ("zebrash-ts", "@zebrash/node")]:
+        lock = json.loads((ROOT / "adapters" / adapter / "package-lock.json").read_text())
+        versions[adapter] = lock["packages"]["node_modules/" + package]["version"]
+    versions["zebrash"] = json.loads((ROOT / "sources.lock.json").read_text())["zebrash"]["version"]
     dotnet = json.loads((ROOT / "adapters/dotnet/packages.lock.json").read_text())[
         "dependencies"
     ]["net8.0"]

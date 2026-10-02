@@ -69,6 +69,36 @@ native_inputs(
     ],
 )
 
+native_inputs(
+    name = "zebrash_inputs",
+    kind = "zebrash",
+    manifests = [
+        "//:benchmarks/sources.lock.json",
+        "//:benchmarks/adapters/zebrash/go.mod",
+        "//:benchmarks/adapters/zebrash/go.sum",
+    ],
+)
+
+native_inputs(
+    name = "zpl_renderer_js_inputs",
+    kind = "zpl-renderer-js",
+    manifests = [
+        "//:benchmarks/sources.lock.json",
+        "//:benchmarks/adapters/zpl-renderer-js/package.json",
+        "//:benchmarks/adapters/zpl-renderer-js/package-lock.json",
+    ],
+)
+
+native_inputs(
+    name = "zebrash_ts_inputs",
+    kind = "zebrash-ts",
+    manifests = [
+        "//:benchmarks/sources.lock.json",
+        "//:benchmarks/adapters/zebrash-ts/package.json",
+        "//:benchmarks/adapters/zebrash-ts/package-lock.json",
+    ],
+)
+
 catalog = use_repo_rule("//:build/repositories.bzl", "catalog")
 
 catalog(
@@ -98,6 +128,15 @@ catalog(
         "//:benchmarks/adapters/go/main.go",
         "//:benchmarks/adapters/labelary.py",
         "//:benchmarks/adapters/node/main.mjs",
+        "//:benchmarks/adapters/node/renderers.mjs",
+        "//:benchmarks/adapters/zebrash/go.mod",
+        "//:benchmarks/adapters/zebrash/go.sum",
+        "//:benchmarks/adapters/zebrash/main.go",
+        "//:benchmarks/adapters/zpl-renderer-js/package.json",
+        "//:benchmarks/adapters/zpl-renderer-js/package-lock.json",
+        "//:benchmarks/adapters/zebrash-ts/package.json",
+        "//:benchmarks/adapters/zebrash-ts/package-lock.json",
+        "//:benchmarks/adapters/zebrash-ts/api.mjs",
         "//:benchmarks/adapters/node/package-lock.json",
         "//:benchmarks/adapters/node/package.json",
         "//:benchmarks/adapters/python.py",

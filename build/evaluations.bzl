@@ -1,8 +1,9 @@
 """Behavioral evaluations independent of rendering reports and printer scoring."""
 
 def invalid_matrix(ctx, files, compiled, baseline, catalog, invoke, stage, select):
-    lanes = {name: ["parse", "render"] for name in ["codyps-zpl", "labelize", "forge", "go", "binarykits", "zplr"]}
+    lanes = {name: ["parse", "render"] for name in ["codyps-zpl", "labelize", "forge", "go", "binarykits", "zplr", "zebrash", "zebrash-ts"]}
     lanes["ffi"] = ["render"]
+    lanes["zpl-renderer-js"] = ["render"]
     rows = []
     for case in catalog["test-data/invalid-zpl/manifest.json"]["cases"]:
         for lib, modes in lanes.items():

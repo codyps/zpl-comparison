@@ -36,5 +36,20 @@
     "fetch_url": "git@github.com:codyps/zpl.git",
     "rev": "f75ee34b58af1e8203e5c967ec73434d559e2eed",
     "version": "0.1.0"
+  },
+  "zebrash": {
+    "url": "https://github.com/ingridhq/zebrash",
+    "rev": "7903ced0c50b07e6184a1c249fea8a151a1d7a5c",
+    "version": "1.38.0"
+  },
+  "zpl-renderer-js": {
+    "url": "https://github.com/Fabrizz/zpl-renderer-js",
+    "rev": "2dbd84e5e1373c0d8ee10833626e9da86247b2c6",
+    "version": "4.0.0"
+  },
+  "zebrash-ts": {
+    "url": "https://github.com/Fountain-Bio/zebrash-ts",
+    "rev": "682537c065d5b19e4f6518c90f56ab3e2bee9924",
+    "version": "1.0.4"
   }
 }

@@ -2,12 +2,12 @@
 
 **[Read the rejection and recovery report](https://codyps.github.io/zpl-comparison/categories/invalid.html).**
 
-The deterministic [fixture generator](../../test-data/invalid-zpl/generate.py) creates 18 modified inputs and 18 valid controls. Every pair runs through the supported default parser and renderer APIs of codyps/zpl, zpl-toolchain, labelize, zpl-forge, go-zpl, zpl-rs, BinaryKits.Zpl, and ZPLr. Builders that do not consume ZPL are N/A.
+The deterministic [fixture generator](../../test-data/invalid-zpl/generate.py) creates 18 modified inputs and 18 valid controls. Every pair runs through the supported default parser and renderer APIs of codyps/zpl, zpl-toolchain, labelize, zpl-forge, go-zpl, zpl-rs, BinaryKits.Zpl, ZPLr, Zebrash, zpl-renderer-js (render only), and zebrash-ts. Builders that do not consume ZPL are N/A.
 
 ## Reproduce
 
-CI measures the seven Bazel-built adapters: 18 pairs × 13 API lanes × two inputs
-× two repetitions = 936 executions. Each pair is independently cached on the
+CI measures the ten Bazel-built adapters: 18 pairs × 18 API lanes × two inputs
+× two repetitions = 1,296 executions. Each pair is independently cached on the
 fixture, adapter deployment and probe implementation. Run
 `bazel build //:reports --output_groups=suite_invalid` to reproduce it. Fork/offline
 previews replay compatible trusted results and show **not measured** otherwise.
@@ -25,7 +25,7 @@ benchmarks/_work/venv/bin/python benchmarks/invalid.py
 benchmarks/_work/venv/bin/python benchmarks/invalid.py --check
 ```
 
-The default run performs 1,008 executions: 18 pairs × 14 API lanes × two inputs × two repetitions. Each execution uses a fresh process and a ten-second timeout. The fixtures have a 400×300 canvas and small payloads. No printer or remote rendering service is contacted. Package/source pins are shared with the other benchmarks. Results retain fixture hashes, adapter identities, source/lockfile hashes, host information, raw verdicts, diagnostics and image hashes.
+The default run performs 1,368 executions: 18 pairs × 19 API lanes × two inputs × two repetitions. Each execution uses a fresh process and a ten-second timeout. The fixtures have a 400×300 canvas and small payloads. No printer or remote rendering service is contacted. Package/source pins are shared with the other benchmarks. Results retain fixture hashes, adapter identities, source/lockfile hashes, host information, raw verdicts, diagnostics and image hashes.
 
 To preserve another machine's results or select a library:
 

@@ -6,9 +6,9 @@ shapes, with its own ZD621 preview references and comparison command.
 
 Build current comparisons and behavioral evaluations with `bazel build //:reports`; use `//:reports_saved` for a hash-verified baseline preview. Performance is collected separately with `bazel run //:performance`. See the [complete generation inventory](../README.md#regenerate--test-the-harness). The accuracy-only commands below remain available.
 
-**[Compare printer previews, library renders and differences](https://codyps.github.io/zpl-comparison/categories/accuracy.html)** by library or case. Every case includes all eight renderers, including error diagnostics and blank output.
+**[Compare printer previews, library renders and differences](https://codyps.github.io/zpl-comparison/categories/accuracy.html)** by library or case. Every case includes all configured renderers, including error diagnostics and blank output.
 
-The [CI-generated report](https://codyps.github.io/zpl-comparison/categories/accuracy.html) compares eight rendering adapters with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. The codyps-zpl adapter uses the library’s default ZD621 compatibility profile with the case dimensions and 203 DPI. It is separate from the [performance suite](../README.md); timing and memory measurements are recollected on each trusted CI run.
+The [CI-generated report](https://codyps.github.io/zpl-comparison/categories/accuracy.html) compares eleven rendering adapters (ten local plus captured Labelary responses) with a real ZD621's HTTP preview. The measured adapter file hashes are recorded in `results.json`; rebuilding adapters uses the source and dependency pins described in the parent benchmark guide. The codyps-zpl adapter uses the library’s default ZD621 compatibility profile with the case dimensions and 203 DPI. It is separate from the [performance suite](../README.md); timing and memory measurements are recollected on each trusted CI run.
 
 ## Reproduce offline
 
@@ -100,7 +100,7 @@ The argument list and values are in [cases.py](cases.py), with the Zebra command
 
 The [598-fixture gallery](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/comparisons/features/README.md)
 shares the accuracy metric, image layout and regeneration command. Compatibility
-feature pages link to each fixture's eight renders and printer differences.
+feature pages link to each fixture's renderer outputs and printer differences.
 Feature means stay separate from the argument/barcode chart to avoid changing its
 sampling weights. Missing or incomplete printer captures leave the fixture unscored;
 invalid inputs never reach the printer. Capture and resume instructions are in the

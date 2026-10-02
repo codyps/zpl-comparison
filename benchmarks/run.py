@@ -27,6 +27,9 @@ MODES = {
     "go": ["parse", "png"],
     "binarykits": ["parse", "png"],
     "zplr": ["parse", "png"],
+    "zebrash": ["parse", "png"],
+    "zpl-renderer-js": ["png"],
+    "zebrash-ts": ["parse", "png"],
     "builder": ["generate"],
     "python": ["generate"],
     "jszpl": ["generate"],
@@ -60,7 +63,8 @@ def manifest(files):
 
 
 def node_files(name):
-    base = ROOT / "adapters/node"
+    extra = name in {"zpl-renderer-js", "zebrash-ts"}
+    base = ROOT / "adapters" / (name if extra else "node")
     lock = json.loads((base / "package-lock.json").read_text())["packages"]
     seen = set()
 
@@ -91,10 +95,10 @@ def node_files(name):
                     else ""
                 )
 
-    visit(f"node_modules/{name}")
+    visit("node_modules/" + ("@zebrash/node" if name == "zebrash-ts" else name))
     return [p for key in seen for p in (base / key).rglob("*") if p.is_file()] + [
-        base / "main.mjs"
-    ]
+        ROOT / "adapters/node" / ("renderers.mjs" if extra else "main.mjs")
+    ] + ([base / "api.mjs"] if name == "zebrash-ts" else [])
 
 
 def measure(command, env, timeout=90, launcher=None):
@@ -214,6 +218,9 @@ def source_sizes(metadata):
         "python": [ROOT / "_work/python-zpl/zpl"],
         "jszpl": [ROOT / "_work/jszpl/src"],
         "zplr": [ROOT / "_work/zplr/src"],
+        "zebrash": [ROOT / "_work/zebrash"],
+        "zpl-renderer-js": [ROOT / "_work/zpl-renderer-js/src", ROOT / "_work/zpl-renderer-js/zebrash"],
+        "zebrash-ts": [ROOT / "_work/zebrash-ts/packages/core/src", ROOT / "_work/zebrash-ts/packages/node/src"],
     }
     result = {}
     for name, roots in paths.items():
@@ -337,7 +344,7 @@ def main():
     metadata = json.loads((ROOT / "_work/cargo-metadata.json").read_text())
     sizes = source_sizes(metadata)
     for name, cmd in commands.items():
-        if name in ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi", "go"]:
+        if name in ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi", "go", "zebrash"]:
             files = [Path(cmd[0])]
             if name == "ffi":
                 files.append(
@@ -346,7 +353,7 @@ def main():
                 )
         elif name == "binarykits":
             files = [p for p in (ROOT / "_work/dotnet-out").rglob("*") if p.is_file()]
-        elif name in ["zplr", "jszpl"]:
+        elif name in ["zplr", "jszpl", "zpl-renderer-js", "zebrash-ts"]:
             files = node_files(name)
         else:
             files = list((ROOT / "_work/python-zpl/zpl").rglob("*.py")) + [

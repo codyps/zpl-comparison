@@ -102,10 +102,10 @@ def run(step):
 
 def preflight_measurements():
     from accuracy.run import preflight
-    from prepare import RUST
+    from prepare import RUST, EXTRA_RENDERERS
 
     cfg = json.loads((REPO / "benchmarks/_work/config.json").read_text())
-    expected = set(RUST + ["go", "binarykits", "python", "jszpl", "zplr"])
+    expected = set(RUST + ["go", "binarykits", "python", "jszpl", "zplr"] + EXTRA_RENDERERS)
     missing = expected - cfg["commands"].keys()
     if missing:
         raise ValueError(

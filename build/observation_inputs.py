@@ -5,9 +5,10 @@ import json
 from pathlib import Path
 import sys
 
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr"]
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts"]
 SOURCE = {"codyps-zpl": "zpl", "labelize": "labelize", "forge": "zpl-forge",
-          "go": "go-zpl", "ffi": "go-zpl", "binarykits": "BinaryKits.Zpl", "zplr": "zplr"}
+          "go": "go-zpl", "ffi": "go-zpl", "binarykits": "BinaryKits.Zpl", "zplr": "zplr",
+          "zebrash": "zebrash", "zpl-renderer-js": "zpl-renderer-js", "zebrash-ts": "zebrash-ts"}
 
 
 def identities(files, probe=False, python_version=""):
@@ -16,6 +17,10 @@ def identities(files, probe=False, python_version=""):
     for library in LIBRARIES:
         language = "rust" if library in {"codyps-zpl", "labelize", "forge", "ffi"} else "go" if library == "go" else "dotnet" if library == "binarykits" else "node"
         prefixes = ["benchmarks/adapters/" + language + "/"]
+        if library in {"zebrash", "zpl-renderer-js", "zebrash-ts"}:
+            prefixes = ["benchmarks/adapters/" + library + "/"]
+            if library != "zebrash":
+                prefixes.append("benchmarks/adapters/node/renderers.mjs")
         if library == "ffi":
             prefixes.append("benchmarks/adapters/go/")
         selected = {name: hashlib.sha256(Path(path).read_bytes()).hexdigest()

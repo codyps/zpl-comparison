@@ -10,7 +10,7 @@ def _native_impl(ctx):
         relative = "/".join(f.short_path.split("/")[2:])
         # Download verification has already checked go.sum. Its moving sumdb
         # checkpoint and user-home state are not inputs to offline compilation.
-        if ctx.attr.library in ["go", "go-native"] and any([
+        if ctx.attr.library in ["go", "go-native", "zebrash"] and any([
             relative.startswith(p)
             for p in ["go-home/", "home/", "modules/cache/download/sumdb/"]
         ]):

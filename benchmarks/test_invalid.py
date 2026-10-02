@@ -22,7 +22,8 @@ class InvalidTests(unittest.TestCase):
             self.assertEqual((invalid.SUITE / name).read_bytes(), data)
         manifest = invalid.load_cases()
         self.assertEqual(len(manifest["cases"]), 18)
-        self.assertEqual(sum(len(m) for m in invalid.LANES.values()), 14)
+        self.assertEqual(sum(len(m) for m in invalid.LANES.values()), 19)
+        self.assertEqual(invalid.LANES["zpl-renderer-js"], ["render"])
         for case in manifest["cases"]:
             self.assertNotEqual(case["control"]["sha256"], case["invalid"]["sha256"])
 

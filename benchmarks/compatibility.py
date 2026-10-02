@@ -47,6 +47,9 @@ RENDERERS = {
     "ffi",
     "binarykits",
     "zplr",
+    "zebrash",
+    "zpl-renderer-js",
+    "zebrash-ts",
     "labelary",
 }
 LABELS = {
@@ -729,7 +732,7 @@ def artifacts(dest=DEST):
                     FEATURES.parent / "README.md",
                     "Feature printer/render/difference gallery",
                 )
-                + ". See each fixture below for all eight renderers. Invalid inputs and unavailable or blank printer previews are unscored."
+                + ". See each fixture below for all configured renderers. Invalid inputs and unavailable or blank printer previews are unscored."
                 if feature_data
                 else accuracy_details(page, {r["case"] for r in measured}),
                 "## Fixtures",

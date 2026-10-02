@@ -13,7 +13,7 @@ from pathlib import Path
 def stage(spec, destination):
     output = Path(destination).resolve()
     output.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix="zpl-report-") as temporary:
+    with tempfile.TemporaryDirectory(prefix="zpl-report-", dir=os.environ.get("ZPL_BUILD_TMPDIR")) as temporary:
         root = Path(temporary)
 
         def copy(source, relative):

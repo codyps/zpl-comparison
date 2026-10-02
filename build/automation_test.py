@@ -22,6 +22,10 @@ class AutomationTest(unittest.TestCase):
         for index, (name, content) in enumerate({
             "benchmarks/sources.lock.json": json.dumps({source: dict(rev="selected") for source in SOURCE.values()}),
             "benchmarks/adapters/go/main.go": "adapter",
+            "benchmarks/adapters/zebrash/main.go": "native-zebrash",
+            "benchmarks/adapters/node/renderers.mjs": "node-zebrash",
+            "benchmarks/adapters/zpl-renderer-js/package-lock.json": "wasm-dependencies",
+            "benchmarks/adapters/zebrash-ts/package-lock.json": "ts-dependencies",
             "benchmarks/accuracy/pixels.py": "normalize",
             "build/requirements.lock.txt": "dependencies",
             "build/native.bzl": "deployment",
@@ -35,6 +39,10 @@ class AutomationTest(unittest.TestCase):
         original_probe = identities(files, probe=True, python_version="3.13")
         for name, changed in [
             ("benchmarks/adapters/go/main.go", {"go", "ffi"}),
+            ("benchmarks/adapters/zebrash/main.go", {"zebrash"}),
+            ("benchmarks/adapters/node/renderers.mjs", {"zplr", "zpl-renderer-js", "zebrash-ts"}),
+            ("benchmarks/adapters/zpl-renderer-js/package-lock.json", {"zpl-renderer-js"}),
+            ("benchmarks/adapters/zebrash-ts/package-lock.json", {"zebrash-ts"}),
             ("benchmarks/accuracy/pixels.py", set(SOURCE)),
             ("build/requirements.lock.txt", set(SOURCE)),
             ("build/native.bzl", set(SOURCE)),

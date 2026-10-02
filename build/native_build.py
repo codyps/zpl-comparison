@@ -18,6 +18,9 @@ def source_size(root, name, native=None):
         "go-native": [root / "benchmarks/_work/go-zpl"],
         "binarykits": [root / "benchmarks/_work/BinaryKits.Zpl/src/BinaryKits.Zpl.Viewer", root / "benchmarks/_work/BinaryKits.Zpl/src/BinaryKits.Zpl.Label"],
         "zplr": [root / "benchmarks/_work/zplr/src"],
+        "zebrash": [root / "benchmarks/_work/zebrash"],
+        "zpl-renderer-js": [root / "benchmarks/_work/zpl-renderer-js/src", root / "benchmarks/_work/zpl-renderer-js/zebrash"],
+        "zebrash-ts": [root / "benchmarks/_work/zebrash-ts/packages/core/src", root / "benchmarks/_work/zebrash-ts/packages/node/src"],
     }
     package = {"labelize": "labelize", "forge": "zpl-forge", "ffi": "zpl-rs"}.get(name)
     if package:
@@ -46,7 +49,9 @@ def source_size(root, name, native=None):
 def build(spec, output):
     output = Path(output).resolve()
     output.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix="zpl-build-") as temporary:
+    # Bazel's spawn runner may override TMPDIR. Permit disk-backed build scratch
+    # space on hosts whose /tmp is a small tmpfs.
+    with tempfile.TemporaryDirectory(prefix="zpl-build-", dir=os.environ.get("ZPL_BUILD_TMPDIR")) as temporary:
         root = Path(temporary)
         for source, relative in spec["inputs"]:
             target = root / relative
@@ -114,7 +119,7 @@ def build(spec, output):
             if name == "ffi":
                 for path in native.glob("libzpl.*"):
                     shutil.copy2(path, output / path.name)
-        elif name in ["go", "go-native"]:
+        elif name in ["go", "go-native", "zebrash"]:
             if name == "go-native":
                 filename = "libzpl.dylib" if sys.platform == "darwin" else "libzpl.so"
                 run(
@@ -122,6 +127,7 @@ def build(spec, output):
                     "build",
                     "-mod=readonly",
                     "-trimpath",
+                    "-buildvcs=false",
                     "-buildmode=c-shared",
                     "-o",
                     output / filename,
@@ -134,17 +140,30 @@ def build(spec, output):
                     "build",
                     "-mod=readonly",
                     "-trimpath",
+                    "-buildvcs=false",
                     "-ldflags=-s -w",
                     "-o",
                     output / "adapter",
                     ".",
-                    cwd=root / "benchmarks/adapters/go",
+                    cwd=root / "benchmarks/adapters" / ("zebrash" if name == "zebrash" else "go"),
                 )
         elif name == "zplr":
             shutil.copytree(root / "node_modules", output / "node_modules")
             shutil.copy2(
                 root / "benchmarks/adapters/node/main.mjs", output / "main.mjs"
             )
+            shutil.copytree(tools / "node", output / "runtime", symlinks=True)
+        elif name in ["zpl-renderer-js", "zebrash-ts"]:
+            # Keep independent npm closures so deployment sizes exclude other renderers.
+            package = output / name
+            package.mkdir()
+            shutil.copytree(root / "node_modules", package / "node_modules")
+            shutil.copy2(root / "package.json", package / "package.json")
+            if name == "zebrash-ts":
+                shutil.copy2(root / "benchmarks/adapters/zebrash-ts/api.mjs", package / "api.mjs")
+            driver = output / "node"
+            driver.mkdir()
+            shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", driver / "renderers.mjs")
             shutil.copytree(tools / "node", output / "runtime", symlinks=True)
         elif name == "binarykits":
             project = root / "benchmarks/adapters/dotnet/Comparison.csproj"
@@ -180,6 +199,8 @@ def build(spec, output):
         command = (
             ["runtime/bin/node", "main.mjs", "zplr"]
             if name == "zplr"
+            else ["runtime/bin/node", "node/renderers.mjs", "--library=" + name]
+            if name in ["zpl-renderer-js", "zebrash-ts"]
             else ["runtime/dotnet", "Comparison.dll"]
             if name == "binarykits"
             else ["adapter"]

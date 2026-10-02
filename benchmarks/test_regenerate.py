@@ -78,6 +78,9 @@ class RegenerateTests(unittest.TestCase):
             for name in [
                 "adapters/rust/Cargo.lock",
                 "adapters/node/package-lock.json",
+                "adapters/zpl-renderer-js/package-lock.json",
+                "adapters/zebrash-ts/package-lock.json",
+                "sources.lock.json",
                 "adapters/dotnet/packages.lock.json",
             ]:
                 target = root / name

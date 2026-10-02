@@ -10,6 +10,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / "_work"
 RUST = ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi"]
+EXTRA_RENDERERS = ["zebrash", "zpl-renderer-js", "zebrash-ts"]
 
 
 def run(args, **kw):
@@ -24,9 +25,9 @@ def main():
     selected = (
         set(args.only.split(","))
         if args.only
-        else set(RUST + ["go", "binarykits", "python", "jszpl", "zplr"])
+        else set(RUST + ["go", "binarykits", "python", "jszpl", "zplr"] + EXTRA_RENDERERS)
     )
-    unknown = selected - set(RUST + ["go", "binarykits", "python", "jszpl", "zplr"])
+    unknown = selected - set(RUST + ["go", "binarykits", "python", "jszpl", "zplr"] + EXTRA_RENDERERS)
     if unknown:
         ap.error(f"Unknown adapters: {sorted(unknown)}")
     WORK.mkdir(exist_ok=True)
@@ -92,6 +93,15 @@ def main():
             env=env,
         )
         commands["go"] = [str(WORK / "go-adapter")]
+    if "zebrash" in selected:
+        run(["go", "build", "-mod=readonly", "-trimpath", "-buildvcs=false", "-ldflags=-s -w",
+             "-o", WORK / "zebrash-adapter", "."], cwd=ROOT / "adapters/zebrash", env=env)
+        commands["zebrash"] = [str(WORK / "zebrash-adapter")]
+    for name in ["zpl-renderer-js", "zebrash-ts"]:
+        if name in selected:
+            run(["npm", "ci", "--ignore-scripts", "--cache", WORK / "npm-cache"],
+                cwd=ROOT / "adapters" / name, env=env)
+            commands[name] = ["node", str(ROOT / "adapters/node/renderers.mjs"), "--library=" + name]
     cargo = os.environ.get("BENCH_CARGO", "cargo")
     for name in RUST:
         if name not in selected:

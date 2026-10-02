@@ -272,7 +272,7 @@ def generate(check=False):
         f"{len(cases)} fixtures × {len(LIBRARIES)} renderers. Execution: {data['measured_utc']}. Printer: {reference.get('device', 'not captured')}, firmware {reference.get('firmware', 'N/A')}, captured {reference.get('captured_utc', 'N/A')} through {capture_end}.",
         f"{len(refs)} hash-matched printer previews; {len(failures)} unavailable previews. Invalid inputs run offline only. "
         + ("Labelary (SaaS) is a renderer, scored against the printer like every other library."
-           if "labelary" in LIBRARIES else "Seven local renderers; Labelary captures are not available for this corpus."),
+           if "labelary" in LIBRARIES else "Local renderers only; Labelary captures are not available for this corpus."),
         f"Image coverage: {sum('image' in r for r in results)} successful renders; {sum('diff' in r for r in results)} printer differences. {sum(not c['capture_eligible'] for c in cases)} fixtures are excluded from printer submission. Every successful render with a captured reference has a difference; errors have diagnostics instead of fabricated images.",
         legend,
         "This feature corpus shares the accuracy pipeline and gallery. Its aggregate is separate from the argument/barcode chart because the corpora have different sampling and overlapping command coverage.",

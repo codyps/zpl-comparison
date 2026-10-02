@@ -115,6 +115,22 @@ native_library(
 )
 
 native_library(
+    name = "library_zebrash",
+    srcs = ["benchmarks/adapters/zebrash/main.go"],
+    library = "zebrash",
+    toolchain = ["@native_tools//:go"],
+    deps = ["@zebrash_inputs//:files"],
+)
+
+[native_library(
+    name = "library_" + lib,
+    srcs = ["benchmarks/adapters/node/renderers.mjs"] + (["benchmarks/adapters/zebrash-ts/api.mjs"] if lib == "zebrash-ts" else []),
+    library = lib,
+    toolchain = ["@native_tools//:node"],
+    deps = ["@" + lib.replace("-", "_") + "_inputs//:files"],
+) for lib in ["zpl-renderer-js", "zebrash-ts"]]
+
+native_library(
     name = "library_binarykits",
     srcs = glob([
         "benchmarks/adapters/dotnet/*.cs",
@@ -136,6 +152,9 @@ filegroup(
         "ffi",
         "go",
         "zplr",
+        "zebrash",
+        "zpl-renderer-js",
+        "zebrash-ts",
         "binarykits",
     ]],
 )
@@ -196,7 +215,7 @@ pipeline(
 filegroup(
     name = "render_libraries",
     srcs = [":library_" + lib for lib in [
-        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr",
+        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts",
     ]],
 )
 
@@ -212,6 +231,9 @@ pipeline(
         "ffi",
         "binarykits",
         "zplr",
+        "zebrash",
+        "zpl-renderer-js",
+        "zebrash-ts",
     ]],
 )
 
@@ -288,7 +310,7 @@ py_test(
         "benchmarks/accuracy/pixels.py",
     ],
     main = "build/adapter_contract_test.py",
-    data = [":library_binarykits", ":library_zplr"],
+    data = [":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zpl-renderer-js", ":library_zebrash-ts"],
     deps = [requirement("numpy"), requirement("pillow")],
 )
 
