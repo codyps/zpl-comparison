@@ -12,8 +12,8 @@ URLs, revisions, file/license hashes, dimensions, purpose, and exclusions.
 [Findings](../../docs/public-examples/FINDINGS.md) ·
 [Capture manifest](../../references/public-zd621-20261002/manifest.json)
 
-This dated campaign measures **codyps/zpl only**. It is a separate category in the
-comparison site; other implementations have no observations in this category.
+This dated campaign measures **codyps/zpl and Labelary against the ZD621**. It is
+a separate category in the comparison site; other implementations have no observations.
 The site preserves the measured revision, including when newer libraries are
 built for the older comparison suites. Existing comparison baselines are unchanged.
 
@@ -51,6 +51,7 @@ Offline fixture and saved-evidence checks:
 
 ```sh
 python test-data/public-zpl/prepare.py --check
+python benchmarks/labelary.py --check
 python benchmarks/public_examples.py --check
 python -m unittest discover -s site -p test_generate.py
 ```
@@ -74,6 +75,20 @@ adapter source and executable hashes, profile, and measurement time.
 
 The comparison build validates this campaign offline and publishes its saved
 observations. It never recaptures hardware or relabels these renders as fresh.
+
+Labelary's 22 responses were captured on 2026-10-02 with
+`python benchmarks/labelary.py --extend`, preserving all 762 earlier observations.
+That command explicitly submits only missing corpus inputs to the service.
+Exact response PNGs, source/image hashes, HTTP metadata and request times are in
+[the service manifest](../../docs/benchmarks/labelary/captures.json).
+No renderer build version was exposed. The ZD621 remains the comparison reference;
+Labelary's acceptance of an input does not certify its validity.
+
+Regenerate both renderers' tables, differences and gallery offline with
+`python benchmarks/public_examples.py --reports-only`.
+`labelary-results.json` records separate service comparisons; the original zpl
+images, source identity and measurement times remain intact. Its capture hash
+covers only this campaign's rows so unrelated service extensions do not relabel it.
 
 Captures are a separate, explicit operation. The recorded command was:
 

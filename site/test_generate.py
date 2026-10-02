@@ -110,6 +110,36 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(failed["diagnostic"], "unsupported Code 39 character")
             self.assertTrue(all(len(c["rows"]) == 1 for c in site.cases))
             self.assertIn("pinned-revision", site.cases[0]["notes"])
+            captures = [dict(suite="public-zpl", name=c["name"]) for c in cases]
+            put("docs/benchmarks/labelary/captures.json", {"cases": captures})
+            image_hash = put("docs/benchmarks/labelary/images/success.png", "service fixture")
+            diff_hash = put("docs/public-examples/images/success-labelary-diff.png", "difference fixture")
+            service = dict(manifest_sha256=manifest_hash, reference_manifest_sha256=reference_hash,
+                           captures_rows_sha256=hashlib.sha256(json.dumps(captures, sort_keys=True).encode()).hexdigest(),
+                           identity="UTC timestamps; no renderer version",
+                           results=[dict(case="success", library="labelary", status="rendered", received_utc="captured-time",
+                                         image="docs/benchmarks/labelary/images/success.png", png_sha256=image_hash,
+                                         diff="images/success-labelary-diff.png", diff_sha256=diff_hash,
+                                         comparison=dict(iou=0.5, reference_ink=2)),
+                                    dict(case="failure", library="labelary", status="error", received_utc="captured-time",
+                                         diagnostic="HTTP error")])
+            put("docs/public-examples/labelary-results.json", service)
+            site = generate.Site(source, root / "service")
+            site.load_public_examples()
+            self.assertEqual([r["library"] for r in site.cases[0]["rows"]], ["codyps-zpl", "labelary"])
+            self.assertEqual(site.cases[0]["rows"][1]["score"], 0.5)
+            self.assertIsNone(site.cases[1]["rows"][1]["score"])
+            self.assertIn("captured-time", site.cases[0]["notes"])
+            # Unrelated service extensions must not invalidate the dated campaign.
+            put("docs/benchmarks/labelary/captures.json", {"cases": captures + [dict(suite="conformance")]})
+            generate.Site(source, root / "extended").load_public_examples()
+            service["results"].pop()
+            put("docs/public-examples/labelary-results.json", service)
+            with self.assertRaisesRegex(ValueError, "Incomplete public-example Labelary"):
+                generate.Site(source, root / "missing-service").load_public_examples()
+            put("docs/benchmarks/labelary/captures.json", {"cases": []})
+            with self.assertRaisesRegex(ValueError, "Stale public-example Labelary"):
+                generate.Site(source, root / "stale-service").load_public_examples()
             data["results"].pop()
             put("docs/public-examples/results.json", data)
             with self.assertRaisesRegex(ValueError, "Incomplete public-example"):

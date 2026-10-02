@@ -10,7 +10,7 @@ explicit `ZD621_203_DPI` profile. Printer: ZTC ZD621-203dpi ZPL, firmware
 V93.21.33Z. These are HTTP Preview Label responses, not physical print/scan results.
 
 [Complete table](README.md) · [Interactive gallery](index.html) ·
-[Exact counts, hashes and errors](results.json) ·
+[zpl counts, hashes and errors](results.json) · [Labelary comparisons](labelary-results.json) ·
 [Pinned source provenance](../../test-data/public-zpl/sources.json)
 
 ## Exact labels
@@ -64,8 +64,39 @@ checks; the saved primary metric is full-canvas foreground IoU.
 Offsets refer to the documented preview variants, not the untouched upstream
 files. Full error diagnostics, including process exit status, remain in results.
 The comparison site shows these failures and leaves their scores unset rather
-than assigning fabricated images. There are no observations for other libraries
-in this dated campaign.
+than assigning fabricated images.
+
+## Labelary comparison
+
+All 22 Labelary requests returned nonblank native-size PNGs on 2026-10-02.
+**None matched the printer pixel-for-pixel**; foreground IoU ranges from
+**34.410% to 95.126%**. Among the 17 labels both renderers produced, zpl has
+higher foreground IoU on 14 and Labelary on three: carrier-style shipping,
+Shopify product, and BinaryKits Example3-54x86. This corpus is not a representative
+ranking of general renderer quality. The five local errors remain unscored.
+
+Labelary's carrier-style label reaches **86.058%** IoU versus zpl's **76.908%**.
+Its independently decoded PDF417 occupies the same 308×132-dot bounding rectangle
+as the printer and encodes the same literal payload. Equal bounds and decoded
+bytes alone do not establish pixel-exact symbol geometry.
+
+Labelary's QR URL label reaches **34.410%** IoU versus zpl's **37.249%**. Its QR
+decodes to the same URL and has a 232×232-dot bounding rectangle at `(90,70)`;
+the printer uses 264×264 dots at `(90,69)`. Neither service acceptance nor
+successful decoding resolves this difference in geometry.
+
+The five cases rejected by zpl render in Labelary with **60.691%–89.884%** IoU.
+The independent decoder also finds the truncated `kage…` QR payload, `%s` decoded
+as `~`, and `{0}` decoded as `0`; it finds no barcode in Example6. These are
+diagnostic observations, not evidence that the intended shipment data is correct.
+The extended [barcode audit](barcodes.json) preserves all previous observations.
+
+The exact service PNGs and per-request metadata are retained in
+[captures.json](../benchmarks/labelary/captures.json). All 762 previous service
+observations are unchanged. No Labelary renderer version was exposed, so these
+results are identified by their UTC capture times. The printer remains the
+reference; no live service calls occur when generating comparisons. Other
+libraries have no observations in this dated campaign.
 
 ## Follow-up priorities
 

@@ -491,7 +491,7 @@ class Site:
             self.suites.append(suite)
 
     def load_public_examples(self):
-        """Retain the dated single-library campaign without inventing other observations."""
+        """Retain dated observations without relabeling them as fresh measurements."""
         base = "docs/public-examples"
         if not (self.source / base / "results.json").exists():
             return  # Older assembled report trees predate this campaign.
@@ -505,12 +505,24 @@ class Site:
                 raise ValueError("Stale public-example evidence: " + relative)
         if [r["case"] for r in data["results"]] != [c["name"] for c in manifest["cases"]]:
             raise ValueError("Incomplete public-example observations")
+        service = None
+        if (self.source / base / "labelary-results.json").exists():
+            service = self.read(base + "/labelary-results.json")
+            captured = [r for r in self.read("docs/benchmarks/labelary/captures.json")["cases"]
+                        if r["suite"] == "public-zpl"]
+            if (any(service[k] != data[k] for k in ["manifest_sha256", "reference_manifest_sha256"])
+                    or service["captures_rows_sha256"] != hashlib.sha256(json.dumps(captured, sort_keys=True).encode()).hexdigest()):
+                raise ValueError("Stale public-example Labelary evidence")
+            if [r["case"] for r in service["results"]] != [c["name"] for c in manifest["cases"]]:
+                raise ValueError("Incomplete public-example Labelary observations")
+            self.raw["public-zpl-labelary"] = self.asset(base + "/labelary-results.json")
+            self.raw["labelary-captures"] = self.asset("docs/benchmarks/labelary/captures.json")
         self.raw["public-zpl"] = self.asset(base + "/results.json")
         self.raw["public-zpl-captures"] = self.asset("references/public-zd621-20261002/manifest.json")
         self.raw["public-zpl-sources"] = self.asset("test-data/public-zpl/sources.json")
         suite = dict(id="public-zpl", title="ZD621 · public documents (October 2026)",
                      date=data["measured_utc"], cases=[])
-        for source, observation in zip(manifest["cases"], data["results"]):
+        for index, (source, observation) in enumerate(zip(manifest["cases"], data["results"])):
             name = source["name"]
             metrics = observation.get("comparison", {})
             # Failures remain unscored: some upstream templates have invalid
@@ -522,17 +534,34 @@ class Site:
                 if row["status"] in ("rendered", "blank") else None,
                 diff_asset=self.asset(base + "/images/" + name + "-diff.png") if metrics else None,
             )
+            rows = [row]
+            service_note = ""
+            if service:
+                observation = service["results"][index]
+                metrics = observation.get("comparison", {})
+                service_row = dict(observation, **metrics,
+                                   score=metrics.get("iou") if metrics.get("reference_ink") else None)
+                for field, hash_field, asset_field in [("image", "png_sha256", "image_asset"),
+                                                       ("diff", "diff_sha256", "diff_asset")]:
+                    relative = observation.get(field)
+                    if relative and field == "diff":
+                        relative = base + "/" + relative
+                    service_row[asset_field] = self.asset(relative) if relative else None
+                    if relative and hashlib.sha256((self.source / relative).read_bytes()).hexdigest() != observation[hash_field]:
+                        raise ValueError("Stale public-example Labelary image: " + relative)
+                rows.append(service_row)
+                service_note = " Labelary captured " + observation["received_utc"] + "; " + service["identity"] + "."
             case = dict(
                 id=name, key="public-zpl--" + slug(name), suite="public-zpl", title=name,
                 group=source["group"], description=source["purpose"],
                 notes=source["notes"] + " Dated observation of zpl " + data["renderer"]["revision"]
                 + " using " + data["renderer"]["profile"]
-                + ". This campaign measured codyps/zpl only; failures are visible but unscored.",
+                + "." + service_note + " Failures are visible but unscored; the printer is the reference.",
                 commands=source["commands"],
                 source=self.asset("test-data/public-zpl/" + source["file"]),
                 reference=self.asset("references/public-zd621-20261002/" + name + ".png"),
                 license=self.asset("test-data/public-zpl/" + source["license"]),
-                rows=[row], metadata=source,
+                rows=rows, metadata=source,
             )
             suite["cases"].append(case)
             self.cases.append(case)
@@ -1292,8 +1321,8 @@ class Site:
             "Reading the results",
             """<p>These pages present saved observations, not a new measurement run. Each comparison links its original measurement document, including versions, capture dates and provenance. Local library observations and saved service responses may have different dates.</p>
 <h2>What the heatmap means</h2><p>Foreground IoU is shared black pixels divided by the union of black pixels, using a threshold of 128. A score of 100% means identical ink; “exact” additionally requires matching dimensions. Means weight each scored case equally within one comparison. The denominator is the number of recorded attempts, including unscored observations. Scores from different corpora or printer profiles should not be treated as one overall ranking.</p>
-<h2>Failures and unscored results</h2><p>In the four ZD621 corpora, failed renders with a nonblank printer reference contribute zero. Missing or blank references are unscored. ZQ610 candidate comparisons require identical native dimensions: canvas mismatches and failed or uncaptured renders remain unscored. Blank diagnostic cases never count as positive accuracy evidence. Inspect coverage alongside the mean; a high mean over few successful cases is not broad support.</p>
-<h2>Image comparison</h2><p>The ZD621 corpora compare at the original origin on a white canvas large enough for both images; they do not resize or align ink. ZQ610 candidate and printer-profile comparisons use native canvases. The paired-printer common coordinate region is a separate diagnostic, not full-canvas equality. The opacity viewer places both originals at the same top-left origin without resizing. Side-by-side previews fit their panels. Previews crop all four blank margins to the union of ink across the reference, renders and differences, with an eight-pixel margin. Every image for a case uses the same bounds, including displaced or extra ink. Full canvas restores the uncropped view; metrics always use the full canvases. Click an image to inspect its original pixels.</p><p>Difference colors: black or dark gray is shared ink, magenta is missing ink, cyan is extra ink, and white is background. The overlay is a visual aid; it does not change the recorded score.</p>
+<h2>Failures and unscored results</h2><p>In the four ZD621 corpora, failed renders with a nonblank printer reference contribute zero. Missing or blank references are unscored. Public-document and ZQ610 candidate comparisons require identical native dimensions: canvas mismatches and failed or uncaptured renders remain unscored. Blank diagnostic cases never count as positive accuracy evidence. Inspect coverage alongside the mean; a high mean over few successful cases is not broad support.</p>
+<h2>Image comparison</h2><p>The ZD621 corpora compare at the original origin on a white canvas large enough for both images; they do not resize or align ink. Public-document, ZQ610 candidate and printer-profile comparisons use native canvases. The paired-printer common coordinate region is a separate diagnostic, not full-canvas equality. The opacity viewer places both originals at the same top-left origin without resizing. Side-by-side previews fit their panels. Previews crop all four blank margins to the union of ink across the reference, renders and differences, with an eight-pixel margin. Every image for a case uses the same bounds, including displaced or extra ink. Full canvas restores the uncropped view; metrics always use the full canvases. Click an image to inspect its original pixels.</p><p>Difference colors: black or dark gray is shared ink, magenta is missing ink, cyan is extra ink, and white is background. The overlay is a visual aid; it does not change the recorded score.</p>
 <h2>Scope and limitations</h2><p>These finite probes do not establish exhaustive command, argument or firmware compatibility. Printer previews are references for specified devices and capture sessions, not physical print scans. Native-default candidates and a configured printer profile are distinct comparisons. Speed measurements describe the recorded host and workload; parser ASTs, generated labels and renderer outputs need not be semantically equivalent.</p>
 <h2>Two kinds of evidence</h2><p>Measured comparisons derive from retained inputs, observations and explicit metrics. Examined support consists of source review, catalog claims and maintained argument notes. It is kept separate and is never converted into a quantitative quality score.</p>"""
             + "<h2>Evidence downloads</h2><ul>"

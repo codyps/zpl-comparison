@@ -19,9 +19,9 @@ benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/ex
 
 The [October 2026 public-document campaign](../test-data/public-zpl/README.md) adds
 22 labels from Labelixa and BinaryKits, fresh ZD621 previews, and dated codyps/zpl
-observations. [Findings and native gallery](../docs/public-examples/README.md).
+and Labelary observations. [Findings and native gallery](../docs/public-examples/README.md).
 `python benchmarks/public_examples.py --check` validates its saved evidence offline.
-The site publishes it as a separate category; other libraries were not measured.
+The site publishes it as a separate category; the remaining libraries were not measured.
 
 ## Run
 

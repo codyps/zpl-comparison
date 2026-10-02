@@ -49,6 +49,7 @@ def inputs():
         ("conformance", "render-conformance"),
         ("external-zpl", "external-zpl"),
         ("layout-accuracy", "layout-accuracy"),
+        ("public-zpl", "public-zpl"),
     ]:
         _, rows = load_cases(REPO / "test-data" / folder, invalid=True)
         for c in rows:

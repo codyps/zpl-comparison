@@ -54,8 +54,9 @@ version provenance; refreshing a build does not relabel historical measurements.
 
 Performance pages generate latency and peak RSS bars directly from saved JSON, grouped by operation and workload. Select table headings to sort ascending or descending. Adapter builds record source bytes, physical lines and file hashes alongside deployed artifact bytes; shared runtimes are excluded.
 
-The October 2026 public-document campaign is a dated, single-library category.
-Its saved sources, printer captures, renders and differences are validated during
-report assembly. The measured zpl revision is shown on every case; rebuilding
-other suites does not relabel these observations as fresh. See
+The October 2026 public-document campaign compares dated zpl and Labelary outputs
+against the ZD621. Its saved sources, printer/service captures, renders and
+differences are validated during report assembly. The measured zpl revision and
+Labelary capture time are shown on every case; rebuilding other suites does not
+relabel these observations as fresh. See
 [the campaign](../test-data/public-zpl/README.md) to measure another revision.

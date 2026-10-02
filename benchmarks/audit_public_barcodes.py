@@ -31,9 +31,10 @@ def main():
         raise ValueError("Use the recorded zxing-cpp 3.1.1 decoder")
     rows = []
     for name in CASES:
-        for kind, directory in [("printer", "references/public-zd621-20261002"),
-                                ("zpl", "docs/public-examples/images")]:
-            path = ROOT / directory / (name + ".png")
+        for kind, directory, prefix in [("printer", "references/public-zd621-20261002", ""),
+                                        ("zpl", "docs/public-examples/images", ""),
+                                        ("labelary", "docs/benchmarks/labelary/images", "public-zpl--")]:
+            path = ROOT / directory / (prefix + name + ".png")
             if not path.exists():
                 continue
             with Image.open(path) as image:
