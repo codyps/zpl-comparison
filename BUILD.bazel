@@ -32,11 +32,13 @@ filegroup(
             "benchmarks/accuracy/*reference/**",
             "references/**",
             "test-data/external-zpl/**",
+            "test-data/public-zpl/**",
             "test-data/render-conformance/**",
             "test-data/layout-accuracy/**",
             "test-data/invalid-zpl/**",
             "docs/benchmarks/*/images/*.png",
             "docs/benchmarks/labelary/captures.json",
+            "docs/public-examples/**",
         ],
         exclude = [
             "**/__pycache__/**",

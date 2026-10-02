@@ -1,6 +1,8 @@
 """Publication contracts: scoring, evidence safety and navigable static output."""
 
 import importlib.util
+import hashlib
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -67,6 +69,54 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("width:50.0%", chart)
             self.assertIn("1.000 " + unit, chart)
         self.assertIn("data-sortable", generate.table(["Duration"], [["1"]], "Timings", "sortable"))
+
+    def test_public_campaign_keeps_failures_and_only_measured_library(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "input"
+            source.mkdir()
+
+            def put(name, value):
+                path = source / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(value) if not isinstance(value, str) else value)
+                return hashlib.sha256(path.read_bytes()).hexdigest()
+
+            cases = [dict(name=name, group="shipping", purpose="Example", notes="Preserved",
+                          commands=["^XA", "^XZ"], file=name + ".zpl", license="LICENSE")
+                     for name in ["success", "failure"]]
+            manifest_hash = put("test-data/public-zpl/manifest.json", {"cases": cases})
+            reference_hash = put("references/public-zd621-20261002/manifest.json", {})
+            put("test-data/public-zpl/sources.json", {})
+            put("test-data/public-zpl/LICENSE", "MIT")
+            for name in ["success", "failure"]:
+                put("test-data/public-zpl/" + name + ".zpl", "^XA^XZ")
+                put("references/public-zd621-20261002/" + name + ".png", "fixture")
+            put("docs/public-examples/images/success.png", "fixture")
+            put("docs/public-examples/images/success-diff.png", "fixture")
+            data = dict(manifest_sha256=manifest_hash, reference_manifest_sha256=reference_hash,
+                        measured_utc="2026-10-02", renderer=dict(revision="pinned-revision", profile="ZD621"),
+                        results=[dict(case="success", library="codyps-zpl", status="rendered",
+                                      comparison=dict(iou=1.0, reference_ink=1, exact=True)),
+                                 dict(case="failure", library="codyps-zpl", status="error", diagnostic="unsupported Code 39 character")])
+            put("docs/public-examples/results.json", data)
+            site = generate.Site(source, root / "output")
+            site.load_public_examples()
+            self.assertEqual(len(site.cases), 2)
+            self.assertEqual(site.cases[0]["rows"][0]["score"], 1.0)
+            failed = site.cases[1]["rows"][0]
+            self.assertIsNone(failed["score"])
+            self.assertIsNone(failed["image_asset"])
+            self.assertEqual(failed["diagnostic"], "unsupported Code 39 character")
+            self.assertTrue(all(len(c["rows"]) == 1 for c in site.cases))
+            self.assertIn("pinned-revision", site.cases[0]["notes"])
+            data["results"].pop()
+            put("docs/public-examples/results.json", data)
+            with self.assertRaisesRegex(ValueError, "Incomplete public-example"):
+                generate.Site(source, root / "incomplete").load_public_examples()
+            put("test-data/public-zpl/manifest.json", {"cases": []})
+            with self.assertRaisesRegex(ValueError, "Stale public-example"):
+                generate.Site(source, root / "stale").load_public_examples()
 
     def test_unscored_is_not_zero_and_failure_zero_is_preserved(self):
         self.assertEqual(

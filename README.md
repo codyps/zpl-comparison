@@ -13,6 +13,7 @@ contribute to measured quality scores.
 The repository retains fixtures, measurement inputs, capture evidence and generators.
 GitHub Pages is the publication destination; the old `generated` branch is an archive.
 
+- [Public-document findings and printer comparisons](docs/public-examples/README.md)
 - [Run and reproduce measurements](benchmarks/README.md)
 - [Site generation and publication](site/README.md)
 - [Setup and provenance](PROVENANCE.md)

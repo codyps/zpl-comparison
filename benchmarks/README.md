@@ -17,6 +17,12 @@ Regenerate its images, JSON and Markdown with:
 benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/external-zpl --only all --output docs/benchmarks/external-zpl
 ```
 
+The [October 2026 public-document campaign](../test-data/public-zpl/README.md) adds
+22 labels from Labelixa and BinaryKits, fresh ZD621 previews, and dated codyps/zpl
+observations. [Findings and native gallery](../docs/public-examples/README.md).
+`python benchmarks/public_examples.py --check` validates its saved evidence offline.
+The site publishes it as a separate category; other libraries were not measured.
+
 ## Run
 
 Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥22 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.

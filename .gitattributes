@@ -2,3 +2,9 @@
 references/zq610-plus-v1/**/*.html -text -diff -whitespace
 references/zq610-plus-v1/**/*.zpl -text
 references/zq610-candidates/*.zpl -text
+
+# Public sources/licenses and capture inputs retain their acquisition hashes.
+test-data/public-zpl/upstream/** -text -whitespace
+test-data/public-zpl/licenses/** -text -whitespace
+test-data/public-zpl/cases/*.zpl -text
+references/public-zd621-20261002/*.zpl -text

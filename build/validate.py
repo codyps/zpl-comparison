@@ -9,6 +9,7 @@ from accuracy.run import corpus, sha
 from conformance import load_cases, reference_images
 
 root = Path.cwd()
+subprocess.run([sys.executable, "benchmarks/public_examples.py", "--check"], check=True)
 corpus()
 for name, directory in [
     ("render-conformance", "conformance-reference"),

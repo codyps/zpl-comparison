@@ -423,6 +423,7 @@ class Site:
                 self.cases.append(case)
             self.suites.append(suite)
         self.load_paired()
+        self.load_public_examples()
         if len({c["key"] for c in self.cases}) != len(self.cases):
             raise ValueError("Case URL collision")
         self.performance = (self.read("docs/benchmarks/results.json")
@@ -488,6 +489,54 @@ class Site:
                 self.cases.append(case)
             suite["unavailable"] = data.get("unavailable", {})
             self.suites.append(suite)
+
+    def load_public_examples(self):
+        """Retain the dated single-library campaign without inventing other observations."""
+        base = "docs/public-examples"
+        if not (self.source / base / "results.json").exists():
+            return  # Older assembled report trees predate this campaign.
+        data = self.read(base + "/results.json")
+        manifest = self.read("test-data/public-zpl/manifest.json")
+        for relative, expected in [
+            ("test-data/public-zpl/manifest.json", data["manifest_sha256"]),
+            ("references/public-zd621-20261002/manifest.json", data["reference_manifest_sha256"]),
+        ]:
+            if hashlib.sha256((self.source / relative).read_bytes()).hexdigest() != expected:
+                raise ValueError("Stale public-example evidence: " + relative)
+        if [r["case"] for r in data["results"]] != [c["name"] for c in manifest["cases"]]:
+            raise ValueError("Incomplete public-example observations")
+        self.raw["public-zpl"] = self.asset(base + "/results.json")
+        self.raw["public-zpl-captures"] = self.asset("references/public-zd621-20261002/manifest.json")
+        self.raw["public-zpl-sources"] = self.asset("test-data/public-zpl/sources.json")
+        suite = dict(id="public-zpl", title="ZD621 · public documents (October 2026)",
+                     date=data["measured_utc"], cases=[])
+        for source, observation in zip(manifest["cases"], data["results"]):
+            name = source["name"]
+            metrics = observation.get("comparison", {})
+            # Failures remain unscored: some upstream templates have invalid
+            # or unsubstituted barcode fields. Their exact errors stay visible.
+            row = dict(observation, **metrics,
+                       score=metrics.get("iou") if metrics.get("reference_ink") else None)
+            row.update(
+                image_asset=self.asset(base + "/images/" + name + ".png")
+                if row["status"] in ("rendered", "blank") else None,
+                diff_asset=self.asset(base + "/images/" + name + "-diff.png") if metrics else None,
+            )
+            case = dict(
+                id=name, key="public-zpl--" + slug(name), suite="public-zpl", title=name,
+                group=source["group"], description=source["purpose"],
+                notes=source["notes"] + " Dated observation of zpl " + data["renderer"]["revision"]
+                + " using " + data["renderer"]["profile"]
+                + ". This campaign measured codyps/zpl only; failures are visible but unscored.",
+                commands=source["commands"],
+                source=self.asset("test-data/public-zpl/" + source["file"]),
+                reference=self.asset("references/public-zd621-20261002/" + name + ".png"),
+                license=self.asset("test-data/public-zpl/" + source["license"]),
+                rows=[row], metadata=source,
+            )
+            suite["cases"].append(case)
+            self.cases.append(case)
+        self.suites.append(suite)
 
     def case_link(self, case, label=None, lib=None):
         path = "cases/" + case["key"] + ".html"

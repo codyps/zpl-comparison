@@ -1,0 +1,146 @@
+{
+  "decoder": "zxing-cpp 3.1.1",
+  "pillow": "12.3.0",
+  "results": [
+    {
+      "case": "labelixa-qr-url-2x2",
+      "kind": "printer",
+      "file": "references/public-zd621-20261002/labelixa-qr-url-2x2.png",
+      "png_sha256": "84e37247d27fc7728b2d5d3a8f764d35874fb4819578587712995cc5915ea9c6",
+      "symbols": [
+        {
+          "format": "QR Code",
+          "text": "https://example.com/product/48213",
+          "bytes_hex": "68747470733a2f2f6578616d706c652e636f6d2f70726f647563742f3438323133",
+          "position": "90x69 354x69 354x333 90x333",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "case": "labelixa-qr-url-2x2",
+      "kind": "zpl",
+      "file": "docs/public-examples/images/labelixa-qr-url-2x2.png",
+      "png_sha256": "a29d2b6a40840de58d9bdfaab3c0c4be76a3cfa51c941163c8d16563aaee472e",
+      "symbols": [
+        {
+          "format": "QR Code",
+          "text": "https://example.com/product/48213",
+          "bytes_hex": "68747470733a2f2f6578616d706c652e636f6d2f70726f647563742f3438323133",
+          "position": "90x69 322x69 322x301 90x301",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "case": "labelixa-carrier-style-shipping-4x6",
+      "kind": "printer",
+      "file": "references/public-zd621-20261002/labelixa-carrier-style-shipping-4x6.png",
+      "png_sha256": "ddec21cecbb88e211ac71117efd5f7df194ce9c23fde24715d07884ccf63635f",
+      "symbols": [
+        {
+          "format": "PDF417",
+          "text": "[)>_1E01_1D9697477_1D840_1D001_1D420974771Z9999AA10123456784",
+          "bytes_hex": "5b293e5f314530315f3144393639373437375f31443834305f31443030315f31443432303937343737315a3939393941413130313233343536373834",
+          "position": "40x600 348x600 348x731 40x731",
+          "valid": true
+        },
+        {
+          "format": "Code 128",
+          "text": "1Z9999AA10123456784",
+          "bytes_hex": "315a3939393941413130313233343536373834",
+          "position": "40x885 771x885 771x1063 40x1063",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "case": "labelixa-carrier-style-shipping-4x6",
+      "kind": "zpl",
+      "file": "docs/public-examples/images/labelixa-carrier-style-shipping-4x6.png",
+      "png_sha256": "546c90fa0db164804256b96dbafe6d211882163b346111a6489b1004eea69a5e",
+      "symbols": [
+        {
+          "format": "PDF417",
+          "text": "[)>_1E01_1D9697477_1D840_1D001_1D420974771Z9999AA10123456784",
+          "bytes_hex": "5b293e5f314530315f3144393639373437375f31443834305f31443030315f31443432303937343737315a3939393941413130313233343536373834",
+          "position": "40x600 314x600 314x761 40x761",
+          "valid": true
+        },
+        {
+          "format": "Code 128",
+          "text": "1Z9999AA10123456784",
+          "bytes_hex": "315a3939393941413130313233343536373834",
+          "position": "40x885 771x885 771x1063 40x1063",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "case": "binarykits-example4-102x152",
+      "kind": "printer",
+      "file": "references/public-zd621-20261002/binarykits-example4-102x152.png",
+      "png_sha256": "b17943b3f5c721a212059399849daa42d3fd829095d3b2226e9e71b4b577c15e",
+      "symbols": [
+        {
+          "format": "QR Code",
+          "text": "kage 4 in the Storage Box 2B",
+          "bytes_hex": "6b616765203420696e207468652053746f7261676520426f78203242",
+          "position": "30x129 262x129 262x361 30x361",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "case": "binarykits-example5-75x202",
+      "kind": "printer",
+      "file": "references/public-zd621-20261002/binarykits-example5-75x202.png",
+      "png_sha256": "5a317787d8b38007b67eac30fe6eb5481da45b0c30fe54fbbda671f7b87803e5",
+      "symbols": [
+        {
+          "format": "Code 39 Extended",
+          "text": "~",
+          "bytes_hex": "7e",
+          "position": "263x517 48x517 48x647 263x647",
+          "valid": true
+        },
+        {
+          "format": "Code 39",
+          "text": "2V785377",
+          "bytes_hex": "3256373835333737",
+          "position": "415x1162 415x776 316x776 316x1162",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "case": "binarykits-example6-75x254",
+      "kind": "printer",
+      "file": "references/public-zd621-20261002/binarykits-example6-75x254.png",
+      "png_sha256": "9e7fffad6b17dff6e4422b8872f1a9768916f2db5704974423532883362af7c4",
+      "symbols": []
+    },
+    {
+      "case": "binarykits-example8-64x152",
+      "kind": "printer",
+      "file": "references/public-zd621-20261002/binarykits-example8-64x152.png",
+      "png_sha256": "95414edc667bba5c26a13400ad5f274878d92424657db23bdd53a6aeb89de9f5",
+      "symbols": [
+        {
+          "format": "Code 39",
+          "text": "0",
+          "bytes_hex": "30",
+          "position": "227x356 143x356 143x431 227x431",
+          "valid": true
+        },
+        {
+          "format": "Code 39",
+          "text": "0",
+          "bytes_hex": "30",
+          "position": "237x912 237x781 162x781 162x912",
+          "valid": true
+        }
+      ]
+    }
+  ]
+}

@@ -199,7 +199,7 @@ def _impl(ctx):
         "external-report": ["benchmarks/conformance.py", "test-data/external-zpl/"] + metric_scripts + plot_scripts,
         "accuracy-report": ["benchmarks/accuracy/report.py", "benchmarks/accuracy/gallery.py", "benchmarks/accuracy/presentation.py"] + metric_scripts + plot_scripts,
         "compatibility": ["benchmarks/compatibility.py", "benchmarks/catalog.py", "benchmarks/sources.lock.json", "benchmarks/adapters/", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "references/", "test-data/render-conformance/", "docs/zpl-command-index.tsv", "docs/benchmarks/argument-support.md", "docs/benchmarks/command-support.json", "docs/benchmarks/labelary/captures.json"] + metric_scripts + plot_scripts,
-        "validate": ["build/validate.py", "benchmarks/conformance.py", "benchmarks/accuracy/cases.py", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "benchmarks/accuracy/external-reference/", "benchmarks/accuracy/layout-reference/", "references/", "test-data/", "docs/zpl-command-index.tsv"] + metric_scripts + plot_scripts,
+        "validate": ["build/validate.py", "benchmarks/public_examples.py", "docs/public-examples/", "benchmarks/conformance.py", "benchmarks/accuracy/cases.py", "benchmarks/accuracy/reference/", "benchmarks/accuracy/conformance-reference/", "benchmarks/accuracy/external-reference/", "benchmarks/accuracy/layout-reference/", "references/", "test-data/", "docs/zpl-command-index.tsv"] + metric_scripts + plot_scripts,
     }
     accuracy_report = None
     for name, commands in [
