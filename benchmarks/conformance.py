@@ -137,7 +137,7 @@ def relations(cases, outcomes, images, libraries):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
-        "--only", default="codyps-zpl", help="Comma-separated renderer adapters, or all"
+        "--only", default="all", help="Comma-separated renderer adapters, or all (default)"
     )
     ap.add_argument("--group", action="append", help="Repeat to select fixture groups")
     ap.add_argument(

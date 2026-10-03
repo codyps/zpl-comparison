@@ -441,9 +441,71 @@ class Site:
             | {r["library"] for r in self.performance["results"]}
         )
 
+    def load_campaign_matrix(self, data, base):
+        """Expose every observed renderer, with strict campaign completeness."""
+        libraries = data["libraries"]
+        names = [c["name"] for c in data["cases"]]
+        keys = [(r["case"], r["library"]) for r in data["results"]]
+        expected = {(name, lib) for name in names for lib in libraries}
+        if (not libraries or len(libraries) != len(set(libraries)) or len(names) != len(set(names))
+                or len(keys) != len(set(keys)) or set(keys) != expected):
+            raise ValueError("Incomplete campaign renderer matrix")
+        for relative, digest in data["manifests"].items():
+            if hashlib.sha256((self.source / relative).read_bytes()).hexdigest() != digest:
+                raise ValueError("Stale campaign manifest: " + relative)
+        indexed = dict(zip(keys, data["results"]))
+        raw = self.asset(base + "/results.json")
+        self.raw[data["suite"]] = raw
+        for relative in data["manifests"]:
+            self.raw[data["suite"] + "-manifest-" + slug(str(Path(relative).parent))] = self.asset(relative)
+        public_sources = {}
+        if data["suite"] == "public-zpl":
+            public_sources = {c["name"]: c["source"] for c in self.read("test-data/public-zpl/manifest.json")["cases"]}
+            self.raw["public-zpl-sources"] = self.asset("test-data/public-zpl/sources.json")
+        suites = {}
+        for source in data["cases"]:
+            name = source["name"]
+            printer = source.get("printer")
+            sid = "profile-" + printer if printer else "public-zpl"
+            title = printer.upper() + " · all renderers against paired captures" if printer else "ZD621 · public documents (October 2026)"
+            if sid not in suites:
+                suites[sid] = dict(id=sid, title=title, date=data["measured_utc"], cases=[], unavailable=data.get("unavailable", {}))
+                self.raw[sid] = raw
+            rows = []
+            for library in libraries:
+                observation = indexed[(name, library)]
+                row = dict(observation, **observation.get("comparison", {}))
+                for field, digest_field in [("image", "png_sha256"), ("diff", "diff_sha256")]:
+                    relative = row.get(field)
+                    row[field + "_asset"] = self.asset(relative) if relative else None
+                    if relative and hashlib.sha256((self.source / relative).read_bytes()).hexdigest() != row[digest_field]:
+                        raise ValueError("Stale campaign image: " + relative)
+                if row["status"] in ("rendered", "blank") and not row["image_asset"]:
+                    raise ValueError("Missing campaign render")
+                rows.append(row)
+            cid = source.get("paired_case", name)
+            notes = source.get("notes", "") + " Every renderer uses the exact submitted input and requested native canvas. Failures remain visible and unscored."
+            if printer:
+                notes += " Cross-printer common coordinate region: " + json.dumps(data["common_coordinate_regions"][cid], sort_keys=True)
+            case = dict(id=cid, key=sid + "--" + slug(cid), suite=sid, title=cid,
+                        group=source["group"], description=source.get("purpose", "All renderers against the native printer capture."),
+                        notes=notes, commands=source.get("commands", []),
+                        source=self.asset(source["source"]), reference=self.asset(source["reference"]),
+                        rows=rows, metadata=source)
+            if cid in public_sources:
+                case["metadata"] = dict(source, upstream_source=public_sources[cid])
+            if source.get("license"):
+                case["license"] = self.asset("test-data/public-zpl/" + source["license"])
+            suites[sid]["cases"].append(case)
+            self.cases.append(case)
+        self.suites.extend(suites.values())
+
     def load_paired(self):
         base = "docs/benchmarks/zq610-plus"
         data = self.read(base + "/results.json")
+        if data.get("schema") == 2:
+            self.load_campaign_matrix(data, base)
+            return
         self.raw["paired"] = self.asset(base + "/results.json")
         self.raw["paired-manifest"] = self.asset(
             "references/zq610-plus-v1/manifest.json"
@@ -499,6 +561,9 @@ class Site:
         if not (self.source / base / "results.json").exists():
             return  # Older assembled report trees predate this campaign.
         data = self.read(base + "/results.json")
+        if data.get("schema") == 2:
+            self.load_campaign_matrix(data, base)
+            return
         manifest = self.read("test-data/public-zpl/manifest.json")
         for relative, expected in [
             ("test-data/public-zpl/manifest.json", data["manifest_sha256"]),

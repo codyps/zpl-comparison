@@ -14,17 +14,17 @@ from pathlib import Path
 LAYOUT_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "labelary"}
 
 
-def verify_layout_matrix(renders, comparisons, cases):
+def verify_layout_matrix(renders, comparisons, cases, suite="font-free layout"):
     expected = {f"{case}-{library}" for case in cases for library in LAYOUT_LIBRARIES}
     for kind, actual in [("renders", renders), ("printer comparisons", comparisons)]:
         assert set(actual) == expected and len(actual) == len(expected), (
-            "Incomplete font-free layout " + kind,
+            "Incomplete " + suite + " " + kind,
             sorted(expected - set(actual)),
             sorted(set(actual) - expected),
         )
 
 
-def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
+def verify(graph, layout_cases=(), saved=False, zq610_cases=(), campaign_cases=None):
     fragments = {p["id"]: p for p in graph["pathFragments"]}
 
     @functools.cache
@@ -48,6 +48,7 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
     counts = {}
     layout_renders, layout_comparisons = [], []
     zq610_renders, zq610_comparisons = [], []
+    campaign_outputs = {suite: ([], []) for suite in (campaign_cases or {})}
     for action in graph["actions"]:
         kind = action["mnemonic"]
         counts[kind] = counts.get(kind, 0) + 1
@@ -56,6 +57,12 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
         )
         outputs = [artifacts[i] for i in action.get("outputIds", [])]
         prefix = "reports_saved_actions" if saved else "reports_actions"
+        for suite, (renders, comparisons) in campaign_outputs.items():
+            selected = [p for p in outputs if "/" + prefix + "/" + suite + "/" in p]
+            if selected and kind in ["ZplRender", "ZplSaved"]:
+                renders.append(next(Path(p).name.removesuffix(".render.json") for p in selected if p.endswith(".render.json")))
+            elif selected and kind == "ZplCompare":
+                comparisons.append(next(Path(p).name.removesuffix(".comparison.json") for p in selected if p.endswith(".comparison.json")))
         zq610_outputs = [p for p in outputs if "/" + prefix + "/zq610-candidates/" in p]
         if zq610_outputs and kind in ["ZplRender", "ZplSaved"]:
             zq610_renders.append(next(Path(p).name.removesuffix(".render.json") for p in zq610_outputs if p.endswith(".render.json")))
@@ -78,7 +85,7 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
             assert not any("/bin/library_" in p or p.endswith("/results.json") for p in files), (outputs, "saved import depends on compilation or whole results document")
             images = [p for p in files if p.endswith(".png")]
             assert len(images) <= 1, (outputs, "saved import depends on unrelated images")
-            assert all(p.startswith(("docs/benchmarks/labelary/", "references/zq610-candidates/labelary/", "external/+observation_baseline")) for p in images), (outputs, "saved import depends on printer evidence")
+            assert all(p.startswith(("docs/benchmarks/labelary/", "references/zq610-candidates/labelary/", "references/paired-labelary/", "external/+observation_baseline")) for p in images), (outputs, "saved import depends on printer evidence")
         if kind == "ZplRender":
             sources = [p for p in files if p.endswith(".zpl")]
             assert len(sources) == 1, (
@@ -153,9 +160,17 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=()):
         expected = {f"{case}-{lib}" for case in zq610_cases for lib in LAYOUT_LIBRARIES}
         for rows in (zq610_renders, zq610_comparisons):
             assert len(rows) == len(expected) and set(rows) == expected, "Incomplete ZQ610 renderer/reference matrix"
+    for suite, (renders, comparisons) in campaign_outputs.items():
+        verify_layout_matrix(renders, comparisons, campaign_cases[suite], suite)
     return counts
 
 
 if __name__ == "__main__":
     cases = [case["name"] for case in json.loads(Path(sys.argv[2]).read_text())["cases"]] if len(sys.argv) > 2 else []
-    print(json.dumps(verify(json.loads(Path(sys.argv[1]).read_text()), cases, saved="--saved" in sys.argv[3:]), sort_keys=True))
+    paired = json.loads(Path("references/zq610-plus-v1/manifest.json").read_text())
+    campaigns = {"public": [c["name"] for c in json.loads(Path("test-data/public-zpl/manifest.json").read_text())["cases"]],
+                 "paired": [name + "-" + printer for name, c in paired["cases"].items()
+                            if all(c["status"].get(p, {}).get("status") == "captured" for p in ["zq610", "zd621"])
+                            for printer in ["zq610", "zd621"]]}
+    zq610 = [c["name"] for c in json.loads(Path("references/zq610-candidates/manifest.json").read_text())["cases"]]
+    print(json.dumps(verify(json.loads(Path(sys.argv[1]).read_text()), cases, saved="--saved" in sys.argv[3:], zq610_cases=zq610, campaign_cases=campaigns), sort_keys=True))

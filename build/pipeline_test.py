@@ -1,6 +1,7 @@
 """Behavioral tests for independently cached actions and optional image outputs."""
 
 import json
+import hashlib
 import os
 import subprocess
 import sys
@@ -23,9 +24,38 @@ from build.saved import saved
 from build.aggregate import aggregate
 from build.stage import stage
 from benchmarks import refresh_candidates
+from benchmarks import campaigns
 
 
 class PipelineTest(unittest.TestCase):
+    def test_campaign_matrix_retains_all_renderers_and_native_scoring(self):
+        metrics, difference = compare(gray(self.reference), gray(self.reference))
+        diff = self.root / "diff.png"
+        Image.fromarray(difference).save(diff)
+        data = dict(libraries=["go", "zebrash"], cases=[dict(name="sample", source=self.source.name,
+                    sha256=sha(self.source), reference=self.reference.name, reference_sha256=sha(self.reference))],
+                    results=[dict(case="sample", library="go", status="rendered", source_sha256=sha(self.source),
+                                  image=self.reference.name, png_sha256=sha(self.reference),
+                                  pixel_sha256=hashlib.sha256(gray(self.reference).tobytes()).hexdigest(),
+                                  comparison=metrics, score=metrics["iou"], diff=diff.name, diff_sha256=sha(diff)),
+                             dict(case="sample", library="zebrash", source_sha256=sha(self.source), status="error", diagnostic="unsupported", score=None)])
+        campaigns.verify(data, self.root)
+        with self.assertRaisesRegex(ValueError, "comparison"):
+            data["results"][0]["score"] = 0.123
+            campaigns.verify(data, self.root)
+        data["results"][0]["score"] = metrics["iou"]
+        with self.assertRaisesRegex(ValueError, "matrix"):
+            campaigns.matrix({**data, "results": data["results"][:1]})
+        with self.assertRaisesRegex(ValueError, "matrix"):
+            campaigns.matrix({**data, "results": data["results"] + data["results"][:1]})
+
+    def test_campaign_action_matrices_reject_omitted_renderers(self):
+        for suite in ["public", "paired"]:
+            expected = ["case-" + lib for lib in LAYOUT_LIBRARIES]
+            verify_layout_matrix(expected, expected, ["case"], suite)
+            with self.assertRaisesRegex(AssertionError, "Incomplete " + suite):
+                verify_layout_matrix(expected[:-1], expected, ["case"], suite)
+
     def test_missing_or_changed_baseline_is_unscored(self):
         expected = dict(source_sha256=sha(self.source), requested_dimensions=[2, 2],
                         render_profile="zd621-203dpi", input_identity="current-adapter", timeout_seconds=45)

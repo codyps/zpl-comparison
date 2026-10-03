@@ -157,6 +157,7 @@ catalog(
         "//:test-data/public-zpl/manifest.json",
         "//:references/public-zd621-20261002/manifest.json",
         "//:references/zq610-plus-v1/manifest.json",
+        "//:references/paired-labelary/captures.json",
         "//:benchmarks/sources.lock.json",
         "//:benchmarks/accuracy/conformance-reference/manifest.json",
         "//:benchmarks/accuracy/external-reference/manifest.json",

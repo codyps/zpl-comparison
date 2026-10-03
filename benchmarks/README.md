@@ -18,10 +18,10 @@ benchmarks/_work/venv/bin/python benchmarks/conformance.py --corpus test-data/ex
 ```
 
 The [October 2026 public-document campaign](../test-data/public-zpl/README.md) adds
-22 labels from Labelixa and BinaryKits, fresh ZD621 previews, and dated codyps/zpl
-and Labelary observations. [Historical findings](../docs/public-examples/FINDINGS.md) and [current CI gallery](https://codyps.github.io/zpl-comparison/categories/public-zpl.html).
-CI reruns the local renderer and regenerates the native comparisons and decoder evidence offline.
-The site publishes it as a separate category; the remaining libraries were not measured.
+22 labels from Labelixa and BinaryKits, ZD621 previews, and all eleven renderers.
+[Historical findings](../docs/public-examples/FINDINGS.md) and [current CI gallery](https://codyps.github.io/zpl-comparison/categories/public-zpl.html).
+CI reruns every local renderer, replays the saved Labelary responses, and regenerates
+the native comparisons and decoder evidence offline.
 
 ## Run
 
@@ -64,7 +64,17 @@ The 2026-10-02 renderer search adds `zebrash` (Go 1.38.0),
 `zebrash-ts` (`@zebrash/node` 1.0.4). All three join the ZD621 argument,
 conformance, external-label and layout suites, the ZQ610 candidate matrix,
 invalid-input probes and CI performance collection. The public-document and
-paired-printer campaigns retain their existing selected adapters.
+paired-printer campaigns also run the complete renderer matrix: 22 public inputs
+and 116 paired cases at each printer's native canvas, across all eleven renderers.
+Missing cells fail matrix validation; renderer errors remain explicit observations.
+Public barcode decoding and the failure inventory include every renderer.
+
+`bazel build //:reports` regenerates these campaigns with the same pinned adapters
+as the other suites. Saved Labelary responses are matched by exact source hash
+and requested dimensions. The paired ZQ610 responses reuse the candidate captures;
+the paired ZD621 responses are recorded in `references/paired-labelary`.
+`python benchmarks/paired_labelary.py` verifies them offline; `--capture` explicitly
+submits missing public fixtures to Labelary. No printer recapture is needed.
 Additional PHP, Android, SVG and service projects are documented in the
 [maintained survey](templates/capabilities.md), with unmeasured status explicit.
 

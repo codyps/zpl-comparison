@@ -281,6 +281,18 @@ def main():
         if not args.renderer:
             parser.error("--renderer is required unless --check or --reports-only is used")
         result = measure(args.renderer.resolve(), args.source.resolve(), args.output.resolve(), cases, images, reference)
+    if result.get("schema") == 2:
+        import campaigns
+        campaigns.verify(result, ROOT)
+        for name, content in campaigns.reports(result, args.output, ROOT).items():
+            path = args.output / name
+            if args.check:
+                if path.read_text() != content:
+                    raise ValueError("Stale report: " + name)
+            else:
+                path.write_text(content)
+        print("Verified complete public renderer matrix and native comparisons")
+        return
     verify(result, args.output, cases, images)
     service = service_comparisons(args.output, cases, images, check=args.check)
     artifacts = reports(result, service, args.output, cases)

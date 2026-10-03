@@ -17,6 +17,38 @@ spec.loader.exec_module(generate)
 
 
 class PublicationTests(unittest.TestCase):
+    def test_campaign_matrix_exposes_every_renderer_and_rejects_missing_rows(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "input"
+            source.mkdir()
+            for name in ["source.zpl", "reference.png", "local.png"]:
+                (source / name).write_text(name)
+            digest = hashlib.sha256((source / "local.png").read_bytes()).hexdigest()
+            for paired in [False, True]:
+                cases = [dict(name="sample-zq610" if paired else "sample", group="test", source="source.zpl", reference="reference.png")]
+                if paired:
+                    cases[0].update(printer="zq610", paired_case="sample")
+                data = dict(schema=2, suite="paired" if paired else "public-zpl", measured_utc="recorded",
+                            libraries=["go", "labelary"], manifests={}, cases=cases,
+                            common_coordinate_regions={"sample": {"region": [0, 0, 2, 2]}},
+                            results=[dict(case=cases[0]["name"], library="go", status="rendered", image="local.png", png_sha256=digest, score=0.5),
+                                     dict(case=cases[0]["name"], library="labelary", status="error", diagnostic="HTTP error", score=None)])
+                (source / "results.json").write_text(json.dumps(data))
+                manifest = source / "test-data/public-zpl/manifest.json"
+                manifest.parent.mkdir(parents=True, exist_ok=True)
+                manifest.write_text(json.dumps({"cases": [dict(name="sample", source="https://example.org/pinned.zpl")]}))
+                (manifest.parent / "sources.json").write_text("{}")
+                site = generate.Site(source, root / str(paired))
+                site.load_campaign_matrix(data, ".")
+                self.assertEqual([r["library"] for r in site.cases[0]["rows"]], ["go", "labelary"])
+                self.assertIsNone(site.cases[0]["rows"][1]["score"])
+                self.assertEqual(site.cases[0]["rows"][1]["diagnostic"], "HTTP error")
+                if not paired:
+                    self.assertEqual(site.cases[0]["metadata"]["upstream_source"], "https://example.org/pinned.zpl")
+                with self.assertRaisesRegex(ValueError, "Incomplete campaign"):
+                    site.load_campaign_matrix({**data, "results": data["results"][:1]}, ".")
+
     def test_memory_page_identifies_protocol_and_sample_range(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

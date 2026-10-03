@@ -30,19 +30,30 @@ def main():
     if version("zxing-cpp") != "3.1.1":
         raise ValueError("Use the recorded zxing-cpp 3.1.1 decoder")
     rows = []
-    for name in CASES:
-        for kind, directory, prefix in [("printer", "references/public-zd621-20261002", ""),
-                                        ("zpl", "docs/public-examples/images", ""),
-                                        ("labelary", "docs/benchmarks/labelary/images", "public-zpl--")]:
-            path = ROOT / directory / (prefix + name + ".png")
-            if not path.exists():
-                continue
-            with Image.open(path) as image:
-                symbols = [dict(format=str(s.format), text=s.text, bytes_hex=s.bytes.hex(),
-                                position=str(s.position), valid=s.valid)
-                           for s in zxingcpp.read_barcodes(image)]
-            rows.append(dict(case=name, kind=kind, file=str(path.relative_to(ROOT)),
-                             png_sha256=hashlib.sha256(path.read_bytes()).hexdigest(), symbols=symbols))
+    campaign = json.loads((ROOT / "docs/public-examples/results.json").read_text())
+    if campaign.get("schema") == 2:
+        inputs = [(c["name"], "printer", c["reference"], "rendered", "") for c in campaign["cases"]]
+        inputs += [(r["case"], r["library"], r.get("image"), r["status"], r.get("diagnostic", "")) for r in campaign["results"]]
+    else:
+        inputs = [(name, kind, directory + "/" + prefix + name + ".png", "rendered", "") for name in CASES
+                  for kind, directory, prefix in [("printer", "references/public-zd621-20261002", ""),
+                                                  ("zpl", "docs/public-examples/images", ""),
+                                                  ("labelary", "docs/benchmarks/labelary/images", "public-zpl--")]]
+    for name, kind, relative, status, diagnostic in inputs:
+        if not relative:
+            rows.append(dict(case=name, kind=kind, status=status, diagnostic=diagnostic, symbols=[]))
+            continue
+        path = ROOT / relative
+        if not path.exists():
+            if campaign.get("schema") == 2:
+                raise ValueError("Missing decoder input: " + str(path))
+            continue
+        with Image.open(path) as image:
+            symbols = [dict(format=str(s.format), text=s.text, bytes_hex=s.bytes.hex(),
+                            position=str(s.position), valid=s.valid)
+                       for s in zxingcpp.read_barcodes(image)]
+        rows.append(dict(case=name, kind=kind, file=str(path.relative_to(ROOT)),
+                         png_sha256=hashlib.sha256(path.read_bytes()).hexdigest(), symbols=symbols))
     data = dict(decoder="zxing-cpp 3.1.1", pillow=version("pillow"), results=rows)
     path = ROOT / "docs/public-examples/barcodes.json"
     if args.check:

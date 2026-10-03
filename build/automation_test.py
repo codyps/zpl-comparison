@@ -6,12 +6,31 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from build.baseline import export, normalize, sha
+from build.baseline import campaign, export, normalize, sha
 from build.probe import probe
 from build.observation_inputs import identities, SOURCE
 
 
 class AutomationTest(unittest.TestCase):
+    def test_each_campaign_renderer_is_exported_with_its_own_image(self):
+        rows = []
+        for library in ["go", "zebrash", "labelary"]:
+            image = self.root / (library + ".png")
+            image.write_bytes(library.encode())
+            rows.append(dict(case="sample-zq610", library=library, status="rendered", image=image.name,
+                             render_sha256=sha(image), observed_utc="recorded"))
+        rows.append(dict(case="sample-zq610", library="forge", status="error", diagnostic="unsupported"))
+        output = self.root / "bundle"
+        campaign(self.root, output, dict(results=rows, measured_utc="recorded"), "paired", "revision")
+        for row in rows:
+            key = row["case"] + "-" + row["library"]
+            saved = json.loads((output / "rows/paired" / (key + ".json")).read_text())
+            self.assertEqual(saved["library"], row["library"])
+            image = output / "images/paired" / (key + ".png")
+            self.assertEqual(image.exists(), row["status"] == "rendered")
+            if image.exists():
+                self.assertEqual(image.read_bytes(), row["library"].encode())
+
     def setUp(self):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)

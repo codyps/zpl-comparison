@@ -32,6 +32,24 @@ def safe(root, relative):
     return path
 
 
+def campaign(source, output, data, suite, revision):
+    """Export each campaign renderer independently, including unavailable rows."""
+    for original in data["results"]:
+        row = dict(original, baseline_revision=revision)
+        row.setdefault("observed_utc", data["measured_utc"])
+        key = row["case"] + "-" + row["library"]
+        if row["status"] in {"rendered", "blank"}:
+            image = safe(source, row.get("image", "docs/public-examples/images/" + row["case"] + ".png"))
+            recorded = row.get("render_sha256", row.get("png_sha256"))
+            if sha(image) != recorded:
+                raise ValueError("Campaign observation image hash mismatch")
+            row["render_sha256"] = recorded
+            target = output / "images" / suite / (key + ".png")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(image, target)
+        write(output / "rows" / suite / (key + ".json"), row)
+
+
 def normalize(source, output, revision):
     source, output = Path(source), Path(output)
     output.mkdir(parents=True, exist_ok=True)
@@ -84,18 +102,14 @@ def normalize(source, output, revision):
         write(output / "probes" / (name + ".json"), row)
     # Preserve current campaign observations in the same per-case replay format.
     public = json.loads((source / "docs/public-examples/results.json").read_text())
-    for row in public["results"]:
-        row = dict(row, baseline_revision=revision)
-        row.setdefault("observed_utc", public["measured_utc"])
-        key = row["case"] + "-codyps-zpl"
-        if row["status"] in {"rendered", "blank"}:
-            image = source / "docs/public-examples/images" / (row["case"] + ".png")
-            row["render_sha256"] = sha(image)
-            target = output / "images/public" / (key + ".png")
-            target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(image, target)
-        write(output / "rows/public" / (key + ".json"), row)
-    paired = json.loads((source / "references/zq610-plus-v1/analysis.json").read_text())
+    campaign(source, output, public, "public", revision)
+    paired_path = source / "docs/benchmarks/zq610-plus/results.json"
+    paired_matrix = json.loads(paired_path.read_text()) if paired_path.exists() else {}
+    if paired_matrix.get("schema") == 2:
+        campaign(source, output, paired_matrix, "paired", revision)
+        paired = {"cases": {}}
+    else:
+        paired = json.loads((source / "references/zq610-plus-v1/analysis.json").read_text())
     for name, case in paired["cases"].items():
         for printer in ["zq610", "zd621"]:
             metric = case[printer]

@@ -12,10 +12,10 @@ URLs, revisions, file/license hashes, dimensions, purpose, and exclusions.
 [Findings](../../docs/public-examples/FINDINGS.md) ·
 [Capture manifest](../../references/public-zd621-20261002/manifest.json)
 
-This dated campaign measures **codyps/zpl and Labelary against the ZD621**. It is
-a separate category in the comparison site; other implementations have no observations.
-The site preserves the measured revision, including when newer libraries are
-built for the older comparison suites. Existing comparison baselines are unchanged.
+This campaign compares **all eleven registered renderers against the ZD621**.
+The CI build measures every local renderer on all 22 inputs and replays the exact
+saved Labelary responses. The site shows every renderer's output, difference,
+status and provenance. Printer capture bytes remain the reference.
 
 ## Adaptations and scope
 
@@ -56,8 +56,10 @@ python benchmarks/public_examples.py --check
 python -m unittest discover -s site -p test_generate.py
 ```
 
-To measure again, build the existing `codyps-zpl` Rust adapter against the desired
-`zpl` checkout and pass its executable. Use a new directory to retain this campaign:
+To regenerate the complete matrix, run `bazel build //:reports` (or select
+`--output_groups=suite_public`). `//:reports_saved` replays compatible observations
+without executing renderers. The historical single-adapter measurement command
+remains available for explicitly scoped codyps/zpl investigations:
 
 ```sh
 python benchmarks/public_examples.py --renderer /path/to/codyps-zpl \
@@ -73,8 +75,9 @@ lockfile from the selected zpl workspace, then `cargo build --release --offline
 records the source commit, working-tree status, every rendering source/asset hash,
 adapter source and executable hashes, profile, and measurement time.
 
-The comparison build validates this campaign offline and publishes its saved
-observations. It never recaptures hardware or relabels these renders as fresh.
+The comparison build executes all local adapters, validates the complete matrix,
+and publishes the results. Hardware and Labelary captures are replayed offline
+with their original dates and hashes.
 
 Labelary's 22 responses were captured on 2026-10-02 with
 `python benchmarks/labelary.py --extend`, preserving all 762 earlier observations.
@@ -84,11 +87,12 @@ Exact response PNGs, source/image hashes, HTTP metadata and request times are in
 No renderer build version was exposed. The ZD621 remains the comparison reference;
 Labelary's acceptance of an input does not certify its validity.
 
-Regenerate both renderers' tables, differences and gallery offline with
-`python benchmarks/public_examples.py --reports-only`.
-`labelary-results.json` records separate service comparisons; the original zpl
-images, source identity and measurement times remain intact. Its capture hash
-covers only this campaign's rows so unrelated service extensions do not relabel it.
+Regenerate the complete matrix with `bazel build //:reports`. The resulting
+`results.json` records every renderer, its source identity, measurement time,
+native comparison, and image hashes. `public_examples.py --reports-only` can
+rebuild the tables and gallery from an existing assembled campaign without
+executing renderers or contacting the service. Historical single-adapter reports
+remain readable with their original measurement dates.
 
 Captures are a separate, explicit operation. The recorded command was:
 

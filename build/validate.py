@@ -1,6 +1,7 @@
 """Validate saved references and ensure checked fixture bytes match their generators."""
 
 import hashlib
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -10,6 +11,9 @@ from conformance import load_cases, reference_images
 
 root = Path.cwd()
 subprocess.run([sys.executable, "benchmarks/public_examples.py", "--check"], check=True)
+subprocess.run([sys.executable, "benchmarks/paired_labelary.py"], check=True)
+from campaigns import verify
+verify(json.loads(Path("docs/benchmarks/zq610-plus/results.json").read_text()), root)
 corpus()
 for name, directory in [
     ("render-conformance", "conformance-reference"),

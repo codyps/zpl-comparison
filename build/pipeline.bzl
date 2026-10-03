@@ -212,10 +212,10 @@ def _impl(ctx):
         publish.append((baseline["reports/benchmarks/popularity.json"], "benchmarks/popularity.json"))
     groups["suite_support"] = depset([support])
 
-    public, paired, campaign_images = campaigns(ctx, files, compiled, baseline, CATALOG, _observation, _invoke, _stage, _select)
+    public, paired, campaign_images = campaigns(ctx, files, compiled, baseline, CATALOG, LIBRARIES, _observation, _invoke, _stage, _select)
     publish += [(public, ""), (paired, "")] + campaign_images
     groups["suite_public"] = depset([public] + [f for f, p in campaign_images if p.startswith("docs/public")])
-    groups["suite_paired"] = depset([paired] + [f for f, p in campaign_images if p.startswith("references/")])
+    groups["suite_paired"] = depset([paired] + [f for f, p in campaign_images if p.startswith("docs/benchmarks/zq610-plus/")])
 
     # Report generation consumes current observations without executing adapters.
     metric_scripts = ["benchmarks/accuracy/run.py", "benchmarks/accuracy/pixels.py", "benchmarks/accuracy/metrics.py"]
@@ -255,7 +255,7 @@ def _impl(ctx):
         elif name in ["accuracy-report", "accuracy-chart"]:
             selected += [aggregates[0]]
         elif name == "validate":
-            selected += [(public, ""), (paired, "")] + campaign_images
+            selected += _select(files, ["benchmarks/campaigns.py", "benchmarks/paired_labelary.py"]) + [(public, ""), (paired, "")] + campaign_images
         elif name == "compatibility":
             selected += aggregates[:2] + [(support, "")]
             if ctx.attr.saved:
@@ -269,7 +269,7 @@ def _impl(ctx):
     candidate_outputs = zq610_matrix(ctx, files, compiled, baseline, CATALOG, LIBRARIES, _observation, _invoke, _stage)
     publish.extend(candidate_outputs)
     groups["suite_zq610_candidates"] = depset([f for f, _ in candidate_outputs])
-    failures = _stage(ctx, "failure-inventory", _select(files, ["benchmarks/audit_failures.py"]) + aggregates + candidate_outputs,
+    failures = _stage(ctx, "failure-inventory", _select(files, ["benchmarks/audit_failures.py"]) + aggregates + candidate_outputs + [(public, ""), (paired, "")],
                       [["benchmarks/audit_failures.py", "--input", ".", "--output", "docs/total-failures.json"]])
     publish.append((failures, ""))
     decoder = _stage(ctx, "barcode-decoder", _select(files, ["benchmarks/audit_public_barcodes.py", "references/public-zd621-20261002/", "docs/benchmarks/labelary/"]) + [(public, "")] + campaign_images,

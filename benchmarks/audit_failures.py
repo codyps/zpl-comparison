@@ -11,6 +11,8 @@ SUITES = {
     "layout-accuracy": "accuracy/comparisons/layout/results.json",
     "external-zpl": "accuracy/comparisons/external/results.json",
     "zq610-candidates": "zq610-candidates/results.json",
+    "public-zpl": "../public-examples/results.json",
+    "paired": "zq610-plus/results.json",
 }
 
 

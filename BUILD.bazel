@@ -250,6 +250,7 @@ py_test(
         "build/check_action_graph.py",
         "build/pages.py",
         "build/pipeline_test.py",
+        "benchmarks/campaigns.py",
         "benchmarks/refresh_candidates.py",
         "build/render.py",
         "build/saved.py",
@@ -258,6 +259,7 @@ py_test(
         "build/worker.py",
     ],
     main = "build/pipeline_test.py",
+    imports = ["benchmarks"],
     deps = [
         requirement("numpy"),
         requirement("pillow"),
