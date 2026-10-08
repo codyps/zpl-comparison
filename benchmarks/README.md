@@ -33,6 +33,21 @@ font bundle uploaded to printer RAM.
 Build `//:reports_fonts` for the separate report tree; the original `//:reports`
 continues to use the existing defaults.
 
+## Node / WASM codyps/zpl
+
+`codyps-zpl-node` builds `@codyps/zpl` from the `main` commit recorded in
+`sources.lock.json`, using the same source revision as the native Rust adapter.
+Publication CI advances both to `main`; local builds use the recorded revision.
+No npm release is substituted for Git source.
+`bazel build //:library_codyps-zpl-node` vendors the upstream locked Cargo
+dependencies, compiles Wasm offline, and deploys the Node package with its runtime.
+The Rust Wasm target and wasm-bindgen 0.2.128 are pinned in the toolchain lock.
+For `prepare.py --only codyps-zpl-node`, install that target and CLI locally first.
+The adapter participates in rendering, invalid-render input, accuracy and performance
+comparisons. Its public API has no standalone parser or custom font provider.
+The shared font-download bundle exceeds its 1 MiB input limit, so font-controlled
+comparisons label this adapter as using fixed resident fonts.
+
 ## Run
 
 Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥24 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.
@@ -52,7 +67,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-CI measures parsing and PNG rendering for the ten Bazel-built renderer adapters (rendering only where no standalone parser is exposed) on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
+CI measures parsing and PNG rendering for the eleven Bazel-built renderer adapters (rendering only where no standalone parser is exposed) on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
 
 Old checked-in performance results and samples have been removed. The broader manual harness above remains available for generator-only libraries and source/deployment size surveys; those measurements are not presented as current CI results. Fixed input fixtures and a stable shuffle make runs comparable; measured durations are never fixed or replayed.
 

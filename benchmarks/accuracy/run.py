@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
 LIBRARIES = [
     "codyps-zpl",
+    "codyps-zpl-node",
     "labelize",
     "forge",
     "go",
@@ -147,10 +148,10 @@ def main():
             )
         if name == "binarykits":
             paths.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
-        if name in {"zpl-renderer-js", "zebrash-ts"}:
+        if name in {"zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
             from run import node_files
             paths.extend(node_files(name))
-            paths.append(ROOT / "adapters" / name / "package-lock.json")
+            paths.append(ROOT / "sources.lock.json" if name == "codyps-zpl-node" else ROOT / "adapters" / name / "package-lock.json")
         if name == "labelary":
             paths.extend(
                 [ROOT / "labelary.py", REPO / "docs/benchmarks/labelary/captures.json"]

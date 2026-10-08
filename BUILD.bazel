@@ -133,6 +133,14 @@ native_library(
 ) for lib in ["zpl-renderer-js", "zebrash-ts"]]
 
 native_library(
+    name = "library_codyps-zpl-node",
+    srcs = ["benchmarks/adapters/node/renderers.mjs"],
+    library = "codyps-zpl-node",
+    toolchain = ["@native_tools//:rust", "@native_tools//:node", "@native_tools//:wasm-bindgen"],
+    deps = ["@codyps_zpl_node_inputs//:files"],
+)
+
+native_library(
     name = "library_binarykits",
     srcs = glob([
         "benchmarks/adapters/dotnet/*.cs",
@@ -157,6 +165,7 @@ filegroup(
         "zebrash",
         "zpl-renderer-js",
         "zebrash-ts",
+        "codyps-zpl-node",
         "binarykits",
     ]],
 )
@@ -217,7 +226,7 @@ pipeline(
 filegroup(
     name = "render_libraries",
     srcs = [":library_" + lib for lib in [
-        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts",
+        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node",
     ]],
 )
 
@@ -236,6 +245,7 @@ pipeline(
         "zebrash",
         "zpl-renderer-js",
         "zebrash-ts",
+        "codyps-zpl-node",
     ]],
 )
 
@@ -303,6 +313,15 @@ py_test(
     main = "build/canvas_profile_test.py",
     data = [":library_codyps-zpl"],
     deps = [requirement("numpy"), requirement("pillow")],
+)
+
+py_test(
+    name = "node_adapter_test",
+    size = "small",
+    srcs = ["build/node_adapter_test.py"],
+    main = "build/node_adapter_test.py",
+    data = [":library_codyps-zpl-node"],
+    deps = [requirement("pillow")],
 )
 
 py_test(
@@ -374,6 +393,7 @@ pipeline(
         "zebrash",
         "zpl-renderer-js",
         "zebrash-ts",
+        "codyps-zpl-node",
     ]],
 )
 

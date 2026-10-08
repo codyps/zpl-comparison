@@ -38,7 +38,7 @@ def campaigns(ctx, files, compiled, baseline, catalog, libraries, observe, invok
             spec = {"source_name": source, "source": files[source].path, "sha256": digest,
                     "width": width, "height": height, "timeout": 30,
                     "row": {"case": name, "library": lib, "group": suite}}
-            if lib == "codyps-zpl":
+            if lib in ["codyps-zpl", "codyps-zpl-node"]:
                 spec["render_profile"] = profile
             if lib == "labelary" and (digest, width, height) in captures:
                 spec["row"]["service_capture"] = captures[(digest, width, height)]

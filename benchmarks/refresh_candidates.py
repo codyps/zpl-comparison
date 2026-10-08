@@ -49,10 +49,10 @@ def refresh(suite, libraries, work, save=False, jobs=2, library_root=None):
         if mobile:
             row.update(source_sha256=digest, reference_sha256=case["png_sha256"],
                        requested_dimensions=[case["width"], case["height"]],
-                       profile="ZQ610_PLUS_203_DPI; exact source and native requested canvas" if lib == "codyps-zpl" else "pinned library defaults; exact source and native requested canvas")
+                       profile="ZQ610_PLUS_203_DPI; exact source and native requested canvas" if lib in ["codyps-zpl", "codyps-zpl-node"] else "pinned library defaults; exact source and native requested canvas")
         spec = dict(source=str(source), sha256=digest, width=case["width"], height=case["height"],
                     library=str(library_root / ("library_" + lib)), row=row, timeout=45)
-        if mobile and lib == "codyps-zpl":
+        if mobile and lib in ["codyps-zpl", "codyps-zpl-node"]:
             spec["render_profile"] = "zq610-plus-203dpi"
         metadata, images = work / (name + ".render.json"), work / (name + ".render")
         render(spec, metadata, images)

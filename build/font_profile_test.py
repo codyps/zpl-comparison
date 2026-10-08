@@ -98,7 +98,7 @@ class FontProfileTest(unittest.TestCase):
                 self.assertEqual(path.read_bytes(), (Path(tmp)/path.name).read_bytes(), path.name)
 
     def test_fixed_policy_does_not_change_source(self):
-        for library in ('labelary', 'labelize', 'go', 'ffi'):
+        for library in ('labelary', 'labelize', 'go', 'ffi', 'codyps-zpl-node'):
             metadata, preamble = configure('comparison_fonts', library)
             self.assertEqual(metadata['mode'], 'fixed')
             self.assertEqual(preamble, b'')

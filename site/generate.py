@@ -21,6 +21,7 @@ from urllib.parse import unquote, urlsplit
 from PIL import Image, ImageChops
 
 NAMES = {
+    "codyps-zpl-node": "codyps/zpl (Node / WASM)",
     "codyps-zpl": "codyps/zpl",
     "labelize": "labelize",
     "forge": "zpl-forge",

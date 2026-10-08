@@ -1,4 +1,4 @@
-// Shared driver for the Zebrash WASM wrapper and TypeScript port.
+// Shared protocol driver for the Node/Wasm renderers and TypeScript port.
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 
@@ -11,7 +11,19 @@ if (![n, width, height].every(value => Number.isSafeInteger(value) && value > 0)
 const require = createRequire(new URL(`../${library}/package.json`, import.meta.url));
 const input = fs.readFileSync(file);
 let parse, render;
-if (library === 'zpl-renderer-js') {
+if (library === 'codyps-zpl-node') {
+  const api = require('./index.cjs');
+  const profileName = process.env.ZPL_RENDER_PROFILE ?? 'zd621-203dpi';
+  // The public Node API cannot override individual ZD621 preview flags.
+  const profile = {'zd621-203dpi': 'zd621', 'zd621-preview-203dpi': 'zd621',
+    'zq610-plus-203dpi': 'zq610-plus'}[profileName];
+  if (!profile) throw new Error(`unknown ZPL_RENDER_PROFILE: ${profileName}`);
+  render = () => {
+    const result = api.render(input, {format: 'png', width, height, dpi: 203, profile});
+    if (result.labels !== 1) throw new Error(`expected one label, got ${result.labels}`);
+    return result.data;
+  };
+} else if (library === 'zpl-renderer-js') {
   const api = require('zpl-renderer-js/external');
   await api.init({wasmBytes: fs.readFileSync(require.resolve('zpl-renderer-js/wasm'))});
   // This API accepts text only. Do not silently replace arbitrary binary bytes.

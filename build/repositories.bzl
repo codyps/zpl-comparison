@@ -11,19 +11,21 @@ def _tools_impl(ctx):
     os = "darwin" if ctx.os.name == "mac os x" else "linux"
     pins = json.decode(ctx.read(ctx.attr.lock))[os + "-" + arch]
     for name, pin in pins.items():
-        archive = name + ".tar.gz" if name in ["go", "node", "dotnet"] else name + ".tar.xz"
+        archive = name + ".tar.gz" if name in ["go", "node", "dotnet", "wasm-bindgen"] else name + ".tar.xz"
         if "sha512" in pin:
             # Bazel accepts SRI SHA-512 as well as SHA-256.
             result = ctx.execute(["python3", "-c", "import base64,sys;print('sha512-'+base64.b64encode(bytes.fromhex(sys.argv[1])).decode())", pin["sha512"]])
             ctx.download(pin["url"], archive, integrity = result.stdout.strip())
         else:
             ctx.download(pin["url"], archive, sha256 = pin["sha256"])
-        ctx.extract(archive, output = name + "-archive" if name in ["cargo", "rustc", "rust-std"] else name)
+        ctx.extract(archive, output = name + "-archive" if name in ["cargo", "rustc", "rust-std", "rust-wasm-std"] else name)
         ctx.delete(archive)
-        if name in ["cargo", "rustc", "rust-std"]:
+        if name in ["cargo", "rustc", "rust-std", "rust-wasm-std"]:
             root = ctx.path(name + "-archive").readdir()[0]
             _run(ctx, ["bash", str(root.get_child("install.sh")), "--prefix=" + str(ctx.path("rust")), "--disable-ldconfig"])
             ctx.delete(name + "-archive")
+        elif name == "wasm-bindgen":
+            _run(ctx, ["sh", "-c", "mv wasm-bindgen/wasm-bindgen-*/* wasm-bindgen/ && rmdir wasm-bindgen/wasm-bindgen-*/"])
         elif name == "go":
             _run(ctx, ["sh", "-c", "mv go/go/* go/ && rmdir go/go"])
         elif name == "node":
@@ -32,7 +34,7 @@ def _tools_impl(ctx):
     ctx.file("host.txt", host)
     ctx.file("BUILD.bazel", '\n'.join([
         'package(default_visibility = ["//visibility:public"])',
-    ] + ['filegroup(name="%s", srcs=glob(["%s/**"]) + ["host.txt"])' % (n, n) for n in ["rust", "go", "node", "dotnet"]]))
+    ] + ['filegroup(name="%s", srcs=glob(["%s/**"]) + ["host.txt"])' % (n, n) for n in ["rust", "go", "node", "dotnet", "wasm-bindgen"]]))
 
 native_tools = repository_rule(implementation = _tools_impl, attrs = {"lock": attr.label(mandatory = True)})
 
@@ -53,6 +55,7 @@ def _inputs_impl(ctx):
     support = {
         "rust": ["vendor/labelize*/**", "vendor/zpl-forge*/**", "vendor/zpl-builder*/**", "benchmarks/_work/zpl/**"],
         "go": ["benchmarks/_work/go-zpl/**"],
+        "codyps-zpl-node": ["benchmarks/_work/codyps-zpl-node/**"],
         "node": ["benchmarks/_work/zplr/**"],
         "zebrash": ["benchmarks/_work/zebrash/**"],
         "zpl-renderer-js": ["benchmarks/_work/zpl-renderer-js/**"],

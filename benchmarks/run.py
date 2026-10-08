@@ -19,6 +19,7 @@ import PIL
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
 MODES = {
+    "codyps-zpl-node": ["png"],
     "codyps-zpl": ["parse", "png"],
     "toolchain": ["parse"],
     "forge": ["parse", "png"],
@@ -63,6 +64,9 @@ def manifest(files):
 
 
 def node_files(name):
+    if name == "codyps-zpl-node":
+        package = ROOT / "adapters" / name
+        return [p for p in package.rglob("*") if p.is_file()] + [ROOT / "adapters/node/renderers.mjs"]
     extra = name in {"zpl-renderer-js", "zebrash-ts"}
     base = ROOT / "adapters" / (name if extra else "node")
     lock = json.loads((base / "package-lock.json").read_text())["packages"]
@@ -196,6 +200,7 @@ def source_sizes(metadata):
         p["name"]: Path(p["manifest_path"]).parent for p in metadata["packages"]
     }
     paths = {
+        "codyps-zpl-node": [ROOT / "_work/zpl" / p for p in ["zpl/src", "raster-diff/src", "zpl-bitmap-fonts/src", "zpl-wasm/src", "zpl-node"]],
         "codyps-zpl": [packages["zpl"] / "src", packages["raster-diff"] / "src"],
         "toolchain": [
             packages[n] / "src"
@@ -242,12 +247,14 @@ def source_sizes(metadata):
                         "tools",
                         "e2e",
                         "examples",
+                        "pkg",
+                        "tests",
                         "__pycache__",
                     }
                     for s in parts
                 ):
                     continue
-                if p.suffix not in {".rs", ".go", ".cs", ".ts", ".py"} or any(
+                if p.suffix not in {".rs", ".go", ".cs", ".ts", ".py", ".js", ".cjs", ".mjs"} or any(
                     t in p.name for t in ["_test.", ".test.", ".spec."]
                 ):
                     continue
@@ -353,7 +360,7 @@ def main():
                 )
         elif name == "binarykits":
             files = [p for p in (ROOT / "_work/dotnet-out").rglob("*") if p.is_file()]
-        elif name in ["zplr", "jszpl", "zpl-renderer-js", "zebrash-ts"]:
+        elif name in ["zplr", "jszpl", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"]:
             files = node_files(name)
         else:
             files = list((ROOT / "_work/python-zpl/zpl").rglob("*.py")) + [

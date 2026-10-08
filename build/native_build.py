@@ -13,6 +13,7 @@ from pathlib import Path
 
 def source_size(root, name, native=None):
     roots = {
+        "codyps-zpl-node": [root / "benchmarks/_work/codyps-zpl-node" / p for p in ["zpl/src", "raster-diff/src", "zpl-bitmap-fonts/src", "zpl-wasm/src", "zpl-node"]],
         "codyps-zpl": [root / "benchmarks/_work/zpl/zpl/src", root / "benchmarks/_work/zpl/raster-diff/src"],
         "go": [root / "benchmarks/_work/go-zpl"],
         "go-native": [root / "benchmarks/_work/go-zpl"],
@@ -30,8 +31,8 @@ def source_size(root, name, native=None):
     if not selected or any(not p.is_dir() for p in selected):
         raise ValueError("Missing implementation source for " + name)
     files = sorted({p for folder in selected for p in folder.rglob("*")
-                    if p.is_file() and p.suffix in {".rs", ".go", ".cs", ".ts", ".js"}
-                    and not any(part in {"cmd", "bin", "obj", "target", "node_modules", "examples", ".git"} for part in p.relative_to(folder).parts)
+                    if p.is_file() and p.suffix in {".rs", ".go", ".cs", ".ts", ".js", ".cjs", ".mjs"}
+                    and not any(part in {"cmd", "bin", "obj", "target", "node_modules", "examples", "tests", "pkg", ".git"} for part in p.relative_to(folder).parts)
                     and not any(mark in p.name for mark in ("_test.", ".test.", ".spec."))})
     if not files:
         raise ValueError("No implementation source files for " + name)
@@ -147,6 +148,25 @@ def build(spec, output):
                     ".",
                     cwd=root / "benchmarks/adapters" / ("zebrash" if name == "zebrash" else "go"),
                 )
+        elif name == "codyps-zpl-node":
+            (root / "cargo").mkdir()
+            (root / "cargo/config.toml").write_text(
+                '[source.crates-io]\nreplace-with="vendored"\n[source.vendored]\ndirectory='
+                + json.dumps(str(root / "vendor")) + "\n")
+            checkout = root / "benchmarks/_work/codyps-zpl-node"
+            run("cargo", "build", "--offline", "--locked", "--release", "--target",
+                "wasm32-unknown-unknown", "-p", "zpl-wasm", cwd=checkout)
+            package = output / name
+            package.mkdir()
+            for filename in ["package.json", "index.cjs", "index.mjs", "index.d.ts"]:
+                shutil.copy2(checkout / "zpl-node" / filename, package / filename)
+            shutil.copy2(checkout / "LICENSE", package / "LICENSE")
+            run(tools / "wasm-bindgen/wasm-bindgen",
+                root / "target/wasm32-unknown-unknown/release/zpl_wasm.wasm",
+                "--target", "nodejs", "--out-dir", package / "pkg", "--out-name", "zpl_wasm")
+            (output / "node").mkdir()
+            shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", output / "node/renderers.mjs")
+            shutil.copytree(tools / "node", output / "runtime", symlinks=True)
         elif name == "zplr":
             shutil.copytree(root / "node_modules", output / "node_modules")
             shutil.copy2(
@@ -200,7 +220,7 @@ def build(spec, output):
             ["runtime/bin/node", "main.mjs", "zplr"]
             if name == "zplr"
             else ["runtime/bin/node", "node/renderers.mjs", "--library=" + name]
-            if name in ["zpl-renderer-js", "zebrash-ts"]
+            if name in ["zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"]
             else ["runtime/dotnet", "Comparison.dll"]
             if name == "binarykits"
             else ["adapter"]

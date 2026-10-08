@@ -6,6 +6,7 @@ from pathlib import Path
 CALLBACK = {'binarykits', 'forge', 'zplr'}
 DOWNLOAD = {'zebrash', 'zebrash-ts', 'zpl-renderer-js'}
 FIXED = {
+    'codyps-zpl-node': 'The shared font-download bundle exceeds the Node/Wasm 1 MiB input limit; no public custom font provider or limit override. Resident Wasm fonts retained.',
     'labelize': 'Fixed embedded faces; Renderer exposes no font loader.',
     'go': 'Fixed internal font manager; no public replacement API.',
     'ffi': 'Fixed go-zpl font manager behind the FFI API.',

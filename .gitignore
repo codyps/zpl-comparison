@@ -24,3 +24,6 @@ _*
 /references/zq610-plus-v1/analysis.json
 /references/zq610-plus-v1/*/*-local.png
 /benchmarks/popularity.json
+
+# Locally built upstream Node/Wasm package (prepare.py).
+/benchmarks/adapters/codyps-zpl-node/

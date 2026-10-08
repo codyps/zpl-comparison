@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
 SUITE = REPO / "test-data/invalid-zpl"
 LANES = {
+    "codyps-zpl-node": ["render"],
     "codyps-zpl": ["parse", "render"],
     "toolchain": ["parse"],
     "labelize": ["parse", "render"],
@@ -338,7 +339,7 @@ def main():
             )
         if lib == "binarykits":
             files.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
-        if lib in {"zpl-renderer-js", "zebrash-ts"}:
+        if lib in {"zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
             from run import node_files
             files.extend(node_files(lib))
         identities[lib] = [dict(name=p.name, sha256=sha(p)) for p in files]

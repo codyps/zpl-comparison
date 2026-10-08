@@ -1,6 +1,7 @@
 """Shared library names and Markdown tables, with no plotting dependencies."""
 
 NAMES = {
+    "codyps-zpl-node": "codyps/zpl (Node / WASM)",
     "labelary": "Labelary (SaaS)",
     "codyps-zpl": "codyps/zpl (Rust)",
     "toolchain": "zpl-toolchain (Rust)",

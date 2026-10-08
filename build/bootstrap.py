@@ -168,6 +168,12 @@ elif kind in ["zpl-renderer-js", "zebrash-ts"]:
     env["npm_config_cache"] = str(root / "npm-cache")
     run("npm", "ci", "--ignore-scripts")
     shutil.rmtree(root / "npm-cache")
+elif kind == "codyps-zpl-node":
+    checkout = root / "benchmarks/_work/codyps-zpl-node"
+    source("zpl", checkout)
+    env["CARGO_HOME"] = str(root / "cargo-home")
+    run("cargo", "vendor", "--locked", "--manifest-path", checkout / "Cargo.toml", root / "vendor")
+    shutil.rmtree(root / "cargo-home")
 elif kind == "node":
     source("zplr", root / "benchmarks/_work/zplr")
     for name in ["package.json", "package-lock.json"]:

@@ -50,6 +50,7 @@ RENDERERS = {
     "zebrash",
     "zpl-renderer-js",
     "zebrash-ts",
+    "codyps-zpl-node",
     "labelary",
 }
 LABELS = {

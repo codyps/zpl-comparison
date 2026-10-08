@@ -99,6 +99,12 @@ native_inputs(
     ],
 )
 
+native_inputs(
+    name = "codyps_zpl_node_inputs",
+    kind = "codyps-zpl-node",
+    manifests = ["//:benchmarks/sources.lock.json"],
+)
+
 catalog = use_repo_rule("//:build/repositories.bzl", "catalog")
 
 catalog(

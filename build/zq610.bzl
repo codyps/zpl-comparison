@@ -15,10 +15,10 @@ def zq610_matrix(ctx, files, compiled, baseline, catalog, libraries, observe, in
             identity = {"case": name, "library": lib, "group": "zq610", "score": None,
                         "source_sha256": case["sha256"], "reference_sha256": case["png_sha256"],
                         "requested_dimensions": [case["width"], case["height"]],
-                        "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas" if lib == "codyps-zpl" else "pinned library defaults; exact source and native requested canvas"}
+                        "profile": "ZQ610_PLUS_203_DPI; exact source and native requested canvas" if lib in ["codyps-zpl", "codyps-zpl-node"] else "pinned library defaults; exact source and native requested canvas"}
             spec = {"source": files[case["source"]].path, "source_name": case["source"], "sha256": case["sha256"],
                     "width": case["width"], "height": case["height"], "row": identity, "timeout": 30}
-            if lib == "codyps-zpl":
+            if lib in ["codyps-zpl", "codyps-zpl-node"]:
                 spec["render_profile"] = "zq610-plus-203dpi"
             observe(ctx, key, lib, spec, files, compiled, baseline, service, row, raster)
             scored = ctx.actions.declare_file(ctx.label.name + "_actions/" + key + ".comparison.json")

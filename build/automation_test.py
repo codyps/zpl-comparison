@@ -59,7 +59,7 @@ class AutomationTest(unittest.TestCase):
         for name, changed in [
             ("benchmarks/adapters/go/main.go", {"go", "ffi"}),
             ("benchmarks/adapters/zebrash/main.go", {"zebrash"}),
-            ("benchmarks/adapters/node/renderers.mjs", {"zplr", "zpl-renderer-js", "zebrash-ts"}),
+            ("benchmarks/adapters/node/renderers.mjs", {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}),
             ("benchmarks/adapters/zpl-renderer-js/package-lock.json", {"zpl-renderer-js"}),
             ("benchmarks/adapters/zebrash-ts/package-lock.json", {"zebrash-ts"}),
             ("benchmarks/accuracy/pixels.py", set(SOURCE)),

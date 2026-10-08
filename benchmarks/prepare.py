@@ -5,12 +5,13 @@ import argparse
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / "_work"
 RUST = ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi"]
-EXTRA_RENDERERS = ["zebrash", "zpl-renderer-js", "zebrash-ts"]
+EXTRA_RENDERERS = ["codyps-zpl-node", "zebrash", "zpl-renderer-js", "zebrash-ts"]
 
 
 def run(args, **kw):
@@ -102,6 +103,15 @@ def main():
             run(["npm", "ci", "--ignore-scripts", "--cache", WORK / "npm-cache"],
                 cwd=ROOT / "adapters" / name, env=env)
             commands[name] = ["node", str(ROOT / "adapters/node/renderers.mjs"), "--library=" + name]
+    if "codyps-zpl-node" in selected:
+        checkout = WORK / "zpl"
+        run(["bash", "scripts/build-node.sh"], cwd=checkout, env=env)
+        package = ROOT / "adapters/codyps-zpl-node"
+        package.mkdir(exist_ok=True)
+        for filename in ["package.json", "index.cjs", "index.mjs", "index.d.ts", "LICENSE"]:
+            shutil.copy2(checkout / "zpl-node" / filename, package / filename)
+        shutil.copytree(checkout / "zpl-node/pkg", package / "pkg", dirs_exist_ok=True)
+        commands["codyps-zpl-node"] = ["node", str(ROOT / "adapters/node/renderers.mjs"), "--library=codyps-zpl-node"]
     cargo = os.environ.get("BENCH_CARGO", "cargo")
     for name in RUST:
         if name not in selected:
