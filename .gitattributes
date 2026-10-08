@@ -4,6 +4,8 @@ references/zq610-plus-v1/**/*.zpl -text
 references/zq610-candidates/*.zpl -text
 references/zd621-fonts-20261008/*.html -text -diff -whitespace
 references/zd621-fonts-20261008/**/*.zpl -text
+references/font-controlled/sessions/**/*.html -text -diff -whitespace
+references/font-controlled/submitted/**/*.zpl -text
 
 # Public sources/licenses and capture inputs retain their acquisition hashes.
 test-data/public-zpl/upstream/** -text -whitespace

@@ -1,5 +1,5 @@
 {
-  "captured_utc": "2026-10-08T02:39:45Z",
+  "captured_utc": "2026-10-08T20:26:11Z",
   "cases": [
     {
       "arguments": "font=0,o=N,h=16,w=0",
@@ -7,8 +7,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -31,8 +31,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -55,8 +55,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -79,8 +79,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -103,8 +103,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -127,8 +127,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -151,8 +151,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -175,8 +175,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -199,8 +199,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -223,8 +223,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -247,8 +247,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -271,8 +271,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -295,8 +295,8 @@
       "command": "^FO",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -319,8 +319,8 @@
       "command": "^FO",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -343,8 +343,8 @@
       "command": "^FO",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -367,8 +367,8 @@
       "command": "^FT",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -391,8 +391,8 @@
       "command": "^LH",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -415,8 +415,8 @@
       "command": "^LS",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -439,8 +439,8 @@
       "command": "^LT",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -463,8 +463,8 @@
       "command": "^PO",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -487,8 +487,8 @@
       "command": "^LR",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -511,8 +511,8 @@
       "command": "^FW",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -535,8 +535,8 @@
       "command": "^FR",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -559,8 +559,8 @@
       "command": "^FB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -583,8 +583,8 @@
       "command": "^FB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -607,8 +607,8 @@
       "command": "^FB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -631,8 +631,8 @@
       "command": "^FB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -655,8 +655,8 @@
       "command": "^FB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -679,8 +679,8 @@
       "command": "^FB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -703,8 +703,8 @@
       "command": "^FH",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -727,8 +727,8 @@
       "command": "^FV",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -751,8 +751,8 @@
       "command": "^CI",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -775,8 +775,8 @@
       "command": "^CI",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -799,8 +799,8 @@
       "command": "^CI",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -823,8 +823,8 @@
       "command": "^CI",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -847,8 +847,8 @@
       "command": "^GB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -871,8 +871,8 @@
       "command": "^GB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -895,8 +895,8 @@
       "command": "^GB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -919,8 +919,8 @@
       "command": "^GB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -943,8 +943,8 @@
       "command": "^GB",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -967,8 +967,8 @@
       "command": "^GC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -991,8 +991,8 @@
       "command": "^GE",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1015,8 +1015,8 @@
       "command": "^GD",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1039,8 +1039,8 @@
       "command": "^GD",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1063,8 +1063,8 @@
       "command": "^GF",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1087,8 +1087,8 @@
       "command": "^GF",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1111,8 +1111,8 @@
       "command": "^GF",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1135,8 +1135,8 @@
       "command": "^GF",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1159,8 +1159,8 @@
       "command": "^BY",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1183,8 +1183,8 @@
       "command": "^BY",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1207,8 +1207,8 @@
       "command": "^B3",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1231,8 +1231,8 @@
       "command": "^B3",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1255,8 +1255,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1279,8 +1279,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1303,8 +1303,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1327,8 +1327,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1351,8 +1351,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1375,8 +1375,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1399,8 +1399,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1423,8 +1423,8 @@
       "command": "^BC",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1447,8 +1447,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1471,8 +1471,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1495,8 +1495,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1519,8 +1519,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1543,8 +1543,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1567,8 +1567,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1591,8 +1591,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1615,8 +1615,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1639,8 +1639,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1663,8 +1663,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1687,8 +1687,8 @@
       "command": "^BQ",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1711,8 +1711,8 @@
       "command": "^BX",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1735,8 +1735,8 @@
       "command": "^BX",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1759,8 +1759,8 @@
       "command": "^A",
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1783,8 +1783,8 @@
   "firmware": "V93.21.33Z",
   "font_capture": {
     "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-    "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-    "captured_utc": "2026-10-08T02:39:45Z",
+    "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+    "captured_utc": "2026-10-08T20:26:11Z",
     "manifest": "references/font-controlled/capture.json",
     "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
   },

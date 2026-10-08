@@ -1,11 +1,11 @@
 {
-  "captured_utc": "2026-10-08T02:39:45Z",
+  "captured_utc": "2026-10-08T20:26:11Z",
   "cases": {
     "aztec": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "41076d95440444ba9252b6d0aae1dd01e43037ebee6c89125e26b026a633a676"
@@ -22,8 +22,8 @@
     "aztec_alias": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "7fb1a0bd3a0125d857534320d0c3b38d915ea622ddf6fb0f336aaab7f9d0a0b9"
@@ -40,8 +40,8 @@
     "aztec_rune": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "8f1e87f8d9ae0583bd4f1b79db3807b1760cfd0b20de39974243ef7936492f9a"
@@ -58,8 +58,8 @@
     "codabar": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "8e00049a8caec2a65ebd5e8272f328a1a55d06a63002b204640e09468bb9eb6d"
@@ -76,8 +76,8 @@
     "codablock_a": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "fcc98c78b8bdb8592aa760bfcb872b85be6f63a23b96031f640ba411b8761cda"
@@ -94,8 +94,8 @@
     "codablock_e": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "36a4c60732b1449b0e8faa8bb10ae4eb2c833c13467941dd230e15dfe40b1d97"
@@ -112,8 +112,8 @@
     "codablock_f": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "79f6aeb36c69645186dd047110d385e87ee3a89824f383a35937224abe79919c"
@@ -130,8 +130,8 @@
     "code11": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "c05d9ea464e613775a78213f07d0b7782a6fc426e9f9ffa6f0ccef5334166cae"
@@ -148,8 +148,8 @@
     "code128": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "907d1cb5403593b19c82a0f7be4d79a514ccb4152e7bfc7233c391ad5b6b79f9"
@@ -166,8 +166,8 @@
     "code39": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "53325914a1a0b34fe8b8515c6601b1cc0767450976db6d5b113500e19cf91499"
@@ -184,8 +184,8 @@
     "code49": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "d5b83eccbb104f2ed7f7d2f2feee0084abbdd9b2ddc9a44b4e509fddfefb432c"
@@ -202,8 +202,8 @@
     "code93": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "b2cf823928d0ab7c2dfc6476e1b3ab1f8986eec670557df5ed3f7912a6b742d3"
@@ -220,8 +220,8 @@
     "composite_a": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "7bf1018a1de2d695094a4f8482bd430485ace0866da864d2e25548fd937f1a34"
@@ -238,8 +238,8 @@
     "composite_b": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "7d0e2134288ac5de2521c573061d0adb7e2021dc842d6b19e048c47b3cb9b3c1"
@@ -256,8 +256,8 @@
     "composite_c": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "1717862a31fe7855710f0a754138e389194ab78b25c7b90c355491958ec503b1"
@@ -274,8 +274,8 @@
     "data_matrix": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "5bfc627f756d616e274eef8752bb30c9a966f6bf910b5a723ae5a00f4e8d9de9"
@@ -292,8 +292,8 @@
     "data_matrix_rectangular": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "228e8cf789d6c83c2fc0dbfa9c0e77008d49b2a9c4aac464a3f54d8d320114fc"
@@ -310,8 +310,8 @@
     "databar_ean13": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "a5cb2988cbdd5d9492a323c26ccc63681566c98894b352dbc61d129232fd79bf"
@@ -328,8 +328,8 @@
     "databar_ean8": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "b91f2390a56ed16df6c74cf8b8f4d9321b576bba7d461dda6c3eb7d12a364096"
@@ -346,8 +346,8 @@
     "databar_expanded": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "61c82a7f0219da28952e5563c367c47f9400219ebaf7f9f6c0e112ea38c006fe"
@@ -364,8 +364,8 @@
     "databar_expanded_stacked": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "4afda51426b0475f888112096b050c75bae57c0b5ba49288a078cc2b4bc15449"
@@ -382,8 +382,8 @@
     "databar_limited": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "82556c7402d6aa293802286be6247fed7a44b83e391f1a2cc9f2d5e75f1d131e"
@@ -400,8 +400,8 @@
     "databar_omni": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "3e12daf088100d329a18938c3c62ff73159e2f1292faf343733105fcd7b73ef9"
@@ -418,8 +418,8 @@
     "databar_stacked": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "86315162be574ce5b8f912c50d481eba7e48b46b00436113b2d1915a92062ab9"
@@ -436,8 +436,8 @@
     "databar_stacked_omni": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "e629b6e3caee96df54a5d22ed054c0c7d95c71e7ce6cef13f0571c4bff125ced"
@@ -454,8 +454,8 @@
     "databar_truncated": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "072d937efd0feccaa054f9fb13f219689b42a5d30d29d64cc7a97f06c12cf92e"
@@ -472,8 +472,8 @@
     "databar_upca": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "fcea5561ada9858da0fdb65679842c12a67a56c3c58f3f726cb9ea076da19b3d"
@@ -490,8 +490,8 @@
     "databar_upce": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "6d90267de9f9dc291969fc74d38287e968a35a5348e41032e102a4865f2fbd25"
@@ -513,8 +513,8 @@
     "ean13": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "42fe7e3152a510eabfea8e7ec17ddecf1ff1c21ac1898387b0aa5071bf2c4bbf"
@@ -531,8 +531,8 @@
     "ean8": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "c0cc6819b905cd819777e2cb223fece1d004ea24282589516c67df235447c888"
@@ -549,8 +549,8 @@
     "extension2": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "b8db5e5365bbc562ac5141277a7e75c8a5e6ccc7dc9fef1c3ec536a4f4aa0681"
@@ -567,8 +567,8 @@
     "extension5": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "0035d431f841a66b890e00eb63bcadb77ca1cf28f194e13a27c6af8e2d7ed987"
@@ -585,8 +585,8 @@
     "industrial2of5": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "ee04854f28622f1d14735d7fe541a1122e528626b02686bc92325572d1c91de3"
@@ -603,8 +603,8 @@
     "intelligent_mail": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "b085f4c046058d6b439919883509329b83c4e88b5d987cd7f54f586e9b7ec1be"
@@ -621,8 +621,8 @@
     "interleaved2of5": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "9852cbb509de1f85f943e0c1d6ac1c653f87431962268bb5deb1ce1fcf1cd3e8"
@@ -639,8 +639,8 @@
     "logmars": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "0f2fda06ec3ebe3af131f961351566a80eaa3cb1e03d6fe425efd51b6b455874"
@@ -657,8 +657,8 @@
     "maxicode2": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "65caeea179b081ce266c0126e765c863ee8032970bf94be4fe42bcf48189952a"
@@ -675,8 +675,8 @@
     "maxicode3": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "62da536c17cfe9d9e8e1880b5937cda7ae0a2415b3535c8e795d9787b9c6c3f4"
@@ -693,8 +693,8 @@
     "maxicode4": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "e997420686df44710f8bb3f99fdd6c46a25358da9cbb2586d4e780af179825c2"
@@ -711,8 +711,8 @@
     "maxicode5": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "4a529064dfa86dce5e6ffd64affb084e38c2a30cf32b7574c69adc6c3a0d85f7"
@@ -729,8 +729,8 @@
     "maxicode6": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "e38f341c4084eb00de2ccb1a8589ade1fc699f7367a4e0438593474f946c4fdd"
@@ -747,8 +747,8 @@
     "micropdf417_1": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "04b68cef274ba25a675db9b2a9bf95433adf8e37d3d28ed176e2f0c603c4e186"
@@ -765,8 +765,8 @@
     "micropdf417_3": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "5808cc865d91c9385c78ce19ff4c18342036c98e0b638d65dad19faa2b63881c"
@@ -783,8 +783,8 @@
     "micropdf417_4": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "2cb943001a89b80fc9d28a463d320b570f313401c8bc75465cdaaa800de7c487"
@@ -801,8 +801,8 @@
     "msi_a": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "f9df33102f0a348f938cb398c46bdf676fe43bf615ad4acc1cc5774a424a8ee4"
@@ -819,8 +819,8 @@
     "msi_b": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "2a0bf9db82b1790e08da89484715f2cffef966dcab99b45781d9d84bbba94195"
@@ -837,8 +837,8 @@
     "msi_c": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "a9632e278a29eb660423088c08684021b20d5cc66a97e8544f84ae1649a4c41f"
@@ -855,8 +855,8 @@
     "msi_d": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "824bc4b12b8cccbcde6ae8ec4aba7f3861281c38f46ed8df61aa4bce2c4dea2e"
@@ -873,8 +873,8 @@
     "pdf417": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "43caacd50932c211851a85581e8fd5c9f5112c9994f9665370caa0c2b4bbf6f7"
@@ -891,8 +891,8 @@
     "pdf417_truncated": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "6ab49037f701dd2300e91f1ac660340ff3898ab7e973152e5c8f7fc1b93de813"
@@ -909,8 +909,8 @@
     "planet": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "0d3b8540f67c589c030fba335e2dbda96a4818cf35c6a829186ab72a006a680d"
@@ -927,8 +927,8 @@
     "plessey": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "f8ed70e1ce1dc8d99366fd8183beb41e8632275d54c86471dcd3632e3f8cfff2"
@@ -945,8 +945,8 @@
     "postal_planet": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "b6e187db9852ec9dfd8a3547941fa84caac5adff9b2a82cc0848102f433f348b"
@@ -963,8 +963,8 @@
     "postnet": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "3eefe0abdbba7309d5fed54fa516b93c2e3577c28abfd9d4bd7b84b2e6215fc2"
@@ -981,8 +981,8 @@
     "qr": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "8d5815463a65e54b2778ed5a037ead26eb4b44e8a6686ffbb1148b91f059dba8"
@@ -999,8 +999,8 @@
     "standard2of5": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "beb3b5f01127fe7fbde5690d261ab87e5ba685fad9bce6ef263c053c26ad8d75"
@@ -1017,8 +1017,8 @@
     "tlc39_linear": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "b587af32a4a867779f14760b0d912abf5f5de7288886e04e72e72eff96fdf174"
@@ -1035,8 +1035,8 @@
     "tlc39_linked": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "19e57187b04e288b66c36d0562bbed028f5354d20c0eaf05caef517f601d93db"
@@ -1053,8 +1053,8 @@
     "upca": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "97b7dfd722e8a08b4f2e468949ebd400142bcec4c171d0c9a7acff74dbe3ce36"
@@ -1071,8 +1071,8 @@
     "upce": {
       "font_capture": {
         "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-        "captured_utc": "2026-10-08T02:39:45Z",
+        "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+        "captured_utc": "2026-10-08T20:26:11Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
         "submitted_sha256": "701568275d0b1364881ff820daa3d5c39004cfaa628515dd1123ae05bb3eed71"
@@ -1092,8 +1092,8 @@
   "firmware": "V93.21.33Z",
   "font_capture": {
     "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-    "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-    "captured_utc": "2026-10-08T02:39:45Z",
+    "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+    "captured_utc": "2026-10-08T20:26:11Z",
     "manifest": "references/font-controlled/capture.json",
     "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
   },

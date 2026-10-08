@@ -10,6 +10,38 @@ from build.compare import comparison
 
 
 class FontCaptureTest(unittest.TestCase):
+    def test_extension_archives_evidence_without_promoting_uncaptured_cases(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            out = root / 'capture'
+            path = 'inputs/manifest.json'
+            old = b'{"cases": ["old"]}'
+            current = b'{"cases": ["old", "new"]}'
+            (root / path).parent.mkdir(parents=True)
+            (root / path).write_bytes(current)
+            snapshot = out / 'source-manifests' / path
+            snapshot.parent.mkdir(parents=True)
+            snapshot.write_bytes(old)
+            record = dict(status='complete', finished_utc='before', cases={'old.png': {'session': 1}},
+                          source_manifests={path: capture.sha(old)}, sessions=[{'status': 'complete'}])
+            capture.save(out / 'capture.json', record)
+            previous = (out / 'capture.json').read_bytes()
+            with patch.object(capture, 'ROOT', root), \
+                 patch.object(capture, 'verify', return_value=record) as verify, \
+                 patch.object(capture, 'inventory', return_value=({path: {}}, [{'reference': n} for n in ['old.png', 'new.png']])):
+                capture.extend_capture(out, root / 'bundle')
+            verify.assert_called_once_with(out, root / 'bundle', allow_new=True)
+            saved = json.loads((out / 'capture.json').read_text())
+            self.assertEqual(saved['status'], 'incomplete')
+            self.assertEqual(set(saved['cases']), {'old.png'})
+            self.assertEqual(saved['sessions'], [{'status': 'complete'}])
+            self.assertEqual(saved['source_manifests'][path], capture.sha(current))
+            history = out / saved['extensions'][0]['previous_capture']
+            self.assertEqual(history.read_bytes(), previous)
+            self.assertEqual((history.parent / 'source-manifests' / path).read_bytes(), old)
+            self.assertEqual(snapshot.read_bytes(), current)
+            self.assertEqual(json.loads((out / 'catalog.json').read_text())['_capture_status'], 'incomplete')
+
     def test_evidence(self):
         record = capture.verify(Path('references/font-controlled'), Path('comparison_fonts'))
         self.assertEqual({s['printer'] for s in record['sessions']}, {'zd621', 'zq610'})
@@ -19,6 +51,44 @@ class FontCaptureTest(unittest.TestCase):
             self.assertEqual(manifest, json.loads((Path('references/font-controlled/overlay') / path).read_text()))
             self.assertEqual(manifest['font_capture']['bundle_sha256'], record['font_control']['bundle_sha256'])
             self.assertEqual(manifest['font_capture']['capture_sha256'], capture.sha(Path('references/font-controlled/capture.json').read_bytes()))
+
+    def test_snapshot_rejects_changes_to_existing_captured_inputs(self):
+        root = Path('references/font-controlled')
+        record = json.loads((root / 'capture.json').read_text())
+        originals, cases = capture.inventory()
+        inventory = capture.inventory
+        for changed in ('remove', 'modify'):
+            current = [dict(c) for c in cases]
+            if changed == 'remove':
+                current.pop(0)
+            else:
+                current[0]['width'] += 1
+            def altered(manifests=None):
+                return (originals, current) if manifests is None else inventory(manifests)
+            with self.subTest(changed=changed), patch.object(capture, 'inventory', side_effect=altered):
+                with self.assertRaisesRegex(ValueError, 'Captured input changed or removed'):
+                    capture.captured_inventory(root, record)
+
+    def test_new_inputs_require_fresh_controlled_captures(self):
+        originals, cases = capture.inventory()
+        inventory = capture.inventory
+        extra = {**cases[0], 'reference': 'new-uncaptured.png'}
+        def extended(manifests=None):
+            return (originals, cases + [extra]) if manifests is None else inventory(manifests)
+        with patch.object(capture, 'inventory', side_effect=extended):
+            with self.assertRaisesRegex(ValueError, 'New inputs require --extend'):
+                capture.verify(Path('references/font-controlled'), Path('comparison_fonts'))
+
+    def test_changed_source_snapshot_is_rejected(self):
+        root = Path('references/font-controlled')
+        record = json.loads((root / 'capture.json').read_text())
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            path = out / 'source-manifests' / capture.STANDARD[1]
+            path.parent.mkdir(parents=True)
+            path.write_text('{}')
+            with self.assertRaisesRegex(ValueError, 'Printer source manifests changed'):
+                capture.captured_inventory(out, record)
 
     def test_submission_preserves_fixture_overrides(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -99,6 +169,7 @@ class FontCaptureTest(unittest.TestCase):
                     self.assertEqual(row['zpl_sha256'], old[row['name']]['zpl_sha256'])
                     key = str(Path(path).parent / (row['name'] + '.png'))
                     self.assertEqual(row['png_sha256'], record['cases'][key]['png_sha256'])
+                self.assertEqual({r['name'] for r in exported[path]['cases']}, set(old))
                 self.assertNotIn('refresh_batches', exported[path])
             self.assertEqual(exported, json.loads((root / 'catalog.json').read_text()))
 

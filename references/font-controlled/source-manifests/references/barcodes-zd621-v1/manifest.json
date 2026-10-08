@@ -1,0 +1,619 @@
+{
+  "captured_unix_seconds": 1789774462,
+  "cases": {
+    "aztec": {
+      "zpl_sha256": "227c0bae856655b365bb774bec7d83fefa16f19bf573fc32756b9afb3d995993",
+      "printer_png_sha256": "3ffae9c01e8b2875c5275fb679cba505d4a8d6387e70a80ec9d40ff460d942d3",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 1920,
+        "pixels_sha256": "0a4e7b13b31f8361fa697bb4401a8c59bf2e59aa174c41c2ddcc49522b376011"
+      }
+    },
+    "aztec_alias": {
+      "zpl_sha256": "e85ea234afef130997c4e52816670545b876ca8683495dae4d84efd1621b03af",
+      "printer_png_sha256": "3ffae9c01e8b2875c5275fb679cba505d4a8d6387e70a80ec9d40ff460d942d3",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 1920,
+        "pixels_sha256": "0a4e7b13b31f8361fa697bb4401a8c59bf2e59aa174c41c2ddcc49522b376011"
+      }
+    },
+    "aztec_rune": {
+      "zpl_sha256": "125de589369cf0c7c0bbc83e70c4030409ce7365d5f5f19901b10a14e570d273",
+      "printer_png_sha256": "da5d1d4fc0b2a38ca3f4afa1788f1f7687d73382555090dc40ef811a6fdd962b",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 1072,
+        "pixels_sha256": "b6f825035815ab06f386220a078d0dbb40459bc2ab900abc755a29d7a0aff931"
+      }
+    },
+    "codabar": {
+      "zpl_sha256": "0a40058c769ec1e24fb5a973910cc906b4d882ffd321e0b234c2980a3e701958",
+      "printer_png_sha256": "c175d3055983ce7445ad45b957186ffeacbe44dce24311fd3ff72054e9315ecb",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 6400,
+        "pixels_sha256": "60a6f25498ada7ece70b4f42f8c103e47797f5e71a4de1014ac6b07365416353"
+      }
+    },
+    "codablock_a": {
+      "zpl_sha256": "624ec097053d0ac7b771839be78dd7b958b2f4529622d860ce4b302a8effd7b3",
+      "printer_png_sha256": "e1d399669fe86d9e0956c2ed6eb4e71df6e5231020d35de0f0bb7727840bc9f9",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 5260,
+        "pixels_sha256": "adc084dd7d1a9031e19d4654be9d7611909d1159fa02160cec5ee0e92e8f4c34"
+      }
+    },
+    "codablock_e": {
+      "zpl_sha256": "c5310eae9cd3962980ed63aa235afa84610d37a383ba7eb72de61bf3b7448923",
+      "printer_png_sha256": "7276c8ad7671a5a3f4e6484003c9131892a4a81213968bb0865edff0497e3f2a",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 4092,
+        "pixels_sha256": "8f142cb25f8133251c0d067b2aca44811e4757978445126364573d1778e3074d"
+      }
+    },
+    "codablock_f": {
+      "zpl_sha256": "808ed43478077960ce3758abbbc2671d47739e6daee3d6d986c23343c60a7c54",
+      "printer_png_sha256": "d66b8e6b700f72a8dab9a5fbc411ca603d1fb2c175a941d40d7b157342a52f57",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 4124,
+        "pixels_sha256": "488032541729ae0c24d4f47d35686a90014505a8358b8d78f3890da29465979d"
+      }
+    },
+    "code11": {
+      "zpl_sha256": "d32689a37d72c3cd213db9daa4fbee77f39a1ddc0ebef9ec82a70cbcd4e2b603",
+      "printer_png_sha256": "0c567a215cf52442e5d9ec3e071c0e203b61cedab8206806aa26eb27037fc423",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 8480,
+        "pixels_sha256": "c9da4de4efc6353fcc1584e5e0f8661c312dbcc72c7a9f67d600e17ff5fcbf44"
+      }
+    },
+    "code128": {
+      "zpl_sha256": "85fd959b91acb595223af2323bb252a9ed9fda0a41a34e8573c1d6413b8baaaa",
+      "printer_png_sha256": "5354b2df041f176e5fcbe87b52fae6099964fb5a3e3e6bfc972ba626bc78249c",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 8320,
+        "pixels_sha256": "18d5eedd95fd2fb7bc4ea8f0401364c06ac6f0d1bce3cd38b2dcf6ed40d04f8b"
+      }
+    },
+    "code39": {
+      "zpl_sha256": "0c3aa62b1549bef15fedec3c9a1d647c33ab4e5e96cce4c8de5ba68dce3aea69",
+      "printer_png_sha256": "d3b2a1b52fae837e3cc578ead4429a656d4fa59c67572482c1fb37c169e5b627",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 8960,
+        "pixels_sha256": "2f652dae94eeb86bd08075ed6d6ae91e1d4befef22f83cd1a2612b16a58832bb"
+      }
+    },
+    "code49": {
+      "zpl_sha256": "dc2e6f8ca6607714aa72195d5c9047be9063623853fc2afea87ca88bcb991f82",
+      "printer_png_sha256": "d4ce1be7f8d1e31e1c2929be8b12745e8f7a979c1cc63509e817b31e37b3ebac",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 5728,
+        "pixels_sha256": "beeafeb7a9b15757e732529e4a0d831c6f893a1d0efdd61ddb093c71032196d7"
+      }
+    },
+    "code93": {
+      "zpl_sha256": "634905534f6f5ae329514a7fc3afc4cc4741850011528526dbd80557795fce6a",
+      "printer_png_sha256": "9e31969f4cd473e1d453b783f8f8be7dd411c6d6e306a7fe544469ef44a22f0c",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7840,
+        "pixels_sha256": "1e2e8067b9a78b395de41821aaad9a79357422f27b53605f4e6c889e385521b8"
+      }
+    },
+    "composite_a": {
+      "zpl_sha256": "726642fe94a2cd7be7f28638a290be94759a9a2213b4c7a388de5df8ae7f2868",
+      "printer_png_sha256": "9fef1bfc451f6f87bb3958260b10a061f57d9091e367fd5d38a40628d66cd9d9",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 28388,
+        "pixels_sha256": "2f5fdf851359bfb3d4a292f67b5dad7af13815fec81e10017a29139a4a9e20ee"
+      }
+    },
+    "composite_b": {
+      "zpl_sha256": "971427617f683c279da66e9d8a6c20c2bb9b381ffa1fe4b629d7c07b9015ff2a",
+      "printer_png_sha256": "38479db05202699b0a854f76928936a5d4181d03d63d944b21b5bf7aba35b57f",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 33116,
+        "pixels_sha256": "3a674326d0179934c458a390f85d538b256a6a88119dd0c63ecabdda969ee941"
+      }
+    },
+    "composite_c": {
+      "zpl_sha256": "578a5c7890bb5a04aac94aec27815198bd8f0912a921deeae65719eecbcf5820",
+      "printer_png_sha256": "2731bf7807402fba93da01f309fce5e690950779bd04527d16c38bd0ef55aedd",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 28752,
+        "pixels_sha256": "e11954cff855e088938d2a986e33153cc1339ff6e3f62f0435fa26ae1e8d8fd9"
+      }
+    },
+    "data_matrix": {
+      "zpl_sha256": "7a3bb5d68899e55f54b4d126af141393173dce73b315cd186286a6ab90f2d711",
+      "printer_png_sha256": "e028660853d8e5291b37da99b6ea3e1becd5acc092c9721883bf7bc409497723",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 2832,
+        "pixels_sha256": "1a1fe4b2d86caa9978f74de81047c602280658478b8dfbc51b95b2d682b823d5"
+      }
+    },
+    "data_matrix_rectangular": {
+      "zpl_sha256": "9160917d497ad71382d1d2a5e7d5353e41042cfdf8b36aca41c825e69e3bb392",
+      "printer_png_sha256": "201e2cb8063f1c2941d266c224cbf9a8bc10a3594f05f5cce961a067f81fae62",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 2304,
+        "pixels_sha256": "0f059e3eb778928e35d6a0d64cb49960c74b0eeb10a343b4769b44793a4ba79b"
+      }
+    },
+    "databar_ean13": {
+      "zpl_sha256": "39d1267c9389722731040e83ddb9313fe97e49713721efe78feb45645bfc6c7f",
+      "printer_png_sha256": "e5070b5e30fbd6c24b0c53c0a62a3d84a377f77ed79799c653b8f6521c559f0f",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 14504,
+        "pixels_sha256": "73a7a7d4aef2a137bc5db58c1d41040d41380fab332546ad54fe92729b4313ad"
+      }
+    },
+    "databar_ean8": {
+      "zpl_sha256": "04305076b879b991cc5f16f37ebcf9106b2d2980b0bfdc7362d327af7ee51a5e",
+      "printer_png_sha256": "b1ccabf2321252616181cf4d72ddd013f763fd2c779eb69c20765c35c66614e9",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7680,
+        "pixels_sha256": "c931a6b94dbccee5088608c0d8df2acd676fb6834d57a39536a0531712437ebf"
+      }
+    },
+    "databar_expanded": {
+      "zpl_sha256": "eec9638001599a426ded0ad193534d69d3e9e3a4a20bd44fb398cbf2d43bfc78",
+      "printer_png_sha256": "9c4ebbd5bdf72cc2aba8398c5ad231d51b9bc73987fdfd2a1a9164405cb5ea78",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 9656,
+        "pixels_sha256": "8b7d87c605a5bc8682314ecc20c700b2602784b5c3a04f831d7d58703b12fb5f"
+      }
+    },
+    "databar_expanded_stacked": {
+      "zpl_sha256": "f9d3d568b09dd3ddb90312d097921ef2239f4e54201084dbfb70ed266ebda549",
+      "printer_png_sha256": "3abd9a523cb8d852f2c636a1b60b988353d92b0d28ae2d2a312109d8795bf307",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 10780,
+        "pixels_sha256": "ae8614bdaa6341e0bca3125f8e27385aea8e601c512f92658681da4bad4927fa"
+      }
+    },
+    "databar_limited": {
+      "zpl_sha256": "14a1e79c7686ee8dfed1e23a135f4c1fb68005870e969e786c930c6742fa1c00",
+      "printer_png_sha256": "b04002ddd610bec0053b02344eadf3e151cfe0008d3d2dd6e8f1a407222e1e33",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 1480,
+        "pixels_sha256": "9cdec9cacfa3f7b80a114a8aad10947dccdd16e7dc58866b9c292cb584dca589"
+      }
+    },
+    "databar_omni": {
+      "zpl_sha256": "74c6e4c43217d49bcdf686f2726d7f79cd12bf644f073f1216eb5de87a7d2f4d",
+      "printer_png_sha256": "b2a75403ae9814ef80cdfdf083e0497e6777f634c2109828a26649af77895aa7",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 5940,
+        "pixels_sha256": "b0e355debae9f3d800dbd4939df6095195f661a3454396b70b74c633f2047271"
+      }
+    },
+    "databar_stacked": {
+      "zpl_sha256": "8f705b79d4e12c5a6a2e6f17a47203df8713a9406ef346e1c9f58f4a64d8086e",
+      "printer_png_sha256": "c4da60e86555e3b2b2ecaa3ffc0dab9e685874e5b0349ab62dde7cfac782b2b0",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 1196,
+        "pixels_sha256": "24abd284c25a79c468411b36f44f74e4279c968663525b5c7d0bbf4fe909cc8a"
+      }
+    },
+    "databar_stacked_omni": {
+      "zpl_sha256": "a3ad9ceb25b6c4def44f88a36fb8aea11c9d69f8122ed9fd5adf87589d5fa5d1",
+      "printer_png_sha256": "7ac0354d326aa77865687d6a91d9940ffd29ae169010404dcf1f45cf46930f22",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 6448,
+        "pixels_sha256": "3f4c6d9fca9f68b57f5507c1701721dc0537a1a0e49676dc3c4a33b0b606b563"
+      }
+    },
+    "databar_truncated": {
+      "zpl_sha256": "ea15f39d8eb7739910a1352ddc97309628e5f8863f00b475994da9c527eb506b",
+      "printer_png_sha256": "d0b2b538a050d4c2662fe8e01cb74c4a8ee818b0349eb55c91fe09c7de838436",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 2340,
+        "pixels_sha256": "4dbafef2b92e766902affa8913378183d584418ffd9ff3b8d765d40c58497734"
+      }
+    },
+    "databar_upca": {
+      "zpl_sha256": "93d4db16db6e2c911e22d41ca645f52bbe64fb8cbd3a8ebf1b5fe7247da8cedd",
+      "printer_png_sha256": "7b8953f73898ef700ec37eee279ed3cd3be1a743f8a580c4aaeecbdefe423491",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 15392,
+        "pixels_sha256": "fe60e3e3cefe2eee0657fc048753d61a8e26241703ac414a92b5a81d8b949ccb"
+      }
+    },
+    "databar_upce": {
+      "zpl_sha256": "3b313e0cd1b56186d659f175c07a4c588b8d31cf9cd8046a5857328b79f2c562",
+      "printer_png_sha256": "eeff957f3b0070746bbb61155e01f944ba26e53a1796b2e402f95b00c5c265f4",
+      "printer": {
+        "height": 1218,
+        "ink": 8288,
+        "pixels_sha256": "16fd3f68ea659ca20e5fd7144325193cb033a6865cbe924fc79858314d2ad4c7",
+        "width": 832
+      },
+      "provenance": {
+        "source_commit": "de0676ae4a4b8728ed0ab75a18b112bae7cbe883",
+        "source": "zebra-http-api/tests/fixtures/barcodes-zd621-v1/databar_upce.zpl",
+        "capture_note": "Recaptured 2026-09-19 UTC with valid eleven-digit UPC-A data. Original invalid six-digit input and blank response retained in zpl/tests/fixtures/databar-retail-zd621-v1."
+      }
+    },
+    "ean13": {
+      "zpl_sha256": "742a53a79ca60e0d6b19f4e0ae9b912ea90f165d5b57e5dceea9a11d3e42c440",
+      "printer_png_sha256": "f296ee37f38af0a608944c3e8a4492f3f0237b32930a17f37520ba97d491c9b8",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7996,
+        "pixels_sha256": "081d4923d135053eb2bbaa08fc5f70b0e02e1dbee1bf3a699d64941c1f38ea70"
+      }
+    },
+    "ean8": {
+      "zpl_sha256": "9c84acd03d369be15828268478f6ee6d263536a2ef55c64b7bed5c80ac85deef",
+      "printer_png_sha256": "9bfe809fc00a4b8f128e7c549b222d0e07c3dc8faaf36bf6a3dd9bd3479c42ec",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 5276,
+        "pixels_sha256": "aa73e38e974c7ae0a5b1c32e99d51afddbf845ac20ebe9e757e7f95628df020d"
+      }
+    },
+    "extension2": {
+      "zpl_sha256": "f77d58036b4585eb3bcedf358ecf170fd230545cba4d39290efc64373470bed8",
+      "printer_png_sha256": "df49c3e54838154c8080dfc04e67fa252c23b15ca09226fc4e4b37453ef39162",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 1600,
+        "pixels_sha256": "aea5c7f3e6ac45b8b368e31fd50eefd886ac563b886cef312bf9008b760791ed"
+      }
+    },
+    "extension5": {
+      "zpl_sha256": "4c25882ddd06875e72ed0071d6d63f0d765ea6d909916b3283310bfced558f87",
+      "printer_png_sha256": "0383330b843173434d7a2651fbff0eb4738565c55484c03d1fa5093dab91c613",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 4160,
+        "pixels_sha256": "babb1975cc07faae523d92cb4894ec8dfe5c60147c368de7b9598b73c9981bf2"
+      }
+    },
+    "industrial2of5": {
+      "zpl_sha256": "b0976c57662a03ea832f8a0816a46b248d6916719499cd4de8188c248bd83246",
+      "printer_png_sha256": "b1b54173e27c797674f16bdd5c00669027414891e9bbd6eefe08a511cdd6c247",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 10560,
+        "pixels_sha256": "c7370dec235af5745b616805d66651b96fa8df4ef976e531c906996e779a0471"
+      }
+    },
+    "intelligent_mail": {
+      "zpl_sha256": "bb2ca33c8c620dc70ba951d090e4b08be5c3a17aba8edb3857967f988221b940",
+      "printer_png_sha256": "507671641b9d1907f923fba9e2dddf9340c2fbb322217f595048bfb2b403afb3",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7176,
+        "pixels_sha256": "940316602c1a751f4a8e3f371a26a64b0c4061d6f55dfb4426db87f538b0282b"
+      }
+    },
+    "interleaved2of5": {
+      "zpl_sha256": "8bbc33fc95caee703a8d8b96fa388344175c0ce9fd5e863565c7ab4f4165121b",
+      "printer_png_sha256": "b47c0483daae263484761e7db6c0f2739301b7bf19cfca78e8b24836a73d1d49",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 5280,
+        "pixels_sha256": "c1ee11d9d71cf384d7d340a536423e4a5092df6fce22a048c51d2f26ae626f3d"
+      }
+    },
+    "logmars": {
+      "zpl_sha256": "cf9c5f0b149e47e80a6356bbc49074d34d19429412cd5b3be799128cc21b5986",
+      "printer_png_sha256": "6bbbf0006b53955e509b281740fa815d4dcb74f57d09a4d8304a1e14a85cc4a1",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 11680,
+        "pixels_sha256": "4e0c82a44c67bf63f9238c0ac7ff8ff6fec3b7f429c6619161a39a85b6072f67"
+      }
+    },
+    "maxicode2": {
+      "zpl_sha256": "71fe256cde77dd71a940b7c5f9e57f5029a0055bdd8e987e183155d3ba23fce5",
+      "printer_png_sha256": "32505cbea4b042939d2e5c6bccbd20d193d375014762cde291a97c944fdb7bac",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 12540,
+        "pixels_sha256": "74d901d69ba83e6bbf0c40765f0d93e74afad7ea0fad032063472f48078b2f34"
+      }
+    },
+    "maxicode3": {
+      "zpl_sha256": "198d5253c17ee0adec4ff027f5602d6f029b0d2f20498a90c7fa677d983f7bc2",
+      "printer_png_sha256": "9d5f4802fb3a3df48c0ca1584e632c4750a925180d3dcde6c8dd6439581005f4",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 12840,
+        "pixels_sha256": "7cea64a25bebb8059f3c3e6c3d26d784f71dcb9e628bea14f84c680c809fba16"
+      }
+    },
+    "maxicode4": {
+      "zpl_sha256": "83dddd887d6c9e459a17e4ac3e132d9331002f029e4bccaba256a6de97024968",
+      "printer_png_sha256": "17bca8980e91716e51aa9f27e16079aba5537430029b3761c19bbc0d853c10da",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 13140,
+        "pixels_sha256": "2e984949973268205c2bea9e6405ccf891a8daadb275dedb9e1f7181732b71f8"
+      }
+    },
+    "maxicode5": {
+      "zpl_sha256": "a4a64a757bf1c3ccaebcb039d0d0ee8e312450ccdb45019841ed44ba1f1f35f5",
+      "printer_png_sha256": "c060ae0e88d2776f28c1b916b0d7fd084c0f6fe55031986610ce24c8cd8d3055",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 2010,
+        "pixels_sha256": "d9cfeefdc1c6fa94858a7761fcf45da1c4ae550e553058e4cdc882ccba54be8a"
+      }
+    },
+    "maxicode6": {
+      "zpl_sha256": "828e7b703fa4bb36edffb763ca776eb93e8450392460fb26dbafc61d60d47af7",
+      "printer_png_sha256": "b8b61a789bd511a43df8e0c537399eb73e441706e8174b3fa00f05527a17f73e",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 13200,
+        "pixels_sha256": "879fe34762f5a5ef4106b7a2b9b83ab9d38e52bf6cc5ec63a9ce0c1f27837ed4"
+      }
+    },
+    "micropdf417_1": {
+      "zpl_sha256": "4ab860b7a0761aeb7f4b06af020d8901e75014267374c5fbdf2450114497bfef",
+      "printer_png_sha256": "70c261862a142778677616672d9927e60aaf7ba9ba3a438cab23cae7fa582505",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 1848,
+        "pixels_sha256": "849a093b267257763c86110346cb96eff029760415830e3cefbf14613016247c"
+      }
+    },
+    "micropdf417_3": {
+      "zpl_sha256": "075cc8ecd929670fb48f261e2bc21d4f64614dffa1c3dc37528cf8a395b823d1",
+      "printer_png_sha256": "dcdf1d6e5807d43d64aaafe069950d77ae35fe3ad8afcb43b1ded7c914f4ac8e",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 2112,
+        "pixels_sha256": "0f7c6b3306aed38aa0545ad098c97333e8a51dd7c73a8fb18dd757ee519bdc4b"
+      }
+    },
+    "micropdf417_4": {
+      "zpl_sha256": "8ddd96c6fd7b4a0245c033b2d807bf48909ed6bd6233dead85be645c0ac4e441",
+      "printer_png_sha256": "1551bedec11c9f962448f12ed637628ac5b349213803e7ca25d3de6e9ce70aed",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 2552,
+        "pixels_sha256": "3cf87fcfbd665dfacc8ba01e10ab2e519249f04a3ddfd342465d1d306a2a6592"
+      }
+    },
+    "msi_a": {
+      "zpl_sha256": "9e8d688719c54826ae10e2409108ad259af9d43e15540cbfff720d6dbfaaeeec",
+      "printer_png_sha256": "f459f8768fb28a25bdb7f801071cfa13fbe7e4c3728fa7baf129311687d9920f",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7040,
+        "pixels_sha256": "224f63406e2ecec2a750ec07f6f5403dbbf7de89eec05f1115426ad6e3e859d2"
+      }
+    },
+    "msi_b": {
+      "zpl_sha256": "b604eb8d1cb47071aca54eec971795cac8de14565698a2886634bd655e0e822d",
+      "printer_png_sha256": "de2afb732615690b34c6791b2ddecfaec817d23c42c9da1cabbac3fac5be142b",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7840,
+        "pixels_sha256": "72b42eeed8c88dccc0801d7f26505f451d23886b6b6edaa75adac06b294deffb"
+      }
+    },
+    "msi_c": {
+      "zpl_sha256": "ee3ef08f896ac8c037e1cb7dd540a47b0bb698639059d1f9e5a0a3fb1aa9470d",
+      "printer_png_sha256": "103352b86a4ca621c16ee7a821fc2abeb49946a4688a1037a522c5a0b247dd30",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 8640,
+        "pixels_sha256": "bdd3cd1df4a42e91289211160000f210417a0ae3e3cde02f1e000bad405036a0"
+      }
+    },
+    "msi_d": {
+      "zpl_sha256": "167e07e1c964b78ba7018f4354210aaf4aa29e0a417b50622daaf2a1ee23ff04",
+      "printer_png_sha256": "103352b86a4ca621c16ee7a821fc2abeb49946a4688a1037a522c5a0b247dd30",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 8640,
+        "pixels_sha256": "bdd3cd1df4a42e91289211160000f210417a0ae3e3cde02f1e000bad405036a0"
+      }
+    },
+    "pdf417": {
+      "zpl_sha256": "97b88879b55074538c8a9c550819f4e76e3c8ef1f438703530059aaa7914db98",
+      "printer_png_sha256": "8ed32ecc964763fe1ea376b55af5c58d45ffc750e260882ab4a04e1b2af2ed98",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 4488,
+        "pixels_sha256": "0430a5593cf2036688c053b7dfece04331943103f8a90203e88ed0c8907c1a93"
+      }
+    },
+    "pdf417_truncated": {
+      "zpl_sha256": "dcf88c20b91cd8057c6650a8ec08ae3efe7e4848f8dc8a7529b46d42ce16f0d9",
+      "printer_png_sha256": "ee85fc378561f2f943ac700854b780e2f08f05f71a17cd0b932b39020ab50be8",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 3276,
+        "pixels_sha256": "b581dd64cfd3b1c0f545517c2c835693712bc2ead6774989d79611c2c4e1c4f6"
+      }
+    },
+    "planet": {
+      "zpl_sha256": "c423f03f0fb39bf56c70472a6518462966ef1fa7807a12b3c269c25c2b8de06f",
+      "printer_png_sha256": "1f43c54888dab67d7b976905aec7b9c215ac05ea85d782d26ac5de3569ab8f43",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7616,
+        "pixels_sha256": "960e689a3fe2ec001371dfb007d5479386e91946b90800f7a7c95a609b2ecd51"
+      }
+    },
+    "plessey": {
+      "zpl_sha256": "e0ba555cda0485be6cef8f00cce6e8dea4818323c7c2a76790a660d93cd27e58",
+      "printer_png_sha256": "90e403aa85ed6ebe5e2a9d10e5df379d0e010ee515dd35bb9f5cb2d36295ee9c",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 9920,
+        "pixels_sha256": "8fe92d70859005a5414552eb12228b5ef22722cc486a41113b569f13e2cb6999"
+      }
+    },
+    "postal_planet": {
+      "zpl_sha256": "c33ea7a525d06e830d93d8adc4b20b58b2f4066de5f63aeb2ffcaf380b05e9b3",
+      "printer_png_sha256": "1f43c54888dab67d7b976905aec7b9c215ac05ea85d782d26ac5de3569ab8f43",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 7616,
+        "pixels_sha256": "960e689a3fe2ec001371dfb007d5479386e91946b90800f7a7c95a609b2ecd51"
+      }
+    },
+    "postnet": {
+      "zpl_sha256": "d4a2272088a1cb63f9d0ecb53a8688b4ea95996a0ea2a6578e6dfca4a230a78c",
+      "printer_png_sha256": "a76626f3dafa0c81dab09879053eb08a88c0e46e7c42fca6a0feb472f1196153",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 5440,
+        "pixels_sha256": "c49e72b4879b632069ad98e427de45bd0e0d6c374d3fb6398cea1aff7063f155"
+      }
+    },
+    "qr": {
+      "zpl_sha256": "4751aff11c58850815b8428fcf199074e1fe7ea634b90138187518f505726370",
+      "printer_png_sha256": "0dee367165095e196178c014e31cab83809d453566df7cdb1018708c866dad97",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 3680,
+        "pixels_sha256": "7308ddfbf02ac85460232d4811e4e6a1a37783deb6d29c64489a0c94a9f511dc"
+      }
+    },
+    "standard2of5": {
+      "zpl_sha256": "c057a88f340a2bcca096da5fdac5300b30273670a8ad286b06eb3f731a38fcdd",
+      "printer_png_sha256": "116e3315adbaa2a86c99e4e2008ac7a0b6c6fda55ff72690ee07193cbbde7858",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 9760,
+        "pixels_sha256": "247fc0565ed1d4d26dc9f889e471faca75b944c53ee838f124d721c3d2c79414"
+      }
+    },
+    "tlc39_linear": {
+      "zpl_sha256": "ec25e9bb3400a3a351ce8c5aadbfe685702b5d75987b34392d7cb79338df69e5",
+      "printer_png_sha256": "aa1bd1e5228d6677df74c2b2d92f60f795ca99af0192d7c955772c775bf19753",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 8960,
+        "pixels_sha256": "c767e029b5c47b28ffd599bf62fe5086d4e6757c5df73d617851c6b80214ec72"
+      }
+    },
+    "tlc39_linked": {
+      "zpl_sha256": "62768cae0a2bfa5e196259d9459090b4875c05dd1c57ff686af883b7ab126550",
+      "printer_png_sha256": "5510601db5298cdee52b0cffc9e2775b789c6c38cebdd90c2ebd02f60545a830",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 13052,
+        "pixels_sha256": "add36029a8f56808f29cbaa44d5ad8bf6c1cbae239b256af8c1ed7097e490890"
+      }
+    },
+    "upca": {
+      "zpl_sha256": "ae640d1f7d4b6e6ac3af33610b00b28e7055fb1d8288fb81d6ce8bf835276044",
+      "printer_png_sha256": "04bf602d93cfe126bcd1ce3e694add3c47a8f39a1dcd7460e23347a9c7a073c0",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 8658,
+        "pixels_sha256": "216138fa8fe3491bec7d50e3884741962d8a3f7539eff8f2e3324de5014bc383"
+      }
+    },
+    "upce": {
+      "zpl_sha256": "4f8e4563e0693cb497b8c189b16fdaf9529aa8671b2be536551510a7408fa9d7",
+      "printer_png_sha256": "cc5db575baacf68643d7b5fbd98c6d9918762a55f3b0a17853f8246dcfff7933",
+      "printer": {
+        "width": 832,
+        "height": 1218,
+        "ink": 4610,
+        "pixels_sha256": "b6456cadcb74384f640ae5170c669e0800054e3106177019e1893bd750a3e88d"
+      }
+    }
+  },
+  "device": "ZTC ZD621-203dpi ZPL; firmware V93.21.33Z",
+  "dpi": 203,
+  "host": "http://d7j211001302.bed.einic.org/",
+  "preview_requests": 60,
+  "schema": "zpl-printer-barcode-comparison-v1",
+  "width": 832,
+  "height": 1218,
+  "preview_reset_zpl": "^XA^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,100^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+  "method": "printer HTTP Preview Label; not physical print/scan"
+}

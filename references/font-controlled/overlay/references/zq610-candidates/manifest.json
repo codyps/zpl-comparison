@@ -1083,8 +1083,8 @@
   ],
   "font_capture": {
     "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-    "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
-    "captured_utc": "2026-10-08T02:39:45Z",
+    "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
+    "captured_utc": "2026-10-08T20:26:11Z",
     "manifest": "references/font-controlled/capture.json",
     "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
   },
@@ -4570,7 +4570,7 @@
       "width": 384
     }
   ],
-  "paired_manifest_sha256": "51cde34c16cf4b6f5073b525bb0eb6c780e6c955c453fd0ca2a8019045ab18c7",
+  "paired_manifest_sha256": "ad015fee44b042f18244604aceea6b2170058445788d763f8c130f0d11d875fb",
   "policy": "All case outputs, including four original smoke cases; session repeatability captures remain provenance, not duplicate scored cases",
   "printer": {
     "dpi": 203,

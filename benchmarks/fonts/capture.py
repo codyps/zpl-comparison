@@ -47,8 +47,9 @@ def save(path, data):
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + '\n')
 
 
-def inventory():
-    manifests = {p: json.loads((ROOT / p).read_text()) for p in STANDARD + [BARCODES, PAIRED, CANDIDATES]}
+def inventory(manifests=None):
+    if manifests is None:
+        manifests = {p: json.loads((ROOT / p).read_text()) for p in STANDARD + [BARCODES, PAIRED, CANDIDATES]}
     cases = {}
     def add(source, reference, digest, width, height, printer, ram=False):
         data = (ROOT / source).read_bytes()
@@ -77,6 +78,31 @@ def inventory():
     for row in manifests[CANDIDATES]['cases']:
         add(row['source'], row['reference'], row['sha256'], row['width'], row['height'], 'zq610')
     return manifests, list(cases.values())
+
+
+def captured_inventory(out, record):
+    """Verify the immutable acquisition inventory and unchanged captured inputs.
+
+    New ordinary references do not become controlled-font captures implicitly.
+    Old captures can use a hash-matched live manifest until it needs archiving.
+    """
+    manifests = {}
+    for path, digest in record['source_manifests'].items():
+        if path not in STANDARD + [BARCODES, PAIRED, CANDIDATES]:
+            raise ValueError('Unknown printer source manifest')
+        snapshot = out / 'source-manifests' / path
+        data = (snapshot if snapshot.exists() else ROOT / path).read_bytes()
+        if sha(data) != digest:
+            raise ValueError('Printer source manifests changed')
+        manifests[path] = json.loads(data)
+    if set(manifests) != set(STANDARD + [BARCODES, PAIRED, CANDIDATES]):
+        raise ValueError('Incomplete source manifest inventory')
+    _, cases = inventory(manifests)
+    _, current = inventory()
+    current = {case['reference']: case for case in current}
+    if any(current.get(case['reference']) != case for case in cases):
+        raise ValueError('Captured input changed or removed')
+    return manifests, cases
 
 
 def fonts(bundle):
@@ -203,12 +229,45 @@ def discard_interrupted(out, record):
     record['retry_first'] = key
 
 
+def extend_capture(out, bundle):
+    """Append new inputs only; retain the original evidence and every source hash."""
+    record = verify(out, bundle, allow_new=True)
+    manifests, cases = inventory()
+    if {c['reference'] for c in cases} == set(record['cases']):
+        return
+    previous = (out / 'capture.json').read_bytes()
+    archive = out / 'history' / sha(previous)
+    archive.mkdir(parents=True, exist_ok=True)
+    (archive / 'capture.json').write_bytes(previous)
+    for path in manifests:
+        snapshot = out / 'source-manifests' / path
+        original = snapshot if snapshot.exists() else ROOT / path
+        historical = archive / 'source-manifests' / path
+        historical.parent.mkdir(parents=True, exist_ok=True)
+        historical.write_bytes(original.read_bytes())
+        snapshot.parent.mkdir(parents=True, exist_ok=True)
+        snapshot.write_bytes((ROOT / path).read_bytes())
+    record.setdefault('extensions', []).append(dict(started_utc=now(),
+        previous_capture=str((archive / 'capture.json').relative_to(out)), previous_sha256=sha(previous)))
+    record.update(status='incomplete', source_manifests={p: sha((ROOT / p).read_bytes()) for p in manifests})
+    record.pop('finished_utc', None)
+    save(out / 'capture.json', record)
+    save(out / 'catalog.json', {'_capture_status': 'incomplete'})
+
+
 def capture(args):
+    if getattr(args, 'extend', False):
+        extend_capture(args.output, args.bundle)
     manifests, cases = inventory()
     policy, upload, aliases, names = fonts(args.bundle)
     out = args.output
     out.mkdir(parents=True, exist_ok=True)
     path = out / 'capture.json'
+    if not path.exists():
+        for source in manifests:
+            snapshot = out / 'source-manifests' / source
+            snapshot.parent.mkdir(parents=True, exist_ok=True)
+            snapshot.write_bytes((ROOT / source).read_bytes())
     record = json.loads(path.read_text()) if path.exists() else dict(schema=1, status='incomplete', started_utc=now(),
         font_control=policy, method='RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label',
         upload_sha256=sha(upload), cases={}, sessions=[], source_manifests={p: sha((ROOT / p).read_bytes()) for p in manifests})
@@ -354,19 +413,33 @@ def capture(args):
     export(out, manifests, record, aliases)
 
 
-def verify(out, bundle):
+def verify(out, bundle, *, allow_new=False):
     """Verify live capture evidence, including submitted bytes and control pixels."""
     record = json.loads((out / 'capture.json').read_text())
-    manifests, cases = inventory()
+    manifests, cases = captured_inventory(out, record)
     policy, upload, aliases, _ = fonts(bundle)
     if record['status'] != 'complete' or record.get('inflight'):
         raise ValueError('Incomplete printer capture')
     if record['font_control'] != policy or record['upload_sha256'] != sha(upload):
         raise ValueError('Printer font bundle mismatch')
-    if record['source_manifests'] != {p: sha((ROOT / p).read_bytes()) for p in manifests}:
-        raise ValueError('Printer source manifests changed')
+    for extension in record.get('extensions', []):
+        relative = Path(extension['previous_capture'])
+        # Bazel runfiles are symlinks; validate the recorded path, not their targets.
+        if relative.is_absolute() or '..' in relative.parts or relative.parts[:1] != ('history',):
+            raise ValueError('Capture history escapes evidence directory')
+        historical = out / relative
+        data = historical.read_bytes()
+        if sha(data) != extension['previous_sha256']:
+            raise ValueError('Capture history changed')
+        for path, digest in json.loads(data)['source_manifests'].items():
+            if path not in STANDARD + [BARCODES, PAIRED, CANDIDATES]:
+                raise ValueError('Unknown historical source manifest')
+            if sha((historical.parent / 'source-manifests' / path).read_bytes()) != digest:
+                raise ValueError('Historical source manifest changed')
     if set(record['cases']) != {c['reference'] for c in cases}:
         raise ValueError('Incomplete reference coverage')
+    if not allow_new and set(record['cases']) != {c['reference'] for c in inventory()[1]}:
+        raise ValueError('New inputs require --extend and fresh controlled printer captures')
     for case in cases:
         row = record['cases'][case['reference']]
         setup, submitted = submission(case, aliases)
@@ -465,9 +538,12 @@ if __name__ == '__main__':
     parser.add_argument('--max-cases', type=int, default=20, help='Bound each printer session and repeat its control before continuing in another invocation')
     parser.add_argument('--restart-after-capture', action='store_true', help='Explicitly authorize serial-verified restarts before and after sessions, including timeout recovery')
     parser.add_argument('--verify', action='store_true', help='Verify and export existing captures without contacting printers')
+    parser.add_argument('--extend', action='store_true', help='Verify and archive a complete capture, then capture newly added inputs')
     args = parser.parse_args()
     if args.interval < 0 or args.max_cases < 0:
         parser.error('Use a nonnegative interval and batch limit')
+    if args.extend and args.verify:
+        parser.error('--extend captures new inputs; it cannot be combined with --verify')
     if args.verify:
         record = verify(args.output, args.bundle)
         export(args.output, inventory()[0], record, fonts(args.bundle)[2])

@@ -124,7 +124,12 @@ python benchmarks/fonts/capture.py --output references/font-controlled --verify
 ```
 
 The live command explicitly permits restarting both printers. An already complete
-snapshot is only verified; use a new output directory for a new capture.
+snapshot is only verified. To capture newly added cases with the same bundle,
+run with `--extend --restart-after-capture`; subsequent bounded invocations
+resume without `--extend`. Existing inputs must be unchanged. The extension
+archives the preceding capture and its hash-verified source manifests, retains
+all original sessions and images, and marks the catalog incomplete until every
+new case has a controlled preview. Use a new output directory for a new bundle.
 Repeat bounded capture invocations until the manifest is complete. Mobile
 firmware compiles downloads asynchronously; capture waits for all RAM font
 objects before previewing. The explicit restart workflow can recover interrupted

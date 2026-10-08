@@ -64,3 +64,10 @@ python benchmarks/labelary.py --extend
 `benchmarks/test_conformance.py` verifies the ROM inventory, exact named requests,
 capture eligibility, stable printer control, adopted reference hashes, matching
 Labelary source/image hashes and dimensions, and the blank-reference exclusions.
+
+The shared-font comparison also has fresh controlled ZD621 captures for all 79
+new cases, retained in `references/font-controlled/` with four additional
+sessions. Every session passed repeat and restoration controls. The preceding
+998-case capture and its source manifests are archived by hash under
+`references/font-controlled/history/`; the complete snapshot now covers 1,077
+references. Labelary responses are reused because the fixture bytes are unchanged.

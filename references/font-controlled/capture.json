@@ -4410,6 +4410,1428 @@
       "submitted_sha256": "efa531cf74bb1c4e722f21bd4d2c8851a2130220b66f1464cd6aef20ce762a96",
       "width": 832
     },
+    "benchmarks/accuracy/conformance-reference/font-installed-tt0003m_-ttf.png": {
+      "captured_utc": "2026-10-08T20:25:39Z",
+      "height": 1218,
+      "png_sha256": "a63fe6b48828b659c414edda7b9a505379d7af50b7ad6674b8f391906582ffe9",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-installed-tt0003m_-ttf.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-installed-tt0003m_-ttf.zpl",
+      "source_sha256": "710f3ab9065e89c310a5176285aa620049d22b9b96da6c5024c184c2fd312724",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-installed-tt0003m_-ttf.zpl",
+      "submitted_sha256": "bea252531ef7ccca243bef3d1125f8505ea7976351f12beed754d2220f0649df",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-0-ttf.png": {
+      "captured_utc": "2026-10-08T20:20:25Z",
+      "height": 1218,
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-0-ttf.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-0-ttf.zpl",
+      "source_sha256": "8cc1532ef06f8922dc3c211dc96cf4fb939efc10fd6ca223cc4a5dec27668a46",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-0-ttf.zpl",
+      "submitted_sha256": "da8622856301149fae7e777ecdf8a3f5416f41d2ed747045fd5bf003e969c33a",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-a-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:26Z",
+      "height": 1218,
+      "png_sha256": "1102fe7701f7cb86aa510d49907c8273d6d68a668ca1f74ce31197cee0af4e78",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-a-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-a-fnt.zpl",
+      "source_sha256": "a6bf61da1523d71cc2481268096807338a807a22556a01c76984e0b5b67b5787",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-a-fnt.zpl",
+      "submitted_sha256": "989d540eed0044c18d87f66966bd8ba5bb53493d25f58da04fd0cba6e4df349b",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-b-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:27Z",
+      "height": 1218,
+      "png_sha256": "9d2a3c5a44be6d763154c692f318936fa091b74196d8aac223fad62be63c4d61",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-b-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-b-fnt.zpl",
+      "source_sha256": "f15e8f1cd3e1364f61702d905860c479f317e564a35011d82a713eebd0162452",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-b-fnt.zpl",
+      "submitted_sha256": "38bcaa3a40b6fedacb8ac2aa6e8ee17934b3bec5c60e8a5325590524bff5a6f2",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-d-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:28Z",
+      "height": 1218,
+      "png_sha256": "f419123c959c777feccff9be71d67b0c3c94a901a9936d09bab2fa5dbc9a0245",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-d-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-d-fnt.zpl",
+      "source_sha256": "46490cdadadd5e93c52c54c0268310d7cd90faed5a2c194916b7a1d7b2d8ee2d",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-d-fnt.zpl",
+      "submitted_sha256": "2a7145f694c1c186682da935181a2a9d5562c0cfbac4e958aac9b76e08aa7416",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-e12-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:30Z",
+      "height": 1218,
+      "png_sha256": "8152ebd50429bf546a3720c279390a354b7aa625fa710dd2bb1752f865a8a6e4",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-e12-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-e12-fnt.zpl",
+      "source_sha256": "71fb0be5308d459c7d4f75e93a9a8137956847461575a1806d36025cd2954cc2",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-e12-fnt.zpl",
+      "submitted_sha256": "3de690ea536dd16c65340255418bc40e7d9f5251e3f604dd7533dacca2e51910",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-e24-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:31Z",
+      "height": 1218,
+      "png_sha256": "30e6f008522306cba54960899ee71eb9c5ffc263f94fde22cb486675b1a2743b",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-e24-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-e24-fnt.zpl",
+      "source_sha256": "69594dc06df0fd01437c5dc017e64532a2a2d26a5e36cc60a703fdd9bb794c1b",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-e24-fnt.zpl",
+      "submitted_sha256": "b59e1026f4ad77fd5280a7fb85952a905634b767964824743086fe08064df597",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-e6-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:32Z",
+      "height": 1218,
+      "png_sha256": "ddcc698ab2af3ae0b585e7cf4837a3340c362afafb242ee9e686a3a9836b1333",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-e6-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-e6-fnt.zpl",
+      "source_sha256": "6f97b6f926d7f46a79852a3ac667367a577e5bd06ca77967137e4e9172992628",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-e6-fnt.zpl",
+      "submitted_sha256": "07aabe14a6adc70750fb9fe5776770190e40d440cd622222248054853b6b1a06",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-e8-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:33Z",
+      "height": 1218,
+      "png_sha256": "a5cc2ba7b807bf064557b1c57ea03d339d3ff921f3ae56c64a0c15bb06cf3f1b",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-e8-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-e8-fnt.zpl",
+      "source_sha256": "245ea34e1a86f90e2f6904e95bf9303aec27111bac10c9b49898331bd2eef928",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-e8-fnt.zpl",
+      "submitted_sha256": "a47818cd9f2f61eeac9c8d2a8abc2e42d7068480a4b5026a0c24d5d310f96473",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl1-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:34Z",
+      "height": 1218,
+      "png_sha256": "33eaf139894a402e89f09281f955a41315abaf155d6155a72256c826afc6409b",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl1-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl1-fnt.zpl",
+      "source_sha256": "4d45d17a3a8a6211adc624f63fa7d086426acacb4732028594a40fa46d0d5199",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl1-fnt.zpl",
+      "submitted_sha256": "3906ab3b5397d9d6ac5a536c2a54613170caf0809f264e0ca3fbf4e13ae76b83",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl2-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:35Z",
+      "height": 1218,
+      "png_sha256": "cef0d5ce811808ec246679d9d54d969840fd06458e9f888c77fbacef27075c25",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl2-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl2-fnt.zpl",
+      "source_sha256": "df1945660a04c4156d3fb5a98cb9cf420f0689e3981201df0aeab14855d6d801",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl2-fnt.zpl",
+      "submitted_sha256": "26f508c75e70d1f11d76d052297a934bf2cfbf78294ef2736fa4c9c2ef2a9cf7",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl3-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:37Z",
+      "height": 1218,
+      "png_sha256": "93b990a019f108a19cdbb5f03c149d140e5151bccc435540d06de32146362c8d",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl3-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl3-fnt.zpl",
+      "source_sha256": "45a4e4312dcf3c5b4057ee292084dd4f2f6d5e93f1c0dddf390b342615e44de7",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl3-fnt.zpl",
+      "submitted_sha256": "a9642c3cea7c91b65d047ebc90033dcc6e19d9213b59ce8459f3c8cb811945c6",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl300-1-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:38Z",
+      "height": 1218,
+      "png_sha256": "a7d71e21a1017d443a1abb51b909f258e174124affdd4c44bdc4ab62839bafe7",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl300-1-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl300-1-fnt.zpl",
+      "source_sha256": "30df8a22f6007815efb97b25d746600d5e7e1ee243292a9e2d5d61565363f613",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl300-1-fnt.zpl",
+      "submitted_sha256": "a76cbd13e684c15768d6c27b386aae9dd8f8f97e73ccbff844e122fd6b83846c",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl300-2-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:39Z",
+      "height": 1218,
+      "png_sha256": "874ac0d96a36f31e21b0bcffc28464d7a017684b5112415d9860fc2d48e828a6",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl300-2-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl300-2-fnt.zpl",
+      "source_sha256": "d9cf7d7f8d88fe75abbe077e22d1ffc6e5f8dae98838ba5fb33929e4554338b6",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl300-2-fnt.zpl",
+      "submitted_sha256": "54329aa0800f6a216aa2b66b4f06ce73a8c85b8a079a4e5c7752d5321859cc81",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl300-3-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:40Z",
+      "height": 1218,
+      "png_sha256": "f34114d586b4ef9bd1391c442fd446fc4cab1d2e7b255869f4531bc86dc9ac6c",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl300-3-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl300-3-fnt.zpl",
+      "source_sha256": "eda0c2e25789aaf4083f9b45cfce1885ecb140a2afedd91814d4e1bd9617031d",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl300-3-fnt.zpl",
+      "submitted_sha256": "5d266ad068c13fa7e0fac68be7274e454abd83f197f3a7a9111956727126198e",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl300-4-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:41Z",
+      "height": 1218,
+      "png_sha256": "7a644ed6680e10550f01ca702492c32200c32fe32b8cd2f2b77e76c935aa8d81",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl300-4-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl300-4-fnt.zpl",
+      "source_sha256": "147e0ae0b304daf52679fc4c335a540236f6b789d49d09e49827ca3020ff74b2",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl300-4-fnt.zpl",
+      "submitted_sha256": "a111db409c8df3c9c0a1495286b8609f2d4a091d48596fe94db288b91a6b6e05",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl300-5-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:42Z",
+      "height": 1218,
+      "png_sha256": "fd2d6f3eacbfaf1b52b40166c7dda7cce4205c81ca2a97b1b81fddbded3cd116",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl300-5-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl300-5-fnt.zpl",
+      "source_sha256": "e0c12807f1a7097a883e5b227805bc0fff6ae0273b6a9fb220bd2c66f259455d",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl300-5-fnt.zpl",
+      "submitted_sha256": "ce0e3abb8ada7ecb414ab4decfecd12dd5bdd134798e54eac4d7016a1daf62a7",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl4-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:44Z",
+      "height": 1218,
+      "png_sha256": "1fa5daadd482c249e50b4775d4eebaa0a658032e14cf72add7cbe9cd2190a5df",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl4-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl4-fnt.zpl",
+      "source_sha256": "041e256e8d67928dd0b3e99110209048d0e734d39b3d95755fddafff68293ea4",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl4-fnt.zpl",
+      "submitted_sha256": "a9109c62b3558dcc497963f99b14ba0e41148d1b22820af52957f82660f90640",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl5-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:45Z",
+      "height": 1218,
+      "png_sha256": "ff860b301c720c86d038e48370ebdcec13f657ead4c1c380eb5526d104fb9bd8",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl5-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl5-fnt.zpl",
+      "source_sha256": "cccffbb2f3c04655cc2ee068974979d544f2416c3c352d32813cd769e7c0acbf",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl5-fnt.zpl",
+      "submitted_sha256": "1dd6791591358b6d5a46c1f2e5fedf7ef4b25f6948e2e2ad01d264645f150aec",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl6-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:46Z",
+      "height": 1218,
+      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl6-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl6-fnt.zpl",
+      "source_sha256": "4eb04aa26a92414059009af57c574330282d564d1eae3a53ed3df3589c079fae",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl6-fnt.zpl",
+      "submitted_sha256": "6dd54f6f793c9132be8566b483112cc645af892a7128b080433127b833dd8440",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-epl7-fnt.png": {
+      "captured_utc": "2026-10-08T20:20:47Z",
+      "height": 1218,
+      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-epl7-fnt.png",
+      "session": 8,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-epl7-fnt.zpl",
+      "source_sha256": "afd756cfdfbf201fb925f426842bed5f0f3621f68218891b0ff00cb4bd0cf0a0",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-epl7-fnt.zpl",
+      "submitted_sha256": "3fc4bcdcab664a71b0ad4856b4ed0954994c5f65053a84f88113bbe7aa242ad8",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-f-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:11Z",
+      "height": 1218,
+      "png_sha256": "77fdd6b76c0170394c49c6672104f9b537c11373096cff30b2042f3b0ef82c80",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-f-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-f-fnt.zpl",
+      "source_sha256": "dd1ce596504bcd127fa89c58f5f9e646682170c8ac9cf020bb6999ae2cb2faa2",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-f-fnt.zpl",
+      "submitted_sha256": "14a2bb809c90c9151db482fb1badfb23d9eeacba99c292fad8f8b43dfae19825",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font0-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:12Z",
+      "height": 1218,
+      "png_sha256": "cd57e863282e2e92b0bfd91509f75c1e85cdbe4a698f7f958b33f2a2563470e2",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font0-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font0-fnt.zpl",
+      "source_sha256": "892327a765edc6818938f6ce7febc1b52e12a22e82a30cfd980b7750caadb5c2",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font0-fnt.zpl",
+      "submitted_sha256": "97e11904484f65aea9e717123e10c8c45510a86e97db3a4b80f241861ca1f7fb",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font1-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:13Z",
+      "height": 1218,
+      "png_sha256": "7e932fcd85e6fb2007f34145580cf952c3f97b0ffd076fa2072d583e00e83d43",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font1-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font1-fnt.zpl",
+      "source_sha256": "6b4ab18d2360f87c4bfc8db9cca08b2d3af60e1acdd9cce9a6f400a6711f14b1",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font1-fnt.zpl",
+      "submitted_sha256": "025db106c69473ef66b0c446bfdfc24927cfbd613645809afd19fd6326e0c035",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font2-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:14Z",
+      "height": 1218,
+      "png_sha256": "dccf59c7350fc212a2207c4e1cedfe81d9af71f227ed78e7d4f77471ba8427df",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font2-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font2-fnt.zpl",
+      "source_sha256": "f1f185a848544c22e98fe77ba8116794e1192983b69624922aa79e5f945594bd",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font2-fnt.zpl",
+      "submitted_sha256": "0a4614b3efa7bdad3489e641f880db2f5a8cd5508ba946bb72e9b555f8462bbc",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font3-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:15Z",
+      "height": 1218,
+      "png_sha256": "b3c2ef55a2b8808181d6708c5a53a9a0b947d21d8e133ab6934edbccaa593ba7",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font3-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font3-fnt.zpl",
+      "source_sha256": "2dc481a7ce15978c6ce49c20ab1d801da50098b7a766b3838607c49baa5fcf04",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font3-fnt.zpl",
+      "submitted_sha256": "a597754987058e3a703314f5fbacdde7393954f0483405be113896a0d8b4da0d",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font4-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:17Z",
+      "height": 1218,
+      "png_sha256": "366b4ae5fcc837d2be1480b3c0c211d009933ae50d2503690500087ba9890d44",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font4-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font4-fnt.zpl",
+      "source_sha256": "fd98e6e46cb517a7ce9422ce3320930c3a355d0d38fb5d0b27b551e543ec0cd3",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font4-fnt.zpl",
+      "submitted_sha256": "5a3d026ada4b6b3bd0519031a3ba0fd88ff4f12e212b575e6d41d9e1069af5f8",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font5-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:18Z",
+      "height": 1218,
+      "png_sha256": "1ef77151e6b94fb57d1d8fdbc236084495d6d70e883176aae206b3c839ffcb3f",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font5-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font5-fnt.zpl",
+      "source_sha256": "63f75b8cc1d1f9909211a373f16df9da6813dd6054e4130986e32ed2e1ff36bb",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font5-fnt.zpl",
+      "submitted_sha256": "94a74b1a4aa26fa256259b18e9c5eaca29d8a30d65da553b533faf011f06c8de",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font6-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:19Z",
+      "height": 1218,
+      "png_sha256": "df749bfa2e9af724a67d855795b0554bd3f734d90c8c709e69bfad50f055de22",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font6-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font6-fnt.zpl",
+      "source_sha256": "7ffd87cc5042f211f45dec06cbea8e56f84abbe9b7eac29ec62201e54e008a2c",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font6-fnt.zpl",
+      "submitted_sha256": "f384711b45be4f05e4dd57c4e9d5f7bf2b25e2cdc372cf68bdfd3c7d7b7149d9",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font7-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:20Z",
+      "height": 1218,
+      "png_sha256": "56a726a4591a625703384122a68758ddfac0029b7e956034246ae87273e317ee",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font7-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font7-fnt.zpl",
+      "source_sha256": "e3288ea1e251049dd44d4278f92cfd4844d76f28bf33ef4e2a7ceecae85dab71",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font7-fnt.zpl",
+      "submitted_sha256": "d892413ec724b0cd17f2a3358f7257cdc98a725b25d4c0282cb70f79b53a0886",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-font8-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:21Z",
+      "height": 1218,
+      "png_sha256": "5967d96260cc3990bd436ef34a1a1f596358d1aa33289dc7e7cc351ce4bf1e97",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-font8-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-font8-fnt.zpl",
+      "source_sha256": "9cb118edc3314c773e9fd0687a95d39eb34c8a526fba32eac709836735af4521",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-font8-fnt.zpl",
+      "submitted_sha256": "46f90bbfa81ee956c4f8d8f9ec99d2f580ab77f83590c0617e245bdf5306f4fd",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-g-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:22Z",
+      "height": 1218,
+      "png_sha256": "26cb718569c0fd939ef8983bfcc6efaf46c53212d7e4500f53371b6f43b56eb8",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-g-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-g-fnt.zpl",
+      "source_sha256": "8d1c5a484bb975e80ede171868c5ae61e604efa1083f0aa1ba2a831a370dd02f",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-g-fnt.zpl",
+      "submitted_sha256": "562c64b5dfe1009aef3f5eda17a5523742f7b3e6c81ea1a38ef84fd46624392c",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-gs-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:24Z",
+      "height": 1218,
+      "png_sha256": "95b9a4bec2a5e4969d08cdfc5ce16eb927dc585ccb9f9a6ee9560277e2592fdc",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-gs-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-gs-fnt.zpl",
+      "source_sha256": "c835f2881fd465d2eed1c02277af9bc31a5b0a268f91139b90d96ea441b2ac33",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-gs-fnt.zpl",
+      "submitted_sha256": "1b945ec6e9777ddffebb09494dc5f2555962cc4698b573d630a83abee39de43e",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-h12-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:25Z",
+      "height": 1218,
+      "png_sha256": "6a01ff94342e1934c040aec958564913ae4f61cb36b591681567a2bc607a0b90",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-h12-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-h12-fnt.zpl",
+      "source_sha256": "4ec083cf714ed09a73913c072ae7be86d626afc9e91d96bf3d8420004f0a4cc3",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-h12-fnt.zpl",
+      "submitted_sha256": "0e87fe5dfdfc735a2277a2cd211cd6a264f55baf23f11dbc7eacfece4841c752",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-h24-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:26Z",
+      "height": 1218,
+      "png_sha256": "1d08b6d4e1ea98b477d01da8d4c570ceecad15705c5120445f70f141ae5ffa28",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-h24-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-h24-fnt.zpl",
+      "source_sha256": "8ab71fad99c4d663d2c9e9ac82749eb111291be0387742174e4e645b945cf60c",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-h24-fnt.zpl",
+      "submitted_sha256": "b9e1460fdb37b35a27e7d0ab5fbddc1938eeaf8ec88fbf0f63c00a1c60dd250f",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-h6-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:27Z",
+      "height": 1218,
+      "png_sha256": "8087a54b31ae9ebc74a77bcbf8d00c1ba065a1d576a6a4ae59c17223c1b0cd8c",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-h6-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-h6-fnt.zpl",
+      "source_sha256": "9499fb115f556221fa435e0832e3cc574e07248e78ceabed860b636674cc8573",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-h6-fnt.zpl",
+      "submitted_sha256": "3b619db55c2b3cf506b8884f00b3c53ab5c7c8f2a4862877cd77c728a2db1079",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-h8-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:28Z",
+      "height": 1218,
+      "png_sha256": "9f88236a60bf4112498f406a1a962ff06c7de3ff78b4e53dd5e0cfa0eec49a28",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-h8-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-h8-fnt.zpl",
+      "source_sha256": "65dab7ece2568fa9b7aa4e36cbd03286f8b8a6f0bb275ab96608fa7fcc2d48a4",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-h8-fnt.zpl",
+      "submitted_sha256": "fbf627dbed5575b60448fb4fbb1e792a1831e46fc878ea0dd1abdcd87b4f0e7f",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-lmu-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:29Z",
+      "height": 1218,
+      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-lmu-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-lmu-fnt.zpl",
+      "source_sha256": "44b0752409db0636fa8d1c87695eb6660fce57ed59ff9a8428d7a7a45df379f9",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-lmu-fnt.zpl",
+      "submitted_sha256": "edbac5b7d72f76915d3121765c4135b640da6391b84895700d27178a0e4572c9",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-lmv-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:31Z",
+      "height": 1218,
+      "png_sha256": "b3545ec70db4667dfeeae3d5fdee72dea1eecd64d121bf50f50dc0dbeaeb75e8",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-lmv-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-lmv-fnt.zpl",
+      "source_sha256": "6e85018073e952d3a191fc277e9e5ae66f0a622c8d8d124a91ac6b1cf9419284",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-lmv-fnt.zpl",
+      "submitted_sha256": "669155c9eab3650bce8f881ab50a7ba1dc141d9f57c63994f8337b5ead3ce60f",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-lmw-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:32Z",
+      "height": 1218,
+      "png_sha256": "85cfd0259cce4fb8d6dc7dd77c88107c35b7793aa4575bc3347862c8e1982c27",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-lmw-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-lmw-fnt.zpl",
+      "source_sha256": "56f5476c988c4f845567f5142636b2758d33b6480430539a8a9bdb60b6013775",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-lmw-fnt.zpl",
+      "submitted_sha256": "7fc7b9c79bcf70cb28a0631afe79f94eacec06437cc91719133401fec3f0eeca",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-lmx-fnt.png": {
+      "captured_utc": "2026-10-08T20:22:33Z",
+      "height": 1218,
+      "png_sha256": "1962a67cdcd35001c0b2d921ea0947a7849ab1e3e00873410ff23f5ec2f979a8",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-lmx-fnt.png",
+      "session": 9,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-lmx-fnt.zpl",
+      "source_sha256": "a9f19866e1073222186fefd51955a868e43348e54997a943e3bc9f065b601fa8",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-lmx-fnt.zpl",
+      "submitted_sha256": "db6ed2e84def1c5fef169c7fdc531f9434a64d62259983f43d6f2ab5cbc6584f",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-lmy-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:44Z",
+      "height": 1218,
+      "png_sha256": "cb86c7d52531824d48856e54338d30e8cc35ea464b257a0d73ca299cb933a355",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-lmy-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-lmy-fnt.zpl",
+      "source_sha256": "ab1a7a62ba046fc138fdb9f18e026a111b80838856fb82c43fc43772ed970978",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-lmy-fnt.zpl",
+      "submitted_sha256": "b07f0030f2f5ae2d64771f7b004f9089c1ddbb2a3004cd1d642f6162ede7f1d8",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-lmz-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:45Z",
+      "height": 1218,
+      "png_sha256": "7baac18a01fb81d679ee2dfae0fce799253e3b38ae6c79260c59f8cc80f2599c",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-lmz-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-lmz-fnt.zpl",
+      "source_sha256": "36e7b9001775c907d067ba97c32f0ab438d691c01cfb8a3a243e281b3ba3d69d",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-lmz-fnt.zpl",
+      "submitted_sha256": "3cb15988cf4eb4651819b5f0a992cd742f00d7b89e06a7127af2cd36cd7b10a9",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-p-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:46Z",
+      "height": 1218,
+      "png_sha256": "849ddb151de0de3f04ee901c506908222dde975bfa7fc2428ccc6548585e7e57",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-p-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-p-fnt.zpl",
+      "source_sha256": "3a7ff1b21ec9cda1617b5ca54d8e583c93b2c4feb0370207a7b949ad84e1da26",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-p-fnt.zpl",
+      "submitted_sha256": "0d982dcc1dc5dade650b87f78d499d4573ca862146f9bbe374b650c1c4cb2504",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-q-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:48Z",
+      "height": 1218,
+      "png_sha256": "849ddb151de0de3f04ee901c506908222dde975bfa7fc2428ccc6548585e7e57",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-q-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-q-fnt.zpl",
+      "source_sha256": "1882e8ff2d3031cc08676772accfbfcafd7ff2401a1f129b670ae85a60412192",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-q-fnt.zpl",
+      "submitted_sha256": "1daf1d187e8b5f691dc08fbaeb97407b1d1e375b359db4043e8f2ef924838924",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-r-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:49Z",
+      "height": 1218,
+      "png_sha256": "849ddb151de0de3f04ee901c506908222dde975bfa7fc2428ccc6548585e7e57",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-r-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-r-fnt.zpl",
+      "source_sha256": "71e56d5d0df35e777443268b9ac5cb7e6a9cb9f4838ad8b55c658c5250c6f14c",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-r-fnt.zpl",
+      "submitted_sha256": "bd43e17ca84f7aa93fae7e5595e9876cd7eda401297943f6bb8bfd0cdfd5834a",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-s-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:50Z",
+      "height": 1218,
+      "png_sha256": "849ddb151de0de3f04ee901c506908222dde975bfa7fc2428ccc6548585e7e57",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-s-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-s-fnt.zpl",
+      "source_sha256": "2c4ba0278af7d65df86191b4dba34f4de9d2fcd8b3537f7ca027db1a84d26b4e",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-s-fnt.zpl",
+      "submitted_sha256": "14765ee29e3aca605e1c464718bd834e71574f200446e6e017133eb2ed257070",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:51Z",
+      "height": 1218,
+      "png_sha256": "849ddb151de0de3f04ee901c506908222dde975bfa7fc2428ccc6548585e7e57",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t-fnt.zpl",
+      "source_sha256": "77f31272156b95ac82cf45ae3fe36cc0d190310a8d06c91486db78f35bf13c95",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t-fnt.zpl",
+      "submitted_sha256": "65cee906f706b3a30a9f1cbcf14d52cabdf1d881c9b02a0d113ee10a3e3f73f0",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0000-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:52Z",
+      "height": 1218,
+      "png_sha256": "abce3d3acf76ac57d5c16eb27eb971caf614dcc31e90cb2e8994640aa8e625fc",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0000-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0000-fnt.zpl",
+      "source_sha256": "d426798a5d542dd1b73b32d9284f4bbec9769a6062cab71e6714eeac2a6c0a71",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0000-fnt.zpl",
+      "submitted_sha256": "120974cc4c256f9e1c05ac76fb5f82b1ae8326696e4432a279abf607c608b7a6",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0001-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:54Z",
+      "height": 1218,
+      "png_sha256": "832116d48e1f64b0566bcacbd54de29eab7cbd8301fa0100aa778c5ec9d12e9a",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0001-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0001-fnt.zpl",
+      "source_sha256": "4ba312d28dfef4388def0c249d79dd8f857307611cc42739913f3f6f7cffb841",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0001-fnt.zpl",
+      "submitted_sha256": "e4cd1f733a63acd3d7b2c30de7d7c550997494ba44ebc4de4770b6240fe1eeb7",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0002-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:55Z",
+      "height": 1218,
+      "png_sha256": "dbd1484bae164f9ac9eef1c9ecdee0dc8b76d69fe960a6c8a8674d81865aa653",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0002-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0002-fnt.zpl",
+      "source_sha256": "398632557721621faf4d24940dd6c79f4b9a09caadb6b56da908b0dbe2f03126",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0002-fnt.zpl",
+      "submitted_sha256": "6431a7c5d252db06ca9484867f286e43fdc611e75a44deffa3aa93d4558adca9",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0007-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:56Z",
+      "height": 1218,
+      "png_sha256": "06915c221dfc56f9347508027672456ad3b5d3ce4bc769294154547d243d6953",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0007-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0007-fnt.zpl",
+      "source_sha256": "64f2ec60b0835e4fce46255aa64eb4830efb6b68ec0b6a728973ba25a3bec424",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0007-fnt.zpl",
+      "submitted_sha256": "4013850e3134b5b75924e1505486739544e431ddcf34f3137852f4559f6e4b9c",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0020-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:57Z",
+      "height": 1218,
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0020-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0020-fnt.zpl",
+      "source_sha256": "949ccdb6a092716c0abcc4f5614bd428fa7055d032c36b618941aaa552fcc804",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0020-fnt.zpl",
+      "submitted_sha256": "c426fd830fd17327d4ea40e8915b2651d9f5b8c00e7039c240c8106359e5d34b",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0021-fnt.png": {
+      "captured_utc": "2026-10-08T20:23:58Z",
+      "height": 1218,
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0021-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0021-fnt.zpl",
+      "source_sha256": "c9824deeec8dd3057f9410cbb3ab59de9fcd83fc85a27c06537ef4a457067cd2",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0021-fnt.zpl",
+      "submitted_sha256": "6fb239894576a69efa3d50041867ec54281d339aba851f8a4fc79522db0a84cc",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0022-fnt.png": {
+      "captured_utc": "2026-10-08T20:24:00Z",
+      "height": 1218,
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0022-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0022-fnt.zpl",
+      "source_sha256": "7226bf1aa3cfbff1e9be4d69f687623a6481df70d238f8944492b26de7547994",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0022-fnt.zpl",
+      "submitted_sha256": "58fa9fe1d87e08a709f83ca27cce486c6671f6716cfeb8a7140b1e7961bcd3e5",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0023-fnt.png": {
+      "captured_utc": "2026-10-08T20:24:01Z",
+      "height": 1218,
+      "png_sha256": "aaff9a15270075c381e220a7884f4306b376139148ed38768ba1c5d3394f81a3",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0023-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0023-fnt.zpl",
+      "source_sha256": "8a24b01f74213df77d1efc779ac9c6ad174f77682ef5042ea1487b899b6f5696",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0023-fnt.zpl",
+      "submitted_sha256": "042e6acbee65b2e893072a2483a7cb9c08bf09c1703146e991363d9bd2afe253",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0024-fnt.png": {
+      "captured_utc": "2026-10-08T20:24:02Z",
+      "height": 1218,
+      "png_sha256": "6718ee7a775a3c593959bb739a21ea6aa6b9f4f7d1e0ba09717524e4a1d9291e",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0024-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0024-fnt.zpl",
+      "source_sha256": "fe7a97711b78eb878b51d67ccc4a67e357dbfb8c4027b275b2b31f4626429122",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0024-fnt.zpl",
+      "submitted_sha256": "540e8eb1d4d2cbd00d46f6681199107a24b3296a8d2a28aa19ae21af706eb69d",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0025-ttf.png": {
+      "captured_utc": "2026-10-08T20:24:03Z",
+      "height": 1218,
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0025-ttf.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0025-ttf.zpl",
+      "source_sha256": "51358bda00cab8a1c4220e89dd6146484f8192cff87fbecf8865cfa68f2b3c2b",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0025-ttf.zpl",
+      "submitted_sha256": "74b10c76fc4cb447bb614e3d1a9b1335ec7b75c9eaa7efe8f7fc92c609fd67e2",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0026-ttf.png": {
+      "captured_utc": "2026-10-08T20:24:04Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0026-ttf.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0026-ttf.zpl",
+      "source_sha256": "9d8bf52055287bf489881dc245859a24676a83363e3f12f596f43e7cf782bf7c",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0026-ttf.zpl",
+      "submitted_sha256": "54a8ebaf436365ed240d6d5c92ed92f9b6ca87e3bd03ff201b56162dfd9737f5",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0028-ttf.png": {
+      "captured_utc": "2026-10-08T20:24:05Z",
+      "height": 1218,
+      "png_sha256": "f0e0d6a7bcc0a3e248799f2e2fe3ebb47277f5324c8bf16ab36411c339c53351",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0028-ttf.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0028-ttf.zpl",
+      "source_sha256": "34d71cf17d32ea832d9556265918c74f1bc00081c0ec790126fa0eb766ffdee2",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0028-ttf.zpl",
+      "submitted_sha256": "ab0496d6c8298ccea430c3e3b751c2a8f91856a5315b1932894e89dc0449a977",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0030-fnt.png": {
+      "captured_utc": "2026-10-08T20:24:07Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0030-fnt.png",
+      "session": 10,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0030-fnt.zpl",
+      "source_sha256": "a8e687ecdbdebea9f1e2c9f9ccfabe4b401cc202c9192001c1045edde96b0ee5",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0030-fnt.zpl",
+      "submitted_sha256": "ba7fdc7b8f8627c282f45be4a0feff01a4ad212470b2e86fcf3d0e77e0b8d18d",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0031-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:18Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0031-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0031-fnt.zpl",
+      "source_sha256": "ed52c2ca10f25222e1ed3e3964bde5099dd3b690f7beb76a5170aeff7af35505",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0031-fnt.zpl",
+      "submitted_sha256": "f52136682d4529df9a3d505d624f2028c9bfdc82cb792b85022d3e9704b7ef69",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0032-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:19Z",
+      "height": 1218,
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0032-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0032-fnt.zpl",
+      "source_sha256": "8dbba284edecdde5951e0410ea4f3ebf3db5d5fe483aadddf1d35d39ec9173ce",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0032-fnt.zpl",
+      "submitted_sha256": "2eed4d7b3108ae8586d401a138af9d9154e5cd1e1cbabef0c5048a1aafd81290",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0033-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:20Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0033-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0033-fnt.zpl",
+      "source_sha256": "225ecbef429f7d141e29432a7f50c6562c3abf7f87bdabf6d2c0c75518848433",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0033-fnt.zpl",
+      "submitted_sha256": "0d992bc8f6967d25f07bad0362620bbcb2c5738ffb061f81b24742169e93c5ac",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0034-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:22Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0034-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0034-fnt.zpl",
+      "source_sha256": "d5ce9b393f93d6ae335b4763adc16a66afc8fc81868faf3f041e563db73904bb",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0034-fnt.zpl",
+      "submitted_sha256": "4044b640028c26fd31052da210252ad31fa04d3b8bde8e84cf3557b8693aeecd",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0035-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:23Z",
+      "height": 1218,
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0035-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0035-fnt.zpl",
+      "source_sha256": "52594f48881944f0950b41750ee9d65e46a862b78d2935c6ca7c849d49a1e52b",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0035-fnt.zpl",
+      "submitted_sha256": "c58ebcbbcc76eb822760d336d44fb99e448bdfc6153d0b8618a994ae5b4bb768",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0036-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:24Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0036-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0036-fnt.zpl",
+      "source_sha256": "29b167b069b96df5bf33d6bb6b3521e7aab129ec1c07c29440beea23e48d87af",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0036-fnt.zpl",
+      "submitted_sha256": "4aae9c1502619e7183910186ebd515fe4eeee51101a79057a7f2327a0a2d10bf",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0037-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:25Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0037-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0037-fnt.zpl",
+      "source_sha256": "b2a9a38eb621ba86290f9401000d927783f47cb71eb620dc3a13ec9df08bb501",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0037-fnt.zpl",
+      "submitted_sha256": "cfa7d661d66fb81d2fc8ffc05f7000d95b222ab6afc6bcecd97088bf5ede3051",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0038-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:26Z",
+      "height": 1218,
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0038-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0038-fnt.zpl",
+      "source_sha256": "c9770e729d2d27348aca137368e5c8840852597a27f8641d0b90ee8645a8ff91",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0038-fnt.zpl",
+      "submitted_sha256": "3048535dd1ad2a70fd20092a13ecc13c3111694718d9ddededc03a4e20c93976",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0039-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:27Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0039-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0039-fnt.zpl",
+      "source_sha256": "655ffe8eddb49ebdb412340e53ed3a8c26a57a8cef4950a7ef52e4c14eab2a98",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0039-fnt.zpl",
+      "submitted_sha256": "ac50a422f13ee2d1f46a2f913fd71c0580eb914f9ff9220dafb919f06413301a",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0040-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:29Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0040-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0040-fnt.zpl",
+      "source_sha256": "f87814ac87b0051461302c483e3d6c47c7ad9014099b99611912c1341605e4a7",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0040-fnt.zpl",
+      "submitted_sha256": "f6c2f4e426341f520c7ec33215adc9d1db0327039bbe0ca22a7c5c7813320332",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0041-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:30Z",
+      "height": 1218,
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0041-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0041-fnt.zpl",
+      "source_sha256": "437e16bd2c2a74fe76d7dbb790fad9b2b8f163296525f4d22439d953b78723d7",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0041-fnt.zpl",
+      "submitted_sha256": "5032256550e34f6bce252e70d9810287b5ad908f4006af8348d5b75eb2a03cb4",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0061-ttf.png": {
+      "captured_utc": "2026-10-08T20:25:31Z",
+      "height": 1218,
+      "png_sha256": "7c1e37e493e406a1c86bdf917e1fdad27350f60f4ab6c49aea17ca055902baad",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0061-ttf.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0061-ttf.zpl",
+      "source_sha256": "1cfc957c47e9652ab5507f5e84579a4319cda1b2b58c6f494a349c464b5db59c",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0061-ttf.zpl",
+      "submitted_sha256": "9f71ed96ba8af623f6680c381f52baae984b8b1848ff59c69009a1e4a4c452ba",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0062-ttf.png": {
+      "captured_utc": "2026-10-08T20:25:32Z",
+      "height": 1218,
+      "png_sha256": "393d51ae9ab2244784f38a9cd8f5506bf849751ca6e1b7aeab81a3333c0642d2",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0062-ttf.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0062-ttf.zpl",
+      "source_sha256": "733c79cb40ff2c407af7f83f7207c8a2e877f56e00a3006f5799dc694daaba90",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0062-ttf.zpl",
+      "submitted_sha256": "d06a87d036667293c028260a05b83d61bf6ee8dcfd8426add56190a7db9f7bf7",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-t0067-ttf.png": {
+      "captured_utc": "2026-10-08T20:25:33Z",
+      "height": 1218,
+      "png_sha256": "eb3bd7a89f10da4474ea56e841b5188853ae106fcc75c3a17c27afde173c6cee",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-t0067-ttf.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-t0067-ttf.zpl",
+      "source_sha256": "fbd68438d32d05f37a9d1f750022d862af2ca5b6ac3098b472f5a97623238517",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-t0067-ttf.zpl",
+      "submitted_sha256": "28beacd37dfe3f4197f59198a54485881534aa4a3197db96f2942c8ee471324f",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-tt0003m_-ttf.png": {
+      "captured_utc": "2026-10-08T20:25:35Z",
+      "height": 1218,
+      "png_sha256": "a63fe6b48828b659c414edda7b9a505379d7af50b7ad6674b8f391906582ffe9",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-tt0003m_-ttf.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-tt0003m_-ttf.zpl",
+      "source_sha256": "8bc7b351c2f0582b5ee5e5a18ce6dc06aa3ebff47456b2ba690a592e678448d7",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-tt0003m_-ttf.zpl",
+      "submitted_sha256": "5da9b5cae83f3dbf945a349a8f0565b8a3db62d0078f2a4c29bd48ec232b496a",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-tt0005m_-ttf.png": {
+      "captured_utc": "2026-10-08T20:25:36Z",
+      "height": 1218,
+      "png_sha256": "6179162e3a1dee073541e2ca6251b10b5294b3eb203feedce9cc9ba568ea2da4",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-tt0005m_-ttf.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-tt0005m_-ttf.zpl",
+      "source_sha256": "3ac8db56e7ee824c92eb73bc1708b3dcaf40ce3d61b8f17da0b5e2b43c1cb210",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-tt0005m_-ttf.zpl",
+      "submitted_sha256": "d30d2750393bb577606b88b5900484f0e789fa37ea2b6b1791027c674e0a6f3b",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-u-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:37Z",
+      "height": 1218,
+      "png_sha256": "849ddb151de0de3f04ee901c506908222dde975bfa7fc2428ccc6548585e7e57",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-u-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-u-fnt.zpl",
+      "source_sha256": "1b6f42072782ab07d2bbd327c30b9824c2cafb95e898e5ab8d75458e4fd4b599",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-u-fnt.zpl",
+      "submitted_sha256": "440681f67514f6222cd4291080493b5a8916e3bbbb4786e1cbc2b129e206be41",
+      "width": 832
+    },
+    "benchmarks/accuracy/conformance-reference/font-rom-v-fnt.png": {
+      "captured_utc": "2026-10-08T20:25:38Z",
+      "height": 1218,
+      "png_sha256": "849ddb151de0de3f04ee901c506908222dde975bfa7fc2428ccc6548585e7e57",
+      "printer": "zd621",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "ram_resources": false,
+      "reference": "benchmarks/accuracy/conformance-reference/font-rom-v-fnt.png",
+      "session": 11,
+      "source": "benchmarks/accuracy/conformance-reference/font-rom-v-fnt.zpl",
+      "source_sha256": "90d6a4d2117c76721b3d26816bcb6bc87a65a96eef318483d0d0b7c9da0ca37c",
+      "submitted": "submitted/benchmarks/accuracy/conformance-reference/font-rom-v-fnt.zpl",
+      "submitted_sha256": "51f59a9fc98eb3bc1f2a6fa73a616cfbdace29dde71a9e06d08f380356fc7362",
+      "width": 832
+    },
     "benchmarks/accuracy/conformance-reference/hex-hash.png": {
       "captured_utc": "2026-10-08T02:26:28Z",
       "height": 1218,
@@ -17965,7 +19387,14 @@
       "width": 384
     }
   },
-  "finished_utc": "2026-10-08T02:39:45Z",
+  "extensions": [
+    {
+      "previous_capture": "history/201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521/capture.json",
+      "previous_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+      "started_utc": "2026-10-08T20:19:46Z"
+    }
+  ],
+  "finished_utc": "2026-10-08T20:26:11Z",
   "font_control": {
     "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
     "fonts": {
@@ -18091,6 +19520,62 @@
       "serial": "XXZMJ230802993",
       "status": "recovered",
       "verified_utc": "2026-10-08T02:39:45Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:19:46Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:20:15Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:20:48Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:21:18Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:21:31Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:22:01Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:22:34Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:23:04Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:23:05Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:23:35Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:24:08Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:24:38Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:24:38Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:25:08Z"
+    },
+    {
+      "method": "! U1 do \"device.reset\" \"\"",
+      "requested_utc": "2026-10-08T20:25:41Z",
+      "serial": "D7J211001302",
+      "status": "recovered",
+      "verified_utc": "2026-10-08T20:26:11Z"
     }
   ],
   "schema": 1,
@@ -18220,10 +19705,82 @@
       "started_utc": "2026-10-08T02:38:35Z",
       "status": "complete",
       "upload_sha256": "3053e480b99b6d0ed61a7ee0a6c3e44a43b10955090027216adf1b27a7e30244"
+    },
+    {
+      "finished_utc": "2026-10-08T20:21:19Z",
+      "identity": {
+        "firmware": "V93.21.33Z",
+        "host": "http://d7j211001302.bed.einic.org/",
+        "model": "ZTC ZD621-203dpi ZPL",
+        "serial": "D7J211001302"
+      },
+      "printer": "zd621",
+      "repeat_pixels_equal": true,
+      "resident_alias_normalization_pixels_equal": true,
+      "restoration_method": "verified device.reset",
+      "restoration_status": "verified after restart",
+      "restored_pixels_equal": true,
+      "started_utc": "2026-10-08T20:20:17Z",
+      "status": "complete",
+      "upload_sha256": "3053e480b99b6d0ed61a7ee0a6c3e44a43b10955090027216adf1b27a7e30244"
+    },
+    {
+      "finished_utc": "2026-10-08T20:23:05Z",
+      "identity": {
+        "firmware": "V93.21.33Z",
+        "host": "http://d7j211001302.bed.einic.org/",
+        "model": "ZTC ZD621-203dpi ZPL",
+        "serial": "D7J211001302"
+      },
+      "printer": "zd621",
+      "repeat_pixels_equal": true,
+      "resident_alias_normalization_pixels_equal": true,
+      "restoration_method": "verified device.reset",
+      "restoration_status": "verified after restart",
+      "restored_pixels_equal": true,
+      "started_utc": "2026-10-08T20:22:03Z",
+      "status": "complete",
+      "upload_sha256": "3053e480b99b6d0ed61a7ee0a6c3e44a43b10955090027216adf1b27a7e30244"
+    },
+    {
+      "finished_utc": "2026-10-08T20:24:38Z",
+      "identity": {
+        "firmware": "V93.21.33Z",
+        "host": "http://d7j211001302.bed.einic.org/",
+        "model": "ZTC ZD621-203dpi ZPL",
+        "serial": "D7J211001302"
+      },
+      "printer": "zd621",
+      "repeat_pixels_equal": true,
+      "resident_alias_normalization_pixels_equal": true,
+      "restoration_method": "verified device.reset",
+      "restoration_status": "verified after restart",
+      "restored_pixels_equal": true,
+      "started_utc": "2026-10-08T20:23:36Z",
+      "status": "complete",
+      "upload_sha256": "3053e480b99b6d0ed61a7ee0a6c3e44a43b10955090027216adf1b27a7e30244"
+    },
+    {
+      "finished_utc": "2026-10-08T20:26:11Z",
+      "identity": {
+        "firmware": "V93.21.33Z",
+        "host": "http://d7j211001302.bed.einic.org/",
+        "model": "ZTC ZD621-203dpi ZPL",
+        "serial": "D7J211001302"
+      },
+      "printer": "zd621",
+      "repeat_pixels_equal": true,
+      "resident_alias_normalization_pixels_equal": true,
+      "restoration_method": "verified device.reset",
+      "restoration_status": "verified after restart",
+      "restored_pixels_equal": true,
+      "started_utc": "2026-10-08T20:25:10Z",
+      "status": "complete",
+      "upload_sha256": "3053e480b99b6d0ed61a7ee0a6c3e44a43b10955090027216adf1b27a7e30244"
     }
   ],
   "source_manifests": {
-    "benchmarks/accuracy/conformance-reference/manifest.json": "9816936665607c8a13e78ca565a2bf63ccac68cdfdd9125c46a5e825c295a9d8",
+    "benchmarks/accuracy/conformance-reference/manifest.json": "f01221cbe4d6c876c9562fdb389c1298e0dc09568a56072624f9687d9bb3483e",
     "benchmarks/accuracy/external-reference/manifest.json": "f2711f3a17ab219712a6c0202fad2b9f0ee0ccaa3aebf56316fe63007cf1723c",
     "benchmarks/accuracy/layout-reference/manifest.json": "ea4e4e3f6d7053f8a4b6ce63216242cc37c33ebb77712787b017ce28dfe79bbf",
     "benchmarks/accuracy/reference/manifest.json": "833170206dbefc11933512fa18ba08b1e10be6638071eba5bb3030d881a1ad8d",
