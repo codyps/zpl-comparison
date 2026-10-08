@@ -1,10 +1,10 @@
 # ZPL rendering conformance corpus
 
-**600 standalone ZPL files**, exercising **68 content-command families**: 581 valid/boundary probes and 19 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
+**679 standalone ZPL files**, exercising **69 content-command families**: 660 valid/boundary probes and 19 malformed or out-of-range inputs. Four dense “torture labels” combine many features on one page. The focused files explain failures the dense pages expose, much like browser rendering conformance tests.
 
 [Complete command coverage and case catalog](https://github.com/codyps/zpl-comparison/blob/generated/test-data/render-conformance/COVERAGE.md) · [Manifest](manifest.json) · [Generator](generate.py) · [Existing printer accuracy report](https://github.com/codyps/zpl-comparison/blob/generated/docs/benchmarks/accuracy/README.md)
 
-These are tests of ZPL, not examples restricted to what this repository currently supports. No downloaded fonts, stored graphics/formats, disk operations, RFID, network configuration, print quantity, media calibration, darkness, speed or cutter commands are used. `^GF` graphics are inline. Canvas dimensions, orientation, mirroring, encoding and advanced text layout are included because they determine label pixels; they are not printer setup tests.
+These are tests of ZPL, not examples restricted to what this repository currently supports. No downloaded fonts, stored graphics/formats, disk writes, RFID, network configuration, print quantity, media calibration, darkness, speed or cutter commands are used. `^GF` graphics are inline. Canvas dimensions, orientation, mirroring, encoding and advanced text layout are included because they determine label pixels; they are not printer setup tests.
 
 ## Start with the combined pages
 
@@ -34,7 +34,7 @@ For layout measurements independent of glyph shapes, see the separate
 
 | Area | Examples and edge cases |
 | --- | --- |
-| Fonts | All A–Z/0–9 selectors, bitmap/scalable metrics, all four rotations, zero/default dimensions, 1-dot text, odd/even scale boundaries, anisotropic scaling, ascenders/descenders, punctuation |
+| Fonts | All 78 ZD621 ROM font filenames and the installed `E:TT0003M_.TTF` through `^A@` (default and explicit dimensions), all A–Z/0–9 selectors, bitmap/scalable metrics, all four rotations, zero/default dimensions, 1-dot text, odd/even scale boundaries, anisotropic scaling, ascenders/descenders, punctuation |
 | Text data | Empty text, leading/trailing/repeated spaces, a 3072-byte field, literal FV, FH escapes including prefixes/NUL/DEL, FE concatenation and forward/backward substrings, inline FN reuse |
 | Text layout | FO versus FT, three justification modes, baseline crosshairs, FP horizontal/vertical/reverse and tracking, FB L/C/R/J, narrow blocks, long words, overflow, signed line spacing, indent and explicit line breaks; TB rotations, wrap and height truncation |
 | Encoding | UTF-8, UTF-16 BE/LE, legacy character sets, remapping, combining marks, RTL/mixed scripts, CJK, supplementary and missing glyphs, nonbreaking/zero-width spaces, PA bidi/shaping/OpenType/default-glyph flags |
@@ -46,6 +46,16 @@ For layout measurements independent of glyph shapes, see the separate
 | Negative inputs | Bad enums, numeric ranges, encodings, hex escapes, raster count/stride, base64/CRC and symbol payloads; separate behavior observations, not valid-label fidelity scores |
 
 The manifest records exact file bytes (SHA-256), purpose, validity, font dependence, dimensions, commands and Zebra guide pages. The 24 compact probes are 640×320 dots, covering font baselines, wrapping, geometry, barcode state and compositing; see [their source inspiration](INSPIRATION.md). Most other labels are 832×1218 dots; imported isolated probes retain their original 832×300 canvas and barcode samples use 832×1218. Widths are multiples of 64 dots: the ZD621 HTTP preview rounds 812 to 832 and centers content ten dots to the right. Ordinary symbol comparisons exclude that transport behavior. `generate.py --native-preview --output DIR` adds explicit paired rounding controls in a separate diagnostic corpus. Dimensions are per-case, not inferred from filenames. Binary fixtures really contain bytes: do not rewrite them through a text editor or normalize line endings.
+
+The `fonts-rom` group covers every `.FNT`, `.TTF`, and `.TTE` filename in the
+[saved ZD621 ROM inventory](../../references/zd621-fonts-20261008/inventory.json),
+including fonts without a single-character alias. Each case selects the exact
+`Z:` path with `^A@` at default and explicit 32×24 dimensions. The GS case uses
+its symbol selectors A–E. The inventory is device/firmware-specific; the tests
+do not assume every listed resource is a distinct face or that a successful
+response rules out font fallback. Printer previews and Labelary responses are
+retained with hashes and timestamps; new cases enter the standard conformance
+comparison matrix. See the [capture notes](../../references/zd621-fonts-20261008/README.md).
 
 ## Reproduce and run
 

@@ -2,7 +2,7 @@
   "schema": 1,
   "service": "https://labelary.com/service.html",
   "started_utc": "2026-09-19T03:17:15+00:00",
-  "completed_utc": "2026-10-02T14:06:11+00:00",
+  "completed_utc": "2026-10-08T19:53:55+00:00",
   "renderer_version": null,
   "identity": "UTC capture timestamps; no renderer version exposed",
   "dpmm": 8,
@@ -22217,6 +22217,2218 @@
         832,
         1216
       ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-0-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-0-ttf.zpl",
+      "sha256": "8cc1532ef06f8922dc3c211dc96cf4fb939efc10fd6ca223cc4a5dec27668a46",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:21+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:22+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:22 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-0-ttf.png",
+      "png_sha256": "f57b3b3da4bea100171d224d7aca8c5694592d11a7104be6767227fd3feb9bd5",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-a-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-a-fnt.zpl",
+      "sha256": "a6bf61da1523d71cc2481268096807338a807a22556a01c76984e0b5b67b5787",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:22+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:22+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:22 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-a-fnt.png",
+      "png_sha256": "f57b3b3da4bea100171d224d7aca8c5694592d11a7104be6767227fd3feb9bd5",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-b-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-b-fnt.zpl",
+      "sha256": "f15e8f1cd3e1364f61702d905860c479f317e564a35011d82a713eebd0162452",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:22+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:23+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:23 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-b-fnt.png",
+      "png_sha256": "03d7216bc7035dcef94a3d7df19a744669509788a39d5c975b331ebeccd72018",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-d-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-d-fnt.zpl",
+      "sha256": "46490cdadadd5e93c52c54c0268310d7cd90faed5a2c194916b7a1d7b2d8ee2d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:23+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:24+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:24 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-d-fnt.png",
+      "png_sha256": "2610f0aec5254d7930019ffb88a63da2e5fd22a216760eac63881b56e9e287b8",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-e12-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-e12-fnt.zpl",
+      "sha256": "71fb0be5308d459c7d4f75e93a9a8137956847461575a1806d36025cd2954cc2",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:24+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:24+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:24 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-e12-fnt.png",
+      "png_sha256": "0fdc367a875d2b898b894caedc03dc07165a78facaec094fce1b107a77b3cce5",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-e24-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-e24-fnt.zpl",
+      "sha256": "69594dc06df0fd01437c5dc017e64532a2a2d26a5e36cc60a703fdd9bb794c1b",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:24+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:25+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:25 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-e24-fnt.png",
+      "png_sha256": "762f4b3497921cdc73336e273393a8645608937becce68d4f1a8045eb4763c1b",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-e6-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-e6-fnt.zpl",
+      "sha256": "6f97b6f926d7f46a79852a3ac667367a577e5bd06ca77967137e4e9172992628",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:25+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:26+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:26 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-e6-fnt.png",
+      "png_sha256": "4df199f37f4f358f7170705f8b6d228f199e487212d4912b4ba132359ab50770",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-e8-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-e8-fnt.zpl",
+      "sha256": "245ea34e1a86f90e2f6904e95bf9303aec27111bac10c9b49898331bd2eef928",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:26+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:26+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:26 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-e8-fnt.png",
+      "png_sha256": "4fd687930f61a317d6d10658fb387af6225a2845712c026306f5c11ba3656599",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl1-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl1-fnt.zpl",
+      "sha256": "4d45d17a3a8a6211adc624f63fa7d086426acacb4732028594a40fa46d0d5199",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:26+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:27+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:27 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl1-fnt.png",
+      "png_sha256": "47729890987757426058465714122e8efa7ea4c1e392267cb2a72fd1ef56fcb6",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl2-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl2-fnt.zpl",
+      "sha256": "df1945660a04c4156d3fb5a98cb9cf420f0689e3981201df0aeab14855d6d801",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:27+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:28+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:28 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl2-fnt.png",
+      "png_sha256": "c5410037c260bdb2f95b9b70829fdec115067176cc5995aedee6198441a4167c",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl3-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl3-fnt.zpl",
+      "sha256": "45a4e4312dcf3c5b4057ee292084dd4f2f6d5e93f1c0dddf390b342615e44de7",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:28+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:28+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:28 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl3-fnt.png",
+      "png_sha256": "c5410037c260bdb2f95b9b70829fdec115067176cc5995aedee6198441a4167c",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl300-1-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl300-1-fnt.zpl",
+      "sha256": "30df8a22f6007815efb97b25d746600d5e7e1ee243292a9e2d5d61565363f613",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:28+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:29+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:29 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl300-1-fnt.png",
+      "png_sha256": "9abe1921991b85a1bbf48aa88ef37c0c67f0b6a6392130f737ad6e309033b82e",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl300-2-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl300-2-fnt.zpl",
+      "sha256": "d9cf7d7f8d88fe75abbe077e22d1ffc6e5f8dae98838ba5fb33929e4554338b6",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:29+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:29+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:29 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl300-2-fnt.png",
+      "png_sha256": "9abe1921991b85a1bbf48aa88ef37c0c67f0b6a6392130f737ad6e309033b82e",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl300-3-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl300-3-fnt.zpl",
+      "sha256": "eda0c2e25789aaf4083f9b45cfce1885ecb140a2afedd91814d4e1bd9617031d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:29+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:30+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:30 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl300-3-fnt.png",
+      "png_sha256": "63d4f353715e2e26c89fd108b3aab45b00df47d04e1eed257c97380b46dbd987",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl300-4-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl300-4-fnt.zpl",
+      "sha256": "147e0ae0b304daf52679fc4c335a540236f6b789d49d09e49827ca3020ff74b2",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:30+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:31+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:31 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl300-4-fnt.png",
+      "png_sha256": "238ca7c0b3ce2886a58364b538ee1059a160b74e940445d80805b81a3d925870",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl300-5-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl300-5-fnt.zpl",
+      "sha256": "e0c12807f1a7097a883e5b227805bc0fff6ae0273b6a9fb220bd2c66f259455d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:31+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:31+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:31 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl300-5-fnt.png",
+      "png_sha256": "238ca7c0b3ce2886a58364b538ee1059a160b74e940445d80805b81a3d925870",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl4-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl4-fnt.zpl",
+      "sha256": "041e256e8d67928dd0b3e99110209048d0e734d39b3d95755fddafff68293ea4",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:31+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:32+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:32 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl4-fnt.png",
+      "png_sha256": "767ba60c76f60b738d833b7195aa0de8f390b9677ff80e66603da03c6afdd69c",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl5-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl5-fnt.zpl",
+      "sha256": "cccffbb2f3c04655cc2ee068974979d544f2416c3c352d32813cd769e7c0acbf",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:32+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:33+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:33 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl5-fnt.png",
+      "png_sha256": "c846052d6f901d23a9ea65a26bcebf4b0db4729d64ad4d1e9df833a3ffa0c6e9",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl6-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl6-fnt.zpl",
+      "sha256": "4eb04aa26a92414059009af57c574330282d564d1eae3a53ed3df3589c079fae",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:33+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:33+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:33 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl6-fnt.png",
+      "png_sha256": "c846052d6f901d23a9ea65a26bcebf4b0db4729d64ad4d1e9df833a3ffa0c6e9",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-epl7-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-epl7-fnt.zpl",
+      "sha256": "afd756cfdfbf201fb925f426842bed5f0f3621f68218891b0ff00cb4bd0cf0a0",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:33+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:34+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:34 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-epl7-fnt.png",
+      "png_sha256": "86e4ea330e207219f567f867998478f38094910209fca956ac93ee48f57428a6",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-f-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-f-fnt.zpl",
+      "sha256": "dd1ce596504bcd127fa89c58f5f9e646682170c8ac9cf020bb6999ae2cb2faa2",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:34+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:35+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:35 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-f-fnt.png",
+      "png_sha256": "97bd241f9ac3e2769a62e852adb2eab59639a6ba89d2d9a881040c10506fce79",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font0-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font0-fnt.zpl",
+      "sha256": "892327a765edc6818938f6ce7febc1b52e12a22e82a30cfd980b7750caadb5c2",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:35+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:35+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:35 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font0-fnt.png",
+      "png_sha256": "274e8078f17969695b6ce524b02145278a080099a6b42a3bfeb0ff483a55a363",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font1-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font1-fnt.zpl",
+      "sha256": "6b4ab18d2360f87c4bfc8db9cca08b2d3af60e1acdd9cce9a6f400a6711f14b1",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:35+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:36+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:36 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font1-fnt.png",
+      "png_sha256": "07d3b91f2032550ea5d935ee1546569ff8d3c711ab56f33328dcf533fffc1fdf",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font2-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font2-fnt.zpl",
+      "sha256": "f1f185a848544c22e98fe77ba8116794e1192983b69624922aa79e5f945594bd",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:36+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:37+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:37 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font2-fnt.png",
+      "png_sha256": "78da185380b590be51f080feea6a7bd87c6d964910db6fde5fe69ef2c594cecc",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font3-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font3-fnt.zpl",
+      "sha256": "2dc481a7ce15978c6ce49c20ab1d801da50098b7a766b3838607c49baa5fcf04",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:37+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:37+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:37 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font3-fnt.png",
+      "png_sha256": "78da185380b590be51f080feea6a7bd87c6d964910db6fde5fe69ef2c594cecc",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font4-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font4-fnt.zpl",
+      "sha256": "fd98e6e46cb517a7ce9422ce3320930c3a355d0d38fb5d0b27b551e543ec0cd3",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:37+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:38+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:38 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font4-fnt.png",
+      "png_sha256": "9ed2de37cae816b4fab6bd8fe6ef232441b029ae6f8650f70dfa108d45e49519",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font5-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font5-fnt.zpl",
+      "sha256": "63f75b8cc1d1f9909211a373f16df9da6813dd6054e4130986e32ed2e1ff36bb",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:38+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:39+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:39 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font5-fnt.png",
+      "png_sha256": "c56f86471d34b6d1cb2ffc27672b1d175e9d3e5ddcfddb1e176fa9fb49351e96",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font6-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font6-fnt.zpl",
+      "sha256": "7ffd87cc5042f211f45dec06cbea8e56f84abbe9b7eac29ec62201e54e008a2c",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:39+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:39+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:39 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font6-fnt.png",
+      "png_sha256": "c56f86471d34b6d1cb2ffc27672b1d175e9d3e5ddcfddb1e176fa9fb49351e96",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font7-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font7-fnt.zpl",
+      "sha256": "e3288ea1e251049dd44d4278f92cfd4844d76f28bf33ef4e2a7ceecae85dab71",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:39+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:40+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:40 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font7-fnt.png",
+      "png_sha256": "d6e363682980d3af9bd395e54bd7b6ae546d8256d27356e75fe98ae08841dd7b",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-font8-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-font8-fnt.zpl",
+      "sha256": "9cb118edc3314c773e9fd0687a95d39eb34c8a526fba32eac709836735af4521",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:40+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:41+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:40 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-font8-fnt.png",
+      "png_sha256": "d6e363682980d3af9bd395e54bd7b6ae546d8256d27356e75fe98ae08841dd7b",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-g-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-g-fnt.zpl",
+      "sha256": "8d1c5a484bb975e80ede171868c5ae61e604efa1083f0aa1ba2a831a370dd02f",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:41+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:41+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:41 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-g-fnt.png",
+      "png_sha256": "5741bd6b201b3ae1dcf73a017e3e6c3b39cc2683d0064d42fb7c78b3e071f413",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-gs-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-gs-fnt.zpl",
+      "sha256": "c835f2881fd465d2eed1c02277af9bc31a5b0a268f91139b90d96ea441b2ac33",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:41+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:42+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:42 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-gs-fnt.png",
+      "png_sha256": "c5aa6cbc9d647a01d610252dd8ede6f6038535f615c5fefe158ac965d47950bf",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-h12-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-h12-fnt.zpl",
+      "sha256": "4ec083cf714ed09a73913c072ae7be86d626afc9e91d96bf3d8420004f0a4cc3",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:42+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:42+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:42 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-h12-fnt.png",
+      "png_sha256": "d54e07bcf10da366cf813842396b9b8942f3abeb04b2c859f14c5017731f2b3f",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-h24-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-h24-fnt.zpl",
+      "sha256": "8ab71fad99c4d663d2c9e9ac82749eb111291be0387742174e4e645b945cf60c",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:42+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:43+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:43 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-h24-fnt.png",
+      "png_sha256": "597e8e09925f8bcbfee0bc45892c3c1fd99df5ecaa871f857b033349f8300596",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-h6-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-h6-fnt.zpl",
+      "sha256": "9499fb115f556221fa435e0832e3cc574e07248e78ceabed860b636674cc8573",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:43+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:44+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:44 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-h6-fnt.png",
+      "png_sha256": "6b7363446476d7450329178220a6cec527f77df805e5a340f6959cc469006be3",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-h8-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-h8-fnt.zpl",
+      "sha256": "65dab7ece2568fa9b7aa4e36cbd03286f8b8a6f0bb275ab96608fa7fcc2d48a4",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:44+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:44+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:44 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-h8-fnt.png",
+      "png_sha256": "c451394520c8609d7a2829ef6516977c01fc781d6e18359291710b6893f496da",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-lmu-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-lmu-fnt.zpl",
+      "sha256": "44b0752409db0636fa8d1c87695eb6660fce57ed59ff9a8428d7a7a45df379f9",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:44+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:45+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:45 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-lmu-fnt.png",
+      "png_sha256": "ede0119fe4b54c7a0993c0c4244e8f2fdc9c4b4aafc1901ba5b4a0a5861a890a",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-lmv-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-lmv-fnt.zpl",
+      "sha256": "6e85018073e952d3a191fc277e9e5ae66f0a622c8d8d124a91ac6b1cf9419284",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:45+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:46+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:46 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-lmv-fnt.png",
+      "png_sha256": "b301ce006bbe50fe36f5ee52d039c05a9e551e1e044d55b697032ad502411395",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-lmw-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-lmw-fnt.zpl",
+      "sha256": "56f5476c988c4f845567f5142636b2758d33b6480430539a8a9bdb60b6013775",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:46+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:46+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:46 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-lmw-fnt.png",
+      "png_sha256": "b301ce006bbe50fe36f5ee52d039c05a9e551e1e044d55b697032ad502411395",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-lmx-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-lmx-fnt.zpl",
+      "sha256": "a9f19866e1073222186fefd51955a868e43348e54997a943e3bc9f065b601fa8",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:46+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:47+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:47 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-lmx-fnt.png",
+      "png_sha256": "236d5538dd347ba2f3979ad2e9bad36dc0b99f181d956fd8b9bf112b7db85875",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-lmy-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-lmy-fnt.zpl",
+      "sha256": "ab1a7a62ba046fc138fdb9f18e026a111b80838856fb82c43fc43772ed970978",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:47+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:48+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:48 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-lmy-fnt.png",
+      "png_sha256": "f18802ca907def7c97d8180af1fb216678402193a3534a9f7f0ac8396a1a85a7",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-lmz-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-lmz-fnt.zpl",
+      "sha256": "36e7b9001775c907d067ba97c32f0ab438d691c01cfb8a3a243e281b3ba3d69d",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:48+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:48+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:48 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-lmz-fnt.png",
+      "png_sha256": "f18802ca907def7c97d8180af1fb216678402193a3534a9f7f0ac8396a1a85a7",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-p-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-p-fnt.zpl",
+      "sha256": "3a7ff1b21ec9cda1617b5ca54d8e583c93b2c4feb0370207a7b949ad84e1da26",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:48+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:49+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:49 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-p-fnt.png",
+      "png_sha256": "564e9dc159737897ef3f4f83bbd39515e37ea2d6fe8747b294d19bfccf5e4716",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-q-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-q-fnt.zpl",
+      "sha256": "1882e8ff2d3031cc08676772accfbfcafd7ff2401a1f129b670ae85a60412192",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:49+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:50+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:50 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-q-fnt.png",
+      "png_sha256": "37eeec7db7a59ebf531e4762607674ac1d87891b57852febda88cc6818e161a4",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-r-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-r-fnt.zpl",
+      "sha256": "71e56d5d0df35e777443268b9ac5cb7e6a9cb9f4838ad8b55c658c5250c6f14c",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:50+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:50+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:50 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-r-fnt.png",
+      "png_sha256": "a72c339e5a578ea8404062e73698afa2f19768dd5ab70018aedd3784464ff627",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-s-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-s-fnt.zpl",
+      "sha256": "2c4ba0278af7d65df86191b4dba34f4de9d2fcd8b3537f7ca027db1a84d26b4e",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:50+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:51+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:51 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-s-fnt.png",
+      "png_sha256": "ede0181a46fd378ecba139f05ff2feadd15d7ed70e17ea333fe753345adc0fb7",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t-fnt.zpl",
+      "sha256": "77f31272156b95ac82cf45ae3fe36cc0d190310a8d06c91486db78f35bf13c95",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:51+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:52+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:52 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t-fnt.png",
+      "png_sha256": "e0c8a8be347c57757655943cbf8bd644a3ba53d712fa820cd88ff2a7511edb8d",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0000-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0000-fnt.zpl",
+      "sha256": "d426798a5d542dd1b73b32d9284f4bbec9769a6062cab71e6714eeac2a6c0a71",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:52+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:52+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:52 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0000-fnt.png",
+      "png_sha256": "c47e4ae28dc4b528767089faf090e235bcac70c7687bd2bce94a641cf1de0159",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0001-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0001-fnt.zpl",
+      "sha256": "4ba312d28dfef4388def0c249d79dd8f857307611cc42739913f3f6f7cffb841",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:52+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:53+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:53 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0001-fnt.png",
+      "png_sha256": "2db0d1e72d40022649ebda79a307a947bc613e949662bfbfd00f3274e21ba325",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0002-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0002-fnt.zpl",
+      "sha256": "398632557721621faf4d24940dd6c79f4b9a09caadb6b56da908b0dbe2f03126",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:53+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:54+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:53 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0002-fnt.png",
+      "png_sha256": "2db0d1e72d40022649ebda79a307a947bc613e949662bfbfd00f3274e21ba325",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0007-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0007-fnt.zpl",
+      "sha256": "64f2ec60b0835e4fce46255aa64eb4830efb6b68ec0b6a728973ba25a3bec424",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:54+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:54+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:54 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0007-fnt.png",
+      "png_sha256": "1a68e920a7b3c8a57e2a581ee23775d9600743e8e46884455da92e3c9a19a01e",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0020-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0020-fnt.zpl",
+      "sha256": "949ccdb6a092716c0abcc4f5614bd428fa7055d032c36b618941aaa552fcc804",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:54+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:55+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:55 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0020-fnt.png",
+      "png_sha256": "abdbbb1f6aa42e819f34c3d31a9b6b7ccdcc4c2d606696f554a067c8b83875ab",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0021-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0021-fnt.zpl",
+      "sha256": "c9824deeec8dd3057f9410cbb3ab59de9fcd83fc85a27c06537ef4a457067cd2",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:55+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:56+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:55 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0021-fnt.png",
+      "png_sha256": "abdbbb1f6aa42e819f34c3d31a9b6b7ccdcc4c2d606696f554a067c8b83875ab",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0022-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0022-fnt.zpl",
+      "sha256": "7226bf1aa3cfbff1e9be4d69f687623a6481df70d238f8944492b26de7547994",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:56+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:56+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:56 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0022-fnt.png",
+      "png_sha256": "06f2b9c28b9224691a8dc5e27c0d90d880c120a1b1ee1a3963b1faca42f32c6e",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0023-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0023-fnt.zpl",
+      "sha256": "8a24b01f74213df77d1efc779ac9c6ad174f77682ef5042ea1487b899b6f5696",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:56+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:57+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:57 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0023-fnt.png",
+      "png_sha256": "11b6e6ec1a0413e9124b37ead5efe9da7afe0e8b86f11195cc88e76f340e01e8",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0024-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0024-fnt.zpl",
+      "sha256": "fe7a97711b78eb878b51d67ccc4a67e357dbfb8c4027b275b2b31f4626429122",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:57+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:57+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:57 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0024-fnt.png",
+      "png_sha256": "11b6e6ec1a0413e9124b37ead5efe9da7afe0e8b86f11195cc88e76f340e01e8",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0025-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0025-ttf.zpl",
+      "sha256": "51358bda00cab8a1c4220e89dd6146484f8192cff87fbecf8865cfa68f2b3c2b",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:57+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:58+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:58 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0025-ttf.png",
+      "png_sha256": "6cd67fc874d05b40692ee601aa6e024f633ee3085cb5865bb35f52a41df3e58b",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0026-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0026-ttf.zpl",
+      "sha256": "9d8bf52055287bf489881dc245859a24676a83363e3f12f596f43e7cf782bf7c",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:58+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:59+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:59 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0026-ttf.png",
+      "png_sha256": "ee2eaaaf2af6806568ef1abe469aae0dea2e8ddee6562b2454ea55417edcb6ac",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0028-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0028-ttf.zpl",
+      "sha256": "34d71cf17d32ea832d9556265918c74f1bc00081c0ec790126fa0eb766ffdee2",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:59+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:49:59+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:49:59 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0028-ttf.png",
+      "png_sha256": "ee2eaaaf2af6806568ef1abe469aae0dea2e8ddee6562b2454ea55417edcb6ac",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0030-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0030-fnt.zpl",
+      "sha256": "a8e687ecdbdebea9f1e2c9f9ccfabe4b401cc202c9192001c1045edde96b0ee5",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:49:59+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:00+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:00 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0030-fnt.png",
+      "png_sha256": "c267f1cdcc16f72d14fffeb8137c6cbcdf2f22b831ada83beb25530e79c58f8f",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0031-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0031-fnt.zpl",
+      "sha256": "ed52c2ca10f25222e1ed3e3964bde5099dd3b690f7beb76a5170aeff7af35505",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:00+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:01+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:01 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0031-fnt.png",
+      "png_sha256": "668110ac3e50dfc29a20ee1cef73941f714d555d2f29478115cebc7354e35746",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0032-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0032-fnt.zpl",
+      "sha256": "8dbba284edecdde5951e0410ea4f3ebf3db5d5fe483aadddf1d35d39ec9173ce",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:01+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:01+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:01 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0032-fnt.png",
+      "png_sha256": "668110ac3e50dfc29a20ee1cef73941f714d555d2f29478115cebc7354e35746",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0033-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0033-fnt.zpl",
+      "sha256": "225ecbef429f7d141e29432a7f50c6562c3abf7f87bdabf6d2c0c75518848433",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:01+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:02+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:02 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0033-fnt.png",
+      "png_sha256": "4b2202ee08ca47ff00dc4eaae697770fd662ad08113d3fad4c519726229be445",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0034-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0034-fnt.zpl",
+      "sha256": "d5ce9b393f93d6ae335b4763adc16a66afc8fc81868faf3f041e563db73904bb",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:02+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:03+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:03 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0034-fnt.png",
+      "png_sha256": "16d8c4f97b6c66b092f99275ea805f3e4cddf566277e945cde546ed4e49e53e4",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0035-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0035-fnt.zpl",
+      "sha256": "52594f48881944f0950b41750ee9d65e46a862b78d2935c6ca7c849d49a1e52b",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:03+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:03+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:03 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0035-fnt.png",
+      "png_sha256": "16d8c4f97b6c66b092f99275ea805f3e4cddf566277e945cde546ed4e49e53e4",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0036-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0036-fnt.zpl",
+      "sha256": "29b167b069b96df5bf33d6bb6b3521e7aab129ec1c07c29440beea23e48d87af",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:03+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:04+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:04 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0036-fnt.png",
+      "png_sha256": "363ffa343f9fa6498220a03bc14d295c2a983b9b6dc1fc3a4de6e2e7038621f4",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0037-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0037-fnt.zpl",
+      "sha256": "b2a9a38eb621ba86290f9401000d927783f47cb71eb620dc3a13ec9df08bb501",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:04+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:05+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:05 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0037-fnt.png",
+      "png_sha256": "a98d0c300e7ad919d7a4b23693fde0c9622e199f040230c567e594244d54b67c",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0038-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0038-fnt.zpl",
+      "sha256": "c9770e729d2d27348aca137368e5c8840852597a27f8641d0b90ee8645a8ff91",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:05+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:05+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:05 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0038-fnt.png",
+      "png_sha256": "a98d0c300e7ad919d7a4b23693fde0c9622e199f040230c567e594244d54b67c",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0039-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0039-fnt.zpl",
+      "sha256": "655ffe8eddb49ebdb412340e53ed3a8c26a57a8cef4950a7ef52e4c14eab2a98",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:05+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:06+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:06 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0039-fnt.png",
+      "png_sha256": "1e95613fa7792ad3dff699a35ec00e50f5d12e4931aeb8c419fce5062782f0b8",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0040-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0040-fnt.zpl",
+      "sha256": "f87814ac87b0051461302c483e3d6c47c7ad9014099b99611912c1341605e4a7",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:06+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:07+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:07 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0040-fnt.png",
+      "png_sha256": "9067a2104957c2ca7e1c5730cd5dc556562569773e7cc9cce467675a576e9bd0",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0041-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0041-fnt.zpl",
+      "sha256": "437e16bd2c2a74fe76d7dbb790fad9b2b8f163296525f4d22439d953b78723d7",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:07+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:07+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:07 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0041-fnt.png",
+      "png_sha256": "9067a2104957c2ca7e1c5730cd5dc556562569773e7cc9cce467675a576e9bd0",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0061-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0061-ttf.zpl",
+      "sha256": "1cfc957c47e9652ab5507f5e84579a4319cda1b2b58c6f494a349c464b5db59c",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:07+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:08+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:08 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0061-ttf.png",
+      "png_sha256": "e6e4e34087a76f1af5e007bbf8572811795e6ad7e2565bf1afa2e9027c91a3cb",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0062-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0062-ttf.zpl",
+      "sha256": "733c79cb40ff2c407af7f83f7207c8a2e877f56e00a3006f5799dc694daaba90",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:08+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:09+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:09 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0062-ttf.png",
+      "png_sha256": "2a121a1f2b9bed8b90987718a9560d5044b9d8c138ccc7d8497fa85520062905",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-t0067-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-t0067-ttf.zpl",
+      "sha256": "fbd68438d32d05f37a9d1f750022d862af2ca5b6ac3098b472f5a97623238517",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:09+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:09+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:09 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-t0067-ttf.png",
+      "png_sha256": "2a121a1f2b9bed8b90987718a9560d5044b9d8c138ccc7d8497fa85520062905",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-tt0003m_-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-tt0003m_-ttf.zpl",
+      "sha256": "8bc7b351c2f0582b5ee5e5a18ce6dc06aa3ebff47456b2ba690a592e678448d7",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:09+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:10+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:10 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-tt0003m_-ttf.png",
+      "png_sha256": "dc9c9596455db31ac8b5f1dc01db82977da618ac5a97ea08559bb340a67c08ad",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-tt0005m_-ttf",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-tt0005m_-ttf.zpl",
+      "sha256": "3ac8db56e7ee824c92eb73bc1708b3dcaf40ce3d61b8f17da0b5e2b43c1cb210",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:10+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:11+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:11 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-tt0005m_-ttf.png",
+      "png_sha256": "2af7553c1c0eb20c7d5ca6849c3c17cf78f4efd76f1dccf65098d2e57c7b63dd",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-u-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-u-fnt.zpl",
+      "sha256": "1b6f42072782ab07d2bbd327c30b9824c2cafb95e898e5ab8d75458e4fd4b599",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:11+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:11+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:11 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-u-fnt.png",
+      "png_sha256": "9ac26f6e94dc03ec40432bb9fbeda76248cb7886105fbeb72a86b6d97e43833c",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-rom-v-fnt",
+      "source": "test-data/render-conformance/cases/fonts-rom/font-rom-v-fnt.zpl",
+      "sha256": "90d6a4d2117c76721b3d26816bcb6bc87a65a96eef318483d0d0b7c9da0ca37c",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:50:11+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:50:12+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:50:12 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-rom-v-fnt.png",
+      "png_sha256": "41b5e97f96bdeb02d20b2b3d1c0a38fbcf28421cb21d8d72671e28f1ca014058",
+      "dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "suite": "conformance",
+      "name": "font-installed-tt0003m_-ttf",
+      "source": "test-data/render-conformance/cases/fonts-installed/font-installed-tt0003m_-ttf.zpl",
+      "sha256": "710f3ab9065e89c310a5176285aa620049d22b9b96da6c5024c184c2fd312724",
+      "width": 832,
+      "height": 1218,
+      "validity": "valid",
+      "requested_utc": "2026-10-08T19:53:54+00:00",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/4.098523x6.000000/0/",
+      "received_utc": "2026-10-08T19:53:55+00:00",
+      "http_status": 200,
+      "headers": {
+        "date": "Thu, 08 Oct 2026 19:53:55 GMT",
+        "content-type": "image/png",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "attempts": 1,
+      "renderer_version": null,
+      "status": "rendered",
+      "image": "images/conformance--font-installed-tt0003m_-ttf.png",
+      "png_sha256": "f1ba09e368631702813658a83a4e5f3ab5f242cfe97b03578a5e68cc94853eb1",
+      "dimensions": [
+        832,
+        1218
+      ]
     }
   ],
   "extensions": [
@@ -22249,6 +24461,16 @@
       "started_utc": "2026-10-02T14:05:56+00:00",
       "previous_completed_utc": "2026-09-30T03:44:32+00:00",
       "existing_cases": 762
+    },
+    {
+      "started_utc": "2026-10-08T19:49:21+00:00",
+      "previous_completed_utc": "2026-10-02T14:06:11+00:00",
+      "existing_cases": 784
+    },
+    {
+      "started_utc": "2026-10-08T19:53:54+00:00",
+      "previous_completed_utc": "2026-10-08T19:50:12+00:00",
+      "existing_cases": 862
     }
   ],
   "superseded": [

@@ -20234,6 +20234,8225 @@
       ]
     },
     {
+      "name": "font-rom-0-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:0.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-0-ttf.zpl",
+      "sha256": "8cc1532ef06f8922dc3c211dc96cf4fb939efc10fd6ca223cc4a5dec27668a46",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-a-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:A.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-a-fnt.zpl",
+      "sha256": "a6bf61da1523d71cc2481268096807338a807a22556a01c76984e0b5b67b5787",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-b-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:B.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-b-fnt.zpl",
+      "sha256": "f15e8f1cd3e1364f61702d905860c479f317e564a35011d82a713eebd0162452",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-d-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:D.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-d-fnt.zpl",
+      "sha256": "46490cdadadd5e93c52c54c0268310d7cd90faed5a2c194916b7a1d7b2d8ee2d",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-e12-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:E12.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-e12-fnt.zpl",
+      "sha256": "71fb0be5308d459c7d4f75e93a9a8137956847461575a1806d36025cd2954cc2",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-e24-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:E24.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-e24-fnt.zpl",
+      "sha256": "69594dc06df0fd01437c5dc017e64532a2a2d26a5e36cc60a703fdd9bb794c1b",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-e6-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:E6.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-e6-fnt.zpl",
+      "sha256": "6f97b6f926d7f46a79852a3ac667367a577e5bd06ca77967137e4e9172992628",
+      "bytes": 146,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-e8-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:E8.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-e8-fnt.zpl",
+      "sha256": "245ea34e1a86f90e2f6904e95bf9303aec27111bac10c9b49898331bd2eef928",
+      "bytes": 146,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl1-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL1.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl1-fnt.zpl",
+      "sha256": "4d45d17a3a8a6211adc624f63fa7d086426acacb4732028594a40fa46d0d5199",
+      "bytes": 150,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl2-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL2.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl2-fnt.zpl",
+      "sha256": "df1945660a04c4156d3fb5a98cb9cf420f0689e3981201df0aeab14855d6d801",
+      "bytes": 150,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl3-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL3.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl3-fnt.zpl",
+      "sha256": "45a4e4312dcf3c5b4057ee292084dd4f2f6d5e93f1c0dddf390b342615e44de7",
+      "bytes": 150,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl300-1-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL300-1.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl300-1-fnt.zpl",
+      "sha256": "30df8a22f6007815efb97b25d746600d5e7e1ee243292a9e2d5d61565363f613",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl300-2-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL300-2.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl300-2-fnt.zpl",
+      "sha256": "d9cf7d7f8d88fe75abbe077e22d1ffc6e5f8dae98838ba5fb33929e4554338b6",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl300-3-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL300-3.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl300-3-fnt.zpl",
+      "sha256": "eda0c2e25789aaf4083f9b45cfce1885ecb140a2afedd91814d4e1bd9617031d",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl300-4-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL300-4.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl300-4-fnt.zpl",
+      "sha256": "147e0ae0b304daf52679fc4c335a540236f6b789d49d09e49827ca3020ff74b2",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl300-5-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL300-5.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl300-5-fnt.zpl",
+      "sha256": "e0c12807f1a7097a883e5b227805bc0fff6ae0273b6a9fb220bd2c66f259455d",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl4-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL4.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl4-fnt.zpl",
+      "sha256": "041e256e8d67928dd0b3e99110209048d0e734d39b3d95755fddafff68293ea4",
+      "bytes": 150,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl5-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL5.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-epl5-fnt.zpl",
+      "sha256": "cccffbb2f3c04655cc2ee068974979d544f2416c3c352d32813cd769e7c0acbf",
+      "bytes": 150,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl6-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL6.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "reference_unscored_reason": "ZD621 returned a blank preview for this ROM font and sample; retained as a diagnostic, not a font fidelity score",
+      "file": "cases/fonts-rom/font-rom-epl6-fnt.zpl",
+      "sha256": "4eb04aa26a92414059009af57c574330282d564d1eae3a53ed3df3589c079fae",
+      "bytes": 150,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-epl7-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:EPL7.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "reference_unscored_reason": "ZD621 returned a blank preview for this ROM font and sample; retained as a diagnostic, not a font fidelity score",
+      "file": "cases/fonts-rom/font-rom-epl7-fnt.zpl",
+      "sha256": "afd756cfdfbf201fb925f426842bed5f0f3621f68218891b0ff00cb4bd0cf0a0",
+      "bytes": 150,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-f-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:F.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-f-fnt.zpl",
+      "sha256": "dd1ce596504bcd127fa89c58f5f9e646682170c8ac9cf020bb6999ae2cb2faa2",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font0-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT0.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font0-fnt.zpl",
+      "sha256": "892327a765edc6818938f6ce7febc1b52e12a22e82a30cfd980b7750caadb5c2",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font1-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT1.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font1-fnt.zpl",
+      "sha256": "6b4ab18d2360f87c4bfc8db9cca08b2d3af60e1acdd9cce9a6f400a6711f14b1",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font2-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT2.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font2-fnt.zpl",
+      "sha256": "f1f185a848544c22e98fe77ba8116794e1192983b69624922aa79e5f945594bd",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font3-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT3.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font3-fnt.zpl",
+      "sha256": "2dc481a7ce15978c6ce49c20ab1d801da50098b7a766b3838607c49baa5fcf04",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font4-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT4.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font4-fnt.zpl",
+      "sha256": "fd98e6e46cb517a7ce9422ce3320930c3a355d0d38fb5d0b27b551e543ec0cd3",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font5-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT5.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font5-fnt.zpl",
+      "sha256": "63f75b8cc1d1f9909211a373f16df9da6813dd6054e4130986e32ed2e1ff36bb",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font6-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT6.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font6-fnt.zpl",
+      "sha256": "7ffd87cc5042f211f45dec06cbea8e56f84abbe9b7eac29ec62201e54e008a2c",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font7-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT7.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font7-fnt.zpl",
+      "sha256": "e3288ea1e251049dd44d4278f92cfd4844d76f28bf33ef4e2a7ceecae85dab71",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-font8-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:FONT8.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-font8-fnt.zpl",
+      "sha256": "9cb118edc3314c773e9fd0687a95d39eb34c8a526fba32eac709836735af4521",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-g-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:G.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-g-fnt.zpl",
+      "sha256": "8d1c5a484bb975e80ede171868c5ae61e604efa1083f0aa1ba2a831a370dd02f",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-gs-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:GS.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-gs-fnt.zpl",
+      "sha256": "c835f2881fd465d2eed1c02277af9bc31a5b0a268f91139b90d96ea441b2ac33",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-h12-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:H12.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-h12-fnt.zpl",
+      "sha256": "4ec083cf714ed09a73913c072ae7be86d626afc9e91d96bf3d8420004f0a4cc3",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-h24-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:H24.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-h24-fnt.zpl",
+      "sha256": "8ab71fad99c4d663d2c9e9ac82749eb111291be0387742174e4e645b945cf60c",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-h6-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:H6.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-h6-fnt.zpl",
+      "sha256": "9499fb115f556221fa435e0832e3cc574e07248e78ceabed860b636674cc8573",
+      "bytes": 146,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-h8-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:H8.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-h8-fnt.zpl",
+      "sha256": "65dab7ece2568fa9b7aa4e36cbd03286f8b8a6f0bb275ab96608fa7fcc2d48a4",
+      "bytes": 146,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-lmu-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:LMU.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "reference_unscored_reason": "ZD621 returned a blank preview for this ROM font and sample; retained as a diagnostic, not a font fidelity score",
+      "file": "cases/fonts-rom/font-rom-lmu-fnt.zpl",
+      "sha256": "44b0752409db0636fa8d1c87695eb6660fce57ed59ff9a8428d7a7a45df379f9",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-lmv-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:LMV.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-lmv-fnt.zpl",
+      "sha256": "6e85018073e952d3a191fc277e9e5ae66f0a622c8d8d124a91ac6b1cf9419284",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-lmw-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:LMW.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-lmw-fnt.zpl",
+      "sha256": "56f5476c988c4f845567f5142636b2758d33b6480430539a8a9bdb60b6013775",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-lmx-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:LMX.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-lmx-fnt.zpl",
+      "sha256": "a9f19866e1073222186fefd51955a868e43348e54997a943e3bc9f065b601fa8",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-lmy-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:LMY.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-lmy-fnt.zpl",
+      "sha256": "ab1a7a62ba046fc138fdb9f18e026a111b80838856fb82c43fc43772ed970978",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-lmz-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:LMZ.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-lmz-fnt.zpl",
+      "sha256": "36e7b9001775c907d067ba97c32f0ab438d691c01cfb8a3a243e281b3ba3d69d",
+      "bytes": 148,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-p-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:P.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-p-fnt.zpl",
+      "sha256": "3a7ff1b21ec9cda1617b5ca54d8e583c93b2c4feb0370207a7b949ad84e1da26",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-q-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:Q.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-q-fnt.zpl",
+      "sha256": "1882e8ff2d3031cc08676772accfbfcafd7ff2401a1f129b670ae85a60412192",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-r-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:R.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-r-fnt.zpl",
+      "sha256": "71e56d5d0df35e777443268b9ac5cb7e6a9cb9f4838ad8b55c658c5250c6f14c",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-s-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:S.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-s-fnt.zpl",
+      "sha256": "2c4ba0278af7d65df86191b4dba34f4de9d2fcd8b3537f7ca027db1a84d26b4e",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t-fnt.zpl",
+      "sha256": "77f31272156b95ac82cf45ae3fe36cc0d190310a8d06c91486db78f35bf13c95",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0000-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0000.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0000-fnt.zpl",
+      "sha256": "d426798a5d542dd1b73b32d9284f4bbec9769a6062cab71e6714eeac2a6c0a71",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0001-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0001.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0001-fnt.zpl",
+      "sha256": "4ba312d28dfef4388def0c249d79dd8f857307611cc42739913f3f6f7cffb841",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0002-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0002.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0002-fnt.zpl",
+      "sha256": "398632557721621faf4d24940dd6c79f4b9a09caadb6b56da908b0dbe2f03126",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0007-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0007.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0007-fnt.zpl",
+      "sha256": "64f2ec60b0835e4fce46255aa64eb4830efb6b68ec0b6a728973ba25a3bec424",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0020-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0020.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0020-fnt.zpl",
+      "sha256": "949ccdb6a092716c0abcc4f5614bd428fa7055d032c36b618941aaa552fcc804",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0021-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0021.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0021-fnt.zpl",
+      "sha256": "c9824deeec8dd3057f9410cbb3ab59de9fcd83fc85a27c06537ef4a457067cd2",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0022-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0022.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0022-fnt.zpl",
+      "sha256": "7226bf1aa3cfbff1e9be4d69f687623a6481df70d238f8944492b26de7547994",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0023-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0023.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0023-fnt.zpl",
+      "sha256": "8a24b01f74213df77d1efc779ac9c6ad174f77682ef5042ea1487b899b6f5696",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0024-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0024.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0024-fnt.zpl",
+      "sha256": "fe7a97711b78eb878b51d67ccc4a67e357dbfb8c4027b275b2b31f4626429122",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0025-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0025.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0025-ttf.zpl",
+      "sha256": "51358bda00cab8a1c4220e89dd6146484f8192cff87fbecf8865cfa68f2b3c2b",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0026-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0026.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0026-ttf.zpl",
+      "sha256": "9d8bf52055287bf489881dc245859a24676a83363e3f12f596f43e7cf782bf7c",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0028-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0028.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0028-ttf.zpl",
+      "sha256": "34d71cf17d32ea832d9556265918c74f1bc00081c0ec790126fa0eb766ffdee2",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0030-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0030.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0030-fnt.zpl",
+      "sha256": "a8e687ecdbdebea9f1e2c9f9ccfabe4b401cc202c9192001c1045edde96b0ee5",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0031-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0031.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0031-fnt.zpl",
+      "sha256": "ed52c2ca10f25222e1ed3e3964bde5099dd3b690f7beb76a5170aeff7af35505",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0032-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0032.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0032-fnt.zpl",
+      "sha256": "8dbba284edecdde5951e0410ea4f3ebf3db5d5fe483aadddf1d35d39ec9173ce",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0033-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0033.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0033-fnt.zpl",
+      "sha256": "225ecbef429f7d141e29432a7f50c6562c3abf7f87bdabf6d2c0c75518848433",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0034-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0034.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0034-fnt.zpl",
+      "sha256": "d5ce9b393f93d6ae335b4763adc16a66afc8fc81868faf3f041e563db73904bb",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0035-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0035.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0035-fnt.zpl",
+      "sha256": "52594f48881944f0950b41750ee9d65e46a862b78d2935c6ca7c849d49a1e52b",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0036-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0036.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0036-fnt.zpl",
+      "sha256": "29b167b069b96df5bf33d6bb6b3521e7aab129ec1c07c29440beea23e48d87af",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0037-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0037.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0037-fnt.zpl",
+      "sha256": "b2a9a38eb621ba86290f9401000d927783f47cb71eb620dc3a13ec9df08bb501",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0038-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0038.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0038-fnt.zpl",
+      "sha256": "c9770e729d2d27348aca137368e5c8840852597a27f8641d0b90ee8645a8ff91",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0039-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0039.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0039-fnt.zpl",
+      "sha256": "655ffe8eddb49ebdb412340e53ed3a8c26a57a8cef4950a7ef52e4c14eab2a98",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0040-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0040.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0040-fnt.zpl",
+      "sha256": "f87814ac87b0051461302c483e3d6c47c7ad9014099b99611912c1341605e4a7",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0041-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0041.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0041-fnt.zpl",
+      "sha256": "437e16bd2c2a74fe76d7dbb790fad9b2b8f163296525f4d22439d953b78723d7",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0061-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0061.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0061-ttf.zpl",
+      "sha256": "1cfc957c47e9652ab5507f5e84579a4319cda1b2b58c6f494a349c464b5db59c",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0062-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0062.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0062-ttf.zpl",
+      "sha256": "733c79cb40ff2c407af7f83f7207c8a2e877f56e00a3006f5799dc694daaba90",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-t0067-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:T0067.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-t0067-ttf.zpl",
+      "sha256": "fbd68438d32d05f37a9d1f750022d862af2ca5b6ac3098b472f5a97623238517",
+      "bytes": 152,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-tt0003m_-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:TT0003M_.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-tt0003m_-ttf.zpl",
+      "sha256": "8bc7b351c2f0582b5ee5e5a18ce6dc06aa3ebff47456b2ba690a592e678448d7",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-tt0005m_-ttf",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:TT0005M_.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-tt0005m_-ttf.zpl",
+      "sha256": "3ac8db56e7ee824c92eb73bc1708b3dcaf40ce3d61b8f17da0b5e2b43c1cb210",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-u-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:U.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-u-fnt.zpl",
+      "sha256": "1b6f42072782ab07d2bbd327c30b9824c2cafb95e898e5ab8d75458e4fd4b599",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-rom-v-fnt",
+      "group": "fonts-rom",
+      "purpose": "ZD621 ROM font Z:V.FNT by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-rom/font-rom-v-fnt.zpl",
+      "sha256": "90d6a4d2117c76721b3d26816bcb6bc87a65a96eef318483d0d0b7c9da0ca37c",
+      "bytes": 144,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
+      "name": "font-installed-tt0003m_-ttf",
+      "group": "fonts-installed",
+      "purpose": "ZD621 installed font E:TT0003M_.TTF by name: default and explicit dimensions",
+      "validity": "valid",
+      "oracle": "font-dependent",
+      "relation": null,
+      "source": "references/zd621-fonts-20261008/inventory.json",
+      "commands": [
+        "^A@",
+        "^BY",
+        "^CF",
+        "^CI",
+        "^FD",
+        "^FO",
+        "^FS",
+        "^FW",
+        "^LH",
+        "^LL",
+        "^LR",
+        "^LS",
+        "^LT",
+        "^PO",
+        "^PW",
+        "^XA",
+        "^XZ"
+      ],
+      "width": 832,
+      "height": 1218,
+      "file": "cases/fonts-installed/font-installed-tt0003m_-ttf.zpl",
+      "sha256": "710f3ab9065e89c310a5176285aa620049d22b9b96da6c5024c184c2fd312724",
+      "bytes": 158,
+      "capture_eligible": true,
+      "references": [
+        {
+          "command": "^A@",
+          "pdf_page": 62
+        },
+        {
+          "command": "^BY",
+          "pdf_page": 148
+        },
+        {
+          "command": "^CF",
+          "pdf_page": 154
+        },
+        {
+          "command": "^CI",
+          "pdf_page": 155
+        },
+        {
+          "command": "^FD",
+          "pdf_page": 190
+        },
+        {
+          "command": "^FO",
+          "pdf_page": 201
+        },
+        {
+          "command": "^FS",
+          "pdf_page": 204
+        },
+        {
+          "command": "^FW",
+          "pdf_page": 208
+        },
+        {
+          "command": "^LH",
+          "pdf_page": 293
+        },
+        {
+          "command": "^LL",
+          "pdf_page": 294
+        },
+        {
+          "command": "^LR",
+          "pdf_page": 295
+        },
+        {
+          "command": "^LS",
+          "pdf_page": 296
+        },
+        {
+          "command": "^LT",
+          "pdf_page": 297
+        },
+        {
+          "command": "^PO",
+          "pdf_page": 322
+        },
+        {
+          "command": "^PW",
+          "pdf_page": 329
+        },
+        {
+          "command": "^XA",
+          "pdf_page": 370
+        },
+        {
+          "command": "^XZ",
+          "pdf_page": 375
+        }
+      ]
+    },
+    {
       "name": "font-0-N",
       "group": "fonts",
       "purpose": "Resident font 0, rotation N, punctuation, ascenders and descenders",

@@ -1,0 +1,1438 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "device": "ZTC ZD621-203dpi ZPL",
+  "firmware": "V93.21.33Z",
+  "dpi": 203,
+  "host": "http://d7j211001302.bed.einic.org/",
+  "captured_utc": "2026-10-08T19:48:59Z",
+  "method": "printer HTTP Preview Label; not physical print/scan",
+  "cases": [
+    {
+      "name": "font-rom-0-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:0.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "2313dbc1a8a5b004edf484168e0d0efbf22371d38c29a084cbe6f0aa8bfd45d0",
+      "captured_utc": "2026-10-08T19:49:01Z",
+      "zpl_sha256": "8cc1532ef06f8922dc3c211dc96cf4fb939efc10fd6ca223cc4a5dec27668a46",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-a-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:A.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "a57abdfe3080bfaf99dde5cbdea63d74116e4636db73621982d506e81ac4f763",
+      "captured_utc": "2026-10-08T19:49:03Z",
+      "zpl_sha256": "a6bf61da1523d71cc2481268096807338a807a22556a01c76984e0b5b67b5787",
+      "png_sha256": "1102fe7701f7cb86aa510d49907c8273d6d68a668ca1f74ce31197cee0af4e78",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-b-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:B.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "5e0b5ac363492fdcfee9101da05b240246c90399b369adbb79acbd0e2102410c",
+      "captured_utc": "2026-10-08T19:49:05Z",
+      "zpl_sha256": "f15e8f1cd3e1364f61702d905860c479f317e564a35011d82a713eebd0162452",
+      "png_sha256": "9d2a3c5a44be6d763154c692f318936fa091b74196d8aac223fad62be63c4d61",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-d-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:D.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "81b467b85bacc4dd4b9e62d058339f53c0d4cfc713b7ad8029ca60c4f28ce57f",
+      "captured_utc": "2026-10-08T19:49:07Z",
+      "zpl_sha256": "46490cdadadd5e93c52c54c0268310d7cd90faed5a2c194916b7a1d7b2d8ee2d",
+      "png_sha256": "f419123c959c777feccff9be71d67b0c3c94a901a9936d09bab2fa5dbc9a0245",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-e12-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:E12.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "80f0c21b2661ee88d7f948a7103211f46100263f1b70ca7d53d68ee4a532d929",
+      "captured_utc": "2026-10-08T19:49:10Z",
+      "zpl_sha256": "71fb0be5308d459c7d4f75e93a9a8137956847461575a1806d36025cd2954cc2",
+      "png_sha256": "8152ebd50429bf546a3720c279390a354b7aa625fa710dd2bb1752f865a8a6e4",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-e24-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:E24.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "e11790c8f8f6967d256059ccb13d7da14eb8391d6ea59e3fbc349257fd74bf10",
+      "captured_utc": "2026-10-08T19:49:12Z",
+      "zpl_sha256": "69594dc06df0fd01437c5dc017e64532a2a2d26a5e36cc60a703fdd9bb794c1b",
+      "png_sha256": "30e6f008522306cba54960899ee71eb9c5ffc263f94fde22cb486675b1a2743b",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-e6-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:E6.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "3c5835cc99c0f5433264b5f422763a2c07a84b74493cd5050eb5103605ca6ceb",
+      "captured_utc": "2026-10-08T19:49:14Z",
+      "zpl_sha256": "6f97b6f926d7f46a79852a3ac667367a577e5bd06ca77967137e4e9172992628",
+      "png_sha256": "ddcc698ab2af3ae0b585e7cf4837a3340c362afafb242ee9e686a3a9836b1333",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-e8-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:E8.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "1a5cc25ed9ee16919260c0979ac370ca69be1a0999430217af4219e2628b394f",
+      "captured_utc": "2026-10-08T19:49:16Z",
+      "zpl_sha256": "245ea34e1a86f90e2f6904e95bf9303aec27111bac10c9b49898331bd2eef928",
+      "png_sha256": "a5cc2ba7b807bf064557b1c57ea03d339d3ff921f3ae56c64a0c15bb06cf3f1b",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl1-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL1.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "bd180f2cfa030c187c144246c29ab815d620c11cbd8db712acd10f2a2fdb0501",
+      "captured_utc": "2026-10-08T19:49:18Z",
+      "zpl_sha256": "4d45d17a3a8a6211adc624f63fa7d086426acacb4732028594a40fa46d0d5199",
+      "png_sha256": "33eaf139894a402e89f09281f955a41315abaf155d6155a72256c826afc6409b",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl2-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL2.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "6687fdd437fec7b984392b164389d3798916ac0609bb318ed6f3cf4c1ef1c544",
+      "captured_utc": "2026-10-08T19:49:20Z",
+      "zpl_sha256": "df1945660a04c4156d3fb5a98cb9cf420f0689e3981201df0aeab14855d6d801",
+      "png_sha256": "cef0d5ce811808ec246679d9d54d969840fd06458e9f888c77fbacef27075c25",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl3-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL3.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "023afa3de5bc5540eb383fa6fbb0598ad0cbb202b9b4ca928f73334fbd7711f0",
+      "captured_utc": "2026-10-08T19:49:22Z",
+      "zpl_sha256": "45a4e4312dcf3c5b4057ee292084dd4f2f6d5e93f1c0dddf390b342615e44de7",
+      "png_sha256": "93b990a019f108a19cdbb5f03c149d140e5151bccc435540d06de32146362c8d",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl300-1-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL300-1.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "e45176b72cb8ea01248ff3b9b92297d1413f235c27d637e24333355862a1bc64",
+      "captured_utc": "2026-10-08T19:49:24Z",
+      "zpl_sha256": "30df8a22f6007815efb97b25d746600d5e7e1ee243292a9e2d5d61565363f613",
+      "png_sha256": "a7d71e21a1017d443a1abb51b909f258e174124affdd4c44bdc4ab62839bafe7",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl300-2-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL300-2.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "bf6813720d73b345de799f0932e08ed3cf277d9423dd20270c6063a4509e3c7a",
+      "captured_utc": "2026-10-08T19:49:27Z",
+      "zpl_sha256": "d9cf7d7f8d88fe75abbe077e22d1ffc6e5f8dae98838ba5fb33929e4554338b6",
+      "png_sha256": "874ac0d96a36f31e21b0bcffc28464d7a017684b5112415d9860fc2d48e828a6",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl300-3-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL300-3.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "8ec3a75e17b99a0f12b4cda3a21d6e114a54c58b48c94cefe2732f3afe78a915",
+      "captured_utc": "2026-10-08T19:49:29Z",
+      "zpl_sha256": "eda0c2e25789aaf4083f9b45cfce1885ecb140a2afedd91814d4e1bd9617031d",
+      "png_sha256": "f34114d586b4ef9bd1391c442fd446fc4cab1d2e7b255869f4531bc86dc9ac6c",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl300-4-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL300-4.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "e8f825987a2668677a6364215a8063eaad865e6a92f7ded0a6e4bb41d4447901",
+      "captured_utc": "2026-10-08T19:49:31Z",
+      "zpl_sha256": "147e0ae0b304daf52679fc4c335a540236f6b789d49d09e49827ca3020ff74b2",
+      "png_sha256": "7a644ed6680e10550f01ca702492c32200c32fe32b8cd2f2b77e76c935aa8d81",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl300-5-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL300-5.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "f517c839d8bfbaaf33fc6131325e2e5341f58b5ac98d313f6e25bf0d7f034658",
+      "captured_utc": "2026-10-08T19:49:33Z",
+      "zpl_sha256": "e0c12807f1a7097a883e5b227805bc0fff6ae0273b6a9fb220bd2c66f259455d",
+      "png_sha256": "fd2d6f3eacbfaf1b52b40166c7dda7cce4205c81ca2a97b1b81fddbded3cd116",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl4-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL4.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "df80a8d61fdf36f01d2840bf03462c6bdf634f9624bd3c6545ad15b70058c10e",
+      "captured_utc": "2026-10-08T19:49:35Z",
+      "zpl_sha256": "041e256e8d67928dd0b3e99110209048d0e734d39b3d95755fddafff68293ea4",
+      "png_sha256": "1fa5daadd482c249e50b4775d4eebaa0a658032e14cf72add7cbe9cd2190a5df",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl5-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL5.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "6f953c7873a33d0769fc2c02597979f59a6e1376bb4246bf5e9f413c3baead5a",
+      "captured_utc": "2026-10-08T19:49:37Z",
+      "zpl_sha256": "cccffbb2f3c04655cc2ee068974979d544f2416c3c352d32813cd769e7c0acbf",
+      "png_sha256": "ff860b301c720c86d038e48370ebdcec13f657ead4c1c380eb5526d104fb9bd8",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl6-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL6.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "a694631b42edd800dc977ae5b26ce209ee60064861e8f30248a9e4328f644306",
+      "captured_utc": "2026-10-08T19:49:39Z",
+      "zpl_sha256": "4eb04aa26a92414059009af57c574330282d564d1eae3a53ed3df3589c079fae",
+      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-epl7-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:EPL7.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "835d71ed87f33a8a53d5f53e537c5d22c9bdbc1ecb4f56f245995848e6cc71d5",
+      "captured_utc": "2026-10-08T19:49:41Z",
+      "zpl_sha256": "afd756cfdfbf201fb925f426842bed5f0f3621f68218891b0ff00cb4bd0cf0a0",
+      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-f-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:F.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "2107d0b3df2f0dc066e42540bf121623e1558a18e54288735f9fe9c2e02080c3",
+      "captured_utc": "2026-10-08T19:49:44Z",
+      "zpl_sha256": "dd1ce596504bcd127fa89c58f5f9e646682170c8ac9cf020bb6999ae2cb2faa2",
+      "png_sha256": "77fdd6b76c0170394c49c6672104f9b537c11373096cff30b2042f3b0ef82c80",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font0-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT0.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "98e12a9d5edc1ee715f317d7b9f150fa96beef884348b05343406777d72d5f55",
+      "captured_utc": "2026-10-08T19:49:46Z",
+      "zpl_sha256": "892327a765edc6818938f6ce7febc1b52e12a22e82a30cfd980b7750caadb5c2",
+      "png_sha256": "cd57e863282e2e92b0bfd91509f75c1e85cdbe4a698f7f958b33f2a2563470e2",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font1-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT1.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "50f9124e13adda6b27fb9de1310b90e0cb00aa5f6e5e97e567768c2440f51b4a",
+      "captured_utc": "2026-10-08T19:49:48Z",
+      "zpl_sha256": "6b4ab18d2360f87c4bfc8db9cca08b2d3af60e1acdd9cce9a6f400a6711f14b1",
+      "png_sha256": "7e932fcd85e6fb2007f34145580cf952c3f97b0ffd076fa2072d583e00e83d43",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font2-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT2.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "4667688a0326fb7e074e38f071e0e0ffb4f0a852054118336b83fb7629169712",
+      "captured_utc": "2026-10-08T19:49:50Z",
+      "zpl_sha256": "f1f185a848544c22e98fe77ba8116794e1192983b69624922aa79e5f945594bd",
+      "png_sha256": "dccf59c7350fc212a2207c4e1cedfe81d9af71f227ed78e7d4f77471ba8427df",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font3-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT3.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "3bf49dfe7ca24c67506de550f74c5060590d1ad3c9cd4b25c39b786559f7d87c",
+      "captured_utc": "2026-10-08T19:49:52Z",
+      "zpl_sha256": "2dc481a7ce15978c6ce49c20ab1d801da50098b7a766b3838607c49baa5fcf04",
+      "png_sha256": "b3c2ef55a2b8808181d6708c5a53a9a0b947d21d8e133ab6934edbccaa593ba7",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font4-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT4.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "96dc472b69921d273c30e311428ead0c6c89a8d775dbb67ac100846f2fa6fec3",
+      "captured_utc": "2026-10-08T19:49:54Z",
+      "zpl_sha256": "fd98e6e46cb517a7ce9422ce3320930c3a355d0d38fb5d0b27b551e543ec0cd3",
+      "png_sha256": "366b4ae5fcc837d2be1480b3c0c211d009933ae50d2503690500087ba9890d44",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font5-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT5.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "fd50149b54090e0521be682ee69f2e81dd003f553ec9f2ced7e001a7520dddb9",
+      "captured_utc": "2026-10-08T19:49:56Z",
+      "zpl_sha256": "63f75b8cc1d1f9909211a373f16df9da6813dd6054e4130986e32ed2e1ff36bb",
+      "png_sha256": "1ef77151e6b94fb57d1d8fdbc236084495d6d70e883176aae206b3c839ffcb3f",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font6-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT6.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "90ae86210d21b137be46b780db0e9eed3647bed4b74ec5febb426c78861be6bf",
+      "captured_utc": "2026-10-08T19:49:58Z",
+      "zpl_sha256": "7ffd87cc5042f211f45dec06cbea8e56f84abbe9b7eac29ec62201e54e008a2c",
+      "png_sha256": "df749bfa2e9af724a67d855795b0554bd3f734d90c8c709e69bfad50f055de22",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font7-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT7.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "e7aeddc56b9f9e64ed46f522e7c80bbdee9dc664de3452bb92201adf948d13b5",
+      "captured_utc": "2026-10-08T19:50:01Z",
+      "zpl_sha256": "e3288ea1e251049dd44d4278f92cfd4844d76f28bf33ef4e2a7ceecae85dab71",
+      "png_sha256": "56a726a4591a625703384122a68758ddfac0029b7e956034246ae87273e317ee",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-font8-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:FONT8.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "02ffae7372e668a61eda5f028d68eab33869db4019fab7d68969d46f9e27015a",
+      "captured_utc": "2026-10-08T19:50:03Z",
+      "zpl_sha256": "9cb118edc3314c773e9fd0687a95d39eb34c8a526fba32eac709836735af4521",
+      "png_sha256": "5967d96260cc3990bd436ef34a1a1f596358d1aa33289dc7e7cc351ce4bf1e97",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-g-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:G.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "54e28c08b369b735849b340708f59c6cf2a5661b6efdb6f6086af298ef568ac9",
+      "captured_utc": "2026-10-08T19:50:05Z",
+      "zpl_sha256": "8d1c5a484bb975e80ede171868c5ae61e604efa1083f0aa1ba2a831a370dd02f",
+      "png_sha256": "26cb718569c0fd939ef8983bfcc6efaf46c53212d7e4500f53371b6f43b56eb8",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-gs-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:GS.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "16c824172db6c27829be012ac255b42be48ada7d72a405ae6d598ab8d8d83d72",
+      "captured_utc": "2026-10-08T19:50:07Z",
+      "zpl_sha256": "c835f2881fd465d2eed1c02277af9bc31a5b0a268f91139b90d96ea441b2ac33",
+      "png_sha256": "95b9a4bec2a5e4969d08cdfc5ce16eb927dc585ccb9f9a6ee9560277e2592fdc",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-h12-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:H12.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "9efc89a065feca4731eefa2fb8582abec598ab1175e33e0d8de04e73bff55ca8",
+      "captured_utc": "2026-10-08T19:50:09Z",
+      "zpl_sha256": "4ec083cf714ed09a73913c072ae7be86d626afc9e91d96bf3d8420004f0a4cc3",
+      "png_sha256": "6a01ff94342e1934c040aec958564913ae4f61cb36b591681567a2bc607a0b90",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-h24-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:H24.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "9b3803186c0a156f20526e7bd6b954061cd825f842abd67aac179bbb26ba0690",
+      "captured_utc": "2026-10-08T19:50:11Z",
+      "zpl_sha256": "8ab71fad99c4d663d2c9e9ac82749eb111291be0387742174e4e645b945cf60c",
+      "png_sha256": "1d08b6d4e1ea98b477d01da8d4c570ceecad15705c5120445f70f141ae5ffa28",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-h6-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:H6.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "4e5c2c8da4eb78413420bbf8d3688beb72e46dffe40eee9b288723b79652afc8",
+      "captured_utc": "2026-10-08T19:50:13Z",
+      "zpl_sha256": "9499fb115f556221fa435e0832e3cc574e07248e78ceabed860b636674cc8573",
+      "png_sha256": "8087a54b31ae9ebc74a77bcbf8d00c1ba065a1d576a6a4ae59c17223c1b0cd8c",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-h8-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:H8.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "62b753d1fe11f9c61931c9f679039dc33d511a966308a48125ad78b0d9319584",
+      "captured_utc": "2026-10-08T19:50:15Z",
+      "zpl_sha256": "65dab7ece2568fa9b7aa4e36cbd03286f8b8a6f0bb275ab96608fa7fcc2d48a4",
+      "png_sha256": "9f88236a60bf4112498f406a1a962ff06c7de3ff78b4e53dd5e0cfa0eec49a28",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-lmu-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:LMU.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "7f495547080fc8fa7903c9060f5a93abc9b692fc7730101a7a03835f50361b7f",
+      "captured_utc": "2026-10-08T19:50:18Z",
+      "zpl_sha256": "44b0752409db0636fa8d1c87695eb6660fce57ed59ff9a8428d7a7a45df379f9",
+      "png_sha256": "f886a1807b034d9f0ff8efb3ddca53b9b4c250128650ef97cbe45102a3cd23f3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-lmv-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:LMV.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "611245cf8a40a56400f125fa208641b69fe2d17998d69253f4d231c7f0b7784d",
+      "captured_utc": "2026-10-08T19:50:20Z",
+      "zpl_sha256": "6e85018073e952d3a191fc277e9e5ae66f0a622c8d8d124a91ac6b1cf9419284",
+      "png_sha256": "b3545ec70db4667dfeeae3d5fdee72dea1eecd64d121bf50f50dc0dbeaeb75e8",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-lmw-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:LMW.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "062cf17983c2eaa3768e0c70b6ea26f41d668d57a165f53d7492db02262d55dd",
+      "captured_utc": "2026-10-08T19:50:22Z",
+      "zpl_sha256": "56f5476c988c4f845567f5142636b2758d33b6480430539a8a9bdb60b6013775",
+      "png_sha256": "85cfd0259cce4fb8d6dc7dd77c88107c35b7793aa4575bc3347862c8e1982c27",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-lmx-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:LMX.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "1aceb96eef0364a1864a17e7533e71b6772c1d243fcc21f634a173a04cb97124",
+      "captured_utc": "2026-10-08T19:50:24Z",
+      "zpl_sha256": "a9f19866e1073222186fefd51955a868e43348e54997a943e3bc9f065b601fa8",
+      "png_sha256": "1962a67cdcd35001c0b2d921ea0947a7849ab1e3e00873410ff23f5ec2f979a8",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-lmy-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:LMY.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "a5462420ad9b53c504c45bf2c58dbabba70e632ee102ef939efdebdb928c6b39",
+      "captured_utc": "2026-10-08T19:50:26Z",
+      "zpl_sha256": "ab1a7a62ba046fc138fdb9f18e026a111b80838856fb82c43fc43772ed970978",
+      "png_sha256": "cb86c7d52531824d48856e54338d30e8cc35ea464b257a0d73ca299cb933a355",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-lmz-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:LMZ.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "4aeeb8abda1ecac16d8a03d04d5fee05acf4fc0b669076c8294c49af4fe1a152",
+      "captured_utc": "2026-10-08T19:50:28Z",
+      "zpl_sha256": "36e7b9001775c907d067ba97c32f0ab438d691c01cfb8a3a243e281b3ba3d69d",
+      "png_sha256": "7baac18a01fb81d679ee2dfae0fce799253e3b38ae6c79260c59f8cc80f2599c",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-p-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:P.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "cb25d27d17555a6aed286fdcadc949f0071d7050b0ab4dbede7fb7e55dc4d0e5",
+      "captured_utc": "2026-10-08T19:50:30Z",
+      "zpl_sha256": "3a7ff1b21ec9cda1617b5ca54d8e583c93b2c4feb0370207a7b949ad84e1da26",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-q-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:Q.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "610012ff654958f47db5f119546af8fec4d721b899c121633e75bbc591c7d26f",
+      "captured_utc": "2026-10-08T19:50:32Z",
+      "zpl_sha256": "1882e8ff2d3031cc08676772accfbfcafd7ff2401a1f129b670ae85a60412192",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-r-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:R.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "7ff52fcaaee0558873e753b7ae7eed5f106feadcf2d6c8d0c9d9fa42cc20fb7c",
+      "captured_utc": "2026-10-08T19:50:35Z",
+      "zpl_sha256": "71e56d5d0df35e777443268b9ac5cb7e6a9cb9f4838ad8b55c658c5250c6f14c",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-s-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:S.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "d28748de1c67955c377a29c20761905e86eb0308f1cbf3453e419e4d1449418e",
+      "captured_utc": "2026-10-08T19:50:37Z",
+      "zpl_sha256": "2c4ba0278af7d65df86191b4dba34f4de9d2fcd8b3537f7ca027db1a84d26b4e",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "0587415c95025d0aa6beec3e2101731bf4d7fe4915fcc8bd90bb88437b6c9a94",
+      "captured_utc": "2026-10-08T19:50:39Z",
+      "zpl_sha256": "77f31272156b95ac82cf45ae3fe36cc0d190310a8d06c91486db78f35bf13c95",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0000-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0000.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "af7098422d44e69c6a8389796a0068e99036f0fb11ec72b508f04aaa2055a911",
+      "captured_utc": "2026-10-08T19:50:41Z",
+      "zpl_sha256": "d426798a5d542dd1b73b32d9284f4bbec9769a6062cab71e6714eeac2a6c0a71",
+      "png_sha256": "abce3d3acf76ac57d5c16eb27eb971caf614dcc31e90cb2e8994640aa8e625fc",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0001-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0001.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "0657a463c2f0e72e2c2dd102c1ec50ff48c115769019bb2e733577d5102699d4",
+      "captured_utc": "2026-10-08T19:50:43Z",
+      "zpl_sha256": "4ba312d28dfef4388def0c249d79dd8f857307611cc42739913f3f6f7cffb841",
+      "png_sha256": "832116d48e1f64b0566bcacbd54de29eab7cbd8301fa0100aa778c5ec9d12e9a",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0002-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0002.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "706b7b1527fa1017bdbe7ab1ccff1d235ca53b57dc63de8ff4e8a9f24a9774f3",
+      "captured_utc": "2026-10-08T19:50:45Z",
+      "zpl_sha256": "398632557721621faf4d24940dd6c79f4b9a09caadb6b56da908b0dbe2f03126",
+      "png_sha256": "dbd1484bae164f9ac9eef1c9ecdee0dc8b76d69fe960a6c8a8674d81865aa653",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0007-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0007.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "950cbbbaa7af6c018510f1bf459cb706fd733b4e4163d8380e8fb1b70089532c",
+      "captured_utc": "2026-10-08T19:50:47Z",
+      "zpl_sha256": "64f2ec60b0835e4fce46255aa64eb4830efb6b68ec0b6a728973ba25a3bec424",
+      "png_sha256": "06915c221dfc56f9347508027672456ad3b5d3ce4bc769294154547d243d6953",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0020-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0020.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "467e7e914f47bb5eabae28e1b6f00ac6307f1716da623df8c761e7ee899521da",
+      "captured_utc": "2026-10-08T19:50:50Z",
+      "zpl_sha256": "949ccdb6a092716c0abcc4f5614bd428fa7055d032c36b618941aaa552fcc804",
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0021-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0021.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "6a3113b4df282ee3b0551a6ca9ab8b2fe471225d1cddeb6cc88ef55b778ff8b5",
+      "captured_utc": "2026-10-08T19:50:52Z",
+      "zpl_sha256": "c9824deeec8dd3057f9410cbb3ab59de9fcd83fc85a27c06537ef4a457067cd2",
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0022-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0022.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "c398bbb88faf6b4ca71d692c15a11b436df01d415247048a104e7509e8f74137",
+      "captured_utc": "2026-10-08T19:50:54Z",
+      "zpl_sha256": "7226bf1aa3cfbff1e9be4d69f687623a6481df70d238f8944492b26de7547994",
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0023-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0023.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "c3f474f7bac27d1e123976d8d4e77e854f16fa25c1526127d2f6813598b90315",
+      "captured_utc": "2026-10-08T19:50:56Z",
+      "zpl_sha256": "8a24b01f74213df77d1efc779ac9c6ad174f77682ef5042ea1487b899b6f5696",
+      "png_sha256": "aaff9a15270075c381e220a7884f4306b376139148ed38768ba1c5d3394f81a3",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0024-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0024.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "3995a52e48df058703a19c7fd2bffbf441cbeb6e8e280a700466e0fcae1f522b",
+      "captured_utc": "2026-10-08T19:50:58Z",
+      "zpl_sha256": "fe7a97711b78eb878b51d67ccc4a67e357dbfb8c4027b275b2b31f4626429122",
+      "png_sha256": "6718ee7a775a3c593959bb739a21ea6aa6b9f4f7d1e0ba09717524e4a1d9291e",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0025-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0025.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "8119df4f3ba6dd852105933c2684682161f361ea3ba9f064ae3cb9500077be03",
+      "captured_utc": "2026-10-08T19:51:00Z",
+      "zpl_sha256": "51358bda00cab8a1c4220e89dd6146484f8192cff87fbecf8865cfa68f2b3c2b",
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0026-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0026.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "cccfdc56b7a3391635a9e67d4d1ab4d4862819fdf57ae0d433d36b10cde58a76",
+      "captured_utc": "2026-10-08T19:51:02Z",
+      "zpl_sha256": "9d8bf52055287bf489881dc245859a24676a83363e3f12f596f43e7cf782bf7c",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0028-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0028.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "a47a97148be5317afd9a36f86296602b3bb6a755e188c9968af7b848696f3e60",
+      "captured_utc": "2026-10-08T19:51:05Z",
+      "zpl_sha256": "34d71cf17d32ea832d9556265918c74f1bc00081c0ec790126fa0eb766ffdee2",
+      "png_sha256": "f0e0d6a7bcc0a3e248799f2e2fe3ebb47277f5324c8bf16ab36411c339c53351",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0030-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0030.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "600a6c15818c4b44335cc1ad6c4a7702ca1581c10131124de97645856980fb89",
+      "captured_utc": "2026-10-08T19:51:07Z",
+      "zpl_sha256": "a8e687ecdbdebea9f1e2c9f9ccfabe4b401cc202c9192001c1045edde96b0ee5",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0031-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0031.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "2d1bc975a7a8f9ea4401d1104d8c77a0adc091e93890893c577e4b0d320840cb",
+      "captured_utc": "2026-10-08T19:51:09Z",
+      "zpl_sha256": "ed52c2ca10f25222e1ed3e3964bde5099dd3b690f7beb76a5170aeff7af35505",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0032-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0032.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "595bf8ed83f63a3aeb137045af398482d9b0b178f0a2465043692926a352311f",
+      "captured_utc": "2026-10-08T19:51:11Z",
+      "zpl_sha256": "8dbba284edecdde5951e0410ea4f3ebf3db5d5fe483aadddf1d35d39ec9173ce",
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0033-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0033.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "3ed0cf832e7cb6c88623d605010e32b4c1ca7b1ff54ed1e2d5a407cb093feeae",
+      "captured_utc": "2026-10-08T19:51:13Z",
+      "zpl_sha256": "225ecbef429f7d141e29432a7f50c6562c3abf7f87bdabf6d2c0c75518848433",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0034-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0034.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "87f076c2c6f35355104e9d8047de818bdde88fb6f76e0df29d3e28f855c15298",
+      "captured_utc": "2026-10-08T19:51:15Z",
+      "zpl_sha256": "d5ce9b393f93d6ae335b4763adc16a66afc8fc81868faf3f041e563db73904bb",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0035-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0035.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "73c74248a015734422c113c23edac5348bf28f7cb44051b171f31f9b180b636a",
+      "captured_utc": "2026-10-08T19:51:17Z",
+      "zpl_sha256": "52594f48881944f0950b41750ee9d65e46a862b78d2935c6ca7c849d49a1e52b",
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0036-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0036.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "22632dea7042efafca578dc16ed394fec9720bec608d7cf17bcd9bd2b6f9e37a",
+      "captured_utc": "2026-10-08T19:51:20Z",
+      "zpl_sha256": "29b167b069b96df5bf33d6bb6b3521e7aab129ec1c07c29440beea23e48d87af",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0037-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0037.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "f2ba5f9562d463281fa3974782c1ed583a6cfd46688be23ac096f252f03166cc",
+      "captured_utc": "2026-10-08T19:51:22Z",
+      "zpl_sha256": "b2a9a38eb621ba86290f9401000d927783f47cb71eb620dc3a13ec9df08bb501",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0038-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0038.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "0b3aef509ac18d49e09b57a879e3e4226f1d713095794258746028f35d0db568",
+      "captured_utc": "2026-10-08T19:51:24Z",
+      "zpl_sha256": "c9770e729d2d27348aca137368e5c8840852597a27f8641d0b90ee8645a8ff91",
+      "png_sha256": "273f84364964f33d889b6b9385f11e927db1fbd2e954a09a4736d5d3c1558907",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0039-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0039.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "a4ebbc0a1a5ddc343cad9b3fc4bf5613732ede8a0f58209c686af02fa8941fc8",
+      "captured_utc": "2026-10-08T19:51:26Z",
+      "zpl_sha256": "655ffe8eddb49ebdb412340e53ed3a8c26a57a8cef4950a7ef52e4c14eab2a98",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0040-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0040.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "da8649d4c5cdf2daeb647cb290cb7c28138bf327fc7bad86c24f2c06ed5561d3",
+      "captured_utc": "2026-10-08T19:51:28Z",
+      "zpl_sha256": "f87814ac87b0051461302c483e3d6c47c7ad9014099b99611912c1341605e4a7",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0041-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0041.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "c64e6bb7b77e49413c47627bb15b8fe7f12ee6db72580ca4026bc9033cedbec3",
+      "captured_utc": "2026-10-08T19:51:30Z",
+      "zpl_sha256": "437e16bd2c2a74fe76d7dbb790fad9b2b8f163296525f4d22439d953b78723d7",
+      "png_sha256": "983ccc372ef36a4fefb49be95dd6bca210b761e9b8c09732eb471ee61d0736ec",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0061-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0061.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "9aef43ecf2fe831c15f1e1caccc3a31d73344456f513b3fed741765ce7053102",
+      "captured_utc": "2026-10-08T19:51:32Z",
+      "zpl_sha256": "1cfc957c47e9652ab5507f5e84579a4319cda1b2b58c6f494a349c464b5db59c",
+      "png_sha256": "7c1e37e493e406a1c86bdf917e1fdad27350f60f4ab6c49aea17ca055902baad",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0062-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0062.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "42ab260ae30090d6525bc35d6151453020ec5976985a7c402b9b3298de8c29a7",
+      "captured_utc": "2026-10-08T19:51:35Z",
+      "zpl_sha256": "733c79cb40ff2c407af7f83f7207c8a2e877f56e00a3006f5799dc694daaba90",
+      "png_sha256": "393d51ae9ab2244784f38a9cd8f5506bf849751ca6e1b7aeab81a3333c0642d2",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-t0067-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:T0067.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "0b926e4b359e96012515c5cc48c9e1e201aa36e084e3ab65dbfe9630c670cccf",
+      "captured_utc": "2026-10-08T19:51:37Z",
+      "zpl_sha256": "fbd68438d32d05f37a9d1f750022d862af2ca5b6ac3098b472f5a97623238517",
+      "png_sha256": "eb3bd7a89f10da4474ea56e841b5188853ae106fcc75c3a17c27afde173c6cee",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-tt0003m_-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:TT0003M_.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "836476c19e692b33fa07506f55078b9d0b919241e2dfd950e5c925cd186df0ae",
+      "captured_utc": "2026-10-08T19:51:39Z",
+      "zpl_sha256": "8bc7b351c2f0582b5ee5e5a18ce6dc06aa3ebff47456b2ba690a592e678448d7",
+      "png_sha256": "7c1e37e493e406a1c86bdf917e1fdad27350f60f4ab6c49aea17ca055902baad",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-tt0005m_-ttf",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:TT0005M_.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "e271d06cef2b83e1e0c2510d324ac21c8f69addfab243f0a8ae7ef3a15bb48fa",
+      "captured_utc": "2026-10-08T19:51:41Z",
+      "zpl_sha256": "3ac8db56e7ee824c92eb73bc1708b3dcaf40ce3d61b8f17da0b5e2b43c1cb210",
+      "png_sha256": "6179162e3a1dee073541e2ca6251b10b5294b3eb203feedce9cc9ba568ea2da4",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-u-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:U.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "9676d661841199b5277187146691a138f1f2cb21ec8b0f35ab3a47e1eb98c6e1",
+      "captured_utc": "2026-10-08T19:51:43Z",
+      "zpl_sha256": "1b6f42072782ab07d2bbd327c30b9824c2cafb95e898e5ab8d75458e4fd4b599",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "font-rom-v-fnt",
+      "group": "fonts-rom",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:V.FNT by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "9970d3072fd932913a33096a51e66b023b2efde88a1dd93cd5a44070f6a05e93",
+      "captured_utc": "2026-10-08T19:51:45Z",
+      "zpl_sha256": "90d6a4d2117c76721b3d26816bcb6bc87a65a96eef318483d0d0b7c9da0ca37c",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    },
+    {
+      "name": "repeat-end",
+      "group": "repeatability",
+      "command": "^A@ ^BY ^CF ^CI ^FD ^FO ^FS ^FW ^LH ^LL ^LR ^LS ^LT ^PO ^PW ^XA ^XZ",
+      "arguments": "ZD621 ROM font Z:0.TTF by name: default and explicit dimensions",
+      "width": 832,
+      "height": 1218,
+      "submission_mode": "inline-reset-canvas",
+      "object_name": "CMPFONTS",
+      "submitted_sha256": "2313dbc1a8a5b004edf484168e0d0efbf22371d38c29a084cbe6f0aa8bfd45d0",
+      "captured_utc": "2026-10-08T19:51:48Z",
+      "zpl_sha256": "8cc1532ef06f8922dc3c211dc96cf4fb939efc10fd6ca223cc4a5dec27668a46",
+      "png_sha256": "aaa5d69beb7a2a01c30cc9abf8e5880799b595ec084f601d12a59198ce1f52af",
+      "printer_dimensions": [
+        832,
+        1218
+      ]
+    }
+  ],
+  "failures": [],
+  "preview_reset_zpl": "^XA^CI0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^CI13,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,10^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^XZ",
+  "corpus_sha256": "747237670ac712b308a53890631dd0d322d3ee5c96f355e03d340f7b9b94d22c",
+  "repeat_pixels_equal": true
+}

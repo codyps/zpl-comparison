@@ -1,8 +1,10 @@
 """Corpus determinism, rendering-only scope, counted data, and honest oracles."""
 
 import importlib.util
+import hashlib
 import json
 import io
+import re
 import urllib.error
 from unittest.mock import patch
 from pathlib import Path
@@ -33,6 +35,68 @@ finally:
 
 
 class ConformanceTests(unittest.TestCase):
+    def test_font_selectors_and_graphic_symbols_remain_covered(self):
+        cases = generator.rows()
+        selectors = set()
+        for case in cases:
+            if case['group'] == 'fonts':
+                selectors.update(re.findall(rb'\^A([0-9A-Z])[NRIB],', case['zpl']))
+        self.assertEqual(selectors, {bytes([c]) for c in b'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'})
+        symbols = {match for case in cases for match in re.findall(
+            rb'\^GS([NRIB]),48,48\^FD([A-E])\^FS', case['zpl'])}
+        self.assertEqual(symbols, {(o.encode(), s.encode()) for o in 'NRIB' for s in 'ABCDE'})
+
+    def test_every_zd621_rom_font_has_a_named_comparison(self):
+        evidence = ROOT.parent / "references/zd621-fonts-20261008"
+        inventory = json.loads((evidence / "inventory.json").read_text())
+        directory = (evidence / "directory.html").read_bytes()
+        self.assertEqual(hashlib.sha256(directory).hexdigest(), inventory["directory_sha256"])
+        fonts = set(re.findall(rb'<TD ALIGN="LEFT">(Z:[^<]+\.(?:FNT|TTF|TTE))</TD>', directory))
+        self.assertEqual(fonts, {font.encode() for font in inventory["fonts"]})
+        self.assertEqual(len(fonts), 78)
+        all_directory = (evidence / "directory-all.html").read_bytes()
+        self.assertEqual(hashlib.sha256(all_directory).hexdigest(), inventory["all_directory_sha256"])
+        fonts = set(re.findall(rb'<TD ALIGN="LEFT">([^<]+\.(?:FNT|TTF|TTE))</TD>', all_directory))
+        self.assertEqual(fonts, {f.encode() for f in inventory['fonts'] + inventory['user_fonts']})
+        cases = [c for c in generator.rows() if c['group'] in {'fonts-rom', 'fonts-installed'}]
+        self.assertEqual(len(cases), len(fonts))
+        covered = set()
+        for case in cases:
+            names = re.findall(rb'\^A@N,(?:0,0|32,24),([EZ]:[^^]+)\^FD', case['zpl'])
+            self.assertEqual(len(names), 2, case['name'])
+            self.assertEqual(names[0], names[1])
+            covered.add(names[0])
+            self.assertIn('^A@', case['commands'])
+        self.assertEqual(covered, fonts)
+        probes = capture.corpus_probes(SUITE, ['fonts-rom', 'fonts-installed'])
+        self.assertEqual({p['name'] for p in probes}, {c['name'] for c in cases} | {'repeat-end'})
+
+    def test_rom_fonts_have_printer_and_labelary_evidence(self):
+        _, cases = conformance.load_cases(SUITE, groups=['fonts-rom', 'fonts-installed'])
+        evidence = ROOT.parent / 'references/zd621-fonts-20261008/capture'
+        captured = {}
+        for directory, group in [(evidence, 'fonts-rom'), (evidence.parent / 'installed-capture', 'fonts-installed')]:
+            capture_manifest, _ = conformance.reference_images(directory, [c for c in cases if c['group'] == group])
+            self.assertEqual(capture_manifest['device'], 'ZTC ZD621-203dpi ZPL')
+            self.assertEqual(capture_manifest['failures'], [])
+            captured.update({r['name']: r for r in capture_manifest['cases']})
+        references, _ = conformance.reference_images(ROOT / 'accuracy/conformance-reference', cases)
+        saved = {r['name']: r for r in references['cases']}
+        labelary_root = ROOT.parent / 'docs/benchmarks/labelary'
+        labelary = json.loads((labelary_root / 'captures.json').read_text())
+        responses = {r['name']: r for r in labelary['cases'] if r['suite'] == 'conformance'}
+        for case in cases:
+            name = case['name']
+            with self.subTest(name=name):
+                self.assertEqual(saved[name]['png_sha256'], captured[name]['png_sha256'])
+                row = responses[name]
+                self.assertEqual(row['sha256'], case['sha256'])
+                self.assertEqual(row['status'], 'rendered')
+                self.assertEqual(row['dimensions'], [case['width'], case['height']])
+                self.assertEqual(conformance.metrics.sha(labelary_root / row['image']), row['png_sha256'])
+                printer = conformance.metrics.gray(ROOT / 'accuracy/conformance-reference' / (name + '.png'))
+                self.assertEqual(not np.any(printer < 128), bool(case.get('reference_unscored_reason')))
+
     def test_aztec_and_ci_remapping_are_independent(self):
         cases = {c['name']: c for c in generator.rows()}
         for variant in ('aztec', 'aztec_alias', 'aztec_rune'):
@@ -459,7 +523,8 @@ class ConformanceTests(unittest.TestCase):
         self.assertEqual(generator.commands(data), ["^FO", "^FS", "^GF", "^XA", "^XZ"])
         with self.assertRaisesRegex(ValueError, "Control command"):
             generator.commands(data + b"~HS")
-        for forbidden in [b"^XF", b"^A@", b"^DF", b"^PQ", b"^MD", b"^JUS", b"^RF"]:
+        self.assertIn('^A@', generator.commands(b'^XA^A@N,32,24,Z:TT0003M_.TTF^FDTest^FS^XZ'))
+        for forbidden in [b"^XF", b"^DF", b"^PQ", b"^MD", b"^JUS", b"^RF"]:
             with self.assertRaises(ValueError):
                 generator.commands(b"^XA" + forbidden + b"^XZ")
 

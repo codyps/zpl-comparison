@@ -21,7 +21,7 @@ REPO = HERE.parents[1]
 PREFIX = b"^XA^PW832^LL1218^LH0,0^LS0^LT0^PON^LRN^FWN^CI27^CF0,32,0^BY2,3,60"
 # Explicitly enumerate label-content commands; never allow arbitrary B*/F*/G*.
 ALLOWED = set(
-    "A B0 B1 B2 B3 B4 B5 B7 B8 B9 BA BB BC BD BE BF BI BJ BK BL BM BO BP BQ BR BS BT BU BX BY BZ CF CI CV FB FD FE FH FM FN FO FP FR FS FT FV FW FX GB GC GD GE GF GS LH LL LR LS LT PA PM PO PW SF SN TB XA XZ".split()
+    "A A@ B0 B1 B2 B3 B4 B5 B7 B8 B9 BA BB BC BD BE BF BI BJ BK BL BM BO BP BQ BR BS BT BU BX BY BZ CF CI CV FB FD FE FH FM FN FO FP FR FS FT FV FW FX GB GC GD GE GF GS LH LL LR LS LT PA PM PO PW SF SN TB XA XZ".split()
 )
 PAGES = dict(
     line.split("\t")
@@ -168,6 +168,27 @@ def rows(*, native_preview=False):
             width=case["width"],
             height=case["height"],
         )
+
+    # Address every ROM font by its exact filename, including faces with no ^A alias.
+    inventory_path = "references/zd621-fonts-20261008/inventory.json"
+    inventory = json.loads((REPO / inventory_path).read_text())
+    for font in inventory["fonts"] + inventory["user_fonts"]:
+        sample = "ABCDE" if font == "Z:GS.FNT" else "Ag09!?"
+        rom = font.startswith("Z:")
+        add(
+            ("font-rom-" if rom else "font-installed-") + font[2:].lower().replace(".", "-"),
+            "fonts-rom" if rom else "fonts-installed",
+            f"ZD621 {'ROM' if rom else 'installed'} font {font} by name: default and explicit dimensions",
+            f"^FO40,80^A@N,0,0,{font}^FD{sample}^FS"
+            f"^FO40,300^A@N,32,24,{font}^FD{sample}^FS",
+            oracle="font-dependent",
+            source=inventory_path,
+        )
+        if font in {"Z:EPL6.FNT", "Z:EPL7.FNT", "Z:LMU.FNT"}:
+            result[-1]["reference_unscored_reason"] = (
+                "ZD621 returned a blank preview for this ROM font and sample; "
+                "retained as a diagnostic, not a font fidelity score"
+            )
 
     # Font metrics: resident bitmap/scalable families, scale quantization and anchoring.
     for font in "0ABCDEFGH":
