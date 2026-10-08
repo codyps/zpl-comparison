@@ -27,6 +27,34 @@ fn render_options(width: u32, height: u32) -> codyps_zpl::Options {
     }
 }
 
+#[cfg(feature = "codyps-zpl")]
+fn render_codyps(
+    input: &[u8],
+    width: u32,
+    height: u32,
+) -> Result<codyps_zpl::render::Document, String> {
+    let options = render_options(width, height);
+    let directory = env::var("ZPL_FONT_DIR").unwrap_or_default();
+    if directory.is_empty() {
+        return codyps_zpl::render(input, options).map_err(|e| format!("{e:?}"));
+    }
+    use codyps_zpl::{fonts::Fonts, truetype::Hinting};
+    let read = |name: &str| {
+        fs::read(std::path::Path::new(&directory).join(name))
+            .map_err(|e| format!("controlled font {name}: {e}"))
+    };
+    let font0 = read("0.ttf")?;
+    let swiss = read("Swiss.ttf")?;
+    let mut fonts = Fonts::new();
+    fonts.insert_truetype('0', &font0, Hinting::Native)?;
+    fonts.insert_named_truetype("R:FC0.TTF", &font0, Hinting::Native)?;
+    for device in ["R", "E", "B", "A"] {
+        fonts.insert_named_truetype(&format!("{device}:TT0003M_.TTF"), &swiss, Hinting::Native)?;
+    }
+    // Recovered bitmap faces arrive through the shared ~DB/^CW preamble.
+    codyps_zpl::render::render_with_fonts(input, options, &fonts).map_err(|e| format!("{e:?}"))
+}
+
 fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
     #[cfg(feature = "codyps-zpl")]
     {
@@ -39,8 +67,7 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
             return count.to_le_bytes().to_vec();
         }
         use codyps_zpl::output::Adapter;
-        let doc =
-            codyps_zpl::render(black_box(input), render_options(width, height)).expect("render");
+        let doc = render_codyps(black_box(input), width, height).expect("render");
         assert_eq!(doc.labels.len(), 1);
         return codyps_zpl::output::Png.encode(&doc.labels[0]).expect("PNG");
     }

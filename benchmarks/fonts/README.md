@@ -33,7 +33,7 @@ that both printers have identical fonts.
 
 `build.py` packages the recovered glyphs in two ways:
 
-- Native `~DB` bitmap downloads, including bearings and advances, for ZPLr and the physical printers.
+- Native `~DB` bitmap downloads, including bearings and advances, for codyps/zpl, ZPLr and the physical printers.
 - TrueType glyphs made of horizontal pixel-run rectangles, for outline-only
   APIs. Every edge and advance uses an integral multiple of 16 font units.
   No smoothing, tracing, fitting, kerning or optical adjustment is applied.
@@ -69,7 +69,7 @@ previews are captured again whenever the shared font bytes change.
 | zpl-forge | Public `FontManager.register_font` and `ZplEngine.set_fonts`; 0, A–H, P–V. GS and unsupported/named IDs retain defaults. |
 | ZPLr | Native `~DB` and `^CW` for recovered bitmap IDs; `FontProvider` and `^CW` for font 0. Named Swiss uses the same provider. GS and internally generated captions can retain built-ins. |
 | Zebrash, zpl-renderer-js, zebrash-ts | Public ZPL `~DU` TrueType downloads and `^CW` aliases. No patching of library internals. GS and internally generated barcode captions can retain built-ins. |
-| codyps/zpl | Fixed embedded recovered strikes; the comparison API has no external font provider. |
+| codyps/zpl | Public `render_with_fonts` / `Fonts` API for Heros font 0 and named Swiss; native `~DB` / `^CW` for recovered bitmap IDs. GS retains its resident face; supplied TrueType uses native hinting and dots-per-em sizing. |
 | labelize | Fixed embedded faces; no renderer font-loader API. |
 | go-zpl, Rust FFI wrapper | Fixed internal font manager, with no public replacement API. |
 | Labelary | Original captured response with service fonts; explicitly fixed, not a new font-supplied capture. |
@@ -96,8 +96,9 @@ unsupported until an archive with matching font identities is available.
 
 `bazel test //:font_profile_test` checks every recovered pixel rectangle and
 advance against its ZBF input, deterministic bundle generation, fixed-font
-policy, actual text changes in all six configurable renderers, and unchanged
-non-text graphics. Use ordinary report output groups on `//:reports_fonts` to
+policy, font injection in all seven configurable renderers, and unchanged
+non-text graphics. The codyps/zpl bitmap sample matches its resident recovered
+strike; a separate test substitutes a different supplied strike to verify injection. Use ordinary report output groups on `//:reports_fonts` to
 build a suite or individual case, for example:
 
 ```sh

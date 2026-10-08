@@ -392,7 +392,7 @@ py_test(
     size = "medium",
     srcs = ["build/font_profile_test.py", "build/font_profile.py", "build/render.py", "benchmarks/fonts/build.py", "benchmarks/accuracy/pixels.py"],
     main = "build/font_profile_test.py",
-    data = [":comparison_fonts", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
+    data = [":comparison_fonts", ":library_codyps-zpl", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
     deps = [requirement("numpy"), requirement("pillow"), requirement("fonttools")],
 )
 

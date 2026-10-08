@@ -1,6 +1,7 @@
 """Verify recovered geometry, font isolation, and actual public adapter injection."""
 import json
 import re
+import shutil
 import struct
 import tempfile
 import unittest
@@ -22,21 +23,22 @@ class FontProfileTest(unittest.TestCase):
                 self.assertGreater(getattr(font['OS/2'], field), 0)
                 self.assertEqual(getattr(font['OS/2'], field), getattr(source['OS/2'], field))
 
-    def test_zplr_supplied_outline_text_has_visible_ink(self):
+    def test_supplied_outline_text_has_visible_ink(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            for height in (16, 32, 64):
-                for font in ('^A0N', '^A@N'):
-                    source = root / 'input.zpl'
-                    named = ',R:TT0003M_.TTF' if font == '^A@N' else ''
-                    source.write_text(f'^XA^PW400^LL100^FO10,10{font},{height},{height}{named}^FDHello 123^FS^XZ')
-                    key = f'{height}-{font[2]}'
-                    render(dict(source=str(source), sha256=sha(source), width=400, height=100,
-                                library='library_zplr', row=dict(library='zplr'), font_bundle='comparison_fonts'),
-                           root / (key + '.json'), root / key)
-                    row = json.loads((root / (key + '.json')).read_text())
-                    self.assertEqual(row['status'], 'rendered', row)
-                    self.assertGreater(row['ink'], height * 3, row)
+            for library in ('zplr', 'codyps-zpl'):
+                for height in (16, 32, 64):
+                    for font in ('^A0N', '^A@N'):
+                        source = root / 'input.zpl'
+                        named = ',R:TT0003M_.TTF' if font == '^A@N' else ''
+                        source.write_text(f'^XA^PW400^LL100^FO10,10{font},{height},{height}{named}^FDHello 123^FS^XZ')
+                        key = f'{library}-{height}-{font[2]}'
+                        render(dict(source=str(source), sha256=sha(source), width=400, height=100,
+                                    library='library_' + library, row=dict(library=library), font_bundle='comparison_fonts'),
+                               root / (key + '.json'), root / key)
+                        row = json.loads((root / (key + '.json')).read_text())
+                        self.assertEqual(row['status'], 'rendered', row)
+                        self.assertGreater(row['ink'], height * 3, row)
 
     def test_recovered_outlines_preserve_pixels_and_advances(self):
         bundle = Path('comparison_fonts')
@@ -96,15 +98,45 @@ class FontProfileTest(unittest.TestCase):
                 self.assertEqual(path.read_bytes(), (Path(tmp)/path.name).read_bytes(), path.name)
 
     def test_fixed_policy_does_not_change_source(self):
-        for library in ('labelary', 'codyps-zpl', 'labelize', 'go', 'ffi'):
+        for library in ('labelary', 'labelize', 'go', 'ffi'):
             metadata, preamble = configure('comparison_fonts', library)
             self.assertEqual(metadata['mode'], 'fixed')
             self.assertEqual(preamble, b'')
 
+    def test_codyps_consumes_supplied_bitmap_strike(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            bundle = root / 'fonts'
+            shutil.copytree('comparison_fonts', bundle, copy_function=shutil.copyfile)
+            source = root / 'input.zpl'
+            source.write_text('^XA^PW320^LL100^FO10,10^ADN,36,20^FDHello 123^FS^XZ')
+            rows = []
+            for substitute in (False, True):
+                if substitute:
+                    download = bundle / 'bitmap-download.zpl'
+                    original = download.read_text()
+                    changed = original.replace('^CWD,R:FCD.FNT', '^CWD,R:FCA.FNT')
+                    self.assertNotEqual(original, changed)
+                    download.write_text(changed)
+                    manifest_path = bundle / 'manifest.json'
+                    manifest = json.loads(manifest_path.read_text())
+                    manifest['sha256'][download.name] = sha(download)
+                    manifest_path.write_text(json.dumps(manifest))
+                key = str(substitute)
+                render(dict(source=str(source), sha256=sha(source), width=320, height=100,
+                            library='library_codyps-zpl', row=dict(library='codyps-zpl'),
+                            font_bundle=str(bundle)), root / (key + '.json'), root / key)
+                row = json.loads((root / (key + '.json')).read_text())
+                self.assertEqual(row['status'], 'rendered', row)
+                self.assertEqual(row['font_control']['mode'], 'supplied-bitmap-and-callback')
+                self.assertNotEqual(row['source_sha256'], row['submitted_source_sha256'])
+                rows.append(row)
+            self.assertNotEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
+
     def test_real_adapters_consume_fonts_without_changing_graphics(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            for library in ('forge', 'binarykits', 'zplr', 'zebrash', 'zebrash-ts', 'zpl-renderer-js'):
+            for library in ('codyps-zpl', 'forge', 'binarykits', 'zplr', 'zebrash', 'zebrash-ts', 'zpl-renderer-js'):
                 for name, body in [('bitmap', '^FO10,10^ADN,36,20^FDHello 123^FS'),
                                    ('scalable', '^FO10,10^A0N,32,24^FDHello 123^FS'),
                                    ('graphics', '^FO10,10^GB80,40,3^FS')]:
@@ -123,7 +155,8 @@ class FontProfileTest(unittest.TestCase):
                             self.assertEqual(row['status'], 'rendered', row)
                             self.assertEqual([row['width'], row['height']], [320, 100])
                             rows.append(row)
-                        if name == 'graphics':
+                        if name == 'graphics' or (library == 'codyps-zpl' and name == 'bitmap'):
+                            # The supplied D strike matches codyps/zpl's resident pixels.
                             self.assertEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
                         else:
                             self.assertNotEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])

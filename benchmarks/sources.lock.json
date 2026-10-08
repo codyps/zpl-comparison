@@ -34,8 +34,8 @@
   "zpl": {
     "url": "https://github.com/codyps/zpl",
     "fetch_url": "git@github.com:codyps/zpl.git",
-    "rev": "f75ee34b58af1e8203e5c967ec73434d559e2eed",
-    "version": "0.1.0"
+    "rev": "4f6166e770fe11adb0e4309ff701f75d08ecad70",
+    "version": "0.1.1"
   },
   "zebrash": {
     "url": "https://github.com/ingridhq/zebrash",

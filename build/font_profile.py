@@ -6,7 +6,6 @@ from pathlib import Path
 CALLBACK = {'binarykits', 'forge', 'zplr'}
 DOWNLOAD = {'zebrash', 'zebrash-ts', 'zpl-renderer-js'}
 FIXED = {
-    'codyps-zpl': 'Fixed embedded recovered printer strikes; no external font provider in this API.',
     'labelize': 'Fixed embedded faces; Renderer exposes no font loader.',
     'go': 'Fixed internal font manager; no public replacement API.',
     'ffi': 'Fixed go-zpl font manager behind the FFI API.',
@@ -21,8 +20,10 @@ def configure(directory, library):
     for name, digest in manifest['sha256'].items():
         if hashlib.sha256((root / name).read_bytes()).hexdigest() != digest:
             raise ValueError('Font bundle hash mismatch: ' + name)
-    if library == 'zplr':
-        mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; shared TrueType font 0 via FontProvider and ^CW. GS and built-in captions may retain fixed fonts.'
+    if library == 'codyps-zpl':
+        mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; Heros font 0 and named Swiss via Fonts/render_with_fonts with native hinting and dots-per-em sizing. GS retains its resident face; captions follow library font selection.'
+    elif library == 'zplr':
+        mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; shared TrueType font 0 via the public font API and ^CW. GS and built-in captions may retain fixed fonts.'
     elif library == 'forge':
         mode, note = 'supplied-callback', 'Recovered outlines for A–H and P–V, Heros for 0 through FontManager; GS and named fonts retain built-ins.'
     elif library in CALLBACK:
@@ -36,7 +37,7 @@ def configure(directory, library):
     metadata = dict(profile='controlled-v1', mode=mode, note=note,
                     bundle_sha256=hashlib.sha256(manifest_bytes).hexdigest(), fonts=manifest['fonts'])
     preamble = bytearray()
-    if library == 'zplr':
+    if library in {'zplr', 'codyps-zpl'}:
         preamble.extend((root / 'bitmap-download.zpl').read_bytes())
     if library in DOWNLOAD:
         for fid, filename in sorted(manifest['fonts'].items()):
