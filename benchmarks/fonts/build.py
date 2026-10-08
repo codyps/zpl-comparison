@@ -34,11 +34,12 @@ def unpack(path):
     return height, glyphs
 
 
-def finish(builder, name, path, ascent, descent, notices=None):
+def finish(builder, name, path, ascent, descent, notices=None, cap_height=0, x_height=0):
     builder.setupHorizontalHeader(ascent=ascent, descent=descent)
     builder.setupNameTable(dict(familyName=name, styleName='Regular', uniqueFontIdentifier=name + '-1', fullName=name, psName=name, **(notices or {})))
     builder.setupOS2(sTypoAscender=ascent, sTypoDescender=descent, sTypoLineGap=0,
-                    usWinAscent=ascent, usWinDescent=-descent)
+                    usWinAscent=ascent, usWinDescent=-descent,
+                    sCapHeight=cap_height, sxHeight=x_height)
     builder.setupPost()
     builder.setupMaxp()
     builder.font['head'].created = builder.font['head'].modified = EPOCH
@@ -123,7 +124,8 @@ def outline(source, name, target):
     builder.setupGlyf(glyphs)
     builder.setupHorizontalMetrics(original['hmtx'].metrics)
     notices = {key: value for key, number in [('copyright', 0), ('trademark', 7), ('manufacturer', 8), ('designer', 9), ('licenseDescription', 13), ('licenseInfoURL', 14)] if (value := original['name'].getDebugName(number))}
-    finish(builder, name, target, original['hhea'].ascent, original['hhea'].descent, notices)
+    finish(builder, name, target, original['hhea'].ascent, original['hhea'].descent, notices,
+           original['OS/2'].sCapHeight, original['OS/2'].sxHeight)
 
 
 def build(output):

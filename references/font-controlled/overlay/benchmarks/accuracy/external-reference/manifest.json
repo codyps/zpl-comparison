@@ -1,14 +1,14 @@
 {
-  "captured_utc": "2026-10-08T01:53:17Z",
+  "captured_utc": "2026-10-08T02:39:45Z",
   "cases": [
     {
       "arguments": "External shipping example with explicit native-width preview canvas",
-      "captured_utc": "2026-10-08T01:13:44Z",
+      "captured_utc": "2026-10-08T02:27:25Z",
       "command": "^A0 ^BC ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -28,12 +28,12 @@
     },
     {
       "arguments": "External product example with explicit native-width preview canvas",
-      "captured_utc": "2026-10-08T01:13:44Z",
+      "captured_utc": "2026-10-08T02:27:25Z",
       "command": "^A0 ^BE ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -53,12 +53,12 @@
     },
     {
       "arguments": "External warehouse example with explicit native-width preview canvas",
-      "captured_utc": "2026-10-08T01:13:45Z",
+      "captured_utc": "2026-10-08T02:27:26Z",
       "command": "^A0 ^B3 ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -78,12 +78,12 @@
     },
     {
       "arguments": "External compliance example with explicit native-width preview canvas",
-      "captured_utc": "2026-10-08T01:13:45Z",
+      "captured_utc": "2026-10-08T02:27:26Z",
       "command": "^A0 ^BC ^BE ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -103,12 +103,12 @@
     },
     {
       "arguments": "External SurePost label content with native preview dimensions",
-      "captured_utc": "2026-10-08T01:13:46Z",
+      "captured_utc": "2026-10-08T02:27:27Z",
       "command": "^A0 ^BC ^BD ^BX ^BY ^CI ^CV ^FD ^FH ^FO ^FS ^FV ^FX ^GB ^LH ^LL ^LR ^PO ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -128,12 +128,12 @@
     },
     {
       "arguments": "External asset example with explicit native-width preview canvas",
-      "captured_utc": "2026-10-08T01:13:47Z",
+      "captured_utc": "2026-10-08T02:27:27Z",
       "command": "^A0 ^B7 ^BX ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -153,12 +153,12 @@
     },
     {
       "arguments": "External retail example with explicit native-width preview canvas",
-      "captured_utc": "2026-10-08T01:13:47Z",
+      "captured_utc": "2026-10-08T02:27:28Z",
       "command": "^A0 ^BE ^BU ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -179,12 +179,12 @@
     {
       "arguments": "External stateful example with explicit native-width preview canvas",
       "capture_scope": "ram-resources",
-      "captured_utc": "2026-10-08T01:13:47Z",
+      "captured_utc": "2026-10-08T02:27:28Z",
       "command": "^A0 ^DF ^FD ^FN ^FO ^FS ^GB ^LL ^PW ^XA ^XF ^XG ^XZ ~DG",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -205,12 +205,12 @@
     },
     {
       "arguments": "Explicit UTF-8 variant of external retail example",
-      "captured_utc": "2026-10-08T01:13:48Z",
+      "captured_utc": "2026-10-08T02:27:28Z",
       "command": "^A0 ^BE ^BU ^BY ^CI ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -230,12 +230,12 @@
     },
     {
       "arguments": "External shipping example with explicit native-width preview canvas",
-      "captured_utc": "2026-10-08T01:13:48Z",
+      "captured_utc": "2026-10-08T02:27:29Z",
       "command": "^A0 ^BC ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -264,9 +264,9 @@
   "failures": [],
   "firmware": "V93.21.33Z",
   "font_capture": {
-    "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-    "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-    "captured_utc": "2026-10-08T01:53:17Z",
+    "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+    "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+    "captured_utc": "2026-10-08T02:39:45Z",
     "manifest": "references/font-controlled/capture.json",
     "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
   },

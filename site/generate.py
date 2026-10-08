@@ -178,7 +178,10 @@ class Site:
         self.raw = {}
         self.focus_cache = {}
         evidence = self.source / "docs/benchmarks/accuracy/results.json"
-        self.font_controlled = evidence.exists() and any(row.get("font_control") for row in json.loads(evidence.read_text()).get("results", []))
+        rows = json.loads(evidence.read_text()).get("results", []) if evidence.exists() else []
+        self.font_controlled = any(row.get("font_control") for row in rows)
+        self.fixed_fonts = {row["library"]: row["font_control"].get("note", "Controlled fonts unavailable; using fixed fonts.")
+                            for row in rows if row.get("font_control", {}).get("mode") == "fixed" and "library" in row}
 
     def read(self, path):
         return json.loads((self.source / path).read_text())
@@ -187,7 +190,20 @@ class Site:
         return os.path.relpath(path, Path(self.page).parent)
 
     def link(self, path, label):
-        return f'<a href="{E(self.href(path))}">{E(label)}</a>'
+        badge = ""
+        if path.startswith("libraries/"):
+            lib = next((lib for lib in self.fixed_fonts if path == "libraries/" + slug(lib) + ".html"), None)
+            badge = self.font_badge(lib)
+        return f'<a href="{E(self.href(path))}">{E(label)}</a>' + badge
+
+    def font_badge(self, library):
+        if not self.font_controlled or library not in self.fixed_fonts:
+            return ""
+        label = "Controlled fonts unavailable; using fixed fonts. " + self.fixed_fonts[library]
+        return f'<span class="font-fallback" role="img" aria-label="{E(label)}" title="{E(label)}">⚠</span>'
+
+    def library_name(self, library):
+        return E(NAMES.get(library, library)) + self.font_badge(library)
 
     def asset(self, path, required=True):
         if not path:
@@ -256,7 +272,7 @@ class Site:
 
     def write(self, title, body, section="Measured comparisons", meta=""):
         if self.font_controlled:
-            body = '<p class="font-policy"><strong>Font-controlled comparison.</strong> Recovered Zebra bitmap fonts, Heros Condensed Bold (font 0), and Heros Regular (named Swiss) are supplied where supported. Fixed-font outputs remain included; font treatment is recorded per renderer. The printer previews use the same supplied font bundle. Rasterization and layout differences remain.</p>' + body
+            body = '<p class="font-policy"><strong>Font-controlled comparison.</strong> Recovered Zebra bitmap fonts, Heros Condensed Bold (font 0), and Heros Regular (named Swiss) are supplied where supported. Fixed-font outputs remain included; font treatment is recorded per renderer. The printer previews use the same supplied font bundle. Rasterization and layout differences remain. <span class="font-fallback" aria-hidden="true">⚠</span> beside a library means controlled fonts were unavailable; it uses fixed fonts.</p>' + body
         category = self.page.startswith("categories/")
         library = self.page.startswith("libraries/")
         if "data-focus=" in body and "data-full-canvas" not in body + meta:
@@ -293,6 +309,7 @@ class Site:
             + ('' if category or library or not section else '<p class="eyebrow">' + E(section) + '</p>')
             + '<div class="page-heading"><h1>'
             + E(title)
+            + (self.font_badge(next((lib for lib in self.fixed_fonts if self.page == "libraries/" + slug(lib) + ".html"), None)) if library else "")
             + '</h1>' + meta + '</div>'
             + body
             + "</main></body></html>"
@@ -835,7 +852,7 @@ class Site:
             body += (
                 "<p>Jump to library: "
                 + " · ".join(
-                    f'<a href="#{E(slug(r["library"]))}">{E(NAMES.get(r["library"], r["library"]))}</a>'
+                    f'<a href="#{E(slug(r["library"]))}">{self.library_name(r["library"])}</a>'
                     for r in c["rows"]
                 )
                 + "</p>"
@@ -869,7 +886,7 @@ class Site:
                         + '</div><figcaption><a href="#'
                         + slug(lib)
                         + '">'
-                        + E(NAMES.get(lib, lib))
+                        + self.library_name(lib)
                         + "</a><br>"
                         + self.result(observation)
                         + "</figcaption></figure>"
@@ -1430,7 +1447,7 @@ class Site:
             + '<p>' + self.link(self.asset(base + "manifest.json"), "Font manifest and source hashes")
             + ' · ' + self.link(self.asset(base + "GUST-LICENSE.txt"), "Heros license") + '</p>'
             + table(["ZPL font", "Source", "Download"], rows, "Shared supplied fonts")
-            + table(["Renderer", "Font treatment"], [[E(name), E(note)] for name, note in sorted(treatments.items())], "Font support and exceptions")
+            + table(["Renderer", "Font treatment"], [[self.library_name(name), E(note)] for name, note in sorted(treatments.items())], "Font support and exceptions")
         )
 
     def generate(self):

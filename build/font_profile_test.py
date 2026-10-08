@@ -14,6 +14,30 @@ from build.render import render
 
 
 class FontProfileTest(unittest.TestCase):
+    def test_outline_conversion_preserves_vertical_metrics(self):
+        for original, converted in [('heros-cn-bold.otf', '0.ttf'), ('heros-regular.otf', 'Swiss.ttf')]:
+            source = TTFont(Path('benchmarks/fonts/source') / original)
+            font = TTFont(Path('comparison_fonts') / converted)
+            for field in ('sCapHeight', 'sxHeight'):
+                self.assertGreater(getattr(font['OS/2'], field), 0)
+                self.assertEqual(getattr(font['OS/2'], field), getattr(source['OS/2'], field))
+
+    def test_zplr_supplied_outline_text_has_visible_ink(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for height in (16, 32, 64):
+                for font in ('^A0N', '^A@N'):
+                    source = root / 'input.zpl'
+                    named = ',R:TT0003M_.TTF' if font == '^A@N' else ''
+                    source.write_text(f'^XA^PW400^LL100^FO10,10{font},{height},{height}{named}^FDHello 123^FS^XZ')
+                    key = f'{height}-{font[2]}'
+                    render(dict(source=str(source), sha256=sha(source), width=400, height=100,
+                                library='library_zplr', row=dict(library='zplr'), font_bundle='comparison_fonts'),
+                           root / (key + '.json'), root / key)
+                    row = json.loads((root / (key + '.json')).read_text())
+                    self.assertEqual(row['status'], 'rendered', row)
+                    self.assertGreater(row['ink'], height * 3, row)
+
     def test_recovered_outlines_preserve_pixels_and_advances(self):
         bundle = Path('comparison_fonts')
         manifest = json.loads((bundle / 'manifest.json').read_text())

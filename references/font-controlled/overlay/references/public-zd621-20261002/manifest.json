@@ -1,14 +1,14 @@
 {
-  "captured_utc": "2026-10-08T01:53:17Z",
+  "captured_utc": "2026-10-08T02:39:45Z",
   "cases": [
     {
       "arguments": "Labelixa carrier style shipping 4x6",
-      "captured_utc": "2026-10-08T01:13:56Z",
+      "captured_utc": "2026-10-08T02:27:35Z",
       "command": "^B7 ^BC ^BY ^CF ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -28,12 +28,12 @@
     },
     {
       "arguments": "Labelixa datamatrix serial 1x1",
-      "captured_utc": "2026-10-08T01:13:56Z",
+      "captured_utc": "2026-10-08T02:27:36Z",
       "command": "^BX ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -53,12 +53,12 @@
     },
     {
       "arguments": "Labelixa fba fnsku product 2x1",
-      "captured_utc": "2026-10-08T01:13:57Z",
+      "captured_utc": "2026-10-08T02:27:36Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -78,12 +78,12 @@
     },
     {
       "arguments": "Labelixa gs1 128 sscc shipping 4x6",
-      "captured_utc": "2026-10-08T01:13:57Z",
+      "captured_utc": "2026-10-08T02:27:36Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -103,12 +103,12 @@
     },
     {
       "arguments": "Labelixa multi label batch 2x1",
-      "captured_utc": "2026-10-08T01:13:58Z",
+      "captured_utc": "2026-10-08T02:27:37Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -128,12 +128,12 @@
     },
     {
       "arguments": "Labelixa multi label batch 2x1",
-      "captured_utc": "2026-10-08T01:13:58Z",
+      "captured_utc": "2026-10-08T02:27:37Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -153,12 +153,12 @@
     },
     {
       "arguments": "Labelixa multi label batch 2x1",
-      "captured_utc": "2026-10-08T01:13:58Z",
+      "captured_utc": "2026-10-08T02:27:37Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -178,12 +178,12 @@
     },
     {
       "arguments": "Labelixa pallet license plate 4x3",
-      "captured_utc": "2026-10-08T01:13:59Z",
+      "captured_utc": "2026-10-08T02:27:38Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -203,12 +203,12 @@
     },
     {
       "arguments": "Labelixa product label ean13 2x1",
-      "captured_utc": "2026-10-08T01:13:59Z",
+      "captured_utc": "2026-10-08T02:27:38Z",
       "command": "^BE ^BY ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -228,12 +228,12 @@
     },
     {
       "arguments": "Labelixa qr url 2x2",
-      "captured_utc": "2026-10-08T01:14:00Z",
+      "captured_utc": "2026-10-08T02:27:38Z",
       "command": "^BQ ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -253,12 +253,12 @@
     },
     {
       "arguments": "Labelixa shelf label 3x1",
-      "captured_utc": "2026-10-08T01:14:00Z",
+      "captured_utc": "2026-10-08T02:27:39Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -278,12 +278,12 @@
     },
     {
       "arguments": "Labelixa shipping label 4x6",
-      "captured_utc": "2026-10-08T01:14:00Z",
+      "captured_utc": "2026-10-08T02:27:39Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -303,12 +303,12 @@
     },
     {
       "arguments": "Labelixa shopify product label 2x1",
-      "captured_utc": "2026-10-08T01:14:01Z",
+      "captured_utc": "2026-10-08T02:27:39Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FS ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -328,12 +328,12 @@
     },
     {
       "arguments": "Postal layout with inline graphic and Code 39",
-      "captured_utc": "2026-10-08T01:14:01Z",
+      "captured_utc": "2026-10-08T02:27:40Z",
       "command": "^A ^B3 ^BY ^FD ^FO ^FR ^FS ^FX ^GB ^GF ^LH ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -353,12 +353,12 @@
     },
     {
       "arguments": "Postal layout with inline graphic and Code 39",
-      "captured_utc": "2026-10-08T01:14:02Z",
+      "captured_utc": "2026-10-08T02:27:40Z",
       "command": "^A ^B3 ^BY ^FD ^FO ^FR ^FS ^FX ^GB ^GD ^GF ^LH ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -378,12 +378,12 @@
     },
     {
       "arguments": "DPD layout with rotated text, graphics and multiple barcodes",
-      "captured_utc": "2026-10-08T01:14:03Z",
+      "captured_utc": "2026-10-08T02:27:41Z",
       "command": "^A ^B2 ^BC ^BY ^CI ^FD ^FS ^FT ^GB ^GF ^LH ^LL ^PO ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -403,12 +403,12 @@
     },
     {
       "arguments": "Event ticket with inline graphics and Code 39",
-      "captured_utc": "2026-10-08T01:14:03Z",
+      "captured_utc": "2026-10-08T02:27:42Z",
       "command": "^A ^B3 ^BY ^FD ^FO ^FR ^FS ^FX ^GB ^GF ^LH ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -428,12 +428,12 @@
     },
     {
       "arguments": "Packing list with reversed text and QR",
-      "captured_utc": "2026-10-08T01:14:04Z",
+      "captured_utc": "2026-10-08T02:27:42Z",
       "command": "^A ^BQ ^CF ^FD ^FO ^FR ^FS ^FX ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -453,12 +453,12 @@
     },
     {
       "arguments": "Industrial carton template with rotated text",
-      "captured_utc": "2026-10-08T01:14:05Z",
+      "captured_utc": "2026-10-08T02:27:43Z",
       "command": "^A ^B3 ^BY ^FD ^FH ^FO ^FS ^FX ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -478,12 +478,12 @@
     },
     {
       "arguments": "Industrial spool label with rotated Code 39",
-      "captured_utc": "2026-10-08T01:14:05Z",
+      "captured_utc": "2026-10-08T02:27:43Z",
       "command": "^A ^B3 ^BY ^FD ^FO ^FS ^FX ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -503,12 +503,12 @@
     },
     {
       "arguments": "Industrial yarn template with mixed resident fonts",
-      "captured_utc": "2026-10-08T01:14:06Z",
+      "captured_utc": "2026-10-08T02:27:44Z",
       "command": "^A ^B3 ^BY ^FD ^FH ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -528,12 +528,12 @@
     },
     {
       "arguments": "Shipping layout with reversed boxes and Code 128",
-      "captured_utc": "2026-10-08T01:14:07Z",
+      "captured_utc": "2026-10-08T02:27:45Z",
       "command": "^BC ^BY ^CF ^FD ^FO ^FR ^FS ^FX ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -553,12 +553,12 @@
     },
     {
       "arguments": "Labelixa carrier style shipping 4x6",
-      "captured_utc": "2026-10-08T01:14:07Z",
+      "captured_utc": "2026-10-08T02:27:45Z",
       "command": "^B7 ^BC ^BY ^CF ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -583,9 +583,9 @@
   "failures": [],
   "firmware": "V93.21.33Z",
   "font_capture": {
-    "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-    "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-    "captured_utc": "2026-10-08T01:53:17Z",
+    "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+    "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+    "captured_utc": "2026-10-08T02:39:45Z",
     "manifest": "references/font-controlled/capture.json",
     "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
   },

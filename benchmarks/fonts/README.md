@@ -50,9 +50,16 @@ The original Heros OpenType/CFF sources and GUST license are retained under
 `source/`. Condensed Bold is the already pinned BinaryKits font asset; Regular
 comes from CTAN at the URL recorded in `sources.json`. The conversion uses the
 repository's pinned FontTools, quadratic curves with at most one font-unit
-approximation error, original advances and renamed `ComparisonHeros*` families.
+approximation error, original advances, original cap-height/x-height metadata,
+and renamed `ComparisonHeros*` families.
 It does not preserve CFF hinting or layout tables. The font bundle and its
 manifest are generated deterministically; no host font installation is used.
+
+The vertical metadata matters: ZPLr positions supplied outline glyphs using the
+OS/2 cap height. An earlier conversion left it at zero, clipping most of the
+text. The corrected conversion preserves the source values, and regression tests
+require visible ink for font 0 and named Swiss at 16, 32 and 64 dots. Printer
+previews are captured again whenever the shared font bytes change.
 
 ## Renderer treatment
 
@@ -128,9 +135,8 @@ A font control must change with the supplied fonts, repeat at the end, and match
 its original pixels after restoring aliases. Restoration happens inside a
 preview format. The printers expose implicit T/U/V aliases as the scalable ROM
 font; explicitly restoring those aliases changes their resident strike selection.
-The retained ZQ610 preflight records this distinction; accepted ZQ610 sessions
-verify the original control after restart. The ZD621 session checks restoration
-against its explicit pre-session mapping, followed by a final cleanup restart.
+The current snapshot verifies the original control after restart on both
+printers. Earlier preflight evidence is retained in Git history.
 No corpus captures from a failed preflight are accepted. Downloads use volatile
 RAM. The explicit `--restart-after-capture` option verifies
 the serial, restarts before and after each session (including timeout recovery),

@@ -1,14 +1,14 @@
 {
-  "captured_utc": "2026-10-08T01:53:17Z",
+  "captured_utc": "2026-10-08T02:39:45Z",
   "cases": [
     {
       "arguments": "font=0,o=N,h=16,w=0",
-      "captured_utc": "2026-10-08T01:09:47Z",
+      "captured_utc": "2026-10-08T02:24:02Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -27,12 +27,12 @@
     },
     {
       "arguments": "font=0,o=N,h=32,w=0",
-      "captured_utc": "2026-10-08T01:09:48Z",
+      "captured_utc": "2026-10-08T02:24:02Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -51,12 +51,12 @@
     },
     {
       "arguments": "font=0,o=N,h=64,w=0",
-      "captured_utc": "2026-10-08T01:09:48Z",
+      "captured_utc": "2026-10-08T02:24:03Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -75,12 +75,12 @@
     },
     {
       "arguments": "font=0,o=N,h=32,w=16",
-      "captured_utc": "2026-10-08T01:09:48Z",
+      "captured_utc": "2026-10-08T02:24:03Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -99,12 +99,12 @@
     },
     {
       "arguments": "font=0,o=N,h=32,w=32",
-      "captured_utc": "2026-10-08T01:09:49Z",
+      "captured_utc": "2026-10-08T02:24:03Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -123,12 +123,12 @@
     },
     {
       "arguments": "font=0,o=N,h=32,w=64",
-      "captured_utc": "2026-10-08T01:09:49Z",
+      "captured_utc": "2026-10-08T02:24:04Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -147,12 +147,12 @@
     },
     {
       "arguments": "font=0,o=N,h=32,w=0",
-      "captured_utc": "2026-10-08T01:09:50Z",
+      "captured_utc": "2026-10-08T02:24:04Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -171,12 +171,12 @@
     },
     {
       "arguments": "font=0,o=R,h=32,w=0",
-      "captured_utc": "2026-10-08T01:09:50Z",
+      "captured_utc": "2026-10-08T02:24:04Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -195,12 +195,12 @@
     },
     {
       "arguments": "font=0,o=I,h=32,w=0",
-      "captured_utc": "2026-10-08T01:09:50Z",
+      "captured_utc": "2026-10-08T02:24:04Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -219,12 +219,12 @@
     },
     {
       "arguments": "font=0,o=B,h=32,w=0",
-      "captured_utc": "2026-10-08T01:09:51Z",
+      "captured_utc": "2026-10-08T02:24:05Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -243,12 +243,12 @@
     },
     {
       "arguments": "font=A,o=N,h=32,w=24",
-      "captured_utc": "2026-10-08T01:09:51Z",
+      "captured_utc": "2026-10-08T02:24:05Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -267,12 +267,12 @@
     },
     {
       "arguments": "font=D,o=N,h=32,w=24",
-      "captured_utc": "2026-10-08T01:09:51Z",
+      "captured_utc": "2026-10-08T02:24:05Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -291,12 +291,12 @@
     },
     {
       "arguments": "x=220,y=80,z=0",
-      "captured_utc": "2026-10-08T01:09:52Z",
+      "captured_utc": "2026-10-08T02:24:06Z",
       "command": "^FO",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -315,12 +315,12 @@
     },
     {
       "arguments": "x=220,y=80,z=1",
-      "captured_utc": "2026-10-08T01:09:52Z",
+      "captured_utc": "2026-10-08T02:24:06Z",
       "command": "^FO",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -339,12 +339,12 @@
     },
     {
       "arguments": "x=220,y=80,z=2",
-      "captured_utc": "2026-10-08T01:09:52Z",
+      "captured_utc": "2026-10-08T02:24:06Z",
       "command": "^FO",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -363,12 +363,12 @@
     },
     {
       "arguments": "x=80,y=100",
-      "captured_utc": "2026-10-08T01:09:53Z",
+      "captured_utc": "2026-10-08T02:24:06Z",
       "command": "^FT",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -387,12 +387,12 @@
     },
     {
       "arguments": "30,20",
-      "captured_utc": "2026-10-08T01:09:53Z",
+      "captured_utc": "2026-10-08T02:24:07Z",
       "command": "^LH",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -411,12 +411,12 @@
     },
     {
       "arguments": "20",
-      "captured_utc": "2026-10-08T01:09:53Z",
+      "captured_utc": "2026-10-08T02:24:07Z",
       "command": "^LS",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -435,12 +435,12 @@
     },
     {
       "arguments": "20",
-      "captured_utc": "2026-10-08T01:09:54Z",
+      "captured_utc": "2026-10-08T02:24:07Z",
       "command": "^LT",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -459,12 +459,12 @@
     },
     {
       "arguments": "I",
-      "captured_utc": "2026-10-08T01:09:54Z",
+      "captured_utc": "2026-10-08T02:24:08Z",
       "command": "^PO",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -483,12 +483,12 @@
     },
     {
       "arguments": "Y",
-      "captured_utc": "2026-10-08T01:09:54Z",
+      "captured_utc": "2026-10-08T02:24:08Z",
       "command": "^LR",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -507,12 +507,12 @@
     },
     {
       "arguments": "R",
-      "captured_utc": "2026-10-08T01:09:55Z",
+      "captured_utc": "2026-10-08T02:24:08Z",
       "command": "^FW",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -531,12 +531,12 @@
     },
     {
       "arguments": "reverse current field",
-      "captured_utc": "2026-10-08T01:09:55Z",
+      "captured_utc": "2026-10-08T02:24:08Z",
       "command": "^FR",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -555,12 +555,12 @@
     },
     {
       "arguments": "w=220,lines=3,space=2,align=L,indent=0",
-      "captured_utc": "2026-10-08T01:09:55Z",
+      "captured_utc": "2026-10-08T02:24:09Z",
       "command": "^FB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -579,12 +579,12 @@
     },
     {
       "arguments": "w=220,lines=3,space=2,align=C,indent=0",
-      "captured_utc": "2026-10-08T01:09:56Z",
+      "captured_utc": "2026-10-08T02:24:09Z",
       "command": "^FB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -603,12 +603,12 @@
     },
     {
       "arguments": "w=220,lines=3,space=2,align=R,indent=0",
-      "captured_utc": "2026-10-08T01:09:56Z",
+      "captured_utc": "2026-10-08T02:24:09Z",
       "command": "^FB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -627,12 +627,12 @@
     },
     {
       "arguments": "w=220,lines=3,space=2,align=J,indent=0",
-      "captured_utc": "2026-10-08T01:09:56Z",
+      "captured_utc": "2026-10-08T02:24:10Z",
       "command": "^FB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -651,12 +651,12 @@
     },
     {
       "arguments": "indent=20",
-      "captured_utc": "2026-10-08T01:09:57Z",
+      "captured_utc": "2026-10-08T02:24:10Z",
       "command": "^FB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -675,12 +675,12 @@
     },
     {
       "arguments": "explicit \\& break",
-      "captured_utc": "2026-10-08T01:09:57Z",
+      "captured_utc": "2026-10-08T02:24:10Z",
       "command": "^FB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -699,12 +699,12 @@
     },
     {
       "arguments": "indicator=_, bytes _41_42_43",
-      "captured_utc": "2026-10-08T01:09:57Z",
+      "captured_utc": "2026-10-08T02:24:10Z",
       "command": "^FH",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -723,12 +723,12 @@
     },
     {
       "arguments": "literal field value",
-      "captured_utc": "2026-10-08T01:09:58Z",
+      "captured_utc": "2026-10-08T02:24:11Z",
       "command": "^FV",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -747,12 +747,12 @@
     },
     {
       "arguments": "encoding=0",
-      "captured_utc": "2026-10-08T01:09:58Z",
+      "captured_utc": "2026-10-08T02:24:11Z",
       "command": "^CI",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -771,12 +771,12 @@
     },
     {
       "arguments": "encoding=27",
-      "captured_utc": "2026-10-08T01:09:58Z",
+      "captured_utc": "2026-10-08T02:24:11Z",
       "command": "^CI",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -795,12 +795,12 @@
     },
     {
       "arguments": "encoding=28",
-      "captured_utc": "2026-10-08T01:09:59Z",
+      "captured_utc": "2026-10-08T02:24:12Z",
       "command": "^CI",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -819,12 +819,12 @@
     },
     {
       "arguments": "encoding=28; UTF-8 \u00e9",
-      "captured_utc": "2026-10-08T01:09:59Z",
+      "captured_utc": "2026-10-08T02:24:12Z",
       "command": "^CI",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -843,12 +843,12 @@
     },
     {
       "arguments": "w=100,h=60,t=1,color=B,round=0",
-      "captured_utc": "2026-10-08T01:09:59Z",
+      "captured_utc": "2026-10-08T02:24:12Z",
       "command": "^GB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -867,12 +867,12 @@
     },
     {
       "arguments": "w=100,h=60,t=4,color=B,round=0",
-      "captured_utc": "2026-10-08T01:10:00Z",
+      "captured_utc": "2026-10-08T02:24:12Z",
       "command": "^GB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -891,12 +891,12 @@
     },
     {
       "arguments": "w=100,h=60,t=60,color=B,round=0",
-      "captured_utc": "2026-10-08T01:10:00Z",
+      "captured_utc": "2026-10-08T02:24:13Z",
       "command": "^GB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -915,12 +915,12 @@
     },
     {
       "arguments": "round=4",
-      "captured_utc": "2026-10-08T01:10:00Z",
+      "captured_utc": "2026-10-08T02:24:13Z",
       "command": "^GB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -939,12 +939,12 @@
     },
     {
       "arguments": "color=W",
-      "captured_utc": "2026-10-08T01:10:01Z",
+      "captured_utc": "2026-10-08T02:24:13Z",
       "command": "^GB",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -963,12 +963,12 @@
     },
     {
       "arguments": "80,3,B",
-      "captured_utc": "2026-10-08T01:10:01Z",
+      "captured_utc": "2026-10-08T02:24:14Z",
       "command": "^GC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -987,12 +987,12 @@
     },
     {
       "arguments": "120,60,3,B",
-      "captured_utc": "2026-10-08T01:10:01Z",
+      "captured_utc": "2026-10-08T02:24:14Z",
       "command": "^GE",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1011,12 +1011,12 @@
     },
     {
       "arguments": "120,60,3,B,R",
-      "captured_utc": "2026-10-08T01:10:02Z",
+      "captured_utc": "2026-10-08T02:24:14Z",
       "command": "^GD",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1035,12 +1035,12 @@
     },
     {
       "arguments": "120,60,3,B,L",
-      "captured_utc": "2026-10-08T01:10:02Z",
+      "captured_utc": "2026-10-08T02:24:14Z",
       "command": "^GD",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1059,12 +1059,12 @@
     },
     {
       "arguments": "A,8,8,1; raw hex",
-      "captured_utc": "2026-10-08T01:10:02Z",
+      "captured_utc": "2026-10-08T02:24:15Z",
       "command": "^GF",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1083,12 +1083,12 @@
     },
     {
       "arguments": "B,8,8,1; ASCII binary bytes",
-      "captured_utc": "2026-10-08T01:10:03Z",
+      "captured_utc": "2026-10-08T02:24:15Z",
       "command": "^GF",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1107,12 +1107,12 @@
     },
     {
       "arguments": "A,8,8,1; B64, CRC16",
-      "captured_utc": "2026-10-08T01:10:03Z",
+      "captured_utc": "2026-10-08T02:24:15Z",
       "command": "^GF",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1131,12 +1131,12 @@
     },
     {
       "arguments": "A,8,8,1; Z64, CRC16",
-      "captured_utc": "2026-10-08T01:10:03Z",
+      "captured_utc": "2026-10-08T02:24:16Z",
       "command": "^GF",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1155,12 +1155,12 @@
     },
     {
       "arguments": "w=2,ratio=2,height=60",
-      "captured_utc": "2026-10-08T01:10:04Z",
+      "captured_utc": "2026-10-08T02:24:16Z",
       "command": "^BY",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1179,12 +1179,12 @@
     },
     {
       "arguments": "w=2,ratio=3,height=60",
-      "captured_utc": "2026-10-08T01:10:04Z",
+      "captured_utc": "2026-10-08T02:24:16Z",
       "command": "^BY",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1203,12 +1203,12 @@
     },
     {
       "arguments": "o=N,check=N,h=60,readable=N",
-      "captured_utc": "2026-10-08T01:10:04Z",
+      "captured_utc": "2026-10-08T02:24:16Z",
       "command": "^B3",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1227,12 +1227,12 @@
     },
     {
       "arguments": "o=N,check=Y,h=60,readable=N",
-      "captured_utc": "2026-10-08T01:10:05Z",
+      "captured_utc": "2026-10-08T02:24:17Z",
       "command": "^B3",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1251,12 +1251,12 @@
     },
     {
       "arguments": "h=60,interpretation=N,above=N",
-      "captured_utc": "2026-10-08T01:10:05Z",
+      "captured_utc": "2026-10-08T02:24:17Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1275,12 +1275,12 @@
     },
     {
       "arguments": "h=60,interpretation=Y,above=N",
-      "captured_utc": "2026-10-08T01:10:05Z",
+      "captured_utc": "2026-10-08T02:24:17Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1299,12 +1299,12 @@
     },
     {
       "arguments": "h=60,interpretation=Y,above=Y",
-      "captured_utc": "2026-10-08T01:10:06Z",
+      "captured_utc": "2026-10-08T02:24:18Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1323,12 +1323,12 @@
     },
     {
       "arguments": "o=R,h=60",
-      "captured_utc": "2026-10-08T01:10:06Z",
+      "captured_utc": "2026-10-08T02:24:18Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1347,12 +1347,12 @@
     },
     {
       "arguments": "o=I,h=60",
-      "captured_utc": "2026-10-08T01:10:06Z",
+      "captured_utc": "2026-10-08T02:24:18Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1371,12 +1371,12 @@
     },
     {
       "arguments": "o=B,h=60",
-      "captured_utc": "2026-10-08T01:10:07Z",
+      "captured_utc": "2026-10-08T02:24:18Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1395,12 +1395,12 @@
     },
     {
       "arguments": "mode=N",
-      "captured_utc": "2026-10-08T01:10:07Z",
+      "captured_utc": "2026-10-08T02:24:19Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1419,12 +1419,12 @@
     },
     {
       "arguments": "mode=A",
-      "captured_utc": "2026-10-08T01:10:07Z",
+      "captured_utc": "2026-10-08T02:24:19Z",
       "command": "^BC",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1443,12 +1443,12 @@
     },
     {
       "arguments": "o=N,model=1,magnification=3,EC=L,mask=0",
-      "captured_utc": "2026-10-08T01:10:08Z",
+      "captured_utc": "2026-10-08T02:24:19Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1467,12 +1467,12 @@
     },
     {
       "arguments": "o=N,model=2,magnification=3,EC=L,mask=0",
-      "captured_utc": "2026-10-08T01:10:08Z",
+      "captured_utc": "2026-10-08T02:24:20Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1491,12 +1491,12 @@
     },
     {
       "arguments": "model=2,magnification=3,EC=L,mask=0",
-      "captured_utc": "2026-10-08T01:10:08Z",
+      "captured_utc": "2026-10-08T02:24:20Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1515,12 +1515,12 @@
     },
     {
       "arguments": "model=2,magnification=3,EC=M,mask=0",
-      "captured_utc": "2026-10-08T01:10:09Z",
+      "captured_utc": "2026-10-08T02:24:20Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1539,12 +1539,12 @@
     },
     {
       "arguments": "model=2,magnification=3,EC=Q,mask=0",
-      "captured_utc": "2026-10-08T01:10:09Z",
+      "captured_utc": "2026-10-08T02:24:20Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1563,12 +1563,12 @@
     },
     {
       "arguments": "model=2,magnification=3,EC=H,mask=0",
-      "captured_utc": "2026-10-08T01:10:09Z",
+      "captured_utc": "2026-10-08T02:24:21Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1587,12 +1587,12 @@
     },
     {
       "arguments": "magnification=2",
-      "captured_utc": "2026-10-08T01:10:10Z",
+      "captured_utc": "2026-10-08T02:24:21Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1611,12 +1611,12 @@
     },
     {
       "arguments": "magnification=5",
-      "captured_utc": "2026-10-08T01:10:10Z",
+      "captured_utc": "2026-10-08T02:24:21Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1635,12 +1635,12 @@
     },
     {
       "arguments": "mask=0",
-      "captured_utc": "2026-10-08T01:10:10Z",
+      "captured_utc": "2026-10-08T02:24:22Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1659,12 +1659,12 @@
     },
     {
       "arguments": "mask=3",
-      "captured_utc": "2026-10-08T01:10:11Z",
+      "captured_utc": "2026-10-08T02:24:22Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1683,12 +1683,12 @@
     },
     {
       "arguments": "mask=7",
-      "captured_utc": "2026-10-08T01:10:11Z",
+      "captured_utc": "2026-10-08T02:24:22Z",
       "command": "^BQ",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1707,12 +1707,12 @@
     },
     {
       "arguments": "o=N,module=2,quality=200",
-      "captured_utc": "2026-10-08T01:10:11Z",
+      "captured_utc": "2026-10-08T02:24:22Z",
       "command": "^BX",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1731,12 +1731,12 @@
     },
     {
       "arguments": "o=N,module=4,quality=200",
-      "captured_utc": "2026-10-08T01:10:12Z",
+      "captured_utc": "2026-10-08T02:24:23Z",
       "command": "^BX",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1755,12 +1755,12 @@
     },
     {
       "arguments": "font=0,o=N,h=16,w=0",
-      "captured_utc": "2026-10-08T01:10:12Z",
+      "captured_utc": "2026-10-08T02:24:23Z",
       "command": "^A",
       "font_capture": {
-        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-        "captured_utc": "2026-10-08T01:53:17Z",
+        "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+        "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+        "captured_utc": "2026-10-08T02:39:45Z",
         "manifest": "references/font-controlled/capture.json",
         "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
       },
@@ -1782,9 +1782,9 @@
   "dpi": 203,
   "firmware": "V93.21.33Z",
   "font_capture": {
-    "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
-    "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
-    "captured_utc": "2026-10-08T01:53:17Z",
+    "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
+    "capture_sha256": "201852df6cd4149943f3043eff37de94302c46080c3746e6b79805f946b4e521",
+    "captured_utc": "2026-10-08T02:39:45Z",
     "manifest": "references/font-controlled/capture.json",
     "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
   },

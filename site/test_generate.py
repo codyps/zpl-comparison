@@ -96,15 +96,24 @@ class PublicationTests(unittest.TestCase):
             source = root / "input"
             evidence = source / "docs/benchmarks/accuracy/results.json"
             evidence.parent.mkdir(parents=True)
-            evidence.write_text(json.dumps({"results": [{"font_control": {"mode": "fixed"}}]}))
+            evidence.write_text(json.dumps({"results": [{"library": "labelary", "font_control": {"mode": "fixed", "note": "Service fonts cannot be replaced."}}]}))
             site = generate.Site(source, root / "controlled")
             site.write("Test", "<p>Results</p>")
             self.assertIn("Font-controlled comparison", (root / "controlled/index.html").read_text())
             self.assertIn("fonts: fixed", site.result({"status": "rendered", "font_control": {"mode": "fixed"}}))
+            for label in (site.link('libraries/labelary.html', 'Labelary'), site.library_name('labelary')):
+                self.assertIn('⚠', label)
+                self.assertIn('aria-label="Controlled fonts unavailable; using fixed fonts.', label)
+                self.assertIn('Service fonts cannot be replaced.', label)
+            self.assertNotIn('⚠', site.link('libraries/zplr.html', 'ZPLr'))
+            site.page = 'libraries/labelary.html'
+            site.write('Labelary', '<p>Results</p>')
+            self.assertIn('<h1>Labelary<span class="font-fallback"', (root / 'controlled/libraries/labelary.html').read_text())
             evidence.write_text(json.dumps({"results": [{"status": "rendered"}]}))
             default = generate.Site(source, root / "default")
             default.write("Test", "<p>Results</p>")
             self.assertNotIn("Font-controlled comparison", (root / "default/index.html").read_text())
+            self.assertNotIn('⚠', default.library_name('labelary'))
 
     def test_performance_charts_sort_within_workload_and_exclude_failures(self):
         rows = [dict(library="go", fixture="text", status="ok", median_ns=2000000, peak_rss_bytes=2097152),

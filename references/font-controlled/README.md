@@ -28,9 +28,10 @@ retain resident fonts.
 
 ZQ610 captures use bounded sessions because long preview runs can stall its HTTP
 service. Serial-verified restarts restore service and clear downloaded RAM fonts.
-The final restarted sessions also compare the resident control before and after
-restart. Earlier preflights preserve the T/U/V implicit-alias restoration
-limitation; no corpus images from those preflights are accepted.
+Every accepted session compares the resident control before and after restart.
+This snapshot uses corrected Heros cap-height and x-height metadata, matching the
+fonts supplied to the renderers. Earlier snapshots and preflight evidence remain
+in Git history.
 
 Reproduction and offline verification are documented in
 [the font policy](../../benchmarks/fonts/README.md). Building reports and running
