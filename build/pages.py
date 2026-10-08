@@ -41,7 +41,7 @@ def write(spec, destination):
         + link(page, "docs/benchmarks/accuracy/README.md", "All accuracy comparisons"),
     ]
     if spec.get("font_controlled"):
-        text.append("**Font-controlled comparison.** Recovered bitmap outlines and shared TrueType substitutes are supplied where supported. Fixed-font engines and service captures remain included. Rasterization, downloaded-font scaling and barcode captions can still differ. See " + link(page, "benchmarks/fonts/README.md", "font policy and limitations") + ".")
+        text.append("**Font-controlled comparison.** Recovered bitmap outlines and shared TrueType substitutes are supplied where supported. The printer baseline uses fresh previews with the same font bundle uploaded to RAM. Fixed-font engines and service captures remain included. Rasterization, downloaded-font scaling and barcode captions can still differ. See " + link(page, "benchmarks/fonts/README.md", "font policy and limitations") + ".")
     mode = spec["mode"]
     if mode == "case":
         case = cases[0]

@@ -146,6 +146,7 @@ catalog(
         "//:benchmarks/adapters/rust/src/probe.rs",
     ],
     manifests = [
+        "//:references/font-controlled/catalog.json",
         "//:references/zq610-candidates/manifest.json",
         "//:benchmarks/accuracy/reference/manifest.json",
         "//:references/barcodes-zd621-v1/manifest.json",

@@ -256,7 +256,7 @@ class Site:
 
     def write(self, title, body, section="Measured comparisons", meta=""):
         if self.font_controlled:
-            body = '<p class="font-policy"><strong>Font-controlled comparison.</strong> Recovered Zebra bitmap fonts, Heros Condensed Bold (font 0), and Heros Regular (named Swiss) are supplied where supported. Fixed-font outputs remain included; font treatment is recorded per renderer. Rasterization and layout differences remain.</p>' + body
+            body = '<p class="font-policy"><strong>Font-controlled comparison.</strong> Recovered Zebra bitmap fonts, Heros Condensed Bold (font 0), and Heros Regular (named Swiss) are supplied where supported. Fixed-font outputs remain included; font treatment is recorded per renderer. The printer previews use the same supplied font bundle. Rasterization and layout differences remain.</p>' + body
         category = self.page.startswith("categories/")
         library = self.page.startswith("libraries/")
         if "data-focus=" in body and "data-full-canvas" not in body + meta:
@@ -488,7 +488,7 @@ class Site:
                     raise ValueError("Missing campaign render")
                 rows.append(row)
             cid = source.get("paired_case", name)
-            notes = source.get("notes", "") + " Every renderer uses the exact submitted input and requested native canvas. Failures remain visible and unscored."
+            notes = source.get("notes", "") + " Every renderer uses the same fixture and requested native canvas; font setup is recorded separately. Failures remain visible and unscored."
             if printer:
                 notes += " Cross-printer common coordinate region: " + json.dumps(data["common_coordinate_regions"][cid], sort_keys=True)
             case = dict(id=cid, key=sid + "--" + slug(cid), suite=sid, title=cid,
@@ -823,6 +823,8 @@ class Site:
                     + E(original)
                     + '">Original source & revision</a></p>'
                 )
+            if c.get("printer_submission"):
+                body += "<p>" + self.link(c["printer_submission"], "Exact printer submission with font aliases") + "</p>"
             if c.get("license"):
                 body += "<p>" + self.link(c["license"], "Source license") + "</p>"
             body += (
@@ -1424,6 +1426,7 @@ class Site:
                     treatments[row["library"]] = policy["note"]
         return (
             '<h2>Supplied fonts</h2><p>Font 0 uses a TeX Gyre Heros Condensed Bold substitute; named Swiss requests use Heros Regular. These are shape-based approximations, not exact Zebra outline fonts. Recovered bitmap glyphs retain their measured pixels and advances. ZPLr receives native bitmaps; outline-only APIs receive rectangular TrueType outlines. Downloaded-font sizing, baseline placement, antialiasing, missing characters, resets and barcode captions can still differ.</p>'
+            + '<p>The physical printers received the recovered native bitmap fonts and the same TrueType files in RAM. Fresh HTTP previews are the controlled baseline. ' + self.link(self.asset('references/font-controlled/capture.json'), 'Printer capture provenance') + '</p>'
             + '<p>' + self.link(self.asset(base + "manifest.json"), "Font manifest and source hashes")
             + ' · ' + self.link(self.asset(base + "GUST-LICENSE.txt"), "Heros license") + '</p>'
             + table(["ZPL font", "Source", "Download"], rows, "Shared supplied fonts")
@@ -1432,6 +1435,14 @@ class Site:
 
     def generate(self):
         self.load()
+        if self.font_controlled:
+            capture = self.read("references/font-controlled/capture.json")
+            submissions = {
+                (self.asset(row["source"]), self.asset(reference)): self.asset("references/font-controlled/" + row["submitted"])
+                for reference, row in capture["cases"].items()
+            }
+            for case in self.cases:
+                case["printer_submission"] = submissions.get((case["source"], case["reference"]))
         self.focus_cases()
         for name, target in [("style.css", "style.css"), ("site.js", "site.js")]:
             shutil.copyfile(Path(__file__).parent / name, self.output / target)

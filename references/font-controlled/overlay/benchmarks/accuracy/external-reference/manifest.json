@@ -1,0 +1,279 @@
+{
+  "captured_utc": "2026-10-08T01:53:17Z",
+  "cases": [
+    {
+      "arguments": "External shipping example with explicit native-width preview canvas",
+      "captured_utc": "2026-10-08T01:13:44Z",
+      "command": "^A0 ^BC ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shipping",
+      "height": 1218,
+      "name": "zpl-toolchain-shipping_label",
+      "object_name": "CMPEXALL",
+      "png_sha256": "c5a6f20ec1336ced479b65156e5fc201194573db244979be3e94120efd71abe1",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "37197fe854e06456e696a59019a05ba399176577c37846b6b324e21faa7bfecc",
+      "width": 832,
+      "zpl_sha256": "61de15a92b51f96677b75a732c0148bcb347c9c41393aec48c7a81fbe9f0dc51"
+    },
+    {
+      "arguments": "External product example with explicit native-width preview canvas",
+      "captured_utc": "2026-10-08T01:13:44Z",
+      "command": "^A0 ^BE ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "product",
+      "height": 406,
+      "name": "zpl-toolchain-product_label",
+      "object_name": "CMPEXALL",
+      "png_sha256": "3c4cfdffd3488982ac5cd92254dfc248d76969488ae40189dde2da26872e6daa",
+      "printer_dimensions": [
+        640,
+        406
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "0d2df4270cb67c116bfa6d31de89f25b345aab292171027e4aeb6694e341f243",
+      "width": 640,
+      "zpl_sha256": "ef41a24eceb9df78b5774e288d5e490aee684c8897c953397a8bbddc802994e0"
+    },
+    {
+      "arguments": "External warehouse example with explicit native-width preview canvas",
+      "captured_utc": "2026-10-08T01:13:45Z",
+      "command": "^A0 ^B3 ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "warehouse",
+      "height": 609,
+      "name": "zpl-toolchain-warehouse_label",
+      "object_name": "CMPEXALL",
+      "png_sha256": "ceb02421bea7ec50a8705b23bdbec2af05d9f782a22dac42960faf131211d2d1",
+      "printer_dimensions": [
+        832,
+        609
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "a5b77b4285b76dfa2b4e63d2aa26368965b629d628c8c70bf94b6af6886d660b",
+      "width": 832,
+      "zpl_sha256": "509b0b23cb32c010ead4e5bb664a489607a8be88294bfcce4bd8c6bb72ec599e"
+    },
+    {
+      "arguments": "External compliance example with explicit native-width preview canvas",
+      "captured_utc": "2026-10-08T01:13:45Z",
+      "command": "^A0 ^BC ^BE ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "compliance",
+      "height": 1218,
+      "name": "zpl-toolchain-compliance_label",
+      "object_name": "CMPEXALL",
+      "png_sha256": "ecfb260f7a8bd2407b8a3b8317c71c75315817004fb5aca5c4cd389ee5e27fe9",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "74c88016f516e07efd49f20a79e9ccb20cfddaa5cd203651505fe96bd7519085",
+      "width": 832,
+      "zpl_sha256": "c9f11c80b4b0301bfbea1da5d4b7f6fbd612573e6aaeb5d9091e3b8cd48d8077"
+    },
+    {
+      "arguments": "External SurePost label content with native preview dimensions",
+      "captured_utc": "2026-10-08T01:13:46Z",
+      "command": "^A0 ^BC ^BD ^BX ^BY ^CI ^CV ^FD ^FH ^FO ^FS ^FV ^FX ^GB ^LH ^LL ^LR ^PO ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "printer-configuration",
+      "height": 1524,
+      "name": "zpl-toolchain-usps_surepost_sample",
+      "object_name": "CMPEXALL",
+      "png_sha256": "da12778781fd4d2833dd64e27e544d3a61f51997b40b1f9112cdc19141eb6fef",
+      "printer_dimensions": [
+        832,
+        1524
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "955495d71a386d6e8bb51ad6acb19fff9103af750dfe3d82de1a42f702a3aafd",
+      "width": 832,
+      "zpl_sha256": "8ab20e6790129067eb609e11c58db3cc9ff6186d7f2d5bc85b8a69c0ea6270dd"
+    },
+    {
+      "arguments": "External asset example with explicit native-width preview canvas",
+      "captured_utc": "2026-10-08T01:13:47Z",
+      "command": "^A0 ^B7 ^BX ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "asset",
+      "height": 500,
+      "name": "zplr-asset-matrix-pdf417",
+      "object_name": "CMPEXALL",
+      "png_sha256": "421b4040d79fef55be66d6048de6ca96daf805a880e9e3f9c122c9f47d07057c",
+      "printer_dimensions": [
+        832,
+        500
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "810d3fbbba60c98f3a7e95e7197da8a03657330e8556c326ee51e23060f29ff9",
+      "width": 832,
+      "zpl_sha256": "a10422cb29afaf853c7f05f2139c2d6e8be538c49b55e8889cc01e6760004c51"
+    },
+    {
+      "arguments": "External retail example with explicit native-width preview canvas",
+      "captured_utc": "2026-10-08T01:13:47Z",
+      "command": "^A0 ^BE ^BU ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "retail",
+      "height": 500,
+      "name": "zplr-retail-upc-ean",
+      "object_name": "CMPEXALL",
+      "png_sha256": "a835e2732f5f2cb061bee2e619f4fc9ff1550e93d61ad18a5c2ae5328fd96cc8",
+      "printer_dimensions": [
+        832,
+        500
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "4828c340300ee7410b9ab6378598d98bb7d5f8541aba519f2ace11ef0f9391da",
+      "width": 832,
+      "zpl_sha256": "6e06ba90d81d35a5793e8bc91df6ad63c2a1495065e5ca6ebb643d4540acba96"
+    },
+    {
+      "arguments": "External stateful example with explicit native-width preview canvas",
+      "capture_scope": "ram-resources",
+      "captured_utc": "2026-10-08T01:13:47Z",
+      "command": "^A0 ^DF ^FD ^FN ^FO ^FS ^GB ^LL ^PW ^XA ^XF ^XG ^XZ ~DG",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "stateful",
+      "height": 220,
+      "name": "zplr-stored-resources",
+      "object_name": "CMPEXALL",
+      "png_sha256": "217dd1acb69f14ddfe1f519468a18a3029f110dc9c57467ae0e73626bce71521",
+      "printer_dimensions": [
+        448,
+        220
+      ],
+      "setup_sha256": "4b6263af3c415cf2e9c23ceeb842e534e034b5958e7d581e70989dfb61952d12",
+      "submission_mode": "ram-setup-inline-reset-canvas",
+      "submitted_sha256": "9e5d01a50075a5e816783a788c3f46fac243448677de9b46bdceb17c699e488c",
+      "width": 448,
+      "zpl_sha256": "f2b48efda78f730556e9fb783ef844588c567ea1e7494fefb42991ab62b5a074"
+    },
+    {
+      "arguments": "Explicit UTF-8 variant of external retail example",
+      "captured_utc": "2026-10-08T01:13:48Z",
+      "command": "^A0 ^BE ^BU ^BY ^CI ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "retail",
+      "height": 500,
+      "name": "zplr-retail-upc-ean-utf8",
+      "object_name": "CMPACC",
+      "png_sha256": "1bfb3d85188f4112409d6a0522fa57bc61db970ab038158b6a249d1c09625a8c",
+      "printer_dimensions": [
+        832,
+        500
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "3e22ddfd886f13f8c92adec3a39d6590d39858b150786f43297673804b169b01",
+      "width": 832,
+      "zpl_sha256": "ba5cf7841e8af2e4b2e916ffdb915684bb3016c032f01017fc49a6d2280a3711"
+    },
+    {
+      "arguments": "External shipping example with explicit native-width preview canvas",
+      "captured_utc": "2026-10-08T01:13:48Z",
+      "command": "^A0 ^BC ^BQ ^BY ^FD ^FO ^FS ^GB ^LL ^PW ^XA ^XZ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "repeatability",
+      "height": 1218,
+      "name": "repeat-end",
+      "object_name": "CMPACC",
+      "png_sha256": "c5a6f20ec1336ced479b65156e5fc201194573db244979be3e94120efd71abe1",
+      "printer_dimensions": [
+        832,
+        1218
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "37197fe854e06456e696a59019a05ba399176577c37846b6b324e21faa7bfecc",
+      "width": 832,
+      "zpl_sha256": "61de15a92b51f96677b75a732c0148bcb347c9c41393aec48c7a81fbe9f0dc51"
+    }
+  ],
+  "corpus_history": [
+    "2178f2ea78138c24eb42f0ec377f85449055e69a3b835e6b52773f717b18905c",
+    "7d2617326081b2a7dcde58b3be48f8029b176b266c8e1cfa370b177a2f0f7acc"
+  ],
+  "corpus_sha256": "368b2ec3d434c02e601f64f1dd40763fc4adc4b14ef7ed5f36c6abcc6f28da40",
+  "device": "ZTC ZD621-203dpi ZPL",
+  "dpi": 203,
+  "failures": [],
+  "firmware": "V93.21.33Z",
+  "font_capture": {
+    "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+    "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+    "captured_utc": "2026-10-08T01:53:17Z",
+    "manifest": "references/font-controlled/capture.json",
+    "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+  },
+  "host": "http://d7j211001302.bed.einic.org/",
+  "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
+  "preview_reset_zpl": "^XA^CI0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^CI13,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,10^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^CWA,R:FCA.FNT^CWB,R:FCB.FNT^CWD,R:FCD.FNT^CWE,R:FCE.FNT^CWF,R:FCF.FNT^CWG,R:FCG.FNT^CWH,R:FCH.FNT^CWP,R:FCP.FNT^CWQ,R:FCQ.FNT^CWR,R:FCR.FNT^CWS,R:FCS.FNT^CWT,R:FCT.FNT^CWU,R:FCU.FNT^CWV,R:FCV.FNT^CWC,R:FCD.FNT^CW0,R:FC0.TTF^XZ",
+  "repeat_pixels_equal": true,
+  "schema": 1,
+  "status": "complete"
+}

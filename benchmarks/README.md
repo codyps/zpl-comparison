@@ -28,6 +28,8 @@ the native comparisons and decoder evidence offline.
 [Font-controlled comparisons](fonts/README.md) supply recovered resident bitmap
 fonts and shared TrueType substitutes through supported public APIs. Libraries
 without font replacement retain their fixed fonts and are labeled accordingly.
+The controlled baseline uses fresh ZD621 and ZQ610 Plus previews with the same
+font bundle uploaded to printer RAM.
 Build `//:reports_fonts` for the separate report tree; the original `//:reports`
 continues to use the existing defaults.
 

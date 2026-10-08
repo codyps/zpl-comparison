@@ -2,8 +2,9 @@
 
 `bazel build //:reports_fonts` produces a separate version of every rendering
 comparison in `bazel-bin/reports_fonts`. The existing `//:reports` keeps its
-original fonts. Fixtures, saved printer references, scoring and renderer
-versions are the same. No printer or service requests are made.
+original fonts and printer references. The controlled variant uses fresh printer
+previews with the supplied font bundle. Fixture bytes, scoring and renderer
+versions are shared. Builds replay saved evidence without printer or service requests.
 
 ```sh
 bazel build //:reports //:reports_fonts
@@ -32,7 +33,7 @@ that both printers have identical fonts.
 
 `build.py` packages the recovered glyphs in two ways:
 
-- Native `~DB` bitmap downloads, including bearings and advances, for ZPLr.
+- Native `~DB` bitmap downloads, including bearings and advances, for ZPLr and the physical printers.
 - TrueType glyphs made of horizontal pixel-run rectangles, for outline-only
   APIs. Every edge and advance uses an integral multiple of 16 font units.
   No smoothing, tracing, fitting, kerning or optical adjustment is applied.
@@ -95,3 +96,52 @@ build a suite or individual case, for example:
 ```sh
 bazel build //:reports_fonts --output_groups=case_accuracy_argument-font-A
 ```
+
+## Physical printer previews
+
+`references/font-controlled/` contains fresh ZD621 and ZQ610 Plus HTTP previews,
+the exact submitted bytes, upload/font hashes, device identities and session
+controls. The printers receive native recovered `~DB` bitmap fonts and the same
+Heros TrueType bytes as the renderers (`~DY` binary downloads). Font IDs are
+selected with `^CW` inside each preview format. GS has no single-character
+`^CW` alias and retains the resident symbol font; captions can also use resident
+faces. The original fixture fields remain unchanged.
+
+The explicit capture command requires Pillow and access to both printer hosts:
+
+```sh
+bazel build //:comparison_fonts
+python benchmarks/fonts/capture.py --output references/font-controlled --max-cases 20 --restart-after-capture
+python benchmarks/fonts/capture.py --output references/font-controlled --verify
+```
+
+The live command explicitly permits restarting both printers. An already complete
+snapshot is only verified; use a new output directory for a new capture.
+Repeat bounded capture invocations until the manifest is complete. Mobile
+firmware compiles downloads asynchronously; capture waits for all RAM font
+objects before previewing. The explicit restart workflow can recover interrupted
+sessions: their successful images are archived as rejected evidence and recaptured
+under new controls, with a bounded retry count per stalled fixture.
+
+Capture uses RAM resources and HTTP **Preview Label**, never physical printing.
+A font control must change with the supplied fonts, repeat at the end, and match
+its original pixels after restoring aliases. Restoration happens inside a
+preview format. The printers expose implicit T/U/V aliases as the scalable ROM
+font; explicitly restoring those aliases changes their resident strike selection.
+The retained ZQ610 preflight records this distinction; accepted ZQ610 sessions
+verify the original control after restart. The ZD621 session checks restoration
+against its explicit pre-session mapping, followed by a final cleanup restart.
+No corpus captures from a failed preflight are accepted. Downloads use volatile
+RAM. The explicit `--restart-after-capture` option verifies
+the serial, restarts before and after each session (including timeout recovery),
+and verifies the original control after restart. This avoids the implicit-alias
+restoration limitation and clears the downloaded RAM fonts. A failed or interrupted request is retained as inflight and is
+not automatically retried. Existing successful, hash-verified references define
+the capture inventory; previously missing/unsafe inputs stay unavailable.
+
+`overlay/` replaces only reference PNGs and their metadata in `//:reports_fonts`.
+Default reports retain the original files. Comparisons verify that printer and
+renderer bundle hashes agree. `capture.json` links original fixture hashes,
+submitted hashes, device/session evidence and PNG hashes; `catalog.json` is the
+analysis-time manifest overlay. Run `--verify` offline to check evidence and
+regenerate both the manifest overlay and its catalog.

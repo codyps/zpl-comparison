@@ -40,7 +40,7 @@ def generate():
         directory.mkdir(exist_ok=True)
         shutil.copyfile(case["source"], directory / "submitted.zpl")
         shutil.copyfile(case["reference"], directory / "printer.png")
-        body = f'<h1>{html.escape(name)}</h1><p><a href="../index.html">All cases</a> · <a href="submitted.zpl">Exact submitted ZPL</a></p>'
+        body = f'<h1>{html.escape(name)}</h1><p><a href="../index.html">All cases</a> · <a href="submitted.zpl">Fixture ZPL</a></p>'
         cells = []
         for lib in LIBRARIES:
             row = lookup[name, lib]

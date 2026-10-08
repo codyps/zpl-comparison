@@ -91,7 +91,7 @@ def reports(data, output, root):
         return os.path.relpath(Path(root) / relative, output)
     title = "Public documents against the ZD621" if data["suite"] == "public-zpl" else "Paired ZQ610 Plus / ZD621 comparisons"
     method = (f"{len(data['cases'])} inputs × {len(data['libraries'])} renderers. "
-              "Exact submitted sources and complete native printer canvases; threshold 128, "
+              "Original fixture sources and complete native printer canvases; threshold 128, "
               "without alignment, padding, cropping or resizing. Failures, missing observations "
               "and mismatched canvases remain visible and unscored. Labelary responses are saved "
               "service observations. The printer is the reference. Magenta is printer-only ink; "
@@ -103,7 +103,7 @@ def reports(data, output, root):
     for case in data["cases"]:
         name = case["name"]
         panels = [f'<h2 id="{html.escape(name)}">{html.escape(name)}</h2>',
-                  f'<a href="{html.escape(link(case["source"]))}">Exact input</a>',
+                  f'<a href="{html.escape(link(case["source"]))}">Fixture input</a>',
                   f'<p>{html.escape(case.get("notes", ""))}</p>']
         for library in data["libraries"]:
             row = indexed[(name, library)]

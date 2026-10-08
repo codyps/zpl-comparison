@@ -395,3 +395,11 @@ py_test(
     data = [":comparison_fonts", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
     deps = [requirement("numpy"), requirement("pillow"), requirement("fonttools")],
 )
+
+py_test(
+    name = "font_capture_test",
+    srcs = ["build/font_capture_test.py", "build/compare.py", "build/font_profile.py", "benchmarks/fonts/capture.py", "benchmarks/accuracy/capture.py", "benchmarks/accuracy/cases.py", "benchmarks/accuracy/metrics.py", "benchmarks/accuracy/pixels.py"],
+    main = "build/font_capture_test.py",
+    data = [":comparison_fonts"] + glob(["references/**", "benchmarks/accuracy/*reference/**"], exclude = ["**/__pycache__/**"]),
+    deps = [requirement("numpy"), requirement("pillow")],
+)

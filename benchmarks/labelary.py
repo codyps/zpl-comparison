@@ -41,8 +41,6 @@ def inputs():
                 width=c["width"],
                 height=c["height"],
                 validity="valid",
-                printer=str(c["reference"].relative_to(REPO)),
-                printer_sha256=c["png_sha256"],
             )
         )
     for suite, folder in [
@@ -238,6 +236,9 @@ def validate(dest):
     from accuracy.run import gray
 
     data = json.loads((dest / "captures.json").read_text())
+    # Historical printer/printer_sha256 fields describe the oracle at capture
+    # time, not the service request. Changing the printer baseline must not
+    # invalidate a hash-matched service response for identical source and canvas.
     expected = {key(c): c for c in inputs()}
     if (
         data["status"] != "complete"

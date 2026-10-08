@@ -1,0 +1,1797 @@
+{
+  "captured_utc": "2026-10-08T01:53:17Z",
+  "cases": [
+    {
+      "arguments": "font=0,o=N,h=16,w=0",
+      "captured_utc": "2026-10-08T01:09:47Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-height-16",
+      "png_sha256": "991e52ef0d210b39060615d31adf35da062388425a8ecbe64eb4238925d52454",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "cee976f88541ff1d78e6511a2fcb000c25bb2a782860828903de030ae4828ec1",
+      "width": 832,
+      "zpl_sha256": "8cb445e5ce6410ea664df45719260c864dd5ffe92988c001d9aedfa3bbc998b6"
+    },
+    {
+      "arguments": "font=0,o=N,h=32,w=0",
+      "captured_utc": "2026-10-08T01:09:48Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-height-32",
+      "png_sha256": "962bd832e2725479bedda4a83570db25752efc3b51ecd9c799a4d0126f390885",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "c5afd823709dff41fb2642a264d268130a2d6354960f6d08fdb9f93fe6f97ef0",
+      "width": 832,
+      "zpl_sha256": "e8152ef0bae2be075ed896b06c41e6ae10b40df25e1719caca13e65ef184d119"
+    },
+    {
+      "arguments": "font=0,o=N,h=64,w=0",
+      "captured_utc": "2026-10-08T01:09:48Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-height-64",
+      "png_sha256": "b142dfaf511df1bad89cc97e23c356b16bccd10c8f4fa1fd536998aa16b33e27",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2822fdd31bb5b7219a9c836c49ad4df9f7d53caae54c8cdbede87a0e10430c35",
+      "width": 832,
+      "zpl_sha256": "57ca3e74736d5211475329649c01f0f387e59253d341cfd5166d305dc529dc1d"
+    },
+    {
+      "arguments": "font=0,o=N,h=32,w=16",
+      "captured_utc": "2026-10-08T01:09:48Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-width-16",
+      "png_sha256": "adcb644f83ab01a758a3be0f936b03004bb7289ab238867c05ce9e04331fa6de",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "422d6fed115b8c33ca76c95deff00bb0a020cb4ddc15d54feadc5fd74b36286e",
+      "width": 832,
+      "zpl_sha256": "f836fbbf66f33dd990887048bd8768c0d0ed837a7b92765b963eed5ac265954f"
+    },
+    {
+      "arguments": "font=0,o=N,h=32,w=32",
+      "captured_utc": "2026-10-08T01:09:49Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-width-32",
+      "png_sha256": "962bd832e2725479bedda4a83570db25752efc3b51ecd9c799a4d0126f390885",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "64b6f3c0487e09481909ca24ad35089c833a32b26316a5d80059165a18fb0f4f",
+      "width": 832,
+      "zpl_sha256": "9fcb6ddff5ac03ae3d03f446d973840b778de05b259ee4d6f13211bbb380461d"
+    },
+    {
+      "arguments": "font=0,o=N,h=32,w=64",
+      "captured_utc": "2026-10-08T01:09:49Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-width-64",
+      "png_sha256": "890a64972b4f957633325c2a22901efe9463133a107ce99e0259ec5f315c37e0",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "1bd726a35d5229a8b94383ad2a8b7a5d37411f0c29b96c34dcc3548632c2ff5a",
+      "width": 832,
+      "zpl_sha256": "b6a700652dcbb6a6a294ee2bfc4a537e3181511865b097d545c14cdf0f5a1ea8"
+    },
+    {
+      "arguments": "font=0,o=N,h=32,w=0",
+      "captured_utc": "2026-10-08T01:09:50Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-rotation-N",
+      "png_sha256": "e3cd9d9b32ac31a231f0ca12ef3476fb49f59aaf8a7c7b42492415d7a56dd603",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "29fe6ca1be8ba61abce42537dcece2f4e8880f9dace878417c5d317036a4d083",
+      "width": 832,
+      "zpl_sha256": "179195d6688642204315a26dd6b25aa0fbd605ea7c29042fb99401f3998ce1d0"
+    },
+    {
+      "arguments": "font=0,o=R,h=32,w=0",
+      "captured_utc": "2026-10-08T01:09:50Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-rotation-R",
+      "png_sha256": "d97fcb4cd46c56af66e8b48bb5cb04fb3962d6bb9cccaabb3e24ef7fa781412b",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "19ed6fec1f466b3f538d62707fd9ebc2a8d193b6066077cee2a58a0fe2e57b05",
+      "width": 832,
+      "zpl_sha256": "5befe08cbb064985c7afc794011de29958a5f613dee16717bff3479081408be1"
+    },
+    {
+      "arguments": "font=0,o=I,h=32,w=0",
+      "captured_utc": "2026-10-08T01:09:50Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-rotation-I",
+      "png_sha256": "4dda6398b159772a54c526eb8ed11625858d04f4f8c94868402e4cba01b1a6c1",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "3fa6eabf600bfe8b3360df765c86e9a375d6a3dc0276f63875bc27f7b0fb0236",
+      "width": 832,
+      "zpl_sha256": "a8a8024cb78ab0709aa25779dc8a63983527138de77d422e771558e73557c6c1"
+    },
+    {
+      "arguments": "font=0,o=B,h=32,w=0",
+      "captured_utc": "2026-10-08T01:09:51Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font0-rotation-B",
+      "png_sha256": "51a5f5df816eb8b210ab39d4f3c2e178f682604c89af979810b51a1131f6f195",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "70f5fdcf14e8b72a9bf17523fb725310cc15539b7baf33a38bb7d63e8d3ef0b5",
+      "width": 832,
+      "zpl_sha256": "665c5fd63e70dca7048a963e6495b70924ddc475f06c4d5d9dce1adf70e87632"
+    },
+    {
+      "arguments": "font=A,o=N,h=32,w=24",
+      "captured_utc": "2026-10-08T01:09:51Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font-A",
+      "png_sha256": "68a2b168a1f29b3fd342db742755882457f83dfff5e5ec1f817585a6935536b5",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "fddea4ce0af008bd43caa40b1f1cb8f9af3869efd207944da09225de121ed156",
+      "width": 832,
+      "zpl_sha256": "5f31474e0d1d65c2d31c55e44cdb769cbded94fd72e8ae8502790f9e78b80af6"
+    },
+    {
+      "arguments": "font=D,o=N,h=32,w=24",
+      "captured_utc": "2026-10-08T01:09:51Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "font-D",
+      "png_sha256": "9dbc355fabc6c604148d887e40f796cf99e42fcd3c4699a6e95f1802fd8068e6",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "9cfc542cffa2759e646814013ea80831c3d3d1c325848669357088d566ca18a1",
+      "width": 832,
+      "zpl_sha256": "56dff5750e3c29427bace9da71593991a37bfa64d262f4a26c92e2b9122107c2"
+    },
+    {
+      "arguments": "x=220,y=80,z=0",
+      "captured_utc": "2026-10-08T01:09:52Z",
+      "command": "^FO",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "fo-justify-0",
+      "png_sha256": "6c7b410d240486af87519a52d85c7e13140237ef34ec396b2f35e767f69514d3",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "ec1c2897b09517dd794bcf166504f2d370f4e9dea782a4854c07e5090e18b3e8",
+      "width": 832,
+      "zpl_sha256": "94ad268e77f5fb5aa13e7eb46ef94c9e078eb6e9b898122bd5719f423ae5124c"
+    },
+    {
+      "arguments": "x=220,y=80,z=1",
+      "captured_utc": "2026-10-08T01:09:52Z",
+      "command": "^FO",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "fo-justify-1",
+      "png_sha256": "7241dad6236d754c381340a9034e81d936c496a8881231b3735666db10843ed6",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2632f53be6ea3597375e0dad1c15eeb47c838a98b7d60ad23dc5d83bbfd4ec47",
+      "width": 832,
+      "zpl_sha256": "bbbd5151a76dfe96cd9c7e0ed30b2e9d2c12e9b237ebfdb2fb74bb1e2af60735"
+    },
+    {
+      "arguments": "x=220,y=80,z=2",
+      "captured_utc": "2026-10-08T01:09:52Z",
+      "command": "^FO",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "fo-justify-2",
+      "png_sha256": "6c7b410d240486af87519a52d85c7e13140237ef34ec396b2f35e767f69514d3",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "aeaf2362a4517315032a0b37e5cee2b58bb9d85d8fa45664da34408ea8f227de",
+      "width": 832,
+      "zpl_sha256": "258f60466ae5622549121741f164ca91e537e9f238a87bc85ba1e8f44572d8a0"
+    },
+    {
+      "arguments": "x=80,y=100",
+      "captured_utc": "2026-10-08T01:09:53Z",
+      "command": "^FT",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "ft-baseline",
+      "png_sha256": "9b42215fc5a6519c5227725f0de7bdb77460b5563a04efe95ac37e075afef56e",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "1c71fae548fd75c5b255f8faea80ae5647e35ab43a255f2be975048e95253126",
+      "width": 832,
+      "zpl_sha256": "5213601589c3e1a09ca88f3355191a74ac9540ef8c3e4bc7bda1a874122ae846"
+    },
+    {
+      "arguments": "30,20",
+      "captured_utc": "2026-10-08T01:09:53Z",
+      "command": "^LH",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "layout-LH",
+      "png_sha256": "cfaf43502f99d6df22e8d6f3a5bdea93d84e0528edd0b5f139a79539fc5bacfc",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "5ddc8ea16d4a1612617f3683803445992982364274ef9412618da395225c48c9",
+      "width": 832,
+      "zpl_sha256": "f2972e5d720925b6301d53efcf58f9394d8264702464b1869ac8977067ca77bb"
+    },
+    {
+      "arguments": "20",
+      "captured_utc": "2026-10-08T01:09:53Z",
+      "command": "^LS",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "layout-LS",
+      "png_sha256": "b21f49c7a97c5c5d8a5cd1940d19a145e2730182da5cdc53b3425adf1c2d7208",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "9a8a10060873906694bcd058d915a591b5ac1f54a51fe66b06046dd9f0ef82c9",
+      "width": 832,
+      "zpl_sha256": "635384f8b305e45e2a43c527af0b8f5e08bb614c9554a4079566dd0993508d32"
+    },
+    {
+      "arguments": "20",
+      "captured_utc": "2026-10-08T01:09:54Z",
+      "command": "^LT",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "layout-LT",
+      "png_sha256": "2ae1ef0d4c6fdffd173a394139293232f8dc912bfba9a1e07e2ae6dfaf07fcf4",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "54e6c3d0a483dd376f80977e4bd508c6cf26c2d24a5653efd6f589cca7762baa",
+      "width": 832,
+      "zpl_sha256": "79bce22d91ad8d3384a176c1a73250bcac87b71a72acea64046ebf886088c816"
+    },
+    {
+      "arguments": "I",
+      "captured_utc": "2026-10-08T01:09:54Z",
+      "command": "^PO",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "layout-PO",
+      "png_sha256": "2ae1ef0d4c6fdffd173a394139293232f8dc912bfba9a1e07e2ae6dfaf07fcf4",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2be723f34ee4da4bae59616ac2391f55ac3956ee7ba6e50c04ce1fcb67d4d4a7",
+      "width": 832,
+      "zpl_sha256": "af1ca6655fb85746f04c11f5346d2a9108d38bf536cea8026e610dc15d581b14"
+    },
+    {
+      "arguments": "Y",
+      "captured_utc": "2026-10-08T01:09:54Z",
+      "command": "^LR",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "layout-LR",
+      "png_sha256": "2ae1ef0d4c6fdffd173a394139293232f8dc912bfba9a1e07e2ae6dfaf07fcf4",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "e60d38ef34bd9da5b2aaf50ea6fd74d6282ed0e955acc7741c097d5fa1570d01",
+      "width": 832,
+      "zpl_sha256": "06f24c34d8f9357d6ad6ef4432978889f9f04aba89e919c022997a7045ff8863"
+    },
+    {
+      "arguments": "R",
+      "captured_utc": "2026-10-08T01:09:55Z",
+      "command": "^FW",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "layout-FW",
+      "png_sha256": "6390bb19fd7549bc3b56ba6be7c2c2a04ac6a9b7e55bba40ba7125f8cae2d99a",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "668fc240a1f57498a7a2415dc784a61595714895bf290e66558732a33dd11eda",
+      "width": 832,
+      "zpl_sha256": "7207f3799cde2ce0e1dc31615ed1f79cda98c4e8c768650574fc9244181a7795"
+    },
+    {
+      "arguments": "reverse current field",
+      "captured_utc": "2026-10-08T01:09:55Z",
+      "command": "^FR",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "layout",
+      "height": 300,
+      "name": "field-reverse",
+      "png_sha256": "a87c4783d527186073fcbd6423d31ae75ae738c0f0750f0f3fdf70ae6b51afe9",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "7aced6608c51057cdd18d2521302dc06e0c85eddcb6877ba3cbaceb698d91bea",
+      "width": 832,
+      "zpl_sha256": "b9986546dc3eceeea7a2fa346691821610a4fbd52f9b333eadc6aa9ddbe8bac3"
+    },
+    {
+      "arguments": "w=220,lines=3,space=2,align=L,indent=0",
+      "captured_utc": "2026-10-08T01:09:55Z",
+      "command": "^FB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "block-L",
+      "png_sha256": "d63759e9a754a695509406591b0236f11bd43d8d774238f0b9114fb21913b958",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "f749a92190df5dec6944dbb6fa19e87a53d18cccecc141e529d9da9fa7aba49f",
+      "width": 832,
+      "zpl_sha256": "660d702336df5dd1c34aad4b0419fa72d586160e24a210b8134cd79a1c5b5eef"
+    },
+    {
+      "arguments": "w=220,lines=3,space=2,align=C,indent=0",
+      "captured_utc": "2026-10-08T01:09:56Z",
+      "command": "^FB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "block-C",
+      "png_sha256": "f0c2c0e99e18799a42a44499eb57243b6837a9809185694233e1857b97c6459c",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "4dfa480c062add538b7c0555b7e426f74195d4276400faa77c14101c585a5d6b",
+      "width": 832,
+      "zpl_sha256": "3d7a1c65c8b77d3b8082131f0e85ef196ddc395c233c735eac532a0ee41a4546"
+    },
+    {
+      "arguments": "w=220,lines=3,space=2,align=R,indent=0",
+      "captured_utc": "2026-10-08T01:09:56Z",
+      "command": "^FB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "block-R",
+      "png_sha256": "11f80bb9827e85d7782408f4d921b356aa29549944e87a6b34243765d3d20592",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "9e8048bc793f8a9564ff5838a0fe1f40c79c8cb12c10e620196ffffa6e3750da",
+      "width": 832,
+      "zpl_sha256": "7c2c50ef7a78cc2f50edd22c0e4cec7bcc7552ba3522ea0ea3bf3fac270dd47d"
+    },
+    {
+      "arguments": "w=220,lines=3,space=2,align=J,indent=0",
+      "captured_utc": "2026-10-08T01:09:56Z",
+      "command": "^FB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "block-J",
+      "png_sha256": "64ae7be22aff84f5bbf480277c3efa5fda0d6d9cdac0a6260963a1e855726387",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "a32f475dc1f0ab20d59d2daa31b9cb3fea4a6d0b4a9cce6bad74fc46321210a4",
+      "width": 832,
+      "zpl_sha256": "b527aee943490fc4fdbff2f7a56a6d60b5843b354f61733e7a7b4b24000b701f"
+    },
+    {
+      "arguments": "indent=20",
+      "captured_utc": "2026-10-08T01:09:57Z",
+      "command": "^FB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "block-indent",
+      "png_sha256": "badad4b77337c8685acc405e494580975a83a649354f806a67868678894eb534",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "cf108320738e11b71f409f2e8be42217253ff28ba5ab84dd2f8f89d7f8f901fd",
+      "width": 832,
+      "zpl_sha256": "cc2aa0f3b062b9bb93e1b47ee6c795d3ea7bb041584134681435558217dd6e84"
+    },
+    {
+      "arguments": "explicit \\& break",
+      "captured_utc": "2026-10-08T01:09:57Z",
+      "command": "^FB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "block-explicit-break",
+      "png_sha256": "f9f13bd0279eca19405bcdd56ecfca2cc83753dcb4c634e0c8f91b0fbe1d63e4",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "20c8d615c4156f820fea42e20f53be1a93c1cc9f3b68b0317a91740dcdcaeb6d",
+      "width": 832,
+      "zpl_sha256": "eb349aebe07ba1aecc000f28dad39b96d02be93eaf182da3a50bdb008b2ed910"
+    },
+    {
+      "arguments": "indicator=_, bytes _41_42_43",
+      "captured_utc": "2026-10-08T01:09:57Z",
+      "command": "^FH",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "field-hex",
+      "png_sha256": "2ae1ef0d4c6fdffd173a394139293232f8dc912bfba9a1e07e2ae6dfaf07fcf4",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "6e2de12a021c40829c4581b4cfa368281b6c27b44d586dfdc4a6bf29fc34271c",
+      "width": 832,
+      "zpl_sha256": "9b61dc48184db5c42623ebb0311256c046b6589d4898842008ad468ca4fad8b4"
+    },
+    {
+      "arguments": "literal field value",
+      "captured_utc": "2026-10-08T01:09:58Z",
+      "command": "^FV",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "variable-data",
+      "png_sha256": "2ae1ef0d4c6fdffd173a394139293232f8dc912bfba9a1e07e2ae6dfaf07fcf4",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "6a9996ea03cd37a36b704d9e58d17e03f1fed4482bfe630b92e1974736b62f77",
+      "width": 832,
+      "zpl_sha256": "807a66f0c16f04b91f3290204aa96f17fcd97dd2a6b0d38a5ee29796824b92a8"
+    },
+    {
+      "arguments": "encoding=0",
+      "captured_utc": "2026-10-08T01:09:58Z",
+      "command": "^CI",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "encoding-0",
+      "png_sha256": "eacf85870a81fe7744f20892e33345138308ce4c8b5581bf3717d321881330c7",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "4c48e31dc3489a853173eaee3c55cafd5a047733d43f9142da4897a65a9a2126",
+      "width": 832,
+      "zpl_sha256": "747547447e2abbacff6bdc5d52a130486d776b6b1ae07cf027a40e530286faa9"
+    },
+    {
+      "arguments": "encoding=27",
+      "captured_utc": "2026-10-08T01:09:58Z",
+      "command": "^CI",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "encoding-27",
+      "png_sha256": "eacf85870a81fe7744f20892e33345138308ce4c8b5581bf3717d321881330c7",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "5dd2616e96c1224d5eed03d1bf4c24c0307b7bb45ed171d7954c80bee1c68167",
+      "width": 832,
+      "zpl_sha256": "e4519e3a3e97466e406582b6a723d8c09138377cf88a2608bfe9291bce1a7179"
+    },
+    {
+      "arguments": "encoding=28",
+      "captured_utc": "2026-10-08T01:09:59Z",
+      "command": "^CI",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "encoding-28",
+      "png_sha256": "eacf85870a81fe7744f20892e33345138308ce4c8b5581bf3717d321881330c7",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "778b6cddff1b12fe2a25924ef77eb81ab9c9115b7324359fd0d2ec99ce40ff21",
+      "width": 832,
+      "zpl_sha256": "21bd494aa243ed8a1a189f05f3282b97668856900831824c267a2865bc01b7e6"
+    },
+    {
+      "arguments": "encoding=28; UTF-8 \u00e9",
+      "captured_utc": "2026-10-08T01:09:59Z",
+      "command": "^CI",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "text",
+      "height": 300,
+      "name": "utf8-accent",
+      "png_sha256": "2782dce1fdccaf4038f4dfc551c043dabfcf902a2bbe3b008bb32b01ac89b4ed",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "056e8e9bc05f74e34e3babf503033dbcbf30a4539d7cd67fe33f7745cb85dec7",
+      "width": 832,
+      "zpl_sha256": "fb2ec76fde4a1d67bbf7fb700c70a56f9f64a4f4ba2f39ea02bb916d16501a2e"
+    },
+    {
+      "arguments": "w=100,h=60,t=1,color=B,round=0",
+      "captured_utc": "2026-10-08T01:09:59Z",
+      "command": "^GB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "box-thickness-1",
+      "png_sha256": "afeb435202fc3c0231fa94cd7b0d2d3b145df965dfcff03f10f2ff1297d99089",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2897a44a13d29c43bb42a252aa948787678a7ac531aed558605cdeb348b19b8e",
+      "width": 832,
+      "zpl_sha256": "c5daa70f566e54faf39555871c35c63e6b36c7ecc7db8ec2a502c2f133818855"
+    },
+    {
+      "arguments": "w=100,h=60,t=4,color=B,round=0",
+      "captured_utc": "2026-10-08T01:10:00Z",
+      "command": "^GB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "box-thickness-4",
+      "png_sha256": "51ed2e1366e7e3818b9f4ebbbf3516a1b1294fa39271b453bc8a11123113378b",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "ad3c825b012ef921b972fe3bc9d039e0a70a7a904d23a8189b8d9abb707be4ba",
+      "width": 832,
+      "zpl_sha256": "d3aac80a362071e269ed21903e9329d393f9fb21b79ad7d75a5dd40d04956128"
+    },
+    {
+      "arguments": "w=100,h=60,t=60,color=B,round=0",
+      "captured_utc": "2026-10-08T01:10:00Z",
+      "command": "^GB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "box-thickness-60",
+      "png_sha256": "3e600229024f0524ee4c87f58a427f3074d8ff62f6ecdd922fd4e540a2910a39",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "81879b40144687ebede39059aa5b76bab3cf0bdba9e9978dcbfb03aa3424bdde",
+      "width": 832,
+      "zpl_sha256": "2c331dc3f381101cc897bc14fb6612f11a5c007c2a9e388db5fed5f0ae717f50"
+    },
+    {
+      "arguments": "round=4",
+      "captured_utc": "2026-10-08T01:10:00Z",
+      "command": "^GB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "box-round",
+      "png_sha256": "5cfec07b4b030bf23f854fa33c4ae70c9c73f20c5219f39fec1e6fae1fc39ebe",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "c997d42f73121a24b7d6bf8ae2fbaf2223313cb1413902c4331a7232fdca7527",
+      "width": 832,
+      "zpl_sha256": "dda65783abb15f627e7363669f7db5c179751acb1d7827e3d5847db00010aefd"
+    },
+    {
+      "arguments": "color=W",
+      "captured_utc": "2026-10-08T01:10:01Z",
+      "command": "^GB",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "box-white",
+      "png_sha256": "226ba0be1691502b8c3985447be8a2c0b831cd48f5c3f95d7fd46330665886d1",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "f4a43c34f193028f9efc395c17b97fa9d2509256d9e210e4d30cbfba52f8e047",
+      "width": 832,
+      "zpl_sha256": "32ebda919a1ed936772137e5fa44d90dd12aa672820f37e89cb409459a48d65f"
+    },
+    {
+      "arguments": "80,3,B",
+      "captured_utc": "2026-10-08T01:10:01Z",
+      "command": "^GC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "shape-GC-B",
+      "png_sha256": "36640c9532bcfb4e53477efea92268c01b5b421f13f8e1257bd98cc561682010",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "fa4ace1cec2d5dafa5e3e67995224bfa27479a7bb5bf62d452538ba9f524f3eb",
+      "width": 832,
+      "zpl_sha256": "d728a84c33e24441404fbdb47573840cb5080e970abc43fdef4968272317b0ca"
+    },
+    {
+      "arguments": "120,60,3,B",
+      "captured_utc": "2026-10-08T01:10:01Z",
+      "command": "^GE",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "shape-GE-B",
+      "png_sha256": "e0c24aacfdbfd45695295bc00e54b8b8bdf5d20c06c65a98b34352e2f9177cb8",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "68d234d6b169ffeba147fe4884d0b3780ebef5226cf33330edddbf44ddc18b91",
+      "width": 832,
+      "zpl_sha256": "605bd3f7940149bc905922c91f2e332b895ca00abc4d6225730cf4e51c19bd23"
+    },
+    {
+      "arguments": "120,60,3,B,R",
+      "captured_utc": "2026-10-08T01:10:02Z",
+      "command": "^GD",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "shape-GD-R",
+      "png_sha256": "06fbf127a59d5afc67e93b40627e8f57486e005b2cca9cccd98903ecae5da56c",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "001834a7e5125bcfe4a8f395191376b82bc60ecb49279fd67ff4f1d375fd940c",
+      "width": 832,
+      "zpl_sha256": "f9735eac090c1a4a5cd5188c3335c419a778113e879681403e787b5ff2a4b5e1"
+    },
+    {
+      "arguments": "120,60,3,B,L",
+      "captured_utc": "2026-10-08T01:10:02Z",
+      "command": "^GD",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "shapes",
+      "height": 300,
+      "name": "shape-GD-L",
+      "png_sha256": "827ae46ba5c8640ad4493feb6303c29a0dab4272ea283d52f51392ed70888098",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "885647f1282510ff9504fb2c20348c9b16a732acbc14ae85f10debe5273b0552",
+      "width": 832,
+      "zpl_sha256": "6f25b316dc901782ba35960c66e0effae189ea89d212bff8a87f24cf83f473e0"
+    },
+    {
+      "arguments": "A,8,8,1; raw hex",
+      "captured_utc": "2026-10-08T01:10:02Z",
+      "command": "^GF",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "graphics",
+      "height": 300,
+      "name": "graphic-hex",
+      "png_sha256": "581d40033b5e51bb3838fceb81213300d043c6b19db7a39190b3e406bbb0dfef",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "1a41c2894eb46eaa4b9d88e6ffa6569a31b9ec0a19eb27110de786fe7e35422a",
+      "width": 832,
+      "zpl_sha256": "2df24f2b8cb89320d114ab5ee3315822452ba611acb58e0b8231972711205350"
+    },
+    {
+      "arguments": "B,8,8,1; ASCII binary bytes",
+      "captured_utc": "2026-10-08T01:10:03Z",
+      "command": "^GF",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "graphics",
+      "height": 300,
+      "name": "graphic-binary",
+      "png_sha256": "38f7a6982081af347a7d2ab4ad21641fb685f5570ba4d42e67e0bcaf5bd74c3c",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "eddb62523e5d53f965661bc01fee9512b13d3f8a84a331cbfcd7521613272966",
+      "width": 832,
+      "zpl_sha256": "d6d383a5a117257962f6f406c4b531dc32f80fb2c67ed8d154c5ca29ad838718"
+    },
+    {
+      "arguments": "A,8,8,1; B64, CRC16",
+      "captured_utc": "2026-10-08T01:10:03Z",
+      "command": "^GF",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "graphics",
+      "height": 300,
+      "name": "graphic-B64",
+      "png_sha256": "581d40033b5e51bb3838fceb81213300d043c6b19db7a39190b3e406bbb0dfef",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "4b0467b6da8ca5d8e2cbb843e1280db976933796f3a35017685b45e9b8b2d2c7",
+      "width": 832,
+      "zpl_sha256": "c5842b80b696522f97bd855472934206ac021ea569d00ba09b667fae787219a5"
+    },
+    {
+      "arguments": "A,8,8,1; Z64, CRC16",
+      "captured_utc": "2026-10-08T01:10:03Z",
+      "command": "^GF",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "graphics",
+      "height": 300,
+      "name": "graphic-Z64",
+      "png_sha256": "581d40033b5e51bb3838fceb81213300d043c6b19db7a39190b3e406bbb0dfef",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "4f5206ff786de743e89ab7e4b87a18325338c091c2fb7582d8fd62967089dd59",
+      "width": 832,
+      "zpl_sha256": "4ced3f4a16e6a02b67b7c17893762a89ff824ea0d09074f27a36291ffb061640"
+    },
+    {
+      "arguments": "w=2,ratio=2,height=60",
+      "captured_utc": "2026-10-08T01:10:04Z",
+      "command": "^BY",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code39-ratio-2",
+      "png_sha256": "e0f5516fea3f11bace4082bb798bfd5edc04d354159e6dd569cb665d523ff68d",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "21b73a60081e6d51c0ce192df446ff851987641986b3bb533374ee9f4aaf24a7",
+      "width": 832,
+      "zpl_sha256": "4fa209b59f743420aafce67f0fab6cbc0d99139f1731790ce0f66425be737f16"
+    },
+    {
+      "arguments": "w=2,ratio=3,height=60",
+      "captured_utc": "2026-10-08T01:10:04Z",
+      "command": "^BY",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code39-ratio-3",
+      "png_sha256": "6038dab27d423f12b2d641e83ba299cddfbc8338c65ba14b132b50ce5c90e4e9",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "b11b2fc7e4cf2c66030aeb7109d81c09c717c0e21cca22e99a12cfe9256b0ccc",
+      "width": 832,
+      "zpl_sha256": "5da9840fb90f7fa5b3a64ddc880bcd264cf74c2ef3ee0a83ac232186a499d79f"
+    },
+    {
+      "arguments": "o=N,check=N,h=60,readable=N",
+      "captured_utc": "2026-10-08T01:10:04Z",
+      "command": "^B3",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code39-check-N",
+      "png_sha256": "6038dab27d423f12b2d641e83ba299cddfbc8338c65ba14b132b50ce5c90e4e9",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "9223b8016571cfa268528cbe707a3c2c96297248d197cc9858ff90507ee09540",
+      "width": 832,
+      "zpl_sha256": "fac7587d37a7aff781321f04bcac001a8877d6bc411766bbf89b2bce6d43bc9b"
+    },
+    {
+      "arguments": "o=N,check=Y,h=60,readable=N",
+      "captured_utc": "2026-10-08T01:10:05Z",
+      "command": "^B3",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code39-check-Y",
+      "png_sha256": "1368db60483da997ebc623e0e09bbd29e0b272dc1f8e0ed0164efaea5196847f",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "c80128c583504a3a70c9caa281d293cff8c996503a1d6a199b98bffb88a9c25f",
+      "width": 832,
+      "zpl_sha256": "8d3887ec19881538b249dae906c79088eb53b5952f5af967d882b087e6c78e48"
+    },
+    {
+      "arguments": "h=60,interpretation=N,above=N",
+      "captured_utc": "2026-10-08T01:10:05Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-text-NN",
+      "png_sha256": "b99ee78c67ab55fb2f21f47aff965dcd7123034323528963d1011f4f949f4be4",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2161aae7d23065f25496ddf95368435990a859a34b314796b75253634440d99e",
+      "width": 832,
+      "zpl_sha256": "2cdc85216044404a33ad2a6d4ae940828e5285f21291d5ba26dcd8989007f574"
+    },
+    {
+      "arguments": "h=60,interpretation=Y,above=N",
+      "captured_utc": "2026-10-08T01:10:05Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-text-YN",
+      "png_sha256": "c4fb67c68eee8908854fe0ea519e3fc7673fcbd345a8921a4c637b448207bf06",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "cd8a7598586e53244c8ec05936c728039d76b114985d850639f54fd6972f490d",
+      "width": 832,
+      "zpl_sha256": "38826815ddf5c3a0df8287d46dcc08603ca2e8bf4a700bac0dca297e43ac1585"
+    },
+    {
+      "arguments": "h=60,interpretation=Y,above=Y",
+      "captured_utc": "2026-10-08T01:10:06Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-text-YY",
+      "png_sha256": "e8a91f2259065669d2afd93bcf3057d297ca87807d5e5a2adc426e5f554e22bc",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "4c01c02ee47fcfbbf15972cc8979b2b77da392e4d0bc4f7552d389cf0f2c720d",
+      "width": 832,
+      "zpl_sha256": "5d694c134748c8d98484c1f7e26be99a493d58f1486b730c0af945bc71c388a0"
+    },
+    {
+      "arguments": "o=R,h=60",
+      "captured_utc": "2026-10-08T01:10:06Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-rotation-R",
+      "png_sha256": "b4edb8dedf49d2bf34a2970b112028a7cddb3a7a182763d8b6363677e2b2c791",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "60ff2053553dcf326cdea4af5b563e0ea5c6823ffe90ca8a20c28dd2e37293eb",
+      "width": 832,
+      "zpl_sha256": "b4cf9c2f202bb11cb72ee528343b39adb26af5747b6e6ce52df6c7e8117860bd"
+    },
+    {
+      "arguments": "o=I,h=60",
+      "captured_utc": "2026-10-08T01:10:06Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-rotation-I",
+      "png_sha256": "2f292eb63fbad898b0fd4ae1f8449bbd7255189f49b0d3a7d99a00a6d5dfb88b",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "86518ae7822a0f77310f8077ee3e29be9e72926d5af39b40df22217ae6184eb7",
+      "width": 832,
+      "zpl_sha256": "03cfe37fc26d19f030326faeddd7fb542d797f6cfd9f35ce3663b2d2e0dfa059"
+    },
+    {
+      "arguments": "o=B,h=60",
+      "captured_utc": "2026-10-08T01:10:07Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-rotation-B",
+      "png_sha256": "58204533ae25dc56a7986e12bda4f2e61bdeb47f1d57657515bf7980257f8f3d",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "866d0f1e7a7db53da5a0d3e3e543f07bb1b2b2e1ef83ecd36d37df2a0e970a52",
+      "width": 832,
+      "zpl_sha256": "621004156bddc70ed7420f65363ac87c4fb5644c434d38589fde27e92b3411f4"
+    },
+    {
+      "arguments": "mode=N",
+      "captured_utc": "2026-10-08T01:10:07Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-mode-N",
+      "png_sha256": "63745e9b2850dd9566b957faa1d8613b04544b1e5c7ab54c613bf836e89c6527",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "00c721d088ad943e331b088341f28cf3bdce2138fb3718052b718b82c3b539cb",
+      "width": 832,
+      "zpl_sha256": "42fe5ed13de31fbe4841e3b9e36fe5aa94e0c3b4320c61c5143eaadcc72ea660"
+    },
+    {
+      "arguments": "mode=A",
+      "captured_utc": "2026-10-08T01:10:07Z",
+      "command": "^BC",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "code128-mode-A",
+      "png_sha256": "cb212ee7ec9bf25314050820ee2944b0fd1e96852b2188221bb73f10b6fa1c7c",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "84724d582bbb37a990449c0bc274c2bfe3f646b6f946ca871122175c14e45af0",
+      "width": 832,
+      "zpl_sha256": "8028e81521ddefce824f4029f8b1f702c81d18b549ed0b4dcada43247922ac9b"
+    },
+    {
+      "arguments": "o=N,model=1,magnification=3,EC=L,mask=0",
+      "captured_utc": "2026-10-08T01:10:08Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-model-1",
+      "png_sha256": "04d2728343a2707139575b4a52e3faba6f6b4f4c585a1d9478b2a452cba20082",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "42370a01d46ebd1aee5b17dfa8e5da9798cb4a4d085c1c75552de84f3adee165",
+      "width": 832,
+      "zpl_sha256": "9a3f4260cfa8f6516cb6d69fcfc52065448773e69fc2aaaf32bd5b2c301c801f"
+    },
+    {
+      "arguments": "o=N,model=2,magnification=3,EC=L,mask=0",
+      "captured_utc": "2026-10-08T01:10:08Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-model-2",
+      "png_sha256": "bd5cd670e8fdda524969e2876c010871bfbb0b73e78244119c2390ddc81e8b22",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2b7ceff161b5e80cf83afec0d91784ce64521694ea32982123a7d1a70bb07e5c",
+      "width": 832,
+      "zpl_sha256": "ef881a411b4f28765292014b85d8d1dfd90e8c032a7d0f27e6967a0e0ced8b26"
+    },
+    {
+      "arguments": "model=2,magnification=3,EC=L,mask=0",
+      "captured_utc": "2026-10-08T01:10:08Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-ec-L",
+      "png_sha256": "bd5cd670e8fdda524969e2876c010871bfbb0b73e78244119c2390ddc81e8b22",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2b7ceff161b5e80cf83afec0d91784ce64521694ea32982123a7d1a70bb07e5c",
+      "width": 832,
+      "zpl_sha256": "ef881a411b4f28765292014b85d8d1dfd90e8c032a7d0f27e6967a0e0ced8b26"
+    },
+    {
+      "arguments": "model=2,magnification=3,EC=M,mask=0",
+      "captured_utc": "2026-10-08T01:10:09Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-ec-M",
+      "png_sha256": "73a5a2164383ba6bde4ffc3721305524eed1c60a066953c8c9ef724a9880e527",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "d503d7c9cf3231522a4782fb3add3efac97d14f5debf8c8cded4b15ba03f1e2c",
+      "width": 832,
+      "zpl_sha256": "ace4360ae8a1e5b501be61943ca1643c089345905a1aa7422d8c97128c32c7d7"
+    },
+    {
+      "arguments": "model=2,magnification=3,EC=Q,mask=0",
+      "captured_utc": "2026-10-08T01:10:09Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-ec-Q",
+      "png_sha256": "ab1918f7cf5d55e9c4a6616da0cdeb19e94b363ea76b56c555e3afe15dde07cd",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "13a3d8f0efd384c049489e430fe9c337e96e7e45698692fb2da61d4429be3546",
+      "width": 832,
+      "zpl_sha256": "b90fbbfea016c7226d842876fe95a8ef3278a912bdfd95f9c77eb8d5242cebd0"
+    },
+    {
+      "arguments": "model=2,magnification=3,EC=H,mask=0",
+      "captured_utc": "2026-10-08T01:10:09Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-ec-H",
+      "png_sha256": "407a9db3bbee3badeb931dd98a3262cd1d7530e1996e9718d2013b2e36e3749e",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "b0c4f3a32f38c62055436ade77dd96da272e981ef2a53a32109892541c9a4bf2",
+      "width": 832,
+      "zpl_sha256": "8cd8c48faf3874485a8c0954ef9202c09ebbc8c3fb1d6835900dde5d4271e925"
+    },
+    {
+      "arguments": "magnification=2",
+      "captured_utc": "2026-10-08T01:10:10Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-module-2",
+      "png_sha256": "61ea0b937a6132f73e8052c46997c33c91217cfb1bbc4fd28e036e6b29286895",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "04f4ff3d2988b033c99ecf87b38264c5e20d590d341678edd227a99c1964dc2c",
+      "width": 832,
+      "zpl_sha256": "c3bdefd5c4e9c22fdd66baeece8ddd00a24e08fa31a0500647a19c27754695cc"
+    },
+    {
+      "arguments": "magnification=5",
+      "captured_utc": "2026-10-08T01:10:10Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-module-5",
+      "png_sha256": "20ae62ecc6a6ed9621bc4557ea9c3046d8dc166a446c41de0b4675f104b2c8e5",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "37568f8963a7a070753bc4cb96d1110bff68e8b4c19ee1e00b5166140dec9a49",
+      "width": 832,
+      "zpl_sha256": "93f1a00420fa99ee8972a4f8fa7f4fbc23747dadb9b1a0effd45b0cefd08162f"
+    },
+    {
+      "arguments": "mask=0",
+      "captured_utc": "2026-10-08T01:10:10Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-mask-0",
+      "png_sha256": "bd5cd670e8fdda524969e2876c010871bfbb0b73e78244119c2390ddc81e8b22",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "2b7ceff161b5e80cf83afec0d91784ce64521694ea32982123a7d1a70bb07e5c",
+      "width": 832,
+      "zpl_sha256": "ef881a411b4f28765292014b85d8d1dfd90e8c032a7d0f27e6967a0e0ced8b26"
+    },
+    {
+      "arguments": "mask=3",
+      "captured_utc": "2026-10-08T01:10:11Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-mask-3",
+      "png_sha256": "bd5cd670e8fdda524969e2876c010871bfbb0b73e78244119c2390ddc81e8b22",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "ad2657fdeee863413e84bcc8d8ba2a0161f84422a23feeca16989b795b721d43",
+      "width": 832,
+      "zpl_sha256": "958c4627a8bbff1f3d8e3616883808e9f1bd9f734897b78c46d748d358651745"
+    },
+    {
+      "arguments": "mask=7",
+      "captured_utc": "2026-10-08T01:10:11Z",
+      "command": "^BQ",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "qr-mask-7",
+      "png_sha256": "bd5cd670e8fdda524969e2876c010871bfbb0b73e78244119c2390ddc81e8b22",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "b71ad3e5f2d1458fb78c14e21e7c239186f3540a7df5f91e6879571e9e832a0b",
+      "width": 832,
+      "zpl_sha256": "453727fc0edb69f5832baba008fefbfc336a601e67415254e67b81d2d38fa419"
+    },
+    {
+      "arguments": "o=N,module=2,quality=200",
+      "captured_utc": "2026-10-08T01:10:11Z",
+      "command": "^BX",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "datamatrix-module-2",
+      "png_sha256": "de5c453485cd55c362e92685b0df48246692c9412615512f7695ba25b8de5167",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "ec966cffcd3e85a3b4d6ab6f7d6ce62d2aa5e959a2154e96b9cb23b7ed76328c",
+      "width": 832,
+      "zpl_sha256": "ecc9cd7deac93789b6edbdde7497b4297e4fa47e7365b053406545834701f40f"
+    },
+    {
+      "arguments": "o=N,module=4,quality=200",
+      "captured_utc": "2026-10-08T01:10:12Z",
+      "command": "^BX",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "barcode-arguments",
+      "height": 300,
+      "name": "datamatrix-module-4",
+      "png_sha256": "c52813968fcae69dabd201785088ea1a688fb4312aa246bc8a2fee766b1a521a",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "68f6acdb18901274fdda9f702121231cd4c2828e3aa331f99f7054bb7354fbeb",
+      "width": 832,
+      "zpl_sha256": "36ea09faee394962ff152901b7953d965b964035c0a512d74cda6191cb3b36b4"
+    },
+    {
+      "arguments": "font=0,o=N,h=16,w=0",
+      "captured_utc": "2026-10-08T01:10:12Z",
+      "command": "^A",
+      "font_capture": {
+        "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+        "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+        "captured_utc": "2026-10-08T01:53:17Z",
+        "manifest": "references/font-controlled/capture.json",
+        "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+      },
+      "group": "repeatability",
+      "height": 300,
+      "name": "repeat-end",
+      "png_sha256": "991e52ef0d210b39060615d31adf35da062388425a8ecbe64eb4238925d52454",
+      "printer_dimensions": [
+        832,
+        300
+      ],
+      "submission_mode": "inline-reset-canvas",
+      "submitted_sha256": "cee976f88541ff1d78e6511a2fcb000c25bb2a782860828903de030ae4828ec1",
+      "width": 832,
+      "zpl_sha256": "8cb445e5ce6410ea664df45719260c864dd5ffe92988c001d9aedfa3bbc998b6"
+    }
+  ],
+  "device": "ZTC ZD621-203dpi ZPL",
+  "dpi": 203,
+  "firmware": "V93.21.33Z",
+  "font_capture": {
+    "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+    "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+    "captured_utc": "2026-10-08T01:53:17Z",
+    "manifest": "references/font-controlled/capture.json",
+    "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+  },
+  "host": "http://d7j211001302.bed.einic.org/",
+  "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label",
+  "preview_reset_zpl": "^XA^CI0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^CI13,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,30,30,31,31,32,32,33,33,34,34,35,35,36,36,37,37,38,38,39,39,40,40,41,41,42,42,43,43,44,44,45,45,46,46,47,47,48,48,49,49,50,50,51,51,52,52,53,53,54,54,55,55,56,56,57,57,58,58,59,59,60,60,61,61,62,62,63,63,64,64,65,65,66,66,67,67,68,68,69,69,70,70,71,71,72,72,73,73,74,74,75,75,76,76,77,77,78,78,79,79,80,80,81,81,82,82,83,83,84,84,85,85,86,86,87,87,88,88,89,89,90,90,91,91,92,92,93,93,94,94,95,95,96,96,97,97,98,98,99,99,100,100,101,101,102,102,103,103,104,104,105,105,106,106,107,107,108,108,109,109,110,110,111,111,112,112,113,113,114,114,115,115,116,116,117,117,118,118,119,119,120,120,121,121,122,122,123,123,124,124,125,125,126,126,127,127,128,128,129,129,130,130,131,131,132,132,133,133,134,134,135,135,136,136,137,137,138,138,139,139,140,140,141,141,142,142,143,143,144,144,145,145,146,146,147,147,148,148,149,149,150,150,151,151,152,152,153,153,154,154,155,155,156,156,157,157,158,158,159,159,160,160,161,161,162,162,163,163,164,164,165,165,166,166,167,167,168,168,169,169,170,170,171,171,172,172,173,173,174,174,175,175,176,176,177,177,178,178,179,179,180,180,181,181,182,182,183,183,184,184,185,185,186,186,187,187,188,188,189,189,190,190,191,191,192,192,193,193,194,194,195,195,196,196,197,197,198,198,199,199,200,200,201,201,202,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,214,214,215,215,216,216,217,217,218,218,219,219,220,220,221,221,222,222,223,223,224,224,225,225,226,226,227,227,228,228,229,229,230,230,231,231,232,232,233,233,234,234,235,235,236,236,237,237,238,238,239,239,240,240,241,241,242,242,243,243,244,244,245,245,246,246,247,247,248,248,249,249,250,250,251,251,252,252,253,253,254,254,255,255^PMN^PA0,0,0,0^FPH,0^CVN^BY2,3,10^CI27^CF0,32,0^FWN^LH0,0^LS0^LT0^PON^LRN^CWA,R:FCA.FNT^CWB,R:FCB.FNT^CWD,R:FCD.FNT^CWE,R:FCE.FNT^CWF,R:FCF.FNT^CWG,R:FCG.FNT^CWH,R:FCH.FNT^CWP,R:FCP.FNT^CWQ,R:FCQ.FNT^CWR,R:FCR.FNT^CWS,R:FCS.FNT^CWT,R:FCT.FNT^CWU,R:FCU.FNT^CWV,R:FCV.FNT^CWC,R:FCD.FNT^CW0,R:FC0.TTF^XZ",
+  "repeat_pixels_equal": true,
+  "schema": 1,
+  "status": "complete"
+}

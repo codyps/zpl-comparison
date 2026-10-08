@@ -8,6 +8,8 @@ load("//:build/campaigns.bzl", "campaigns")
 LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "labelary"]
 
 def _invoke(ctx, kind, name, spec, inputs, outputs):
+    if kind == "compare" and ctx.attr.font_bundle and spec.get("reference"):
+        spec = dict(spec, reference_font_control = CATALOG["references/font-controlled/catalog.json"]["benchmarks/accuracy/reference/manifest.json"]["font_capture"])
     if kind == "pages" and ctx.attr.font_bundle:
         spec = dict(spec, font_controlled = True)
     if kind == "pages" and ctx.attr.saved:
@@ -79,9 +81,21 @@ def _observation(ctx, key, lib, spec, files, compiled, baseline, captures, row, 
 
 def _impl(ctx):
     files = {f.short_path: f for f in ctx.files.srcs}
+    catalog = dict(CATALOG)
+    if ctx.attr.font_bundle:
+        # A separate physical-printer capture overlay keeps default-font evidence intact.
+        if CATALOG["references/font-controlled/catalog.json"].get("_capture_status") != "complete":
+            fail("Font-controlled printer capture is incomplete; recover the interrupted capture and run benchmarks/fonts/capture.py --verify before building reports_fonts")
+        prefix = "references/font-controlled/overlay/"
+        for path, value in CATALOG["references/font-controlled/catalog.json"].items():
+            if not path.startswith("_"):
+                catalog[path] = value
+        for path, value in list(files.items()):
+            if path.startswith(prefix):
+                files[path[len(prefix):]] = value
     compiled = {name: target[DefaultInfo].files.to_list()[0] for name, target in zip(LIBRARIES[:-1], ctx.attr.libraries)}
     baseline = {"/".join(f.short_path.split("/")[3:]): f for f in ctx.files.baseline}
-    captures = {(r["sha256"], r["width"], r["height"]): r for r in CATALOG["docs/benchmarks/labelary/captures.json"]["cases"]}
+    captures = {(r["sha256"], r["width"], r["height"]): r for r in catalog["docs/benchmarks/labelary/captures.json"]["cases"]}
     publish = []
     if ctx.attr.font_bundle:
         publish.append((ctx.attr.font_bundle[DefaultInfo].files.to_list()[0], "benchmarks/fonts/bundle"))
@@ -97,16 +111,16 @@ def _impl(ctx):
         base = "docs/benchmarks/accuracy/comparisons" + ("" if suite == "accuracy" else "/features" if suite == "conformance" else "/layout" if suite == "layout-accuracy" else "/external")
         assets = renders if suite == "accuracy" else base
         corpus = "test-data/render-conformance" if suite == "conformance" else "test-data/layout-accuracy" if suite == "layout-accuracy" else "test-data/external-zpl"
-        cases = [] if suite == "accuracy" else CATALOG[corpus + "/manifest.json"]["cases"]
+        cases = [] if suite == "accuracy" else catalog[corpus + "/manifest.json"]["cases"]
         reference_dir = "benchmarks/accuracy/" + ("conformance-reference" if suite == "conformance" else "layout-reference" if suite == "layout-accuracy" else "external-reference")
-        references = {} if suite == "accuracy" else {r["name"]: r for r in CATALOG[reference_dir + "/manifest.json"]["cases"]}
-        failures = {} if suite == "accuracy" else {r["name"]: r for r in CATALOG[reference_dir + "/manifest.json"].get("failures", [])}
+        references = {} if suite == "accuracy" else {r["name"]: r for r in catalog[reference_dir + "/manifest.json"]["cases"]}
+        failures = {} if suite == "accuracy" else {r["name"]: r for r in catalog[reference_dir + "/manifest.json"].get("failures", [])}
         if suite == "accuracy":
-            fresh = CATALOG["benchmarks/accuracy/reference/manifest.json"]
-            archive = CATALOG["references/barcodes-zd621-v1/manifest.json"]
+            fresh = catalog["benchmarks/accuracy/reference/manifest.json"]
+            archive = catalog["references/barcodes-zd621-v1/manifest.json"]
             cases = [dict(c, id = "argument-" + c["name"], source = "fresh arguments", zpl = "benchmarks/accuracy/reference/" + c["name"] + ".zpl", reference = "benchmarks/accuracy/reference/" + c["name"] + ".png") for c in fresh["cases"] if c["group"] != "repeatability"]
             for name, c in archive["cases"].items():
-                cases.append(dict(id = "barcode-" + name, name = name, group = "barcode-formats", command = CATALOG["barcode_commands"][name], arguments = "See exact archived ZPL", width = archive["width"], height = 1218, source = "archived barcode development corpus", zpl = "references/barcodes-zd621-v1/" + name + ".zpl", reference = "references/barcodes-zd621-v1/" + name + ".png", zpl_sha256 = c["zpl_sha256"], png_sha256 = c["printer_png_sha256"]))
+                cases.append(dict(id = "barcode-" + name, name = name, group = "barcode-formats", command = catalog["barcode_commands"][name], arguments = "See exact archived ZPL", width = archive["width"], height = 1218, source = "archived barcode development corpus", zpl = "references/barcodes-zd621-v1/" + name + ".zpl", reference = "references/barcodes-zd621-v1/" + name + ".png", zpl_sha256 = c["zpl_sha256"], png_sha256 = c["printer_png_sha256"]))
         compared = []
         rendered = []
         relation_groups = {}
@@ -182,7 +196,7 @@ def _impl(ctx):
         aggregate = _tree(ctx, suite + "/aggregate")
         metadata = {"schema": 1, "threshold": 128}
         if suite != "accuracy":
-            metadata.update(suite = CATALOG[corpus + "/manifest.json"]["suite"], references = CATALOG[reference_dir + "/manifest.json"])
+            metadata.update(suite = catalog[corpus + "/manifest.json"]["suite"], references = catalog[reference_dir + "/manifest.json"])
         if suite == "accuracy":
             metadata["fresh_reference"] = {k: v for k, v in fresh.items() if k != "cases"}
             metadata["archived_reference"] = {k: v for k, v in archive.items() if k != "cases"}
@@ -205,7 +219,7 @@ def _impl(ctx):
         publish.append((aggregate, ""))
         groups["suite_" + suite] = depset([f for f, _ in publish[suite_start:]])
 
-    invalid = invalid_matrix(ctx, files, compiled, baseline, CATALOG, _invoke, _stage, _select)
+    invalid = invalid_matrix(ctx, files, compiled, baseline, catalog, _invoke, _stage, _select)
     publish.append((invalid, ""))
     groups["suite_invalid"] = depset([invalid])
     support_inputs = _select(files, ["benchmarks/support.py", "benchmarks/report.py", "benchmarks/formatting.py", "benchmarks/sources.lock.json", "docs/zpl-command-index.tsv"])
@@ -222,7 +236,7 @@ def _impl(ctx):
         publish.append((baseline["reports/benchmarks/popularity.json"], "benchmarks/popularity.json"))
     groups["suite_support"] = depset([support])
 
-    public, paired, campaign_images = campaigns(ctx, files, compiled, baseline, CATALOG, LIBRARIES, _observation, _invoke, _stage, _select)
+    public, paired, campaign_images = campaigns(ctx, files, compiled, baseline, catalog, LIBRARIES, _observation, _invoke, _stage, _select)
     publish += [(public, ""), (paired, "")] + campaign_images
     groups["suite_public"] = depset([public] + [f for f, p in campaign_images if p.startswith("docs/public")])
     groups["suite_paired"] = depset([paired] + [f for f, p in campaign_images if p.startswith("docs/benchmarks/zq610-plus/")])
@@ -276,7 +290,7 @@ def _impl(ctx):
         publish.append((output, ""))
     overview = _stage(ctx, "accuracy-overview", _select(files, ["benchmarks/accuracy/overview.py"]) + aggregates + [(accuracy_report, "")], [["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy"]])
     publish.append((overview, ""))
-    candidate_outputs = zq610_matrix(ctx, files, compiled, baseline, CATALOG, LIBRARIES, _observation, _invoke, _stage)
+    candidate_outputs = zq610_matrix(ctx, files, compiled, baseline, catalog, LIBRARIES, _observation, _invoke, _stage)
     publish.extend(candidate_outputs)
     groups["suite_zq610_candidates"] = depset([f for f, _ in candidate_outputs])
     failures = _stage(ctx, "failure-inventory", _select(files, ["benchmarks/audit_failures.py"]) + aggregates + candidate_outputs + [(public, ""), (paired, "")],

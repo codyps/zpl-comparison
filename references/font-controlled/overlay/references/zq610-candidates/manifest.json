@@ -1,0 +1,4583 @@
+{
+  "cases": [
+    {
+      "height": 2030,
+      "name": "barcode-aztec",
+      "png_sha256": "594dd628d89ef688dfeaf2489cfc13f16799eb534745cc446046963148ebc703",
+      "reference": "references/zq610-plus-v1/barcode-aztec/zq610.png",
+      "sha256": "58aa2b0d4978a555626a17b5f58b7eb55c133b203e3eeb6f2cae149361d248bf",
+      "source": "references/zq610-plus-v1/barcode-aztec/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-aztec_alias",
+      "png_sha256": "594dd628d89ef688dfeaf2489cfc13f16799eb534745cc446046963148ebc703",
+      "reference": "references/zq610-plus-v1/barcode-aztec_alias/zq610.png",
+      "sha256": "faceb348fc40912bad03de8da08b570f0aea2de96822bf4eebf0b9788f1b2306",
+      "source": "references/zq610-plus-v1/barcode-aztec_alias/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-aztec_rune",
+      "png_sha256": "e179cacd88ed4014125525e2c28bb69a0ec610efc33e239b28797f119b994fb6",
+      "reference": "references/zq610-plus-v1/barcode-aztec_rune/zq610.png",
+      "sha256": "677f6d97c135563f78b51d2e224d69f7bb196b8b947e3af6c38b6eb6b587084e",
+      "source": "references/zq610-plus-v1/barcode-aztec_rune/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-codabar",
+      "png_sha256": "c0026f309b34987e76d228c4f707b293b83e1ef2d531903a2750257d3c5e77dc",
+      "reference": "references/zq610-plus-v1/barcode-codabar/zq610.png",
+      "sha256": "9eb161160670439b6fd7311ced949b2c39e9a33a24fad78f58ad1db4f57ea016",
+      "source": "references/zq610-plus-v1/barcode-codabar/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-codablock_a",
+      "png_sha256": "656b5a8c5bfd9857c929a98d43d4b4ecfb59e88147b9ef8941ae974e86119783",
+      "reference": "references/zq610-plus-v1/barcode-codablock_a/zq610.png",
+      "sha256": "483956b6a1b5d9f0336ef97898a2afbb5059aee46df8db4c6f8878b229726333",
+      "source": "references/zq610-plus-v1/barcode-codablock_a/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-codablock_e",
+      "png_sha256": "682524e821f8be6dabccb0562cce5c3a8bbc454e16e45cb4f892d5e0206cd417",
+      "reference": "references/zq610-plus-v1/barcode-codablock_e/zq610.png",
+      "sha256": "a4652f2aef3e6bccf80fa364e6bde212255950c064c5da5d55c728f389ad4fe8",
+      "source": "references/zq610-plus-v1/barcode-codablock_e/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-codablock_f",
+      "png_sha256": "633a16ef88c920b44df1d5e1d6f9370c6fafa601a7cd083abd991f64178922c8",
+      "reference": "references/zq610-plus-v1/barcode-codablock_f/zq610.png",
+      "sha256": "6740b6a1552ef941e505a75c3b6f1a6177bf91c9123f569c7792e23608dc3e52",
+      "source": "references/zq610-plus-v1/barcode-codablock_f/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-code11",
+      "png_sha256": "3ecccf61d4b35a962f5c0de428f28823d8be87044d571069ce133fd37f980314",
+      "reference": "references/zq610-plus-v1/barcode-code11/zq610.png",
+      "sha256": "ae80c2fdd790f87df82be6b822327b3846f0720762550555b4a4d518a13dd0f7",
+      "source": "references/zq610-plus-v1/barcode-code11/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-code128",
+      "png_sha256": "2d30fe7475a2bd75745e55092d915b20f8a5988762d3470fcf55c8d2a1b5c20d",
+      "reference": "references/zq610-plus-v1/barcode-code128/zq610.png",
+      "sha256": "94be0cc3b6fc083d3a8b3d5e888b396191c0b06394e1d91d59b752ea79ae1433",
+      "source": "references/zq610-plus-v1/barcode-code128/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-code39",
+      "png_sha256": "4f34a015f8e6cb504bd7bd507e632a7d80a5cee759933652f9d456041ff7e3b4",
+      "reference": "references/zq610-plus-v1/barcode-code39/zq610.png",
+      "sha256": "758bc3514546d623ef0651a9581ca179a12c730dafe61f748c4c5f2452c7f2be",
+      "source": "references/zq610-plus-v1/barcode-code39/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-code49",
+      "png_sha256": "b6a6bdfa9d89e308384a4e2c155a8e452055ba63945322692df9ca42897188ca",
+      "reference": "references/zq610-plus-v1/barcode-code49/zq610.png",
+      "sha256": "1a745439bc631a30bdb8f584549111c48c07588eaa703e14d61a8c7caed686a4",
+      "source": "references/zq610-plus-v1/barcode-code49/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-code93",
+      "png_sha256": "df6583a20bccbc626edd66dece2b761fdd792ac8f2085c50f5b208088f441a90",
+      "reference": "references/zq610-plus-v1/barcode-code93/zq610.png",
+      "sha256": "e470b85e1ef317d95d93fe72118ff33dbaf94230c5d680beee43bbcad9c0f0f0",
+      "source": "references/zq610-plus-v1/barcode-code93/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-composite_a",
+      "png_sha256": "fac29e3a8f5c9bd4d6048f46c0cb3c0a54c09d30cb94385f556fa38e19fcad9f",
+      "reference": "references/zq610-plus-v1/barcode-composite_a/zq610.png",
+      "sha256": "9c20001fb2285908692c1a89765ee4a457c9b63b38fa62bfd090436b5f7afb0b",
+      "source": "references/zq610-plus-v1/barcode-composite_a/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-composite_b",
+      "png_sha256": "301433fb8509ab0951f50c835237e79144da5cd1a72384165154937089a04f8d",
+      "reference": "references/zq610-plus-v1/barcode-composite_b/zq610.png",
+      "sha256": "dd670f212cfb3ddfef141c8c592b89afb4f28422c20bbd179e253fb4eaa77f07",
+      "source": "references/zq610-plus-v1/barcode-composite_b/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-composite_c",
+      "png_sha256": "6cc43ee6de60f6eeec60df41717702be07f270405b09bc38b911c54efa0d91be",
+      "reference": "references/zq610-plus-v1/barcode-composite_c/zq610.png",
+      "sha256": "08eabbba657a9cf3795339c64e6a11b11534924dc7e69c321068e2393bb8ab40",
+      "source": "references/zq610-plus-v1/barcode-composite_c/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-data_matrix",
+      "png_sha256": "09820e4b76108b80af24ce3790c13a6b522a6b7c68890f70b4058c3a9cca335a",
+      "reference": "references/zq610-plus-v1/barcode-data_matrix/zq610.png",
+      "sha256": "1ff21a5290c345cf170cec378cb431ef39226a21a6d82383f9732413468c4582",
+      "source": "references/zq610-plus-v1/barcode-data_matrix/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-data_matrix_rectangular",
+      "png_sha256": "868b711954e2450290978a5e76fe89027060dbf7b660aed642fa54b0f53a44f9",
+      "reference": "references/zq610-plus-v1/barcode-data_matrix_rectangular/zq610.png",
+      "sha256": "a3b5452abd23311fb2b1dd2f49ff6136c81004daf8d8c8366ef1199cbff4fdab",
+      "source": "references/zq610-plus-v1/barcode-data_matrix_rectangular/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_ean13",
+      "png_sha256": "8e0ec1e74ca6aa8c65668286e2aba00afe71db7f255c34dc26d0d254e8ae9463",
+      "reference": "references/zq610-plus-v1/barcode-databar_ean13/zq610.png",
+      "sha256": "a71e7adff36c080eb78bbeae20e6927dc6bf529b33cbaf84ecf0db9036bf3de2",
+      "source": "references/zq610-plus-v1/barcode-databar_ean13/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_ean8",
+      "png_sha256": "bc589c9849c6edf5bd0efe16766d73564a4a9217e9852b2098d6ab3e94ed91c3",
+      "reference": "references/zq610-plus-v1/barcode-databar_ean8/zq610.png",
+      "sha256": "d9b2678696b6fea76915af56365e3b32e2d02d1aa609fbd3aa4ef38d5e121d17",
+      "source": "references/zq610-plus-v1/barcode-databar_ean8/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_expanded",
+      "png_sha256": "3dfb8574ddff532ab7e454b4cf2fc562928b88a959311fd9d9154ebc741df35d",
+      "reference": "references/zq610-plus-v1/barcode-databar_expanded/zq610.png",
+      "sha256": "99a403e87cd606967519b165efe4fc2330e48efb8aae912497724b19613f1c70",
+      "source": "references/zq610-plus-v1/barcode-databar_expanded/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_expanded_stacked",
+      "png_sha256": "a9f8672159261c92e95dbb7008b726f5e00a7aabe076fcb4da75255d78cb02c7",
+      "reference": "references/zq610-plus-v1/barcode-databar_expanded_stacked/zq610.png",
+      "sha256": "b6b43268bf0e00a1e98db1105b9e007562543a9e3539397d32ac4573a8eb0c15",
+      "source": "references/zq610-plus-v1/barcode-databar_expanded_stacked/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_limited",
+      "png_sha256": "8ac49ee9937739f1c4fd71e1f751a53039bd829a8960e90ca5c28614343e5fc6",
+      "reference": "references/zq610-plus-v1/barcode-databar_limited/zq610.png",
+      "sha256": "b8c1909d3a6f276ff94f908de731fd83974eb40e366763d1badf06b665ae1939",
+      "source": "references/zq610-plus-v1/barcode-databar_limited/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_omni",
+      "png_sha256": "8960511a6d3b4d298e65bb1d3cffb7c5dc708834f584b2dca5d1062870844df8",
+      "reference": "references/zq610-plus-v1/barcode-databar_omni/zq610.png",
+      "sha256": "b804ec4b659e5a25078fb242dffe8af48fc6f89c03c7faecaad34d04e20c5a14",
+      "source": "references/zq610-plus-v1/barcode-databar_omni/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_stacked",
+      "png_sha256": "d46e79eb8b7864ebc5a9b1d57c8b45c36fe6849dc5cbf73b43038af72d98d87f",
+      "reference": "references/zq610-plus-v1/barcode-databar_stacked/zq610.png",
+      "sha256": "2be35a9e01a3eb14bf956446d20b542a9436e78c2e98879de223638d819d93bd",
+      "source": "references/zq610-plus-v1/barcode-databar_stacked/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_stacked_omni",
+      "png_sha256": "ca1d6b56ae4da2b29c984d97bc70513a0fd9ac1d7213f5d340acdd65bcc50a27",
+      "reference": "references/zq610-plus-v1/barcode-databar_stacked_omni/zq610.png",
+      "sha256": "76b0f232c5c2f28d7805e1566264cf23cd885a08a2450b1c5103d4f99d893a19",
+      "source": "references/zq610-plus-v1/barcode-databar_stacked_omni/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_truncated",
+      "png_sha256": "2bffed5aec1dacc27cd3493ff1442bf3e65a5ec604a18106a65cd137f647e6c0",
+      "reference": "references/zq610-plus-v1/barcode-databar_truncated/zq610.png",
+      "sha256": "de7c4f9fc90ebe404f9c8b47068420438a97536225c5705942c1329a2aea2508",
+      "source": "references/zq610-plus-v1/barcode-databar_truncated/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_upca",
+      "png_sha256": "abd3b9d266544b38ab8ff8793d74a96f7e83f2a792dd6dbf1143b18e771ed20e",
+      "reference": "references/zq610-plus-v1/barcode-databar_upca/zq610.png",
+      "sha256": "b327264f2b8ade0f90475b78a97550647101816bf29570c44ccda8cb6723adc6",
+      "source": "references/zq610-plus-v1/barcode-databar_upca/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-databar_upce",
+      "png_sha256": "6c33e2feafa77a89ee7fa32d288de7e31744558ba2e7f3443f8d83fadaf99150",
+      "reference": "references/zq610-plus-v1/barcode-databar_upce/zq610.png",
+      "sha256": "6cfb88e466bc1ec000e773b223b8b20bd971d211c8456dfcf436ddb9614561ec",
+      "source": "references/zq610-plus-v1/barcode-databar_upce/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-ean13",
+      "png_sha256": "35e1546b5c4695d42e1c48c084652eb080faa002746e7e9e03416f700c0ae64d",
+      "reference": "references/zq610-plus-v1/barcode-ean13/zq610.png",
+      "sha256": "4636d96c8bba0918dcf6e880eabef3e6216850b133c20f2dd5a9a57579461d3e",
+      "source": "references/zq610-plus-v1/barcode-ean13/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-ean8",
+      "png_sha256": "9dd71b62a3586b509240d58a7be6d6f2146ff1faacd55e9b321324b6796cc8cf",
+      "reference": "references/zq610-plus-v1/barcode-ean8/zq610.png",
+      "sha256": "8781956577260d4e69fc3ddafb73fba9741527407d16050f3580f9dfa376f6e1",
+      "source": "references/zq610-plus-v1/barcode-ean8/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-extension2",
+      "png_sha256": "1b99538feb330247657e58b4495e9f47ce42aa9ba2430e7f7e341698ced4f012",
+      "reference": "references/zq610-plus-v1/barcode-extension2/zq610.png",
+      "sha256": "f04c67d04b77e4d9703b63bdcb03a15ae1edad616b310330ab633aa6557d3779",
+      "source": "references/zq610-plus-v1/barcode-extension2/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-extension5",
+      "png_sha256": "a78372c7887c5abb87a5f03b9dacf2709c1200e25829dd1543caa32de61fa763",
+      "reference": "references/zq610-plus-v1/barcode-extension5/zq610.png",
+      "sha256": "f5bc72c8db60f4d6eebaec26a8f4da0cb5e0585d69d6f3141eb542f9c039ed47",
+      "source": "references/zq610-plus-v1/barcode-extension5/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-industrial2of5",
+      "png_sha256": "5042ef63c0388653ece6548173acd0db55a907d70d45c823446b3dccacb9a6f7",
+      "reference": "references/zq610-plus-v1/barcode-industrial2of5/zq610.png",
+      "sha256": "cf9d1b2067c2bc8b0b4d461e32837f4a706dbd55e1d720aa70082acbb8d3a246",
+      "source": "references/zq610-plus-v1/barcode-industrial2of5/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-intelligent_mail",
+      "png_sha256": "25762c77378300a724ff8477eca808f7fdbc12344f71bae1efe7a9ed941efade",
+      "reference": "references/zq610-plus-v1/barcode-intelligent_mail/zq610.png",
+      "sha256": "fd2bfda1e2f95ebc65b2e9d47f9670bdc1c3bd2e292f38f9f681500f0ccbc55d",
+      "source": "references/zq610-plus-v1/barcode-intelligent_mail/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-interleaved2of5",
+      "png_sha256": "ab6478e6f4e17e34c18e8ad9b4bf3a28c28cca5d31f698cf2161b44b25227bbe",
+      "reference": "references/zq610-plus-v1/barcode-interleaved2of5/zq610.png",
+      "sha256": "9890a5a3e48d4d32e227350151fde76922e6a0245ad8c6eb430212315ef3116c",
+      "source": "references/zq610-plus-v1/barcode-interleaved2of5/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-logmars",
+      "png_sha256": "174f633be729da2315a57978436f6d20b79e4f1b59ba864a3be590f06f7fc7e8",
+      "reference": "references/zq610-plus-v1/barcode-logmars/zq610.png",
+      "sha256": "4ee246b5f5bfb98aa5c29417a4490081452d734c18536022db8b505010d85dcf",
+      "source": "references/zq610-plus-v1/barcode-logmars/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-maxicode2",
+      "png_sha256": "10acde5f45d2fe8d13c88b2e8b9abf1d06ede3ff9aad06bf181a332c0c65fcff",
+      "reference": "references/zq610-plus-v1/barcode-maxicode2/zq610.png",
+      "sha256": "324e5f52916e63e4182232ea1cbb5ec1d47426628e0c698d6417de6bc40f3b6e",
+      "source": "references/zq610-plus-v1/barcode-maxicode2/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-maxicode3",
+      "png_sha256": "8fad6fbb64479ac9cda048478cc66af7cbe8cdd8429104177e2e7b802910f5df",
+      "reference": "references/zq610-plus-v1/barcode-maxicode3/zq610.png",
+      "sha256": "ad40b3c7a1e7da58bd2143fc23f7571acbf4f0b6e9a0188f984d7ee1142cd1c5",
+      "source": "references/zq610-plus-v1/barcode-maxicode3/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-maxicode4",
+      "png_sha256": "afa6b2c4f8447d4412b88b9b72d18c8b62ce8c2bccbdfcb4cc6288766887f94c",
+      "reference": "references/zq610-plus-v1/barcode-maxicode4/zq610.png",
+      "sha256": "558e10b79fd9f416b45b3a30c95a4f95abf12df36963b9682512c8efe413c23f",
+      "source": "references/zq610-plus-v1/barcode-maxicode4/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-maxicode5",
+      "png_sha256": "ee6bc693a9f7845a64fa3085bd31d55d01d32cf1c1167e6283f6e75d91a84fcd",
+      "reference": "references/zq610-plus-v1/barcode-maxicode5/zq610.png",
+      "sha256": "c215b7c6979903f94ecb6aadace6f584c3a4070f2b912c6bb60f50f5dd830485",
+      "source": "references/zq610-plus-v1/barcode-maxicode5/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-maxicode6",
+      "png_sha256": "d7ae1503f1b56f1cd7fa5ffeee19014576e43227dadf8a2f5d014b49841ace84",
+      "reference": "references/zq610-plus-v1/barcode-maxicode6/zq610.png",
+      "sha256": "9b8f56d31867682783642f7d4432657c9ea439e8ca9af80e1090fd678628c2c6",
+      "source": "references/zq610-plus-v1/barcode-maxicode6/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-micropdf417_1",
+      "png_sha256": "51af7775ca8a2204749e74c931826270ea390a2505b063e1676c3c011ce96c13",
+      "reference": "references/zq610-plus-v1/barcode-micropdf417_1/zq610.png",
+      "sha256": "e8c0f81b6f92683eff6531905e19813697380a102122688719f72f806131d754",
+      "source": "references/zq610-plus-v1/barcode-micropdf417_1/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-micropdf417_3",
+      "png_sha256": "06435c448b6d3976edf243eda35a0fe25d32c37d610cd80f904f18ed4c1c3ee7",
+      "reference": "references/zq610-plus-v1/barcode-micropdf417_3/zq610.png",
+      "sha256": "e5ceb4333ac3657515a2926fe9c72724091f33264326a6820b2f6659ae179848",
+      "source": "references/zq610-plus-v1/barcode-micropdf417_3/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-micropdf417_4",
+      "png_sha256": "970449dcaabb10d244fa5b4f6277f2ca1307a598f6f979a5043a142dca6418f2",
+      "reference": "references/zq610-plus-v1/barcode-micropdf417_4/zq610.png",
+      "sha256": "d0b6d0ee625f1ccd0bac1686abf8bc9105b872402a2aab5beabdc4f1a12c43cb",
+      "source": "references/zq610-plus-v1/barcode-micropdf417_4/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-msi_a",
+      "png_sha256": "c755db8ea3a2965f530afd62a0e7b87813daf4cdf11fe3aba0bbb799c4d877ed",
+      "reference": "references/zq610-plus-v1/barcode-msi_a/zq610.png",
+      "sha256": "c16e3d2eddb393d99262226c2ca0ef6f12c07524773679cd50abfeb25fa417f6",
+      "source": "references/zq610-plus-v1/barcode-msi_a/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-msi_b",
+      "png_sha256": "b090a812892e07582fd12751c8c5a9dd03018e7fa41944e815ff3288bbf7f52e",
+      "reference": "references/zq610-plus-v1/barcode-msi_b/zq610.png",
+      "sha256": "3c49d941b98fdba488058b161f69a5c352ed93764073e6d36cd8be67bb97e322",
+      "source": "references/zq610-plus-v1/barcode-msi_b/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-msi_c",
+      "png_sha256": "197549e0b07793a2dcfaf16beed4197fea2be6dc8e35c42b90cc3a895d48ff5c",
+      "reference": "references/zq610-plus-v1/barcode-msi_c/zq610.png",
+      "sha256": "734633c43dc7012f30254c391d250007d070cff80198e65ce102c5ace0c3953f",
+      "source": "references/zq610-plus-v1/barcode-msi_c/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-msi_d",
+      "png_sha256": "197549e0b07793a2dcfaf16beed4197fea2be6dc8e35c42b90cc3a895d48ff5c",
+      "reference": "references/zq610-plus-v1/barcode-msi_d/zq610.png",
+      "sha256": "fe4af2e398c10a5559c421c51453452c65d106feb8b5e7e618eda56651c8cd0d",
+      "source": "references/zq610-plus-v1/barcode-msi_d/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-pdf417",
+      "png_sha256": "53acfff29392eac5f68d7ffb94578b88153e982a20ea66842c99ceaa7e669080",
+      "reference": "references/zq610-plus-v1/barcode-pdf417/zq610.png",
+      "sha256": "5954b12c0cf9801ac4ac2338d783c9cbf305ffbea30f0db0a64827654154ec0b",
+      "source": "references/zq610-plus-v1/barcode-pdf417/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-pdf417_truncated",
+      "png_sha256": "3db01c88b3c095b78d30a36051f0f3cd45f24d35cfeac8a5a9dcdfc5a97b3a64",
+      "reference": "references/zq610-plus-v1/barcode-pdf417_truncated/zq610.png",
+      "sha256": "a6dc08958ed84250b17597ec6de8738aeb7b5bf7f36ac79a95bcbbc5076b899f",
+      "source": "references/zq610-plus-v1/barcode-pdf417_truncated/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-planet",
+      "png_sha256": "eb9787dcf52a4c2c5f1b0f3c4f69cc5c03f93c1856d02cd935df0e36a4612a78",
+      "reference": "references/zq610-plus-v1/barcode-planet/zq610.png",
+      "sha256": "f43a470348bfe7f8bd2680efdff57abdf903680f3972ce1346fc0c52f12e203b",
+      "source": "references/zq610-plus-v1/barcode-planet/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-plessey",
+      "png_sha256": "cad2ec843744e315ab9c3806609a122aed49377f9fd1ba3f7e29d8dc7431ac24",
+      "reference": "references/zq610-plus-v1/barcode-plessey/zq610.png",
+      "sha256": "4d8369659e9fda65706e458ac1c85197f7340fc837101e35af16b28d276bc6c1",
+      "source": "references/zq610-plus-v1/barcode-plessey/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-postal_planet",
+      "png_sha256": "eb9787dcf52a4c2c5f1b0f3c4f69cc5c03f93c1856d02cd935df0e36a4612a78",
+      "reference": "references/zq610-plus-v1/barcode-postal_planet/zq610.png",
+      "sha256": "89eba124a8ea5ef4249f72c34567ebbbdd2c1f7fe4519429bf2c10d393556d73",
+      "source": "references/zq610-plus-v1/barcode-postal_planet/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-postnet",
+      "png_sha256": "4e2c1bc1dcd31154cacdac889d5c427f81bf3daa751dd0d97f85df54c3cced0e",
+      "reference": "references/zq610-plus-v1/barcode-postnet/zq610.png",
+      "sha256": "1f2b2d9289f284cd3049743a1ea1423edce906704cc6bddea03b727e23beeabb",
+      "source": "references/zq610-plus-v1/barcode-postnet/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-qr",
+      "png_sha256": "7b4ed58f2762e342929a652b37f98ef482723223ce43e2b2736d6015490e60e3",
+      "reference": "references/zq610-plus-v1/barcode-qr/zq610.png",
+      "sha256": "d07fc79bf33248e4ca1d2c619a6c11c9cfe5bed29577fb014df3d616e3306919",
+      "source": "references/zq610-plus-v1/barcode-qr/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-standard2of5",
+      "png_sha256": "77ce83e7e308fcbc2bdbe1bb60c33d4762fdba01f1ddf4a521c79cfb3589eefd",
+      "reference": "references/zq610-plus-v1/barcode-standard2of5/zq610.png",
+      "sha256": "75cce170e25fb5368d5e410c6d1e4f6aff27ef63d3ba13d3517c8b3f1a141128",
+      "source": "references/zq610-plus-v1/barcode-standard2of5/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-tlc39_linear",
+      "png_sha256": "2a849c1c886b405f392cefbb594abe431af4fb9eb05a1c68147c852c84b7b0ce",
+      "reference": "references/zq610-plus-v1/barcode-tlc39_linear/zq610.png",
+      "sha256": "b890f89f6f7178aae26ddf995b2af7b0f73d14a4e33e9d25de91fe5d31f63963",
+      "source": "references/zq610-plus-v1/barcode-tlc39_linear/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-tlc39_linked",
+      "png_sha256": "213f4453bc53cf4b1408bcba7943c41143f33d2af94fc399544bf9caf2ccfdc1",
+      "reference": "references/zq610-plus-v1/barcode-tlc39_linked/zq610.png",
+      "sha256": "4b1cd21042bc7b308e3e371ccc527fc9e0646a0a14da0a1259054a95b1e3e28c",
+      "source": "references/zq610-plus-v1/barcode-tlc39_linked/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-upca",
+      "png_sha256": "8af7ec16a14566f80710123c604f72596f359e83af6803a18ca0635a71e2b19d",
+      "reference": "references/zq610-plus-v1/barcode-upca/zq610.png",
+      "sha256": "64ead81d06dc3125b220f3bf67bd044c4a53a7ad6d66cb0a0834fc08a17bf286",
+      "source": "references/zq610-plus-v1/barcode-upca/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "barcode-upce",
+      "png_sha256": "73e10e25fa282cce8a4cdaa66f8fd0e75527a505d591f40dad428b6f9dd0788b",
+      "reference": "references/zq610-plus-v1/barcode-upce/zq610.png",
+      "sha256": "669ec6e13d20e9df6087bc9a435d90e9dbc00a86bd232f608dd16ad74a77fbe0",
+      "source": "references/zq610-plus-v1/barcode-upce/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "canvas-height-120",
+      "png_sha256": "88d2597bc8e86dc633e67a0533057105f28f11214ee3c025331022a251583ab0",
+      "reference": "references/zq610-plus-v1/canvas-height-120/zq610.png",
+      "sha256": "f0560e21b6e688940abff31cf21f8c09b8e91a129b583d0c937152a3af7e1db9",
+      "source": "references/zq610-plus-v1/canvas-height-120/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "canvas-height-2030",
+      "png_sha256": "88d2597bc8e86dc633e67a0533057105f28f11214ee3c025331022a251583ab0",
+      "reference": "references/zq610-plus-v1/canvas-height-2030/zq610.png",
+      "sha256": "81b797514597412684b90d8ad8c14b2db01d4fe5dad5e431e6e405947d7d0ed7",
+      "source": "references/zq610-plus-v1/canvas-height-2030/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "canvas-height-400",
+      "png_sha256": "88d2597bc8e86dc633e67a0533057105f28f11214ee3c025331022a251583ab0",
+      "reference": "references/zq610-plus-v1/canvas-height-400/zq610.png",
+      "sha256": "98071fe8717ac7118bdc599244e5973085e672ec0639a7036a6e2204eebedf2e",
+      "source": "references/zq610-plus-v1/canvas-height-400/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "canvas-width-120",
+      "png_sha256": "72558c2c09401e04335598489608a634b002436216ff67b443eb5ff473415fb0",
+      "reference": "references/zq610-plus-v1/canvas-width-120/zq610.png",
+      "sha256": "740556b957f15ab4de309fa65c5606931889a016eb1b27ec9144925f13b121a6",
+      "source": "references/zq610-plus-v1/canvas-width-120/zq610.zpl",
+      "width": 128
+    },
+    {
+      "height": 2030,
+      "name": "canvas-width-120-fit",
+      "png_sha256": "deff446ecb7ed6f5b537d1c569fd6c29560269b08b1a23f0a6d5d11e0a53dd39",
+      "reference": "references/zq610-plus-v1/canvas-width-120-fit/zq610.png",
+      "sha256": "2a6290530cb6e0ad5cc4897467129c3f5b99d20c11d7740036cf9a15ac85a95f",
+      "source": "references/zq610-plus-v1/canvas-width-120-fit/zq610.zpl",
+      "width": 128
+    },
+    {
+      "height": 2030,
+      "name": "canvas-width-300",
+      "png_sha256": "37a44b0878ff1c46573a1b8870a5daa9e33c8706dce3e0f90106f5f4ee5e557c",
+      "reference": "references/zq610-plus-v1/canvas-width-300/zq610.png",
+      "sha256": "5660a635a60707713b119ef4484b48fbe73818391afa2061188ced9e84f01041",
+      "source": "references/zq610-plus-v1/canvas-width-300/zq610.zpl",
+      "width": 320
+    },
+    {
+      "height": 2030,
+      "name": "canvas-width-300-fit",
+      "png_sha256": "3f6c6ab970a1be0342180b06bf07848c02ecb31648815f30133de2a374306ca8",
+      "reference": "references/zq610-plus-v1/canvas-width-300-fit/zq610.png",
+      "sha256": "970eecfd1f4985fcb8abadfbefaae59815973006147f8d55194a9ccbea0436ea",
+      "source": "references/zq610-plus-v1/canvas-width-300-fit/zq610.zpl",
+      "width": 320
+    },
+    {
+      "height": 2030,
+      "name": "canvas-width-384",
+      "png_sha256": "47478ceee162321b17d0c801d253d312d4b9d27ba991d42c6636bc8ba0d3880f",
+      "reference": "references/zq610-plus-v1/canvas-width-384/zq610.png",
+      "sha256": "0a759ccdd37ef6e54a344db603da7299a0a36a16b823570e0e4b3635e1077129",
+      "source": "references/zq610-plus-v1/canvas-width-384/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "canvas-width-400",
+      "png_sha256": "47478ceee162321b17d0c801d253d312d4b9d27ba991d42c6636bc8ba0d3880f",
+      "reference": "references/zq610-plus-v1/canvas-width-400/zq610.png",
+      "sha256": "924c79fb0250f640cce6e75e5d4325fbfa16e573ce384476f6f000742a3db04d",
+      "source": "references/zq610-plus-v1/canvas-width-400/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "canvas-width-832",
+      "png_sha256": "47478ceee162321b17d0c801d253d312d4b9d27ba991d42c6636bc8ba0d3880f",
+      "reference": "references/zq610-plus-v1/canvas-width-832/zq610.png",
+      "sha256": "6f5505ff1b6c494a0137971616f6f9260fb47da26bfaae3d3bb9a9dd95578448",
+      "source": "references/zq610-plus-v1/canvas-width-832/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "graphic",
+      "png_sha256": "aebdd25e701bb1a973b01c925e76e0c4f5c229d6fa0a5e30f0f4b67361569af5",
+      "reference": "references/zq610-plus-v1/graphic/zq610.png",
+      "sha256": "483048775b8fd67286e5dfd20abec308061aad57808a6312eba066ed624518d1",
+      "source": "references/zq610-plus-v1/graphic/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "layout-LS12",
+      "png_sha256": "52c66574a97ae6407dda9c9610266eb03b236050292a12726c3ae8f3d5aa22d9",
+      "reference": "references/zq610-plus-v1/layout-LS12/zq610.png",
+      "sha256": "7449f07c688ac028c0e4702585463f559d8630c6f79e1c30ff6c378564d96040",
+      "source": "references/zq610-plus-v1/layout-LS12/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "layout-LT0",
+      "png_sha256": "3f897bbf7131b5805d7357b26866f06789764b87169b956b0ba91be97a331cda",
+      "reference": "references/zq610-plus-v1/layout-LT0/zq610.png",
+      "sha256": "169d52561d38964f764841745c2a73466f0b255b1af21125a90ba95dca7196b1",
+      "source": "references/zq610-plus-v1/layout-LT0/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "layout-LT30",
+      "png_sha256": "3f897bbf7131b5805d7357b26866f06789764b87169b956b0ba91be97a331cda",
+      "reference": "references/zq610-plus-v1/layout-LT30/zq610.png",
+      "sha256": "e08f5649b44c1dc44458459a92a52853eb414f826255c2d0a14629d1c198918e",
+      "source": "references/zq610-plus-v1/layout-LT30/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "layout-PMN",
+      "png_sha256": "3f897bbf7131b5805d7357b26866f06789764b87169b956b0ba91be97a331cda",
+      "reference": "references/zq610-plus-v1/layout-PMN/zq610.png",
+      "sha256": "ba1f20f8a4f5b30a318571a923e6d6c7215bddfa40ceca5a069e84a678570e8e",
+      "source": "references/zq610-plus-v1/layout-PMN/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "layout-PMY",
+      "png_sha256": "3f897bbf7131b5805d7357b26866f06789764b87169b956b0ba91be97a331cda",
+      "reference": "references/zq610-plus-v1/layout-PMY/zq610.png",
+      "sha256": "4f64df4be5a46f53bbd8273e562cc5f69bc44bab23fb44453b0fcc985e14bc36",
+      "source": "references/zq610-plus-v1/layout-PMY/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "layout-POI",
+      "png_sha256": "3f897bbf7131b5805d7357b26866f06789764b87169b956b0ba91be97a331cda",
+      "reference": "references/zq610-plus-v1/layout-POI/zq610.png",
+      "sha256": "98eb64d45a4834589818c26782f23af272b283b87fc9a6754b94931641d2027e",
+      "source": "references/zq610-plus-v1/layout-POI/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "layout-PON",
+      "png_sha256": "3f897bbf7131b5805d7357b26866f06789764b87169b956b0ba91be97a331cda",
+      "reference": "references/zq610-plus-v1/layout-PON/zq610.png",
+      "sha256": "3f6ddedf5f44cff804d20b299be97a2baf55ad9f3b22538871ca2e3c95b735ae",
+      "source": "references/zq610-plus-v1/layout-PON/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "shape-GB",
+      "png_sha256": "c6b91673bb60efb70d6537a3805b3994f15899925fa7ad240ca237d8ad893000",
+      "reference": "references/zq610-plus-v1/shape-GB/zq610.png",
+      "sha256": "9d89911fa4d223bad16b182e8c13f0416a26c6fbdc89744d0312819e6822292f",
+      "source": "references/zq610-plus-v1/shape-GB/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "shape-GC",
+      "png_sha256": "5df6e83c782b1296a51ff387cf31723014cfa39daa5d9b255b1c1a6fdbea2a1e",
+      "reference": "references/zq610-plus-v1/shape-GC/zq610.png",
+      "sha256": "7bdfb539b1a65fec16ea7c0331ef6e3191146842b2798c6ae6247d831156ed02",
+      "source": "references/zq610-plus-v1/shape-GC/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "shape-GD",
+      "png_sha256": "f5117400835054f2860ea27814ca2b0e2676e96eab177a36e2da78ef1f5066d1",
+      "reference": "references/zq610-plus-v1/shape-GD/zq610.png",
+      "sha256": "62cdc13bde3e23c097a7d28316e3910c411984411e287b8c4d2e349afede8e37",
+      "source": "references/zq610-plus-v1/shape-GD/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "shape-GE",
+      "png_sha256": "7471393133fb9a49602d6a6b56846148fec0fc18f138082d5fd3d980ffaf25c5",
+      "reference": "references/zq610-plus-v1/shape-GE/zq610.png",
+      "sha256": "024b7b1d1447f226c82df3467cdb150a5c0d679dbd1c7a3d8ce8c342d36dac41",
+      "source": "references/zq610-plus-v1/shape-GE/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-0-B",
+      "png_sha256": "42f741df6baff435098b760ffbdd8e25a4f3c8a5f1333c8af1326810f05dcb16",
+      "reference": "references/zq610-plus-v1/text-0-B/zq610.png",
+      "sha256": "8989a2d3678198c087f62c4c50eadc1cbe4d3380adf1ba606d74f1933a417518",
+      "source": "references/zq610-plus-v1/text-0-B/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-0-I",
+      "png_sha256": "4587ea2b31383943de9747a84888d119af1b1c78bb961bd16df9a9214a1c5094",
+      "reference": "references/zq610-plus-v1/text-0-I/zq610.png",
+      "sha256": "d3fdef56ad6d44957f25fecbc36952797ff4f5afa06211c98eef7f25cf236250",
+      "source": "references/zq610-plus-v1/text-0-I/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-0-N",
+      "png_sha256": "ed484b8276d1a7991ea8d7b61c2e4a2272cfd9d239f69306f8f356afc5e0b2d5",
+      "reference": "references/zq610-plus-v1/text-0-N/zq610.png",
+      "sha256": "cd8dd30148038471796e3f964c2d87cecc56a8e75393124951d4a059b92de5d0",
+      "source": "references/zq610-plus-v1/text-0-N/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-0-R",
+      "png_sha256": "2346f43aab629a77901edf1fa8033e921a491e55687c5484015a510d89f04c62",
+      "reference": "references/zq610-plus-v1/text-0-R/zq610.png",
+      "sha256": "f932f8191d398f3b3a710bcf93e7f53ee3e842da5b96db0f88332c266ba5f4bd",
+      "source": "references/zq610-plus-v1/text-0-R/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-A-B",
+      "png_sha256": "7f9b1e3d0bb30feb12beb53926cfbf01fc751a5bf54a8265cd0fbee0fb208901",
+      "reference": "references/zq610-plus-v1/text-A-B/zq610.png",
+      "sha256": "f9e9342a084686996b22bc0b46c1532b0caa765befb1ae3df7f0596e957f74fc",
+      "source": "references/zq610-plus-v1/text-A-B/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-A-I",
+      "png_sha256": "b7aba5f69e085ba1cce41d22f9fff05d45833703909f520d5094511845e765fb",
+      "reference": "references/zq610-plus-v1/text-A-I/zq610.png",
+      "sha256": "1bea677548b0a526db75454889bd8133371caddfbb0453a7988c9e6b669fa175",
+      "source": "references/zq610-plus-v1/text-A-I/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-A-I-fit",
+      "png_sha256": "972a47e40162c2891314ee921f5cb34dad1afee342bf7e1a1ab2317673b66744",
+      "reference": "references/zq610-plus-v1/text-A-I-fit/zq610.png",
+      "sha256": "3f65a77ca014bea28845cbea77e75701b4d7da8500f7143d7e1c9465f7da4c8f",
+      "source": "references/zq610-plus-v1/text-A-I-fit/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-A-N",
+      "png_sha256": "f29d72d3b158a4c5b4598911b8c72abe1f43bf4afefe7862e24d258e6458dea0",
+      "reference": "references/zq610-plus-v1/text-A-N/zq610.png",
+      "sha256": "bbc7300398e4d658f74880f5dd8530df27818a4d2b49c19bb73d2263070dc2a6",
+      "source": "references/zq610-plus-v1/text-A-N/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-A-R",
+      "png_sha256": "02f1b9fcf66963c51c00c76da9510f739fedc429b0e7fa366108ef0415f29e8b",
+      "reference": "references/zq610-plus-v1/text-A-R/zq610.png",
+      "sha256": "fb8cb2bf0a50943ba71786d8ef59edf77b8ee68c5000721f1cf3de9c07a07828",
+      "source": "references/zq610-plus-v1/text-A-R/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-D-B",
+      "png_sha256": "72178b483575e2e0c796c97dc9dc16804ca3315da5de6e8d2d4e68d5b8435271",
+      "reference": "references/zq610-plus-v1/text-D-B/zq610.png",
+      "sha256": "4d548f677480a80f6752edd07b62c17afef7bfd5865ee61d8da10f37ce38d956",
+      "source": "references/zq610-plus-v1/text-D-B/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-D-I",
+      "png_sha256": "e1b951f6fe3c5c8cced3a7f3699418b010fd7a2e628f69d9728200354fc32702",
+      "reference": "references/zq610-plus-v1/text-D-I/zq610.png",
+      "sha256": "1bd4cbfaf72381c9ab3874a3c1c587a66702cd203853fc483fa93a06c4e71abd",
+      "source": "references/zq610-plus-v1/text-D-I/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-D-I-fit",
+      "png_sha256": "f06e5f96d4221b05b3eae62d159f6859f567effc0dcba620d5bf29373325dc1a",
+      "reference": "references/zq610-plus-v1/text-D-I-fit/zq610.png",
+      "sha256": "ba62ddbdd637f578324832185a43b74f113222f52df30dab259c9d0a6e952811",
+      "source": "references/zq610-plus-v1/text-D-I-fit/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-D-N",
+      "png_sha256": "0c8ab252fde8f644447ccf501a0a408450b9c6bd1a29015fd3f6d4e9593956b1",
+      "reference": "references/zq610-plus-v1/text-D-N/zq610.png",
+      "sha256": "b01d1cf682d019f3a1b02d383b29b4b23bbeaa483efde8a52df714c6820667f7",
+      "source": "references/zq610-plus-v1/text-D-N/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-D-R",
+      "png_sha256": "b7bd578edcc8970bb794842532653cc9b8470219e1eb16e055ca9291b24d5704",
+      "reference": "references/zq610-plus-v1/text-D-R/zq610.png",
+      "sha256": "d70d9f166ee1d82cba443f2aa9468458590b59233c626cbbb88952e1e211ebb4",
+      "source": "references/zq610-plus-v1/text-D-R/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-E-B",
+      "png_sha256": "00cce35cf74095971e76c32a9e21224c9641e0f6587bdbdd7c78ef87c1f887f6",
+      "reference": "references/zq610-plus-v1/text-E-B/zq610.png",
+      "sha256": "1460e4b95f2bd709f67d83f90ac0050859d5dd79634ec7390c2f2fb252cb8349",
+      "source": "references/zq610-plus-v1/text-E-B/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-E-I",
+      "png_sha256": "17097ef40237798cc9f7af63a6cc525439efaf6335584fdc7a6639c7ab8d388f",
+      "reference": "references/zq610-plus-v1/text-E-I/zq610.png",
+      "sha256": "c95e3f197b184dac08f5b166921f3443b89d0a61af87a3be99bd1f8f12b47be8",
+      "source": "references/zq610-plus-v1/text-E-I/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-E-I-fit",
+      "png_sha256": "190b2b7bcda4f7a152ca477332e5298be8aebf0e11dc7e1f119be58eec9bc795",
+      "reference": "references/zq610-plus-v1/text-E-I-fit/zq610.png",
+      "sha256": "996e24143483c89d7a9a3b46358cde44afe46ef840ec2dddeedb29f0457f658a",
+      "source": "references/zq610-plus-v1/text-E-I-fit/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-E-N",
+      "png_sha256": "d2804babd42cf271aa40b262889d1d6ccc2783b74ba91790f88f945e1d514fda",
+      "reference": "references/zq610-plus-v1/text-E-N/zq610.png",
+      "sha256": "2a5c030770cb2f0e003eae9c0c222f8f89807122edb6a83eb3d1486a3d151ecd",
+      "source": "references/zq610-plus-v1/text-E-N/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-E-R",
+      "png_sha256": "187fbbc0db291797cdfca690619b354256de8a12c4cd6062103a98eeb74da5c1",
+      "reference": "references/zq610-plus-v1/text-E-R/zq610.png",
+      "sha256": "8dc6ecf339944ab35a349265e59e28c10496b5f1a28554386c70fd73449955b9",
+      "source": "references/zq610-plus-v1/text-E-R/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "text-block",
+      "png_sha256": "548f54dd97093137b8d4c23c23fd61e245125841a7e2836fd3e9a7b497faf2a2",
+      "reference": "references/zq610-plus-v1/text-block/zq610.png",
+      "sha256": "4873261b1faca684678d70f0954d50256701f4fe4aa32833c6659387f7fb45da",
+      "source": "references/zq610-plus-v1/text-block/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-1",
+      "png_sha256": "8f69aae1959de417f179b2991199d1d0d2f3b343383091e953de772203cb4577",
+      "reference": "references/zq610-plus-v1/width-boundary-1/zq610.png",
+      "sha256": "e221ffa926aa45bfaf4e5b8a9a13e194ca05677c8040bbf39bbfecce70b87ee5",
+      "source": "references/zq610-plus-v1/width-boundary-1/zq610.zpl",
+      "width": 64
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-127",
+      "png_sha256": "dcc3aca9031151bab9d6c6148916cf4d6160f3491ca6053765921b7473f330f1",
+      "reference": "references/zq610-plus-v1/width-boundary-127/zq610.png",
+      "sha256": "27cf07d4f3794eb789b3a3e71568910b4d2eaca22ea30836f7600a5b42dc4306",
+      "source": "references/zq610-plus-v1/width-boundary-127/zq610.zpl",
+      "width": 128
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-128",
+      "png_sha256": "75e599dde9de59c426b52e8100722d780cd0e17cea712f28cf820c025312fa29",
+      "reference": "references/zq610-plus-v1/width-boundary-128/zq610.png",
+      "sha256": "4ecbaa62a5671da13dfbaca71c5618f7a218f002d8a7b9013797b1d914511cab",
+      "source": "references/zq610-plus-v1/width-boundary-128/zq610.zpl",
+      "width": 128
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-383",
+      "png_sha256": "9e6d52cbc4b0529b5795f15fc0ef1f286692a60fdd3fc332aca6f34288164458",
+      "reference": "references/zq610-plus-v1/width-boundary-383/zq610.png",
+      "sha256": "d9726b067513794886a5231834cfd891ccc3e0f4364a9a4fff8c8183d2a30cc0",
+      "source": "references/zq610-plus-v1/width-boundary-383/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-384",
+      "png_sha256": "eebeefd5208e545179d49a8352f7f0d3444ad68739f6c073624a8b4eec87bc82",
+      "reference": "references/zq610-plus-v1/width-boundary-384/zq610.png",
+      "sha256": "ba08420de35a7e7f7e6ac1217fe500832c162adcafc540b5e57c2d18ccecf0ce",
+      "source": "references/zq610-plus-v1/width-boundary-384/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-384-fit",
+      "png_sha256": "b613feb06e9e9c638e37d183deeb8618267375a3cda0c8de63de29f00dc9730e",
+      "reference": "references/zq610-plus-v1/width-boundary-384-fit/zq610.png",
+      "sha256": "0cae903d0a7b6b6f0aa001fec33c1f4aa43f098711a07534f774c0ed68043dd6",
+      "source": "references/zq610-plus-v1/width-boundary-384-fit/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-385",
+      "png_sha256": "cb224ea548d4806d6b4876fad16e5f4436ed86c2cba943db74a194d28af3d8d9",
+      "reference": "references/zq610-plus-v1/width-boundary-385/zq610.png",
+      "sha256": "bc24be83052747823f59c675c11d950628ef0e3ba5116da3a308455963def597",
+      "source": "references/zq610-plus-v1/width-boundary-385/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-63",
+      "png_sha256": "dc1aeaf063402098ec9c7fe71dc3290f82b35c2006d8cdda42f3c35365428d0c",
+      "reference": "references/zq610-plus-v1/width-boundary-63/zq610.png",
+      "sha256": "e1db59b723f56d14c82426f4b659c99d9076feba4d45d0237bb4e01f78cb7561",
+      "source": "references/zq610-plus-v1/width-boundary-63/zq610.zpl",
+      "width": 64
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-64",
+      "png_sha256": "b6a5048c7b55e98ebe6737ac2bc1dddb5c33e0a5534717ca67c3cdd1c2b64836",
+      "reference": "references/zq610-plus-v1/width-boundary-64/zq610.png",
+      "sha256": "a13845cb581577aaf8f14e87f45db425d979da7b7e7f9f16b2dc13f788368533",
+      "source": "references/zq610-plus-v1/width-boundary-64/zq610.zpl",
+      "width": 64
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-65",
+      "png_sha256": "42575c3b50bb96475dfd8a0a20d1e2ee564484ffb6722ce65dd861d4c49de8ce",
+      "reference": "references/zq610-plus-v1/width-boundary-65/zq610.png",
+      "sha256": "015f7c0f13792ca0d980747fc410b1411f5dec51b1cbfe6266a5c30d360fdf10",
+      "source": "references/zq610-plus-v1/width-boundary-65/zq610.zpl",
+      "width": 128
+    },
+    {
+      "height": 2030,
+      "name": "width-boundary-800",
+      "png_sha256": "cb224ea548d4806d6b4876fad16e5f4436ed86c2cba943db74a194d28af3d8d9",
+      "reference": "references/zq610-plus-v1/width-boundary-800/zq610.png",
+      "sha256": "564d430154d95776ebbfc64c9d30e7f89a3ca77a4769cb9e1ef307a5369ee10a",
+      "source": "references/zq610-plus-v1/width-boundary-800/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "width-late-grow",
+      "png_sha256": "81fb85d8c6e02358d2042667c290f221e6834f81149185cd8ccb463c28bcfc75",
+      "reference": "references/zq610-plus-v1/width-late-grow/zq610.png",
+      "sha256": "c10a241ceddb7731d7f34b86b97ec137a3ef686cac976ab711b1c5eec9001095",
+      "source": "references/zq610-plus-v1/width-late-grow/zq610.zpl",
+      "width": 128
+    },
+    {
+      "height": 2030,
+      "name": "width-late-grow-fit",
+      "png_sha256": "c5ffffb1f43a3e489d386b6c950d47f190781956771912ca5ac781622ce4d9ae",
+      "reference": "references/zq610-plus-v1/width-late-grow-fit/zq610.png",
+      "sha256": "a3ac16089902e74b4eaf4af58334d4f9dc72c1094ac9a40d63ee88a261d405ad",
+      "source": "references/zq610-plus-v1/width-late-grow-fit/zq610.zpl",
+      "width": 128
+    },
+    {
+      "height": 2030,
+      "name": "width-late-shrink",
+      "png_sha256": "a4caf42421a3176243e3525b7705856be9975149c912c476b2cae8dab08404c7",
+      "reference": "references/zq610-plus-v1/width-late-shrink/zq610.png",
+      "sha256": "7212cfeadd8d5db680f44639b9bc98f45552cb51c2efea3de47cf4a464811a0f",
+      "source": "references/zq610-plus-v1/width-late-shrink/zq610.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "smoke-aztec",
+      "png_sha256": "594dd628d89ef688dfeaf2489cfc13f16799eb534745cc446046963148ebc703",
+      "reference": "references/zq610-candidates/smoke-aztec.png",
+      "sha256": "81ed02e7e775d69073a83d2d091a6a4709798a66592b578eca80ab7e80f879c4",
+      "source": "references/zq610-candidates/smoke-aztec.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "smoke-aztec_alias",
+      "png_sha256": "594dd628d89ef688dfeaf2489cfc13f16799eb534745cc446046963148ebc703",
+      "reference": "references/zq610-candidates/smoke-aztec_alias.png",
+      "sha256": "367ec2addf6dc588405bcd03bcb5d0e68696dff72ba4783969363b9cc019d63d",
+      "source": "references/zq610-candidates/smoke-aztec_alias.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "smoke-aztec_rune",
+      "png_sha256": "e179cacd88ed4014125525e2c28bb69a0ec610efc33e239b28797f119b994fb6",
+      "reference": "references/zq610-candidates/smoke-aztec_rune.png",
+      "sha256": "7069ef01dfc86fdd5467150d9041ac945476bffba2c62d1651e8558182e3088c",
+      "source": "references/zq610-candidates/smoke-aztec_rune.zpl",
+      "width": 384
+    },
+    {
+      "height": 2030,
+      "name": "smoke-codabar",
+      "png_sha256": "c0026f309b34987e76d228c4f707b293b83e1ef2d531903a2750257d3c5e77dc",
+      "reference": "references/zq610-candidates/smoke-codabar.png",
+      "sha256": "852f065d29e73ff2c7e5ac1bc6add655263bdc6c595c30325d779acac4b6e6cf",
+      "source": "references/zq610-candidates/smoke-codabar.zpl",
+      "width": 384
+    }
+  ],
+  "font_capture": {
+    "bundle_sha256": "7678f9dda74ab26e9d8df6b626419111eb6c81937edd6d2170e5fe0eefd0bfd4",
+    "capture_sha256": "091107446dc13f31bbfabc58544c3221d63d32c443a287b1b62cc9f85ad06852",
+    "captured_utc": "2026-10-08T01:53:17Z",
+    "manifest": "references/font-controlled/capture.json",
+    "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
+  },
+  "labelary": [
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:38 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-aztec.png",
+      "name": "barcode-aztec",
+      "png_sha256": "7c0d6fe6e6687253c313af57ca89f979f3b1c16f6b5ba84ba00639e75fc25fca",
+      "received_utc": "2026-09-27T03:21:38+00:00",
+      "reference": "references/zq610-plus-v1/barcode-aztec/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:38+00:00",
+      "sha256": "58aa2b0d4978a555626a17b5f58b7eb55c133b203e3eeb6f2cae149361d248bf",
+      "source": "references/zq610-plus-v1/barcode-aztec/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:39 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-aztec_alias.png",
+      "name": "barcode-aztec_alias",
+      "png_sha256": "3e8aedb847f30dbefdcd4c96b4d33511155c7540f9c2312532f9adb73db80b17",
+      "received_utc": "2026-09-27T03:21:39+00:00",
+      "reference": "references/zq610-plus-v1/barcode-aztec_alias/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:38+00:00",
+      "sha256": "faceb348fc40912bad03de8da08b570f0aea2de96822bf4eebf0b9788f1b2306",
+      "source": "references/zq610-plus-v1/barcode-aztec_alias/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:40 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-aztec_rune.png",
+      "name": "barcode-aztec_rune",
+      "png_sha256": "f31923f63e3f935b9d8ef5fdade4735b580deb633881adcd78120fdb7a21d8fd",
+      "received_utc": "2026-09-27T03:21:40+00:00",
+      "reference": "references/zq610-plus-v1/barcode-aztec_rune/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:39+00:00",
+      "sha256": "677f6d97c135563f78b51d2e224d69f7bb196b8b947e3af6c38b6eb6b587084e",
+      "source": "references/zq610-plus-v1/barcode-aztec_rune/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:40 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-codabar.png",
+      "name": "barcode-codabar",
+      "png_sha256": "0445ef4ed3c0ec9b91649b35ae48e83b3bde4b1bbcea79e0df93cbe71d206de1",
+      "received_utc": "2026-09-27T03:21:40+00:00",
+      "reference": "references/zq610-plus-v1/barcode-codabar/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:40+00:00",
+      "sha256": "9eb161160670439b6fd7311ced949b2c39e9a33a24fad78f58ad1db4f57ea016",
+      "source": "references/zq610-plus-v1/barcode-codabar/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:41 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-codablock_a.png",
+      "name": "barcode-codablock_a",
+      "png_sha256": "eef2ec7bd057c933377117b651140435c968bb5514c70271fe64503e023ac253",
+      "received_utc": "2026-09-27T03:21:41+00:00",
+      "reference": "references/zq610-plus-v1/barcode-codablock_a/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:40+00:00",
+      "sha256": "483956b6a1b5d9f0336ef97898a2afbb5059aee46df8db4c6f8878b229726333",
+      "source": "references/zq610-plus-v1/barcode-codablock_a/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:42 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-codablock_e.png",
+      "name": "barcode-codablock_e",
+      "png_sha256": "05e50d15464d778caaf2ccee85bc80e618630b82ee46f6239f8a9bd3e179c7c6",
+      "received_utc": "2026-09-27T03:21:42+00:00",
+      "reference": "references/zq610-plus-v1/barcode-codablock_e/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:41+00:00",
+      "sha256": "a4652f2aef3e6bccf80fa364e6bde212255950c064c5da5d55c728f389ad4fe8",
+      "source": "references/zq610-plus-v1/barcode-codablock_e/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:42 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-codablock_f.png",
+      "name": "barcode-codablock_f",
+      "png_sha256": "05e50d15464d778caaf2ccee85bc80e618630b82ee46f6239f8a9bd3e179c7c6",
+      "received_utc": "2026-09-27T03:21:42+00:00",
+      "reference": "references/zq610-plus-v1/barcode-codablock_f/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:42+00:00",
+      "sha256": "6740b6a1552ef941e505a75c3b6f1a6177bf91c9123f569c7792e23608dc3e52",
+      "source": "references/zq610-plus-v1/barcode-codablock_f/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:43 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-code11.png",
+      "name": "barcode-code11",
+      "png_sha256": "62c0dba5092a5e6952d957c282ea8254a81543c4a108647ee68ace92f7d051fd",
+      "received_utc": "2026-09-27T03:21:43+00:00",
+      "reference": "references/zq610-plus-v1/barcode-code11/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:42+00:00",
+      "sha256": "ae80c2fdd790f87df82be6b822327b3846f0720762550555b4a4d518a13dd0f7",
+      "source": "references/zq610-plus-v1/barcode-code11/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:44 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-code128.png",
+      "name": "barcode-code128",
+      "png_sha256": "65ad652c8bc33e9558eb3b95ce0fc869d514c65c376126b4ac16f33eb97221c0",
+      "received_utc": "2026-09-27T03:21:44+00:00",
+      "reference": "references/zq610-plus-v1/barcode-code128/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:43+00:00",
+      "sha256": "94be0cc3b6fc083d3a8b3d5e888b396191c0b06394e1d91d59b752ea79ae1433",
+      "source": "references/zq610-plus-v1/barcode-code128/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:44 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-code39.png",
+      "name": "barcode-code39",
+      "png_sha256": "861f2033c08d1a3f12f6206e7614a8d1582a0704f88a44ef90edcb1471e0e9a1",
+      "received_utc": "2026-09-27T03:21:44+00:00",
+      "reference": "references/zq610-plus-v1/barcode-code39/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:44+00:00",
+      "sha256": "758bc3514546d623ef0651a9581ca179a12c730dafe61f748c4c5f2452c7f2be",
+      "source": "references/zq610-plus-v1/barcode-code39/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:45 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-code49.png",
+      "name": "barcode-code49",
+      "png_sha256": "05bb4c985f7eb0db90b62f22777c01d2b683a44071c96ccd656d59c9ed64b706",
+      "received_utc": "2026-09-27T03:21:45+00:00",
+      "reference": "references/zq610-plus-v1/barcode-code49/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:44+00:00",
+      "sha256": "1a745439bc631a30bdb8f584549111c48c07588eaa703e14d61a8c7caed686a4",
+      "source": "references/zq610-plus-v1/barcode-code49/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:46 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-code93.png",
+      "name": "barcode-code93",
+      "png_sha256": "01e9abcdfbbbc179cd15f236526ac44fdd268a2721109f6f87ebf7f132d4d24d",
+      "received_utc": "2026-09-27T03:21:46+00:00",
+      "reference": "references/zq610-plus-v1/barcode-code93/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:45+00:00",
+      "sha256": "e470b85e1ef317d95d93fe72118ff33dbaf94230c5d680beee43bbcad9c0f0f0",
+      "source": "references/zq610-plus-v1/barcode-code93/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:46 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-composite_a.png",
+      "name": "barcode-composite_a",
+      "png_sha256": "055d98bdc47a0359fb99675caea029fbff7c9fdd1f5aa6eeaf32b05cd56f45e5",
+      "received_utc": "2026-09-27T03:21:46+00:00",
+      "reference": "references/zq610-plus-v1/barcode-composite_a/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:46+00:00",
+      "sha256": "9c20001fb2285908692c1a89765ee4a457c9b63b38fa62bfd090436b5f7afb0b",
+      "source": "references/zq610-plus-v1/barcode-composite_a/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:47 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-composite_b.png",
+      "name": "barcode-composite_b",
+      "png_sha256": "3b936bdeb7da797c3942aed7a846124e7c9d2c909407a0ff6783176b073625ce",
+      "received_utc": "2026-09-27T03:21:47+00:00",
+      "reference": "references/zq610-plus-v1/barcode-composite_b/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:46+00:00",
+      "sha256": "dd670f212cfb3ddfef141c8c592b89afb4f28422c20bbd179e253fb4eaa77f07",
+      "source": "references/zq610-plus-v1/barcode-composite_b/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:48 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-composite_c.png",
+      "name": "barcode-composite_c",
+      "png_sha256": "b7d0752df0475acaae9e1ec5a269450cf80f6611286763e02224cb275fd33113",
+      "received_utc": "2026-09-27T03:21:48+00:00",
+      "reference": "references/zq610-plus-v1/barcode-composite_c/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:47+00:00",
+      "sha256": "08eabbba657a9cf3795339c64e6a11b11534924dc7e69c321068e2393bb8ab40",
+      "source": "references/zq610-plus-v1/barcode-composite_c/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:48 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-data_matrix.png",
+      "name": "barcode-data_matrix",
+      "png_sha256": "d66506ec3db7352bfdb00fc457643b1a160d5f0f71cf4f697a0d870fdebef8be",
+      "received_utc": "2026-09-27T03:21:48+00:00",
+      "reference": "references/zq610-plus-v1/barcode-data_matrix/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:48+00:00",
+      "sha256": "1ff21a5290c345cf170cec378cb431ef39226a21a6d82383f9732413468c4582",
+      "source": "references/zq610-plus-v1/barcode-data_matrix/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:49 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-data_matrix_rectangular.png",
+      "name": "barcode-data_matrix_rectangular",
+      "png_sha256": "1b405e6f2fa62895d9dc5a19eae641553c32ae3cb8a4f3caa44053a0dfe15e82",
+      "received_utc": "2026-09-27T03:21:49+00:00",
+      "reference": "references/zq610-plus-v1/barcode-data_matrix_rectangular/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:48+00:00",
+      "sha256": "a3b5452abd23311fb2b1dd2f49ff6136c81004daf8d8c8366ef1199cbff4fdab",
+      "source": "references/zq610-plus-v1/barcode-data_matrix_rectangular/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:50 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_ean13.png",
+      "name": "barcode-databar_ean13",
+      "png_sha256": "617cfd7ad4e2358257cf9193bf5236ed2ae6d56a128a737f5fd174c719c1e85c",
+      "received_utc": "2026-09-27T03:21:50+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_ean13/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:49+00:00",
+      "sha256": "a71e7adff36c080eb78bbeae20e6927dc6bf529b33cbaf84ecf0db9036bf3de2",
+      "source": "references/zq610-plus-v1/barcode-databar_ean13/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:50 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_ean8.png",
+      "name": "barcode-databar_ean8",
+      "png_sha256": "7276dda89324e85d4a0f71c50c9326a438b9ffd44e14799e62ac486a0bc8c66a",
+      "received_utc": "2026-09-27T03:21:50+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_ean8/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:50+00:00",
+      "sha256": "d9b2678696b6fea76915af56365e3b32e2d02d1aa609fbd3aa4ef38d5e121d17",
+      "source": "references/zq610-plus-v1/barcode-databar_ean8/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:51 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_expanded.png",
+      "name": "barcode-databar_expanded",
+      "png_sha256": "09b4fe646be71163d0005453c9d93cc7564f2dc8f371cc35321abbbc42099a4f",
+      "received_utc": "2026-09-27T03:21:51+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_expanded/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:50+00:00",
+      "sha256": "99a403e87cd606967519b165efe4fc2330e48efb8aae912497724b19613f1c70",
+      "source": "references/zq610-plus-v1/barcode-databar_expanded/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:51 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_expanded_stacked.png",
+      "name": "barcode-databar_expanded_stacked",
+      "png_sha256": "ac993bbe723dbfc8c572beadfc0378d744f77ba22d8417f6e7b7756c8833cd72",
+      "received_utc": "2026-09-27T03:21:51+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_expanded_stacked/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:51+00:00",
+      "sha256": "b6b43268bf0e00a1e98db1105b9e007562543a9e3539397d32ac4573a8eb0c15",
+      "source": "references/zq610-plus-v1/barcode-databar_expanded_stacked/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:52 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_limited.png",
+      "name": "barcode-databar_limited",
+      "png_sha256": "a5590f2430e6a5afc7534ca60a362295defaf68cd503e8bf090735c516897af5",
+      "received_utc": "2026-09-27T03:21:52+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_limited/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:51+00:00",
+      "sha256": "b8c1909d3a6f276ff94f908de731fd83974eb40e366763d1badf06b665ae1939",
+      "source": "references/zq610-plus-v1/barcode-databar_limited/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:53 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_omni.png",
+      "name": "barcode-databar_omni",
+      "png_sha256": "2c85332fd15aa15193dd096f88beef198a3acdde19fba3820729924379952052",
+      "received_utc": "2026-09-27T03:21:53+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_omni/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:52+00:00",
+      "sha256": "b804ec4b659e5a25078fb242dffe8af48fc6f89c03c7faecaad34d04e20c5a14",
+      "source": "references/zq610-plus-v1/barcode-databar_omni/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:53 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_stacked.png",
+      "name": "barcode-databar_stacked",
+      "png_sha256": "faba6e48c596243634b44f7b29d07bee3c9c9264994c516aeecd7d856d3b6566",
+      "received_utc": "2026-09-27T03:21:53+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_stacked/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:53+00:00",
+      "sha256": "2be35a9e01a3eb14bf956446d20b542a9436e78c2e98879de223638d819d93bd",
+      "source": "references/zq610-plus-v1/barcode-databar_stacked/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:54 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_stacked_omni.png",
+      "name": "barcode-databar_stacked_omni",
+      "png_sha256": "fbdb7acc0489cd0b266f3d142e83b9e3c6d24008c8c3f8796e6f57292220b185",
+      "received_utc": "2026-09-27T03:21:54+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_stacked_omni/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:53+00:00",
+      "sha256": "76b0f232c5c2f28d7805e1566264cf23cd885a08a2450b1c5103d4f99d893a19",
+      "source": "references/zq610-plus-v1/barcode-databar_stacked_omni/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:55 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_truncated.png",
+      "name": "barcode-databar_truncated",
+      "png_sha256": "1a090224dd036d2a5f220ced05e3d61ee34aa40246a94195626b67a37d92926c",
+      "received_utc": "2026-09-27T03:21:55+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_truncated/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:54+00:00",
+      "sha256": "de7c4f9fc90ebe404f9c8b47068420438a97536225c5705942c1329a2aea2508",
+      "source": "references/zq610-plus-v1/barcode-databar_truncated/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:55 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_upca.png",
+      "name": "barcode-databar_upca",
+      "png_sha256": "f1edc9db5f973145d77fc3918a12709f711fe3f810755fefdf34e94546fac6e5",
+      "received_utc": "2026-09-27T03:21:55+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_upca/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:55+00:00",
+      "sha256": "b327264f2b8ade0f90475b78a97550647101816bf29570c44ccda8cb6723adc6",
+      "source": "references/zq610-plus-v1/barcode-databar_upca/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:56 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-databar_upce.png",
+      "name": "barcode-databar_upce",
+      "png_sha256": "b06cc53dbc949e200946e08bbe6ff8affdff549a2733911375c8b7f052b00f02",
+      "received_utc": "2026-09-27T03:21:56+00:00",
+      "reference": "references/zq610-plus-v1/barcode-databar_upce/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:55+00:00",
+      "sha256": "6cfb88e466bc1ec000e773b223b8b20bd971d211c8456dfcf436ddb9614561ec",
+      "source": "references/zq610-plus-v1/barcode-databar_upce/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:57 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-ean13.png",
+      "name": "barcode-ean13",
+      "png_sha256": "7f2d9890f4a9d75481b96cbf48edb5a70dff8d1ac0d300dbff805e3c49e9d3d9",
+      "received_utc": "2026-09-27T03:21:57+00:00",
+      "reference": "references/zq610-plus-v1/barcode-ean13/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:56+00:00",
+      "sha256": "4636d96c8bba0918dcf6e880eabef3e6216850b133c20f2dd5a9a57579461d3e",
+      "source": "references/zq610-plus-v1/barcode-ean13/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:57 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-ean8.png",
+      "name": "barcode-ean8",
+      "png_sha256": "f5efefb8517f9136f1bc3b66f2e989f5a824df83972c4243bfac98770123bc5f",
+      "received_utc": "2026-09-27T03:21:57+00:00",
+      "reference": "references/zq610-plus-v1/barcode-ean8/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:57+00:00",
+      "sha256": "8781956577260d4e69fc3ddafb73fba9741527407d16050f3580f9dfa376f6e1",
+      "source": "references/zq610-plus-v1/barcode-ean8/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:58 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-extension2.png",
+      "name": "barcode-extension2",
+      "png_sha256": "6780524325cebb86073fb0726b5fb8def5a4fdd7e31d1242f8cfba49a798d708",
+      "received_utc": "2026-09-27T03:21:58+00:00",
+      "reference": "references/zq610-plus-v1/barcode-extension2/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:57+00:00",
+      "sha256": "f04c67d04b77e4d9703b63bdcb03a15ae1edad616b310330ab633aa6557d3779",
+      "source": "references/zq610-plus-v1/barcode-extension2/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:59 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-extension5.png",
+      "name": "barcode-extension5",
+      "png_sha256": "a074adbc5159b9e8bfa86212075a2d222de21bfba7cb98939288cc57e742a6b6",
+      "received_utc": "2026-09-27T03:21:59+00:00",
+      "reference": "references/zq610-plus-v1/barcode-extension5/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:58+00:00",
+      "sha256": "f5bc72c8db60f4d6eebaec26a8f4da0cb5e0585d69d6f3141eb542f9c039ed47",
+      "source": "references/zq610-plus-v1/barcode-extension5/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:21:59 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-industrial2of5.png",
+      "name": "barcode-industrial2of5",
+      "png_sha256": "5e4cb0d7bba4dbed3010ab8c02126ca068ddb94a84a9f06bf356c117d1765ba4",
+      "received_utc": "2026-09-27T03:21:59+00:00",
+      "reference": "references/zq610-plus-v1/barcode-industrial2of5/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:59+00:00",
+      "sha256": "cf9d1b2067c2bc8b0b4d461e32837f4a706dbd55e1d720aa70082acbb8d3a246",
+      "source": "references/zq610-plus-v1/barcode-industrial2of5/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:00 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-intelligent_mail.png",
+      "name": "barcode-intelligent_mail",
+      "png_sha256": "1596d8cb3cd175440c45c82a7b187e435aaa1f36021ce309c429df4ceefc9df5",
+      "received_utc": "2026-09-27T03:22:00+00:00",
+      "reference": "references/zq610-plus-v1/barcode-intelligent_mail/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:21:59+00:00",
+      "sha256": "fd2bfda1e2f95ebc65b2e9d47f9670bdc1c3bd2e292f38f9f681500f0ccbc55d",
+      "source": "references/zq610-plus-v1/barcode-intelligent_mail/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:01 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-interleaved2of5.png",
+      "name": "barcode-interleaved2of5",
+      "png_sha256": "fa2f716ac9e0acacc30febdb1cb9b8e6f81cd52fe59267c02a0e13bd4ea968ef",
+      "received_utc": "2026-09-27T03:22:01+00:00",
+      "reference": "references/zq610-plus-v1/barcode-interleaved2of5/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:00+00:00",
+      "sha256": "9890a5a3e48d4d32e227350151fde76922e6a0245ad8c6eb430212315ef3116c",
+      "source": "references/zq610-plus-v1/barcode-interleaved2of5/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:01 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-logmars.png",
+      "name": "barcode-logmars",
+      "png_sha256": "de67ffc98ba2bcaf81b1c560441b092345e281305d303f61e45ee4ddbe560545",
+      "received_utc": "2026-09-27T03:22:01+00:00",
+      "reference": "references/zq610-plus-v1/barcode-logmars/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:01+00:00",
+      "sha256": "4ee246b5f5bfb98aa5c29417a4490081452d734c18536022db8b505010d85dcf",
+      "source": "references/zq610-plus-v1/barcode-logmars/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:02 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-maxicode2.png",
+      "name": "barcode-maxicode2",
+      "png_sha256": "223eeba8800997743f8d2f09035c40dbc4e4b1f7d4037ff0c9e1647c9d186c43",
+      "received_utc": "2026-09-27T03:22:02+00:00",
+      "reference": "references/zq610-plus-v1/barcode-maxicode2/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:01+00:00",
+      "sha256": "324e5f52916e63e4182232ea1cbb5ec1d47426628e0c698d6417de6bc40f3b6e",
+      "source": "references/zq610-plus-v1/barcode-maxicode2/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:03 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-maxicode3.png",
+      "name": "barcode-maxicode3",
+      "png_sha256": "3f55ceda28f067792a16b794384ad740dd27e14af35f720be3069cd77bd7a298",
+      "received_utc": "2026-09-27T03:22:03+00:00",
+      "reference": "references/zq610-plus-v1/barcode-maxicode3/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:02+00:00",
+      "sha256": "ad40b3c7a1e7da58bd2143fc23f7571acbf4f0b6e9a0188f984d7ee1142cd1c5",
+      "source": "references/zq610-plus-v1/barcode-maxicode3/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:03 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-maxicode4.png",
+      "name": "barcode-maxicode4",
+      "png_sha256": "9a28e3a149582cd1f6c459a941a09494d10a517cc16787eafb55808d685cb462",
+      "received_utc": "2026-09-27T03:22:03+00:00",
+      "reference": "references/zq610-plus-v1/barcode-maxicode4/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:03+00:00",
+      "sha256": "558e10b79fd9f416b45b3a30c95a4f95abf12df36963b9682512c8efe413c23f",
+      "source": "references/zq610-plus-v1/barcode-maxicode4/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:04 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-maxicode5.png",
+      "name": "barcode-maxicode5",
+      "png_sha256": "e37a9f200ea3e7380d0fd6a67c43e995135b2a920bb757c97383a77cca36ff50",
+      "received_utc": "2026-09-27T03:22:04+00:00",
+      "reference": "references/zq610-plus-v1/barcode-maxicode5/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:03+00:00",
+      "sha256": "c215b7c6979903f94ecb6aadace6f584c3a4070f2b912c6bb60f50f5dd830485",
+      "source": "references/zq610-plus-v1/barcode-maxicode5/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:05 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-maxicode6.png",
+      "name": "barcode-maxicode6",
+      "png_sha256": "690c8681531e3a8cc2ac8bc54719139f904c874baebeef4c81dc24aacae2f211",
+      "received_utc": "2026-09-27T03:22:05+00:00",
+      "reference": "references/zq610-plus-v1/barcode-maxicode6/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:04+00:00",
+      "sha256": "9b8f56d31867682783642f7d4432657c9ea439e8ca9af80e1090fd678628c2c6",
+      "source": "references/zq610-plus-v1/barcode-maxicode6/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:05 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-micropdf417_1.png",
+      "name": "barcode-micropdf417_1",
+      "png_sha256": "db8a2f7615117a8615f19b2dd7631a0bdd6064868f835b3f626a0f7d2b13d8ae",
+      "received_utc": "2026-09-27T03:22:05+00:00",
+      "reference": "references/zq610-plus-v1/barcode-micropdf417_1/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:05+00:00",
+      "sha256": "e8c0f81b6f92683eff6531905e19813697380a102122688719f72f806131d754",
+      "source": "references/zq610-plus-v1/barcode-micropdf417_1/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:06 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-micropdf417_3.png",
+      "name": "barcode-micropdf417_3",
+      "png_sha256": "34d520a742e76b7c6cb9d0a86ddd31c96caaf6f5c203ff57b492b14f66071a2b",
+      "received_utc": "2026-09-27T03:22:06+00:00",
+      "reference": "references/zq610-plus-v1/barcode-micropdf417_3/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:05+00:00",
+      "sha256": "e5ceb4333ac3657515a2926fe9c72724091f33264326a6820b2f6659ae179848",
+      "source": "references/zq610-plus-v1/barcode-micropdf417_3/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:06 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-micropdf417_4.png",
+      "name": "barcode-micropdf417_4",
+      "png_sha256": "e4001336fe0576ab4c978d648b357abecf1bf3f3a99bbbf4b353ef7ec9456897",
+      "received_utc": "2026-09-27T03:22:06+00:00",
+      "reference": "references/zq610-plus-v1/barcode-micropdf417_4/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:06+00:00",
+      "sha256": "d0b6d0ee625f1ccd0bac1686abf8bc9105b872402a2aab5beabdc4f1a12c43cb",
+      "source": "references/zq610-plus-v1/barcode-micropdf417_4/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:07 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-msi_a.png",
+      "name": "barcode-msi_a",
+      "png_sha256": "6e195722bde9e129a5b97e17d01c5a4163af31787bd784e53ba820edbe4895e4",
+      "received_utc": "2026-09-27T03:22:07+00:00",
+      "reference": "references/zq610-plus-v1/barcode-msi_a/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:06+00:00",
+      "sha256": "c16e3d2eddb393d99262226c2ca0ef6f12c07524773679cd50abfeb25fa417f6",
+      "source": "references/zq610-plus-v1/barcode-msi_a/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:08 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-msi_b.png",
+      "name": "barcode-msi_b",
+      "png_sha256": "407c2019dff6a649148ee47dbeb8e95950fe36817575ecedaf9e34bccbec73f4",
+      "received_utc": "2026-09-27T03:22:08+00:00",
+      "reference": "references/zq610-plus-v1/barcode-msi_b/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:07+00:00",
+      "sha256": "3c49d941b98fdba488058b161f69a5c352ed93764073e6d36cd8be67bb97e322",
+      "source": "references/zq610-plus-v1/barcode-msi_b/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:08 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-msi_c.png",
+      "name": "barcode-msi_c",
+      "png_sha256": "05426585f66db6f2464c2f43ae4e2d779e6a890a9d35ecd391a4344b787a15bb",
+      "received_utc": "2026-09-27T03:22:08+00:00",
+      "reference": "references/zq610-plus-v1/barcode-msi_c/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:08+00:00",
+      "sha256": "734633c43dc7012f30254c391d250007d070cff80198e65ce102c5ace0c3953f",
+      "source": "references/zq610-plus-v1/barcode-msi_c/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:09 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-msi_d.png",
+      "name": "barcode-msi_d",
+      "png_sha256": "4ef3c955815faa761e6ce215274534c72ab451d9d7e971f76e438298b45ad332",
+      "received_utc": "2026-09-27T03:22:09+00:00",
+      "reference": "references/zq610-plus-v1/barcode-msi_d/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:08+00:00",
+      "sha256": "fe4af2e398c10a5559c421c51453452c65d106feb8b5e7e618eda56651c8cd0d",
+      "source": "references/zq610-plus-v1/barcode-msi_d/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:10 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-pdf417.png",
+      "name": "barcode-pdf417",
+      "png_sha256": "fe7f9d091d5368a17b41ef5bb71f50f9f03268a3061316c6985ece0b5fafc2be",
+      "received_utc": "2026-09-27T03:22:10+00:00",
+      "reference": "references/zq610-plus-v1/barcode-pdf417/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:09+00:00",
+      "sha256": "5954b12c0cf9801ac4ac2338d783c9cbf305ffbea30f0db0a64827654154ec0b",
+      "source": "references/zq610-plus-v1/barcode-pdf417/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:10 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-pdf417_truncated.png",
+      "name": "barcode-pdf417_truncated",
+      "png_sha256": "2c94ab761ad0ababc989f8da8aa989dec6a190c03273aeca0582f3b7dac40b10",
+      "received_utc": "2026-09-27T03:22:10+00:00",
+      "reference": "references/zq610-plus-v1/barcode-pdf417_truncated/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:10+00:00",
+      "sha256": "a6dc08958ed84250b17597ec6de8738aeb7b5bf7f36ac79a95bcbbc5076b899f",
+      "source": "references/zq610-plus-v1/barcode-pdf417_truncated/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:11 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-planet.png",
+      "name": "barcode-planet",
+      "png_sha256": "effedbb22beab3af1ff6f6434cba83662bbb5266ffe49baacf69e9a2cd8a59b8",
+      "received_utc": "2026-09-27T03:22:11+00:00",
+      "reference": "references/zq610-plus-v1/barcode-planet/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:10+00:00",
+      "sha256": "f43a470348bfe7f8bd2680efdff57abdf903680f3972ce1346fc0c52f12e203b",
+      "source": "references/zq610-plus-v1/barcode-planet/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:12 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-plessey.png",
+      "name": "barcode-plessey",
+      "png_sha256": "2feec3c92d3b7310a5e25717c0da752e8bec986a34598fabf8397bbcaac21da3",
+      "received_utc": "2026-09-27T03:22:12+00:00",
+      "reference": "references/zq610-plus-v1/barcode-plessey/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:11+00:00",
+      "sha256": "4d8369659e9fda65706e458ac1c85197f7340fc837101e35af16b28d276bc6c1",
+      "source": "references/zq610-plus-v1/barcode-plessey/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:12 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-postal_planet.png",
+      "name": "barcode-postal_planet",
+      "png_sha256": "74a1f7339f8696daf935dea7146fcf26a650f76e2ccf4110b41996b0b76e2cc0",
+      "received_utc": "2026-09-27T03:22:12+00:00",
+      "reference": "references/zq610-plus-v1/barcode-postal_planet/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:12+00:00",
+      "sha256": "89eba124a8ea5ef4249f72c34567ebbbdd2c1f7fe4519429bf2c10d393556d73",
+      "source": "references/zq610-plus-v1/barcode-postal_planet/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:13 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-postnet.png",
+      "name": "barcode-postnet",
+      "png_sha256": "59a8ede2cb371ad4720b7e99577c9cd0e17117cabd9365a0216eb82825dd89b3",
+      "received_utc": "2026-09-27T03:22:13+00:00",
+      "reference": "references/zq610-plus-v1/barcode-postnet/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:12+00:00",
+      "sha256": "1f2b2d9289f284cd3049743a1ea1423edce906704cc6bddea03b727e23beeabb",
+      "source": "references/zq610-plus-v1/barcode-postnet/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:13 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-qr.png",
+      "name": "barcode-qr",
+      "png_sha256": "afb439a73281caf701efd861ddb73043a1678d6410746814daa5d2d9dc1cad10",
+      "received_utc": "2026-09-27T03:22:13+00:00",
+      "reference": "references/zq610-plus-v1/barcode-qr/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:13+00:00",
+      "sha256": "d07fc79bf33248e4ca1d2c619a6c11c9cfe5bed29577fb014df3d616e3306919",
+      "source": "references/zq610-plus-v1/barcode-qr/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:14 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-standard2of5.png",
+      "name": "barcode-standard2of5",
+      "png_sha256": "8b0e46b44a50d0600bcfbc369fdae69edce64cb722b8457452721330f377543c",
+      "received_utc": "2026-09-27T03:22:14+00:00",
+      "reference": "references/zq610-plus-v1/barcode-standard2of5/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:13+00:00",
+      "sha256": "75cce170e25fb5368d5e410c6d1e4f6aff27ef63d3ba13d3517c8b3f1a141128",
+      "source": "references/zq610-plus-v1/barcode-standard2of5/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:15 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-tlc39_linear.png",
+      "name": "barcode-tlc39_linear",
+      "png_sha256": "83103d67c6e07e9b21f8dd7a72d29f0d54e772d74b771d780eec576390b0ba6b",
+      "received_utc": "2026-09-27T03:22:15+00:00",
+      "reference": "references/zq610-plus-v1/barcode-tlc39_linear/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:14+00:00",
+      "sha256": "b890f89f6f7178aae26ddf995b2af7b0f73d14a4e33e9d25de91fe5d31f63963",
+      "source": "references/zq610-plus-v1/barcode-tlc39_linear/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:15 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-tlc39_linked.png",
+      "name": "barcode-tlc39_linked",
+      "png_sha256": "91e135ad4fa4629ce5879c413d2f6bee4b20c611f454ea31639056b625407c6a",
+      "received_utc": "2026-09-27T03:22:15+00:00",
+      "reference": "references/zq610-plus-v1/barcode-tlc39_linked/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:15+00:00",
+      "sha256": "4b1cd21042bc7b308e3e371ccc527fc9e0646a0a14da0a1259054a95b1e3e28c",
+      "source": "references/zq610-plus-v1/barcode-tlc39_linked/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:16 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-upca.png",
+      "name": "barcode-upca",
+      "png_sha256": "8c8137c38fd9ab85d6099057713e88200bbcc9d61c961f62f2b17b0e2a760dfd",
+      "received_utc": "2026-09-27T03:22:16+00:00",
+      "reference": "references/zq610-plus-v1/barcode-upca/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:15+00:00",
+      "sha256": "64ead81d06dc3125b220f3bf67bd044c4a53a7ad6d66cb0a0834fc08a17bf286",
+      "source": "references/zq610-plus-v1/barcode-upca/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:17 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--barcode-upce.png",
+      "name": "barcode-upce",
+      "png_sha256": "43f28834e781714b92b582f101d0d842dede9fdd4c1e00f94f42698fd380fd88",
+      "received_utc": "2026-09-27T03:22:17+00:00",
+      "reference": "references/zq610-plus-v1/barcode-upce/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:16+00:00",
+      "sha256": "669ec6e13d20e9df6087bc9a435d90e9dbc00a86bd232f608dd16ad74a77fbe0",
+      "source": "references/zq610-plus-v1/barcode-upce/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:17 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-height-120.png",
+      "name": "canvas-height-120",
+      "png_sha256": "d1e6e8bb8fe3b8d3314206dfef1f7f44a1f77bc471aeccde3e365651d9abeeb6",
+      "received_utc": "2026-09-27T03:22:17+00:00",
+      "reference": "references/zq610-plus-v1/canvas-height-120/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:17+00:00",
+      "sha256": "f0560e21b6e688940abff31cf21f8c09b8e91a129b583d0c937152a3af7e1db9",
+      "source": "references/zq610-plus-v1/canvas-height-120/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:18 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-height-2030.png",
+      "name": "canvas-height-2030",
+      "png_sha256": "ef3c452aee31d883e1ff37090b4baa027983245d9a9603155ec3856f9ba49894",
+      "received_utc": "2026-09-27T03:22:18+00:00",
+      "reference": "references/zq610-plus-v1/canvas-height-2030/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:17+00:00",
+      "sha256": "81b797514597412684b90d8ad8c14b2db01d4fe5dad5e431e6e405947d7d0ed7",
+      "source": "references/zq610-plus-v1/canvas-height-2030/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:19 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-height-400.png",
+      "name": "canvas-height-400",
+      "png_sha256": "2242a024867934942a5cf9c5d3bb1176604864e8583fd31d3760482f5c346a2e",
+      "received_utc": "2026-09-27T03:22:19+00:00",
+      "reference": "references/zq610-plus-v1/canvas-height-400/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:18+00:00",
+      "sha256": "98071fe8717ac7118bdc599244e5973085e672ec0639a7036a6e2204eebedf2e",
+      "source": "references/zq610-plus-v1/canvas-height-400/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        128,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:19 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-width-120.png",
+      "name": "canvas-width-120",
+      "png_sha256": "9eedf33d4ea23fa1f591fcb54f3a607637efe7920376ccddbc0a2832e66dd547",
+      "received_utc": "2026-09-27T03:22:19+00:00",
+      "reference": "references/zq610-plus-v1/canvas-width-120/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:19+00:00",
+      "sha256": "740556b957f15ab4de309fa65c5606931889a016eb1b27ec9144925f13b121a6",
+      "source": "references/zq610-plus-v1/canvas-width-120/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.630542x10.000000/0/",
+      "validity": "valid",
+      "width": 128
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        128,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:20 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-width-120-fit.png",
+      "name": "canvas-width-120-fit",
+      "png_sha256": "606ebe9286da4e11be9c0ab5d38cf7781543114afc00f04a25d23ff281befcbb",
+      "received_utc": "2026-09-27T03:22:20+00:00",
+      "reference": "references/zq610-plus-v1/canvas-width-120-fit/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:19+00:00",
+      "sha256": "2a6290530cb6e0ad5cc4897467129c3f5b99d20c11d7740036cf9a15ac85a95f",
+      "source": "references/zq610-plus-v1/canvas-width-120-fit/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.630542x10.000000/0/",
+      "validity": "valid",
+      "width": 128
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        320,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:20 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-width-300.png",
+      "name": "canvas-width-300",
+      "png_sha256": "a4d54b6f0f412a4e6eba77e88ed1796589866f7659c2a9a82d94cf3471bd5f70",
+      "received_utc": "2026-09-27T03:22:20+00:00",
+      "reference": "references/zq610-plus-v1/canvas-width-300/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:20+00:00",
+      "sha256": "5660a635a60707713b119ef4484b48fbe73818391afa2061188ced9e84f01041",
+      "source": "references/zq610-plus-v1/canvas-width-300/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.576355x10.000000/0/",
+      "validity": "valid",
+      "width": 320
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        320,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:21 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-width-300-fit.png",
+      "name": "canvas-width-300-fit",
+      "png_sha256": "67b59ec81e02aee907b93a00c54861ec7a385526e08be52a853050aa7f6e8795",
+      "received_utc": "2026-09-27T03:22:21+00:00",
+      "reference": "references/zq610-plus-v1/canvas-width-300-fit/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:20+00:00",
+      "sha256": "970eecfd1f4985fcb8abadfbefaae59815973006147f8d55194a9ccbea0436ea",
+      "source": "references/zq610-plus-v1/canvas-width-300-fit/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.576355x10.000000/0/",
+      "validity": "valid",
+      "width": 320
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:22 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-width-384.png",
+      "name": "canvas-width-384",
+      "png_sha256": "51c202e1c02d2ae8cfe155acabc216922dcbf44ead3e5a6136d9826d7d69fb94",
+      "received_utc": "2026-09-27T03:22:22+00:00",
+      "reference": "references/zq610-plus-v1/canvas-width-384/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:21+00:00",
+      "sha256": "0a759ccdd37ef6e54a344db603da7299a0a36a16b823570e0e4b3635e1077129",
+      "source": "references/zq610-plus-v1/canvas-width-384/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:22 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-width-400.png",
+      "name": "canvas-width-400",
+      "png_sha256": "51c202e1c02d2ae8cfe155acabc216922dcbf44ead3e5a6136d9826d7d69fb94",
+      "received_utc": "2026-09-27T03:22:22+00:00",
+      "reference": "references/zq610-plus-v1/canvas-width-400/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:22+00:00",
+      "sha256": "924c79fb0250f640cce6e75e5d4325fbfa16e573ce384476f6f000742a3db04d",
+      "source": "references/zq610-plus-v1/canvas-width-400/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:23 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--canvas-width-832.png",
+      "name": "canvas-width-832",
+      "png_sha256": "5a519ab07a99ef100237e5b08c7a75bd380221bd27ce456d65fff3803eb790a9",
+      "received_utc": "2026-09-27T03:22:23+00:00",
+      "reference": "references/zq610-plus-v1/canvas-width-832/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:22+00:00",
+      "sha256": "6f5505ff1b6c494a0137971616f6f9260fb47da26bfaae3d3bb9a9dd95578448",
+      "source": "references/zq610-plus-v1/canvas-width-832/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:24 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--graphic.png",
+      "name": "graphic",
+      "png_sha256": "2e859435ce137f96deaacc7e1e1e8d45c59d48793bc5067d485b8f7401ef5caf",
+      "received_utc": "2026-09-27T03:22:24+00:00",
+      "reference": "references/zq610-plus-v1/graphic/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:23+00:00",
+      "sha256": "483048775b8fd67286e5dfd20abec308061aad57808a6312eba066ed624518d1",
+      "source": "references/zq610-plus-v1/graphic/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:24 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--layout-LS12.png",
+      "name": "layout-LS12",
+      "png_sha256": "4ac70e42b79695c21a7cb724dfd882a64b407f9e191ca1c58e9e24cac726bac2",
+      "received_utc": "2026-09-27T03:22:24+00:00",
+      "reference": "references/zq610-plus-v1/layout-LS12/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:24+00:00",
+      "sha256": "7449f07c688ac028c0e4702585463f559d8630c6f79e1c30ff6c378564d96040",
+      "source": "references/zq610-plus-v1/layout-LS12/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:25 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--layout-LT0.png",
+      "name": "layout-LT0",
+      "png_sha256": "93fc06244a2bd51de5b7c052eadab70eca379f2888e4f246a0369c57f4410b1c",
+      "received_utc": "2026-09-27T03:22:25+00:00",
+      "reference": "references/zq610-plus-v1/layout-LT0/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:24+00:00",
+      "sha256": "169d52561d38964f764841745c2a73466f0b255b1af21125a90ba95dca7196b1",
+      "source": "references/zq610-plus-v1/layout-LT0/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:25 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--layout-LT30.png",
+      "name": "layout-LT30",
+      "png_sha256": "8e5fdda667fc8278d4a8062c9dcde6734bbf376e8094089b4367a9a4b17ea453",
+      "received_utc": "2026-09-27T03:22:25+00:00",
+      "reference": "references/zq610-plus-v1/layout-LT30/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:25+00:00",
+      "sha256": "e08f5649b44c1dc44458459a92a52853eb414f826255c2d0a14629d1c198918e",
+      "source": "references/zq610-plus-v1/layout-LT30/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:26 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--layout-PMN.png",
+      "name": "layout-PMN",
+      "png_sha256": "090b635b07c9084fbbb18f865e4a02d79efe0daf1918bdd375e00e6ae18122aa",
+      "received_utc": "2026-09-27T03:22:26+00:00",
+      "reference": "references/zq610-plus-v1/layout-PMN/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:25+00:00",
+      "sha256": "ba1f20f8a4f5b30a318571a923e6d6c7215bddfa40ceca5a069e84a678570e8e",
+      "source": "references/zq610-plus-v1/layout-PMN/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:27 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--layout-PMY.png",
+      "name": "layout-PMY",
+      "png_sha256": "ea539c2c18657cb0eaaedee1f529cf79b525948899f2c881556940a04f7dad05",
+      "received_utc": "2026-09-27T03:22:27+00:00",
+      "reference": "references/zq610-plus-v1/layout-PMY/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:26+00:00",
+      "sha256": "4f64df4be5a46f53bbd8273e562cc5f69bc44bab23fb44453b0fcc985e14bc36",
+      "source": "references/zq610-plus-v1/layout-PMY/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:27 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--layout-POI.png",
+      "name": "layout-POI",
+      "png_sha256": "c083b860ebba644595327e59fdb125e88cc9212eab0bd61bbbe97d0a187d586b",
+      "received_utc": "2026-09-27T03:22:27+00:00",
+      "reference": "references/zq610-plus-v1/layout-POI/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:27+00:00",
+      "sha256": "98eb64d45a4834589818c26782f23af272b283b87fc9a6754b94931641d2027e",
+      "source": "references/zq610-plus-v1/layout-POI/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:28 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--layout-PON.png",
+      "name": "layout-PON",
+      "png_sha256": "d65297244a39a30437d773ed3e48277dd46f3ddb5fe759debd338d90a0213841",
+      "received_utc": "2026-09-27T03:22:28+00:00",
+      "reference": "references/zq610-plus-v1/layout-PON/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:27+00:00",
+      "sha256": "3f6ddedf5f44cff804d20b299be97a2baf55ad9f3b22538871ca2e3c95b735ae",
+      "source": "references/zq610-plus-v1/layout-PON/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:29 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--shape-GB.png",
+      "name": "shape-GB",
+      "png_sha256": "1f6f10b884604d7a14e6252edb2ec6c3a13784ed0b687b0dbaa7db4419a3b84c",
+      "received_utc": "2026-09-27T03:22:29+00:00",
+      "reference": "references/zq610-plus-v1/shape-GB/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:28+00:00",
+      "sha256": "9d89911fa4d223bad16b182e8c13f0416a26c6fbdc89744d0312819e6822292f",
+      "source": "references/zq610-plus-v1/shape-GB/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:29 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--shape-GC.png",
+      "name": "shape-GC",
+      "png_sha256": "6d23d240db5a43cd4f56c376ee3fa31aa84cabe2a5e74ad7d18716a2b9e52539",
+      "received_utc": "2026-09-27T03:22:29+00:00",
+      "reference": "references/zq610-plus-v1/shape-GC/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:29+00:00",
+      "sha256": "7bdfb539b1a65fec16ea7c0331ef6e3191146842b2798c6ae6247d831156ed02",
+      "source": "references/zq610-plus-v1/shape-GC/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:30 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--shape-GD.png",
+      "name": "shape-GD",
+      "png_sha256": "b21db51216af9ef069abcf87f64b1506834afaee9d223d97080d82a2059d92c3",
+      "received_utc": "2026-09-27T03:22:30+00:00",
+      "reference": "references/zq610-plus-v1/shape-GD/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:29+00:00",
+      "sha256": "62cdc13bde3e23c097a7d28316e3910c411984411e287b8c4d2e349afede8e37",
+      "source": "references/zq610-plus-v1/shape-GD/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:30 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--shape-GE.png",
+      "name": "shape-GE",
+      "png_sha256": "7b4355038fc81a0210563348efaad8393af881cf73195f961fbdf39564b4cb7d",
+      "received_utc": "2026-09-27T03:22:30+00:00",
+      "reference": "references/zq610-plus-v1/shape-GE/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:30+00:00",
+      "sha256": "024b7b1d1447f226c82df3467cdb150a5c0d679dbd1c7a3d8ce8c342d36dac41",
+      "source": "references/zq610-plus-v1/shape-GE/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:31 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-0-B.png",
+      "name": "text-0-B",
+      "png_sha256": "411f596c762937e09806b9f59de7b2ac03a6d41be6df701b6dd595f1e60477ff",
+      "received_utc": "2026-09-27T03:22:31+00:00",
+      "reference": "references/zq610-plus-v1/text-0-B/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:30+00:00",
+      "sha256": "8989a2d3678198c087f62c4c50eadc1cbe4d3380adf1ba606d74f1933a417518",
+      "source": "references/zq610-plus-v1/text-0-B/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:32 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-0-I.png",
+      "name": "text-0-I",
+      "png_sha256": "6b603533aae8e6d15a6d5e44efa672c7a03fee76b2802bf6e2d901f0cd16dcef",
+      "received_utc": "2026-09-27T03:22:32+00:00",
+      "reference": "references/zq610-plus-v1/text-0-I/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:31+00:00",
+      "sha256": "d3fdef56ad6d44957f25fecbc36952797ff4f5afa06211c98eef7f25cf236250",
+      "source": "references/zq610-plus-v1/text-0-I/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:32 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-0-N.png",
+      "name": "text-0-N",
+      "png_sha256": "1fd977d4c4f734a2856ccbcd6477b2cd5ca6ab38c2cd5bf90c0289e9dbe79f7a",
+      "received_utc": "2026-09-27T03:22:32+00:00",
+      "reference": "references/zq610-plus-v1/text-0-N/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:32+00:00",
+      "sha256": "cd8dd30148038471796e3f964c2d87cecc56a8e75393124951d4a059b92de5d0",
+      "source": "references/zq610-plus-v1/text-0-N/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:33 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-0-R.png",
+      "name": "text-0-R",
+      "png_sha256": "6bf21c73c9d81cbe920fc0a0d6b3d8acaebfdaf669f9ad84f7056951d1ace4f5",
+      "received_utc": "2026-09-27T03:22:33+00:00",
+      "reference": "references/zq610-plus-v1/text-0-R/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:32+00:00",
+      "sha256": "f932f8191d398f3b3a710bcf93e7f53ee3e842da5b96db0f88332c266ba5f4bd",
+      "source": "references/zq610-plus-v1/text-0-R/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:34 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-A-B.png",
+      "name": "text-A-B",
+      "png_sha256": "e5b209ef20be1a2ff6078ca0a0ebeefada4c8923924e12fe9933f67e1a30fcb6",
+      "received_utc": "2026-09-27T03:22:34+00:00",
+      "reference": "references/zq610-plus-v1/text-A-B/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:33+00:00",
+      "sha256": "f9e9342a084686996b22bc0b46c1532b0caa765befb1ae3df7f0596e957f74fc",
+      "source": "references/zq610-plus-v1/text-A-B/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:34 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-A-I.png",
+      "name": "text-A-I",
+      "png_sha256": "e97dd7096ea11a0c258781b98b82bff70d71a787f3f256f79cd65512affed208",
+      "received_utc": "2026-09-27T03:22:34+00:00",
+      "reference": "references/zq610-plus-v1/text-A-I/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:34+00:00",
+      "sha256": "1bea677548b0a526db75454889bd8133371caddfbb0453a7988c9e6b669fa175",
+      "source": "references/zq610-plus-v1/text-A-I/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:35 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-A-I-fit.png",
+      "name": "text-A-I-fit",
+      "png_sha256": "815565af807f02e9ffe9e32c476795ccaf2a528c103569241cdad4d4f22dcc64",
+      "received_utc": "2026-09-27T03:22:35+00:00",
+      "reference": "references/zq610-plus-v1/text-A-I-fit/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:34+00:00",
+      "sha256": "3f65a77ca014bea28845cbea77e75701b4d7da8500f7143d7e1c9465f7da4c8f",
+      "source": "references/zq610-plus-v1/text-A-I-fit/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:36 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-A-N.png",
+      "name": "text-A-N",
+      "png_sha256": "3a5014bc6328ac39ce804317f794ca221bf76465a7880c4f9550487f36bbc1dc",
+      "received_utc": "2026-09-27T03:22:36+00:00",
+      "reference": "references/zq610-plus-v1/text-A-N/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:35+00:00",
+      "sha256": "bbc7300398e4d658f74880f5dd8530df27818a4d2b49c19bb73d2263070dc2a6",
+      "source": "references/zq610-plus-v1/text-A-N/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:36 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-A-R.png",
+      "name": "text-A-R",
+      "png_sha256": "d9ed93a70d85cedb9bfc26f8c4aa6c6b4b15542848cda1e5e585bc91d30106ad",
+      "received_utc": "2026-09-27T03:22:36+00:00",
+      "reference": "references/zq610-plus-v1/text-A-R/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:36+00:00",
+      "sha256": "fb8cb2bf0a50943ba71786d8ef59edf77b8ee68c5000721f1cf3de9c07a07828",
+      "source": "references/zq610-plus-v1/text-A-R/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:37 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-D-B.png",
+      "name": "text-D-B",
+      "png_sha256": "5266650cfedcc86b37cc26ef3a23746f0c76140c17c0f2345df9fcee3dbfeb68",
+      "received_utc": "2026-09-27T03:22:37+00:00",
+      "reference": "references/zq610-plus-v1/text-D-B/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:36+00:00",
+      "sha256": "4d548f677480a80f6752edd07b62c17afef7bfd5865ee61d8da10f37ce38d956",
+      "source": "references/zq610-plus-v1/text-D-B/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:38 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-D-I.png",
+      "name": "text-D-I",
+      "png_sha256": "92d052abfda7621c3669b58e002d171defc8747f17c4ee971765b04e33dba61c",
+      "received_utc": "2026-09-27T03:22:38+00:00",
+      "reference": "references/zq610-plus-v1/text-D-I/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:37+00:00",
+      "sha256": "1bd4cbfaf72381c9ab3874a3c1c587a66702cd203853fc483fa93a06c4e71abd",
+      "source": "references/zq610-plus-v1/text-D-I/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:38 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-D-I-fit.png",
+      "name": "text-D-I-fit",
+      "png_sha256": "17c74c34f6cfd20fa9e8f635b73a446a450d3fe77f4fc27b19fa90f0d2f0eb16",
+      "received_utc": "2026-09-27T03:22:38+00:00",
+      "reference": "references/zq610-plus-v1/text-D-I-fit/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:38+00:00",
+      "sha256": "ba62ddbdd637f578324832185a43b74f113222f52df30dab259c9d0a6e952811",
+      "source": "references/zq610-plus-v1/text-D-I-fit/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:39 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-D-N.png",
+      "name": "text-D-N",
+      "png_sha256": "6c832e912094b932d1f3205811cdd5ee3ad8a974b56858de2622811ccbaa422f",
+      "received_utc": "2026-09-27T03:22:39+00:00",
+      "reference": "references/zq610-plus-v1/text-D-N/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:38+00:00",
+      "sha256": "b01d1cf682d019f3a1b02d383b29b4b23bbeaa483efde8a52df714c6820667f7",
+      "source": "references/zq610-plus-v1/text-D-N/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:39 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-D-R.png",
+      "name": "text-D-R",
+      "png_sha256": "32e3d4103038c209c96b45ba421ced0e3ea36624a1f9fd2c2bb11c40fc00fee4",
+      "received_utc": "2026-09-27T03:22:39+00:00",
+      "reference": "references/zq610-plus-v1/text-D-R/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:39+00:00",
+      "sha256": "d70d9f166ee1d82cba443f2aa9468458590b59233c626cbbb88952e1e211ebb4",
+      "source": "references/zq610-plus-v1/text-D-R/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:40 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-E-B.png",
+      "name": "text-E-B",
+      "png_sha256": "f6ec57950046c49928c285f3c3fa2421d6f102ccfd32b3fc528f990e933e39f7",
+      "received_utc": "2026-09-27T03:22:40+00:00",
+      "reference": "references/zq610-plus-v1/text-E-B/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:40+00:00",
+      "sha256": "1460e4b95f2bd709f67d83f90ac0050859d5dd79634ec7390c2f2fb252cb8349",
+      "source": "references/zq610-plus-v1/text-E-B/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:41 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-E-I.png",
+      "name": "text-E-I",
+      "png_sha256": "4b0a302763b0f05218e8fbae16a3da44782ed753d7f3daa4913b134a2ffb48fe",
+      "received_utc": "2026-09-27T03:22:41+00:00",
+      "reference": "references/zq610-plus-v1/text-E-I/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:40+00:00",
+      "sha256": "c95e3f197b184dac08f5b166921f3443b89d0a61af87a3be99bd1f8f12b47be8",
+      "source": "references/zq610-plus-v1/text-E-I/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:41 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-E-I-fit.png",
+      "name": "text-E-I-fit",
+      "png_sha256": "5eb559f5abd6e62b14ea396899e0a0af5a1ddd886ae5290a8481c676864cb7a6",
+      "received_utc": "2026-09-27T03:22:41+00:00",
+      "reference": "references/zq610-plus-v1/text-E-I-fit/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:41+00:00",
+      "sha256": "996e24143483c89d7a9a3b46358cde44afe46ef840ec2dddeedb29f0457f658a",
+      "source": "references/zq610-plus-v1/text-E-I-fit/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:42 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-E-N.png",
+      "name": "text-E-N",
+      "png_sha256": "a85068e5fa1cd2414cef8d2350e38edb7e413bd1d366a6474cef60c650569814",
+      "received_utc": "2026-09-27T03:22:42+00:00",
+      "reference": "references/zq610-plus-v1/text-E-N/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:41+00:00",
+      "sha256": "2a5c030770cb2f0e003eae9c0c222f8f89807122edb6a83eb3d1486a3d151ecd",
+      "source": "references/zq610-plus-v1/text-E-N/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:43 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-E-R.png",
+      "name": "text-E-R",
+      "png_sha256": "10e730583658c40d2bfcc246cb5fafb1c410a69a2ea1eebef86c81d0c7a37a57",
+      "received_utc": "2026-09-27T03:22:43+00:00",
+      "reference": "references/zq610-plus-v1/text-E-R/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:42+00:00",
+      "sha256": "8dc6ecf339944ab35a349265e59e28c10496b5f1a28554386c70fd73449955b9",
+      "source": "references/zq610-plus-v1/text-E-R/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:43 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--text-block.png",
+      "name": "text-block",
+      "png_sha256": "3f927b841dc536212ce0488fdd7169887aa9a04ee028663782bce88c3302ed0e",
+      "received_utc": "2026-09-27T03:22:43+00:00",
+      "reference": "references/zq610-plus-v1/text-block/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:43+00:00",
+      "sha256": "4873261b1faca684678d70f0954d50256701f4fe4aa32833c6659387f7fb45da",
+      "source": "references/zq610-plus-v1/text-block/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        64,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:44 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-1.png",
+      "name": "width-boundary-1",
+      "png_sha256": "f21a4f761085d082f9f917659acaebc5a7bf2d4aa97b2ffbf8ee27938c9ea354",
+      "received_utc": "2026-09-27T03:22:44+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-1/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:43+00:00",
+      "sha256": "e221ffa926aa45bfaf4e5b8a9a13e194ca05677c8040bbf39bbfecce70b87ee5",
+      "source": "references/zq610-plus-v1/width-boundary-1/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.315271x10.000000/0/",
+      "validity": "valid",
+      "width": 64
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        128,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:45 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-127.png",
+      "name": "width-boundary-127",
+      "png_sha256": "a10687d6724d0a6274b23efc36f6155b74587665b77c2d87bee61fae60ff1acb",
+      "received_utc": "2026-09-27T03:22:45+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-127/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:44+00:00",
+      "sha256": "27cf07d4f3794eb789b3a3e71568910b4d2eaca22ea30836f7600a5b42dc4306",
+      "source": "references/zq610-plus-v1/width-boundary-127/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.630542x10.000000/0/",
+      "validity": "valid",
+      "width": 128
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        128,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:45 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-128.png",
+      "name": "width-boundary-128",
+      "png_sha256": "8496c7cfb86cce745a2979903d281d5878e3074e6dd16f8e1d67e28256365748",
+      "received_utc": "2026-09-27T03:22:45+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-128/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:45+00:00",
+      "sha256": "4ecbaa62a5671da13dfbaca71c5618f7a218f002d8a7b9013797b1d914511cab",
+      "source": "references/zq610-plus-v1/width-boundary-128/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.630542x10.000000/0/",
+      "validity": "valid",
+      "width": 128
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:46 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-383.png",
+      "name": "width-boundary-383",
+      "png_sha256": "ebe3821ac26fe991e8463d858ab346c3eb638e4f30981e0e96deeb33f8759ed9",
+      "received_utc": "2026-09-27T03:22:46+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-383/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:45+00:00",
+      "sha256": "d9726b067513794886a5231834cfd891ccc3e0f4364a9a4fff8c8183d2a30cc0",
+      "source": "references/zq610-plus-v1/width-boundary-383/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:47 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-384.png",
+      "name": "width-boundary-384",
+      "png_sha256": "82e0a39aeea865d904901c7c36a91439f645499ce8ec1b16b5f003a43ae47631",
+      "received_utc": "2026-09-27T03:22:47+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-384/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:46+00:00",
+      "sha256": "ba08420de35a7e7f7e6ac1217fe500832c162adcafc540b5e57c2d18ccecf0ce",
+      "source": "references/zq610-plus-v1/width-boundary-384/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:47 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-384-fit.png",
+      "name": "width-boundary-384-fit",
+      "png_sha256": "7486ecda6b01215622cb6da8bf8ceb8bd93204f3ccbe9d0edbe8718a6e90bc55",
+      "received_utc": "2026-09-27T03:22:47+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-384-fit/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:47+00:00",
+      "sha256": "0cae903d0a7b6b6f0aa001fec33c1f4aa43f098711a07534f774c0ed68043dd6",
+      "source": "references/zq610-plus-v1/width-boundary-384-fit/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:48 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-385.png",
+      "name": "width-boundary-385",
+      "png_sha256": "47645e7e76d052cb0f598f036716576c39e86be30fcfbb8fe6a354808bce77cb",
+      "received_utc": "2026-09-27T03:22:48+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-385/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:47+00:00",
+      "sha256": "bc24be83052747823f59c675c11d950628ef0e3ba5116da3a308455963def597",
+      "source": "references/zq610-plus-v1/width-boundary-385/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        64,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:48 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-63.png",
+      "name": "width-boundary-63",
+      "png_sha256": "25a73b9d48e622d672778a6f21e84f8767d283163dc9a08189fc4bb1f7092722",
+      "received_utc": "2026-09-27T03:22:48+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-63/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:48+00:00",
+      "sha256": "e1db59b723f56d14c82426f4b659c99d9076feba4d45d0237bb4e01f78cb7561",
+      "source": "references/zq610-plus-v1/width-boundary-63/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.315271x10.000000/0/",
+      "validity": "valid",
+      "width": 64
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        64,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:49 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-64.png",
+      "name": "width-boundary-64",
+      "png_sha256": "f2b55b97a91ffb4b3236e8591484dbf0b7de673a62a48be394bd17013ebb31cb",
+      "received_utc": "2026-09-27T03:22:49+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-64/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:48+00:00",
+      "sha256": "a13845cb581577aaf8f14e87f45db425d979da7b7e7f9f16b2dc13f788368533",
+      "source": "references/zq610-plus-v1/width-boundary-64/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.315271x10.000000/0/",
+      "validity": "valid",
+      "width": 64
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        128,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:50 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-65.png",
+      "name": "width-boundary-65",
+      "png_sha256": "cf9da4ae6ab5b05f4d2d859b31c079e61a2a23951a97031891345085d7317c4e",
+      "received_utc": "2026-09-27T03:22:50+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-65/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:49+00:00",
+      "sha256": "015f7c0f13792ca0d980747fc410b1411f5dec51b1cbfe6266a5c30d360fdf10",
+      "source": "references/zq610-plus-v1/width-boundary-65/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.630542x10.000000/0/",
+      "validity": "valid",
+      "width": 128
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:50 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-boundary-800.png",
+      "name": "width-boundary-800",
+      "png_sha256": "eb5720fbca3068fbe2a7db9e31e7f3d1a2900748614556e5ba5df939b2e3d2fd",
+      "received_utc": "2026-09-27T03:22:50+00:00",
+      "reference": "references/zq610-plus-v1/width-boundary-800/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:50+00:00",
+      "sha256": "564d430154d95776ebbfc64c9d30e7f89a3ca77a4769cb9e1ef307a5369ee10a",
+      "source": "references/zq610-plus-v1/width-boundary-800/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        128,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:51 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-late-grow.png",
+      "name": "width-late-grow",
+      "png_sha256": "9063968a79edb7377f20514bdf1b4745bfde751d957ea0de0d9fd924775cf725",
+      "received_utc": "2026-09-27T03:22:51+00:00",
+      "reference": "references/zq610-plus-v1/width-late-grow/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:50+00:00",
+      "sha256": "c10a241ceddb7731d7f34b86b97ec137a3ef686cac976ab711b1c5eec9001095",
+      "source": "references/zq610-plus-v1/width-late-grow/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.630542x10.000000/0/",
+      "validity": "valid",
+      "width": 128
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        128,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:52 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-late-grow-fit.png",
+      "name": "width-late-grow-fit",
+      "png_sha256": "7c97314a45070483b5a59fd882f2f5e3e10a02818442f9a01ee502474b413681",
+      "received_utc": "2026-09-27T03:22:52+00:00",
+      "reference": "references/zq610-plus-v1/width-late-grow-fit/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:51+00:00",
+      "sha256": "a3ac16089902e74b4eaf4af58334d4f9dc72c1094ac9a40d63ee88a261d405ad",
+      "source": "references/zq610-plus-v1/width-late-grow-fit/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/0.630542x10.000000/0/",
+      "validity": "valid",
+      "width": 128
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:52 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--width-late-shrink.png",
+      "name": "width-late-shrink",
+      "png_sha256": "778d95519d0869dfde1f4a16df292e08f184d2dab2f8b0af76d4cf4f5ad25e85",
+      "received_utc": "2026-09-27T03:22:52+00:00",
+      "reference": "references/zq610-plus-v1/width-late-shrink/zq610.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:52+00:00",
+      "sha256": "7212cfeadd8d5db680f44639b9bc98f45552cb51c2efea3de47cf4a464811a0f",
+      "source": "references/zq610-plus-v1/width-late-shrink/zq610.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:53 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--smoke-aztec.png",
+      "name": "smoke-aztec",
+      "png_sha256": "14317142b5c561f1330d328c9474f20256e8b1d9df994c7490d991d5d5a66385",
+      "received_utc": "2026-09-27T03:22:53+00:00",
+      "reference": "references/zq610-candidates/smoke-aztec.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:52+00:00",
+      "sha256": "81ed02e7e775d69073a83d2d091a6a4709798a66592b578eca80ab7e80f879c4",
+      "source": "references/zq610-candidates/smoke-aztec.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:53 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--smoke-aztec_alias.png",
+      "name": "smoke-aztec_alias",
+      "png_sha256": "14317142b5c561f1330d328c9474f20256e8b1d9df994c7490d991d5d5a66385",
+      "received_utc": "2026-09-27T03:22:53+00:00",
+      "reference": "references/zq610-candidates/smoke-aztec_alias.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:53+00:00",
+      "sha256": "367ec2addf6dc588405bcd03bcb5d0e68696dff72ba4783969363b9cc019d63d",
+      "source": "references/zq610-candidates/smoke-aztec_alias.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:54 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--smoke-aztec_rune.png",
+      "name": "smoke-aztec_rune",
+      "png_sha256": "f4fb6489df6e3e6b463d1d0edd2e1deccd004a52e5ac7a67f7a22e17b63edd6e",
+      "received_utc": "2026-09-27T03:22:54+00:00",
+      "reference": "references/zq610-candidates/smoke-aztec_rune.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:53+00:00",
+      "sha256": "7069ef01dfc86fdd5467150d9041ac945476bffba2c62d1651e8558182e3088c",
+      "source": "references/zq610-candidates/smoke-aztec_rune.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    },
+    {
+      "attempts": 1,
+      "dimensions": [
+        384,
+        2030
+      ],
+      "headers": {
+        "content-type": "image/png",
+        "date": "Sun, 27 Sep 2026 03:22:55 GMT",
+        "server": "nginx/1.30.3",
+        "x-total-count": "1"
+      },
+      "height": 2030,
+      "http_status": 200,
+      "image": "images/zq610--smoke-codabar.png",
+      "name": "smoke-codabar",
+      "png_sha256": "01ea1c012d8605f9b22eaff129ce811b0ae8b9aefc3241d9b3a0d403dc656a0a",
+      "received_utc": "2026-09-27T03:22:55+00:00",
+      "reference": "references/zq610-candidates/smoke-codabar.png",
+      "renderer_version": null,
+      "requested_utc": "2026-09-27T03:22:54+00:00",
+      "sha256": "852f065d29e73ff2c7e5ac1bc6add655263bdc6c595c30325d779acac4b6e6cf",
+      "source": "references/zq610-candidates/smoke-codabar.zpl",
+      "status": "rendered",
+      "suite": "zq610",
+      "url": "https://api.labelary.com/v1/printers/8dpmm/labels/1.891626x10.000000/0/",
+      "validity": "valid",
+      "width": 384
+    }
+  ],
+  "paired_manifest_sha256": "a2c39e3f1c5b410b2f38876eeb7bf26c2a3f1473f61540fb2ccfc1d1c2dff23c",
+  "policy": "All case outputs, including four original smoke cases; session repeatability captures remain provenance, not duplicate scored cases",
+  "printer": {
+    "dpi": 203,
+    "firmware": "V100.21.21Z",
+    "host": "http://xxzmj230802993.bed.einic.org/",
+    "model": "ZTC ZQ610 Plus-203dpi ZPL",
+    "serial": "XXZMJ230802993"
+  },
+  "smoke_provenance_sha256": "6f8fdfc53982202e276cc57a5a290998a14920232088fde6f91e887e78778f94"
+}

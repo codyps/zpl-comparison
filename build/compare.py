@@ -28,6 +28,12 @@ def comparison(spec, metadata, images):
     output.mkdir(parents=True, exist_ok=True)
     row["score"] = None
     if spec.get("reference"):
+        if spec.get("reference_font_control"):
+            evidence = spec["reference_font_control"]
+            if evidence["bundle_sha256"] != row.get("font_control", {}).get("bundle_sha256"):
+                raise ValueError("Printer and renderer font bundles differ")
+            row["printer_font_control"] = evidence
+        row["reference_sha256"] = spec["sha256"]
         reference = Path(spec["reference"])
         if sha(reference) != spec["sha256"]:
             raise ValueError("Printer reference hash mismatch")
