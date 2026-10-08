@@ -154,12 +154,16 @@ class FontProfileTest(unittest.TestCase):
                             row = json.loads((root/(key+'.json')).read_text())
                             self.assertEqual(row['status'], 'rendered', row)
                             self.assertEqual([row['width'], row['height']], [320, 100])
+                            self.assertGreater(row['ink'], 0, row)
                             rows.append(row)
-                        if name == 'graphics' or (library == 'codyps-zpl' and name == 'bitmap'):
-                            # The supplied D strike matches codyps/zpl's resident pixels.
+                        if name == 'graphics':
                             self.assertEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
-                        else:
+                        elif (library, name) != ('codyps-zpl', 'bitmap'):
                             self.assertNotEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
+                        # codyps/zpl's supplied D strike shares resident glyphs,
+                        # but downloaded-font placement can differ by revision.
+                        # test_codyps_consumes_supplied_bitmap_strike verifies
+                        # injection by substituting the supplied face instead.
                         self.assertNotIn('font_control', rows[0])
                         self.assertIn('font_control', rows[1])
 
