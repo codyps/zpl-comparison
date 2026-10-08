@@ -25,6 +25,11 @@ def render(spec, metadata, images):
     if "input_identity" in spec:
         row["input_identity"] = spec["input_identity"]
     source = Path(spec["source"])
+    font_metadata, font_preamble = None, b""
+    if spec.get("font_bundle"):
+        from build.font_profile import configure
+        font_metadata, font_preamble = configure(spec["font_bundle"], row["library"])
+        row["font_control"] = font_metadata
     if sha(source) != spec["sha256"]:
         raise ValueError("Input hash mismatch: " + str(source))
     image = output / "image.png"
@@ -44,11 +49,17 @@ def render(spec, metadata, images):
         ]
         row["observed_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
         with tempfile.TemporaryDirectory(prefix="zpl-render-") as temporary:
+            render_source = source.resolve()
+            if font_preamble:
+                render_source = Path(temporary) / "font-controlled.zpl"
+                render_source.write_bytes(font_preamble + source.read_bytes())
+                row["submitted_source_sha256"] = sha(render_source)
             env = {
                 **os.environ,
                 "HOME": temporary,
                 # Never inherit a caller profile into unrelated suites.
                 "ZPL_RENDER_PROFILE": spec.get("render_profile", "zd621-203dpi"),
+                "ZPL_FONT_DIR": str(Path(spec["font_bundle"]).resolve()) if font_metadata and font_metadata["mode"] in {"supplied-callback", "supplied-bitmap-and-callback"} else "",
                 "TMPDIR": temporary,
                 "DOTNET_CLI_HOME": temporary,
                 "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
@@ -61,7 +72,7 @@ def render(spec, metadata, images):
                     command
                     + [
                         "accuracy",
-                        str(source.resolve()),
+                        str(render_source),
                         "1",
                         str(image),
                         str(spec["width"]),

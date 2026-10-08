@@ -1,0 +1,50 @@
+"""Font-controlled rendering policy; never rewrite fixture fields or geometry."""
+import hashlib
+import json
+from pathlib import Path
+
+CALLBACK = {'binarykits', 'forge', 'zplr'}
+DOWNLOAD = {'zebrash', 'zebrash-ts', 'zpl-renderer-js'}
+FIXED = {
+    'codyps-zpl': 'Fixed embedded recovered printer strikes; no external font provider in this API.',
+    'labelize': 'Fixed embedded faces; Renderer exposes no font loader.',
+    'go': 'Fixed internal font manager; no public replacement API.',
+    'ffi': 'Fixed go-zpl font manager behind the FFI API.',
+    'labelary': 'Fixed service fonts; replay of the original captured input.',
+}
+
+
+def configure(directory, library):
+    root = Path(directory).resolve()
+    manifest_bytes = (root / 'manifest.json').read_bytes()
+    manifest = json.loads(manifest_bytes)
+    for name, digest in manifest['sha256'].items():
+        if hashlib.sha256((root / name).read_bytes()).hexdigest() != digest:
+            raise ValueError('Font bundle hash mismatch: ' + name)
+    if library == 'zplr':
+        mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; shared TrueType font 0 via FontProvider and ^CW. GS and built-in captions may retain fixed fonts.'
+    elif library == 'forge':
+        mode, note = 'supplied-callback', 'Recovered outlines for A–H and P–V, Heros for 0 through FontManager; GS and named fonts retain built-ins.'
+    elif library in CALLBACK:
+        mode, note = 'supplied-callback', 'Recovered bitmap outlines and shared TrueType substitutes through the public font API.'
+    elif library in DOWNLOAD:
+        mode, note = 'supplied-download', 'Shared TrueType fonts via ~DU/^CW preamble. Downloaded-font scaling applies; GS and internally generated barcode captions can retain built-in fonts.'
+    elif library in FIXED:
+        mode, note = 'fixed', FIXED[library]
+    else:
+        raise ValueError('Unknown font policy: ' + library)
+    metadata = dict(profile='controlled-v1', mode=mode, note=note,
+                    bundle_sha256=hashlib.sha256(manifest_bytes).hexdigest(), fonts=manifest['fonts'])
+    preamble = bytearray()
+    if library == 'zplr':
+        preamble.extend((root / 'bitmap-download.zpl').read_bytes())
+    if library in DOWNLOAD:
+        for fid, filename in sorted(manifest['fonts'].items()):
+            if fid == 'GS':
+                continue  # ^CW only accepts a one-character alias.
+            data = (root / filename).read_bytes()
+            name = 'R:TT0003M_.TTF' if fid == 'TT0003M_' else 'R:FC' + fid + '.TTF'
+            preamble.extend(f'~DU{name},{len(data)},'.encode() + data.hex().upper().encode())
+            if len(fid) == 1:
+                preamble.extend(f'^CW{fid},{name}'.encode())
+    return metadata, bytes(preamble)

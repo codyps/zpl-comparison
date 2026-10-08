@@ -19,8 +19,20 @@ using var proportional = SKTypeface.FromFile(Path.Combine(fontDirectory, "TeX Gy
     ?? throw new Exception("Missing bundled proportional font");
 using var mono = SKTypeface.FromFile(Path.Combine(fontDirectory, "DejaVu Sans Mono.ttf"))
     ?? throw new Exception("Missing bundled monospace font");
+var suppliedFonts = new Dictionary<string, SKTypeface>();
+var suppliedDirectory = Environment.GetEnvironmentVariable("ZPL_FONT_DIR");
+if (!string.IsNullOrEmpty(suppliedDirectory)) {
+    using var manifest = JsonDocument.Parse(File.ReadAllText(Path.Combine(suppliedDirectory, "manifest.json")));
+    foreach (var entry in manifest.RootElement.GetProperty("fonts").EnumerateObject())
+        suppliedFonts[entry.Name] = SKTypeface.FromFile(Path.Combine(suppliedDirectory, entry.Value.GetString()!))
+            ?? throw new Exception("Invalid supplied font: " + entry.Name);
+}
+SKTypeface ResolveFont(string name) {
+    var key = System.Text.RegularExpressions.Regex.Replace(name, @"^[A-Za-z]:|\.(TTF|FNT)$", "", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+    return suppliedFonts.TryGetValue(key, out var face) ? face : name == "0" ? proportional : mono;
+}
 ZplElementDrawer Drawer(IPrinterStorage storage) => new(storage, new DrawerOptions(new FontManager {
-    FontLoader = name => name == "0" ? proportional : mono,
+    FontLoader = ResolveFont,
 }));
 byte[] Operation() {
     var storage = new PrinterStorage();

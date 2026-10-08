@@ -6,6 +6,19 @@ const height = Number(heightArg);
 if (![width, height].every(value => Number.isSafeInteger(value) && value > 0)) throw new Error("canvas dimensions");
 // Match the other adapters: pass the requested canvas through the public API.
 const renderOptions = { printDensity: 8, width, height };
+if (process.env.ZPL_FONT_DIR) {
+  const directory = process.env.ZPL_FONT_DIR;
+  const mapping = JSON.parse(fs.readFileSync(`${directory}/manifest.json`, 'utf8')).fonts;
+  renderOptions.fontProvider = {
+    async resolveFont(name, downloaded) {
+      // Explicit fixture downloads remain owned by the renderer.
+      if (downloaded) return undefined;
+      const key = name.replace(/^[A-Z]:/i, '').replace(/\.(TTF|FNT)$/i, '');
+      const file = mapping[key.startsWith('FC') ? key.slice(2) : key];
+      return file ? fs.readFileSync(`${directory}/${file}`) : undefined;
+    },
+  };
+}
 const sourceBytes = fs.readFileSync(file);
 const n = Number(count);
 if (!Number.isSafeInteger(n) || n < 1) throw new Error('iterations');

@@ -90,6 +90,22 @@ class PublicationTests(unittest.TestCase):
                 self.assertIn('symbol-' + variant + '.html', s.compatibility_context(
                     {**case, 'id': 'smoke-' + variant}))
 
+    def test_font_variant_is_visible_and_fixed_rows_are_labeled(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "input"
+            evidence = source / "docs/benchmarks/accuracy/results.json"
+            evidence.parent.mkdir(parents=True)
+            evidence.write_text(json.dumps({"results": [{"font_control": {"mode": "fixed"}}]}))
+            site = generate.Site(source, root / "controlled")
+            site.write("Test", "<p>Results</p>")
+            self.assertIn("Font-controlled comparison", (root / "controlled/index.html").read_text())
+            self.assertIn("fonts: fixed", site.result({"status": "rendered", "font_control": {"mode": "fixed"}}))
+            evidence.write_text(json.dumps({"results": [{"status": "rendered"}]}))
+            default = generate.Site(source, root / "default")
+            default.write("Test", "<p>Results</p>")
+            self.assertNotIn("Font-controlled comparison", (root / "default/index.html").read_text())
+
     def test_performance_charts_sort_within_workload_and_exclude_failures(self):
         rows = [dict(library="go", fixture="text", status="ok", median_ns=2000000, peak_rss_bytes=2097152),
                 dict(library="labelize", fixture="text", status="ok", median_ns=1000000, peak_rss_bytes=1048576),
@@ -223,6 +239,17 @@ class PublicationTests(unittest.TestCase):
                 generate.validate(root)
             (root / "case.html").write_text('<h1 id="go">Case</h1>')
             generate.validate(root)
+
+    def test_variant_methodology_link_is_validated_separately(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "fonts").mkdir()
+            (root / "fonts/methodology.html").write_text("<h1>Controlled methodology</h1>")
+            (root / "methodology.html").write_text('<a href="methodology.html">Methodology</a><a class="variant-switch" href="fonts/methodology.html">Controlled fonts</a>')
+            generate.validate(root)
+            (root / "fonts/methodology.html").unlink()
+            with self.assertRaisesRegex(ValueError, "Broken local link"):
+                generate.validate(root)
 
     def test_methodology_is_linked_at_most_once_per_page(self):
         with tempfile.TemporaryDirectory() as temp:

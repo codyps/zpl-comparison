@@ -23,6 +23,14 @@ The [October 2026 public-document campaign](../test-data/public-zpl/README.md) a
 CI reruns every local renderer, replays the saved Labelary responses, and regenerates
 the native comparisons and decoder evidence offline.
 
+## Font-controlled rendering
+
+[Font-controlled comparisons](fonts/README.md) supply recovered resident bitmap
+fonts and shared TrueType substitutes through supported public APIs. Libraries
+without font replacement retain their fixed fonts and are labeled accordingly.
+Build `//:reports_fonts` for the separate report tree; the original `//:reports`
+continues to use the existing defaults.
+
 ## Run
 
 Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥24 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.

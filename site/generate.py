@@ -177,6 +177,8 @@ class Site:
         self.suites = []
         self.raw = {}
         self.focus_cache = {}
+        evidence = self.source / "docs/benchmarks/accuracy/results.json"
+        self.font_controlled = evidence.exists() and any(row.get("font_control") for row in json.loads(evidence.read_text()).get("results", []))
 
     def read(self, path):
         return json.loads((self.source / path).read_text())
@@ -253,6 +255,8 @@ class Site:
         return f'<a href="{E(self.href(path))}"><img loading="lazy"{controls} src="{E(self.href(thumb or path))}" alt="{E(label)}"></a>'
 
     def write(self, title, body, section="Measured comparisons", meta=""):
+        if self.font_controlled:
+            body = '<p class="font-policy"><strong>Font-controlled comparison.</strong> Recovered Zebra bitmap fonts, Heros Condensed Bold (font 0), and Heros Regular (named Swiss) are supplied where supported. Fixed-font outputs remain included; font treatment is recorded per renderer. Rasterization and layout differences remain.</p>' + body
         category = self.page.startswith("categories/")
         library = self.page.startswith("libraries/")
         if "data-focus=" in body and "data-full-canvas" not in body + meta:
@@ -651,6 +655,7 @@ class Site:
             + " · "
             + row.get("comparison_status", row["status"])
             + (" · exact" if row.get("exact") and score is not None else "")
+            + (" · fonts: " + row["font_control"]["mode"] if row.get("font_control") else "")
         )
 
     def case_table(self, cases, library=None):
@@ -1398,7 +1403,31 @@ class Site:
                 "<li>" + self.link(path, key + " · JSON") + "</li>"
                 for key, path in self.raw.items()
             )
-            + "</ul>",
+            + "</ul>"
+            + self.font_policy(),
+        )
+
+    def font_policy(self):
+        if not self.font_controlled:
+            return ""
+        base = "benchmarks/fonts/bundle/"
+        manifest = self.read(base + "manifest.json")
+        rows = []
+        for name, filename in manifest["fonts"].items():
+            kind = "Heros Condensed Bold" if name == "0" else "Heros Regular" if name == "TT0003M_" else "Recovered bitmap outline"
+            rows.append([E(name), E(kind), self.link(self.asset(base + filename), "TrueType font")])
+        treatments = {}
+        for case in self.cases:
+            for row in case["rows"]:
+                policy = row.get("font_control")
+                if policy:
+                    treatments[row["library"]] = policy["note"]
+        return (
+            '<h2>Supplied fonts</h2><p>Font 0 uses a TeX Gyre Heros Condensed Bold substitute; named Swiss requests use Heros Regular. These are shape-based approximations, not exact Zebra outline fonts. Recovered bitmap glyphs retain their measured pixels and advances. ZPLr receives native bitmaps; outline-only APIs receive rectangular TrueType outlines. Downloaded-font sizing, baseline placement, antialiasing, missing characters, resets and barcode captions can still differ.</p>'
+            + '<p>' + self.link(self.asset(base + "manifest.json"), "Font manifest and source hashes")
+            + ' · ' + self.link(self.asset(base + "GUST-LICENSE.txt"), "Heros license") + '</p>'
+            + table(["ZPL font", "Source", "Download"], rows, "Shared supplied fonts")
+            + table(["Renderer", "Font treatment"], [[E(name), E(note)] for name, note in sorted(treatments.items())], "Font support and exceptions")
         )
 
     def generate(self):
@@ -1421,7 +1450,7 @@ class Links(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        if tag == "a" and attrs.get("href"):
+        if tag == "a" and attrs.get("href") and "variant-switch" not in attrs.get("class", "").split():
             self.anchors.append(attrs["href"])
         if "id" in attrs:
             if attrs["id"] in self.ids:
@@ -1468,5 +1497,21 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=Path("bazel-bin/reports"))
     parser.add_argument("--output", type=Path, default=Path("_site"))
+    parser.add_argument("--font-input", type=Path, help="Also publish the separate font-controlled report tree under fonts/")
     args = parser.parse_args()
     Site(args.input, args.output).generate()
+    if args.font_input:
+        Site(args.font_input, args.output / "fonts").generate()
+        # Both complete sites exist before adding cross-links and validating them.
+        for path in args.output.rglob("*.html"):
+            controlled = path.is_relative_to(args.output / "fonts")
+            variant_root = args.output / "fonts" if controlled else args.output
+            other_root = args.output if controlled else args.output / "fonts"
+            target = other_root / path.relative_to(variant_root)
+            if not target.exists():
+                target = other_root / "index.html"
+            label = "Default fonts" if controlled else "Controlled fonts"
+            href = os.path.relpath(target, path.parent)
+            text = path.read_text().replace('</nav></header>', f'<a class="variant-switch" href="{E(href)}">{label}</a></nav></header>')
+            path.write_text(text)
+        validate(args.output)

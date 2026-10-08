@@ -40,6 +40,8 @@ def write(spec, destination):
         (link(page, base + "/README.md", "Corpus comparisons") + " · " if base != "docs/benchmarks/accuracy/comparisons" else "")
         + link(page, "docs/benchmarks/accuracy/README.md", "All accuracy comparisons"),
     ]
+    if spec.get("font_controlled"):
+        text.append("**Font-controlled comparison.** Recovered bitmap outlines and shared TrueType substitutes are supplied where supported. Fixed-font engines and service captures remain included. Rasterization, downloaded-font scaling and barcode captions can still differ. See " + link(page, "benchmarks/fonts/README.md", "font policy and limitations") + ".")
     mode = spec["mode"]
     if mode == "case":
         case = cases[0]
@@ -94,6 +96,8 @@ def write(spec, destination):
                     "All cases for this library",
                 ),
             ]
+            if row.get("font_control"):
+                text.append("Fonts: **" + row["font_control"]["mode"] + "** — " + row["font_control"]["note"])
             if lib == "labelary":
                 text.append(
                     link(

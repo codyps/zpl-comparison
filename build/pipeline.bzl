@@ -8,6 +8,8 @@ load("//:build/campaigns.bzl", "campaigns")
 LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "labelary"]
 
 def _invoke(ctx, kind, name, spec, inputs, outputs):
+    if kind == "pages" and ctx.attr.font_bundle:
+        spec = dict(spec, font_controlled = True)
     if kind == "pages" and ctx.attr.saved:
         spec = dict(spec, saved = True)
     manifest = ctx.actions.declare_file(ctx.label.name + "_actions/" + name + ".json")
@@ -46,6 +48,12 @@ def _select(files, prefixes):
 def _observation(ctx, key, lib, spec, files, compiled, baseline, captures, row, raster):
     inputs = [files[spec.pop("source_name")]] if "source_name" in spec else [f for f in files.values() if f.path == spec["source"]]
     kind = "saved" if ctx.attr.saved else "render"
+    if ctx.attr.font_bundle:
+        if ctx.attr.saved:
+            fail("Font-controlled reports require fresh observations")
+        bundle = ctx.attr.font_bundle[DefaultInfo].files.to_list()[0]
+        spec["font_bundle"] = bundle.path
+        inputs.append(bundle)
     if lib == "labelary":
         capture = captures.get((spec["sha256"], spec["width"], spec["height"]))
         spec["saved"] = ""
@@ -75,6 +83,8 @@ def _impl(ctx):
     baseline = {"/".join(f.short_path.split("/")[3:]): f for f in ctx.files.baseline}
     captures = {(r["sha256"], r["width"], r["height"]): r for r in CATALOG["docs/benchmarks/labelary/captures.json"]["cases"]}
     publish = []
+    if ctx.attr.font_bundle:
+        publish.append((ctx.attr.font_bundle[DefaultInfo].files.to_list()[0], "benchmarks/fonts/bundle"))
     aggregates = []
     groups = {}
 
@@ -281,6 +291,7 @@ def _impl(ctx):
 pipeline = rule(implementation = _impl, attrs = dict({
     "srcs": attr.label_list(allow_files = True),
     "saved": attr.bool(default = False),
+    "font_bundle": attr.label(),
     "baseline": attr.label_list(allow_files = True),
     "libraries": attr.label_list(),
     "support_inputs": attr.label_list(allow_files = True),

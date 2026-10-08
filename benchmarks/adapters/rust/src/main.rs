@@ -81,7 +81,7 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
     }
     #[cfg(feature = "forge")]
     {
-        let engine = forge::ZplEngine::new(
+        let mut engine = forge::ZplEngine::new(
             black_box(std::str::from_utf8(input).unwrap()),
             forge::Unit::Dots(width),
             forge::Unit::Dots(height),
@@ -91,6 +91,21 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
         if mode == "parse" {
             black_box(engine);
             return vec![1];
+        }
+        if let Ok(directory) = env::var("ZPL_FONT_DIR") {
+            if !directory.is_empty() {
+                let mut fonts = forge::FontManager::default();
+                for id in "0ABCDEFGHPQRSTUV".chars() {
+                    let file = if id == 'C' { 'D' } else { id };
+                    let bytes =
+                        fs::read(std::path::Path::new(&directory).join(format!("{file}.ttf")))
+                            .expect("supplied font");
+                    fonts
+                        .register_font(&format!("Comparison-{id}"), &bytes, id, id)
+                        .expect("font registration");
+                }
+                engine.set_fonts(std::sync::Arc::new(fonts));
+            }
         }
         return engine.to_png().expect("PNG");
     }

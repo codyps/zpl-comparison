@@ -1,3 +1,4 @@
+load("//:build/fonts.bzl", "comparison_fonts")
 load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
 load("@report_deps//:requirements.bzl", "requirement")
 load("@rules_python//python:defs.bzl", "py_binary", "py_test")
@@ -28,6 +29,7 @@ filegroup(
             "benchmarks/*.md",
             "benchmarks/templates/**",
             "benchmarks/adapters/**",
+            "benchmarks/fonts/**",
             "benchmarks/accuracy/*.py",
             "benchmarks/accuracy/*.md",
             "benchmarks/accuracy/*reference/**",
@@ -178,7 +180,7 @@ pipeline(
 ) for name, extra in [
     (
         "render",
-        ["benchmarks/accuracy/pixels.py"],
+        ["benchmarks/accuracy/pixels.py", "build/font_profile.py"],
     ),
     (
         "compare",
@@ -354,4 +356,42 @@ py_test(
     srcs = ["build/support_test.py"],
     main = "build/support_test.py",
     data = [":support_results", "benchmarks/sources.lock.json"],
+)
+
+pipeline(
+    name = "reports_fonts",
+    font_bundle = ":comparison_fonts",
+    support_inputs = ["@rust_inputs//:support", "@go_inputs//:support", "@node_inputs//:support", "@dotnet_inputs//:support", "@support_sources//:files"],
+    srcs = [":report_sources"],
+    libraries = [":library_" + lib for lib in [
+        "codyps-zpl",
+        "labelize",
+        "forge",
+        "go",
+        "ffi",
+        "binarykits",
+        "zplr",
+        "zebrash",
+        "zpl-renderer-js",
+        "zebrash-ts",
+    ]],
+)
+
+py_binary(
+    name = "font_builder",
+    srcs = ["benchmarks/fonts/build.py"],
+    main = "benchmarks/fonts/build.py",
+    data = glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]) + ["benchmarks/fonts/sources.json"],
+    deps = [requirement("fonttools")],
+)
+
+comparison_fonts(name = "comparison_fonts")
+
+py_test(
+    name = "font_profile_test",
+    size = "medium",
+    srcs = ["build/font_profile_test.py", "build/font_profile.py", "build/render.py", "benchmarks/fonts/build.py", "benchmarks/accuracy/pixels.py"],
+    main = "build/font_profile_test.py",
+    data = [":comparison_fonts", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
+    deps = [requirement("numpy"), requirement("pillow"), requirement("fonttools")],
 )

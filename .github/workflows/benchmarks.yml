@@ -19,7 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - name: Set initial Git branch
         run: git config --global init.defaultBranch main
@@ -80,13 +80,13 @@ jobs:
       - name: Test native adapter contracts
         if: github.event.pull_request.head.repo.fork != true
         run: |
-          bazel test //:canvas_profile_test //:adapter_contract_test //:support_test \
+          bazel test //:canvas_profile_test //:adapter_contract_test //:support_test //:font_profile_test \
             --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" --jobs=2 --test_output=errors
       - name: Build local renders and reports
         if: github.event.pull_request.head.repo.fork != true
-        timeout-minutes: 30
+        timeout-minutes: 45
         run: |
-          bazel build //:reports \
+          bazel build //:reports //:reports_fonts \
             --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" --jobs=4 \
             --profile="$RUNNER_TEMP/reports.profile.gz" \
             --build_event_json_file="$RUNNER_TEMP/reports.events.json"
@@ -159,7 +159,7 @@ jobs:
               cp "$RUNNER_TEMP/popularity.json" "$RUNNER_TEMP/measured-reports/benchmarks/popularity.json"
               python3 benchmarks/catalog.py --popularity "$RUNNER_TEMP/popularity.json" --output "$RUNNER_TEMP/measured-reports/docs/benchmarks/capabilities.md"
             fi
-            bazel run //:comparison_site -- --input "$RUNNER_TEMP/measured-reports" --output "$GITHUB_WORKSPACE/_site"
+            bazel run //:comparison_site -- --input "$RUNNER_TEMP/measured-reports" --font-input "$GITHUB_WORKSPACE/bazel-bin/reports_fonts" --output "$GITHUB_WORKSPACE/_site"
           fi
       - name: Export durable observations
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
