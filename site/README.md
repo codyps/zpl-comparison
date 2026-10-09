@@ -61,6 +61,9 @@ using source-image content, crop geometry, the crop algorithm version and Pillow
 version. CI restores and updates this preview cache each run; local builds can
 opt in with `--preview-cache /path/to/cache` after the `bazel run` argument separator.
 Pages are regenerated and the complete combined site is validated every time.
+Report builds allow 32 concurrent actions so remote-cache requests can overlap;
+Bazel's separate local CPU limit and persistent-worker limits bound execution on
+the runner. Native compilation retains its smaller two-job limit.
 After changing cache configuration, compare identical revisions across two CI
 runs: the second should report disk/remote cache hits for unchanged render and
 comparison actions. BuildBuddy invocation pages and the `build-performance`
