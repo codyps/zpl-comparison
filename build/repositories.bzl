@@ -11,7 +11,7 @@ def _tools_impl(ctx):
     os = "darwin" if ctx.os.name == "mac os x" else "linux"
     pins = json.decode(ctx.read(ctx.attr.lock))[os + "-" + arch]
     for name, pin in pins.items():
-        archive = name + ".tar.gz" if name in ["go", "node", "dotnet", "wasm-bindgen"] else name + ".tar.xz"
+        archive = name + ".zip" if name == "icu" else name + ".tar.gz" if name in ["go", "node", "dotnet", "wasm-bindgen"] else name + ".tar.xz"
         if "sha512" in pin:
             # Bazel accepts SRI SHA-512 as well as SHA-256.
             result = ctx.execute(["python3", "-c", "import base64,sys;print('sha512-'+base64.b64encode(bytes.fromhex(sys.argv[1])).decode())", pin["sha512"]])
@@ -30,13 +30,22 @@ def _tools_impl(ctx):
             _run(ctx, ["sh", "-c", "mv go/go/* go/ && rmdir go/go"])
         elif name == "node":
             _run(ctx, ["sh", "-c", "mv node/node-*/* node/ && rmdir node/node-*"])
+    if "icu" in pins:
+        ctx.read(ctx.attr.dotnet_runtime)  # The subprocess reads this toolchain input.
+        _run(ctx, ["python3", str(ctx.path(ctx.attr.dotnet_runtime)),
+                   str(ctx.path("dotnet")), str(ctx.path("icu")),
+                   pins["icu"]["rid"], pins["icu"]["version"]])
+        ctx.delete("icu")
     host = _run(ctx, ["sh", "-c", "uname -sm; cc --version; ld -v 2>&1 || true"])
     ctx.file("host.txt", host)
     ctx.file("BUILD.bazel", '\n'.join([
         'package(default_visibility = ["//visibility:public"])',
     ] + ['filegroup(name="%s", srcs=glob(["%s/**"]) + ["host.txt"])' % (n, n) for n in ["rust", "go", "node", "dotnet", "wasm-bindgen"]]))
 
-native_tools = repository_rule(implementation = _tools_impl, attrs = {"lock": attr.label(mandatory = True)})
+native_tools = repository_rule(implementation = _tools_impl, attrs = {
+    "lock": attr.label(mandatory = True),
+    "dotnet_runtime": attr.label(default = "//:build/dotnet_runtime.py"),
+})
 
 def _inputs_impl(ctx):
     files = {}

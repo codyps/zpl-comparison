@@ -22,8 +22,21 @@ async function run(args) {
     const profile = {'zd621-203dpi': 'zd621', 'zd621-preview-203dpi': 'zd621',
       'zq610-plus-203dpi': 'zq610-plus'}[profileName];
     if (!profile) throw new Error(`unknown ZPL_RENDER_PROFILE: ${profileName}`);
+    const options = {format: 'png', width, height, dpi: 203, profile};
+    if (process.env.ZPL_FONT_DIR) {
+      const directory = process.env.ZPL_FONT_DIR;
+      const font0 = fs.readFileSync(`${directory}/0.ttf`);
+      const swiss = fs.readFileSync(`${directory}/Swiss.ttf`);
+      options.resolveFont = name => {
+        if (name === 'R:FC0.TTF') return font0;
+        if (/^[REBA]:TT0003M_\.TTF$/.test(name)) return swiss;
+        return api.resolveRomFont(name);
+      };
+      // Only controlled runs need room for the verified bitmap preamble.
+      options.limits = {inputBytes: Math.max(1024 * 1024, input.length)};
+    }
     render = () => {
-      const result = api.render(input, {format: 'png', width, height, dpi: 203, profile});
+      const result = api.render(input, options);
       if (result.labels !== 1) throw new Error(`expected one label, got ${result.labels}`);
       return result.data;
     };
@@ -66,7 +79,7 @@ async function run(args) {
     let verdict = 'accepted';
     try {
       if (mode === 'probe-parse') {
-        if (!parse) throw new Error('no public parser API');
+        if (!parse) throw new Error('adapter does not expose parsing');
         parse();
       } else {
         result = await render();
@@ -82,7 +95,7 @@ async function run(args) {
   }
   async function operation() {
     if (mode === 'parse') {
-      if (!parse) throw new Error('no public parser API');
+      if (!parse) throw new Error('adapter does not expose parsing');
       return parse();
     }
     const result = await render();

@@ -43,7 +43,7 @@ class FontProfileTest(unittest.TestCase):
     def test_supplied_outline_text_has_visible_ink(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            for library in ('zplr', 'codyps-zpl'):
+            for library in ('zplr', 'codyps-zpl', 'codyps-zpl-node'):
                 for height in (16, 32, 64):
                     for font in ('^A0N', '^A@N'):
                         source = root / 'input.zpl'
@@ -56,6 +56,27 @@ class FontProfileTest(unittest.TestCase):
                         row = json.loads((root / (key + '.json')).read_text())
                         self.assertEqual(row['status'], 'rendered', row)
                         self.assertGreater(row['ink'], height * 3, row)
+
+    def test_node_controlled_input_budget_and_rom_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            # An unrelated named resident face must survive the custom resolver.
+            body = b'^XA^FO10,10^A@N,36,20,Z:D.FNT^FDHello 123^FS^XZ'
+            pixels = []
+            for controlled in (False, True):
+                source = root / 'input.zpl'
+                source.write_bytes((b' ' * (1024 * 1024) if controlled else b'') + body)
+                key = str(controlled)
+                spec = dict(source=str(source), sha256=sha(source), width=320, height=100,
+                            library='library_codyps-zpl-node', row=dict(library='codyps-zpl-node'))
+                if controlled:
+                    spec['font_bundle'] = 'comparison_fonts'
+                render(spec, root / (key + '.json'), root / key)
+                row = json.loads((root / (key + '.json')).read_text())
+                self.assertEqual(row['status'], 'rendered', row)
+                self.assertGreater(row['ink'], 0, row)
+                pixels.append(row['pixel_sha256'])
+            self.assertEqual(*pixels)
 
     def test_recovered_outlines_preserve_pixels_and_advances(self):
         bundle = Path('comparison_fonts')
@@ -115,7 +136,7 @@ class FontProfileTest(unittest.TestCase):
                 self.assertEqual(path.read_bytes(), (Path(tmp)/path.name).read_bytes(), path.name)
 
     def test_fixed_policy_does_not_change_source(self):
-        for library in ('labelary', 'labelize', 'go', 'ffi', 'codyps-zpl-node'):
+        for library in ('labelary', 'labelize', 'go', 'ffi'):
             metadata, preamble = configure('comparison_fonts', library)
             self.assertEqual(metadata['mode'], 'fixed')
             self.assertEqual(preamble, b'')
@@ -127,33 +148,36 @@ class FontProfileTest(unittest.TestCase):
             shutil.copytree('comparison_fonts', bundle, copy_function=shutil.copyfile)
             source = root / 'input.zpl'
             source.write_text('^XA^PW320^LL100^FO10,10^ADN,36,20^FDHello 123^FS^XZ')
-            rows = []
-            for substitute in (False, True):
-                if substitute:
-                    download = bundle / 'bitmap-download.zpl'
-                    original = download.read_text()
-                    changed = original.replace('^CWD,R:FCD.FNT', '^CWD,R:FCA.FNT')
-                    self.assertNotEqual(original, changed)
-                    download.write_text(changed)
-                    manifest_path = bundle / 'manifest.json'
-                    manifest = json.loads(manifest_path.read_text())
-                    manifest['sha256'][download.name] = sha(download)
-                    manifest_path.write_text(json.dumps(manifest))
-                key = str(substitute)
-                render(dict(source=str(source), sha256=sha(source), width=320, height=100,
-                            library='library_codyps-zpl', row=dict(library='codyps-zpl'),
-                            font_bundle=str(bundle)), root / (key + '.json'), root / key)
-                row = json.loads((root / (key + '.json')).read_text())
-                self.assertEqual(row['status'], 'rendered', row)
-                self.assertEqual(row['font_control']['mode'], 'supplied-bitmap-and-callback')
-                self.assertNotEqual(row['source_sha256'], row['submitted_source_sha256'])
-                rows.append(row)
-            self.assertNotEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
+            for library in ('codyps-zpl', 'codyps-zpl-node'):
+                shutil.copyfile(Path('comparison_fonts') / 'bitmap-download.zpl', bundle / 'bitmap-download.zpl')
+                shutil.copyfile(Path('comparison_fonts') / 'manifest.json', bundle / 'manifest.json')
+                original = (bundle / 'bitmap-download.zpl').read_text()
+                rows = []
+                for substitute in (False, True):
+                    if substitute:
+                        download = bundle / 'bitmap-download.zpl'
+                        changed = original.replace('^CWD,R:FCD.FNT', '^CWD,R:FCA.FNT')
+                        self.assertNotEqual(original, changed)
+                        download.write_text(changed)
+                        manifest_path = bundle / 'manifest.json'
+                        manifest = json.loads(manifest_path.read_text())
+                        manifest['sha256'][download.name] = sha(download)
+                        manifest_path.write_text(json.dumps(manifest))
+                    key = library + str(substitute)
+                    render(dict(source=str(source), sha256=sha(source), width=320, height=100,
+                                library='library_' + library, row=dict(library=library),
+                                font_bundle=str(bundle)), root / (key + '.json'), root / key)
+                    row = json.loads((root / (key + '.json')).read_text())
+                    self.assertEqual(row['status'], 'rendered', row)
+                    self.assertEqual(row['font_control']['mode'], 'supplied-bitmap-and-callback')
+                    self.assertNotEqual(row['source_sha256'], row['submitted_source_sha256'])
+                    rows.append(row)
+                self.assertNotEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
 
     def test_real_adapters_consume_fonts_without_changing_graphics(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            for library in ('codyps-zpl', 'forge', 'binarykits', 'zplr', 'zebrash', 'zebrash-ts', 'zpl-renderer-js'):
+            for library in ('codyps-zpl', 'codyps-zpl-node', 'forge', 'binarykits', 'zplr', 'zebrash', 'zebrash-ts', 'zpl-renderer-js'):
                 for name, body in [('bitmap', '^FO10,10^ADN,36,20^FDHello 123^FS'),
                                    ('scalable', '^FO10,10^A0N,32,24^FDHello 123^FS'),
                                    ('graphics', '^FO10,10^GB80,40,3^FS')]:
@@ -175,7 +199,7 @@ class FontProfileTest(unittest.TestCase):
                             rows.append(row)
                         if name == 'graphics':
                             self.assertEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
-                        elif (library, name) != ('codyps-zpl', 'bitmap'):
+                        elif name != 'bitmap' or library not in ('codyps-zpl', 'codyps-zpl-node'):
                             self.assertNotEqual(rows[0]['pixel_sha256'], rows[1]['pixel_sha256'])
                         # codyps/zpl's supplied D strike shares resident glyphs,
                         # but downloaded-font placement can differ by revision.

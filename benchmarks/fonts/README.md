@@ -70,6 +70,7 @@ previews are captured again whenever the shared font bytes change.
 | ZPLr | Native `~DB` and `^CW` for recovered bitmap IDs; `FontProvider` and `^CW` for font 0. Named Swiss uses the same provider. GS and internally generated captions can retain built-ins. |
 | Zebrash, zpl-renderer-js, zebrash-ts | Public ZPL `~DU` TrueType downloads and `^CW` aliases. No patching of library internals. GS and internally generated barcode captions can retain built-ins. |
 | codyps/zpl | Public `render_with_fonts` / `Fonts` API for Heros font 0 and named Swiss; native `~DB` / `^CW` for recovered bitmap IDs. GS retains its resident face; supplied TrueType uses native hinting and dots-per-em sizing. |
+| codyps/zpl (Node / WASM) | Public `resolveFont` for Heros font 0 (via `^CW`) and named Swiss; native `~DB` / `^CW` for recovered bitmap IDs. Other named fonts fall back to `resolveRomFont`. Controlled runs raise `limits.inputBytes` to fit the preamble. |
 | labelize | Fixed embedded faces; no renderer font-loader API. |
 | go-zpl, Rust FFI wrapper | Fixed internal font manager, with no public replacement API. |
 | Labelary | Original captured response with service fonts; explicitly fixed, not a new font-supplied capture. |

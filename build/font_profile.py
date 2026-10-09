@@ -8,7 +8,6 @@ from pathlib import Path
 CALLBACK = {'binarykits', 'forge', 'zplr'}
 DOWNLOAD = {'zebrash', 'zebrash-ts', 'zpl-renderer-js'}
 FIXED = {
-    'codyps-zpl-node': 'The shared font-download bundle exceeds the Node/Wasm 1 MiB input limit; no public custom font provider or limit override. Resident Wasm fonts retained.',
     'labelize': 'Fixed embedded faces; Renderer exposes no font loader.',
     'go': 'Fixed internal font manager; no public replacement API.',
     'ffi': 'Fixed go-zpl font manager behind the FFI API.',
@@ -39,6 +38,8 @@ def _configure(root, library, manifest_bytes, signatures):
             raise ValueError('Font bundle hash mismatch: ' + name)
     if library == 'codyps-zpl':
         mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; Heros font 0 and named Swiss via Fonts/render_with_fonts with native hinting and dots-per-em sizing. GS retains its resident face; captions follow library font selection.'
+    elif library == 'codyps-zpl-node':
+        mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; Heros font 0 via ^CW and named Swiss via the public resolveFont callback. Other named fonts retain ROM lookup; controlled input budget includes the bitmap preamble.'
     elif library == 'zplr':
         mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; shared TrueType font 0 via the public font API and ^CW. GS and built-in captions may retain fixed fonts.'
     elif library == 'forge':
@@ -54,8 +55,10 @@ def _configure(root, library, manifest_bytes, signatures):
     metadata = dict(profile='controlled-v1', mode=mode, note=note,
                     bundle_sha256=hashlib.sha256(manifest_bytes).hexdigest(), fonts=manifest['fonts'])
     preamble = bytearray()
-    if library in {'zplr', 'codyps-zpl'}:
+    if library in {'zplr', 'codyps-zpl', 'codyps-zpl-node'}:
         preamble.extend((root / 'bitmap-download.zpl').read_bytes())
+    if library == 'codyps-zpl-node':
+        preamble.extend(b'^CW0,R:FC0.TTF')
     if library in DOWNLOAD:
         for fid, filename in sorted(manifest['fonts'].items()):
             if fid == 'GS':

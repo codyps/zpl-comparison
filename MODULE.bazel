@@ -114,6 +114,7 @@ catalog(
         "//:benchmarks/accuracy/pixels.py",
         "//:build/requirements.lock.txt",
         "//:build/native.bzl",
+        "//:build/dotnet_runtime.py",
         "//:build/probe.py",
         "//:benchmarks/invalid.py",
         "//:benchmarks/sources.lock.json",

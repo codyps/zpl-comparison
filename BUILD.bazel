@@ -330,6 +330,14 @@ py_test(
 )
 
 py_test(
+    name = "dotnet_runtime_test",
+    size = "small",
+    srcs = ["build/dotnet_runtime_test.py"],
+    main = "build/dotnet_runtime_test.py",
+    data = [":library_binarykits"],
+)
+
+py_test(
     name = "node_adapter_test",
     size = "small",
     srcs = ["build/node_adapter_test.py"],
@@ -426,7 +434,7 @@ py_test(
     size = "medium",
     srcs = ["build/font_profile_test.py", "build/font_profile.py", "build/render.py", "build/renderer_session.py", "benchmarks/fonts/build.py", "benchmarks/accuracy/pixels.py"],
     main = "build/font_profile_test.py",
-    data = [":comparison_fonts", ":library_codyps-zpl", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
+    data = [":comparison_fonts", ":library_codyps-zpl", ":library_codyps-zpl-node", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
     deps = [requirement("numpy"), requirement("pillow"), requirement("fonttools")],
 )
 

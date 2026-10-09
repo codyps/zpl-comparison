@@ -44,9 +44,10 @@ dependencies, compiles Wasm offline, and deploys the Node package with its runti
 The Rust Wasm target and wasm-bindgen 0.2.128 are pinned in the toolchain lock.
 For `prepare.py --only codyps-zpl-node`, install that target and CLI locally first.
 The adapter participates in rendering, invalid-render input, accuracy and performance
-comparisons. Its public API has no standalone parser or custom font provider.
-The shared font-download bundle exceeds its 1 MiB input limit, so font-controlled
-comparisons label this adapter as using fixed resident fonts.
+comparisons. The adapter measures rendering only. Font-controlled comparisons use the public
+`resolveFont` callback for Heros font 0 and named Swiss, plus native bitmap
+downloads. Only controlled runs increase `limits.inputBytes` to fit the supplied
+preamble; ordinary runs retain the default 1 MiB input limit.
 
 ## Run
 
@@ -162,6 +163,21 @@ To generate reports in Bazel's output tree without modifying the checkout:
 ```sh
 bazelisk build //:reports
 ```
+
+On Linux, a .NET SDK crash in `System.Diagnostics.Process.GetStat()` /
+`get_StartTime()` can indicate that an outer execution sandbox exposes host
+`/proc` entries while assigning namespace-local PIDs. Check that
+`os.getpid()` matches `os.readlink('/proc/self')` in Python. If they differ, run
+Bazel from a host shell or an execution environment with a matching `/proc`
+mount; Bazel's own action sandbox can remain enabled. This is an execution
+problem, not a BinaryKits package or font error.
+
+The Linux .NET toolchain includes checksum-pinned ICU 72.1.0.3 binaries for
+x64 and arm64. SDK tools and the deployed BinaryKits renderer select that
+app-local ICU version, without host ICU discovery or `LD_LIBRARY_PATH` overrides.
+The ICU files and license travel with the deployed runtime and participate in
+Bazel inputs and deployment identity hashes. macOS uses the SDK's platform ICU
+support; the Linux packages are not installed on macOS.
 
 Open `bazel-bin/reports/README.md` or
 `bazel-bin/reports/docs/benchmarks/README.md`. The output includes collected

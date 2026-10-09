@@ -31,6 +31,12 @@
     "rust-wasm-std": {
       "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-wasm32-unknown-unknown.tar.xz",
       "sha256": "cf1fcf68880d8b2b90128cede7416cfb82ad3584357ce9fb668f2b6244c26e55"
+    },
+    "icu": {
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.icu.icu4c.runtime.linux-x64/72.1.0.3/microsoft.icu.icu4c.runtime.linux-x64.72.1.0.3.nupkg",
+      "sha256": "4afb3b4c2e79909ad7b531135f4b742b199c671ea9396ee4240f77f898ea5207",
+      "version": "72.1.0.3",
+      "rid": "linux-x64"
     }
   },
   "darwin-amd64": {
@@ -133,6 +139,12 @@
     "rust-wasm-std": {
       "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-wasm32-unknown-unknown.tar.xz",
       "sha256": "cf1fcf68880d8b2b90128cede7416cfb82ad3584357ce9fb668f2b6244c26e55"
+    },
+    "icu": {
+      "url": "https://api.nuget.org/v3-flatcontainer/microsoft.icu.icu4c.runtime.linux-arm64/72.1.0.3/microsoft.icu.icu4c.runtime.linux-arm64.72.1.0.3.nupkg",
+      "sha256": "1f090fc45429292ae21f9199d5b956ad3570c38a7778ea4085258641727eefaf",
+      "version": "72.1.0.3",
+      "rid": "linux-arm64"
     }
   }
 }

@@ -58,7 +58,7 @@ class NodeAdapterTest(unittest.TestCase):
         self.assertIn('1 MiB', result.stderr)
         self.assertFalse(self.output.exists())
 
-    def test_public_profiles_and_no_parser(self):
+    def test_public_profiles_and_render_only_adapter(self):
         source = b'^XA^FO10,10^GB20,20,2^FS^XZ'
         for profile in ['zd621-203dpi', 'zd621-preview-203dpi', 'zq610-plus-203dpi']:
             self.invoke('accuracy', source, profile)
@@ -66,7 +66,7 @@ class NodeAdapterTest(unittest.TestCase):
                 self.assertEqual(image.size, (192, 120))
         result = self.invoke('probe-parse', source)
         self.assertEqual(result.stdout.strip(), 'rejected')
-        self.assertIn('no public parser API', result.stderr)
+        self.assertIn('adapter does not expose parsing', result.stderr)
 
 
 if __name__ == '__main__':

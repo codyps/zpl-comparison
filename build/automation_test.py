@@ -50,6 +50,7 @@ class AutomationTest(unittest.TestCase):
             "benchmarks/accuracy/pixels.py": "normalize",
             "build/requirements.lock.txt": "dependencies",
             "build/native.bzl": "deployment",
+            "build/dotnet_runtime.py": "icu-packaging",
             "build/probe.py": "probe",
             "build/compare.py": "comparison",
         }.items()):
@@ -69,6 +70,7 @@ class AutomationTest(unittest.TestCase):
             ("benchmarks/accuracy/pixels.py", set(SOURCE)),
             ("build/requirements.lock.txt", set(SOURCE)),
             ("build/native.bzl", set(SOURCE)),
+            ("build/dotnet_runtime.py", {"binarykits"}),
             ("build/compare.py", set()),
             ("build/probe.py", set()),
         ]:

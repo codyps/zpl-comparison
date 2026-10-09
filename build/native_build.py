@@ -186,6 +186,9 @@ def build(spec, output):
             shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", driver / "renderers.mjs")
             shutil.copytree(tools / "node", output / "runtime", symlinks=True)
         elif name == "binarykits":
+            icu_version = tools / "dotnet/icu-version.txt"
+            icu_options = (["-p:ComparisonIcuVersion=" + icu_version.read_text().strip()]
+                           if icu_version.exists() else [])
             project = root / "benchmarks/adapters/dotnet/Comparison.csproj"
             run(
                 tools / "dotnet/dotnet",
@@ -204,6 +207,7 @@ def build(spec, output):
                 "Release",
                 "-o",
                 output,
+                *icu_options,
             )
             shutil.copytree(tools / "dotnet/host", output / "runtime/host")
             shutil.copytree(tools / "dotnet/shared", output / "runtime/shared")
