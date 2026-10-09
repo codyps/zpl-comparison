@@ -420,6 +420,24 @@ class PublicationTests(unittest.TestCase):
             Image.new("RGB", (832, 1218), "white").save(path)
             self.assertEqual(generate.shared_bounds([path]), (0, 0, 64, 64))
 
+    def test_ink_bounds_preserves_opaque_and_transparent_pixels(self):
+        with tempfile.TemporaryDirectory() as temp:
+            for mode in ("1", "L", "RGB", "RGBA", "P"):
+                for transparent in (False, True):
+                    image = Image.new("RGBA", (32, 24), "white")
+                    image.putpixel((10, 12), (0, 0, 0, 128 if transparent else 255))
+                    image = image.convert(mode)
+                    path = Path(temp) / f"{mode}-{transparent}.png"
+                    options = {"transparency": (0, 0, 0) if mode == "RGB" else 0} if transparent and mode != "RGBA" else {}
+                    image.save(path, **options)
+                    with Image.open(path) as raw:
+                        rgba = raw.convert("RGBA")
+                        canvas = Image.new("RGBA", rgba.size, "white")
+                        canvas.alpha_composite(rgba)
+                        rgb = canvas.convert("RGB")
+                        expected = generate.ImageChops.difference(rgb, Image.new("RGB", rgb.size, "white")).getbbox()
+                    self.assertEqual(generate.ink_bounds(path), expected, (mode, transparent))
+
     def test_preview_cache_reuses_pixels_across_output_roots(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

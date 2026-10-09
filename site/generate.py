@@ -83,10 +83,13 @@ def markdown_tables(text):
 @lru_cache(maxsize=16384)
 def ink_bounds(path):
     with Image.open(path) as raw:
-        rgba = raw.convert("RGBA")
-        image = Image.new("RGBA", rgba.size, "white")
-        image.alpha_composite(rgba)
-        rgb = image.convert("RGB")
+        if raw.mode in {"1", "L", "RGB", "P"} and "transparency" not in raw.info:
+            rgb = raw if raw.mode == "RGB" else raw.convert("RGB")
+        else:
+            rgba = raw.convert("RGBA")
+            image = Image.new("RGBA", rgba.size, "white")
+            image.alpha_composite(rgba)
+            rgb = image.convert("RGB")
         return ImageChops.difference(rgb, Image.new("RGB", rgb.size, "white")).getbbox()
 
 
