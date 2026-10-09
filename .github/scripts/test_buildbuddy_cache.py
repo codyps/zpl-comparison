@@ -49,7 +49,7 @@ class BuildBuddyCacheTest(unittest.TestCase):
         self.assertFalse(directory.is_relative_to(disk))
         self.assertEqual(stat.S_IMODE(directory.stat().st_mode), 0o700)
         self.assertEqual(stat.S_IMODE((directory / "api-key").stat().st_mode), 0o600)
-        self.assertIn("--remote_download_outputs=all", self.rc.read_text())
+        self.assertIn("--remote_download_outputs=toplevel", self.rc.read_text())
         for uri, allowed in [
             ("grpcs://remote.buildbuddy.io", True),
             ("https://remote.buildbuddy.io:443/path", True),

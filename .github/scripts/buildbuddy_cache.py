@@ -34,8 +34,10 @@ def configure(home, temporary, api_key):
             f"build --remote_cache=grpcs://{HOST}",
             "build --remote_upload_local_results=true",
             "build --remote_cache_compression=true",
-            # Later shell steps consume these files outside Bazel's graph.
-            "build --remote_download_outputs=all",
+            # CI explicitly builds the libraries and report trees consumed by
+            # later shell steps. Leave cached intermediates remote unless a
+            # local action needs them.
+            "build --remote_download_outputs=toplevel",
             "build --remote_timeout=30",
             "build --remote_retries=2",
             f"build --bes_backend=grpcs://{HOST}",
