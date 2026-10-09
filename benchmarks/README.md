@@ -185,7 +185,12 @@ collisions. Existing nested gallery URLs remain available. Assembly validates
 that every comparison has a linked case page, renderer section, and all expected
 render/difference images before CI can publish the tree.
 Image actions use Bazel Python workers to reuse interpreter startup while retaining
-separate cache keys. An
+separate cache keys. Report renders also reuse Node and .NET adapter processes,
+with fresh per-request parser/printer/font configuration. Each Python worker keeps
+at most five adapters and retires each after 128 requests to bound runtime heap
+growth. Errors discard the process and use the one-shot adapter for the original
+diagnostic; timeouts kill the process group within the same request time budget.
+Performance measurements and invalid-input probes continue to use fresh processes. An
 unchanged build executes none of these actions. A printer-reference change does
 not recompile a library or rerender local images. A library change rerenders its
 own cases; unrelated libraries remain cached. Shared viewport changes can refresh

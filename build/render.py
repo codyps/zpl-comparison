@@ -68,23 +68,15 @@ def render(spec, metadata, images):
                 "LD_LIBRARY_PATH": os.pathsep.join(filter(None, [str(library), os.environ.get("LD_LIBRARY_PATH", "")])),
             }
             try:
-                proc = subprocess.run(
-                    command
-                    + [
-                        "accuracy",
-                        str(render_source),
-                        "1",
-                        str(image),
-                        str(spec["width"]),
-                        str(spec["height"]),
-                    ],
-                    cwd=temporary,
-                    env=env,
-                    capture_output=True,
-                    stdin=subprocess.DEVNULL,
-                    check=False,
-                    timeout=spec.get("timeout", 45),
-                )
+                arguments = ["accuracy", str(render_source), "1", str(image),
+                             str(spec["width"]), str(spec["height"])]
+                options = dict(cwd=temporary, env=env, timeout=spec.get("timeout", 45))
+                if (library / "session.json").exists():
+                    from build.renderer_session import run
+                    proc = run(command, arguments, identity=row.get("adapter_identity_sha256", ""), **options)
+                else:
+                    proc = subprocess.run(command + arguments, capture_output=True,
+                                          stdin=subprocess.DEVNULL, check=False, **options)
                 row.update(
                     returncode=proc.returncode,
                     diagnostic=proc.stderr.decode(errors="replace")[-1800:],

@@ -20,12 +20,12 @@ def identities(files, probe=False, python_version=""):
         if library in {"zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
             prefixes = ["benchmarks/adapters/" + library + "/"]
             if library != "zebrash":
-                prefixes.append("benchmarks/adapters/node/renderers.mjs")
+                prefixes.extend(["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"])
         if library == "ffi":
             prefixes.append("benchmarks/adapters/go/")
         selected = {name: hashlib.sha256(Path(path).read_bytes()).hexdigest()
                     for name, path in sorted(files.items())
-                    if name in {"build/render.py", "build/native_build.py", "build/bootstrap.py", "build/toolchains.lock.json",
+                    if name in {"build/render.py", "build/renderer_session.py", "build/native_build.py", "build/bootstrap.py", "build/toolchains.lock.json",
                                 "build/native.bzl", "build/requirements.lock.txt", "benchmarks/accuracy/pixels.py"}
                     or (probe and name in {"build/probe.py", "benchmarks/invalid.py"})
                     or any(name.startswith(prefix) for prefix in prefixes)}

@@ -210,6 +210,11 @@ def build(spec, output):
             shutil.copy2(tools / "dotnet/dotnet", output / "runtime/dotnet")
         else:
             raise ValueError(name)
+        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
+            driver = output if name == "zplr" else output / "node"
+            shutil.copy2(root / "benchmarks/adapters/node/session.mjs", driver / "session.mjs")
+        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits"}:
+            (output / "session.json").write_text('{"protocol": 1}\n')
         size = source_size(root, name, Path(spec["native"]).resolve() if spec.get("native") else None)
         deployed = [p for p in output.rglob("*") if p.is_file() and "runtime" not in p.relative_to(output).parts]
         size["artifact_bytes"] = sum(p.stat().st_size for p in deployed)

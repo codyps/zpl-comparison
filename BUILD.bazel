@@ -110,7 +110,7 @@ py_binary(
 
 native_library(
     name = "library_zplr",
-    srcs = ["benchmarks/adapters/node/main.mjs"],
+    srcs = ["benchmarks/adapters/node/main.mjs", "benchmarks/adapters/node/session.mjs"],
     library = "zplr",
     toolchain = ["@native_tools//:node"],
     deps = ["@node_inputs//:files"],
@@ -126,7 +126,7 @@ native_library(
 
 [native_library(
     name = "library_" + lib,
-    srcs = ["benchmarks/adapters/node/renderers.mjs"] + (["benchmarks/adapters/zebrash-ts/api.mjs"] if lib == "zebrash-ts" else []),
+    srcs = ["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"] + (["benchmarks/adapters/zebrash-ts/api.mjs"] if lib == "zebrash-ts" else []),
     library = lib,
     toolchain = ["@native_tools//:node"],
     deps = ["@" + lib.replace("-", "_") + "_inputs//:files"],
@@ -134,7 +134,7 @@ native_library(
 
 native_library(
     name = "library_codyps-zpl-node",
-    srcs = ["benchmarks/adapters/node/renderers.mjs"],
+    srcs = ["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"],
     library = "codyps-zpl-node",
     toolchain = ["@native_tools//:rust", "@native_tools//:node", "@native_tools//:wasm-bindgen"],
     deps = ["@codyps_zpl_node_inputs//:files"],
@@ -189,7 +189,7 @@ pipeline(
 ) for name, extra in [
     (
         "render",
-        ["benchmarks/accuracy/pixels.py", "build/font_profile.py"],
+        ["benchmarks/accuracy/pixels.py", "build/font_profile.py", "build/renderer_session.py"],
     ),
     (
         "compare",
@@ -218,7 +218,7 @@ pipeline(
         "relation",
         ["benchmarks/accuracy/pixels.py"],
     ),
-    ("saved", ["build/render.py", "benchmarks/accuracy/pixels.py"]),
+    ("saved", ["build/render.py", "build/renderer_session.py", "benchmarks/accuracy/pixels.py"]),
     ("probe", ["benchmarks/invalid.py", "benchmarks/accuracy/pixels.py", "benchmarks/formatting.py"]),
     ("stage", []),
 ]]
@@ -264,7 +264,7 @@ py_test(
         "build/pipeline_test.py",
         "benchmarks/campaigns.py",
         "benchmarks/refresh_candidates.py",
-        "build/render.py",
+        "build/render.py", "build/renderer_session.py",
         "build/saved.py",
         "build/aggregate.py",
         "build/stage.py",
@@ -307,7 +307,7 @@ py_test(
     size = "small",
     srcs = [
         "build/canvas_profile_test.py",
-        "build/render.py",
+        "build/render.py", "build/renderer_session.py",
         "benchmarks/accuracy/pixels.py",
     ],
     main = "build/canvas_profile_test.py",
@@ -329,7 +329,7 @@ py_test(
     size = "small",
     srcs = [
         "build/adapter_contract_test.py",
-        "build/render.py",
+        "build/render.py", "build/renderer_session.py",
         "benchmarks/accuracy/pixels.py",
     ],
     main = "build/adapter_contract_test.py",
@@ -410,7 +410,7 @@ comparison_fonts(name = "comparison_fonts")
 py_test(
     name = "font_profile_test",
     size = "medium",
-    srcs = ["build/font_profile_test.py", "build/font_profile.py", "build/render.py", "benchmarks/fonts/build.py", "benchmarks/accuracy/pixels.py"],
+    srcs = ["build/font_profile_test.py", "build/font_profile.py", "build/render.py", "build/renderer_session.py", "benchmarks/fonts/build.py", "benchmarks/accuracy/pixels.py"],
     main = "build/font_profile_test.py",
     data = [":comparison_fonts", ":library_codyps-zpl", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
     deps = [requirement("numpy"), requirement("pillow"), requirement("fonttools")],
@@ -422,4 +422,19 @@ py_test(
     main = "build/font_capture_test.py",
     data = [":comparison_fonts"] + glob(["references/**", "benchmarks/accuracy/*reference/**"], exclude = ["**/__pycache__/**"]),
     deps = [requirement("numpy"), requirement("pillow")],
+)
+
+py_test(
+    name = "renderer_session_test",
+    size = "small",
+    srcs = ["build/renderer_session_test.py", "build/renderer_session.py"],
+    main = "build/renderer_session_test.py",
+)
+
+py_test(
+    name = "renderer_reuse_test",
+    size = "medium",
+    srcs = ["build/renderer_reuse_test.py", "build/renderer_session.py", "build/font_profile.py"],
+    main = "build/renderer_reuse_test.py",
+    data = [":comparison_fonts"] + [":library_" + name for name in ["zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits"]],
 )

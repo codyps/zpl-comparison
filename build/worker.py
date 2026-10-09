@@ -5,6 +5,7 @@ import importlib
 import io
 import json
 import shutil
+import signal
 import sys
 import traceback
 from pathlib import Path
@@ -38,6 +39,8 @@ def execute(kind, arguments):
 
 def main():
     kind = sys.argv[1]
+    # Bazel retires workers with SIGTERM; allow atexit to reap adapter children.
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(143))
     if "--persistent_worker" not in sys.argv:
         arguments = sys.argv[2:]
         if len(arguments) == 1 and arguments[0].startswith("@"):
