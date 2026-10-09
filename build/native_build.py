@@ -1,4 +1,4 @@
-"""Compile one adapter from declared sources and downloaded dependencies, offline."""
+"""Build adapters offline, or assemble outputs supplied by language rules."""
 
 import hashlib
 import json
@@ -78,10 +78,6 @@ def build(spec, output):
             "GOPROXY": "off",
             "GOSUMDB": "off",
             "GOTOOLCHAIN": "local",
-            "DOTNET_CLI_HOME": str(root / "home"),
-            "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
-            "DOTNET_GENERATE_ASPNET_CERTIFICATE": "false",
-            "NUGET_PACKAGES": str(root / "nuget-cache"),
             "SOURCE_DATE_EPOCH": "0",
         }
 
@@ -186,29 +182,15 @@ def build(spec, output):
             shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", driver / "renderers.mjs")
             shutil.copytree(tools / "node", output / "runtime", symlinks=True)
         elif name == "binarykits":
+            shutil.copytree(root / "published", output, dirs_exist_ok=True)
+            shutil.copytree(root / "benchmarks/adapters/dotnet/fonts", output / "fonts")
             icu_version = tools / "dotnet/icu-version.txt"
-            icu_options = (["-p:ComparisonIcuVersion=" + icu_version.read_text().strip()]
-                           if icu_version.exists() else [])
-            project = root / "benchmarks/adapters/dotnet/Comparison.csproj"
-            run(
-                tools / "dotnet/dotnet",
-                "restore",
-                project,
-                "--locked-mode",
-                "--source",
-                root / "packages",
-            )
-            run(
-                tools / "dotnet/dotnet",
-                "publish",
-                project,
-                "--no-restore",
-                "-c",
-                "Release",
-                "-o",
-                output,
-                *icu_options,
-            )
+            if icu_version.exists():
+                config_path = output / "Comparison.runtimeconfig.json"
+                config = json.loads(config_path.read_text())
+                config["runtimeOptions"].setdefault("configProperties", {})["System.Globalization.AppLocalIcu"] = icu_version.read_text().strip()
+                config_path.unlink()  # Published Bazel inputs are read-only.
+                config_path.write_text(json.dumps(config, indent=2) + "\n")
             shutil.copytree(tools / "dotnet/host", output / "runtime/host")
             shutil.copytree(tools / "dotnet/shared", output / "runtime/shared")
             shutil.copy2(tools / "dotnet/dotnet", output / "runtime/dotnet")

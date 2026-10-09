@@ -38,13 +38,21 @@ def _tools_impl(ctx):
         ctx.delete("icu")
     host = _run(ctx, ["sh", "-c", "uname -sm; cc --version; ld -v 2>&1 || true"])
     ctx.file("host.txt", host)
-    ctx.file("BUILD.bazel", '\n'.join([
-        'package(default_visibility = ["//visibility:public"])',
-    ] + ['filegroup(name="%s", srcs=glob(["%s/**"]) + ["host.txt"])' % (n, n) for n in ["rust", "go", "node", "dotnet", "wasm-bindgen"]]))
+    dotnet_build = ctx.read(ctx.attr.dotnet_build).format(
+        sdk = ctx.path("dotnet/sdk").readdir()[0].basename,
+        runtime = ctx.path("dotnet/shared/Microsoft.NETCore.App").readdir()[0].basename,
+        os = "osx" if os == "darwin" else "linux",
+        cpu = "aarch64" if arch == "arm64" else "x86_64",
+    )
+    ctx.file("BUILD.bazel", dotnet_build + "\n" + "\n".join([
+        'filegroup(name="%s", srcs=glob(["%s/**"]) + ["host.txt"])' % (n, n)
+        for n in ["rust", "go", "node", "dotnet", "wasm-bindgen"]
+    ]))
 
 native_tools = repository_rule(implementation = _tools_impl, attrs = {
     "lock": attr.label(mandatory = True),
     "dotnet_runtime": attr.label(default = "//:build/dotnet_runtime.py"),
+    "dotnet_build": attr.label(default = "//:build/dotnet_toolchain.BUILD"),
 })
 
 def _inputs_impl(ctx):

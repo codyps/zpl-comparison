@@ -1,0 +1,15 @@
+{
+  "binarykits.zpl.label.3.3.1.nupkg": "sha512-9F+lBXyKpsjG8gaCwe+8vlNzbuEu6r4lWGGK1D5Gt4MbmkAnTCsxXtla8aRpCU/+BHXIWwJUtnyfKcxcYW3r4w==",
+  "binarykits.zpl.viewer.1.3.1.nupkg": "sha512-t327bwbQD9mcYu08rtl2vKx25vJM9gXvi6ETvmTQISdaZMOyOuTtUMUB0c7A7M14y3wf6ERUu504Rqqqui9/YA==",
+  "harfbuzzsharp.8.3.1.5.nupkg": "sha512-TGBMwSITBARO7WXcTXUt+s7xqPCTpv5oFtbPLVxrErwFGgeg7W4S7zRO0lVkP/P3LkFOY6GSAbfDkUuZtakKBw==",
+  "harfbuzzsharp.nativeassets.linux.8.3.1.5.nupkg": "sha512-h21pH34hj/asUwLg9r9g9oUkhAmINleXfz1dVvcPOr0BvO0YB79xWZ18r9xjO9EI0TSnEuTpexdLLccCfMYpCw==",
+  "harfbuzzsharp.nativeassets.macos.8.3.1.5.nupkg": "sha512-zA9QpsWDB0uCntqer+QJUtFQoRJO9hPob7fBb4DzWI08cqsnALEkSRnfS4x/mK7KWqHIT24As7t4a7hUG622BA==",
+  "harfbuzzsharp.nativeassets.win32.8.3.1.5.nupkg": "sha512-6Pmlfg3vn+ojrhs6nglE/KMOiWBOZtMCtcoW08kKSi6U62YRrKQ6M5SLvJWGhPdCO/H3VMeezbU3xs3R1NhH3A==",
+  "sixlabors.imagesharp.3.1.12.nupkg": "sha512-swk+TlKf+eAru05II5a+/9oNtxdKZKcaBBRtMbadw0mjq19q6Bl4VqglWnKnEqvw42ol3sg7DacMGxsKybBB7A==",
+  "skiasharp.3.119.4.nupkg": "sha512-cSkl+6zfvTTF18Brzlsq4ZxQYtz0AAqlfsLERrS2zWgnxYFTAn4cYJDsJk8Jl7NH9EWZlciMIdsJTE2SQMqVpQ==",
+  "skiasharp.harfbuzz.3.119.4.nupkg": "sha512-IPgQhVyxy+1dlAsI/WQ9E3fnj4CkllKpFJThWIqvDB7KYRrw5j/LgUvJhxpJrr0o55hJ4OvwQPdvGZz9AWH7WQ==",
+  "skiasharp.nativeassets.linux.nodependencies.3.119.4.nupkg": "sha512-Js73OK0R6yhZ3fioJwINjvHOHG4ieQQCbLKXqWHQwWxH4GOHdsiddr4ZAfZc/4HtMMgmQ7p77xZyothpUJbpmQ==",
+  "skiasharp.nativeassets.macos.3.119.4.nupkg": "sha512-UYhxM3U3o/ogRTDXAmW4/cyBvinejIhxtqIFJpgjcsxPVuIY5VLgxs83ePuOBfNBu7t/WehTF+w4EL5sdiBkDg==",
+  "skiasharp.nativeassets.win32.3.119.4.nupkg": "sha512-RFv9fJMFUi44URCmcqQ/Fay/s2tcmFxa9UDbU0+ZzrOn3fkzogWH7gUnsU7fGxnLmxZ+eBvqJ1yis7d9mgJZzw==",
+  "zxing.net.0.16.11.nupkg": "sha512-kHBBMH1ZKN4Y5IZY8Cq6iETXOr7k00ZrJ8Nbsow9QlTcJZvJVR26bX7VMR/oY1XOJuPzLyMu79WKdw+bKhechg=="
+}

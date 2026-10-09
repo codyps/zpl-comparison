@@ -1,3 +1,4 @@
+load("@rules_dotnet//dotnet:defs.bzl", "csharp_binary", "publish_binary")
 load("//:build/fonts.bzl", "comparison_fonts")
 load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
 load("@report_deps//:requirements.bzl", "requirement")
@@ -140,15 +141,39 @@ native_library(
     deps = ["@codyps_zpl_node_inputs//:files"],
 )
 
+csharp_binary(
+    name = "binarykits_dotnet",
+    tags = ["manual"],
+    out = "Comparison",
+    srcs = ["benchmarks/adapters/dotnet/Program.cs"],
+    target_frameworks = ["net8.0"],
+    nullable = "enable",
+    compiler_options = ["/optimize+"],
+    deps = [
+        "@comparison_nuget//binarykits.zpl.viewer",
+        "@comparison_nuget//binarykits.zpl.label",
+        "@comparison_nuget//skiasharp",
+        "@comparison_nuget//skiasharp.harfbuzz",
+        "@comparison_nuget//skiasharp.nativeassets.linux.nodependencies",
+        "@comparison_nuget//harfbuzzsharp.nativeassets.linux",
+    ],
+)
+
+publish_binary(
+    name = "binarykits_publish",
+    tags = ["manual"],
+    binary = ":binarykits_dotnet",
+    target_framework = "net8.0",
+    self_contained = False,
+)
+
 native_library(
     name = "library_binarykits",
     srcs = glob([
-        "benchmarks/adapters/dotnet/*.cs",
-        "benchmarks/adapters/dotnet/*.csproj",
-        "benchmarks/adapters/dotnet/*.json",
         "benchmarks/adapters/dotnet/fonts/**",
     ]),
     library = "binarykits",
+    published = ":binarykits_publish",
     toolchain = ["@native_tools//:dotnet"],
     deps = ["@dotnet_inputs//:files"],
 )

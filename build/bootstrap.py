@@ -184,19 +184,6 @@ elif kind == "node":
     shutil.rmtree(root / "npm-cache")
 elif kind == "dotnet":
     source("BinaryKits.Zpl", root / "benchmarks/_work/BinaryKits.Zpl")
-    for name in ["Comparison.csproj", "packages.lock.json"]:
-        copy("benchmarks/adapters/dotnet/" + name, name)
-    feed = root / "packages"
-    feed.mkdir()
-    packages = json.loads((root / "packages.lock.json").read_text())["dependencies"]["net8.0"]
-    for name, package in packages.items():
-        name = name.lower()
-        version = package["resolved"].lower()
-        filename = f"{name}.{version}.nupkg"
-        archive = feed / filename
-        run("curl", "--fail", "--silent", "--show-error", "--location", "--retry", "3", "https://api.nuget.org/v3-flatcontainer/" + name + "/" + version + "/" + filename, "--output", archive)
-        # NuGet --locked-mode verifies the canonical package content hash during
-        # the offline restore action. It is not the signed ZIP's raw SHA-512.
 
 else:
     raise ValueError(kind)

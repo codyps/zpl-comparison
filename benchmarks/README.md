@@ -172,6 +172,18 @@ Bazel from a host shell or an execution environment with a matching `/proc`
 mount; Bazel's own action sandbox can remain enabled. This is an execution
 problem, not a BinaryKits package or font error.
 
+BinaryKits is compiled and published by `rules_dotnet` (`csharp_binary` and
+`publish_binary`), using the pinned SDK through its public `dotnet_toolchain`
+API. Bazel does not run MSBuild restore or publish. The existing net8.0
+`packages.lock.json` supplies the NuGet graph; `nuget-integrity.json` pins the
+complete signed archives for Bazel, since NuGet's content hashes exclude signing
+metadata. The comparison packaging action adds fonts, the runtime, and provenance
+files to the published DLLs. It omits the platform apphost because the comparison
+protocol invokes the DLL with the bundled `dotnet` executable. A patch to the
+pinned rules release replaces publishing's host `mkdir`/`cp` calls with Bazel
+symlink actions and its compiler wrapper's `basename` call with Bash expansion.
+This keeps compilation and publishing usable on NixOS without a host PATH override.
+
 The Linux .NET toolchain includes checksum-pinned ICU 72.1.0.3 binaries for
 x64 and arm64. SDK tools and the deployed BinaryKits renderer select that
 app-local ICU version, without host ICU discovery or `LD_LIBRARY_PATH` overrides.

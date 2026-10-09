@@ -27,7 +27,7 @@ def identities(files, probe=False, python_version=""):
                     for name, path in sorted(files.items())
                     if name in {"build/render.py", "build/renderer_session.py", "build/native_build.py", "build/bootstrap.py", "build/toolchains.lock.json",
                                 "build/native.bzl", "build/requirements.lock.txt", "benchmarks/accuracy/pixels.py"}
-                    or (library == "binarykits" and name == "build/dotnet_runtime.py")
+                    or (library == "binarykits" and name in {"build/dotnet_runtime.py", "build/dotnet_deps.bzl", "build/dotnet_toolchain.BUILD", "build/patches/rules_dotnet-hermetic-publish.patch", "MODULE.bazel"})
                     or (probe and name in {"build/probe.py", "benchmarks/invalid.py"})
                     or any(name.startswith(prefix) for prefix in prefixes)}
         value = dict(source=locks[SOURCE[library]], files=selected, python_version=python_version)

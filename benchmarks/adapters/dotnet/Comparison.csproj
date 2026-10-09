@@ -6,10 +6,6 @@
     <Nullable>enable</Nullable>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
-  <ItemGroup Condition="'$(ComparisonIcuVersion)' != ''">
-    <!-- The Bazel toolchain supplies these exact ICU binaries with the runtime. -->
-    <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="$(ComparisonIcuVersion)" />
-  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts/*" TargetPath="fonts/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <PackageReference Include="BinaryKits.Zpl.Viewer" Version="[1.3.1]" />

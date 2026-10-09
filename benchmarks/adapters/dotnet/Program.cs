@@ -1,4 +1,7 @@
 // API: https://github.com/BinaryKits/BinaryKits.Zpl#how-can-i-use-it
+using System;
+using System.IO;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text.Json;
 using BinaryKits.Zpl.Viewer;

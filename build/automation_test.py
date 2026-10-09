@@ -51,6 +51,10 @@ class AutomationTest(unittest.TestCase):
             "build/requirements.lock.txt": "dependencies",
             "build/native.bzl": "deployment",
             "build/dotnet_runtime.py": "icu-packaging",
+            "build/dotnet_deps.bzl": "nuget-graph",
+            "build/dotnet_toolchain.BUILD": "dotnet-toolchain",
+            "build/patches/rules_dotnet-hermetic-publish.patch": "hermetic-publish",
+            "MODULE.bazel": "rules-versions",
             "build/probe.py": "probe",
             "build/compare.py": "comparison",
         }.items()):
@@ -71,6 +75,10 @@ class AutomationTest(unittest.TestCase):
             ("build/requirements.lock.txt", set(SOURCE)),
             ("build/native.bzl", set(SOURCE)),
             ("build/dotnet_runtime.py", {"binarykits"}),
+            ("build/dotnet_deps.bzl", {"binarykits"}),
+            ("build/dotnet_toolchain.BUILD", {"binarykits"}),
+            ("build/patches/rules_dotnet-hermetic-publish.patch", {"binarykits"}),
+            ("MODULE.bazel", {"binarykits"}),
             ("build/compare.py", set()),
             ("build/probe.py", set()),
         ]:

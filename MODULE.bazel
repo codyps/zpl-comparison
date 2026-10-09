@@ -2,6 +2,18 @@ module(name = "zpl_comparison")
 
 bazel_dep(name = "rules_python", version = "2.3.3")
 bazel_dep(name = "rules_cc", version = "0.2.17")
+bazel_dep(name = "rules_dotnet", version = "0.22.2")
+single_version_override(
+    module_name = "rules_dotnet",
+    version = "0.22.2",
+    patches = ["//:build/patches/rules_dotnet-hermetic-publish.patch"],
+    patch_strip = 1,
+)
+bazel_dep(name = "platforms", version = "1.0.0")
+
+nuget = use_extension("//:build/dotnet_deps.bzl", "nuget")
+use_repo(nuget, "comparison_nuget")
+register_toolchains("@native_tools//:dotnet_registered")
 
 # Use Python's native namespace packages instead of synthesizing __init__.py.
 rules_python_config = use_extension("@rules_python//python/extensions:config.bzl", "config")
@@ -64,8 +76,6 @@ native_inputs(
     kind = "dotnet",
     manifests = [
         "//:benchmarks/sources.lock.json",
-        "//:benchmarks/adapters/dotnet/Comparison.csproj",
-        "//:benchmarks/adapters/dotnet/packages.lock.json",
     ],
 )
 
@@ -115,6 +125,10 @@ catalog(
         "//:build/requirements.lock.txt",
         "//:build/native.bzl",
         "//:build/dotnet_runtime.py",
+        "//:build/dotnet_deps.bzl",
+        "//:build/dotnet_toolchain.BUILD",
+        "//:build/patches/rules_dotnet-hermetic-publish.patch",
+        "//:MODULE.bazel",
         "//:build/probe.py",
         "//:benchmarks/invalid.py",
         "//:benchmarks/sources.lock.json",
@@ -130,6 +144,7 @@ catalog(
         "//:benchmarks/adapters/dotnet/fonts/TeX Gyre Fonts.LICENSE",
         "//:benchmarks/adapters/dotnet/fonts/TeX Gyre Heros Cn-Bold.otf",
         "//:benchmarks/adapters/dotnet/packages.lock.json",
+        "//:benchmarks/adapters/dotnet/nuget-integrity.json",
         "//:benchmarks/adapters/go/go.mod",
         "//:benchmarks/adapters/go/go.sum",
         "//:benchmarks/adapters/go/main.go",
