@@ -1,5 +1,10 @@
 """An independently cacheable compilation/deployment action per library."""
 
+def _native_resources(_os, _input_count):
+    # Match native_build.py's two-thread compiler limits. Reserve room for
+    # compiler/linker memory even when consumers request many cached actions.
+    return {"cpu": 2, "memory": 2048}
+
 def _native_impl(ctx):
     output = ctx.actions.declare_directory(ctx.label.name)
     manifest = ctx.actions.declare_file(ctx.label.name + ".json")
@@ -40,6 +45,7 @@ def _native_impl(ctx):
         progress_message = "Building pinned %s library" % ctx.attr.library,
         use_default_shell_env = True,
         execution_requirements = {"no-remote-exec": "1"},
+        resource_set = _native_resources,
     )
     return [DefaultInfo(files = depset([output]))]
 
