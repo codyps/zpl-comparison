@@ -34,6 +34,33 @@ The comparison workflow builds and validates the site on pull requests, uploads 
 preview artifact, and deploys main with the official Pages artifact/deployment
 actions. In repository **Settings → Pages → Build and deployment**, select
 **GitHub Actions** once. The `github-pages` environment must allow `main`.
+
+### CI build caches
+
+Set the repository Actions secret `BUILDBUDDY_API_KEY` to a BuildBuddy Cloud
+cache read/write key. Trusted `main` builds upload and reuse individual Bazel
+action results at `grpcs://remote.buildbuddy.io`, and send build events to the
+BuildBuddy UI. Invocation links appear in the Bazel logs. A small CI probe uploads
+an action, then requires a remote hit from a fresh output base with disk caching
+disabled before starting the expensive build. The credential helper
+keeps the key in a private runner temporary directory, outside cache and artifact
+uploads; pull requests do not receive this key.
+
+Every run restores the latest matching Bazel disk-cache snapshot. Non-fork runs
+save an updated snapshot under a unique run/attempt key after report validation,
+including when earlier steps fail. This preserves completed actions without
+freezing an incomplete snapshot under an immutable BUILD-file hash. Forks can
+restore the main snapshot and replay the published observation bundle. Without
+the BuildBuddy secret, builds use disk caching alone.
+
+The repository download cache remains separate. These caches retain completed
+build actions, not fresh performance measurements or the runtime output of
+`bazel run //:comparison_site`. Those stages still run on every publication.
+After changing cache configuration, compare identical revisions across two CI
+runs: the second should report disk/remote cache hits for unchanged render and
+comparison actions. BuildBuddy invocation pages and the `build-performance`
+artifact contain the timing and cache evidence.
+
 The workflow no longer writes generated Markdown to a branch. The historical
 `generated` branch is left intact so existing evidence links are not destroyed.
 
