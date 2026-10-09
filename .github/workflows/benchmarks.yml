@@ -2,6 +2,11 @@ name: Comparison site
 
 on:
   workflow_dispatch:
+    inputs:
+      action_cache_snapshot:
+        description: Restore/save the disk action cache for timing comparisons
+        type: boolean
+        default: false
   schedule:
     - cron: "23 8 * * *"
   pull_request:
@@ -13,7 +18,7 @@ permissions:
 
 concurrency:
   group: generated-reports-${{ github.ref }}
-  # Let main finish saving its cache; only superseded PR runs are disposable.
+  # Let main finish publication; only superseded PR runs are disposable.
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
@@ -37,8 +42,8 @@ jobs:
         with:
           bazelisk-version: 1.29.0
           bazelisk-cache: true
-          # Action results use rolling snapshots below; setup-bazel's BUILD-only
-          # key otherwise freezes the first (possibly incomplete) snapshot.
+          # BuildBuddy shares action results across trusted runs. Runs without
+          # credentials retain the rolling snapshot fallback below.
           disk-cache: false
           repository-cache: |
             - MODULE.bazel
@@ -53,6 +58,7 @@ jobs:
           BUILDBUDDY_API_KEY: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && secrets.BUILDBUDDY_API_KEY || '' }}
         run: python3 .github/scripts/buildbuddy_cache.py configure
       - name: Restore Bazel action cache
+        if: steps.cache-config.outputs.remote-enabled != 'true' || inputs.action_cache_snapshot == true
         id: action-cache
         uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
         with:
