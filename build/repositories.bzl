@@ -61,10 +61,9 @@ def _inputs_impl(ctx):
         p = ctx.path(label)
         # The subprocess reads these files; register their contents as fetch inputs.
         ctx.read(p)
-        files[label.name] = str(p)
-    tools = str(ctx.path(ctx.attr.tools).dirname)
+        files[(label.package + "/" if label.package else "") + label.name] = str(p)
     source = ctx.getenv("ZPL_SOURCE_PATH", "")
-    _run(ctx, ["python3", str(ctx.path(ctx.attr.bootstrap)), ctx.attr.kind, tools, json.encode(files), source])
+    _run(ctx, ["python3", str(ctx.path(ctx.attr.bootstrap)), ctx.attr.kind, json.encode(files), source])
     build = 'package(default_visibility=["//visibility:public"])\nfilegroup(name="files",srcs=glob(["**"],exclude=["BUILD.bazel"]))\n'
     if ctx.attr.kind == "rust":
         for crate_name in ["zpl", "raster-diff", "zpl-bitmap-fonts"]:
@@ -90,7 +89,6 @@ native_inputs = repository_rule(
     implementation = _inputs_impl,
     attrs = {
         "kind": attr.string(mandatory = True),
-        "tools": attr.label(default = "@native_tools//:host.txt"),
         "bootstrap": attr.label(default = "//:build/bootstrap.py"),
         "manifests": attr.label_list(),
     },
@@ -107,7 +105,7 @@ def _catalog_impl(ctx):
     inputs = {}
     for label in ctx.attr.inputs:
         ctx.read(label)
-        inputs[label.name] = str(ctx.path(label))
+        inputs[(label.package + "/" if label.package else "") + label.name] = str(ctx.path(label))
     result = ctx.execute(["python3", str(ctx.path(ctx.attr.identity)), json.encode(inputs), "render", ctx.attr.python_version])
     if result.return_code:
         fail(result.stderr)

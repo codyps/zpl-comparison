@@ -1,0 +1,7 @@
+# @generated
+# Input hashes for repository rule npm_translate_lock(name = "npm_zebrash_ts", pnpm_lock = "@@//benchmarks/adapters/zebrash-ts:pnpm-lock.yaml").
+# This file should be checked into version control along with the pnpm-lock.yaml file.
+benchmarks/adapters/zebrash-ts/package-lock.json=674681254
+benchmarks/adapters/zebrash-ts/package.json=223133247
+benchmarks/adapters/zebrash-ts/pnpm-lock.yaml=-1705801017
+benchmarks/adapters/zebrash-ts/pnpm-workspace.yaml=-976219052

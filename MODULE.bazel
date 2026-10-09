@@ -2,6 +2,13 @@ module(name = "zpl_comparison")
 
 bazel_dep(name = "rules_python", version = "2.3.3")
 bazel_dep(name = "rules_cc", version = "0.2.17")
+bazel_dep(name = "aspect_rules_js", version = "3.5.1")
+bazel_dep(name = "rules_nodejs", version = "6.7.6")
+node = use_extension("@rules_nodejs//nodejs:extensions.bzl", "node")
+node.toolchain(node_version = "24.21.0")
+use_repo(node, "nodejs_toolchains")
+register_toolchains("@nodejs_toolchains//:all")
+npm = use_extension("@aspect_rules_js//npm:extensions.bzl", "npm")
 bazel_dep(name = "rules_go", version = "0.64.2", repo_name = "io_bazel_rules_go")
 bazel_dep(name = "gazelle", version = "0.54.0")
 bazel_dep(name = "rules_license", version = "1.0.0")
@@ -82,59 +89,37 @@ native_inputs(
 native_inputs(
     name = "go_inputs",
     kind = "go",
-    manifests = [
-        "//:benchmarks/sources.lock.json",
-        "//:benchmarks/adapters/go/go.mod",
-        "//:benchmarks/adapters/go/go.sum",
-    ],
+    manifests = ["//:benchmarks/sources.lock.json"],
 )
 
 native_inputs(
     name = "node_inputs",
     kind = "node",
-    manifests = [
-        "//:benchmarks/sources.lock.json",
-        "//:benchmarks/adapters/node/package.json",
-        "//:benchmarks/adapters/node/package-lock.json",
-    ],
+    manifests = ["//:benchmarks/sources.lock.json"],
 )
 
 native_inputs(
     name = "dotnet_inputs",
     kind = "dotnet",
-    manifests = [
-        "//:benchmarks/sources.lock.json",
-    ],
+    manifests = ["//:benchmarks/sources.lock.json"],
 )
 
 native_inputs(
     name = "zebrash_inputs",
     kind = "zebrash",
-    manifests = [
-        "//:benchmarks/sources.lock.json",
-        "//:benchmarks/adapters/zebrash/go.mod",
-        "//:benchmarks/adapters/zebrash/go.sum",
-    ],
+    manifests = ["//:benchmarks/sources.lock.json"],
 )
 
 native_inputs(
     name = "zpl_renderer_js_inputs",
     kind = "zpl-renderer-js",
-    manifests = [
-        "//:benchmarks/sources.lock.json",
-        "//:benchmarks/adapters/zpl-renderer-js/package.json",
-        "//:benchmarks/adapters/zpl-renderer-js/package-lock.json",
-    ],
+    manifests = ["//:benchmarks/sources.lock.json"],
 )
 
 native_inputs(
     name = "zebrash_ts_inputs",
     kind = "zebrash-ts",
-    manifests = [
-        "//:benchmarks/sources.lock.json",
-        "//:benchmarks/adapters/zebrash-ts/package.json",
-        "//:benchmarks/adapters/zebrash-ts/package-lock.json",
-    ],
+    manifests = ["//:benchmarks/sources.lock.json"],
 )
 
 native_inputs(
@@ -183,18 +168,24 @@ catalog(
         "//:benchmarks/adapters/go/go.sum",
         "//:benchmarks/adapters/go/main.go",
         "//:benchmarks/adapters/labelary.py",
-        "//:benchmarks/adapters/node/main.mjs",
-        "//:benchmarks/adapters/node/renderers.mjs",
+        "//benchmarks/adapters/node:main.mjs",
+        "//benchmarks/adapters/node:renderers.mjs",
         "//:benchmarks/adapters/zebrash/go.mod",
         "//:benchmarks/adapters/zebrash/go.sum",
         "//:benchmarks/adapters/zebrash/main.go",
-        "//:benchmarks/adapters/zpl-renderer-js/package.json",
-        "//:benchmarks/adapters/zpl-renderer-js/package-lock.json",
-        "//:benchmarks/adapters/zebrash-ts/package.json",
-        "//:benchmarks/adapters/zebrash-ts/package-lock.json",
-        "//:benchmarks/adapters/zebrash-ts/api.mjs",
-        "//:benchmarks/adapters/node/package-lock.json",
-        "//:benchmarks/adapters/node/package.json",
+        "//benchmarks/adapters/zpl-renderer-js:package.json",
+        "//benchmarks/adapters/zpl-renderer-js:package-lock.json",
+        "//benchmarks/adapters/zpl-renderer-js:pnpm-lock.yaml",
+        "//benchmarks/adapters/zpl-renderer-js:pnpm-workspace.yaml",
+        "//benchmarks/adapters/zebrash-ts:package.json",
+        "//benchmarks/adapters/zebrash-ts:package-lock.json",
+        "//benchmarks/adapters/zebrash-ts:pnpm-lock.yaml",
+        "//benchmarks/adapters/zebrash-ts:pnpm-workspace.yaml",
+        "//benchmarks/adapters/zebrash-ts:api.mjs",
+        "//benchmarks/adapters/node:package-lock.json",
+        "//benchmarks/adapters/node:pnpm-lock.yaml",
+        "//benchmarks/adapters/node:pnpm-workspace.yaml",
+        "//benchmarks/adapters/node:package.json",
         "//:benchmarks/adapters/python.py",
         "//:benchmarks/adapters/rust/Cargo.lock",
         "//:benchmarks/adapters/rust/Cargo.toml",
@@ -227,3 +218,41 @@ observation_baseline(name = "observation_baseline", lock = "//:build/baseline.lo
 
 support_sources = use_repo_rule("//:build/repositories.bzl", "support_sources")
 support_sources(name = "support_sources", lock = "//:benchmarks/sources.lock.json")
+
+npm.npm_translate_lock(
+    name = "npm_zplr",
+    pnpm_lock = "//benchmarks/adapters/node:pnpm-lock.yaml",
+    npm_package_lock = "//benchmarks/adapters/node:package-lock.json",
+    data = ["//benchmarks/adapters/node:package.json", "//benchmarks/adapters/node:pnpm-workspace.yaml"],
+    lifecycle_hooks = {"*": []},
+    update_pnpm_lock = True,
+)
+use_repo(npm, "npm_zplr")
+
+npm.npm_translate_lock(
+    name = "npm_zpl_renderer_js",
+    pnpm_lock = "//benchmarks/adapters/zpl-renderer-js:pnpm-lock.yaml",
+    npm_package_lock = "//benchmarks/adapters/zpl-renderer-js:package-lock.json",
+    data = ["//benchmarks/adapters/zpl-renderer-js:package.json", "//benchmarks/adapters/zpl-renderer-js:pnpm-workspace.yaml"],
+    lifecycle_hooks = {"*": []},
+    update_pnpm_lock = True,
+)
+use_repo(npm, "npm_zpl_renderer_js")
+
+npm.npm_translate_lock(
+    name = "npm_zebrash_ts",
+    pnpm_lock = "//benchmarks/adapters/zebrash-ts:pnpm-lock.yaml",
+    npm_package_lock = "//benchmarks/adapters/zebrash-ts:package-lock.json",
+    data = ["//benchmarks/adapters/zebrash-ts:package.json", "//benchmarks/adapters/zebrash-ts:pnpm-workspace.yaml"],
+    lifecycle_hooks = {"*": []},
+    update_pnpm_lock = True,
+)
+use_repo(npm, "npm_zebrash_ts")
+
+http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+http_file(name = "skia_linux_amd64", url = "https://github.com/samizdatco/skia-canvas/releases/download/v3.0.8/linux-x64-glibc.gz", sha256 = "f45925290599d4b7cb5211c123fadee27bc899d7556696e2e333d0efac6937b2", downloaded_file_path = "skia.node.gz")
+http_file(name = "skia_linux_arm64", url = "https://github.com/samizdatco/skia-canvas/releases/download/v3.0.8/linux-arm64-glibc.gz", sha256 = "0665d07a60c05d912a2fd1459aeb37714eb0445c2f7848407638546c3d2e1a70", downloaded_file_path = "skia.node.gz")
+http_file(name = "skia_darwin_amd64", url = "https://github.com/samizdatco/skia-canvas/releases/download/v3.0.8/darwin-x64.gz", sha256 = "3301d9241b661f30dcaf73c413b91549d020d7c2faff4b13905007b93ff66736", downloaded_file_path = "skia.node.gz")
+http_file(name = "skia_darwin_arm64", url = "https://github.com/samizdatco/skia-canvas/releases/download/v3.0.8/darwin-arm64.gz", sha256 = "df5f6aec9b92a83861473dff8cf1ed3aea16b89af6f66a9cfbc25ff7fc7460a9", downloaded_file_path = "skia.node.gz")
+
+http_file(name = "node_license", url = "https://raw.githubusercontent.com/nodejs/node/v24.21.0/LICENSE", sha256 = "5888dbb9a1d2b18f2c3e6c5f6af1b39de658372b402a0577b002777f14c62ace", downloaded_file_path = "LICENSE")

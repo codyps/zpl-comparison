@@ -24,7 +24,8 @@
   "notes": [
     "Single-run observations; not statistical benchmarks.",
     "Per-adapter action durations include staging, compilation and deployment.",
-    "The failed FFI baseline must not be compared as a successful full build."
+    "The failed FFI baseline must not be compared as a successful full build.",
+    "All measurements use --batch and --jobs=2. Startup and analysis dominate the new incremental runs. Rust and Go comment edits produced identical binaries, allowing some downstream actions to stay cached."
   ],
   "rust": {
     "first_build_seconds": 306.083,
@@ -89,5 +90,49 @@
       "byte_identical_png_checks": 6,
       "ffi_relocated_without_loader_overrides": true
     }
+  },
+  "node": {
+    "first_successful_build_seconds": 30.896,
+    "first_build_comparable": false,
+    "first_build_note": "Includes initial rules_js package extraction and repository setup.",
+    "driver_comment_edit": {
+      "elapsed_seconds": 12.774,
+      "critical_path_seconds": 3.02,
+      "cache_hits": 517,
+      "actions": [
+        {
+          "name": "Building pinned zpl-renderer-js library",
+          "seconds": 0.791
+        },
+        {
+          "name": "Building pinned zebrash-ts library",
+          "seconds": 1.17
+        },
+        {
+          "name": "Building pinned zplr library",
+          "seconds": 1.244
+        },
+        {
+          "name": "Building pinned codyps-zpl-node library",
+          "seconds": 2.832
+        }
+      ],
+      "note": "Temporary comment added to shared Node session driver, then restored. All package extraction and WASM compilation remained cached."
+    },
+    "validation": {
+      "bazel_tests_passed": 11,
+      "preserved_npm_package_versions": 59,
+      "platform_native_packages": "Linux x64 GNU deployment includes only @napi-rs/canvas-linux-x64-gnu"
+    }
+  },
+  "final_validation": {
+    "tests_passed": 11,
+    "byte_identical_native_png_checks": 15,
+    "report_action_graph": {
+      "ZplLibraryBuild": 12,
+      "ZplRender": 14580,
+      "ZplCompare": 14580
+    },
+    "platform": "Linux x86_64"
   }
 }

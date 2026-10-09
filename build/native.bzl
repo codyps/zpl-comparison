@@ -1,4 +1,5 @@
-"""An independently cacheable compilation/deployment action per library."""
+"""Assemble independently cacheable renderer deployments from language-rule outputs."""
+load("@aspect_rules_js//js:providers.bzl", "JsInfo")
 
 def _native_resources(_os, _input_count):
     return {"cpu": 1, "memory": 256}
@@ -34,16 +35,23 @@ def _native_impl(ctx):
     files.extend([[f.path, "built/adapter"] for f in ctx.files.binary])
     files.extend([[f.path, "built/pkg/" + f.basename] for f in ctx.files.wasm])
     files.extend([[f.path, "built/" + f.basename] for f in ctx.files.shared])
+    npm_files = ctx.attr.npm[JsInfo].npm_sources.to_list() if ctx.attr.npm else []
+    npm_packages = [[f.path, f.short_path.split("/node_modules/")[-1]] for f in npm_files if f.is_directory]
+    files.extend([[f.path, "package.json"] for f in ctx.files.package_json])
+    files.extend([[f.path, "skia.node.gz"] for f in ctx.files.skia])
+    node_files = [ctx.attr.node_runtime[platform_common.ToolchainInfo].nodeinfo.node] if ctx.attr.node_runtime else []
+    files.extend([[f.path, "built/node"] for f in node_files])
+    files.extend([[f.path, "built/node.LICENSE"] for f in ctx.files.node_license])
     tools = ctx.files.toolchain
     root = tools[0].path.split("/node/")[0].split("/dotnet/")[0] if tools else ""
     if root.endswith("/host.txt"):
         root = root[:-len("/host.txt")]
     native = ctx.files.native
-    ctx.actions.write(manifest, json.encode({"library": ctx.attr.library, "inputs": files, "tools": root, "native": native[0].path if native else ""}))
+    ctx.actions.write(manifest, json.encode({"library": ctx.attr.library, "inputs": files, "tools": root, "native": native[0].path if native else "", "npm": npm_packages, "npm_os": "darwin" if ctx.target_platform_has_constraint(ctx.attr._macos[platform_common.ConstraintValueInfo]) else "linux", "npm_cpu": "arm64" if ctx.target_platform_has_constraint(ctx.attr._arm64[platform_common.ConstraintValueInfo]) else "x64"}))
     ctx.actions.run(
         executable = ctx.executable._runner,
         arguments = [manifest.path, output.path],
-        inputs = depset(ctx.files.srcs + dependency_files + tools + native + published + ctx.files.binary + ctx.files.wasm + ctx.files.shared + [manifest]),
+        inputs = depset(ctx.files.srcs + dependency_files + tools + native + published + ctx.files.binary + ctx.files.wasm + ctx.files.shared + npm_files + ctx.files.package_json + ctx.files.skia + node_files + ctx.files.node_license + [manifest]),
         tools = [ctx.attr._runner[DefaultInfo].files_to_run],
         outputs = [output],
         mnemonic = "ZplLibraryBuild",
@@ -57,6 +65,13 @@ native_library = rule(implementation = _native_impl, attrs = {
     "srcs": attr.label_list(allow_files = True),
     "deps": attr.label_list(allow_files = True),
     "toolchain": attr.label_list(allow_files = True),
+    "node_runtime": attr.label(),
+    "node_license": attr.label(allow_single_file = True),
+    "npm": attr.label(providers = [JsInfo]),
+    "package_json": attr.label(allow_single_file = True),
+    "skia": attr.label(allow_single_file = True),
+    "_macos": attr.label(default = "@platforms//os:macos"),
+    "_arm64": attr.label(default = "@platforms//cpu:aarch64"),
     "native": attr.label(allow_files = True),
     "shared": attr.label(allow_files = True),
     "wasm": attr.label(allow_files = True),

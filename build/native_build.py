@@ -1,6 +1,7 @@
-"""Build adapters offline, or assemble outputs supplied by language rules."""
+"""Assemble renderer deployments from Bazel language-rule outputs."""
 
 import hashlib
+import gzip
 import json
 import shutil
 import sys
@@ -59,6 +60,25 @@ def build(spec, output):
             else:
                 shutil.copyfile(source, target)
                 target.chmod(Path(source).stat().st_mode)
+        # These locks have one version per package. Materialize a flat npm tree
+        # from rules_js's declared package directories, matching the old layout.
+        installed = {}
+        for source, package_name in spec.get("npm", []):
+            package = json.loads((Path(source) / "package.json").read_text())
+            if any(package.get(key) and value not in package[key]
+                   for key, value in [("os", spec["npm_os"]), ("cpu", spec["npm_cpu"]), ("libc", "glibc")]):
+                continue
+            version = package["version"]
+            if package_name in installed:
+                if installed[package_name] != version:
+                    raise ValueError("Deployment needs nested npm versions: " + package_name)
+                continue
+            installed[package_name] = version
+            shutil.copytree(source, root / "node_modules" / package_name)
+        if (root / "skia.node.gz").exists():
+            destination = root / "node_modules/skia-canvas/lib/skia.node"
+            with gzip.open(root / "skia.node.gz", "rb") as src, destination.open("wb") as dst:
+                shutil.copyfileobj(src, dst)
         tools = Path(spec["tools"]).resolve() if spec["tools"] else None
         name = spec["library"]
         if (root / "built/adapter").exists():
@@ -79,13 +99,11 @@ def build(spec, output):
             shutil.copytree(root / "built/pkg", package / "pkg")
             (output / "node").mkdir()
             shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", output / "node/renderers.mjs")
-            shutil.copytree(tools / "node", output / "runtime", symlinks=True)
         elif name == "zplr":
             shutil.copytree(root / "node_modules", output / "node_modules")
             shutil.copy2(
                 root / "benchmarks/adapters/node/main.mjs", output / "main.mjs"
             )
-            shutil.copytree(tools / "node", output / "runtime", symlinks=True)
         elif name in ["zpl-renderer-js", "zebrash-ts"]:
             # Keep independent npm closures so deployment sizes exclude other renderers.
             package = output / name
@@ -97,7 +115,6 @@ def build(spec, output):
             driver = output / "node"
             driver.mkdir()
             shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", driver / "renderers.mjs")
-            shutil.copytree(tools / "node", output / "runtime", symlinks=True)
         elif name == "binarykits":
             shutil.copytree(root / "published", output, dirs_exist_ok=True)
             shutil.copytree(root / "benchmarks/adapters/dotnet/fonts", output / "fonts")
@@ -114,6 +131,9 @@ def build(spec, output):
         else:
             raise ValueError(name)
         if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
+            (output / "runtime/bin").mkdir(parents=True)
+            shutil.copy2(root / "built/node", output / "runtime/bin/node")
+            shutil.copy2(root / "built/node.LICENSE", output / "runtime/LICENSE")
             driver = output if name == "zplr" else output / "node"
             shutil.copy2(root / "benchmarks/adapters/node/session.mjs", driver / "session.mjs")
         if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits"}:

@@ -9,24 +9,14 @@ from pathlib import Path
 
 import tomllib
 
-kind, tools, raw, local_source = sys.argv[1:]
-tools = Path(tools)
+kind, raw, local_source = sys.argv[1:]
 files = {k: Path(v) for k, v in json.loads(raw).items()}
 root = Path.cwd()
-env = {**os.environ, "HOME": str(root / "home"), "DOTNET_CLI_TELEMETRY_OPTOUT": "1"}
-env["PATH"] = os.pathsep.join(
-    [str(tools / p / "bin") for p in ["rust", "go", "node"]] + [env["PATH"]]
-)
+env = {**os.environ, "HOME": str(root / "home")}
 
 
 def run(*args, cwd=None):
     subprocess.run(list(map(str, args)), cwd=cwd, env=env, check=True)
-
-
-def copy(key, dest):
-    dest = root / dest
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(files[key], dest)
 
 
 def source(name, dest):
@@ -74,22 +64,10 @@ elif kind == "zebrash":
     source("zebrash", root / "benchmarks/_work/zebrash")
 elif kind in ["zpl-renderer-js", "zebrash-ts"]:
     source(kind, root / "benchmarks/_work" / kind)
-    for name in ["package.json", "package-lock.json"]:
-        copy("benchmarks/adapters/" + kind + "/" + name, name)
-    env["npm_config_cache"] = str(root / "npm-cache")
-    run("npm", "ci", "--ignore-scripts")
-    shutil.rmtree(root / "npm-cache")
 elif kind == "codyps-zpl-node":
-    checkout = root / "benchmarks/_work/codyps-zpl-node"
-    source("zpl", checkout)
+    source("zpl", root / "benchmarks/_work/codyps-zpl-node")
 elif kind == "node":
     source("zplr", root / "benchmarks/_work/zplr")
-    for name in ["package.json", "package-lock.json"]:
-        copy("benchmarks/adapters/node/" + name, name)
-    env["npm_config_cache"] = str(root / "npm-cache")
-    run("npm", "ci", "--ignore-scripts")
-    run("node", "lib/prebuild.mjs", "download", cwd=root / "node_modules/skia-canvas")
-    shutil.rmtree(root / "npm-cache")
 elif kind == "dotnet":
     source("BinaryKits.Zpl", root / "benchmarks/_work/BinaryKits.Zpl")
 

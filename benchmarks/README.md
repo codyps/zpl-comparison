@@ -176,8 +176,8 @@ The native `codyps-zpl`, `labelize`, and `forge` adapters use `rules_rust`
 `rust_binary` targets. The Node adapter uses the same ZPL library under the WASM
 platform transition. `crate_universe` resolves registry crates from
 `build/rust/Cargo.toml` and `build/rust/Cargo.lock`; the initial migration retained
-all existing registry package versions. Release optimization and stripping are
-configured on the Rust toolchain, including transitive crates. Bazel caches
+all existing registry package versions. `MODULE.bazel` selects the Rust and Go compiler versions. Release optimization
+and stripping are configured on the Rust toolchain, including transitive crates. Bazel caches
 individual crate compilation instead of invoking a fresh Cargo build for every
 adapter. The FFI adapter links to a Bazel-declared Go shared library through
 `link_deps`; its upstream downloader build script is disabled. Migration measurements are recorded in
@@ -193,6 +193,19 @@ Native deployment assembly invokes no compiler or package manager, has only
 declared inputs, and uses Bazel's output filesystem for temporary staging.
 `//:native_adapter_test` relocates the native deployments and renders without
 `LD_LIBRARY_PATH`, `DYLD_*`, or `LIBZPL_*` overrides.
+
+Node deployments use `rules_js` to translate the existing npm lockfiles and
+extract packages, and `rules_nodejs` to select the pinned Node 24.21.0 runtime.
+The generated `pnpm-lock.yaml` files and `.aspect/rules/external_repository_action_cache`
+files are checked in alongside the original npm locks. Normal builds verify the
+translation inputs; changes to npm locks regenerate the pnpm locks and require
+one subsequent Bazel invocation. Lifecycle scripts are disabled. Skia Canvas's
+platform binary is a separate checksum-pinned Bazel download, using the hashes
+published in its npm package. Deployment assembly preserves the existing flat
+npm layout, excludes native packages for other platforms, and rejects conflicting
+versions of the same package instead of silently flattening them. Node's runtime
+license remains included. No `npm ci` or installation-time native download runs
+in the source bootstrap.
 
 BinaryKits is compiled and published by `rules_dotnet` (`csharp_binary` and
 `publish_binary`), using the pinned SDK through its public `dotnet_toolchain`

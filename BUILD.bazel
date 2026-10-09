@@ -65,6 +65,9 @@ filegroup(
             "references/zq610-plus-v1/*/*-local.png",
         ],
     ) + [
+        "//benchmarks/adapters/node:source_files",
+        "//benchmarks/adapters/zpl-renderer-js:source_files",
+        "//benchmarks/adapters/zebrash-ts:source_files",
         "LICENSE",
         "PROVENANCE.md",
         "README.md",
@@ -183,11 +186,18 @@ native_library(
     deps = ["@go_inputs//:files"],
 )
 
+config_setting(name = "linux_arm64", constraint_values = ["@platforms//os:linux", "@platforms//cpu:aarch64"])
+config_setting(name = "darwin_amd64", constraint_values = ["@platforms//os:macos", "@platforms//cpu:x86_64"])
+config_setting(name = "darwin_arm64", constraint_values = ["@platforms//os:macos", "@platforms//cpu:aarch64"])
+
 native_library(
     name = "library_zplr",
-    srcs = ["benchmarks/adapters/node/main.mjs", "benchmarks/adapters/node/session.mjs"],
+    skia = select({":linux_arm64": "@skia_linux_arm64//file", ":darwin_amd64": "@skia_darwin_amd64//file", ":darwin_arm64": "@skia_darwin_arm64//file", "//conditions:default": "@skia_linux_amd64//file"}),
+    npm = "//benchmarks/adapters/node:node_modules",
+    srcs = ["//benchmarks/adapters/node:main.mjs", "//benchmarks/adapters/node:session.mjs"],
     library = "zplr",
-    toolchain = ["@native_tools//:node"],
+    node_runtime = "@rules_nodejs//nodejs:current_node_runtime",
+    node_license = "@node_license//file",
     deps = ["@node_inputs//:files"],
 )
 
@@ -208,10 +218,13 @@ native_library(
 
 [native_library(
     name = "library_" + lib,
-    srcs = ["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"] + (["benchmarks/adapters/zebrash-ts/api.mjs"] if lib == "zebrash-ts" else []),
+    srcs = ["//benchmarks/adapters/node:renderers.mjs", "//benchmarks/adapters/node:session.mjs"] + (["//benchmarks/adapters/zebrash-ts:api.mjs"] if lib == "zebrash-ts" else []),
     library = lib,
-    toolchain = ["@native_tools//:node"],
+    node_runtime = "@rules_nodejs//nodejs:current_node_runtime",
+    node_license = "@node_license//file",
     deps = ["@" + lib.replace("-", "_") + "_inputs//:files"],
+    npm = "//benchmarks/adapters/" + lib + ":node_modules",
+    package_json = "//benchmarks/adapters/" + lib + ":package.json",
 ) for lib in ["zpl-renderer-js", "zebrash-ts"]]
 
 executable_file(name = "wasm_bindgen_cli", src = "@native_tools//:wasm-bindgen/wasm-bindgen")
@@ -243,9 +256,10 @@ rust_wasm_bindgen(
 native_library(
     name = "library_codyps-zpl-node",
     wasm = ":node_wasm",
-    srcs = ["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"],
+    srcs = ["//benchmarks/adapters/node:renderers.mjs", "//benchmarks/adapters/node:session.mjs"],
     library = "codyps-zpl-node",
-    toolchain = ["@native_tools//:node"],
+    node_runtime = "@rules_nodejs//nodejs:current_node_runtime",
+    node_license = "@node_license//file",
     deps = ["@codyps_zpl_node_inputs//:files"],
 )
 
