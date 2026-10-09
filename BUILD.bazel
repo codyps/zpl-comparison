@@ -1,3 +1,6 @@
+load("//:build/executable.bzl", "executable_file")
+load("@rules_rust_wasm_bindgen//:defs.bzl", "rust_wasm_bindgen", "rust_wasm_bindgen_toolchain")
+load("@rules_rust//rust:defs.bzl", "rust_binary", "rust_library", "rust_shared_library")
 load("@rules_dotnet//dotnet:defs.bzl", "csharp_binary", "publish_binary")
 load("//:build/fonts.bzl", "comparison_fonts")
 load("@rules_cc//cc:cc_binary.bzl", "cc_binary")
@@ -84,19 +87,57 @@ py_binary(
     main = "build/native_build.py",
 )
 
+rust_library(
+    name = "raster_diff",
+    srcs = ["@rust_inputs//:raster-diff_srcs"],
+    crate_root = "@rust_inputs//:benchmarks/_work/zpl/raster-diff/src/lib.rs",
+    edition = "2021",
+)
+rust_library(
+    name = "zpl_bitmap_fonts",
+    srcs = ["@rust_inputs//:zpl-bitmap-fonts_srcs"],
+    crate_root = "@rust_inputs//:benchmarks/_work/zpl/zpl-bitmap-fonts/src/lib.rs",
+    crate_features = ["zd621"],
+    edition = "2021",
+)
+rust_library(
+    name = "zpl",
+    srcs = ["@rust_inputs//:zpl_srcs"],
+    crate_root = "@rust_inputs//:benchmarks/_work/zpl/zpl/src/lib.rs",
+    deps = [":raster_diff", ":zpl_bitmap_fonts", "@rust_crates//:encoding_rs", "@rust_crates//:unicode-normalization", "@rust_crates//:unicode-bidi"],
+    edition = "2021",
+)
+[rust_binary(
+    name = "rust_" + lib.replace("-", "_"),
+    srcs = glob(["benchmarks/adapters/rust/src/**"]),
+    crate_root = "benchmarks/adapters/rust/src/main.rs",
+    crate_features = [lib],
+    edition = "2021",
+    rustc_flags = ["-Copt-level=3", "-Cstrip=symbols"],
+    aliases = {dep: lib.replace("-", "_")},
+    deps = [dep],
+    tags = ["manual"],
+) for lib, dep in [
+    ("codyps-zpl", ":zpl"),
+    ("labelize", "@rust_crates//:labelize"),
+    ("forge", "@rust_crates//:zpl-forge"),
+]]
 [native_library(
     name = "library_" + lib,
-    srcs = glob(["benchmarks/adapters/rust/src/**"]),
+    srcs = [],
     library = lib,
-    native = ":library_go-native" if lib == "ffi" else None,
+    binary = ":rust_" + lib.replace("-", "_"),
     toolchain = ["@native_tools//:rust"],
     deps = ["@rust_inputs//:" + lib],
-) for lib in [
-    "codyps-zpl",
-    "labelize",
-    "forge",
-    "ffi",
-]]
+) for lib in ["codyps-zpl", "labelize", "forge"]]
+native_library(
+    name = "library_ffi",
+    srcs = glob(["benchmarks/adapters/rust/src/**"]),
+    library = "ffi",
+    native = ":library_go-native",
+    toolchain = ["@native_tools//:rust"],
+    deps = ["@rust_inputs//:ffi"],
+)
 
 [native_library(
     name = "library_" + lib,
@@ -133,8 +174,35 @@ native_library(
     deps = ["@" + lib.replace("-", "_") + "_inputs//:files"],
 ) for lib in ["zpl-renderer-js", "zebrash-ts"]]
 
+executable_file(name = "wasm_bindgen_cli", src = "@native_tools//:wasm-bindgen/wasm-bindgen")
+rust_wasm_bindgen_toolchain(
+    name = "wasm_bindgen_impl",
+    wasm_bindgen_cli = ":wasm_bindgen_cli",
+)
+toolchain(
+    name = "wasm_bindgen_toolchain",
+    toolchain = ":wasm_bindgen_impl",
+    toolchain_type = "@rules_rust_wasm_bindgen//:toolchain_type",
+)
+rust_shared_library(
+    name = "zpl_wasm",
+    srcs = ["@codyps_zpl_node_inputs//:wasm_srcs"],
+    crate_root = "@codyps_zpl_node_inputs//:benchmarks/_work/codyps-zpl-node/zpl-wasm/src/lib.rs",
+    edition = "2021",
+    deps = [":zpl", "@rust_crates//:wasm-bindgen", "@rust_crates//:js-sys"],
+    tags = ["manual"],
+)
+rust_wasm_bindgen(
+    name = "node_wasm",
+    wasm_file = ":zpl_wasm",
+    target = "nodejs",
+    out_name = "zpl_wasm",
+    tags = ["manual"],
+)
+
 native_library(
     name = "library_codyps-zpl-node",
+    wasm = ":node_wasm",
     srcs = ["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"],
     library = "codyps-zpl-node",
     toolchain = ["@native_tools//:rust", "@native_tools//:node", "@native_tools//:wasm-bindgen"],

@@ -57,8 +57,11 @@ def build(spec, output):
         for source, relative in spec["inputs"]:
             target = root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(source, target)
-            target.chmod(Path(source).stat().st_mode)
+            if Path(source).is_dir():
+                shutil.copytree(source, target, dirs_exist_ok=True)
+            else:
+                shutil.copyfile(source, target)
+                target.chmod(Path(source).stat().st_mode)
         tools = Path(spec["tools"]).resolve()
         env = {
             **os.environ,
@@ -85,7 +88,9 @@ def build(spec, output):
             subprocess.run(list(map(str, args)), cwd=cwd, env=env, check=True)
 
         name = spec["library"]
-        if name in ["codyps-zpl", "labelize", "forge", "ffi"]:
+        if (root / "built/adapter").exists():
+            shutil.copy2(root / "built/adapter", output / "adapter")
+        elif name in ["codyps-zpl", "labelize", "forge", "ffi"]:
             (root / "cargo").mkdir()
             (root / "cargo/config.toml").write_text(
                 '[source.crates-io]\nreplace-with="vendored"\n[source.vendored]\ndirectory='
@@ -145,21 +150,13 @@ def build(spec, output):
                     cwd=root / "benchmarks/adapters" / ("zebrash" if name == "zebrash" else "go"),
                 )
         elif name == "codyps-zpl-node":
-            (root / "cargo").mkdir()
-            (root / "cargo/config.toml").write_text(
-                '[source.crates-io]\nreplace-with="vendored"\n[source.vendored]\ndirectory='
-                + json.dumps(str(root / "vendor")) + "\n")
             checkout = root / "benchmarks/_work/codyps-zpl-node"
-            run("cargo", "build", "--offline", "--locked", "--release", "--target",
-                "wasm32-unknown-unknown", "-p", "zpl-wasm", cwd=checkout)
             package = output / name
             package.mkdir()
             for filename in ["package.json", "index.cjs", "index.mjs", "index.d.ts"]:
                 shutil.copy2(checkout / "zpl-node" / filename, package / filename)
             shutil.copy2(checkout / "LICENSE", package / "LICENSE")
-            run(tools / "wasm-bindgen/wasm-bindgen",
-                root / "target/wasm32-unknown-unknown/release/zpl_wasm.wasm",
-                "--target", "nodejs", "--out-dir", package / "pkg", "--out-name", "zpl_wasm")
+            shutil.copytree(root / "built/pkg", package / "pkg")
             (output / "node").mkdir()
             shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", output / "node/renderers.mjs")
             shutil.copytree(tools / "node", output / "runtime", symlinks=True)

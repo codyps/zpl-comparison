@@ -44,7 +44,7 @@ def _tools_impl(ctx):
         os = "osx" if os == "darwin" else "linux",
         cpu = "aarch64" if arch == "arm64" else "x86_64",
     )
-    ctx.file("BUILD.bazel", dotnet_build + "\n" + "\n".join([
+    ctx.file("BUILD.bazel", dotnet_build + '\nexports_files(["wasm-bindgen/wasm-bindgen"])\n' + "\n".join([
         'filegroup(name="%s", srcs=glob(["%s/**"]) + ["host.txt"])' % (n, n)
         for n in ["rust", "go", "node", "dotnet", "wasm-bindgen"]
     ]))
@@ -67,8 +67,12 @@ def _inputs_impl(ctx):
     _run(ctx, ["python3", str(ctx.path(ctx.attr.bootstrap)), ctx.attr.kind, tools, json.encode(files), source])
     build = 'package(default_visibility=["//visibility:public"])\nfilegroup(name="files",srcs=glob(["**"],exclude=["BUILD.bazel"]))\n'
     if ctx.attr.kind == "rust":
+        for crate_name in ["zpl", "raster-diff", "zpl-bitmap-fonts"]:
+            build += 'filegroup(name="%s_srcs",srcs=glob(["benchmarks/_work/zpl/%s/src/**", "benchmarks/_work/zpl/%s/data/**"],allow_empty=True))\n' % (crate_name, crate_name, crate_name)
         for name, patterns in json.decode(ctx.read("groups.json")).items():
             build += 'filegroup(name=%s,srcs=glob(%s))\n' % (repr(name), repr(patterns))
+    if ctx.attr.kind == "codyps-zpl-node":
+        build += 'filegroup(name="wasm_srcs",srcs=glob(["benchmarks/_work/codyps-zpl-node/zpl-wasm/src/**"]))\n'
     support = {
         "rust": ["vendor/labelize*/**", "vendor/zpl-forge*/**", "vendor/zpl-builder*/**", "benchmarks/_work/zpl/**"],
         "go": ["benchmarks/_work/go-zpl/**"],

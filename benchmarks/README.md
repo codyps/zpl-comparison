@@ -39,8 +39,8 @@ continues to use the existing defaults.
 `sources.lock.json`, using the same source revision as the native Rust adapter.
 Publication CI advances both to `main`; local builds use the recorded revision.
 No npm release is substituted for Git source.
-`bazel build //:library_codyps-zpl-node` vendors the upstream locked Cargo
-dependencies, compiles Wasm offline, and deploys the Node package with its runtime.
+`bazel build //:library_codyps-zpl-node` compiles Wasm with `rules_rust`, generates
+bindings with `rules_rust_wasm_bindgen`, and deploys the Node package with its runtime.
 The Rust Wasm target and wasm-bindgen 0.2.128 are pinned in the toolchain lock.
 For `prepare.py --only codyps-zpl-node`, install that target and CLI locally first.
 The adapter participates in rendering, invalid-render input, accuracy and performance
@@ -171,6 +171,18 @@ On Linux, a .NET SDK crash in `System.Diagnostics.Process.GetStat()` /
 Bazel from a host shell or an execution environment with a matching `/proc`
 mount; Bazel's own action sandbox can remain enabled. This is an execution
 problem, not a BinaryKits package or font error.
+
+The native `codyps-zpl`, `labelize`, and `forge` adapters use `rules_rust`
+`rust_binary` targets. The Node adapter uses the same ZPL library under the WASM
+platform transition. `crate_universe` resolves registry crates from
+`build/rust/Cargo.toml` and `build/rust/Cargo.lock`; the initial migration retained
+all existing registry package versions. Release optimization and stripping are
+configured on the Rust toolchain, including transitive crates. Bazel caches
+individual crate compilation instead of invoking a fresh Cargo build for every
+adapter. The Rust FFI adapter remains on the old path until its Go shared-library
+dependency is migrated. Migration measurements are recorded in
+`benchmarks/build-times/language-rules.json`, with cache conditions and failed
+runs identified explicitly.
 
 BinaryKits is compiled and published by `rules_dotnet` (`csharp_binary` and
 `publish_binary`), using the pinned SDK through its public `dotnet_toolchain`

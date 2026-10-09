@@ -21,12 +21,14 @@ def identities(files, probe=False, python_version=""):
             prefixes = ["benchmarks/adapters/" + library + "/"]
             if library != "zebrash":
                 prefixes.extend(["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"])
+        if library in {"codyps-zpl", "labelize", "forge", "ffi", "codyps-zpl-node"}:
+            prefixes.append("build/rust/")
         if library == "ffi":
             prefixes.append("benchmarks/adapters/go/")
         selected = {name: hashlib.sha256(Path(path).read_bytes()).hexdigest()
                     for name, path in sorted(files.items())
                     if name in {"build/render.py", "build/renderer_session.py", "build/native_build.py", "build/bootstrap.py", "build/toolchains.lock.json",
-                                "build/native.bzl", "build/requirements.lock.txt", "benchmarks/accuracy/pixels.py"}
+                                "build/native.bzl", "BUILD.bazel", "MODULE.bazel", "build/executable.bzl", "build/requirements.lock.txt", "benchmarks/accuracy/pixels.py"}
                     or (library == "binarykits" and name in {"build/dotnet_runtime.py", "build/dotnet_deps.bzl", "build/dotnet_toolchain.BUILD", "build/patches/rules_dotnet-hermetic-publish.patch", "MODULE.bazel"})
                     or (probe and name in {"build/probe.py", "benchmarks/invalid.py"})
                     or any(name.startswith(prefix) for prefix in prefixes)}

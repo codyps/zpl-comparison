@@ -33,6 +33,8 @@ def _native_impl(ctx):
     for f in published:
         relative = "/".join(f.path.split("/publish/")[1].split("/")[1:])
         files.append([f.path, "published/" + relative])
+    files.extend([[f.path, "built/adapter"] for f in ctx.files.binary])
+    files.extend([[f.path, "built/pkg/" + f.basename] for f in ctx.files.wasm])
     tools = ctx.files.toolchain
     root = tools[0].path.split("/rust/")[0].split("/go/")[0].split("/node/")[0].split("/dotnet/")[0]
 
@@ -44,7 +46,7 @@ def _native_impl(ctx):
     ctx.actions.run(
         executable = ctx.executable._runner,
         arguments = [manifest.path, output.path],
-        inputs = depset(ctx.files.srcs + dependency_files + tools + native + published + ctx.files._host + [manifest]),
+        inputs = depset(ctx.files.srcs + dependency_files + tools + native + published + ctx.files.binary + ctx.files.wasm + ctx.files._host + [manifest]),
         tools = [ctx.attr._runner[DefaultInfo].files_to_run],
         outputs = [output],
         mnemonic = "ZplLibraryBuild",
@@ -61,6 +63,8 @@ native_library = rule(implementation = _native_impl, attrs = {
     "deps": attr.label_list(allow_files = True),
     "toolchain": attr.label_list(allow_files = True),
     "native": attr.label(allow_files = True),
+    "wasm": attr.label(allow_files = True),
+    "binary": attr.label(allow_single_file = True),
     "published": attr.label(allow_files = True),
     "_host": attr.label(default = "@native_host//:identity.txt", allow_files = True),
     "_runner": attr.label(default = "//:native_builder", executable = True, cfg = "exec"),

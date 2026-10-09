@@ -2,6 +2,26 @@ module(name = "zpl_comparison")
 
 bazel_dep(name = "rules_python", version = "2.3.3")
 bazel_dep(name = "rules_cc", version = "0.2.17")
+bazel_dep(name = "rules_rust", version = "0.74.0")
+bazel_dep(name = "rules_rust_wasm_bindgen", version = "0.74.0")
+register_toolchains("//:wasm_bindgen_toolchain")
+rust = use_extension("@rules_rust//rust:extensions.bzl", "rust")
+rust.toolchain(edition = "2021", versions = ["1.98.1"], extra_target_triples = ["wasm32-unknown-unknown"], opt_level = {"fastbuild": "3", "opt": "3", "dbg": "0"}, strip_level = {"fastbuild": "symbols", "opt": "symbols", "dbg": "none"})
+use_repo(rust, "rust_toolchains")
+rust_host = use_extension("@rules_rust//rust:extensions.bzl", "rust_host_tools")
+rust_host.host_tools(name = "comparison_rust_host", version = "1.98.1")
+use_repo(rust_host, "comparison_rust_host")
+register_toolchains("@rust_toolchains//:all")
+crate = use_extension("@rules_rust//crate_universe:extensions.bzl", "crate")
+crate.from_cargo(
+    name = "rust_crates",
+    host_tools = "@comparison_rust_host//:BUILD.bazel",
+    cargo_lockfile = "//:build/rust/Cargo.lock",
+    manifests = ["//:build/rust/Cargo.toml"],
+    supported_platform_triples = ["x86_64-unknown-linux-gnu", "aarch64-unknown-linux-gnu", "x86_64-apple-darwin", "aarch64-apple-darwin", "wasm32-unknown-unknown"],
+)
+crate.annotation(crate = "zpl-rs", gen_build_script = "off")
+use_repo(crate, "rust_crates")
 bazel_dep(name = "rules_dotnet", version = "0.22.2")
 single_version_override(
     module_name = "rules_dotnet",
@@ -124,6 +144,10 @@ catalog(
         "//:benchmarks/accuracy/pixels.py",
         "//:build/requirements.lock.txt",
         "//:build/native.bzl",
+        "//:BUILD.bazel",
+        "//:build/executable.bzl",
+        "//:build/rust/Cargo.toml",
+        "//:build/rust/Cargo.lock",
         "//:build/dotnet_runtime.py",
         "//:build/dotnet_deps.bzl",
         "//:build/dotnet_toolchain.BUILD",

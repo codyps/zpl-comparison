@@ -1,0 +1,59 @@
+{
+  "baseline_revision": "b383a25c",
+  "host": "Linux x86_64, GCC 16.2.0, Bazel 9.2.0",
+  "jobs": 2,
+  "baseline": {
+    "cache": "cached repositories; forced build-action misses with --action_env=MIGRATION_TIMING=baseline",
+    "elapsed_seconds": 196.218,
+    "success": false,
+    "failure": "ffi: openssl-sys could not find host OpenSSL",
+    "action_seconds": {
+      "zpl-renderer-js": 1.896,
+      "zplr": 2.479,
+      "zebrash-ts": 2.272,
+      "zebrash": 10.009,
+      "codyps-zpl-node": 34.546,
+      "forge": 81.944,
+      "codyps-zpl": 20.76,
+      "go-native": 11.305,
+      "go": 9.821,
+      "labelize": 171.136,
+      "ffi": 13.162
+    }
+  },
+  "notes": [
+    "Single-run observations; not statistical benchmarks.",
+    "Per-adapter action durations include staging, compilation and deployment.",
+    "The failed FFI baseline must not be compared as a successful full build."
+  ],
+  "rust": {
+    "first_build_seconds": 306.083,
+    "first_build_comparable": false,
+    "first_build_note": "Includes new rules/toolchain fetches and first-time Bazel helper compilation.",
+    "adapter_comment_edit": {
+      "elapsed_seconds": 11.133,
+      "critical_path_seconds": 0.88,
+      "compiled_actions": 3,
+      "cache_hits": 949,
+      "actions": [
+        {
+          "name": "Compiling Rust bin rust_codyps_zpl (2 files)",
+          "seconds": 0.395
+        },
+        {
+          "name": "Compiling Rust bin rust_forge (2 files)",
+          "seconds": 0.754
+        },
+        {
+          "name": "Compiling Rust bin rust_labelize (2 files)",
+          "seconds": 0.661
+        }
+      ],
+      "note": "Temporary comment added to shared adapter main.rs, then restored. Crate dependencies were cached. Identical executable outputs allowed deployment actions to remain cached."
+    },
+    "validation": {
+      "bazel_tests_passed": 6,
+      "byte_identical_png_checks": 9
+    }
+  }
+}

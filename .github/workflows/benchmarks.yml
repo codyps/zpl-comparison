@@ -99,6 +99,7 @@ jobs:
           path: |
             benchmarks/sources.lock.json
             benchmarks/adapters/rust/Cargo.lock
+            build/rust/Cargo.lock
       - name: Test publication and report runner
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'

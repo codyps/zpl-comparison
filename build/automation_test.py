@@ -78,7 +78,7 @@ class AutomationTest(unittest.TestCase):
             ("build/dotnet_deps.bzl", {"binarykits"}),
             ("build/dotnet_toolchain.BUILD", {"binarykits"}),
             ("build/patches/rules_dotnet-hermetic-publish.patch", {"binarykits"}),
-            ("MODULE.bazel", {"binarykits"}),
+            ("MODULE.bazel", set(SOURCE)),
             ("build/compare.py", set()),
             ("build/probe.py", set()),
         ]:
