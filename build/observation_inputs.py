@@ -23,6 +23,8 @@ def identities(files, probe=False, python_version=""):
                 prefixes.extend(["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"])
         if library in {"codyps-zpl", "labelize", "forge", "ffi", "codyps-zpl-node"}:
             prefixes.append("build/rust/")
+        if library in {"go", "zebrash", "ffi"}:
+            prefixes.append("build/go")
         if library == "ffi":
             prefixes.append("benchmarks/adapters/go/")
         selected = {name: hashlib.sha256(Path(path).read_bytes()).hexdigest()

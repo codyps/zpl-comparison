@@ -2,9 +2,7 @@
 
 import hashlib
 import json
-import os
 import shutil
-import subprocess
 import sys
 import tempfile
 import tomllib
@@ -50,9 +48,8 @@ def source_size(root, name, native=None):
 def build(spec, output):
     output = Path(output).resolve()
     output.mkdir(parents=True, exist_ok=True)
-    # Bazel's spawn runner may override TMPDIR. Permit disk-backed build scratch
-    # space on hosts whose /tmp is a small tmpfs.
-    with tempfile.TemporaryDirectory(prefix="zpl-build-", dir=os.environ.get("ZPL_BUILD_TMPDIR")) as temporary:
+    # Keep packaging scratch on Bazel's output filesystem, independent of host /tmp.
+    with tempfile.TemporaryDirectory(prefix="zpl-package-", dir=output.parent) as temporary:
         root = Path(temporary)
         for source, relative in spec["inputs"]:
             target = root / relative
@@ -62,93 +59,16 @@ def build(spec, output):
             else:
                 shutil.copyfile(source, target)
                 target.chmod(Path(source).stat().st_mode)
-        tools = Path(spec["tools"]).resolve()
-        env = {
-            **os.environ,
-            "HOME": str(root / "home"),
-            "TMPDIR": str(root),
-            "PATH": os.pathsep.join(
-                [str(tools / p / "bin") for p in ["rust", "go", "node"]]
-                + [os.environ.get("PATH", "/usr/bin:/bin")]
-            ),
-            "CARGO_HOME": str(root / "cargo"),
-            "CARGO_BUILD_JOBS": "2",
-            "GOMAXPROCS": "2",
-            "CARGO_TARGET_DIR": str(root / "target"),
-            "GOCACHE": str(root / "go-cache"),
-            "GOMODCACHE": str(root / "modules"),
-            "GOPATH": str(root / "go-home"),
-            "GOPROXY": "off",
-            "GOSUMDB": "off",
-            "GOTOOLCHAIN": "local",
-            "SOURCE_DATE_EPOCH": "0",
-        }
-
-        def run(*args, cwd=root):
-            subprocess.run(list(map(str, args)), cwd=cwd, env=env, check=True)
-
+        tools = Path(spec["tools"]).resolve() if spec["tools"] else None
         name = spec["library"]
         if (root / "built/adapter").exists():
             shutil.copy2(root / "built/adapter", output / "adapter")
-        elif name in ["codyps-zpl", "labelize", "forge", "ffi"]:
-            (root / "cargo").mkdir()
-            (root / "cargo/config.toml").write_text(
-                '[source.crates-io]\nreplace-with="vendored"\n[source.vendored]\ndirectory='
-                + json.dumps(str(root / "vendor"))
-                + "\n"
-            )
             if name == "ffi":
-                native = Path(spec["native"]).resolve()
-                env.update(
-                    LIBZPL_PATH=str(native / ("libzpl.dylib" if sys.platform == "darwin" else "libzpl.so")),
-                    LIBZPL_COPY_TO=str(root / "target/release"),
-                )
-            env["DYLD_FALLBACK_LIBRARY_PATH"] = str(tools / "rust/lib")
-            run(
-                "cargo",
-                "build",
-                "--offline",
-                "--locked",
-                "--release",
-                "--manifest-path",
-                root / "benchmarks/adapters/rust/Cargo.toml",
-                "--features",
-                name,
-                "--bin",
-                name,
-            )
-            shutil.copy2(root / "target/release" / name, output / "adapter")
-            if name == "ffi":
-                for path in native.glob("libzpl.*"):
+                for path in (root / "built").glob("libzpl.*"):
                     shutil.copy2(path, output / path.name)
-        elif name in ["go", "go-native", "zebrash"]:
-            if name == "go-native":
-                filename = "libzpl.dylib" if sys.platform == "darwin" else "libzpl.so"
-                run(
-                    "go",
-                    "build",
-                    "-mod=readonly",
-                    "-trimpath",
-                    "-buildvcs=false",
-                    "-buildmode=c-shared",
-                    "-o",
-                    output / filename,
-                    "./cmd/libzpl",
-                    cwd=root / "benchmarks/_work/go-zpl",
-                )
-            else:
-                run(
-                    "go",
-                    "build",
-                    "-mod=readonly",
-                    "-trimpath",
-                    "-buildvcs=false",
-                    "-ldflags=-s -w",
-                    "-o",
-                    output / "adapter",
-                    ".",
-                    cwd=root / "benchmarks/adapters" / ("zebrash" if name == "zebrash" else "go"),
-                )
+        elif name == "go-native":
+            for path in (root / "built").glob("libzpl.*"):
+                shutil.copy2(path, output / path.name)
         elif name == "codyps-zpl-node":
             checkout = root / "benchmarks/_work/codyps-zpl-node"
             package = output / name

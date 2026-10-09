@@ -117,7 +117,7 @@ port create fresh parser/drawer state per operation.
 - [`sources.lock.json`](sources.lock.json): immutable source commits for the Go engine, Python package and source-size survey. Git checkouts must be clean when changing revisions.
 - [`adapters/rust/Cargo.lock`](adapters/rust/Cargo.lock): exact Rust dependency graph. Each binary is built separately with one feature; `--all-features` is **not** a supported build. codyps/zpl and its raster dependency are path dependencies.
 - [`adapters/node/package-lock.json`](adapters/node/package-lock.json): exact Node package graph and integrity hashes; `npm ci`. The pinned `skia-canvas` installer supplies its native component.
-- [`adapters/go/go.mod`](adapters/go/go.mod) / [`go.sum`](adapters/go/go.sum): direct Go adapter; engine source also pins its own module graph. `-mod=readonly` is used for builds. The Rust wrapper's `LIBZPL_PATH` points at this source-built Go shared library.
+- [`adapters/go/go.mod`](adapters/go/go.mod) / [`go.sum`](adapters/go/go.sum): direct Go adapter; engine source also pins its own module graph. `-mod=readonly` is used for builds. The standalone Cargo build uses `LIBZPL_PATH`; Bazel declares the Go shared library as a linker dependency.
 - [`adapters/dotnet/packages.lock.json`](adapters/dotnet/packages.lock.json): exact NuGet graph and content hashes; locked restore. .NET is framework-dependent.
 - [`requirements.txt`](requirements.txt): Python plotting/PNG decoder versions; these are outside timed operations except Pillow's import in the Python builder. The complete transitive graph and distribution hashes are pinned in [`../build/requirements.lock.txt`](../build/requirements.lock.txt).
 
@@ -179,10 +179,20 @@ platform transition. `crate_universe` resolves registry crates from
 all existing registry package versions. Release optimization and stripping are
 configured on the Rust toolchain, including transitive crates. Bazel caches
 individual crate compilation instead of invoking a fresh Cargo build for every
-adapter. The Rust FFI adapter remains on the old path until its Go shared-library
-dependency is migrated. Migration measurements are recorded in
+adapter. The FFI adapter links to a Bazel-declared Go shared library through
+`link_deps`; its upstream downloader build script is disabled. Migration measurements are recorded in
 `benchmarks/build-times/language-rules.json`, with cache conditions and failed
 runs identified explicitly.
+
+Go adapters use `rules_go` and Gazelle-generated package targets. The direct Go
+adapter, the FFI shared library, and Zebrash retain separate module dependency
+sets from their existing `go.mod`/`go.sum` files. Gazelle's public `go_repository`
+API verifies their module checksums. No Go module download or Cargo vendoring
+runs in the old bootstrap: it now fetches implementation source for reports.
+Native deployment assembly invokes no compiler or package manager, has only
+declared inputs, and uses Bazel's output filesystem for temporary staging.
+`//:native_adapter_test` relocates the native deployments and renders without
+`LD_LIBRARY_PATH`, `DYLD_*`, or `LIBZPL_*` overrides.
 
 BinaryKits is compiled and published by `rules_dotnet` (`csharp_binary` and
 `publish_binary`), using the pinned SDK through its public `dotnet_toolchain`
@@ -266,9 +276,10 @@ Python toolchains are pinned; native toolchain archive hashes are in
 `build/toolchains.lock.json`. Cargo, Go, npm, and NuGet dependencies retain their
 lockfile integrity checks. Compilation runs offline against declared downloaded
 inputs. A C compiler/system SDK, Git, curl, and Python 3.11+ are bootstrap
-prerequisites. Native build actions use the host C compiler and SDK, whose
-platform/version identity participates in the cache key; native compilation is
-local execution, not a remote-execution toolchain.
+prerequisites. Native linking uses Bazel's configured C/C++ toolchain. The default configuration
+still discovers a host C compiler and platform SDK; remote compilation requires
+a matching C/C++ execution toolchain. Deployment assembly has no local-execution
+restriction.
 Go compilation excludes the download phase's user-home files and checksum
 database bookkeeping, including its moving `latest` checkpoint. Downloads still
 verify `go.sum`; those network-verification files are unused by the offline build

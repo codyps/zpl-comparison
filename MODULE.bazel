@@ -2,6 +2,14 @@ module(name = "zpl_comparison")
 
 bazel_dep(name = "rules_python", version = "2.3.3")
 bazel_dep(name = "rules_cc", version = "0.2.17")
+bazel_dep(name = "rules_go", version = "0.64.2", repo_name = "io_bazel_rules_go")
+bazel_dep(name = "gazelle", version = "0.54.0")
+bazel_dep(name = "rules_license", version = "1.0.0")
+bazel_dep(name = "package_metadata", version = "0.0.7")
+go_sdk = use_extension("@io_bazel_rules_go//go:extensions.bzl", "go_sdk")
+go_sdk.download(version = "1.27.1")
+go_deps = use_extension("//:build/go_deps.bzl", "go_deps")
+use_repo(go_deps, "go_github_com_stirlingmarketinggroup_go_zpl", "gonative_github_com_stirlingmarketinggroup_go_zpl", "zebrash_github_com_ingridhq_zebrash")
 bazel_dep(name = "rules_rust", version = "0.74.0")
 bazel_dep(name = "rules_rust_wasm_bindgen", version = "0.74.0")
 register_toolchains("//:wasm_bindgen_toolchain")
@@ -29,7 +37,7 @@ single_version_override(
     patches = ["//:build/patches/rules_dotnet-hermetic-publish.patch"],
     patch_strip = 1,
 )
-bazel_dep(name = "platforms", version = "1.0.0")
+bazel_dep(name = "platforms", version = "1.1.0")
 
 nuget = use_extension("//:build/dotnet_deps.bzl", "nuget")
 use_repo(nuget, "comparison_nuget")
@@ -147,6 +155,8 @@ catalog(
         "//:BUILD.bazel",
         "//:build/executable.bzl",
         "//:build/rust/Cargo.toml",
+        "//:build/go_deps.bzl",
+        "//:build/go-repositories.WORKSPACE",
         "//:build/rust/Cargo.lock",
         "//:build/dotnet_runtime.py",
         "//:build/dotnet_deps.bzl",
@@ -211,10 +221,6 @@ catalog(
         "//:benchmarks/accuracy/layout-reference/manifest.json",
     ],
 )
-
-native_host = use_repo_rule("//:build/repositories.bzl", "native_host")
-
-native_host(name = "native_host")
 
 observation_baseline = use_repo_rule("//:build/repositories.bzl", "observation_baseline")
 observation_baseline(name = "observation_baseline", lock = "//:build/baseline.lock.json")

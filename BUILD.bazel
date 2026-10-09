@@ -1,3 +1,5 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary")
+load("@rules_cc//cc:cc_import.bzl", "cc_import")
 load("//:build/executable.bzl", "executable_file")
 load("@rules_rust_wasm_bindgen//:defs.bzl", "rust_wasm_bindgen", "rust_wasm_bindgen_toolchain")
 load("@rules_rust//rust:defs.bzl", "rust_binary", "rust_library", "rust_shared_library")
@@ -127,28 +129,59 @@ rust_library(
     srcs = [],
     library = lib,
     binary = ":rust_" + lib.replace("-", "_"),
-    toolchain = ["@native_tools//:rust"],
     deps = ["@rust_inputs//:" + lib],
 ) for lib in ["codyps-zpl", "labelize", "forge"]]
+go_binary(
+    name = "go_adapter",
+    srcs = ["benchmarks/adapters/go/main.go"],
+    deps = ["@go_github_com_stirlingmarketinggroup_go_zpl//:go_default_library", "@go_github_com_stirlingmarketinggroup_go_zpl//render:go_default_library"],
+    gc_linkopts = ["-s", "-w"],
+    tags = ["manual"],
+)
+go_binary(
+    name = "go_shared",
+    embed = ["@gonative_github_com_stirlingmarketinggroup_go_zpl//cmd/libzpl:go_default_library"],
+    linkmode = "c-shared",
+    clinkopts = select({"@platforms//os:macos": ["-Wl,-install_name,@rpath/libzpl.dylib"], "//conditions:default": ["-Wl,-soname,libzpl.so"]}),
+    out = select({"@platforms//os:macos": "libzpl.dylib", "//conditions:default": "libzpl.so"}),
+    tags = ["manual"],
+)
+cc_import(
+    name = "zpl_shared",
+    shared_library = ":go_shared",
+)
+rust_binary(
+    name = "rust_ffi",
+    srcs = glob(["benchmarks/adapters/rust/src/**"]),
+    crate_root = "benchmarks/adapters/rust/src/main.rs",
+    crate_features = ["ffi"],
+    edition = "2021",
+    aliases = {"@rust_crates//:zpl-rs": "ffi"},
+    deps = ["@rust_crates//:zpl-rs"],
+    link_deps = [":zpl_shared"],
+    rustc_flags = select({"@platforms//os:macos": ["-Clink-arg=-Wl,-rpath,@executable_path"], "//conditions:default": ["-Clink-arg=-Wl,-rpath,$$ORIGIN"]}),
+    tags = ["manual"],
+)
 native_library(
     name = "library_ffi",
-    srcs = glob(["benchmarks/adapters/rust/src/**"]),
     library = "ffi",
+    binary = ":rust_ffi",
+    shared = ":go_shared",
     native = ":library_go-native",
-    toolchain = ["@native_tools//:rust"],
     deps = ["@rust_inputs//:ffi"],
 )
-
-[native_library(
-    name = "library_" + lib,
-    srcs = glob(["benchmarks/adapters/go/*.go"]) if lib == "go" else [],
-    library = lib,
-    toolchain = ["@native_tools//:go"],
+native_library(
+    name = "library_go",
+    library = "go",
+    binary = ":go_adapter",
     deps = ["@go_inputs//:files"],
-) for lib in [
-    "go",
-    "go-native",
-]]
+)
+native_library(
+    name = "library_go-native",
+    library = "go-native",
+    shared = ":go_shared",
+    deps = ["@go_inputs//:files"],
+)
 
 native_library(
     name = "library_zplr",
@@ -158,11 +191,18 @@ native_library(
     deps = ["@node_inputs//:files"],
 )
 
+go_binary(
+    name = "zebrash_adapter",
+    srcs = ["benchmarks/adapters/zebrash/main.go"],
+    deps = ["@zebrash_github_com_ingridhq_zebrash//:go_default_library", "@zebrash_github_com_ingridhq_zebrash//drawers:go_default_library"],
+    gc_linkopts = ["-s", "-w"],
+    tags = ["manual"],
+)
 native_library(
     name = "library_zebrash",
+    binary = ":zebrash_adapter",
     srcs = ["benchmarks/adapters/zebrash/main.go"],
     library = "zebrash",
-    toolchain = ["@native_tools//:go"],
     deps = ["@zebrash_inputs//:files"],
 )
 
@@ -205,7 +245,7 @@ native_library(
     wasm = ":node_wasm",
     srcs = ["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"],
     library = "codyps-zpl-node",
-    toolchain = ["@native_tools//:rust", "@native_tools//:node", "@native_tools//:wasm-bindgen"],
+    toolchain = ["@native_tools//:node"],
     deps = ["@codyps_zpl_node_inputs//:files"],
 )
 
@@ -436,6 +476,15 @@ py_test(
     srcs = ["build/node_adapter_test.py"],
     main = "build/node_adapter_test.py",
     data = [":library_codyps-zpl-node"],
+    deps = [requirement("pillow")],
+)
+
+py_test(
+    name = "native_adapter_test",
+    size = "small",
+    srcs = ["build/native_adapter_test.py"],
+    main = "build/native_adapter_test.py",
+    data = [":library_" + lib for lib in ["codyps-zpl", "labelize", "forge", "go", "ffi", "zebrash"]],
     deps = [requirement("pillow")],
 )
 

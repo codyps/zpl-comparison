@@ -110,7 +110,7 @@ jobs:
       - name: Test native adapter contracts
         if: github.event.pull_request.head.repo.fork != true
         run: |
-          bazel test //:canvas_profile_test //:node_adapter_test //:dotnet_runtime_test //:adapter_contract_test //:support_test //:font_profile_test //:font_capture_test //:renderer_reuse_test \
+          bazel test //:canvas_profile_test //:node_adapter_test //:dotnet_runtime_test //:native_adapter_test //:adapter_contract_test //:support_test //:font_profile_test //:font_capture_test //:renderer_reuse_test \
             --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" --jobs=2 --test_output=errors
       - name: Build local renders and reports
         if: github.event.pull_request.head.repo.fork != true

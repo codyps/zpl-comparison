@@ -1,9 +1,7 @@
 """An independently cacheable compilation/deployment action per library."""
 
 def _native_resources(_os, _input_count):
-    # Match native_build.py's two-thread compiler limits. Reserve room for
-    # compiler/linker memory even when consumers request many cached actions.
-    return {"cpu": 2, "memory": 2048}
+    return {"cpu": 1, "memory": 256}
 
 def _native_impl(ctx):
     output = ctx.actions.declare_directory(ctx.label.name)
@@ -35,10 +33,9 @@ def _native_impl(ctx):
         files.append([f.path, "published/" + relative])
     files.extend([[f.path, "built/adapter"] for f in ctx.files.binary])
     files.extend([[f.path, "built/pkg/" + f.basename] for f in ctx.files.wasm])
+    files.extend([[f.path, "built/" + f.basename] for f in ctx.files.shared])
     tools = ctx.files.toolchain
-    root = tools[0].path.split("/rust/")[0].split("/go/")[0].split("/node/")[0].split("/dotnet/")[0]
-
-    # host.txt may be the first input.
+    root = tools[0].path.split("/node/")[0].split("/dotnet/")[0] if tools else ""
     if root.endswith("/host.txt"):
         root = root[:-len("/host.txt")]
     native = ctx.files.native
@@ -46,13 +43,11 @@ def _native_impl(ctx):
     ctx.actions.run(
         executable = ctx.executable._runner,
         arguments = [manifest.path, output.path],
-        inputs = depset(ctx.files.srcs + dependency_files + tools + native + published + ctx.files.binary + ctx.files.wasm + ctx.files._host + [manifest]),
+        inputs = depset(ctx.files.srcs + dependency_files + tools + native + published + ctx.files.binary + ctx.files.wasm + ctx.files.shared + [manifest]),
         tools = [ctx.attr._runner[DefaultInfo].files_to_run],
         outputs = [output],
         mnemonic = "ZplLibraryBuild",
         progress_message = "Building pinned %s library" % ctx.attr.library,
-        use_default_shell_env = True,
-        execution_requirements = {"no-remote-exec": "1"},
         resource_set = _native_resources,
     )
     return [DefaultInfo(files = depset([output]))]
@@ -63,9 +58,9 @@ native_library = rule(implementation = _native_impl, attrs = {
     "deps": attr.label_list(allow_files = True),
     "toolchain": attr.label_list(allow_files = True),
     "native": attr.label(allow_files = True),
+    "shared": attr.label(allow_files = True),
     "wasm": attr.label(allow_files = True),
     "binary": attr.label(allow_single_file = True),
     "published": attr.label(allow_files = True),
-    "_host": attr.label(default = "@native_host//:identity.txt", allow_files = True),
     "_runner": attr.label(default = "//:native_builder", executable = True, cfg = "exec"),
 })
