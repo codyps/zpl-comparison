@@ -249,6 +249,7 @@ class Site:
             raise ValueError("Output directory must be empty (choose a new directory)")
         self.output.mkdir(parents=True, exist_ok=True)
         self.page = "index.html"
+        self.href_cache = {}
         self.assets = {}
         self.asset_paths = {}
         self.cases = []
@@ -266,7 +267,10 @@ class Site:
         return json.loads((self.source / path).read_text())
 
     def href(self, path):
-        return os.path.relpath(path, Path(self.page).parent)
+        key = (os.path.dirname(self.page), path)
+        if key not in self.href_cache:
+            self.href_cache[key] = os.path.relpath(path, key[0] or ".")
+        return self.href_cache[key]
 
     def link(self, path, label):
         badge = ""
