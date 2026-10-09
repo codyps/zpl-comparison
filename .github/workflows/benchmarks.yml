@@ -7,6 +7,11 @@ on:
         description: Restore/save the disk action cache for timing comparisons
         type: boolean
         default: false
+      report_jobs:
+        description: Concurrent report actions (local CPU use remains capped)
+        type: choice
+        options: ['64', '32']
+        default: '64'
   schedule:
     - cron: "23 8 * * *"
   pull_request:
@@ -115,11 +120,14 @@ jobs:
       - name: Build local renders and reports
         if: github.event.pull_request.head.repo.fork != true
         timeout-minutes: 45
+        env:
+          REPORT_JOBS: ${{ inputs.report_jobs || '64' }}
         run: |
           bazel build //:reports //:reports_fonts \
             --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" \
-            --jobs=32 --local_resources=cpu=HOST_CPUS \
+            --jobs="$REPORT_JOBS" --local_resources=cpu=HOST_CPUS \
             --profile="$RUNNER_TEMP/reports.profile.gz" \
+            --execution_log_compact_file="$RUNNER_TEMP/reports.exec.zst" \
             --build_event_json_file="$RUNNER_TEMP/reports.events.json"
       - name: Test generated compatibility evidence
         if: github.event.pull_request.head.repo.fork != true
@@ -140,6 +148,7 @@ jobs:
           path: |
             ${{ runner.temp }}/*.profile.gz
             ${{ runner.temp }}/*.events.json
+            ${{ runner.temp }}/*.exec.zst
           if-no-files-found: ignore
           retention-days: 7
       - name: Verify independent cache boundaries
