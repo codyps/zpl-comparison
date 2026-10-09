@@ -15,7 +15,10 @@ def _invoke(ctx, kind, name, spec, inputs, outputs):
     if kind == "pages" and ctx.attr.saved:
         spec = dict(spec, saved = True)
     runner = getattr(ctx.attr, "_" + kind)
-    worker = kind != "stage"
+    worker = kind not in ["stage", "archive", "unpack"]
+    requirements = {"supports-workers": "1", "requires-worker-protocol": "json"} if worker else {}
+    if kind == "unpack":
+        requirements = {"no-cache": "1", "no-remote-exec": "1"}
     if worker:
         # Bazel passes these directly to persistent workers. Avoid two FileWrite
         # actions and manifest I/O for every render, comparison, and preview.
@@ -36,7 +39,7 @@ def _invoke(ctx, kind, name, spec, inputs, outputs):
         inputs = depset(inputs),
         tools = [runner[DefaultInfo].files_to_run],
         outputs = outputs,
-        execution_requirements = {"supports-workers": "1", "requires-worker-protocol": "json"} if worker else {},
+        execution_requirements = requirements,
         mnemonic = "Zpl" + kind.capitalize(),
         progress_message = "%s %s" % (kind, name),
         use_default_shell_env = True,
@@ -50,8 +53,17 @@ def _tree(ctx, name):
     return ctx.actions.declare_directory(ctx.label.name + "_actions/" + name)
 
 def _stage(ctx, name, inputs, commands, assemble = False):
-    output = ctx.actions.declare_directory(ctx.label.name) if assemble else _tree(ctx, name)
-    _invoke(ctx, "stage", name, {"inputs": [[f.path, dest] for f, dest in inputs], "commands": commands, "assemble": assemble}, [f for f, _ in inputs], [output])
+    spec = {"inputs": [[f.path, dest] for f, dest in inputs], "commands": commands, "assemble": assemble}
+    if assemble:
+        # Cache one regular blob rather than a multi-megabyte Tree manifest
+        # referencing tens of thousands of files. Materialize it only locally.
+        archive = ctx.actions.declare_file(ctx.label.name + ".tar")
+        _invoke(ctx, "archive", name, spec, [f for f, _ in inputs], [archive])
+        output = ctx.actions.declare_directory(ctx.label.name)
+        _invoke(ctx, "unpack", name + "-extract", {"archive": archive.path}, [archive], [output])
+        return output
+    output = _tree(ctx, name)
+    _invoke(ctx, "stage", name, spec, [f for f, _ in inputs], [output])
     return output
 
 def _select(files, prefixes):
@@ -319,4 +331,4 @@ pipeline = rule(implementation = _impl, attrs = dict({
     "baseline": attr.label_list(allow_files = True),
     "libraries": attr.label_list(),
     "support_inputs": attr.label_list(allow_files = True),
-}, **{"_" + name: attr.label(default = "//:action_" + name, executable = True, cfg = "exec") for name in ["render", "compare", "preview", "pages", "aggregate", "relation", "saved", "probe", "stage"]}))
+}, **{"_" + name: attr.label(default = "//:action_" + name, executable = True, cfg = "exec") for name in ["render", "compare", "preview", "pages", "aggregate", "relation", "saved", "probe", "stage", "archive", "unpack"]}))

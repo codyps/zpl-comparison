@@ -223,6 +223,20 @@ pipeline(
     ("stage", []),
 ]]
 
+[py_binary(
+    name = "action_" + name,
+    srcs = ["build/report_archive.py", "build/stage.py"],
+    main = "build/report_archive.py",
+    imports = ["benchmarks"],
+    deps = [requirement("numpy"), requirement("pillow"), requirement("matplotlib"), requirement("zxing-cpp")] if name == "archive" else [],
+) for name in ["archive", "unpack"]]
+
+py_test(
+    name = "report_archive_test",
+    srcs = ["build/report_archive_test.py", "build/report_archive.py", "build/stage.py"],
+    main = "build/report_archive_test.py",
+)
+
 filegroup(
     name = "render_libraries",
     srcs = [":library_" + lib for lib in [

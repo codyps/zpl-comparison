@@ -103,7 +103,7 @@ jobs:
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'
           python3 -m unittest benchmarks.test_audit_failures
-          bazel test //:site_test //:report_runner_test //:pipeline_test //:automation_test //:overview_test //:performance_test //:renderer_session_test --test_output=errors
+          bazel test //:site_test //:report_runner_test //:report_archive_test //:pipeline_test //:automation_test //:overview_test //:performance_test //:renderer_session_test --test_output=errors
       - name: Build pinned renderer libraries
         if: github.event.pull_request.head.repo.fork != true
         timeout-minutes: 20
