@@ -15,7 +15,7 @@ def gray(path):
         if image.width * image.height > 16_000_000:
             raise ValueError("Raster limit exceeded")
         image.load()
-        if image.mode in {"L", "RGB"} and "transparency" not in image.info:
+        if image.mode in {"1", "L", "RGB"} and "transparency" not in image.info:
             return np.array(image.convert("L"))
         rgba = image.convert("RGBA")
         white = Image.new("RGBA", image.size, "white")

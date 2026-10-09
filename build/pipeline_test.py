@@ -371,7 +371,7 @@ class PipelineTest(unittest.TestCase):
             np.testing.assert_array_equal(np.asarray(saved.convert("RGB")), diff)
 
     def test_fast_decoding_preserves_white_compositing(self):
-        for mode in ["L", "RGB", "RGBA", "P"]:
+        for mode in ["1", "L", "RGB", "RGBA", "P"]:
             for transparent in [False, True]:
                 with self.subTest(mode=mode, transparent=transparent):
                     im = Image.new("RGBA", (3, 2), (20, 60, 120, 100)).convert(mode)
