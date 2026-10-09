@@ -11,6 +11,29 @@ from build.stage import stage
 
 
 class ReportRunnerTests(unittest.TestCase):
+    def test_assembly_merges_inputs_and_runs_checks_without_copying_back(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            first, second = root / "first", root / "second"
+            first.mkdir()
+            second.mkdir()
+            (first / "report.txt").write_text("old")
+            (second / "report.txt").write_text("new")
+            (second / "report.txt").chmod(0o444)
+            check = root / "check.py"
+            check.write_text("import os\nfrom pathlib import Path\n"
+                             "assert Path('docs/report.txt').read_text() == 'new'\n"
+                             "Path(os.environ['HOME']).mkdir()\n"
+                             "Path(os.environ['HOME'], 'cache').write_text('temporary')\n")
+            output = root / "output"
+            stage(dict(inputs=[[str(first), "docs"], [str(second), "docs"],
+                               [str(check), "check.py"]], commands=[["check.py"]], assemble=True), output)
+            self.assertEqual((output / "docs/report.txt").read_text(), "new")
+            self.assertEqual((second / "report.txt").read_text(), "new")
+            self.assertFalse((output / "docs/report.txt").is_symlink())
+            self.assertEqual({str(p.relative_to(output)) for p in output.rglob('*') if p.is_file()},
+                             {"docs/report.txt", "check.py"})
+
     def test_read_only_tree_artifact_can_be_updated_without_mutating_input(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

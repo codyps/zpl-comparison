@@ -14,7 +14,10 @@ def stage(spec, destination):
     output = Path(destination).resolve()
     output.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="zpl-report-", dir=os.environ.get("ZPL_BUILD_TMPDIR")) as temporary:
-        root = Path(temporary)
+        # Assembly publishes every input. Populate its declared output directly
+        # instead of hashing and copying the entire report tree a second time.
+        assemble = spec.get("assemble", False)
+        root = output if assemble else Path(temporary)
 
         def copy(source, relative):
             source = Path(source)
@@ -37,7 +40,7 @@ def stage(spec, destination):
 
         for source, relative in spec["inputs"]:
             copy(source, relative)
-        before = {
+        before = {} if assemble else {
             p.relative_to(root): hashlib.sha256(p.read_bytes()).digest()
             for p in root.rglob("*")
             if p.is_file()
@@ -46,9 +49,9 @@ def stage(spec, destination):
             **os.environ,
             "PYTHONDONTWRITEBYTECODE": "1",
             "MPLBACKEND": "Agg",
-            "MPLCONFIGDIR": str(root / "_cache"),
-            "HOME": str(root / "_cache"),
-            "XDG_CACHE_HOME": str(root / "_cache"),
+            "MPLCONFIGDIR": str(Path(temporary) / "_cache"),
+            "HOME": str(Path(temporary) / "_cache"),
+            "XDG_CACHE_HOME": str(Path(temporary) / "_cache"),
         }
         env["PYTHONPATH"] = os.pathsep.join(
             [str(root / "benchmarks"), str(root)]
@@ -56,14 +59,13 @@ def stage(spec, destination):
         )
         for command in spec.get("commands", []):
             subprocess.run([sys.executable, *command], cwd=root, env=env, check=True)
+        if assemble:
+            return
         for path in root.rglob("*"):
             if not path.is_file() or path.relative_to(root).parts[0] == "_cache":
                 continue
             relative = path.relative_to(root)
-            if (
-                spec.get("assemble")
-                or before.get(relative) != hashlib.sha256(path.read_bytes()).digest()
-            ):
+            if before.get(relative) != hashlib.sha256(path.read_bytes()).digest():
                 target = output / relative
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(path, target)

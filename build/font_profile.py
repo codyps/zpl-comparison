@@ -1,6 +1,8 @@
 """Font-controlled rendering policy; never rewrite fixture fields or geometry."""
 import hashlib
 import json
+from copy import deepcopy
+from functools import lru_cache
 from pathlib import Path
 
 CALLBACK = {'binarykits', 'forge', 'zplr'}
@@ -17,6 +19,20 @@ FIXED = {
 def configure(directory, library):
     root = Path(directory).resolve()
     manifest_bytes = (root / 'manifest.json').read_bytes()
+    manifest = json.loads(manifest_bytes)
+    # Persistent workers see immutable Bazel inputs during a build, but can be
+    # reused after inputs change. Include file identity and change timestamps so
+    # edits (even with a restored mtime) force fresh hash verification.
+    signatures = []
+    for name in sorted(manifest['sha256']):
+        stat = (root / name).stat()
+        signatures.append((name, stat.st_dev, stat.st_ino, stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns))
+    metadata, preamble = _configure(root, library, manifest_bytes, tuple(signatures))
+    return deepcopy(metadata), preamble
+
+
+@lru_cache(maxsize=32)
+def _configure(root, library, manifest_bytes, signatures):
     manifest = json.loads(manifest_bytes)
     for name, digest in manifest['sha256'].items():
         if hashlib.sha256((root / name).read_bytes()).hexdigest() != digest:

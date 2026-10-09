@@ -1,5 +1,6 @@
 """Verify recovered geometry, font isolation, and actual public adapter injection."""
 import json
+import os
 import re
 import shutil
 import struct
@@ -15,6 +16,22 @@ from build.render import render
 
 
 class FontProfileTest(unittest.TestCase):
+    def test_cached_bundle_rejects_file_changes_even_with_restored_mtime(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            font = root / 'font.ttf'
+            font.write_bytes(b'original')
+            (root / 'manifest.json').write_text(json.dumps(dict(
+                sha256={font.name: sha(font)}, fonts={'0': font.name})))
+            original, _ = configure(root, 'go')
+            original['fonts']['0'] = 'mutated-by-caller'
+            self.assertEqual(configure(root, 'go')[0]['fonts']['0'], font.name)
+            previous = font.stat()
+            font.write_bytes(b'modified')
+            os.utime(font, ns=(previous.st_atime_ns, previous.st_mtime_ns))
+            with self.assertRaisesRegex(ValueError, 'hash mismatch'):
+                configure(root, 'go')
+
     def test_outline_conversion_preserves_vertical_metrics(self):
         for original, converted in [('heros-cn-bold.otf', '0.ttf'), ('heros-regular.otf', 'Swiss.ttf')]:
             source = TTFont(Path('benchmarks/fonts/source') / original)

@@ -176,10 +176,17 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/collect_popularity.py --output "$RUNNER_TEMP/popularity.json"
+      - name: Restore site previews
+        id: preview-cache
+        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: ${{ runner.temp }}/site-previews
+          key: site-previews-v1-${{ runner.os }}-${{ runner.arch }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: site-previews-v1-${{ runner.os }}-${{ runner.arch }}-
       - name: Generate and validate comparison site
         run: |
           if [ "${{ github.event.pull_request.head.repo.fork }}" = "true" ]; then
-            bazel run //:comparison_site -- --input "$GITHUB_WORKSPACE/bazel-bin/reports_saved" --output "$GITHUB_WORKSPACE/_site"
+            bazel run //:comparison_site -- --input "$GITHUB_WORKSPACE/bazel-bin/reports_saved" --output "$GITHUB_WORKSPACE/_site" --preview-cache "$RUNNER_TEMP/site-previews"
           else
             # Stage a writable tree; never modify cached Bazel outputs.
             cp -RL bazel-bin/reports "$RUNNER_TEMP/measured-reports"
@@ -189,8 +196,14 @@ jobs:
               cp "$RUNNER_TEMP/popularity.json" "$RUNNER_TEMP/measured-reports/benchmarks/popularity.json"
               python3 benchmarks/catalog.py --popularity "$RUNNER_TEMP/popularity.json" --output "$RUNNER_TEMP/measured-reports/docs/benchmarks/capabilities.md"
             fi
-            bazel run //:comparison_site -- --input "$RUNNER_TEMP/measured-reports" --font-input "$GITHUB_WORKSPACE/bazel-bin/reports_fonts" --output "$GITHUB_WORKSPACE/_site"
+            bazel run //:comparison_site -- --input "$RUNNER_TEMP/measured-reports" --font-input "$GITHUB_WORKSPACE/bazel-bin/reports_fonts" --output "$GITHUB_WORKSPACE/_site" --preview-cache "$RUNNER_TEMP/site-previews"
           fi
+      - name: Save site previews
+        if: success() && github.event.pull_request.head.repo.fork != true
+        uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: ${{ runner.temp }}/site-previews
+          key: ${{ steps.preview-cache.outputs.cache-primary-key }}
       - name: Export durable observations
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: |

@@ -18,7 +18,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-from PIL import Image, ImageChops
+from PIL import Image, ImageChops, __version__ as PILLOW_VERSION
 
 NAMES = {
     "codyps-zpl-node": "codyps/zpl (Node / WASM)",
@@ -102,6 +102,79 @@ def shared_bounds(paths):
     )
 
 
+# Bump when ink_bounds or crop_png changes pixel behavior. Pillow's version is
+# also part of the persistent key, so dependency updates never reuse old images.
+PREVIEW_CACHE_VERSION = 1
+
+
+def crop_png(path, bounds):
+    with Image.open(path) as raw:
+        rgba = raw.convert("RGBA")
+        canvas = Image.new("RGBA", (bounds[2] - bounds[0], bounds[3] - bounds[1]), "white")
+        canvas.paste(rgba, (-bounds[0], -bounds[1]), rgba)
+        image = canvas.convert("RGB")
+        image.thumbnail((1200, 800), Image.Resampling.NEAREST)
+        encoded = io.BytesIO()
+        image.save(encoded, format="PNG")
+    return encoded.getvalue()
+
+
+class PreviewCache:
+    """Derived presentation images keyed by source content and crop geometry."""
+
+    def __init__(self, directory=None):
+        self.root = (Path(directory) / f"v{PREVIEW_CACHE_VERSION}-pillow-{PILLOW_VERSION}") if directory else None
+        self.bounds, self.images = {}, {}
+        self.hits, self.misses = 0, 0
+        if self.root:
+            self.root.mkdir(parents=True, exist_ok=True)
+            try:
+                index = json.loads((self.root / "index.json").read_text())
+                self.bounds, self.images = index["bounds"], index["images"]
+            except (OSError, ValueError, KeyError):
+                pass
+
+    def frame(self, output, assets):
+        rectangles = []
+        for asset in assets:
+            if not asset:
+                continue
+            if asset not in self.bounds:
+                self.bounds[asset] = ink_bounds(output / asset)
+            if self.bounds[asset]:
+                rectangles.append(self.bounds[asset])
+        if not rectangles:
+            return (0, 0, 64, 64)
+        return (min(b[0] for b in rectangles) - 8, min(b[1] for b in rectangles) - 8,
+                max(b[2] for b in rectangles) + 8, max(b[3] for b in rectangles) + 8)
+
+    def focused(self, output, asset, bounds):
+        key = hashlib.sha256(json.dumps([asset, bounds]).encode()).hexdigest()
+        digest = self.images.get(key)
+        if self.root and digest and re.fullmatch(r"[0-9a-f]{64}", digest):
+            try:
+                data = (self.root / (digest + ".png")).read_bytes()
+                if hashlib.sha256(data).hexdigest() == digest:
+                    self.hits += 1
+                    return digest, data
+            except OSError:
+                pass
+        self.misses += 1
+        data = crop_png(output / asset, bounds)
+        digest = hashlib.sha256(data).hexdigest()
+        if self.root:
+            (self.root / (digest + ".png")).write_bytes(data)
+            self.images[key] = digest
+        return digest, data
+
+    def save(self):
+        if self.root:
+            temporary = self.root / "index.json.tmp"
+            temporary.write_text(json.dumps(dict(bounds=self.bounds, images=self.images), sort_keys=True))
+            temporary.replace(self.root / "index.json")
+            print(f"Site previews: {self.hits} cache hits, {self.misses} generated")
+
+
 def table(headers, rows, caption, kind=""):
     return (
         '<div class="table-wrap '
@@ -165,7 +238,7 @@ def heat(rows, href):
 
 
 class Site:
-    def __init__(self, source, output):
+    def __init__(self, source, output, previews=None):
         self.source, self.output = Path(source).resolve(), Path(output).resolve()
         if self.output == self.source or self.source.is_relative_to(self.output):
             raise ValueError("Output must not contain the input tree")
@@ -174,10 +247,12 @@ class Site:
         self.output.mkdir(parents=True, exist_ok=True)
         self.page = "index.html"
         self.assets = {}
+        self.asset_paths = {}
         self.cases = []
         self.suites = []
         self.raw = {}
         self.focus_cache = {}
+        self.previews = previews if previews is not None else PreviewCache()
         evidence = self.source / "docs/benchmarks/accuracy/results.json"
         rows = json.loads(evidence.read_text()).get("results", []) if evidence.exists() else []
         self.font_controlled = any(row.get("font_control") for row in rows)
@@ -209,6 +284,8 @@ class Site:
     def asset(self, path, required=True):
         if not path:
             return None
+        if path in self.asset_paths:
+            return self.asset_paths[path]
         src = (self.source / path).resolve()
         if not src.is_relative_to(self.source):
             raise ValueError("Evidence escapes input tree: " + str(path))
@@ -224,25 +301,16 @@ class Site:
             if not dest.exists():
                 shutil.copyfile(src, dest)
             self.assets[str(src)] = target
-        return self.assets[str(src)]
+        self.asset_paths[path] = self.assets[str(src)]
+        return self.asset_paths[path]
 
     def focused(self, asset, bounds):
         if not asset:
             return None
         key = (asset, bounds)
         if key not in self.focus_cache:
-            with Image.open(self.output / asset) as raw:
-                rgba = raw.convert("RGBA")
-                canvas = Image.new(
-                    "RGBA", (bounds[2] - bounds[0], bounds[3] - bounds[1]), "white"
-                )
-                canvas.paste(rgba, (-bounds[0], -bounds[1]), rgba)
-                image = canvas.convert("RGB")
-                image.thumbnail((1200, 800), Image.Resampling.NEAREST)
-                encoded = io.BytesIO()
-                image.save(encoded, format="PNG")
-            data = encoded.getvalue()
-            target = "assets/" + hashlib.sha256(data).hexdigest() + ".png"
+            digest, data = self.previews.focused(self.output, asset, bounds)
+            target = "assets/" + digest + ".png"
             if not (self.output / target).exists():
                 (self.output / target).write_bytes(data)
             self.focus_cache[key] = target
@@ -255,7 +323,7 @@ class Site:
                 + [r["image_asset"] for r in case["rows"]]
                 + [r["diff_asset"] for r in case["rows"]]
             )
-            bounds = shared_bounds([self.output / p for p in originals if p])
+            bounds = self.previews.frame(self.output, originals)
             case["reference_thumb"] = self.focused(case["reference"], bounds)
             for row in case["rows"]:
                 row["thumb_asset"] = self.focused(row["image_asset"], bounds)
@@ -1451,7 +1519,7 @@ class Site:
             + table(["Renderer", "Font treatment"], [[self.library_name(name), E(note)] for name, note in sorted(treatments.items())], "Font support and exceptions")
         )
 
-    def generate(self):
+    def generate(self, validate_output=True):
         self.load()
         if self.font_controlled:
             capture = self.read("references/font-controlled/capture.json")
@@ -1468,7 +1536,8 @@ class Site:
         self.indexes()
         self.other_pages()
         (self.output / ".nojekyll").touch()
-        validate(self.output)
+        if validate_output:
+            validate(self.output)
 
 
 class Links(HTMLParser):
@@ -1501,16 +1570,19 @@ def validate(root):
         if len(methodology_links) > 1:
             raise ValueError(f"Duplicate methodology links: {path.relative_to(root)}")
         documents[path] = parser
+    destinations = {}
     for path, parser in documents.items():
         for link in parser.links:
             url = urlsplit(link)
             if url.scheme or url.netloc:
                 continue
-            target = (path.parent / unquote(url.path)).resolve() if url.path else path
-            if not target.is_relative_to(root) or not target.is_file():
-                raise ValueError(
-                    f"Broken local link: {path.relative_to(root)} -> {link}"
-                )
+            key = (path.parent, url.path) if url.path else (path, "")
+            if key not in destinations:
+                target = (path.parent / unquote(url.path)).resolve() if url.path else path
+                if not target.is_relative_to(root) or not target.is_file():
+                    raise ValueError(f"Broken local link: {path.relative_to(root)} -> {link}")
+                destinations[key] = target
+            target = destinations[key]
             if (
                 url.fragment
                 and target in documents
@@ -1527,10 +1599,12 @@ if __name__ == "__main__":
     parser.add_argument("--input", type=Path, default=Path("bazel-bin/reports"))
     parser.add_argument("--output", type=Path, default=Path("_site"))
     parser.add_argument("--font-input", type=Path, help="Also publish the separate font-controlled report tree under fonts/")
+    parser.add_argument("--preview-cache", type=Path, help="Reuse content-addressed presentation images between builds")
     args = parser.parse_args()
-    Site(args.input, args.output).generate()
+    previews = PreviewCache(args.preview_cache)
+    Site(args.input, args.output, previews).generate(validate_output=not args.font_input)
     if args.font_input:
-        Site(args.font_input, args.output / "fonts").generate()
+        Site(args.font_input, args.output / "fonts", previews).generate(validate_output=False)
         # Both complete sites exist before adding cross-links and validating them.
         for path in args.output.rglob("*.html"):
             controlled = path.is_relative_to(args.output / "fonts")
@@ -1544,3 +1618,4 @@ if __name__ == "__main__":
             text = path.read_text().replace('</nav></header>', f'<a class="variant-switch" href="{E(href)}">{label}</a></nav></header>')
             path.write_text(text)
         validate(args.output)
+    previews.save()

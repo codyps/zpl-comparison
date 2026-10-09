@@ -5,6 +5,7 @@ import hashlib
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from PIL import Image
@@ -418,6 +419,43 @@ class PublicationTests(unittest.TestCase):
             path = Path(temp) / "blank.png"
             Image.new("RGB", (832, 1218), "white").save(path)
             self.assertEqual(generate.shared_bounds([path]), (0, 0, 64, 64))
+
+    def test_preview_cache_reuses_pixels_across_output_roots(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "input"
+            source.mkdir()
+            image = Image.new("RGBA", (32, 24), (255, 255, 255, 0))
+            image.putpixel((10, 12), (0, 0, 0, 255))
+            image.save(source / "image.png")
+            cache = generate.PreviewCache(root / "cache")
+            first = generate.Site(source, root / "first", cache)
+            asset = first.asset("image.png")
+            bounds = cache.frame(first.output, [asset])
+            self.assertEqual(bounds, generate.shared_bounds([first.output / asset]))
+            preview = first.focused(asset, bounds)
+            expected = (first.output / preview).read_bytes()
+            self.assertEqual(expected, generate.crop_png(first.output / asset, bounds))
+            cache.save()
+            restored = generate.PreviewCache(root / "cache")
+            second = generate.Site(source, root / "second", restored)
+            second_asset = second.asset("image.png")
+            with patch.object(generate, "crop_png", side_effect=AssertionError("Unexpected crop")), \
+                 patch.object(generate, "ink_bounds", side_effect=AssertionError("Unexpected decode")):
+                self.assertEqual(restored.frame(second.output, [second_asset]), bounds)
+                self.assertEqual(second.focused(second_asset, bounds), preview)
+            self.assertEqual((second.output / preview).read_bytes(), expected)
+            self.assertEqual(restored.hits, 1)
+            # Crop geometry is an input, even when the source PNG is identical.
+            second.focused(second_asset, (0, 0, 32, 24))
+            self.assertEqual(restored.misses, 1)
+            # Damaged entries are rebuilt, never published under a false digest.
+            (restored.root / Path(preview).name).write_bytes(b"damaged")
+            third = generate.Site(source, root / "third", restored)
+            self.assertEqual(third.focused(third.asset("image.png"), bounds), preview)
+            self.assertEqual((third.output / preview).read_bytes(), expected)
+            with patch.object(generate, "PREVIEW_CACHE_VERSION", 999):
+                self.assertEqual(generate.PreviewCache(root / "cache").images, {})
 
     def test_text_is_escaped(self):
         self.assertEqual(generate.E('<script>"'), "&lt;script&gt;&quot;")

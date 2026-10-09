@@ -56,6 +56,11 @@ the BuildBuddy secret, builds use disk caching alone.
 The repository download cache remains separate. These caches retain completed
 build actions, not fresh performance measurements or the runtime output of
 `bazel run //:comparison_site`. Those stages still run on every publication.
+The site generator separately caches cropped presentation images and ink bounds
+using source-image content, crop geometry, the crop algorithm version and Pillow
+version. CI restores and updates this preview cache each run; local builds can
+opt in with `--preview-cache /path/to/cache` after the `bazel run` argument separator.
+Pages are regenerated and the complete combined site is validated every time.
 After changing cache configuration, compare identical revisions across two CI
 runs: the second should report disk/remote cache hits for unchanged render and
 comparison actions. BuildBuddy invocation pages and the `build-performance`
