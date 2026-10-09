@@ -37,10 +37,34 @@ jobs:
         with:
           bazelisk-version: 1.29.0
           bazelisk-cache: true
-          disk-cache: true
-          repository-cache: true
-          # The action saves after failures too; PR caches are scoped to that PR.
+          # Action results use rolling snapshots below; setup-bazel's BUILD-only
+          # key otherwise freezes the first (possibly incomplete) snapshot.
+          disk-cache: false
+          repository-cache: |
+            - MODULE.bazel
+            - MODULE.bazel.lock
+            - build/toolchains.lock.json
+            - build/requirements.lock.txt
           cache-save: ${{ github.event.pull_request.head.repo.fork != true }}
+      - name: Configure Bazel caches
+        id: cache-config
+        env:
+          # Only trusted main builds receive remote-cache write credentials.
+          BUILDBUDDY_API_KEY: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && secrets.BUILDBUDDY_API_KEY || '' }}
+        run: python3 .github/scripts/buildbuddy_cache.py configure
+      - name: Restore Bazel action cache
+        id: action-cache
+        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: ${{ steps.cache-config.outputs.disk-cache }}
+          key: bazel-actions-v2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('.bazelversion') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            bazel-actions-v2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('.bazelversion') }}-
+            setup-bazel-1-linux-x64-disk-true-
+      - name: Verify BuildBuddy cache round trip
+        if: steps.cache-config.outputs.remote-enabled == 'true'
+        timeout-minutes: 3
+        run: python3 .github/scripts/verify_buildbuddy_cache.py
       - name: Read pinned private source revision
         if: github.event.pull_request.head.repo.fork != true
         id: source
@@ -95,6 +119,12 @@ jobs:
         env:
           PYTHONPATH: benchmarks
         run: ZPL_REPORTS_PATH="$GITHUB_WORKSPACE/bazel-bin/reports" python3 -m unittest benchmarks.test_compatibility
+      - name: Save updated Bazel action cache
+        if: always() && !cancelled() && github.event.pull_request.head.repo.fork != true && steps.action-cache.outputs.cache-primary-key != ''
+        uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: ${{ steps.cache-config.outputs.disk-cache }}
+          key: ${{ steps.action-cache.outputs.cache-primary-key }}
       - name: Upload build performance evidence
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
