@@ -9,7 +9,7 @@ import urllib.request
 import uuid
 
 
-def collect(invocation, api_key):
+def collect(invocation, api_key, mnemonic="ZplArchive"):
     invocation = str(uuid.UUID(invocation))
     results = []
     token = ""
@@ -17,7 +17,7 @@ def collect(invocation, api_key):
         body = {
             "invocationId": invocation,
             "pageToken": token,
-            "filter": {"mask": "search,cacheType", "search": "ZplStage", "cacheType": "AC"},
+            "filter": {"mask": "search,cacheType", "search": mnemonic, "cacheType": "AC"},
         }
         request = urllib.request.Request(
             "https://app.buildbuddy.io/rpc/BuildBuddyService/GetCacheScoreCard",
@@ -36,12 +36,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--invocations", required=True, help="Comma-separated invocation UUIDs")
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--mnemonic", choices=["ZplArchive", "ZplStage"], default="ZplArchive")
     args = parser.parse_args()
     ids = [str(uuid.UUID(value.strip())) for value in args.invocations.split(",")]
     args.output.mkdir(parents=True, exist_ok=True)
     for invocation in ids:
         try:
-            result = collect(invocation, os.environ["BUILDBUDDY_API_KEY"])
+            result = collect(invocation, os.environ["BUILDBUDDY_API_KEY"], args.mnemonic)
         except urllib.error.HTTPError as error:
             # Never dump request headers or credentials in CI output.
             raise SystemExit(f"BuildBuddy metadata request failed: HTTP {error.code}") from None
