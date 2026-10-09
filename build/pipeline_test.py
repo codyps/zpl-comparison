@@ -356,9 +356,15 @@ class PipelineTest(unittest.TestCase):
     def test_palette_difference_preserves_every_color_and_canvas(self):
         ref = np.array([[0, 0, 255, 255]], dtype=np.uint8)
         out = np.array([[0, 255, 0, 255], [0, 255, 255, 255]], dtype=np.uint8)
-        _, diff = compare(ref, out)
+        metrics, diff = compare(ref, out)
+        indexed_metrics, indices = compare(ref, out, indexed=True)
+        self.assertEqual(metrics, indexed_metrics)
+        np.testing.assert_array_equal(diff[0], [[0, 0, 0], [220, 0, 150], [0, 160, 220], [255, 255, 255]])
         path = self.root / "diff.png"
         save_difference(diff, path)
+        indexed_path = self.root / "indexed.png"
+        save_difference(indices, indexed_path)
+        self.assertEqual(path.read_bytes(), indexed_path.read_bytes())
         with Image.open(path) as saved:
             self.assertEqual(saved.mode, "P")
             self.assertEqual(saved.size, (4, 2))
@@ -383,14 +389,12 @@ class PipelineTest(unittest.TestCase):
                     np.testing.assert_array_equal(gray(path), np.asarray(expected.convert("L")))
 
     def test_worker_continues_after_error_without_reusing_old_outputs(self):
-        good = self.root / "good.json"
-        bad = self.root / "bad.json"
-        good.write_text(json.dumps(self.spec()))
-        bad.write_text(json.dumps({**self.spec(), "sha256": "bad"}))
-        arguments = [str(good), str(self.root / "row.json"), str(self.root / "images")]
+        good = json.dumps(self.spec())
+        bad = json.dumps({**self.spec(), "sha256": "bad"})
+        arguments = [good, str(self.root / "row.json"), str(self.root / "images")]
         requests = [
             {"requestId": 1, "arguments": arguments},
-            {"requestId": 2, "arguments": [str(bad), *arguments[1:]]},
+            {"requestId": 2, "arguments": [bad, *arguments[1:]]},
             {"requestId": 3, "arguments": arguments},
         ]
         process = subprocess.run(
@@ -410,6 +414,19 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual([r["exitCode"] for r in replies], [0, 1, 0])
         self.assertEqual([r["requestId"] for r in replies], [1, 2, 3])
         self.assertTrue((self.root / "images/image.png").exists())
+
+    def test_worker_standalone_parameter_file_preserves_json_strings(self):
+        spec = self.spec()
+        spec["row"]["case"] = 'spaces, "quotes", café\nand a newline'
+        row, images = self.root / "row.json", self.root / "images"
+        parameters = self.root / "worker.params"
+        parameters.write_text("\n".join([json.dumps(spec), str(row), str(images)]) + "\n")
+        subprocess.run(
+            [sys.executable, "-m", "build.worker", "render", "@" + str(parameters)],
+            check=True, capture_output=True, text=True,
+        )
+        self.assertEqual(json.loads(row.read_text())["case"], spec["row"]["case"])
+        np.testing.assert_array_equal(gray(images / "image.png"), gray(self.reference))
 
     def test_index_lists_each_library_score_in_configured_order(self):
         paths = []

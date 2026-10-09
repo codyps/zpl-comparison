@@ -25,7 +25,7 @@ def execute(kind, arguments):
             "probe": "probe",
         }[kind],
     )
-    spec = json.loads(Path(arguments[0]).read_text())
+    spec = json.loads(arguments[0])
     for filename in arguments[1:]:
         path = Path(filename)
         if path.is_dir():

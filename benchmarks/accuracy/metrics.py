@@ -2,8 +2,10 @@
 
 import numpy as np
 
+DIFFERENCE_PALETTE = [255, 255, 255, 0, 0, 0, 220, 0, 150, 0, 160, 220]
 
-def compare(reference, actual):
+
+def compare(reference, actual, *, indexed=False):
     h = max(reference.shape[0], actual.shape[0])
     w = max(reference.shape[1], actual.shape[1])
     if h * w > 16_000_000:
@@ -30,8 +32,10 @@ def compare(reference, actual):
         exact=missing + extra == 0 and reference.shape == actual.shape,
         output_dimensions=[actual.shape[1], actual.shape[0]],
     )
-    diff = np.full((h, w, 3), 255, dtype=np.uint8)
-    diff[ref & out] = [0, 0, 0]
-    diff[ref & ~out] = [220, 0, 150]
-    diff[out & ~ref] = [0, 160, 220]
+    diff = np.zeros((h, w), dtype=np.uint8)
+    diff[ref & out] = 1
+    diff[ref & ~out] = 2
+    diff[out & ~ref] = 3
+    if not indexed:
+        diff = np.asarray(DIFFERENCE_PALETTE, dtype=np.uint8).reshape(4, 3)[diff]
     return metrics, diff

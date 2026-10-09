@@ -7,18 +7,20 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from benchmarks.accuracy.metrics import compare
+from benchmarks.accuracy.metrics import DIFFERENCE_PALETTE, compare
 from benchmarks.accuracy.pixels import gray, sha
 
 
 def save_difference(diff, path):
     """Lossless fixed-palette PNG, without expensive RGB compression searches."""
-    indices = np.zeros(diff.shape[:2], dtype=np.uint8)
-    indices[diff[:, :, 0] == 0] = 1
-    indices[diff[:, :, 0] == 220] = 2
-    indices[diff[:, :, 1] == 160] = 3
+    indices = diff
+    if diff.ndim == 3:
+        indices = np.zeros(diff.shape[:2], dtype=np.uint8)
+        indices[diff[:, :, 0] == 0] = 1
+        indices[diff[:, :, 0] == 220] = 2
+        indices[diff[:, :, 1] == 160] = 3
     image = Image.fromarray(indices).convert("P")
-    image.putpalette([255, 255, 255, 0, 0, 0, 220, 0, 150, 0, 160, 220])
+    image.putpalette(DIFFERENCE_PALETTE)
     image.save(path, bits=2, compress_level=1)
 
 
@@ -51,7 +53,7 @@ def comparison(spec, metadata, images):
                            comparison_diagnostic="Native dimensions differ; no padding, crop, alignment or score applied")
                 Path(metadata).write_text(json.dumps(row, sort_keys=True) + "\n")
                 return
-            metrics, diff = compare(ref, actual)
+            metrics, diff = compare(ref, actual, indexed=True)
             row.update(
                 metrics, score=metrics["iou"] if metrics["reference_ink"] else None
             )

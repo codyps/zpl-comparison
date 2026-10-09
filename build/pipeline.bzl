@@ -14,16 +14,26 @@ def _invoke(ctx, kind, name, spec, inputs, outputs):
         spec = dict(spec, font_controlled = True)
     if kind == "pages" and ctx.attr.saved:
         spec = dict(spec, saved = True)
-    manifest = ctx.actions.declare_file(ctx.label.name + "_actions/" + name + ".json")
-    ctx.actions.write(manifest, json.encode(spec))
     runner = getattr(ctx.attr, "_" + kind)
     worker = kind != "stage"
-    parameters = ctx.actions.declare_file(ctx.label.name + "_actions/" + name + ".params")
-    ctx.actions.write(parameters, "\n".join([manifest.path] + [f.path for f in outputs]))
+    if worker:
+        # Bazel passes these directly to persistent workers. Avoid two FileWrite
+        # actions and manifest I/O for every render, comparison, and preview.
+        parameters = ctx.actions.args()
+        parameters.add(json.encode(spec))
+        parameters.add_all([f.path for f in outputs])
+        parameters.use_param_file("@%s", use_always = True)
+        parameters.set_param_file_format("multiline")
+        arguments = [kind, parameters]
+    else:
+        manifest = ctx.actions.declare_file(ctx.label.name + "_actions/" + name + ".json")
+        ctx.actions.write(manifest, json.encode(spec))
+        inputs = inputs + [manifest]
+        arguments = [manifest.path] + [f.path for f in outputs]
     ctx.actions.run(
         executable = runner[DefaultInfo].files_to_run.executable,
-        arguments = [kind, "@" + parameters.path] if worker else [manifest.path] + [f.path for f in outputs],
-        inputs = depset(inputs + [manifest, parameters]),
+        arguments = arguments,
+        inputs = depset(inputs),
         tools = [runner[DefaultInfo].files_to_run],
         outputs = outputs,
         execution_requirements = {"supports-workers": "1", "requires-worker-protocol": "json"} if worker else {},
