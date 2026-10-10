@@ -255,14 +255,11 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
     steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - name: Retain immutable observation bundle as release assets
-        run: |
-          gh run download "$GITHUB_RUN_ID" --name observation-bundle --dir bundle
-          tag="ci-observations-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
-          gh release create "$tag" bundle/observations.tar.gz bundle/observations.tar.gz.json \
-            --target "$GITHUB_SHA" --title "CI observations $GITHUB_SHA" \
-            --notes "Hash-verified renderer observations from $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID. Retained for fork and offline replay." \
-            --prerelease --latest=false
+        run: python3 .github/scripts/publish_observations.py
 
   deploy:
     needs: build
