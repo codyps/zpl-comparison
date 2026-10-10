@@ -3,7 +3,7 @@
 This is a separate baseline for `//:reports_fonts`. It does not replace the
 resident-font captures used by `//:reports`.
 
-The completed snapshot contains **998 previews**: 878 from the ZD621 and 120 from
+The completed snapshot contains **1,077 previews**: 957 from the ZD621 and 120 from
 the ZQ610 Plus. All accepted sessions passed repeated-font and restored-font
 pixel controls. Both printers were restarted after capture to restore their
 resident fonts.
@@ -37,3 +37,17 @@ Reproduction and offline verification are documented in
 [the font policy](../../benchmarks/fonts/README.md). Building reports and running
 verification never contacts a printer. Live capture and restart flags must be
 invoked explicitly.
+
+The October 10, 2026 UTC refresh uses the corrected bitmap baseline bundle
+`41b98e991bfa95ab221185199d9e8c84123cb4b42d0368664049e99af2ca08c4`.
+All 1,077 previews were reacquired: 957 ZD621 and 120 ZQ610 Plus, with eight
+accepted sessions and no discarded sessions. Every session passed repeated-font
+and post-restart restoration controls. The previous snapshot remains in Git
+history. Inputs and their native canvas dimensions remain unchanged.
+
+The exporter now uses sourced baseline coordinates rather than inferring them
+from sampled glyph bounds. See the baseline audit in
+[the font policy](../../benchmarks/fonts/README.md). The fresh A/B/D–H normal
+text controls and the reported LOGMARS/Code 128 examples match the resident-font
+printer references exactly; that is not a claim that arbitrary downloaded-font
+sizes or other renderers have pixel parity.

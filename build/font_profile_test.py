@@ -129,6 +129,55 @@ class FontProfileTest(unittest.TestCase):
                 actual = {(x, y) for y in range(int(h)) for x in range(int(w)) if packed[y*((int(w)+7)//8)+x//8] & (128 >> (x%8))}
                 self.assertEqual(actual, expected, (fid, cp))
 
+    def test_download_baselines_preserve_native_field_origins(self):
+        # Resident matrix metadata and independently measured preset baselines:
+        # https://github.com/codyps/zpl/blob/99ebf09a9126311780adf9aeaf8bfa454a874b7f/zpl/src/fonts/resident.rs
+        # ~DB baseline is one-based (Zebra Programming Guide pp. 169–170).
+        expected = dict(A=7, B=11, D=14, E=23, F=21, G=48, GS=24,
+                        H=21, P=16, Q=23, R=29, S=31, T=37, U=47, V=63)
+        bundle = Path('comparison_fonts')
+        manifest = json.loads((bundle / 'manifest.json').read_text())
+        download = (bundle / 'bitmap-download.zpl').read_text()
+        self.assertEqual(set(expected), set(manifest['sources']['strikes']))
+        for fid, baseline in expected.items():
+            with self.subTest(font=fid):
+                header = download.split('~DBR:FC' + fid + '.FNT,', 1)[1].split(',', 7)
+                self.assertEqual(int(header[3]), baseline)
+                font = TTFont(bundle / manifest['fonts'][fid])
+                self.assertEqual(font['hhea'].ascent, (baseline - 1) * 16)
+                self.assertEqual(font['hhea'].descent, (baseline - 1 - int(header[1])) * 16)
+
+    def test_native_size_supplied_bitmap_origins_match_resident_fonts(self):
+        # Independent render check for the preserved baseline, including presets
+        # whose topmost glyph is below the field's upper edge. These are native
+        # normal FO controls, not a claim about arbitrary sizing or rotation.
+        manifest = json.loads(Path('comparison_fonts/manifest.json').read_text())
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for fid, paths in manifest['sources']['strikes'].items():
+                if fid == 'GS':  # No public single-character ^CW alias.
+                    continue
+                source_font = Path('benchmarks/fonts') / paths[0]
+                height, _ = unpack(source_font)
+                width = struct.unpack_from('<H', source_font.read_bytes(), 7)[0]
+                source = root / 'input.zpl'
+                source.write_text(f'^XA^PW600^LL200^FO20,20^A{fid}N,{height},{width}^FDAB12^FS^XZ')
+                for library in ('codyps-zpl', 'codyps-zpl-node'):
+                    with self.subTest(font=fid, library=library):
+                        pixels = []
+                        for controlled in (False, True):
+                            key = f'{fid}-{library}-{controlled}'
+                            spec = dict(source=str(source), sha256=sha(source), width=600, height=200,
+                                        library='library_' + library, row=dict(library=library))
+                            if controlled:
+                                spec['font_bundle'] = 'comparison_fonts'
+                            render(spec, root / (key + '.json'), root / key)
+                            row = json.loads((root / (key + '.json')).read_text())
+                            self.assertEqual(row['status'], 'rendered', row)
+                            self.assertGreater(row['ink'], 0, row)
+                            pixels.append(row['pixel_sha256'])
+                        self.assertEqual(*pixels)
+
     def test_bundle_is_reproducible(self):
         with tempfile.TemporaryDirectory() as tmp:
             build(Path(tmp))

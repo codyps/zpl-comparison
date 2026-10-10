@@ -31,6 +31,39 @@ library's missing-glyph behavior. These are ZD621 captures, also used explicitly
 as the common supplied assets in the ZQ610 comparison; they do not establish
 that both printers have identical fonts.
 
+Baseline coordinates are explicit in `sources.json` (`baseline_dots`), with
+immutable source references in `baseline_source`. ZBF glyphs store offsets from
+a baseline but do not encode the baseline's position in the field cell. Do not
+infer that position from the tallest sampled glyph: P–V intentionally have
+space above their ink. Native `~DB` headers use the zero-based coordinate plus
+one; TrueType ascent uses the coordinate directly and descent preserves the
+remaining cell height. C shares D's metrics. GS is exported consistently but
+retains its resident face in the printer workflow.
+
+The baseline audit corrected these `~DB` header values:
+
+| Font | Previous | Corrected |
+|---|---:|---:|
+| A | 6 | 7 |
+| B | 10 | 11 |
+| D (and C) | 13 | 14 |
+| E | 22 | 23 |
+| F | 20 | 21 |
+| G | 47 | 48 |
+| GS | 23 | 24 |
+| H | 20 | 21 |
+| P | 14 | 16 |
+| Q | 19 | 23 |
+| R | 23 | 29 |
+| S | 26 | 31 |
+| T | 32 | 37 |
+| U | 39 | 47 |
+| V | 53 | 63 |
+
+Recovered outline carriers now use the same explicit cell metrics. Their glyph
+outlines and advances are unchanged. Font 0 and Swiss preserve their original
+OpenType metrics and do not use the bitmap baseline conversion.
+
 `build.py` packages the recovered glyphs in two ways:
 
 - Native `~DB` bitmap downloads, including bearings and advances, for codyps/zpl, ZPLr and the physical printers.
@@ -98,9 +131,10 @@ unsupported until an archive with matching font identities is available.
 `bazel test //:font_profile_test` checks every recovered pixel rectangle and
 advance against its ZBF input, deterministic bundle generation, fixed-font
 policy, font injection in all seven configurable renderers, and unchanged
-non-text graphics. The codyps/zpl bitmap sample matches its resident recovered
-strike; a separate test substitutes a different supplied strike to verify injection. Use ordinary report output groups on `//:reports_fonts` to
-build a suite or individual case, for example:
+non-text graphics. Native-size normal-origin A/B/D–H and P–V text matches the
+resident rendering in both native and Node/Wasm codyps/zpl; a separate test
+substitutes a different supplied strike to verify injection. Use ordinary report
+output groups on `//:reports_fonts` to build a suite or individual case, for example:
 
 ```sh
 bazel build //:reports_fonts --output_groups=case_accuracy_argument-font-A

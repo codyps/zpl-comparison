@@ -777,7 +777,7 @@
     {
       "height": 2030,
       "name": "text-A-B",
-      "png_sha256": "7f9b1e3d0bb30feb12beb53926cfbf01fc751a5bf54a8265cd0fbee0fb208901",
+      "png_sha256": "b6c1276fda674f22a628f23044bb8328818378f71c6d18f3d779485bf6cb5f2c",
       "reference": "references/zq610-plus-v1/text-A-B/zq610.png",
       "sha256": "f9e9342a084686996b22bc0b46c1532b0caa765befb1ae3df7f0596e957f74fc",
       "source": "references/zq610-plus-v1/text-A-B/zq610.zpl",
@@ -786,7 +786,7 @@
     {
       "height": 2030,
       "name": "text-A-I",
-      "png_sha256": "b7aba5f69e085ba1cce41d22f9fff05d45833703909f520d5094511845e765fb",
+      "png_sha256": "2ac451ba8b8fea21585584e80c3d90a76b037e14000e8c0fc1d1085c4b574b87",
       "reference": "references/zq610-plus-v1/text-A-I/zq610.png",
       "sha256": "1bea677548b0a526db75454889bd8133371caddfbb0453a7988c9e6b669fa175",
       "source": "references/zq610-plus-v1/text-A-I/zq610.zpl",
@@ -795,7 +795,7 @@
     {
       "height": 2030,
       "name": "text-A-I-fit",
-      "png_sha256": "972a47e40162c2891314ee921f5cb34dad1afee342bf7e1a1ab2317673b66744",
+      "png_sha256": "192ef6c4d70ea7fe8f17224793fc605f16381d845ee9361b9ff515c547db368a",
       "reference": "references/zq610-plus-v1/text-A-I-fit/zq610.png",
       "sha256": "3f65a77ca014bea28845cbea77e75701b4d7da8500f7143d7e1c9465f7da4c8f",
       "source": "references/zq610-plus-v1/text-A-I-fit/zq610.zpl",
@@ -804,7 +804,7 @@
     {
       "height": 2030,
       "name": "text-A-N",
-      "png_sha256": "f29d72d3b158a4c5b4598911b8c72abe1f43bf4afefe7862e24d258e6458dea0",
+      "png_sha256": "2aeb6f49c285a21ee28d73a714bcbb3c9b1efd3e916c831883e61c337cb38835",
       "reference": "references/zq610-plus-v1/text-A-N/zq610.png",
       "sha256": "bbc7300398e4d658f74880f5dd8530df27818a4d2b49c19bb73d2263070dc2a6",
       "source": "references/zq610-plus-v1/text-A-N/zq610.zpl",
@@ -813,7 +813,7 @@
     {
       "height": 2030,
       "name": "text-A-R",
-      "png_sha256": "02f1b9fcf66963c51c00c76da9510f739fedc429b0e7fa366108ef0415f29e8b",
+      "png_sha256": "67e5eb4fb348276559b9dde7696b2477369e5eb0c088f2eb642e872de18f2aa6",
       "reference": "references/zq610-plus-v1/text-A-R/zq610.png",
       "sha256": "fb8cb2bf0a50943ba71786d8ef59edf77b8ee68c5000721f1cf3de9c07a07828",
       "source": "references/zq610-plus-v1/text-A-R/zq610.zpl",
@@ -822,7 +822,7 @@
     {
       "height": 2030,
       "name": "text-D-B",
-      "png_sha256": "72178b483575e2e0c796c97dc9dc16804ca3315da5de6e8d2d4e68d5b8435271",
+      "png_sha256": "0cb9b281500738de61c833f6666cdca6e064fc069dedeb60603b450f9b40f4fe",
       "reference": "references/zq610-plus-v1/text-D-B/zq610.png",
       "sha256": "4d548f677480a80f6752edd07b62c17afef7bfd5865ee61d8da10f37ce38d956",
       "source": "references/zq610-plus-v1/text-D-B/zq610.zpl",
@@ -831,7 +831,7 @@
     {
       "height": 2030,
       "name": "text-D-I",
-      "png_sha256": "e1b951f6fe3c5c8cced3a7f3699418b010fd7a2e628f69d9728200354fc32702",
+      "png_sha256": "7939fdefd53e0433b3d16f1f0baaffdafa7c8588113741fe1d6794adece059a4",
       "reference": "references/zq610-plus-v1/text-D-I/zq610.png",
       "sha256": "1bd4cbfaf72381c9ab3874a3c1c587a66702cd203853fc483fa93a06c4e71abd",
       "source": "references/zq610-plus-v1/text-D-I/zq610.zpl",
@@ -840,7 +840,7 @@
     {
       "height": 2030,
       "name": "text-D-I-fit",
-      "png_sha256": "f06e5f96d4221b05b3eae62d159f6859f567effc0dcba620d5bf29373325dc1a",
+      "png_sha256": "5d0177c062e595357de9c9c03ea4690d35527b291e5944d036778cf759cade95",
       "reference": "references/zq610-plus-v1/text-D-I-fit/zq610.png",
       "sha256": "ba62ddbdd637f578324832185a43b74f113222f52df30dab259c9d0a6e952811",
       "source": "references/zq610-plus-v1/text-D-I-fit/zq610.zpl",
@@ -849,7 +849,7 @@
     {
       "height": 2030,
       "name": "text-D-N",
-      "png_sha256": "0c8ab252fde8f644447ccf501a0a408450b9c6bd1a29015fd3f6d4e9593956b1",
+      "png_sha256": "4c5e03555895c399fbec92032f09cf6f092e4e6b2c7d09bc94c1ce478188a849",
       "reference": "references/zq610-plus-v1/text-D-N/zq610.png",
       "sha256": "b01d1cf682d019f3a1b02d383b29b4b23bbeaa483efde8a52df714c6820667f7",
       "source": "references/zq610-plus-v1/text-D-N/zq610.zpl",
@@ -858,7 +858,7 @@
     {
       "height": 2030,
       "name": "text-D-R",
-      "png_sha256": "b7bd578edcc8970bb794842532653cc9b8470219e1eb16e055ca9291b24d5704",
+      "png_sha256": "f1ca35cde56a20261222ddc1f3939a70ea9925aa62c08ec7be3fc9fe871834ef",
       "reference": "references/zq610-plus-v1/text-D-R/zq610.png",
       "sha256": "d70d9f166ee1d82cba443f2aa9468458590b59233c626cbbb88952e1e211ebb4",
       "source": "references/zq610-plus-v1/text-D-R/zq610.zpl",
@@ -867,7 +867,7 @@
     {
       "height": 2030,
       "name": "text-E-B",
-      "png_sha256": "00cce35cf74095971e76c32a9e21224c9641e0f6587bdbdd7c78ef87c1f887f6",
+      "png_sha256": "f50833d9f015b15251c5263916bdcd1242f0a2c1d9cc44a60c745881b169efb3",
       "reference": "references/zq610-plus-v1/text-E-B/zq610.png",
       "sha256": "1460e4b95f2bd709f67d83f90ac0050859d5dd79634ec7390c2f2fb252cb8349",
       "source": "references/zq610-plus-v1/text-E-B/zq610.zpl",
@@ -876,7 +876,7 @@
     {
       "height": 2030,
       "name": "text-E-I",
-      "png_sha256": "17097ef40237798cc9f7af63a6cc525439efaf6335584fdc7a6639c7ab8d388f",
+      "png_sha256": "54da44ed913e0799fc61755105a83e50ec97f159199844eca076464d30b86541",
       "reference": "references/zq610-plus-v1/text-E-I/zq610.png",
       "sha256": "c95e3f197b184dac08f5b166921f3443b89d0a61af87a3be99bd1f8f12b47be8",
       "source": "references/zq610-plus-v1/text-E-I/zq610.zpl",
@@ -885,7 +885,7 @@
     {
       "height": 2030,
       "name": "text-E-I-fit",
-      "png_sha256": "190b2b7bcda4f7a152ca477332e5298be8aebf0e11dc7e1f119be58eec9bc795",
+      "png_sha256": "861808212a06f6be1435a137d09e96404e2c5794398410b976ff763ed55ccb50",
       "reference": "references/zq610-plus-v1/text-E-I-fit/zq610.png",
       "sha256": "996e24143483c89d7a9a3b46358cde44afe46ef840ec2dddeedb29f0457f658a",
       "source": "references/zq610-plus-v1/text-E-I-fit/zq610.zpl",
@@ -894,7 +894,7 @@
     {
       "height": 2030,
       "name": "text-E-N",
-      "png_sha256": "d2804babd42cf271aa40b262889d1d6ccc2783b74ba91790f88f945e1d514fda",
+      "png_sha256": "8575f28b9f4451614ac72c4be20852a1d09106db5d2c9e94a2e06e9a018a3585",
       "reference": "references/zq610-plus-v1/text-E-N/zq610.png",
       "sha256": "2a5c030770cb2f0e003eae9c0c222f8f89807122edb6a83eb3d1486a3d151ecd",
       "source": "references/zq610-plus-v1/text-E-N/zq610.zpl",
@@ -903,7 +903,7 @@
     {
       "height": 2030,
       "name": "text-E-R",
-      "png_sha256": "187fbbc0db291797cdfca690619b354256de8a12c4cd6062103a98eeb74da5c1",
+      "png_sha256": "c7daaa841732b5821af9b66ee2d6e342176412176ae0a4a7698a89842210a740",
       "reference": "references/zq610-plus-v1/text-E-R/zq610.png",
       "sha256": "8dc6ecf339944ab35a349265e59e28c10496b5f1a28554386c70fd73449955b9",
       "source": "references/zq610-plus-v1/text-E-R/zq610.zpl",
@@ -1082,9 +1082,9 @@
     }
   ],
   "font_capture": {
-    "bundle_sha256": "843c31e01220ae1330768eff0bee08213291fe6cfba096db38e2bbc71d0a66ac",
-    "capture_sha256": "e3ade41871999444a59fb873635cc2db4dab03767d84b93976f79d9e94ba1d7f",
-    "captured_utc": "2026-10-08T20:26:11Z",
+    "bundle_sha256": "41b98e991bfa95ab221185199d9e8c84123cb4b42d0368664049e99af2ca08c4",
+    "capture_sha256": "347c1da15a9d1c6dc1f4e5ca899dd1d876af09b85ebc3d780410564dc8f410e5",
+    "captured_utc": "2026-10-10T06:38:12Z",
     "manifest": "references/font-controlled/capture.json",
     "method": "RAM ~DB recovered bitmaps and binary ~DY TrueType; HTTP Preview Label"
   },
@@ -4570,7 +4570,7 @@
       "width": 384
     }
   ],
-  "paired_manifest_sha256": "ad015fee44b042f18244604aceea6b2170058445788d763f8c130f0d11d875fb",
+  "paired_manifest_sha256": "57a0a221a51efa1a049aa59e6343ee133881610aaf8f3bb98fc17aab757eb696",
   "policy": "All case outputs, including four original smoke cases; session repeatability captures remain provenance, not duplicate scored cases",
   "printer": {
     "dpi": 203,
