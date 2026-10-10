@@ -12,6 +12,7 @@ from pathlib import Path
 
 def source_size(root, name, native=None):
     roots = {
+        "codyps-zpl-go": [root / "benchmarks/_work/zpl/zpl-go"],
         "codyps-zpl-node": [root / "benchmarks/_work/codyps-zpl-node" / p for p in ["zpl/src", "raster-diff/src", "zpl-bitmap-fonts/src", "zpl-wasm/src", "zpl-node"]],
         "codyps-zpl": [root / "benchmarks/_work/zpl/zpl/src", root / "benchmarks/_work/zpl/raster-diff/src"],
         "go": [root / "benchmarks/_work/go-zpl"],

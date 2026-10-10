@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
 MODES = {
     "codyps-zpl-node": ["png"],
+    "codyps-zpl-go": ["png"],
     "codyps-zpl": ["parse", "png"],
     "toolchain": ["parse"],
     "forge": ["parse", "png"],
@@ -200,6 +201,7 @@ def source_sizes(metadata):
         p["name"]: Path(p["manifest_path"]).parent for p in metadata["packages"]
     }
     paths = {
+        "codyps-zpl-go": [ROOT / "_work/zpl/zpl-go"],
         "codyps-zpl-node": [ROOT / "_work/zpl" / p for p in ["zpl/src", "raster-diff/src", "zpl-bitmap-fonts/src", "zpl-wasm/src", "zpl-node"]],
         "codyps-zpl": [packages["zpl"] / "src", packages["raster-diff"] / "src"],
         "toolchain": [
@@ -351,7 +353,7 @@ def main():
     metadata = json.loads((ROOT / "_work/cargo-metadata.json").read_text())
     sizes = source_sizes(metadata)
     for name, cmd in commands.items():
-        if name in ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi", "go", "zebrash"]:
+        if name in ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi", "go", "zebrash", "codyps-zpl-go"]:
             files = [Path(cmd[0])]
             if name == "ffi":
                 files.append(

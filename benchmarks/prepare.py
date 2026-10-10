@@ -11,7 +11,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / "_work"
 RUST = ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi"]
-EXTRA_RENDERERS = ["codyps-zpl-node", "zebrash", "zpl-renderer-js", "zebrash-ts"]
+EXTRA_RENDERERS = ["codyps-zpl-go", "codyps-zpl-node", "zebrash", "zpl-renderer-js", "zebrash-ts"]
 
 
 def run(args, **kw):
@@ -94,6 +94,11 @@ def main():
             env=env,
         )
         commands["go"] = [str(WORK / "go-adapter")]
+    if "codyps-zpl-go" in selected:
+        run(["go", "build", "-mod=readonly", "-trimpath", "-buildvcs=false", "-ldflags=-s -w",
+             "-o", WORK / "codyps-zpl-go-adapter", "."],
+            cwd=ROOT / "adapters/codyps-zpl-go", env={**env, "CGO_ENABLED": "0"})
+        commands["codyps-zpl-go"] = [str(WORK / "codyps-zpl-go-adapter")]
     if "zebrash" in selected:
         run(["go", "build", "-mod=readonly", "-trimpath", "-buildvcs=false", "-ldflags=-s -w",
              "-o", WORK / "zebrash-adapter", "."], cwd=ROOT / "adapters/zebrash", env=env)

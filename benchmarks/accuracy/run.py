@@ -18,6 +18,7 @@ REPO = ROOT.parent
 LIBRARIES = [
     "codyps-zpl",
     "codyps-zpl-node",
+    "codyps-zpl-go",
     "labelize",
     "forge",
     "go",

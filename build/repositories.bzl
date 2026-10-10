@@ -70,6 +70,7 @@ def _inputs_impl(ctx):
             build += 'filegroup(name="%s_srcs",srcs=glob(["benchmarks/_work/zpl/%s/src/**", "benchmarks/_work/zpl/%s/data/**"],allow_empty=True))\n' % (crate_name, crate_name, crate_name)
         for name, patterns in json.decode(ctx.read("groups.json")).items():
             build += 'filegroup(name=%s,srcs=glob(%s))\n' % (repr(name), repr(patterns))
+        build += 'filegroup(name="zpl_go_srcs",srcs=["benchmarks/_work/zpl/zpl-go/zpl.go", "benchmarks/_work/zpl/zpl-go/backend_wasm2go.go"])\n'
     if ctx.attr.kind == "codyps-zpl-node":
         build += 'filegroup(name="wasm_srcs",srcs=glob(["benchmarks/_work/codyps-zpl-node/zpl-wasm/src/**"]))\n'
     support = {

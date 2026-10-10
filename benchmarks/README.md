@@ -49,6 +49,29 @@ comparisons. The adapter measures rendering only. Font-controlled comparisons us
 downloads. Only controlled runs increase `limits.inputBytes` to fit the supplied
 preamble; ordinary runs retain the default 1 MiB input limit.
 
+## Go / wasm2go codyps/zpl
+
+`codyps-zpl-go` compares `github.com/codyps/zpl/zpl-go` at the same locked
+source revision as the Rust and Node adapters. It uses the default wasm2go
+backend and the upstream shipped generated Go code and embedded data. Build with
+`bazel build //:library_codyps-zpl-go`, or `prepare.py --only codyps-zpl-go`.
+The cgo, purego and wazero alternatives are not measured by this adapter.
+
+The public API exposes rendering only. Each measured operation creates an engine,
+renders binary-safe input to PNG, checks that exactly one label was returned, and
+closes the engine. Initialization, output copying and closure are included in timing.
+It joins all accuracy campaigns, render rejection probes and CI performance runs.
+ZD621 and ZQ610 Plus use the public profiles; the ZD621 preview profile uses ZD621
+without individual native compatibility flag overrides. Inputs retain the public
+1 MiB limit and 4096-dot dimension limit.
+
+Controlled runs prepend recovered bitmap fonts through `~DB/^CW` and download
+Heros font 0 and named Swiss through `~DU/^CW`. They retain the 1 MiB limit,
+including the preamble. Source size includes the Go module's implementation
+(including generated Go and the native bridge); embedded data counts toward
+binary deployment size. This is another backend for the same Rust renderer,
+not an independent implementation or new printer evidence.
+
 ## Run
 
 Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥24 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.
@@ -72,7 +95,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-CI measures parsing and PNG rendering for the eleven Bazel-built renderer adapters (rendering only where no standalone parser is exposed) on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
+CI measures parsing and PNG rendering for the twelve Bazel-built renderer adapters (rendering only where no standalone parser is exposed) on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
 
 Old checked-in performance results and samples have been removed. The broader manual harness above remains available for generator-only libraries and source/deployment size surveys; those measurements are not presented as current CI results. Fixed input fixtures and a stable shuffle make runs comparable; measured durations are never fixed or replayed.
 

@@ -5,8 +5,8 @@ import json
 from pathlib import Path
 import sys
 
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"]
-SOURCE = {"codyps-zpl-node": "zpl", "codyps-zpl": "zpl", "labelize": "labelize", "forge": "zpl-forge",
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go"]
+SOURCE = {"codyps-zpl-go": "zpl", "codyps-zpl-node": "zpl", "codyps-zpl": "zpl", "labelize": "labelize", "forge": "zpl-forge",
           "go": "go-zpl", "ffi": "go-zpl", "binarykits": "BinaryKits.Zpl", "zplr": "zplr",
           "zebrash": "zebrash", "zpl-renderer-js": "zpl-renderer-js", "zebrash-ts": "zebrash-ts"}
 
@@ -15,15 +15,15 @@ def identities(files, probe=False, python_version=""):
     locks = json.loads(Path(files["benchmarks/sources.lock.json"]).read_text())
     result = {}
     for library in LIBRARIES:
-        language = "rust" if library in {"codyps-zpl", "labelize", "forge", "ffi"} else "go" if library == "go" else "dotnet" if library == "binarykits" else "node"
+        language = "rust" if library in {"codyps-zpl", "labelize", "forge", "ffi"} else "go" if library in {"go", "codyps-zpl-go"} else "dotnet" if library == "binarykits" else "node"
         prefixes = ["benchmarks/adapters/" + language + "/"]
-        if library in {"zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
+        if library in {"zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go"}:
             prefixes = ["benchmarks/adapters/" + library + "/"]
-            if library != "zebrash":
+            if library not in {"zebrash", "codyps-zpl-go"}:
                 prefixes.extend(["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"])
         if library in {"codyps-zpl", "labelize", "forge", "ffi", "codyps-zpl-node"}:
             prefixes.append("build/rust/")
-        if library in {"go", "zebrash", "ffi"}:
+        if library in {"go", "zebrash", "ffi", "codyps-zpl-go"}:
             prefixes.append("build/go")
         if library == "ffi":
             prefixes.append("benchmarks/adapters/go/")

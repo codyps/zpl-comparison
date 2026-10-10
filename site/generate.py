@@ -21,6 +21,7 @@ from urllib.parse import unquote, urlsplit
 from PIL import Image, ImageChops, __version__ as PILLOW_VERSION
 
 NAMES = {
+    "codyps-zpl-go": "codyps/zpl (Go / wasm2go)",
     "codyps-zpl-node": "codyps/zpl (Node / WASM)",
     "codyps-zpl": "codyps/zpl",
     "labelize": "labelize",

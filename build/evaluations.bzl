@@ -4,6 +4,7 @@ def invalid_matrix(ctx, files, compiled, baseline, catalog, invoke, stage, selec
     lanes = {name: ["parse", "render"] for name in ["codyps-zpl", "labelize", "forge", "go", "binarykits", "zplr", "zebrash", "zebrash-ts"]}
     lanes["ffi"] = ["render"]
     lanes["codyps-zpl-node"] = ["render"]
+    lanes["codyps-zpl-go"] = ["render"]
     lanes["zpl-renderer-js"] = ["render"]
     rows = []
     for case in catalog["test-data/invalid-zpl/manifest.json"]["cases"]:

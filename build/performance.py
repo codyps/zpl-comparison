@@ -12,7 +12,7 @@ import time
 
 from benchmarks.run import MODES, check_output, digest, measure
 
-LIBRARIES = ("codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node")
+LIBRARIES = ("codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go")
 
 
 def collect(libraries, fixtures, output, samples=5, seconds=0.2, memory_iterations=10, memory_launcher=None):
