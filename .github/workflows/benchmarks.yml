@@ -27,7 +27,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: builder-comparison-${{ github.ref }}-${{ inputs.cache_backend }}
+  group: builder-comparison-${{ github.ref }}-${{ inputs.cache_backend }}-${{ inputs.builder }}
   # Let main finish publication; only superseded PR runs are disposable.
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
