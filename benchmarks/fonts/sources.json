@@ -96,5 +96,29 @@
     "V": [
       "recovered/fontV-80-71.zbf"
     ]
+  },
+  "baseline_dots": {
+    "A": 6,
+    "B": 10,
+    "D": 13,
+    "E": 22,
+    "F": 20,
+    "G": 47,
+    "GS": 23,
+    "H": 20,
+    "P": 15,
+    "Q": 22,
+    "R": 28,
+    "S": 30,
+    "T": 36,
+    "U": 46,
+    "V": 62
+  },
+  "baseline_source": {
+    "repository": "https://github.com/codyps/zpl",
+    "revision": "99ebf09a9126311780adf9aeaf8bfa454a874b7f",
+    "resident_metrics": "zpl-bitmap-fonts/data/zd621/fonts.json (one-based baseline minus one; E8/H8 at 203 DPI)",
+    "preset_metrics": "zpl/src/fonts/resident.rs::baseline_for (native strike height)",
+    "units": "zero-based native strike dots; glyph tops are relative to this baseline"
   }
 }

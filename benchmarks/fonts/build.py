@@ -47,7 +47,7 @@ def finish(builder, name, path, ascent, descent, notices=None, cap_height=0, x_h
     builder.save(path)
 
 
-def bitmap(paths, name, target):
+def bitmap(paths, name, target, baseline):
     height, glyphs = unpack(paths[0])
     for path in paths[1:]:
         h, extra = unpack(path)
@@ -82,16 +82,19 @@ def bitmap(paths, name, target):
         metrics[key] = (advance*unit, left*unit)
     builder.setupGlyf(outlines)
     builder.setupHorizontalMetrics(metrics)
-    ascent = max(-g[2] for g in glyphs.values()) * unit
-    descent = min(0, min(-g[2]-g[4] for g in glyphs.values())) * unit
+    ascent = baseline * unit
+    descent = (baseline - height) * unit
     finish(builder, name, target, ascent, descent)
 
 
-def bitmap_download(paths, fid):
+def bitmap_download(paths, fid, baseline):
     height, glyphs = unpack(paths[0])
     for path in paths[1:]:
         glyphs.update(unpack(path)[1])
-    baseline = max(-g[2] for g in glyphs.values())
+    # ~DB pp. 169–170 uses a one-based cell baseline; recovered glyph tops
+    # are relative to the zero-based baseline recorded in sources.json.
+    # https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/software/zpl-zbi2-pg-en.pdf
+    baseline += 1
     width = struct.unpack_from('<H', paths[0].read_bytes(), 7)[0]
     name = 'R:FC' + fid + '.FNT'
     parts = [f'~DB{name},N,{height},{width},{baseline},{glyphs[32][0]},{len(glyphs)},Recovered,']
@@ -137,11 +140,17 @@ def build(output):
     (output / 'GUST-LICENSE.txt').write_bytes((ROOT / 'source/GUST-LICENSE.txt').read_bytes())
     mapping = {}
     downloads = []
+    if set(manifest['baseline_dots']) != set(manifest['strikes']):
+        raise ValueError('Missing or unexpected strike baseline')
     for fid, paths in manifest['strikes'].items():
+        baseline = manifest['baseline_dots'][fid]
+        height, _ = unpack(ROOT / paths[0])
+        if not isinstance(baseline, int) or not 0 <= baseline < height:
+            raise ValueError('Invalid strike baseline: ' + fid)
         filename = fid + '.ttf'
-        bitmap([ROOT / p for p in paths], 'RecoveredZebra-' + fid, output / filename)
+        bitmap([ROOT / p for p in paths], 'RecoveredZebra-' + fid, output / filename, baseline)
         mapping[fid] = filename
-        downloads.append(bitmap_download([ROOT / p for p in paths], fid))
+        downloads.append(bitmap_download([ROOT / p for p in paths], fid, baseline))
     mapping['C'] = mapping['D']
     downloads.append('^CWC,R:FCD.FNT^CW0,R:FC0.TTF')
     (output / 'bitmap-download.zpl').write_text(''.join(downloads))
