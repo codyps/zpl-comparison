@@ -222,7 +222,8 @@ This keeps compilation and publishing usable on NixOS without a host PATH overri
 ImageSharp remains at BinaryKits' transitive version 3.1.12: releases 3.2 and 4.x
 require a license key for Release builds. NuGet reports security advisories for
 3.1.12; upgrading it requires configuring an appropriate license. Python uses
-3.14.4, the newest stable runtime listed by the pinned `rules_python` release.
+3.14.8 through checksum-pinned Python Build Standalone archives for Linux and
+macOS on x86-64 and ARM64, overriding the older `rules_python` runtime manifest.
 
 The Linux .NET toolchain includes checksum-pinned ICU 72.1.0.3 binaries for
 x64 and arm64. SDK tools and the deployed BinaryKits renderer select that
