@@ -22,7 +22,10 @@ def install(sdk, package, rid, version):
     # NativeLibrary probing includes the shared framework directory. Configure
     # SDK entry points too: restore/publish need ICU before the app is built.
     for path in (sdk / 'sdk').rglob('*.runtimeconfig.json'):
-        config = json.loads(path.read_text())
+        # .NET 10's testhost config includes full-line JSON comments.
+        contents = '\n'.join(line for line in path.read_text().splitlines()
+                             if not line.lstrip().startswith('//'))
+        config = json.loads(contents)
         properties = config.setdefault('runtimeOptions', {}).setdefault('configProperties', {})
         properties['System.Globalization.AppLocalIcu'] = version
         path.write_text(json.dumps(config, indent=2) + '\n')

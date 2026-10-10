@@ -27,7 +27,7 @@ dotnet_toolchain(
     fsharp_compiler = ":fsc",
     sdk_version = "{sdk}",
     runtime_version = "{runtime}",
-    runtime_tfm = "net8.0",
+    runtime_tfm = "net10.0",
     csharp_default_version = "12.0",
     fsharp_default_version = "8.0",
 )

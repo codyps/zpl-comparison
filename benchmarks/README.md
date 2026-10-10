@@ -41,7 +41,7 @@ Publication CI advances both to `main`; local builds use the recorded revision.
 No npm release is substituted for Git source.
 `bazel build //:library_codyps-zpl-node` compiles Wasm with `rules_rust`, generates
 bindings with `rules_rust_wasm_bindgen`, and deploys the Node package with its runtime.
-The Rust Wasm target and wasm-bindgen 0.2.128 are pinned in the toolchain lock.
+The Rust Wasm target and wasm-bindgen 0.2.129 are pinned in the toolchain lock.
 For `prepare.py --only codyps-zpl-node`, install that target and CLI locally first.
 The adapter participates in rendering, invalid-render input, accuracy and performance
 comparisons. The adapter measures rendering only. Font-controlled comparisons use the public
@@ -133,7 +133,7 @@ All renderer inputs are the same checked-in, single-label, ASCII ZPL bytes, at *
 | `png` | New document/parser state, render, PNG encode to in-memory bytes, release output | No input-file read or output-file write inside timing; native encoding, font and antialiasing defaults differ. |
 | `generate` | New builder, format and add 1 or 48 `Item NN` text fields, serialize ZPL | No parsing/rendering/network; equivalent text-count and coordinate workload, not identical ZPL or font layout. |
 
-Source API references: [codyps/zpl](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/lib.rs), [toolchain](https://docs.rs/zpl_toolchain_core/0.4.1/zpl_toolchain_core/), [labelize](https://docs.rs/labelize/1.6.0/labelize/), [forge](https://docs.rs/zpl-forge/0.3.2/zpl_forge/), [builder](https://docs.rs/zpl-builder/0.1.0/zpl_builder/), [Rust FFI](https://docs.rs/crate/zpl-rs/0.1.8), [Go](https://github.com/StirlingMarketingGroup/go-zpl), [BinaryKits](https://github.com/BinaryKits/BinaryKits.Zpl), [Python](https://github.com/cod3monk/zpl), [JSZPL](https://github.com/DanieLeeuwner/JSZPL), [ZPLr](https://github.com/le2ni/zplr). Versioned source commits are in the source lock; external library implementation is not copied into this project.
+Source API references: [codyps/zpl](https://github.com/codyps/zpl/blob/280fc0cf4d0a49c916463d936e4307a2a226928e/zpl/src/lib.rs), [toolchain](https://docs.rs/zpl_toolchain_core/0.4.1/zpl_toolchain_core/), [labelize](https://docs.rs/labelize/1.7.0/labelize/), [forge](https://docs.rs/zpl-forge/0.3.2/zpl_forge/), [builder](https://docs.rs/zpl-builder/0.1.0/zpl_builder/), [Rust FFI](https://docs.rs/crate/zpl-rs/0.1.8), [Go](https://github.com/StirlingMarketingGroup/go-zpl), [BinaryKits](https://github.com/BinaryKits/BinaryKits.Zpl), [Python](https://github.com/cod3monk/zpl), [JSZPL](https://github.com/DanieLeeuwner/JSZPL), [ZPLr](https://github.com/le2ni/zplr). Versioned source commits are in the source lock; external library implementation is not copied into this project.
 
 ## Timing and memory
 
@@ -185,8 +185,8 @@ adapter. The FFI adapter links to a Bazel-declared Go shared library through
 runs identified explicitly.
 
 Go adapters use `rules_go` and Gazelle-generated package targets. The direct Go
-adapter, the FFI shared library, and Zebrash retain separate module dependency
-sets from their existing `go.mod`/`go.sum` files. Gazelle's public `go_repository`
+adapter and FFI shared library share the updated Go adapter
+`go.mod`/`go.sum` dependency set; Zebrash uses its own updated module locks. Gazelle's public `go_repository`
 API verifies their module checksums. No Go module download or Cargo vendoring
 runs in the old bootstrap: it now fetches implementation source for reports.
 Native deployment assembly invokes no compiler or package manager, has only
@@ -195,7 +195,7 @@ declared inputs, and uses Bazel's output filesystem for temporary staging.
 `LD_LIBRARY_PATH`, `DYLD_*`, or `LIBZPL_*` overrides.
 
 Node deployments use `rules_js` to translate the existing npm lockfiles and
-extract packages, and `rules_nodejs` to select the pinned Node 24.21.0 runtime.
+extract packages, and `rules_nodejs` to select the pinned Node 26.11.1 runtime.
 The generated `pnpm-lock.yaml` files and `.aspect/rules/external_repository_action_cache`
 files are checked in alongside the original npm locks. Normal builds verify the
 translation inputs; changes to npm locks regenerate the pnpm locks and require
@@ -209,7 +209,7 @@ in the source bootstrap.
 
 BinaryKits is compiled and published by `rules_dotnet` (`csharp_binary` and
 `publish_binary`), using the pinned SDK through its public `dotnet_toolchain`
-API. Bazel does not run MSBuild restore or publish. The existing net8.0
+API. Bazel does not run MSBuild restore or publish. The net10.0
 `packages.lock.json` supplies the NuGet graph; `nuget-integrity.json` pins the
 complete signed archives for Bazel, since NuGet's content hashes exclude signing
 metadata. The comparison packaging action adds fonts, the runtime, and provenance
@@ -218,6 +218,11 @@ protocol invokes the DLL with the bundled `dotnet` executable. A patch to the
 pinned rules release replaces publishing's host `mkdir`/`cp` calls with Bazel
 symlink actions and its compiler wrapper's `basename` call with Bash expansion.
 This keeps compilation and publishing usable on NixOS without a host PATH override.
+
+ImageSharp remains at BinaryKits' transitive version 3.1.12: releases 3.2 and 4.x
+require a license key for Release builds. NuGet reports security advisories for
+3.1.12; upgrading it requires configuring an appropriate license. Python uses
+3.14.4, the newest stable runtime listed by the pinned `rules_python` release.
 
 The Linux .NET toolchain includes checksum-pinned ICU 72.1.0.3 binaries for
 x64 and arm64. SDK tools and the deployed BinaryKits renderer select that

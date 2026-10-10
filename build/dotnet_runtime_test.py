@@ -9,6 +9,37 @@ import sys
 import tempfile
 import unittest
 
+from build.dotnet_runtime import install
+
+
+class SdkConfigTest(unittest.TestCase):
+    def test_install_preserves_settings_in_commented_sdk_config(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            framework = root / 'sdk/shared/Microsoft.NETCore.App/10.0.9'
+            framework.mkdir(parents=True)
+            config = root / 'sdk/sdk/10.0.401/testhost.runtimeconfig.json'
+            config.parent.mkdir(parents=True)
+            config.write_text('''{
+                "runtimeOptions": {
+                    // Roll forward to the installed framework.
+                    "rollForward": "latestMajor",
+                    "configProperties": {"example": "https://example.com"}
+                }
+            }''')
+            native = root / 'icu/runtimes/linux-x64/native'
+            native.mkdir(parents=True)
+            for name in ('data', 'uc', 'i18n'):
+                (native / f'libicu{name}.so.72.1.0.3').write_bytes(b'icu')
+            (root / 'icu/LICENSE').write_text('license')
+            install(root / 'sdk', root / 'icu', 'linux-x64', '72.1.0.3')
+            options = json.loads(config.read_text())['runtimeOptions']
+            self.assertEqual(options['rollForward'], 'latestMajor')
+            self.assertEqual(options['configProperties'], {
+                'example': 'https://example.com',
+                'System.Globalization.AppLocalIcu': '72.1.0.3',
+            })
+
 
 @unittest.skipUnless(sys.platform == 'linux', 'Linux app-local ICU packaging')
 class DotnetRuntimeTest(unittest.TestCase):

@@ -268,7 +268,7 @@ csharp_binary(
     tags = ["manual"],
     out = "Comparison",
     srcs = ["benchmarks/adapters/dotnet/Program.cs"],
-    target_frameworks = ["net8.0"],
+    target_frameworks = ["net10.0"],
     nullable = "enable",
     compiler_options = ["/optimize+"],
     deps = [
@@ -285,7 +285,7 @@ publish_binary(
     name = "binarykits_publish",
     tags = ["manual"],
     binary = ":binarykits_dotnet",
-    target_framework = "net8.0",
+    target_framework = "net10.0",
     self_contained = False,
 )
 
@@ -479,7 +479,7 @@ py_test(
 py_test(
     name = "dotnet_runtime_test",
     size = "small",
-    srcs = ["build/dotnet_runtime_test.py"],
+    srcs = ["build/dotnet_runtime_test.py", "build/dotnet_runtime.py"],
     main = "build/dotnet_runtime_test.py",
     data = [":library_binarykits"],
 )

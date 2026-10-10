@@ -29,7 +29,7 @@ def package_versions():
     versions["zebrash"] = json.loads((ROOT / "sources.lock.json").read_text())["zebrash"]["version"]
     dotnet = json.loads((ROOT / "adapters/dotnet/packages.lock.json").read_text())[
         "dependencies"
-    ]["net8.0"]
+    ]["net10.0"]
     versions.update(
         {
             "binarykits-viewer": dotnet["BinaryKits.Zpl.Viewer"]["resolved"],

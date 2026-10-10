@@ -8,7 +8,7 @@ def _go_impl(ctx):
     pin = json.decode(ctx.read(Label("//:benchmarks/sources.lock.json")))["go-zpl"]
     for group, manifest in [
         ("go", Label("//:benchmarks/adapters/go/go.mod")),
-        ("gonative", Label("@go_inputs//:benchmarks/_work/go-zpl/go.mod")),
+        ("gonative", Label("//:benchmarks/adapters/go/go.mod")),
         ("zebrash", Label("//:benchmarks/adapters/zebrash/go.mod")),
     ]:
         versions = {}

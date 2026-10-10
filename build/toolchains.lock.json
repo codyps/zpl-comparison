@@ -1,36 +1,36 @@
 {
   "linux-amd64": {
     "cargo": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/cargo-1.98.1-x86_64-unknown-linux-gnu.tar.xz",
-      "sha256": "ea1de9f9e23107d97ee2b41a72c552f34064a593da503789218387aee59f3ba4"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/cargo-1.99.0-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "d7674918d28093097614cd9728b6ca60db9ea3038f640f0bd1e9a4188c7568ce"
     },
     "rustc": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rustc-1.98.1-x86_64-unknown-linux-gnu.tar.xz",
-      "sha256": "e974f036b28565f37c0f3bd92ddefa809bee16c04f9dcf07b9ed96e05aaaf7c4"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rustc-1.99.0-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "77171ba2a0345fdf2abc4fedda55d6de078dae7a68527c28be8c77dcc9604bd5"
     },
     "rust-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-x86_64-unknown-linux-gnu.tar.xz",
-      "sha256": "fa3ff450172a16c026944030230c5069947af93c728d9179971d44e5e0cfb561"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "3e58dff2d0b72196b5ea4e90536e174d400de88564a52694686b81e091169933"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.27.1.linux-amd64.tar.gz",
-      "sha256": "63d339f0da5ab53635a56f2490a7984dfe12dfcff22ad749f63edaf590168445"
+      "url": "https://go.dev/dl/go1.27.2.linux-amd64.tar.gz",
+      "sha256": "ecbadb99091a3f46e31f5f934b068b1864eafa7995211b39eaddf76996045fe5"
     },
     "node": {
-      "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-linux-x64.tar.gz",
-      "sha256": "6e1db87ef58b8819e5d5402eff1536491b18edd8eb7bee5ef7897876e88dc5ff"
+      "url": "https://nodejs.org/dist/v26.11.1/node-v26.11.1-linux-x64.tar.gz",
+      "sha256": "15fc043a51a5783f2f4b634561091658f5a7f0e3db03f997dca3a8033a33e45b"
     },
     "dotnet": {
-      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.425/dotnet-sdk-8.0.425-linux-x64.tar.gz",
-      "sha512": "934b8060a7190e5909ad1fd0785db542f487b3bbf6cdd14826b02095fdd0d0394298b1634085eff302928fccc33f7c1a7253e9b87df555fc36fce819bcd2e798"
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.401/dotnet-sdk-10.0.401-linux-x64.tar.gz",
+      "sha512": "51c8b999af9e8dd9998c9edc5944e19a90788862068acd38694e098889054ce8c23d4f0c5cccfa16bf187d044562359e5ee69a9f8ad0bbe913ba90311fbce25b"
     },
     "wasm-bindgen": {
-      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.128/wasm-bindgen-0.2.128-x86_64-unknown-linux-musl.tar.gz",
-      "sha256": "b51f0208fdff83515a787bd8ab9ac5865ed84dabb66d0c709957bb59793c645f"
+      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.129/wasm-bindgen-0.2.129-x86_64-unknown-linux-musl.tar.gz",
+      "sha256": "82d12bb940e2d4e72e0d5605387fc1b8ca179044e012b620f0ce4e7440e8320e"
     },
     "rust-wasm-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-wasm32-unknown-unknown.tar.xz",
-      "sha256": "cf1fcf68880d8b2b90128cede7416cfb82ad3584357ce9fb668f2b6244c26e55"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-wasm32-unknown-unknown.tar.xz",
+      "sha256": "b760b0c9b08a6843c05de0098bd6802e23178ff473c4715ae57c1d679125bf22"
     },
     "icu": {
       "url": "https://api.nuget.org/v3-flatcontainer/microsoft.icu.icu4c.runtime.linux-x64/72.1.0.3/microsoft.icu.icu4c.runtime.linux-x64.72.1.0.3.nupkg",
@@ -41,104 +41,104 @@
   },
   "darwin-amd64": {
     "cargo": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/cargo-1.98.1-x86_64-apple-darwin.tar.xz",
-      "sha256": "74b1282253c31fb89926d51d57e47a06c6cd26c93657de72edf622a4ab66396f"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/cargo-1.99.0-x86_64-apple-darwin.tar.xz",
+      "sha256": "939b71952afd63ae73bc00f3517c19f0dd7ac54884b5fac16a813ee50985d14d"
     },
     "rustc": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rustc-1.98.1-x86_64-apple-darwin.tar.xz",
-      "sha256": "641c301bd19c3cead114cbb61919c5ed2475ce53e2d011fe0c990e16c5a1b04b"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rustc-1.99.0-x86_64-apple-darwin.tar.xz",
+      "sha256": "7460910254f059b49b99ee3ddbcf7197d16b9505b59c166e14a1465ee323a81d"
     },
     "rust-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-x86_64-apple-darwin.tar.xz",
-      "sha256": "48b9835058a8baa4ff5e4387f3772c572a017a2b13393c46e151615c54e322e9"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-x86_64-apple-darwin.tar.xz",
+      "sha256": "18ee81961a73c3ae966ecb1e8f6096438c90aeefece8856201a6ecc17f5bc850"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.27.1.darwin-amd64.tar.gz",
-      "sha256": "8f8f52c6649542cf027bbc9b9c68d1ec042f9f34808a40413f0b8b3f66f3caa4"
+      "url": "https://go.dev/dl/go1.27.2.darwin-amd64.tar.gz",
+      "sha256": "587b59182488b23aa6e5fc25110405a3e0e5b38ed2f5b2f46ed13c32aee356fe"
     },
     "node": {
-      "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-darwin-x64.tar.gz",
-      "sha256": "1462cb3b3046b815cf8ea436d3da450ec1a9f11dac7e5a46b0ada5305d7e8097"
+      "url": "https://nodejs.org/dist/v26.11.1/node-v26.11.1-darwin-x64.tar.gz",
+      "sha256": "9a8129bd9ab08039793dd1143a7aedee6b5d60ac06592ad938d8bddf36142f3a"
     },
     "dotnet": {
-      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.425/dotnet-sdk-8.0.425-osx-x64.tar.gz",
-      "sha512": "3b27552358905f1bde600dd0315a23051ef1cbd055a50eb64c675ee25a04e658c2ed735177125436c5bec38dfcd958fee338299611348299cd34a9bea8b8011f"
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.401/dotnet-sdk-10.0.401-osx-x64.tar.gz",
+      "sha512": "33401b4a2da8554e3306db6072ea8569d9fcc608509c271e0aa4b39e7cc432da3631f14e7e1e2445d67d72550d18ce44a8bbd2382a756867ad2edab6b1c963c0"
     },
     "wasm-bindgen": {
-      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.128/wasm-bindgen-0.2.128-x86_64-apple-darwin.tar.gz",
-      "sha256": "59d9af11d0a61b8019898d555de31153c3a50e7f1797e9849fb38589d16add43"
+      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.129/wasm-bindgen-0.2.129-x86_64-apple-darwin.tar.gz",
+      "sha256": "7e028879a68ec53dae14048b55cc5215f6df75b17a9c1426fac8fa086d3202fd"
     },
     "rust-wasm-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-wasm32-unknown-unknown.tar.xz",
-      "sha256": "cf1fcf68880d8b2b90128cede7416cfb82ad3584357ce9fb668f2b6244c26e55"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-wasm32-unknown-unknown.tar.xz",
+      "sha256": "b760b0c9b08a6843c05de0098bd6802e23178ff473c4715ae57c1d679125bf22"
     }
   },
   "darwin-arm64": {
     "cargo": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/cargo-1.98.1-aarch64-apple-darwin.tar.xz",
-      "sha256": "de51d4fade4f31ad8ec405261cc96bedc000d905f98980027610d6e288dbe21b"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/cargo-1.99.0-aarch64-apple-darwin.tar.xz",
+      "sha256": "76abff0ad79a10a3152dff640ea0d8b3c37637d9300bf55da41b95c3ddc069c1"
     },
     "rustc": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rustc-1.98.1-aarch64-apple-darwin.tar.xz",
-      "sha256": "738e3f60114b20550fcf4f8a57c9cea0544239f214709f45594ff3fde327f577"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rustc-1.99.0-aarch64-apple-darwin.tar.xz",
+      "sha256": "334a66714ca316d71bbe5efe44f71762d0b276cea73be2987374693a837f7450"
     },
     "rust-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-aarch64-apple-darwin.tar.xz",
-      "sha256": "2de831ef563ce772519a4d18ba2659f0f7428d497ef66dad24b5a35e8f8cd177"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-aarch64-apple-darwin.tar.xz",
+      "sha256": "a7c6de8aa21e7c31163a7656295b321bb85f5dce55ed8ea95ac9ac561202bb5b"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.27.1.darwin-arm64.tar.gz",
-      "sha256": "ee215d57e0ec269c60cc9ceca68e6bda321ba9ee5afe24f4b0988703c2d87d12"
+      "url": "https://go.dev/dl/go1.27.2.darwin-arm64.tar.gz",
+      "sha256": "76812b213b1b2302c978d28fa52fa92d541704b9e7d9d5db8002c50e4018c4c5"
     },
     "node": {
-      "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-darwin-arm64.tar.gz",
-      "sha256": "bed7eea5325e1108f32ce5228ddd6a5f0f08a499ee42aa7442aea583702f6057"
+      "url": "https://nodejs.org/dist/v26.11.1/node-v26.11.1-darwin-arm64.tar.gz",
+      "sha256": "d916511b55965e91be7a88e17f88d895b6793ceaba3e6c9b194aefe51c2c65ac"
     },
     "dotnet": {
-      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.425/dotnet-sdk-8.0.425-osx-arm64.tar.gz",
-      "sha512": "d42156be70b489236479a415536013a89a9fd6eaca57d5716a7017612fcc65bdb459068973d7cffd6fe710f2799af8bee95b2046ba032762d47df176f5c4a7d6"
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.401/dotnet-sdk-10.0.401-osx-arm64.tar.gz",
+      "sha512": "69f64eb00dc045398755c440b152225d544301a345a146a16e86a56a0c52b7c94b2c331520e976dbb821f18d31930aafbd25bb85961e3517e0665414ce0cbcff"
     },
     "wasm-bindgen": {
-      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.128/wasm-bindgen-0.2.128-aarch64-apple-darwin.tar.gz",
-      "sha256": "67ba17f260977725c0b541b516dbb5153538140f079a900329fb6077661b47ab"
+      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.129/wasm-bindgen-0.2.129-aarch64-apple-darwin.tar.gz",
+      "sha256": "81d4a23d56b3c3eb8187658329116d50e0b228a93b343825fb71f70179051cd1"
     },
     "rust-wasm-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-wasm32-unknown-unknown.tar.xz",
-      "sha256": "cf1fcf68880d8b2b90128cede7416cfb82ad3584357ce9fb668f2b6244c26e55"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-wasm32-unknown-unknown.tar.xz",
+      "sha256": "b760b0c9b08a6843c05de0098bd6802e23178ff473c4715ae57c1d679125bf22"
     }
   },
   "linux-arm64": {
     "cargo": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/cargo-1.98.1-aarch64-unknown-linux-gnu.tar.xz",
-      "sha256": "c09425a7f300af148c0bdfded0e7d5f1fe7c075b2b9674e8935afa769297b2f6"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/cargo-1.99.0-aarch64-unknown-linux-gnu.tar.xz",
+      "sha256": "113229fcc16cc1ba004923a4cc275fbf3281dafaaf8b97269f9c00189d497fd4"
     },
     "rustc": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rustc-1.98.1-aarch64-unknown-linux-gnu.tar.xz",
-      "sha256": "89fb83041993b48816514815606f53a5264729b8b449671a6b291e6f0ae74f40"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rustc-1.99.0-aarch64-unknown-linux-gnu.tar.xz",
+      "sha256": "89c0f1a3a44df63c95e5d5f2ba093d0a12c5f5f57f8635f8a7a0ce50cf86600e"
     },
     "rust-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-aarch64-unknown-linux-gnu.tar.xz",
-      "sha256": "9bf796a6ec5b004813ebd0b650775a7c6a4f3aae97ad362ae294798dca4f3b23"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-aarch64-unknown-linux-gnu.tar.xz",
+      "sha256": "1cf7e2ef58ed1cfa6f1adea18e155cbf254c1951f39e5f5e3376879f55fd64a4"
     },
     "go": {
-      "url": "https://go.dev/dl/go1.27.1.linux-arm64.tar.gz",
-      "sha256": "3450b45a3f9ee8568792736a5c5e70a1f2e9b36c35a8f74958c03e51d7d92bec"
+      "url": "https://go.dev/dl/go1.27.2.linux-arm64.tar.gz",
+      "sha256": "94f3e30b8e374bc285e7dadc11e0865726b9bc6e85b841ccceaabc0214c6b7c8"
     },
     "node": {
-      "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-linux-arm64.tar.gz",
-      "sha256": "724282c3b43aec998aa9527380465b45d229e021b58035f5f4f63095eabfe5d5"
+      "url": "https://nodejs.org/dist/v26.11.1/node-v26.11.1-linux-arm64.tar.gz",
+      "sha256": "170454fb022f5e9b5f6cc76c25fa32ef5100895be44eb04e92f9780591491bbf"
     },
     "dotnet": {
-      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.425/dotnet-sdk-8.0.425-linux-arm64.tar.gz",
-      "sha512": "84a4d017d74d7aa842e981679d1b044e6be1f35b9b2b214021e30bc40871d016d29611cca373d8502ad5c890e3ad360ee698f9cf2d7a4d5a9fba102d88ba310f"
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.401/dotnet-sdk-10.0.401-linux-arm64.tar.gz",
+      "sha512": "58ace73ced6b4360754689a686bdfb8a317f4da6cb8bb416dbc7d0ba9f47e43e3c09f5eb1f1a1cfaacbd10df9558da4882bf2a5e195d6ab56a02c1f9f76102ed"
     },
     "wasm-bindgen": {
-      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.128/wasm-bindgen-0.2.128-aarch64-unknown-linux-musl.tar.gz",
-      "sha256": "079731dd1bc7798c1efa4f08fcc45130827cbcc9ff60a0b4c6047d64fc6fd25c"
+      "url": "https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.129/wasm-bindgen-0.2.129-aarch64-unknown-linux-musl.tar.gz",
+      "sha256": "2ed4351c35dd9440308bbb02767d47ea278efe851a52465300f3c94f5b6c2a87"
     },
     "rust-wasm-std": {
-      "url": "https://static.rust-lang.org/dist/2026-09-03/rust-std-1.98.1-wasm32-unknown-unknown.tar.xz",
-      "sha256": "cf1fcf68880d8b2b90128cede7416cfb82ad3584357ce9fb668f2b6244c26e55"
+      "url": "https://static.rust-lang.org/dist/2026-10-01/rust-std-1.99.0-wasm32-unknown-unknown.tar.xz",
+      "sha256": "b760b0c9b08a6843c05de0098bd6802e23178ff473c4715ae57c1d679125bf22"
     },
     "icu": {
       "url": "https://api.nuget.org/v3-flatcontainer/microsoft.icu.icu4c.runtime.linux-arm64/72.1.0.3/microsoft.icu.icu4c.runtime.linux-arm64.72.1.0.3.nupkg",

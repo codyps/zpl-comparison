@@ -5,7 +5,7 @@
   },
   "BinaryKits.Zpl": {
     "url": "https://github.com/BinaryKits/BinaryKits.Zpl",
-    "rev": "9d316458c33c90608859cc935d3ba1e0c7587be7"
+    "rev": "25edadaa867472941b7cc0a84802a3e473b4a3b2"
   },
   "python-zpl": {
     "url": "https://github.com/cod3monk/zpl",
@@ -13,11 +13,11 @@
   },
   "zplr": {
     "url": "https://github.com/le2ni/zplr",
-    "rev": "1c94eadfc5afb494b4c92dd10ad4808bd3d19529"
+    "rev": "758ad0d8eed22a026eff4a83dbad83803a7ed871"
   },
   "jszpl": {
     "url": "https://github.com/DanieLeeuwner/JSZPL",
-    "rev": "53c916717c0dfdb1e6bca266eb6280c8f156c6ca"
+    "rev": "d6dff7541273321f22724aff47148aecb65c66bd"
   },
   "zpl-toolchain": {
     "url": "https://github.com/trevordcampbell/zpl-toolchain",
@@ -25,7 +25,7 @@
   },
   "labelize": {
     "url": "https://github.com/GOODBOY008/labelize",
-    "rev": "b9598a530178d65e6a293f06137a0e27a86bd2e8"
+    "rev": "0902d48129f16d2451584d709f02fd3afd87aee9"
   },
   "zpl-forge": {
     "url": "https://github.com/rafael-arreola/zpl-forge",
@@ -33,23 +33,23 @@
   },
   "zpl": {
     "url": "https://github.com/codyps/zpl",
-    "fetch_url": "git@github.com:codyps/zpl.git",
+    "fetch_url": "https://github.com/codyps/zpl.git",
     "rev": "9a3be061a002a95c76e447e6b34c63e3cb62a1db",
     "version": "0.2.1"
   },
   "zebrash": {
     "url": "https://github.com/ingridhq/zebrash",
-    "rev": "7903ced0c50b07e6184a1c249fea8a151a1d7a5c",
+    "rev": "c6ffa358ceb6415db7294ee745b434cc5b353186",
     "version": "1.38.0"
   },
   "zpl-renderer-js": {
     "url": "https://github.com/Fabrizz/zpl-renderer-js",
-    "rev": "2dbd84e5e1373c0d8ee10833626e9da86247b2c6",
+    "rev": "2901eb4249fa394eb070b2f964e848a48d6561eb",
     "version": "4.0.0"
   },
   "zebrash-ts": {
     "url": "https://github.com/Fountain-Bio/zebrash-ts",
-    "rev": "682537c065d5b19e4f6518c90f56ab3e2bee9924",
+    "rev": "a063491cb2e30d063ba84ea9f61a4b986de77a07",
     "version": "1.0.4"
   }
 }
