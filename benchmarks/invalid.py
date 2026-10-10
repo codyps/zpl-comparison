@@ -20,6 +20,7 @@ REPO = ROOT.parent
 SUITE = REPO / "test-data/invalid-zpl"
 LANES = {
     "codyps-zpl-node": ["render"],
+    "codyps-zpl-go": ["render"],
     "codyps-zpl": ["parse", "render"],
     "toolchain": ["parse"],
     "labelize": ["parse", "render"],
@@ -318,6 +319,8 @@ def main():
         ROOT / "adapters/go/main.go",
         ROOT / "adapters/node/main.mjs",
         ROOT / "adapters/node/renderers.mjs",
+        ROOT / "adapters/codyps-zpl-go/main.go",
+        ROOT / "adapters/codyps-zpl-go/go.mod",
         ROOT / "adapters/zebrash/main.go",
         ROOT / "adapters/zebrash/go.mod",
         ROOT / "adapters/zebrash/go.sum",

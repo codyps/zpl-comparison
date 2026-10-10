@@ -38,6 +38,8 @@ def _configure(root, library, manifest_bytes, signatures):
             raise ValueError('Font bundle hash mismatch: ' + name)
     if library == 'codyps-zpl':
         mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; Heros font 0 and named Swiss via Fonts/render_with_fonts with native hinting and dots-per-em sizing. GS retains its resident face; captions follow library font selection.'
+    elif library == 'codyps-zpl-go':
+        mode, note = 'supplied-download', 'Recovered native bitmap fonts via ~DB/^CW; Heros font 0 and named Swiss via ~DU/^CW. The public API retains its fixed 1 MiB input limit; GS retains its resident face.'
     elif library == 'codyps-zpl-node':
         mode, note = 'supplied-bitmap-and-callback', 'Recovered native bitmap downloads via ~DB/^CW; Heros font 0 via ^CW and named Swiss via the public resolveFont callback. Other named fonts retain ROM lookup; controlled input budget includes the bitmap preamble.'
     elif library == 'zplr':
@@ -59,6 +61,13 @@ def _configure(root, library, manifest_bytes, signatures):
         preamble.extend((root / 'bitmap-download.zpl').read_bytes())
     if library == 'codyps-zpl-node':
         preamble.extend(b'^CW0,R:FC0.TTF')
+    if library == 'codyps-zpl-go':
+        for fid, filename in [('0', '0.ttf'), ('TT0003M_', 'Swiss.ttf')]:
+            data = (root / filename).read_bytes()
+            name = 'R:FC0.TTF' if fid == '0' else 'R:TT0003M_.TTF'
+            preamble.extend(f'~DU{name},{len(data)},'.encode() + data.hex().upper().encode())
+        # The bitmap preamble binds font 0, so download its resource first.
+        preamble.extend((root / 'bitmap-download.zpl').read_bytes())
     if library in DOWNLOAD:
         for fid, filename in sorted(manifest['fonts'].items()):
             if fid == 'GS':

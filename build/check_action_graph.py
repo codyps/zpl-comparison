@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 
-LAYOUT_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "labelary"}
+LAYOUT_LIBRARIES = {"codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go", "labelary"}
 
 
 def verify_layout_matrix(renders, comparisons, cases, suite="font-free layout"):

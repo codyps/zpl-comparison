@@ -1,4 +1,4 @@
-load("@io_bazel_rules_go//go:def.bzl", "go_binary")
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 load("@rules_cc//cc:cc_import.bzl", "cc_import")
 load("//:build/executable.bzl", "executable_file")
 load("@rules_rust_wasm_bindgen//:defs.bzl", "rust_wasm_bindgen", "rust_wasm_bindgen_toolchain")
@@ -134,6 +134,35 @@ rust_library(
     binary = ":rust_" + lib.replace("-", "_"),
     deps = ["@rust_inputs//:" + lib],
 ) for lib in ["codyps-zpl", "labelize", "forge"]]
+# The default wasm2go backend uses only the Go standard library. Compile the
+# upstream shipped translation/data without regenerating or selecting native FFI.
+go_library(
+    name = "codyps_zpl_go_translated",
+    srcs = ["@rust_inputs//:benchmarks/_work/zpl/zpl-go/internal/translated/module.go"],
+    embedsrcs = ["@rust_inputs//:benchmarks/_work/zpl/zpl-go/internal/translated/module.dat"],
+    importpath = "github.com/codyps/zpl/zpl-go/internal/translated",
+)
+go_library(
+    name = "codyps_zpl_go",
+    srcs = ["@rust_inputs//:zpl_go_srcs"],
+    importpath = "github.com/codyps/zpl/zpl-go",
+    deps = [":codyps_zpl_go_translated"],
+)
+go_binary(
+    name = "codyps_zpl_go_adapter",
+    srcs = ["benchmarks/adapters/codyps-zpl-go/main.go"],
+    deps = [":codyps_zpl_go"],
+    pure = "on",
+    gc_linkopts = ["-s", "-w"],
+    tags = ["manual"],
+)
+native_library(
+    name = "library_codyps-zpl-go",
+    library = "codyps-zpl-go",
+    binary = ":codyps_zpl_go_adapter",
+    deps = ["@rust_inputs//:codyps-zpl"],
+)
+
 go_binary(
     name = "go_adapter",
     srcs = ["benchmarks/adapters/go/main.go"],
@@ -313,6 +342,7 @@ filegroup(
         "zpl-renderer-js",
         "zebrash-ts",
         "codyps-zpl-node",
+        "codyps-zpl-go",
         "binarykits",
     ]],
 )
@@ -388,7 +418,7 @@ py_test(
 filegroup(
     name = "render_libraries",
     srcs = [":library_" + lib for lib in [
-        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node",
+        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go",
     ]],
 )
 
@@ -408,6 +438,7 @@ pipeline(
         "zpl-renderer-js",
         "zebrash-ts",
         "codyps-zpl-node",
+        "codyps-zpl-go",
     ]],
 )
 
@@ -573,6 +604,7 @@ pipeline(
         "zpl-renderer-js",
         "zebrash-ts",
         "codyps-zpl-node",
+        "codyps-zpl-go",
     ]],
 )
 
@@ -620,4 +652,13 @@ py_test(
     srcs = ["build/renderer_reuse_test.py", "build/renderer_session.py", "build/font_profile.py"],
     main = "build/renderer_reuse_test.py",
     data = [":comparison_fonts"] + [":library_" + name for name in ["zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits"]],
+)
+
+py_test(
+    name = "codyps_go_adapter_test",
+    size = "small",
+    srcs = ["build/codyps_go_adapter_test.py", "build/font_profile.py"],
+    main = "build/codyps_go_adapter_test.py",
+    data = [":library_codyps-zpl-go", ":comparison_fonts"],
+    deps = [requirement("pillow")],
 )

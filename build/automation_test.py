@@ -41,6 +41,7 @@ class AutomationTest(unittest.TestCase):
         for index, (name, content) in enumerate({
             "benchmarks/sources.lock.json": json.dumps({source: dict(rev="selected") for source in SOURCE.values()}),
             "benchmarks/adapters/go/main.go": "adapter",
+            "benchmarks/adapters/codyps-zpl-go/main.go": "wasm2go-adapter",
             "benchmarks/adapters/zebrash/main.go": "native-zebrash",
             "benchmarks/adapters/node/renderers.mjs": "node-zebrash",
             "benchmarks/adapters/node/session.mjs": "node-session",
@@ -65,6 +66,7 @@ class AutomationTest(unittest.TestCase):
         original_probe = identities(files, probe=True, python_version="3.13")
         for name, changed in [
             ("benchmarks/adapters/go/main.go", {"go", "ffi"}),
+            ("benchmarks/adapters/codyps-zpl-go/main.go", {"codyps-zpl-go"}),
             ("benchmarks/adapters/zebrash/main.go", {"zebrash"}),
             ("benchmarks/adapters/node/renderers.mjs", {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}),
             ("benchmarks/adapters/node/session.mjs", {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}),

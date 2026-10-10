@@ -178,6 +178,8 @@ catalog(
         "//:benchmarks/adapters/go/go.mod",
         "//:benchmarks/adapters/go/go.sum",
         "//:benchmarks/adapters/go/main.go",
+        "//:benchmarks/adapters/codyps-zpl-go/main.go",
+        "//:benchmarks/adapters/codyps-zpl-go/go.mod",
         "//:benchmarks/adapters/labelary.py",
         "//benchmarks/adapters/node:main.mjs",
         "//benchmarks/adapters/node:renderers.mjs",
