@@ -33,6 +33,21 @@ def headers(credential):
     return {"Authorization": ["Basic " + base64.b64encode(credential.encode()).decode()]}
 
 
+def persistent_disk():
+    # This path must be a host-backed filesystem mount, never the VM root disk.
+    mount = Path("/var/cache/bazel-persistent")
+    if not mount.is_mount():
+        raise RuntimeError(f"{mount} is not mounted; refusing an ephemeral disk cache")
+    disk = mount / "zpl-comparison" / "actions"
+    disk.mkdir(parents=True, exist_ok=True)
+    with (Path.home() / ".bazelrc").open("a") as rc:
+        rc.write(f"\nbuild --disk_cache={disk}\n")
+        rc.write("build --disk_cache_gc_max_size=40G\n")
+        rc.write("build --disk_cache_gc_max_age=14d\n")
+    print(f"Persistent disk cache configured: {disk}")
+    return disk
+
+
 def configure():
     credential = os.environ.get("WARBLER_CACHE_CREDENTIAL", "")
     if not credential:
@@ -87,5 +102,8 @@ if __name__ == "__main__":
             print(json.dumps({"headers": {}}))
     elif sys.argv[1:] == ["configure"]:
         configure()
+    elif sys.argv[1:] == ["configure-persistent"]:
+        persistent_disk()
+        configure()
     else:
-        raise SystemExit("Usage: warbler_cache.py configure|get")
+        raise SystemExit("Usage: warbler_cache.py configure|configure-persistent|get")

@@ -3,18 +3,13 @@ name: Builder comparison experiment
 on:
   workflow_dispatch:
     inputs:
-      cache_backend:
-        description: Compare builders with BuildBuddy, or test Warbler's local cache
-        type: choice
-        options: ['buildbuddy', 'warbler']
-        default: buildbuddy
       builder:
         description: Builder selection for follow-up measurements
         type: choice
         options: ['both', 'ubuntu-24.04', 'warbler-linux']
         default: both
       cache_probe_only:
-        description: Only verify Warbler local-cache connectivity and access controls
+        description: Verify Warbler local remote cache and inspect persistent disk readiness
         type: boolean
         default: false
       report_jobs:
@@ -27,7 +22,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: builder-comparison-${{ github.ref }}-${{ inputs.cache_backend }}-${{ inputs.builder }}
+  group: builder-comparison-${{ github.ref }}-${{ inputs.builder }}-${{ inputs.cache_probe_only }}
   # Let main finish publication; only superseded PR runs are disposable.
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
@@ -37,10 +32,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runner: ${{ fromJSON(inputs.cache_backend == 'warbler' && '["warbler-linux"]' || inputs.builder == 'warbler-linux' && '["warbler-linux"]' || inputs.builder == 'ubuntu-24.04' && '["ubuntu-24.04"]' || '["ubuntu-24.04", "warbler-linux"]') }}
+        runner: ${{ fromJSON(inputs.builder == 'warbler-linux' && '["warbler-linux"]' || inputs.builder == 'ubuntu-24.04' && '["ubuntu-24.04"]' || '["ubuntu-24.04", "warbler-linux"]') }}
     runs-on: ${{ matrix.runner }}
     env:
-      WARBLER_CACHE_CREDENTIAL: ${{ inputs.cache_backend == 'warbler' && secrets.WARBLER_CACHE_READ || '' }}
+      WARBLER_CACHE_CREDENTIAL: ${{ matrix.runner == 'warbler-linux' && secrets.WARBLER_CACHE_READ || '' }}
     timeout-minutes: 90
     steps:
       - name: Record builder hardware
@@ -82,24 +77,22 @@ jobs:
             - build/toolchains.lock.json
             - build/requirements.lock.txt
           cache-save: ${{ github.event.pull_request.head.repo.fork != true }}
-      - name: Configure Bazel caches
+      - name: Configure Ubuntu Bazel caches
+        if: matrix.runner == 'ubuntu-24.04'
         id: cache-config
         env:
-          # This experiment runs only by manual dispatch on a reviewed branch.
-          BUILDBUDDY_API_KEY: ${{ inputs.cache_backend == 'buildbuddy' && secrets.BUILDBUDDY_API_KEY || '' }}
+          BUILDBUDDY_API_KEY: ${{ secrets.BUILDBUDDY_API_KEY }}
         run: |
           python3 .github/scripts/buildbuddy_cache.py configure
-          if [ "${{ inputs.cache_backend }}" = "warbler" ]; then
-            python3 .github/scripts/warbler_cache.py configure
-            # Require a live local cache for a meaningful cache comparison.
-            grep -q '^build --remote_cache=https://10.77.0.1:9443/zpl-comparison$' "$HOME/.bazelrc"
-            echo 'remote-enabled=true' >> "$GITHUB_OUTPUT"
-            echo 'build --remote_download_outputs=toplevel' >> "$HOME/.bazelrc"
-          fi
-          # Experiments must not publish shared action-cache results.
           echo 'build --remote_upload_local_results=false' >> "$HOME/.bazelrc"
+      - name: Configure Warbler Bazel caches
+        if: matrix.runner == 'warbler-linux'
+        run: |
+          python3 .github/scripts/warbler_cache.py configure-persistent
+          grep -q '^build --remote_cache=https://10.77.0.1:9443/zpl-comparison$' "$HOME/.bazelrc"
+          echo 'build --remote_download_outputs=toplevel' >> "$HOME/.bazelrc"
       - name: Restore Bazel action cache
-        if: steps.cache-config.outputs.remote-enabled != 'true'
+        if: matrix.runner == 'ubuntu-24.04' && steps.cache-config.outputs.remote-enabled != 'true'
         id: action-cache
         uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
@@ -109,7 +102,7 @@ jobs:
             bazel-actions-v2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('.bazelversion') }}-
             setup-bazel-1-linux-x64-disk-true-
       - name: Verify BuildBuddy cache round trip
-        if: inputs.cache_backend == 'buildbuddy'
+        if: matrix.runner == 'ubuntu-24.04'
         timeout-minutes: 3
         run: python3 .github/scripts/verify_buildbuddy_cache.py
       - name: Read pinned private source revision
@@ -131,7 +124,7 @@ jobs:
         if: github.event.pull_request.head.repo.fork != true
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: resolved-source-pins-${{ matrix.runner }}-${{ inputs.cache_backend }}
+          name: resolved-source-pins-${{ matrix.runner }}-${{ matrix.runner == 'warbler-linux' && 'warbler' || 'buildbuddy' }}
           path: |
             benchmarks/sources.lock.json
             benchmarks/adapters/rust/Cargo.lock
@@ -178,7 +171,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: build-performance-${{ matrix.runner }}-${{ inputs.cache_backend }}
+          name: build-performance-${{ matrix.runner }}-${{ matrix.runner == 'warbler-linux' && 'warbler' || 'buildbuddy' }}
           path: |
             ${{ runner.temp }}/*.profile.gz
             ${{ runner.temp }}/*.events.json
@@ -217,7 +210,7 @@ jobs:
         if: always() && github.event.pull_request.head.repo.fork != true
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: renderer-performance-${{ matrix.runner }}-${{ inputs.cache_backend }}
+          name: renderer-performance-${{ matrix.runner }}-${{ matrix.runner == 'warbler-linux' && 'warbler' || 'buildbuddy' }}
           path: ${{ runner.temp }}/performance
           if-no-files-found: error
           retention-days: 30
@@ -271,7 +264,7 @@ jobs:
       - name: Upload comparison site preview
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: comparison-site-preview-${{ matrix.runner }}-${{ inputs.cache_backend }}
+          name: comparison-site-preview-${{ matrix.runner }}-${{ matrix.runner == 'warbler-linux' && 'warbler' || 'buildbuddy' }}
           path: _site
           if-no-files-found: error
           retention-days: 7
@@ -300,14 +293,9 @@ jobs:
           persist-credentials: false
       - name: Diagnose font-cache timestamp precision
         run: python3 .github/scripts/probe_font_cache.py
-      - name: Verify local cache and disk-cache configuration
-        env:
-          BUILDBUDDY_API_KEY: ''
+      - name: Verify host-local remote cache
         run: |
-          python3 .github/scripts/buildbuddy_cache.py configure
           python3 .github/scripts/warbler_cache.py configure
           grep -q '^build --remote_cache=https://10.77.0.1:9443/zpl-comparison$' "$HOME/.bazelrc"
-          grep -q '^build --disk_cache=' "$HOME/.bazelrc"
-          echo 'Verified local remote cache, denied reader writes, and configured a separate disk cache.'
-          echo 'Current disk mount (not yet persistent between VM lifetimes):'
-          findmnt -T "$HOME/.cache/bazel-disk"
+      - name: Require persistent disk cache
+        run: python3 .github/scripts/warbler_cache.py configure-persistent
