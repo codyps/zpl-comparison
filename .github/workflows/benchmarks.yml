@@ -1,36 +1,44 @@
-name: Comparison site
+name: Builder comparison experiment
 
 on:
   workflow_dispatch:
     inputs:
-      action_cache_snapshot:
-        description: Restore/save the disk action cache for timing comparisons
-        type: boolean
-        default: false
+      cache_backend:
+        description: Compare builders with BuildBuddy, or test Warbler's local cache
+        type: choice
+        options: ['buildbuddy', 'warbler']
+        default: buildbuddy
       report_jobs:
-        description: Concurrent report actions (local CPU use remains capped)
+        description: Concurrent report actions
         type: choice
         options: ['64', '32']
         default: '64'
-  schedule:
-    - cron: "23 8 * * *"
-  pull_request:
-  push:
-    branches: [main]
 
 permissions:
   contents: read
 
 concurrency:
-  group: generated-reports-${{ github.ref }}
+  group: builder-comparison-${{ github.ref }}-${{ inputs.cache_backend }}
   # Let main finish publication; only superseded PR runs are disposable.
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: ${{ fromJSON(inputs.cache_backend == 'warbler' && '["warbler-linux"]' || '["ubuntu-24.04", "warbler-linux"]') }}
+    runs-on: ${{ matrix.runner }}
+    env:
+      WARBLER_CACHE_CREDENTIAL: ${{ inputs.cache_backend == 'warbler' && secrets.WARBLER_CACHE_READ || '' }}
     timeout-minutes: 90
     steps:
+      - name: Record builder hardware
+        run: |
+          uname -a
+          lscpu
+          free -h
+          df -h
       - name: Set initial Git branch
         run: git config --global init.defaultBranch main
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -61,21 +69,31 @@ jobs:
       - name: Configure Bazel caches
         id: cache-config
         env:
-          # Only trusted main builds receive remote-cache write credentials.
-          BUILDBUDDY_API_KEY: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && secrets.BUILDBUDDY_API_KEY || '' }}
-        run: python3 .github/scripts/buildbuddy_cache.py configure
+          # This experiment runs only by manual dispatch on a reviewed branch.
+          BUILDBUDDY_API_KEY: ${{ inputs.cache_backend == 'buildbuddy' && secrets.BUILDBUDDY_API_KEY || '' }}
+        run: |
+          python3 .github/scripts/buildbuddy_cache.py configure
+          if [ "${{ inputs.cache_backend }}" = "warbler" ]; then
+            python3 .github/scripts/warbler_cache.py configure
+            # Require a live local cache for a meaningful cache comparison.
+            grep -q '^build --remote_cache=https://10.77.0.1:9443/zpl-comparison$' "$HOME/.bazelrc"
+            echo 'remote-enabled=true' >> "$GITHUB_OUTPUT"
+            echo 'build --remote_download_outputs=toplevel' >> "$HOME/.bazelrc"
+          fi
+          # Experiments must not publish shared action-cache results.
+          echo 'build --remote_upload_local_results=false' >> "$HOME/.bazelrc"
       - name: Restore Bazel action cache
-        if: steps.cache-config.outputs.remote-enabled != 'true' || inputs.action_cache_snapshot == true
+        if: steps.cache-config.outputs.remote-enabled != 'true'
         id: action-cache
         uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ${{ steps.cache-config.outputs.disk-cache }}
-          key: bazel-actions-v2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('.bazelversion') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: bazel-actions-v2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('.bazelversion') }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.runner }}
           restore-keys: |
             bazel-actions-v2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('.bazelversion') }}-
             setup-bazel-1-linux-x64-disk-true-
       - name: Verify BuildBuddy cache round trip
-        if: steps.cache-config.outputs.remote-enabled == 'true'
+        if: inputs.cache_backend == 'buildbuddy'
         timeout-minutes: 3
         run: python3 .github/scripts/verify_buildbuddy_cache.py
       - name: Read pinned private source revision
@@ -97,7 +115,7 @@ jobs:
         if: github.event.pull_request.head.repo.fork != true
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: resolved-source-pins
+          name: resolved-source-pins-${{ matrix.runner }}-${{ inputs.cache_backend }}
           path: |
             benchmarks/sources.lock.json
             benchmarks/adapters/rust/Cargo.lock
@@ -141,7 +159,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: build-performance
+          name: build-performance-${{ matrix.runner }}-${{ inputs.cache_backend }}
           path: |
             ${{ runner.temp }}/*.profile.gz
             ${{ runner.temp }}/*.events.json
@@ -180,7 +198,7 @@ jobs:
         if: always() && github.event.pull_request.head.repo.fork != true
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: renderer-performance
+          name: renderer-performance-${{ matrix.runner }}-${{ inputs.cache_backend }}
           path: ${{ runner.temp }}/performance
           if-no-files-found: error
           retention-days: 30
@@ -194,7 +212,7 @@ jobs:
         uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ${{ runner.temp }}/site-previews
-          key: site-previews-v1-${{ runner.os }}-${{ runner.arch }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: site-previews-v1-${{ runner.os }}-${{ runner.arch }}-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.runner }}
           restore-keys: site-previews-v1-${{ runner.os }}-${{ runner.arch }}-
       - name: Generate and validate comparison site
         run: |
@@ -234,7 +252,7 @@ jobs:
       - name: Upload comparison site preview
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: comparison-site-preview
+          name: comparison-site-preview-${{ matrix.runner }}-${{ inputs.cache_backend }}
           path: _site
           if-no-files-found: error
           retention-days: 7
@@ -243,41 +261,3 @@ jobs:
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site
-
-  publish-observations:
-    needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: write
-    env:
-      GH_TOKEN: ${{ github.token }}
-      GH_REPO: ${{ github.repository }}
-    steps:
-      - name: Retain immutable observation bundle as release assets
-        run: |
-          gh run download "$GITHUB_RUN_ID" --name observation-bundle --dir bundle
-          tag="ci-observations-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
-          gh release create "$tag" bundle/observations.tar.gz bundle/observations.tar.gz.json \
-            --target "$GITHUB_SHA" --title "CI observations $GITHUB_SHA" \
-            --notes "Hash-verified renderer observations from $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID. Retained for fork and offline replay." \
-            --prerelease --latest=false
-
-  deploy:
-    needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    concurrency:
-      group: comparison-site-pages
-      cancel-in-progress: false
-    steps:
-      - name: Deploy comparison site
-        id: deployment
-        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
