@@ -380,6 +380,7 @@ pipeline(
 
 py_test(
     name = "report_archive_test",
+    size = "small",
     srcs = ["build/report_archive_test.py", "build/report_archive.py", "build/stage.py"],
     main = "build/report_archive_test.py",
 )
@@ -588,6 +589,8 @@ comparison_fonts(name = "comparison_fonts")
 py_test(
     name = "font_profile_test",
     size = "medium",
+    # Keep the memory allowance for renderer processes; CI takes under 10 seconds.
+    timeout = "short",
     srcs = ["build/font_profile_test.py", "build/font_profile.py", "build/render.py", "build/renderer_session.py", "benchmarks/fonts/build.py", "benchmarks/accuracy/pixels.py"],
     main = "build/font_profile_test.py",
     data = [":comparison_fonts", ":library_codyps-zpl", ":library_codyps-zpl-node", ":library_forge", ":library_binarykits", ":library_zplr", ":library_zebrash", ":library_zebrash-ts", ":library_zpl-renderer-js", "benchmarks/fonts/sources.json"] + glob(["benchmarks/fonts/source/**", "benchmarks/fonts/recovered/**"]),
@@ -596,6 +599,8 @@ py_test(
 
 py_test(
     name = "font_capture_test",
+    size = "medium",
+    timeout = "short",
     srcs = ["build/font_capture_test.py", "build/compare.py", "build/font_profile.py", "benchmarks/fonts/capture.py", "benchmarks/accuracy/capture.py", "benchmarks/accuracy/cases.py", "benchmarks/accuracy/metrics.py", "benchmarks/accuracy/pixels.py"],
     main = "build/font_capture_test.py",
     data = [":comparison_fonts"] + glob(["references/**", "benchmarks/accuracy/*reference/**"], exclude = ["**/__pycache__/**"]),

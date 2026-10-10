@@ -53,6 +53,10 @@ preamble; ordinary runs retain the default 1 MiB input limit.
 
 Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥24 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.
 
+For Bazel builds on Linux, also install LLD (`sudo apt-get install lld` on Ubuntu).
+Bazel's C toolchain prefers LLD when available; without it, it can select Gold,
+which is deprecated for Rust because of known linker bugs.
+
 ```sh
 python3 -m venv benchmarks/_work/venv
 benchmarks/_work/venv/bin/pip install -r benchmarks/requirements.txt
