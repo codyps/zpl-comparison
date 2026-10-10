@@ -42,8 +42,8 @@ def persistent_disk():
     disk.mkdir(parents=True, exist_ok=True)
     with (Path.home() / ".bazelrc").open("a") as rc:
         rc.write(f"\nbuild --disk_cache={disk}\n")
-        rc.write("build --disk_cache_gc_max_size=40G\n")
-        rc.write("build --disk_cache_gc_max_age=14d\n")
+        rc.write("build --experimental_disk_cache_gc_max_size=40G\n")
+        rc.write("build --experimental_disk_cache_gc_max_age=14d\n")
     print(f"Persistent disk cache configured: {disk}")
     return disk
 

@@ -1,0 +1,93 @@
+--- a/hosts/warbler/garm.nix
++++ b/hosts/warbler/garm.nix
+@@ -46,7 +46,7 @@
+   '';
+ in
+ {
+-  imports = [ ../../modules/admin-commands.nix ./garm-cache.nix ];
++  imports = [ ../../modules/admin-commands.nix ./garm-cache.nix ./garm-bazel-disk.nix ];
+ 
+   sops.secrets.garm-app-key = {
+     sopsFile = ./garm-app-key.enc.json;
+--- /dev/null
++++ b/hosts/warbler/garm-bazel-disk.nix
+@@ -0,0 +1,35 @@
++# Opt-in profile: attaching this cache lets every job using the profile modify
++# artifacts consumed by subsequent jobs. Use only within one job trust domain.
++{ ... }:
++{
++  # /var/lib is already persistent on Warbler. This is a separate Bazel disk
++  # cache, not bazel-remote's incompatible on-disk store.
++  systemd.tmpfiles.rules = [
++    "d /var/lib/garm-bazel-disk 0755 root root -"
++    # The Ubuntu cloud image's runner account has UID/GID 1000.
++    "d /var/lib/garm-bazel-disk/zpl-comparison 0700 1000 1000 -"
++  ];
++
++  virtualisation.incus.preseed.profiles = [{
++    name = "runner-zpl-comparison";
++    project = "garm";
++    config = { "limits.cpu" = "4"; "limits.memory" = "8GiB"; };
++    devices = {
++      root = { type = "disk"; path = "/"; pool = "garm"; size = "40GiB"; };
++      bazel-cache = {
++        type = "disk";
++        source = "/var/lib/garm-bazel-disk/zpl-comparison";
++        path = "/var/cache/bazel-persistent";
++      };
++      eth0 = {
++        type = "nic";
++        name = "eth0";
++        network = "garm0";
++        "security.mac_filtering" = "true";
++        "security.ipv4_filtering" = "true";
++        "security.ipv6_filtering" = "true";
++        "security.port_isolation" = "true";
++      };
++    };
++  }];
++}
+--- a/hosts/warbler/garm.md
++++ b/hosts/warbler/garm.md
+@@ -205,3 +205,41 @@
+ Bazelisk and repository-download archives still use GitHub caching. Cargo/npm
+ downloads and a prebuilt tool image are separate from these compiler/action
+ caches; this does not make every Actions cache host-local.
++
++
++## Optional persistent Bazel disk cache
++
++`garm-bazel-disk.nix` defines the additional `runner-zpl-comparison` profile.
++It retains the existing 4 CPU / 8 GiB / 40 GiB VM sizing and networking, and
++shares `/var/lib/garm-bazel-disk/zpl-comparison` into fresh VMs at
++`/var/cache/bazel-persistent`. Incus uses a filesystem share (virtiofs when
++available), so deleting a VM leaves the host directory intact. This directory
++is independent of the existing authenticated remote cache on port 9443.
++The default `runner` profile and existing GARM scale-set selection are unchanged.
++
++The guest cache directory is writable by the current Ubuntu runner UID 1000.
++The comparison workflow checks that the guest path is a mount before enabling
++`--disk_cache=/var/cache/bazel-persistent/zpl-comparison/actions`, with Bazel
++idle garbage collection configured for 40 GB and 14 days. These are GC targets,
++not a filesystem quota. The HTTP remote cache retains its separate 80 GiB limit.
++Warbler must not run the BuildBuddy configuration helper or receive its API key.
++
++A shared writable disk cache is a trust boundary: the remote cache's read-only
++credential does not prevent a job from poisoning this separate disk cache.
++Only select this profile for jobs with the same trust level. Do not attach it
++to a scale set that mixes untrusted pull requests with trusted publication jobs.
++Before production rollout, split runner scheduling/access by trust domain or
++keep untrusted jobs on the existing disposable `runner` profile. A workflow
++label or a directory name alone does not enforce that separation.
++
++After the trust boundary is enforced and the configuration is built/activated,
++select this profile for the comparison scale set using `sudo sys garm scaleset
++update 2 --flavor runner-zpl-comparison`. Verify the effective Incus device and
++runner UID before dispatching a build. Revert that scale set to `--flavor runner`
++to stop attaching the disk; this does not delete cached data.
++
++Validate persistence with two sequential jobs in different VMs: build a small
++Bazel target in the first, then build it in the second with a fresh output base
++and `--remote_cache=`. The second must report a disk-cache hit. Merely seeing
++an existing directory or a hit from the HTTP remote cache is insufficient.
++Run the full timing comparison only after this check passes.

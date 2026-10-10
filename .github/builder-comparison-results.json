@@ -1,0 +1,53 @@
+{
+  "status": "blocked_on_host_activation_and_cross_job_disk_validation",
+  "warbler_cache_policy": {
+    "remote": "https://10.77.0.1:9443/zpl-comparison",
+    "disk": "/var/cache/bazel-persistent/zpl-comparison/actions",
+    "buildbuddy": false
+  },
+  "ubuntu_baseline": {
+    "run": "https://github.com/codyps/zpl-comparison/actions/runs/38064635030/job/114249688948",
+    "job_seconds": 2473,
+    "reports_seconds": 1417,
+    "cache": "BuildBuddy",
+    "conclusion": "success"
+  },
+  "warbler_local_cache_probe": {
+    "run": "https://github.com/codyps/zpl-comparison/actions/runs/38068866857/job/114262001975",
+    "remote_tls_and_reader_access": "passed",
+    "reader_put_denied": true,
+    "persistent_mount_present": false,
+    "font_timestamp_probe": {
+      "iterations": 100,
+      "unchanged_ctime": 49,
+      "missed_mutation": 49
+    }
+  },
+  "discarded_timing_experiment": {
+    "run": "https://github.com/codyps/zpl-comparison/actions/runs/38065531014",
+    "reason": "Used BuildBuddy on Warbler; canceled after user clarified the required cache configuration. Not evidence for the intended configuration."
+  },
+  "host_patch": {
+    "file": "warbler-builder-config.patch",
+    "repository": "codyps/nixos-config",
+    "base_commit": "02a20f7dc06afb2a6eed36879604e18fbee27607",
+    "profile": "runner-zpl-comparison",
+    "activated": false,
+    "system_build": "passed",
+    "flake_check": "fails on pre-existing missing nodes.warbler.services.zpl-proxy-api option; reproduced without the patch",
+    "trust_requirement": "Only jobs in the same trust domain may share the writable disk; existing remote read-only credentials do not protect disk cache writes."
+  },
+  "validation": {
+    "cache_helper_unit_tests": {
+      "passed": 8
+    },
+    "gc_flags": "Checked against Bazel 9.3.0 help; flags use experimental_disk_cache_gc_max_size and experimental_disk_cache_gc_max_age."
+  },
+  "remaining": [
+    "Establish authenticated host-admin access and enforce runner trust separation before selecting the persistent-cache profile.",
+    "Activate host configuration and select the new profile for the appropriate comparison scale set.",
+    "Verify a disk-cache hit in a second fresh VM with remote cache disabled.",
+    "Resolve the reproduced font-cache correctness failure.",
+    "Measure full CI using the intended Warbler cache configuration; no speedup conclusion yet."
+  ]
+}
