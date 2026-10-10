@@ -39,6 +39,12 @@ jobs:
           lscpu
           free -h
           df -h
+      - name: Install checkout dependencies if missing
+        run: |
+          if ! command -v git >/dev/null; then
+            sudo apt-get -o Acquire::Retries=3 update
+            sudo apt-get -o Acquire::Retries=3 install -y --no-install-recommends git
+          fi
       - name: Set initial Git branch
         run: git config --global init.defaultBranch main
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
