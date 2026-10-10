@@ -17,7 +17,7 @@ from benchmarks.accuracy.pixels import gray, sha
 from benchmarks.accuracy.presentation import rgb
 from benchmarks.accuracy.metrics import compare
 from build.compare import comparison, save_difference
-from build.check_action_graph import LAYOUT_LIBRARIES, verify_layout_matrix
+from build.check_action_graph import LAYOUT_LIBRARIES, verify, verify_layout_matrix
 from build.pages import write
 from build.render import render
 from build.saved import saved
@@ -215,6 +215,45 @@ class PipelineTest(unittest.TestCase):
         for renders, comparisons in [(complete[:-1], complete), (complete, complete[:-1]), (complete, complete + complete[:1])]:
             with self.assertRaisesRegex(AssertionError, "Incomplete font-free layout"):
                 verify_layout_matrix(renders, comparisons, cases)
+
+    def test_action_graph_distinguishes_go_renderers_and_source_ownership(self):
+        graph = dict(pathFragments=[], artifacts=[], depSetOfFiles=[], actions=[])
+
+        def artifact(path):
+            identifier = len(graph["artifacts"]) + 1
+            graph["pathFragments"].append(dict(id=identifier, label=path))
+            graph["artifacts"].append(dict(id=identifier, pathFragmentId=identifier))
+            return identifier
+
+        def action(kind, inputs, outputs):
+            identifier = len(graph["depSetOfFiles"]) + 1
+            dependencies = dict(id=identifier, directArtifactIds=inputs)
+            graph["depSetOfFiles"].append(dependencies)
+            graph["actions"].append(dict(mnemonic=kind, inputDepSetIds=[identifier], outputIds=outputs))
+            return dependencies
+
+        source = artifact("test-data/layout-accuracy/cases/layout-control.zpl")
+        reference = artifact("benchmarks/accuracy/layout-reference/layout-control.png")
+        private = artifact("external/rust_inputs/benchmarks/_work/zpl/zpl-go/render.go")
+        builds, comparisons = {}, {}
+        for library in ["go", "codyps-zpl-go"]:
+            binary = artifact("bazel-out/k8-fastbuild/bin/library_" + library)
+            builds[library] = action("ZplLibraryBuild", [private] if library == "codyps-zpl-go" else [], [binary])
+            prefix = "bazel-out/k8-fastbuild/bin/reports_actions/layout-accuracy/layout-control-" + library
+            render = artifact(prefix + ".render")
+            action("ZplRender", [source, binary], [render, artifact(prefix + ".render.json")])
+            comparisons[library] = action("ZplCompare", [render, reference], [artifact(prefix + ".comparison.json")])
+
+        # Force the ambiguous short suffix first, regardless of PYTHONHASHSEED.
+        with patch("build.check_action_graph.LAYOUT_LIBRARIES", ("go", "codyps-zpl-go")):
+            self.assertEqual(verify(graph, ["layout-control"])["ZplCompare"], 2)
+            comparisons["codyps-zpl-go"]["directArtifactIds"].remove(reference)
+            with self.assertRaisesRegex(AssertionError, "missing printer reference"):
+                verify(graph, ["layout-control"])
+            comparisons["codyps-zpl-go"]["directArtifactIds"].append(reference)
+            builds["go"]["directArtifactIds"].append(private)
+            with self.assertRaisesRegex(AssertionError, "unrelated private source dependency"):
+                verify(graph, ["layout-control"])
 
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()

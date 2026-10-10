@@ -78,7 +78,8 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=(), campaign_cases=N
         elif layout_outputs and kind == "ZplCompare":
             name = next(Path(p).name.removesuffix(".comparison.json") for p in layout_outputs if p.endswith(".comparison.json"))
             layout_comparisons.append(name)
-            library = next(lib for lib in LAYOUT_LIBRARIES if name.endswith("-" + lib))
+            # Prefer codyps-zpl-go over its suffix go, independent of set order.
+            library = next(lib for lib in sorted(LAYOUT_LIBRARIES, key=len, reverse=True) if name.endswith("-" + lib))
             case = name.removesuffix("-" + library)
             assert "benchmarks/accuracy/layout-reference/" + case + ".png" in files, (name, "missing printer reference")
         if kind == "ZplSaved":
@@ -135,7 +136,7 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=(), campaign_cases=N
                     )
                     for p in files
                 ), (library, "Go build depends on mutable download bookkeeping")
-            if library != "library_codyps-zpl":
+            if library not in ["library_codyps-zpl", "library_codyps-zpl-go"]:
                 assert not any("/benchmarks/_work/zpl/" in p for p in files), (
                     library,
                     "unrelated private source dependency",
