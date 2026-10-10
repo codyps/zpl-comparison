@@ -7,3 +7,6 @@ build --strategy=ZplPages=worker,sandboxed
 build --strategy=ZplAggregate=worker,sandboxed
 build --strategy=ZplRelation=worker,sandboxed
 build --worker_max_instances=4
+
+# Identify the target and recommended timeout when a test's duration drifts.
+test --test_verbose_timeout_warnings

@@ -649,6 +649,7 @@ py_test(
 py_test(
     name = "renderer_reuse_test",
     size = "medium",
+    timeout = "short",
     srcs = ["build/renderer_reuse_test.py", "build/renderer_session.py", "build/font_profile.py"],
     main = "build/renderer_reuse_test.py",
     data = [":comparison_fonts"] + [":library_" + name for name in ["zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits"]],
