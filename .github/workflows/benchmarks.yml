@@ -8,6 +8,11 @@ on:
         type: choice
         options: ['buildbuddy', 'warbler']
         default: buildbuddy
+      builder:
+        description: Builder selection for follow-up measurements
+        type: choice
+        options: ['both', 'ubuntu-24.04', 'warbler-linux']
+        default: both
       cache_probe_only:
         description: Only verify Warbler local-cache connectivity and access controls
         type: boolean
@@ -32,7 +37,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runner: ${{ fromJSON(inputs.cache_backend == 'warbler' && '["warbler-linux"]' || '["ubuntu-24.04", "warbler-linux"]') }}
+        runner: ${{ fromJSON(inputs.cache_backend == 'warbler' && '["warbler-linux"]' || inputs.builder == 'warbler-linux' && '["warbler-linux"]' || inputs.builder == 'ubuntu-24.04' && '["ubuntu-24.04"]' || '["ubuntu-24.04", "warbler-linux"]') }}
     runs-on: ${{ matrix.runner }}
     env:
       WARBLER_CACHE_CREDENTIAL: ${{ inputs.cache_backend == 'warbler' && secrets.WARBLER_CACHE_READ || '' }}
@@ -139,6 +144,9 @@ jobs:
       # Let tests, reports, and benchmarks request their own library inputs.
       # Native actions carry CPU/memory reservations for cold-cache builds.
       - name: Test native adapter contracts
+        id: native-tests
+        # Finish collecting timing evidence, then report the original failure below.
+        continue-on-error: true
         if: github.event.pull_request.head.repo.fork != true
         run: |
           bazel test //:canvas_profile_test //:node_adapter_test //:dotnet_runtime_test //:native_adapter_test //:adapter_contract_test //:support_test //:font_profile_test //:font_capture_test //:renderer_reuse_test \
@@ -272,6 +280,9 @@ jobs:
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site
+      - name: Preserve native test result
+        if: always() && steps.native-tests.outcome == 'failure'
+        run: exit 1
 
   local-cache-probe:
     if: inputs.cache_probe_only == true
