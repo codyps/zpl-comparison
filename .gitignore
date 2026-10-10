@@ -4,6 +4,7 @@ _*
 **/target/
 .DS_Store
 /bazel-*
+.envrc.local
 
 # Derived reports are intermediate inputs to the GitHub Pages site.
 # Keep maintained notes and original external captures.
