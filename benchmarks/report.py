@@ -225,6 +225,17 @@ def main():
                 cells.append(f"[{label}](samples/{n}-png-{f}.png)")
         rows.append([NAMES[n]] + cells)
     text.append(table(["Library"] + fixtures, rows))
+    initialization = data.get("initialization", {}).get("results", [])
+    if initialization:
+        text += ["\n## Reusable setup initialization\n",
+                 "Each sample performs one setup in a fresh process without warm-up. "
+                 "Process startup, rendering and closure are excluded. Go render measurements reuse one engine; zpl-forge reuses its font manager.\n",
+                 table(["Library", "Setup", "Median ms", "Min–max ms", "Samples"], [
+                     [NAMES[row["library"]], row.get("component", "engine"),
+                      f"{row['median_ns'] / 1e6:.3f}" if row["status"] == "ok" else row["status"],
+                      f"{row['min_ns'] / 1e6:.3f}–{row['max_ns'] / 1e6:.3f}" if row["status"] == "ok" else row.get("error", "Unavailable"),
+                      len(row.get("samples", []))]
+                     for row in initialization])]
     for mode in ["parse", "png", "generate"]:
         rows = [r for r in ok if r["mode"] == mode]
         if not rows:

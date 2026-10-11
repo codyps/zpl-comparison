@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from benchmarks.run import measure
+from benchmarks.run import collect_initialization, measure
 from build.performance import collect
 from build.native_build import source_size
 
@@ -109,6 +109,35 @@ print(json.dumps(dict(ns=ns, iterations=count, checksum=checksum)))
                     collect(root, root, root / 'output', samples=1)
             data = json.loads((root / 'output/results.json').read_text())
             self.assertTrue(all(r['status'] == 'failed' for r in data['results']))
+
+    def test_initialization_uses_one_constructor_in_each_fresh_process(self):
+        import os
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            adapter = root / 'adapter.py'
+            adapter.write_text("""import json, os, sys
+assert sys.argv[1:] == ['init', '-', '1', '-']
+print(json.dumps(dict(ns=123, iterations=1, checksum=1, pid=os.getpid())))
+""")
+            evidence = collect_initialization(
+                {'codyps-zpl-go': [sys.executable, str(adapter)],
+                 'go': [sys.executable, '-c', 'raise SystemExit(2)']}, os.environ, 3)
+            self.assertEqual(evidence['warmup_operations'], 0)
+            self.assertFalse(evidence['includes_rendering'])
+            self.assertFalse(evidence['includes_closure'])
+            self.assertEqual(len(evidence['results']), 1)
+            row = evidence['results'][0]
+            self.assertEqual(row['status'], 'ok')
+            self.assertEqual(row['median_ns'], 123)
+            self.assertEqual(len({sample['pid'] for sample in row['samples']}), 3)
+
+    def test_initialization_rejects_failed_or_batched_measurements(self):
+        import os
+        for command in ([sys.executable, '-c', 'raise SystemExit(2)'],
+                        [sys.executable, '-c', 'print(\'{"ns":123,"iterations":2,"checksum":2}\')'],
+                        [sys.executable, '-c', 'print("not JSON")']):
+            evidence = collect_initialization({'codyps-zpl-go': command}, os.environ, 1)
+            self.assertEqual(evidence['results'][0]['status'], 'failed')
 
     def test_missing_deployment_fails(self):
         with tempfile.TemporaryDirectory() as tmp:

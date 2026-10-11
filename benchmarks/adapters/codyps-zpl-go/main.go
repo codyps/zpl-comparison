@@ -13,7 +13,7 @@ import (
 	zpl "github.com/codyps/zpl/zpl-go"
 )
 
-func operation(mode string, input []byte, width, height int) ([]byte, error) {
+func operation(ctx context.Context, engine *zpl.Engine, mode string, input []byte, width, height int) ([]byte, error) {
 	if mode == "parse" || mode == "probe-parse" {
 		return nil, fmt.Errorf("adapter does not expose parsing")
 	}
@@ -25,12 +25,6 @@ func operation(mode string, input []byte, width, height int) ([]byte, error) {
 	default:
 		return nil, fmt.Errorf("unknown ZPL_RENDER_PROFILE: %s", value)
 	}
-	ctx := context.Background()
-	engine, err := zpl.New(ctx)
-	if err != nil {
-		return nil, err
-	}
-	defer engine.Close(ctx)
 	result, err := engine.Render(ctx, zpl.Request{
 		Input: input, Format: zpl.PNG, Profile: profile,
 		Width: uint32(width), Height: uint32(height),
@@ -54,17 +48,45 @@ func positive(value string) int {
 
 func main() {
 	mode, file, output := os.Args[1], os.Args[2], os.Args[4]
+	n := positive(os.Args[3])
+	ctx := context.Background()
+	if mode == "init" {
+		// Constructor latency only: no input, render, warm-up, or timed Close.
+		// The collector requests one engine in each fresh process.
+		var elapsed int64
+		for i := 0; i < n; i++ {
+			start := time.Now()
+			engine, err := zpl.New(ctx)
+			elapsed += time.Since(start).Nanoseconds()
+			if err != nil {
+				panic(err)
+			}
+			runtime.KeepAlive(engine)
+			if err := engine.Close(ctx); err != nil {
+				panic(err)
+			}
+		}
+		if err := json.NewEncoder(os.Stdout).Encode(map[string]any{"ns": elapsed, "iterations": n, "checksum": n}); err != nil {
+			panic(err)
+		}
+		return
+	}
 	input, err := os.ReadFile(file)
 	if err != nil {
 		panic(err)
 	}
-	n := positive(os.Args[3])
 	width, height := 400, 300
 	if len(os.Args) > 6 {
 		width, height = positive(os.Args[5]), positive(os.Args[6])
 	}
+	// One engine per invocation; parsing and rendering still run on every call.
+	engine, err := zpl.New(ctx)
+	if err != nil {
+		panic(err)
+	}
+	defer engine.Close(ctx)
 	if mode == "probe-parse" || mode == "probe-render" {
-		out, err := operation(mode, input, width, height)
+		out, err := operation(ctx, engine, mode, input, width, height)
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err)
 			fmt.Println("rejected")
@@ -81,7 +103,7 @@ func main() {
 		return
 	}
 	call := func() []byte {
-		out, err := operation(mode, input, width, height)
+		out, err := operation(ctx, engine, mode, input, width, height)
 		if err != nil {
 			panic(err)
 		}

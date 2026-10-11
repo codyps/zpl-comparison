@@ -38,6 +38,32 @@ MODES = {
 }
 
 
+# Only APIs with explicit reusable setup expose this independent lane.
+# Module/JIT startup and rendering must not be substituted for constructor time.
+INITIALIZATION_LIBRARIES = {"codyps-zpl-go": "translated engine", "forge": "font manager"}
+
+
+def collect_initialization(commands, env, samples, launcher=None):
+    rows = []
+    for name, command in commands.items():
+        if name not in INITIALIZATION_LIBRARIES:
+            continue
+        row = dict(library=name, component=INITIALIZATION_LIBRARIES[name], measured_at_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+        row["samples"] = []
+        try:
+            for _ in range(samples):
+                row["samples"].append(measure(command + ["init", "-", "1", "-"], env, launcher=launcher))
+            if any(sample["iterations"] != 1 or sample["checksum"] != 1 for sample in row["samples"]):
+                raise RuntimeError("Initialization must perform exactly one setup per fresh process")
+            times = [sample["ns"] for sample in row["samples"]]
+            row.update(status="ok", median_ns=statistics.median(times), min_ns=min(times), max_ns=max(times))
+        except (RuntimeError, ValueError, KeyError) as error:
+            row.update(status="failed", error=str(error))
+        rows.append(row)
+    return dict(method="fresh-process-reusable-setup", warmup_operations=0,
+                iterations=1, includes_rendering=False, includes_closure=False, results=rows)
+
+
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -377,8 +403,10 @@ def main():
             ]
         sizes[name]["artifact_bytes"] = sum(p.stat().st_size for p in set(files))
         sizes[name]["artifact_manifest"] = manifest(files)
+    initialization = collect_initialization(commands, env, args.samples)
     data = {
         "schema": 1,
+        "initialization": initialization,
         "host": {
             "platform": platform.platform(),
             "machine": platform.machine(),
@@ -415,6 +443,9 @@ def main():
         },
     }
     (args.output / "results.json").write_text(json.dumps(data, indent=2) + "\n")
+    # Retain constructor failures as evidence, but do not report a complete run.
+    if any(row["status"] != "ok" for row in initialization["results"]):
+        raise RuntimeError("Reusable setup initialization measurement failed")
     # Failures stay visible in the report; caller can inspect status without lost data.
     subprocess.run(
         [os.sys.executable, str(ROOT / "report.py"), str(args.output)], check=True

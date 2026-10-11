@@ -57,9 +57,19 @@ backend and the upstream shipped generated Go code and embedded data. Build with
 `bazel build //:library_codyps-zpl-go`, or `prepare.py --only codyps-zpl-go`.
 The cgo, purego and wazero alternatives are not measured by this adapter.
 
-The public API exposes rendering only. Each measured operation creates an engine,
-renders binary-safe input to PNG, checks that exactly one label was returned, and
-closes the engine. Initialization, output copying and closure are included in timing.
+The public API exposes rendering only. Each invocation creates one engine before
+warm-up, reuses it for every render and output capture, and closes it afterward.
+Each measured render parses binary-safe input, renders to PNG, copies the result
+into Go-owned storage and checks that exactly one label was returned. Engine
+creation and closure are excluded from render timing.
+
+The separate `init` protocol constructs one engine per fresh process, without
+warm-up or rendering. Only `zpl.New` is timed; process startup, input I/O and
+closure are excluded. Both benchmark runners retain raw initialization samples,
+median and min–max in `results.json`; the site and Markdown report display them
+separately. Initialization failures remain diagnostic evidence and fail the run.
+The same lane measures zpl-forge's reusable font-manager setup (default fonts in ordinary
+runs), rather than its input-specific parsing engine.
 It joins all accuracy campaigns, render rejection probes and CI performance runs.
 ZD621 and ZQ610 Plus use the public profiles; the ZD621 preview profile uses ZD621
 without individual native compatibility flag overrides. Inputs retain the public
@@ -71,6 +81,25 @@ including the preamble. Source size includes the Go module's implementation
 (including generated Go and the native bridge); embedded data counts toward
 binary deployment size. This is another backend for the same Rust renderer,
 not an independent implementation or new printer evidence.
+
+## Adapter lifecycle audit
+
+Warm rendering includes reparsing and rendering the input on every operation.
+Reuse setup only when the public API separates it from per-document work; do not
+reuse parsed labels, output images or persistent printer state between operations.
+
+| Adapter | Setup and per-operation work |
+| --- | --- |
+| codyps/zpl Go | Reuses its translated engine; construction is measured separately. Each render builds a fresh document internally. |
+| codyps/zpl Node; zpl-renderer-js | Load/initialize Wasm outside the render timer and retain that instance. Each operation calls the rendering API again. |
+| codyps/zpl Rust; native FFI | Stateless rendering APIs; each operation parses and renders. FFI library loading occurs before the timer. |
+| go-zpl | `render.New` only sets DPI; it does not load a runtime or retain a canvas. Parsing and PNG creation remain per-operation. |
+| Zebrash Go and TypeScript | Parser owns virtual-printer/download state, so it stays fresh for each input. Drawer construction registers lightweight element handlers; canvases and render state are created inside each draw. No Wasm-style engine boot is repeated. |
+| labelize | Renderer is a zero-sized struct. Parser state and output canvas remain per-document. |
+| zpl-forge | `ZplEngine::new` parses the supplied input and constructs its instructions; moving that call out would remove parsing from the render measurement. Reuses a public `Arc<FontManager>` for default and controlled fonts, initialized before warm-up and measured separately. Parsing remains per-operation. |
+| BinaryKits | Font faces are loaded before timing. Storage, analyzer and its storage-bound drawer remain per-document to isolate downloads and command state. |
+| ZPLr | Imports the module before timing; invokes the public rendering API per input. |
+| Python, jszpl and Rust builders | Each operation constructs a new label; that construction is the generation workload. |
 
 ## Run
 

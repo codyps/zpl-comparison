@@ -56,6 +56,8 @@ class PublicationTests(unittest.TestCase):
             site = generate.Site(root / "input", root / "output")
             site.performance = dict(timestamp_utc="test", sizes={},
                 memory=dict(warmup_operations=3, iterations=10, samples=5),
+                initialization=dict(results=[dict(library="codyps-zpl-go", status="ok",
+                    median_ns=2000000, min_ns=1000000, max_ns=3000000, samples=[{}, {}])]),
                 results=[dict(library="go", mode="parse", fixture="text", status="ok",
                               median_ns=1000, peak_rss_bytes=2**20,
                               min_peak_rss_bytes=2**19, max_peak_rss_bytes=2**21)])
@@ -70,6 +72,10 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("0.50–2.00 MiB", rendered[0])
             self.assertIn("10 measured operations", rendered[0])
             self.assertIn("not per-operation allocation", rendered[0])
+            self.assertIn("Reusable setup initialization", rendered[0])
+            self.assertIn("2.000 ms", rendered[0])
+            self.assertIn("1.000–3.000 ms", rendered[0])
+            self.assertIn("reuses one engine", rendered[0])
 
     def test_aztec_context_links_only_available_independent_checks(self):
         with tempfile.TemporaryDirectory() as temp:

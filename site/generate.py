@@ -1260,6 +1260,23 @@ class Site:
                      + "Charts show the median process peak across " + E(memory["samples"])
                      + " runs; tables also show the min–max range. A small native launcher excludes the Python controller’s inherited memory. "
                      + "RSS includes runtime and startup; it is not per-operation allocation or retained heap.</p>")
+        initialization = data.get("initialization", {})
+        if initialization.get("results"):
+            rows = []
+            for row in initialization["results"]:
+                if row["status"] == "ok":
+                    duration = f"{row['median_ns'] / 1e6:.3f} ms"
+                    span = f"{row['min_ns'] / 1e6:.3f}–{row['max_ns'] / 1e6:.3f} ms"
+                else:
+                    duration, span = row["status"], row.get("error", "Unavailable")
+                rows.append([E(NAMES.get(row["library"], row["library"])), E(row.get("component", "engine")), E(duration), E(span),
+                             E(len(row.get("samples", [])))])
+            body += ("<h2>Reusable setup initialization</h2>"
+                     "<p>Each sample performs one setup in a fresh process, without warm-up. "
+                     "The timer excludes process startup, rendering and closure. "
+                     "Go rendering below reuses one engine through warm-up, measurement and output capture; zpl-forge reuses its font manager.</p>"
+                     + table(["Library", "Setup", "Median setup time", "Min–max", "Samples"], rows,
+                             "Reusable setup initialization observations"))
         for mode, title in [
             ("parse", "Parsing"),
             ("png", "PNG rendering"),

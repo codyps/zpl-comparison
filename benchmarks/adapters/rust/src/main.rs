@@ -55,6 +55,33 @@ fn render_codyps(
     codyps_zpl::render::render_with_fonts(input, options, &fonts).map_err(|e| format!("{e:?}"))
 }
 
+// Reusable public font setup, separate from ZplEngine::new's per-input parsing.
+// https://docs.rs/zpl-forge/0.3.2/zpl_forge/struct.ZplEngine.html#method.set_fonts
+#[cfg(feature = "forge")]
+fn forge_fonts() -> std::sync::Arc<forge::FontManager> {
+    static FONTS: std::sync::OnceLock<std::sync::Arc<forge::FontManager>> =
+        std::sync::OnceLock::new();
+    FONTS
+        .get_or_init(|| {
+            let mut fonts = forge::FontManager::default();
+            if let Ok(directory) = env::var("ZPL_FONT_DIR") {
+                if !directory.is_empty() {
+                    for id in "0ABCDEFGHPQRSTUV".chars() {
+                        let file = if id == 'C' { 'D' } else { id };
+                        let bytes =
+                            fs::read(std::path::Path::new(&directory).join(format!("{file}.ttf")))
+                                .expect("supplied font");
+                        fonts
+                            .register_font(&format!("Comparison-{id}"), &bytes, id, id)
+                            .expect("font registration");
+                    }
+                }
+            }
+            std::sync::Arc::new(fonts)
+        })
+        .clone()
+}
+
 fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
     #[cfg(feature = "codyps-zpl")]
     {
@@ -119,21 +146,7 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
             black_box(engine);
             return vec![1];
         }
-        if let Ok(directory) = env::var("ZPL_FONT_DIR") {
-            if !directory.is_empty() {
-                let mut fonts = forge::FontManager::default();
-                for id in "0ABCDEFGHPQRSTUV".chars() {
-                    let file = if id == 'C' { 'D' } else { id };
-                    let bytes =
-                        fs::read(std::path::Path::new(&directory).join(format!("{file}.ttf")))
-                            .expect("supplied font");
-                    fonts
-                        .register_font(&format!("Comparison-{id}"), &bytes, id, id)
-                        .expect("font registration");
-                }
-                engine.set_fonts(std::sync::Arc::new(fonts));
-            }
-        }
+        engine.set_fonts(forge_fonts());
         return engine.to_png().expect("PNG");
     }
     #[cfg(feature = "builder")]
@@ -168,6 +181,16 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
 
 fn main() {
     let args: Vec<_> = env::args().collect();
+    #[cfg(feature = "forge")]
+    if args[1] == "init" {
+        assert_eq!(args[3], "1", "one setup per fresh process");
+        let start = Instant::now();
+        let fonts = forge_fonts();
+        let ns = start.elapsed().as_nanos();
+        black_box(fonts);
+        println!("{{\"ns\":{ns},\"iterations\":1,\"checksum\":1}}");
+        return;
+    }
     let input = fs::read(&args[2]).unwrap();
     let width = args.get(5).map(|s| s.parse().unwrap()).unwrap_or(400);
     let height = args.get(6).map(|s| s.parse().unwrap()).unwrap_or(300);
@@ -178,6 +201,11 @@ fn main() {
     if args[1] == "accuracy" {
         fs::write(&args[4], operation(&args[1], &input, width, height)).unwrap();
         return;
+    }
+    #[cfg(feature = "forge")]
+    if args[1] != "parse" {
+        // The fresh-process init lane measures this setup independently.
+        black_box(forge_fonts());
     }
     let n: u64 = args[3].parse().unwrap();
     assert!(n > 0);

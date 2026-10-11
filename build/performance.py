@@ -10,7 +10,7 @@ import statistics
 import math
 import time
 
-from benchmarks.run import MODES, check_output, digest, measure
+from benchmarks.run import MODES, check_output, collect_initialization, digest, measure
 
 LIBRARIES = ("codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go")
 
@@ -61,7 +61,10 @@ def collect(libraries, fixtures, output, samples=5, seconds=0.2, memory_iteratio
         except RuntimeError as error:
             row.update(status="failed", error=str(error))
         rows.append(row)
-    data = dict(schema=2,
+    initialization = collect_initialization(
+        {name: command for name, (_, command) in deployments.items()},
+        {**os.environ, "ZPL_BENCH_MEMORY": "0"}, samples, launcher=memory_launcher)
+    data = dict(schema=2, initialization=initialization,
                 memory=dict(method="isolated-native-wait4", statistic="median", samples=samples,
                             iterations=memory_iterations, warmup_operations=3, output_operations=1), timestamp_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 host=dict(platform=platform.platform(), machine=platform.machine(), logical_cpus=os.cpu_count()),
@@ -77,6 +80,8 @@ def collect(libraries, fixtures, output, samples=5, seconds=0.2, memory_iteratio
     missing = [name for name in LIBRARIES if not any(r["library"] == name and r["status"] == "ok" for r in rows)]
     if missing:
         raise RuntimeError("No successful measurements for: " + ", ".join(missing))
+    if any(row["status"] != "ok" for row in initialization["results"]):
+        raise RuntimeError("Reusable setup initialization measurement failed")
 
 
 def main():

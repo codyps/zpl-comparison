@@ -28,6 +28,16 @@ class GoAdapterTest(unittest.TestCase):
             env={**os.environ, 'ZPL_RENDER_PROFILE': profile, 'ZPL_BENCH_MEMORY': '1'},
             cwd=self.root, capture_output=True, text=True, timeout=30, check=True)
 
+    def test_initialization_does_not_read_input_or_render(self):
+        result = subprocess.run(
+            self.command + ['init', str(self.root / 'missing.zpl'), '1', str(self.output)],
+            cwd=self.root, capture_output=True, text=True, timeout=30, check=True)
+        timing = json.loads(result.stdout)
+        self.assertEqual(timing['iterations'], 1)
+        self.assertEqual(timing['checksum'], 1)
+        self.assertGreater(timing['ns'], 0)
+        self.assertFalse(self.output.exists())
+
     def test_render_timing_and_binary_graphics(self):
         suffix = b'^FS^XZ'
         pixels = []
