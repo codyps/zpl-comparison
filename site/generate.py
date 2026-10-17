@@ -38,6 +38,7 @@ NAMES = {
     "builder": "zpl-builder",
     "python": "Python ZPL",
     "jszpl": "JSZPL",
+    "zplkit": "ZPLKit (Swift)",
 }
 SUITES = [
     ("accuracy", "ZD621 · arguments & barcodes", None, None),
@@ -1480,7 +1481,7 @@ class Site:
                 "Argument-level examination",
             )
         )
-        body += "<h2>Capabilities and selection survey</h2><p>Initial survey 2026-09-18; renderer search expanded 2026-10-02. Parser, renderer and generator APIs do different work. Popularity is a dated snapshot, not a quality score.</p>"
+        body += "<h2>Capabilities and selection survey</h2><p>Initial survey 2026-09-18; renderer search expanded 2026-10-02; ZPLKit examined 2026-10-16. Parser, renderer and generator APIs do different work. Popularity is a dated snapshot, not a quality score.</p>"
         for survey in markdown_tables(
             (self.source / "docs/benchmarks/capabilities.md").read_text()
         ):

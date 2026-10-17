@@ -495,6 +495,32 @@ py_test(
     deps = [requirement("pillow")],
 )
 
+py_binary(
+    name = "zplkit_import",
+    srcs = [
+        "benchmarks/zplkit.py",
+        "build/compare.py",
+        "benchmarks/accuracy/metrics.py",
+        "benchmarks/accuracy/pixels.py",
+    ],
+    main = "benchmarks/zplkit.py",
+    deps = [requirement("numpy"), requirement("pillow")],
+)
+
+py_test(
+    name = "zplkit_import_test",
+    size = "small",
+    srcs = [
+        "benchmarks/test_zplkit.py",
+        "benchmarks/zplkit.py",
+        "build/compare.py",
+        "benchmarks/accuracy/metrics.py",
+        "benchmarks/accuracy/pixels.py",
+    ],
+    main = "benchmarks/test_zplkit.py",
+    deps = [requirement("numpy"), requirement("pillow")],
+)
+
 py_test(
     name = "canvas_profile_test",
     size = "small",
