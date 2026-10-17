@@ -159,6 +159,10 @@ the paired ZD621 responses are recorded in `references/paired-labelary`.
 submits missing public fixtures to Labelary. No printer recapture is needed.
 Additional PHP, Android, SVG and service projects are documented in the
 [maintained survey](templates/capabilities.md), with unmeasured status explicit.
+The survey also includes Swift ZPLKit 1.1.0: its generator is portable, while
+its incoming-ZPL PNG renderer requires Apple frameworks. GitHub Actions builds
+its PNG adapter separately on macOS and imports the observations into the default-font
+comparison site. The survey records its pinned source and preview limitations.
 
 Zebrash uses a separate `adapters/zebrash/go.mod` / `go.sum`; each new Node
 adapter has its own `package-lock.json` and isolated deployment dependency tree.
@@ -547,3 +551,40 @@ verifies every retained source/image hash and captures a new repeated control.
 `labelary.py --extend` similarly captures only newly added service inputs, preserving
 all earlier response bytes and per-request timestamps. Changed or removed inputs
 require a new snapshot. Run the full accuracy regeneration afterward.
+
+## Swift ZPLKit images on GitHub Actions
+
+The reusable `.github/workflows/zplkit.yml` job uses GitHub's `xcode-27` Apple
+Silicon runner and Xcode 27.0. It checks out ZPLKit 1.1.0 at the immutable revision
+in `sources.lock.json`, then builds `adapters/swift` with SwiftPM. The public
+`renderToPNG` API receives the exact fixture string; the adapter rejects invalid
+UTF-8 instead of replacing bytes and does not inject canvas commands or resize
+results. Its renderer derives dimensions from the input's `^PW`/`^LL`.
+
+`zplkit.py plan` lists the 1,215 inputs across argument/barcode, conformance,
+external, layout, ZQ610, public-document and paired-printer campaigns. The macOS
+job retains PNGs, errors, source/canvas hashes, source revision, adapter hashes,
+Swift/Xcode versions, runner image and CI identity in `zplkit-observations`.
+Rendering does not contact a printer or rendering service.
+
+The comparison workflow waits for that job and downloads its artifact from the
+same run. `//:zplkit_import` verifies complete fixture coverage, source identity
+and PNG hashes, then uses `build/compare.py` to add ZPLKit rows and differences to
+a writable report tree. Missing or stale artifacts fail publication. Existing
+observations keep their original provenance; this separate host contributes no
+Linux performance measurements. The font-controlled report remains a separate
+campaign and currently has no ZPLKit observations.
+
+On a compatible Mac, after checking out the locked upstream into `_work/zplkit`:
+
+```sh
+swift build -c release --package-path benchmarks/adapters/swift
+python3 benchmarks/zplkit.py collect --adapter /absolute/path/to/zplkit-adapter --artifact /new/observation-directory
+```
+
+To add the artifact to an assembled writable report tree and build its site:
+
+```sh
+bazel run //:zplkit_import -- merge --root "$PWD" --artifact /path/to/observations --reports /path/to/writable-reports
+bazel run //:comparison_site -- --input /path/to/writable-reports --output /new/site-directory
+```

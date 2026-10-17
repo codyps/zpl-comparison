@@ -27,7 +27,11 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
+  zplkit:
+    uses: ./.github/workflows/zplkit.yml
+
   build:
+    needs: zplkit
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     steps:
@@ -106,7 +110,7 @@ jobs:
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'
           python3 -m unittest benchmarks.test_audit_failures
-          bazel test //:site_test //:report_runner_test //:report_archive_test //:pipeline_test //:automation_test //:overview_test //:performance_test //:renderer_session_test --test_output=errors
+          bazel test //:site_test //:zplkit_import_test //:report_runner_test //:report_archive_test //:pipeline_test //:automation_test //:overview_test //:performance_test //:renderer_session_test --test_output=errors
       # Let tests, reports, and benchmarks request their own library inputs.
       # Native actions carry CPU/memory reservations for cold-cache builds.
       - name: Test native adapter contracts
@@ -197,20 +201,31 @@ jobs:
           path: ${{ runner.temp }}/site-previews
           key: site-previews-v1-${{ runner.os }}-${{ runner.arch }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: site-previews-v1-${{ runner.os }}-${{ runner.arch }}-
-      - name: Generate and validate comparison site
+      - name: Download ZPLKit observations
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: zplkit-observations
+          path: ${{ runner.temp }}/zplkit-observations
+      - name: Generate and validate comparison site with ZPLKit
         run: |
           if [ "${{ github.event.pull_request.head.repo.fork }}" = "true" ]; then
-            bazel run //:comparison_site -- --input "$GITHUB_WORKSPACE/bazel-bin/reports_saved" --output "$GITHUB_WORKSPACE/_site" --preview-cache "$RUNNER_TEMP/site-previews"
+            cp -RL bazel-bin/reports_saved "$RUNNER_TEMP/measured-reports"
           else
             # Stage a writable tree; never modify cached Bazel outputs.
             cp -RL bazel-bin/reports "$RUNNER_TEMP/measured-reports"
-            chmod -R u+w "$RUNNER_TEMP/measured-reports"
+          fi
+          chmod -R u+w "$RUNNER_TEMP/measured-reports"
+          bazel run //:zplkit_import -- merge --root "$GITHUB_WORKSPACE" \
+            --artifact "$RUNNER_TEMP/zplkit-observations" --reports "$RUNNER_TEMP/measured-reports"
+          if [ "${{ github.event.pull_request.head.repo.fork }}" != "true" ]; then
             cp -R "$RUNNER_TEMP/performance/." "$RUNNER_TEMP/measured-reports/docs/benchmarks/"
             if [ -f "$RUNNER_TEMP/popularity.json" ]; then
               cp "$RUNNER_TEMP/popularity.json" "$RUNNER_TEMP/measured-reports/benchmarks/popularity.json"
               python3 benchmarks/catalog.py --popularity "$RUNNER_TEMP/popularity.json" --output "$RUNNER_TEMP/measured-reports/docs/benchmarks/capabilities.md"
             fi
             bazel run //:comparison_site -- --input "$RUNNER_TEMP/measured-reports" --font-input "$GITHUB_WORKSPACE/bazel-bin/reports_fonts" --output "$GITHUB_WORKSPACE/_site" --preview-cache "$RUNNER_TEMP/site-previews"
+          else
+            bazel run //:comparison_site -- --input "$RUNNER_TEMP/measured-reports" --output "$GITHUB_WORKSPACE/_site" --preview-cache "$RUNNER_TEMP/site-previews"
           fi
       - name: Save site previews
         if: success() && github.event.pull_request.head.repo.fork != true

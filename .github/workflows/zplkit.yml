@@ -1,0 +1,47 @@
+name: ZPLKit comparison images
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: xcode-27
+    timeout-minutes: 30
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_27.0.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Read pinned source
+        id: source
+        run: echo "revision=$(python3 -c 'import json; print(json.load(open("benchmarks/sources.lock.json"))["zplkit"]["rev"])')" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: jonathanspiva/zplkit
+          ref: ${{ steps.source.outputs.revision }}
+          path: benchmarks/_work/zplkit
+          persist-credentials: false
+      - name: Build public PNG adapter
+        run: |
+          swift --version
+          xcodebuild -version
+          swift build --configuration release --package-path benchmarks/adapters/swift --scratch-path "$RUNNER_TEMP/zplkit-build"
+          adapter_dir=$(swift build --configuration release --package-path benchmarks/adapters/swift --scratch-path "$RUNNER_TEMP/zplkit-build" --show-bin-path)
+          echo "ZPLKIT_ADAPTER=$adapter_dir/zplkit-adapter" >> "$GITHUB_ENV"
+      - name: Generate comparison images
+        run: |
+          python3 benchmarks/zplkit.py collect --root "$GITHUB_WORKSPACE" \
+            --adapter "$ZPLKIT_ADAPTER" --artifact "$RUNNER_TEMP/zplkit-observations"
+      - name: Retain PNGs and source/toolchain provenance
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: zplkit-observations
+          path: ${{ runner.temp }}/zplkit-observations
+          if-no-files-found: error
+          retention-days: 30

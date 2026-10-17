@@ -47,6 +47,11 @@
     "rev": "2901eb4249fa394eb070b2f964e848a48d6561eb",
     "version": "4.0.0"
   },
+  "zplkit": {
+    "url": "https://github.com/jonathanspiva/zplkit",
+    "rev": "2cd981e34a2da63e1f89ad37d16377169f6c05b1",
+    "version": "1.1.0"
+  },
   "zebrash-ts": {
     "url": "https://github.com/Fountain-Bio/zebrash-ts",
     "rev": "a063491cb2e30d063ba84ea9f61a4b986de77a07",
