@@ -105,9 +105,10 @@ def main():
             ["bytes", "artifact_bytes"],
             ["Selected source bytes", "Adapter + deployed files (runtime excluded)"],
         ):
+            available = [n for n in names if field in data["sizes"][n]]
             ax.barh(
-                [NAMES[n] for n in names],
-                [data["sizes"][n][field] / 1024 for n in names],
+                [NAMES[n] for n in available],
+                [data["sizes"][n][field] / 1024 for n in available],
                 color="#728da5",
             )
             ax.set_xscale("log")
@@ -279,9 +280,9 @@ def main():
             [
                 [
                     NAMES[n],
-                    s["files"],
-                    s["lines"],
-                    f"{s['bytes'] / 1024:.1f}",
+                    s.get("files", "unavailable"),
+                    s.get("lines", "unavailable"),
+                    f"{s['bytes'] / 1024:.1f}" if "bytes" in s else "unavailable",
                     f"{s['artifact_bytes'] / 1024:.1f}"
                     if "artifact_bytes" in s
                     else "not built",

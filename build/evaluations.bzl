@@ -2,6 +2,7 @@
 
 def invalid_matrix(ctx, files, compiled, baseline, catalog, invoke, stage, select):
     lanes = {name: ["parse", "render"] for name in ["codyps-zpl", "labelize", "forge", "go", "binarykits", "zplr", "zebrash", "zebrash-ts"]}
+    lanes["neodynamic"] = ["render"]
     lanes["ffi"] = ["render"]
     lanes["codyps-zpl-node"] = ["render"]
     lanes["codyps-zpl-go"] = ["render"]

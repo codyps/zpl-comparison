@@ -11,7 +11,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / "_work"
 RUST = ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi"]
-EXTRA_RENDERERS = ["codyps-zpl-go", "codyps-zpl-node", "zebrash", "zpl-renderer-js", "zebrash-ts"]
+EXTRA_RENDERERS = ["neodynamic", "codyps-zpl-go", "codyps-zpl-node", "zebrash", "zpl-renderer-js", "zebrash-ts"]
 
 
 def run(args, **kw):
@@ -153,12 +153,14 @@ def main():
                 commands[name] = ["node", str(ROOT / "adapters/node/main.mjs"), name]
     if "python" in selected:
         commands["python"] = [os.sys.executable, str(ROOT / "adapters/python.py")]
-    if "binarykits" in selected:
+    for name in sorted(selected & {"binarykits", "neodynamic"}):
+        directory = "dotnet" if name == "binarykits" else "neodynamic"
+        destination = WORK / ("dotnet-out" if name == "binarykits" else "neodynamic-out")
         dotnet = os.environ.get("BENCH_DOTNET", "dotnet")
         restore = [
             dotnet,
             "restore",
-            ROOT / "adapters/dotnet/Comparison.csproj",
+            ROOT / "adapters" / directory / "Comparison.csproj",
             "--locked-mode",
         ]
         if os.environ.get("BENCH_NUGET_SOURCE"):
@@ -168,16 +170,16 @@ def main():
             [
                 dotnet,
                 "publish",
-                ROOT / "adapters/dotnet/Comparison.csproj",
+                ROOT / "adapters" / directory / "Comparison.csproj",
                 "--no-restore",
                 "-c",
                 "Release",
                 "-o",
-                WORK / "dotnet-out",
+                destination,
             ],
             env=env,
         )
-        commands["binarykits"] = [dotnet, str(WORK / "dotnet-out/Comparison.dll")]
+        commands[name] = [dotnet, str(destination / "Comparison.dll")]
     # Keep adapter-specific loader settings explicit in the saved local config.
     config = {
         "commands": commands,

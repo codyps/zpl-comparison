@@ -329,6 +329,36 @@ native_library(
     deps = ["@dotnet_inputs//:files"],
 )
 
+csharp_binary(
+    name = "neodynamic_dotnet",
+    tags = ["manual"],
+    out = "Comparison",
+    srcs = ["benchmarks/adapters/neodynamic/Program.cs"],
+    target_frameworks = ["net10.0"],
+    nullable = "enable",
+    compiler_options = ["/optimize+"],
+    deps = [
+        "@neodynamic_nuget//neodynamic.sdk.zplprinter",
+        "@neodynamic_nuget//skiasharp",
+        "@neodynamic_nuget//skiasharp.nativeassets.linux.nodependencies",
+    ],
+)
+
+publish_binary(
+    name = "neodynamic_publish",
+    tags = ["manual"],
+    binary = ":neodynamic_dotnet",
+    target_framework = "net10.0",
+    self_contained = False,
+)
+
+native_library(
+    name = "library_neodynamic",
+    library = "neodynamic",
+    published = ":neodynamic_publish",
+    toolchain = ["@native_tools//:dotnet"],
+)
+
 filegroup(
     name = "libraries",
     srcs = [":library_" + lib for lib in [
@@ -344,6 +374,7 @@ filegroup(
         "codyps-zpl-node",
         "codyps-zpl-go",
         "binarykits",
+        "neodynamic",
     ]],
 )
 
@@ -418,7 +449,7 @@ py_test(
 filegroup(
     name = "render_libraries",
     srcs = [":library_" + lib for lib in [
-        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go",
+        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "neodynamic", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go",
     ]],
 )
 
@@ -433,6 +464,7 @@ pipeline(
         "go",
         "ffi",
         "binarykits",
+        "neodynamic",
         "zplr",
         "zebrash",
         "zpl-renderer-js",
@@ -535,6 +567,15 @@ py_test(
 )
 
 py_test(
+    name = "neodynamic_adapter_test",
+    size = "small",
+    srcs = ["build/neodynamic_adapter_test.py", "build/native_build.py", "build/renderer_session.py"],
+    main = "build/neodynamic_adapter_test.py",
+    data = [":library_neodynamic"],
+    deps = [requirement("pillow")],
+)
+
+py_test(
     name = "dotnet_runtime_test",
     size = "small",
     srcs = ["build/dotnet_runtime_test.py", "build/dotnet_runtime.py"],
@@ -625,6 +666,7 @@ pipeline(
         "go",
         "ffi",
         "binarykits",
+        "neodynamic",
         "zplr",
         "zebrash",
         "zpl-renderer-js",

@@ -41,7 +41,8 @@ def probe(spec, destination):
                    "LD_LIBRARY_PATH": os.pathsep.join(filter(None, [str(deployment), os.environ.get("LD_LIBRARY_PATH", "")]))}
             for variant in ["control", "invalid"]:
                 row[variant] = [attempt(command, env, Path(spec["sources"][variant]).resolve(),
-                                         Path(temporary) / "probe.png", mode, spec["timeout"])
+                                         Path(temporary) / "probe.png", mode, spec["timeout"],
+                                         deterministic_output=library != "neodynamic")
                                 for _ in range(spec["repeats"])]
     row["outcome"] = classify(row["control"], row["invalid"], mode)
     Path(destination).write_text(json.dumps(row, sort_keys=True) + "\n")

@@ -11,6 +11,8 @@ from pathlib import Path
 
 
 def source_size(root, name, native=None):
+    if name == "neodynamic":
+        return dict(source_status="unavailable: proprietary implementation", source_manifest=[], license_mode="trial", output_deterministic=False)
     roots = {
         "codyps-zpl-go": [root / "benchmarks/_work/zpl/zpl-go"],
         "codyps-zpl-node": [root / "benchmarks/_work/codyps-zpl-node" / p for p in ["zpl/src", "raster-diff/src", "zpl-bitmap-fonts/src", "zpl-wasm/src", "zpl-node"]],
@@ -116,9 +118,10 @@ def build(spec, output):
             driver = output / "node"
             driver.mkdir()
             shutil.copy2(root / "benchmarks/adapters/node/renderers.mjs", driver / "renderers.mjs")
-        elif name == "binarykits":
+        elif name in {"binarykits", "neodynamic"}:
             shutil.copytree(root / "published", output, dirs_exist_ok=True)
-            shutil.copytree(root / "benchmarks/adapters/dotnet/fonts", output / "fonts")
+            if name == "binarykits":
+                shutil.copytree(root / "benchmarks/adapters/dotnet/fonts", output / "fonts")
             icu_version = tools / "dotnet/icu-version.txt"
             if icu_version.exists():
                 config_path = output / "Comparison.runtimeconfig.json"
@@ -137,7 +140,7 @@ def build(spec, output):
             shutil.copy2(root / "built/node.LICENSE", output / "runtime/LICENSE")
             driver = output if name == "zplr" else output / "node"
             shutil.copy2(root / "benchmarks/adapters/node/session.mjs", driver / "session.mjs")
-        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits"}:
+        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits", "neodynamic"}:
             (output / "session.json").write_text('{"protocol": 1}\n')
         size = source_size(root, name, Path(spec["native"]).resolve() if spec.get("native") else None)
         deployed = [p for p in output.rglob("*") if p.is_file() and "runtime" not in p.relative_to(output).parts]
@@ -151,7 +154,7 @@ def build(spec, output):
             else ["runtime/bin/node", "node/renderers.mjs", "--library=" + name]
             if name in ["zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"]
             else ["runtime/dotnet", "Comparison.dll"]
-            if name == "binarykits"
+            if name in {"binarykits", "neodynamic"}
             else ["adapter"]
         )
         (output / "command.json").write_text(json.dumps(command) + "\n")

@@ -82,6 +82,7 @@ class RegenerateTests(unittest.TestCase):
                 "adapters/zebrash-ts/package-lock.json",
                 "sources.lock.json",
                 "adapters/dotnet/packages.lock.json",
+                "adapters/neodynamic/packages.lock.json",
             ]:
                 target = root / name
                 target.parent.mkdir(parents=True, exist_ok=True)

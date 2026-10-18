@@ -1,0 +1,8 @@
+{
+  "neodynamic.sdk.zplprinter.8.0.26.909.nupkg": "sha512-odVMjTCPozCJkRYJlaUsEz20aogr78ed6/NCSuieElAPga6pFXQYPpP1N0iwY4cDEd7TVehZKxMlguuA0pPjeQ==",
+  "newtonsoft.json.13.0.1.nupkg": "sha512-g3MbZi6vBTeaI/hEbvR7vBETSd1DWLe9i1E4P+nPY34v5i94zqUqDXvdWC3G+7tYN9SnsdU9zzegrnRz4h7nsQ==",
+  "skiasharp.2.88.9.nupkg": "sha512-Oi/6XgX0XNuA5nNe6UfpHgj/FF/FDHiC511Etq4MLNczQg0VtqQnShhrOnnUY6EnPif/f9eaUdCTclHrtu92HQ==",
+  "skiasharp.nativeassets.linux.nodependencies.2.88.9.nupkg": "sha512-Ul/4nkYTtxn0hWR6ltvDGCWQ3iLbkNoYPgms9ug5nqOEsAmyKP/5HTtHDalk9JDp3RaqZ7B1jqtFVD+DIQNMSw==",
+  "skiasharp.nativeassets.macos.2.88.9.nupkg": "sha512-dM+4ZXRvKRGTUpC/uSRpszHlBBXVq+2odZjr20BJxSr4Sl2u2kHrywu67Gp967Qtg83GyfYc6lXUPHIKeMPrzg==",
+  "skiasharp.nativeassets.win32.2.88.9.nupkg": "sha512-0YvYGUBBx/+3kwLU8b5YTowCToixLLRmmnOMrlUdo9PjkkCHuwqkLTSpADz7NQN9c2N4lOZ9AiI9EAobQhXu7A=="
+}

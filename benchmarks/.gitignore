@@ -2,4 +2,6 @@ _work/
 adapters/node/node_modules/
 adapters/dotnet/bin/
 adapters/dotnet/obj/
+adapters/neodynamic/bin/
+adapters/neodynamic/obj/
 __pycache__/

@@ -22,7 +22,7 @@ class InvalidTests(unittest.TestCase):
             self.assertEqual((invalid.SUITE / name).read_bytes(), data)
         manifest = invalid.load_cases()
         self.assertEqual(len(manifest["cases"]), 18)
-        self.assertEqual(sum(len(m) for m in invalid.LANES.values()), 21)
+        self.assertEqual(sum(len(m) for m in invalid.LANES.values()), 22)
         self.assertEqual(invalid.LANES["codyps-zpl-node"], ["render"])
         self.assertEqual(invalid.LANES["codyps-zpl-go"], ["render"])
         self.assertEqual(invalid.LANES["zpl-renderer-js"], ["render"])
@@ -62,6 +62,19 @@ class InvalidTests(unittest.TestCase):
             dict(status="accepted", ink=1, image_sha256=n) for n in ["one", "two"]
         ]
         self.assertEqual(invalid.classify(changed, accepted, "render"), "unstable")
+
+    def test_trial_watermark_variation_preserves_verdict_checks(self):
+        controls = [dict(status="accepted", ink=ink, image_sha256=digest,
+                         dimensions=[400, 300], output_deterministic=False)
+                    for ink, digest in [(10, "first"), (20, "second")]]
+        rejected = [dict(status="rejected")] * 2
+        self.assertEqual(invalid.classify(controls, rejected, "render"), "rejected")
+        self.assertEqual(invalid.classify(controls, controls, "render"), "accepted")
+        self.assertEqual(invalid.classify(controls, [controls[0], rejected[0]], "render"), "unstable")
+        self.assertEqual(invalid.classify([controls[0], dict(controls[1], ink=0)], rejected, "render"), "control failed")
+        blank_variation = [dict(row, ink=ink) for row, ink in zip(controls, [0, 3000])]
+        self.assertEqual(invalid.classify(controls, blank_variation, "render"), "accepted")
+        self.assertEqual(invalid.classify([controls[0], dict(controls[1], dimensions=[200, 100])], rejected, "render"), "unstable")
 
     def test_process_protocol_and_timeout(self):
         with tempfile.TemporaryDirectory() as tmp:
