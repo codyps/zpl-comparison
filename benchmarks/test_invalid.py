@@ -71,7 +71,9 @@ class InvalidTests(unittest.TestCase):
         self.assertEqual(invalid.classify(controls, rejected, "render"), "rejected")
         self.assertEqual(invalid.classify(controls, controls, "render"), "accepted")
         self.assertEqual(invalid.classify(controls, [controls[0], rejected[0]], "render"), "unstable")
-        self.assertEqual(invalid.classify([controls[0], dict(controls[1], ink=0)], rejected, "render"), "unstable")
+        self.assertEqual(invalid.classify([controls[0], dict(controls[1], ink=0)], rejected, "render"), "control failed")
+        blank_variation = [dict(row, ink=ink) for row, ink in zip(controls, [0, 3000])]
+        self.assertEqual(invalid.classify(controls, blank_variation, "render"), "accepted")
         self.assertEqual(invalid.classify([controls[0], dict(controls[1], dimensions=[200, 100])], rejected, "render"), "unstable")
 
     def test_process_protocol_and_timeout(self):

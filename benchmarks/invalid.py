@@ -119,7 +119,7 @@ def classify(controls, invalid, mode):
         if r.get("output_deterministic") is False:
             # Preserve raw hashes/ink counts as evidence. A varying trial stamp
             # cannot establish verdict instability; status and canvas still can.
-            return (r["status"], bool(r.get("ink")), tuple(r.get("dimensions", [])))
+            return (r["status"], tuple(r.get("dimensions", [])))
         return (r["status"], r.get("ink"), r.get("image_sha256"))
 
     if (
@@ -128,7 +128,7 @@ def classify(controls, invalid, mode):
     ):
         return "unstable"
     if controls[0]["status"] != "accepted" or (
-        mode == "render" and not controls[0].get("ink")
+        mode == "render" and not all(row.get("ink") for row in controls)
     ):
         return "control failed"
     return "rejected" if invalid[0]["status"] == "rejected" else "accepted"
@@ -160,7 +160,7 @@ def render_report(data, dest):
         "Each modified input is paired with a valid control using the same feature. **Rejected** means a returned library error, thrown exception, or error-severity diagnostic, with a successful control in every repeat. **Accepted** means no explicit error was reported; warnings may still appear. **Control failed** is inconclusive, including blank renderer controls. Panics, signals, timeouts, process/protocol failures and unstable outcomes never count as proper rejection.",
         "Parser lanes use the same default APIs as the benchmarks: codyps/zpl frames bytes; zpl-toolchain uses heuristic `parse_str` without specification tables or its separate validator. Renderer lanes run analysis and rendering. Error diagnostics may accompany a partial AST. These tests measure error signaling, not atomic refusal to produce any output or full standards validation. Builders (zpl-builder, Python ZPL, JSZPL) are N/A because they do not consume ZPL.",
         "The malformed group tests corrupt data; framing tests impose a complete-label contract that streaming APIs need not enforce. Fallback probes use invalid/out-of-range arguments for which ignoring, clamping or defaulting may be intentional. They are reported separately and do not contribute to malformed-data rejection counts. No case is sent to a printer.",
-        "Neodynamic runs in trial mode. Its watermark color varies, so repeated probe stability compares verdict, nonempty output and dimensions; raw image hashes and ink counts remain recorded. This exception does not change pixel scoring or turn verdict changes into stable results.",
+        "Neodynamic runs in trial mode. Its watermark color varies, so repeated probe stability compares verdict and dimensions; raw image hashes and ink counts remain recorded. Valid controls must have nonzero ink in every repetition. This exception does not change pixel scoring or turn verdict changes into stable results.",
         "## Malformed-data results",
     ]
     summary = []

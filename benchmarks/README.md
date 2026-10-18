@@ -53,10 +53,10 @@ include a visible stamp and replacement of resident-font characters above byte 1
 with `X`. These remain in the output; trial fidelity scores include them and do not
 represent licensed output. The trial stamp color varies per render, so repeated
 images and pixel scores can differ for identical inputs. Invalid-input probes
-compare repeated verdicts, nonempty output and dimensions for this adapter while
-retaining each raw hash and ink count; other adapters retain pixel/hash stability
-checks. Reports identify the renderer as a trial. No license
-keys are read from the environment or committed. Font-controlled campaigns retain
+compare repeated verdicts and dimensions for this adapter while retaining each
+raw hash and ink count. Valid controls require nonzero ink in every repetition.
+Other adapters retain pixel/hash stability checks. Reports identify the renderer
+as a trial. No license keys are read from the environment or committed. Font-controlled campaigns retain
 SDK resident fonts and report that policy explicitly. Rendering is local and
 requires no service, printer or printing-package dependency.
 

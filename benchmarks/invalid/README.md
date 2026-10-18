@@ -40,9 +40,10 @@ benchmarks/_work/venv/bin/python benchmarks/invalid.py \
 `--report-only` regenerates Markdown from saved measurements. It does not execute adapters. `--check` verifies fixture hashes, matrix completeness, repetition counts, classifications and report freshness.
 
 Neodynamic uses the unmodified trial output. Its watermark color varies per
-render. For that adapter, repeat stability compares verdict, nonempty output and
-canvas dimensions; each raw PNG hash and ink count is still recorded. Pixel
-fidelity comparisons retain the watermark and can vary between runs. All other
+render. For that adapter, repeat stability compares verdict and canvas dimensions;
+each raw PNG hash and ink count is still recorded. Valid controls require nonzero
+ink in every repetition. Blank output can cross the ink threshold solely because
+of the stamp color. Pixel fidelity comparisons retain the watermark and can vary between runs. All other
 adapters retain the existing hash/ink stability checks.
 
 ## Reading outcomes
