@@ -101,7 +101,7 @@ def render(spec, metadata, images):
         raster = gray(image)
         # Encode once. Compression changes bytes, never scoring pixels.
         # Trial stamp colors are scoring evidence; grayscale destroys their identity.
-        encoded = rgb(image) if row["library"] == "neodynamic" else raster
+        encoded = rgb(image) if row.get("library") == "neodynamic" else raster
         Image.fromarray(encoded).save(image, compress_level=1)
         ink = int(np.count_nonzero(raster < 128))
         row.update(
