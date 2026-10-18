@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Neodynamic.SDK.ZPLPrinter" Version="[8.0.26.909]" />
+    <PackageReference Include="SkiaSharp" Version="[2.88.9]" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="[2.88.9]" />
+  </ItemGroup>
+</Project>

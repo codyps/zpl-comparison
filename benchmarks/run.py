@@ -28,6 +28,7 @@ MODES = {
     "ffi": ["png"],
     "go": ["parse", "png"],
     "binarykits": ["parse", "png"],
+    "neodynamic": ["png"],
     "zplr": ["parse", "png"],
     "zebrash": ["parse", "png"],
     "zpl-renderer-js": ["png"],
@@ -293,6 +294,7 @@ def source_sizes(metadata):
             "files": len(files),
             "source_manifest": manifest(files),
         }
+    result["neodynamic"] = dict(source_status="unavailable: proprietary implementation", source_manifest=[], license_mode="trial", output_deterministic=False)
     return result
 
 
@@ -386,8 +388,9 @@ def main():
                     Path(cmd[0]).parent
                     / ("libzpl.dylib" if platform.system() == "Darwin" else "libzpl.so")
                 )
-        elif name == "binarykits":
-            files = [p for p in (ROOT / "_work/dotnet-out").rglob("*") if p.is_file()]
+        elif name in {"binarykits", "neodynamic"}:
+            directory = "dotnet-out" if name == "binarykits" else "neodynamic-out"
+            files = [p for p in (ROOT / "_work" / directory).rglob("*") if p.is_file()]
         elif name in ["zplr", "jszpl", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"]:
             files = node_files(name)
         else:
@@ -419,7 +422,7 @@ def main():
             "node": version(["node", "--version"]),
             "python": platform.python_version(),
             "dotnet": version(
-                [config["commands"].get("binarykits", ["dotnet"])[0], "--version"]
+                [(config["commands"].get("binarykits") or config["commands"].get("neodynamic") or ["dotnet"])[0], "--version"]
             ),
         },
         "git_revision": version(["git", "-C", str(REPO), "rev-parse", "HEAD"]),
@@ -438,6 +441,7 @@ def main():
                 ROOT / "adapters/node/package-lock.json",
                 ROOT / "adapters/go/go.sum",
                 ROOT / "adapters/dotnet/packages.lock.json",
+                ROOT / "adapters/neodynamic/packages.lock.json",
             ]
             if p.exists()
         },

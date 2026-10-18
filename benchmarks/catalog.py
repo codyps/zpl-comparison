@@ -36,6 +36,8 @@ def package_versions():
             "binarykits-label": dotnet["BinaryKits.Zpl.Label"]["resolved"],
         }
     )
+    neodynamic = json.loads((ROOT / "adapters/neodynamic/packages.lock.json").read_text())["dependencies"]["net10.0"]
+    versions["neodynamic"] = neodynamic["Neodynamic.SDK.ZPLPrinter"]["resolved"]
     return versions
 
 

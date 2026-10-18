@@ -28,6 +28,7 @@ LANES = {
     "go": ["parse", "render"],
     "ffi": ["render"],
     "binarykits": ["parse", "render"],
+    "neodynamic": ["render"],
     "zplr": ["parse", "render"],
     "zebrash": ["parse", "render"],
     "zpl-renderer-js": ["render"],
@@ -55,7 +56,7 @@ def load_cases(directory=SUITE):
     return manifest
 
 
-def attempt(command, env, source, output, mode, timeout):
+def attempt(command, env, source, output, mode, timeout, *, deterministic_output=True):
     output.unlink(missing_ok=True)
     try:
         p = subprocess.run(
@@ -92,6 +93,9 @@ def attempt(command, env, source, output, mode, timeout):
                         image_sha256=sha(output),
                         dimensions=[raster.shape[1], raster.shape[0]],
                     )
+        if not deterministic_output:
+            result["output_deterministic"] = False
+            result["output_variation"] = "Neodynamic trial watermark color varies per render"
         return result
     except subprocess.TimeoutExpired as error:
         return dict(
@@ -112,6 +116,10 @@ def classify(controls, invalid, mode):
         return "execution failure"
 
     def signature(r):
+        if r.get("output_deterministic") is False:
+            # Preserve raw hashes/ink counts as evidence. A varying trial stamp
+            # cannot establish verdict instability; status and canvas still can.
+            return (r["status"], bool(r.get("ink")), tuple(r.get("dimensions", [])))
         return (r["status"], r.get("ink"), r.get("image_sha256"))
 
     if (
@@ -152,6 +160,7 @@ def render_report(data, dest):
         "Each modified input is paired with a valid control using the same feature. **Rejected** means a returned library error, thrown exception, or error-severity diagnostic, with a successful control in every repeat. **Accepted** means no explicit error was reported; warnings may still appear. **Control failed** is inconclusive, including blank renderer controls. Panics, signals, timeouts, process/protocol failures and unstable outcomes never count as proper rejection.",
         "Parser lanes use the same default APIs as the benchmarks: codyps/zpl frames bytes; zpl-toolchain uses heuristic `parse_str` without specification tables or its separate validator. Renderer lanes run analysis and rendering. Error diagnostics may accompany a partial AST. These tests measure error signaling, not atomic refusal to produce any output or full standards validation. Builders (zpl-builder, Python ZPL, JSZPL) are N/A because they do not consume ZPL.",
         "The malformed group tests corrupt data; framing tests impose a complete-label contract that streaming APIs need not enforce. Fallback probes use invalid/out-of-range arguments for which ignoring, clamping or defaulting may be intentional. They are reported separately and do not contribute to malformed-data rejection counts. No case is sent to a printer.",
+        "Neodynamic runs in trial mode. Its watermark color varies, so repeated probe stability compares verdict, nonempty output and dimensions; raw image hashes and ink counts remain recorded. This exception does not change pixel scoring or turn verdict changes into stable results.",
         "## Malformed-data results",
     ]
     summary = []
@@ -299,6 +308,7 @@ def main():
                             work / "probe.png",
                             mode,
                             args.timeout,
+                            deterministic_output=lib != "neodynamic",
                         )
                         for _ in range(args.repeats)
                     ]
@@ -309,6 +319,7 @@ def main():
         Path(__file__),
         ROOT / "adapters/rust/Cargo.lock",
         ROOT / "adapters/dotnet/packages.lock.json",
+        ROOT / "adapters/neodynamic/packages.lock.json",
         ROOT / "adapters/node/package-lock.json",
         ROOT / "adapters/go/go.sum",
         ROOT / "sources.lock.json",
@@ -327,6 +338,7 @@ def main():
         ROOT / "adapters/zpl-renderer-js/package-lock.json",
         ROOT / "adapters/zebrash-ts/package-lock.json",
         ROOT / "adapters/dotnet/Program.cs",
+        ROOT / "adapters/neodynamic/Program.cs",
     ]
     # Record actual adapter executables and managed/native runtime dependencies.
     identities = {}
@@ -340,8 +352,9 @@ def main():
                 Path(cfg["commands"][lib][0]).parent
                 / ("libzpl.dylib" if sys.platform == "darwin" else "libzpl.so")
             )
-        if lib == "binarykits":
-            files.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
+        if lib in {"binarykits", "neodynamic"}:
+            directory = "dotnet-out" if lib == "binarykits" else "neodynamic-out"
+            files.extend((ROOT / "_work" / directory).glob("*.dll"))
         if lib in {"zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
             from run import node_files
             files.extend(node_files(lib))

@@ -5,9 +5,9 @@ import json
 from pathlib import Path
 import sys
 
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go"]
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "neodynamic", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go"]
 SOURCE = {"codyps-zpl-go": "zpl", "codyps-zpl-node": "zpl", "codyps-zpl": "zpl", "labelize": "labelize", "forge": "zpl-forge",
-          "go": "go-zpl", "ffi": "go-zpl", "binarykits": "BinaryKits.Zpl", "zplr": "zplr",
+          "go": "go-zpl", "ffi": "go-zpl", "binarykits": "BinaryKits.Zpl", "neodynamic": None, "zplr": "zplr",
           "zebrash": "zebrash", "zpl-renderer-js": "zpl-renderer-js", "zebrash-ts": "zebrash-ts"}
 
 
@@ -15,11 +15,11 @@ def identities(files, probe=False, python_version=""):
     locks = json.loads(Path(files["benchmarks/sources.lock.json"]).read_text())
     result = {}
     for library in LIBRARIES:
-        language = "rust" if library in {"codyps-zpl", "labelize", "forge", "ffi"} else "go" if library in {"go", "codyps-zpl-go"} else "dotnet" if library == "binarykits" else "node"
+        language = "rust" if library in {"codyps-zpl", "labelize", "forge", "ffi"} else "go" if library in {"go", "codyps-zpl-go"} else "dotnet" if library in {"binarykits", "neodynamic"} else "node"
         prefixes = ["benchmarks/adapters/" + language + "/"]
-        if library in {"zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go"}:
+        if library in {"zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go", "neodynamic"}:
             prefixes = ["benchmarks/adapters/" + library + "/"]
-            if library not in {"zebrash", "codyps-zpl-go"}:
+            if library not in {"zebrash", "codyps-zpl-go", "neodynamic"}:
                 prefixes.extend(["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"])
         if library in {"codyps-zpl", "labelize", "forge", "ffi", "codyps-zpl-node"}:
             prefixes.append("build/rust/")
@@ -31,10 +31,10 @@ def identities(files, probe=False, python_version=""):
                     for name, path in sorted(files.items())
                     if name in {"build/render.py", "build/renderer_session.py", "build/native_build.py", "build/bootstrap.py", "build/toolchains.lock.json",
                                 "build/native.bzl", "BUILD.bazel", "MODULE.bazel", "build/executable.bzl", "build/requirements.lock.txt", "benchmarks/accuracy/pixels.py"}
-                    or (library == "binarykits" and name in {"build/dotnet_runtime.py", "build/dotnet_deps.bzl", "build/dotnet_toolchain.BUILD", "build/patches/rules_dotnet-hermetic-publish.patch", "MODULE.bazel"})
+                    or (library in {"binarykits", "neodynamic"} and name in {"build/dotnet_runtime.py", "build/dotnet_deps.bzl", "build/dotnet_toolchain.BUILD", "build/patches/rules_dotnet-hermetic-publish.patch", "MODULE.bazel"})
                     or (probe and name in {"build/probe.py", "benchmarks/invalid.py"})
                     or any(name.startswith(prefix) for prefix in prefixes)}
-        value = dict(source=locks[SOURCE[library]], files=selected, python_version=python_version)
+        value = dict(source=locks[SOURCE[library]] if SOURCE[library] else {"package": "Neodynamic.SDK.ZPLPrinter", "license_mode": "trial"}, files=selected, python_version=python_version)
         result[library] = hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
     return result
 

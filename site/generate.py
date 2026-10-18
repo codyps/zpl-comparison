@@ -29,6 +29,7 @@ NAMES = {
     "go": "go-zpl",
     "ffi": "zpl-rs",
     "binarykits": "BinaryKits.Zpl",
+    "neodynamic": "Neodynamic ZPLPrinter (trial)",
     "zplr": "ZPLr",
     "labelary": "Labelary (service)",
     "toolchain": "zpl-toolchain",
@@ -1223,6 +1224,8 @@ class Site:
                 + '</div>'
             )
             body = ""
+            if lib == "neodynamic":
+                body += '<p class="intro">Evaluation mode: the SDK trial stamp and resident-font character substitutions remain in every image. The stamp color varies between renders, so pixel scores can vary for identical input and do not represent licensed output.</p>'
             for s in self.suites:
                 rows = [r for c in s["cases"] for r in c["rows"] if r["library"] == lib]
                 if rows:

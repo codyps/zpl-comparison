@@ -24,6 +24,7 @@ LIBRARIES = [
     "go",
     "ffi",
     "binarykits",
+    "neodynamic",
     "zplr",
     "zebrash",
     "zpl-renderer-js",

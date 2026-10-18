@@ -33,6 +33,38 @@ font bundle uploaded to printer RAM.
 Build `//:reports_fonts` for the separate report tree; the original `//:reports`
 continues to use the existing defaults.
 
+## Neodynamic C# / .NET
+
+`neodynamic` uses [Neodynamic.SDK.ZPLPrinter 8.0.26.909](https://www.nuget.org/packages/Neodynamic.SDK.ZPLPrinter/8.0.26.909)
+with an independent NuGet lock and deployment in `adapters/neodynamic`.
+Build with `bazel build //:library_neodynamic`, or select
+`prepare.py --only neodynamic` with .NET SDK 10 (`BENCH_DOTNET` is supported).
+The SDK's byte-input `ProcessCommands` API receives the original bytes, including
+binary graphics and `^CI` encoding controls. Each operation constructs and disposes
+a fresh virtual printer, sets 203 DPI and the requested dot dimensions, and parses,
+renders and encodes PNG. Fixtures may override the default dimensions through ZPL;
+no input rewriting, resizing or cropping corrects the result. Accuracy and timing
+require exactly one output label. Invalid-render probes retain empty output as
+`accepted-empty`; there is no independent parsing benchmark.
+
+The adapter deliberately uses **evaluation mode** with empty license credentials.
+The [trial restrictions](https://www.neodynamic.com/Products/Help/ZPLPrinterEmulatorSDK8.0/articles/trial.html)
+include a visible stamp and replacement of resident-font characters above byte 127
+with `X`. These remain in the output; trial fidelity scores include them and do not
+represent licensed output. The trial stamp color varies per render, so repeated
+images and pixel scores can differ for identical inputs. Invalid-input probes
+compare repeated verdicts, nonempty output and dimensions for this adapter while
+retaining each raw hash and ink count; other adapters retain pixel/hash stability
+checks. Reports identify the renderer as a trial. No license
+keys are read from the environment or committed. Font-controlled campaigns retain
+SDK resident fonts and report that policy explicitly. Rendering is local and
+requires no service, printer or printing-package dependency.
+
+The package lock and separate archive SHA-512 pins cover the proprietary SDK and
+its dependency graph. Source-size measurements are unavailable for this renderer;
+the public sample repository is not treated as implementation source. SkiaSharp
+2.88.9 and matching Linux native assets are isolated from BinaryKits' newer SkiaSharp.
+
 ## Node / WASM codyps/zpl
 
 `codyps-zpl-node` builds `@codyps/zpl` from the `main` commit recorded in
@@ -97,13 +129,14 @@ reuse parsed labels, output images or persistent printer state between operation
 | Zebrash Go and TypeScript | Parser owns virtual-printer/download state, so it stays fresh for each input. Drawer construction registers lightweight element handlers; canvases and render state are created inside each draw. No Wasm-style engine boot is repeated. |
 | labelize | Renderer is a zero-sized struct. Parser state and output canvas remain per-document. |
 | zpl-forge | `ZplEngine::new` parses the supplied input and constructs its instructions; moving that call out would remove parsing from the render measurement. Reuses a public `Arc<FontManager>` for default and controlled fonts, initialized before warm-up and measured separately. Parsing remains per-operation. |
+| Neodynamic | Fresh virtual printer per document; construction, parsing, PNG encoding and disposal are included. Resident fonts and trial restrictions remain active. |
 | BinaryKits | Font faces are loaded before timing. Storage, analyzer and its storage-bound drawer remain per-document to isolate downloads and command state. |
 | ZPLr | Imports the module before timing; invokes the public rendering API per input. |
 | Python, jszpl and Rust builders | Each operation constructs a new label; that construction is the generation workload. |
 
 ## Run
 
-Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥24 with npm, .NET SDK 8, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.
+Supported hosts: Linux and macOS. Install Rust/Cargo, Go ≥1.25, Node ≥24 with npm, .NET SDK 10, Python ≥3.12, Git and a native C toolchain. Build tools download dependencies; measured operations never contact a rendering service or printer. Use an idle machine and avoid concurrent builds while measuring.
 
 For Bazel builds on Linux, also install LLD (`sudo apt-get install lld` on Ubuntu).
 Bazel's C toolchain prefers LLD when available; without it, it can select Gold,
@@ -124,7 +157,7 @@ benchmarks/_work/venv/bin/python benchmarks/run.py --output benchmarks/_work/my-
 
 Rebuild only selected adapters with `prepare.py --only codyps-zpl,toolchain`; this creates a config containing those adapters. Select a subset of an existing config with `run.py --only codyps-zpl,toolchain`. All build/download/cache files are ignored. `BENCH_CARGO` and `BENCH_DOTNET` select specific executables. Standard `CARGO_HOME`, `CARGO_TARGET_DIR`, `GOPATH`, `GOCACHE`, `GOMODCACHE`, `NUGET_PACKAGES` and `DOTNET_CLI_HOME` overrides are respected; otherwise caches are kept under `_work`.
 
-CI measures parsing and PNG rendering for the twelve Bazel-built renderer adapters (rendering only where no standalone parser is exposed) on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
+CI measures parsing and PNG rendering for the thirteen Bazel-built renderer adapters (rendering only where no standalone parser is exposed) on every trusted run, after compilation and report generation finish. `bazel run //:performance` executes outside the action cache: cached binaries are reused, but timings are always recollected. Five fresh processes per cell record batch timings; five separate fresh processes record peak RSS with a fixed operation count. Results retain output checks, host information, adapter hashes and CI run identity. The `renderer-performance` artifact and published site use these new results. Fork previews omit performance because they cannot build the private source.
 
 Old checked-in performance results and samples have been removed. The broader manual harness above remains available for generator-only libraries and source/deployment size surveys; those measurements are not presented as current CI results. Fixed input fixtures and a stable shuffle make runs comparable; measured durations are never fixed or replayed.
 

@@ -43,6 +43,8 @@ class AutomationTest(unittest.TestCase):
             "benchmarks/adapters/go/main.go": "adapter",
             "benchmarks/adapters/codyps-zpl-go/main.go": "wasm2go-adapter",
             "benchmarks/adapters/zebrash/main.go": "native-zebrash",
+            "benchmarks/adapters/neodynamic/Program.cs": "commercial-adapter",
+            "benchmarks/adapters/neodynamic/packages.lock.json": "commercial-packages",
             "benchmarks/adapters/node/renderers.mjs": "node-zebrash",
             "benchmarks/adapters/node/session.mjs": "node-session",
             "build/renderer_session.py": "renderer-pool",
@@ -68,6 +70,8 @@ class AutomationTest(unittest.TestCase):
             ("benchmarks/adapters/go/main.go", {"go", "ffi"}),
             ("benchmarks/adapters/codyps-zpl-go/main.go", {"codyps-zpl-go"}),
             ("benchmarks/adapters/zebrash/main.go", {"zebrash"}),
+            ("benchmarks/adapters/neodynamic/Program.cs", {"neodynamic"}),
+            ("benchmarks/adapters/neodynamic/packages.lock.json", {"neodynamic"}),
             ("benchmarks/adapters/node/renderers.mjs", {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}),
             ("benchmarks/adapters/node/session.mjs", {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}),
             ("build/renderer_session.py", set(SOURCE)),
@@ -76,10 +80,10 @@ class AutomationTest(unittest.TestCase):
             ("benchmarks/accuracy/pixels.py", set(SOURCE)),
             ("build/requirements.lock.txt", set(SOURCE)),
             ("build/native.bzl", set(SOURCE)),
-            ("build/dotnet_runtime.py", {"binarykits"}),
-            ("build/dotnet_deps.bzl", {"binarykits"}),
-            ("build/dotnet_toolchain.BUILD", {"binarykits"}),
-            ("build/patches/rules_dotnet-hermetic-publish.patch", {"binarykits"}),
+            ("build/dotnet_runtime.py", {"binarykits", "neodynamic"}),
+            ("build/dotnet_deps.bzl", {"binarykits", "neodynamic"}),
+            ("build/dotnet_toolchain.BUILD", {"binarykits", "neodynamic"}),
+            ("build/patches/rules_dotnet-hermetic-publish.patch", {"binarykits", "neodynamic"}),
             ("MODULE.bazel", set(SOURCE)),
             ("build/compare.py", set()),
             ("build/probe.py", set()),
@@ -134,7 +138,8 @@ class AutomationTest(unittest.TestCase):
     def test_probe_repeats_both_inputs_and_replays_only_matching_evidence(self):
         spec = self.probe_spec()
         calls = []
-        def attempt(command, env, source, output, mode, timeout):
+        def attempt(command, env, source, output, mode, timeout, *, deterministic_output=True):
+            self.assertTrue(deterministic_output)
             calls.append(source.name)
             return dict(status="accepted" if source.name == "control.zpl" else "rejected")
         baseline = self.root / "baseline.json"

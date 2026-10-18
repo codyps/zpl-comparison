@@ -11,6 +11,7 @@ NAMES = {
     "ffi": "zpl-rs (Rust → Go)",
     "go": "go-zpl (Go)",
     "binarykits": "BinaryKits.Zpl (.NET)",
+    "neodynamic": "Neodynamic ZPLPrinter (.NET, trial)",
     "zplr": "ZPLr (TypeScript)",
     "zebrash": "Zebrash (Go)",
     "zpl-renderer-js": "zpl-renderer-js (WASM)",

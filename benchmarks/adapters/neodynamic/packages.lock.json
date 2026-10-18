@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "Neodynamic.SDK.ZPLPrinter": {
+        "type": "Direct",
+        "requested": "[8.0.26.909, 8.0.26.909]",
+        "resolved": "8.0.26.909",
+        "contentHash": "BPKFj+iJCYn0gNJyfS7E4HAvvW6agrjN7i33BHKpQg0oOsC6VbZzJk1/3/9mzHBDQa9tPTBYQrxj5yZjVrS6PA==",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "SkiaSharp": "1.68.3"
+        }
+      },
+      "SkiaSharp": {
+        "type": "Direct",
+        "requested": "[2.88.9, 2.88.9]",
+        "resolved": "2.88.9",
+        "contentHash": "3MD5VHjXXieSHCleRLuaTXmL2pD0mB7CcOB1x2kA1I4bhptf4e3R27iM93264ZYuAq6mkUyX5XbcxnZvMJYc1Q==",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.9",
+          "SkiaSharp.NativeAssets.macOS": "2.88.9"
+        }
+      },
+      "SkiaSharp.NativeAssets.Linux.NoDependencies": {
+        "type": "Direct",
+        "requested": "[2.88.9, 2.88.9]",
+        "resolved": "2.88.9",
+        "contentHash": "ZA9syMvIuoqxPhyFTgde/bNV6VMdeYT9gRdNQT5O+ZjPK+a/nVkKRrqBbn7EVA7XQiW+xIycyT4gW/sea9eh+w==",
+        "dependencies": {
+          "SkiaSharp": "2.88.9"
+        }
+      },
+      "Newtonsoft.Json": {
+        "type": "Transitive",
+        "resolved": "13.0.1",
+        "contentHash": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A=="
+      },
+      "SkiaSharp.NativeAssets.macOS": {
+        "type": "Transitive",
+        "resolved": "2.88.9",
+        "contentHash": "Nv5spmKc4505Ep7oUoJ5vp3KweFpeNqxpyGDWyeEPTX2uR6S6syXIm3gj75dM0YJz7NPvcix48mR5laqs8dPuA=="
+      },
+      "SkiaSharp.NativeAssets.Win32": {
+        "type": "Transitive",
+        "resolved": "2.88.9",
+        "contentHash": "wb2kYgU7iy84nQLYZwMeJXixvK++GoIuECjU4ECaUKNuflyRlJKyiRhN1MAHswvlvzuvkrjRWlK0Za6+kYQK7w=="
+      }
+    }
+  }
+}

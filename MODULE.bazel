@@ -47,7 +47,7 @@ single_version_override(
 bazel_dep(name = "platforms", version = "1.1.0")
 
 nuget = use_extension("//:build/dotnet_deps.bzl", "nuget")
-use_repo(nuget, "comparison_nuget")
+use_repo(nuget, "comparison_nuget", "neodynamic_nuget")
 register_toolchains("@native_tools//:dotnet_registered")
 
 # Use Python's native namespace packages instead of synthesizing __init__.py.
@@ -166,6 +166,10 @@ catalog(
         "//:build/native_build.py",
         "//:build/bootstrap.py",
         "//:build/toolchains.lock.json",
+        "//:benchmarks/adapters/neodynamic/Comparison.csproj",
+        "//:benchmarks/adapters/neodynamic/Program.cs",
+        "//:benchmarks/adapters/neodynamic/packages.lock.json",
+        "//:benchmarks/adapters/neodynamic/nuget-integrity.json",
         "//:benchmarks/adapters/dotnet/Comparison.csproj",
         "//:benchmarks/adapters/dotnet/Program.cs",
         "//:benchmarks/adapters/dotnet/fonts/DejaVu Fonts.LICENSE",

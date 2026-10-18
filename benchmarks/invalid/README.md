@@ -2,18 +2,18 @@
 
 **[Read the rejection and recovery report](https://codyps.github.io/zpl-comparison/categories/invalid.html).**
 
-The deterministic [fixture generator](../../test-data/invalid-zpl/generate.py) creates 18 modified inputs and 18 valid controls. Every pair runs through the supported default parser and renderer APIs of codyps/zpl, zpl-toolchain, labelize, zpl-forge, go-zpl, zpl-rs, BinaryKits.Zpl, ZPLr, Zebrash, zpl-renderer-js (render only), and zebrash-ts. Builders that do not consume ZPL are N/A.
+The deterministic [fixture generator](../../test-data/invalid-zpl/generate.py) creates 18 modified inputs and 18 valid controls. Every pair runs through the supported default parser and renderer APIs of codyps/zpl, zpl-toolchain, labelize, zpl-forge, go-zpl, zpl-rs, BinaryKits.Zpl, ZPLr, Zebrash, zpl-renderer-js (render only), zebrash-ts, and Neodynamic ZPLPrinter (trial, render only). Builders that do not consume ZPL are N/A.
 
 ## Reproduce
 
-CI measures the ten Bazel-built adapters: 18 pairs × 18 API lanes × two inputs
-× two repetitions = 1,296 executions. Each pair is independently cached on the
+CI measures thirteen Bazel-built adapters: 18 pairs × 21 API lanes × two inputs
+× two repetitions = 1,512 executions. Each pair is independently cached on the
 fixture, adapter deployment and probe implementation. Run
 `bazel build //:reports --output_groups=suite_invalid` to reproduce it. Fork/offline
 previews replay compatible trusted results and show **not measured** otherwise.
 The manual harness below additionally includes the parser-only zpl-toolchain lane.
 
-Install the toolchains listed in the [benchmark setup](../README.md), including the .NET 8 runtime, then run from the repository root:
+Install the toolchains listed in the [benchmark setup](../README.md), including the .NET 10 runtime, then run from the repository root:
 
 ```sh
 python3 -m venv benchmarks/_work/venv
@@ -25,7 +25,7 @@ benchmarks/_work/venv/bin/python benchmarks/invalid.py
 benchmarks/_work/venv/bin/python benchmarks/invalid.py --check
 ```
 
-The default run performs 1,368 executions: 18 pairs × 19 API lanes × two inputs × two repetitions. Each execution uses a fresh process and a ten-second timeout. The fixtures have a 400×300 canvas and small payloads. No printer or remote rendering service is contacted. Package/source pins are shared with the other benchmarks. Results retain fixture hashes, adapter identities, source/lockfile hashes, host information, raw verdicts, diagnostics and image hashes.
+The default run performs 1,584 executions: 18 pairs × 22 API lanes × two inputs × two repetitions. Each execution uses a fresh process and a ten-second timeout. The fixtures have a 400×300 canvas and small payloads. No printer or remote rendering service is contacted. Package/source pins are shared with the other benchmarks. Results retain fixture hashes, adapter identities, source/lockfile hashes, host information, raw verdicts, diagnostics and image hashes.
 
 To preserve another machine's results or select a library:
 
@@ -38,6 +38,12 @@ benchmarks/_work/venv/bin/python benchmarks/invalid.py \
 ```
 
 `--report-only` regenerates Markdown from saved measurements. It does not execute adapters. `--check` verifies fixture hashes, matrix completeness, repetition counts, classifications and report freshness.
+
+Neodynamic uses the unmodified trial output. Its watermark color varies per
+render. For that adapter, repeat stability compares verdict, nonempty output and
+canvas dimensions; each raw PNG hash and ink count is still recorded. Pixel
+fidelity comparisons retain the watermark and can vary between runs. All other
+adapters retain the existing hash/ink stability checks.
 
 ## Reading outcomes
 
