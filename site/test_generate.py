@@ -420,6 +420,67 @@ class PublicationTests(unittest.TestCase):
                 self.assertEqual(focused.getpixel((32, 32)), (255, 255, 255))
             self.assertEqual((site.output / asset).read_bytes(), original)
 
+    def test_shared_crop_ignores_neodynamic_render_and_difference(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "input"
+            source.mkdir()
+            pixels = {
+                "reference": (100, 200),
+                "render": (350, 450),
+                "diff": (400, 500),
+                "trial": (0, 0),
+                "trial-diff": (831, 1217),
+            }
+            for name, position in pixels.items():
+                image = Image.new("RGB", (832, 1218), "white")
+                image.putpixel(position, (0, 0, 0))
+                image.save(source / (name + ".png"))
+            site = generate.Site(source, root / "output")
+            assets = {name: site.asset(name + ".png") for name in pixels}
+            case = dict(reference=assets["reference"], rows=[
+                dict(library="go", image_asset=assets["render"], diff_asset=assets["diff"]),
+                dict(library="neodynamic", image_asset=assets["trial"],
+                     diff_asset=assets["trial-diff"], score=0.25),
+            ])
+            site.cases = [case]
+            # Previously cached trial bounds must not influence the frame either.
+            site.previews.frame(site.output, list(assets.values()))
+            site.focus_cases()
+            expected = (92, 192, 409, 509)
+            previews = [(assets["reference"], case["reference_thumb"])]
+            for row in case["rows"]:
+                previews.extend([(row["image_asset"], row["thumb_asset"]),
+                                 (row["diff_asset"], row["diff_thumb"])])
+            for asset, preview in previews:
+                self.assertEqual((site.output / preview).read_bytes(),
+                                 generate.crop_png(site.output / asset, expected))
+            for name, asset in assets.items():
+                self.assertEqual((site.output / asset).read_bytes(),
+                                 (source / (name + ".png")).read_bytes())
+            self.assertEqual(case["rows"][1]["score"], 0.25)
+
+    def test_trial_only_crop_uses_blank_fallback(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "input"
+            source.mkdir()
+            Image.new("RGB", (832, 1218), "white").save(source / "blank.png")
+            Image.new("RGB", (832, 1218), "cyan").save(source / "trial.png")
+            site = generate.Site(source, root / "output")
+            blank, trial = site.asset("blank.png"), site.asset("trial.png")
+            for reference in (blank, None):
+                with self.subTest(reference=reference):
+                    case = dict(reference=reference, rows=[dict(
+                        library="neodynamic", image_asset=trial, diff_asset=trial)])
+                    site.cases = [case]
+                    site.focus_cases()
+                    row = case["rows"][0]
+                    for preview in (case["reference_thumb"], row["thumb_asset"], row["diff_thumb"]):
+                        if preview:
+                            with Image.open(site.output / preview) as image:
+                                self.assertEqual(image.size, (64, 64))
+
     def test_blank_crop_is_finite(self):
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / "blank.png"

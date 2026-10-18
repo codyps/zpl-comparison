@@ -26,6 +26,10 @@ Every generation checks all local links, fragment destinations and image referen
 Missing required evidence fails publication. Blank/missing references and failed
 observations retain each suite's score policy. Averages never merge unlike suites.
 Case pages use original image dimensions for overlays; all preview images use a common ink bounding box with an eight-pixel margin.
+Neodynamic trial renders and their difference images are excluded when computing
+that box so their watermark cannot expand every preview. They still use the same
+crop as the reference and other renderers. If no contributing image has ink, the
+crop is a 64 × 64 region at the origin.
 The Full canvas toggle restores originals; scores never use cropped pixels. Source-review claims stay in `examination.html`.
 
 ## GitHub Pages
