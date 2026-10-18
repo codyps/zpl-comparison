@@ -13,7 +13,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from benchmarks.accuracy.pixels import gray, sha
+from benchmarks.accuracy.pixels import gray, rgb, sha
 
 
 def render(spec, metadata, images):
@@ -100,7 +100,9 @@ def render(spec, metadata, images):
     if image.exists():
         raster = gray(image)
         # Encode once. Compression changes bytes, never scoring pixels.
-        Image.fromarray(raster).save(image, compress_level=1)
+        # Trial stamp colors are scoring evidence; grayscale destroys their identity.
+        encoded = rgb(image) if row["library"] == "neodynamic" else raster
+        Image.fromarray(encoded).save(image, compress_level=1)
         ink = int(np.count_nonzero(raster < 128))
         row.update(
             status="rendered" if ink else "blank",

@@ -18,6 +18,15 @@ spec.loader.exec_module(generate)
 
 
 class PublicationTests(unittest.TestCase):
+    def test_filtered_trial_score_is_labeled_without_claiming_exactness(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            site = generate.Site(root / "input", root / "output")
+            row = dict(status="rendered", score=0.75, exact=False, raw_score=0.25,
+                       watermark_filter=dict(excluded_pixels=100, retained_reference_fraction=0.8))
+            self.assertEqual(site.result(row), "75.00% IoU · stamp excluded · rendered")
+            self.assertNotIn("stamp excluded", site.result(dict(status="rendered", score=0.25)))
+
     def test_campaign_matrix_exposes_every_renderer_and_rejects_missing_rows(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

@@ -15,7 +15,7 @@ from PIL import Image
 
 from benchmarks.accuracy.pixels import gray, sha
 from benchmarks.accuracy.presentation import rgb
-from benchmarks.accuracy.metrics import compare
+from benchmarks.accuracy.metrics import compare, compare_trial
 from build.compare import comparison, save_difference
 from build.check_action_graph import LAYOUT_LIBRARIES, verify, verify_layout_matrix
 from build.pages import write
@@ -28,6 +28,71 @@ from benchmarks import campaigns
 
 
 class PipelineTest(unittest.TestCase):
+    def test_stamp_mask_excludes_both_sides_but_preserves_real_errors(self):
+        reference = np.array([[0, 0, 0, 255, 255, 255]], dtype=np.uint8)
+        color = np.array([[[0, 0, 0], [80, 20, 40], [255, 255, 255],
+                           [0, 0, 0], [50, 90, 50], [255, 255, 255]]], dtype=np.uint8)
+        actual = np.asarray(Image.fromarray(color).convert("L"))
+        result, diff = compare_trial(reference, actual, color)
+        self.assertEqual((result["missing"], result["extra"]), (1, 1))
+        self.assertEqual(result["iou"], 1 / 3)
+        self.assertEqual(result["raw_score"], 2 / 5)
+        self.assertEqual(result["watermark_filter"]["excluded_pixels"], 2)
+        self.assertEqual(result["watermark_filter"]["retained_reference_fraction"], 2 / 3)
+        self.assertEqual(result["canvas_disagreement"], 2 / 4)
+        np.testing.assert_array_equal(diff[0, [1, 4]], [[255, 255, 255]] * 2)
+        np.testing.assert_array_equal(diff[0, 2:4], [[220, 0, 150], [0, 160, 220]])
+
+    def test_trial_filter_retains_antialiasing_and_does_not_claim_exactness(self):
+        reference = np.array([[0, 255, 0]], dtype=np.uint8)
+        # Grayscale edge pixels remain scored; the stamp over printer ink is ignored.
+        color = np.array([[[127, 127, 127], [128, 128, 128], [200, 220, 250]]], dtype=np.uint8)
+        actual = np.asarray(Image.fromarray(color).convert("L"))
+        result, _ = compare_trial(reference, actual, color)
+        self.assertEqual(result["iou"], 1)
+        self.assertEqual(result["reference_ink"], 1)
+        self.assertFalse(result["exact"])
+        self.assertFalse(result["ink_exact"])
+        raw, raw_diff = compare(reference, actual)
+        grayscale = np.repeat(actual[:, :, None], 3, axis=2)
+        fallback, fallback_diff = compare_trial(reference, actual, grayscale)
+        self.assertEqual(fallback, raw)
+        np.testing.assert_array_equal(fallback_diff, raw_diff)
+
+    def test_trial_color_survives_render_saved_replay_and_scoring(self):
+        reference = np.zeros((2, 2), dtype=np.uint8)
+        Image.fromarray(reference).save(self.reference)
+        color = np.repeat(reference[:, :, None], 3, axis=2)
+        color[0, 0] = [180, 210, 220]
+        stamped = self.root / "stamped.png"
+        Image.fromarray(color).save(stamped)
+        spec = self.spec()
+        spec.update(saved=str(stamped), png_sha256=sha(stamped))
+        spec["row"]["library"] = "neodynamic"
+        rendered, images = self.root / "render.json", self.root / "renders"
+        render(spec, rendered, images)
+        with Image.open(images / "image.png") as image:
+            np.testing.assert_array_equal(np.asarray(image), color)
+        recorded = json.loads(rendered.read_text())
+        replayed, replay = self.root / "replayed.json", self.root / "replay"
+        saved(dict(row=spec["row"], expected={}, evidence=str(rendered),
+                   image=str(images / "image.png")), replayed, replay)
+        scored = self.root / "scored.json"
+        comparison(dict(suite="accuracy", row=str(replayed), image=str(replay),
+                        reference=str(self.reference), sha256=sha(self.reference)),
+                   scored, self.root / "diff")
+        result = json.loads(scored.read_text())
+        self.assertEqual(result["raw_score"], 0.75)
+        self.assertEqual(result["score"], 1)
+        self.assertFalse(result["exact"])
+        self.assertEqual(result["render_sha256"], recorded["render_sha256"])
+        # If all printer ink is occluded, the comparison must remain unscored.
+        Image.fromarray(np.full((2, 2, 3), [180, 210, 220], dtype=np.uint8)).save(replay / "image.png")
+        comparison(dict(suite="accuracy", row=str(replayed), image=str(replay),
+                        reference=str(self.reference), sha256=sha(self.reference)),
+                   scored, self.root / "diff")
+        self.assertIsNone(json.loads(scored.read_text())["score"])
+
     def test_campaign_matrix_retains_all_renderers_and_native_scoring(self):
         metrics, difference = compare(gray(self.reference), gray(self.reference))
         diff = self.root / "diff.png"
@@ -89,12 +154,15 @@ class PipelineTest(unittest.TestCase):
         saved(spec, self.root / "row.json", self.root / "images")
         self.assertEqual(json.loads((self.root / "row.json").read_text()), dict(row, evidence_mode="saved"))
         self.assertEqual(sha(self.root / "images/image.png"), sha(self.reference))
-        evidence.write_text(json.dumps(dict(row, iou=0.9, reference_ink=20, comparison={"exact": True})))
+        evidence.write_text(json.dumps(dict(row, iou=0.9, reference_ink=20, comparison={"exact": True},
+                                           raw_score=0.5, raw_comparison={"iou": 0.5}, watermark_filter={"excluded_pixels": 1})))
         saved(spec, self.root / "row.json", self.root / "images")
         replay = json.loads((self.root / "row.json").read_text())
         self.assertNotIn("iou", replay)
         self.assertNotIn("comparison", replay)
         self.assertNotIn("reference_ink", replay)
+        for key in ("raw_score", "raw_comparison", "watermark_filter"):
+            self.assertNotIn(key, replay)
         self.reference.write_bytes(b"corrupted")
         with self.assertRaisesRegex(ValueError, "hash mismatch"):
             saved(spec, self.root / "bad.json", self.root / "bad-images")

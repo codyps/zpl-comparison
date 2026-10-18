@@ -34,8 +34,8 @@ LIBRARIES = [
 
 
 sys.path.insert(0, str(ROOT))
-from accuracy.pixels import gray, sha
-from accuracy.metrics import compare
+from accuracy.pixels import gray, rgb, sha
+from accuracy.metrics import compare, compare_render
 
 
 def corpus(fresh=ROOT / "accuracy/reference"):
@@ -202,16 +202,16 @@ def main():
                 if process.returncode:
                     raise RuntimeError(process.stderr.decode(errors="replace")[-1800:])
                 actual = gray(output)
-                metrics, diff = compare(ref, actual)
+                metrics, diff = compare_render(ref, actual, output, name)
                 row.update(
                     metrics,
-                    status="rendered" if metrics["output_ink"] else "blank",
-                    score=metrics["iou"] if reference_ink else None,
+                    status="rendered" if np.any(actual < 128) else "blank",
+                    score=metrics["iou"] if metrics["reference_ink"] else None,
                     raw_png_sha256=sha(output),
                     stderr=process.stderr.decode(errors="replace")[-1800:],
                 )
                 # Lossless re-encoding keeps checked-in raster artifacts small; no registration or resizing.
-                Image.fromarray(actual).save(
+                Image.fromarray(rgb(output) if name == "neodynamic" else actual).save(
                     dest / "images" / (key + ".png"), optimize=True
                 )
                 Image.fromarray(diff).save(

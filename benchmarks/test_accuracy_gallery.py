@@ -85,6 +85,21 @@ class GalleryTests(unittest.TestCase):
         )
         self.assertEqual(len(pages), len(gallery.LIBRARIES) + 1)
 
+    def test_adjusted_trial_metrics_and_raw_score_are_verified(self):
+        path = self.dest / "images/case-neodynamic.png"
+        Image.fromarray(np.array([[[0, 0, 0], [80, 20, 40]]], dtype=np.uint8)).save(path)
+        reference = gallery.gray(self.root / "reference.png")
+        metrics, difference = gallery.compare_render(reference, gallery.gray(path), path, "neodynamic")
+        Image.fromarray(difference).save(self.dest / "images/case-neodynamic-diff.png")
+        row = next(r for r in self.data["results"] if r["library"] == "neodynamic")
+        row.update(metrics, score=metrics["iou"])
+        gallery.validate(self.data, self.dest)
+        self.assertEqual(row["score"], 1)
+        self.assertEqual(row["raw_score"], 0.5)
+        row["raw_score"] = 1
+        with self.assertRaisesRegex(ValueError, "Stale raw_score"):
+            gallery.validate(self.data, self.dest)
+
     def test_changed_labelary_snapshot_requires_new_measurement(self):
         snapshot = self.root / "docs/benchmarks/labelary/captures.json"
         snapshot.parent.mkdir(parents=True)

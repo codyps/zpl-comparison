@@ -12,7 +12,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
 sys.path.insert(0, str(ROOT))
-from accuracy.run import LIBRARIES, compare, gray, sha
+from accuracy.run import LIBRARIES, compare, compare_render, gray, sha
 from accuracy.presentation import LEGEND, viewport, preview
 from report import NAMES, table
 
@@ -40,7 +40,8 @@ def validate(data, dest, rebuild_diffs=False):
         reference = gray(REPO / case["reference"])
         for lib in LIBRARIES:
             row = rows[cid, lib]
-            if row["reference_ink"] != int(np.count_nonzero(reference < 128)):
+            raw_ink = row.get("raw_comparison", row)["reference_ink"]
+            if raw_ink != int(np.count_nonzero(reference < 128)):
                 raise ValueError(f"Stale reference ink: {cid}/{lib}")
             if row["status"] == "error":
                 if not row.get("error"):
@@ -50,13 +51,14 @@ def validate(data, dest, rebuild_diffs=False):
                 continue
             if row["status"] not in {"rendered", "blank"}:
                 raise ValueError(f"Unknown render status: {cid}/{lib}")
-            raster = gray(dest / "images" / f"{cid}-{lib}.png")
-            metrics, diff = compare(reference, raster)
+            path = dest / "images" / f"{cid}-{lib}.png"
+            raster = gray(path)
+            metrics, diff = compare_render(reference, raster, path, lib)
             for key, value in metrics.items():
                 if row[key] != value:
                     raise ValueError(f"Stale {key}: {cid}/{lib}")
             expected_score = metrics["iou"] if row["reference_ink"] else None
-            expected_status = "rendered" if metrics["output_ink"] else "blank"
+            expected_status = "rendered" if np.any(raster < 128) else "blank"
             if row["score"] != expected_score or row["status"] != expected_status:
                 raise ValueError(f"Stale score/status: {cid}/{lib}")
             diffpath = dest / "images" / f"{cid}-{lib}-diff.png"

@@ -569,10 +569,11 @@ py_test(
 py_test(
     name = "neodynamic_adapter_test",
     size = "small",
-    srcs = ["build/neodynamic_adapter_test.py", "build/native_build.py", "build/renderer_session.py"],
+    srcs = ["build/neodynamic_adapter_test.py", "build/native_build.py", "build/renderer_session.py",
+            "benchmarks/accuracy/metrics.py", "benchmarks/accuracy/pixels.py"],
     main = "build/neodynamic_adapter_test.py",
     data = [":library_neodynamic"],
-    deps = [requirement("pillow")],
+    deps = [requirement("numpy"), requirement("pillow")],
 )
 
 py_test(

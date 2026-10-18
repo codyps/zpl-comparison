@@ -749,6 +749,8 @@ class Site:
     def result(self, row):
         score = row.get("score")
         label = f"{score:.2%} IoU" if score is not None else "Unscored"
+        if row.get("watermark_filter"):
+            label += " · stamp excluded"
         return E(
             label
             + " · "
@@ -840,6 +842,8 @@ class Site:
                 )
                 path = self.href("cases/" + case["key"] + ".html") + "#" + slug(lib)
                 label = f"{score:.2%} IoU" if score is not None else "Unscored"
+                if r.get("watermark_filter"):
+                    label += " · stamp excluded"
                 status = r.get("comparison_status", r["status"]) + (
                     " · exact" if r.get("exact") and score is not None else ""
                 )
@@ -1026,6 +1030,14 @@ class Site:
                     )
                     if k in r
                 }
+                if r.get("watermark_filter"):
+                    stamp = r["watermark_filter"]
+                    retained = stamp["retained_reference_fraction"]
+                    fields.update(
+                        raw_full_canvas_iou=f'{r["raw_score"]:.2%}' if r.get("raw_score") is not None else "Unscored",
+                        stamp_pixels_excluded=stamp["excluded_pixels"],
+                        printer_ink_retained=f"{retained:.2%}" if retained is not None else "No printer ink",
+                    )
                 body += (
                     "<details><summary>Measurement details</summary><dl>"
                     + "".join(
@@ -1228,7 +1240,7 @@ class Site:
             )
             body = ""
             if lib == "neodynamic":
-                body += '<p class="intro">Evaluation mode: the SDK trial stamp and resident-font character substitutions remain in every image. The stamp color varies between renders, so pixel scores can vary for identical input and do not represent licensed output.</p>'
+                body += '<p class="intro">Evaluation mode: the SDK trial stamp and resident-font character substitutions remain in every image. Where color evidence is available, scores exclude chromatic stamp pixels from both the printer and renderer. These results are labeled “stamp excluded”; measurement details retain the raw score and the fraction of printer ink still compared. Grayscale captures and achromatic stamps keep their raw scores. Excluded pixels are untested, and trial results do not represent licensed output.</p>'
             for s in self.suites:
                 rows = [r for c in s["cases"] for r in c["rows"] if r["library"] == lib]
                 if rows:
@@ -1513,9 +1525,9 @@ class Site:
         self.write(
             "Reading the results",
             """<p>These pages present saved observations, not a new measurement run. Each comparison links its original measurement document, including versions, capture dates and provenance. Local library observations and saved service responses may have different dates.</p>
-<h2>What the heatmap means</h2><p>Foreground IoU is shared black pixels divided by the union of black pixels, using a threshold of 128. A score of 100% means identical ink; “exact” additionally requires matching dimensions. Means weight each scored case equally within one comparison. The denominator is the number of recorded attempts, including unscored observations. Scores from different corpora or printer profiles should not be treated as one overall ranking.</p>
+<h2>What the heatmap means</h2><p>Foreground IoU is shared black pixels divided by the union of black pixels, using a threshold of 128. Neodynamic results labeled “stamp excluded” omit chromatic stamp pixels from both images; raw IoU and retained printer ink are recorded in measurement details. Grayscale-only evidence and achromatic stamps retain raw scores. Excluded pixels are untested, so adjusted results never claim exact equality. A score of 100% means identical compared ink; “exact” additionally requires matching dimensions. Means weight each scored case equally within one comparison. The denominator is the number of recorded attempts, including unscored observations. Scores from different corpora or printer profiles should not be treated as one overall ranking.</p>
 <h2>Failures and unscored results</h2><p>In the four ZD621 corpora, failed renders with a nonblank printer reference contribute zero. Missing or blank references are unscored. Public-document and ZQ610 candidate comparisons require identical native dimensions: canvas mismatches and failed or uncaptured renders remain unscored. Blank diagnostic cases never count as positive accuracy evidence. Inspect coverage alongside the mean; a high mean over few successful cases is not broad support.</p>
-<h2>Image comparison</h2><p>The ZD621 corpora compare at the original origin on a white canvas large enough for both images; they do not resize or align ink. Public-document, ZQ610 candidate and printer-profile comparisons use native canvases. The paired-printer common coordinate region is a separate diagnostic, not full-canvas equality. The opacity viewer places both originals at the same top-left origin without resizing. Side-by-side previews fit their panels. Previews crop all four blank margins to the union of ink across the reference, renders and differences, with an eight-pixel margin. Neodynamic trial renders and their differences do not contribute to these bounds because their watermark can span the canvas. Every image for a case, including Neodynamic, uses the same bounds. Displaced or extra ink from other renderers is included; if no contributing image has ink, previews use a 64 × 64 region at the origin. Full canvas restores the uncropped view; metrics always use the full canvases. Click an image to inspect its original pixels.</p><p>Difference colors: black or dark gray is shared ink, magenta is missing ink, cyan is extra ink, and white is background. The overlay is a visual aid; it does not change the recorded score.</p>
+<h2>Image comparison</h2><p>The ZD621 corpora compare at the original origin on a white canvas large enough for both images; they do not resize or align ink. Public-document, ZQ610 candidate and printer-profile comparisons use native canvases. The paired-printer common coordinate region is a separate diagnostic, not full-canvas equality. The opacity viewer places both originals at the same top-left origin without resizing. Side-by-side previews fit their panels. Previews crop all four blank margins to the union of ink across the reference, renders and differences, with an eight-pixel margin. Neodynamic trial renders and their differences do not contribute to these bounds because their watermark can span the canvas. Every image for a case, including Neodynamic, uses the same bounds. Displaced or extra ink from other renderers is included; if no contributing image has ink, previews use a 64 × 64 region at the origin. Full canvas restores the uncropped view; metrics always use the full canvases. Click an image to inspect its original pixels.</p><p>Difference colors: black or dark gray is shared ink, magenta is missing ink, cyan is extra ink, and white is background or an excluded stamp pixel. The overlay is a visual aid; it does not change the recorded score.</p>
 <h2>Scope and limitations</h2><p>These finite probes do not establish exhaustive command, argument or firmware compatibility. Printer previews are references for specified devices and capture sessions, not physical print scans. Native-default candidates and a configured printer profile are distinct comparisons. Speed measurements describe the recorded host and workload; parser ASTs, generated labels and renderer outputs need not be semantically equivalent.</p>
 <h2>Two kinds of evidence</h2><p>Measured comparisons derive from retained inputs, observations and explicit metrics. Examined support consists of source review, catalog claims and maintained argument notes. It is kept separate and is never converted into a quantitative quality score.</p>"""
             + "<h2>Evidence downloads</h2><ul>"

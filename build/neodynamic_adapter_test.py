@@ -7,6 +7,9 @@ import tempfile
 import unittest
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter
+import numpy as np
+from benchmarks.accuracy.metrics import compare, compare_trial
+from benchmarks.accuracy.pixels import gray, rgb
 from build import renderer_session as sessions
 from build.native_build import source_size
 
@@ -82,6 +85,24 @@ class NeodynamicAdapterTest(unittest.TestCase):
         self.assertGreater(timing['checksum'], 0)
         result, _, _ = self.invoke(source, mode='parse')
         self.assertNotEqual(result.returncode, 0)
+
+    def test_scoring_filter_isolates_real_sdk_stamps(self):
+        data = b'\xff' * 8 + (b'\x80' + b'\0' * 6 + b'\x01') * 30 + b'\xff' * 8
+        source = b'^XA^FO10,60^GFA,256,256,8,' + data.hex().upper().encode() + b'^FS^XZ'
+        ideal = Image.new('L', (192, 120), 'white')
+        ImageDraw.Draw(ideal).rectangle((10, 60, 73, 91), outline='black')
+        for _ in range(4):
+            result, _, image = self.invoke(source)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            metrics, _ = compare_trial(np.asarray(ideal), gray(image), rgb(image))
+            if 'watermark_filter' not in metrics:
+                # The SDK chooses stamp colors; achromatic stamps retain raw metrics.
+                raw, _ = compare(np.asarray(ideal), gray(image))
+                self.assertEqual(metrics, raw)
+                continue
+            self.assertGreater(metrics['watermark_filter']['retained_reference_fraction'], 0.5)
+            self.assertEqual(metrics['iou'], 1)
+            self.assertFalse(metrics['exact'])
 
     def test_binary_graphics_match_ascii_hex_without_text_decoding(self):
         # A large frame keeps substantial document ink outside the trial stamp.

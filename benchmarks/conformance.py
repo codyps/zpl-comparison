@@ -243,9 +243,10 @@ def main():
                     width=raster.shape[1],
                     height=raster.shape[0],
                 )
-                Image.fromarray(raster).save(path, optimize=True)
+                encoded = metrics.rgb(path) if library == "neodynamic" else raster
+                Image.fromarray(encoded).save(path, optimize=True)
                 if case["name"] in refs and case["validity"] != "invalid":
-                    comparison, diff = metrics.compare(refs[case["name"]], raster)
+                    comparison, diff = metrics.compare_render(refs[case["name"]], raster, path, library)
                     result["comparison"] = comparison
                     result["score"] = (
                         comparison["iou"] if comparison["reference_ink"] else None

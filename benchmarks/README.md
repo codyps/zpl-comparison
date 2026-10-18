@@ -50,8 +50,15 @@ require exactly one output label. Invalid-render probes retain empty output as
 The adapter deliberately uses **evaluation mode** with empty license credentials.
 The [trial restrictions](https://www.neodynamic.com/Products/Help/ZPLPrinterEmulatorSDK8.0/articles/trial.html)
 include a visible stamp and replacement of resident-font characters above byte 127
-with `X`. These remain in the output; trial fidelity scores include them and do not
-represent licensed output. The trial stamp color varies per render, so repeated
+with `X`. These remain in the output. When RGB evidence is available, comparison
+scores exclude chromatic stamp pixels from both the printer and renderer masks.
+The raw full-canvas metrics and score, excluded-pixel count, and retained fraction
+of printer ink are recorded alongside the adjusted metrics. Black errors and
+grayscale antialiasing remain scored. Excluded locations are untested; a masked
+comparison never claims exact equality, and no visible printer ink means no score.
+Grayscale-only saved renders and achromatic stamps retain their raw scores.
+Character substitutions remain scored; these results do not represent licensed
+output. The trial stamp color varies per render, so repeated
 images and pixel scores can differ for identical inputs. Invalid-input probes
 compare repeated verdicts and dimensions for this adapter while retaining each
 raw hash and ink count. Valid controls require nonzero ink in every repetition.

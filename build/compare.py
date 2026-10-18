@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from benchmarks.accuracy.metrics import DIFFERENCE_PALETTE, compare
+from benchmarks.accuracy.metrics import DIFFERENCE_PALETTE, compare_render
 from benchmarks.accuracy.pixels import gray, sha
 
 
@@ -53,7 +53,7 @@ def comparison(spec, metadata, images):
                            comparison_diagnostic="Native dimensions differ; no padding, crop, alignment or score applied")
                 Path(metadata).write_text(json.dumps(row, sort_keys=True) + "\n")
                 return
-            metrics, diff = compare(ref, actual, indexed=True)
+            metrics, diff = compare_render(ref, actual, Path(spec["image"]) / "image.png", row["library"], indexed=True)
             row.update(
                 metrics, score=metrics["iou"] if metrics["reference_ink"] else None
             )

@@ -8,7 +8,7 @@ from pathlib import Path
 COMPUTED = {"score", "reference_ink", "output_ink", "missing", "extra", "iou", "precision", "recall",
             "canvas_disagreement", "dimensions_match", "ink_exact", "exact", "output_dimensions",
             "reference_dimensions", "comparison", "comparison_status", "comparison_diagnostic",
-            "image", "diff", "diff_sha256"}
+            "image", "diff", "diff_sha256", "raw_comparison", "raw_score", "watermark_filter"}
 
 
 def saved(spec, metadata, images):

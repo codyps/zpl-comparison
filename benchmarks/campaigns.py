@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from accuracy.metrics import compare
+from accuracy.metrics import compare_render
 from accuracy.pixels import gray, sha
 
 
@@ -76,7 +76,7 @@ def verify(data, root):
                 if row.get("comparison_status") != "canvas_mismatch" or "comparison" in row or row.get("score") is not None:
                     raise ValueError("Mismatched campaign canvas was scored")
                 continue
-            metrics, difference = compare(reference, actual)
+            metrics, difference = compare_render(reference, actual, image, library)
             expected_score = metrics["iou"] if metrics["reference_ink"] else None
             if row.get("comparison") != metrics or row.get("score") != expected_score or sha(path(row["diff"])) != row["diff_sha256"]:
                 raise ValueError("Changed campaign comparison")

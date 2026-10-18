@@ -13,7 +13,7 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from conformance import load_cases, reference_images
-from accuracy.run import LIBRARIES, compare, gray, sha
+from accuracy.run import LIBRARIES, compare_render, gray, sha
 from accuracy.presentation import LEGEND, viewport, preview
 from accuracy.overview import case_page, rebase_links, score as format_score
 from report import NAMES, table
@@ -156,7 +156,7 @@ def generate(check=False):
                 record["image"] = str(path.relative_to(REPO))
                 render = compact(path, lib, f"{NAMES[lib]} render")
                 if baseline is not None:
-                    metrics, diff = compare(baseline, raster)
+                    metrics, diff = compare_render(baseline, raster, path, lib)
                     record.update(metrics)
                     record["score"] = (
                         metrics["iou"] if metrics["reference_ink"] else None

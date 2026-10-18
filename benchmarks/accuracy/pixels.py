@@ -10,6 +10,17 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def rgb(path):
+    """Retain color evidence needed to identify the trial stamp before thresholding."""
+    with Image.open(path) as image:
+        if image.width * image.height > 16_000_000:
+            raise ValueError("Raster limit exceeded")
+        rgba = image.convert("RGBA")
+        white = Image.new("RGBA", image.size, "white")
+        white.alpha_composite(rgba)
+        return np.array(white.convert("RGB"))
+
+
 def gray(path):
     with Image.open(path) as image:
         if image.width * image.height > 16_000_000:
