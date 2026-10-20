@@ -3,6 +3,7 @@
 import importlib.util
 import hashlib
 import json
+import mimetypes
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -245,12 +246,16 @@ class PublicationTests(unittest.TestCase):
             root = Path(temp)
             source = root / "input"
             source.mkdir()
-            (source / "first.zpl").write_text("^XA^XZ")
-            (source / "second.zpl").write_text("^XA^XZ")
+            original = b"^XA\r\n^FDOriginal <text> & bytes^FS\r\n^XZ\r\n"
+            (source / "first.zpl").write_bytes(original)
+            (source / "second.zpl").write_bytes(original)
             (source / "README.md").write_text("internal instructions")
             s = generate.Site(source, root / "output")
-            self.assertEqual(s.asset("first.zpl"), s.asset("second.zpl"))
-            self.assertEqual(len(list(s.output.rglob("*.zpl"))), 1)
+            asset = s.asset("first.zpl")
+            self.assertEqual(asset, s.asset("second.zpl"))
+            self.assertEqual(mimetypes.guess_type(asset)[0], "text/plain")
+            self.assertEqual((s.output / asset).read_bytes(), original)
+            self.assertEqual(len(list(s.output.rglob("*.zpl.txt"))), 1)
             self.assertFalse(list(s.output.rglob("*.md")))
 
     def test_link_checker_requires_files_and_fragments(self):
@@ -381,6 +386,9 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("1/1 scored", overview)
             self.assertIn("No observations", overview)
             self.assertEqual(len(list((site.output / "cases").glob("*.html"))), 5)
+            case_page = (site.output / "cases/accuracy--sample.html").read_text()
+            self.assertIn('.zpl.txt">View original ZPL</a>', case_page)
+            self.assertNotIn("Download exact ZPL", case_page)
             self.assertFalse(list(site.output.rglob("*.md")))
             (source / "docs/benchmarks/results.json").unlink()
             preview = generate.Site(source, root / "preview")

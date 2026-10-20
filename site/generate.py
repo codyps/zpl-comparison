@@ -305,7 +305,8 @@ class Site:
             return None
         if str(src) not in self.assets:
             digest = hashlib.sha256(src.read_bytes()).hexdigest()
-            target = "assets/" + digest + src.suffix.lower()
+            suffix = src.suffix.lower()
+            target = "assets/" + digest + (".zpl.txt" if suffix == ".zpl" else suffix)
             dest = self.output / target
             dest.parent.mkdir(exist_ok=True)
             if not dest.exists():
@@ -908,7 +909,7 @@ class Site:
                     "All results in this comparison",
                 )
                 + " · "
-                + self.link(c["source"], "Download exact ZPL")
+                + self.link(c["source"], "View original ZPL")
                 + "</p><p>"
                 + E(c["description"])
                 + "</p><p>"

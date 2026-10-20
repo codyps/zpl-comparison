@@ -5,6 +5,8 @@ evidence. It has one overview, `categories/`, `libraries/`, `cases/`, and a flat
 content-addressed `assets/` directory. URLs are relative, so project Pages paths,
 local previews and downloaded artifacts work without a configured base URL.
 No frontend framework or client-side routing is required. Pillow produces shared ink crops; its version is pinned with the report dependencies.
+ZPL evidence uses `.zpl.txt` filenames so browsers display the original bytes as
+plain text instead of forcing a download.
 
 ## Generate from saved evidence
 
