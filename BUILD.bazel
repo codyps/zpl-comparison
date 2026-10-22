@@ -102,7 +102,7 @@ rust_library(
     name = "zpl_bitmap_fonts",
     srcs = ["@rust_inputs//:zpl-bitmap-fonts_srcs"],
     crate_root = "@rust_inputs//:benchmarks/_work/zpl/zpl-bitmap-fonts/src/lib.rs",
-    crate_features = ["zd621"],
+    crate_features = ["zd621", "gx430t"],
     edition = "2021",
 )
 rust_library(
