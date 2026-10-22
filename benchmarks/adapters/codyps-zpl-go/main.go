@@ -22,6 +22,8 @@ func operation(ctx context.Context, engine *zpl.Engine, mode string, input []byt
 	case "", "zd621-203dpi", "zd621-preview-203dpi":
 	case "zq610-plus-203dpi":
 		profile = zpl.ZQ610Plus
+	case "gx430t-300dpi":
+		profile = zpl.GX430t
 	default:
 		return nil, fmt.Errorf("unknown ZPL_RENDER_PROFILE: %s", value)
 	}

@@ -57,7 +57,7 @@ def comparison(spec, metadata, images):
             row.update(
                 metrics, score=metrics["iou"] if metrics["reference_ink"] else None
             )
-            if spec["suite"] in {"public", "paired"}:
+            if spec["suite"] in {"public", "paired", "gx430t-300dpi"}:
                 row["comparison"] = metrics
             save_difference(diff, output / "image.png")
         else:

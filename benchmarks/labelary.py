@@ -15,6 +15,11 @@ import time
 REPO = Path(__file__).resolve().parent.parent
 DEFAULT = REPO / "docs/benchmarks/labelary"
 SERVICE = "https://labelary.com/service.html"
+# Measured API canvas conversion, distinct from marketed printer DPI. The
+# 2026-10-22 12-dpmm capture returned 843x2592 for (832/300)x(2558/300)
+# inches, and exactly 832x2558 for (832/304)x(2558/304) inches. Keep the
+# documented 8-dpmm 4-inch=812-dot conversion unchanged.
+CANVAS_DPI = {8: 203, 12: 304}
 
 
 def sha(path):
@@ -69,15 +74,23 @@ def key(case):
     return case["suite"] + "--" + case["name"]
 
 
-def inches(dots):
+def inches(dots, dpi=203):
     # Labelary truncates pixel dimensions; round upward, never below the target dot.
     return str(
-        (Decimal(dots) / 203).quantize(Decimal("0.000001"), rounding=ROUND_CEILING)
+        (Decimal(dots) / dpi).quantize(Decimal("0.000001"), rounding=ROUND_CEILING)
     )
 
 
-def capture(dest, extend=False):
-    from accuracy.run import gray
+def request_url(case, dpmm=8):
+    # API density and dimensions: https://labelary.com/service.html#parameters
+    dpi = CANVAS_DPI[dpmm]
+    return f"https://api.labelary.com/v1/printers/{dpmm}dpmm/labels/{inches(case['width'], dpi)}x{inches(case['height'], dpi)}/0/"
+
+
+def capture(dest, extend=False, dpmm=8):
+    from accuracy.pixels import gray
+
+    dpi = {8: 203, 12: 300}[dpmm]
 
     manifest_path = dest / "captures.json"
     if manifest_path.exists() and not extend:
@@ -92,8 +105,10 @@ def capture(dest, extend=False):
         completed_utc=None,
         renderer_version=None,
         identity="UTC capture timestamps; no renderer version exposed",
-        dpmm=8,
-        dimension_conversion="inches = ceil(dots / 203 to six decimal places); avoids truncation below the requested dot",
+        dpmm=dpmm,
+        dpi=dpi,
+        canvas_dpi=CANVAS_DPI[dpmm],
+        dimension_conversion=f"inches = ceil(dots / {CANVAS_DPI[dpmm]} to six decimal places); avoids truncation below the requested dot",
         label_index=0,
         status="incomplete",
         cases=[],
@@ -101,6 +116,9 @@ def capture(dest, extend=False):
     cases = inputs()
     if extend:
         data = json.loads(manifest_path.read_text())
+        if (data.get("dpmm", 8) != dpmm or data.get("dpi", dpi) != dpi
+                or data.get("canvas_dpi", 203) != CANVAS_DPI[dpmm]):
+            raise ValueError("Existing Labelary density changed")
         expected = {key(c): c for c in cases}
         seen = set()
         for row in data["cases"]:
@@ -135,8 +153,8 @@ def capture(dest, extend=False):
         source = REPO / case["source"]
         if sha(source) != case["sha256"]:
             raise ValueError("Changed input: " + str(source))
-        url = f"https://api.labelary.com/v1/printers/8dpmm/labels/{inches(case['width'])}x{inches(case['height'])}/0/"
-        row = dict(case, requested_utc=now(), url=url)
+        url = request_url(case, dpmm)
+        row = dict(case, requested_utc=now(), url=url, dpmm=dpmm, dpi=dpi)
         with tempfile.TemporaryDirectory() as tmp:
             headers, body = Path(tmp) / "headers", Path(tmp) / "body"
             for attempt in range(5):
@@ -232,10 +250,14 @@ def capture(dest, extend=False):
     manifest_path.write_text(json.dumps(data, indent=2) + "\n")
 
 
-def validate(dest):
-    from accuracy.run import gray
+def validate(dest, dpmm=8):
+    from accuracy.pixels import gray
 
+    dpi = {8: 203, 12: 300}[dpmm]
     data = json.loads((dest / "captures.json").read_text())
+    if (data.get("dpmm", 8) != dpmm or data.get("dpi", dpi) != dpi
+                or data.get("canvas_dpi", 203) != CANVAS_DPI[dpmm]):
+        raise ValueError("Labelary density mismatch")
     # Historical printer/printer_sha256 fields describe the oracle at capture
     # time, not the service request. Changing the printer baseline must not
     # invalidate a hash-matched service response for identical source and canvas.
@@ -247,6 +269,9 @@ def validate(dest):
     ):
         raise ValueError("Incomplete capture matrix")
     for case in data["cases"]:
+        if dpmm == 12 and (case.get("dpmm") != dpmm or case.get("dpi") != dpi
+                           or case.get("url") != request_url(case, dpmm)):
+            raise ValueError("Labelary request density or canvas mismatch")
         for field, value in expected[key(case)].items():
             if case[field] != value:
                 raise ValueError("Changed case metadata: " + key(case))

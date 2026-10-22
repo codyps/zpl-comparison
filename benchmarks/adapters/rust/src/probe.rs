@@ -80,9 +80,9 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Result<Vec<u8
                 label,
                 &mut png,
                 labelize::DrawerOptions {
-                    label_width_mm: width as f64 / 8.0,
-                    label_height_mm: height as f64 / 8.0,
-                    dpmm: 8,
+                    label_width_mm: width as f64 / (if super::dpi() == 300 { 12.0 } else { 8.0 }),
+                    label_height_mm: height as f64 / (if super::dpi() == 300 { 12.0 } else { 8.0 }),
+                    dpmm: if super::dpi() == 300 { 12 } else { 8 },
                     ..Default::default()
                 },
             )
@@ -95,7 +95,11 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Result<Vec<u8
             std::str::from_utf8(input).map_err(|e| e.to_string())?,
             forge::Unit::Dots(width),
             forge::Unit::Dots(height),
-            forge::Resolution::Dpi203,
+            if super::dpi() == 300 {
+                forge::Resolution::Dpi300
+            } else {
+                forge::Resolution::Dpi203
+            },
         )
         .map_err(|e| format!("{e:?}"))?;
         if mode == "probe-parse" {
@@ -109,7 +113,13 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Result<Vec<u8
         let _ = mode;
         return ffi::render_bytes_with_options(
             input,
-            &ffi::RenderOptions::new().size(width as i32, height as i32),
+            &ffi::RenderOptions::new()
+                .dpi(if super::dpi() == 300 {
+                    ffi::Dpi::Dpi300
+                } else {
+                    ffi::Dpi::Dpi203
+                })
+                .size(width as i32, height as i32),
         )
         .map_err(|e| format!("{e:?}"));
     }

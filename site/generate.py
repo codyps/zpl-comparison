@@ -529,6 +529,10 @@ class Site:
                 suite["cases"].append(case)
                 self.cases.append(case)
             self.suites.append(suite)
+        gx430t_base = "docs/benchmarks/gx430t-300dpi"
+        if (self.source / gx430t_base / "results.json").exists():
+            self.load_campaign_matrix(self.read(gx430t_base + "/results.json"), gx430t_base)
+            self.raw["gx430t-capture-receipt"] = self.asset("references/gx430t-300-v1/provenance.json")
         self.load_paired()
         self.load_public_examples()
         if len({c["key"] for c in self.cases}) != len(self.cases):
@@ -572,6 +576,8 @@ class Site:
             printer = source.get("printer")
             sid = "profile-" + printer if printer else "public-zpl"
             title = printer.upper() + " · all renderers against paired captures" if printer else "ZD621 · public documents (October 2026)"
+            if data["suite"] == "gx430t-300dpi":
+                sid, title = "gx430t-300dpi", "GX430t · 300 DPI"
             if sid not in suites:
                 suites[sid] = dict(id=sid, title=title, date=data["measured_utc"], cases=[], unavailable=data.get("unavailable", {}))
                 self.raw[sid] = raw

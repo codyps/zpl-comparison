@@ -732,3 +732,21 @@ py_test(
     data = [":library_codyps-zpl-go", ":comparison_fonts"],
     deps = [requirement("pillow")],
 )
+
+py_test(
+    name = "gx430t_test",
+    size = "small",
+    srcs = [
+        "build/gx430t_test.py",
+        "benchmarks/gx430t.py",
+        "benchmarks/gx430t_labelary.py",
+        "benchmarks/labelary.py",
+        "benchmarks/campaigns.py",
+        "benchmarks/accuracy/pixels.py",
+        "benchmarks/accuracy/metrics.py",
+    ],
+    main = "build/gx430t_test.py",
+    imports = ["benchmarks"],
+    data = glob(["references/gx430t-300-v1/**"]),
+    deps = [requirement("numpy"), requirement("pillow")],
+)

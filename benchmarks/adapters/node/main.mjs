@@ -8,7 +8,7 @@ async function run(args) {
   const height = Number(heightArg);
   if (![width, height].every(value => Number.isSafeInteger(value) && value > 0)) throw new Error("canvas dimensions");
   // Match the other adapters: pass the requested canvas through the public API.
-  const renderOptions = { printDensity: 8, width, height };
+  const renderOptions = { printDensity: process.env.ZPL_RENDER_PROFILE === 'gx430t-300dpi' ? 12 : 8, width, height };
   if (process.env.ZPL_FONT_DIR) {
     const directory = process.env.ZPL_FONT_DIR;
     const mapping = JSON.parse(fs.readFileSync(`${directory}/manifest.json`, 'utf8')).fonts;

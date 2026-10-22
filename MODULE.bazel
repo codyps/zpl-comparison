@@ -222,6 +222,8 @@ catalog(
         "//:test-data/public-zpl/manifest.json",
         "//:references/public-zd621-20261002/manifest.json",
         "//:references/zq610-plus-v1/manifest.json",
+        "//:references/gx430t-300-v1/manifest.json",
+        "//:references/gx430t-300-v1/labelary/captures.json",
         "//:references/paired-labelary/captures.json",
         "//:benchmarks/sources.lock.json",
         "//:benchmarks/accuracy/conformance-reference/manifest.json",

@@ -2,6 +2,7 @@
 
 load("@report_catalog//:catalog.bzl", "CATALOG")
 load("//:build/zq610.bzl", "zq610_matrix")
+load("//:build/gx430t.bzl", "gx430t_matrix")
 load("//:build/evaluations.bzl", "invalid_matrix")
 load("//:build/campaigns.bzl", "campaigns")
 
@@ -312,10 +313,16 @@ def _impl(ctx):
         publish.append((output, ""))
     overview = _stage(ctx, "accuracy-overview", _select(files, ["benchmarks/accuracy/overview.py"]) + aggregates + [(accuracy_report, "")], [["benchmarks/accuracy/overview.py", "docs/benchmarks/accuracy"]])
     publish.append((overview, ""))
+    gx430t = []
+    # The existing controlled font bundle and RAM captures are 203 DPI only.
+    if not ctx.attr.font_bundle:
+        gx430t = gx430t_matrix(ctx, files, compiled, baseline, catalog, LIBRARIES, _observation, _invoke, _stage, _select)
+        publish.extend(gx430t)
+        groups["suite_gx430t"] = depset([f for f, _ in gx430t])
     candidate_outputs = zq610_matrix(ctx, files, compiled, baseline, catalog, LIBRARIES, _observation, _invoke, _stage)
     publish.extend(candidate_outputs)
     groups["suite_zq610_candidates"] = depset([f for f, _ in candidate_outputs])
-    failures = _stage(ctx, "failure-inventory", _select(files, ["benchmarks/audit_failures.py"]) + aggregates + candidate_outputs + [(public, ""), (paired, "")],
+    failures = _stage(ctx, "failure-inventory", _select(files, ["benchmarks/audit_failures.py"]) + aggregates + candidate_outputs + gx430t + [(public, ""), (paired, "")],
                       [["benchmarks/audit_failures.py", "--input", ".", "--output", "docs/total-failures.json"]])
     publish.append((failures, ""))
     decoder = _stage(ctx, "barcode-decoder", _select(files, ["benchmarks/audit_public_barcodes.py", "references/public-zd621-20261002/", "docs/benchmarks/labelary/"]) + [(public, "")] + campaign_images,

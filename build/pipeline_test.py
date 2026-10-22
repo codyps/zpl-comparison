@@ -115,7 +115,7 @@ class PipelineTest(unittest.TestCase):
             campaigns.matrix({**data, "results": data["results"] + data["results"][:1]})
 
     def test_campaign_action_matrices_reject_omitted_renderers(self):
-        for suite in ["public", "paired"]:
+        for suite in ["public", "paired", "gx430t-300dpi"]:
             expected = ["case-" + lib for lib in LAYOUT_LIBRARIES]
             verify_layout_matrix(expected, expected, ["case"], suite)
             with self.assertRaisesRegex(AssertionError, "Incomplete " + suite):
@@ -181,8 +181,8 @@ class PipelineTest(unittest.TestCase):
             return subprocess.CompletedProcess(command, 0, b"", b"")
 
         with patch.dict(os.environ, {"ZPL_RENDER_PROFILE": "ambient-invalid"}):
-            for expected in ("zd621-203dpi", "zq610-plus-203dpi"):
-                if expected == "zq610-plus-203dpi":
+            for expected in ("zd621-203dpi", "zq610-plus-203dpi", "gx430t-300dpi"):
+                if expected != "zd621-203dpi":
                     spec["render_profile"] = expected
                 with patch("build.render.subprocess.run", side_effect=execute):
                     render(spec, self.root / "result.json", self.root / expected)

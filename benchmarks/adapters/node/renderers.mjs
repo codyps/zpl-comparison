@@ -14,15 +14,17 @@ async function run(args) {
   // Resolve dependencies beside each isolated adapter manifest, also after deployment.
   const require = createRequire(new URL(`../${library}/package.json`, import.meta.url));
   const input = fs.readFileSync(file);
+  const dpi = process.env.ZPL_RENDER_PROFILE === 'gx430t-300dpi' ? 300 : 203;
+  const dpmm = dpi === 300 ? 12 : 8;
   let parse, render;
   if (library === 'codyps-zpl-node') {
     const api = require('./index.cjs');
     const profileName = process.env.ZPL_RENDER_PROFILE ?? 'zd621-203dpi';
     // The public Node API cannot override individual ZD621 preview flags.
     const profile = {'zd621-203dpi': 'zd621', 'zd621-preview-203dpi': 'zd621',
-      'zq610-plus-203dpi': 'zq610-plus'}[profileName];
+      'zq610-plus-203dpi': 'zq610-plus', 'gx430t-300dpi': 'gx430t'}[profileName];
     if (!profile) throw new Error(`unknown ZPL_RENDER_PROFILE: ${profileName}`);
-    const options = {format: 'png', width, height, dpi: 203, profile};
+    const options = {format: 'png', width, height, dpi, profile};
     if (process.env.ZPL_FONT_DIR) {
       const directory = process.env.ZPL_FONT_DIR;
       const font0 = fs.readFileSync(`${directory}/0.ttf`);
@@ -53,7 +55,7 @@ async function run(args) {
     }
     render = async () => {
       if (decodingError) throw decodingError;
-      const labels = await api.zplToBase64MultipleAsync(source, width / 8, height / 8, 8,
+      const labels = await api.zplToBase64MultipleAsync(source, width / dpmm, height / dpmm, dpmm,
         {enableInvertedLabels: true, grayscaleOutput: false});
       if (!labels.length) return null;
       if (labels.length !== 1) throw new Error(`expected one label, got ${labels.length}`);
@@ -67,7 +69,7 @@ async function run(args) {
       if (!labels.length) return null;
       if (labels.length !== 1) throw new Error(`expected one label, got ${labels.length}`);
       return new api.Drawer().drawLabelAsPng(labels[0], {
-        labelWidthMm: width / 8, labelHeightMm: height / 8, dpmm: 8,
+        labelWidthMm: width / dpmm, labelHeightMm: height / dpmm, dpmm,
         enableInvertedLabels: true, grayscaleOutput: false,
       });
     };

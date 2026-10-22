@@ -40,6 +40,11 @@ visible in original renders. Grayscale-only evidence and achromatic stamps keep
 raw scores; masked results cannot establish exact equality or licensed fidelity.
 Source-review claims stay in `examination.html`.
 
+The `categories/gx430t-300dpi.html` category contains 34 native 300-DPI GX430t
+comparisons. It is generated from the separately verified GX430t campaign matrix;
+its scores stay separate from 203-DPI corpora. See the
+[capture provenance](../references/gx430t-300-v1/README.md).
+
 ## GitHub Pages
 
 The comparison workflow builds and validates the site on pull requests, uploads a

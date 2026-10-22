@@ -86,7 +86,7 @@ def verify(graph, layout_cases=(), saved=False, zq610_cases=(), campaign_cases=N
             assert not any("/bin/library_" in p or p.endswith("/results.json") for p in files), (outputs, "saved import depends on compilation or whole results document")
             images = [p for p in files if p.endswith(".png")]
             assert len(images) <= 1, (outputs, "saved import depends on unrelated images")
-            assert all(p.startswith(("docs/benchmarks/labelary/", "references/zq610-candidates/labelary/", "references/paired-labelary/", "external/+observation_baseline")) for p in images), (outputs, "saved import depends on printer evidence")
+            assert all(p.startswith(("docs/benchmarks/labelary/", "references/zq610-candidates/labelary/", "references/paired-labelary/", "references/gx430t-300-v1/labelary/", "external/+observation_baseline")) for p in images), (outputs, "saved import depends on printer evidence")
         if kind == "ZplRender":
             sources = [p for p in files if p.endswith(".zpl")]
             assert len(sources) == 1, (
@@ -173,5 +173,6 @@ if __name__ == "__main__":
                  "paired": [name + "-" + printer for name, c in paired["cases"].items()
                             if all(c["status"].get(p, {}).get("status") == "captured" for p in ["zq610", "zd621"])
                             for printer in ["zq610", "zd621"]]}
+    campaigns["gx430t-300dpi"] = [c["name"] for c in json.loads(Path("references/gx430t-300-v1/manifest.json").read_text())["cases"]]
     zq610 = [c["name"] for c in json.loads(Path("references/zq610-candidates/manifest.json").read_text())["cases"]]
     print(json.dumps(verify(json.loads(Path(sys.argv[1]).read_text()), cases, saved="--saved" in sys.argv[3:], zq610_cases=zq610, campaign_cases=campaigns), sort_keys=True))

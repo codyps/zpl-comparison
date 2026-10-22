@@ -32,7 +32,10 @@ def failure_kinds(row):
 
 def inventory(root):
     failures, counts = [], {}
-    for suite, relative in SUITES.items():
+    suites = dict(SUITES)
+    if (root / "docs/benchmarks/gx430t-300dpi/results.json").exists():
+        suites["gx430t-300dpi"] = "gx430t-300dpi/results.json"
+    for suite, relative in suites.items():
         data = json.loads((root / "docs/benchmarks" / relative).read_text())
         for row in data["results"]:
             key = suite + "/" + row["library"]

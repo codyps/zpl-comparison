@@ -2,6 +2,9 @@
 references/zq610-plus-v1/**/*.html -text -diff -whitespace
 references/zq610-plus-v1/**/*.zpl -text
 references/zq610-candidates/*.zpl -text
+references/gx430t-300-v1/*.html -text -diff -whitespace
+references/gx430t-300-v1/provenance.json -text -whitespace
+references/gx430t-300-v1/*.zpl -text
 references/zd621-fonts-20261008/*.html -text -diff -whitespace
 references/zd621-fonts-20261008/**/*.zpl -text
 references/font-controlled/sessions/**/*.html -text -diff -whitespace

@@ -23,6 +23,15 @@ The [October 2026 public-document campaign](../test-data/public-zpl/README.md) a
 CI reruns every local renderer, replays the saved Labelary responses, and regenerates
 the native comparisons and decoder evidence offline.
 
+## GX430t at 300 DPI
+
+[34 GX430t comparisons](../references/gx430t-300-v1/README.md) use original
+V56.17.17Z HTTP previews at 300 DPI / 12 dots per mm. Every local renderer receives
+the exact submitted source and native canvas. Text, layout, shapes, graphics and
+eight barcode families have their own site category and scores. Build just this
+matrix with `bazelisk build //:reports --output_groups=suite_gx430t`.
+Labelary replays separately captured, hash-verified 12-dpmm responses for all 34 cases.
+
 ## Font-controlled rendering
 
 [Font-controlled comparisons](fonts/README.md) supply recovered resident bitmap

@@ -89,7 +89,7 @@ def reports(data, output, root):
     indexed = matrix(data)
     def link(relative):
         return os.path.relpath(Path(root) / relative, output)
-    title = "Public documents against the ZD621" if data["suite"] == "public-zpl" else "Paired ZQ610 Plus / ZD621 comparisons"
+    title = {"public-zpl": "Public documents against the ZD621", "gx430t-300dpi": "GX430t · 300 DPI printer comparisons"}.get(data["suite"], "Paired ZQ610 Plus / ZD621 comparisons")
     method = (f"{len(data['cases'])} inputs × {len(data['libraries'])} renderers. "
               "Original fixture sources and complete native printer canvases; threshold 128, "
               "without alignment, padding, cropping or resizing. Failures, missing observations "

@@ -17,6 +17,7 @@ GitHub Pages is the publication destination; the old `generated` branch is an ar
 - [Run and reproduce measurements](benchmarks/README.md)
 - [Site generation and publication](site/README.md)
 - [Setup and provenance](PROVENANCE.md)
+- [GX430t 300-DPI comparisons](references/gx430t-300-v1/README.md)
 - [Capture provenance](references/zq610-plus-v1/README.md)
 - [Total comparison failure audit](docs/total-failure-audit.md)
 

@@ -60,6 +60,25 @@ class PublicationTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "Incomplete campaign"):
                     site.load_campaign_matrix({**data, "results": data["results"][:1]}, ".")
 
+    def test_gx430t_category_retains_native_density_and_unavailable_service(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for name in ["input.zpl", "printer.png", "results.json"]:
+                (root / name).write_text("evidence")
+            data = dict(schema=2, suite="gx430t-300dpi", measured_utc="recorded",
+                        libraries=["labelary"], manifests={},
+                        cases=[dict(name="font-A", group="text", width=832, height=2558,
+                                    source="input.zpl", reference="printer.png")],
+                        results=[dict(case="font-A", library="labelary", status="not_captured",
+                                      diagnostic="No 12-dpmm capture", score=None, dpi=300)])
+            site = generate.Site(root, root / "output")
+            site.load_campaign_matrix(data, ".")
+            self.assertEqual(site.suites[0]["id"], "gx430t-300dpi")
+            self.assertEqual(site.suites[0]["title"], "GX430t · 300 DPI")
+            self.assertEqual(site.cases[0]["rows"][0]["dpi"], 300)
+            self.assertIsNone(site.cases[0]["rows"][0]["score"])
+            self.assertEqual(site.cases[0]["metadata"]["height"], 2558)
+
     def test_memory_page_identifies_protocol_and_sample_range(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -359,6 +378,13 @@ class PublicationTests(unittest.TestCase):
                 {"cases": {}, "unavailable": {}},
             )
             put("references/zq610-plus-v1/manifest.json", {})
+            put("references/gx430t-300-v1/provenance.json", {"printer": {"model": "GX430t", "dpi": 300}})
+            put("docs/benchmarks/gx430t-300dpi/results.json", dict(
+                schema=2, suite="gx430t-300dpi", measured_utc="recorded", manifests={},
+                libraries=["go"], cases=[dict(name="sample", group="text", width=832, height=2558,
+                                               source="sample.zpl", reference="printer.png")],
+                results=[dict(case="sample", library="go", status="not_captured", score=None,
+                              diagnostic="Pending 300-DPI observation", dpi=300)]))
             put(
                 "docs/benchmarks/results.json",
                 {"timestamp_utc": "2000-01-01", "sizes": {}, "results": []},
@@ -385,7 +411,11 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("0.0%", overview)
             self.assertIn("1/1 scored", overview)
             self.assertIn("No observations", overview)
-            self.assertEqual(len(list((site.output / "cases").glob("*.html"))), 5)
+            self.assertEqual(len(list((site.output / "cases").glob("*.html"))), 6)
+            gx430t = (site.output / "categories/gx430t-300dpi.html").read_text()
+            self.assertIn("GX430t · 300 DPI", gx430t)
+            self.assertIn("gx430t-300dpi--sample.html", gx430t)
+            self.assertIn("Pending 300-DPI observation", (site.output / "cases/gx430t-300dpi--sample.html").read_text())
             case_page = (site.output / "cases/accuracy--sample.html").read_text()
             self.assertIn('.zpl.txt">View original ZPL</a>', case_page)
             self.assertNotIn("Download exact ZPL", case_page)

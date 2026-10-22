@@ -100,6 +100,9 @@ def normalize(source, output, revision):
     for row in invalid["results"]:
         name = "-".join(row[k] for k in ["case", "library", "mode"])
         write(output / "probes" / (name + ".json"), row)
+    gx430t = source / "docs/benchmarks/gx430t-300dpi/results.json"
+    if gx430t.exists():
+        campaign(source, output, json.loads(gx430t.read_text()), "gx430t-300dpi", revision)
     # Preserve current campaign observations in the same per-case replay format.
     public = json.loads((source / "docs/public-examples/results.json").read_text())
     campaign(source, output, public, "public", revision)

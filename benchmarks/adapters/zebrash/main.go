@@ -29,9 +29,13 @@ func operation(mode string, input []byte, width, height int) ([]byte, error) {
 	if len(labels) != 1 {
 		return nil, fmt.Errorf("expected one label, got %d", len(labels))
 	}
+	dpmm := 8
+	if os.Getenv("ZPL_RENDER_PROFILE") == "gx430t-300dpi" {
+		dpmm = 12
+	}
 	var out bytes.Buffer
 	err = zebrash.NewDrawer().DrawLabelAsPng(labels[0], &out, drawers.DrawerOptions{
-		LabelWidthMm: float64(width) / 8, LabelHeightMm: float64(height) / 8, Dpmm: 8,
+		LabelWidthMm: float64(width) / float64(dpmm), LabelHeightMm: float64(height) / float64(dpmm), Dpmm: dpmm,
 		EnableInvertedLabels: true,
 	})
 	return out.Bytes(), err

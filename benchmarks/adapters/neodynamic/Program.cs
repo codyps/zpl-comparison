@@ -25,7 +25,7 @@ void Run(string[] args) {
         // A virtual printer retains downloads and command state: isolate every document.
         // Empty credentials deliberately select evaluation mode, including its unmodified stamp.
         using var printer = new ZPLPrinter("", "") {
-            Dpi = 203,
+            Dpi = Environment.GetEnvironmentVariable("ZPL_RENDER_PROFILE") == "gx430t-300dpi" ? 300 : 203,
             LabelWidth = width,
             LabelHeight = height,
             RenderOutputFormat = RenderOutputFormat.PNG,

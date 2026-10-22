@@ -34,6 +34,8 @@ class RendererReuseTest(unittest.TestCase):
                     (b'^XA^XFR:LEAK.ZPL^FS^XZ', 192, 120, '', 'zd621-203dpi'),
                     (b'^XA^CC!!FO10,10!GB20,20,2!FS!XZ', 192, 120, '', 'zd621-203dpi'),
                     (BASIC, 192, 120, '', 'zq610-plus-203dpi'),
+                    (BASIC, 192, 120, '', 'gx430t-300dpi'),
+                    (BASIC, 192, 120, '', 'zd621-203dpi'),
                     (preamble + BASIC, 192, 120, supplied, 'zd621-203dpi'),
                     (BASIC, 192, 120, '', 'zd621-203dpi'),
                     ('^XA^CI28^FO10,10^A0N,20,20^FDCafé^FS^XZ'.encode(), 192, 120, '', 'zd621-203dpi'),

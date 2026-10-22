@@ -18,6 +18,7 @@ using var mono = SKTypeface.FromFile(Path.Combine(fontDirectory, "DejaVu Sans Mo
 
 void Run(string[] args) {
     var mode = args[0];
+    var dpmm = Environment.GetEnvironmentVariable("ZPL_RENDER_PROFILE") == "gx430t-300dpi" ? 12 : 8;
     // The analyzer accepts Unicode text; never replace unrepresentable input bytes.
     var source = new System.Text.UTF8Encoding(false, true).GetString(File.ReadAllBytes(args[1]));
     var n = int.Parse(args[2]);
@@ -45,7 +46,7 @@ void Run(string[] args) {
             var info = new ZplAnalyzer(storage).Analyze(source);
             if (info.LabelInfos.Length != 1) throw new Exception("Expected one label");
             if (mode == "parse") { GC.KeepAlive(info); return new byte[] {1}; }
-            return Drawer(storage).Draw(info.LabelInfos[0].ZplElements, width / 8.0, height / 8.0, 8);
+            return Drawer(storage).Draw(info.LabelInfos[0].ZplElements, width / (double)dpmm, height / (double)dpmm, dpmm);
         }
         if (mode == "probe-parse" || mode == "probe-render") {
             byte[]? output = null;
@@ -58,7 +59,7 @@ void Run(string[] args) {
                     verdict = "rejected";
                 } else if (mode == "probe-render") {
                     if (info.LabelInfos.Length == 0) verdict = "accepted-empty";
-                    else output = Drawer(storage).Draw(info.LabelInfos[0].ZplElements, width / 8.0, height / 8.0, 8);
+                    else output = Drawer(storage).Draw(info.LabelInfos[0].ZplElements, width / (double)dpmm, height / (double)dpmm, dpmm);
                 }
             } catch (Exception error) {
                 Console.Error.WriteLine(error);

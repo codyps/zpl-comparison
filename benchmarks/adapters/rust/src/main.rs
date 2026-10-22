@@ -3,13 +3,23 @@
 use std::{env, fs, hint::black_box, time::Instant};
 mod probe;
 
+// The GX430t campaign uses the printer's marketed 300 DPI (12 dots/mm).
+fn dpi() -> u32 {
+    if env::var("ZPL_RENDER_PROFILE").as_deref() == Ok("gx430t-300dpi") {
+        300
+    } else {
+        203
+    }
+}
+
 #[cfg(feature = "codyps-zpl")]
 fn render_options(width: u32, height: u32) -> codyps_zpl::Options {
-    use codyps_zpl::render::profiles::{ZD621_203_DPI, ZQ610_PLUS_203_DPI};
+    use codyps_zpl::render::profiles::{GX430T_300_DPI, ZD621_203_DPI, ZQ610_PLUS_203_DPI};
     // Select the captured device explicitly; dimensions alone do not select
     // firmware behavior (in particular ZQ610 ^LL and preview width handling).
     let profile = match env::var("ZPL_RENDER_PROFILE").as_deref() {
         Ok("zq610-plus-203dpi") => ZQ610_PLUS_203_DPI,
+        Ok("gx430t-300dpi") => GX430T_300_DPI,
         Ok("zd621-preview-203dpi") => {
             let mut preview = ZD621_203_DPI;
             preview.compatibility.preview_width_quantum = Some(64);
@@ -22,7 +32,7 @@ fn render_options(width: u32, height: u32) -> codyps_zpl::Options {
     codyps_zpl::Options {
         width,
         height,
-        dpi: 203,
+        dpi: dpi(),
         ..profile
     }
 }
@@ -124,9 +134,9 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
                 &labels[0],
                 &mut png,
                 labelize::DrawerOptions {
-                    label_width_mm: width as f64 / 8.0,
-                    label_height_mm: height as f64 / 8.0,
-                    dpmm: 8,
+                    label_width_mm: width as f64 / (if dpi() == 300 { 12.0 } else { 8.0 }),
+                    label_height_mm: height as f64 / (if dpi() == 300 { 12.0 } else { 8.0 }),
+                    dpmm: if dpi() == 300 { 12 } else { 8 },
                     ..Default::default()
                 },
             )
@@ -139,7 +149,11 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
             black_box(std::str::from_utf8(input).unwrap()),
             forge::Unit::Dots(width),
             forge::Unit::Dots(height),
-            forge::Resolution::Dpi203,
+            if dpi() == 300 {
+                forge::Resolution::Dpi300
+            } else {
+                forge::Resolution::Dpi203
+            },
         )
         .expect("parse");
         if mode == "parse" {
@@ -173,7 +187,13 @@ fn operation(mode: &str, input: &[u8], width: u32, height: u32) -> Vec<u8> {
         assert!(matches!(mode, "png" | "accuracy"));
         return ffi::render_bytes_with_options(
             black_box(input),
-            &ffi::RenderOptions::new().size(width as i32, height as i32),
+            &ffi::RenderOptions::new()
+                .dpi(if dpi() == 300 {
+                    ffi::Dpi::Dpi300
+                } else {
+                    ffi::Dpi::Dpi203
+                })
+                .size(width as i32, height as i32),
         )
         .expect("PNG");
     }

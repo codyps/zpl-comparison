@@ -12,6 +12,13 @@ import (
 	"time"
 )
 
+func density() zpl.DPI {
+	if os.Getenv("ZPL_RENDER_PROFILE") == "gx430t-300dpi" {
+		return zpl.DPI300
+	}
+	return zpl.DPI203
+}
+
 func operation(mode, input string, width, height int) []byte {
 	label, err := zpl.Parse(input)
 	if err != nil {
@@ -22,7 +29,7 @@ func operation(mode, input string, width, height int) []byte {
 		return []byte{1}
 	}
 	var out bytes.Buffer
-	if err := render.New(zpl.DPI203).WithSize(width, height).RenderPNG(label, &out); err != nil {
+	if err := render.New(density()).WithSize(width, height).RenderPNG(label, &out); err != nil {
 		panic(err)
 	}
 	return out.Bytes()
@@ -53,7 +60,7 @@ func main() {
 		}
 		if os.Args[1] == "probe-render" {
 			var out bytes.Buffer
-			if err := render.New(zpl.DPI203).WithSize(width, height).RenderPNG(label, &out); err != nil {
+			if err := render.New(density()).WithSize(width, height).RenderPNG(label, &out); err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				fmt.Println("rejected")
 				return
