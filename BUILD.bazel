@@ -68,6 +68,7 @@ filegroup(
         "//benchmarks/adapters/node:source_files",
         "//benchmarks/adapters/zpl-renderer-js:source_files",
         "//benchmarks/adapters/zebrash-ts:source_files",
+        "//benchmarks/adapters/zplkit-ts:source_files",
         "LICENSE",
         "PROVENANCE.md",
         "README.md",
@@ -254,7 +255,7 @@ native_library(
     deps = ["@" + lib.replace("-", "_") + "_inputs//:files"],
     npm = "//benchmarks/adapters/" + lib + ":node_modules",
     package_json = "//benchmarks/adapters/" + lib + ":package.json",
-) for lib in ["zpl-renderer-js", "zebrash-ts"]]
+) for lib in ["zpl-renderer-js", "zebrash-ts", "zplkit-ts"]]
 
 executable_file(name = "wasm_bindgen_cli", src = "@native_tools//:wasm-bindgen/wasm-bindgen")
 rust_wasm_bindgen_toolchain(
@@ -371,6 +372,7 @@ filegroup(
         "zebrash",
         "zpl-renderer-js",
         "zebrash-ts",
+        "zplkit-ts",
         "codyps-zpl-node",
         "codyps-zpl-go",
         "binarykits",
@@ -449,7 +451,7 @@ py_test(
 filegroup(
     name = "render_libraries",
     srcs = [":library_" + lib for lib in [
-        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "neodynamic", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go",
+        "codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "neodynamic", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node", "codyps-zpl-go",
     ]],
 )
 
@@ -469,6 +471,7 @@ pipeline(
         "zebrash",
         "zpl-renderer-js",
         "zebrash-ts",
+        "zplkit-ts",
         "codyps-zpl-node",
         "codyps-zpl-go",
     ]],
@@ -672,6 +675,7 @@ pipeline(
         "zebrash",
         "zpl-renderer-js",
         "zebrash-ts",
+        "zplkit-ts",
         "codyps-zpl-node",
         "codyps-zpl-go",
     ]],
@@ -721,7 +725,7 @@ py_test(
     timeout = "short",
     srcs = ["build/renderer_reuse_test.py", "build/renderer_session.py", "build/font_profile.py"],
     main = "build/renderer_reuse_test.py",
-    data = [":comparison_fonts"] + [":library_" + name for name in ["zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits"]],
+    data = [":comparison_fonts"] + [":library_" + name for name in ["zplr", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node", "binarykits"]],
 )
 
 py_test(
@@ -749,4 +753,13 @@ py_test(
     imports = ["benchmarks"],
     data = glob(["references/gx430t-300-v1/**"]),
     deps = [requirement("numpy"), requirement("pillow")],
+)
+
+py_test(
+    name = "zplkit_ts_adapter_test",
+    size = "small",
+    srcs = ["build/zplkit_ts_adapter_test.py"],
+    main = "build/zplkit_ts_adapter_test.py",
+    data = [":library_zplkit-ts"],
+    deps = [requirement("pillow")],
 )

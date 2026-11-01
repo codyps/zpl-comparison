@@ -33,6 +33,7 @@ MODES = {
     "zebrash": ["parse", "png"],
     "zpl-renderer-js": ["png"],
     "zebrash-ts": ["parse", "png"],
+    "zplkit-ts": ["parse", "png"],
     "builder": ["generate"],
     "python": ["generate"],
     "jszpl": ["generate"],
@@ -95,7 +96,7 @@ def node_files(name):
     if name == "codyps-zpl-node":
         package = ROOT / "adapters" / name
         return [p for p in package.rglob("*") if p.is_file()] + [ROOT / "adapters/node/renderers.mjs"]
-    extra = name in {"zpl-renderer-js", "zebrash-ts"}
+    extra = name in {"zpl-renderer-js", "zebrash-ts", "zplkit-ts"}
     base = ROOT / "adapters" / (name if extra else "node")
     lock = json.loads((base / "package-lock.json").read_text())["packages"]
     seen = set()
@@ -127,7 +128,7 @@ def node_files(name):
                     else ""
                 )
 
-    visit("node_modules/" + ("@zebrash/node" if name == "zebrash-ts" else name))
+    visit("node_modules/" + ({"zebrash-ts": "@zebrash/node", "zplkit-ts": "@zplkit/render"}.get(name, name)))
     return [p for key in seen for p in (base / key).rglob("*") if p.is_file()] + [
         ROOT / "adapters/node" / ("renderers.mjs" if extra else "main.mjs")
     ] + ([base / "api.mjs"] if name == "zebrash-ts" else [])
@@ -254,6 +255,7 @@ def source_sizes(metadata):
         "zplr": [ROOT / "_work/zplr/src"],
         "zebrash": [ROOT / "_work/zebrash"],
         "zpl-renderer-js": [ROOT / "_work/zpl-renderer-js/src", ROOT / "_work/zpl-renderer-js/zebrash"],
+        "zplkit-ts": [ROOT / "_work/zplkit-ts/packages/zpl/src", ROOT / "_work/zplkit-ts/packages/render/src"],
         "zebrash-ts": [ROOT / "_work/zebrash-ts/packages/core/src", ROOT / "_work/zebrash-ts/packages/node/src"],
     }
     result = {}
@@ -391,7 +393,7 @@ def main():
         elif name in {"binarykits", "neodynamic"}:
             directory = "dotnet-out" if name == "binarykits" else "neodynamic-out"
             files = [p for p in (ROOT / "_work" / directory).rglob("*") if p.is_file()]
-        elif name in ["zplr", "jszpl", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"]:
+        elif name in ["zplr", "jszpl", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node"]:
             files = node_files(name)
         else:
             files = list((ROOT / "_work/python-zpl/zpl").rglob("*.py")) + [

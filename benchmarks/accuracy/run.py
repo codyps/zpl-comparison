@@ -29,6 +29,7 @@ LIBRARIES = [
     "zebrash",
     "zpl-renderer-js",
     "zebrash-ts",
+    "zplkit-ts",
     "labelary",
 ]
 
@@ -150,7 +151,7 @@ def main():
             )
         if name == "binarykits":
             paths.extend((ROOT / "_work/dotnet-out").glob("*.dll"))
-        if name in {"zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
+        if name in {"zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node"}:
             from run import node_files
             paths.extend(node_files(name))
             paths.append(ROOT / "sources.lock.json" if name == "codyps-zpl-node" else ROOT / "adapters" / name / "package-lock.json")

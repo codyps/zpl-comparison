@@ -28,3 +28,6 @@ _*
 
 # Locally built upstream Node/Wasm package (prepare.py).
 /benchmarks/adapters/codyps-zpl-node/
+
+# Locally installed dependencies for the TypeScript zplkit adapter.
+/benchmarks/adapters/zplkit-ts/node_modules/

@@ -6,7 +6,7 @@ from functools import lru_cache
 from pathlib import Path
 
 CALLBACK = {'binarykits', 'forge', 'zplr'}
-DOWNLOAD = {'zebrash', 'zebrash-ts', 'zpl-renderer-js'}
+DOWNLOAD = {'zplkit-ts', 'zebrash', 'zebrash-ts', 'zpl-renderer-js'}
 FIXED = {
     'neodynamic': 'Resident SDK fonts retained; this adapter does not replace them. Trial stamp and non-ASCII substitutions remain in output.',
     'labelize': 'Fixed embedded faces; Renderer exposes no font loader.',

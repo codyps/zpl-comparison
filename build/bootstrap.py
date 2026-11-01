@@ -62,7 +62,7 @@ elif kind == "go":
     source("go-zpl", root / "benchmarks/_work/go-zpl")
 elif kind == "zebrash":
     source("zebrash", root / "benchmarks/_work/zebrash")
-elif kind in ["zpl-renderer-js", "zebrash-ts"]:
+elif kind in ["zpl-renderer-js", "zebrash-ts", "zplkit-ts"]:
     source(kind, root / "benchmarks/_work" / kind)
 elif kind == "codyps-zpl-node":
     source("zpl", root / "benchmarks/_work/codyps-zpl-node")

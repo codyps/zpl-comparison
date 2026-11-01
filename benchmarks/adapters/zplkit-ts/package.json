@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@zplkit/core": "2.2.0",
+    "@zplkit/render": "0.2.1"
+  }
+}

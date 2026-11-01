@@ -33,6 +33,7 @@ LANES = {
     "zebrash": ["parse", "render"],
     "zpl-renderer-js": ["render"],
     "zebrash-ts": ["parse", "render"],
+    "zplkit-ts": ["parse", "render"],
 }
 FAULTS = {"crash", "timeout", "process-error", "harness-error"}
 
@@ -337,6 +338,7 @@ def main():
         ROOT / "adapters/zebrash/go.sum",
         ROOT / "adapters/zpl-renderer-js/package-lock.json",
         ROOT / "adapters/zebrash-ts/package-lock.json",
+        ROOT / "adapters/zplkit-ts/package-lock.json",
         ROOT / "adapters/dotnet/Program.cs",
         ROOT / "adapters/neodynamic/Program.cs",
     ]
@@ -355,7 +357,7 @@ def main():
         if lib in {"binarykits", "neodynamic"}:
             directory = "dotnet-out" if lib == "binarykits" else "neodynamic-out"
             files.extend((ROOT / "_work" / directory).glob("*.dll"))
-        if lib in {"zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
+        if lib in {"zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node"}:
             from run import node_files
             files.extend(node_files(lib))
         identities[lib] = [dict(name=p.name, sha256=sha(p)) for p in files]

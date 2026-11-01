@@ -637,3 +637,20 @@ To add the artifact to an assembled writable report tree and build its site:
 bazel run //:zplkit_import -- merge --root "$PWD" --artifact /path/to/observations --reports /path/to/writable-reports
 bazel run //:comparison_site -- --input /path/to/writable-reports --output /new/site-directory
 ```
+
+## TypeScript ludwig-f/zplkit
+
+`zplkit-ts` measures `@zplkit/core` 2.2.0 parsing and `@zplkit/render`
+0.2.1 PNG rendering. This is distinct from the Swift `zplkit` adapter.
+Build with `bazelisk build //:library_zplkit-ts`, or install with
+`prepare.py --only zplkit-ts`. Source and package dependency revisions are pinned.
+
+The public string APIs receive strictly decoded UTF-8 with the original BOM
+preserved; invalid UTF-8 is rejected instead of replaced. Parser diagnostics
+are warnings and do not turn accepted input into rejection. Each render reparses
+the source, uses the requested native canvas at 8 or 12 dpmm with grayscale
+disabled, and requires one output label. No input geometry or output is rewritten.
+The adapter joins the accuracy campaigns, invalid parse/render probes and
+performance comparisons. Controlled-font runs use public `~DU/^CW` downloads;
+ordinary runs retain the package's open-licensed substitutes. Generation, linting,
+printing and browser rendering are outside the measured adapter.

@@ -9,7 +9,7 @@ import unittest
 from build import renderer_session as sessions
 from build.font_profile import configure
 
-LIBRARIES = ['zplr', 'zpl-renderer-js', 'zebrash-ts', 'codyps-zpl-node', 'binarykits']
+LIBRARIES = ['zplr', 'zpl-renderer-js', 'zebrash-ts', 'zplkit-ts', 'codyps-zpl-node', 'binarykits']
 BASIC = b'^XA^FO10,10^A0N,20,20^FDCafe^FS^FO10,45^GB30,20,3^FS^XZ'
 
 

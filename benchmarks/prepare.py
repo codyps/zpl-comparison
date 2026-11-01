@@ -11,7 +11,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parent
 WORK = ROOT / "_work"
 RUST = ["codyps-zpl", "toolchain", "labelize", "forge", "builder", "ffi"]
-EXTRA_RENDERERS = ["neodynamic", "codyps-zpl-go", "codyps-zpl-node", "zebrash", "zpl-renderer-js", "zebrash-ts"]
+EXTRA_RENDERERS = ["neodynamic", "codyps-zpl-go", "codyps-zpl-node", "zebrash", "zpl-renderer-js", "zebrash-ts", "zplkit-ts"]
 
 
 def run(args, **kw):
@@ -103,7 +103,7 @@ def main():
         run(["go", "build", "-mod=readonly", "-trimpath", "-buildvcs=false", "-ldflags=-s -w",
              "-o", WORK / "zebrash-adapter", "."], cwd=ROOT / "adapters/zebrash", env=env)
         commands["zebrash"] = [str(WORK / "zebrash-adapter")]
-    for name in ["zpl-renderer-js", "zebrash-ts"]:
+    for name in ["zpl-renderer-js", "zebrash-ts", "zplkit-ts"]:
         if name in selected:
             run(["npm", "ci", "--ignore-scripts", "--cache", WORK / "npm-cache"],
                 cwd=ROOT / "adapters" / name, env=env)

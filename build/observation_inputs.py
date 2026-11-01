@@ -5,10 +5,10 @@ import json
 from pathlib import Path
 import sys
 
-LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "neodynamic", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go"]
+LIBRARIES = ["codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "neodynamic", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node", "codyps-zpl-go"]
 SOURCE = {"codyps-zpl-go": "zpl", "codyps-zpl-node": "zpl", "codyps-zpl": "zpl", "labelize": "labelize", "forge": "zpl-forge",
           "go": "go-zpl", "ffi": "go-zpl", "binarykits": "BinaryKits.Zpl", "neodynamic": None, "zplr": "zplr",
-          "zebrash": "zebrash", "zpl-renderer-js": "zpl-renderer-js", "zebrash-ts": "zebrash-ts"}
+          "zebrash": "zebrash", "zpl-renderer-js": "zpl-renderer-js", "zebrash-ts": "zebrash-ts", "zplkit-ts": "zplkit-ts"}
 
 
 def identities(files, probe=False, python_version=""):
@@ -17,7 +17,7 @@ def identities(files, probe=False, python_version=""):
     for library in LIBRARIES:
         language = "rust" if library in {"codyps-zpl", "labelize", "forge", "ffi"} else "go" if library in {"go", "codyps-zpl-go"} else "dotnet" if library in {"binarykits", "neodynamic"} else "node"
         prefixes = ["benchmarks/adapters/" + language + "/"]
-        if library in {"zebrash", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "codyps-zpl-go", "neodynamic"}:
+        if library in {"zebrash", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node", "codyps-zpl-go", "neodynamic"}:
             prefixes = ["benchmarks/adapters/" + library + "/"]
             if library not in {"zebrash", "codyps-zpl-go", "neodynamic"}:
                 prefixes.extend(["benchmarks/adapters/node/renderers.mjs", "benchmarks/adapters/node/session.mjs"])

@@ -36,6 +36,7 @@ NAMES = {
     "zebrash": "Zebrash (Go)",
     "zpl-renderer-js": "zpl-renderer-js (WASM)",
     "zebrash-ts": "zebrash-ts (TypeScript)",
+    "zplkit-ts": "zplkit (TypeScript)",
     "builder": "zpl-builder",
     "python": "Python ZPL",
     "jszpl": "JSZPL",

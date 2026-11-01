@@ -56,5 +56,10 @@
     "url": "https://github.com/Fountain-Bio/zebrash-ts",
     "rev": "a063491cb2e30d063ba84ea9f61a4b986de77a07",
     "version": "1.0.4"
+  },
+  "zplkit-ts": {
+    "url": "https://github.com/ludwig-f/zplkit",
+    "rev": "10eeff7123387c9406f97dde44e0e28141402f84",
+    "version": "0.2.1"
   }
 }

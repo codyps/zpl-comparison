@@ -23,6 +23,7 @@ def source_size(root, name, native=None):
         "zplr": [root / "benchmarks/_work/zplr/src"],
         "zebrash": [root / "benchmarks/_work/zebrash"],
         "zpl-renderer-js": [root / "benchmarks/_work/zpl-renderer-js/src", root / "benchmarks/_work/zpl-renderer-js/zebrash"],
+        "zplkit-ts": [root / "benchmarks/_work/zplkit-ts/packages/zpl/src", root / "benchmarks/_work/zplkit-ts/packages/render/src"],
         "zebrash-ts": [root / "benchmarks/_work/zebrash-ts/packages/core/src", root / "benchmarks/_work/zebrash-ts/packages/node/src"],
     }
     package = {"labelize": "labelize", "forge": "zpl-forge", "ffi": "zpl-rs"}.get(name)
@@ -107,7 +108,7 @@ def build(spec, output):
             shutil.copy2(
                 root / "benchmarks/adapters/node/main.mjs", output / "main.mjs"
             )
-        elif name in ["zpl-renderer-js", "zebrash-ts"]:
+        elif name in ["zpl-renderer-js", "zebrash-ts", "zplkit-ts"]:
             # Keep independent npm closures so deployment sizes exclude other renderers.
             package = output / name
             package.mkdir()
@@ -134,13 +135,13 @@ def build(spec, output):
             shutil.copy2(tools / "dotnet/dotnet", output / "runtime/dotnet")
         else:
             raise ValueError(name)
-        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"}:
+        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node"}:
             (output / "runtime/bin").mkdir(parents=True)
             shutil.copy2(root / "built/node", output / "runtime/bin/node")
             shutil.copy2(root / "built/node.LICENSE", output / "runtime/LICENSE")
             driver = output if name == "zplr" else output / "node"
             shutil.copy2(root / "benchmarks/adapters/node/session.mjs", driver / "session.mjs")
-        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "codyps-zpl-node", "binarykits", "neodynamic"}:
+        if name in {"zplr", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node", "binarykits", "neodynamic"}:
             (output / "session.json").write_text('{"protocol": 1}\n')
         size = source_size(root, name, Path(spec["native"]).resolve() if spec.get("native") else None)
         deployed = [p for p in output.rglob("*") if p.is_file() and "runtime" not in p.relative_to(output).parts]
@@ -152,7 +153,7 @@ def build(spec, output):
             ["runtime/bin/node", "main.mjs", "zplr"]
             if name == "zplr"
             else ["runtime/bin/node", "node/renderers.mjs", "--library=" + name]
-            if name in ["zpl-renderer-js", "zebrash-ts", "codyps-zpl-node"]
+            if name in ["zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node"]
             else ["runtime/dotnet", "Comparison.dll"]
             if name in {"binarykits", "neodynamic"}
             else ["adapter"]

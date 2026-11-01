@@ -81,6 +81,7 @@ def _inputs_impl(ctx):
         "zebrash": ["benchmarks/_work/zebrash/**"],
         "zpl-renderer-js": ["benchmarks/_work/zpl-renderer-js/**"],
         "zebrash-ts": ["benchmarks/_work/zebrash-ts/**"],
+        "zplkit-ts": ["benchmarks/_work/zplkit-ts/**"],
         "dotnet": ["benchmarks/_work/BinaryKits.Zpl/**"],
     }
     build += 'filegroup(name="support",srcs=glob(%s))\n' % repr(support[ctx.attr.kind])

@@ -61,6 +61,30 @@ async function run(args) {
       if (labels.length !== 1) throw new Error(`expected one label, got ${labels.length}`);
       return Buffer.from(labels[0], 'base64');
     };
+  } else if (library === 'zplkit-ts') {
+    const api = await import(require.resolve('@zplkit/render'));
+    const core = await import(require.resolve('@zplkit/core'));
+    // The public API takes strings; retain a failed UTF-8 decode as rejection.
+    let source, decodingError;
+    try {
+      source = new TextDecoder('utf-8', {fatal: true, ignoreBOM: true}).decode(input);
+    } catch (error) {
+      decodingError = error;
+    }
+    parse = () => {
+      if (decodingError) throw decodingError;
+      // Parser warnings are diagnostics, not rejection by the public API.
+      return core.parse(source);
+    };
+    render = async () => {
+      if (decodingError) throw decodingError;
+      const labels = await api.renderZpl(source, {
+        widthMm: width / dpmm, heightMm: height / dpmm, dpmm, grayscale: false,
+      });
+      if (!labels.length) return null;
+      if (labels.length !== 1) throw new Error(`expected one label, got ${labels.length}`);
+      return Buffer.from(labels[0], 'base64');
+    };
   } else if (library === 'zebrash-ts') {
     const api = await import('../zebrash-ts/api.mjs');
     parse = () => new api.Parser().parse(input);

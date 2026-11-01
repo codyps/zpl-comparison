@@ -134,6 +134,12 @@ native_inputs(
 )
 
 native_inputs(
+    name = "zplkit_ts_inputs",
+    kind = "zplkit-ts",
+    manifests = ["//:benchmarks/sources.lock.json"],
+)
+
+native_inputs(
     name = "codyps_zpl_node_inputs",
     kind = "codyps-zpl-node",
     manifests = ["//:benchmarks/sources.lock.json"],
@@ -194,6 +200,10 @@ catalog(
         "//benchmarks/adapters/zpl-renderer-js:package-lock.json",
         "//benchmarks/adapters/zpl-renderer-js:pnpm-lock.yaml",
         "//benchmarks/adapters/zpl-renderer-js:pnpm-workspace.yaml",
+        "//benchmarks/adapters/zplkit-ts:package.json",
+        "//benchmarks/adapters/zplkit-ts:package-lock.json",
+        "//benchmarks/adapters/zplkit-ts:pnpm-lock.yaml",
+        "//benchmarks/adapters/zplkit-ts:pnpm-workspace.yaml",
         "//benchmarks/adapters/zebrash-ts:package.json",
         "//benchmarks/adapters/zebrash-ts:package-lock.json",
         "//benchmarks/adapters/zebrash-ts:pnpm-lock.yaml",
@@ -267,6 +277,16 @@ npm.npm_translate_lock(
     update_pnpm_lock = True,
 )
 use_repo(npm, "npm_zebrash_ts")
+
+npm.npm_translate_lock(
+    name = "npm_zplkit_ts",
+    pnpm_lock = "//benchmarks/adapters/zplkit-ts:pnpm-lock.yaml",
+    npm_package_lock = "//benchmarks/adapters/zplkit-ts:package-lock.json",
+    data = ["//benchmarks/adapters/zplkit-ts:package.json", "//benchmarks/adapters/zplkit-ts:pnpm-workspace.yaml"],
+    lifecycle_hooks = {"*": []},
+    update_pnpm_lock = True,
+)
+use_repo(npm, "npm_zplkit_ts")
 
 http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
 http_file(name = "skia_linux_amd64", url = "https://github.com/samizdatco/skia-canvas/releases/download/v3.0.8/linux-x64-glibc.gz", sha256 = "f45925290599d4b7cb5211c123fadee27bc899d7556696e2e333d0efac6937b2", downloaded_file_path = "skia.node.gz")
