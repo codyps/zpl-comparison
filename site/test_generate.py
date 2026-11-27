@@ -405,9 +405,20 @@ class PublicationTests(unittest.TestCase):
                 "| Library | Role |\n|---|---|\n| go | renderer |",
             )
             put("docs/zpl-command-index.tsv", "^FO\t1")
+            put(
+                "docs/benchmarks/libraries.json",
+                {"go": {"version": "78b1819", "url": "https://github.com/StirlingMarketingGroup/go-zpl/tree/78b1819"}},
+            )
             site = generate.Site(source, root / "output")
             site.generate()
-            overview = (site.output / "index.html").read_text()
+            library = (site.output / "libraries/go.html").read_text()
+            self.assertIn(
+                '<h1><a class="library-source" href="https://github.com/StirlingMarketingGroup/go-zpl/tree/78b1819">go-zpl 78b1819</a></h1>',
+                library,
+            )
+            self.assertIn("<title>go-zpl · ZPL comparisons</title>", library)
+            self.assertIn("go-zpl 78b1819</a>", (site.output / "libraries.html").read_text())
+            overview =(site.output / "index.html").read_text()
             self.assertIn("0.0%", overview)
             self.assertIn("1/1 scored", overview)
             self.assertIn("No observations", overview)

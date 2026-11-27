@@ -521,3 +521,8 @@ th[aria-sort="ascending"] button::after { content: " ▲"; }
 th[aria-sort="descending"] button::after { content: " ▼"; }
 
 .font-fallback { color: #8a4b00; margin-left: .3em; font-size: .85em; white-space: nowrap; }
+.library-version {
+  color: #526b79;
+  font-size: 0.6em;
+  font-weight: normal;
+}

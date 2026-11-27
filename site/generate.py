@@ -266,6 +266,8 @@ class Site:
         self.font_controlled = any(row.get("font_control") for row in rows)
         self.fixed_fonts = {row["library"]: row["font_control"].get("note", "Controlled fonts unavailable; using fixed fonts.")
                             for row in rows if row.get("font_control", {}).get("mode") == "fixed" and "library" in row}
+        identities = self.source / "docs/benchmarks/libraries.json"
+        self.identities = json.loads(identities.read_text()) if identities.exists() else {}
 
     def read(self, path):
         return json.loads((self.source / path).read_text())
@@ -288,6 +290,17 @@ class Site:
             return ""
         label = "Controlled fonts unavailable; using fixed fonts. " + self.fixed_fonts[library]
         return f'<span class="font-fallback" role="img" aria-label="{E(label)}" title="{E(label)}">⚠</span>'
+
+    def library_source(self, library):
+        """Library name with its pinned version, linked to the upstream repo or homepage."""
+        identity = self.identities.get(library)
+        name = NAMES.get(library, library)
+        if not identity:
+            return E(name)
+        version = identity.get("version")
+        label = name + (" " + version if version else "")
+        anchor = f'<a class="library-source" href="{E(identity["url"])}">{E(label)}</a>'
+        return anchor if version else anchor + ' <span class="library-version">version not exposed</span>'
 
     def library_name(self, library):
         return E(NAMES.get(library, library)) + self.font_badge(library)
@@ -354,7 +367,7 @@ class Site:
         )
         return f'<a href="{E(self.href(path))}"><img loading="lazy"{controls} src="{E(self.href(thumb or path))}" alt="{E(label)}"></a>'
 
-    def write(self, title, body, section="Measured comparisons", meta=""):
+    def write(self, title, body, section="Measured comparisons", meta="", heading=None):
         if self.font_controlled:
             body = '<p class="font-policy"><strong>Font-controlled comparison.</strong> Recovered Zebra bitmap fonts, Heros Condensed Bold (font 0), and Heros Regular (named Swiss) are supplied where supported. Fixed-font outputs remain included; font treatment is recorded per renderer. The printer previews use the same supplied font bundle. Rasterization and layout differences remain. <span class="font-fallback" aria-hidden="true">⚠</span> beside a library means controlled fonts were unavailable; it uses fixed fonts.</p>' + body
         category = self.page.startswith("categories/")
@@ -392,7 +405,7 @@ class Site:
             + '</nav></header><main id="main">'
             + ('' if category or library or not section else '<p class="eyebrow">' + E(section) + '</p>')
             + '<div class="page-heading"><h1>'
-            + E(title)
+            + (heading if heading is not None else E(title))
             + (self.font_badge(next((lib for lib in self.fixed_fonts if self.page == "libraries/" + slug(lib) + ".html"), None)) if library else "")
             + '</h1>' + meta + '</div>'
             + body
@@ -1231,7 +1244,9 @@ class Site:
             + "".join(
                 "<article><h2>"
                 + self.link("libraries/" + slug(lib) + ".html", NAMES.get(lib, lib))
-                + "</h2></article>"
+                + "</h2>"
+                + ("<p>" + self.library_source(lib) + "</p>" if lib in self.identities else "")
+                + "</article>"
                 for lib in self.libraries
             )
             + "</div>",
@@ -1267,7 +1282,7 @@ class Site:
                     )
             if not any(r["library"] == lib for c in self.cases for r in c["rows"]):
                 body += "<p>No printer-fidelity observations in these corpora. Parser and generator capabilities are separate from raster rendering.</p>"
-            self.write(NAMES.get(lib, lib), body, meta=meta)
+            self.write(NAMES.get(lib, lib), body, meta=meta, heading=self.library_source(lib))
 
     def other_pages(self):
         self.page = "categories/performance.html"

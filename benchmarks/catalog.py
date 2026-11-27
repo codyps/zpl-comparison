@@ -41,6 +41,47 @@ def package_versions():
     return versions
 
 
+def library_identities(locks, versions):
+    """Pinned version label and upstream page for every compared library key."""
+    def tree(key, sub=""):
+        return f"{locks[key]['url']}/tree/{locks[key]['rev']}" + (f"/{sub}" if sub else "")
+
+    def short(key):
+        return locks[key]["rev"][:7]
+
+    def npm(package, version):
+        return f"https://www.npmjs.com/package/{package}/v/{version}"
+
+    def nuget(package, version):
+        return f"https://www.nuget.org/packages/{package}/{version}"
+
+    v = versions
+    entries = {
+        "codyps-zpl": (f"{locks['zpl']['version']} ({short('zpl')})", tree("zpl")),
+        "codyps-zpl-go": (short("zpl"), tree("zpl", "zpl-go")),
+        "codyps-zpl-node": (short("zpl"), tree("zpl", "zpl-node")),
+        "toolchain": (v["zpl_toolchain_core"], f"https://docs.rs/zpl_toolchain_core/{v['zpl_toolchain_core']}"),
+        "labelize": (v["labelize"], f"https://docs.rs/labelize/{v['labelize']}"),
+        "forge": (v["zpl-forge"], f"https://docs.rs/zpl-forge/{v['zpl-forge']}"),
+        "ffi": (v["zpl-rs"], f"https://docs.rs/crate/zpl-rs/{v['zpl-rs']}"),
+        "builder": (v["zpl-builder"], f"https://docs.rs/zpl-builder/{v['zpl-builder']}"),
+        "go": (short("go-zpl"), tree("go-zpl")),
+        "zebrash": (v["zebrash"], tree("zebrash")),
+        "binarykits": (v["binarykits-viewer"], nuget("BinaryKits.Zpl.Viewer", v["binarykits-viewer"])),
+        "neodynamic": (v["neodynamic"], nuget("Neodynamic.SDK.ZPLPrinter", v["neodynamic"])),
+        "zplr": (v["zplr"], npm("zplr", v["zplr"])),
+        "jszpl": (v["jszpl"], npm("jszpl", v["jszpl"])),
+        "zpl-renderer-js": (v["zpl-renderer-js"], npm("zpl-renderer-js", v["zpl-renderer-js"])),
+        "zebrash-ts": (v["zebrash-ts"], npm("@zebrash/node", v["zebrash-ts"])),
+        "zplkit-ts": (v["zplkit-ts"], npm("@zplkit/render", v["zplkit-ts"])),
+        "zplkit": (locks["zplkit"]["version"], tree("zplkit")),
+        "python": (short("python-zpl"), tree("python-zpl")),
+        # The service exposes no renderer version; captures record dates instead.
+        "labelary": (None, "https://labelary.com/service.html"),
+    }
+    return {lib: {"version": version, "url": url} for lib, (version, url) in entries.items()}
+
+
 def render(template, popularity, locks, versions=None):
     observed = popularity.get("observed_utc", "historical snapshot; observation time not recorded")
     popularity = popularity.get("repositories", popularity)
@@ -84,15 +125,20 @@ def main(argv=None):
     popularity = json.loads(args.popularity.read_text()) if args.popularity.exists() else dict(observed_utc=None, repositories={})
     if not args.popularity.exists():
         args.popularity.write_text(json.dumps(popularity, indent=2) + "\n")
+    locks = json.loads((ROOT / "sources.lock.json").read_text())
+    versions = package_versions()
     result = render(
         (ROOT / "templates/capabilities.md").read_text(),
         popularity,
-        json.loads((ROOT / "sources.lock.json").read_text()),
-        package_versions(),
+        locks,
+        versions,
     )
     output = args.output
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(result)
+    (output.parent / "libraries.json").write_text(
+        json.dumps(library_identities(locks, versions), indent=2, sort_keys=True) + "\n"
+    )
     print("Generated capabilities survey and popularity table")
 
 
