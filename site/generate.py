@@ -275,7 +275,7 @@ class Site:
     def href(self, path):
         key = (os.path.dirname(self.page), path)
         if key not in self.href_cache:
-            self.href_cache[key] = os.path.relpath(path, key[0] or ".")
+            self.href_cache[key] = os.path.relpath(path, key[0] or ".").replace(os.sep, '/')
         return self.href_cache[key]
 
     def link(self, path, label):
@@ -1681,7 +1681,7 @@ if __name__ == "__main__":
             if not target.exists():
                 target = other_root / "index.html"
             label = "Default fonts" if controlled else "Controlled fonts"
-            href = os.path.relpath(target, path.parent)
+            href = os.path.relpath(target, path.parent).replace(os.sep, '/')
             text = path.read_text().replace('</nav></header>', f'<a class="variant-switch" href="{E(href)}">{label}</a></nav></header>')
             path.write_text(text)
         validate(args.output)

@@ -12,7 +12,7 @@ from benchmarks.formatting import NAMES
 
 
 def link(page, target, label):
-    return f"[{label}]({os.path.relpath(target, Path(page).parent)})"
+    return f"[{label}]({os.path.relpath(target, Path(page).parent).replace(os.sep, '/')})"
 
 
 def compact(page, preview, original, label):

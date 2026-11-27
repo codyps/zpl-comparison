@@ -273,7 +273,7 @@ def prepare(out):
         directory.mkdir()
         row = {"changes": changes or [], "status": {}, "source": name + "/zq610.zpl"}
         if original:
-            row["original"] = str(original.relative_to(ZPL))
+            row["original"] = original.relative_to(ZPL).as_posix()
             row["original_sha256"] = sha(original.read_bytes())
             row["original_measure"] = original_measure
         for printer, data in (("zq610", source), ("zd621", source.replace(b"^PW384", b"^PW832", 1))):

@@ -31,7 +31,7 @@ class ReportRunnerTests(unittest.TestCase):
             self.assertEqual((output / "docs/report.txt").read_text(), "new")
             self.assertEqual((second / "report.txt").read_text(), "new")
             self.assertFalse((output / "docs/report.txt").is_symlink())
-            self.assertEqual({str(p.relative_to(output)) for p in output.rglob('*') if p.is_file()},
+            self.assertEqual({p.relative_to(output).as_posix() for p in output.rglob('*') if p.is_file()},
                              {"docs/report.txt", "check.py"})
 
     def test_read_only_tree_artifact_can_be_updated_without_mutating_input(self):

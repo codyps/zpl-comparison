@@ -1,3 +1,9 @@
+# Check out text as LF on every platform: hashed evidence and generated
+# outputs compare bytes, so a CRLF working tree breaks verification.
+* text=auto eol=lf
+# ZPL is byte-exact evidence, including intentional CR/CRLF fixtures.
+*.zpl -text
+
 # Acquisition evidence is byte-exact, including printer-supplied CRLF and spaces.
 references/zq610-plus-v1/**/*.html -text -diff -whitespace
 references/zq610-plus-v1/**/*.zpl -text

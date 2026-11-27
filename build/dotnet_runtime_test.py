@@ -61,7 +61,7 @@ class DotnetRuntimeTest(unittest.TestCase):
             self.assertTrue((framework / 'ICU-LICENSE.txt').is_file())
             identities = {entry['name'] for entry in json.loads((deployment / 'identity.json').read_text())}
             for path in libraries:
-                self.assertIn(str(path.relative_to(deployment)), identities)
+                self.assertIn(path.relative_to(deployment).as_posix(), identities)
             source = root / 'input.zpl'
             source.write_text('^XA^FO10,10^A0N,24,16^FDHello 123^FS^XZ')
             output = root / 'output.png'

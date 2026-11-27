@@ -41,7 +41,7 @@ def source_size(root, name, native=None):
         raise ValueError("No implementation source files for " + name)
     result = dict(bytes=sum(p.stat().st_size for p in files),
                   lines=sum(len(p.read_bytes().splitlines()) for p in files), files=len(files),
-                  source_manifest=[dict(name=str(p.relative_to(root)), sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in files])
+                  source_manifest=[dict(name=p.relative_to(root).as_posix(), sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in files])
     if name == "ffi":
         go = json.loads((native / "size.json").read_text())
         for field in ("bytes", "lines", "files"):
@@ -146,7 +146,7 @@ def build(spec, output):
         size = source_size(root, name, Path(spec["native"]).resolve() if spec.get("native") else None)
         deployed = [p for p in output.rglob("*") if p.is_file() and "runtime" not in p.relative_to(output).parts]
         size["artifact_bytes"] = sum(p.stat().st_size for p in deployed)
-        size["artifact_manifest"] = [dict(name=str(p.relative_to(output)), sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in sorted(deployed)]
+        size["artifact_manifest"] = [dict(name=p.relative_to(output).as_posix(), sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in sorted(deployed)]
         (output / "size.json").write_text(json.dumps(size) + "\n")
         # Runtime invocation is relocatable; no sandbox paths are embedded in metadata.
         command = (
@@ -161,7 +161,7 @@ def build(spec, output):
         (output / "command.json").write_text(json.dumps(command) + "\n")
         identities = [
             {
-                "name": str(p.relative_to(output)),
+                "name": p.relative_to(output).as_posix(),
                 "sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
             }
             for p in sorted(output.rglob("*"))

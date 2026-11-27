@@ -149,7 +149,7 @@ def normalize(source, output, revision):
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(path, target)
     manifest = dict(schema=1, revision=revision,
-                    files={str(p.relative_to(output)): sha(p) for p in sorted(output.rglob("*")) if p.is_file()})
+                    files={p.relative_to(output).as_posix(): sha(p) for p in sorted(output.rglob("*")) if p.is_file()})
     write(output / "bundle.json", manifest)
 
 

@@ -327,7 +327,7 @@ def report(data, dest, corpus=SUITE):
                 ["Fixture", "Group", "Canvas (dots)", "Pinned source"],
                 [
                     [
-                        f"[{c['name']}]({os.path.relpath(c['path'], dest)})",
+                        f"[{c['name']}]({os.path.relpath(c['path'], dest).replace(os.sep, '/')})",
                         c["group"],
                         f"{c['width']}×{c['height']}",
                         f"[upstream]({c['source']})",

@@ -45,7 +45,7 @@ def preview(source, target, frame, page, label, check=False):
     else:
         target.parent.mkdir(parents=True, exist_ok=True)
         canvas.save(target)
-    return f"[![{label}]({os.path.relpath(target, page.parent)})]({os.path.relpath(source, page.parent)})"
+    return f"[![{label}]({os.path.relpath(target, page.parent).replace(os.sep, '/')})]({os.path.relpath(source, page.parent).replace(os.sep, '/')})"
 
 
 LEGEND = (

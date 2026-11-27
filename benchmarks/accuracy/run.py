@@ -227,8 +227,8 @@ def main():
         serial.append(
             {
                 **case,
-                "zpl": str(case["zpl"].relative_to(REPO)),
-                "reference": str(case["reference"].relative_to(REPO)),
+                "zpl": case["zpl"].relative_to(REPO).as_posix(),
+                "reference": case["reference"].relative_to(REPO).as_posix(),
             }
         )
     result = dict(

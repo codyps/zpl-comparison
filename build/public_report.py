@@ -18,7 +18,7 @@ def main():
     output = Path("docs/public-examples")
     data = campaigns.assemble("public-zpl", definitions, sys.argv[1:], "_public_rows", output,
                               printer={k: reference[k] for k in ["device", "firmware", "dpi", "method"]},
-                              manifests={str(p.relative_to(Path.cwd())): sha(p) for p in [public.CORPUS / "manifest.json", public.REFERENCE / "manifest.json"]})
+                              manifests={p.relative_to(Path.cwd()).as_posix(): sha(p) for p in [public.CORPUS / "manifest.json", public.REFERENCE / "manifest.json"]})
     campaigns.write(data, output)
 
 

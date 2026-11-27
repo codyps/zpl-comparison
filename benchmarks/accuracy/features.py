@@ -76,7 +76,7 @@ def generate(check=False):
         page = DEST / "cases" / (name + ".md")
 
         def link(path):
-            return os.path.relpath(path, page.parent)
+            return os.path.relpath(path, page.parent).replace(os.sep, '/')
 
         baseline = refs.get(name) if case["validity"] != "invalid" else None
         visible = [
@@ -153,7 +153,7 @@ def generate(check=False):
                 ) or (status == "blank") != (row["ink"] == 0):
                     raise ValueError("Stale render dimensions/ink: " + name + "/" + lib)
                 record["render_sha256"] = sha(path)
-                record["image"] = str(path.relative_to(REPO))
+                record["image"] = path.relative_to(REPO).as_posix()
                 render = compact(path, lib, f"{NAMES[lib]} render")
                 if baseline is not None:
                     metrics, diff = compare_render(baseline, raster, path, lib)
@@ -171,7 +171,7 @@ def generate(check=False):
                     else:
                         diffpath.parent.mkdir(parents=True, exist_ok=True)
                         Image.fromarray(diff).save(diffpath, optimize=True)
-                    record["diff"] = str(diffpath.relative_to(REPO))
+                    record["diff"] = diffpath.relative_to(REPO).as_posix()
                     difference = compact(
                         diffpath, lib + "-diff", f"{NAMES[lib]} difference"
                     )
@@ -280,7 +280,7 @@ def generate(check=False):
     ]
     content.insert(
         3,
-        f"[Capture metadata]({os.path.relpath(reference_path, DEST)})"
+        f"[Capture metadata]({os.path.relpath(reference_path, DEST).replace(os.sep, '/')})"
         if reference
         else "**Printer references pending.** Renders are available, but correctness scores and differences require a completed, stable printer capture. Incomplete captures are never used as a baseline.",
     )
@@ -307,7 +307,7 @@ def generate(check=False):
         schema=1,
         measured_utc=data["measured_utc"],
         inputs={
-            str(p.relative_to(REPO)): sha(p)
+            p.relative_to(REPO).as_posix(): sha(p)
             for p in [CORPUS / "manifest.json", RENDERS / "results.json"]
             + ([reference_path] if reference else [])
         },

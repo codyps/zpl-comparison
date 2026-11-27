@@ -109,7 +109,7 @@ jobs:
       - name: Test publication and report runner
         run: |
           python3 -m unittest discover -s .github/scripts -p 'test_*.py'
-          python3 -m unittest benchmarks.test_audit_failures
+          bazel run //:benchmark_tests
           bazel test //:site_test //:zplkit_import_test //:report_runner_test //:report_archive_test //:pipeline_test //:automation_test //:overview_test //:performance_test //:renderer_session_test --test_output=errors
       # Let tests, reports, and benchmarks request their own library inputs.
       # Native actions carry CPU/memory reservations for cold-cache builds.

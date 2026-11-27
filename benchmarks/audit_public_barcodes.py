@@ -52,7 +52,7 @@ def main():
             symbols = [dict(format=str(s.format), text=s.text, bytes_hex=s.bytes.hex(),
                             position=str(s.position), valid=s.valid)
                        for s in zxingcpp.read_barcodes(image)]
-        rows.append(dict(case=name, kind=kind, file=str(path.relative_to(ROOT)),
+        rows.append(dict(case=name, kind=kind, file=path.relative_to(ROOT).as_posix(),
                          png_sha256=hashlib.sha256(path.read_bytes()).hexdigest(), symbols=symbols))
     data = dict(decoder="zxing-cpp 3.1.1", pillow=version("pillow"), results=rows)
     path = ROOT / "docs/public-examples/barcodes.json"

@@ -10,6 +10,7 @@ from run import check_output, measure, node_files
 
 
 class HarnessTests(unittest.TestCase):
+    @unittest.skipUnless(hasattr(os, "wait4"), "measure() reads child RSS with os.wait4 (Unix only)")
     def test_child_rss_and_json_are_per_process(self):
         script = "import json; data=bytearray(32*1024*1024); print(json.dumps(dict(ns=123, iterations=1, checksum=len(data))))"
         result = measure([sys.executable, "-c", script], os.environ.copy())
@@ -17,6 +18,7 @@ class HarnessTests(unittest.TestCase):
         self.assertEqual(result["checksum"], 32 * 1024 * 1024)
         self.assertGreater(result["peak_rss_bytes"], 32 * 1024 * 1024)
 
+    @unittest.skipUnless(hasattr(os, "wait4"), "measure() reads child RSS with os.wait4 (Unix only)")
     def test_timeout_and_nonzero_exit_fail(self):
         with self.assertRaisesRegex(RuntimeError, "Timed out"):
             measure(

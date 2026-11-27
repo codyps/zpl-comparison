@@ -542,6 +542,19 @@ py_binary(
     deps = [requirement("numpy"), requirement("pillow")],
 )
 
+# `bazel run` (not test): the suite reads fixtures and evidence from the
+# workspace tree, using the pinned interpreter and report dependencies.
+py_binary(
+    name = "benchmark_tests",
+    srcs = ["build/benchmark_tests.py"],
+    main = "build/benchmark_tests.py",
+    deps = [
+        requirement("matplotlib"),
+        requirement("numpy"),
+        requirement("pillow"),
+    ],
+)
+
 py_test(
     name = "zplkit_import_test",
     size = "small",

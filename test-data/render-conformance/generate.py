@@ -122,7 +122,7 @@ def rows(*, native_preview=False):
             # preview round to 832 and shift every field ten dots right.
             path.read_bytes(),
             document=True,
-            source=str(path.relative_to(REPO)),
+            source=path.relative_to(REPO).as_posix(),
         )
         result[-1]["width"] = 832
         if path.stem in {"aztec", "aztec_alias", "aztec_rune"}:
@@ -1035,7 +1035,7 @@ def main():
     if args.native_preview and args.output.resolve() == HERE.resolve():
         ap.error("Use a separate --output until fresh printer evidence is captured")
     generated = artifacts(rows(native_preview=args.native_preview))
-    actual = {str(p.relative_to(args.output)) for p in (args.output / "cases").rglob("*.zpl")}
+    actual = {p.relative_to(args.output).as_posix() for p in (args.output / "cases").rglob("*.zpl")}
     stale = actual - set(generated)
     if stale:
         raise SystemExit(f"Stale generated cases: {sorted(stale)}")

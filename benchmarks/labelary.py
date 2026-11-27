@@ -41,7 +41,7 @@ def inputs():
             dict(
                 suite="accuracy",
                 name=c["id"],
-                source=str(c["zpl"].relative_to(REPO)),
+                source=c["zpl"].relative_to(REPO).as_posix(),
                 sha256=c["zpl_sha256"],
                 width=c["width"],
                 height=c["height"],
@@ -60,7 +60,7 @@ def inputs():
                 dict(
                     suite=suite,
                     name=c["name"],
-                    source=str(c["path"].relative_to(REPO)),
+                    source=c["path"].relative_to(REPO).as_posix(),
                     sha256=c["sha256"],
                     width=c["width"],
                     height=c["height"],
@@ -304,7 +304,7 @@ def saved_response(source, width, height, dest=DEFAULT):
     if data["status"] != "complete":
         raise ValueError("Incomplete Labelary capture")
     digest = sha(source)
-    relative = str(source.resolve().relative_to(REPO.resolve()))
+    relative = source.resolve().relative_to(REPO.resolve()).as_posix()
     matches = [
         c
         for c in data["cases"]

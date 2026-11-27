@@ -35,8 +35,8 @@ def prepare():
         assert sha(source) == source_hash and sha(image) == png_hash
         with Image.open(image) as png:
             width, height = png.size
-        cases.append(dict(name=name, source=str(source.relative_to(ROOT)), sha256=source_hash,
-                          reference=str(image.relative_to(ROOT)), png_sha256=png_hash,
+        cases.append(dict(name=name, source=source.relative_to(ROOT).as_posix(), sha256=source_hash,
+                          reference=image.relative_to(ROOT).as_posix(), png_sha256=png_hash,
                           width=width, height=height))
     shutil.copyfile(fixtures / "smoke-capture.json", DEST / "smoke-provenance.json")
     data = dict(cases=cases, printer=manifest["printers"]["zq610"],

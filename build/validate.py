@@ -63,7 +63,7 @@ for directory in ["render-conformance", "layout-accuracy", "invalid-zpl"]:
 
     def snapshot(path=path):
         return {
-            str(p.relative_to(path)): hashlib.sha256(p.read_bytes()).hexdigest()
+            p.relative_to(path).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
             for p in path.rglob("*")
             if p.is_file() and (p.suffix == ".zpl" or p.name == "manifest.json")
         }

@@ -136,7 +136,7 @@ def collect(root, adapter, output, timeout=30):
         if row["status"] == "rendered":
             if not image.is_file() or not image.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"):
                 raise ValueError("Adapter succeeded without a PNG: " + str(command))
-            row.update(image=str(image.relative_to(output)), raw_png_sha256=sha(image))
+            row.update(image=image.relative_to(output).as_posix(), raw_png_sha256=sha(image))
         else:
             image.unlink(missing_ok=True)
         results.append(row)
@@ -235,7 +235,7 @@ def merge(root, artifact, reports):
                 target = reports / assets / "images" / (stem + "-diff.png")
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(diff / "image.png", target)
-                scored.update(diff=str(target.relative_to(reports)), diff_sha256=sha(target))
+                scored.update(diff=target.relative_to(reports).as_posix(), diff_sha256=sha(target))
             document(result_path(suite))["results"].append(scored if suite not in COMPARISONS else row)
             if suite in COMPARISONS:
                 relative = assets + "/results.json"

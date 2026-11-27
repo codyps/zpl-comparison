@@ -49,7 +49,7 @@ class OverviewTest(unittest.TestCase):
                         image = self.repo / filename
                         image.parent.mkdir(parents=True, exist_ok=True)
                         image.write_bytes(b"fixture")
-                        text += f"[image]({os.path.relpath(image, page.parent)})\n"
+                        text += f"[image]({os.path.relpath(image, page.parent).replace(os.sep, '/')})\n"
                 page.write_text(text)
 
     def test_all_suites_categories_failures_and_blank_differences_are_visible(self):
@@ -59,7 +59,7 @@ class OverviewTest(unittest.TestCase):
         self.assertEqual(compose(text, suites), text)
         for suite in suites:
             for case in suite["cases"]:
-                self.assertIn(os.path.relpath(case_page(suite["key"], case["name"]), ROOT), text)
+                self.assertIn(os.path.relpath(case_page(suite["key"], case["name"]), ROOT).replace(os.sep, '/'), text)
             self.assertIn(f"| {suite['title']} | ink | 1 | 100.00% (1) | 0.00% (1) |", text)
         self.assertIn("0.00% · timeout", text)
         self.assertIn("unscored · blank", text)

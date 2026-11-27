@@ -75,7 +75,7 @@ def manifest(files):
     rows = []
     for p in sorted(set(files)):
         try:
-            name = str(p.relative_to(REPO))
+            name = p.relative_to(REPO).as_posix()
         except ValueError:
             # Registry and installed runtime modules are outside the checkout.
             parts = p.parts
@@ -437,7 +437,7 @@ def main():
         "results": results,
         "sources": json.loads((ROOT / "sources.lock.json").read_text()),
         "locks": {
-            str(p.relative_to(ROOT)): digest(p)
+            p.relative_to(ROOT).as_posix(): digest(p)
             for p in [
                 ROOT / "adapters/rust/Cargo.lock",
                 ROOT / "adapters/node/package-lock.json",

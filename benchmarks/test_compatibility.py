@@ -65,7 +65,7 @@ class CompatibilityTests(unittest.TestCase):
             with patch("sys.argv", ["compatibility.py", "--output", str(dest)]):
                 catalog.main()
             self.assertEqual(
-                {str(p.relative_to(dest)) for p in dest.rglob("*") if p.is_file()},
+                {p.relative_to(dest).as_posix() for p in dest.rglob("*") if p.is_file()},
                 set(expected),
             )
             for name, data in expected.items():

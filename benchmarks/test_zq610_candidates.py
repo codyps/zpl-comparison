@@ -19,8 +19,8 @@ class CandidatePagesTest(unittest.TestCase):
             source, reference = capture / 'sample.zpl', capture / 'sample.png'
             source.write_bytes(b'^XA^FO10,10^GB20,20,2^FS^XZ')
             Image.new('L', (32, 32), 255).save(reference)
-            manifest = dict(cases=[dict(name='sample', source=str(source.relative_to(root)),
-                                       reference=str(reference.relative_to(root)),
+            manifest = dict(cases=[dict(name='sample', source=source.relative_to(root).as_posix(),
+                                       reference=reference.relative_to(root).as_posix(),
                                        sha256=pages.sha(source), png_sha256=pages.sha(reference))])
             (capture / 'manifest.json').write_text(json.dumps(manifest))
             (root / 'benchmarks').mkdir()

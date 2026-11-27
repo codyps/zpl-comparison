@@ -125,8 +125,8 @@ def pages(data, dest, check=False, rebuild_diffs=False):
     for case in cases:
         cid = case["id"]
         page = dest / "comparisons/cases" / f"{cid}.md"
-        reference = os.path.relpath(REPO / case["reference"], page.parent)
-        source = os.path.relpath(REPO / case["zpl"], page.parent)
+        reference = os.path.relpath(REPO / case["reference"], page.parent).replace(os.sep, '/')
+        source = os.path.relpath(REPO / case["zpl"], page.parent).replace(os.sep, '/')
         with Image.open(REPO / case["reference"]) as image:
             ref_width, ref_height = image.size
         visible = [REPO / case["reference"]] + [

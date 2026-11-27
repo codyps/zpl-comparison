@@ -29,7 +29,7 @@ def rebase_links(text, old, new):
         target = match.group(1)
         if "://" in target or target.startswith("#"):
             return target
-        return os.path.relpath(Path(old).parent / target, Path(new).parent)
+        return os.path.relpath(Path(old).parent / target, Path(new).parent).replace(os.sep, '/')
 
     return re.sub(r"(?<=\]\()([^)]+)(?=\))", replace, text)
 
@@ -94,14 +94,14 @@ def compose(original, suites):
             if key != "accuracy":
                 details += [f"### {suite['title']}: {group}", table(
                     ["Case", "Classification", *suite["libraries"]],
-                    [[f"[{c['name']}]({os.path.relpath(case_page(key, c.get('id', c['name'])), ROOT)})",
+                    [[f"[{c['name']}]({os.path.relpath(case_page(key, c.get('id', c['name'])), ROOT).replace(os.sep, '/')})",
                       c.get("validity", "captured"),
                       *[score(lookup[c.get("id", c["name"]), lib]) for lib in suite["libraries"]]]
                      for c in selected],
                 )]
         for relation in suite["data"].get("relations", []):
             relations.append([suite["title"], relation["set"], relation["library"], relation["status"],
-                              " · ".join(f"[{cid}]({os.path.relpath(case_page(key, cid), ROOT)})" for cid in relation["cases"])])
+                              " · ".join(f"[{cid}]({os.path.relpath(case_page(key, cid), ROOT).replace(os.sep, '/')})" for cid in relation["cases"])])
     text = [
         "# Accuracy against a real Zebra printer",
         "This overview includes every printer IoU comparison and image difference across all accuracy corpora. "
@@ -157,7 +157,7 @@ def verify(dest, suites, text):
         key = suite["key"]
         for row in suite["rows"]:
             page = case_page(key, row["case"])
-            relative = os.path.relpath(page, ROOT)
+            relative = os.path.relpath(page, ROOT).replace(os.sep, '/')
             if relative not in text:
                 raise ValueError("Accuracy overview omits case: " + page)
             if page not in pages:
@@ -179,7 +179,7 @@ def verify(dest, suites, text):
                 assets = ROOT if key == "accuracy" else ROOT + "/" + suite["gallery"]
                 required.append(assets + "/images/" + prefix + "-diff.png")
             for image in required:
-                if not (repo / image).is_file() or os.path.relpath(image, Path(page).parent) not in content:
+                if not (repo / image).is_file() or os.path.relpath(image, Path(page).parent).replace(os.sep, '/') not in content:
                     raise ValueError("Case page missing comparison image: " + image)
 
 

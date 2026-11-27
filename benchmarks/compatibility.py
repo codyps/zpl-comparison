@@ -321,7 +321,7 @@ def artifacts(dest=DEST):
         )
 
     def emit(page, text):
-        files[str(page.relative_to(dest))] = (
+        files[page.relative_to(dest).as_posix()] = (
             BANNER + "\n\n".join(text) + "\n"
         ).encode()
 
@@ -761,7 +761,7 @@ def artifacts(dest=DEST):
         inputs.append(CONFORMANCE)
     provenance = {
         "schema": 1,
-        "inputs": {str(p.relative_to(REPO)): digest(p) for p in inputs},
+        "inputs": {p.relative_to(REPO).as_posix(): digest(p) for p in inputs},
         "accuracy_measured_utc": accuracy["measured_utc"],
         "conformance_measured_utc": conformance.get("measured_utc")
         if conformance
@@ -781,7 +781,7 @@ def main():
     args = ap.parse_args()
     generated = artifacts(args.output.resolve())
     stale = {
-        str(p.relative_to(args.output))
+        p.relative_to(args.output).as_posix()
         for p in args.output.rglob("*.md")
         if p.read_text().startswith(BANNER)
     } - set(generated)

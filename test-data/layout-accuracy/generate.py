@@ -74,7 +74,7 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     files = artifacts()
-    actual = {str(p.relative_to(HERE)) for p in (HERE / "cases").rglob("*.zpl")}
+    actual = {p.relative_to(HERE).as_posix() for p in (HERE / "cases").rglob("*.zpl")}
     if actual - set(files):
         raise SystemExit(f"Stale fixtures: {sorted(actual - set(files))}")
     for name, data in files.items():

@@ -58,7 +58,7 @@ def source_identity(source, renderer):
         paths.append(source / crate / "Cargo.toml")
         for directory in ["src", "assets"]:
             paths.extend(p for p in (source / crate / directory).rglob("*") if p.is_file())
-    hashes = {str(p.relative_to(source)): sha(p) for p in sorted(paths)}
+    hashes = {p.relative_to(source).as_posix(): sha(p) for p in sorted(paths)}
     return dict(
         revision=git("rev-parse", "HEAD"), status=git("status", "--porcelain"),
         source_files=hashes,
@@ -172,7 +172,7 @@ def service_comparisons(output, cases, images, check=False):
         else:
             path = labelary.DEFAULT / capture["image"]
             raster = gray(path)
-            row.update(image=str(path.relative_to(ROOT)), png_sha256=capture["png_sha256"],
+            row.update(image=path.relative_to(ROOT).as_posix(), png_sha256=capture["png_sha256"],
                        status="rendered" if np.any(raster < 128) else "blank",
                        output_dimensions=[raster.shape[1], raster.shape[0]])
             if raster.shape != images[name].shape:
@@ -198,7 +198,7 @@ def service_comparisons(output, cases, images, check=False):
 
 def reports(result, service, output, cases):
     def link(relative):
-        return os.path.relpath(ROOT / relative, output)
+        return os.path.relpath(ROOT / relative, output).replace(os.sep, '/')
 
     rows = result["results"]
     exact = sum(r.get("comparison", {}).get("exact", False) for r in rows)

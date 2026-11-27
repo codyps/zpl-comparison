@@ -505,9 +505,11 @@ class ConformanceTests(unittest.TestCase):
     def test_generated_files_and_inventory_are_current(self):
         generated = generator.artifacts()
         for filename, data in generated.items():
+            if filename == "COVERAGE.md":
+                continue  # Generated on demand and gitignored; not checked-in evidence.
             self.assertEqual((SUITE / filename).read_bytes(), data, filename)
         self.assertEqual(
-            {str(p.relative_to(SUITE)) for p in (SUITE / "cases").rglob("*.zpl")},
+            {p.relative_to(SUITE).as_posix() for p in (SUITE / "cases").rglob("*.zpl")},
             {n for n in generated if n.endswith(".zpl")},
         )
         manifest = json.loads(generated["manifest.json"])

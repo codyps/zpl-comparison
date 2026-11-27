@@ -373,7 +373,7 @@ def main():
         host=platform.platform(),
         python=platform.python_version(),
         adapters=identities,
-        inputs={str(p.relative_to(REPO)): sha(p) for p in paths},
+        inputs={p.relative_to(REPO).as_posix(): sha(p) for p in paths},
         results=rows,
     )
     (dest / "results.json").write_text(json.dumps(data, indent=2) + "\n")

@@ -88,7 +88,7 @@ def verify(data, root):
 def reports(data, output, root):
     indexed = matrix(data)
     def link(relative):
-        return os.path.relpath(Path(root) / relative, output)
+        return os.path.relpath(Path(root) / relative, output).replace(os.sep, '/')
     title = {"public-zpl": "Public documents against the ZD621", "gx430t-300dpi": "GX430t · 300 DPI printer comparisons"}.get(data["suite"], "Paired ZQ610 Plus / ZD621 comparisons")
     method = (f"{len(data['cases'])} inputs × {len(data['libraries'])} renderers. "
               "Original fixture sources and complete native printer canvases; threshold 128, "
