@@ -9,6 +9,7 @@ import hashlib
 import html
 import io
 import json
+import math
 import os
 import re
 import shutil
@@ -189,20 +190,53 @@ def table(headers, rows, caption, kind=""):
     )
 
 
-def performance_chart(rows, field, divisor, unit, title):
+def significant(value):
+    """Three significant figures without exponents."""
+    return f"{value:.0f}" if value >= 100 else f"{value:.1f}" if value >= 10 else f"{value:.2f}"
+
+
+def format_duration(ns):
+    for unit, scale in [("s", 1e9), ("ms", 1e6), ("µs", 1e3)]:
+        if ns >= scale:
+            return f"{significant(ns / scale)} {unit}"
+    return f"{significant(ns)} ns"
+
+
+def format_bytes(count):
+    for unit, scale in [("GiB", 2**30), ("MiB", 2**20), ("KiB", 2**10)]:
+        if count >= scale:
+            return f"{significant(count / scale)} {unit}"
+    return f"{count:.0f} B"
+
+
+def sortable(value, text):
+    """A table value that sorts by its raw number rather than its displayed unit."""
+    return f'<data value="{E(value)}">{E(text)}</data>'
+
+
+def performance_chart(rows, field, formatter, title):
+    """Log-scale bars per workload, labelled with the multiple of the lowest value."""
     groups = []
     for fixture in sorted({r["fixture"] for r in rows}):
         measured = sorted([r for r in rows if r["fixture"] == fixture
-                           and r["status"] == "ok" and r.get(field) is not None],
+                           and r["status"] == "ok" and r.get(field)],
                           key=lambda r: r[field])
         if not measured:
             continue
-        maximum = max(r[field] for r in measured) or 1
+        lowest, highest = measured[0][field], measured[-1][field]
+        # The lowest value keeps a visible bar: the axis starts at a quarter of it.
+        floor = lowest / 4
+        span = math.log(highest / floor)
+
+        def multiple(value):
+            ratio = value / lowest
+            return f"{ratio:.1f}×" if ratio < 10 else f"{ratio:,.0f}×"
+
         bars = "".join(
             '<div class="metric-row"><span>' + E(NAMES.get(r["library"], r["library"]))
             + '</span><div class="metric-track"><div class="metric-bar" style="width:'
-            + str(100 * r[field] / maximum) + '%"></div></div><strong>'
-            + E(f'{r[field] / divisor:.3f} {unit}') + '</strong></div>'
+            + f"{100 * math.log(r[field] / floor) / span:.1f}" + '%"></div></div><strong>'
+            + E(formatter(r[field])) + ' <small>' + E(multiple(r[field])) + '</small></strong></div>'
             for r in measured)
         groups.append('<section class="metric-chart"><h4>' + E(fixture) + '</h4>' + bars + '</section>')
     return '<h3>' + E(title) + '</h3>' + "".join(groups) if groups else ""
@@ -1290,8 +1324,8 @@ class Site:
             rows = []
             for row in initialization["results"]:
                 if row["status"] == "ok":
-                    duration = f"{row['median_ns'] / 1e6:.3f} ms"
-                    span = f"{row['min_ns'] / 1e6:.3f}–{row['max_ns'] / 1e6:.3f} ms"
+                    duration = format_duration(row["median_ns"])
+                    span = format_duration(row["min_ns"]) + "–" + format_duration(row["max_ns"])
                 else:
                     duration, span = row["status"], row.get("error", "Unavailable")
                 rows.append([E(NAMES.get(row["library"], row["library"])), E(row.get("component", "engine")), E(duration), E(span),
@@ -1302,90 +1336,88 @@ class Site:
                      "Go rendering below reuses one engine through warm-up, measurement and output capture; zpl-forge reuses its font manager.</p>"
                      + table(["Library", "Setup", "Median setup time", "Min–max", "Samples"], rows,
                              "Reusable setup initialization observations"))
+        notes = {
+            "parse": "<p>Parse APIs return different results, so these timings compare different amounts of work. "
+                     "codyps/zpl iterates framed commands without building a tree; the other parsers build element lists, syntax trees "
+                     "or render instructions. See " + self.link("examination.html", "Examined support") + " for each API.</p>",
+        }
         for mode, title in [
             ("parse", "Parsing"),
             ("png", "PNG rendering"),
             ("generate", "ZPL generation"),
         ]:
+            # Parse adapters write only a count for output checks; it is not a sample worth showing.
+            has_output = mode != "parse"
             rows = []
             for r in sorted(data["results"], key=lambda r: (r["fixture"], r.get("median_ns", float("inf")), r["library"])):
                 if r["mode"] != mode:
                     continue
-                label = (
-                    f"{r['median_ns'] / 1e3:.3f} µs"
-                    if r["status"] == "ok"
-                    else r["status"]
-                )
-                sample = self.asset(
-                    "docs/benchmarks/samples/"
-                    + r["library"]
-                    + "-"
-                    + mode
-                    + "-"
-                    + r["fixture"]
-                    + (".png" if mode == "png" else ".txt"),
-                    required=False,
-                )
-                preview = (
-                    self.image(sample, r["library"] + " " + r["fixture"])
-                    if mode == "png"
-                    else self.link(sample, "Generated ZPL")
-                    if sample
-                    else "Not applicable"
-                )
-                rows.append(
-                    [
-                        self.link(
-                            "libraries/" + slug(r["library"]) + ".html",
-                            NAMES.get(r["library"], r["library"]),
-                        ),
-                        E(r["fixture"]),
-                        E(label),
-                        E(
-                            f"{r['peak_rss_bytes'] / 1048576:.2f} MiB"
-                            if r.get("peak_rss_bytes") is not None
-                            else "Unavailable"
-                        ),
-                        E(f"{r['min_peak_rss_bytes'] / 2**20:.2f}–{r['max_peak_rss_bytes'] / 2**20:.2f} MiB")
-                        if r.get("min_peak_rss_bytes") is not None else "Unavailable",
-                        preview,
-                    ]
-                )
+                ok = r["status"] == "ok"
+                cells = [
+                    self.link(
+                        "libraries/" + slug(r["library"]) + ".html",
+                        NAMES.get(r["library"], r["library"]),
+                    ),
+                    E(r["fixture"]),
+                    sortable(r["median_ns"], format_duration(r["median_ns"])) if ok else E(r["status"]),
+                    sortable(r["min_ns"], format_duration(r["min_ns"]) + "–" + format_duration(r["max_ns"]))
+                    if ok and r.get("min_ns") is not None else "Unavailable",
+                    sortable(r["peak_rss_bytes"], format_bytes(r["peak_rss_bytes"]))
+                    if r.get("peak_rss_bytes") is not None else "Unavailable",
+                    sortable(r["min_peak_rss_bytes"], format_bytes(r["min_peak_rss_bytes"]) + "–" + format_bytes(r["max_peak_rss_bytes"]))
+                    if r.get("min_peak_rss_bytes") is not None else "Unavailable",
+                ]
+                if has_output:
+                    sample = self.asset(
+                        "docs/benchmarks/samples/" + r["library"] + "-" + mode + "-" + r["fixture"]
+                        + (".png" if mode == "png" else ".txt"),
+                        required=False,
+                    )
+                    cells.append(
+                        self.image(sample, r["library"] + " " + r["fixture"]) if sample and mode == "png"
+                        else self.link(sample, "Generated ZPL") if sample
+                        else "Not captured"
+                    )
+                rows.append(cells)
             if not rows:
                 continue
             measured = [r for r in data["results"] if r["mode"] == mode]
             body += (
                 "<h2>" + title + "</h2>"
-                + performance_chart(measured, "median_ns", 1e3, "µs", "Median duration · lower is faster")
-                + performance_chart(measured, "peak_rss_bytes", 2**20, "MiB", ("Median peak process memory · lower uses less" if memory else "Peak process memory · lower uses less"))
-                + "<p>Bars use a linear scale within each workload. Peak RSS includes the runtime, warm-up and output capture. Select a table heading to sort.</p>"
+                + notes.get(mode, "")
+                + performance_chart(measured, "median_ns", format_duration, "Median duration · lower is faster")
+                + performance_chart(measured, "peak_rss_bytes", format_bytes, ("Median peak process memory · lower uses less" if memory else "Peak process memory · lower uses less"))
+                + "<p>Bars use a logarithmic scale within each workload; × is the multiple of the lowest value. "
+                  "Peak RSS includes the runtime, warm-up and output capture. Select a table heading to sort.</p>"
                 + table(
                     [
                         "Library",
                         "Workload",
                         "Median duration",
+                        "Duration min–max",
                         ("Median peak RSS" if memory else "Peak process RSS"),
                         "Peak RSS min–max",
-                        "Output sample",
-                    ],
+                    ] + (["Output sample"] if has_output else []),
                     rows,
                     title + " observations",
                     kind="sortable",
                 )
             )
+        generated_source = {"codyps-zpl-go": "Includes the machine-translated Go engine."}
         body += "<h2>Deployment size</h2>" + table(
-            ["Library", "Source bytes", "Artifact bytes"],
+            ["Library", "Source", "Artifact", "Note"],
             [
                 [
                     self.link("libraries/" + slug(lib) + ".html", NAMES.get(lib, lib)),
-                    E(r.get("bytes", "Unavailable")),
-                    E(r.get("artifact_bytes", "Unavailable")),
+                    sortable(r["bytes"], format_bytes(r["bytes"])) if "bytes" in r else "Unavailable",
+                    sortable(r["artifact_bytes"], format_bytes(r["artifact_bytes"])) if "artifact_bytes" in r else "Unavailable",
+                    E(generated_source.get(lib, "")),
                 ]
                 for lib, r in data["sizes"].items()
             ],
             "Source and artifact sizes",
             kind="sortable",
-        ) + "<p>Source counts cover selected implementation trees, excluding external dependencies. Artifact bytes include adapters and deployed dependencies, excluding shared runtimes and measurement metadata.</p>"
+        ) + "<p>Source counts cover selected implementation trees, excluding external dependencies; generated or translated code inside those trees is counted, so sources are not equivalent measures of hand-written code. Artifact sizes include adapters and deployed dependencies, excluding shared runtimes and measurement metadata.</p>"
         self.write("Speed, memory & size", body)
         self.page = "categories/invalid.html"
         evidence = self.asset("docs/benchmarks/invalid/results.json")

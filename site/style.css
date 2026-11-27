@@ -516,6 +516,7 @@ header .nav-methodology:hover {
 .metric-track { background: #edf0f3; }
 .metric-bar { background: #1967a3; height: 1.1rem; min-width: 2px; }
 .metric-row strong { text-align: right; font-variant-numeric: tabular-nums; }
+.metric-row strong small { color: #526b79; font-weight: normal; margin-inline-start: .3em; }
 th button { font: inherit; color: inherit; background: transparent; border: 0; cursor: pointer; text-align: left; text-decoration: underline; }
 th[aria-sort="ascending"] button::after { content: " ▲"; }
 th[aria-sort="descending"] button::after { content: " ▼"; }

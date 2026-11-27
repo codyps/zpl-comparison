@@ -98,12 +98,17 @@ class PublicationTests(unittest.TestCase):
             with self.assertRaises(StopIteration):
                 site.other_pages()
             self.assertIn("Median peak RSS", rendered[0])
-            self.assertIn("0.50–2.00 MiB", rendered[0])
+            self.assertIn("512 KiB–2.00 MiB", rendered[0])
             self.assertIn("10 measured operations", rendered[0])
             self.assertIn("not per-operation allocation", rendered[0])
             self.assertIn("Reusable setup initialization", rendered[0])
-            self.assertIn("2.000 ms", rendered[0])
-            self.assertIn("1.000–3.000 ms", rendered[0])
+            self.assertIn("2.00 ms", rendered[0])
+            self.assertIn("1.00 ms–3.00 ms", rendered[0])
+            self.assertIn('<data value="1000">1.00 µs</data>', rendered[0])
+            self.assertIn("Parse APIs return different results", rendered[0])
+            # Parse adapters write only a count, so no output-sample column.
+            self.assertNotIn("Output sample", rendered[0])
+            self.assertNotIn("Generated ZPL", rendered[0])
             self.assertIn("reuses one engine", rendered[0])
 
     def test_aztec_context_links_only_available_independent_checks(self):
@@ -155,12 +160,20 @@ class PublicationTests(unittest.TestCase):
         rows = [dict(library="go", fixture="text", status="ok", median_ns=2000000, peak_rss_bytes=2097152),
                 dict(library="labelize", fixture="text", status="ok", median_ns=1000000, peak_rss_bytes=1048576),
                 dict(library="forge", fixture="text", status="failed")]
-        for field, divisor, unit in [("median_ns", 1e6, "ms"), ("peak_rss_bytes", 2**20, "MiB")]:
-            chart = generate.performance_chart(rows, field, divisor, unit, "Comparison")
+        for field, formatter, lowest in [("median_ns", generate.format_duration, "1.00 ms"),
+                                         ("peak_rss_bytes", generate.format_bytes, "1.00 MiB")]:
+            chart = generate.performance_chart(rows, field, formatter, "Comparison")
             self.assertLess(chart.index("labelize"), chart.index("go-zpl"))
             self.assertNotIn("zpl-forge", chart)
-            self.assertIn("width:50.0%", chart)
-            self.assertIn("1.000 " + unit, chart)
+            # Log scale from a quarter of the lowest value: log(4)/log(8) and full width.
+            self.assertIn("width:66.7%", chart)
+            self.assertIn("width:100.0%", chart)
+            self.assertIn(lowest + " <small>1.0×</small>", chart)
+            self.assertIn("<small>2.0×</small>", chart)
+        self.assertEqual(generate.format_duration(152), "152 ns")
+        self.assertEqual(generate.format_duration(22253422), "22.3 ms")
+        self.assertEqual(generate.format_bytes(25447760), "24.3 MiB")
+        self.assertEqual(generate.format_bytes(512), "512 B")
         self.assertIn("data-sortable", generate.table(["Duration"], [["1"]], "Timings", "sortable"))
 
     def test_public_campaign_keeps_failures_and_only_measured_library(self):

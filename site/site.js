@@ -58,6 +58,9 @@ for (const table of document.querySelectorAll("table[data-sortable]")) {
       for (const cell of table.tHead.rows[0].cells) cell.removeAttribute("aria-sort");
       heading.setAttribute("aria-sort", ascending ? "ascending" : "descending");
       const value = row => {
+        // <data value> carries the raw number when the display adds units.
+        const data = row.cells[column].querySelector("data[value]");
+        if (data) return Number.parseFloat(data.value);
         const text = row.cells[column].textContent.trim();
         return /^\d+(\.\d+)?(–\d+(\.\d+)?)?(\s*(µs|ms|MiB))?$/.test(text) ? Number.parseFloat(text) : text;
       };
