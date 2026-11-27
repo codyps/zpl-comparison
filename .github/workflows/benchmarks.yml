@@ -174,7 +174,7 @@ jobs:
       - name: Measure renderer performance (uncached)
         id: performance
         if: github.event.pull_request.head.repo.fork != true
-        timeout-minutes: 15
+        timeout-minutes: 20
         run: |
           bazel run //:performance \
             --repo_env=ZPL_SOURCE_PATH="$GITHUB_WORKSPACE/benchmarks/_work/zpl" -- \

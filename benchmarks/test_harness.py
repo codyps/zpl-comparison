@@ -47,6 +47,24 @@ class HarnessTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "Unexpected image"):
                 check_output(path, "png", "boxes")
 
+    def test_fixture_canvas_comes_from_pw_and_ll(self):
+        from run import canvas, canvas_arguments
+        fixtures = Path(__file__).resolve().parent / "fixtures"
+        self.assertEqual(canvas(fixtures / "text.zpl"), (400, 300))
+        self.assertEqual(canvas_arguments(fixtures / "text.zpl", "png"), [])
+        self.assertEqual(canvas(fixtures / "shipping.zpl"), (812, 1218))
+        self.assertEqual(canvas_arguments(fixtures / "shipping.zpl", "png"), ["812", "1218"])
+        self.assertEqual(canvas_arguments(fixtures / "shipping.zpl", "parse"), [])
+        self.assertEqual(canvas(fixtures / "fields-1.txt"), (400, 300))
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "label.png"
+            image = Image.new("L", (812, 1218), "white")
+            ImageDraw.Draw(image).rectangle((10, 10, 50, 50), fill="black")
+            image.save(path)
+            self.assertEqual(check_output(path, "png", "shipping", (812, 1218))["height"], 1218)
+            with self.assertRaisesRegex(RuntimeError, "Unexpected image"):
+                check_output(path, "png", "shipping")
+
     def test_generator_cannot_skip_fields(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "label.zpl"

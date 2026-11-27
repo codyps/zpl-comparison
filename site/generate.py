@@ -1308,7 +1308,7 @@ class Site:
         body = (
             "<p>Observed: "
             + E(data["timestamp_utc"])
-            + ". Timings are measured on the recorded host. Successful API calls do not establish equivalent output or printer fidelity.</p><p>"
+            + ". Timings are measured on the recorded host. Successful API calls do not establish equivalent output or printer fidelity.</p><p>Workloads: <code>boxes</code>, <code>text</code>, <code>code128</code>, <code>qr</code> and <code>dense</code> are small labels on a 400×300-dot canvas, where fixed per-call costs dominate; <code>shipping</code> is a full 4×6 in shipping label (812×1218 dots).</p><p>"
             + (self.link(evidence, "Samples, host, output checks & versions (JSON)") if evidence else "Performance is collected in trusted CI runs; this preview has no timing measurements.")
             + "</p>"
         )

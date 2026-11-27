@@ -190,7 +190,7 @@ def main():
         ]
     text += [
         "\n## Capabilities exercised\n",
-        "PNG checks require a decodable 400×300 image with both light and dark pixels. Only `boxes` has an exact geometric oracle; "
+        "PNG checks require a decodable image at the fixture's `^PW`×`^LL` canvas (400×300; `shipping` is a 4×6 in label at 812×1218) with both light and dark pixels. Only `boxes` has an exact geometric oracle; "
         "text/barcode checks establish nonblank output, **not correct content or decodability**. Inspect the captured PNGs before choosing a renderer. "
         "A successful parse means the API completed, not that it recognized or preserved every command.\n",
     ]
@@ -199,7 +199,7 @@ def main():
         for n, modes in __import__("run").MODES.items()
         if "png" in modes and any(r["library"] == n for r in data["results"])
     ]
-    fixtures = ["boxes", "text", "code128", "qr", "dense"]
+    fixtures = ["boxes", "text", "code128", "qr", "dense", "shipping"]
     rows = []
     for n in renderers:
         cells = []

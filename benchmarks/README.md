@@ -234,7 +234,7 @@ Update pins explicitly, regenerate dependency locks using the relevant package m
 
 ## Workloads and API boundaries
 
-All renderer inputs are the same checked-in, single-label, ASCII ZPL bytes, at **400×300 dots**, nominal 203 DPI / 8 dots per mm. No implicit default-size comparison. Fixtures exercise boxes, one font-0 text field, Code 128, QR, and 48 small text fields. The explicit dimensions make nominal 203-versus-203.2 DPI immaterial to the canvas size. Fixtures reference the bundled [Zebra Programming Guide](../docs/zpl-zbi2-pg-en.pdf), `^XA`, `^XZ`, `^PW`, `^LL`, `^FO`, `^A`, `^FD`, `^FS`, `^GB`, `^BY`, `^BC` and `^BQ`; command sections are indexed in [the reference index](../docs/zpl-command-index.tsv).
+All renderer inputs are the same checked-in, single-label, ASCII ZPL bytes, nominal 203 DPI / 8 dots per mm. Five small fixtures use a **400×300 dot** canvas and exercise boxes, one font-0 text field, Code 128, QR, and 48 small text fields. `shipping` is a full **4×6 in (812×1218 dot)** shipping label with six boxes, 22 text fields, two Code 128 barcodes and a QR code, so per-call overhead does not dominate. The harness passes each fixture's `^PW`/`^LL` canvas explicitly; there is no implicit default-size comparison. The explicit dimensions make nominal 203-versus-203.2 DPI immaterial to the canvas size. Fixtures reference the bundled [Zebra Programming Guide](../docs/zpl-zbi2-pg-en.pdf), `^XA`, `^XZ`, `^PW`, `^LL`, `^FO`, `^A`, `^FD`, `^FS`, `^GB`, `^BY`, `^BC` and `^BQ`; command sections are indexed in [the reference index](../docs/zpl-command-index.tsv).
 
 | Operation | Included | Excluded / caveat |
 | --- | --- | --- |
@@ -255,9 +255,9 @@ Memory runs use three warm-up operations, ten measured operations (configurable 
 
 ## Output checks
 
-PNG files are fully decoded with Pillow and must be 400×300 with both dark/light pixels after alpha compositing onto white. Boxes are also compared to a hand-defined inward-border mask: a 100×60 box at (20,20) with thickness 4 and an 80×80 filled box at (180,100). Pixel differences are reported, never silently corrected. Generated ZPL must contain the expected framing, field count and every `Item NN` value. Parser completion is only an API smoke check, not semantic parity. No library is used as another's correctness oracle.
+PNG files are fully decoded with Pillow and must match the fixture's `^PW`×`^LL` canvas, with both dark/light pixels after alpha compositing onto white. Boxes are also compared to a hand-defined inward-border mask: a 100×60 box at (20,20) with thickness 4 and an 80×80 filled box at (180,100). Pixel differences are reported, never silently corrected. Generated ZPL must contain the expected framing, field count and every `Item NN` value. Parser completion is only an API smoke check, not semantic parity. No library is used as another's correctness oracle.
 
-Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these five fixtures. Those remain selection criteria in [capabilities](https://codyps.github.io/zpl-comparison/examination.html) and the repository's separate conformance tests.
+Captured samples make differences inspectable. Text shape, barcode decoding, binary downloads, malformed-input behavior, full command coverage and real-printer fidelity are **not** established by these six fixtures. Those remain selection criteria in [capabilities](https://codyps.github.io/zpl-comparison/examination.html) and the repository's separate conformance tests.
 
 ## Code-size accounting
 

@@ -10,7 +10,7 @@ import statistics
 import math
 import time
 
-from benchmarks.run import MODES, check_output, collect_initialization, digest, measure
+from benchmarks.run import MODES, canvas, canvas_arguments, check_output, collect_initialization, digest, measure
 
 LIBRARIES = ("codyps-zpl", "labelize", "forge", "go", "ffi", "binarykits", "neodynamic", "zplr", "zebrash", "zpl-renderer-js", "zebrash-ts", "zplkit-ts", "codyps-zpl-node", "codyps-zpl-go")
 
@@ -45,14 +45,16 @@ def collect(libraries, fixtures, output, samples=5, seconds=0.2, memory_iteratio
         print(name, mode, fixture.stem, flush=True)
         try:
             invocation = command + [mode, str(fixture.resolve())]
-            calibration = measure(invocation + ["1", str(artifact)], env, launcher=memory_launcher)
-            check_output(artifact, mode, fixture.stem)
+            extra = canvas_arguments(fixture, mode)
+            size = canvas(fixture)
+            calibration = measure(invocation + ["1", str(artifact)] + extra, env, launcher=memory_launcher)
+            check_output(artifact, mode, fixture.stem, size)
             iterations = max(1, min(1000000, round(seconds * 1e9 / calibration["ns"])))
-            row["samples"] = [measure(invocation + [str(iterations), str(artifact)], env, launcher=memory_launcher) for _ in range(samples)]
-            row["memory_samples"] = [measure(invocation + [str(memory_iterations), str(artifact)],
+            row["samples"] = [measure(invocation + [str(iterations), str(artifact)] + extra, env, launcher=memory_launcher) for _ in range(samples)]
+            row["memory_samples"] = [measure(invocation + [str(memory_iterations), str(artifact)] + extra,
                                              {**env, "ZPL_BENCH_MEMORY": "1"}, launcher=memory_launcher)
                                      for _ in range(samples)]
-            row["output_check"] = check_output(artifact, mode, fixture.stem)
+            row["output_check"] = check_output(artifact, mode, fixture.stem, size)
             rss = [s["peak_rss_bytes"] for s in row["memory_samples"]]
             times = [s["ns"] / s["iterations"] for s in row["samples"]]
             row.update(status="ok", median_ns=statistics.median(times), min_ns=min(times),

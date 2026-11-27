@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import platform
 import random
+import re
 import signal
 import statistics
 import subprocess
@@ -174,11 +175,31 @@ def measure(command, env, timeout=90, launcher=None):
         return value
 
 
-def check_output(path, mode, fixture):
+DEFAULT_CANVAS = (400, 300)
+
+
+def canvas(path):
+    """Fixture canvas in dots from its ^PW/^LL; the original fixtures are 400x300."""
+    path = Path(path)
+    if path.suffix != ".zpl":
+        return DEFAULT_CANVAS
+    text = path.read_text(errors="replace")
+    width, height = re.search(r"\^PW(\d+)", text), re.search(r"\^LL(\d+)", text)
+    return (int(width.group(1)) if width else DEFAULT_CANVAS[0],
+            int(height.group(1)) if height else DEFAULT_CANVAS[1])
+
+
+def canvas_arguments(path, mode):
+    """Adapters default to 400x300; pass other canvases explicitly when rendering."""
+    size = canvas(path)
+    return [str(size[0]), str(size[1])] if mode == "png" and size != DEFAULT_CANVAS else []
+
+
+def check_output(path, mode, fixture, size=DEFAULT_CANVAS):
     if mode == "png":
         with Image.open(path) as raw:
             raw.load()
-            if raw.format != "PNG" or raw.size != (400, 300):
+            if raw.format != "PNG" or raw.size != tuple(size):
                 raise RuntimeError(f"Unexpected image: {raw.format} {raw.size}")
             image = Image.new("RGBA", raw.size, "white")
             image.alpha_composite(raw.convert("RGBA"))
@@ -187,8 +208,8 @@ def check_output(path, mode, fixture):
         if not any(black) or all(black):
             raise RuntimeError("Blank/solid image")
         result = {
-            "width": 400,
-            "height": 300,
+            "width": raw.size[0],
+            "height": raw.size[1],
             "black_pixels": sum(black),
             "sha256": digest(path),
         }
@@ -348,17 +369,18 @@ def main():
             "measured_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         }
         command = commands[name] + [mode, str(file)]
+        extra = canvas_arguments(file, mode)
         try:
-            calibration = measure(command + ["1", str(artifact)], env)
-            row["output_check"] = check_output(artifact, mode, file.stem)
+            calibration = measure(command + ["1", str(artifact)] + extra, env)
+            row["output_check"] = check_output(artifact, mode, file.stem, canvas(file))
             n = args.iterations or max(
                 1, min(1000000, round(args.seconds * 1e9 / calibration["ns"]))
             )
             row["samples"] = [
-                measure(command + [str(n), str(artifact)], env)
+                measure(command + [str(n), str(artifact)] + extra, env)
                 for _ in range(args.samples)
             ]
-            row["output_check"] = check_output(artifact, mode, file.stem)
+            row["output_check"] = check_output(artifact, mode, file.stem, canvas(file))
             times = [s["ns"] / s["iterations"] for s in row["samples"]]
             row.update(
                 status="ok",
