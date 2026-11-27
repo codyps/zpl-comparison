@@ -106,6 +106,9 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("1.00 ms–3.00 ms", rendered[0])
             self.assertIn('<data value="1000">1.00 µs</data>', rendered[0])
             self.assertIn("Parse APIs return different results", rendered[0])
+            self.assertIn("<h2>Not timed</h2>", rendered[0])
+            self.assertIn("<th scope=\"row\">zpl-builder (Rust)</th><td>ZPL generator. Measured only", rendered[0])
+            self.assertNotIn("<th scope=\"row\">go-zpl (Go)</th><td>", rendered[0].split("<h2>Not timed</h2>")[1])
             # Parse adapters write only a count, so no output-sample column.
             self.assertNotIn("Output sample", rendered[0])
             self.assertNotIn("Generated ZPL", rendered[0])

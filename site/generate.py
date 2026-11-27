@@ -1403,6 +1403,29 @@ class Site:
                     kind="sortable",
                 )
             )
+        timed = {r["library"] for r in data["results"]}
+        manual = "Measured only by the repository's manual benchmark harness, not in CI."
+        untimed_reasons = {
+            "toolchain": "AST parser. " + manual,
+            "builder": "ZPL generator. " + manual,
+            "python": "ZPL generator. " + manual,
+            "jszpl": "ZPL generator. " + manual,
+            "labelary": "Remote rendering service; there is no local library to time.",
+            "zplkit": "Renderer runs only on macOS; CI times the Linux adapters.",
+        }
+        untimed = [lib for lib in NAMES if lib not in timed]
+        if untimed:
+            body += (
+                "<h2>Not timed</h2><p>These compared libraries have no speed or memory measurements on this page.</p>"
+                + table(
+                    ["Library", "Reason"],
+                    [[self.link("libraries/" + slug(lib) + ".html", NAMES[lib])
+                      if lib in getattr(self, "libraries", ())
+                      else E(NAMES[lib]),
+                      E(untimed_reasons.get(lib, "Not measured in CI."))] for lib in untimed],
+                    "Libraries without performance measurements",
+                )
+            )
         generated_source = {"codyps-zpl-go": "Includes the machine-translated Go engine."}
         body += "<h2>Deployment size</h2>" + table(
             ["Library", "Source", "Artifact", "Note"],
