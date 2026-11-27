@@ -13,6 +13,7 @@ import os
 import re
 import shutil
 import statistics
+import sys
 from functools import lru_cache
 from html.parser import HTMLParser
 from pathlib import Path
@@ -20,28 +21,11 @@ from urllib.parse import unquote, urlsplit
 
 from PIL import Image, ImageChops, __version__ as PILLOW_VERSION
 
-NAMES = {
-    "codyps-zpl-go": "codyps/zpl (Go / wasm2go)",
-    "codyps-zpl-node": "codyps/zpl (Node / WASM)",
-    "codyps-zpl": "codyps/zpl",
-    "labelize": "labelize",
-    "forge": "zpl-forge",
-    "go": "go-zpl",
-    "ffi": "zpl-rs",
-    "binarykits": "BinaryKits.Zpl",
-    "neodynamic": "Neodynamic ZPLPrinter (trial)",
-    "zplr": "ZPLr",
-    "labelary": "Labelary (service)",
-    "toolchain": "zpl-toolchain",
-    "zebrash": "Zebrash (Go)",
-    "zpl-renderer-js": "zpl-renderer-js (WASM)",
-    "zebrash-ts": "zebrash-ts (TypeScript)",
-    "zplkit-ts": "zplkit (TypeScript)",
-    "builder": "zpl-builder",
-    "python": "Python ZPL",
-    "jszpl": "JSZPL",
-    "zplkit": "ZPLKit (Swift)",
-}
+# Library display names are shared with the Markdown reports. Direct runs
+# (python site/generate.py) need the repository root on the import path.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from benchmarks.formatting import NAMES  # noqa: E402
+
 SUITES = [
     ("accuracy", "ZD621 · arguments & barcodes", None, None),
     ("conformance", "ZD621 · feature tests", "features", "render-conformance"),
@@ -1522,10 +1506,15 @@ class Site:
                 "Argument-level examination",
             )
         )
-        body += "<h2>Capabilities and selection survey</h2><p>Initial survey 2026-09-18; renderer search expanded 2026-10-02; ZPLKit examined 2026-10-16. Parser, renderer and generator APIs do different work. Popularity is a dated snapshot, not a quality score.</p>"
-        for survey in markdown_tables(
-            (self.source / "docs/benchmarks/capabilities.md").read_text()
-        ):
+        capabilities = (self.source / "docs/benchmarks/capabilities.md").read_text()
+        # Survey dates are maintained once, in the first sentence of the template.
+        dated = re.search(r"^(Initial survey [^.]*\.)", capabilities, re.M)
+        body += (
+            "<h2>Capabilities and selection survey</h2><p>"
+            + (E(dated.group(1)) + " " if dated else "")
+            + "Parser, renderer and generator APIs do different work. Popularity is a dated snapshot, not a quality score.</p>"
+        )
+        for survey in markdown_tables(capabilities):
             body += table(
                 [inline(cell) for cell in survey[0]],
                 [[inline(cell) for cell in row] for row in survey[1:]],

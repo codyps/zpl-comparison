@@ -515,7 +515,7 @@ py_test(
 
 py_binary(
     name = "comparison_site",
-    srcs = ["site/generate.py"],
+    srcs = ["benchmarks/formatting.py", "site/generate.py"],
     main = "site/generate.py",
     data = ["site/style.css", "site/site.js"],
     deps = [requirement("pillow")],
@@ -524,7 +524,7 @@ py_binary(
 py_test(
     name = "site_test",
     size = "small",
-    srcs = ["site/generate.py", "site/test_generate.py"],
+    srcs = ["benchmarks/formatting.py", "site/generate.py", "site/test_generate.py"],
     main = "site/test_generate.py",
     data = ["site/style.css", "site/site.js"],
     deps = [requirement("pillow")],

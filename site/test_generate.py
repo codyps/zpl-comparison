@@ -402,6 +402,7 @@ class PublicationTests(unittest.TestCase):
             )
             put(
                 "docs/benchmarks/capabilities.md",
+                "Initial survey 2000-01-02; search expanded 2000-01-03. [Measured](README.md).\n\n"
                 "| Library | Role |\n|---|---|\n| go | renderer |",
             )
             put("docs/zpl-command-index.tsv", "^FO\t1")
@@ -413,11 +414,11 @@ class PublicationTests(unittest.TestCase):
             site.generate()
             library = (site.output / "libraries/go.html").read_text()
             self.assertIn(
-                '<h1><a class="library-source" href="https://github.com/StirlingMarketingGroup/go-zpl/tree/78b1819">go-zpl 78b1819</a></h1>',
+                '<h1><a class="library-source" href="https://github.com/StirlingMarketingGroup/go-zpl/tree/78b1819">go-zpl (Go) 78b1819</a></h1>',
                 library,
             )
-            self.assertIn("<title>go-zpl · ZPL comparisons</title>", library)
-            self.assertIn("go-zpl 78b1819</a>", (site.output / "libraries.html").read_text())
+            self.assertIn("<title>go-zpl (Go) · ZPL comparisons</title>", library)
+            self.assertIn("go-zpl (Go) 78b1819</a>", (site.output / "libraries.html").read_text())
             overview =(site.output / "index.html").read_text()
             self.assertIn("0.0%", overview)
             self.assertIn("1/1 scored", overview)
@@ -442,6 +443,10 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("0.00% IoU", matrix)
             self.assertIn(
                 "not reproducible pixel measurements",
+                (site.output / "examination.html").read_text(),
+            )
+            self.assertIn(
+                "<p>Initial survey 2000-01-02; search expanded 2000-01-03. Parser,",
                 (site.output / "examination.html").read_text(),
             )
 

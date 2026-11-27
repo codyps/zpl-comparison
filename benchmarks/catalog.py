@@ -26,7 +26,9 @@ def package_versions():
     for adapter, package in [("zpl-renderer-js", "zpl-renderer-js"), ("zebrash-ts", "@zebrash/node"), ("zplkit-ts", "@zplkit/render")]:
         lock = json.loads((ROOT / "adapters" / adapter / "package-lock.json").read_text())
         versions[adapter] = lock["packages"]["node_modules/" + package]["version"]
-    versions["zebrash"] = json.loads((ROOT / "sources.lock.json").read_text())["zebrash"]["version"]
+    sources = json.loads((ROOT / "sources.lock.json").read_text())
+    versions["zebrash"] = sources["zebrash"]["version"]
+    versions["zplkit"] = sources["zplkit"]["version"]
     dotnet = json.loads((ROOT / "adapters/dotnet/packages.lock.json").read_text())[
         "dependencies"
     ]["net10.0"]
@@ -74,7 +76,7 @@ def library_identities(locks, versions):
         "zpl-renderer-js": (v["zpl-renderer-js"], npm("zpl-renderer-js", v["zpl-renderer-js"])),
         "zebrash-ts": (v["zebrash-ts"], npm("@zebrash/node", v["zebrash-ts"])),
         "zplkit-ts": (v["zplkit-ts"], npm("@zplkit/render", v["zplkit-ts"])),
-        "zplkit": (locks["zplkit"]["version"], tree("zplkit")),
+        "zplkit": (v["zplkit"], tree("zplkit")),
         "python": (short("python-zpl"), tree("python-zpl")),
         # The service exposes no renderer version; captures record dates instead.
         "labelary": (None, "https://labelary.com/service.html"),
@@ -106,6 +108,8 @@ def render(template, popularity, locks, versions=None):
                 ],
             ).rstrip())
         kind, repo = token.split(":", 1)
+        if kind == "rev":
+            return locks[repo]["rev"]
         if kind == "version":
             return versions[repo]
         field = {"stars": "stargazers_count", "forks": "forks_count"}[kind]

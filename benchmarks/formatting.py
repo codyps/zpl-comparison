@@ -3,7 +3,7 @@
 NAMES = {
     "codyps-zpl-go": "codyps/zpl (Go / wasm2go)",
     "codyps-zpl-node": "codyps/zpl (Node / WASM)",
-    "labelary": "Labelary (SaaS)",
+    "labelary": "Labelary (service)",
     "codyps-zpl": "codyps/zpl (Rust)",
     "toolchain": "zpl-toolchain (Rust)",
     "forge": "zpl-forge (Rust)",
@@ -20,6 +20,7 @@ NAMES = {
     "builder": "zpl-builder (Rust)",
     "python": "Python ZPL",
     "jszpl": "JSZPL (TypeScript)",
+    "zplkit": "ZPLKit (Swift)",
 }
 
 

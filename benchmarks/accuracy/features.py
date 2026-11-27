@@ -271,7 +271,7 @@ def generate(check=False):
         "[All accuracy comparisons](../../README.md) · [Compatibility features](../../../../compatibility/features/README.md)",
         f"{len(cases)} fixtures × {len(LIBRARIES)} renderers. Execution: {data['measured_utc']}. Printer: {reference.get('device', 'not captured')}, firmware {reference.get('firmware', 'N/A')}, captured {reference.get('captured_utc', 'N/A')} through {capture_end}.",
         f"{len(refs)} hash-matched printer previews; {len(failures)} unavailable previews. Invalid inputs run offline only. "
-        + ("Labelary (SaaS) is a renderer, scored against the printer like every other library."
+        + (f"{NAMES['labelary']} is a renderer, scored against the printer like every other library."
            if "labelary" in LIBRARIES else "Local renderers only; Labelary captures are not available for this corpus."),
         f"Image coverage: {sum('image' in r for r in results)} successful renders; {sum('diff' in r for r in results)} printer differences. {sum(not c['capture_eligible'] for c in cases)} fixtures are excluded from printer submission. Every successful render with a captured reference has a difference; errors have diagnostics instead of fabricated images.",
         legend,
