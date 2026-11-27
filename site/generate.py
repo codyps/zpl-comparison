@@ -365,6 +365,7 @@ class Site:
             ("index.html", "Overview"),
             ("categories.html", "Categories"),
             ("libraries.html", "Libraries"),
+            ("categories/performance.html", "Performance"),
             ("cases.html", "ZPL documents"),
             ("examination.html", "Examined support"),
             ("methodology.html", "Methodology"),
@@ -1173,8 +1174,6 @@ class Site:
                 for s in self.suites
             )
             + "<article><h2>"
-            + self.link("categories/performance.html", "Speed, memory & size")
-            + "</h2></article><article><h2>"
             + self.link("categories/invalid.html", "Invalid-input behavior")
             + "</h2></article></div>",
         )

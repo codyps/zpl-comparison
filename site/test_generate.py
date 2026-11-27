@@ -418,6 +418,8 @@ class PublicationTests(unittest.TestCase):
                 library,
             )
             self.assertIn("<title>go-zpl (Go) · ZPL comparisons</title>", library)
+            self.assertIn('<a href="../categories/performance.html">Performance</a><a href="../cases.html">', library)
+            self.assertNotIn("performance.html", (site.output / "categories.html").read_text().split("<main", 1)[1])
             self.assertIn("go-zpl (Go) 78b1819</a>", (site.output / "libraries.html").read_text())
             overview =(site.output / "index.html").read_text()
             self.assertIn("0.0%", overview)
