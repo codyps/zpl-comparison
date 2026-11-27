@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import tempfile
@@ -12,6 +13,7 @@ spec.loader.exec_module(module)
 
 
 class RefreshTests(unittest.TestCase):
+    @unittest.skipUnless(os.name == "posix", "executes a #!/bin/sh cargo stub")
     def test_pinned_cargo_before_execroot_symlinks_exist(self):
         with tempfile.TemporaryDirectory() as temp:
             output_base = Path(temp)

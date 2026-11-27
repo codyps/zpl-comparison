@@ -43,6 +43,7 @@ class BuildBuddyCacheTest(unittest.TestCase):
         self.assertNotIn("--bes_backend", self.rc.read_text())
         self.assertFalse((self.root / "runner/buildbuddy-credentials").exists())
 
+    @unittest.skipUnless(os.name == "posix", "checks Unix file modes and runs the helper by shebang")
     def test_key_stays_outside_cached_files_and_only_reaches_buildbuddy(self):
         disk = self.configure("test-secret")
         directory = self.root / "runner/buildbuddy-credentials"
